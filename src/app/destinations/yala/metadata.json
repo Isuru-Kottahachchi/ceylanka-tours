@@ -1,0 +1,17 @@
+{
+  "title": "Yala National Park - Sri Lanka's Premier Wildlife Safari Destination",
+  "description": "Experience the world's highest leopard density at Yala National Park. Book wildlife safaris, spot elephants, sloth bears, and 215 bird species in Sri Lanka's most famous national park.",
+  "keywords": "Yala National Park, Sri Lanka safari, leopard spotting, wildlife tour, elephant safari, bird watching, Yala safari booking",
+  "openGraph": {
+    "title": "Yala National Park - Wildlife Safari Experience",
+    "description": "Discover Sri Lanka's incredible wildlife at Yala National Park. Home to the world's highest leopard density, elephants, and exotic birds.",
+    "images": [
+      {
+        "url": "/images/yala-leopard-hero.jpg",
+        "width": 1200,
+        "height": 630,
+        "alt": "Leopard in Yala National Park"
+      }
+    ]
+  }
+}
