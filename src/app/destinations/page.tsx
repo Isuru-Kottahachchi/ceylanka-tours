@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { MapPin, Star, Search, Filter } from "lucide-react"
 import { AdBanner } from "@/components/ad-banner"
-import path from "path"
 
 const destinations = [
   {
@@ -18,7 +17,7 @@ const destinations = [
     rating: 4.8,
     reviews: 1250,
     description: "Ancient rock fortress and palace ruins with stunning frescoes and gardens",
-    highlights: ["UNESCO World Heritage", "Ancient Frescoes", "Lion's Gate"],
+    highlights: ["UNESCO World Heritage", "Ancient Frescoes", "Lions Gate"],
     category: "Historical",
   },
   {
@@ -41,7 +40,7 @@ const destinations = [
     image: "/Kandy.jpeg",
     rating: 4.9,
     reviews: 1580,
-    description: "Sacred Buddhist temple housing the relic of Buddha's tooth",
+    description: "Sacred Buddhist temple housing the relic of Buddhas tooth",
     highlights: ["Sacred Tooth Relic", "Cultural Shows", "Royal Palace"],
     category: "Religious",
   },
@@ -94,7 +93,7 @@ const destinations = [
   },
   {
     id: 7,
-    name: "Adam's Peak",
+  name: "Adam&apos;s Peak",
     location: "Central Province",
     path: "adams-peak",
     image: "/Adams-peak.jpeg",
@@ -112,7 +111,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -124,7 +123,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -135,7 +134,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -147,7 +146,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -159,7 +158,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -171,7 +170,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -183,7 +182,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -195,7 +194,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -207,7 +206,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -231,7 +230,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -243,7 +242,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -255,7 +254,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -267,7 +266,7 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,
-    description: "Hill station known as 'Little England' with tea plantations",
+    description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -281,7 +280,7 @@ export default function DestinationsPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-600 to-teal-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Explore Sri Lanka's Destinations</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Explore Sri Lankas Destinations</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             From ancient temples to pristine beaches, discover the diverse attractions that make Sri Lanka truly special
           </p>

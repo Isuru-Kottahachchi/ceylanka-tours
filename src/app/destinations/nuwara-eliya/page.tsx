@@ -5,14 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Nuwara Eliya Sri Lanka: Complete Guide 2024 | Little England in the Hills",
+  title: "Nuwara Eliya Sri Lanka: Complete Guide 2025 | Little England in the Hills",
   description:
-    "Discover Nuwara Eliya, Sri Lanka's hill station paradise. Complete guide to tea plantations, colonial charm, cool climate, and the best things to do in Little England.",
+    "Discover Nuwara Eliya, Sri Lankas hill station paradise. Complete guide to tea plantations, colonial charm, cool climate, and the best things to do in Little England.",
   keywords:
     "Nuwara Eliya, Little England Sri Lanka, tea plantations, hill country, colonial architecture, cool climate, tea factory tours",
   openGraph: {
-    title: "Nuwara Eliya: Complete Travel Guide 2024",
-    description: "Your ultimate guide to Sri Lanka's charming hill station",
+    title: "Nuwara Eliya: Complete Travel Guide 2025",
+    description: "Your ultimate guide to Sri Lankas charming hill station",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -54,18 +54,19 @@ export default function NuwaraEliyaTravelGuide() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Nuwara Eliya: Sri Lanka's Cool Escape</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Nuwara Eliya: Sri Lankas Cool Escape</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
               Escape the tropical heat and step into a world that feels like a slice of England transported to the heart
-              of Sri Lanka. Nuwara Eliya, fondly known as "Little England," sits majestically at 1,868 meters above sea
+              of Sri Lanka. Nuwara Eliya, fondly known as &quot;Little England,&quot; sits majestically at 1,868 meters above sea
               level, offering a refreshing cool climate, rolling green tea plantations, and charming colonial
               architecture that tells stories of a bygone era.
+
             </p>
             <p className="text-lg">
               From world-famous Ceylon tea estates to pristine lakes, from strawberry farms to misty mountain peaks,
-              Nuwara Eliya is a paradise for nature lovers, tea enthusiasts, and anyone seeking respite from Sri Lanka's
-              tropical heat. This hill station promises an unforgettable journey through some of the world's most
+              Nuwara Eliya is a paradise for nature lovers, tea enthusiasts, and anyone seeking respite from Sri Lankas
+              tropical heat. This hill station promises an unforgettable journey through some of the worlds most
               beautiful tea country.
             </p>
           </div>
@@ -150,9 +151,9 @@ export default function NuwaraEliyaTravelGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Nuwara Eliya is the heart of Sri Lanka's tea industry, producing some of the world's finest Ceylon tea.
+                Nuwara Eliya is the heart of Sri Lankas tea industry, producing some of the worlds finest Ceylon tea.
                 The cool climate, high altitude, and misty conditions create the perfect environment for growing premium
-                tea that's exported globally and cherished by tea connoisseurs everywhere.
+                tea thats exported globally and cherished by tea connoisseurs everywhere.
               </p>
               <p>
                 Take a guided tour through the emerald green plantations where you can witness tea pickers at work,
@@ -200,7 +201,7 @@ export default function NuwaraEliyaTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Created in 1873 by British Governor Sir William Gregory, this picturesque lake is the heart of
-                      Nuwara Eliya's recreational activities. Surrounded by eucalyptus trees and rolling hills, it
+                      Nuwara Eliyas recreational activities. Surrounded by eucalyptus trees and rolling hills, it
                       offers a perfect setting for relaxation and family fun.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -230,24 +231,24 @@ export default function NuwaraEliyaTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>2. Horton Plains National Park</CardTitle>
-                <CardDescription>UNESCO World Heritage site with World's End cliff</CardDescription>
+                <CardDescription>UNESCO World Heritage site with Worlds End cliff</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Just 32km from Nuwara Eliya, Horton Plains offers one of Sri Lanka's most spectacular hiking
-                      experiences. The highlight is World's End, a sheer cliff drop of 870 meters offering breathtaking
+                      Just 32km from Nuwara Eliya, Horton Plains offers one of Sri Lankas most spectacular hiking
+                      experiences. The highlight is Worlds End, a sheer cliff drop of 870 meters offering breathtaking
                       views on clear days.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        World's End viewpoint - 870m cliff drop
+                        Worlds End viewpoint - 870m cliff drop
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Baker's Falls - beautiful 20m waterfall
+                        Bakers Falls - beautiful 20m waterfall
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -260,13 +261,13 @@ export default function NuwaraEliyaTravelGuide() {
                     </ul>
                     <div className="mt-4 p-3 bg-orange-50 rounded-lg">
                       <p className="text-sm text-orange-800">
-                        <strong>Best Time:</strong> Start early (6 AM) to avoid clouds at World's End
+                        <strong>Best Time:</strong> Start early (6 AM) to avoid clouds at Worlds End
                       </p>
                     </div>
                   </div>
                   <Image
                     src="/placeholder.svg?height=300&width=400"
-                    alt="Dramatic World's End cliff at Horton Plains showing the spectacular 870-meter drop with misty valleys below"
+                    alt="Dramatic Worlds End cliff at Horton Plains showing the spectacular 870-meter drop with misty valleys below"
                     width={400}
                     height={300}
                     className="rounded-lg"
@@ -293,7 +294,7 @@ export default function NuwaraEliyaTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Named after Queen Victoria, this 27-acre park is a delightful escape in the heart of Nuwara Eliya.
-                      With its well-maintained gardens, diverse bird life, and peaceful atmosphere, it's perfect for a
+                      With its well-maintained gardens, diverse bird life, and peaceful atmosphere, its perfect for a
                       leisurely stroll or family outing.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -307,7 +308,7 @@ export default function NuwaraEliyaTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Children's playground and picnic areas
+                        Childrens playground and picnic areas
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -348,7 +349,7 @@ export default function NuwaraEliyaTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Nuwara Eliya Golf Club</CardTitle>
-                <CardDescription>Asia's finest golf course</CardDescription>
+                <CardDescription>Asias finest golf course</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
@@ -379,7 +380,7 @@ export default function NuwaraEliyaTravelGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  A gentlemen's club from 1876 that still maintains strict dress codes and colonial traditions.
+                  A gentlemens club from 1876 that still maintains strict dress codes and colonial traditions.
                 </p>
               </CardContent>
             </Card>
@@ -513,14 +514,14 @@ export default function NuwaraEliyaTravelGuide() {
             <CardContent>
               <p className="text-muted-foreground mb-4">
                 Nuwara Eliya offers a unique escape from tropical Sri Lanka into a world of cool mountain air,
-                world-class tea, and colonial charm. Whether you're sipping fresh Ceylon tea while overlooking emerald
-                plantations or hiking to World's End for sunrise views, this hill station provides experiences you'll
+                world-class tea, and colonial charm. Whether youre sipping fresh Ceylon tea while overlooking emerald
+                plantations or hiking to Worlds End for sunrise views, this hill station provides experiences youll
                 treasure forever.
               </p>
               <p className="text-muted-foreground mb-4">
-                Don't forget to pack warm clothes - the cool climate is a refreshing change but can catch tropical
+                Dont forget to pack warm clothes - the cool climate is a refreshing change but can catch tropical
                 travelers off guard! Take time to slow down, breathe the fresh mountain air, and immerse yourself in the
-                timeless beauty of Sri Lanka's tea country.
+                timeless beauty of Sri Lankas tea country.
               </p>
               <p className="text-muted-foreground font-medium">Enjoy your journey through Little England! 🍃🏔️</p>
             </CardContent>

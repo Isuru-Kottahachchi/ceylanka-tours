@@ -5,14 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Ella Nine Arch Bridge Sri Lanka: Complete Guide 2024 | Iconic Railway Bridge in Tea Country",
+  title: "Ella Nine Arch Bridge Sri Lanka: Complete Guide 2025 | Iconic Railway Bridge in Tea Country",
   description:
-    "Discover Ella's famous Nine Arch Bridge, Sri Lanka's most photographed railway bridge. Complete guide with train times, best viewpoints, and everything you need to know.",
+    "Discover Ellas famous Nine Arch Bridge, Sri Lankas most photographed railway bridge. Complete guide with train times, best viewpoints, and everything you need to know.",
   keywords:
     "Ella Nine Arch Bridge, Sri Lanka railway, tea country, Ella travel guide, train bridge photography, hill country",
   openGraph: {
-    title: "Ella Nine Arch Bridge: Complete Travel Guide 2024",
-    description: "Your ultimate guide to visiting Sri Lanka's most famous railway bridge",
+    title: "Ella Nine Arch Bridge: Complete Travel Guide 2025",
+    description: "Your ultimate guide to visiting Sri Lankas most famous railway bridge",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -33,7 +33,7 @@ export default function EllaNineArchTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Nine Arch Bridge</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Ella's Iconic Railway Marvel in the Clouds</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Ellas Iconic Railway Marvel in the Clouds</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -59,14 +59,14 @@ export default function EllaNineArchTravelGuide() {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Rising majestically from the misty tea plantations of Ella, the Nine Arch Bridge is Sri Lanka's most
+              Rising majestically from the misty tea plantations of Ella, the Nine Arch Bridge is Sri Lankas most
               photographed railway bridge and an absolute must-see destination. This architectural masterpiece, built
               entirely without steel during World War I, stands as a testament to ingenious engineering and natural
               beauty.
             </p>
             <p className="text-lg">
-              Whether you're chasing the perfect Instagram shot, seeking adventure in Sri Lanka's hill country, or
-              simply want to witness one of the world's most scenic train journeys, the Nine Arch Bridge offers an
+              Whether youre chasing the perfect Instagram shot, seeking adventure in Sri Lankas hill country, or
+              simply want to witness one of the worlds most scenic train journeys, the Nine Arch Bridge offers an
               unforgettable experience where colonial engineering meets tropical paradise.
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function EllaNineArchTravelGuide() {
               </p>
               <p>
                 Using only stone, brick, and cement, they created this architectural masterpiece that has withstood over
-                100 years of tropical weather and daily train crossings. The bridge's nine graceful arches not only
+                100 years of tropical weather and daily train crossings. The bridges nine graceful arches not only
                 provide structural strength but also create the perfect frame for the surrounding tea plantations and
                 misty mountains.
               </p>
@@ -299,7 +299,7 @@ export default function EllaNineArchTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Walk along the railway track (carefully!) to get side-angle shots that show the bridge's full
+                      Walk along the railway track (carefully!) to get side-angle shots that show the bridges full
                       length and the dramatic drop into the gorge. This viewpoint offers a different perspective that
                       many visitors miss.
                     </p>
@@ -332,7 +332,7 @@ export default function EllaNineArchTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>3. Aerial Drone View</CardTitle>
-                <CardDescription>Bird's eye perspective (with proper permits)</CardDescription>
+                <CardDescription>Birds eye perspective (with proper permits)</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -345,7 +345,7 @@ export default function EllaNineArchTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      For those with drone photography skills and proper permits, aerial shots reveal the bridge's
+                      For those with drone photography skills and proper permits, aerial shots reveal the bridges
                       perfect integration with the surrounding tea plantations and mountain landscape.
                     </p>
                     <div className="bg-red-50 p-4 rounded-lg">
@@ -369,7 +369,7 @@ export default function EllaNineArchTravelGuide() {
           [Advertisement Space - 728x90 Leaderboard]
         </div>
 
-        {/* Safety & Do's and Don'ts */}
+        {/* Safety & Dos and Donts */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Safety Guidelines & Essential Tips</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -377,7 +377,7 @@ export default function EllaNineArchTravelGuide() {
               <CardHeader>
                 <CardTitle className="text-green-700 flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
-                  DO's - For the Perfect Visit
+                  DOs - For the Perfect Visit
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
@@ -408,7 +408,7 @@ export default function EllaNineArchTravelGuide() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Respect the environment:</strong> Don't litter in this pristine area
+                    <strong>Respect the environment:</strong> Dont litter in this pristine area
                   </span>
                 </div>
               </CardContent>
@@ -418,7 +418,7 @@ export default function EllaNineArchTravelGuide() {
               <CardHeader>
                 <CardTitle className="text-red-700 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5" />
-                  DON'Ts - Critical Safety Warnings
+                  DONTs - Critical Safety Warnings
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
@@ -431,31 +431,31 @@ export default function EllaNineArchTravelGuide() {
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't make unnesssary sound:</strong> bees and hornests
+                    <strong>Dont make unnesssary sound:</strong> bees and hornests
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't ignore train horns:</strong> Move to safety immediately
+                    <strong>Dont ignore train horns:</strong> Move to safety immediately
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't climb on the bridge:</strong> Dangerous and illegal
+                    <strong>Dont climb on the bridge:</strong> Dangerous and illegal
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't venture too close:</strong> Maintain safe distance from tracks
+                    <strong>Dont venture too close:</strong> Maintain safe distance from tracks
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't visit during heavy rain:</strong> Paths become very slippery
+                    <strong>Dont visit during heavy rain:</strong> Paths become very slippery
                   </span>
                 </div>
               </CardContent>
@@ -501,7 +501,7 @@ export default function EllaNineArchTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">From Kandy</h4>
                   <p className="text-sm text-muted-foreground">
-                    Take the scenic train journey (6-7 hours) - one of the world's most beautiful train rides!
+                    Take the scenic train journey (6-7 hours) - one of the worlds most beautiful train rides!
                   </p>
                 </div>
                 <div>
@@ -527,13 +527,13 @@ export default function EllaNineArchTravelGuide() {
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Little Adam's Peak</CardTitle>
+                <CardTitle className="text-lg">Little Adams Peak</CardTitle>
                 <CardDescription>Easy hike with stunning views</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
                   src="/placeholder.svg?height=200&width=300"
-                  alt="Panoramic view from Little Adam's Peak showing Ella Gap and surrounding mountains"
+                  alt="Panoramic view from Little Adams Peak showing Ella Gap and surrounding mountains"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3"
@@ -558,7 +558,7 @@ export default function EllaNineArchTravelGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  3-4 hour challenging hike to Ella's highest point. Spectacular views but requires good fitness level.
+                  3-4 hour challenging hike to Ellas highest point. Spectacular views but requires good fitness level.
                 </p>
               </CardContent>
             </Card>
@@ -593,9 +593,9 @@ export default function EllaNineArchTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                The Nine Arch Bridge is more than just a photo opportunity – it's a testament to human ingenuity and the
+                The Nine Arch Bridge is more than just a photo opportunity – its a testament to human ingenuity and the
                 perfect harmony between engineering and nature. As you stand beneath those magnificent arches, listening
-                for the distant whistle of an approaching train, you're experiencing one of Sri Lanka's most magical
+                for the distant whistle of an approaching train, youre experiencing one of Sri Lankas most magical
                 moments.
               </p>
               <p className="text-muted-foreground mb-4">

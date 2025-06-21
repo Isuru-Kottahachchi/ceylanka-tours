@@ -1,18 +1,18 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Anchor } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Anchor } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Trincomalee Sri Lanka: Complete Guide 2024 | Beaches, Temples & Natural Harbor",
+  title: "Trincomalee Sri Lanka: Complete Guide 2025 | Beaches, Temples & Natural Harbor",
   description:
-    "Discover Trincomalee, Sri Lanka's eastern coastal gem. Complete guide to pristine beaches, ancient temples, whale watching, and one of the world's finest natural harbors.",
+    "Discover Trincomalee, Sri Lankas eastern coastal gem. Complete guide to pristine beaches, ancient temples, whale watching, and one of the worlds finest natural harbors.",
   keywords:
     "Trincomalee, Sri Lanka beaches, whale watching, Nilaveli beach, Uppuveli, Koneswaram temple, natural harbor, eastern coast",
   openGraph: {
-    title: "Trincomalee: Complete Travel Guide 2024",
-    description: "Your ultimate guide to Sri Lanka's eastern coastal paradise",
+    title: "Trincomalee: Complete Travel Guide 2025",
+    description: "Your ultimate guide to Sri Lankas eastern coastal paradise",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -33,7 +33,7 @@ export default function TrincomaleeTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Trincomalee</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Eastern Coastal Paradise</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Eastern Coastal Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -41,7 +41,7 @@ export default function TrincomaleeTravelGuide() {
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Anchor className="w-4 h-4 mr-1" />
-              World's 5th Largest Natural Harbor
+              Worlds 5th Largest Natural Harbor
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Waves className="w-4 h-4 mr-1" />
@@ -57,8 +57,8 @@ export default function TrincomaleeTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Trincomalee: Where History Meets Paradise</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Discover Trincomalee, Sri Lanka's best-kept secret on the stunning eastern coast. This ancient port city
-              boasts one of the world's finest natural harbors, pristine white sand beaches, crystal-clear turquoise
+              Discover Trincomalee, Sri Lankas best-kept secret on the stunning eastern coast. This ancient port city
+              boasts one of the worlds finest natural harbors, pristine white sand beaches, crystal-clear turquoise
               waters, and a rich tapestry of Tamil, Sinhalese, and colonial history spanning over 2,000 years.
             </p>
             <p className="text-lg">
@@ -96,7 +96,7 @@ export default function TrincomaleeTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Anchor className="w-4 h-4 text-green-500" />
                     <span>
-                      <strong>Harbor Ranking:</strong> World's 5th largest natural harbor
+                      <strong>Harbor Ranking:</strong> Worlds 5th largest natural harbor
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -195,8 +195,8 @@ export default function TrincomaleeTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Often called one of Sri Lanka's most beautiful beaches, Nilaveli stretches for miles with
-                      powder-white sand, crystal-clear turquoise waters, and minimal development. It's perfect for
+                      Often called one of Sri Lankas most beautiful beaches, Nilaveli stretches for miles with
+                      powder-white sand, crystal-clear turquoise waters, and minimal development. Its perfect for
                       swimming, sunbathing, and water sports in a pristine tropical setting.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -247,7 +247,7 @@ export default function TrincomaleeTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Just a short boat ride from Nilaveli Beach, this marine national park consists of two small
-                      islands surrounded by some of Sri Lanka's best coral reefs. It's a snorkeling and diving paradise
+                      islands surrounded by some of Sri Lankas best coral reefs. Its a snorkeling and diving paradise
                       with over 100 species of coral and 300 species of fish.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -281,7 +281,7 @@ export default function TrincomaleeTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Trincomalee offers some of the world's best whale watching opportunities, with blue whales, sperm
+                Trincomalee offers some of the worlds best whale watching opportunities, with blue whales, sperm
                 whales, and dolphins frequently spotted in the deep waters off the coast. The continental shelf drops
                 dramatically close to shore, bringing these magnificent creatures within easy reach.
               </p>
@@ -361,13 +361,13 @@ export default function TrincomaleeTravelGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Lover's Leap</CardTitle>
+                <CardTitle className="text-lg">Lovers Leap</CardTitle>
                 <CardDescription>Dramatic clifftop viewpoint</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
                   src="/placeholder.svg?height=200&width=300"
-                  alt="Lover's Leap cliff showing dramatic drop to ocean with panoramic coastal views"
+                  alt="Lovers Leap cliff showing dramatic drop to ocean with panoramic coastal views"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3"
@@ -561,11 +561,11 @@ export default function TrincomaleeTravelGuide() {
               </p>
               <p className="text-muted-foreground mb-4">
                 Take time to appreciate the slower pace of life here, respect the local customs and religious sites, and
-                immerse yourself in the natural wonders that make Trincomalee special. Whether you're seeking adventure
+                immerse yourself in the natural wonders that make Trincomalee special. Whether youre seeking adventure
                 on the water or peace on pristine beaches, this coastal paradise will exceed your expectations.
               </p>
               <p className="text-muted-foreground font-medium">
-                Enjoy your journey to Sri Lanka's eastern coastal paradise! 🌊🐋🏛️
+                Enjoy your journey to Sri Lankas eastern coastal paradise! 🌊🐋🏛️
               </p>
             </CardContent>
           </Card>

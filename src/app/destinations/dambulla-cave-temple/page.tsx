@@ -5,14 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Dambulla Cave Temple Sri Lanka: Complete Guide 2024 | Golden Temple & Ancient Buddhist Art",
+  title: "Dambulla Cave Temple Sri Lanka: Complete Guide 2025 | Golden Temple & Ancient Buddhist Art",
   description:
-    "Explore Dambulla Cave Temple, Sri Lanka's largest cave temple complex. Complete guide to the Golden Temple, ancient Buddhist art, and UNESCO World Heritage site.",
+    "Explore Dambulla Cave Temple, Sri Lankas largest cave temple complex. Complete guide to the Golden Temple, ancient Buddhist art, and UNESCO World Heritage site.",
   keywords:
     "Dambulla Cave Temple, Golden Temple, Buddhist caves, ancient art, UNESCO World Heritage, Sri Lanka temples, cave paintings",
   openGraph: {
-    title: "Dambulla Cave Temple: Complete Guide 2024",
-    description: "Your ultimate guide to Sri Lanka's magnificent cave temple complex",
+    title: "Dambulla Cave Temple: Complete Guide 2025",
+    description: "Your ultimate guide to Sri Lankas magnificent cave temple complex",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -33,7 +33,7 @@ export default function DambullaTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Dambulla Cave Temple</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Largest Cave Temple Complex</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Largest Cave Temple Complex</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -57,13 +57,13 @@ export default function DambullaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Dambulla: Temple of Ancient Wonders</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into a world where ancient artistry meets spiritual devotion at Dambulla Cave Temple, Sri Lanka's
+              Step into a world where ancient artistry meets spiritual devotion at Dambulla Cave Temple, Sri Lankas
               largest and best-preserved cave temple complex. This UNESCO World Heritage site houses over 150 Buddha
               statues, intricate cave paintings spanning 2,100 square meters, and 2,000 years of continuous Buddhist
               worship in five magnificent caves carved into a massive rock outcrop.
             </p>
             <p className="text-lg">
-              From the moment you climb the steps to this sacred site, you'll be transported through centuries of
+              From the moment you climb the steps to this sacred site, youll be transported through centuries of
               Buddhist art and devotion. Each cave tells a unique story through its stunning murals, sculptures, and
               architectural features, making Dambulla one of the most important pilgrimage sites in Sri Lanka and a
               treasure trove for art and history enthusiasts.
@@ -159,9 +159,9 @@ export default function DambullaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The first cave you'll encounter houses a 14-meter long reclining Buddha carved from the living
+                      The first cave youll encounter houses a 14-meter long reclining Buddha carved from the living
                       rock. This cave is believed to be where King Valagamba took refuge in the 1st century BC, marking
-                      the beginning of Dambulla's sacred history.
+                      the beginning of Dambullas sacred history.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -170,7 +170,7 @@ export default function DambullaTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Statue of Ananda (Buddha's disciple) at the feet
+                        Statue of Ananda (Buddhas disciple) at the feet
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -197,8 +197,8 @@ export default function DambullaTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       This is the crown jewel of Dambulla, featuring 56 Buddha statues and the most extensive collection
-                      of cave paintings. The ceiling is completely covered with intricate paintings depicting Buddha's
-                      life and Jataka tales (stories of Buddha's previous lives).
+                      of cave paintings. The ceiling is completely covered with intricate paintings depicting Buddhas
+                      life and Jataka tales (stories of Buddhas previous lives).
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -320,7 +320,7 @@ export default function DambullaTravelGuide() {
               <p>
                 At the base of the rock, the modern Golden Temple (built in 2000) serves as the entrance to the cave
                 complex. This impressive structure features a 30-meter tall golden Buddha statue and houses a museum
-                with artifacts and information about the site's history.
+                with artifacts and information about the sites history.
               </p>
               <p>
                 While not ancient like the caves above, the Golden Temple provides excellent context for your visit and
@@ -374,7 +374,7 @@ export default function DambullaTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Common Themes</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Buddha's life story and previous births</li>
+                    <li>• Buddhas life story and previous births</li>
                     <li>• Jataka tales (moral stories)</li>
                     <li>• Celestial beings and divine figures</li>
                     <li>• Geometric and floral patterns</li>
@@ -430,7 +430,7 @@ export default function DambullaTravelGuide() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">What's Included</h4>
+                  <h4 className="font-semibold mb-2">Whats Included</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Access to all five caves</li>
                     <li>• Golden Temple museum entry</li>
@@ -468,7 +468,7 @@ export default function DambullaTravelGuide() {
                   <h4 className="font-semibold mb-2">Behavior Guidelines</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Maintain respectful silence</li>
-                    <li>• Don't point feet toward Buddha statues</li>
+                    <li>• Dont point feet toward Buddha statues</li>
                     <li>• No touching of paintings or statues</li>
                     <li>• Photography allowed (no flash)</li>
                   </ul>
@@ -478,7 +478,7 @@ export default function DambullaTravelGuide() {
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• This is an active place of worship</li>
                     <li>• Be respectful of praying devotees</li>
-                    <li>• Follow your guide's instructions</li>
+                    <li>• Follow your guides instructions</li>
                     <li>• Consider making a small donation</li>
                   </ul>
                 </div>
@@ -622,8 +622,8 @@ export default function DambullaTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Dambulla Cave Temple offers one of Sri Lanka's most profound cultural and spiritual experiences. As you
-                explore these ancient caves, you're walking through 2,000 years of continuous Buddhist devotion and
+                Dambulla Cave Temple offers one of Sri Lankas most profound cultural and spiritual experiences. As you
+                explore these ancient caves, youre walking through 2,000 years of continuous Buddhist devotion and
                 artistic achievement. Each cave tells a story, each painting holds meaning, and each statue represents
                 centuries of faith and craftsmanship.
               </p>
@@ -633,7 +633,7 @@ export default function DambullaTravelGuide() {
                 not just a tourist attraction but a living temple where people come to pray and find spiritual solace.
               </p>
               <p className="text-muted-foreground font-medium">
-                May your visit to Dambulla bring you peace, wonder, and a deeper appreciation for Sri Lanka's incredible
+                May your visit to Dambulla bring you peace, wonder, and a deeper appreciation for Sri Lankas incredible
                 cultural heritage! 🙏✨🎨
               </p>
             </CardContent>

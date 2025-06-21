@@ -6,20 +6,20 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 
 export const metadata: Metadata = {
-  title: "Sigiriya Rock Fortress: Complete Travel Guide 2024 | Ancient Wonder of Sri Lanka",
+  title: "Sigiriya Rock Fortress: Complete Travel Guide 2025 | Ancient Wonder of Sri Lanka",
   description:
-    "Discover Sigiriya Rock Fortress, Sri Lanka's ancient wonder. Complete travel guide with tips, photos, best time to visit, and everything you need to know for an amazing experience.",
+    "Discover Sigiriya Rock Fortress, Sri Lankas ancient wonder. Complete travel guide with tips, photos, best time to visit, and everything you need to know for an amazing experience.",
   keywords: "Sigiriya, Rock Fortress, Sri Lanka travel, ancient ruins, UNESCO World Heritage, travel guide, tourism",
   authors: [{ name: "Travel Explorer" }],
   openGraph: {
-    title: "Sigiriya Rock Fortress: Complete Travel Guide 2024",
+    title: "Sigiriya Rock Fortress: Complete Travel Guide 2025",
     description: "Your ultimate guide to visiting Sigiriya Rock Fortress in Sri Lanka",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sigiriya Rock Fortress: Complete Travel Guide 2024",
+    title: "Sigiriya Rock Fortress: Complete Travel Guide 2025",
     description: "Your ultimate guide to visiting Sigiriya Rock Fortress in Sri Lanka",
   },
 }
@@ -39,7 +39,7 @@ export default function SigiriyaTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Sigiriya Rock Fortress</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Discover Sri Lanka's Ancient Wonder in the Sky</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Discover Sri Lankas Ancient Wonder in the Sky</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -63,15 +63,16 @@ export default function SigiriyaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Sigiriya: The Lion Rock</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Imagine climbing to a palace in the clouds, built over 1,500 years ago! That's exactly what awaits you at
-              Sigiriya Rock Fortress, one of Sri Lanka's most incredible ancient wonders. This massive rock formation
+              Imagine climbing to a palace in the clouds, built over 1,500 years ago! Thats exactly what awaits you at
+              Sigiriya Rock Fortress, one of Sri Lankas most incredible ancient wonders. This massive rock formation
               rises 200 meters (660 feet) above the surrounding jungle, topped with the ruins of what was once a
               magnificent royal palace.
             </p>
             <p className="text-lg">
-              Known locally as "Sinhagiri" (Lion Rock), Sigiriya is not just a tourist attraction – it's a journey
+              Known locally as &quot;Sinhagiri&quot; (Lion Rock), Sigiriya is not just a tourist attraction — it&apos;s a journey
               through time that will leave you breathless, both from the climb and the stunning views that await at the
               top!
+
             </p>
           </div>
         </section>
@@ -156,11 +157,11 @@ export default function SigiriyaTravelGuide() {
               </p>
               <p>
                 For 18 years, Kashyapa ruled from his sky-high palace, complete with gardens, pools, and stunning
-                frescoes. However, his brother eventually returned with an army. During the final battle, Kashyapa's
+                frescoes. However, his brother eventually returned with an army. During the final battle, Kashyapas
                 elephant turned back, his army thought he was retreating, and in despair, the king took his own life.
               </p>
               <p>
-                After Kashyapa's death, the palace was abandoned and later became a Buddhist monastery until the 14th
+                After Kashyapas death, the palace was abandoned and later became a Buddhist monastery until the 14th
                 century.
               </p>
             </div>
@@ -169,7 +170,7 @@ export default function SigiriyaTravelGuide() {
 
         {/* What to See */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">What You'll See During Your Visit</h2>
+          <h2 className="text-3xl font-bold mb-6">What Youll See During Your Visit</h2>
           <div className="space-y-8">
             {/* Water Gardens */}
             <Card>
@@ -189,7 +190,7 @@ export default function SigiriyaTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Your journey begins with the incredible water gardens at the base of the rock. These
-                      1,500-year-old gardens still function today! People belives King Kashyapa put crocadiles for the safety. You'll see:
+                      1,500-year-old gardens still function today! People belives King Kashyapa put crocadiles for the safety. Youll see:
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -202,7 +203,7 @@ export default function SigiriyaTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Beautiful landscaping that's perfect for photos
+                        Beautiful landscaping thats perfect for photos
                       </li>
                     </ul>
                   </div>
@@ -210,20 +211,20 @@ export default function SigiriyaTravelGuide() {
               </CardContent>
             </Card>
 
-            {/* Lion's Paws */}
+            {/* Lions Paws */}
             <Card>
               <CardHeader>
-                <CardTitle>2. The Lion's Paws</CardTitle>
+                <CardTitle>2. The Lions Paws</CardTitle>
                 <CardDescription>Massive stone paws that once supported a giant lion</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Halfway up the rock, you'll encounter the famous Lion's Paws - two enormous stone paws that are
-                      all that remain of a giant lion sculpture. Originally, visitors had to walk through the lion's
+                      Halfway up the rock, youll encounter the famous Lions Paws - two enormous stone paws that are
+                      all that remain of a giant lion sculpture. Originally, visitors had to walk through the lions
                       mouth to reach the palace! <br />
-                      Peoples belives - Still some people belives there was a entrance to enter the palace through the lion's mouth. and there was a place inside the rock
+                      Peoples belives - Still some people belives there was a entrance to enter the palace through the lions mouth. and there was a place inside the rock
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -268,7 +269,7 @@ export default function SigiriyaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      On your way up, don't miss the world-famous Sigiriya frescoes! These ancient paintings are located
+                      On your way up, dont miss the world-famous Sigiriya frescoes! These ancient paintings are located
                       in a sheltered pocket of the rock face and show beautiful women (possibly celestial beings or
                       court ladies).
                       <br />
@@ -303,8 +304,8 @@ export default function SigiriyaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The summit is where the magic happens! At the top, you'll find the ruins of King Kashyapa's palace
-                      and some of the most spectacular views in Sri Lanka.<br/>
+                      The summit is where the magic happens! At the top, youll find the ruins of King Kashyapas palace
+                      and some of the most spectacular views in Sri Lanka.<br />
                       At the summit you can see the Pidurangala which is also have a rock similar to Sigiriya and importtant place to visit.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -341,16 +342,16 @@ export default function SigiriyaTravelGuide() {
 
         <Separator className="my-12" />
 
-        {/* Do's and Don'ts */}
+        {/* Dos and Donts */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Essential Do's and Don'ts</h2>
+          <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Do's */}
+            {/* Dos */}
             <Card className="border-green-200 bg-green-50/50">
               <CardHeader>
                 <CardTitle className="text-green-700 flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
-                  DO's - For the Best Experience
+                  DOs - For the Best Experience
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
@@ -381,7 +382,7 @@ export default function SigiriyaTravelGuide() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Respect the site:</strong> It's a UNESCO World Heritage Site
+                    <strong>Respect the site:</strong> Its a UNESCO World Heritage Site
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
@@ -399,55 +400,55 @@ export default function SigiriyaTravelGuide() {
               </CardContent>
             </Card>
 
-            {/* Don'ts */}
+            {/* Donts */}
             <Card className="border-red-200 bg-red-50/50">
               <CardHeader>
                 <CardTitle className="text-red-700 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5" />
-                  DON'Ts - Avoid These Mistakes
+                  DONTs - Avoid These Mistakes
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't visit midday:</strong> It's extremely hot and crowded (11 AM - 3 PM)
+                    <strong>Dont visit midday:</strong> Its extremely hot and crowded (11 AM - 3 PM)
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't wear flip-flops:</strong> The metal stairs can be slippery
+                    <strong>Dont wear flip-flops:</strong> The metal stairs can be slippery
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't photograph frescoes:</strong> It's strictly prohibited
+                    <strong>Dont photograph frescoes:</strong> Its strictly prohibited
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't rush:</strong> Take breaks and enjoy the views along the way
+                    <strong>Dont rush:</strong> Take breaks and enjoy the views along the way
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't litter:</strong> Keep this ancient wonder clean for future generations
+                    <strong>Dont litter:</strong> Keep this ancient wonder clean for future generations
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't climb if afraid of heights:</strong> The final stairs are quite steep
+                    <strong>Dont climb if afraid of heights:</strong> The final stairs are quite steep
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't forget tickets:</strong> Buy them at the entrance, not online
+                    <strong>Dont forget tickets:</strong> Buy them at the entrance, not online
                   </span>
                 </div>
               </CardContent>
@@ -575,7 +576,7 @@ export default function SigiriyaTravelGuide() {
                   <h4 className="font-semibold mb-3">Best Photo Spots:</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• Water gardens with rock backdrop</li>
-                    <li>• Lion's paws with people for scale</li>
+                    <li>• Lions paws with people for scale</li>
                     <li>• Summit panoramic views</li>
                     <li>• Sunrise/sunset from nearby Pidurangala Rock</li>
                   </ul>
@@ -650,7 +651,8 @@ export default function SigiriyaTravelGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Famous for "The Gathering" - hundreds of elephants come together during dry season. 1 hour drive.
+                  Famous for &quot;The Gathering&quot; - hundreds of elephants come together during dry season. 1 hour drive.
+
                 </p>
               </CardContent>
             </Card>
@@ -665,12 +667,12 @@ export default function SigiriyaTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Visiting Sigiriya is more than just ticking off a tourist attraction – it's a journey through time that
+                Visiting Sigiriya is more than just ticking off a tourist attraction – its a journey through time that
                 connects you with ancient Sri Lankan civilization. The climb might be challenging, but the sense of
                 achievement and the breathtaking views make every step worth it.
               </p>
               <p className="text-muted-foreground mb-4">
-                Remember, you're walking in the footsteps of ancient kings and monks. Take time to appreciate not just
+                Remember, youre walking in the footsteps of ancient kings and monks. Take time to appreciate not just
                 the destination, but the incredible engineering and artistry that went into creating this wonder 1,500
                 years ago.
               </p>

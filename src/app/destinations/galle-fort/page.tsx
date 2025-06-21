@@ -1,17 +1,17 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Ship, Waves } from 'lucide-react'
+import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Ship } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
+
 
 export const metadata: Metadata = {
-  title: "Galle Fort Sri Lanka: Complete Travel Guide 2024 | UNESCO World Heritage Colonial Fortress",
-  description: "Discover Galle Fort, Sri Lanka's best-preserved colonial fortress. Complete guide to Dutch architecture, lighthouse, museums, and the best things to do in this UNESCO World Heritage site.",
+  title: "Galle Fort Sri Lanka: Complete Travel Guide 2025 | UNESCO World Heritage Colonial Fortress",
+  description: "Discover Galle Fort, Sri Lankas best-preserved colonial fortress. Complete guide to Dutch architecture, lighthouse, museums, and the best things to do in this UNESCO World Heritage site.",
   keywords: "Galle Fort, Sri Lanka colonial history, Dutch fort, UNESCO World Heritage, Galle lighthouse, colonial architecture",
   openGraph: {
-    title: "Galle Fort Sri Lanka: Complete Travel Guide 2024",
-    description: "Your ultimate guide to exploring Galle Fort's colonial charm",
+    title: "Galle Fort Sri Lanka: Complete Travel Guide 2025",
+    description: "Your ultimate guide to exploring Galle Forts colonial charm",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -56,14 +56,14 @@ export default function GalleFortTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Galle Fort: A Living Colonial Museum</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into a time machine and walk through 400 years of colonial history at Galle Fort, Sri Lanka's 
+              Step into a time machine and walk through 400 years of colonial history at Galle Fort, Sri Lankas 
               best-preserved European fortress in Asia. This UNESCO World Heritage site is not just a museum piece – 
-              it's a vibrant, living community where colonial Dutch architecture meets modern Sri Lankan life, all 
+              its a vibrant, living community where colonial Dutch architecture meets modern Sri Lankan life, all 
               surrounded by the endless blue of the Indian Ocean.
             </p>
             <p className="text-lg">
               From cobblestone streets lined with boutique hotels and art galleries to ancient ramparts offering 
-              spectacular sunset views, Galle Fort is where history comes alive. Whether you're a history buff, 
+              spectacular sunset views, Galle Fort is where history comes alive. Whether youre a history buff, 
               architecture enthusiast, or simply seeking Instagram-worthy moments, this coastal gem promises an 
               unforgettable journey through time.
             </p>
@@ -137,13 +137,13 @@ export default function GalleFortTravelGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Galle Fort's story begins in 1505 when Portuguese explorers first arrived, but it was the Dutch who 
+                Galle Forts story begins in 1505 when Portuguese explorers first arrived, but it was the Dutch who 
                 transformed it into the magnificent fortress we see today. Built between 1663-1729, the fort served as 
-                the Dutch East India Company's main stronghold in Sri Lanka.
+                the Dutch East India Companys main stronghold in Sri Lanka.
               </p>
               <p>
                 The British later took control in 1796, adding their own architectural touches. What makes Galle Fort 
-                unique is that it's not an abandoned relic – it's a thriving community where families have lived for 
+                unique is that its not an abandoned relic – its a thriving community where families have lived for 
                 generations, maintaining the colonial charm while embracing modern life.
               </p>
               <div className="bg-amber-50 p-4 rounded-lg">
@@ -187,7 +187,7 @@ export default function GalleFortTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The fort's massive stone ramparts offer the best views in Galle. Walk the complete circuit (about 2km) 
+                      The forts massive stone ramparts offer the best views in Galle. Walk the complete circuit (about 2km) 
                       for stunning ocean vistas, especially magical during sunset. The walls are up to 12 meters high and 
                       2 meters thick in some places.
                     </p>
@@ -214,7 +214,7 @@ export default function GalleFortTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>2. Galle Lighthouse</CardTitle>
-                <CardDescription>Sri Lanka's oldest lighthouse still in operation</CardDescription>
+                <CardDescription>Sri Lankas oldest lighthouse still in operation</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -222,7 +222,7 @@ export default function GalleFortTravelGuide() {
                     <p className="text-muted-foreground mb-4">
                       Built in 1938, this 26-meter tall lighthouse is not just functional but also the most photographed 
                       landmark in Galle Fort. Located at the southeastern tip of the fort, it offers panoramic views of 
-                      the Indian Ocean and the fort's architecture.
+                      the Indian Ocean and the forts architecture.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -289,15 +289,15 @@ export default function GalleFortTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>4. National Maritime Museum</CardTitle>
-                <CardDescription>Discover Sri Lanka's maritime heritage</CardDescription>
+                <CardDescription>Discover Sri Lankas maritime heritage</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Housed in a beautiful Dutch warehouse, this museum showcases Sri Lanka's rich maritime history. 
-                      From ancient fishing techniques to colonial trade routes, it's a fascinating journey through the 
-                      island's relationship with the sea.
+                      Housed in a beautiful Dutch warehouse, this museum showcases Sri Lankas rich maritime history. 
+                      From ancient fishing techniques to colonial trade routes, its a fascinating journey through the 
+                      islands relationship with the sea.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -367,7 +367,7 @@ export default function GalleFortTravelGuide() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">Pedlar's Inn Cafe</h4>
+                  <h4 className="font-semibold mb-2">Pedlars Inn Cafe</h4>
                   <p className="text-sm text-muted-foreground">Colonial ambiance with excellent Sri Lankan and international cuisine.</p>
                 </div>
                 <div>
@@ -379,7 +379,7 @@ export default function GalleFortTravelGuide() {
                   <p className="text-sm text-muted-foreground">Fine dining in a restored colonial mansion with garden seating.</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Mama's Galle Fort Roof Cafe</h4>
+                  <h4 className="font-semibold mb-2">Mamas Galle Fort Roof Cafe</h4>
                   <p className="text-sm text-muted-foreground">Budget-friendly with great views and local dishes.</p>
                 </div>
               </CardContent>
@@ -387,15 +387,15 @@ export default function GalleFortTravelGuide() {
           </div>
         </section>
 
-        {/* Do's and Don'ts */}
+        {/* Dos and Donts */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Essential Do's and Don'ts for Galle Fort</h2>
+          <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts for Galle Fort</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-green-200 bg-green-50/50">
               <CardHeader>
                 <CardTitle className="text-green-700 flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
-                  DO's - Make the Most of Your Visit
+                  DOs - Make the Most of Your Visit
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
@@ -426,7 +426,7 @@ export default function GalleFortTravelGuide() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Respect local residents:</strong> It's a living community, not just a tourist site
+                    <strong>Respect local residents:</strong> Its a living community, not just a tourist site
                   </span>
                 </div>
               </CardContent>
@@ -436,38 +436,38 @@ export default function GalleFortTravelGuide() {
               <CardHeader>
                 <CardTitle className="text-red-700 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5" />
-                  DON'Ts - Avoid These Common Mistakes
+                  DONTs - Avoid These Common Mistakes
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't visit only during midday:</strong> Very hot and crowded with tour groups
+                    <strong>Dont visit only during midday:</strong> Very hot and crowded with tour groups
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't buy gems from street vendors:</strong> Stick to reputable shops with certificates
+                    <strong>Dont buy gems from street vendors:</strong> Stick to reputable shops with certificates
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't climb on fort walls:</strong> Dangerous and damages historical structures
+                    <strong>Dont climb on fort walls:</strong> Dangerous and damages historical structures
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't litter:</strong> Help preserve this UNESCO World Heritage site
+                    <strong>Dont litter:</strong> Help preserve this UNESCO World Heritage site
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't rush through:</strong> Take time to appreciate the colonial architecture
+                    <strong>Dont rush through:</strong> Take time to appreciate the colonial architecture
                   </span>
                 </div>
               </CardContent>
@@ -582,7 +582,7 @@ export default function GalleFortTravelGuide() {
                           className="rounded-lg mb-3"
                         />
                         <p className="text-sm text-muted-foreground">
-                          Famous for "The Gathering" - hundreds of elephants come together during dry season. 1 hour drive.
+                          Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
                         </p>
                       </CardContent>
                     </Card>
@@ -597,13 +597,13 @@ export default function GalleFortTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Galle Fort is more than just a historical site – it's a living testament to Sri Lanka's colonial past 
+                Galle Fort is more than just a historical site – its a living testament to Sri Lankas colonial past 
                 and vibrant present. Every cobblestone street, every colonial building, and every sunset view from the 
                 ramparts tells a story of cultural fusion and resilience.
               </p>
               <p className="text-muted-foreground mb-4">
                 Take your time to wander, discover hidden corners, chat with local residents, and soak in the unique 
-                atmosphere where 400 years of history blend seamlessly with contemporary Sri Lankan life. The fort's 
+                atmosphere where 400 years of history blend seamlessly with contemporary Sri Lankan life. The forts 
                 magic lies not just in its architecture, but in its soul.
               </p>
               <p className="text-muted-foreground font-medium">

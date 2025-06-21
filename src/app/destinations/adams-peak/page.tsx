@@ -5,14 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Adam's Peak Sri Lanka: Complete Climbing Guide 2024 | Sacred Mountain Pilgrimage",
+  title: "Adams Peak Sri Lanka: Complete Climbing Guide 2025 | Sacred Mountain Pilgrimage",
   description:
-    "Conquer Adam's Peak (Sri Pada), Sri Lanka's sacred mountain. Complete climbing guide with sunrise tips, best routes, and everything you need for this spiritual journey.",
+    "Conquer Adams Peak (Sri Pada), Sri Lankas sacred mountain. Complete climbing guide with sunrise tips, best routes, and everything you need for this spiritual journey.",
   keywords:
     "Adams Peak, Sri Pada, sacred mountain Sri Lanka, sunrise climb, pilgrimage, hiking Sri Lanka, sacred footprint, mountain climbing",
   openGraph: {
-    title: "Adam's Peak: Complete Climbing Guide 2024",
-    description: "Your ultimate guide to climbing Sri Lanka's most sacred mountain",
+    title: "Adams Peak: Complete Climbing Guide 2025",
+    description: "Your ultimate guide to climbing Sri Lankas most sacred mountain",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -25,14 +25,14 @@ export default function AdamsPeakTravelGuide() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/placeholder.svg?height=800&width=1200"
-          alt="Spectacular sunrise view from Adam's Peak summit showing the sacred mountain's shadow and pilgrims watching the dawn"
+          alt="Spectacular sunrise view from Adams Peak summit showing the sacred mountains shadow and pilgrims watching the dawn"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Adam's Peak</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Adams Peak</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sacred Mountain of Four Faiths</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
@@ -55,18 +55,18 @@ export default function AdamsPeakTravelGuide() {
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">
-            Welcome to Adam's Peak: Sri Lanka's Most Sacred Mountain
+            Welcome to Adams Peak: Sri Lankas Most Sacred Mountain
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Rising majestically to 2,243 meters above sea level, Adam's Peak (Sri Pada) is not just Sri Lanka's most
-              sacred mountain - it's a spiritual beacon that has drawn pilgrims from four major religions for over 1,000
-              years. This conical peak, crowned with a mysterious footprint-shaped depression, offers one of the world's
+              Rising majestically to 2,243 meters above sea level, Adams Peak (Sri Pada) is not just Sri Lankas most
+              sacred mountain - its a spiritual beacon that has drawn pilgrims from four major religions for over 1,000
+              years. This conical peak, crowned with a mysterious footprint-shaped depression, offers one of the worlds
               most profound spiritual and physical challenges.
             </p>
             <p className="text-lg">
-              Whether you're seeking spiritual enlightenment, physical adventure, or simply want to witness one of the
-              world's most spectacular sunrises, the climb to Adam's Peak is a transformative experience that combines
+              Whether youre seeking spiritual enlightenment, physical adventure, or simply want to witness one of the
+              worlds most spectacular sunrises, the climb to Adams Peak is a transformative experience that combines
               ancient pilgrimage traditions with breathtaking natural beauty.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function AdamsPeakTravelGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-500" />
-                Essential Adam's Peak Facts
+                Essential Adams Peak Facts
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -140,7 +140,7 @@ export default function AdamsPeakTravelGuide() {
             <div>
               <Image
                 src="/placeholder.svg?height=400&width=600"
-                alt="Sacred footprint depression at Adam's Peak summit with pilgrims paying respects and colorful prayer flags"
+                alt="Sacred footprint depression at Adams Peak summit with pilgrims paying respects and colorful prayer flags"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg"
@@ -151,26 +151,26 @@ export default function AdamsPeakTravelGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                At the summit of Adam's Peak lies a mysterious footprint-shaped depression in the rock, measuring 1.8
+                At the summit of Adams Peak lies a mysterious footprint-shaped depression in the rock, measuring 1.8
                 meters long. This sacred impression is revered by four major religions, each with their own
                 interpretation of its divine origin.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-blue-800 mb-2">Buddhism</h4>
-                  <p className="text-sm text-blue-700">Buddha's footprint left during his third visit to Sri Lanka</p>
+                  <p className="text-sm text-blue-700">Buddhas footprint left during his third visit to Sri Lanka</p>
                 </div>
                 <div className="bg-green-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-green-800 mb-2">Islam</h4>
-                  <p className="text-sm text-green-700">Adam's footprint when he was cast out of paradise</p>
+                  <p className="text-sm text-green-700">Adams footprint when he was cast out of paradise</p>
                 </div>
                 <div className="bg-purple-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-purple-800 mb-2">Hinduism</h4>
-                  <p className="text-sm text-purple-700">Lord Shiva's footprint during his cosmic dance</p>
+                  <p className="text-sm text-purple-700">Lord Shivas footprint during his cosmic dance</p>
                 </div>
                 <div className="bg-orange-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-orange-800 mb-2">Christianity</h4>
-                  <p className="text-sm text-orange-700">St. Thomas's footprint during his mission to India</p>
+                  <p className="text-sm text-orange-700">St. Thomass footprint during his mission to India</p>
                 </div>
               </div>
             </div>
@@ -197,7 +197,7 @@ export default function AdamsPeakTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Hatton-road.jpeg"
-                    alt="Nallathanniya route to Adam's Peak showing illuminated steps at night with pilgrims climbing"
+                    alt="Nallathanniya route to Adams Peak showing illuminated steps at night with pilgrims climbing"
                     width={400}
                     height={300}
                     className="rounded-lg"
@@ -245,8 +245,8 @@ export default function AdamsPeakTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      <b>Buddist people belives Loard buddha came to foot print this mountain during his third visit to Sri Lanka, and used this route to climb the mountain.</b> This route starts from Ratnapura and takes you through dense forest and wilderness areas. It's
-                      This route starts from Ratnapura and takes you through dense forest and wilderness areas. It's
+                      <b>Buddist people belives Loard buddha came to foot print this mountain during his third visit to Sri Lanka, and used this route to climb the mountain.</b> This route starts from Ratnapura and takes you through dense forest and wilderness areas. Its
+                      This route starts from Ratnapura and takes you through dense forest and wilderness areas. Its
                       significantly longer and more challenging but offers a more authentic wilderness experience with
                       fewer crowds.
                     </p>
@@ -275,7 +275,7 @@ export default function AdamsPeakTravelGuide() {
                   </div>
                   <Image
                     src="/Sripadaya-rathnapura.jpeg"
-                    alt="Ratnapura route through dense forest showing challenging wilderness path to Adam's Peak"
+                    alt="Ratnapura route through dense forest showing challenging wilderness path to Adams Peak"
                     width={400}
                     height={300}
                     className="rounded-lg"
@@ -293,7 +293,7 @@ export default function AdamsPeakTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This route starts from Ratnapura and takes you through dense forest and wilderness areas. It's
+                      This route starts from Ratnapura and takes you through dense forest and wilderness areas. Its
                       significantly longer and more challenging but offers a more authentic wilderness experience with
                       fewer crowds.
                     </p>
@@ -322,7 +322,7 @@ export default function AdamsPeakTravelGuide() {
                   </div>
                   <Image
                     src="/Erantha.jpeg"
-                    alt="Ratnapura route through dense forest showing challenging wilderness path to Adam's Peak"
+                    alt="Ratnapura route through dense forest showing challenging wilderness path to Adams Peak"
                     width={400}
                     height={300}
                     className="rounded-lg"
@@ -340,7 +340,7 @@ export default function AdamsPeakTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This route starts from Ratnapura and takes you through dense forest and wilderness areas. It's
+                      This route starts from Ratnapura and takes you through dense forest and wilderness areas. Its
                       significantly longer and more challenging but offers a more authentic wilderness experience with
                       fewer crowds.
                     </p>
@@ -369,7 +369,7 @@ export default function AdamsPeakTravelGuide() {
                   </div>
                   <Image
                     src="/placeholder.svg?height=300&width=400"
-                    alt="Ratnapura route through dense forest showing challenging wilderness path to Adam's Peak"
+                    alt="Ratnapura route through dense forest showing challenging wilderness path to Adams Peak"
                     width={400}
                     height={300}
                     className="rounded-lg"
@@ -454,14 +454,14 @@ export default function AdamsPeakTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <Image
               src="/placeholder.svg?height=400&width=600"
-              alt="Thousands of pilgrims climbing Adam's Peak during pilgrimage season with illuminated path at night"
+              alt="Thousands of pilgrims climbing Adams Peak during pilgrimage season with illuminated path at night"
               width={600}
               height={400}
               className="rounded-lg shadow-lg"
             />
             <div className="space-y-4 text-muted-foreground">
               <p>
-                During pilgrimage season (December to May), Adam's Peak transforms into a spiritual highway with
+                During pilgrimage season (December to May), Adams Peak transforms into a spiritual highway with
                 thousands of pilgrims making the sacred journey. The path is illuminated with lights, tea stalls operate
                 throughout the night, and the atmosphere is filled with devotional songs and chanting.
               </p>
@@ -477,7 +477,7 @@ export default function AdamsPeakTravelGuide() {
                 </ul>
               </div>
               <p>
-                The experience during pilgrimage season is truly unique - you'll be part of an ancient tradition that
+                The experience during pilgrimage season is truly unique - youll be part of an ancient tradition that
                 has continued for over 1,000 years, climbing alongside people from all walks of life united in their
                 spiritual quest.
               </p>
@@ -517,7 +517,7 @@ export default function AdamsPeakTravelGuide() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Stay hydrated:</strong> Drink water regularly but don't overdo it
+                    <strong>Stay hydrated:</strong> Drink water regularly but dont overdo it
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
@@ -580,7 +580,7 @@ export default function AdamsPeakTravelGuide() {
 
         {/* Getting There */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Getting to Adam's Peak</h2>
+          <h2 className="text-3xl font-bold mb-6">Getting to Adams Peak</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
@@ -653,7 +653,7 @@ export default function AdamsPeakTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4 text-muted-foreground">
               <p>
-                The sunrise from Adam's Peak is considered one of the world's most spectacular. As the first rays of
+                The sunrise from Adams Peak is considered one of the worlds most spectacular. As the first rays of
                 sunlight hit the summit, the mountain casts a perfect triangular shadow across the landscape - a
                 phenomenon that has amazed visitors for centuries.
               </p>
@@ -667,15 +667,15 @@ export default function AdamsPeakTravelGuide() {
                 <ul className="text-sm text-yellow-700 space-y-1">
                   <li>• Arrive 30 minutes before sunrise</li>
                   <li>• Bring a tripod for stable shots</li>
-                  <li>• Capture the mountain's shadow</li>
+                  <li>• Capture the mountains shadow</li>
                   <li>• Take photos of fellow pilgrims</li>
-                  <li>• Don't forget the sacred footprint</li>
+                  <li>• Dont forget the sacred footprint</li>
                 </ul>
               </div>
             </div>
             <Image
               src="/placeholder.svg?height=400&width=600"
-              alt="Spectacular sunrise from Adam's Peak showing the triangular shadow cast by the mountain across the landscape"
+              alt="Spectacular sunrise from Adams Peak showing the triangular shadow cast by the mountain across the landscape"
               width={600}
               height={400}
               className="rounded-lg shadow-lg"
@@ -687,13 +687,13 @@ export default function AdamsPeakTravelGuide() {
         <section className="mb-12">
           <Card className="bg-gradient-to-r from-purple-50 to-orange-50 border-purple-200">
             <CardHeader>
-              <CardTitle className="text-purple-800">Your Sacred Journey to Adam's Peak</CardTitle>
+              <CardTitle className="text-purple-800">Your Sacred Journey to Adams Peak</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Climbing Adam's Peak is more than just a physical challenge - it's a spiritual journey that connects you
-                with centuries of pilgrims who have made this sacred ascent. Whether you're seeking spiritual
-                enlightenment, personal achievement, or simply want to witness one of nature's most spectacular
+                Climbing Adams Peak is more than just a physical challenge - its a spiritual journey that connects you
+                with centuries of pilgrims who have made this sacred ascent. Whether youre seeking spiritual
+                enlightenment, personal achievement, or simply want to witness one of natures most spectacular
                 sunrises, this climb will leave you transformed.
               </p>
               <p className="text-muted-foreground mb-4">

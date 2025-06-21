@@ -175,7 +175,7 @@ export default function YalaNationalParkPage() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Yala National Park</h1>
-            <p className="text-xl md:text-2xl mb-6">Sri Lanka's Premier Wildlife Destination</p>
+            <p className="text-xl md:text-2xl mb-6">Sri Lanka’s Premier Wildlife Destination</p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-6">
               <div className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
@@ -255,7 +255,7 @@ export default function YalaNationalParkPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Yala National Park is Sri Lanka's second largest and most visited national park, renowned for having
+                  Yala National Park is Sri Lanka’s second largest and most visited national park, renowned for having
                   the highest density of leopards in the world. Located in the southeastern region of Sri Lanka, this
                   979 square kilometer park is a biodiversity hotspot that combines scrub jungle, grasslands, and
                   lagoons.
@@ -263,7 +263,7 @@ export default function YalaNationalParkPage() {
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   The park is home to 44 varieties of mammals and 215 bird species. Among its more famous residents are
-                  the world's biggest concentration of leopards, majestic elephants, sloth bears, sambars, chitals,
+                  the world’s biggest concentration of leopards, majestic elephants, sloth bears, sambars, chitals,
                   elephant shrews, and crocodiles. The park is also home to many endemic bird species such as the Ceylon
                   junglefowl and the black-necked stork.
                 </p>

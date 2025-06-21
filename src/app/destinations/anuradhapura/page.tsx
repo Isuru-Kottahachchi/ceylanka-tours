@@ -5,14 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Anuradhapura Sri Lanka: Complete Guide 2024 | Ancient Capital & Sacred City",
+  title: "Anuradhapura Sri Lanka: Complete Guide 2025 | Ancient Capital & Sacred City",
   description:
-    "Explore Anuradhapura, Sri Lanka's first capital and sacred Buddhist city. Complete guide to ancient ruins, sacred Bodhi tree, and UNESCO World Heritage sites.",
+    "Explore Anuradhapura, Sri Lankas first capital and sacred Buddhist city. Complete guide to ancient ruins, sacred Bodhi tree, and UNESCO World Heritage sites.",
   keywords:
     "Anuradhapura, ancient capital Sri Lanka, sacred Bodhi tree, Buddhist temples, UNESCO World Heritage, ancient ruins, dagobas",
   openGraph: {
-    title: "Anuradhapura: Complete Guide 2024",
-    description: "Your ultimate guide to Sri Lanka's ancient sacred capital",
+    title: "Anuradhapura: Complete Guide 2025",
+    description: "Your ultimate guide to Sri Lankas ancient sacred capital",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -33,7 +33,7 @@ export default function AnuradhapuraTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Anuradhapura</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Ancient Sacred Capital</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Ancient Sacred Capital</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -57,9 +57,9 @@ export default function AnuradhapuraTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Anuradhapura: Cradle of Buddhism</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step back 2,300 years into Sri Lanka's glorious past at Anuradhapura, the island's first capital and one
+              Step back 2,300 years into Sri Lankas glorious past at Anuradhapura, the islands first capital and one
               of the oldest continuously inhabited cities in the world. This UNESCO World Heritage site is not just an
-              archaeological wonder - it's the sacred heart of Sri Lankan Buddhism, home to the world's oldest recorded
+              archaeological wonder - its the sacred heart of Sri Lankan Buddhism, home to the worlds oldest recorded
               tree and some of the most magnificent ancient monuments in Asia.
             </p>
             <p className="text-lg">
@@ -146,7 +146,7 @@ export default function AnuradhapuraTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>1. Sri Maha Bodhi Tree</CardTitle>
-                <CardDescription>The world's oldest recorded tree - 2,300+ years old</CardDescription>
+                <CardDescription>The worlds oldest recorded tree - 2,300+ years old</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -166,11 +166,11 @@ export default function AnuradhapuraTravelGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        World's oldest recorded tree with documented history
+                        Worlds oldest recorded tree with documented history
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Direct descendant of Buddha's enlightenment tree
+                        Direct descendant of Buddhas enlightenment tree
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -234,7 +234,7 @@ export default function AnuradhapuraTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>3. Jetavanaramaya Dagoba</CardTitle>
-                <CardDescription>Once the world's third tallest structure</CardDescription>
+                <CardDescription>Once the worlds third tallest structure</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -247,7 +247,7 @@ export default function AnuradhapuraTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in the 3rd century AD, Jetavanaramaya was once the world's third tallest structure after the
+                      Built in the 3rd century AD, Jetavanaramaya was once the worlds third tallest structure after the
                       pyramids of Giza. Though partially ruined, it still stands at an impressive 70 meters and
                       showcases the engineering prowess of ancient Sri Lankan civilization.
                     </p>
@@ -262,7 +262,7 @@ export default function AnuradhapuraTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains Buddha's sash relic
+                        Contains Buddhas sash relic
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -311,14 +311,14 @@ export default function AnuradhapuraTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">First Dagoba in Sri Lanka</h4>
                   <p className="text-sm text-muted-foreground">
-                    Built in 3rd century BC, it's the oldest dagoba in Sri Lanka and contains Buddha's collarbone relic.
+                    Built in 3rd century BC, its the oldest dagoba in Sri Lanka and contains Buddhas collarbone relic.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Unique Features</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Bell-shaped design (original style)</li>
-                    <li>• Contains Buddha's collarbone</li>
+                    <li>• Contains Buddhas collarbone</li>
                     <li>• Surrounded by stone pillars</li>
                     <li>• Restored multiple times</li>
                   </ul>
@@ -351,8 +351,8 @@ export default function AnuradhapuraTravelGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Famous for the "Isurumuniya Lovers" carving and beautiful rock-cut architecture from the 3rd century
-                  BC.
+               Famous for the &quot;Isurumuniya Lovers&quot; carving and beautiful rock-cut architecture from the 3rd century BC.
+
                 </p>
               </CardContent>
             </Card>
@@ -456,7 +456,7 @@ export default function AnuradhapuraTravelGuide() {
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Remove shoes at sacred sites</li>
                     <li>• Cover shoulders and knees</li>
-                    <li>• Don't point feet toward Buddha statues</li>
+                    <li>• Dont point feet toward Buddha statues</li>
                     <li>• Maintain respectful silence</li>
                     <li>• Photography rules vary by site</li>
                   </ul>
@@ -537,20 +537,20 @@ export default function AnuradhapuraTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Anuradhapura is more than an archaeological site - it's a living testament to 2,300 years of continuous
-                Buddhist civilization. As you cycle through this ancient city, you're following paths walked by kings,
+                Anuradhapura is more than an archaeological site - its a living testament to 2,300 years of continuous
+                Buddhist civilization. As you cycle through this ancient city, youre following paths walked by kings,
                 monks, and pilgrims for over two millennia. Each dagoba, each carved stone, and each sacred tree tells a
                 story of faith, artistry, and human achievement.
               </p>
               <p className="text-muted-foreground mb-4">
                 Take time to sit quietly at the sacred Bodhi tree, marvel at the engineering genius of the ancient
                 dagobas, and appreciate the spiritual atmosphere that has made this city a pilgrimage destination for
-                centuries. Remember that you're visiting not just historical monuments, but active places of worship
+                centuries. Remember that youre visiting not just historical monuments, but active places of worship
                 that continue to inspire devotion and wonder.
               </p>
               <p className="text-muted-foreground font-medium">
                 May your journey through this sacred city bring you peace, wisdom, and a deeper appreciation for Sri
-                Lanka's incredible spiritual heritage! 🙏🌳✨
+                Lankas incredible spiritual heritage! 🙏🌳✨
               </p>
             </CardContent>
           </Card>

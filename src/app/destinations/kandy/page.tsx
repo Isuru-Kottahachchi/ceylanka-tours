@@ -5,14 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Kandy Sri Lanka: Complete Travel Guide 2024 | Temple of the Tooth & Cultural Capital",
+  title: "Kandy Sri Lanka: Complete Travel Guide 2025 | Temple of the Tooth & Cultural Capital",
   description:
-    "Discover Kandy, Sri Lanka's cultural capital. Complete guide to Temple of the Tooth, Kandy Lake, cultural shows, and the best things to do in this UNESCO World Heritage city.",
+    "Discover Kandy, Sri Lankas cultural capital. Complete guide to Temple of the Tooth, Kandy Lake, cultural shows, and the best things to do in this UNESCO World Heritage city.",
   keywords:
     "Kandy Sri Lanka, Temple of the Tooth, Kandy Maligawa, cultural capital, UNESCO World Heritage, Sri Lanka travel",
   openGraph: {
-    title: "Kandy Sri Lanka: Complete Travel Guide 2024",
-    description: "Your ultimate guide to Kandy, Sri Lanka's cultural heart",
+    title: "Kandy Sri Lanka: Complete Travel Guide 2025",
+    description: "Your ultimate guide to Kandy, Sri Lankas cultural heart",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -25,7 +25,7 @@ export default function KandyTravelGuide() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/placeholder.svg?height=800&width=1200"
-          alt="Beautiful view of Kandy Lake with Temple of the Tooth and surrounding hills in Sri Lanka's cultural capital"
+          alt="Beautiful view of Kandy Lake with Temple of the Tooth and surrounding hills in Sri Lankas cultural capital"
           fill
           className="object-cover"
           priority
@@ -33,7 +33,7 @@ export default function KandyTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Kandy</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Sacred Cultural Capital</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Sacred Cultural Capital</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -63,8 +63,8 @@ export default function KandyTravelGuide() {
               perfect blend of ancient traditions, colonial architecture, and breathtaking landscapes.
             </p>
             <p className="text-lg">
-              Whether you're seeking spiritual enlightenment, cultural immersion, or simply want to experience the charm
-              of old Ceylon, Kandy promises an unforgettable journey through Sri Lanka's rich heritage.
+              Whether youre seeking spiritual enlightenment, cultural immersion, or simply want to experience the charm
+              of old Ceylon, Kandy promises an unforgettable journey through Sri Lankas rich heritage.
             </p>
           </div>
         </section>
@@ -143,19 +143,19 @@ export default function KandyTravelGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                The sacred Temple of the Tooth Relic - Buddhism's most important shrine
+                The sacred Temple of the Tooth Relic - Buddhisms most important shrine
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                The Temple of the Tooth Relic is not just Kandy's crown jewel – it's one of Buddhism's most sacred sites
+                The Temple of the Tooth Relic is not just Kandys crown jewel – its one of Buddhisms most sacred sites
                 worldwide. This magnificent temple houses a tooth relic of Lord Buddha, making it a pilgrimage
                 destination for millions of Buddhists from around the globe.
               </p>
               <p>
                 Built in the 16th century, the temple showcases exquisite Kandyan architecture with its intricate
                 woodwork, beautiful paintings, and golden roof. The daily rituals (pujas) held here are deeply moving
-                spiritual experiences that offer visitors a glimpse into Sri Lanka's Buddhist heritage.
+                spiritual experiences that offer visitors a glimpse into Sri Lankas Buddhist heritage.
               </p>
               <div className="bg-blue-50 p-4 rounded-lg">
                 <h4 className="font-semibold text-blue-800 mb-2">Puja Times (Daily Rituals):</h4>
@@ -230,7 +230,7 @@ export default function KandyTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Just 6km from Kandy city, these world-renowned botanical gardens are home to over 4,000 species of
-                      plants. Originally a royal pleasure garden, it's now one of the finest botanical gardens in Asia.
+                      plants. Originally a royal pleasure garden, its now one of the finest botanical gardens in Asia.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -279,7 +279,7 @@ export default function KandyTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Don't miss the spectacular Kandyan cultural shows featuring traditional dances, fire walking, and
+                      Dont miss the spectacular Kandyan cultural shows featuring traditional dances, fire walking, and
                       drumming. These performances showcase centuries-old traditions passed down through generations.
                     </p>
                     <div className="bg-purple-50 p-4 rounded-lg">
@@ -302,15 +302,15 @@ export default function KandyTravelGuide() {
           [Advertisement Space - 728x90 Leaderboard]
         </div>
 
-        {/* Do's and Don'ts */}
+        {/* Dos and Donts */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Essential Do's and Don'ts for Kandy</h2>
+          <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts for Kandy</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-green-200 bg-green-50/50">
               <CardHeader>
                 <CardTitle className="text-green-700 flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
-                  DO's - Respect the Sacred City
+                  DOs - Respect the Sacred City
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
@@ -341,7 +341,8 @@ export default function KandyTravelGuide() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Learn basic Sinhala:</strong> "Ayubowan" (hello) goes a long way
+                  <strong>Learn basic Sinhala:</strong> &quot;Ayubowan&quot; (hello) goes a long way
+
                   </span>
                 </div>
               </CardContent>
@@ -351,38 +352,38 @@ export default function KandyTravelGuide() {
               <CardHeader>
                 <CardTitle className="text-red-700 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5" />
-                  DON'Ts - Avoid Cultural Mistakes
+                  DONTs - Avoid Cultural Mistakes
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't point feet:</strong> Never point your feet toward Buddha statues
+                    <strong>Dont point feet:</strong> Never point your feet toward Buddha statues
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't turn your back:</strong> Avoid turning your back to Buddha statues
+                    <strong>Dont turn your back:</strong> Avoid turning your back to Buddha statues
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't wear hats:</strong> Remove hats and caps inside temples
+                    <strong>Dont wear hats:</strong> Remove hats and caps inside temples
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't be loud:</strong> Maintain respectful silence in sacred areas
+                    <strong>Dont be loud:</strong> Maintain respectful silence in sacred areas
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Don't rush:</strong> Take time to appreciate the spiritual atmosphere
+                    <strong>Dont rush:</strong> Take time to appreciate the spiritual atmosphere
                   </span>
                 </div>
               </CardContent>
@@ -495,7 +496,7 @@ export default function KandyTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Train Journey</h4>
                   <p className="text-sm text-muted-foreground">
-                    One of the world's most scenic train rides through tea plantations
+                    One of the worlds most scenic train rides through tea plantations
                   </p>
                 </div>
               </CardContent>
@@ -575,12 +576,12 @@ export default function KandyTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Kandy is more than just a destination – it's a spiritual journey that connects you with the soul of Sri
+                Kandy is more than just a destination – its a spiritual journey that connects you with the soul of Sri
                 Lanka. From the sacred Temple of the Tooth to the serene lake walks, every moment in this cultural
                 capital offers something magical.
               </p>
               <p className="text-muted-foreground mb-4">
-                Take time to immerse yourself in the local culture, attend a traditional dance performance, and don't
+                Take time to immerse yourself in the local culture, attend a traditional dance performance, and dont
                 rush through the temples. The beauty of Kandy lies not just in its sights, but in the peaceful
                 atmosphere that has made it a pilgrimage destination for centuries.
               </p>

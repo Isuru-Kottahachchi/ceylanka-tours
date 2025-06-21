@@ -5,14 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Yapahuwa Sri Lanka: Complete Guide 2024 | Ancient Rock Fortress & Royal Capital",
+  title: "Yapahuwa Sri Lanka: Complete Guide 2025| Ancient Rock Fortress & Royal Capital",
   description:
-    "Explore Yapahuwa, Sri Lanka's medieval rock fortress and ancient capital. Complete guide to the ornate stone stairway, royal palace ruins, and archaeological treasures.",
+    "Explore Yapahuwa, Sri Lankas medieval rock fortress and ancient capital. Complete guide to the ornate stone stairway, royal palace ruins, and archaeological treasures.",
   keywords:
     "Yapahuwa, rock fortress Sri Lanka, ancient capital, stone stairway, medieval architecture, archaeological site, royal palace",
   openGraph: {
-    title: "Yapahuwa: Complete Guide 2024",
-    description: "Your ultimate guide to Sri Lanka's magnificent medieval rock fortress",
+    title: "Yapahuwa: Complete Guide 2025",
+    description: "Your ultimate guide to Sri Lankas magnificent medieval rock fortress",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -33,7 +33,7 @@ export default function YapahuwaravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Yapahuwa</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Medieval Rock Fortress</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Medieval Rock Fortress</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -57,10 +57,11 @@ export default function YapahuwaravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Yapahuwa: The Lion Rock of the North</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Rising dramatically from the northwestern plains of Sri Lanka, Yapahuwa stands as one of the island's most
+              Rising dramatically from the northwestern plains of Sri Lanka, Yapahuwa stands as one of the islands most
               impressive medieval fortresses and a testament to 13th-century architectural brilliance. Often called the
-              "Lion Rock of the North," this 90-meter high granite outcrop served as Sri Lanka's capital for 11 years
+              &quot;Lion Rock of the North&quot; this 90-meter high granite outcrop served as Sri Lankas capital for 11 years
               and houses some of the finest stone carvings in the country.
+
             </p>
             <p className="text-lg">
               From the magnificent ornate stairway that rivals Sigiriya in grandeur to the ruins of the royal palace
@@ -145,22 +146,22 @@ export default function YapahuwaravelGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                Artist's impression of Yapahuwa during its golden age as Sri Lanka's capital
+                Artists impression of Yapahuwa during its golden age as Sri Lankas capital
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Yapahuwa's story begins in 1273 when King Bhuvanekabahu I chose this strategic rock fortress as his
+                Yapahuwas story begins in 1273 when King Bhuvanekabahu I chose this strategic rock fortress as his
                 capital, moving the seat of power from Polonnaruwa. The location was chosen for its defensive advantages
                 and its position along important trade routes connecting the interior with coastal ports.
               </p>
               <p>
-                For 11 years, Yapahuwa served as the island's political and religious center, housing the sacred Tooth
+                For 11 years, Yapahuwa served as the islands political and religious center, housing the sacred Tooth
                 Relic of Buddha in its magnificent palace complex. The king commissioned elaborate stone carvings and
                 architectural works that rivaled the greatest achievements of medieval Sri Lankan art.
               </p>
               <p>
-                However, the capital's glory was short-lived. After King Bhuvanekabahu's death in 1284, the Tooth Relic
+                However, the capitals glory was short-lived. After King Bhuvanekabahus death in 1284, the Tooth Relic
                 was moved, and Yapahuwa was gradually abandoned, leaving behind the remarkable ruins we see today.
               </p>
             </div>
@@ -285,7 +286,7 @@ export default function YapahuwaravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Located at the base of the rock, the archaeological museum houses a fascinating collection of
-                      artifacts discovered during excavations at Yapahuwa. The exhibits provide context for the site's
+                      artifacts discovered during excavations at Yapahuwa. The exhibits provide context for the sites
                       history and showcase the artistic and cultural achievements of the medieval period.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -526,8 +527,8 @@ export default function YapahuwaravelGuide() {
             <CardContent>
               <p className="text-muted-foreground mb-4">
                 Yapahuwa offers a unique opportunity to explore a lesser-known but equally fascinating chapter of Sri
-                Lankan history. As you climb the ornate stairway and explore the royal palace ruins, you're walking in
-                the footsteps of medieval kings and experiencing architectural artistry that rivals the island's most
+                Lankan history. As you climb the ornate stairway and explore the royal palace ruins, youre walking in
+                the footsteps of medieval kings and experiencing architectural artistry that rivals the islands most
                 famous sites.
               </p>
               <p className="text-muted-foreground mb-4">
@@ -536,7 +537,7 @@ export default function YapahuwaravelGuide() {
                 magnificent site in peaceful solitude, making your experience even more special.
               </p>
               <p className="text-muted-foreground font-medium">
-                Enjoy your journey through Sri Lanka's medieval masterpiece! 🏰👑⛰️
+                Enjoy your journey through Sri Lankas medieval masterpiece! 🏰👑⛰️
               </p>
             </CardContent>
           </Card>

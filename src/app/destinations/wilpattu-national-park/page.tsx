@@ -1,18 +1,18 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, TreePine, TelescopeIcon as Binoculars } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Calendar, TreePine, TelescopeIcon as Binoculars } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Wilpattu National Park Sri Lanka: Complete Safari Guide 2024 | Leopards & Wildlife Paradise",
+  title: "Wilpattu National Park Sri Lanka: Complete Safari Guide 2025 | Leopards & Wildlife Paradise",
   description:
-    "Explore Wilpattu National Park, Sri Lanka's largest and oldest national park. Complete safari guide with leopard spotting, unique villus ecosystem, and wildlife photography tips.",
+    "Explore Wilpattu National Park, Sri Lankas largest and oldest national park. Complete safari guide with leopard spotting, unique villus ecosystem, and wildlife photography tips.",
   keywords:
     "Wilpattu National Park, Sri Lanka safari, leopard spotting, villus lakes, wildlife photography, national park safari, Sri Lanka wildlife",
   openGraph: {
-    title: "Wilpattu National Park: Complete Safari Guide 2024",
-    description: "Your ultimate guide to Sri Lanka's largest national park",
+    title: "Wilpattu National Park: Complete Safari Guide 2025",
+    description: "Your ultimate guide to Sri Lankas largest national park",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -33,7 +33,7 @@ export default function WilpattuNationalParkTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Wilpattu National Park</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Largest Wildlife Sanctuary</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Largest Wildlife Sanctuary</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -57,14 +57,14 @@ export default function WilpattuNationalParkTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Wilpattu: Land of Natural Lakes</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Enter the wild heart of Sri Lanka at Wilpattu National Park, the island's largest and oldest national
-              park, covering 1,317 square kilometers of pristine wilderness. Famous for its unique "villu" (natural
+              Enter the wild heart of Sri Lanka at Wilpattu National Park, the islands largest and oldest national
+              park, covering 1,317 square kilometers of pristine wilderness. Famous for its unique villu (natural
               lakes) ecosystem and significant leopard population, Wilpattu offers an authentic safari experience in one
-              of Asia's most biodiverse landscapes.
+              of Asias most biodiverse landscapes.
             </p>
             <p className="text-lg">
               From the elusive Sri Lankan leopard to massive elephant herds, from rare sloth bears to over 200 bird
-              species, Wilpattu's diverse habitats support an incredible array of wildlife. The park's network of
+              species, Wilpattus diverse habitats support an incredible array of wildlife. The parks network of
               natural lakes creates a unique ecosystem that attracts animals year-round, making every safari drive an
               adventure filled with potential discoveries.
             </p>
@@ -150,9 +150,10 @@ export default function WilpattuNationalParkTravelGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Wilpattu gets its name from "Willpattu," meaning "Land of Lakes" in Sinhala. The park contains nearly 60
-                natural lakes called "villus," formed by rainwater collection in natural depressions. These villus are
-                the lifeblood of the park's ecosystem, providing year-round water sources that attract diverse wildlife.
+                Wilpattu gets its name from &quot;Willpattu,&quot; meaning &quot;Land of Lakes&quot; in Sinhala. The park contains nearly 60
+                natural lakes called &quot;villus,&quot; formed by rainwater collection in natural depressions. These villus are
+                the lifeblood of the park&apos;s ecosystem, providing year-round water sources that attract diverse wildlife.
+
               </p>
               <p>
                 Each villu creates its own microhabitat, supporting different plant communities and attracting various
@@ -238,7 +239,7 @@ export default function WilpattuNationalParkTravelGuide() {
                     <p className="text-muted-foreground mb-4">
                       Large herds of Asian elephants roam freely throughout Wilpattu, particularly during the dry
                       season when they gather around permanent water sources. These intelligent giants play a crucial
-                      role in maintaining the park's ecosystem through seed dispersal and habitat modification.
+                      role in maintaining the parks ecosystem through seed dispersal and habitat modification.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -377,7 +378,7 @@ export default function WilpattuNationalParkTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Wildlife Guarantee</h4>
                   <p className="text-sm text-muted-foreground">
-                    While sightings can't be guaranteed, Wilpattu offers excellent chances for diverse wildlife
+                    While sightings cant be guaranteed, Wilpattu offers excellent chances for diverse wildlife
                     encounters.
                   </p>
                 </div>
@@ -587,18 +588,18 @@ export default function WilpattuNationalParkTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Wilpattu National Park offers one of Sri Lanka's most authentic and rewarding safari experiences. The
-                park's unique villu ecosystem, diverse wildlife, and relatively fewer visitors create an intimate
-                connection with nature that's increasingly rare in today's world.
+                Wilpattu National Park offers one of Sri Lankas most authentic and rewarding safari experiences. The
+                parks unique villu ecosystem, diverse wildlife, and relatively fewer visitors create an intimate
+                connection with nature thats increasingly rare in todays world.
               </p>
               <p className="text-muted-foreground mb-4">
                 Remember that wildlife viewing requires patience and respect for the animals and their habitat. Follow
-                your guide's instructions, maintain appropriate distances from wildlife, and embrace the unpredictability
+                your guides instructions, maintain appropriate distances from wildlife, and embrace the unpredictability
                 that makes each safari unique. Whether you spot the elusive leopard or simply enjoy the serene beauty of
                 the villus, Wilpattu will leave you with unforgettable memories.
               </p>
               <p className="text-muted-foreground font-medium">
-                Enjoy your wild adventure in Sri Lanka's largest national park! 🐆🐘🌿
+                Enjoy your wild adventure in Sri Lankas largest national park! 🐆🐘🌿
               </p>
             </CardContent>
           </Card>

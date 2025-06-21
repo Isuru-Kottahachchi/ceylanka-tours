@@ -1,18 +1,18 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Palmtree } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Palmtree } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Pasikuda Sri Lanka: Complete Beach Guide 2024 | Pristine Bay & Shallow Waters",
+  title: "Pasikuda Sri Lanka: Complete Beach Guide 2025 | Pristine Bay & Shallow Waters",
   description:
-    "Discover Pasikuda, Sri Lanka's pristine eastern beach paradise. Complete guide to shallow coral bay, luxury resorts, water sports, and the perfect tropical getaway.",
+    "Discover Pasikuda, Sri Lankas pristine eastern beach paradise. Complete guide to shallow coral bay, luxury resorts, water sports, and the perfect tropical getaway.",
   keywords:
     "Pasikuda beach, Sri Lanka beaches, shallow bay, coral reef, luxury resorts, water sports, eastern coast, tropical paradise",
   openGraph: {
-    title: "Pasikuda: Complete Beach Guide 2024",
-    description: "Your ultimate guide to Sri Lanka's pristine eastern beach paradise",
+    title: "Pasikuda: Complete Beach Guide 2025",
+    description: "Your ultimate guide to Sri Lankas pristine eastern beach paradise",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -33,7 +33,7 @@ export default function PasikudaTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Pasikuda</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Pristine Eastern Paradise</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Pristine Eastern Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -57,8 +57,8 @@ export default function PasikudaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Pasikuda: Where Paradise Meets Perfection</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Discover Pasikuda, Sri Lanka's most pristine beach destination on the stunning eastern coast. This
-              crescent-shaped bay boasts some of the island's clearest waters, finest white sand, and most spectacular
+              Discover Pasikuda, Sri Lankas most pristine beach destination on the stunning eastern coast. This
+              crescent-shaped bay boasts some of the islands clearest waters, finest white sand, and most spectacular
               coral reefs, all protected within a shallow lagoon that extends nearly 2 kilometers into the ocean.
             </p>
             <p className="text-lg">
@@ -150,7 +150,7 @@ export default function PasikudaTravelGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Pasikuda's most remarkable feature is its unique geography - a shallow coral bay that extends nearly 2
+                Pasikudas most remarkable feature is its unique geography - a shallow coral bay that extends nearly 2
                 kilometers into the Indian Ocean while maintaining a depth of just 1-2 meters. This creates an enormous
                 natural swimming pool with crystal-clear waters that remain calm even when the ocean beyond is rough.
               </p>
@@ -200,7 +200,7 @@ export default function PasikudaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Pasikuda's coral reefs are among Sri Lanka's most accessible and pristine. The shallow, clear
+                      Pasikudas coral reefs are among Sri Lankas most accessible and pristine. The shallow, clear
                       waters make it perfect for beginners, while the diversity of marine life satisfies experienced
                       snorkelers and divers. The protected bay ensures excellent visibility year-round.
                     </p>
@@ -238,7 +238,7 @@ export default function PasikudaTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       The calm, shallow waters of Pasikuda create ideal conditions for a wide range of water sports.
-                      From gentle kayaking through the coral gardens to thrilling jet skiing in the deeper areas, there's
+                      From gentle kayaking through the coral gardens to thrilling jet skiing in the deeper areas, theres
                       something for every adventure level and age group.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -288,7 +288,7 @@ export default function PasikudaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Beyond the water activities, Pasikuda offers some of Sri Lanka's finest beach relaxation
+                      Beyond the water activities, Pasikuda offers some of Sri Lankas finest beach relaxation
                       experiences. The soft white sand, gentle sea breeze, and stunning sunrises create the perfect
                       setting for ultimate tropical relaxation.
                     </p>
@@ -522,12 +522,12 @@ export default function PasikudaTravelGuide() {
                 island, making it a truly special destination for beach lovers and water sports enthusiasts alike.
               </p>
               <p className="text-muted-foreground mb-4">
-                Take time to explore both the underwater coral gardens and the pristine beaches above. Whether you're
+                Take time to explore both the underwater coral gardens and the pristine beaches above. Whether youre
                 seeking adventure in the crystal-clear waters or pure relaxation on the white sand, Pasikuda offers an
                 experience that will exceed your expectations and create memories to last a lifetime.
               </p>
               <p className="text-muted-foreground font-medium">
-                Enjoy your slice of paradise on Sri Lanka's eastern coast! 🏖️🐠🌊
+                Enjoy your slice of paradise on Sri Lankas eastern coast! 🏖️🐠🌊
               </p>
             </CardContent>
           </Card>

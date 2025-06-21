@@ -5,14 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-  title: "Yala National Park Sri Lanka: Complete Safari Guide 2024 | Leopard Capital of the World",
+  title: "Yala National Park Sri Lanka: Complete Safari Guide 2025 | Leopard Capital of the World",
   description:
-    "Discover Yala National Park, Sri Lanka's premier wildlife destination. Complete safari guide with leopard spotting tips, best times to visit, and everything you need to know.",
+    "Discover Yala National Park, Sri Lanka’s premier wildlife destination. Complete safari guide with leopard spotting tips, best times to visit, and everything you need to know.",
   keywords:
     "Yala National Park, Sri Lanka safari, leopard spotting, wildlife photography, elephant watching, safari tours, national park Sri Lanka",
   openGraph: {
-    title: "Yala National Park: Complete Safari Guide 2024",
-    description: "Your ultimate guide to Sri Lanka's most famous national park",
+    title: "Yala National Park: Complete Safari Guide 2025",
+    description: "Your ultimate guide to Sri Lanka’s most famous national park",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -33,7 +33,7 @@ export default function YalaNationalParkTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Yala National Park</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Premier Wildlife Safari Destination</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka’s Premier Wildlife Safari Destination</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -57,15 +57,15 @@ export default function YalaNationalParkTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Yala: The Leopard Capital of the World</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Get ready for the wildlife adventure of a lifetime! Yala National Park is Sri Lanka's most visited and
+              Get ready for the wildlife adventure of a lifetime! Yala National Park is Sri Lanka’s most visited and
               second-largest national park, famous for having the highest density of leopards in the world. This
               979-square-kilometer wilderness sanctuary is home to an incredible diversity of wildlife, from majestic
               elephants and elusive leopards to colorful birds and ancient ruins.
             </p>
             <p className="text-lg">
-              Whether you're a wildlife photographer, nature enthusiast, or adventure seeker, Yala offers an
+              Whether you’re a wildlife photographer, nature enthusiast, or adventure seeker, Yala offers an
               unforgettable safari experience where every game drive brings the possibility of extraordinary wildlife
-              encounters in one of Asia's most biodiverse ecosystems.
+              encounters in one of Asia’s most biodiverse ecosystems.
             </p>
           </div>
         </section>
@@ -90,7 +90,7 @@ export default function YalaNationalParkTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-blue-500" />
                     <span>
-                      <strong>Established:</strong> 1938 (Sri Lanka's first national park)
+                      <strong>Established:</strong> 1938 (Sri Lanka’s first national park)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -133,7 +133,7 @@ export default function YalaNationalParkTravelGuide() {
 
         {/* Wildlife Highlights */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Incredible Wildlife You'll Encounter</h2>
+          <h2 className="text-3xl font-bold mb-6">Incredible Wildlife You’ll Encounter</h2>
 
           {/* Ad Space */}
           <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
@@ -160,7 +160,7 @@ export default function YalaNationalParkTravelGuide() {
                     <p className="text-muted-foreground mb-4">
                       Yala is world-renowned for its leopard population, with the highest density globally. These
                       magnificent big cats are larger than their African and Asian counterparts, with males weighing up
-                      to 77kg. Unlike other leopard populations, Yala's leopards are often active during daylight.
+                      to 77kg. Unlike other leopard populations, Yala’s leopards are often active during daylight.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -196,7 +196,7 @@ export default function YalaNationalParkTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Yala is home to approximately 300-350 elephants, making it one of the best places in Sri Lanka to
-                      observe these magnificent creatures. You'll often encounter large herds, especially near water
+                      observe these magnificent creatures. You’ll often encounter large herds, especially near water
                       sources during the dry season.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -285,7 +285,7 @@ export default function YalaNationalParkTravelGuide() {
                   <p className="text-sm text-muted-foreground">2:30 PM - 6:30 PM (Great for elephants and birds)</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Entry Fees (2024)</h4>
+                  <h4 className="font-semibold mb-2">Entry Fees (2025)</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Foreign Adults: $15 USD + taxes</li>
                     <li>• Foreign Children: $8 USD + taxes</li>
@@ -321,7 +321,7 @@ export default function YalaNationalParkTravelGuide() {
                     <li>• Bring telephoto lens (300mm minimum)</li>
                     <li>• No flash photography allowed</li>
                     <li>• Maintain safe distance from animals</li>
-                    <li>• Respect your guide's instructions</li>
+                    <li>• Respect your guide’s instructions</li>
                   </ul>
                 </div>
                 <div>
@@ -345,7 +345,7 @@ export default function YalaNationalParkTravelGuide() {
 
         {/* Park Zones */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Yala's Different Zones</h2>
+          <h2 className="text-3xl font-bold mb-6">Yala’s Different Zones</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
@@ -513,13 +513,13 @@ export default function YalaNationalParkTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Yala National Park offers one of the world's most thrilling wildlife experiences. From the
+                Yala National Park offers one of the world’s most thrilling wildlife experiences. From the
                 heart-stopping moment of spotting a leopard to the gentle giants of elephant herds, every safari brings
                 new discoveries and unforgettable memories. Remember that wildlife viewing requires patience - the best
                 moments often come to those who wait quietly and observe carefully.
               </p>
               <p className="text-muted-foreground mb-4">
-                Respect the wildlife and their habitat by following your guide's instructions, maintaining safe
+                Respect the wildlife and their habitat by following your guide’s instructions, maintaining safe
                 distances, and keeping noise to a minimum. Your visit helps support conservation efforts that protect
                 these magnificent creatures for future generations.
               </p>
