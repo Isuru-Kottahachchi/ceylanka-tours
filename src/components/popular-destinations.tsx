@@ -20,7 +20,7 @@ const destinations = [
     id: 2,
     name: "Galle Fort",
     location: "Southern Province",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/galle-fort-sarmat-batagov-unsplash.jpg",
     rating: 4.7,
     reviews: 980,
     description: "Historic fortified city built by Portuguese and Dutch colonizers",

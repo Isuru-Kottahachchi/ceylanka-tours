@@ -24,7 +24,7 @@ export default function PasikudaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/PasikudaCover.jpeg"
           alt="Stunning aerial view of Pasikuda beach showing pristine white sand, crystal clear shallow waters, and coral reefs"
           fill
           className="object-cover"

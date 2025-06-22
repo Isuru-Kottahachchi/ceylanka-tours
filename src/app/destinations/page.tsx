@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { MapPin, Star, Search, Filter } from "lucide-react"
 import { AdBanner } from "@/components/ad-banner"
+import path from "path"
 
 const destinations = [
   {
@@ -36,7 +37,7 @@ const destinations = [
     id: 3,
     name: "Kandy Temple of the Tooth",
     location: "Central Province",
-    path:"kandy",
+    path: "kandy",
     image: "/Kandy.jpeg",
     rating: 4.9,
     reviews: 1580,
@@ -68,7 +69,7 @@ const destinations = [
     highlights: ["Leopard Safari", "Elephant Herds", "Bird Watching"],
     category: "Wildlife",
   },
-   {
+  {
     id: 6,
     name: "Mirissa Beach",
     location: "Southern Province",
@@ -93,7 +94,7 @@ const destinations = [
   },
   {
     id: 7,
-  name: "Adams Peak",
+    name: "Adams Peak",
     location: "Central Province",
     path: "adams-peak",
     image: "/Adams-peak.jpeg",
@@ -115,30 +116,31 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-    {
+  {
     id: 8,
     name: "Wilpattu National Park",
     location: "Central Province",
     path: "wilpattu-national-park",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Wilpattu.jpeg",
     rating: 4.3,
     reviews: 890,
     description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-    {
+  {
     id: 8,
     name: "Things you should know before visiting Bentota",
     location: "Central Province",
     image: "/placeholder.svg?height=400&width=600",
+    path: "bentota",
     rating: 4.3,
     reviews: 890,
     description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-    {
+  {
     id: 8,
     name: "Dambulla Cave Temple",
     location: "Central Province",
@@ -150,7 +152,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-   {
+  {
     id: 8,
     name: "Haputhale",
     location: "Central Province",
@@ -162,7 +164,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-   {
+  {
     id: 8,
     name: "Balangoda Cave Temple",
     location: "Central Province",
@@ -174,7 +176,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-   {
+  {
     id: 8,
     name: "Delft Island",
     location: "Central Province",
@@ -186,7 +188,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-   {
+  {
     id: 8,
     name: "Bathangunduwa",
     location: "Central Province",
@@ -198,19 +200,19 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-     {
+  {
     id: 8,
     name: "Trincomalee",
     location: "Central Province",
     path: "trincomalee",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Trinco.jpeg",
     rating: 4.3,
     reviews: 890,
     description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-      {
+  {
     id: 8,
     name: "Jaffna",
     location: "North Province",
@@ -222,19 +224,19 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-      {
+  {
     id: 8,
     name: "Pasikuda",
     location: "Central Province",
     path: "pasikuda",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Pasikuda.jpeg",
     rating: 4.3,
     reviews: 890,
     description: "Hill station known as Little England with tea plantations",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-      {
+  {
     id: 8,
     name: "Yapahuwa",
     location: "Central Province",
@@ -246,9 +248,9 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-      {
+  {
     id: 8,
-    name: "Trincomalee",
+    name: "Arugam Bay",
     location: "Central Province",
     path: "trincomalee",
     image: "/placeholder.svg?height=400&width=600",
@@ -258,11 +260,35 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-      {
+  {
     id: 8,
     name: "Polonnaruwa",
     location: "North Central Province",
-    path: "trincomalee",
+    path: "polonnaruwa",
+    image: "/Polonnaruwa.jpeg",
+    rating: 4.3,
+    reviews: 890,
+    description: "",
+    highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
+    category: "Historical",
+  },
+   {
+    id: 8,
+    name: "Ella",
+    location: "North Central Province",
+    path: "/ella-town",
+    image: "/placeholder.svg?height=400&width=600",
+    rating: 4.3,
+    reviews: 890,
+    description: "",
+    highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
+    category: "Historical",
+  },
+   {
+    id: 8,
+    name: "Mathale",
+    location: "North Central Province",
+    path: "/ella-town",
     image: "/placeholder.svg?height=400&width=600",
     rating: 4.3,
     reviews: 890,

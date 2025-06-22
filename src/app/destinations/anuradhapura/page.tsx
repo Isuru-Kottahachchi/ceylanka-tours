@@ -24,7 +24,7 @@ export default function AnuradhapuraTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Ruwanwalisaya.jpeg"
           alt="Ancient Ruwanwelisaya dagoba in Anuradhapura with white dome against blue sky and pilgrims visiting"
           fill
           className="object-cover"
@@ -151,7 +151,7 @@ export default function AnuradhapuraTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/JayaSrimahaBodhi.jpeg"
                     alt="Sacred Sri Maha Bodhi tree in Anuradhapura with pilgrims offering prayers and white flags"
                     width={400}
                     height={300}
@@ -220,7 +220,7 @@ export default function AnuradhapuraTravelGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Ruwanwalisaya.jpeg"
                     alt="Magnificent white Ruwanwelisaya dagoba with its distinctive dome shape and surrounding elephant wall"
                     width={400}
                     height={300}

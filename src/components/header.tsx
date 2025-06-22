@@ -258,7 +258,7 @@ export function Header() {
                         <div className="flex-1 pl-4">
                           <div className="grid grid-cols-3 gap-3 mb-4">
                             {whereToGoItems.featured.map((destination) => (
-                              <Card key={destination.id} className="overflow-hidden">
+                              <Card key={destination.id} className="overflow-hidden"  data-aos="fade-up">
                                 <div className="relative">
                                   <Image
                                     src={destination.image || "/placeholder.svg"}
