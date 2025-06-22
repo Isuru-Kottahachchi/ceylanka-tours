@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { MapPin, Star, Search, Filter } from "lucide-react"
 import { AdBanner } from "@/components/ad-banner"
-import path from "path"
 
 const destinations = [
   {
