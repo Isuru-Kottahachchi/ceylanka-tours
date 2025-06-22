@@ -24,7 +24,7 @@ export default function TrincomaleeTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Trinco.jpeg"
           alt="Stunning aerial view of Trincomalee showing pristine beaches, turquoise waters, and the ancient Koneswaram temple on rocky cliffs"
           fill
           className="object-cover"

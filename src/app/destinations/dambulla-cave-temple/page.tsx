@@ -24,7 +24,7 @@ export default function DambullaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/dambulla-cave-temple.jpg"
           alt="Magnificent Dambulla Cave Temple complex showing golden Buddha statues and ancient cave paintings in atmospheric lighting"
           fill
           className="object-cover"

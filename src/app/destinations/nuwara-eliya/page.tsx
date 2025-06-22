@@ -24,7 +24,7 @@ export default function NuwaraEliyaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Nuwara-Eliya.jpg"
           alt="Stunning panoramic view of Nuwara Eliya showing lush green tea plantations, colonial buildings, and misty mountains"
           fill
           className="object-cover"
@@ -139,7 +139,7 @@ export default function NuwaraEliyaTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/Nuwara-Eliya.jpg"
                 alt="Lush green tea plantations in Nuwara Eliya with tea pickers working among perfectly manicured tea bushes"
                 width={600}
                 height={400}
@@ -192,7 +192,7 @@ export default function NuwaraEliyaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Gregory_Lake.jpg"
                     alt="Beautiful Gregory Lake in Nuwara Eliya with paddle boats, walking paths, and surrounding hills"
                     width={400}
                     height={300}
@@ -239,7 +239,8 @@ export default function NuwaraEliyaTravelGuide() {
                     <p className="text-muted-foreground mb-4">
                       Just 32km from Nuwara Eliya, Horton Plains offers one of Sri Lankas most spectacular hiking
                       experiences. The highlight is Worlds End, a sheer cliff drop of 870 meters offering breathtaking
-                      views on clear days.
+                      views on clear days.<br/>
+                      You can see worlds end
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">

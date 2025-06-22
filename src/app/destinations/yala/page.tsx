@@ -165,7 +165,7 @@ export default function YalaNationalParkPage() {
       {/* Hero Section */}
       <section className="relative h-96 md:h-[500px]">
         <Image
-          src="/placeholder.svg?height=500&width=1200&text=Yala+National+Park+Hero"
+          src="/Yala-national-park.jpg"
           alt="Yala National Park"
           fill
           className="object-cover"

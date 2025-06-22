@@ -24,7 +24,7 @@ export default function YalaNationalParkTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Yala-national-park.jpg"
           alt="Majestic Sri Lankan leopard resting on a rock in Yala National Park with safari jeep in background"
           fill
           className="object-cover"
