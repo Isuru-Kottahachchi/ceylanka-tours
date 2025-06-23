@@ -94,7 +94,7 @@ export default function RootLayout({
         </script> */}
 
         {/* Google Analytics - Replace with your actual GA4 ID */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G-9JYRWPZ8QK" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9JYRWPZ8QK" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
