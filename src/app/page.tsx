@@ -4,14 +4,16 @@ import { Newsletter } from "@/components/newsletter"
 import { PopularDestinations } from "@/components/popular-destinations"
 import { TravelTips } from "@/components/travel-tips"
 import { AdBanner } from "@/components/ui/ad-banner"
+import { SriLankaAboutCompact } from "./about-srilanka/page"
 
 export default function HomePage() {
   return (
     <main className="min-h-screen">
       <HeroSection />
       <AdBanner slot="homepage-top" />
-      <FeaturedArticles />
+      <SriLankaAboutCompact />
       <PopularDestinations />
+      <FeaturedArticles />
       <TravelTips />
       <Newsletter />
     </main>
