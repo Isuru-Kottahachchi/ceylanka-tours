@@ -1,6 +1,6 @@
 import { MapPin, Users, Mountain, Waves, Sun, Leaf, Calendar, Globe, Utensils } from "lucide-react"
 
-export function SriLankaAboutCompact() {
+function SriLankaAboutCompact() {
   return (
     <section className="py-12 bg-white dark:bg-gray-900 transition-colors">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
@@ -191,3 +191,6 @@ export function SriLankaAboutCompact() {
     </section>
   )
 }
+
+export default SriLankaAboutCompact;
+export { SriLankaAboutCompact };
