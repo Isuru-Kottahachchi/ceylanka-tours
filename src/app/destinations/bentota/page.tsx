@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
     title: "Bentota Sri Lanka: Complete Beach Guide 2025 | Golden Beaches & Water Sports Paradise",
     description:
-        "Discover Bentota, Sri Lanka's premier beach destination. Complete guide with beaches, water sports, hotels, restaurants, and everything you need to know.",
+        "Discover Bentota, Sri Lanka&apos;s premier beach destination. Complete guide with beaches, water sports, hotels, restaurants, and everything you need to know.",
     keywords:
         "Bentota Sri Lanka, beaches, water sports, surfing, jet skiing, turtle hatchery, Bentota River, beach resorts",
     openGraph: {
@@ -34,7 +34,7 @@ export default function BentotaGuide() {
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
                     <h1 className="text-4xl md:text-6xl font-bold mb-4">Bentota Beach</h1>
-                    <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Golden Coast Paradise</p>
+                    <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Golden Coast Paradise</p>
                     <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
                         <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
                             <MapPin className="w-4 h-4 mr-1" />
@@ -154,7 +154,7 @@ export default function BentotaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Bentota's main beach stretches for 5 kilometers of soft golden sand, protected by a coral reef
+                                            Bentota&apos;s main beach stretches for 5 kilometers of soft golden sand, protected by a coral reef
                                             that keeps the waters calm and perfect for swimming. The beach is lined with luxury resorts and
                                             offers excellent facilities for visitors.
                                         </p>
