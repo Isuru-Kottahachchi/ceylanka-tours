@@ -1,16 +1,16 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Mountain, Train, Coffee, Camera, Thermometer } from 'lucide-react'
+import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Mountain, Train, Coffee, Thermometer } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
   title: "Ella Town Sri Lanka: Complete Travel Guide 2025 | Hill Country Paradise",
-  description: "Discover Ella town, Sri Lanka's most scenic hill station. Complete guide with attractions, hiking trails, restaurants, accommodation, and everything you need to know.",
+  description: "Discover Ella town, Sri Lanka&apos;s most scenic hill station. Complete guide with attractions, hiking trails, restaurants, accommodation, and everything you need to know.",
   keywords: "Ella Sri Lanka, hill country, tea plantations, hiking, Little Adams Peak, Ella Rock, travel guide, accommodation",
   openGraph: {
     title: "Ella Town: Complete Travel Guide 2025",
-    description: "Your ultimate guide to Sri Lanka's most beautiful hill station",
+    description: "Your ultimate guide to Sri Lanka&apos;s most beautiful hill station",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -31,7 +31,7 @@ export default function EllaTownGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Ella Town</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Most Scenic Hill Station Paradise</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Most Scenic Hill Station Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -57,10 +57,10 @@ export default function EllaTownGuide() {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Perched high in Sri Lanka's central highlands, Ella is a small town that has captured the hearts of travelers worldwide. With its cool climate, stunning mountain vistas, emerald tea plantations, and laid-back atmosphere, Ella offers the perfect escape from the tropical heat and bustling cities below.
+              Perched high in Sri Lanka&apos;s central highlands, Ella is a small town that has captured the hearts of travelers worldwide. With its cool climate, stunning mountain vistas, emerald tea plantations, and laid-back atmosphere, Ella offers the perfect escape from the tropical heat and bustling cities below.
             </p>
             <p className="text-lg">
-              Whether you're seeking adventure on hiking trails, Instagram-worthy views from mountain peaks, or simply want to relax in cozy cafes overlooking tea gardens, Ella provides an unforgettable hill country experience that combines natural beauty with warm Sri Lankan hospitality.
+              Whether you&apos;re seeking adventure on hiking trails, Instagram-worthy views from mountain peaks, or simply want to relax in cozy cafes overlooking tea gardens, Ella provides an unforgettable hill country experience that combines natural beauty with warm Sri Lankan hospitality.
             </p>
           </div>
         </section>
@@ -92,7 +92,7 @@ export default function EllaTownGuide() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Train className="w-4 h-4 text-purple-500" />
-                    <span><strong>Famous for:</strong> Nine Arch Bridge & scenic railway</span>
+                    <span><strong>Famous for:</strong> Nine Arch Bridge &amp; scenic railway</span>
                   </div>
                 </div>
                 <div className="space-y-3">
@@ -102,7 +102,7 @@ export default function EllaTownGuide() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Coffee className="w-4 h-4 text-orange-500" />
-                    <span><strong>Specialty:</strong> Tea plantations & mountain views</span>
+                    <span><strong>Specialty:</strong> Tea plantations &amp; mountain views</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-indigo-500" />
@@ -120,7 +120,7 @@ export default function EllaTownGuide() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>1. Little Adam's Peak</CardTitle>
+                <CardTitle>1. Little Adam&apos;s Peak</CardTitle>
                 <CardDescription>Easy hike with spectacular 360-degree views</CardDescription>
               </CardHeader>
               <CardContent>
@@ -134,7 +134,7 @@ export default function EllaTownGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The most popular and accessible hike in Ella, Little Adam's Peak offers breathtaking panoramic views without the challenging climb of its bigger namesake. The trail winds through tea plantations and takes about 45 minutes to reach the summit.
+                      The most popular and accessible hike in Ella, Little Adam&apos;s Peak offers breathtaking panoramic views without the challenging climb of its bigger namesake. The trail winds through tea plantations and takes about 45 minutes to reach the summit.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -195,7 +195,7 @@ export default function EllaTownGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>3. Nine Arch Bridge</CardTitle>
-                <CardDescription>Sri Lanka's most famous railway bridge</CardDescription>
+                <CardDescription>Sri Lanka&apos;s most famous railway bridge</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -208,7 +208,7 @@ export default function EllaTownGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Just a 15-minute walk from Ella town, this architectural marvel built during WWI without using any steel is now Sri Lanka's most photographed bridge. Time your visit with train schedules for the perfect shot.
+                      Just a 15-minute walk from Ella town, this architectural marvel built during WWI without using any steel is now Sri Lanka&apos;s most photographed bridge. Time your visit with train schedules for the perfect shot.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -248,7 +248,7 @@ export default function EllaTownGuide() {
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li>• Ella Flower Garden Resort</li>
-                  <li>• Dream Cafe & Hostel</li>
+                  <li>• Dream Cafe &amp; Hostel</li>
                   <li>• Ella Mount Heaven</li>
                   <li>• Various guesthouses</li>
                 </ul>
@@ -283,7 +283,7 @@ export default function EllaTownGuide() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• 98 Acres Resort & Spa</li>
+                  <li>• 98 Acres Resort &amp; Spa</li>
                   <li>• Ella Eco Lodge</li>
                   <li>• Ravana Heights</li>
                   <li>• Melheim Resort</li>
@@ -298,7 +298,7 @@ export default function EllaTownGuide() {
 
         {/* Best Restaurants */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Best Restaurants & Cafes</h2>
+          <h2 className="text-3xl font-bold mb-6">Best Restaurants &amp; Cafes</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card>
               <CardHeader>
@@ -310,7 +310,7 @@ export default function EllaTownGuide() {
                   <p className="text-sm text-muted-foreground">Famous for views and Western food. Great breakfast spot.</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Adam's Breeze</h4>
+                  <h4 className="font-semibold mb-1">Adam&apos;s Breeze</h4>
                   <p className="text-sm text-muted-foreground">Rooftop dining with panoramic mountain views.</p>
                 </div>
                 <div>
@@ -338,7 +338,7 @@ export default function EllaTownGuide() {
                   <p className="text-sm text-muted-foreground">Chopped roti with vegetables, egg, and meat.</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-1">Rice & Curry</h4>
+                  <h4 className="font-semibold mb-1">Rice &amp; Curry</h4>
                   <p className="text-sm text-muted-foreground">Traditional Sri Lankan meal with multiple curries.</p>
                 </div>
                 <div>
@@ -352,7 +352,7 @@ export default function EllaTownGuide() {
 
         {/* Getting Around */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Getting to & Around Ella</h2>
+          <h2 className="text-3xl font-bold mb-6">Getting to &amp; Around Ella</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
@@ -362,7 +362,7 @@ export default function EllaTownGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">By Train (Recommended)</h4>
                   <p className="text-sm text-muted-foreground mb-2">
-                    The scenic train journey from Kandy (6-7 hours) or Colombo (8-9 hours) is one of the world's most beautiful train rides.
+                    The scenic train journey from Kandy (6-7 hours) or Colombo (8-9 hours) is one of the world&apos;s most beautiful train rides.
                   </p>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Book reserved seats in advance</li>
@@ -393,7 +393,7 @@ export default function EllaTownGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Tuk-tuk</h4>
                   <p className="text-sm text-muted-foreground">
-                    Available for longer distances or when you don't want to walk uphill.
+                    Available for longer distances or when you don&apos;t want to walk uphill.
                   </p>
                 </div>
                 <div>
@@ -466,10 +466,10 @@ export default function EllaTownGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Ella is more than just a destination – it's a feeling. The cool mountain air, the endless tea gardens, the friendly smiles of locals, and the breathtaking views create an atmosphere that's hard to leave behind. Whether you're here for adventure, relaxation, or photography, Ella delivers experiences that will stay with you long after you've descended from the mountains.
+                Ella is more than just a destination – it&apos;s a feeling. The cool mountain air, the endless tea gardens, the friendly smiles of locals, and the breathtaking views create an atmosphere that&apos;s hard to leave behind. Whether you&apos;re here for adventure, relaxation, or photography, Ella delivers experiences that will stay with you long after you&apos;ve descended from the mountains.
               </p>
               <p className="text-muted-foreground mb-4">
-                Take your time to explore, don't rush between attractions, and remember that sometimes the best moments in Ella happen when you're simply sitting in a cafe, sipping Ceylon tea, and watching the mist roll over the mountains.
+                Take your time to explore, don&apos;t rush between attractions, and remember that sometimes the best moments in Ella happen when you&apos;re simply sitting in a cafe, sipping Ceylon tea, and watching the mist roll over the mountains.
               </p>
               <p className="text-muted-foreground font-medium">
                 Welcome to Ella – where every sunrise is a masterpiece! 🏔️🌅

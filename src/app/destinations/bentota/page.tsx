@@ -746,12 +746,12 @@ export default function BentotaGuide() {
                         </CardHeader>
                         <CardContent>
                             <p className="text-muted-foreground mb-4">
-                                Bentota offers the perfect blend of relaxation and adventure, luxury and authenticity. Whether you're
+                                Bentota offers the perfect blend of relaxation and adventure, luxury and authenticity. Whether you&apos;re
                                 seeking thrilling water sports, romantic beachfront dinners, or simply want to unwind on pristine golden
                                 sands, this coastal paradise delivers unforgettable experiences.
                             </p>
                             <p className="text-muted-foreground mb-4">
-                                Don't miss the opportunity to support local conservation efforts at the turtle hatchery, explore the
+                                Don&apos;t miss the opportunity to support local conservation efforts at the turtle hatchery, explore the
                                 mangrove ecosystems of the Bentota River, and indulge in fresh seafood while watching spectacular
                                 sunsets over the Indian Ocean.
                             </p>
