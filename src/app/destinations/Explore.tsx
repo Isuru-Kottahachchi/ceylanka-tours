@@ -145,7 +145,7 @@ export default function ExplorePage() {
 
           {/* Explore Categories Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {exploreCategories.map((category, index) => (
+            {exploreCategories.map((category) => (
               <Link key={category.id} href={category.href} className="group">
                 <Card className="h-full overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-0 bg-white dark:bg-gray-800">
                   <div className="relative">
