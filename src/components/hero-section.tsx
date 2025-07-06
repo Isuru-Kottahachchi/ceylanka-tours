@@ -5,6 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
+import { Button } from "@/components/ui/button"
 // import Image from "next/image"
 
 export function HeroSection() {
@@ -54,26 +55,27 @@ export function HeroSection() {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full sm:flex-1 h-12 text-black text-lg px-6 rounded-l-lg"
           />
-          <button
+          <Button
             type="submit"
+           variant="default"
             className="w-full sm:w-auto h-12 px-8 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-r-lg"
           >
             <Search className="h-5 w-5 mr-2" />
             Search
-          </button>
+          </Button>
         </form>
 
         {/* Quick Links */}
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <button className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
             Popular Destinations
-          </button>
-          <button  className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+          </Button>
+          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
             Travel Packages
-          </button>
-          <button  className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+          </Button>
+          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
             Cultural Sites
-          </button>
+          </Button>
         </div>
       </div>
     </section>

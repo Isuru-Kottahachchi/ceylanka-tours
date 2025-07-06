@@ -41,8 +41,8 @@ const destinations = [
   },
   {
     id: 4,
-    name: "Ella Nine Arch Bridge",
-    path: "ella-nine-arch-bridge",
+    name: "Ella Town",
+    path: "ella-town",
     location: "Uva Province",
     image: "/Nine-arch-ella.jpg",
     rating: 4.6,
@@ -99,7 +99,7 @@ const destinations = [
     {
     id: 9,
     name: "Anuradhapura",
-    location: "Central Province",
+    location: "North Central Province",
     image: "/Anuradhapura.jpg",
     rating: 4.3,
     reviews: 890,

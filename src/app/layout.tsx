@@ -82,18 +82,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
           crossOrigin="anonymous"
         />
-{/* 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9JYRWPZ8QK"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-9JYRWPZ8QK');
-        </script> */}
-
-        {/* Google Analytics - Replace with your actual GA4 ID */}
+        
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-9JYRWPZ8QK" />
         <script
           dangerouslySetInnerHTML={{

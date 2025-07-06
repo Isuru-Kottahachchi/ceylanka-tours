@@ -11,7 +11,7 @@ const featuredArticles = [
     path:"top10-beaches-in-sri-lanka",
     excerpt:
       "From the golden sands of Unawatuna to the pristine shores of Mirissa, discover the most beautiful beaches...",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Bentotabeach.jpeg",
     category: "Beaches",
     author: "Isuru Kottahachchi",
     date: "2024-01-15",

@@ -29,7 +29,7 @@ const tips = [
     icon: MapPin,
     title: "Must-Have Apps",
     content:
-      "PickMe for rides, Google Translate with Sinhala/Tamil, Maps.me for offline navigation, XE Currency converter.",
+      "Uber ,PickMe apps will be helpful for rides, Google Translate with Sinhala/Tamil, Maps.me for offline navigation, XE Currency converter.",
   },
   {
     icon: Lightbulb,

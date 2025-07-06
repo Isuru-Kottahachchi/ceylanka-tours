@@ -343,9 +343,9 @@ export function Header() {
                 UPCOMING EVENTS
               </Link>
 
-              <Link href="/testimonials" className="text-gray-700 hover:text-cyan-600 transition-colors font-medium">
+              {/* <Link href="/testimonials" className="text-gray-700 hover:text-cyan-600 transition-colors font-medium">
                 WHAT THE WORLD HAS TO SAY
-              </Link>
+              </Link> */}
             </nav>
 
             {/* Mobile Menu */}
@@ -390,9 +390,9 @@ export function Header() {
                     <Link href="/events" className="py-2 border-b">
                       UPCOMING EVENTS
                     </Link>
-                    <Link href="/testimonials" className="py-2 border-b">
+                    {/* <Link href="/testimonials" className="py-2 border-b">
                       WHAT THE WORLD HAS TO SAY
-                    </Link>
+                    </Link> */}
                   </nav>
                 </div>
               </SheetContent>

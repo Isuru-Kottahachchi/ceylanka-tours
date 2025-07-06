@@ -100,11 +100,11 @@ const beaches = [
   },
   {
     name: 'Bentota Beach',
-    image: '/images/bentota.jpg',
+    image: '/Bentotabeach.jpeg',
     location: 'Galle District, Western Province',
     bestTime: 'October to April',
     description:
-      'Bentota is known for its wide sandy beaches, water sports, and luxury resorts. It’s perfect for honeymooners and travelers seeking comfort and adventure.',
+      'If you are in Sri Lanka, dont visit this paradise beach, Bentota is known for its wide sandy beaches, water sports, and luxury resorts. It’s perfect for honeymooners and travelers seeking comfort and adventure.',
     thingsToDo: [
       'Jet skiing and banana boat rides',
       'River safaris along the Bentota River',
@@ -118,8 +118,8 @@ const beaches = [
 ],
   },
   {
-    name: 'Tangalle Beach',
-    image: '/images/tangalle.jpg',
+    name: 'Hirikatiya Beach',
+    image: '/images/hirikatiya.jpg',
     location: 'Hambantota District, Southern Province',
     bestTime: 'November to April',
     description:
@@ -181,6 +181,25 @@ const beaches = [
     bestTime: 'May to September',
     description:
       'Kalpitiya is ideal for kite surfing, dolphin watching, and off-the-beaten-path adventures. It’s still developing as a tourist destination, making it peaceful and eco-friendly.',
+    thingsToDo: [
+      'Kite surfing in the Kalpitiya lagoon',
+      'Boat tours to see dolphins and whales',
+      'Explore mangroves and Wilpattu National Park nearby',
+    ],
+    tips: 'Windy and wild — perfect for adventure seekers. Limited nightlife.',
+    placesToStay: [
+  'Thaproban Beach House',
+  'Calamander Unawatuna Beach Resort',
+  'Villa Thawthisa'
+],
+  },
+    {
+    name: 'Jungle beach, Unawatuna,Sri Lanka',
+    image: '/jungle-beach.jpeg',
+    location: 'Galle District, Southern Province',
+    bestTime: 'May to September',
+    description:
+      'Jungle Beach is a hidden gem near Unawatuna, surrounded by lush greenery and offering a tranquil escape. It’s perfect for nature lovers and those seeking solitude.',
     thingsToDo: [
       'Kite surfing in the Kalpitiya lagoon',
       'Boat tours to see dolphins and whales',
