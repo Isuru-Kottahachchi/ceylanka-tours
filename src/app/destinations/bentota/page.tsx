@@ -60,7 +60,7 @@ export default function BentotaGuide() {
                     </h2>
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                         <p className="text-lg mb-4">
-                            Bentota is Sri Lanka's premier beach destination, where pristine golden beaches meet world-class luxury
+                            Bentota is Sri Lanka&apos;s premier beach destination, where pristine golden beaches meet world-class luxury
                             resorts. Located on the southwest coast, this tropical paradise offers the perfect blend of relaxation,
                             adventure, and natural beauty, making it a favorite among honeymooners, families, and water sports
                             enthusiasts.
