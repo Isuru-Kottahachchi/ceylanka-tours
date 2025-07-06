@@ -532,7 +532,7 @@ export default function EllaNineArchTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Littleadamspeak.jpg"
                   alt="Panoramic view from Little Adams Peak showing Ella Gap and surrounding mountains"
                   width={300}
                   height={200}

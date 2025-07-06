@@ -5,6 +5,7 @@ import { PopularDestinations } from "@/components/popular-destinations"
 import { TravelTips } from "@/components/travel-tips"
 import { AdBanner } from "@/components/ui/ad-banner"
 import { SriLankaAboutCompact } from "./about-srilanka/page"
+import  Explore  from "@/app/destinations/Explore"
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <SriLankaAboutCompact />
       <PopularDestinations />
       <FeaturedArticles />
+      <Explore/>
       <TravelTips />
       <Newsletter />
     </main>

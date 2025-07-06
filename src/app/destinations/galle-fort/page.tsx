@@ -242,8 +242,8 @@ export default function GalleFortTravelGuide() {
                   <Image
                     src="/Galle-Lighthouse.jpeg"
                     alt="White Galle Lighthouse standing tall against blue sky with ocean waves crashing at its base"
-                    width={400}
-                    height={300}
+                    width={300}
+                    height={200}
                     className="rounded-lg"
                   />
                 </div>
@@ -533,18 +533,18 @@ export default function GalleFortTravelGuide() {
                     <Card>
                       <CardHeader>
                         <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
-                        <CardDescription>Best views of Sigiriya</CardDescription>
+                        <CardDescription>Best views of Galle</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <Image
-                          src="/placeholder.svg?height=200&width=300"
-                          alt="View of Sigiriya Rock from Pidurangala Rock showing the fortress from a distance"
+                          src="/jungle-beach.jpeg"
+                          alt="View of Jungle Beach"
                           width={300}
                           height={200}
                           className="rounded-lg mb-3"
                         />
                         <p className="text-sm text-muted-foreground">
-                          Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                          Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
                         </p>
                       </CardContent>
                     </Card>

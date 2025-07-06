@@ -13,7 +13,7 @@ const blogPosts = [
     title: "Top 10 Must-Visit Beaches in Sri Lanka",
     excerpt:
       "From the golden sands of Unawatuna to the pristine shores of Mirissa, discover the most beautiful beaches that make Sri Lanka a tropical paradise.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Bentotabeach.jpeg",
     category: "Beaches",
     author: "Isuru Kottahachchi",
     date: "2024-01-15",

@@ -24,7 +24,7 @@ export default function AdamsPeakTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Adamspeaskmain.jpg"
           alt="Spectacular sunrise view from Adams Peak summit showing the sacred mountains shadow and pilgrims watching the dawn"
           fill
           className="object-cover"
@@ -139,10 +139,10 @@ export default function AdamsPeakTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/Adamspeak.jpg"
                 alt="Sacred footprint depression at Adams Peak summit with pilgrims paying respects and colorful prayer flags"
                 width={600}
-                height={400}
+                height={500}
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">

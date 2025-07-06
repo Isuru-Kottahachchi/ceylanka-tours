@@ -30,7 +30,7 @@ export default function SigiriyaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/SigiriyaDrone.jpg"
           alt="Majestic view of Sigiriya Rock Fortress rising from lush green landscape in Sri Lanka"
           fill
           className="object-cover"
@@ -181,10 +181,10 @@ export default function SigiriyaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Waterfountainsinseegriya.jpg"
                     alt="Sigiriya water gardens showing ancient pools and fountains with geometric design"
-                    width={400}
-                    height={300}
+                    width={300}
+                    height={200}
                     className="rounded-lg"
                   />
                   <div>
@@ -328,7 +328,7 @@ export default function SigiriyaTravelGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/SigiriyaDrone.jpg"
                     alt="Panoramic view from Sigiriya summit showing vast green landscape and ancient palace ruins"
                     width={400}
                     height={300}

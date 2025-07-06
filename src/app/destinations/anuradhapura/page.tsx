@@ -239,7 +239,7 @@ export default function AnuradhapuraTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Jetavanaramaya.jpg"
                     alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
                     width={400}
                     height={300}

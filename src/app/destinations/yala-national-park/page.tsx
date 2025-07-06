@@ -150,7 +150,7 @@ export default function YalaNationalParkTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Srilankanleopard.jpg"
                     alt="Magnificent Sri Lankan leopard in Yala National Park showing distinctive spotted coat and powerful build"
                     width={400}
                     height={300}
