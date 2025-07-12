@@ -145,7 +145,7 @@ export default function AnuradhapuraTravelGuide() {
 
           <div className="space-y-8">
             <h3 className="text-xl font-semibold mb-4">
-              Local People piligimage to Anuradhapura as "Atamasthana" </h3>
+              Local People piligimage to Anuradhapura as &quot;Atamasthana&quot; </h3>
             {/* Sri Maha Bodhi */}
             <Card>
               <CardHeader>
