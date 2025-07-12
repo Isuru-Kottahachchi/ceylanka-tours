@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TreePine } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Anuradhapura Sri Lanka: Complete Guide 2025 | Ancient Capital & Sacred City",
@@ -136,12 +137,15 @@ export default function AnuradhapuraTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Sacred Sites & Ancient Monuments</h2>
 
+
           {/* Ad Space */}
           <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
             [Advertisement Space - 300x250 Medium Rectangle]
           </div>
 
           <div className="space-y-8">
+            <h3 className="text-xl font-semibold mb-4">
+              Local People piligimage to Anuradhapura as "Atamasthana" </h3>
             {/* Sri Maha Bodhi */}
             <Card>
               <CardHeader>
@@ -273,6 +277,256 @@ export default function AnuradhapuraTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>4. Thuparamaya Dagoba</CardTitle>
+                <CardDescription>Once the worlds third tallest structure</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Thooparamaya.jpeg"
+                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Built in the 3rd century AD, Jetavanaramaya was once the worlds third tallest structure after the
+                      pyramids of Giza. Though partially ruined, it still stands at an impressive 70 meters and
+                      showcases the engineering prowess of ancient Sri Lankan civilization.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Originally 122 meters tall (400 feet)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Built with over 93 million bricks
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Contains Buddhas sash relic
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ongoing archaeological excavations
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>5. Lovamahapaya</CardTitle>
+                <CardDescription>Once the worlds third tallest structure</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Lovamahapaya.jpeg"
+                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Built in the 3rd century AD, Jetavanaramaya was once the worlds third tallest structure after the
+                      pyramids of Giza. Though partially ruined, it still stands at an impressive 70 meters and
+                      showcases the engineering prowess of ancient Sri Lankan civilization.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Originally 122 meters tall (400 feet)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Built with over 93 million bricks
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Contains Buddhas sash relic
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ongoing archaeological excavations
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>6. Abhayagiri Dagaba</CardTitle>
+                <CardDescription>Once the worlds third tallest structure</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Abhayagiriya.jpeg"
+                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      This stupa is bit similar to jetawanaramaya, built in the 3rd century AD, but the shape is bit different.
+                      <Link href="/destinations/anuradhapura/abhyagiri" className="text-blue-600 hover:underline">
+                        Read more about Shapes of Stupa</Link>
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Originally 122 meters tall (400 feet)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Built with over 93 million bricks
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Contains Buddhas sash relic
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ongoing archaeological excavations
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>7. Mirisavetiya Stupa</CardTitle>
+                <CardDescription>Once the worlds third tallest structure</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Mirisawatiya.jpeg"
+                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Built in the 3rd century AD, Jetavanaramaya was once the worlds third tallest structure after the
+                      pyramids of Giza. Though partially ruined, it still stands at an impressive 70 meters and
+                      showcases the engineering prowess of ancient Sri Lankan civilization.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Originally 122 meters tall (400 feet)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Built with over 93 million bricks
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Contains Buddhas sash relic
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ongoing archaeological excavations
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>8. Lankarama Dagaba</CardTitle>
+                <CardDescription>Once the worlds third tallest structure</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Lankaramaya.jpeg"
+                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Built in the 3rd century AD, Jetavanaramaya was once the worlds third tallest structure after the
+                      pyramids of Giza. Though partially ruined, it still stands at an impressive 70 meters and
+                      showcases the engineering prowess of ancient Sri Lankan civilization.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Originally 122 meters tall (400 feet)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Built with over 93 million bricks
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Contains Buddhas sash relic
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ongoing archaeological excavations
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Sandahirusaya</CardTitle>
+                <CardDescription></CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Sandahirusaya.jpeg"
+                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      If you viisted to Anuradhapura you might have seen this stupa, its similar to teh Ruwanwalisaya but not that much big.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Originally 122 meters tall (400 feet)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Built with over 93 million bricks
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Contains Buddhas sash relic
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ongoing archaeological excavations
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
@@ -335,27 +589,54 @@ export default function AnuradhapuraTravelGuide() {
 
         {/* Archaeological Wonders */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Archaeological Wonders</h2>
+          <h2 className="text-3xl font-bold mb-6">Near by Archaeological Wonders</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Isurumuniya Temple</CardTitle>
-                <CardDescription>Rock temple with famous carvings</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Isurumuniya rock temple showing ancient stone carvings and cave architecture"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-               Famous for the &quot;Isurumuniya Lovers&quot; carving and beautiful rock-cut architecture from the 3rd century BC.
+            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Isurumuniya Temple</CardTitle>
+                  <CardDescription>Ancient city</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/Isurumuniya.jpeg"
+                    alt="Isurumuniya rock temple showing ancient stone carvings and cave architecture"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Famous for the &quot;Isurumuniya Lovers&quot; carving and beautiful rock-cut architecture from the 3rd century BC.
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link> <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Sandahirusaya</CardTitle>
+                  <CardDescription>Ancient city</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/Minneriyanationalpark"
+                    alt="View of Sigiriya Rock from Pidurangala Rock"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
 
-                </p>
-              </CardContent>
-            </Card>
 
             <Card>
               <CardHeader>
@@ -383,7 +664,7 @@ export default function AnuradhapuraTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Kuttampokuna.jpeg"
                   alt="Twin Ponds showing sophisticated ancient water management system with stone steps"
                   width={300}
                   height={200}

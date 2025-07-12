@@ -5,6 +5,7 @@ import "./globals.css"
 // import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ThemeProvider } from "next-themes"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -82,7 +83,7 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
           crossOrigin="anonymous"
         />
-        
+
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-9JYRWPZ8QK" />
         <script
           dangerouslySetInnerHTML={{
@@ -158,13 +159,13 @@ export default function RootLayout({
         <meta name="google-site-verification" content="your-verification-code" />
       </head>
       <body className={inter.className}>
-        {/* <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange> */}
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
-        {/* </ThemeProvider> */}
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+          <div className="min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )

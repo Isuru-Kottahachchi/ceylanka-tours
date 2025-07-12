@@ -25,7 +25,7 @@ const topNavItems = [
   { name: "Contact Us", href: "/contact" },
   { name: "Tourism News", href: "/news" },
   { name: "Wildlife Streaming", href: "/wildlife-streaming" },
-  { name: "About Us", href: "/about", hasDropdown: true },
+  { name: "About Us", href: "/about-us", hasDropdown: true },
 ]
 
 const whatToDoItems = [
@@ -180,11 +180,12 @@ export function Header() {
 
       {/* Main Navigation */}
       <div className="bg-white text-gray-900">
-        <div className="container mx-auto px-8 py-8">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between mb-4">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
               <div className="text-3xl font-bold text-cyan-500">CeyLanka Tours</div>
+              <Image src="/favicon.ico.png" alt="favicom.ico" width={70} height={70} className="rounded-full" />
             </Link>
 
             {/* Desktop Navigation */}
@@ -202,10 +203,10 @@ export function Header() {
                 onMouseEnter={() => setActiveDropdown("what-to-do")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium">
+                <Button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium">
                   WHAT TO DO
                   <ChevronDown className="h-4 w-4 ml-1" />
-                </button>
+                </Button>
 
                 {activeDropdown === "what-to-do" && (
                   <div className="absolute top-full left-0 mt-2 w-80 bg-white shadow-xl rounded-lg border z-50">
@@ -237,10 +238,10 @@ export function Header() {
                 onMouseEnter={() => setActiveDropdown("where-to-go")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium">
+                <Button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium">
                   WHERE TO GO
                   <ChevronDown className="h-4 w-4 ml-1" />
-                </button>
+                </Button>
 
                 {activeDropdown === "where-to-go" && (
                   <div className="absolute top-full left-0 mt-2 w-[650px] bg-white shadow-xl rounded-lg border z-50">
@@ -310,10 +311,10 @@ export function Header() {
                 onMouseEnter={() => setActiveDropdown("plan-trip")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium">
+                <Button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium">
                   PLAN YOUR TRIP
                   <ChevronDown className="h-4 w-4 ml-1" />
-                </button>
+                </Button>
 
                 {activeDropdown === "plan-trip" && (
                   <div className="absolute top-full left-0 mt-2 w-80 bg-white shadow-xl rounded-lg border z-50">
