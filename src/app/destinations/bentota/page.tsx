@@ -1,25 +1,120 @@
-import type { Metadata } from "next"
+"use client"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Waves, Sun, Palmtree, Fish } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Waves, Sun, Palmtree, Fish, ChevronLeft, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { useState } from "react"
 
-export const metadata: Metadata = {
-    title: "Bentota Sri Lanka: Complete Beach Guide 2025 | Golden Beaches & Water Sports Paradise",
-    description:
-        "Discover Bentota, Sri Lanka&apos;s premier beach destination. Complete guide with beaches, water sports, hotels, restaurants, and everything you need to know.",
-    keywords:
-        "Bentota Sri Lanka, beaches, water sports, surfing, jet skiing, turtle hatchery, Bentota River, beach resorts",
-    openGraph: {
-        title: "Bentota Beach: Complete Travel Guide 2025",
-        description: "Your ultimate guide to Sri Lanka's golden beach paradise",
-        type: "article",
-        images: ["/placeholder.svg?height=630&width=1200"],
-    },
+// Image carousel component
+function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const nextImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+    }
+
+    const prevImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+    }
+
+    const goToImage = (index: number) => {
+        setCurrentIndex(index)
+    }
+
+    return (
+        <div className="relative">
+            <div className="relative overflow-hidden rounded-lg">
+                <Image
+                    src={images[currentIndex] || "/placeholder.svg"}
+                    alt={`${alt} - Image ${currentIndex + 1}`}
+                    width={400}
+                    height={300}
+                    className="rounded-lg transition-all duration-300"
+                />
+
+                {/* Navigation buttons */}
+                {images.length > 1 && (
+                    <>
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white/90"
+                            onClick={prevImage}
+                        >
+                            <ChevronLeft className="h-4 w-4" />
+                        </Button>
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white/90"
+                            onClick={nextImage}
+                        >
+                            <ChevronRight className="h-4 w-4" />
+                        </Button>
+                    </>
+                )}
+            </div>
+
+            {/* Dots indicator */}
+            {images.length > 1 && (
+                <div className="flex justify-center mt-3 space-x-2">
+                    {images.map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => goToImage(index)}
+                            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
+                                }`}
+                        />
+                    ))}
+                </div>
+            )}
+
+            {/* Image counter */}
+            {images.length > 1 && (
+                <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+                    {currentIndex + 1} / {images.length}
+                </div>
+            )}
+        </div>
+    )
 }
 
 export default function BentotaGuide() {
+    // Define images for Panchakapaduwa Island
+    const panchakapaduwImages = [
+        "/Panchakpaduwaisland.jpeg",
+        "/placeholder.svg?height=300&width=400&text=Island+View+2",
+        "/placeholder.svg?height=300&width=400&text=Temple+View",
+        "/placeholder.svg?height=300&width=400&text=Meditation+Area",
+        "/placeholder.svg?height=300&width=400&text=Island+Sunset",
+    ]
+
+    const seaTurtleImages = [
+        "/Sea-turtle-bentota.jpeg",
+        "/placeholder.svg?height=300&width=400&text=Island+View+2",
+        "/placeholder.svg?height=300&width=400&text=Temple+View",
+        "/placeholder.svg?height=300&width=400&text=Meditation+Area",
+        "/placeholder.svg?height=300&width=400&text=Island+Sunset",
+    ]
+
+     const bentotaBeachImages = [
+        "/Bentotabeach.jpeg",
+        "/placeholder.svg?height=300&width=400&text=Island+View+2",
+        "/placeholder.svg?height=300&width=400&text=Temple+View",
+        "/placeholder.svg?height=300&width=400&text=Meditation+Area",
+        "/placeholder.svg?height=300&width=400&text=Island+Sunset",
+    ]
+
+    //  const seaTurtleImages = [
+    //     "/Sea-turtle-bentota.jpeg",
+    //     "/placeholder.svg?height=300&width=400&text=Island+View+2",
+    //     "/placeholder.svg?height=300&width=400&text=Temple+View",
+    //     "/placeholder.svg?height=300&width=400&text=Meditation+Area",
+    //     "/placeholder.svg?height=300&width=400&text=Island+Sunset",
+    // ]
+
     return (
         <main className="min-h-screen bg-background">
             {/* Hero Section */}
@@ -60,10 +155,10 @@ export default function BentotaGuide() {
                     </h2>
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                         <p className="text-lg mb-4">
-                            Bentota is Sri Lanka&apos;s premier beach destination, where pristine golden beaches meet world-class luxury
-                            resorts. Located on the southwest coast, this tropical paradise offers the perfect blend of relaxation,
-                            adventure, and natural beauty, making it a favorite among honeymooners, families, and water sports
-                            enthusiasts.
+                            Bentota is Sri Lanka&apos;s premier beach destination, where pristine golden beaches meet world-class
+                            luxury resorts. Located on the southwest coast, this tropical paradise offers the perfect blend of
+                            relaxation, adventure, and natural beauty, making it a favorite among honeymooners, families, and water
+                            sports enthusiasts.
                         </p>
                         <p className="text-lg">
                             From thrilling water sports on the Bentota River to peaceful turtle watching at nearby hatcheries, from
@@ -145,18 +240,15 @@ export default function BentotaGuide() {
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <Image
-                                        src="/Bentotabeach.jpeg"
-                                        alt="Bentota beach with golden sand, clear blue water, palm trees and beachgoers enjoying the sun"
-                                        width={400}
-                                        height={300}
-                                        className="rounded-lg"
+                                      <ImageCarousel
+                                        images={bentotaBeachImages}
+                                        alt="Panchakapaduwa Island showing various views of the mystical island, temples, and meditation areas"
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Bentota&apos;s main beach stretches for 5 kilometers of soft golden sand, protected by a coral reef
-                                            that keeps the waters calm and perfect for swimming. The beach is lined with luxury resorts and
-                                            offers excellent facilities for visitors.
+                                            Bentota&apos;s main beach stretches for 5 kilometers of soft golden sand, protected by a coral
+                                            reef that keeps the waters calm and perfect for swimming. The beach is lined with luxury resorts
+                                            and offers excellent facilities for visitors.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
@@ -215,39 +307,44 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
+
                         <Card>
                             <CardHeader>
-                                <CardTitle>3. Lunuganga  Geoffrey Bawa Garden</CardTitle>
-                                <CardDescription>Adventure hub for jet skiing, boat rides, and water sports</CardDescription>
+                                <CardTitle>3. Lunuganga Geoffrey Bawa Garden</CardTitle>
+                                <CardDescription>
+                                    Masterpiece of landscape architecture by Sri Lanka's renowned architect
+                                </CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            The Bentota River offers calm waters perfect for various water sports activities. From thrilling
-                                            jet ski rides to peaceful boat safaris through mangrove forests, the river provides adventures for
-                                            all ages and skill levels.
+                                            Lunuganga is the country home and garden of Geoffrey Bawa, Sri Lanka's most famous architect. This
+                                            stunning landscape garden showcases Bawa's vision of tropical modernism and offers breathtaking
+                                            views of the Bentota lagoon.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Jet skiing and water skiing
+                                                Guided tours of the garden and house
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Mangrove boat safaris
+                                                Stunning lagoon and countryside views
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Windsurfing and banana boat rides
+                                                Architecture and design inspiration
                                             </li>
                                         </ul>
-                                        <p>For more details about this, read this article.</p>
-                                        <Link href="/blog/lunuganga-geoffrey-bawas-garden">Read more</Link>
+                                        <p className="mt-4">For more details about this architectural masterpiece:</p>
+                                        <Link href="/blog/lunuganga-geoffrey-bawas-garden" className="text-blue-600 hover:underline">
+                                            Read more about Lunuganga Garden
+                                        </Link>
                                     </div>
                                     <Image
                                         src="/placeholder.svg?height=300&width=400"
-                                        alt="Exciting water sports on Bentota River with jet skis, boats and mangrove forests in background"
+                                        alt="Lunuganga Geoffrey Bawa Garden with tropical landscaping and lagoon views"
                                         width={400}
                                         height={300}
                                         className="rounded-lg"
@@ -255,74 +352,78 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
+
                         <Card>
                             <CardHeader>
-                                <CardTitle>3. Bentota River Safari</CardTitle>
+                                <CardTitle>4. Bentota River Safari</CardTitle>
                                 <CardDescription>Explore the mangroves and wildlife along the Bentota River</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <Image
-                                        src="/Bentota Fisherman's Village"
-                                        alt="Baby sea turtles at Bentota turtle hatchery with conservation staff and visitors learning about protection"
+                                        src="/placeholder.svg?height=300&width=400"
+                                        alt="Bentota River safari through mangroves with wildlife and traditional fishing boats"
                                         width={400}
                                         height={300}
                                         className="rounded-lg"
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            The Kosgoda Sea Turtle Conservation Project, just 10 minutes from Bentota, protects five species
-                                            of sea turtles. Visitors can learn about conservation efforts and even participate in releasing
-                                            baby turtles into the ocean.
+                                            Take a peaceful boat safari along the Bentota River through lush mangrove forests. Spot various
+                                            bird species, monitor lizards, and experience the traditional fishing village life along the
+                                            riverbanks.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Educational tours available
+                                                Bird watching opportunities
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Baby turtle release experiences
+                                                Mangrove ecosystem exploration
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Support conservation efforts
+                                                Traditional fishing village visits
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </CardContent>
                         </Card>
-                           <Card>
+
+                        <Card>
                             <CardHeader>
-                                <CardTitle>3. Five Raja Maha Temples in Bentota</CardTitle>
-                                <CardDescription>Visit ancient temples with  a great history</CardDescription>
+                                <CardTitle>5. Five Raja Maha Temples in Bentota</CardTitle>
+                                <CardDescription>Visit ancient temples with great historical significance</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <Image
-                                        src="/Bentota Fisherman's Village"
-                                        alt="Baby sea turtles at Bentota turtle hatchery with conservation staff and visitors learning about protection"
+                                        src="/placeholder.svg?height=300&width=400"
+                                        alt="Ancient Buddhist temple in Bentota with traditional architecture and religious statues"
                                         width={400}
                                         height={300}
                                         className="rounded-lg"
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                           When you visit Bentota you can visit five ancient temples with a great history. These temples are Wanawasa rajamaha viharaya, Galaptha 
+                                            When you visit Bentota, you can explore five ancient temples with rich history: Wanawasa Rajamaha
+                                            Viharaya, Galapatha Raja Maha Viharaya, and three others that showcase centuries of Buddhist
+                                            heritage and architecture.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                               Ancient Tunnel system used by monks back in the day
+                                                Ancient tunnel systems used by monks
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Meditation sessions
+                                                Meditation sessions available
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Support conservation efforts
+                                                Historical and cultural significance
                                             </li>
                                         </ul>
                                     </div>
@@ -330,20 +431,16 @@ export default function BentotaGuide() {
                             </CardContent>
                         </Card>
 
-
                         <Card>
                             <CardHeader>
-                                <CardTitle>3. Sea Turtle Hatchery</CardTitle>
+                                <CardTitle>6. Sea Turtle Hatchery</CardTitle>
                                 <CardDescription>Conservation center protecting endangered sea turtles</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <Image
-                                        src="/Sea-turtle-bentota.jpeg"
-                                        alt="Baby sea turtles at Bentota turtle hatchery with conservation staff and visitors learning about protection"
-                                        width={300}
-                                        height={200}
-                                        className="rounded-lg"
+                                    <ImageCarousel
+                                        images={seaTurtleImages}
+                                        alt="Panchakapaduwa Island showing various views of the mystical island, temples, and meditation areas"
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -369,38 +466,36 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-                         <Card>
+
+                        <Card>
                             <CardHeader>
-                                <CardTitle>3. Panchakapaduwa Island</CardTitle>
-                                <CardDescription>An island that was separted from the mainland back in the day</CardDescription>
+                                <CardTitle>7. Panchakapaduwa Island</CardTitle>
+                                <CardDescription>A mystical island separated from the mainland with ancient history</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <Image
-                                        src="/Sea-turtle-bentota.jpeg"
-                                        alt="Baby sea turtles at Bentota turtle hatchery with conservation staff and visitors learning about protection"
-                                        width={300}
-                                        height={200}
-                                        className="rounded-lg"
+                                    <ImageCarousel
+                                        images={panchakapaduwImages}
+                                        alt="Panchakapaduwa Island showing various views of the mystical island, temples, and meditation areas"
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            The Kosgoda Sea Turtle Conservation Project, just 10 minutes from Bentota, protects five species
-                                            of sea turtles. Visitors can learn about conservation efforts and even participate in releasing
-                                            baby turtles into the ocean.
+                                            Panchakapaduwa Island is a mystical place that was separated from the mainland centuries ago. This
+                                            sacred island features ancient temples, meditation retreats, and offers a peaceful escape from the
+                                            bustling beach life. The island is accessible by boat and provides stunning sunset views.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                               Meditaion sessions
+                                                Meditation sessions and spiritual retreats
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Baby turtle release experiences
+                                                Ancient temple ruins and artifacts
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Support conservation efforts
+                                                Spectacular sunset and sunrise views
                                             </li>
                                         </ul>
                                     </div>
@@ -443,7 +538,6 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-
                         <Card>
                             <CardHeader>
                                 <CardTitle>Mid-Range Options</CardTitle>
@@ -491,7 +585,6 @@ export default function BentotaGuide() {
                                 </ul>
                             </CardContent>
                         </Card>
-
                         <Card>
                             <CardHeader>
                                 <CardTitle className="text-lg">Ocean Activities</CardTitle>
@@ -506,7 +599,6 @@ export default function BentotaGuide() {
                                 </ul>
                             </CardContent>
                         </Card>
-
                         <Card>
                             <CardHeader>
                                 <CardTitle className="text-lg">Land Activities</CardTitle>
@@ -547,7 +639,6 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-
                         <Card>
                             <CardHeader>
                                 <CardTitle>Casual Dining & Local Food</CardTitle>
@@ -558,7 +649,7 @@ export default function BentotaGuide() {
                                     <p className="text-sm text-muted-foreground">Fresh seafood and grilled specialties.</p>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold mb-1">The Lagoons,Bentota</h4>
+                                    <h4 className="font-semibold mb-1">The Lagoons, Bentota</h4>
                                     <p className="text-sm text-muted-foreground">Local fishing village with authentic seafood.</p>
                                 </div>
                                 <div>
@@ -597,7 +688,6 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-
                         <Card>
                             <CardHeader>
                                 <CardTitle>Local Transportation</CardTitle>
@@ -643,7 +733,6 @@ export default function BentotaGuide() {
                                 </ul>
                             </CardContent>
                         </Card>
-
                         <Card className="border-yellow-200 bg-yellow-50/50">
                             <CardHeader>
                                 <CardTitle className="text-yellow-700">Good Season</CardTitle>
@@ -658,7 +747,6 @@ export default function BentotaGuide() {
                                 </ul>
                             </CardContent>
                         </Card>
-
                         <Card className="border-blue-200 bg-blue-50/50">
                             <CardHeader>
                                 <CardTitle className="text-blue-700">Monsoon Season</CardTitle>
@@ -675,14 +763,15 @@ export default function BentotaGuide() {
                         </Card>
                     </div>
                 </section>
+
                 {/* Nearby Attractions */}
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
                     <div className="grid md:grid-cols-3 gap-6">
                         <Card>
                             <CardHeader>
-                                <CardTitle className="text-lg">Lunuwila Gefry Bawas Garden</CardTitle>
-                                <CardDescription>Best views of Galle</CardDescription>
+                                <CardTitle className="text-lg">Lunuwila Geoffrey Bawa Garden</CardTitle>
+                                <CardDescription>Architectural masterpiece with stunning views</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <Image
@@ -693,11 +782,12 @@ export default function BentotaGuide() {
                                     className="rounded-lg mb-3"
                                 />
                                 <p className="text-sm text-muted-foreground">
-                                    Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                                    Explore the stunning Lunuwila Geoffrey Bawa Garden, a masterpiece of landscape architecture. This
+                                    garden offers breathtaking views of the surrounding hills and the Indian Ocean. It is a perfect spot
+                                    for photography and relaxation, just 30 minutes from Bentota.
                                 </p>
                             </CardContent>
                         </Card>
-
                         <Card>
                             <CardHeader>
                                 <CardTitle className="text-lg">Kande Viharaya</CardTitle>
@@ -706,32 +796,33 @@ export default function BentotaGuide() {
                             <CardContent>
                                 <Image
                                     src="/placeholder.svg?height=200&width=300"
-                                    alt="Dambulla Cave Temple showing ancient Buddhist statues and paintings inside rock caves"
+                                    alt="Kande Viharaya Buddhist temple with ancient architecture and religious significance"
                                     width={300}
                                     height={200}
                                     className="rounded-lg mb-3"
                                 />
                                 <p className="text-sm text-muted-foreground">
-                                    UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings. 20 minutes away.
+                                    Historic Buddhist temple with ancient architecture and significant religious importance. Features
+                                    traditional Sri Lankan temple design and peaceful meditation areas.
                                 </p>
                             </CardContent>
                         </Card>
-
                         <Card>
                             <CardHeader>
-                                <CardTitle className="text-lg">Baws Garden Kalawila</CardTitle>
+                                <CardTitle className="text-lg">Bawa Garden Kalawila</CardTitle>
                                 <CardDescription>Beautiful garden with diverse flora</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <Image
                                     src="/placeholder.svg?height=200&width=300"
-                                    alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                                    alt="Bawa Garden Kalawila with tropical plants and landscape design"
                                     width={300}
                                     height={200}
                                     className="rounded-lg mb-3"
                                 />
                                 <p className="text-sm text-muted-foreground">
-                                    Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
+                                    Another beautiful garden showcasing tropical landscape design with diverse flora and peaceful walking
+                                    paths. Perfect for nature lovers and photography enthusiasts.
                                 </p>
                             </CardContent>
                         </Card>
@@ -746,13 +837,13 @@ export default function BentotaGuide() {
                         </CardHeader>
                         <CardContent>
                             <p className="text-muted-foreground mb-4">
-                                Bentota offers the perfect blend of relaxation and adventure, luxury and authenticity. Whether you&apos;re
-                                seeking thrilling water sports, romantic beachfront dinners, or simply want to unwind on pristine golden
-                                sands, this coastal paradise delivers unforgettable experiences.
+                                Bentota offers the perfect blend of relaxation and adventure, luxury and authenticity. Whether
+                                you&apos;re seeking thrilling water sports, romantic beachfront dinners, or simply want to unwind on
+                                pristine golden sands, this coastal paradise delivers unforgettable experiences.
                             </p>
                             <p className="text-muted-foreground mb-4">
-                                Don&apos;t miss the opportunity to support local conservation efforts at the turtle hatchery, explore the
-                                mangrove ecosystems of the Bentota River, and indulge in fresh seafood while watching spectacular
+                                Don&apos;t miss the opportunity to support local conservation efforts at the turtle hatchery, explore
+                                the mangrove ecosystems of the Bentota River, and indulge in fresh seafood while watching spectacular
                                 sunsets over the Indian Ocean.
                             </p>
                             <p className="text-muted-foreground font-medium">
