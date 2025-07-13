@@ -179,7 +179,7 @@ export default function GalleFortTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Ramparts_in_galle.jpeg"
                     alt="People walking along Galle Fort ramparts during golden hour with ocean views and lighthouse visible"
                     width={400}
                     height={300}

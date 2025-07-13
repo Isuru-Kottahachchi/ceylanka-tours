@@ -1,8 +1,12 @@
+"use client"
 import Link from "next/link"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { MapPin, Star } from "lucide-react"
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 const destinations = [
   {
@@ -29,8 +33,8 @@ const destinations = [
   },
   {
     id: 3,
-    name: "Kandy Temple of the Tooth",
-    path: "kandy-temple-of-the-tooth",
+    name: "Kandy",
+    path: "kandy",
     location: "Central Province",
     image: "/Kandy.jpeg",
     rating: 4.9,
@@ -113,6 +117,9 @@ const destinations = [
 // const categories = ["All", "Historical", "Religious", "Nature", "Wildlife", "Beach", "Adventure"]
 
 export function PopularDestinations() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   const getDestinationHref = (destination: (typeof destinations)[0]) => {
     // Special handling for Yala National Park to link to our detailed page
     if (destination.name === "Yala National Park") {
@@ -137,7 +144,11 @@ export function PopularDestinations() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {destinations.map((destination) => (
-            <Card key={destination.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
+            <Card
+              key={destination.id}
+              className="group hover:shadow-xl transition-all duration-300 overflow-hidden"
+              data-aos="zoom-in-up"
+            >
               <div className="relative overflow-hidden">
                 <Image
                   src={destination.image || "/placeholder.svg"}
