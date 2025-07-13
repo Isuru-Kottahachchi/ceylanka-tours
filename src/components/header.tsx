@@ -119,43 +119,43 @@ const destinationsItems = [
   },
 ]
 
-const whereToGoItems = {
-  featured: [
-    {
-      id: 1,
-      name: "Mirissa Whale Watching",
-      description:
-        "Blue whales are the biggest animal live on the earth and Mirissa is the one of most suitable spot to watch blue whales and other whales too.",
-      image: "/placeholder.svg?height=120&width=180&text=Whale+Watching",
-      href: "/destinations/mirissa",
-    },
-    {
-      id: 2,
-      name: "Yala National Park",
-      description:
-        "This is the second largest national park in Sri Lanka. Yala is home to Asian elephants, leopards and variety of beautiful endemic birds.",
-      image: "/placeholder.svg?height=120&width=180&text=Yala+Safari",
-      href: "/destinations/yala",
-    },
-    {
-      id: 3,
-      name: "Sigiriya",
-      description:
-        "Sigiriya popular as eighth wonder of the world among the tourists and it was the one of Asia's oldest landscaped garden.",
-      image: "/placeholder.svg?height=120&width=180&text=Sigiriya+Rock",
-      href: "/destinations/sigiriya",
-    },
-  ],
-  quickLinks: [
-    { name: "Gall Fort", href: "/destinations/galle" },
-    { name: "Ella", href: "/destinations/ella" },
-    { name: "Hikkaduwa Beach", href: "/destinations/hikkaduwa" },
-    { name: "Dambulla Cave Temple", href: "/destinations/dambulla" },
-    { name: "Wild Safaris", href: "/destinations/yala" },
-    { name: "Colombo City Tour", href: "/destinations/colombo" },
-    { name: "See All Attractions", href: "/destinations" },
-  ],
-}
+// const whereToGoItems = {
+//   featured: [
+//     {
+//       id: 1,
+//       name: "Mirissa Whale Watching",
+//       description:
+//         "Blue whales are the biggest animal live on the earth and Mirissa is the one of most suitable spot to watch blue whales and other whales too.",
+//       image: "/placeholder.svg?height=120&width=180&text=Whale+Watching",
+//       href: "/destinations/mirissa",
+//     },
+//     {
+//       id: 2,
+//       name: "Yala National Park",
+//       description:
+//         "This is the second largest national park in Sri Lanka. Yala is home to Asian elephants, leopards and variety of beautiful endemic birds.",
+//       image: "/placeholder.svg?height=120&width=180&text=Yala+Safari",
+//       href: "/destinations/yala",
+//     },
+//     {
+//       id: 3,
+//       name: "Sigiriya",
+//       description:
+//         "Sigiriya popular as eighth wonder of the world among the tourists and it was the one of Asia's oldest landscaped garden.",
+//       image: "/placeholder.svg?height=120&width=180&text=Sigiriya+Rock",
+//       href: "/destinations/sigiriya",
+//     },
+//   ],
+//   quickLinks: [
+//     { name: "Gall Fort", href: "/destinations/galle" },
+//     { name: "Ella", href: "/destinations/ella" },
+//     { name: "Hikkaduwa Beach", href: "/destinations/hikkaduwa" },
+//     { name: "Dambulla Cave Temple", href: "/destinations/dambulla" },
+//     { name: "Wild Safaris", href: "/destinations/yala" },
+//     { name: "Colombo City Tour", href: "/destinations/colombo" },
+//     { name: "See All Attractions", href: "/destinations" },
+//   ],
+// }
 
 const planYourTripItems = [
   {
