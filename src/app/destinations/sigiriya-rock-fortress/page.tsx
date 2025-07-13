@@ -4,6 +4,7 @@ import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, User
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Sigiriya Rock Fortress: Complete Travel Guide 2025 | Ancient Wonder of Sri Lanka",
@@ -39,7 +40,7 @@ export default function SigiriyaTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Sigiriya Rock Fortress</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Discover Sri Lankas Ancient Wonder in the Sky</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Discover Sri Lanka&apos;s Ancient Wonder in the Sky</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -139,14 +140,14 @@ export default function SigiriyaTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/SigiriyaView.jpg"
                 alt="Ancient frescoes of Sigiriya showing beautiful celestial maidens painted on rock walls"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                The famous Sigiriya frescoes - ancient paintings of celestial maidens
+                The View of the SIgiriya from away from the rock fortress, showing the lush green landscape and the rock itself.(Image by  Polina Kocheva )
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
@@ -261,7 +262,7 @@ export default function SigiriyaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Sigiriyapaintings.jpeg"
                     alt="Close-up of Sigiriya frescoes showing detailed ancient paintings of women with jewelry and flowers"
                     width={400}
                     height={300}
@@ -329,6 +330,47 @@ export default function SigiriyaTravelGuide() {
                   </div>
                   <Image
                     src="/SigiriyaDrone.jpg"
+                    alt="Panoramic view from Sigiriya summit showing vast green landscape and ancient palace ruins"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>5. Sigiriya Mirror wall</CardTitle>
+                <CardDescription>Visitors ideas</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Mirror wall is a fascinating feature of Sigiriya, once polished to such a shine that it reflected the images of visitors. Today, you can still see ancient graffiti and poems written by visitors over the centuries.
+
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Originally, the wall was so polished that it reflected images like a mirror
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Visitors have left graffiti and poems on the wall for centuries
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Its a fascinating glimpse into the thoughts and feelings of ancient visitors
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        The wall is now protected, and touching it is not allowed
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/Mirrorwall.jpeg"
                     alt="Panoramic view from Sigiriya summit showing vast green landscape and ancient palace ruins"
                     width={400}
                     height={300}
@@ -519,14 +561,15 @@ export default function SigiriyaTravelGuide() {
                 <div>
                   <strong>Entry Fee:</strong>
                   <ul className="mt-1 text-sm text-muted-foreground">
-                    <li>• Adults: $37 USD (approx. 7,400 LKR)</li>
+                    <li>• Adults: $35 USD</li>
                     <li>• Children (6-12): $18.50 USD</li>
                     <li>• SAARC nationals: Discounted rates</li>
                   </ul>
                 </div>
                 <div>
                   <strong>Opening Hours:</strong>
-                  <p className="text-sm text-muted-foreground">7:00 AM - 5:30 PM (last entry 4:30 PM)</p>
+                  <p className="text-sm text-muted-foreground">5:00 AM - 5:30 PM (last entry 4:30 PM)</p>
+                  <p className="text-sm text-muted-foreground">*The frescoes area will be closed for tourists at 17:45 PM</p>
                 </div>
                 <div>
                   <strong>Climbing Time:</strong>
@@ -599,63 +642,145 @@ export default function SigiriyaTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Pidurangala Rock</CardTitle>
-                <CardDescription>Best views of Sigiriya</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="View of Sigiriya Rock from Pidurangala Rock showing the fortress from a distance"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
-                </p>
-              </CardContent>
-            </Card>
+            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Pidurangala Rock</CardTitle>
+                  <CardDescription>Best views of Sigiriya</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/Pidurangala.jpeg"
+                    alt="View of Sigiriya Rock from Pidurangala Rock"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/attractions/dambulla-cave-temple" className="block hover:shadow-md transition-shadow duration-200">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Dambulla Cave Temple</CardTitle>
+                  <CardDescription>Golden Temple complex</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/Dambullacavetemple.jpeg"
+                    alt="Dambulla Cave Temple showing ancient Buddhist statues and paintings inside rock caves"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings. 20 minutes away.
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/attractions/minneriya-national-park" className="block hover:shadow-md transition-shadow duration-200">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Minneriya National Park</CardTitle>
+                  <CardDescription>Elephant gathering</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/Minneriyanationalpark.jpeg"
+                    alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Famous for &quot;The Gathering&quot; - hundreds of elephants come together during dry season. 1 hour drive.
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Polonnaruwa</CardTitle>
+                  <CardDescription>Ancient city</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="View of Sigiriya Rock from Pidurangala Rock"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Polonnaruwa</CardTitle>
+                  <CardDescription>Ancient city</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="View of Sigiriya Rock from Pidurangala Rock"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Polonnaruwa</CardTitle>
+                  <CardDescription>Ancient city</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="View of Sigiriya Rock from Pidurangala Rock"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Dambulla Cave Temple</CardTitle>
-                <CardDescription>Golden Temple complex</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Dambulla Cave Temple showing ancient Buddhist statues and paintings inside rock caves"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings. 20 minutes away.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Minneriya National Park</CardTitle>
-                <CardDescription>Elephant gathering</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Large herd of elephants gathering at Minneriya National Park during dry season"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Famous for &quot;The Gathering&quot; - hundreds of elephants come together during dry season. 1 hour drive.
-
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </section>
 
@@ -682,7 +807,7 @@ export default function SigiriyaTravelGuide() {
             </CardContent>
           </Card>
         </section>
-      </div>
-    </main>
+      </div >
+    </main >
   )
 }

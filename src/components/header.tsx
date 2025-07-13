@@ -1,23 +1,13 @@
 "use client"
-
 import type React from "react"
-
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-// import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Card, CardContent } from "@/components/ui/card"
-import { Search, Menu, Moon, Sun, Phone, ChevronDown } from "lucide-react"
+import { Search, Menu, Moon, Sun, Phone, ChevronDown, ChevronRight } from "lucide-react"
 import { useTheme } from "next-themes"
-
-// const languages = [
-//   { code: "en", name: "English", flag: "🇺🇸" },
-//   { code: "si", name: "සිංහල", flag: "🇱🇰" },
-//   { code: "ta", name: "தமிழ්", flag: "🇱🇰" },
-// ]
 
 const topNavItems = [
   { name: "Home", href: "/" },
@@ -41,10 +31,90 @@ const whatToDoItems = [
   {
     title: "Experiences",
     items: [
-      { name: "Tea Plantation Tours", href: "/experiences/tea" },
+      {
+        name: "Tea Plantation Tours",
+        href: "/experiences/tea",
+      },
       { name: "Cooking Classes", href: "/experiences/cooking" },
       { name: "Ayurveda & Spa", href: "/experiences/ayurveda" },
       { name: "Train Journeys", href: "/experiences/trains" },
+    ],
+  },
+]
+
+// Enhanced destinations structure with hierarchical dropdown
+const destinationsItems = [
+  {
+    title: "Cultural Triangle",
+    icon: "🏛️",
+    hasSubmenu: true,
+    items: [
+      { name: "Anuradhapura", href: "/destinations/anuradhapura" },
+      { name: "Polonnaruwa", href: "/destinations/polonnaruwa" },
+      { name: "Sigiriya", href: "/destinations/sigiriya" },
+      { name: "Dambulla", href: "/destinations/dambulla" },
+      { name: "Kandy", href: "/destinations/kandy" },
+    ],
+  },
+  {
+    title: "Hill Country",
+    icon: "⛰️",
+    hasSubmenu: true,
+    items: [
+      { name: "Nuwara Eliya", href: "/destinations/nuwara-eliya" },
+      { name: "Ella", href: "/destinations/ella" },
+      { name: "Hatton", href: "/destinations/hatton" },
+      { name: "Badulla", href: "/destinations/badulla" },
+      { name: "Bandarawela", href: "/destinations/bandarawela" },
+      { name: "Haputale", href: "/destinations/haputale" },
+    ],
+  },
+  {
+    title: "Sun and Sand",
+    icon: "🏖️",
+    hasSubmenu: true,
+    items: [
+      { name: "Mirissa", href: "/destinations/mirissa" },
+      { name: "Unawatuna", href: "/destinations/unawatuna" },
+      { name: "Hikkaduwa", href: "/destinations/hikkaduwa" },
+      { name: "Bentota", href: "/destinations/bentota" },
+      { name: "Arugam Bay", href: "/destinations/arugam-bay" },
+      { name: "Negombo", href: "/destinations/negombo" },
+    ],
+  },
+  {
+    title: "Wildlife",
+    icon: "🐘",
+    hasSubmenu: true,
+    items: [
+      { name: "Yala National Park", href: "/destinations/yala" },
+      { name: "Udawalawe National Park", href: "/destinations/udawalawe" },
+      { name: "Minneriya National Park", href: "/destinations/minneriya" },
+      { name: "Wilpattu National Park", href: "/destinations/wilpattu" },
+      { name: "Sinharaja Forest", href: "/destinations/sinharaja" },
+    ],
+  },
+  {
+    title: "Culture and Heritage",
+    icon: "🏺",
+    hasSubmenu: true,
+    items: [
+      { name: "Galle Fort", href: "/destinations/galle" },
+      { name: "Temple of the Tooth", href: "/destinations/temple-tooth" },
+      { name: "Adam's Peak", href: "/destinations/adams-peak" },
+      { name: "Mihintale", href: "/destinations/mihintale" },
+      { name: "Yapahuwa", href: "/destinations/yapahuwa" },
+    ],
+  },
+  {
+    title: "Air/Sea Ports",
+    icon: "✈️",
+    hasSubmenu: true,
+    items: [
+      { name: "Colombo Airport (CMB)", href: "/destinations/colombo-airport" },
+      { name: "Mattala Airport (HRI)", href: "/destinations/mattala-airport" },
+      { name: "Colombo Port", href: "/destinations/colombo-port" },
+      { name: "Hambantota Port", href: "/destinations/hambantota-port" },
     ],
   },
 ]
@@ -108,11 +178,144 @@ const planYourTripItems = [
   },
 ]
 
+// Desktop Hierarchical Dropdown Component
+function DesktopHierarchicalDropdown({
+  isOpen,
+  onClose,
+  dropdownRef,
+}: {
+  isOpen: boolean
+  onClose: () => void
+  dropdownRef: React.RefObject<HTMLDivElement | null>
+}) {
+  const [expandedSection, setExpandedSection] = useState<string | null>(null)
+
+  const toggleSection = (title: string) => {
+    setExpandedSection(expandedSection === title ? null : title)
+  }
+
+  if (!isOpen) return null
+
+  return (
+    <div ref={dropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white shadow-xl rounded-lg border z-50">
+      <div className="p-4 max-h-96 overflow-y-auto">
+        {destinationsItems.map((section) => (
+          <div key={section.title} className="mb-2">
+            <button
+              onClick={() => toggleSection(section.title)}
+              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 rounded-md transition-colors"
+            >
+              <div className="flex items-center space-x-2">
+                <span className="text-lg">{section.icon}</span>
+                <span className="font-medium text-gray-900">{section.title}</span>
+              </div>
+              <ChevronRight
+                className={`h-4 w-4 text-gray-500 transition-transform ${
+                  expandedSection === section.title ? "rotate-90" : ""
+                }`}
+              />
+            </button>
+
+            {expandedSection === section.title && (
+              <div className="ml-8 mt-1 space-y-1">
+                {section.items.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="block p-2 text-sm text-gray-600 hover:text-cyan-600 hover:bg-gray-50 rounded-md transition-colors"
+                    onClick={onClose}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+// Mobile Hierarchical Menu Component
+function MobileHierarchicalMenu() {
+  const [expandedSection, setExpandedSection] = useState<string | null>(null)
+
+  const toggleSection = (title: string) => {
+    setExpandedSection(expandedSection === title ? null : title)
+  }
+
+  return (
+    <div className="space-y-2">
+      <div className="font-semibold text-gray-900 py-2 border-b">Destinations</div>
+      {destinationsItems.map((section) => (
+        <div key={section.title}>
+          <button
+            onClick={() => toggleSection(section.title)}
+            className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 rounded-md transition-colors"
+          >
+            <div className="flex items-center space-x-2">
+              <span>{section.icon}</span>
+              <span className="font-medium text-gray-900">{section.title}</span>
+            </div>
+            <ChevronRight
+              className={`h-4 w-4 text-gray-500 transition-transform ${
+                expandedSection === section.title ? "rotate-90" : ""
+              }`}
+            />
+          </button>
+
+          {expandedSection === section.title && (
+            <div className="ml-6 mt-1 space-y-1">
+              {section.items.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="block p-2 text-sm text-gray-600 hover:text-cyan-600 rounded-md transition-colors"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export function Header() {
   const [searchQuery, setSearchQuery] = useState("")
   const { theme, setTheme } = useTheme()
-  // const [currentLanguage, setCurrentLanguage] = useState("en")
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+
+  // Add refs for destinations dropdown
+  const destinationsDropdownRef = useRef<HTMLDivElement>(null)
+  const destinationsButtonRef = useRef<HTMLButtonElement>(null)
+
+  // Click outside detection for destinations dropdown
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        activeDropdown === "destinations" &&
+        destinationsDropdownRef.current &&
+        destinationsButtonRef.current &&
+        !destinationsDropdownRef.current.contains(event.target as Node) &&
+        !destinationsButtonRef.current.contains(event.target as Node)
+      ) {
+        setActiveDropdown(null)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [activeDropdown])
+
+  const toggleDestinationsDropdown = () => {
+    setActiveDropdown(activeDropdown === "destinations" ? null : "destinations")
+  }
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
@@ -138,35 +341,13 @@ export function Header() {
                 </Link>
               ))}
             </div>
-
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-1">
                 <Phone className="h-4 w-4" />
                 <span>Tourism Hotline: 1912</span>
               </div>
-
-              {/* Language Selector */}
-              {/* <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="sm" className="text-white hover:bg-slate-700">
-                    <Globe className="h-4 w-4 mr-1" />
-                    Select Language
-                    <ChevronDown className="h-3 w-3 ml-1" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  {languages.map((lang) => (
-                    <DropdownMenuItem key={lang.code} onClick={() => setCurrentLanguage(lang.code)}>
-                      <span className="mr-2">{lang.flag}</span>
-                      {lang.name}
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu> */}
-
               {/* Theme Toggle */}
               <Button
-                // variant="ghost"
                 size="sm"
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                 className="text-white hover:bg-slate-700"
@@ -207,7 +388,6 @@ export function Header() {
                   WHAT TO DO
                   <ChevronDown className="h-4 w-4 ml-1" />
                 </Button>
-
                 {activeDropdown === "what-to-do" && (
                   <div className="absolute top-full left-0 mt-2 w-80 bg-white shadow-xl rounded-lg border z-50">
                     <div className="p-4">
@@ -232,77 +412,25 @@ export function Header() {
                 )}
               </div>
 
-              {/* Where To Go Mega Menu - Made Smaller */}
-              <div
-                className="relative"
-                onMouseEnter={() => setActiveDropdown("where-to-go")}
-                onMouseLeave={() => setActiveDropdown(null)}
-              >
-                <Button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium">
-                  WHERE TO GO
-                  <ChevronDown className="h-4 w-4 ml-1" />
+              {/* Enhanced Hierarchical Destinations Dropdown - Replaces WHERE TO GO */}
+              <div className="relative">
+                <Button
+                  ref={destinationsButtonRef}
+                  onClick={toggleDestinationsDropdown}
+                  className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium"
+                >
+                  DESTINATIONS
+                  <ChevronDown
+                    className={`h-4 w-4 ml-1 transition-transform ${
+                      activeDropdown === "destinations" ? "rotate-180" : ""
+                    }`}
+                  />
                 </Button>
-
-                {activeDropdown === "where-to-go" && (
-                  <div className="absolute top-full left-0 mt-2 w-[650px] bg-white shadow-xl rounded-lg border z-50">
-                    <div className="p-4">
-                      <div className="flex">
-                        {/* Sidebar - Made Smaller */}
-                        <div className="w-36 bg-gray-100 p-3 rounded-l-lg">
-                          <div className="bg-gray-600 text-white p-2 rounded mb-2">
-                            <div className="text-xs font-semibold">Top Attractions</div>
-                          </div>
-                          <div className="text-xs text-gray-700 p-2">Top Cities and Provinces</div>
-                        </div>
-
-                        {/* Featured Destinations - Made Smaller */}
-                        <div className="flex-1 pl-4">
-                          <div className="grid grid-cols-3 gap-3 mb-4">
-                            {whereToGoItems.featured.map((destination) => (
-                              <Card key={destination.id} className="overflow-hidden"  data-aos="fade-up">
-                                <div className="relative">
-                                  <Image
-                                    src={destination.image || "/placeholder.svg"}
-                                    alt={destination.name}
-                                    width={180}
-                                    height={120}
-                                    className="w-full h-20 object-cover"
-                                  />
-                                  <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-1">
-                                    <h4 className="font-semibold text-xs">{destination.name}</h4>
-                                  </div>
-                                </div>
-                                <CardContent className="p-2">
-                                  <p className="text-xs text-gray-600 mb-1 line-clamp-2">{destination.description}</p>
-                                  <Link
-                                    href={destination.href}
-                                    className="text-xs text-cyan-600 hover:text-cyan-700 font-medium"
-                                  >
-                                    Read More »
-                                  </Link>
-                                </CardContent>
-                              </Card>
-                            ))}
-                          </div>
-
-                          {/* Quick Links - Made Smaller */}
-                          <div className="flex flex-wrap gap-3 text-xs">
-                            {whereToGoItems.quickLinks.map((link) => (
-                              <Link
-                                key={link.name}
-                                href={link.href}
-                                className="text-cyan-600 hover:text-cyan-700 flex items-center"
-                              >
-                                <span className="mr-1">›</span>
-                                {link.name}
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
+                <DesktopHierarchicalDropdown
+                  isOpen={activeDropdown === "destinations"}
+                  onClose={() => setActiveDropdown(null)}
+                  dropdownRef={destinationsDropdownRef}
+                />
               </div>
 
               {/* Plan Your Trip Dropdown */}
@@ -315,7 +443,6 @@ export function Header() {
                   PLAN YOUR TRIP
                   <ChevronDown className="h-4 w-4 ml-1" />
                 </Button>
-
                 {activeDropdown === "plan-trip" && (
                   <div className="absolute top-full left-0 mt-2 w-80 bg-white shadow-xl rounded-lg border z-50">
                     <div className="p-4">
@@ -343,10 +470,6 @@ export function Header() {
               <Link href="/events" className="text-gray-700 hover:text-cyan-600 transition-colors font-medium">
                 UPCOMING EVENTS
               </Link>
-
-              {/* <Link href="/testimonials" className="text-gray-700 hover:text-cyan-600 transition-colors font-medium">
-                WHAT THE WORLD HAS TO SAY
-              </Link> */}
             </nav>
 
             {/* Mobile Menu */}
@@ -382,40 +505,23 @@ export function Header() {
                     <Link href="/activities" className="py-2 border-b">
                       WHAT TO DO
                     </Link>
-                    <Link href="/destinations" className="py-2 border-b">
-                      WHERE TO GO
-                    </Link>
+
+                    {/* Mobile Hierarchical Destinations Menu */}
+                    <div className="py-2 border-b">
+                      <MobileHierarchicalMenu />
+                    </div>
+
                     <Link href="/plan" className="py-2 border-b">
                       PLAN YOUR TRIP
                     </Link>
                     <Link href="/events" className="py-2 border-b">
                       UPCOMING EVENTS
                     </Link>
-                    {/* <Link href="/testimonials" className="py-2 border-b">
-                      WHAT THE WORLD HAS TO SAY
-                    </Link> */}
                   </nav>
                 </div>
               </SheetContent>
             </Sheet>
           </div>
-
-          {/* Search Bar - Moved to separate line */}
-          {/* <div className="flex justify-center">
-            <form onSubmit={handleSearch} className="flex items-center space-x-2 w-full max-w-2xl">
-              <Input
-                type="search"
-                placeholder="Search destinations, hotels, experiences..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="flex-1 h-12 text-lg px-6"
-              />
-              <Button type="submit" className="h-12 px-8 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold">
-                <Search className="h-5 w-5 mr-2" />
-                Search
-              </Button>
-            </form>
-          </div> */}
         </div>
       </div>
     </header>

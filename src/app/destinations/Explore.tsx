@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 const exploreCategories = [
   {
     id: "adventure-sports",
-    title: "Adventure Sports",
+    title: "Adventure Activities",
     description: "Thrilling activities from white water rafting to zip lining across stunning landscapes",
     icon: Zap,
     image: "/placeholder.svg?height=300&width=400",

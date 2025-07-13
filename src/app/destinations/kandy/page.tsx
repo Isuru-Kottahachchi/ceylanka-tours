@@ -261,6 +261,47 @@ export default function KandyTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>3. Bahirawa Kanda Temple</CardTitle>
+                <CardDescription>147 acres of botanical paradise</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Just 6km from Kandy city, these world-renowned botanical gardens are home to over 4,000 species of
+                      plants. Originally a royal pleasure garden, its now one of the finest botanical gardens in Asia.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Famous orchid collection with over 300 varieties
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Giant Javan fig tree with massive canopy
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Spice garden and medicinal plants section
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect for picnics and family outings
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/Bahirawakanda.jpeg"
+                    alt="Lush Royal Botanical Gardens Peradeniya showing diverse tropical plants and well-maintained pathways"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
 
             {/* Cultural Shows */}
             <Card>
