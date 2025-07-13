@@ -7,12 +7,12 @@ import { Badge } from "@/components/ui/badge"
 export const metadata: Metadata = {
   title: "Colombo City Tour Sri Lanka: Complete Guide 2025 | Commercial Capital Exploration",
   description:
-    "Discover Colombo, Sri Lanka's vibrant commercial capital. Complete city tour guide covering historic sites, modern attractions, shopping, dining, and cultural experiences.",
+    "Discover Colombo, Sri Lanka&apos;s vibrant commercial capital. Complete city tour guide covering historic sites, modern attractions, shopping, dining, and cultural experiences.",
   keywords:
     "Colombo Sri Lanka, city tour, Galle Face Green, Pettah Market, Independence Square, Red Mosque, colonial architecture, shopping",
   openGraph: {
     title: "Colombo City Tour: Complete Urban Adventure Guide 2025",
-    description: "Your ultimate guide to exploring Sri Lanka's dynamic commercial capital",
+    description: "Your ultimate guide to exploring Sri Lanka&apos;s dynamic commercial capital",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -33,7 +33,7 @@ export default function ColomboTourGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Colombo</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Dynamic Commercial Capital</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Dynamic Commercial Capital</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -59,15 +59,15 @@ export default function ColomboTourGuide() {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Colombo, Sri Lanka's bustling commercial capital and largest city, is a fascinating blend of colonial
-              heritage, modern development, and vibrant local culture. This dynamic metropolis serves as the country's
+              Colombo, Sri Lanka&apos;s bustling commercial capital and largest city, is a fascinating blend of colonial
+              heritage, modern development, and vibrant local culture. This dynamic metropolis serves as the country&apos;s
               economic heart while preserving its rich history through magnificent architecture, bustling markets, and
               diverse cultural attractions.
             </p>
             <p className="text-lg">
               From the historic Fort district with its colonial buildings to the modern skyscrapers of the business
               district, from the aromatic spice markets of Pettah to the serene Buddhist temples, Colombo offers
-              visitors an authentic urban Sri Lankan experience that captures the essence of this island nation's past,
+              visitors an authentic urban Sri Lankan experience that captures the essence of this island nation&apos;s past,
               present, and future.
             </p>
           </div>
@@ -147,19 +147,19 @@ export default function ColomboTourGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                The Fort district showcases Colombo's rich colonial architectural heritage
+                The Fort district showcases Colombo&apos;s rich colonial architectural heritage
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Colombo's Fort district, the historic heart of the city, tells the story of Sri Lanka's colonial past
+                Colombo&apos;s Fort district, the historic heart of the city, tells the story of Sri Lanka&apos;s colonial past
                 through its magnificent architecture. Originally built by the Portuguese and later expanded by the Dutch
                 and British, this area now serves as the central business district while preserving its historical
                 charm.
               </p>
               <p>
                 Walk through streets lined with colonial-era buildings, visit the iconic Clock Tower, explore the Old
-                Parliament Building, and discover how this ancient trading port evolved into modern Sri Lanka's
+                Parliament Building, and discover how this ancient trading port evolved into modern Sri Lanka&apos;s
                 commercial capital.
               </p>
               <div className="bg-amber-50 p-4 rounded-lg">
@@ -202,8 +202,8 @@ export default function ColomboTourGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This half-kilometer stretch of oceanfront lawn is Colombo's most beloved public space. Originally
-                      created by the British in 1859, Galle Face Green serves as the city's social hub where families
+                      This half-kilometer stretch of oceanfront lawn is Colombo&apos;s most beloved public space. Originally
+                      created by the British in 1859, Galle Face Green serves as the city&apos;s social hub where families
                       gather, children play, and visitors enjoy spectacular sunsets over the Indian Ocean.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -239,7 +239,7 @@ export default function ColomboTourGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Pettah is Colombo's bustling commercial heart, a maze of narrow streets filled with shops,
+                      Pettah is Colombo&apos;s bustling commercial heart, a maze of narrow streets filled with shops,
                       markets, and vendors selling everything from spices and textiles to electronics and jewelry. The
                       floating market on Beira Lake adds a unique dimension to this traditional shopping experience.
                     </p>
@@ -290,7 +290,7 @@ export default function ColomboTourGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built to commemorate Sri Lanka's independence from British rule in 1948, this magnificent monument
+                      Built to commemorate Sri Lanka&apos;s independence from British rule in 1948, this magnificent monument
                       combines traditional Kandyan architecture with modern design. The surrounding Independence Square
                       is a popular spot for locals and tourists alike.
                     </p>
@@ -327,7 +327,7 @@ export default function ColomboTourGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This striking red and white striped mosque is one of Colombo's most photographed buildings. Built
+                      This striking red and white striped mosque is one of Colombo&apos;s most photographed buildings. Built
                       in 1908, it showcases beautiful Indo-Saracenic architecture and serves as an important religious
                       and cultural center for the Muslim community.
                     </p>
@@ -438,11 +438,11 @@ export default function ColomboTourGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Gangaramaya Temple</h4>
                   <p className="text-sm text-muted-foreground">
-                    One of Colombo's most important Buddhist temples, featuring eclectic architecture and artifacts.
+                    One of Colombo&apos;s most important Buddhist temples, featuring eclectic architecture and artifacts.
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">St. Lucia's Cathedral</h4>
+                  <h4 className="font-semibold mb-2">St. Lucia&apos;s Cathedral</h4>
                   <p className="text-sm text-muted-foreground">
                     Beautiful Catholic cathedral showcasing colonial religious architecture.
                   </p>
@@ -476,7 +476,7 @@ export default function ColomboTourGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Tea Culture</h4>
                   <p className="text-sm text-muted-foreground">
-                    Visit tea lounges and learn about Sri Lanka's famous Ceylon tea heritage.
+                    Visit tea lounges and learn about Sri Lanka&apos;s famous Ceylon tea heritage.
                   </p>
                 </div>
               </CardContent>
@@ -551,7 +551,7 @@ export default function ColomboTourGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Colombo offers a perfect introduction to Sri Lanka's rich culture, history, and modern aspirations. This
+                Colombo offers a perfect introduction to Sri Lanka&apos;s rich culture, history, and modern aspirations. This
                 vibrant city seamlessly blends ancient traditions with contemporary life, creating unique experiences
                 that showcase the best of Sri Lankan urban culture.
               </p>

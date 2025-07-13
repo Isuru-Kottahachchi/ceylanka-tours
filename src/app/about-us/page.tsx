@@ -32,36 +32,36 @@ export const metadata: Metadata = {
     },
 }
 
-const teamMembers = [
-    {
-        name: "Samantha Perera",
-        role: "Founder & Travel Expert",
-        image: "/placeholder.svg?height=300&width=300",
-        bio: "Born and raised in Kandy, Samantha has been exploring Sri Lanka for over 15 years. Her passion for sharing the hidden gems of her homeland led to the creation of this travel guide.",
-        specialties: ["Cultural Sites", "Hill Country", "Local Cuisine"],
-    },
-    {
-        name: "Rajesh Fernando",
-        role: "Wildlife & Nature Guide",
-        image: "/placeholder.svg?height=300&width=300",
-        bio: "A certified naturalist with 12 years of experience in Sri Lanka's national parks. Rajesh specializes in wildlife photography and sustainable eco-tourism.",
-        specialties: ["Wildlife Safari", "Bird Watching", "Photography"],
-    },
-    {
-        name: "Priya Wickramasinghe",
-        role: "Cultural Heritage Specialist",
-        image: "/placeholder.svg?height=300&width=300",
-        bio: "With a Master's in Archaeology from University of Colombo, Priya brings deep knowledge of Sri Lanka's ancient history and UNESCO World Heritage sites.",
-        specialties: ["Ancient Cities", "Temples", "Historical Sites"],
-    },
-    {
-        name: "David Silva",
-        role: "Adventure & Beach Expert",
-        image: "/placeholder.svg?height=300&width=300",
-        bio: "A former surf instructor turned travel writer, David knows every beach, surf spot, and adventure activity along Sri Lanka's stunning coastline.",
-        specialties: ["Beach Destinations", "Water Sports", "Adventure Travel"],
-    },
-]
+// const teamMembers = [
+//     {
+//         name: "Samantha Perera",
+//         role: "Founder & Travel Expert",
+//         image: "/placeholder.svg?height=300&width=300",
+//         bio: "Born and raised in Kandy, Samantha has been exploring Sri Lanka for over 15 years. Her passion for sharing the hidden gems of her homeland led to the creation of this travel guide.",
+//         specialties: ["Cultural Sites", "Hill Country", "Local Cuisine"],
+//     },
+//     {
+//         name: "Rajesh Fernando",
+//         role: "Wildlife & Nature Guide",
+//         image: "/placeholder.svg?height=300&width=300",
+//         bio: "A certified naturalist with 12 years of experience in Sri Lanka's national parks. Rajesh specializes in wildlife photography and sustainable eco-tourism.",
+//         specialties: ["Wildlife Safari", "Bird Watching", "Photography"],
+//     },
+//     {
+//         name: "Priya Wickramasinghe",
+//         role: "Cultural Heritage Specialist",
+//         image: "/placeholder.svg?height=300&width=300",
+//         bio: "With a Master's in Archaeology from University of Colombo, Priya brings deep knowledge of Sri Lanka's ancient history and UNESCO World Heritage sites.",
+//         specialties: ["Ancient Cities", "Temples", "Historical Sites"],
+//     },
+//     {
+//         name: "David Silva",
+//         role: "Adventure & Beach Expert",
+//         image: "/placeholder.svg?height=300&width=300",
+//         bio: "A former surf instructor turned travel writer, David knows every beach, surf spot, and adventure activity along Sri Lanka's stunning coastline.",
+//         specialties: ["Beach Destinations", "Water Sports", "Adventure Travel"],
+//     },
+// ]
 
 const achievements = [
     {
@@ -89,7 +89,6 @@ const achievements = [
 export default function AboutPage() {
     return (
         <div className="min-h-screen bg-white dark:bg-slate-900">
-            {/* Hero Section */}
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -165,7 +164,7 @@ export default function AboutPage() {
                         </div>
                         <div className="relative">
                             <Image
-                                src="/placeholder.svg?height=500&width=600"
+                                src="/favicon.ico.png"
                                 alt="Sri Lankan temple and nature"
                                 width={600}
                                 height={500}
