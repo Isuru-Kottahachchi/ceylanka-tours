@@ -312,15 +312,15 @@ export default function BentotaGuide() {
                             <CardHeader>
                                 <CardTitle>3. Lunuganga Geoffrey Bawa Garden</CardTitle>
                                 <CardDescription>
-                                    Masterpiece of landscape architecture by Sri Lanka's renowned architect
+                                    Masterpiece of landscape architecture by Sri Lanka&apos;s renowned architect
                                 </CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Lunuganga is the country home and garden of Geoffrey Bawa, Sri Lanka's most famous architect. This
-                                            stunning landscape garden showcases Bawa's vision of tropical modernism and offers breathtaking
+                                            Lunuganga is the country home and garden of Geoffrey Bawa, Sri Lanka&apos;s most famous architect. This
+                                            stunning landscape garden showcases Bawa&apos;s vision of tropical modernism and offers breathtaking
                                             views of the Bentota lagoon.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
