@@ -618,7 +618,7 @@ export default function BentotaGuide() {
 
                 {/* Dining Options */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold mb-6">Best Restaurants & Dining</h2>
+                    <h2 className="text-3xl font-bold mb-6">Best Restaurants &amp; Dining</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         <Card>
                             <CardHeader>
@@ -696,10 +696,10 @@ export default function BentotaGuide() {
                                 <div>
                                     <h4 className="font-semibold mb-2">Getting Around Bentota</h4>
                                     <ul className="text-sm text-muted-foreground space-y-1">
-                                        <li>• Tuk-tuk: Most convenient for short distances</li>
-                                        <li>• Hotel shuttles: Many resorts provide transport</li>
-                                        <li>• Bicycle rental: Great for exploring locally</li>
-                                        <li>• Walking: Beach area is pedestrian-friendly</li>
+                                        <li>&bull; Tuk-tuk: Most convenient for short distances</li>
+                                        <li>&bull; Hotel shuttles: Many resorts provide transport</li>
+                                        <li>&bull; Bicycle rental: Great for exploring locally</li>
+                                        <li>&bull; Walking: Beach area is pedestrian-friendly</li>
                                     </ul>
                                 </div>
                                 <div>
