@@ -99,7 +99,7 @@ export default function BentotaGuide() {
         "/placeholder.svg?height=300&width=400&text=Island+Sunset",
     ]
 
-     const bentotaBeachImages = [
+    const bentotaBeachImages = [
         "/Bentotabeach.jpeg",
         "/placeholder.svg?height=300&width=400&text=Island+View+2",
         "/placeholder.svg?height=300&width=400&text=Temple+View",
@@ -240,7 +240,7 @@ export default function BentotaGuide() {
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                                      <ImageCarousel
+                                    <ImageCarousel
                                         images={bentotaBeachImages}
                                         alt="Panchakapaduwa Island showing various views of the mystical island, temples, and meditation areas"
                                     />
@@ -444,9 +444,8 @@ export default function BentotaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            The Kosgoda Sea Turtle Conservation Project, just 10 minutes from Bentota, protects five species
-                                            of sea turtles. Visitors can learn about conservation efforts and even participate in releasing
-                                            baby turtles into the ocean.
+                                            You can see Sea turtle Hatchery in Bentota, which is a conservation project dedicated to protecting
+                                            endangered sea turtles. Visitors can learn about the life cycle of these magnificent creatures,
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
