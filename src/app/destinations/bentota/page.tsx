@@ -846,7 +846,7 @@ export default function BentotaGuide() {
                                 sunsets over the Indian Ocean.
                             </p>
                             <p className="text-muted-foreground font-medium">
-                                Welcome to Bentota – where every day feels like a tropical dream! 🏖️🌊
+                                Welcome to Bentota  where every day feels like a tropical dream! 🏖️🌊
                             </p>
                         </CardContent>
                     </Card>
