@@ -85,10 +85,17 @@ export default function BentotaGuide() {
     // Define images for Panchakapaduwa Island
     const panchakapaduwImages = [
         "/Panchakpaduwaisland.jpeg",
-        "/placeholder.svg?height=300&width=400&text=Island+View+2",
-        "/placeholder.svg?height=300&width=400&text=Temple+View",
-        "/placeholder.svg?height=300&width=400&text=Meditation+Area",
-        "/placeholder.svg?height=300&width=400&text=Island+Sunset",
+        "/Panchakpaduwaisland1.jpeg",
+        "/Panchakpaduwaisland2.jpeg",
+        "/Panchakpaduwaisland3.jpeg",
+        "/Panchakpaduwaisland4.jpeg",
+        "/Panchakpaduwaisland5.jpeg",
+        "/Panchakpaduwaisland6.jpeg",
+        "/Panchakpaduwaisland7.jpeg",
+        "/Panchakpaduwaisland8.jpeg",
+        "/Panchakpaduwaisland9.jpeg",
+
+
     ]
 
     const seaTurtleImages = [
@@ -794,7 +801,7 @@ export default function BentotaGuide() {
                             </CardHeader>
                             <CardContent>
                                 <Image
-                                    src="/placeholder.svg?height=200&width=300"
+                                    src="/Kandeviharaya.jpeg"
                                     alt="Kande Viharaya Buddhist temple with ancient architecture and religious significance"
                                     width={300}
                                     height={200}
