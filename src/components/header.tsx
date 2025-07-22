@@ -362,10 +362,10 @@ export function Header() {
       {/* Main Navigation */}
       <div className="bg-white text-gray-900">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-around gap-8">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
-              <div className="text-3xl font-bold text-cyan-500">CeyLanka Tours</div>
+              {/* <div className="text-3xl font-bold text-cyan-500">CeyLanka Tours</div> */}
               <Image src="/favicon.ico.png" alt="favicom.ico" width={70} height={70} className="rounded-full" />
             </Link>
 
