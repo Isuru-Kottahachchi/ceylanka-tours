@@ -6,10 +6,9 @@ import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
-// import Image from "next/image"
 
 export function HeroSection() {
-  const [searchQuery, setSearchQuery] = useState("")
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
@@ -19,7 +18,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative h-screen flex items-center justify-center">
+    <section className="relative h-[700px] flex items-center justify-center">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
