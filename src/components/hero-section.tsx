@@ -57,7 +57,7 @@ export function HeroSection() {
           <Button
             type="submit"
            variant="default"
-            className="w-full sm:w-auto h-12 px-8 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-r-lg"
+            className="w-full sm:w-auto h-12 px-8 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-r-lg cursor-pointer transition-colors flex items-center justify-center"
           >
             <Search className="h-5 w-5 mr-2" />
             Search

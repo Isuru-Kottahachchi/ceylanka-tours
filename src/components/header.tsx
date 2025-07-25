@@ -13,8 +13,8 @@ const topNavItems = [
   { name: "Home", href: "/" },
   { name: "Site Map", href: "/sitemap" },
   { name: "Contact Us", href: "/contact" },
-  { name: "Tourism News", href: "/news" },
-  { name: "Wildlife Streaming", href: "/wildlife-streaming" },
+  // { name: "Tourism News", href: "/news" },
+  // { name: "Wildlife Streaming", href: "/wildlife-streaming" },
   { name: "About Us", href: "/about-us", hasDropdown: true },
 ]
 
@@ -89,8 +89,8 @@ const destinationsItems = [
     items: [
       { name: "Yala National Park", href: "/destinations/yala" },
       { name: "Udawalawe National Park", href: "/destinations/udawalawe" },
-      { name: "Minneriya National Park", href: "/destinations/minneriya" },
-      { name: "Wilpattu National Park", href: "/destinations/wilpattu" },
+      { name: "Minneriya National Park", href: "/destinations/minneriya-national-park" },
+      { name: "Wilpattu National Park", href: "/destinations/wilpattu-national-park" },
       { name: "Sinharaja Forest", href: "/destinations/sinharaja" },
     ],
   },
@@ -203,7 +203,7 @@ function DesktopHierarchicalDropdown({
           <div key={section.title} className="mb-2">
             <button
               onClick={() => toggleSection(section.title)}
-              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 rounded-md transition-colors"
+              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 rounded-md transition-colors cursor-pointer"
             >
               <div className="flex items-center space-x-2">
                 <span className="text-lg">{section.icon}</span>
@@ -384,7 +384,7 @@ export function Header() {
                 onMouseEnter={() => setActiveDropdown("what-to-do")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <Button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium">
+                <Button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium cursor-pointer">
                   WHAT TO DO
                   <ChevronDown className="h-4 w-4 ml-1" />
                 </Button>
@@ -417,7 +417,7 @@ export function Header() {
                 <Button
                   ref={destinationsButtonRef}
                   onClick={toggleDestinationsDropdown}
-                  className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium"
+                  className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium cursor-pointer"
                 >
                   DESTINATIONS
                   <ChevronDown
@@ -439,7 +439,7 @@ export function Header() {
                 onMouseEnter={() => setActiveDropdown("plan-trip")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <Button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium">
+                <Button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium cursor-pointer">
                   PLAN YOUR TRIP
                   <ChevronDown className="h-4 w-4 ml-1" />
                 </Button>
