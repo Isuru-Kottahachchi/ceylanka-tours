@@ -287,11 +287,11 @@ export function Header() {
   const [searchQuery, setSearchQuery] = useState("")
   const { theme, setTheme } = useTheme()
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
-  const [mounted, setMounted] = useState(false)
+  // const [mounted, setMounted] = useState(false)
 
   // Handle initial theme
   useEffect(() => {
-    setMounted(true)
+    // setMounted(true)
     const savedTheme = localStorage.getItem("theme")
     if (savedTheme) {
       setTheme(savedTheme)
