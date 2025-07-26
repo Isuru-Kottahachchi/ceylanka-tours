@@ -66,13 +66,13 @@ export function HeroSection() {
 
         {/* Quick Links */}
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer">
             Popular Destinations
           </Button>
-          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer">
             Travel Packages
           </Button>
-          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer">
             Cultural Sites
           </Button>
         </div>

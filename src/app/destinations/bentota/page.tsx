@@ -40,18 +40,18 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
                         <Button
                             variant="outline"
                             size="icon"
-                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white/90"
+                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
                             onClick={prevImage}
                         >
-                            <ChevronLeft className="h-4 w-4" />
+                            <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
                         </Button>
                         <Button
                             variant="outline"
                             size="icon"
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white/90"
+                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
                             onClick={nextImage}
                         >
-                            <ChevronRight className="h-4 w-4" />
+                            <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
                         </Button>
                     </>
                 )}
@@ -171,6 +171,10 @@ export default function BentotaGuide() {
                             From thrilling water sports on the Bentota River to peaceful turtle watching at nearby hatcheries, from
                             luxurious spa treatments to fresh seafood dining, Bentota provides the ultimate tropical beach experience
                             with Sri Lankan warmth and hospitality.
+                        </p>
+                        <p className="text-lg">
+                            There is a interesting fact about Bentota that many people don't know. The name "Bentota" is derived from the Sinhalese words "Benthota," which means "river of the benth," referring to the Bentota River that flows through the area. This river is not only a natural beauty but also a vital part of the local ecosystem, supporting diverse wildlife and providing opportunities for water sports and boat rides.
+                            There is a another intersting story,There was a deamon called "Ben"
                         </p>
                     </div>
                 </section>
@@ -419,6 +423,8 @@ export default function BentotaGuide() {
                                             Viharaya, Galapatha Raja Maha Viharaya, and three others that showcase centuries of Buddhist
                                             heritage and architecture.
                                         </p>
+                                        <br></br><p>In the ancinet times, thease five rajamaha viharas were interconnected by a underground tunnel.This tunnel was used by Buddist monks. If you visit Wanawasa Rajamaha Viharaya You can still see part of that tunnel, and there is also the begining of the tunnel n Glapatha viharaya </p>
+                                        <br></br>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -774,7 +780,7 @@ export default function BentotaGuide() {
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <Card>
+                        {/* <Card>
                             <CardHeader>
                                 <CardTitle className="text-lg">Lunuwila Geoffrey Bawa Garden</CardTitle>
                                 <CardDescription>Architectural masterpiece with stunning views</CardDescription>
@@ -793,7 +799,55 @@ export default function BentotaGuide() {
                                     for photography and relaxation, just 30 minutes from Bentota.
                                 </p>
                             </CardContent>
-                        </Card>
+                        </Card> */}
+                        <Link href="/destinations/kandeviharaya" className="block hover:shadow-md transition-shadow duration-200">
+                            <Card className="cursor-pointer">
+                                <CardHeader>
+                                    <CardTitle className="text-lg">Lunuwila Geoffrey Bawa Garden</CardTitle>
+                                    <CardDescription>Architectural masterpiece with stunning views</CardDescription>
+                                </CardHeader>
+                                <CardContent>
+                                    <Image
+                                        src="/Kandeviharaya.jpeg"
+                                        alt="Kande Viharaya Buddhist temple with ancient architecture and religious significance"
+                                        width={300}
+                                        height={200}
+                                        className="rounded-lg mb-3"
+                                    />
+                                    <p className="text-sm text-muted-foreground">
+                                        Explore the stunning Lunuwila Geoffrey Bawa Garden, a masterpiece of landscape architecture. This
+                                        garden offers breathtaking views of the surrounding hills and the Indian Ocean. It is a perfect spot
+                                        for photography and relaxation, just 30 minutes from Bentota.
+                                    </p>
+                                    <span className="text-sm font-medium text-primary mt-3 inline-block">
+                                        See More →
+                                    </span>
+                                </CardContent>
+                            </Card>
+                        </Link>
+                        <Link href="/destinations/kandeviharaya" className="block hover:shadow-md transition-shadow duration-200">
+                            <Card className="cursor-pointer">
+                                <CardHeader>
+                                    <CardTitle className="text-lg"> Kandeviharaya Temple</CardTitle>
+                                    <CardDescription>Historic Buddhist temple</CardDescription>
+                                </CardHeader>
+                                <CardContent>
+                                    <Image
+                                        src="/Kandeviharaya.jpeg"
+                                        alt="Kande Viharaya Buddhist temple with ancient architecture and religious significance"
+                                        width={300}
+                                        height={200}
+                                        className="rounded-lg mb-3"
+                                    />
+                                    <p className="text-sm text-muted-foreground">
+                                        Famous for the &quot;Isurumuniya Lovers&quot; carving and beautiful rock-cut architecture from the 3rd century BC.
+                                    </p>
+                                    <span className="text-sm font-medium text-primary mt-3 inline-block">
+                                        See More →
+                                    </span>
+                                </CardContent>
+                            </Card>
+                        </Link>
                         <Card>
                             <CardHeader>
                                 <CardTitle className="text-lg">Kande Viharaya</CardTitle>
@@ -813,6 +867,7 @@ export default function BentotaGuide() {
                                 </p>
                             </CardContent>
                         </Card>
+
                         <Card>
                             <CardHeader>
                                 <CardTitle className="text-lg">Bawa Garden Kalawila</CardTitle>

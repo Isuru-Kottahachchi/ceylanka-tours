@@ -1,4 +1,4 @@
-import { MapPin, Users, Mountain, Waves, Sun, Leaf, Calendar, Globe, Utensils, Eye } from "lucide-react"
+import { MapPin, Users, Mountain, Waves, Sun, Leaf, Calendar, Globe, Utensils, Eye, Binoculars } from "lucide-react"
 
 function SriLankaAboutCompact() {
     return (
@@ -118,7 +118,7 @@ function SriLankaAboutCompact() {
                         <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
                             <div className="flex items-center space-x-3 mb-2">
                                 <div className="bg-purple-100 dark:bg-purple-900 p-2 rounded-full">
-                                    <Leaf className="h-4 w-4 text-purple-600 dark:text-purple-400" />
+                                    <Binoculars className="h-4 w-4 text-purple-600 dark:text-purple-400" />
                                 </div>
                                 <h4 className="font-medium text-gray-900 dark:text-white text-sm">Wildlife Paradise</h4>
                             </div>
@@ -147,8 +147,8 @@ function SriLankaAboutCompact() {
                 <div
                     className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4"
                     data-aos="fade-up"
-                    data-aos-duration="800"
-                    data-aos-delay="800"
+                    data-aos-duration="600"
+                    data-aos-delay="300"
                 >
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center">
                         <Calendar className="h-5 w-5 mr-2 text-blue-600 dark:text-blue-400" />
@@ -171,7 +171,7 @@ function SriLankaAboutCompact() {
                             <div>
                                 <h4 className="font-medium text-gray-900 dark:text-white text-sm">Languages</h4>
                                 <p className="text-gray-600 dark:text-gray-300 text-xs">
-                                    Sinhala, Tamil (official). English widely spoken in tourism.
+                                    Sinhala, Tamil, English widely spoken in tourism.
                                 </p>
                             </div>
                         </div>

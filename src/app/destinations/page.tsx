@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
@@ -6,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { MapPin, Search, Filter } from "lucide-react"
 import { AdBanner } from "@/components/ad-banner"
+import React from "react"
 
 const destinations = [
   {
@@ -105,7 +108,7 @@ const destinations = [
     category: "Adventure",
   },
   {
-    id: 8,
+    id: 9,
     name: "Nuwara Eliya",
     location: "Central Province",
     path: "nuwara-eliya",
@@ -117,7 +120,7 @@ const destinations = [
     category: "Nature",
   },
   {
-    id: 8,
+    id: 10,
     name: "Wilpattu National Park",
     location: "Central Province",
     path: "wilpattu-national-park",
@@ -126,10 +129,10 @@ const destinations = [
     // reviews: 890,
     description: "Sri Lankas Largest national park with diverse wildlife and scenic lakes",
     highlights: ["Sri Lanka tiger", "Crocadiles", "Bird Watching"],
-    category: "Nature",
+    category: "Wild Life",
   },
    {
-    id: 8,
+    id: 11,
     name: "Bentota",
     location: "Southern Province",
     image: "/placeholder.svg?height=400&width=600",
@@ -366,7 +369,7 @@ const destinations = [
     // reviews: 890,
     description: "",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
-    category: "Historical",
+    category: "Animals",
   },
     {
     id: 8,
@@ -402,7 +405,7 @@ const destinations = [
     // reviews: 890,
     description: "Around the heart of the Economic Capital of Sri Lanka",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
-    category: "Historical",
+    category: "City",
   },
 
 ]
@@ -410,12 +413,13 @@ const destinations = [
 const categories = ["All", "Historical", "Religious", "Nature", "Wildlife", "Beach", "Adventure"]
 
 export default function DestinationsPage() {
+  const [category, setCategory] = React.useState("All")
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-600 to-teal-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Explore Sri Lankas Destinations</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Explore Sri Lanka&apos;s Destinations</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             From ancient temples to pristine beaches, discover the diverse attractions that make Sri Lanka truly special
           </p>
@@ -426,7 +430,7 @@ export default function DestinationsPage() {
               <Input type="search" placeholder="Search destinations..." className="bg-white text-black pl-10" />
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
             </div>
-            <Button className="bg-white text-green-600 hover:bg-gray-100">
+            <Button className="bg-white text-green-600 hover:bg-gray-100 cursor-pointer">
               <Filter className="h-4 w-4 mr-2" />
               Filter
             </Button>
@@ -441,7 +445,11 @@ export default function DestinationsPage() {
             <Button
               key={category}
               variant={category === "All" ? "default" : "outline"}
-              className={category === "All" ? "bg-green-500 hover:bg-green-600" : ""}
+              className={category === "All" 
+                ? "bg-green-500 hover:bg-green-600 text-white cursor-pointer" 
+                : "border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-900 dark:text-gray-100  cursor-pointer"
+              }
+              onClick={() => {setCategory(category)}}
             >
               {category}
             </Button>
@@ -471,7 +479,7 @@ export default function DestinationsPage() {
                 </div> */}
 
                 {/* Category Badge */}
-                <Badge className="absolute top-3 left-3 bg-green-500 hover:bg-green-600">{destination.category}</Badge>
+                <Badge className="absolute top-3 left-3 bg-green-500 hover:bg-green-600 text-white border-0">{destination.category}</Badge>
 
                 {/* Location */}
                 <div className="absolute bottom-3 left-3 text-white">
@@ -487,14 +495,14 @@ export default function DestinationsPage() {
                 <p className="text-gray-600 dark:text-gray-300 text-sm mb-3 line-clamp-2">{destination.description}</p>
 
                 <div className="flex flex-wrap gap-1 mb-3">
-                  {destination.highlights.slice(0, 2).map((highlight, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs">
+                  {destination.highlights.slice(0, 4).map((highlight, index) => (
+                    <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
                       {highlight}
                     </Badge>
                   ))}
-                  {destination.highlights.length > 2 && (
-                    <Badge variant="secondary" className="text-xs">
-                      +{destination.highlights.length - 2} more
+                  {destination.highlights.length > 4 && (
+                    <Badge variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
+                      +{destination.highlights.length - 4} more
                     </Badge>
                   )}
                 </div>

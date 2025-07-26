@@ -76,6 +76,12 @@ export default function SigiriyaTravelGuide() {
 
             </p>
           </div>
+           <div className="flex items-start gap-2">
+                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Dont make unnesaary noice:</strong>Hornet and bees are common, so be quiet
+                  </span>
+                </div>
         </section>
 
         {/* Quick Facts */}
@@ -454,6 +460,12 @@ export default function SigiriyaTravelGuide() {
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
+                    <strong>Dont make unnesaary noice:</strong>Hornet and bees are common, so be quiet
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
                     <strong>Dont visit midday:</strong> Its extremely hot and crowded (11 AM - 3 PM)
                   </span>
                 </div>
@@ -642,7 +654,7 @@ export default function SigiriyaTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Pidurangala Rock</CardTitle>

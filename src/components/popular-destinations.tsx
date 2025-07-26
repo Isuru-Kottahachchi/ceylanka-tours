@@ -68,8 +68,9 @@ const destinations = [
   },
   {
     id: 6,
-    name: "Mirissa Beach",
+    name: "Mirissa",
     location: "Southern Province",
+    path: "mirissa",
     image: "/Mirissa.jpg",
     rating: 4.7,
     reviews: 1100,
@@ -100,7 +101,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-    {
+  {
     id: 9,
     name: "Anuradhapura",
     location: "North Central Province",
@@ -111,7 +112,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Historical",
   },
-    
+
 ]
 
 // const categories = ["All", "Historical", "Religious", "Nature", "Wildlife", "Beach", "Adventure"]
@@ -166,7 +167,7 @@ export function PopularDestinations() {
                 </div>
 
                 {/* Category Badge */}
-                <Badge className="absolute top-4 left-4 bg-green-500 hover:bg-green-600">{destination.category}</Badge>
+                <Badge className="absolute top-4 left-4 bg-green-500 hover:bg-green-600 text-white border-0">{destination.category}</Badge>
 
                 {/* Location */}
                 <div className="absolute bottom-4 left-4 text-white">
@@ -182,20 +183,20 @@ export function PopularDestinations() {
                 <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">{destination.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {destination.highlights.slice(0, 2).map((highlight, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs">
+                  {destination.highlights.slice(0, 3).map((highlight, index) => (
+                    <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
                       {highlight}
                     </Badge>
                   ))}
-                  {destination.highlights.length > 2 && (
-                    <Badge variant="secondary" className="text-xs">
-                      +{destination.highlights.length - 2} more
+                  {destination.highlights.length > 3 && (
+                    <Badge variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
+                      +{destination.highlights.length - 3} more
                     </Badge>
                   )}
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <div className="text-sm text-gray-500 dark:text-gray-400">{destination.reviews} reviews</div>
+                  {/* <div className="text-sm text-gray-500 dark:text-gray-400">{destination.reviews} reviews</div> */}
                   <Link
                     href={getDestinationHref(destination)}
                     className="text-green-600 hover:text-green-700 font-semibold text-sm transition-colors"

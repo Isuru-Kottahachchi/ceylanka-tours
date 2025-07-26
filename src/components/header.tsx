@@ -198,20 +198,20 @@ function DesktopHierarchicalDropdown({
   if (!isOpen) return null
 
   return (
-    <div ref={dropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 z-50">
+    <div ref={dropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-800 shadow-xl rounded-lg border border-gray-200 dark:border-gray-700 z-50">
       <div className="p-4 max-h-96 overflow-y-auto">
         {destinationsItems.map((section) => (
           <div key={section.title} className="mb-2">
             <button
               onClick={() => toggleSection(section.title)}
-              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors cursor-pointer"
+              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors cursor-pointer"
             >
               <div className="flex items-center space-x-2">
                 <span className="text-lg">{section.icon}</span>
                 <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
               </div>
               <ChevronRight
-                className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === section.title ? "rotate-90" : ""
+                className={`h-4 w-4 text-gray-500 dark:text-gray-400 transition-transform ${expandedSection === section.title ? "rotate-90" : ""
                   }`}
               />
             </button>
@@ -222,7 +222,7 @@ function DesktopHierarchicalDropdown({
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="block p-2 text-sm text-gray-600 hover:text-cyan-600 hover:bg-gray-50 rounded-md transition-colors"
+                    className="block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
                     onClick={onClose}
                   >
                     {item.name}
@@ -252,7 +252,7 @@ function MobileHierarchicalMenu() {
         <div key={section.title}>
           <button
             onClick={() => toggleSection(section.title)}
-            className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+            className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
           >
             <div className="flex items-center space-x-2">
               <span>{section.icon}</span>
