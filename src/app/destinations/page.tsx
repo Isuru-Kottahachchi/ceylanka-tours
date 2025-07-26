@@ -92,8 +92,8 @@ const destinations = [
     // rating: 4.7,
     // reviews: 1100,
     description: "Sri Lanka's ancient capital with sacred Buddhist sites",
-    highlights: ["Whale Watching", "Surfing", "Beach Parties"],
-    category: "Beach",
+    highlights: ["Ancient Ruins", "Buddhist Temples", "Historical Sites"],
+    category: "Historical",
   },
   {
     id: 7,
@@ -413,7 +413,7 @@ const destinations = [
 const categories = ["All", "Historical", "Religious", "Nature", "Wildlife", "Beach", "Adventure"]
 
 export default function DestinationsPage() {
-  const [category, setCategory] = React.useState("All")
+  // const [category, setCategory] = React.useState("All")
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Hero Section */}
@@ -449,7 +449,7 @@ export default function DestinationsPage() {
                 ? "bg-green-500 hover:bg-green-600 text-white cursor-pointer" 
                 : "border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-900 dark:text-gray-100  cursor-pointer"
               }
-              onClick={() => {setCategory(category)}}
+              // onClick={() => {setCategory(category)}}
             >
               {category}
             </Button>

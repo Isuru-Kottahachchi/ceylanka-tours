@@ -173,8 +173,8 @@ export default function BentotaGuide() {
                             with Sri Lankan warmth and hospitality.
                         </p>
                         <p className="text-lg">
-                            There is a interesting fact about Bentota that many people don't know. The name "Bentota" is derived from the Sinhalese words "Benthota," which means "river of the benth," referring to the Bentota River that flows through the area. This river is not only a natural beauty but also a vital part of the local ecosystem, supporting diverse wildlife and providing opportunities for water sports and boat rides.
-                            There is a another intersting story,There was a deamon called "Ben"
+                            There is a interesting fact about Bentota that many people don&apos;t know. The name &quot;Bentota&quot; is derived from the Sinhalese words &quot;Benthota,&quot; which means &quot;river of the benth,&quot; referring to the Bentota River that flows through the area. This river is not only a natural beauty but also a vital part of the local ecosystem, supporting diverse wildlife and providing opportunities for water sports and boat rides.
+                            There is a another intersting story, There was a deamon called &quot;Ben&quot;
                         </p>
                     </div>
                 </section>
@@ -780,30 +780,11 @@ export default function BentotaGuide() {
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        {/* <Card>
-                            <CardHeader>
-                                <CardTitle className="text-lg">Lunuwila Geoffrey Bawa Garden</CardTitle>
-                                <CardDescription>Architectural masterpiece with stunning views</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <Image
-                                    src="/jungle-beach.jpeg"
-                                    alt="View of Jungle Beach"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3"
-                                />
-                                <p className="text-sm text-muted-foreground">
-                                    Explore the stunning Lunuwila Geoffrey Bawa Garden, a masterpiece of landscape architecture. This
-                                    garden offers breathtaking views of the surrounding hills and the Indian Ocean. It is a perfect spot
-                                    for photography and relaxation, just 30 minutes from Bentota.
-                                </p>
-                            </CardContent>
-                        </Card> */}
+
                         <Link href="/destinations/kandeviharaya" className="block hover:shadow-md transition-shadow duration-200">
                             <Card className="cursor-pointer">
                                 <CardHeader>
-                                    <CardTitle className="text-lg">Lunuwila Geoffrey Bawa Garden</CardTitle>
+                                    <CardTitle className="text-lg">Lunuganga Geoffrey Bawa Garden</CardTitle>
                                     <CardDescription>Architectural masterpiece with stunning views</CardDescription>
                                 </CardHeader>
                                 <CardContent>
@@ -815,7 +796,7 @@ export default function BentotaGuide() {
                                         className="rounded-lg mb-3"
                                     />
                                     <p className="text-sm text-muted-foreground">
-                                        Explore the stunning Lunuwila Geoffrey Bawa Garden, a masterpiece of landscape architecture. This
+                                        Explore the stunning Lunuganga Geoffrey Bawa Garden, a masterpiece of landscape architecture. This
                                         garden offers breathtaking views of the surrounding hills and the Indian Ocean. It is a perfect spot
                                         for photography and relaxation, just 30 minutes from Bentota.
                                     </p>
