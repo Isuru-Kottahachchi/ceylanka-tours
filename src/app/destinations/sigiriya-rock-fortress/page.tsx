@@ -677,7 +677,7 @@ export default function SigiriyaTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/dambulla-cave-temple" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/dambulla-cave-temple" className="block hover:shadow-md transition-shadow duration-200">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Dambulla Cave Temple</CardTitle>
@@ -700,7 +700,7 @@ export default function SigiriyaTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/minneriya-national-park" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/minneriya-national-park" className="block hover:shadow-md transition-shadow duration-200">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Minneriya National Park</CardTitle>

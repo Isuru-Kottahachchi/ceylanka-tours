@@ -36,7 +36,7 @@ const destinations = [
     name: "Kandy",
     path: "kandy",
     location: "Central Province",
-    image: "/Kandy.jpeg",
+    image: "/Kandy3.jpeg",
     rating: 4.9,
     reviews: 1580,
     description: "Sacred Buddhist temple housing the relic of Buddha's tooth",
@@ -109,7 +109,7 @@ const destinations = [
     rating: 4.3,
     reviews: 890,
     description: "Ancient city with well-preserved ruins and sacred sites",
-    highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
+    highlights: ["Buddhist Temples", "Sacred Sites", "Ancient Ruins"],
     category: "Historical",
   },
 

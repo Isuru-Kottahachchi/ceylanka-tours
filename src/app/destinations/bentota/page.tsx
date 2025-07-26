@@ -114,13 +114,13 @@ export default function BentotaGuide() {
         "/placeholder.svg?height=300&width=400&text=Island+Sunset",
     ]
 
-    //  const seaTurtleImages = [
-    //     "/Sea-turtle-bentota.jpeg",
-    //     "/placeholder.svg?height=300&width=400&text=Island+View+2",
-    //     "/placeholder.svg?height=300&width=400&text=Temple+View",
-    //     "/placeholder.svg?height=300&width=400&text=Meditation+Area",
-    //     "/placeholder.svg?height=300&width=400&text=Island+Sunset",
-    // ]
+    const LunugangabawagardenImages = [
+        "/Lunugangabawa.jpeg",
+        "/Lunugangabawa2.jpeg",
+        "/Lunugangabawa3.jpeg",
+        "/Lunugangabawa4.jpeg",
+        "/Lunugangabawa5.jpeg",
+    ]
 
     return (
         <main className="min-h-screen bg-background">
@@ -353,12 +353,9 @@ export default function BentotaGuide() {
                                             Read more about Lunuganga Garden
                                         </Link>
                                     </div>
-                                    <Image
-                                        src="/placeholder.svg?height=300&width=400"
+                                    <ImageCarousel
+                                        images={LunugangabawagardenImages}
                                         alt="Lunuganga Geoffrey Bawa Garden with tropical landscaping and lagoon views"
-                                        width={400}
-                                        height={300}
-                                        className="rounded-lg"
                                     />
                                 </div>
                             </CardContent>
@@ -789,8 +786,8 @@ export default function BentotaGuide() {
                                 </CardHeader>
                                 <CardContent>
                                     <Image
-                                        src="/Kandeviharaya.jpeg"
-                                        alt="Kande Viharaya Buddhist temple with ancient architecture and religious significance"
+                                        src="/Lunugangabawa2.jpeg"
+                                        alt="Lunuganga Geoffrey Bawa Garden with lush greenery and artistic landscape design"
                                         width={300}
                                         height={200}
                                         className="rounded-lg mb-3"

@@ -52,7 +52,7 @@ const destinationsItems = [
     items: [
       { name: "Anuradhapura", href: "/destinations/anuradhapura" },
       { name: "Polonnaruwa", href: "/destinations/polonnaruwa" },
-      { name: "Sigiriya", href: "/destinations/sigiriya" },
+      { name: "Sigiriya", href: "/destinations/sigiriya-rock-fortress" },
       { name: "Dambulla", href: "/destinations/dambulla" },
       { name: "Kandy", href: "/destinations/kandy" },
     ],
@@ -63,11 +63,11 @@ const destinationsItems = [
     hasSubmenu: true,
     items: [
       { name: "Nuwara Eliya", href: "/destinations/nuwara-eliya" },
-      { name: "Ella", href: "/destinations/ella" },
+      { name: "Ella", href: "/destinations/ella-town" },
       { name: "Hatton", href: "/destinations/hatton" },
       { name: "Badulla", href: "/destinations/badulla" },
       { name: "Bandarawela", href: "/destinations/bandarawela" },
-      { name: "Haputale", href: "/destinations/haputale" },
+      { name: "Haputhale", href: "/destinations/haputhale" },
     ],
   },
   {

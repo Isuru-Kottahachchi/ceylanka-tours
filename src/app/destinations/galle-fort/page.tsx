@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Ship } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link";
 
 
 export const metadata: Metadata = {
@@ -56,15 +57,15 @@ export default function GalleFortTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Galle Fort: A Living Colonial Museum</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into a time machine and walk through 400 years of colonial history at Galle Fort, Sri Lankas 
-              best-preserved European fortress in Asia. This UNESCO World Heritage site is not just a museum piece – 
-              its a vibrant, living community where colonial Dutch architecture meets modern Sri Lankan life, all 
+              Step into a time machine and walk through 400 years of colonial history at Galle Fort, Sri Lankas
+              best-preserved European fortress in Asia. This UNESCO World Heritage site is not just a museum piece –
+              its a vibrant, living community where colonial Dutch architecture meets modern Sri Lankan life, all
               surrounded by the endless blue of the Indian Ocean.
             </p>
             <p className="text-lg">
-              From cobblestone streets lined with boutique hotels and art galleries to ancient ramparts offering 
-              spectacular sunset views, Galle Fort is where history comes alive. Whether youre a history buff, 
-              architecture enthusiast, or simply seeking Instagram-worthy moments, this coastal gem promises an 
+              From cobblestone streets lined with boutique hotels and art galleries to ancient ramparts offering
+              spectacular sunset views, Galle Fort is where history comes alive. Whether youre a history buff,
+              architecture enthusiast, or simply seeking Instagram-worthy moments, this coastal gem promises an
               unforgettable journey through time.
             </p>
           </div>
@@ -137,13 +138,13 @@ export default function GalleFortTravelGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Galle Forts story begins in 1505 when Portuguese explorers first arrived, but it was the Dutch who 
-                transformed it into the magnificent fortress we see today. Built between 1663-1729, the fort served as 
+                Galle Forts story begins in 1505 when Portuguese explorers first arrived, but it was the Dutch who
+                transformed it into the magnificent fortress we see today. Built between 1663-1729, the fort served as
                 the Dutch East India Companys main stronghold in Sri Lanka.
               </p>
               <p>
-                The British later took control in 1796, adding their own architectural touches. What makes Galle Fort 
-                unique is that its not an abandoned relic – its a thriving community where families have lived for 
+                The British later took control in 1796, adding their own architectural touches. What makes Galle Fort
+                unique is that its not an abandoned relic – its a thriving community where families have lived for
                 generations, maintaining the colonial charm while embracing modern life.
               </p>
               <div className="bg-amber-50 p-4 rounded-lg">
@@ -163,7 +164,7 @@ export default function GalleFortTravelGuide() {
         {/* Top Attractions */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Must-See Attractions in Galle Fort</h2>
-          
+
           {/* Ad Space */}
           <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
             [Advertisement Space - 300x250 Medium Rectangle]
@@ -187,8 +188,8 @@ export default function GalleFortTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The forts massive stone ramparts offer the best views in Galle. Walk the complete circuit (about 2km) 
-                      for stunning ocean vistas, especially magical during sunset. The walls are up to 12 meters high and 
+                      The forts massive stone ramparts offer the best views in Galle. Walk the complete circuit (about 2km)
+                      for stunning ocean vistas, especially magical during sunset. The walls are up to 12 meters high and
                       2 meters thick in some places.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -220,8 +221,8 @@ export default function GalleFortTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in 1938, this 26-meter tall lighthouse is not just functional but also the most photographed 
-                      landmark in Galle Fort. Located at the southeastern tip of the fort, it offers panoramic views of 
+                      Built in 1938, this 26-meter tall lighthouse is not just functional but also the most photographed
+                      landmark in Galle Fort. Located at the southeastern tip of the fort, it offers panoramic views of
                       the Indian Ocean and the forts architecture.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -267,8 +268,8 @@ export default function GalleFortTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in 1755, this beautiful church showcases Dutch colonial architecture and houses fascinating 
-                      tombstones of Dutch colonial officials. The floor is literally paved with tombstones, each telling 
+                      Built in 1755, this beautiful church showcases Dutch colonial architecture and houses fascinating
+                      tombstones of Dutch colonial officials. The floor is literally paved with tombstones, each telling
                       a story of colonial life and death in tropical Ceylon.
                     </p>
                     <div className="bg-blue-50 p-4 rounded-lg">
@@ -295,8 +296,8 @@ export default function GalleFortTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Housed in a beautiful Dutch warehouse, this museum showcases Sri Lankas rich maritime history. 
-                      From ancient fishing techniques to colonial trade routes, its a fascinating journey through the 
+                      Housed in a beautiful Dutch warehouse, this museum showcases Sri Lankas rich maritime history.
+                      From ancient fishing techniques to colonial trade routes, its a fascinating journey through the
                       islands relationship with the sea.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -330,7 +331,7 @@ export default function GalleFortTravelGuide() {
         {/* Shopping & Dining */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Shopping & Dining in Galle Fort</h2>
-          
+
           {/* Ad Space */}
           <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
             [Advertisement Space - 728x90 Leaderboard]
@@ -526,68 +527,114 @@ export default function GalleFortTravelGuide() {
           </div>
         </section>
 
-          {/* Nearby Attractions */}
-                <section className="mb-12">
-                  <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
-                  <div className="grid md:grid-cols-3 gap-6">
-                    <Card>
-                      <CardHeader>
-                        <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
-                        <CardDescription>Best views of Galle</CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <Image
-                          src="/jungle-beach.jpeg"
-                          alt="View of Jungle Beach"
-                          width={300}
-                          height={200}
-                          className="rounded-lg mb-3"
-                        />
-                        <p className="text-sm text-muted-foreground">
-                          Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
-                        </p>
-                      </CardContent>
-                    </Card>
-        
-                    <Card>
-                      <CardHeader>
-                        <CardTitle className="text-lg">Kanneliya</CardTitle>
-                        <CardDescription>Part of a Sinharaja Forest</CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <Image
-                          src="/placeholder.svg?height=200&width=300"
-                          alt="Dambulla Cave Temple showing ancient Buddhist statues and paintings inside rock caves"
-                          width={300}
-                          height={200}
-                          className="rounded-lg mb-3"
-                        />
-                        <p className="text-sm text-muted-foreground">
-                          UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings. 20 minutes away.
-                        </p>
-                      </CardContent>
-                    </Card>
-        
-                    <Card>
-                      <CardHeader>
-                        <CardTitle className="text-lg">Waligama</CardTitle>
-                        <CardDescription>Elephant gathering</CardDescription>
-                      </CardHeader>
-                      <CardContent>
-                        <Image
-                          src="/placeholder.svg?height=200&width=300"
-                          alt="Large herd of elephants gathering at Minneriya National Park during dry season"
-                          width={300}
-                          height={200}
-                          className="rounded-lg mb-3"
-                        />
-                        <p className="text-sm text-muted-foreground">
-                          Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </div>
-                </section>
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/destinations/kandeviharaya" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
+                  <CardDescription>Best views of Galle</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/jungle-beach.jpeg"
+                    alt="View of Jungle Beach"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                      Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+                <Link href="/destinations/kandeviharaya" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Kanneliya</CardTitle>
+                  <CardDescription>Part of a Sinharaja Forest</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/jungle-beach.jpeg"
+                    alt="View of Jungle Beach"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                      Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
+                <CardDescription>Best views of Galle</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/jungle-beach.jpeg"
+                  alt="View of Jungle Beach"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Kanneliya</CardTitle>
+                <CardDescription>Part of a Sinharaja Forest</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Dambulla Cave Temple showing ancient Buddhist statues and paintings inside rock caves"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <p className="text-sm text-muted-foreground">
+                  UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings. 20 minutes away.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Waligama</CardTitle>
+                <CardDescription>Elephant gathering</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
 
         {/* Final Tips */}
         <section className="mb-12">
@@ -597,13 +644,13 @@ export default function GalleFortTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Galle Fort is more than just a historical site – its a living testament to Sri Lankas colonial past 
-                and vibrant present. Every cobblestone street, every colonial building, and every sunset view from the 
+                Galle Fort is more than just a historical site – its a living testament to Sri Lankas colonial past
+                and vibrant present. Every cobblestone street, every colonial building, and every sunset view from the
                 ramparts tells a story of cultural fusion and resilience.
               </p>
               <p className="text-muted-foreground mb-4">
-                Take your time to wander, discover hidden corners, chat with local residents, and soak in the unique 
-                atmosphere where 400 years of history blend seamlessly with contemporary Sri Lankan life. The forts 
+                Take your time to wander, discover hidden corners, chat with local residents, and soak in the unique
+                atmosphere where 400 years of history blend seamlessly with contemporary Sri Lankan life. The forts
                 magic lies not just in its architecture, but in its soul.
               </p>
               <p className="text-muted-foreground font-medium">

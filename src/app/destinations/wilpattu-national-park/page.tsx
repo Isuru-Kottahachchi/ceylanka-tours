@@ -24,7 +24,7 @@ export default function WilpattuNationalParkTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Wilpattuwa1.jpeg"
           alt="Majestic Sri Lankan leopard drinking at a villu lake in Wilpattu National Park with lush forest background"
           fill
           className="object-cover"
@@ -60,13 +60,18 @@ export default function WilpattuNationalParkTravelGuide() {
               Enter the wild heart of Sri Lanka at Wilpattu National Park, the islands largest and oldest national
               park, covering 1,317 square kilometers of pristine wilderness. Famous for its unique villu (natural
               lakes) ecosystem and significant leopard population, Wilpattu offers an authentic safari experience in one
-              of Asias most biodiverse landscapes.
+              of Asia&apos;s most biodiverse landscapes.
             </p>
             <p className="text-lg">
               From the elusive Sri Lankan leopard to massive elephant herds, from rare sloth bears to over 200 bird
-              species, Wilpattus diverse habitats support an incredible array of wildlife. The parks network of
+              species, Wilpattu&apos;s diverse habitats support an incredible array of wildlife. The parks network of
               natural lakes creates a unique ecosystem that attracts animals year-round, making every safari drive an
               adventure filled with potential discoveries.
+            </p>
+            <p className="text-lg">
+              If you are going to visit on a rainy day, be prepared for muddy trails and potential road closures.
+              However, the rain brings the park to life, with lush greenery and decreased animal activity. Consider
+              bringing waterproof gear and a sense of adventure!
             </p>
           </div>
         </section>
@@ -138,7 +143,7 @@ export default function WilpattuNationalParkTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/Wilpattuwa2.jpeg"
                 alt="Scenic villu (natural lake) in Wilpattu showing crystal clear water surrounded by forest with wildlife drinking"
                 width={600}
                 height={400}
@@ -192,7 +197,7 @@ export default function WilpattuNationalParkTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Srilankanleopard1.jpeg"
                     alt="Magnificent Sri Lankan leopard resting by a villu in Wilpattu National Park showing distinctive spotted coat"
                     width={400}
                     height={300}
@@ -275,6 +280,48 @@ export default function WilpattuNationalParkTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>3. Sloth Bears</CardTitle>
+                <CardDescription>Rare and elusive forest dwellers</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Rare sloth bear foraging in Wilpattu forest showing distinctive shaggy black coat and long claws"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Wilpattu is one of the few places in Sri Lanka where you might encounter the elusive sloth bear.
+                      These shaggy, black-coated bears are primarily nocturnal but occasionally spotted during early
+                      morning or late evening safaris, especially when foraging for termites and fruits.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Rare sighting opportunity
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Most active during dawn and dusk
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Distinctive long claws for digging
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Excellent climbers despite appearance
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>3. Kuwenis place</CardTitle>
                 <CardDescription>Rare and elusive forest dwellers</CardDescription>
               </CardHeader>
               <CardContent>
