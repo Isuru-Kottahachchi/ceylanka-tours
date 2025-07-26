@@ -4,10 +4,11 @@ import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { useTheme } from "next-themes"
 import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Search, Menu, Moon, Sun, Phone, ChevronDown, ChevronRight } from "lucide-react"
-import { useTheme } from "next-themes"
+import { Search, Menu, Sun, Moon, Phone, ChevronDown, ChevronRight } from "lucide-react"
+
 
 const topNavItems = [
   { name: "Home", href: "/" },
@@ -197,22 +198,21 @@ function DesktopHierarchicalDropdown({
   if (!isOpen) return null
 
   return (
-    <div ref={dropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white shadow-xl rounded-lg border z-50">
+    <div ref={dropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 z-50">
       <div className="p-4 max-h-96 overflow-y-auto">
         {destinationsItems.map((section) => (
           <div key={section.title} className="mb-2">
             <button
               onClick={() => toggleSection(section.title)}
-              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 rounded-md transition-colors cursor-pointer"
+              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors cursor-pointer"
             >
               <div className="flex items-center space-x-2">
                 <span className="text-lg">{section.icon}</span>
-                <span className="font-medium text-gray-900">{section.title}</span>
+                <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
               </div>
               <ChevronRight
-                className={`h-4 w-4 text-gray-500 transition-transform ${
-                  expandedSection === section.title ? "rotate-90" : ""
-                }`}
+                className={`h-4 w-4 text-gray-500 transition-transform ${expandedSection === section.title ? "rotate-90" : ""
+                  }`}
               />
             </button>
 
@@ -247,21 +247,20 @@ function MobileHierarchicalMenu() {
 
   return (
     <div className="space-y-2">
-      <div className="font-semibold text-gray-900 py-2 border-b">Destinations</div>
+      <div className="font-semibold text-gray-900 dark:text-gray-100 py-2 border-b dark:border-gray-700">Destinations</div>
       {destinationsItems.map((section) => (
         <div key={section.title}>
           <button
             onClick={() => toggleSection(section.title)}
-            className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 rounded-md transition-colors"
+            className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
           >
             <div className="flex items-center space-x-2">
               <span>{section.icon}</span>
-              <span className="font-medium text-gray-900">{section.title}</span>
+              <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
             </div>
             <ChevronRight
-              className={`h-4 w-4 text-gray-500 transition-transform ${
-                expandedSection === section.title ? "rotate-90" : ""
-              }`}
+              className={`h-4 w-4 text-gray-500 dark:text-gray-400 transition-transform ${expandedSection === section.title ? "rotate-90" : ""
+                }`}
             />
           </button>
 
@@ -271,7 +270,7 @@ function MobileHierarchicalMenu() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block p-2 text-sm text-gray-600 hover:text-cyan-600 rounded-md transition-colors"
+                  className="block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
                 >
                   {item.name}
                 </Link>
@@ -288,10 +287,27 @@ export function Header() {
   const [searchQuery, setSearchQuery] = useState("")
   const { theme, setTheme } = useTheme()
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+  const [mounted, setMounted] = useState(false)
+
+  // Handle initial theme
+  useEffect(() => {
+    setMounted(true)
+    const savedTheme = localStorage.getItem("theme")
+    if (savedTheme) {
+      setTheme(savedTheme)
+      document.documentElement.classList.remove("light", "dark")
+      document.documentElement.classList.add(savedTheme)
+    }
+  }, [])
 
   // Add refs for destinations dropdown
   const destinationsDropdownRef = useRef<HTMLDivElement>(null)
   const destinationsButtonRef = useRef<HTMLButtonElement>(null)
+  const whatToDoDropdownRef = useRef<HTMLDivElement>(null)
+  // const planTripDropdownRef = useRef<HTMLDivElement>(null)
+
+  // Refs for desktop dropdown buttons (for click outside detection)
+  const whatToDoButtonRef = useRef<HTMLButtonElement>(null)
 
   // Click outside detection for destinations dropdown
   useEffect(() => {
@@ -302,6 +318,14 @@ export function Header() {
         destinationsButtonRef.current &&
         !destinationsDropdownRef.current.contains(event.target as Node) &&
         !destinationsButtonRef.current.contains(event.target as Node)
+      ) {
+        setActiveDropdown(null)
+      } else if (
+        activeDropdown === "what-to-do" &&
+        whatToDoDropdownRef.current &&
+        whatToDoButtonRef.current &&
+        !whatToDoDropdownRef.current.contains(event.target as Node) &&
+        !whatToDoButtonRef.current.contains(event.target as Node)
       ) {
         setActiveDropdown(null)
       }
@@ -349,10 +373,15 @@ export function Header() {
               {/* Theme Toggle */}
               <Button
                 size="sm"
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-                className="text-white hover:bg-slate-700"
+                onClick={() => {
+                  const nextTheme = theme === "dark" ? "light" : "dark";
+                  setTheme(nextTheme);
+                }}
+                className="text-white hover:bg-slate-700 transition-colors relative cursor-pointer"
+                aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
               >
-                {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+                <Sun className={`h-4 w-4 absolute transition-all ${theme === "dark" ? "opacity-100 scale-100" : "opacity-0 scale-0"}`} />
+                <Moon className={`h-4 w-4 absolute transition-all ${theme === "dark" ? "opacity-0 scale-0" : "opacity-100 scale-100"}`} />
               </Button>
             </div>
           </div>
@@ -360,7 +389,7 @@ export function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="bg-white text-gray-900">
+      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-around gap-8">
             {/* Logo */}
@@ -371,34 +400,34 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-cyan-600 transition-colors font-medium">
+              <Link href="/" className="text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
                 HOME
               </Link>
-              <Link href="/news" className="text-gray-700 hover:text-cyan-600 transition-colors font-medium">
+              {/* <Link href="/news" className="text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
                 Whats New
-              </Link>
+              </Link> */}
 
               {/* What To Do Dropdown */}
-              <div
-                className="relative"
-                onMouseEnter={() => setActiveDropdown("what-to-do")}
-                onMouseLeave={() => setActiveDropdown(null)}
-              >
-                <Button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium cursor-pointer">
+              <div className="relative">
+                <Button ref={whatToDoButtonRef}
+                  onClick={() => setActiveDropdown(activeDropdown === "what-to-do" ? null : "what-to-do")} className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer">
                   WHAT TO DO
-                  <ChevronDown className="h-4 w-4 ml-1" />
+                  <ChevronDown
+                    className={`h-4 w-4 ml-1 transition-transform ${activeDropdown === "what-to-do" ? "rotate-180" : ""
+                      }`}
+                  />
                 </Button>
                 {activeDropdown === "what-to-do" && (
-                  <div className="absolute top-full left-0 mt-2 w-80 bg-white shadow-xl rounded-lg border z-50">
+                  <div ref={whatToDoDropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 z-50">
                     <div className="p-4">
                       <div className="grid grid-cols-2 gap-4">
                         {whatToDoItems.map((section) => (
                           <div key={section.title}>
-                            <h3 className="font-semibold text-gray-900 mb-2 text-sm">{section.title}</h3>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2 text-sm">{section.title}</h3>
                             <ul className="space-y-1">
                               {section.items.map((item) => (
                                 <li key={item.name}>
-                                  <Link href={item.href} className="text-gray-600 hover:text-cyan-600 text-xs">
+                                  <Link href={item.href} className="text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 text-xs">
                                     {item.name}
                                   </Link>
                                 </li>
@@ -417,13 +446,12 @@ export function Header() {
                 <Button
                   ref={destinationsButtonRef}
                   onClick={toggleDestinationsDropdown}
-                  className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium cursor-pointer"
+                  className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer"
                 >
                   DESTINATIONS
                   <ChevronDown
-                    className={`h-4 w-4 ml-1 transition-transform ${
-                      activeDropdown === "destinations" ? "rotate-180" : ""
-                    }`}
+                    className={`h-4 w-4 ml-1 transition-transform ${activeDropdown === "destinations" ? "rotate-180" : ""
+                      }`}
                   />
                 </Button>
                 <DesktopHierarchicalDropdown
@@ -439,21 +467,21 @@ export function Header() {
                 onMouseEnter={() => setActiveDropdown("plan-trip")}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <Button className="flex items-center text-gray-700 hover:text-cyan-600 transition-colors font-medium cursor-pointer">
+                <Button className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer">
                   PLAN YOUR TRIP
                   <ChevronDown className="h-4 w-4 ml-1" />
                 </Button>
                 {activeDropdown === "plan-trip" && (
-                  <div className="absolute top-full left-0 mt-2 w-80 bg-white shadow-xl rounded-lg border z-50">
+                  <div className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 z-50">
                     <div className="p-4">
                       <div className="grid grid-cols-2 gap-4">
                         {planYourTripItems.map((section) => (
                           <div key={section.title}>
-                            <h3 className="font-semibold text-gray-900 mb-2 text-sm">{section.title}</h3>
+                            <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2 text-sm">{section.title}</h3>
                             <ul className="space-y-1">
                               {section.items.map((item) => (
                                 <li key={item.name}>
-                                  <Link href={item.href} className="text-gray-600 hover:text-cyan-600 text-xs">
+                                  <Link href={item.href} className="text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 text-xs">
                                     {item.name}
                                   </Link>
                                 </li>
@@ -467,7 +495,7 @@ export function Header() {
                 )}
               </div>
 
-              <Link href="/events" className="text-gray-700 hover:text-cyan-600 transition-colors font-medium">
+              <Link href="/events" className="text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
                 UPCOMING EVENTS
               </Link>
             </nav>
@@ -475,14 +503,14 @@ export function Header() {
             {/* Mobile Menu */}
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" className="lg:hidden text-gray-700">
+                <Button variant="ghost" size="sm" className="lg:hidden text-gray-700 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800">
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-80">
-                <div className="flex flex-col space-y-4 mt-8">
+              <SheetContent side="right" className="w-80 overflow-y-auto dark:bg-gray-900">
+                <div className="flex flex-col space-y-4 mt-8 h-full">
                   {/* Mobile Search */}
-                  <form onSubmit={handleSearch} className="flex items-center space-x-2">
+                  <form onSubmit={handleSearch} className="flex items-center space-x-2 sticky top-0 bg-white dark:bg-gray-900 pt-2 pb-4 z-10">
                     <Input
                       type="search"
                       placeholder="Search..."
@@ -495,16 +523,47 @@ export function Header() {
                   </form>
 
                   {/* Mobile Navigation */}
-                  <nav className="flex flex-col space-y-3">
+                  <nav className="flex flex-col space-y-3 pb-20">
                     <Link href="/" className="py-2 border-b">
                       HOME
                     </Link>
                     <Link href="/news" className="py-2 border-b">
                       WHATS NEW
                     </Link>
-                    <Link href="/activities" className="py-2 border-b">
-                      WHAT TO DO
-                    </Link>
+                    {/* Mobile What To Do Menu */}
+                    <div className="py-2 border-b">
+                      <div className="font-semibold text-gray-900 mb-3 dark:text-gray-100">What To Do</div>
+                      <div className="space-y-2">
+                        {whatToDoItems.map((section) => (
+                          <div key={section.title}>
+                            <button
+                              onClick={() => setActiveDropdown(activeDropdown === section.title ? null : section.title)}
+                              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 rounded-md transition-colors"
+                            >
+                              <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
+                              <ChevronRight
+                                className={`h-4 w-4 text-gray-500 dark:text-gray-400 transition-transform ${activeDropdown === section.title ? "rotate-90" : ""
+                                  }`}
+                              />
+                            </button>
+
+                            {activeDropdown === section.title && (
+                              <div className="ml-4 mt-2 space-y-2">
+                                {section.items.map((item) => (
+                                  <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    className="block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                                  >
+                                    {item.name}
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
 
                     {/* Mobile Hierarchical Destinations Menu */}
                     <div className="py-2 border-b">

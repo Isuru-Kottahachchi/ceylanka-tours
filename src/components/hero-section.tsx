@@ -52,12 +52,12 @@ export function HeroSection() {
             placeholder="Search destinations, hotels, experiences..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full sm:flex-1 h-12 text-black text-lg px-6 rounded-l-lg"
+            className="w-full sm:flex-1 h-12 text-black dark:text-white text-lg px-6 rounded-l-lg bg-white dark:bg-gray-800 placeholder:text-gray-500 dark:placeholder:text-gray-400"
           />
           <Button
             type="submit"
-           variant="default"
-            className="w-full sm:w-auto h-12 px-8 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-r-lg cursor-pointer transition-colors flex items-center justify-center"
+            variant="default"
+            className="w-full sm:w-auto h-12 px-8 bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white font-semibold rounded-r-lg cursor-pointer transition-colors flex items-center justify-center"
           >
             <Search className="h-5 w-5 mr-2" />
             Search
