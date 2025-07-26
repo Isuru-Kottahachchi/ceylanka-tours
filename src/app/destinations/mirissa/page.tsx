@@ -33,7 +33,7 @@ export default function MirissaTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Mirissa</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Premier Whale Watching Paradise</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Premier Whale Watching Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -133,7 +133,7 @@ export default function MirissaTravelGuide() {
 
         {/* Whale Watching */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">World's Best Whale Watching Experience</h2>
+          <h2 className="text-3xl font-bold mb-6">World&apos;s Best Whale Watching Experience</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
