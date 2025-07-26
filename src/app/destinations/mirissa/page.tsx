@@ -7,12 +7,12 @@ import { Badge } from "@/components/ui/badge"
 export const metadata: Metadata = {
   title: "Mirissa Sri Lanka: Ultimate Beach Guide 2025 | Whale Watching Paradise",
   description:
-    "Discover Mirissa, Sri Lanka's premier beach destination. Complete guide to whale watching, surfing, pristine beaches, and the best things to do in this tropical paradise.",
+    "Discover Mirissa, Sri Lanka&apos;s premier beach destination. Complete guide to whale watching, surfing, pristine beaches, and the best things to do in this tropical paradise.",
   keywords:
     "Mirissa Sri Lanka, whale watching, blue whales, surfing, beach paradise, coconut hill, stilt fishermen, tropical beaches",
   openGraph: {
     title: "Mirissa: Ultimate Beach Paradise Guide 2025",
-    description: "Your complete guide to Sri Lanka's most beautiful beach destination",
+    description: "Your complete guide to Sri Lanka&apos;s most beautiful beach destination",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -59,7 +59,7 @@ export default function MirissaTravelGuide() {
             <p className="text-lg mb-4">
               Nestled along Sri Lanka's stunning southern coast, Mirissa is a slice of tropical paradise that captures 
               hearts with its pristine golden beaches, world-renowned whale watching opportunities, and laid-back island vibes. 
-              This charming fishing village has evolved into one of Sri Lanka's most sought-after beach destinations while 
+              This charming fishing village has evolved into one of Sri Lanka&apos;s most sought-after beach destinations while 
               maintaining its authentic charm and natural beauty.
             </p>
             <p className="text-lg">
@@ -143,9 +143,9 @@ export default function MirissaTravelGuide() {
                 height={400}
                 className="rounded-lg shadow-lg"
               />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                Blue whales, the largest animals on Earth, frequent Mirissa's waters
-              </p>
+          <p className="text-sm text-muted-foreground mt-2 italic">
+            Blue whales, the largest animals on Earth, frequent Mirissa&apos;s waters
+          </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
@@ -153,11 +153,11 @@ export default function MirissaTravelGuide() {
                 The continental shelf drops dramatically just off the coast, creating deep waters where these magnificent 
                 creatures feed and play, often coming remarkably close to shore.
               </p>
-              <p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Premier Whale Watching Paradise</p>
                 Join a whale watching tour and witness the breathtaking sight of blue whales - the largest animals ever 
                 to have lived on Earth - surfacing in the crystal-clear waters of the Indian Ocean. The success rate 
                 for whale sightings during peak season is over 90%.
-              </p>
+              Southern Province, Sri Lanka
               <div className="bg-blue-50 p-4 rounded-lg">
                 <h4 className="font-semibold text-blue-800 mb-2">What You Might See:</h4>
                 <ul className="text-sm text-blue-700 space-y-1">
@@ -198,7 +198,7 @@ export default function MirissaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This small rocky outcrop connected to the mainland by a narrow strip of sand is Mirissa's most 
+                      This small rocky outcrop connected to the mainland by a narrow strip of sand is Mirissa&apos;s most 
                       photographed landmark. Climb to the top for panoramic views of the coastline and unforgettable 
                       sunset experiences that will leave you speechless.
                     </p>
@@ -287,7 +287,7 @@ export default function MirissaTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Tucked away behind Coconut Hill, this smaller, more secluded beach offers privacy and tranquility 
-                      away from the crowds. It's perfect for couples seeking romance or anyone wanting a peaceful beach 
+                      away from the crowds. It&apos;s perfect for couples seeking romance or anyone wanting a peaceful beach 
                       experience with stunning natural beauty.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -440,12 +440,12 @@ export default function MirissaTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Mirissa represents the perfect blend of adventure and relaxation, where you can witness the world's 
+                Mirissa represents the perfect blend of adventure and relaxation, where you can witness the world&apos;s 
                 largest mammals in their natural habitat by morning and watch spectacular sunsets from Coconut Hill 
                 by evening. This tropical paradise offers experiences that will create memories to last a lifetime.
               </p>
               <p className="text-muted-foreground mb-4">
-                Whether you're seeking the thrill of whale watching, the peace of pristine beaches, or the adventure 
+                Whether you&apos;re seeking the thrill of whale watching, the peace of pristine beaches, or the adventure 
                 of water sports, Mirissa delivers it all with the warm hospitality that Sri Lanka is famous for. 
                 Come and discover why this small fishing village has captured the hearts of travelers from around the world.
               </p>
