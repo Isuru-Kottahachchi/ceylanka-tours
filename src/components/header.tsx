@@ -238,7 +238,7 @@ function DesktopHierarchicalDropdown({
 }
 
 // Mobile Hierarchical Menu Component
-function MobileHierarchicalMenu() {
+function MobileHierarchicalMenu({ onItemClick }: { onItemClick?: () => void }) {
   const [expandedSection, setExpandedSection] = useState<string | null>(null)
 
   const toggleSection = (title: string) => {
@@ -271,6 +271,7 @@ function MobileHierarchicalMenu() {
                   key={item.name}
                   href={item.href}
                   className="block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                  onClick={onItemClick}
                 >
                   {item.name}
                 </Link>
@@ -288,6 +289,7 @@ export function Header() {
   const { theme, setTheme } = useTheme()
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   // const [mounted, setMounted] = useState(false)
+  const [isSheetOpen, setIsSheetOpen] = useState(false)
 
   // Handle initial theme
   useEffect(() => {
@@ -501,16 +503,16 @@ export function Header() {
             </nav>
 
             {/* Mobile Menu */}
-            <Sheet>
+            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" className="lg:hidden text-gray-700 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800">
+                <Button variant="ghost" size="sm" className="lg:hidden text-gray-700 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800" onClick={() => setIsSheetOpen(true)}>
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-80 overflow-y-auto dark:bg-gray-900">
                 <div className="flex flex-col space-y-4 mt-8 h-full">
                   {/* Mobile Search */}
-                  <form onSubmit={handleSearch} className="flex items-center space-x-2 sticky top-0 bg-white dark:bg-gray-900 pt-2 pb-4 z-10">
+                  <form onSubmit={(e) => { handleSearch(e); setIsSheetOpen(false); }} className="flex items-center space-x-2 sticky top-0 bg-white dark:bg-gray-900 pt-2 pb-4 z-10">
                     <Input
                       type="search"
                       placeholder="Search..."
@@ -524,10 +526,10 @@ export function Header() {
 
                   {/* Mobile Navigation */}
                   <nav className="flex flex-col space-y-3 pb-20">
-                    <Link href="/" className="py-2 border-b">
+                    <Link href="/" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
                       HOME
                     </Link>
-                    <Link href="/news" className="py-2 border-b">
+                    <Link href="/news" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
                       WHATS NEW
                     </Link>
                     {/* Mobile What To Do Menu */}
@@ -554,6 +556,7 @@ export function Header() {
                                     key={item.name}
                                     href={item.href}
                                     className="block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                                    onClick={() => setIsSheetOpen(false)}
                                   >
                                     {item.name}
                                   </Link>
@@ -567,13 +570,13 @@ export function Header() {
 
                     {/* Mobile Hierarchical Destinations Menu */}
                     <div className="py-2 border-b">
-                      <MobileHierarchicalMenu />
+                      <MobileHierarchicalMenu onItemClick={() => setIsSheetOpen(false)} />
                     </div>
 
-                    <Link href="/plan" className="py-2 border-b">
+                    <Link href="/plan" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
                       PLAN YOUR TRIP
                     </Link>
-                    <Link href="/events" className="py-2 border-b">
+                    <Link href="/events" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
                       UPCOMING EVENTS
                     </Link>
                   </nav>

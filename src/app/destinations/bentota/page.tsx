@@ -25,13 +25,13 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
 
     return (
         <div className="relative">
-            <div className="relative overflow-hidden rounded-lg">
+            <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[500px] sm:h-[350px] flex items-center justify-center">
                 <Image
                     src={images[currentIndex] || "/placeholder.svg"}
                     alt={`${alt} - Image ${currentIndex + 1}`}
                     width={400}
                     height={300}
-                    className="rounded-lg transition-all duration-300"
+                    className="rounded-lg transition-all duration-300 object-contain w-full h-full"
                 />
 
                 {/* Navigation buttons */}
