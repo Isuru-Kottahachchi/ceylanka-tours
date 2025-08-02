@@ -489,7 +489,7 @@ export default function RuwanwelisayaDetailedGuide() {
                     <h4 className="font-semibold text-lg mb-2">Advanced Construction Techniques</h4>
                     <p className="text-sm text-muted-foreground mb-2">
                       The construction of Ruwanwelisaya demonstrates incredibly advanced engineering for its time. The
-                      massive dome was built using a technique called "corbelling," where each layer of stones slightly
+                      massive dome was built using a technique called &quot;corbelling,&quot; where each layer of stones slightly
                       overhangs the layer below, creating a self-supporting structure without the need for mortar in
                       many sections. The foundation extends deep underground with multiple layers of different materials
                       to ensure stability for millennia.
@@ -502,9 +502,9 @@ export default function RuwanwelisayaDetailedGuide() {
                   <div className="border-l-4 border-purple-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Weather-Resistant Design</h4>
                     <p className="text-sm text-muted-foreground mb-2">
-                      The stupa's design incorporates sophisticated drainage systems and weather-resistant features that
+                      The stupa&apos;s design incorporates sophisticated drainage systems and weather-resistant features that
                       have allowed it to survive over 2,000 years of monsoons, earthquakes, and other natural
-                      challenges. The dome's shape naturally sheds rainwater, while internal channels direct moisture
+                      challenges. The dome&apos;s shape naturally sheds rainwater, while internal channels direct moisture
                       away from the sacred relic chamber. The white limestone surface was specially treated to resist
                       weathering and maintain its brilliant appearance.
                     </p>
@@ -518,7 +518,7 @@ export default function RuwanwelisayaDetailedGuide() {
                     <p className="text-sm text-muted-foreground mb-2">
                       Throughout its long history, Ruwanwelisaya has undergone several major restoration projects, each
                       one carefully designed to preserve the original architectural integrity while ensuring the
-                      structure's continued stability. The most recent major restoration was completed in the 20th
+                      structure&apos;s continued stability. The most recent major restoration was completed in the 20th
                       century, using traditional materials and techniques wherever possible to maintain authenticity.
                     </p>
                     <p className="text-xs text-orange-600 font-medium">
@@ -541,8 +541,8 @@ export default function RuwanwelisayaDetailedGuide() {
                     <p className="text-sm text-muted-foreground mb-2">
                       The massive white dome of Ruwanwelisaya represents the cosmic egg from which all existence emerges
                       in Buddhist cosmology. Its perfect spherical shape symbolizes the completeness and perfection of
-                      Buddha's teachings, while the brilliant white color represents purity, enlightenment, and the
-                      transcendence of all earthly concerns. The dome's size and prominence make it visible from great
+                      Buddha&apos;s teachings, while the brilliant white color represents purity, enlightenment, and the
+                      transcendence of all earthly concerns. The dome&apos;s size and prominence make it visible from great
                       distances, serving as a beacon calling pilgrims to the sacred site.
                     </p>
                     <p className="text-xs text-purple-600 font-medium">
@@ -569,7 +569,7 @@ export default function RuwanwelisayaDetailedGuide() {
                     <p className="text-sm text-muted-foreground mb-2">
                       The spire at the top of Ruwanwelisaya reaches toward heaven, symbolizing the connection between
                       earth and the divine realms. At its very peak sits a crystal that catches and reflects sunlight
-                      and moonlight, representing the illumination of wisdom that comes from following Buddha's
+                      and moonlight, representing the illumination of wisdom that comes from following Buddha&apos;s
                       teachings. This spire serves as a spiritual antenna, channeling divine blessings down to the earth
                       and carrying the prayers of pilgrims upward to the heavens.
                     </p>
@@ -581,11 +581,11 @@ export default function RuwanwelisayaDetailedGuide() {
                   <div className="border-l-4 border-blue-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Four Cardinal Directions</h4>
                     <p className="text-sm text-muted-foreground mb-2">
-                      Ruwanwelisaya is perfectly aligned with the four cardinal directions, symbolizing that Buddha's
+                      Ruwanwelisaya is perfectly aligned with the four cardinal directions, symbolizing that Buddha&apos;s
                       teachings are meant for all people in all directions of the world. Each direction has special
-                      significance in Buddhist cosmology, and the stupa's design ensures that pilgrims approaching from
+                      significance in Buddhist cosmology, and the stupa&apos;s design ensures that pilgrims approaching from
                       any direction will have an equally magnificent view. This universal orientation reflects
-                      Buddhism's message of compassion and enlightenment for all beings.
+                      Buddhism&apos;s message of compassion and enlightenment for all beings.
                     </p>
                     <p className="text-xs text-blue-600 font-medium">
                       Universal orientation welcomes pilgrims from all directions
@@ -721,7 +721,7 @@ export default function RuwanwelisayaDetailedGuide() {
                         <li>• Walk clockwise around the stupa (circumambulation)</li>
                         <li>• Never point feet toward the stupa or Buddha images</li>
                         <li>• Maintain quiet, respectful conversation</li>
-                        <li>• Don't climb on the stupa or elephant wall</li>
+                        <li>• Don&apos;t climb on the stupa or elephant wall</li>
                         <li>• Show respect to monks and pilgrims</li>
                       </ul>
                     </div>
@@ -732,7 +732,7 @@ export default function RuwanwelisayaDetailedGuide() {
                         <li>• No flash photography near Buddha statues</li>
                         <li>• Ask permission before photographing people</li>
                         <li>• Be respectful of worshippers and ceremonies</li>
-                        <li>• Don't pose inappropriately with religious objects</li>
+                        <li>• Don&apos;t pose inappropriately with religious objects</li>
                       </ul>
                     </div>
                   </div>
