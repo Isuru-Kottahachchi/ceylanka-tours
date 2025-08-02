@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TreePine } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function AnuradhapuraTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Anuradhapura</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Ancient Sacred Capital</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Ancient Sacred Capital</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -42,7 +43,7 @@ export default function AnuradhapuraTravelGuide() {
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <TreePine className="w-4 h-4 mr-1" />
-              Sacred Bodhi Tree
+              Sacred City
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Calendar className="w-4 h-4 mr-1" />
@@ -185,6 +186,20 @@ export default function AnuradhapuraTravelGuide() {
                         Protected by golden railings and platforms
                       </li>
                     </ul>
+                    <div className="relative mt-6">
+                      <Link href="/destinations/horton-plains">
+                        <Button
+                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          variant="default"
+                        >
+                          Discover More about Sri Maha Bodhi
+                        </Button>
+                      </Link>
+                      {/* Blinking finger pointer pointing to button */}
+                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
+                        <div className="text-2xl animate-bounce">👉</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -222,6 +237,20 @@ export default function AnuradhapuraTravelGuide() {
                         Restored to original glory in modern times
                       </li>
                     </ul>
+                    <div className="relative mt-6">
+                      <Link href="/destinations/ruwan-wali-saya">
+                        <Button
+                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          variant="default"
+                        >
+                          Explore Ruwanwelisaya Dagaba
+                        </Button>
+                      </Link>
+                      {/* Blinking finger pointer pointing to button */}
+                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
+                        <div className="text-2xl animate-bounce">👉</div>
+                      </div>
+                    </div>
                   </div>
                   <Image
                     src="/Ruwanwalisaya.jpeg"
@@ -273,6 +302,20 @@ export default function AnuradhapuraTravelGuide() {
                         Ongoing archaeological excavations
                       </li>
                     </ul>
+                    <div className="relative mt-6">
+                      <Link href="/destinations/jetavanaramaya">
+                        <Button
+                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          variant="default"
+                        >
+                          Visit Jetavanaramaya Dagoba
+                        </Button>
+                      </Link>
+                      {/* Blinking finger pointer pointing to button */}
+                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
+                        <div className="text-2xl animate-bounce">👉</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -315,6 +358,20 @@ export default function AnuradhapuraTravelGuide() {
                         Ongoing archaeological excavations
                       </li>
                     </ul>
+                    <div className="relative mt-6">
+                      <Link href="/destinations/thuparamaya">
+                        <Button
+                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          variant="default"
+                        >
+                          Explore Thuparamaya Dagoba
+                        </Button>
+                      </Link>
+                      {/* Blinking finger pointer pointing to button */}
+                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
+                        <div className="text-2xl animate-bounce">👉</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -357,6 +414,20 @@ export default function AnuradhapuraTravelGuide() {
                         Ongoing archaeological excavations
                       </li>
                     </ul>
+                    <div className="relative mt-6">
+                      <Link href="/destinations/lovamahapaya">
+                        <Button
+                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          variant="default"
+                        >
+                          Discover Lovamahapaya
+                        </Button>
+                      </Link>
+                      {/* Blinking finger pointer pointing to button */}
+                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
+                        <div className="text-2xl animate-bounce">👉</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -399,6 +470,20 @@ export default function AnuradhapuraTravelGuide() {
                         Ongoing archaeological excavations
                       </li>
                     </ul>
+                    <div className="relative mt-6">
+                      <Link href="/destinations/abhayagiri">
+                        <Button
+                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          variant="default"
+                        >
+                          Learn About Abhayagiri
+                        </Button>
+                      </Link>
+                      {/* Blinking finger pointer pointing to button */}
+                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
+                        <div className="text-2xl animate-bounce">👉</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -441,6 +526,20 @@ export default function AnuradhapuraTravelGuide() {
                         Ongoing archaeological excavations
                       </li>
                     </ul>
+                    <div className="relative mt-6">
+                      <Link href="/destinations/mirisavetiya">
+                        <Button
+                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          variant="default"
+                        >
+                          Visit Mirisavetiya Stupa
+                        </Button>
+                      </Link>
+                      {/* Blinking finger pointer pointing to button */}
+                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
+                        <div className="text-2xl animate-bounce">👉</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -591,7 +690,9 @@ export default function AnuradhapuraTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Near by Archaeological Wonders</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+            
+
+            <Link href="/destinations/isurumuniya" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Isurumuniya Temple</CardTitle>
@@ -613,10 +714,12 @@ export default function AnuradhapuraTravelGuide() {
                   </span>
                 </CardContent>
               </Card>
-            </Link> <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+            </Link>
+
+            <Link href="/destinations/ranmusuuyana" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
-                  <CardTitle className="text-lg">Sandahirusaya</CardTitle>
+                  <CardTitle className="text-lg">Ranmusu uyana with universal stargate</CardTitle>
                   <CardDescription>Ancient city</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -628,7 +731,30 @@ export default function AnuradhapuraTravelGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                    Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                    Explore the mysterious Ranmusu uyana, an ancient site with unique stone carvings and a universal stargate.
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/destinations/mihinthalaya" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Mihinthalaya</CardTitle>
+                  <CardDescription>Scared site </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/Minneriyanationalpark"
+                    alt="View of Sigiriya Rock from Pidurangala Rock"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                   Just a few kilometers from Anuradhapura, Mihinthalaya is a sacred site where Buddhism was first introduced to Sri Lanka.
                   </p>
                   <span className="text-sm font-medium text-primary mt-3 inline-block">
                     See More →
