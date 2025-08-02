@@ -769,7 +769,7 @@ export default function RuwanwelisayaDetailedGuide() {
                       <li>• Bring water and stay hydrated</li>
                       <li>• Wear sunscreen and protective clothing</li>
                       <li>• Watch for uneven stone surfaces</li>
-                      <li>• Be aware of monkeys (don't feed them)</li>
+                      <li>• Be aware of monkeys (don&apos;t feed them)</li>
                       <li>• Carry basic first aid supplies</li>
                       <li>• Have emergency contact numbers</li>
                     </ul>
@@ -806,22 +806,22 @@ export default function RuwanwelisayaDetailedGuide() {
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Take time to absorb the incredible history, the masterful architecture, and the deep spiritual
-                  significance of what you're experiencing. This is not just ancient stone and mortar - this is a living
+                  significance of what you&apos;re experiencing. This is not just ancient stone and mortar - this is a living
                   monument to human faith, artistic achievement, and the enduring power of spiritual devotion. The peace
                   and serenity you feel here is the same that has touched the hearts of pilgrims for over 2,000 years.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Whether you come as a Buddhist pilgrim seeking blessings, a history enthusiast marveling at ancient
                   engineering, or simply a traveler in search of beauty and meaning, Ruwanwelisaya will leave an
-                  indelible mark on your soul. This is Sri Lanka's greatest architectural achievement and one of
-                  Buddhism's most sacred sites - a place where earth truly meets heaven.
+                  indelible mark on your soul. This is Sri Lanka&apos;s greatest architectural achievement and one of
+                  Buddhism&apos;s most sacred sites - a place where earth truly meets heaven.
                 </p>
                 <div className="bg-white/70 dark:bg-gray-800/70 p-6 rounded-xl border border-orange-200 dark:border-gray-600 mt-8">
                   <p className="text-xl font-semibold text-orange-800 dark:text-orange-300 mb-2">
                     May your visit to this sacred monument bring you peace, wisdom, and blessings! 🙏✨🏛️
                   </p>
                   <p className="text-sm text-orange-600 dark:text-orange-400">
-                    Experience the spiritual power of Sri Lanka's most magnificent stupa and carry its blessings with
+                    Experience the spiritual power of Sri Lanka&apos;s most magnificent stupa and carry its blessings with
                     you always
                   </p>
                 </div>
