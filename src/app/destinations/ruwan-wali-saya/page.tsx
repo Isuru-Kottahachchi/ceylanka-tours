@@ -791,7 +791,7 @@ export default function RuwanwelisayaDetailedGuide() {
             <CardContent className="px-8 pb-8">
               <div className="space-y-6 text-center">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Standing before Ruwanwelisaya is more than just sightseeing - it's a profound spiritual experience
+                  Standing before Ruwanwelisaya is more than just sightseeing - it&apos;s a profound spiritual experience
                   that connects you with over 2,100 years of continuous Buddhist devotion and faith. This magnificent
                   white dome, rising majestically against the Sri Lankan sky, has witnessed the prayers of countless
                   pilgrims, the devotion of kings and commoners alike, and the unbroken chain of Buddhist tradition that
@@ -799,7 +799,7 @@ export default function RuwanwelisayaDetailedGuide() {
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   As you walk clockwise around the elephant wall, following the ancient ritual of circumambulation,
-                  you're participating in the same sacred practice that has been performed here for over two millennia.
+                  you&apos;re participating in the same sacred practice that has been performed here for over two millennia.
                   Each of the 344 stone elephants has watched over millions of pilgrims, and the sacred relics at the
                   heart of the stupa continue to radiate the spiritual energy that has made this place a beacon of peace
                   and enlightenment for the Buddhist world.
