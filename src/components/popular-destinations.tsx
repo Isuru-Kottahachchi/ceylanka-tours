@@ -59,7 +59,7 @@ const destinations = [
     id: 5,
     name: "Yala National Park",
     location: "Southern Province",
-    image: "/Yala-National-Park.jpg",
+    image: "/Yala-national-park.jpg",
     rating: 4.5,
     reviews: 920,
     description: "Premier wildlife destination famous for leopard sightings",

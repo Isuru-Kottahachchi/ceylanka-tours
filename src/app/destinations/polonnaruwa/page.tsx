@@ -30,7 +30,7 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
             <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[500px] sm:h-[350px] flex items-center justify-center">
                 <Image
                     src={images[currentIndex] || "/placeholder.svg"}
-                    alt={`${alt} - Image ${currentIndex + 1}`}
+                    alt={`${alt} ${images.length > 1 ? `(${currentIndex + 1} of ${images.length})` : ''}`}
                     width={400}
                     height={300}
                     className="rounded-lg transition-all duration-300 object-contain w-full h-full"
@@ -87,8 +87,8 @@ export default function PolonnaruwaGuide() {
 
 
     const polonnaruwaImages = [
-        "/polonnaruwa2.jpeg",
-        "/polonnaruwa3.jpeg",
+        "/Polonnaruwa2.jpeg",
+        "/Polonnaruwa3.jpeg",
     ]
 
     const galviharayaImages = [
@@ -113,7 +113,7 @@ export default function PolonnaruwaGuide() {
             {/* Hero Section */}
             <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
                 <Image
-                    src="/GalViharaya.jpeg"
+                    src="/Galviharaya.jpeg"
                     alt="Ancient ruins of Polonnaruwa with stone pillars and structures against dramatic sky"
                     fill
                     className="object-cover"
@@ -229,7 +229,7 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
                                         images={polonnaruwaImages}
-                                        alt="Panchakapaduwa Island showing various views of the mystical island, temples, and meditation areas"
+                                        alt="Royal Palace Complex of Polonnaruwa showing various views of the ancient palace ruins and architectural details"
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -253,20 +253,20 @@ export default function PolonnaruwaGuide() {
                                                 Royal audience hall and private chambers
                                             </li>
                                         </ul>
-                                            <div className="relative mt-6">
-                                                              <Link href="/destinations/royal-palace-polonnaruwa">
-                                                                <Button
-                                                                  className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                                  variant="default"
-                                                                >
-                                                                  Explore Royal Palace Complex
-                                                                </Button>
-                                                              </Link>
-                                                              {/* Blinking finger pointer pointing to button */}
-                                                              <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                                                                <div className="text-2xl animate-bounce">👉</div>
-                                                              </div>
-                                                            </div>
+                                        <div className="relative mt-6">
+                                            <Link href="/destinations/royal-palace-polonnaruwa">
+                                                <Button
+                                                    className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                                                    variant="default"
+                                                >
+                                                    Explore Royal Palace Complex
+                                                </Button>
+                                            </Link>
+                                            {/* Blinking finger pointer pointing to button */}
+                                            <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
+                                                <div className="text-2xl animate-bounce">👉</div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </CardContent>
