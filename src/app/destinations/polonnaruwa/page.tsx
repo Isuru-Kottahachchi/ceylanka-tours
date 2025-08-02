@@ -1,9 +1,8 @@
 "use client"
 
-import type { Metadata } from "next"
 import Image from "next/image"
 import { useState } from "react"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Crown, Camera, ChevronRight, ChevronLeft } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Crown, ChevronRight, ChevronLeft } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
@@ -606,7 +605,7 @@ export default function PolonnaruwaGuide() {
                                         className="rounded-lg mb-3"
                                     />
                                     <p className="text-sm text-muted-foreground">
-                                        Witness the world's largest elephant gathering, just 30 minutes from Polonnaruwa.
+                                        Witness one of the world&apos;s largest elephant gathering, just 30 minutes from Polonnaruwa.
                                     </p>
                                     <span className="text-sm font-medium text-primary mt-3 inline-block">
                                         See More →
