@@ -1,24 +1,95 @@
-import type { Metadata } from "next"
+"use client"
+
+import { useState } from "react"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Mountain, Thermometer } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Calendar, Mountain, Thermometer, ChevronLeft, ChevronRight } from "lucide-react"
+import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 
-export const metadata: Metadata = {
-  title: "Nuwara Eliya Sri Lanka: Complete Guide 2025 | Little England in the Hills",
-  description:
-    "Discover Nuwara Eliya, Sri Lankas hill station paradise. Complete guide to tea plantations, colonial charm, cool climate, and the best things to do in Little England.",
-  keywords:
-    "Nuwara Eliya, Little England Sri Lanka, tea plantations, hill country, colonial architecture, cool climate, tea factory tours",
-  openGraph: {
-    title: "Nuwara Eliya: Complete Travel Guide 2025",
-    description: "Your ultimate guide to Sri Lankas charming hill station",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
+
+
+function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const nextImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+    }
+
+    const prevImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+    }
+
+    const goToImage = (index: number) => {
+        setCurrentIndex(index)
+    }
+
+    return (
+        <div className="relative">
+            <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[500px] sm:h-[350px] flex items-center justify-center">
+                <Image
+                    src={images[currentIndex] || "/placeholder.svg"}
+                    alt={`${alt} - Image ${currentIndex + 1}`}
+                    width={400}
+                    height={300}
+                    className="rounded-lg transition-all duration-300 object-contain w-full h-full"
+                />
+
+                {/* Navigation buttons */}
+                {images.length > 1 && (
+                    <>
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
+                            onClick={prevImage}
+                        >
+                            <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
+                        </Button>
+                        <Button
+                            variant="outline"
+                            size="icon"
+                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
+                            onClick={nextImage}
+                        >
+                            <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
+                        </Button>
+                    </>
+                )}
+            </div>
+
+            {/* Dots indicator */}
+            {images.length > 1 && (
+                <div className="flex justify-center mt-3 space-x-2">
+                    {images.map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => goToImage(index)}
+                            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
+                                }`}
+                        />
+                    ))}
+                </div>
+            )}
+
+            {/* Image counter */}
+            {images.length > 1 && (
+                <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+                    {currentIndex + 1} / {images.length}
+                </div>
+            )}
+        </div>
+    )
 }
 
 export default function NuwaraEliyaTravelGuide() {
+
+    const hortonPlainsImages = [
+        "/Hortonplains16.jpeg",
+        "/Hortonplains2.jpeg",
+        "/Hortonplains3.jpeg",
+    ]
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -54,7 +125,7 @@ export default function NuwaraEliyaTravelGuide() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Nuwara Eliya: Sri Lankas Cool Escape</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Nuwara Eliya: Sri Lanka&apos;s Cool Escape</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
               Escape the tropical heat and step into a world that feels like a slice of England transported to the heart
@@ -65,8 +136,8 @@ export default function NuwaraEliyaTravelGuide() {
             </p>
             <p className="text-lg">
               From world-famous Ceylon tea estates to pristine lakes, from strawberry farms to misty mountain peaks,
-              Nuwara Eliya is a paradise for nature lovers, tea enthusiasts, and anyone seeking respite from Sri Lankas
-              tropical heat. This hill station promises an unforgettable journey through some of the worlds most
+              Nuwara Eliya is a paradise for nature lovers, tea enthusiasts, and anyone seeking respite from Sri Lanka&apos;s
+              tropical heat. This hill station promises an unforgettable journey through some of the world&apos;s most
               beautiful tea country.
             </p>
           </div>
@@ -237,11 +308,12 @@ export default function NuwaraEliyaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Just 32km from Nuwara Eliya, Horton Plains offers one of Sri Lankas most spectacular hiking
-                      experiences. The highlight is Worlds End, a sheer cliff drop of 870 meters offering breathtaking
-                      views on clear days.<br/>
-                      You can see worlds end
+                      Just 32km from Nuwara Eliya, Horton Plains offers one of Sri Lanka&apos;s most spectacular hiking
+                      experiences. The highlight is World&apos;s End, a sheer cliff drop of 870 meters offering breathtaking
+                      views on clear days.<br />
+                      You can see World&apos;s End
                     </p>
+                    
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -260,18 +332,23 @@ export default function NuwaraEliyaTravelGuide() {
                         Unique montane ecosystem and wildlife
                       </li>
                     </ul>
+                    <Link href="/destinations/horton-plains">
+                      <Button
+                        className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                        variant="default"
+                      >
+                        Discover More about Horton plains
+                      </Button>
+                    </Link>
                     <div className="mt-4 p-3 bg-orange-50 rounded-lg">
                       <p className="text-sm text-orange-800">
                         <strong>Best Time:</strong> Start early (6 AM) to avoid clouds at Worlds End
                       </p>
                     </div>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Dramatic Worlds End cliff at Horton Plains showing the spectacular 870-meter drop with misty valleys below"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={hortonPlainsImages}
+                    alt="Horton Plains National Park showcasing the stunning landscapes, unique flora, and fauna"
                   />
                 </div>
               </CardContent>
@@ -320,6 +397,54 @@ export default function NuwaraEliyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Moon plains</CardTitle>
+                <CardDescription>UNESCO World Heritage site with Worlds End cliff</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Just 32km from Nuwara Eliya, Horton Plains offers one of Sri Lankas most spectacular hiking
+                      experiences. The highlight is Worlds End, a sheer cliff drop of 870 meters offering breathtaking
+                      views on clear days.<br />
+                      You can see worlds end
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Worlds End viewpoint - 870m cliff drop
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Bakers Falls - beautiful 20m waterfall
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        9km circular hiking trail
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Unique montane ecosystem and wildlife
+                      </li>
+                    </ul>
+                    <div className="mt-4 p-3 bg-orange-50 rounded-lg">
+                      <p className="text-sm text-orange-800">
+                        <strong>Best Time:</strong> Start early (6 AM) to avoid clouds at Worlds End
+                      </p>
+                    </div>
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Dramatic Worlds End cliff at Horton Plains showing the spectacular 870-meter drop with misty valleys below"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
@@ -350,7 +475,7 @@ export default function NuwaraEliyaTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Nuwara Eliya Golf Club</CardTitle>
-                <CardDescription>Asias finest golf course</CardDescription>
+                <CardDescription>Asia&apos;s finest golf course</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
@@ -515,14 +640,14 @@ export default function NuwaraEliyaTravelGuide() {
             <CardContent>
               <p className="text-muted-foreground mb-4">
                 Nuwara Eliya offers a unique escape from tropical Sri Lanka into a world of cool mountain air,
-                world-class tea, and colonial charm. Whether youre sipping fresh Ceylon tea while overlooking emerald
-                plantations or hiking to Worlds End for sunrise views, this hill station provides experiences youll
+                world-class tea, and colonial charm. Whether you&apos;re sipping fresh Ceylon tea while overlooking emerald
+                plantations or hiking to World&apos;s End for sunrise views, this hill station provides experiences you&apos;ll
                 treasure forever.
               </p>
               <p className="text-muted-foreground mb-4">
-                Dont forget to pack warm clothes - the cool climate is a refreshing change but can catch tropical
+                Don&apos;t forget to pack warm clothes - the cool climate is a refreshing change but can catch tropical
                 travelers off guard! Take time to slow down, breathe the fresh mountain air, and immerse yourself in the
-                timeless beauty of Sri Lankas tea country.
+                timeless beauty of Sri Lanka&apos;s tea country.
               </p>
               <p className="text-muted-foreground font-medium">Enjoy your journey through Little England! 🍃🏔️</p>
             </CardContent>
