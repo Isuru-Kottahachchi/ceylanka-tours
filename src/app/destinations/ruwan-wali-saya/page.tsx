@@ -63,7 +63,7 @@ export default function RuwanwelisayaDetailedGuide() {
               beacon of Buddhist faith for over 2,100 years. Rising majestically 103 meters into the sky with its
               brilliant white dome gleaming in the Sri Lankan sun, this architectural masterpiece represents the
               pinnacle of ancient Sinhalese engineering and spiritual devotion. Built by the legendary King Dutugemunu
-              in 140 BC, Ruwanwelisaya is not just a monument - it's a living testament to the enduring power of faith,
+              in 140 BC, Ruwanwelisaya is not just a monument - it&apos;s a living testament to the enduring power of faith,
               the genius of ancient architects, and the unbreakable connection between the people of Sri Lanka and their
               Buddhist heritage.
             </p>
@@ -76,10 +76,10 @@ export default function RuwanwelisayaDetailedGuide() {
               the very heart of the structure.
             </p>
             <p className="text-lg mb-6">
-              The stupa's perfect proportions follow ancient mathematical principles that create a sense of harmony and
+              The stupa&apos;s perfect proportions follow ancient mathematical principles that create a sense of harmony and
               spiritual balance that you can actually feel when you stand before it. The massive dome, with its
               circumference of 292 meters, represents the cosmic egg from which all existence emerges, while the spire
-              reaching toward heaven symbolizes the path to enlightenment. Every element of Ruwanwelisaya's design
+              reaching toward heaven symbolizes the path to enlightenment. Every element of Ruwanwelisaya&apos;s design
               carries deep spiritual meaning, from the lotus-shaped base representing purity to the crystal at the very
               top that catches and reflects the light of the sun and moon.
             </p>
@@ -88,7 +88,7 @@ export default function RuwanwelisayaDetailedGuide() {
               base - 344 stone elephants, each carved with exquisite detail and no two exactly alike. These magnificent
               creatures, symbols of strength, wisdom, and protection in Buddhist tradition, have stood guard over the
               sacred relics for over two millennia, creating one of the most photographed and beloved architectural
-              features in all of Sri Lanka. Walking around this elephant wall, you're following in the footsteps of
+              features in all of Sri Lanka. Walking around this elephant wall, you&apos;re following in the footsteps of
               countless pilgrims, kings, and devotees who have come here seeking blessings, peace, and spiritual
               inspiration.
             </p>
@@ -205,9 +205,9 @@ export default function RuwanwelisayaDetailedGuide() {
             {/* King Dutugemunu's Vision */}
             <Card className="overflow-hidden border-2 border-purple-200">
               <CardHeader className="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-900/30 dark:to-indigo-900/30">
-                <CardTitle className="text-2xl text-purple-800 dark:text-purple-300">King Dutugemunu's Sacred Vision</CardTitle>
+                <CardTitle className="text-2xl text-purple-800 dark:text-purple-300">King Dutugemunu&apos;s Sacred Vision</CardTitle>
                 <CardDescription className="text-lg text-purple-600 dark:text-purple-400">
-                  The divine inspiration that created Sri Lanka's greatest monument
+                  The divine inspiration that created Sri Lanka&apos;s greatest monument
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-8">
@@ -221,7 +221,7 @@ export default function RuwanwelisayaDetailedGuide() {
                   />
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      The story of Ruwanwelisaya begins with a young prince's extraordinary vision. King Dutugemunu,
+                      The story of Ruwanwelisaya begins with a young prince&apos;s extraordinary vision. King Dutugemunu,
                       after unifying Sri Lanka and establishing peace across the land, experienced a profound spiritual
                       awakening. Legend tells us that he had a divine vision where Lord Buddha himself appeared to him
                       and requested that he build a great stupa that would house sacred relics and serve as a beacon of
@@ -235,7 +235,7 @@ export default function RuwanwelisayaDetailedGuide() {
                       truly magnificent.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      What makes this story even more remarkable is that King Dutugemunu didn't live to see his great
+                      What makes this story even more remarkable is that King Dutugemunu didn&apos;t live to see his great
                       stupa completed. He died during construction, but his vision was so powerful and his plans so
                       detailed that his successors continued the work exactly as he had envisioned. The stupa was
                       finally completed during the reign of his brother, King Saddha Tissa, making it a monument that
@@ -243,7 +243,7 @@ export default function RuwanwelisayaDetailedGuide() {
                     </p>
 
                     <div className="bg-purple-50 dark:bg-purple-900/30 p-6 rounded-lg border border-purple-200 dark:border-purple-700">
-                      <h4 className="font-semibold text-purple-800 dark:text-purple-300 mb-3">The King's Sacred Commitment:</h4>
+                      <h4 className="font-semibold text-purple-800 dark:text-purple-300 mb-3">The King&apos;s Sacred Commitment:</h4>
                       <ul className="space-y-3 text-muted-foreground">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
@@ -294,7 +294,7 @@ export default function RuwanwelisayaDetailedGuide() {
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      At the very heart of Ruwanwelisaya lies one of Buddhism's most precious treasures - authentic
+                      At the very heart of Ruwanwelisaya lies one of Buddhism&apos;s most precious treasures - authentic
                       relics of Lord Buddha himself. These sacred remains, including bone fragments and teeth, were
                       carefully enshrined in a specially constructed relic chamber at the center of the stupa,
                       surrounded by an incredible collection of precious gems, gold ornaments, and sacred objects that
@@ -310,7 +310,7 @@ export default function RuwanwelisayaDetailedGuide() {
                     <p className="text-muted-foreground leading-relaxed">
                       What makes these relics even more significant is their authenticated provenance. Historical
                       records show that these relics were obtained through diplomatic missions to India and other
-                      Buddhist kingdoms, with each relic's authenticity verified by learned monks and scholars. The
+                      Buddhist kingdoms, with each relic&apos;s authenticity verified by learned monks and scholars. The
                       presence of these genuine Buddha relics is what transforms Ruwanwelisaya from merely an impressive
                       monument into one of the most sacred pilgrimage sites in the Buddhist world.
                     </p>
@@ -328,7 +328,7 @@ export default function RuwanwelisayaDetailedGuide() {
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                           <span>
-                            <strong>Buddha's Bone Relics:</strong> Authenticated fragments from Lord Buddha's cremation
+                            <strong>Buddha&apos;s Bone Relics:</strong> Authenticated fragments from Lord Buddha&apos;s cremation
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
@@ -352,7 +352,7 @@ export default function RuwanwelisayaDetailedGuide() {
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                           <span>
-                            <strong>Protected Chamber:</strong> Multi-layered sealed chamber at stupa's heart
+                            <strong>Protected Chamber:</strong> Multi-layered sealed chamber at stupa&apos;s heart
                           </span>
                         </li>
                       </ul>
@@ -477,11 +477,11 @@ export default function RuwanwelisayaDetailedGuide() {
                       Ruwanwelisaya was built using ancient mathematical principles that create perfect harmony and
                       balance. The ratio between the height and circumference follows the golden ratio, creating a sense
                       of visual perfection that the human eye finds naturally pleasing. This mathematical precision
-                      wasn't accidental - it was based on sacred geometry principles that ancient architects believed
+                      wasn&apos;t accidental - it was based on sacred geometry principles that ancient architects believed
                       would enhance the spiritual power of the structure.
                     </p>
                     <p className="text-xs text-blue-600 font-medium">
-                      The dome's curvature follows precise mathematical curves that distribute weight evenly
+                      The dome&apos;s curvature follows precise mathematical curves that distribute weight evenly
                     </p>
                   </div>
 
