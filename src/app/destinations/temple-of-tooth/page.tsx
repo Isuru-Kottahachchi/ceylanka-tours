@@ -460,7 +460,7 @@ export default function TempleOfToothKandyGuide() {
                   <div className="border-l-4 border-orange-500 pl-4">
                     <h4 className="font-semibold text-lg mb-3">Festival Overview & History</h4>
                     <p className="text-sm text-muted-foreground mb-3">
-                      The Esala Perahera, held annually during the full moon of July/August (Esala month), is one of Asia&apos;s most spectacular religious
+                      The Esala Perahera, held annually during the full moon of August (Esala month), is one of Asia&apos;s most spectacular religious
                       festivals and the grandest celebration in Sri Lanka. This magnificent 10-day festival has been celebrated for over 1,600 years,
                       beginning when the Sacred Tooth Relic first arrived in Sri Lanka in 313 CE. What started as a simple religious procession has
                       evolved into an extraordinary cultural extravaganza that showcases the finest traditions of Sri Lankan art, music, dance, and
