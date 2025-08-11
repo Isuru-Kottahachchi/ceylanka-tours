@@ -1025,7 +1025,7 @@ export default function KandyEsalaPeraheraGuide() {
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       Along with the drums, you will hear the haunting melodies of traditional flutes, the clash of
-                      cymbals, and the chanting of Buddhist verses. Each temple's procession has its own unique musical
+                      cymbals, and the chanting of Buddhist verses. Each temple&apos;s procession has its own unique musical
                       style, creating a symphony of sounds that blend together into something truly magical. The
                       musicians often come from families that have been playing these instruments for generations.
                     </p>
@@ -1047,7 +1047,7 @@ export default function KandyEsalaPeraheraGuide() {
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                           <span>
-                            <strong>Traditional Drums:</strong> Ancient "geta bera" drums with powerful rhythms
+                            <strong>Traditional Drums:</strong> Ancient &quot;geta bera&quot; drums with powerful rhythms
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
