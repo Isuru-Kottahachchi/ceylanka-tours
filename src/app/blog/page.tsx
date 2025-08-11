@@ -50,7 +50,7 @@ const blogPosts = [
   },
   {
     id: 4,
-    title: "Tea Country Adventures: Hill Country Exploration",
+    title: "Places related to the Ramayanaya",
     excerpt:
       "Journey through the misty mountains and emerald tea plantations of Nuwara Eliya and Ella for an unforgettable highland experience.",
     image: "/placeholder.svg?height=300&width=400",

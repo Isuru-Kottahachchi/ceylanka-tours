@@ -64,24 +64,47 @@ export default function SigiriyaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Sigiriya: The Lion Rock</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Imagine climbing to a palace in the clouds, built over 1,500 years ago! Thats exactly what awaits you at
-              Sigiriya Rock Fortress, one of Sri Lankas most incredible ancient wonders. This massive rock formation
+              Imagine climbing to a palace in the clouds, built over 1,500 years ago! That&apos;s exactly what awaits you at
+              Sigiriya Rock Fortress, one of Sri Lanka&apos;s most incredible ancient wonders. This massive rock formation
               rises 200 meters (660 feet) above the surrounding jungle, topped with the ruins of what was once a
-              magnificent royal palace.
+              magnificent royal palace that housed the most powerful king of ancient Sri Lanka.
             </p>
-            <p className="text-lg">
+            <p className="text-lg mb-4">
               Known locally as &quot;Sinhagiri&quot; (Lion Rock), Sigiriya is not just a tourist attraction — it&apos;s a journey
               through time that will leave you breathless, both from the climb and the stunning views that await at the
-              top!
-
+              top! This incredible fortress-palace represents one of the most ambitious architectural projects ever 
+              attempted in the ancient world, combining military defense, royal luxury, and artistic beauty in ways 
+              that still amaze engineers and architects today.
+            </p>
+            <p className="text-lg mb-4">
+              When you visit Sigiriya, you&apos;re not just climbing a rock - you&apos;re following in the footsteps of ancient 
+              kings, Buddhist monks, and countless pilgrims who have made this journey for over 1,500 years. Every step 
+              up the ancient staircases carved into the rock face brings you closer to understanding how remarkable 
+              ancient Sri Lankan civilization truly was.
+            </p>
+            <p className="text-lg">
+              The climb to the top takes about 2-3 hours, but don&apos;t worry - there are plenty of rest stops along the 
+              way where you can catch your breath and learn about the amazing history of this place. Whether you&apos;re 
+              interested in ancient history, incredible views, or just want to experience one of the world&apos;s most 
+              unique archaeological sites, Sigiriya has something special waiting for you.
             </p>
           </div>
-           <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
-                    <strong>Dont make unnesaary noice:</strong>Hornet and bees are common, so be quiet
-                  </span>
-                </div>
+          <div className="mt-6 p-4 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg">
+            <div className="flex items-start gap-2">
+              <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+              <div>
+                <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
+                <p className="text-sm text-amber-700 mb-2">
+                  <strong>Stay quiet during your climb:</strong> Hornets and bees live in the rock cracks and can become 
+                  aggressive if disturbed by loud noises. Speak softly and avoid sudden movements near the rock face.
+                </p>
+                <p className="text-sm text-amber-700">
+                  Local guides will show you safe areas to rest and take photos. Follow their instructions for a safe and 
+                  enjoyable experience.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Quick Facts */}
@@ -153,24 +176,68 @@ export default function SigiriyaTravelGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                The View of the SIgiriya from away from the rock fortress, showing the lush green landscape and the rock itself.(Image by  Polina Kocheva )
+                The majestic view of Sigiriya from the surrounding landscape, showing how the rock fortress dominates the 
+                central plains of Sri Lanka. (Image by Polina Kocheva)
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                The story of Sigiriya reads like a dramatic movie script! In the 5th century, Prince Kashyapa killed his
-                father, King Dhatusena, to claim the throne. Fearing revenge from his brother Moggallana (the rightful
-                heir), Kashyapa decided to build an impregnable fortress-palace on top of this massive rock.
+                The story of Sigiriya reads like a dramatic movie script filled with family betrayal, royal ambition, 
+                and ultimate tragedy! In the 5th century AD, Prince Kashyapa committed the ultimate crime - he killed 
+                his own father, King Dhatusena, to steal the throne from his younger brother Moggallana, who was the 
+                rightful heir according to royal tradition.
               </p>
               <p>
-                For 18 years, Kashyapa ruled from his sky-high palace, complete with gardens, pools, and stunning
-                frescoes. However, his brother eventually returned with an army. During the final battle, Kashyapas
-                elephant turned back, his army thought he was retreating, and in despair, the king took his own life.
+                After this terrible deed, Kashyapa knew his brother would return someday to seek revenge. So he made 
+                an incredible decision - instead of living in the traditional royal palace in Anuradhapura, he would 
+                build an completely new capital city on top of this massive rock, 200 meters high in the sky, where 
+                no army could easily reach him.
               </p>
               <p>
-                After Kashyapas death, the palace was abandoned and later became a Buddhist monastery until the 14th
-                century.
+                For 18 amazing years (477-495 AD), Kashyapa ruled from his sky-high palace, complete with beautiful 
+                gardens, swimming pools carved from solid rock, and stunning wall paintings. He turned this natural 
+                rock formation into the most incredible fortress-palace the world had ever seen, using the most 
+                advanced engineering and artistic skills of ancient Sri Lanka.
               </p>
+              <p>
+                But the story has a tragic ending. In 495 AD, his brother Moggallana finally returned with a powerful 
+                army. During the final battle at the base of the rock, Kashyapa&apos;s war elephant suddenly turned back 
+                toward his own troops. His soldiers thought their king was retreating in fear, so they started running 
+                away too. Seeing his army abandon him and knowing he was defeated, the proud king took his own life 
+                rather than be captured.
+              </p>
+              <p>
+                After Kashyapa&apos;s death, his magnificent palace was abandoned and later became a peaceful Buddhist 
+                monastery where monks lived and meditated until the 14th century. Today, Sigiriya stands as one of 
+                the most remarkable examples of ancient architecture and engineering in the world.
+              </p>
+            </div>
+          </div>
+
+          {/* Additional Historical Context */}
+          <div className="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+            <h3 className="text-xl font-bold mb-4 text-blue-800">Amazing Historical Facts</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold mb-2 text-blue-700">Engineering Marvels</h4>
+                <ul className="space-y-2 text-sm text-blue-600">
+                  <li>• The water gardens still work after 1,500 years</li>
+                  <li>• Rock carvings include a complex drainage system</li>
+                  <li>• The spiral staircase was built without modern tools</li>
+                  <li>• Royal pools were carved directly into solid rock</li>
+                  <li>• The Mirror Wall was polished to reflect like glass</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2 text-blue-700">Cultural Significance</h4>
+                <ul className="space-y-2 text-sm text-blue-600">
+                  <li>• UNESCO World Heritage Site since 1982</li>
+                  <li>• Called the &quot;8th Wonder of the World&quot; by many</li>
+                  <li>• Influenced by both Indian and local Sri Lankan art</li>
+                  <li>• Inspired architects and engineers for centuries</li>
+                  <li>• Symbol of ancient Sri Lankan achievement</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -182,8 +249,8 @@ export default function SigiriyaTravelGuide() {
             {/* Water Gardens */}
             <Card>
               <CardHeader>
-                <CardTitle>1. The Water Gardens</CardTitle>
-                <CardDescription>Ancient hydraulic engineering at its finest</CardDescription>
+                <CardTitle>1. The Water Gardens - Ancient Engineering Wonder</CardTitle>
+                <CardDescription>1,500-year-old hydraulic systems that still work today</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -196,24 +263,44 @@ export default function SigiriyaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Your journey begins with the incredible water gardens at the base of the rock. These
-                      1,500-year-old gardens still function today! People belives King Kashyapa put crocadiles for the safety. Youll see:
+                      Your amazing journey begins with the incredible water gardens at the base of Sigiriya Rock. These 
+                      1,500-year-old gardens are not just beautiful - they&apos;re working examples of ancient engineering 
+                      that would impress modern architects! The gardens show how smart King Kashyapa&apos;s engineers were, 
+                      creating a complex water system that still functions perfectly today.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      Local legends say that King Kashyapa kept crocodiles in some of these pools as an extra layer of 
+                      security for his fortress. While we can&apos;t prove this story, it shows how creative ancient people 
+                      were in protecting their homes! The geometric design of these gardens influenced garden design 
+                      across Asia for centuries.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Symmetrical pools and fountains that still work during rainy season
+                        Symmetrical pools and fountains that magically work during rainy season without electricity
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Ancient irrigation channels and water management systems
+                        Ancient irrigation channels showing advanced water management knowledge
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Beautiful landscaping thats perfect for photos
+                        Perfect spots for photography with the rock formation as backdrop
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Peaceful walking paths where you can imagine royal processions 1,500 years ago
                       </li>
                     </ul>
                   </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+                  <h4 className="font-semibold text-blue-800 mb-2">Fun Water Garden Facts:</h4>
+                  <p className="text-sm text-blue-700">
+                    The fountains work using water pressure - no pumps needed! During heavy rains, underground channels 
+                    fill with water and create enough pressure to make the fountains spray water several feet high. 
+                    This shows that ancient Sri Lankan engineers understood physics concepts that we use today.
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -221,30 +308,48 @@ export default function SigiriyaTravelGuide() {
             {/* Lions Paws */}
             <Card>
               <CardHeader>
-                <CardTitle>2. The Lions Paws</CardTitle>
-                <CardDescription>Massive stone paws that once supported a giant lion</CardDescription>
+                <CardTitle>2. The Lion&apos;s Paws - Gateway to the Royal Palace</CardTitle>
+                <CardDescription>Massive stone paws that once supported a giant lion sculpture</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Halfway up the rock, youll encounter the famous Lions Paws - two enormous stone paws that are
-                      all that remain of a giant lion sculpture. Originally, visitors had to walk through the lions
-                      mouth to reach the palace! <br />
-                      Peoples belives - Still some people belives there was a entrance to enter the palace through the lions mouth. and there was a place inside the rock
+                      About halfway up the rock, you&apos;ll reach one of Sigiriya&apos;s most impressive and mysterious features - 
+                      the enormous Lion&apos;s Paws! These two massive stone paws are all that remain of what was once a 
+                      giant lion sculpture that guarded the entrance to King Kashyapa&apos;s palace. Imagine how amazing 
+                      it must have looked 1,500 years ago when visitors had to walk through the lion&apos;s mouth to reach 
+                      the royal palace above!
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The paws are carved from the natural rock and are incredibly detailed, showing the skill of ancient 
+                      Sri Lankan stone carvers. Each paw is about 3 meters long and shows individual claws and muscles. 
+                      Some people believe there were actually secret chambers inside the rock behind the lion sculpture, 
+                      though this has never been proven. Local legends say the lion&apos;s roar could be heard across the 
+                      valley as a warning to enemies!
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      This is also where many visitors take a break before the steepest part of the climb. The metal 
+                      staircase from here to the top can be challenging, so it&apos;s smart to rest, drink water, and 
+                      prepare mentally for the final push to the summit. The views from here are already incredible, 
+                      but they get even better as you go higher!
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Perfect spot for memorable photos
+                        Perfect spot for memorable photos that show the massive scale of ancient construction
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Great place to rest before the final climb
+                        Great place to rest and prepare for the steep final climb to the summit
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Amazing views of the surrounding countryside
+                        Amazing panoramic views of the central plains and distant mountains
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Close-up view of the incredible stone carving techniques used by ancient craftsmen
                       </li>
                     </ul>
                   </div>
@@ -256,14 +361,23 @@ export default function SigiriyaTravelGuide() {
                     className="rounded-lg"
                   />
                 </div>
+                <div className="mt-6 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-400">
+                  <h4 className="font-semibold text-orange-800 mb-2">Local Legend:</h4>
+                  <p className="text-sm text-orange-700">
+                    According to local stories, the complete lion sculpture was so realistic and fierce-looking that 
+                    enemy soldiers would be too scared to enter the palace! The lion was meant to show King Kashyapa&apos;s 
+                    power and protect the royal family. Some archaeologists think the head and body of the lion were 
+                    destroyed by natural weathering over the centuries.
+                  </p>
+                </div>
               </CardContent>
             </Card>
 
             {/* Frescoes */}
             <Card>
               <CardHeader>
-                <CardTitle>3. The Sigiriya Frescoes on Enigmatic Mirror Wall</CardTitle>
-                <CardDescription>Ancient paintings that have survived 1,500 years</CardDescription>
+                <CardTitle>3. The World-Famous Sigiriya Frescoes &amp; Mirror Wall</CardTitle>
+                <CardDescription>1,500-year-old paintings that still shine with vibrant colors</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -276,27 +390,60 @@ export default function SigiriyaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      On your way up, dont miss the world-famous Sigiriya frescoes! These ancient paintings are located
-                      in a sheltered pocket of the rock face and show beautiful women (possibly celestial beings or
-                      court ladies).
-                      <br />
-                      You can see similar frescoes in Ajantha Caves in India.
+                      On your way up to the Lion&apos;s Paws, don&apos;t miss one of the world&apos;s most incredible art treasures - 
+                      the Sigiriya frescoes! These ancient paintings are located in a naturally sheltered pocket of the 
+                      rock face, which has protected them from rain and wind for over 1,500 years. The paintings show 
+                      beautiful women who might be celestial beings (angels), court ladies, or even members of the royal 
+                      family - nobody knows for sure, which makes them even more mysterious!
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      What makes these paintings so special is their incredible quality and the fact that the colors are 
+                      still bright and clear after all these centuries. The artists used natural pigments made from plants 
+                      and minerals found in Sri Lanka. You can see similar style paintings in the famous Ajanta Caves in 
+                      India, showing how art and culture traveled between countries in ancient times.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      Right next to the frescoes is the famous Mirror Wall - a surface that was once polished so smooth 
+                      it reflected images like a real mirror! For over 1,000 years, visitors have been writing poems and 
+                      comments on this wall, creating the world&apos;s oldest guest book. You can still read some of these 
+                      ancient writings today, though new graffiti is strictly forbidden.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Originally there were 500 frescoes, now only 18 remain
+                        Originally there were about 500 frescoes covering the entire rock face - now only 18 survive
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Colors are still vibrant after 1,500 years
+                        Colors are still amazingly vibrant after 1,500 years thanks to natural protection
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Photography is not allowed to preserve the paintings
+                        Photography is strictly not allowed to help preserve these priceless paintings
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Mirror Wall contains over 1,800 ancient poems and comments from visitors
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Similar artistic style to Ajanta Caves in India, showing ancient cultural connections
                       </li>
                     </ul>
                   </div>
+                </div>
+                <div className="mt-6 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-400">
+                  <h4 className="font-semibold text-purple-800 mb-2">Amazing Art Facts:</h4>
+                  <p className="text-sm text-purple-700 mb-2">
+                    The Mirror Wall was made by mixing honey, egg whites, and lime to create an incredibly smooth surface. 
+                    The ancient writings on it include love poems, religious prayers, and comments about the beauty of 
+                    the frescoes. Some of these writings are over 1,000 years old!
+                  </p>
+                  <p className="text-sm text-purple-700">
+                    The frescoes show women holding flowers and making hand gestures that have religious meaning in 
+                    Buddhism and Hinduism. The artists paid incredible attention to details like jewelry, hairstyles, 
+                    and facial expressions that tell us a lot about ancient Sri Lankan culture and fashion.
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -304,33 +451,56 @@ export default function SigiriyaTravelGuide() {
             {/* Summit */}
             <Card>
               <CardHeader>
-                <CardTitle>4. The Summit Palace Ruins</CardTitle>
-                <CardDescription>Royal palace remains with breathtaking 360° views</CardDescription>
+                <CardTitle>4. The Summit Palace Ruins - King&apos;s Castle in the Clouds</CardTitle>
+                <CardDescription>Royal palace remains with breathtaking 360° views of ancient Sri Lanka</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The summit is where the magic happens! At the top, youll find the ruins of King Kashyapas palace
-                      and some of the most spectacular views in Sri Lanka.<br />
-                      At the summit you can see the Pidurangala which is also have a rock similar to Sigiriya and importtant place to visit.
+                      The summit of Sigiriya is where all your climbing efforts pay off with absolutely incredible rewards! 
+                      At the top, you&apos;ll find the ruins of King Kashyapa&apos;s magnificent palace and some of the most 
+                      spectacular views in all of Sri Lanka. Standing here, you can truly understand why the king chose 
+                      this spot for his royal home - it&apos;s like being on top of the world, with endless green landscapes 
+                      stretching out in every direction as far as your eyes can see.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      From the summit, you can clearly see Pidurangala Rock rising nearby - another important ancient site 
+                      that&apos;s also worth visiting for even better views of Sigiriya itself. On clear days, you can see 
+                      mountains in the distance and the ancient irrigation systems that still feed farms throughout the 
+                      region. This view helps you understand how powerful and strategic this location was for controlling 
+                      the entire central region of ancient Sri Lanka.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The palace ruins themselves are fascinating to explore. You can walk through the foundations of the 
+                      royal apartments, see where the king held court, and marvel at the royal swimming pool that was 
+                      carved directly from the solid rock. Imagine living in luxury 200 meters above the ground, 
+                      surrounded by the most beautiful gardens and fountains, with the entire kingdom spread out below you!
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        360-degree panoramic views of the jungle and countryside
+                        Complete 360-degree panoramic views of central Sri Lankan countryside and distant mountains
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Remains of the royal palace, including the throne area
+                        Clear views of Pidurangala Rock and other ancient sites in the Cultural Triangle region
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Ancient swimming pool carved into the rock
+                        Ruins of the royal palace including throne area and royal living quarters
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Perfect spot for sunrise or sunset photos
+                        Ancient royal swimming pool carved from solid rock - still holding rainwater after 1,500 years
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect location for sunrise or sunset photography with incredible golden light
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Cool breeze and peaceful atmosphere - perfect place to rest and reflect on the climb
                       </li>
                     </ul>
                   </div>
@@ -342,46 +512,212 @@ export default function SigiriyaTravelGuide() {
                     className="rounded-lg"
                   />
                 </div>
+                <div className="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
+                  <h4 className="font-semibold text-green-800 mb-2">Summit Experience Tips:</h4>
+                  <p className="text-sm text-green-700 mb-2">
+                    Take your time at the summit! Many visitors rush to take photos and leave quickly, but this is a 
+                    special place that deserves at least 30-45 minutes of exploration. Sit quietly and imagine what 
+                    life was like here 1,500 years ago when this was one of the most important places in Asia.
+                  </p>
+                  <p className="text-sm text-green-700">
+                    The best photos are taken from the throne area looking out over the landscape. Early morning and 
+                    late afternoon provide the most beautiful golden lighting. Remember to stay hydrated and wear 
+                    sun protection - there&apos;s no shade at the summit!
+                  </p>
+                </div>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>5. Sigiriya Mirror wall</CardTitle>
-                <CardDescription>Visitors ideas</CardDescription>
+                <CardTitle>5. The Sigiriya Mirror Wall - Ancient Guest Book</CardTitle>
+                <CardDescription>World&apos;s oldest visitor comments dating back over 1,000 years</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Mirror wall is a fascinating feature of Sigiriya, once polished to such a shine that it reflected the images of visitors. Today, you can still see ancient graffiti and poems written by visitors over the centuries.
-
+                      The Mirror Wall is one of Sigiriya&apos;s most fascinating and unique features that shows how this place 
+                      has been amazing visitors for over 1,000 years! Originally, this wall was polished so smooth and 
+                      shiny that it worked like a perfect mirror, reflecting the images of people walking by. The ancient 
+                      builders achieved this incredible shine by mixing honey, egg whites, and lime to create a surface 
+                      smoother than most modern mirrors!
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      What makes the Mirror Wall truly special is that for over 1,000 years, visitors have been writing 
+                      poems, comments, and thoughts on this wall, creating the world&apos;s oldest guest book! These ancient 
+                      writings include beautiful love poems, religious prayers, comments about the stunning frescoes, and 
+                      personal thoughts from people who climbed Sigiriya centuries ago. Reading these old writings gives 
+                      you a magical connection to people from the past who stood in the exact same spot you&apos;re standing now.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      Some of the most interesting writings are from the 8th to 10th centuries, when Sigiriya was used 
+                      as a Buddhist monastery. Monks and pilgrims wrote about their spiritual experiences and the beauty 
+                      of the frescoes. Later visitors wrote romantic poems comparing the painted women to their loved ones. 
+                      These writings help us understand how people from different time periods experienced and appreciated 
+                      this incredible place.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Originally, the wall was so polished that it reflected images like a mirror
+                        Originally polished to mirror-like shine using honey, egg whites, and lime mixture
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Visitors have left graffiti and poems on the wall for centuries
+                        Over 1,800 ancient visitor writings and poems preserved from 8th-18th centuries
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Its a fascinating glimpse into the thoughts and feelings of ancient visitors
+                        Fascinating glimpse into thoughts and feelings of ancient Sri Lankan visitors
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        The wall is now protected, and touching it is not allowed
+                        Includes love poems, religious writings, and comments about the beautiful frescoes
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Now strictly protected - touching or writing on the wall is completely forbidden
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Provides valuable insights into ancient Sinhala language and poetry styles
                       </li>
                     </ul>
                   </div>
                   <Image
                     src="/Mirrorwall.jpeg"
-                    alt="Panoramic view from Sigiriya summit showing vast green landscape and ancient palace ruins"
+                    alt="Close-up of the ancient Mirror Wall showing old Sinhala script and visitor writings"
                     width={400}
                     height={300}
                     className="rounded-lg"
                   />
+                </div>
+                <div className="mt-6 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-400">
+                  <h4 className="font-semibold text-amber-800 mb-2">Ancient Visitor Voices:</h4>
+                  <p className="text-sm text-amber-700 mb-2">
+                    One famous 8th-century poem on the wall says: &quot;The ladies who wear golden chains on their breasts 
+                    laugh and speak with sweet voices... my mind was captured by their beauty.&quot; Another visitor wrote: 
+                    &quot;I am Budal. The sight of these women makes me want to stay here forever.&quot;
+                  </p>
+                  <p className="text-sm text-amber-700">
+                    These personal messages show that people 1,200 years ago had the same feelings of wonder and amazement 
+                    that visitors have today when they see the incredible frescoes and experience the magic of Sigiriya!
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Climbing Experience Guide */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Your Complete Climbing Experience Guide</h2>
+          <div className="space-y-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>The Step-by-Step Climbing Journey</CardTitle>
+                <CardDescription>What to expect during your 2-3 hour adventure to the top</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-6">
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <div className="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+                      <h4 className="font-bold text-blue-800 mb-2">Stage 1: Water Gardens (30 minutes)</h4>
+                      <p className="text-sm text-blue-700 mb-2">
+                        Easy flat walking through ancient gardens and pools. Perfect for photos and getting excited about 
+                        the adventure ahead. Take time to read the information boards about the engineering marvels.
+                      </p>
+                      <p className="text-xs text-blue-600 font-medium">Difficulty: Very Easy 🟢</p>
+                    </div>
+                    <div className="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
+                      <h4 className="font-bold text-yellow-800 mb-2">Stage 2: Boulder Gardens (45 minutes)</h4>
+                      <p className="text-sm text-yellow-700 mb-2">
+                        Moderate climbing with some steep paths and stairs. You&apos;ll pass ancient meditation caves and 
+                        see how monks lived here for centuries. Great views start appearing here.
+                      </p>
+                      <p className="text-xs text-yellow-600 font-medium">Difficulty: Moderate 🟡</p>
+                    </div>
+                    <div className="p-4 bg-orange-50 rounded-lg border-l-4 border-orange-400">
+                      <h4 className="font-bold text-orange-800 mb-2">Stage 3: Frescoes &amp; Mirror Wall (30 minutes)</h4>
+                      <p className="text-sm text-orange-700 mb-2">
+                        Steeper climbing with metal staircases. This is where you see the famous paintings and ancient 
+                        writings. Take breaks and don&apos;t rush - this is the most culturally important part.
+                      </p>
+                      <p className="text-xs text-orange-600 font-medium">Difficulty: Moderate-Hard 🟠</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-400">
+                      <h4 className="font-bold text-red-800 mb-2">Stage 4: Lion&apos;s Paws to Summit (45 minutes)</h4>
+                      <p className="text-sm text-red-700 mb-2">
+                        The most challenging part with steep metal stairs attached to the rock face. Not recommended for 
+                        people afraid of heights. Take it slow, rest when needed, and focus on the amazing achievement 
+                        you&apos;re about to complete!
+                      </p>
+                      <p className="text-xs text-red-600 font-medium">Difficulty: Hard 🔴</p>
+                    </div>
+                    <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
+                      <h4 className="font-bold text-green-800 mb-2">Stage 5: Summit Exploration (45 minutes)</h4>
+                      <p className="text-sm text-green-700 mb-2">
+                        Flat walking around the palace ruins with incredible 360° views. This is your reward time! 
+                        Explore the royal pools, throne area, and take lots of photos. The descent takes about 1 hour.
+                      </p>
+                      <p className="text-xs text-green-600 font-medium">Difficulty: Easy 🟢</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Physical Preparation &amp; Fitness Requirements</CardTitle>
+                <CardDescription>How to prepare for this incredible but challenging climb</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-green-700">Who Can Climb Sigiriya?</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• People with reasonable fitness (can walk for 2-3 hours with breaks)</li>
+                      <li>• Children over 8 years old with adult supervision</li>
+                      <li>• Seniors who exercise regularly and have no serious health problems</li>
+                      <li>• Anyone who can climb stairs without getting extremely tired</li>
+                      <li>• People comfortable with heights and metal staircases</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-red-700">Who Should Consider Carefully?</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• People with serious heart or breathing problems</li>
+                      <li>• Anyone with severe fear of heights</li>
+                      <li>• Very young children (under 8) or elderly with mobility issues</li>
+                      <li>• People with recent injuries or surgeries</li>
+                      <li>• Anyone who gets dizzy easily or has balance problems</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <h4 className="font-semibold text-blue-800 mb-2">Preparation Tips:</h4>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm text-blue-700">
+                    <div>
+                      <p className="mb-2"><strong>Week Before:</strong></p>
+                      <ul className="space-y-1">
+                        <li>• Walk for 30-60 minutes daily</li>
+                        <li>• Practice climbing stairs</li>
+                        <li>• Drink plenty of water daily</li>
+                        <li>• Get good sleep</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="mb-2"><strong>Day Before:</strong></p>
+                      <ul className="space-y-1">
+                        <li>• Eat a good dinner with carbs</li>
+                        <li>• Go to bed early</li>
+                        <li>• Drink water but don&apos;t overdo it</li>
+                        <li>• Prepare clothes and gear</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -460,7 +796,7 @@ export default function SigiriyaTravelGuide() {
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Dont make unnesaary noice:</strong>Hornet and bees are common, so be quiet
+                    <strong>Don&apos;t make unnecessary noise:</strong> Hornets and bees live in the rock cracks and can become dangerous if you are too loud
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
@@ -798,26 +1134,136 @@ export default function SigiriyaTravelGuide() {
 
         {/* Final Tips */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
-            <CardHeader>
-              <CardTitle className="text-blue-800">Final Words of Advice</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-4">
-                Visiting Sigiriya is more than just ticking off a tourist attraction – its a journey through time that
-                connects you with ancient Sri Lankan civilization. The climb might be challenging, but the sense of
-                achievement and the breathtaking views make every step worth it.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                Remember, youre walking in the footsteps of ancient kings and monks. Take time to appreciate not just
-                the destination, but the incredible engineering and artistry that went into creating this wonder 1,500
-                years ago.
-              </p>
-              <p className="text-muted-foreground font-medium">
-                Safe travels, and enjoy your adventure at the Lion Rock! 🦁🏰
-              </p>
-            </CardContent>
-          </Card>
+          <h2 className="text-3xl font-bold mb-6">Complete Visitor Guide &amp; Final Tips</h2>
+          <div className="space-y-8">
+            <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
+              <CardHeader>
+                <CardTitle className="text-blue-800">Essential Tips for an Amazing Sigiriya Experience</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700">Before You Go</h4>
+                    <ul className="space-y-2 text-sm text-blue-600">
+                      <li>• Book accommodations in Sigiriya village or Dambulla for easy early morning access</li>
+                      <li>• Check weather forecast - avoid climbing during heavy rain or storms</li>
+                      <li>• Inform someone about your climbing plans and expected return time</li>
+                      <li>• Consider hiring a local guide for deeper cultural understanding</li>
+                      <li>• Bring a small backpack with water, snacks, and first aid supplies</li>
+                      <li>• Charge your camera/phone fully - you&apos;ll want lots of photos!</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-purple-700">During Your Climb</h4>
+                    <ul className="space-y-2 text-sm text-purple-600">
+                      <li>• Start early (6:30-7:00 AM) to avoid crowds and heat</li>
+                      <li>• Take breaks every 15-20 minutes to rest and enjoy the views</li>
+                      <li>• Follow the designated paths and respect all barriers and signs</li>
+                      <li>• Be patient with other climbers - help elderly or struggling visitors</li>
+                      <li>• Take time to read information boards and learn about the history</li>
+                      <li>• Stay hydrated but don&apos;t drink too much water at once</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg border-l-4 border-yellow-400">
+                  <h4 className="font-semibold text-yellow-800 mb-2">Cultural Respect &amp; Environmental Care</h4>
+                  <p className="text-sm text-yellow-700 mb-2">
+                    Remember that Sigiriya is not just a tourist attraction - it&apos;s a sacred place with incredible historical 
+                    and cultural importance. Show respect by following all rules, not touching ancient walls or artifacts, 
+                    and keeping your voice down near the frescoes and religious areas.
+                  </p>
+                  <p className="text-sm text-yellow-700">
+                    Help preserve this amazing place for future generations by not littering, staying on marked paths, 
+                    and following photography restrictions. Every visitor has a responsibility to protect this UNESCO 
+                    World Heritage Site for people to enjoy for many more centuries to come.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
+              <CardHeader>
+                <CardTitle className="text-green-800">Making Your Visit Extra Special</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="p-4 bg-white rounded-lg border border-green-200">
+                      <h4 className="font-semibold text-green-700 mb-2">Photography Tips</h4>
+                      <ul className="text-sm text-green-600 space-y-1">
+                        <li>• Best light: 6:30-8:30 AM and 4:30-6:00 PM</li>
+                        <li>• Bring wide-angle lens for landscape shots</li>
+                        <li>• Use people in photos to show the massive scale</li>
+                        <li>• Capture details: carvings, pools, ancient stairs</li>
+                      </ul>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-blue-200">
+                      <h4 className="font-semibold text-blue-700 mb-2">Cultural Learning</h4>
+                      <ul className="text-sm text-blue-600 space-y-1">
+                        <li>• Read about King Kashyapa before your visit</li>
+                        <li>• Learn basic Sinhala greetings for local interactions</li>
+                        <li>• Ask guides about Buddhist traditions and symbols</li>
+                        <li>• Understand the connection to other Cultural Triangle sites</li>
+                      </ul>
+                    </div>
+                    <div className="p-4 bg-white rounded-lg border border-purple-200">
+                      <h4 className="font-semibold text-purple-700 mb-2">Personal Reflection</h4>
+                      <ul className="text-sm text-purple-600 space-y-1">
+                        <li>• Spend quiet time at the summit thinking about history</li>
+                        <li>• Imagine what life was like 1,500 years ago</li>
+                        <li>• Appreciate the incredible human achievement</li>
+                        <li>• Consider keeping a travel journal of your experience</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="p-6 bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg border border-amber-200">
+                    <h4 className="font-semibold text-amber-800 mb-3">Why Sigiriya Will Change You</h4>
+                    <p className="text-muted-foreground mb-4">
+                      Visiting Sigiriya is more than just seeing an ancient building or climbing a big rock. It&apos;s a journey 
+                      that connects you with the incredible achievements of human civilization. When you stand at the summit, 
+                      looking out over the same landscape that King Kashyapa saw 1,500 years ago, you become part of a 
+                      continuous story that links the ancient past with the present moment.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      This experience will change how you think about what humans can accomplish when they combine vision, 
+                      determination, and incredible skill. The fact that ancient people could build something so magnificent 
+                      without modern technology shows the power of human creativity and ambition. Many visitors say that 
+                      Sigiriya inspires them to think bigger about their own goals and dreams.
+                    </p>
+                    <p className="text-muted-foreground">
+                      Most importantly, Sigiriya teaches us about the importance of preserving cultural heritage. When you 
+                      climb those ancient steps and see the frescoes that have survived for 1,500 years, you understand 
+                      why protecting these treasures is so important. You become an ambassador for cultural preservation, 
+                      carrying the story of Sigiriya with you wherever you go.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-r from-rose-50 to-pink-50 border-rose-200">
+              <CardHeader>
+                <CardTitle className="text-rose-800">Your Sigiriya Adventure Awaits!</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  Remember, you&apos;re about to climb one of the most incredible archaeological sites in the world! Every step 
+                  up those ancient staircases brings you closer to understanding the genius and ambition of ancient Sri Lankan 
+                  civilization. The climb might be challenging, but the sense of achievement and the breathtaking views make 
+                  every bit of effort completely worthwhile.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  Take time to appreciate not just the destination, but the incredible journey itself. You&apos;re walking in 
+                  the footsteps of ancient kings, Buddhist monks, and countless pilgrims who have made this sacred climb 
+                  for over 1,500 years. The memories you create at Sigiriya will stay with you for the rest of your life.
+                </p>
+                <p className="text-muted-foreground font-medium text-center text-lg">
+                  Safe travels, and enjoy your incredible adventure at the Lion Rock! 🦁🏰✨
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </section>
       </div >
     </main >

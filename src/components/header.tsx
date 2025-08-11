@@ -89,7 +89,7 @@ const destinationsItems = [
     hasSubmenu: true,
     items: [
       { name: "Yala National Park", href: "/destinations/yala" },
-      { name: "Udawalawe National Park", href: "/destinations/udawalawe" },
+      { name: "Udawalawe National Park", href: "/destinations/udawalawa-national-park" },
       { name: "Minneriya National Park", href: "/destinations/minneriya-national-park" },
       { name: "Wilpattu National Park", href: "/destinations/wilpattu-national-park" },
       { name: "Sinharaja Forest", href: "/destinations/sinharaja" },

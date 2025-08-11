@@ -92,11 +92,11 @@ export default function PolonnaruwaGuide() {
     ]
 
     const galviharayaImages = [
-        "/GalViharaya.jpeg",
-        "/GalViharaya2.jpeg",
-        "/GalViharaya3.jpeg",
-        "/GalViharaya4.jpeg",
-        "/GalViharaya5.jpeg"
+        "/Galviharaya.jpeg",
+        "/Galviharaya2.jpeg",
+        "/Galviharaya3.jpeg",
+        "/Galviharaya4.jpeg",
+        "/Galviharaya5.jpeg"
     ]
 
     const rankothveheraImages = [
