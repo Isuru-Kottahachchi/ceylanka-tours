@@ -107,7 +107,7 @@ export default function KandyEsalaPeraheraGuide() {
             Kandy Esala Perahera
           </h1>
           <p className="text-xl md:text-3xl lg:text-4xl mb-8 font-light leading-relaxed">
-            The World's Most Beautiful Buddhist Festival
+            The World&apos;s Most Beautiful Buddhist Festival
           </p>
           <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto leading-relaxed">
             Join millions of people who witness this magical celebration every year in the ancient city of Kandy, where
@@ -138,7 +138,7 @@ export default function KandyEsalaPeraheraGuide() {
         {/* Introduction */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
-            Welcome to Sri Lanka's Greatest Festival
+            Welcome to Sri Lanka&apos;s Greatest Festival
           </h2>
           <div className="prose prose-xl max-w-none text-muted-foreground leading-relaxed space-y-6">
             <p className="text-xl mb-6 leading-relaxed">
@@ -231,7 +231,7 @@ export default function KandyEsalaPeraheraGuide() {
                   <div className="flex items-center gap-3">
                     <Heart className="w-5 h-5 text-pink-500" />
                     <span>
-                      <strong>Purpose:</strong> Honor Buddha's tooth relic
+                      <strong>Purpose:</strong> Honor Buddha&apos;s tooth relic
                     </span>
                   </div>
                 </div>
@@ -291,7 +291,7 @@ export default function KandyEsalaPeraheraGuide() {
                     <p className="text-muted-foreground text-lg leading-relaxed">
                       Long, long ago, around 600 years after Lord Buddha passed away, there was a terrible war in
                       ancient India. A brave princess named Hemamali had to escape from her kingdom with the most
-                      precious thing in the Buddhist world - one of Buddha's teeth. She hid this sacred tooth in her
+                      precious thing in the Buddhist world - one of Buddha&apos;s teeth. She hid this sacred tooth in her
                       hair and traveled all the way to Sri Lanka to keep it safe.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
@@ -307,8 +307,8 @@ export default function KandyEsalaPeraheraGuide() {
                       religious ceremony slowly grew into the magnificent festival we see today.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      The festival got its current name "Esala Perahera" because it happens during the month of Esala in
-                      the Buddhist calendar (which falls in August), and "Perahera" means "procession" in Sinhala.
+                      The festival got its current name &quot;Esala Perahera&quot; because it happens during the month of Esala in
+                      the Buddhist calendar (which falls in August), and &quot;Perahera&quot; means &quot;procession&quot; in Sinhala.
                       For over 1,400 years, through wars, invasions, colonial rule, and modern times, this festival has
                       never stopped. It is one of the oldest continuously celebrated festivals in the world.
                     </p>
@@ -400,7 +400,7 @@ export default function KandyEsalaPeraheraGuide() {
                     <h4 className="font-semibold text-lg mb-2">Randoli Perahera (Final 5 Nights)</h4>
                     <p className="text-sm text-muted-foreground mb-2">
                       The grand finale! These five nights feature the full procession with all 100+ elephants, thousands
-                      of performers, and the most spectacular displays. The sacred casket containing Buddha's tooth
+                      of performers, and the most spectacular displays. The sacred casket containing Buddha&apos;s tooth
                       relic joins the procession, making these the most important and crowded nights. The final night is
                       the most magnificent of all.
                     </p>
@@ -475,7 +475,7 @@ export default function KandyEsalaPeraheraGuide() {
                     <p className="text-muted-foreground leading-relaxed">
                       King Kirthi Sri Rajasinghe (1747-1782) was especially important in shaping the festival. He
                       decided that the procession should not just honor the tooth relic, but also pay respect to the
-                      four guardian gods of Sri Lanka - Natha, Vishnu, Kataragama, and Pattini. This is why today's
+                      four guardian gods of Sri Lanka - Natha, Vishnu, Kataragama, and Pattini. This is why today&apos;s
                       Perahera actually includes five separate processions that all come together in one grand parade.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
@@ -543,7 +543,7 @@ export default function KandyEsalaPeraheraGuide() {
               <CardHeader className="bg-gradient-to-r from-gray-50 to-slate-50 dark:from-gray-800/50 dark:to-slate-800/50">
                 <CardTitle className="text-2xl text-gray-800 dark:text-gray-200">The Sacred Tusker - Most Important Elephant</CardTitle>
                 <CardDescription className="text-lg text-gray-600 dark:text-gray-400">
-                  Meet the special elephant who carries Buddha's tooth relic
+                  Meet the special elephant who carries Buddha&apos;s tooth relic
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-8">
@@ -565,7 +565,7 @@ export default function KandyEsalaPeraheraGuide() {
                       The most famous Maligawa Tusker in recent history was Raja, who served from 1950 to 1988. Raja was
                       so beloved that when he died, the entire country mourned. His body was preserved and is now
                       displayed in a special museum at the temple. People still visit to pay their respects to this
-                      magnificent elephant who served Buddha's relic for nearly 40 years.
+                      magnificent elephant who served Buddha&apos;s relic for nearly 40 years.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       During the Perahera, the Maligawa Tusker is dressed in the most beautiful decorations you can
@@ -737,7 +737,7 @@ export default function KandyEsalaPeraheraGuide() {
                     and cost thousands of dollars.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    The most important part of a Nilame's costume is the "Nilame Hat" - a tall, cone-shaped headpiece
+                    The most important part of a Nilame&apos;s costume is the &quot;Nilame Hat&quot; - a tall, cone-shaped headpiece
                     made of silver or gold, decorated with precious stones and intricate carvings. This hat can be over
                     two feet tall and weighs several pounds. It takes years of practice to learn how to walk gracefully
                     while wearing such a magnificent but heavy headpiece.
@@ -844,15 +844,15 @@ export default function KandyEsalaPeraheraGuide() {
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
                     The most important moment comes when the Diyawadana Nilame (the chief custodian of the Temple of the
-                    Tooth) uses a golden sword to "cut" the water of the river. This symbolic act represents the
+                    Tooth) uses a golden sword to &quot;cut&quot; the water of the river. This symbolic act represents the
                     division of the sacred water, which is then collected in golden vessels. This water is considered
                     very holy and will be used in temple ceremonies throughout the coming year.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
                     The water cutting ceremony is not just the end of the festival - it is also the beginning of
-                    preparations for next year's Perahera. The sacred water collected during this ceremony will be used
+                    preparations for next year&apos;s Perahera. The sacred water collected during this ceremony will be used
                     to bless the elephants, the costumes, and the sacred objects that will participate in the following
-                    year's procession. In this way, each Perahera is connected to the ones before and after it.
+                    year&apos;s procession. In this way, each Perahera is connected to the ones before and after it.
                   </p>
 
                   <div className="bg-blue-50 dark:bg-blue-900/30 p-6 rounded-lg border border-blue-200 dark:border-blue-700">
@@ -885,13 +885,13 @@ export default function KandyEsalaPeraheraGuide() {
                       <li className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                         <span>
-                          <strong>Sacred Water:</strong> Collected for next year's ceremonies
+                          <strong>Sacred Water:</strong> Collected for next year&apos;s ceremonies
                         </span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                         <span>
-                          <strong>Significance:</strong> Connects each year's festival to the next
+                          <strong>Significance:</strong> Connects each year&apos;s festival to the next
                         </span>
                       </li>
                     </ul>
@@ -1019,7 +1019,7 @@ export default function KandyEsalaPeraheraGuide() {
                     <p className="text-muted-foreground leading-relaxed">
                       The music of the Perahera is just as important as the visual spectacle. Traditional drummers play
                       ancient rhythms on drums that have been used in Sri Lankan ceremonies for over 2,000 years. The
-                      sound of these drums - called "geta bera" - creates a heartbeat-like rhythm that seems to pulse
+                      sound of these drums - called &quot;geta bera&quot; - creates a heartbeat-like rhythm that seems to pulse
                       through the entire city. The drumming is so powerful that you can feel it in your chest as the
                       procession passes by.
                     </p>
