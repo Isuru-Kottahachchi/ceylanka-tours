@@ -1190,7 +1190,7 @@ export default function KandyEsalaPeraheraGuide() {
                   <h4 className="font-semibold text-lg mb-3 text-blue-800 dark:text-blue-300">What to Bring</h4>
                   <div className="space-y-2 text-sm">
                     <p>
-                      <strong>Comfortable Shoes:</strong> You'll be standing/walking for hours
+                      <strong>Comfortable Shoes:</strong> You&apos;ll be standing/walking for hours
                     </p>
                     <p>
                       <strong>Water & Snacks:</strong> Stay hydrated and energized

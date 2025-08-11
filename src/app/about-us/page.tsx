@@ -318,7 +318,7 @@ export default function AboutPage() {
                         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-600 dark:text-gray-300">
                             <div className="flex items-center gap-2">
                                 <Mail className="w-5 h-5" />
-                                <span>hello@srilanka-travel-guide.com</span>
+                                <span>e.com</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Phone className="w-5 h-5" />
