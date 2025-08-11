@@ -7,12 +7,12 @@ import { Badge } from "@/components/ui/badge"
 export const metadata: Metadata = {
   title: "Temple of the Tooth Kandy: Complete Guide 2025 | Sacred Relic & Raja Tusker Museum",
   description:
-    "Explore the Temple of the Tooth in Kandy, Sri Lanka's most sacred Buddhist site housing Buddha's tooth relic, plus the fascinating Raja Tusker Museum and cultural experiences.",
+    "Explore the Temple of the Tooth in Kandy, Sri Lanka&apos;s most sacred Buddhist site housing Buddha&apos;s tooth relic, plus the fascinating Raja Tusker Museum and cultural experiences.",
   keywords:
     "Temple of Tooth Kandy, Sri Dalada Maligawa, Buddha tooth relic, Raja Tusker Museum, Kandy attractions, Buddhist temple Sri Lanka",
   openGraph: {
     title: "Temple of the Tooth Kandy: Complete Sacred Journey Guide",
-    description: "Your ultimate guide to Sri Lanka's most sacred Buddhist temple and cultural treasures",
+    description: "Your ultimate guide to Sri Lanka&apos;s most sacred Buddhist temple and cultural treasures",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
@@ -34,7 +34,7 @@ export default function TempleOfToothKandyGuide() {
         <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Temple of the Tooth</h1>
           <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">
-            Sri Lanka's Most Sacred Buddhist Sanctuary
+            Sri Lanka&apos;s Most Sacred Buddhist Sanctuary
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
@@ -67,7 +67,7 @@ export default function TempleOfToothKandyGuide() {
               pilgrimage destination of unparalleled spiritual significance.
             </p>
             <p className="text-lg mb-6">
-              The temple's history spans over 1,600 years, beginning when the sacred tooth relic was brought to Sri
+              The temple&apos;s history spans over 1,600 years, beginning when the sacred tooth relic was brought to Sri
               Lanka in 313 CE, hidden in the hair of Princess Hemamali who fled the destruction of Kalinga in ancient
               India. Since that momentous arrival, the tooth relic has been the symbol of sovereignty in Sri Lanka - it
               was believed that whoever possessed the relic had the divine right to rule the island. This sacred
@@ -78,7 +78,7 @@ export default function TempleOfToothKandyGuide() {
               The current temple complex, built during the Kandyan Kingdom period (1687-1815), represents the pinnacle
               of traditional Sri Lankan architecture and craftsmanship. Every element of the temple - from the
               intricately carved wooden pillars and painted ceilings to the golden lotus-shaped roof and precious stone
-              inlays - was designed to create a dwelling worthy of housing Buddha's relic. The temple is not just a
+              inlays - was designed to create a dwelling worthy of housing Buddha&apos;s relic. The temple is not just a
               religious site but a masterpiece of art, architecture, and cultural heritage that tells the story of Sri
               Lankan Buddhist civilization.
             </p>
@@ -223,17 +223,17 @@ export default function TempleOfToothKandyGuide() {
                       chamber where the Sacred Tooth Relic is enshrined. This golden sanctuary, accessible only to the
                       highest-ranking monks and officials, contains a series of seven nested golden caskets, each more
                       precious than the last, with the tooth relic housed in the innermost casket made of pure gold and
-                      encrusted with the finest gems from Sri Lanka's ancient mines.
+                      encrusted with the finest gems from Sri Lanka&apos;s ancient mines.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       The relic chamber itself is a masterpiece of religious art and architecture. The walls are covered
-                      in intricate paintings depicting scenes from Buddha's life and the history of the tooth relic,
+                      in intricate paintings depicting scenes from Buddha&apos;s life and the history of the tooth relic,
                       while the ceiling features elaborate lotus designs symbolizing spiritual purity. The golden shrine
                       that houses the caskets is surrounded by offerings of flowers, incense, and precious objects
                       donated by devotees over centuries.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      While visitors cannot see the actual tooth relic (it's only displayed on very rare occasions), the
+                      While visitors cannot see the actual tooth relic (it&apos;s only displayed on very rare occasions), the
                       spiritual atmosphere in the chamber is overwhelming. The constant chanting of monks, the fragrance
                       of jasmine and frangipani flowers, and the soft glow of oil lamps create an environment of
                       profound reverence that has remained unchanged for over 1,300 years.
@@ -298,9 +298,9 @@ export default function TempleOfToothKandyGuide() {
                       a beloved figure throughout the island.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      The museum's centerpiece is the preserved body of Raja, the most famous tusker in Sri Lankan
+                      The museum&apos;s centerpiece is the preserved body of Raja, the most famous tusker in Sri Lankan
                       history, who died in 1988 after decades of faithful service. Raja was not just an elephant - he
-                      was considered a sacred being, blessed with the honor of carrying Buddha's relic. His
+                      was considered a sacred being, blessed with the honor of carrying Buddha&apos;s relic. His
                       intelligence, gentle nature, and majestic presence made him a beloved figure who drew crowds
                       wherever he appeared. The museum preserves his memory with dignity and reverence.
                     </p>
@@ -317,7 +317,7 @@ export default function TempleOfToothKandyGuide() {
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                           <span>
-                            <strong>Raja's Remains:</strong> Preserved body of the legendary tusker (1913-1988)
+                            <strong>Raja&apos;s Remains:</strong> Preserved body of the legendary tusker (1913-1988)
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
@@ -379,12 +379,12 @@ export default function TempleOfToothKandyGuide() {
                     <p className="text-muted-foreground text-lg leading-relaxed">
                       The Temple of the Tooth represents the pinnacle of traditional Kandyan architecture, where every
                       element has been crafted with meticulous attention to both aesthetic beauty and spiritual
-                      symbolism. The temple's distinctive features include the golden roof that gleams like a beacon
+                      symbolism. The temple&apos;s distinctive features include the golden roof that gleams like a beacon
                       across Kandy, intricate wooden pillars carved by master craftsmen, and painted ceilings that tell
                       the story of Buddhism through vibrant colors and symbolic imagery.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      The temple's wooden architecture is particularly remarkable, featuring pillars carved from single
+                      The temple&apos;s wooden architecture is particularly remarkable, featuring pillars carved from single
                       pieces of timber and decorated with traditional motifs including lotus flowers, elephants, and
                       mythical creatures. The craftsmanship represents skills passed down through generations of Kandyan
                       artisans, with techniques that have remained unchanged for centuries. The intricate joinery work
@@ -392,8 +392,8 @@ export default function TempleOfToothKandyGuide() {
                       for over 300 years.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      The painted artwork throughout the temple complex depicts scenes from Buddha's life, Jataka tales
-                      (stories of Buddha's previous lives), and the history of Buddhism in Sri Lanka. These paintings,
+                      The painted artwork throughout the temple complex depicts scenes from Buddha&apos;s life, Jataka tales
+                      (stories of Buddha&apos;s previous lives), and the history of Buddhism in Sri Lanka. These paintings,
                       created using natural pigments and traditional techniques, serve both as decoration and as visual
                       teachings for devotees. The colors remain vibrant despite centuries of tropical weather, testament
                       to the skill of ancient artists.
@@ -460,7 +460,7 @@ export default function TempleOfToothKandyGuide() {
                   <div className="border-l-4 border-orange-500 pl-4">
                     <h4 className="font-semibold text-lg mb-3">Festival Overview & History</h4>
                     <p className="text-sm text-muted-foreground mb-3">
-                      The Esala Perahera, held annually during the full moon of July/August (Esala month), is one of Asia's most spectacular religious
+                      The Esala Perahera, held annually during the full moon of July/August (Esala month), is one of Asia&apos;s most spectacular religious
                       festivals and the grandest celebration in Sri Lanka. This magnificent 10-day festival has been celebrated for over 1,600 years,
                       beginning when the Sacred Tooth Relic first arrived in Sri Lanka in 313 CE. What started as a simple religious procession has
                       evolved into an extraordinary cultural extravaganza that showcases the finest traditions of Sri Lankan art, music, dance, and
@@ -492,7 +492,7 @@ export default function TempleOfToothKandyGuide() {
                       gentle giants moving in perfect formation through the narrow streets of Kandy is both humbling and awe-inspiring.
                     </p>
                     <p className="text-xs text-red-600 dark:text-red-400 font-medium">
-                      Best viewing: Temple grounds, Dalada Veediya, and Queen's Hotel area
+                      Best viewing: Temple grounds, Dalada Veediya, and Queen&apos;s Hotel area
                     </p>
                   </div>
 
@@ -508,7 +508,7 @@ export default function TempleOfToothKandyGuide() {
                       Fire dancers create spectacular displays against the night sky, spinning burning torches in patterns that represent the
                       triumph of light over darkness. The haunting melodies of traditional instruments - including the gata bera drums, dawula
                       drums, and conch shells - fill the air with sounds that have accompanied these ceremonies for over a millennium. Each
-                      performance group represents different regions of Sri Lanka, showcasing the incredible diversity of the island's cultural heritage.
+                      performance group represents different regions of Sri Lanka, showcasing the incredible diversity of the island&apos;s cultural heritage.
                     </p>
                     <p className="text-xs text-yellow-600 dark:text-yellow-400 font-medium">
                       Performances: Kandyan dance, fire displays, traditional music, and folk theater
@@ -633,7 +633,7 @@ export default function TempleOfToothKandyGuide() {
                     <ul className="text-sm text-muted-foreground space-y-1 mb-4">
                       <li>• <strong>Temple of the Tooth:</strong> Starting point, most sacred atmosphere</li>
                       <li>• <strong>Dalada Veediya:</strong> Main street with excellent visibility</li>
-                      <li>• <strong>Queen's Hotel Balcony:</strong> Premium paid seating (book early)</li>
+                      <li>• <strong>Queen&apos;s Hotel Balcony:</strong> Premium paid seating (book early)</li>
                       <li>• <strong>Kandy Lake:</strong> Final ceremony viewing area</li>
                       <li>• <strong>Side Streets:</strong> Less crowded but still good views</li>
                     </ul>
@@ -659,7 +659,7 @@ export default function TempleOfToothKandyGuide() {
                     <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Accommodation</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• <strong>Book 6+ Months Ahead:</strong> Hotels fill up completely</li>
-                      <li>• <strong>Premium Properties:</strong> Queen's Hotel, Hotel Suisse</li>
+                      <li>• <strong>Premium Properties:</strong> Queen&apos;s Hotel, Hotel Suisse</li>
                       <li>• <strong>Budget Options:</strong> Guesthouses outside city center</li>
                       <li>• <strong>Alternative:</strong> Day trips from Colombo or other cities</li>
                     </ul>

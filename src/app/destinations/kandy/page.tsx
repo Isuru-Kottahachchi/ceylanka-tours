@@ -1,6 +1,5 @@
 "use client"
 
-
 import Image from "next/image"
 import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Heart, ChevronLeft, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -129,10 +128,6 @@ export default function KandyTravelGuide() {
     "/placeholder.svg?height=300&width=400",
   ]
 
-  const TempleImages = [
-    "/placeholder.svg?height=300&width=400",
-  ]
-
   const CulturalShowImages = [
     "/Kandy-Esela-Perahara.JPG",
     "/Kandy-Procession.jpg",
@@ -240,7 +235,7 @@ export default function KandyTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Heart className="w-4 h-4 text-red-500" />
                     <span>
-                      <strong>Local Name:</strong> "Maha Nuwara" (The Great City)
+                      <strong>Local Name:</strong> &quot;Maha Nuwara&quot; (The Great City)
                     </span>
                   </div>
                 </div>
