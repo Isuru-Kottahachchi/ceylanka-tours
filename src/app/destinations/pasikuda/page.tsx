@@ -280,7 +280,7 @@ export default function PasikudaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Pasikudabeach.jpeg"
                     alt="Pristine Pasikuda beach with white sand, palm trees, and luxury beach loungers under umbrellas"
                     width={400}
                     height={300}

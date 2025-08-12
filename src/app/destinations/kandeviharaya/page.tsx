@@ -68,7 +68,7 @@ export default function KandeViharayaGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Kande Viharaya: A Spiritual Haven</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Perched on a hilltop overlooking the coastal town of Aluthgama, Kande Viharaya is one of Sri Lanka's most
+              Perched on a hilltop overlooking the coastal town of Aluthgama, Kande Viharaya is one of Sri Lanka&apos;s most
               revered Buddhist temples. This sacred site is home to one of the largest seated Buddha statues in the
               world, standing at an impressive 48 meters (160 feet) tall and visible from miles around.
             </p>
@@ -156,7 +156,7 @@ export default function KandeViharayaGuide() {
             <div className="space-y-4 text-muted-foreground">
               <p>
                 Kande Viharaya was established in 1734 during the Kandyan era by Venerable Deundara Dhammananda Thero.
-                The name "Kande Viharaya" translates to "Mountain Temple," reflecting its hilltop location that has made
+                The name &quot;Kande Viharaya&quot; translates to &quot;Mountain Temple,&quot; reflecting its hilltop location that has made
                 it a landmark for centuries.
               </p>
               <p>
@@ -167,7 +167,7 @@ export default function KandeViharayaGuide() {
               <p>
                 The temple played an important role during colonial times as a center for preserving Buddhist education
                 and culture. Today, it continues to serve as both a place of worship for locals and an important
-                cultural attraction that showcases Sri Lanka's rich Buddhist heritage.
+                cultural attraction that showcases Sri Lanka&apos;s rich Buddhist heritage.
               </p>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function KandeViharayaGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>1. The Giant Seated Buddha Statue</CardTitle>
-                <CardDescription>One of the world's largest seated Buddha statues</CardDescription>
+                <CardDescription>One of the world&apos;s largest seated Buddha statues</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -227,7 +227,7 @@ export default function KandeViharayaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Image House contains some of the temple's most sacred treasures:
+                      The Image House contains some of the temple&apos;s most sacred treasures:
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -236,7 +236,7 @@ export default function KandeViharayaGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Intricate wall paintings depicting Buddha's life
+                        Intricate wall paintings depicting Buddha&apos;s life
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -274,7 +274,7 @@ export default function KandeViharayaGuide() {
                     className="rounded-lg"
                   />
                   <div>
-                    <p className="text-muted-foreground mb-4">The temple's stupa is an important sacred structure:</p>
+                    <p className="text-muted-foreground mb-4">The temple&apos;s stupa is an important sacred structure:</p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -307,7 +307,7 @@ export default function KandeViharayaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The temple's elevated position offers spectacular views:
+                      The temple&apos;s elevated position offers spectacular views:
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -456,8 +456,8 @@ export default function KandeViharayaGuide() {
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• Always ask permission before photographing people</li>
                     <li>• No flash photography inside temple buildings</li>
-                    <li>• Respect "no photography" signs in sacred areas</li>
-                    <li>• Don't pose inappropriately with religious objects</li>
+                    <li>• Respect &quot;no photography&quot; signs in sacred areas</li>
+                    <li>• Don&apos;t pose inappropriately with religious objects</li>
                   </ul>
                 </div>
               </div>

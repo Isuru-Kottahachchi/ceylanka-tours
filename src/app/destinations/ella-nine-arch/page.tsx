@@ -85,7 +85,7 @@ export default function NineArchBridgeGuide() {
               red trains of Sri Lanka Railways cross this architectural gem several times daily, creating moments of
               pure magic that have been captured in countless photographs and videos. The sight of a vintage train
               slowly crossing the bridge while surrounded by lush greenery has become an iconic image that represents
-              the beauty and charm of Sri Lanka's hill country, making this location a must-visit destination for anyone
+              the beauty and charm of Sri Lanka&apos;s hill country, making this location a must-visit destination for anyone
               exploring the island.
             </p>
           </div>
@@ -292,12 +292,12 @@ export default function NineArchBridgeGuide() {
                     <p className="text-muted-foreground text-lg leading-relaxed">
                       The Nine Arch Bridge offers photographers an incredible variety of perspectives and compositions,
                       from classic wide shots that capture the entire bridge in its natural setting to intimate details
-                      of the stonework and surrounding vegetation. The bridge's curved design and multiple arches create
+                      of the stonework and surrounding vegetation. The bridge&apos;s curved design and multiple arches create
                       natural leading lines that draw the eye through the frame, while the surrounding tea plantations
                       and forest provide layers of green that change color and mood throughout the day.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      The most famous viewpoint is from the valley floor, where you can capture the bridge's full height
+                      The most famous viewpoint is from the valley floor, where you can capture the bridge&apos;s full height
                       and grandeur with the train crossing above. However, there are several other excellent vantage
                       points: from the hillside tea plantations for elevated shots, from the bridge itself for unique
                       perspectives down the railway line, and from various points along the walking trails that offer
@@ -385,7 +385,7 @@ export default function NineArchBridgeGuide() {
                       construction.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      The bridge's construction required innovative solutions to overcome the challenges of building in
+                      The bridge&apos;s construction required innovative solutions to overcome the challenges of building in
                       a remote, mountainous location with limited access to modern materials. Local stone was quarried
                       from nearby hills, bricks were made using traditional methods, and the cement was transported by
                       bullock cart and coolie labor up treacherous mountain paths. The precision of the stonework and
@@ -393,7 +393,7 @@ export default function NineArchBridgeGuide() {
                       supervision.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      What makes the bridge's engineering particularly impressive is its integration with the natural
+                      What makes the bridge&apos;s engineering particularly impressive is its integration with the natural
                       landscape. The curve of the bridge follows the natural contours of the valley, while the height
                       and span were calculated to minimize environmental impact while providing the necessary clearance
                       for the railway line. The drainage systems built into the structure have prevented water damage,
@@ -584,7 +584,7 @@ export default function NineArchBridgeGuide() {
                   <h4 className="font-semibold text-lg mb-3 text-blue-800">Nearby Attractions</h4>
                   <div className="space-y-2 text-sm">
                     <p>
-                      <strong>Little Adam's Peak:</strong> 1-hour hike with panoramic views
+                      <strong>Little Adam&apos;s Peak:</strong> 1-hour hike with panoramic views
                     </p>
                     <p>
                       <strong>Ella Rock:</strong> Challenging hike to summit viewpoint
@@ -610,16 +610,16 @@ export default function NineArchBridgeGuide() {
           <Card className="bg-gradient-to-br from-green-50 via-emerald-50 to-blue-50 border-2 border-green-200 overflow-hidden">
             <CardHeader className="text-center pb-6">
               <CardTitle className="text-3xl text-green-800 mb-4">
-                Capture the Magic of Sri Lanka's Most Iconic Bridge
+                Capture the Magic of Sri Lanka&apos;s Most Iconic Bridge
               </CardTitle>
             </CardHeader>
             <CardContent className="px-8 pb-8">
               <div className="space-y-6 text-center">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  The Nine Arch Bridge offers more than just a photo opportunity - it's a journey into the romance of
+                  The Nine Arch Bridge offers more than just a photo opportunity - it&apos;s a journey into the romance of
                   train travel, the beauty of Sri Lankan engineering, and the breathtaking landscapes of the hill
-                  country. Whether you're a photography enthusiast seeking that perfect shot, a train lover fascinated
-                  by vintage railways, or simply a traveler looking for one of Sri Lanka's most beautiful locations,
+                  country. Whether you&apos;re a photography enthusiast seeking that perfect shot, a train lover fascinated
+                  by vintage railways, or simply a traveler looking for one of Sri Lanka&apos;s most beautiful locations,
                   this iconic bridge will exceed your expectations.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -633,7 +633,7 @@ export default function NineArchBridgeGuide() {
                     Experience the iconic Nine Arch Bridge in all its glory! 🚂🌉📸✨
                   </p>
                   <p className="text-sm text-green-600">
-                    Where engineering meets artistry in the heart of Sri Lanka's tea country
+                    Where engineering meets artistry in the heart of Sri Lanka&apos;s tea country
                   </p>
                 </div>
               </div>
