@@ -546,7 +546,7 @@ export default function GalleFortTravelGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                      Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                    Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
                   </p>
                   <span className="text-sm font-medium text-primary mt-3 inline-block">
                     See More →
@@ -554,7 +554,7 @@ export default function GalleFortTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
-                <Link href="/destinations/kandeviharaya" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/kanneliya" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Kanneliya</CardTitle>
@@ -562,14 +562,37 @@ export default function GalleFortTravelGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/jungle-beach.jpeg"
-                    alt="View of Jungle Beach"
+                    src="/Kanneliya.jpg"
+                    alt="View of Kanneliya"
                     width={300}
                     height={200}
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                      Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                    Explore the lush Kanneliya rainforest, part of the Sinharaja Forest Reserve. Home to diverse flora and fauna, perfect for nature lovers.
+                  </p>
+                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/destinations/mirissa" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Mirissa</CardTitle>
+                  <CardDescription>Best views of the coastline</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/mirissa.jpg"
+                    alt="View of Mirissa"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                  Mirissa is a picturesque coastal town known for its stunning beaches and vibrant nightlife. Enjoy whale watching, water sports, and delicious seafood.
                   </p>
                   <span className="text-sm font-medium text-primary mt-3 inline-block">
                     See More →
@@ -579,26 +602,26 @@ export default function GalleFortTravelGuide() {
             </Link>
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
-                <CardDescription>Best views of Galle</CardDescription>
+                <CardTitle className="text-lg">Waligama</CardTitle>
+                <CardDescription>Best views of the coastline</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/jungle-beach.jpeg"
-                  alt="View of Jungle Beach"
+                  src="/Waligama.jpg"
+                  alt="View of Waligama"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                  Waligama is a charming coastal town known for its stunning beaches and vibrant fishing community. Enjoy fresh seafood, water sports, and breathtaking sunsets.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Kanneliya</CardTitle>
+                <CardTitle className="text-lg">Waligama</CardTitle>
                 <CardDescription>Part of a Sinharaja Forest</CardDescription>
               </CardHeader>
               <CardContent>

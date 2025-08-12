@@ -51,7 +51,7 @@ const destinations = [
     image: "/Nine-arch-ella.jpg",
     rating: 4.6,
     reviews: 750,
-    description: "Iconic railway bridge surrounded by lush tea plantations",
+    description: "Popular tourist destination known for its stunning architecture and scenic views",
     highlights: ["Train Spotting", "Tea Plantations", "Hiking Trails"],
     category: "Nature",
   },

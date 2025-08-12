@@ -619,16 +619,14 @@ export default function KandyTravelGuide() {
                   <CardDescription>Multi-religious harmony site with stunning 360° views</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div>
-                    <ImageCarousel
-                      images={AmbuluwawaTowerImages}
-                      alt="Ambuluwawa Tower showing stunning views and unique architecture"
-                    />
-                    <p className="text-sm text-muted-foreground mt-2 italic">
-                      Ambuluwawa Tower - Multi-religious harmony with 360° views
-                    </p>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3 mt-3">
+                  <Image
+                    src="/Ambuluwawa-tower.jpg"
+                    alt="Ambuluwawa Tower showing stunning views and unique architecture"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground mb-3">
                     This unique place represents religious harmony with Buddhist, Hindu, Islamic, and Christian symbols all in one location. 
                     The tower offers incredible 360-degree views of the central highlands. Perfect for a half-day trip!
                   </p>
@@ -649,16 +647,14 @@ export default function KandyTravelGuide() {
                   <CardDescription>Seven peaks with hiking trails and tea plantations</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div>
-                    <ImageCarousel
-                      images={HanthanaMountainImages}
-                      alt="Hanthana Mountain Range with hiking trails and scenic views"
-                    />
-                    <p className="text-sm text-muted-foreground mt-2 italic">
-                      Hanthana Mountain Range - Seven peaks perfect for hiking
-                    </p>
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3 mt-3">
+                  <Image
+                    src="/Hanthana-mountain-range.jpeg"
+                    alt="View of Sigiriya Rock from Pidurangala Rock"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground mb-3">
                     Seven beautiful mountain peaks perfect for hiking and nature lovers. You&apos;ll walk through tea plantations, 
                     see amazing views, and breathe the freshest mountain air. Different trails for beginners and experienced hikers.
                   </p>
@@ -734,16 +730,14 @@ export default function KandyTravelGuide() {
                 <CardDescription>UNESCO World Heritage hiking and camping destination</CardDescription>
               </CardHeader>
               <CardContent>
-                <div>
-                  <ImageCarousel
-                    images={KnucklesMountainImages}
-                    alt="Knuckles Mountain Range with hiking trails and misty peaks"
-                  />
-                  <p className="text-sm text-muted-foreground mt-2 italic">
-                    Knuckles Mountain Range - UNESCO World Heritage hiking destination
-                  </p>
-                </div>
-                <p className="text-sm text-muted-foreground mb-3 mt-3">
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Knuckles Mountain Range with hiking trails and misty peaks"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
                   Named because the peaks look like knuckles of a clenched fist. This UNESCO site offers serious hiking, 
                   camping, and some of the best mountain views in Sri Lanka. Great for adventure seekers!
                 </p>
@@ -840,16 +834,14 @@ export default function KandyTravelGuide() {
                 <CardDescription>See elephants being cared for and bathing in the river</CardDescription>
               </CardHeader>
               <CardContent>
-                <div>
-                  <ImageCarousel
-                    images={PinnawalaImages}
-                    alt="Elephants at Pinnawala Elephant Orphanage bathing and being cared for"
-                  />
-                  <p className="text-sm text-muted-foreground mt-2 italic">
-                    Pinnawala Elephant Orphanage - Watch elephants bathing in the river
-                  </p>
-                </div>
-                <p className="text-sm text-muted-foreground mb-3 mt-3">
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Elephants at Pinnawala Elephant Orphanage bathing and being cared for"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
                   Watch baby elephants being bottle-fed and see the whole herd bathing in the river. Started as a home 
                   for orphaned elephants, now it&apos;s one of the most popular attractions near Kandy.
                 </p>

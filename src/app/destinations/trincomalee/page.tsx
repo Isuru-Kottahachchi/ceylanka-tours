@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Anchor } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Anchor, TriangleAlert } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -152,8 +152,8 @@ export default function TrincomaleeTravelGuide() {
                   <Image
                     src="/Koneshwaram.jpeg"
                     alt="Koneswaram Temple perched on Swami Rock cliff overlooking the Indian Ocean with colorful gopuram"
-                    width={400}
-                    height={300}
+                    width={300}
+                    height={200}
                     className="rounded-lg"
                   />
                   <div>
@@ -251,6 +251,136 @@ export default function TrincomaleeTravelGuide() {
                       with over 100 species of coral and 300 species of fish.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Over 100 coral species
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        300+ species of reef fish
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Blacktip reef sharks and sea turtles
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Excellent visibility for diving
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>4. Hot water wells</CardTitle>
+                <CardDescription>Marine sanctuary with incredible coral reefs</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Pigeon Island showing coral reefs, tropical fish, and snorkelers in crystal clear waters"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Just a short boat ride from Nilaveli Beach, this marine national park consists of two small
+                      islands surrounded by some of Sri Lankas best coral reefs. Its a snorkeling and diving paradise
+                      with over 100 species of coral and 300 species of fish.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Over 100 coral species
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        300+ species of reef fish
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Blacktip reef sharks and sea turtles
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Excellent visibility for diving
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+             <Card>
+              <CardHeader>
+                <CardTitle>5. Giri handu saya</CardTitle>
+                <CardDescription>First stupa in Sri Lanka</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Girihadusaya.jpeg"
+                    alt="Pigeon Island showing coral reefs, tropical fish, and snorkelers in crystal clear waters"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Giri handu saya was the first stupa built in Sri Lanka, located in Trincomalee. It is a significant historical and religious site, believed to have been constructed during the reign of King Devanampiya Tissa in the 3rd century BC.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                       <li className="flex items-start gap-2">
+                        <TriangleAlert className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                        Not Suitable for Swimming or Snorkeling, because of the strong currents and rocky seabed.
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Over 100 coral species
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        300+ species of reef fish
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Blacktip reef sharks and sea turtles
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Excellent visibility for diving
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>3. Arisi Male beach</CardTitle>
+                <CardDescription>Beach with uncommons stand</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Arisimale.jpeg"
+                    alt="Pigeon Island showing coral reefs, tropical fish, and snorkelers in crystal clear waters"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      "Arisi Male" beach is a hidden gem in Trincomalee, known for its unique sand formations and tranquil atmosphere.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                       <li className="flex items-start gap-2">
+                        <TriangleAlert className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                        Not Suitable for Swimming or Snorkeling, because of the strong currents and rocky seabed.
+                      </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                         Over 100 coral species
@@ -377,7 +507,7 @@ export default function TrincomaleeTravelGuide() {
                 </p>
               </CardContent>
             </Card>
-               <Card>
+            <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Uppuveli Beach</CardTitle>
                 <CardDescription>Quieter alternative to Nilaveli</CardDescription>
@@ -395,7 +525,7 @@ export default function TrincomaleeTravelGuide() {
                 </p>
               </CardContent>
             </Card>
-               <Card>
+            <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Uppuveli Beach</CardTitle>
                 <CardDescription>Quieter alternative to Nilaveli</CardDescription>
@@ -413,7 +543,7 @@ export default function TrincomaleeTravelGuide() {
                 </p>
               </CardContent>
             </Card>
-               <Card>
+            <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Uppuveli Beach</CardTitle>
                 <CardDescription>Quieter alternative to Nilaveli</CardDescription>

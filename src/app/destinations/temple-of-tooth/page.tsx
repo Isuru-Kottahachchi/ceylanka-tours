@@ -518,7 +518,7 @@ export default function TempleOfToothKandyGuide() {
 
                 <div className="space-y-6">
                   <Image
-                    src="/Kandy-Esela-Perahara.jpg"
+                    src="/Kandy-Esela-Perahara.JPG"
                     alt="Esala Perahera procession with decorated elephants and traditional dancers illuminated by torchlight"
                     width={500}
                     height={300}

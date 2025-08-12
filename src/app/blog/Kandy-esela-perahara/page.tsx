@@ -128,7 +128,7 @@ export default function KandyEsalaPeraheraGuide() {
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
               <Calendar className="w-4 h-4 mr-2" />
-              July-August
+              August
             </Badge>
           </div>
         </div>
@@ -1098,7 +1098,7 @@ export default function KandyEsalaPeraheraGuide() {
                     <div className="bg-green-50 dark:bg-green-900/30 p-3 rounded border-l-4 border-green-500 dark:border-green-400">
                       <p className="font-medium text-green-700 dark:text-green-300 mb-1">Festival Dates:</p>
                       <p className="text-sm text-green-600 dark:text-green-400">
-                        Usually in July-August, dates change each year based on the lunar calendar. Check official
+                        Usually in August, dates change each year based on the lunar calendar. Check official
                         announcements in May-June for exact dates.
                       </p>
                     </div>
