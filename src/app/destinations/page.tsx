@@ -37,13 +37,13 @@ const destinations = [
   },
   {
     id: 3,
-    name: "Kandy Temple of the Tooth",
+    name: "Kandy",
     location: "Central Province",
     path: "kandy",
     image: "/Kandy.jpeg",
     // rating: 4.9,
     // reviews: 1580,
-    description: "Sacred Buddhist temple housing the relic of Buddhas tooth",
+    description: "Sacred city with the Temple of the Tooth, a UNESCO World Heritage site",
     highlights: ["Sacred Tooth Relic", "Cultural Shows", "Royal Palace"],
     category: "Religious",
   },
@@ -51,11 +51,11 @@ const destinations = [
     id: 4,
     name: "Ella Nine Arch Bridge",
     location: "Uva Province",
-    path: "ella-town",
+    path: "ella-nine-arch",
     image: "/Nine-arch-ella.jpg",
     // rating: 4.6,
     // reviews: 750,
-    description: "Iconic railway bridge surrounded by lush tea plantations",
+    description: "Popular tourist destination known for its stunning architecture and scenic views",
     highlights: ["Train Spotting", "Tea Plantations", "Hiking Trails"],
     category: "Nature",
   },
@@ -181,14 +181,14 @@ const destinations = [
   },
   {
     id: 15,
-    name: "Balangoda Cave Temple",
+    name: "Balangoda Pre Historic Caves",
     location: "Sabaragamuwa Province",
     path: "balangoda",
     image: "/placeholder.svg?height=400&width=600",
     // rating: 4.3,
     // reviews: 890,
-    description: "Hill station known as Little England with tea plantations",
-    highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
+    description: "Pre historic caves where ancient people lived",
+    highlights: ["Pre historic caves", "Ancient Artifacts", "Pre historic people"],
     category: "Historical",
   },
   {
@@ -247,7 +247,19 @@ const destinations = [
     image: "/Pasikuda.jpeg",
     // rating: 4.3,
     // reviews: 890,
-    description: "Hill station known as Little England with tea plantations",
+    description: "Coastal town with stunning beaches and water sports",
+    highlights: ["Beaches", "Hot Climate", ""],
+    category: "Beach",
+  },
+  {
+    id: 20,
+    name: "Waligama",
+    location: "Southern Province",
+    path: "waligama",
+    image: "/Waligama.jpg",
+    // rating: 4.3,
+    // reviews: 890,
+    description: "Coastal town with stunning beaches and water sports",
     highlights: ["Beaches", "Hot Climate", ""],
     category: "Beach",
   },
@@ -414,6 +426,37 @@ const categories = ["All", "Historical", "Religious", "Nature", "Wildlife", "Bea
 
 export default function DestinationsPage() {
   // const [category, setCategory] = React.useState("All")
+  const [showSearchReminder, setShowSearchReminder] = React.useState(true);
+  const [searchValue, setSearchValue] = React.useState("");
+  const reminderInterval = 20000; // 20 seconds
+  const reminderDuration = 5000; // 5 seconds
+  const [category, setCategory] = React.useState("All");
+
+  React.useEffect(() => {
+    let intervalId: NodeJS.Timeout | null = null;
+    let timeoutId: NodeJS.Timeout | null = null;
+    if (searchValue.length > 0) {
+      setShowSearchReminder(false);
+    } else {
+      // Show immediately on mount
+      setShowSearchReminder(true);
+      // Then show every 30s for 5s
+      intervalId = setInterval(() => {
+        setShowSearchReminder(true);
+        timeoutId = setTimeout(() => setShowSearchReminder(false), reminderDuration);
+      }, reminderInterval);
+      // Hide after 5s if still visible
+      timeoutId = setTimeout(() => setShowSearchReminder(false), reminderDuration);
+    }
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+      if (timeoutId) clearTimeout(timeoutId);
+    };
+  }, [searchValue]);
+
+  console.log("Category:", category);
+
+  // ...existing code...
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Hero Section */}
@@ -427,13 +470,51 @@ export default function DestinationsPage() {
           {/* Search and Filter */}
           <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
             <div className="flex-1 w-full relative">
-              <Input type="search" placeholder="Search destinations..." className="bg-white text-black pl-10" />
+              <Input
+                type="search"
+                placeholder="Search destinations..."
+                className={`bg-white text-black pl-10 transition-shadow ${showSearchReminder ? 'ring-2 ring-green-400 ring-offset-2' : ''}`}
+                value={searchValue}
+                onChange={e => setSearchValue(e.target.value)}
+              />
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
+              {/* Desktop: popup below search bar, arrow up */}
+              {showSearchReminder && (
+                <>
+                  <div
+                    className="absolute left-1/2 -translate-x-1/2 z-30 bg-green-600 text-white text-sm rounded-lg shadow-2xl px-4 py-3 border-2 border-white dark:border-green-400 font-semibold animate-bounce flex-col items-center hidden sm:flex top-full mt-4"
+                  >
+                    <svg className="absolute -top-4" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 0L23.1962 15L0.803847 15L12 0Z" fill="#22c55e"/>
+                    </svg>
+                    <span className="flex items-center gap-2 mb-1">
+                      <Search className="h-4 w-4 text-white" />
+                     Search your favorite destinations in Sri Lanka:
+                    </span>
+                
+                  </div>
+                </>
+              )}
             </div>
             <Button className="bg-white text-green-600 hover:bg-gray-100 cursor-pointer">
               <Filter className="h-4 w-4 mr-2" />
               Filter
             </Button>
+            {/* Mobile: popup below search input */}
+            {showSearchReminder && (
+              <div className="relative w-full flex flex-col items-center sm:hidden">
+                <div className="mt-2 bg-green-600 text-white text-sm rounded-lg shadow-2xl px-4 py-3 border-2 border-white dark:border-green-400 font-semibold animate-bounce flex flex-col items-center">
+                  <svg className="absolute -top-4" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0L23.1962 15L0.803847 15L12 0Z" fill="#22c55e"/>
+                  </svg>
+                  <span className="flex items-center gap-2 mb-1">
+                    <Search className="h-4 w-4 text-white" />
+                    Search your favorite destinations in Sri Lanka:
+                  </span>
+      
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -449,7 +530,7 @@ export default function DestinationsPage() {
                 ? "bg-green-500 hover:bg-green-600 text-white cursor-pointer" 
                 : "border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-900 dark:text-gray-100  cursor-pointer"
               }
-              // onClick={() => {setCategory(category)}}
+              onClick={() => {setCategory(category)}}
             >
               {category}
             </Button>

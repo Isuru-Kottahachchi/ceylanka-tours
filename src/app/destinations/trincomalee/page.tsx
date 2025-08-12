@@ -374,7 +374,7 @@ export default function TrincomaleeTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      "Arisi Male" beach is a hidden gem in Trincomalee, known for its unique sand formations and tranquil atmosphere.
+                      &quot;Arisi Male&quot; beach is a hidden gem in Trincomalee, known for its unique sand formations and tranquil atmosphere.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                        <li className="flex items-start gap-2">

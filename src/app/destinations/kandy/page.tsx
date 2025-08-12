@@ -107,27 +107,6 @@ export default function KandyTravelGuide() {
     "/Temple-of-the-tooth3.jpeg",
   ]
 
-  const AmbuluwawaTowerImages = [
-    "/Ambuluwawa-tower.jpg",
-    "/placeholder.svg?height=300&width=400",
-  ]
-
-  const HanthanaMountainImages = [
-    "/Hanthana-mountain-range.jpeg",
-    "/Mountain.jpeg",
-    "/placeholder.svg?height=300&width=400",
-  ]
-
-  const PinnawalaImages = [
-    "/Pinnawala.jpeg",
-    "/placeholder.svg?height=300&width=400",
-  ]
-
-  const KnucklesMountainImages = [
-    "/Mountain.jpeg",
-    "/placeholder.svg?height=300&width=400",
-  ]
-
   const CulturalShowImages = [
     "/Kandy-Esela-Perahara.jpg",
     "/Kandy-Procession.jpg",

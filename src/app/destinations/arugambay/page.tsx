@@ -33,7 +33,7 @@ export default function ArugamBayTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Arugam Bay</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">World-Class Surfing Paradise on Sri Lanka's East Coast</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">World-Class Surfing Paradise on Sri Lanka&apos;s East Coast</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -41,7 +41,7 @@ export default function ArugamBayTravelGuide() {
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Waves className="w-4 h-4 mr-1" />
-              World's Top 10 Surf Spots
+              World&apos;s Top 10 Surf Spots
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Wind className="w-4 h-4 mr-1" />
@@ -59,8 +59,8 @@ export default function ArugamBayTravelGuide() {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Arugam Bay, affectionately known as "Arugam" or "A-Bay" by locals and surfers worldwide, is Sri Lanka's
-              undisputed surfing capital and one of the world's top 10 surf destinations. This laid-back fishing village
+              Arugam Bay, affectionately known as &quot;Arugam&quot; or &quot;A-Bay&quot; by locals and surfers worldwide, is Sri Lanka&apos;s
+              undisputed surfing capital and one of the world&apos;s top 10 surf destinations. This laid-back fishing village
               on the east coast has evolved into a legendary surf haven while maintaining its authentic charm, rustic
               beauty, and welcoming community spirit.
             </p>
@@ -146,18 +146,18 @@ export default function ArugamBayTravelGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                The legendary Main Point - one of the world's best right-hand point breaks
+                The legendary Main Point - one of the world&apos;s best right-hand point breaks
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Arugam Bay's Main Point is consistently ranked among the world's top 10 surf breaks, offering a perfect
+                Arugam Bay&apos;s Main Point is consistently ranked among the world&apos;s top 10 surf breaks, offering a perfect
                 right-hand point break that can provide rides of up to 400 meters on the right day. The wave breaks over
                 a rocky reef and sand bottom, creating different sections suitable for various skill levels.
               </p>
               <p>
                 The consistent surf, warm water year-round, and the incredible length of rides make Arugam Bay a
-                pilgrimage site for surfers from around the globe. Whether you're a beginner learning to surf or a pro
+                pilgrimage site for surfers from around the globe. Whether you&apos;re a beginner learning to surf or a pro
                 looking for the ride of your life, A-Bay delivers unforgettable sessions.
               </p>
               <div className="bg-blue-50 p-4 rounded-lg">
@@ -442,7 +442,7 @@ export default function ArugamBayTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Arugam Bay is more than just a surf destination - it's a way of life. Here, the rhythm of the waves
+                Arugam Bay is more than just a surf destination - it&apos;s a way of life. Here, the rhythm of the waves
                 dictates the day, the community welcomes you like family, and every session in the water brings new
                 adventures and friendships. Whether you catch your first wave or the wave of your life, A-Bay will leave
                 an indelible mark on your soul.

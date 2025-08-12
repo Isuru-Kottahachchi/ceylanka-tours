@@ -33,7 +33,7 @@ export default function NineArchBridgeGuide() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/60" />
         <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Nine Arch Bridge</h1>
-          <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">Ella's Iconic Railway Marvel</p>
+          <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">Ella&apos;s Iconic Railway Marvel</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
               <Train className="w-4 h-4 mr-2" />
@@ -58,10 +58,10 @@ export default function NineArchBridgeGuide() {
           <div className="prose prose-xl max-w-none text-muted-foreground leading-relaxed space-y-6">
             <p className="text-xl mb-6 leading-relaxed">
               Rising majestically from the emerald tea plantations of Ella, the Nine Arch Bridge stands as one of Sri
-              Lanka's most iconic landmarks and a testament to the engineering brilliance of the colonial era. This
-              magnificent stone and brick railway bridge, also known as the "Bridge in the Sky," spans a deep ravine
+              Lanka&apos;s most iconic landmarks and a testament to the engineering brilliance of the colonial era. This
+              magnificent stone and brick railway bridge, also known as the &quot;Bridge in the Sky,&quot; spans a deep ravine
               surrounded by lush tropical vegetation, creating one of the most photographed and Instagram-worthy
-              locations in all of Sri Lanka. The bridge's perfect blend of human engineering and natural beauty has made
+              locations in all of Sri Lanka. The bridge&apos;s perfect blend of human engineering and natural beauty has made
               it a pilgrimage site for photographers, train enthusiasts, and travelers seeking that perfect shot.
             </p>
             <p className="text-lg mb-6">
@@ -74,7 +74,7 @@ export default function NineArchBridgeGuide() {
             </p>
             <p className="text-lg mb-6">
               What makes the Nine Arch Bridge truly special is not just its architectural beauty, but its setting in one
-              of Sri Lanka's most scenic landscapes. The bridge curves gracefully through a valley surrounded by tea
+              of Sri Lanka&apos;s most scenic landscapes. The bridge curves gracefully through a valley surrounded by tea
               plantations, tropical forests, and misty hills that create an ever-changing backdrop of colors and moods.
               During the early morning hours, mist rises from the valley floor, creating an ethereal atmosphere that
               transforms the bridge into something from a fairy tale. As the day progresses, the changing light creates
