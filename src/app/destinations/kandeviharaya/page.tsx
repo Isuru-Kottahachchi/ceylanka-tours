@@ -584,7 +584,7 @@ export default function KandeViharayaGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                    Explore the biodiversity of Madu River's mangrove ecosystem with a boat safari through narrow
+                    Explore the biodiversity of Madu River&apos;s mangrove ecosystem with a boat safari through narrow
                     channels.
                   </p>
                   <span className="text-sm font-medium text-primary mt-3 inline-block">See More →</span>
@@ -603,7 +603,7 @@ export default function KandeViharayaGuide() {
             <CardContent>
               <p className="text-muted-foreground mb-4">
                 Kande Viharaya offers a perfect blend of spiritual significance, cultural heritage, and natural beauty.
-                Whether you're seeking a moment of peaceful reflection, interested in Buddhist architecture, or simply
+                Whether you&apos;re seeking a moment of peaceful reflection, interested in Buddhist architecture, or simply
                 want to enjoy panoramic views, this hilltop temple provides a memorable experience.
               </p>
               <p className="text-muted-foreground mb-4">
