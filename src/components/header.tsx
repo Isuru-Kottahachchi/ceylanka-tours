@@ -79,7 +79,7 @@ const destinationsItems = [
       { name: "Unawatuna", href: "/destinations/unawatuna" },
       { name: "Hikkaduwa", href: "/destinations/hikkaduwa" },
       { name: "Bentota", href: "/destinations/bentota" },
-      { name: "Arugam Bay", href: "/destinations/arugam-bay" },
+      { name: "Arugam Bay", href: "/destinations/arugambay" },
       { name: "Negombo", href: "/destinations/negombo" },
     ],
   },

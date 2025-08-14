@@ -53,6 +53,12 @@ export default function SigiriyaTravelGuide() {
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Calendar className="w-4 h-4 mr-1" />
               5th Century AD
+
+            </Badge>
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+              <Calendar className="w-4 h-4 mr-1" />
+
+              8th Wonder of the World
             </Badge>
           </div>
         </div>
@@ -72,20 +78,20 @@ export default function SigiriyaTravelGuide() {
             <p className="text-lg mb-4">
               Known locally as &quot;Sinhagiri&quot; (Lion Rock), Sigiriya is not just a tourist attraction — it&apos;s a journey
               through time that will leave you breathless, both from the climb and the stunning views that await at the
-              top! This incredible fortress-palace represents one of the most ambitious architectural projects ever 
-              attempted in the ancient world, combining military defense, royal luxury, and artistic beauty in ways 
+              top! This incredible fortress-palace represents one of the most ambitious architectural projects ever
+              attempted in the ancient world, combining military defense, royal luxury, and artistic beauty in ways
               that still amaze engineers and architects today.
             </p>
             <p className="text-lg mb-4">
-              When you visit Sigiriya, you&apos;re not just climbing a rock - you&apos;re following in the footsteps of ancient 
-              kings, Buddhist monks, and countless pilgrims who have made this journey for over 1,500 years. Every step 
-              up the ancient staircases carved into the rock face brings you closer to understanding how remarkable 
+              When you visit Sigiriya, you&apos;re not just climbing a rock - you&apos;re following in the footsteps of ancient
+              kings, Buddhist monks, and countless pilgrims who have made this journey for over 1,500 years. Every step
+              up the ancient staircases carved into the rock face brings you closer to understanding how remarkable
               ancient Sri Lankan civilization truly was.
             </p>
             <p className="text-lg">
-              The climb to the top takes about 2-3 hours, but don&apos;t worry - there are plenty of rest stops along the 
-              way where you can catch your breath and learn about the amazing history of this place. Whether you&apos;re 
-              interested in ancient history, incredible views, or just want to experience one of the world&apos;s most 
+              The climb to the top takes about 2-3 hours, but don&apos;t worry - there are plenty of rest stops along the
+              way where you can catch your breath and learn about the amazing history of this place. Whether you&apos;re
+              interested in ancient history, incredible views, or just want to experience one of the world&apos;s most
               unique archaeological sites, Sigiriya has something special waiting for you.
             </p>
           </div>
@@ -95,13 +101,19 @@ export default function SigiriyaTravelGuide() {
               <div>
                 <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
                 <p className="text-sm text-amber-700 mb-2">
-                  <strong>Stay quiet during your climb:</strong> Hornets and bees live in the rock cracks and can become 
+                  <strong>Stay quiet during your climb:</strong> Hornets and bees live in the rock cracks and can become
                   aggressive if disturbed by loud noises. Speak softly and avoid sudden movements near the rock face.
                 </p>
                 <p className="text-sm text-amber-700">
-                  Local guides will show you safe areas to rest and take photos. Follow their instructions for a safe and 
+                  Local guides will show you safe areas to rest and take photos. Follow their instructions for a safe and
                   enjoyable experience.
                 </p>
+                <Link className="text-sm text-amber-700" href={""}>Things you should do during a hornet or bee attack</Link>
+                <p className="text-sm text-amber-700 mb-2">
+                  <strong>There can be strong winds:</strong> Be prepared for sudden gusts, especially near the summit.
+                  Secure loose items and watch your step.
+                </p>
+
               </div>
             </div>
           </div>
@@ -163,6 +175,46 @@ export default function SigiriyaTravelGuide() {
           </Card>
         </section>
 
+        {/* Getting to Sigiriya from Colombo */}
+        <section className="mb-12">
+          <Card className="border-blue-200 bg-blue-50/30">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-blue-800">
+                <MapPin className="w-5 h-5" />
+                How to Travel from Colombo to Sigiriya
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-semibold mb-3 text-blue-700">By Private Car/Taxi (Recommended)</h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• <strong>Distance:</strong> 170km (105 miles)</li>
+                    <li>• <strong>Duration:</strong> 3.5-4 hours</li>
+                    <li>• <strong>Cost:</strong> $50-80 USD for day trip</li>
+                    <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-3 text-blue-700">By Bus</h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• <strong>Route:</strong> Colombo → Dambulla/Habarana → Sigiriya</li>
+                    <li>• <strong>Duration:</strong> 4-5 hours total</li>
+                    <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                    <li>• <strong>Note:</strong> Requires bus change in Dambulla or Habarana</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-4 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500">
+                <p className="text-sm text-blue-800">
+                  <strong>💡 Pro Tip:</strong> Start early (6-7 AM) from Colombo to avoid traffic and reach Sigiriya before the midday heat.
+                  Most visitors stay overnight in nearby Dambulla or Habarana for a more relaxed experience.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
         {/* The Story */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">The Fascinating Story Behind Sigiriya</h2>
@@ -176,41 +228,43 @@ export default function SigiriyaTravelGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                The majestic view of Sigiriya from the surrounding landscape, showing how the rock fortress dominates the 
+                The majestic view of Sigiriya from the surrounding landscape, showing how the rock fortress dominates the
                 central plains of Sri Lanka. (Image by Polina Kocheva)
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                The story of Sigiriya reads like a dramatic movie script filled with family betrayal, royal ambition, 
-                and ultimate tragedy! In the 5th century AD, Prince Kashyapa committed the ultimate crime - he killed 
-                his own father, King Dhatusena, to steal the throne from his younger brother Moggallana, who was the 
+                The story of Sigiriya reads like a dramatic movie script filled with family betrayal, royal ambition,
+                and ultimate tragedy! In the 5th century AD, Prince Kashyapa committed the ultimate crime - he killed
+                his own father, King Dhatusena, to steal the throne from his younger brother Moggallana, who was the
                 rightful heir according to royal tradition.
               </p>
               <p>
-                After this terrible deed, Kashyapa knew his brother would return someday to seek revenge. So he made 
-                an incredible decision - instead of living in the traditional royal palace in Anuradhapura, he would 
-                build an completely new capital city on top of this massive rock, 200 meters high in the sky, where 
+                After this terrible deed, Kashyapa knew his brother would return someday to seek revenge. So he made
+                an incredible decision - instead of living in the traditional royal palace in Anuradhapura, he would
+                build an completely new capital city on top of this massive rock, 200 meters high in the sky, where
                 no army could easily reach him.
               </p>
               <p>
-                For 18 amazing years (477-495 AD), Kashyapa ruled from his sky-high palace, complete with beautiful 
-                gardens, swimming pools carved from solid rock, and stunning wall paintings. He turned this natural 
-                rock formation into the most incredible fortress-palace the world had ever seen, using the most 
+                For 18 amazing years (477-495 AD), Kashyapa ruled from his sky-high palace, complete with beautiful
+                gardens, swimming pools carved from solid rock, and stunning wall paintings. He turned this natural
+                rock formation into the most incredible fortress-palace the world had ever seen, using the most
                 advanced engineering and artistic skills of ancient Sri Lanka.
               </p>
               <p>
-                But the story has a tragic ending. In 495 AD, his brother Moggallana finally returned with a powerful 
-                army. During the final battle at the base of the rock, Kashyapa&apos;s war elephant suddenly turned back 
-                toward his own troops. His soldiers thought their king was retreating in fear, so they started running 
-                away too. Seeing his army abandon him and knowing he was defeated, the proud king took his own life 
+                But the story has a tragic ending. In 495 AD, his brother Moggallana finally returned with a powerful
+                army. During the final battle at the base of the rock, Kashyapa&apos;s war elephant suddenly turned back
+                toward his own troops. His soldiers thought their king was retreating in fear, so they started running
+                away too. Seeing his army abandon him and knowing he was defeated, the proud king took his own life
                 rather than be captured.
               </p>
               <p>
-                After Kashyapa&apos;s death, his magnificent palace was abandoned and later became a peaceful Buddhist 
-                monastery where monks lived and meditated until the 14th century. Today, Sigiriya stands as one of 
-                the most remarkable examples of ancient architecture and engineering in the world.
+                After the king died, nobody lived in his beautiful palace anymore. Later, Buddhist monks came and 
+                turned it into a quiet place where they could pray and meditate. The monks stayed there until the 
+                1400s. Today, people from all over the world visit Sigiriya because it shows how clever and skilled 
+                ancient builders were.
               </p>
+              <h1>The forgotten rock fortress remained hidden in the jungle until British Army Major Jonathan Forbes stumbled upon it in 1831, sparking the first systematic archaeological studies that would eventually uncover the incredible secrets of King Kashyapa&apos;s ancient citadel.</h1>
             </div>
           </div>
 
@@ -263,15 +317,15 @@ export default function SigiriyaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Your amazing journey begins with the incredible water gardens at the base of Sigiriya Rock. These 
-                      1,500-year-old gardens are not just beautiful - they&apos;re working examples of ancient engineering 
-                      that would impress modern architects! The gardens show how smart King Kashyapa&apos;s engineers were, 
+                      Your amazing journey begins with the incredible water gardens at the base of Sigiriya Rock. These
+                      1,500-year-old gardens are not just beautiful - they&apos;re working examples of ancient engineering
+                      that would impress modern architects! The gardens show how smart King Kashyapa&apos;s engineers were,
                       creating a complex water system that still functions perfectly today.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Local legends say that King Kashyapa kept crocodiles in some of these pools as an extra layer of 
-                      security for his fortress. While we can&apos;t prove this story, it shows how creative ancient people 
-                      were in protecting their homes! The geometric design of these gardens influenced garden design 
+                      Local legends say that King Kashyapa kept crocodiles in some of these pools as an extra layer of
+                      security for his fortress. While we can&apos;t prove this story, it shows how creative ancient people
+                      were in protecting their homes! The geometric design of these gardens influenced garden design
                       across Asia for centuries.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -297,8 +351,8 @@ export default function SigiriyaTravelGuide() {
                 <div className="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
                   <h4 className="font-semibold text-blue-800 mb-2">Fun Water Garden Facts:</h4>
                   <p className="text-sm text-blue-700">
-                    The fountains work using water pressure - no pumps needed! During heavy rains, underground channels 
-                    fill with water and create enough pressure to make the fountains spray water several feet high. 
+                    The fountains work using water pressure - no pumps needed! During heavy rains, underground channels
+                    fill with water and create enough pressure to make the fountains spray water several feet high.
                     This shows that ancient Sri Lankan engineers understood physics concepts that we use today.
                   </p>
                 </div>
@@ -315,23 +369,23 @@ export default function SigiriyaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      About halfway up the rock, you&apos;ll reach one of Sigiriya&apos;s most impressive and mysterious features - 
-                      the enormous Lion&apos;s Paws! These two massive stone paws are all that remain of what was once a 
-                      giant lion sculpture that guarded the entrance to King Kashyapa&apos;s palace. Imagine how amazing 
-                      it must have looked 1,500 years ago when visitors had to walk through the lion&apos;s mouth to reach 
+                      About halfway up the rock, you&apos;ll reach one of Sigiriya&apos;s most impressive and mysterious features -
+                      the enormous Lion&apos;s Paws! These two massive stone paws are all that remain of what was once a
+                      giant lion sculpture that guarded the entrance to King Kashyapa&apos;s palace. Imagine how amazing
+                      it must have looked 1,500 years ago when visitors had to walk through the lion&apos;s mouth to reach
                       the royal palace above!
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The paws are carved from the natural rock and are incredibly detailed, showing the skill of ancient 
-                      Sri Lankan stone carvers. Each paw is about 3 meters long and shows individual claws and muscles. 
-                      Some people believe there were actually secret chambers inside the rock behind the lion sculpture, 
-                      though this has never been proven. Local legends say the lion&apos;s roar could be heard across the 
+                      The paws are carved from the natural rock and are incredibly detailed, showing the skill of ancient
+                      Sri Lankan stone carvers. Each paw is about 3 meters long and shows individual claws and muscles.
+                      Some people believe there were actually secret chambers inside the rock behind the lion sculpture,
+                      though this has never been proven. Local legends say the lion&apos;s roar could be heard across the
                       valley as a warning to enemies!
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      This is also where many visitors take a break before the steepest part of the climb. The metal 
-                      staircase from here to the top can be challenging, so it&apos;s smart to rest, drink water, and 
-                      prepare mentally for the final push to the summit. The views from here are already incredible, 
+                      This is also where many visitors take a break before the steepest part of the climb. The metal
+                      staircase from here to the top can be challenging, so it&apos;s smart to rest, drink water, and
+                      prepare mentally for the final push to the summit. The views from here are already incredible,
                       but they get even better as you go higher!
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -364,11 +418,14 @@ export default function SigiriyaTravelGuide() {
                 <div className="mt-6 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-400">
                   <h4 className="font-semibold text-orange-800 mb-2">Local Legend:</h4>
                   <p className="text-sm text-orange-700">
-                    According to local stories, the complete lion sculpture was so realistic and fierce-looking that 
-                    enemy soldiers would be too scared to enter the palace! The lion was meant to show King Kashyapa&apos;s 
-                    power and protect the royal family. Some archaeologists think the head and body of the lion were 
+                    According to local stories, the complete lion sculpture was so realistic and fierce-looking that
+                    enemy soldiers would be too scared to enter the palace! The lion was meant to show King Kashyapa&apos;s
+                    power and protect the royal family. Some archaeologists think the head and body of the lion were
                     destroyed by natural weathering over the centuries.
                   </p>
+                  <br />
+                  <br />
+                  <p className="text-sm text-orange-700">According to some locals, there was an entrance to enter inside of this big rock fortress, but it has been closed  later.</p>
                 </div>
               </CardContent>
             </Card>
@@ -390,22 +447,22 @@ export default function SigiriyaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      On your way up to the Lion&apos;s Paws, don&apos;t miss one of the world&apos;s most incredible art treasures - 
-                      the Sigiriya frescoes! These ancient paintings are located in a naturally sheltered pocket of the 
-                      rock face, which has protected them from rain and wind for over 1,500 years. The paintings show 
-                      beautiful women who might be celestial beings (angels), court ladies, or even members of the royal 
+                      On your way up to the Lion&apos;s Paws, don&apos;t miss one of the world&apos;s most incredible art treasures -
+                      the Sigiriya frescoes! These ancient paintings are located in a naturally sheltered pocket of the
+                      rock face, which has protected them from rain and wind for over 1,500 years. The paintings show
+                      beautiful women who might be celestial beings (angels), court ladies, or even members of the royal
                       family - nobody knows for sure, which makes them even more mysterious!
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      What makes these paintings so special is their incredible quality and the fact that the colors are 
-                      still bright and clear after all these centuries. The artists used natural pigments made from plants 
-                      and minerals found in Sri Lanka. You can see similar style paintings in the famous Ajanta Caves in 
+                      What makes these paintings so special is their incredible quality and the fact that the colors are
+                      still bright and clear after all these centuries. The artists used natural pigments made from plants
+                      and minerals found in Sri Lanka. You can see similar style paintings in the famous Ajanta Caves in
                       India, showing how art and culture traveled between countries in ancient times.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Right next to the frescoes is the famous Mirror Wall - a surface that was once polished so smooth 
-                      it reflected images like a real mirror! For over 1,000 years, visitors have been writing poems and 
-                      comments on this wall, creating the world&apos;s oldest guest book. You can still read some of these 
+                      Right next to the frescoes is the famous Mirror Wall - a surface that was once polished so smooth
+                      it reflected images like a real mirror! For over 1,000 years, visitors have been writing poems and
+                      comments on this wall, creating the world&apos;s oldest guest book. You can still read some of these
                       ancient writings today, though new graffiti is strictly forbidden.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -435,13 +492,13 @@ export default function SigiriyaTravelGuide() {
                 <div className="mt-6 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-400">
                   <h4 className="font-semibold text-purple-800 mb-2">Amazing Art Facts:</h4>
                   <p className="text-sm text-purple-700 mb-2">
-                    The Mirror Wall was made by mixing honey, egg whites, and lime to create an incredibly smooth surface. 
-                    The ancient writings on it include love poems, religious prayers, and comments about the beauty of 
+                    The Mirror Wall was made by mixing honey, egg whites, and lime to create an incredibly smooth surface.
+                    The ancient writings on it include love poems, religious prayers, and comments about the beauty of
                     the frescoes. Some of these writings are over 1,000 years old!
                   </p>
                   <p className="text-sm text-purple-700">
-                    The frescoes show women holding flowers and making hand gestures that have religious meaning in 
-                    Buddhism and Hinduism. The artists paid incredible attention to details like jewelry, hairstyles, 
+                    The frescoes show women holding flowers and making hand gestures that have religious meaning in
+                    Buddhism and Hinduism. The artists paid incredible attention to details like jewelry, hairstyles,
                     and facial expressions that tell us a lot about ancient Sri Lankan culture and fashion.
                   </p>
                 </div>
@@ -458,23 +515,23 @@ export default function SigiriyaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The summit of Sigiriya is where all your climbing efforts pay off with absolutely incredible rewards! 
-                      At the top, you&apos;ll find the ruins of King Kashyapa&apos;s magnificent palace and some of the most 
-                      spectacular views in all of Sri Lanka. Standing here, you can truly understand why the king chose 
-                      this spot for his royal home - it&apos;s like being on top of the world, with endless green landscapes 
+                      The summit of Sigiriya is where all your climbing efforts pay off with absolutely incredible rewards!
+                      At the top, you&apos;ll find the ruins of King Kashyapa&apos;s magnificent palace and some of the most
+                      spectacular views in all of Sri Lanka. Standing here, you can truly understand why the king chose
+                      this spot for his royal home - it&apos;s like being on top of the world, with endless green landscapes
                       stretching out in every direction as far as your eyes can see.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      From the summit, you can clearly see Pidurangala Rock rising nearby - another important ancient site 
-                      that&apos;s also worth visiting for even better views of Sigiriya itself. On clear days, you can see 
-                      mountains in the distance and the ancient irrigation systems that still feed farms throughout the 
-                      region. This view helps you understand how powerful and strategic this location was for controlling 
+                      From the summit, you can clearly see Pidurangala Rock rising nearby - another important ancient site
+                      that&apos;s also worth visiting for even better views of Sigiriya itself. On clear days, you can see
+                      mountains in the distance and the ancient irrigation systems that still feed farms throughout the
+                      region. This view helps you understand how powerful and strategic this location was for controlling
                       the entire central region of ancient Sri Lanka.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The palace ruins themselves are fascinating to explore. You can walk through the foundations of the 
-                      royal apartments, see where the king held court, and marvel at the royal swimming pool that was 
-                      carved directly from the solid rock. Imagine living in luxury 200 meters above the ground, 
+                      The palace ruins themselves are fascinating to explore. You can walk through the foundations of the
+                      royal apartments, see where the king held court, and marvel at the royal swimming pool that was
+                      carved directly from the solid rock. Imagine living in luxury 200 meters above the ground,
                       surrounded by the most beautiful gardens and fountains, with the entire kingdom spread out below you!
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -515,13 +572,13 @@ export default function SigiriyaTravelGuide() {
                 <div className="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
                   <h4 className="font-semibold text-green-800 mb-2">Summit Experience Tips:</h4>
                   <p className="text-sm text-green-700 mb-2">
-                    Take your time at the summit! Many visitors rush to take photos and leave quickly, but this is a 
-                    special place that deserves at least 30-45 minutes of exploration. Sit quietly and imagine what 
+                    Take your time at the summit! Many visitors rush to take photos and leave quickly, but this is a
+                    special place that deserves at least 30-45 minutes of exploration. Sit quietly and imagine what
                     life was like here 1,500 years ago when this was one of the most important places in Asia.
                   </p>
                   <p className="text-sm text-green-700">
-                    The best photos are taken from the throne area looking out over the landscape. Early morning and 
-                    late afternoon provide the most beautiful golden lighting. Remember to stay hydrated and wear 
+                    The best photos are taken from the throne area looking out over the landscape. Early morning and
+                    late afternoon provide the most beautiful golden lighting. Remember to stay hydrated and wear
                     sun protection - there&apos;s no shade at the summit!
                   </p>
                 </div>
@@ -536,24 +593,24 @@ export default function SigiriyaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Mirror Wall is one of Sigiriya&apos;s most fascinating and unique features that shows how this place 
-                      has been amazing visitors for over 1,000 years! Originally, this wall was polished so smooth and 
-                      shiny that it worked like a perfect mirror, reflecting the images of people walking by. The ancient 
-                      builders achieved this incredible shine by mixing honey, egg whites, and lime to create a surface 
+                      The Mirror Wall is one of Sigiriya&apos;s most fascinating and unique features that shows how this place
+                      has been amazing visitors for over 1,000 years! Originally, this wall was polished so smooth and
+                      shiny that it worked like a perfect mirror, reflecting the images of people walking by. The ancient
+                      builders achieved this incredible shine by mixing honey, egg whites, and lime to create a surface
                       smoother than most modern mirrors!
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      What makes the Mirror Wall truly special is that for over 1,000 years, visitors have been writing 
-                      poems, comments, and thoughts on this wall, creating the world&apos;s oldest guest book! These ancient 
-                      writings include beautiful love poems, religious prayers, comments about the stunning frescoes, and 
-                      personal thoughts from people who climbed Sigiriya centuries ago. Reading these old writings gives 
+                      What makes the Mirror Wall truly special is that for over 1,000 years, visitors have been writing
+                      poems, comments, and thoughts on this wall, creating the world&apos;s oldest guest book! These ancient
+                      writings include beautiful love poems, religious prayers, comments about the stunning frescoes, and
+                      personal thoughts from people who climbed Sigiriya centuries ago. Reading these old writings gives
                       you a magical connection to people from the past who stood in the exact same spot you&apos;re standing now.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Some of the most interesting writings are from the 8th to 10th centuries, when Sigiriya was used 
-                      as a Buddhist monastery. Monks and pilgrims wrote about their spiritual experiences and the beauty 
-                      of the frescoes. Later visitors wrote romantic poems comparing the painted women to their loved ones. 
-                      These writings help us understand how people from different time periods experienced and appreciated 
+                      Some of the most interesting writings are from the 8th to 10th centuries, when Sigiriya was used
+                      as a Buddhist monastery. Monks and pilgrims wrote about their spiritual experiences and the beauty
+                      of the frescoes. Later visitors wrote romantic poems comparing the painted women to their loved ones.
+                      These writings help us understand how people from different time periods experienced and appreciated
                       this incredible place.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -594,12 +651,12 @@ export default function SigiriyaTravelGuide() {
                 <div className="mt-6 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-400">
                   <h4 className="font-semibold text-amber-800 mb-2">Ancient Visitor Voices:</h4>
                   <p className="text-sm text-amber-700 mb-2">
-                    One famous 8th-century poem on the wall says: &quot;The ladies who wear golden chains on their breasts 
-                    laugh and speak with sweet voices... my mind was captured by their beauty.&quot; Another visitor wrote: 
+                    One famous 8th-century poem on the wall says: &quot;The ladies who wear golden chains on their breasts
+                    laugh and speak with sweet voices... my mind was captured by their beauty.&quot; Another visitor wrote:
                     &quot;I am Budal. The sight of these women makes me want to stay here forever.&quot;
                   </p>
                   <p className="text-sm text-amber-700">
-                    These personal messages show that people 1,200 years ago had the same feelings of wonder and amazement 
+                    These personal messages show that people 1,200 years ago had the same feelings of wonder and amazement
                     that visitors have today when they see the incredible frescoes and experience the magic of Sigiriya!
                   </p>
                 </div>
@@ -623,7 +680,7 @@ export default function SigiriyaTravelGuide() {
                     <div className="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
                       <h4 className="font-bold text-blue-800 mb-2">Stage 1: Water Gardens (30 minutes)</h4>
                       <p className="text-sm text-blue-700 mb-2">
-                        Easy flat walking through ancient gardens and pools. Perfect for photos and getting excited about 
+                        Easy flat walking through ancient gardens and pools. Perfect for photos and getting excited about
                         the adventure ahead. Take time to read the information boards about the engineering marvels.
                       </p>
                       <p className="text-xs text-blue-600 font-medium">Difficulty: Very Easy 🟢</p>
@@ -631,7 +688,7 @@ export default function SigiriyaTravelGuide() {
                     <div className="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
                       <h4 className="font-bold text-yellow-800 mb-2">Stage 2: Boulder Gardens (45 minutes)</h4>
                       <p className="text-sm text-yellow-700 mb-2">
-                        Moderate climbing with some steep paths and stairs. You&apos;ll pass ancient meditation caves and 
+                        Moderate climbing with some steep paths and stairs. You&apos;ll pass ancient meditation caves and
                         see how monks lived here for centuries. Great views start appearing here.
                       </p>
                       <p className="text-xs text-yellow-600 font-medium">Difficulty: Moderate 🟡</p>
@@ -639,7 +696,7 @@ export default function SigiriyaTravelGuide() {
                     <div className="p-4 bg-orange-50 rounded-lg border-l-4 border-orange-400">
                       <h4 className="font-bold text-orange-800 mb-2">Stage 3: Frescoes &amp; Mirror Wall (30 minutes)</h4>
                       <p className="text-sm text-orange-700 mb-2">
-                        Steeper climbing with metal staircases. This is where you see the famous paintings and ancient 
+                        Steeper climbing with metal staircases. This is where you see the famous paintings and ancient
                         writings. Take breaks and don&apos;t rush - this is the most culturally important part.
                       </p>
                       <p className="text-xs text-orange-600 font-medium">Difficulty: Moderate-Hard 🟠</p>
@@ -649,8 +706,8 @@ export default function SigiriyaTravelGuide() {
                     <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-400">
                       <h4 className="font-bold text-red-800 mb-2">Stage 4: Lion&apos;s Paws to Summit (45 minutes)</h4>
                       <p className="text-sm text-red-700 mb-2">
-                        The most challenging part with steep metal stairs attached to the rock face. Not recommended for 
-                        people afraid of heights. Take it slow, rest when needed, and focus on the amazing achievement 
+                        The most challenging part with steep metal stairs attached to the rock face. Not recommended for
+                        people afraid of heights. Take it slow, rest when needed, and focus on the amazing achievement
                         you&apos;re about to complete!
                       </p>
                       <p className="text-xs text-red-600 font-medium">Difficulty: Hard 🔴</p>
@@ -658,7 +715,7 @@ export default function SigiriyaTravelGuide() {
                     <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
                       <h4 className="font-bold text-green-800 mb-2">Stage 5: Summit Exploration (45 minutes)</h4>
                       <p className="text-sm text-green-700 mb-2">
-                        Flat walking around the palace ruins with incredible 360° views. This is your reward time! 
+                        Flat walking around the palace ruins with incredible 360° views. This is your reward time!
                         Explore the royal pools, throne area, and take lots of photos. The descent takes about 1 hour.
                       </p>
                       <p className="text-xs text-green-600 font-medium">Difficulty: Easy 🟢</p>
@@ -1067,7 +1124,7 @@ export default function SigiriyaTravelGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/Polonnaruwa3.jpeg"
                     alt="View of Sigiriya Rock from Pidurangala Rock"
                     width={300}
                     height={200}
@@ -1085,7 +1142,7 @@ export default function SigiriyaTravelGuide() {
             <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
-                  <CardTitle className="text-lg">Polonnaruwa</CardTitle>
+                  <CardTitle className="text-lg">Anuradapura</CardTitle>
                   <CardDescription>Ancient city</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -1108,8 +1165,8 @@ export default function SigiriyaTravelGuide() {
             <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
-                  <CardTitle className="text-lg">Polonnaruwa</CardTitle>
-                  <CardDescription>Ancient city</CardDescription>
+                  <CardTitle className="text-lg">Wasgamuwa National Park</CardTitle>
+                  <CardDescription>National park</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Image
@@ -1168,13 +1225,13 @@ export default function SigiriyaTravelGuide() {
                 <div className="mt-6 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg border-l-4 border-yellow-400">
                   <h4 className="font-semibold text-yellow-800 mb-2">Cultural Respect &amp; Environmental Care</h4>
                   <p className="text-sm text-yellow-700 mb-2">
-                    Remember that Sigiriya is not just a tourist attraction - it&apos;s a sacred place with incredible historical 
-                    and cultural importance. Show respect by following all rules, not touching ancient walls or artifacts, 
+                    Remember that Sigiriya is not just a tourist attraction - it&apos;s a sacred place with incredible historical
+                    and cultural importance. Show respect by following all rules, not touching ancient walls or artifacts,
                     and keeping your voice down near the frescoes and religious areas.
                   </p>
                   <p className="text-sm text-yellow-700">
-                    Help preserve this amazing place for future generations by not littering, staying on marked paths, 
-                    and following photography restrictions. Every visitor has a responsibility to protect this UNESCO 
+                    Help preserve this amazing place for future generations by not littering, staying on marked paths,
+                    and following photography restrictions. Every visitor has a responsibility to protect this UNESCO
                     World Heritage Site for people to enjoy for many more centuries to come.
                   </p>
                 </div>
@@ -1216,25 +1273,25 @@ export default function SigiriyaTravelGuide() {
                       </ul>
                     </div>
                   </div>
-                  
+
                   <div className="p-6 bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg border border-amber-200">
                     <h4 className="font-semibold text-amber-800 mb-3">Why Sigiriya Will Change You</h4>
                     <p className="text-muted-foreground mb-4">
-                      Visiting Sigiriya is more than just seeing an ancient building or climbing a big rock. It&apos;s a journey 
-                      that connects you with the incredible achievements of human civilization. When you stand at the summit, 
-                      looking out over the same landscape that King Kashyapa saw 1,500 years ago, you become part of a 
+                      Visiting Sigiriya is more than just seeing an ancient building or climbing a big rock. It&apos;s a journey
+                      that connects you with the incredible achievements of human civilization. When you stand at the summit,
+                      looking out over the same landscape that King Kashyapa saw 1,500 years ago, you become part of a
                       continuous story that links the ancient past with the present moment.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      This experience will change how you think about what humans can accomplish when they combine vision, 
-                      determination, and incredible skill. The fact that ancient people could build something so magnificent 
-                      without modern technology shows the power of human creativity and ambition. Many visitors say that 
+                      This experience will change how you think about what humans can accomplish when they combine vision,
+                      determination, and incredible skill. The fact that ancient people could build something so magnificent
+                      without modern technology shows the power of human creativity and ambition. Many visitors say that
                       Sigiriya inspires them to think bigger about their own goals and dreams.
                     </p>
                     <p className="text-muted-foreground">
-                      Most importantly, Sigiriya teaches us about the importance of preserving cultural heritage. When you 
-                      climb those ancient steps and see the frescoes that have survived for 1,500 years, you understand 
-                      why protecting these treasures is so important. You become an ambassador for cultural preservation, 
+                      Most importantly, Sigiriya teaches us about the importance of preserving cultural heritage. When you
+                      climb those ancient steps and see the frescoes that have survived for 1,500 years, you understand
+                      why protecting these treasures is so important. You become an ambassador for cultural preservation,
                       carrying the story of Sigiriya with you wherever you go.
                     </p>
                   </div>
@@ -1248,14 +1305,14 @@ export default function SigiriyaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Remember, you&apos;re about to climb one of the most incredible archaeological sites in the world! Every step 
-                  up those ancient staircases brings you closer to understanding the genius and ambition of ancient Sri Lankan 
-                  civilization. The climb might be challenging, but the sense of achievement and the breathtaking views make 
+                  Remember, you&apos;re about to climb one of the most incredible archaeological sites in the world! Every step
+                  up those ancient staircases brings you closer to understanding the genius and ambition of ancient Sri Lankan
+                  civilization. The climb might be challenging, but the sense of achievement and the breathtaking views make
                   every bit of effort completely worthwhile.
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  Take time to appreciate not just the destination, but the incredible journey itself. You&apos;re walking in 
-                  the footsteps of ancient kings, Buddhist monks, and countless pilgrims who have made this sacred climb 
+                  Take time to appreciate not just the destination, but the incredible journey itself. You&apos;re walking in
+                  the footsteps of ancient kings, Buddhist monks, and countless pilgrims who have made this sacred climb
                   for over 1,500 years. The memories you create at Sigiriya will stay with you for the rest of your life.
                 </p>
                 <p className="text-muted-foreground font-medium text-center text-lg">
