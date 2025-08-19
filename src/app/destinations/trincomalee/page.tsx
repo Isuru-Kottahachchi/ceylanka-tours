@@ -7,6 +7,12 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 
+interface ImageData {
+  src: string;
+  alt: string;
+  title?: string;
+}
+
 
 
 export default function TrincomaleeTravelGuide() {
@@ -183,7 +189,7 @@ export default function TrincomaleeTravelGuide() {
   };
 
   // Helper function to create attraction-specific carousel
-  const createAttractionCarousel = (images: any[], currentIndex: number, setIndex: (index: number) => void) => {
+  const createAttractionCarousel = (images: ImageData[], currentIndex: number, setIndex: (index: number) => void) => {
     if (images.length <= 1) return null;
 
     return (
