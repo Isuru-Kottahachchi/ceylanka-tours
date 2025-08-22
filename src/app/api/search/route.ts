@@ -612,7 +612,8 @@ export async function GET(request: NextRequest) {
   })
 
   // Remove score and matchType from final results
-  const finalResults = sortedResults.map(({ score: _score, matchType: _matchType, ...destination }) => destination)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const finalResults = sortedResults.map(({ score, matchType, ...destination }) => destination)
 
   // Prepare response with suggestion if search term was corrected
   const response: {
