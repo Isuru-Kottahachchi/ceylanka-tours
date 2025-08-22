@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { MapPin, Search, Clock, Check, ArrowRight, CircleCheck, X } from "lucide-react"
+import { MapPin, Search, Clock, ArrowRight, CircleCheck, X } from "lucide-react"
 
 interface SearchResult {
   id: number
@@ -140,7 +140,7 @@ function SearchContent() {
                       performSearch(suggestion.corrected)
                     }}
                   >
-                    Search for "{suggestion.corrected}"
+                    Search for &ldquo;{suggestion.corrected}&rdquo;
                   </Button>
                 </div>
               </div>
@@ -213,7 +213,7 @@ function SearchContent() {
               <Search className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
               <h3 className="text-lg font-semibold mb-2">No results found</h3>
               <p className="text-muted-foreground mb-4">
-                We couldn't find any destinations matching "{query}". Try searching with different keywords.
+                We couldn&apos;t find any destinations matching &ldquo;{query}&rdquo;. Try searching with different keywords.
               </p>
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p><strong>Suggestions:</strong></p>
