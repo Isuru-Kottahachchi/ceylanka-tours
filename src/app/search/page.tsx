@@ -218,9 +218,9 @@ function SearchContent() {
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p><strong>Suggestions:</strong></p>
                 <ul className="list-disc list-inside space-y-1">
-                  <li>Try searching for popular destinations like "Kandy", "Ella", "Sigiriya"</li>
-                  <li>Search by activity: "beach", "temple", "wildlife", "hiking"</li>
-                  <li>Search by province: "Central Province", "Southern Province"</li>
+                  <li>Try searching for popular destinations like &ldquo;Kandy&rdquo;, &ldquo;Ella&rdquo;, &ldquo;Sigiriya&rdquo;</li>
+                  <li>Search by activity: &ldquo;beach&rdquo;, &ldquo;temple&rdquo;, &ldquo;wildlife&rdquo;, &ldquo;hiking&rdquo;</li>
+                  <li>Search by province: &ldquo;Central Province&rdquo;, &ldquo;Southern Province&rdquo;</li>
                 </ul>
               </div>
             </div>
@@ -244,7 +244,7 @@ function SearchContent() {
         {!query && (
           <div className="text-center py-12">
             <Search className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-            <h3 className="text-lg font-semibold mb-2">Discover Sri Lanka's Destinations</h3>
+            <h3 className="text-lg font-semibold mb-2">Discover Sri Lanka&apos;s Destinations</h3>
             <p className="text-muted-foreground">
               Search for destinations, experiences, or locations to plan your perfect Sri Lankan adventure.
             </p>

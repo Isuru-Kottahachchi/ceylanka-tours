@@ -167,6 +167,18 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
+    {
+    id: 18,
+    name: "Trincomalee",
+    location: "Eastern Province",
+    path: "trincomalee",
+    image: "/Trinco.jpeg",
+    // rating: 4.3,
+    // reviews: 890,
+    description: "Eastern coastal city with beautiful beaches and historical sites",
+    highlights: ["Beaches", "Historical Sites", "Natural Harbor"],
+    category: "Nature",
+  },
   {
     id: 12,
     name: "Things you should know before visiting Bentota",
@@ -228,18 +240,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-  {
-    id: 18,
-    name: "Trincomalee",
-    location: "Eastern Province",
-    path: "trincomalee",
-    image: "/Trinco.jpeg",
-    // rating: 4.3,
-    // reviews: 890,
-    description: "Eastern coastal city with beautiful beaches and historical sites",
-    highlights: ["Beaches", "Historical Sites", "Natural Harbor"],
-    category: "Nature",
-  },
+
 
   {
     id: 20,

@@ -612,10 +612,18 @@ export async function GET(request: NextRequest) {
   })
 
   // Remove score and matchType from final results
-  const finalResults = sortedResults.map(({ score, matchType, ...destination }) => destination)
+  const finalResults = sortedResults.map(({ score: _score, matchType: _matchType, ...destination }) => destination)
 
   // Prepare response with suggestion if search term was corrected
-  const response: any = {
+  const response: {
+    results: Destination[]
+    total: number
+    suggestion?: {
+      original: string
+      corrected: string
+      message: string
+    }
+  } = {
     results: finalResults.slice(0, 10), // Limit to 10 results
     total: finalResults.length
   }
