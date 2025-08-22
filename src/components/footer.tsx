@@ -36,8 +36,8 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-slate-900 text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-10 lg:px-12 xl:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-8 lg:gap-12">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="mb-4">
@@ -134,13 +134,13 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-12 pt-8">
-          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+        <div className="border-t border-gray-700 mt-8 sm:mt-10 lg:mt-12 pt-6 sm:pt-8">
+          <div className="flex flex-col sm:flex-row lg:flex-row justify-between items-center space-y-4 sm:space-y-2 lg:space-y-0">
+            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 text-center sm:text-left">
               <p className="text-gray-400 text-sm">© {currentYear} CeyLanka Tours. All rights reserved.</p>
               <p className="text-gray-400 text-sm">Made with ❤️ for Sri Lanka</p>
             </div>
-            <div className="flex flex-wrap justify-center lg:justify-end space-x-6">
+            <div className="flex flex-wrap justify-center sm:justify-end space-x-4 sm:space-x-6">
               <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
                 Privacy Policy
               </Link>
