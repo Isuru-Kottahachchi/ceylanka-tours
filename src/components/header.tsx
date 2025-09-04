@@ -430,7 +430,11 @@ export function Header() {
                             <ul className="space-y-1">
                               {section.items.map((item) => (
                                 <li key={item.name}>
-                                  <Link href={item.href} className="text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 text-xs">
+                                  <Link 
+                                    href={item.href} 
+                                    className="text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 text-xs"
+                                    onClick={() => setActiveDropdown(null)}
+                                  >
                                     {item.name}
                                   </Link>
                                 </li>
@@ -484,7 +488,11 @@ export function Header() {
                             <ul className="space-y-1">
                               {section.items.map((item) => (
                                 <li key={item.name}>
-                                  <Link href={item.href} className="text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 text-xs">
+                                  <Link 
+                                    href={item.href} 
+                                    className="text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 text-xs"
+                                    onClick={() => setActiveDropdown(null)}
+                                  >
                                     {item.name}
                                   </Link>
                                 </li>
@@ -574,9 +582,41 @@ export function Header() {
                       <MobileHierarchicalMenu onItemClick={() => setIsSheetOpen(false)} />
                     </div>
 
-                    <Link href="/plan" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
-                      PLAN YOUR TRIP
-                    </Link>
+                    {/* Mobile Plan Your Trip Menu */}
+                    <div className="py-2 border-b">
+                      <div className="font-semibold text-gray-900 mb-3 dark:text-gray-100">Plan Your Trip</div>
+                      <div className="space-y-2">
+                        {planYourTripItems.map((section) => (
+                          <div key={section.title}>
+                            <button
+                              onClick={() => setActiveDropdown(activeDropdown === section.title ? null : section.title)}
+                              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                            >
+                              <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
+                              <ChevronRight
+                                className={`h-4 w-4 text-gray-500 dark:text-gray-400 transition-transform ${activeDropdown === section.title ? "rotate-90" : ""
+                                  }`}
+                              />
+                            </button>
+
+                            {activeDropdown === section.title && (
+                              <div className="ml-4 mt-2 space-y-2">
+                                {section.items.map((item) => (
+                                  <Link
+                                    key={item.name}
+                                    href={item.href}
+                                    className="block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                                    onClick={() => setIsSheetOpen(false)}
+                                  >
+                                    {item.name}
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                     <Link href="/events" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
                       UPCOMING EVENTS
                     </Link>
