@@ -24,8 +24,8 @@ const whatToDoItems = [
     title: "Adventure Activities",
     items: [
       { name: "Hiking & Trekking", href: "/activities/hiking" },
-      { name: "Water Sports", href: "/activities/water-sports" },
-      { name: "Wildlife Safari", href: "/activities/safari" },
+      { name: "Water Activities", href: "/water-activities" },
+      { name: "Wildlife Safari", href: "/wild-safaries" },
       { name: "Cultural Tours", href: "/activities/cultural" },
     ],
   },
@@ -62,7 +62,7 @@ const destinationsItems = [
     icon: "⛰️",
     hasSubmenu: true,
     items: [
-      { name: "Nuwara Eliya", href: "/destinations/nuwara-eliya" },
+      { name: "Nuwara Eliya", href: "/destinations/Nuwara-eliya" },
       { name: "Ella", href: "/destinations/ella-town" },
       { name: "Hatton", href: "/destinations/hatton" },
       { name: "Badulla", href: "/destinations/badulla" },
@@ -80,6 +80,7 @@ const destinationsItems = [
       { name: "Hikkaduwa", href: "/destinations/hikkaduwa" },
       { name: "Bentota", href: "/destinations/bentota" },
       { name: "Arugam Bay", href: "/destinations/arugambay" },
+      { name: "Pasikuda", href: "/destinations/pasikuda" },
       { name: "Negombo", href: "/destinations/negombo" },
     ],
   },
@@ -101,7 +102,7 @@ const destinationsItems = [
     hasSubmenu: true,
     items: [
       { name: "Galle Fort", href: "/destinations/galle" },
-      { name: "Temple of the Tooth", href: "/destinations/temple-tooth" },
+      { name: "Temple of the Tooth", href: "/destinations/temple-of-tooth" },
       { name: "Adam's Peak", href: "/destinations/adams-peak" },
       { name: "Mihintale", href: "/destinations/mihintale" },
       { name: "Yapahuwa", href: "/destinations/yapahuwa" },

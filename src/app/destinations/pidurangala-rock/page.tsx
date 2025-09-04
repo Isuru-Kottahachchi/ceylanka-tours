@@ -85,7 +85,7 @@ export default function PidurangalaRockGuide() {
                   <div className="flex items-center gap-2">
                     <Mountain className="w-4 h-4 text-green-500" />
                     <span>
-                      <strong>Height:</strong> 200 meters (656 feet)
+                      <strong>Height:</strong> nearly 200 meters (656 feet)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
