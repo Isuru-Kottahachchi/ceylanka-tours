@@ -1341,7 +1341,7 @@ export default function JaffnaGuide() {
                 <CardContent className="p-4">
                   <h3 className="font-bold text-lg mb-2">Wilpattu National Park</h3>
                   <p className="text-sm text-muted-foreground">
-                    Sri Lanka's largest national park with diverse wildlife
+                    Sri Lanka&apos;s largest national park with diverse wildlife
                   </p>
                 </CardContent>
               </Card>
