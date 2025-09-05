@@ -149,7 +149,7 @@ export default function JaffnaGuide() {
             <p className="text-lg mb-4">
               Jaffna was once the capital of an independent Tamil kingdom that ruled northern Sri Lanka for over 400 years. 
               Despite centuries of colonization by Portuguese, Dutch, and British forces, the city has managed to maintain 
-              its distinct identity. Today, you'll find magnificent Hindu temples alongside colonial forts, traditional 
+              its distinct identity. Today, you&apos;ll find magnificent Hindu temples alongside colonial forts, traditional 
               palmyra palm cultivation next to modern developments, and warm Tamil hospitality everywhere you go.
             </p>
             <p className="text-lg mb-4">
@@ -318,7 +318,7 @@ export default function JaffnaGuide() {
                 <p className="text-sm text-blue-700 dark:text-blue-400">
                   Jaffna is the only place in Sri Lanka where you can experience authentic Tamil culture in its purest form. 
                   The city maintained its independence for centuries and developed unique traditions, cuisine, and art forms 
-                  that you won't find anywhere else on the island. It's like visiting a different country without leaving Sri Lanka!
+                  that you won&apos;t find anywhere else on the island. It&apos;s like visiting a different country without leaving Sri Lanka!
                 </p>
               </div>
             </CardContent>
@@ -332,7 +332,7 @@ export default function JaffnaGuide() {
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Ancient Jaffna Kingdom</h3>
               <p className="text-muted-foreground mb-4">
-                Jaffna's history stretches back over two millennia, with the region serving as the capital 
+                Jaffna&apos;s history stretches back over two millennia, with the region serving as the capital 
                 of the independent Jaffna Kingdom from the 13th to 17th centuries. The kingdom was established 
                 by Chandragupta, a prince from the Kalinga dynasty, and became a powerful Tamil state that 
                 controlled northern Sri Lanka and parts of southern India.
@@ -425,7 +425,7 @@ export default function JaffnaGuide() {
                       alt="Nallur Kandaswamy Temple showing colorful gopuram and Dravidian architecture"
                     />
                     <p className="text-sm text-muted-foreground mt-2 italic">
-                      Nallur Kandaswamy Temple - Northern Sri Lanka's most sacred Hindu site
+                      Nallur Kandaswamy Temple - Northern Sri Lanka&apos;s most sacred Hindu site
                     </p>
                   </div>
                   <div>
@@ -434,10 +434,10 @@ export default function JaffnaGuide() {
                       in Northern Sri Lanka, dedicated to Lord Murugan (Kandaswamy). Originally built 
                       in 948 AD and reconstructed multiple times, the current structure showcases stunning 
                       Dravidian architecture with intricate carvings and a towering gopuram that dominates 
-                      Jaffna's skyline.
+                      Jaffna&apos;s skyline.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The temple serves as the spiritual heart of Jaffna's Tamil community, hosting the 
+                      The temple serves as the spiritual heart of Jaffna&apos;s Tamil community, hosting the 
                       famous 25-day Nallur Festival annually. The complex includes multiple shrines, 
                       a sacred tank, and beautiful pavilions where thousands gather for daily prayers 
                       and special ceremonies. Even outside festival time, the daily pujas here are deeply 
@@ -489,7 +489,7 @@ export default function JaffnaGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>2. Jaffna Fort (Dutch Fort) - Fortress of the North</CardTitle>
-                <CardDescription>One of Asia's largest Dutch fortifications covering 22 hectares on Jaffna Lagoon</CardDescription>
+                <CardDescription>One of Asia&apos;s largest Dutch fortifications covering 22 hectares on Jaffna Lagoon</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -499,7 +499,7 @@ export default function JaffnaGuide() {
                       alt="Jaffna Dutch Fort showing massive stone walls and historical architecture"
                     />
                     <p className="text-sm text-muted-foreground mt-2 italic">
-                      The mighty Jaffna Fort - one of Asia's largest Dutch fortifications
+                      The mighty Jaffna Fort - one of Asia&apos;s largest Dutch fortifications
                     </p>
                   </div>
                   <div>
@@ -518,9 +518,9 @@ export default function JaffnaGuide() {
                     <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg mb-4">
                       <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-2">Must-See Inside the Fort:</h4>
                       <ul className="text-sm text-orange-700 dark:text-orange-400 space-y-1">
-                        <li>• <strong>Governor's Palace ruins</strong> with underground chambers</li>
+                        <li>• <strong>Governor&apos;s Palace ruins</strong> with underground chambers</li>
                         <li>• <strong>Dutch Reformed Church</strong> (still standing)</li>
-                        <li>• <strong>Old armory and soldiers' barracks</strong></li>
+                        <li>• <strong>Old armory and soldiers&apos; barracks</strong></li>
                         <li>• <strong>Rampart walls</strong> with stunning ocean views</li>
                         <li>• <strong>Underground tunnels</strong> and secret passages</li>
                         <li>• <strong>Main gateway</strong> with Dutch coat of arms</li>
@@ -570,7 +570,7 @@ export default function JaffnaGuide() {
                     <p className="text-muted-foreground mb-4">
                       The island gets its name from the Dutch word for Delft pottery, as the Dutch established a small 
                       settlement here. Today, only about 5,000 people live on this 50-square-kilometer island, maintaining 
-                      a simple lifestyle that hasn't changed much over centuries. The wild horses are descendants of horses 
+                      a simple lifestyle that hasn&apos;t changed much over centuries. The wild horses are descendants of horses 
                       brought by the Portuguese centuries ago.
                     </p>
                     <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mb-4">
@@ -644,7 +644,7 @@ export default function JaffnaGuide() {
                     <p className="text-muted-foreground mb-4">
                       The beach faces west, making it absolutely perfect for sunset photography. The gentle waves and 
                       shallow waters make it safe for swimming, while the soft sand is ideal for long walks. The casuarina 
-                      trees provide natural shade during the day, and you'll often see local families having picnics under 
+                      trees provide natural shade during the day, and you&apos;ll often see local families having picnics under 
                       their branches, especially on weekends.
                     </p>
                     <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg mb-4">
@@ -694,16 +694,16 @@ export default function JaffnaGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>5. Jaffna Public Library - Symbol of Knowledge and Resilience</CardTitle>
-                <CardDescription>One of South Asia's largest libraries, rebuilt as a symbol of Tamil literary heritage</CardDescription>
+                <CardDescription>One of South Asia&apos;s largest libraries, rebuilt as a symbol of Tamil literary heritage</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Jaffna Public Library stands as more than just a repository of books - it's a powerful symbol 
+                      The Jaffna Public Library stands as more than just a repository of books - it&apos;s a powerful symbol 
                       of knowledge, resilience, and Tamil cultural identity. Originally built in 1933, the library was 
                       one of the largest in South Asia before its tragic destruction in 1981. The current magnificent 
-                      structure, rebuilt and reopened in 2003, represents the unbreakable spirit of Jaffna's people.
+                      structure, rebuilt and reopened in 2003, represents the unbreakable spirit of Jaffna&apos;s people.
                     </p>
                     <p className="text-muted-foreground mb-4">
                       Today, the library houses over 97,000 volumes, including rare Tamil manuscripts, historical documents, 
@@ -811,7 +811,7 @@ export default function JaffnaGuide() {
                       </ul>
                     </div>
                     <div className="text-sm text-muted-foreground italic">
-                      🧭 <strong>Geographic Fact:</strong> Point Pedro is approximately 9°50'N latitude, 
+                      🧭 <strong>Geographic Fact:</strong> Point Pedro is approximately 9°50&apos;N latitude, 
                       making it the true northernmost inhabited point of Sri Lanka.
                     </div>
                   </div>
