@@ -12,11 +12,12 @@ import { Search, Menu, Sun, Moon, Phone, ChevronDown, ChevronRight } from "lucid
 
 const topNavItems = [
   { name: "Home", href: "/" },
-  { name: "Site Map", href: "/sitemap" },
+  // { name: "Site Map", href: "/sitemap" },
   { name: "Contact Us", href: "/contact" },
   // { name: "Tourism News", href: "/news" },
   // { name: "Wildlife Streaming", href: "/wildlife-streaming" },
   { name: "About Us", href: "/about-us", hasDropdown: true },
+  { name: "Privacy Policy", href: "/privacy-policy", hasDropdown: true },
 ]
 
 const whatToDoItems = [
@@ -164,9 +165,10 @@ const planYourTripItems = [
     title: "Planning Tools",
     items: [
       { name: "Trip Planner", href: "/plan/trip-planner" },
+      { name: "Airport Transfer", href: "/plan-your-trip/airport-transfer-service" },
       { name: "Budget Calculator", href: "/plan/budget" },
       { name: "Weather Guide", href: "/plan/weather" },
-      { name: "Visa Information", href: "/plan/visa" },
+      { name: "Visa Information", href: "/plan-your-trip/visa-information" },
     ],
   },
   {
@@ -212,7 +214,7 @@ function DesktopHierarchicalDropdown({
                 <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
               </div>
               <ChevronRight
-                className={`h-4 w-4 text-gray-500 dark:text-gray-400 transition-transform ${expandedSection === section.title ? "rotate-90" : ""
+                className={`h-4 w-4 text-gray-600 dark:text-gray-300 transition-transform ${expandedSection === section.title ? "rotate-90" : ""
                   }`}
               />
             </button>
@@ -247,26 +249,26 @@ function MobileHierarchicalMenu({ onItemClick }: { onItemClick?: () => void }) {
   }
 
   return (
-    <div className="space-y-2">
-      <div className="font-semibold text-gray-900 dark:text-gray-100 py-2 border-b dark:border-gray-700">Destinations</div>
+    <div className="space-y-1">
+      <div className="font-semibold text-gray-900 dark:text-gray-100 py-2 text-base">Destinations</div>
       {destinationsItems.map((section) => (
         <div key={section.title}>
           <button
             onClick={() => toggleSection(section.title)}
-            className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
+            className="w-full flex items-center justify-between p-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
           >
-            <div className="flex items-center space-x-2">
-              <span>{section.icon}</span>
+            <div className="flex items-center space-x-3">
+              <span className="text-lg">{section.icon}</span>
               <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
             </div>
             <ChevronRight
-              className={`h-4 w-4 text-gray-500 dark:text-gray-400 transition-transform ${expandedSection === section.title ? "rotate-90" : ""
+              className={`h-4 w-4 text-gray-600 dark:text-gray-300 transition-transform ${expandedSection === section.title ? "rotate-90" : ""
                 }`}
             />
           </button>
 
           {expandedSection === section.title && (
-            <div className="ml-6 mt-1 space-y-1">
+            <div className="ml-8 mt-1 space-y-1 mb-2">
               {section.items.map((item) => (
                 <Link
                   key={item.name}
@@ -416,7 +418,7 @@ export function Header() {
                   onClick={() => setActiveDropdown(activeDropdown === "what-to-do" ? null : "what-to-do")} className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer">
                   WHAT TO DO
                   <ChevronDown
-                    className={`h-4 w-4 ml-1 transition-transform ${activeDropdown === "what-to-do" ? "rotate-180" : ""
+                    className={`h-4 w-4 ml-1 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === "what-to-do" ? "rotate-180" : ""
                       }`}
                   />
                 </Button>
@@ -457,7 +459,7 @@ export function Header() {
                 >
                   DESTINATIONS
                   <ChevronDown
-                    className={`h-4 w-4 ml-1 transition-transform ${activeDropdown === "destinations" ? "rotate-180" : ""
+                    className={`h-4 w-4 ml-1 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === "destinations" ? "rotate-180" : ""
                       }`}
                   />
                 </Button>
@@ -476,7 +478,7 @@ export function Header() {
               >
                 <Button className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer">
                   PLAN YOUR TRIP
-                  <ChevronDown className="h-4 w-4 ml-1" />
+                  <ChevronDown className="h-4 w-4 ml-1 text-gray-600 dark:text-gray-300" />
                 </Button>
                 {activeDropdown === "plan-trip" && (
                   <div className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 z-50">
@@ -520,8 +522,8 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="right" className="w-80 overflow-y-auto dark:bg-gray-900">
                 <div className="flex flex-col space-y-4 mt-8 h-full">
-                  {/* Mobile Search */}
-                  <form onSubmit={(e) => { handleSearch(e); setIsSheetOpen(false); }} className="flex items-center space-x-2 sticky top-0 bg-white dark:bg-gray-900 pt-2 pb-4 z-10">
+                  {/* Mobile Search - Commented Out */}
+                  {/* <form onSubmit={(e) => { handleSearch(e); setIsSheetOpen(false); }} className="flex items-center space-x-2 sticky top-0 bg-white dark:bg-gray-900 pt-2 pb-4 z-10">
                     <Input
                       type="search"
                       placeholder="Search..."
@@ -531,35 +533,53 @@ export function Header() {
                     <Button type="submit" size="sm" className="bg-cyan-500 hover:bg-cyan-600">
                       <Search className="h-4 w-4" />
                     </Button>
-                  </form>
+                  </form> */}
 
                   {/* Mobile Navigation */}
                   <nav className="flex flex-col space-y-3 pb-20">
                     <Link href="/" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
                       HOME
                     </Link>
-                    <Link href="/news" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
+                    
+                    {/* Add topNavItems to mobile menu */}
+                    {topNavItems.filter(item => item.href !== "/").map((item) => (
+                      <Link 
+                        key={item.name} 
+                        href={item.href} 
+                        className="py-2 border-b" 
+                        onClick={() => setIsSheetOpen(false)}
+                      >
+                        {item.name.toUpperCase()}
+                      </Link>
+                    ))}
+                    
+                    {/* <Link href="/news" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
                       WHATS NEW
-                    </Link>
+                    </Link> */}
                     {/* Mobile What To Do Menu */}
-                    <div className="py-2 border-b">
-                      <div className="font-semibold text-gray-900 mb-3 dark:text-gray-100">What To Do</div>
-                      <div className="space-y-2">
+                    <div className="py-2 border-b border-gray-200 dark:border-gray-700">
+                      <div className="font-semibold text-gray-900 mb-3 dark:text-gray-100 text-base">What To Do</div>
+                      <div className="space-y-1">
                         {whatToDoItems.map((section) => (
                           <div key={section.title}>
                             <button
                               onClick={() => setActiveDropdown(activeDropdown === section.title ? null : section.title)}
-                              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 rounded-md transition-colors"
+                              className="w-full flex items-center justify-between p-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
                             >
-                              <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
+                              <div className="flex items-center space-x-3">
+                                <span className="text-lg">
+                                  {section.title === 'Adventure Activities' ? '⛰️' : '🌟'}
+                                </span>
+                                <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
+                              </div>
                               <ChevronRight
-                                className={`h-4 w-4 text-gray-500 dark:text-gray-400 transition-transform ${activeDropdown === section.title ? "rotate-90" : ""
+                                className={`h-4 w-4 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === section.title ? "rotate-90" : ""
                                   }`}
                               />
                             </button>
 
                             {activeDropdown === section.title && (
-                              <div className="ml-4 mt-2 space-y-2">
+                              <div className="ml-8 mt-1 space-y-1 mb-2">
                                 {section.items.map((item) => (
                                   <Link
                                     key={item.name}
@@ -583,24 +603,29 @@ export function Header() {
                     </div>
 
                     {/* Mobile Plan Your Trip Menu */}
-                    <div className="py-2 border-b">
-                      <div className="font-semibold text-gray-900 mb-3 dark:text-gray-100">Plan Your Trip</div>
-                      <div className="space-y-2">
+                    <div className="py-2 border-b border-gray-200 dark:border-gray-700">
+                      <div className="font-semibold text-gray-900 mb-3 dark:text-gray-100 text-base">Plan Your Trip</div>
+                      <div className="space-y-1">
                         {planYourTripItems.map((section) => (
                           <div key={section.title}>
                             <button
                               onClick={() => setActiveDropdown(activeDropdown === section.title ? null : section.title)}
-                              className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                              className="w-full flex items-center justify-between p-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
                             >
-                              <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
+                              <div className="flex items-center space-x-3">
+                                <span className="text-lg">
+                                  {section.title === 'Planning Tools' ? '🛠️' : '🏨'}
+                                </span>
+                                <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
+                              </div>
                               <ChevronRight
-                                className={`h-4 w-4 text-gray-500 dark:text-gray-400 transition-transform ${activeDropdown === section.title ? "rotate-90" : ""
+                                className={`h-4 w-4 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === section.title ? "rotate-90" : ""
                                   }`}
                               />
                             </button>
 
                             {activeDropdown === section.title && (
-                              <div className="ml-4 mt-2 space-y-2">
+                              <div className="ml-8 mt-1 space-y-1 mb-2">
                                 {section.items.map((item) => (
                                   <Link
                                     key={item.name}
@@ -617,9 +642,16 @@ export function Header() {
                         ))}
                       </div>
                     </div>
-                    <Link href="/events" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
-                      UPCOMING EVENTS
-                    </Link>
+
+                    <div className="py-3">
+                      <Link 
+                        href="/events" 
+                        className="block font-semibold text-gray-900 dark:text-gray-100 text-base"
+                        onClick={() => setIsSheetOpen(false)}
+                      >
+                        UPCOMING EVENTS
+                      </Link>
+                    </div>
                   </nav>
                 </div>
               </SheetContent>

@@ -113,7 +113,7 @@ function SearchContent() {
               {loading ? (
                 <Clock className="h-4 w-4" />
               ) : !loading && results.length === 0 ? (
-                <X color="#ef4444" className="h-4 w-4" />
+                <X color="#ef4444" className="h-4 w-4 cursor-pointer" />
               ) : (
                 <CircleCheck color="#3ebd0f" className="h-4 w-4" />
               )}
@@ -195,7 +195,7 @@ function SearchContent() {
                         </Badge>
                       )}
                     </div>
-                    <Button className="mt-2 w-full group bg-green-500">
+                    <Button className="mt-2 w-full group bg-green-500 cursor-pointer">
                       Read More
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
