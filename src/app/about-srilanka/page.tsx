@@ -32,7 +32,7 @@ function SriLankaAboutCompact() {
 
                     <div className="flex flex-col items-center bg-green-50 dark:bg-green-900/30 p-4 rounded-lg">
                         <Users className="h-6 w-6 text-green-600 dark:text-green-400 mb-2" />
-                        <h3 className="font-medium text-gray-900 dark:text-white text-sm text-center">22 Million + People</h3>
+                        <h3 className="font-medium text-gray-900 dark:text-white text-sm text-center">22 Million+ People</h3>
                     </div>
 
                     <div className="flex flex-col items-center bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg">
@@ -188,6 +188,14 @@ function SriLankaAboutCompact() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                {/* More About Sri Lanka Button */}
+                <div className="text-center mt-8" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center mx-auto cursor-pointer">
+                        <Globe className="h-5 w-5 mr-2" />
+                        More About Sri Lanka
+                    </button>
                 </div>
             </div>
         </section>

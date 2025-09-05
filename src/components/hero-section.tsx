@@ -34,10 +34,10 @@ export function HeroSection() {
         <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-6 leading-tight">
         The Island Life 
           <br />
-        You’ve Been Dreaming Of
+        You've Been Dreaming Of
         </h1>
 
-        <p className="text-lg md:text-xl mb-8 text-gray-200 max-w-2xl mx-auto">
+        <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto font-light leading-relaxed tracking-wide drop-shadow-lg">
           Discover the pearl of the Indian Ocean with pristine beaches, ancient temples, lush tea plantations, and
           incredible wildlife adventures.
         </p>
