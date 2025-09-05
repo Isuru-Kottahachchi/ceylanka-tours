@@ -1,6 +1,5 @@
 "use client"
 
-import type { Metadata } from "next"
 import { useState } from "react"
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -946,7 +945,7 @@ export default function AirportTransferPage() {
                 <CardContent className="p-6">
                   <h3 className="font-bold text-lg mb-3 flex items-center">
                     <CheckCircle className="h-6 w-6 text-green-600 mr-2" />
-                    What's Included
+                    What&apos;s Included
                   </h3>
                   <ul className="space-y-2 text-gray-600 dark:text-gray-300">
                     <li>✓ Professional English-speaking driver</li>

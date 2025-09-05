@@ -1,18 +1,12 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Camera, Heart, ChevronLeft, ChevronRight, Sunrise, Sunset, Car, Bus, Train, Plane, Anchor, Book, Trophy, Building, TreePine, Waves, Mountain, Droplets } from "lucide-react"
+import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Camera, Heart, ChevronLeft, ChevronRight, Sunrise, Sunset, Car, Bus, Train, Plane, Anchor, Book, Building, TreePine, Waves, Mountain, Droplets } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-
-interface ImageData {
-  src: string;
-  alt: string;
-  title?: string;
-}
 
 function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -88,11 +82,6 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
 }
 
 export default function JaffnaGuide() {
-  const jaffnaImages = [
-    "/placeholder.jpg",
-    "/placeholder.jpg",
-    "/placeholder.jpg",
-  ]
 
   const fortImages = [
     "/Jaffna-fort.jpg",
@@ -165,13 +154,13 @@ export default function JaffnaGuide() {
             </p>
             <p className="text-lg mb-4">
               What makes Jaffna truly special is its authentic atmosphere. Unlike tourist-heavy southern beaches or hill 
-              country towns, Jaffna offers genuine cultural immersion. Here, you'll hear Tamil spoken on every street 
+              country towns, Jaffna offers genuine cultural immersion. Here, you&apos;ll hear Tamil spoken on every street 
               corner, see women in colorful saris buying fresh palmyra products at markets, and witness ancient religious 
               festivals that have been celebrated the same way for generations.
             </p>
             <p className="text-lg">
               The city is surrounded by beautiful lagoons, pristine beaches, and unique coral islands that can only be 
-              reached by boat. Whether you're interested in history, spirituality, culture, or nature, Jaffna provides 
+              reached by boat. Whether you&apos;re interested in history, spirituality, culture, or nature, Jaffna provides 
               an authentic Sri Lankan experience that few visitors get to enjoy.
             </p>
           </div>
@@ -287,7 +276,7 @@ export default function JaffnaGuide() {
                   <div className="flex items-center gap-2">
                     <Heart className="w-4 h-4 text-red-500" />
                     <span>
-                      <strong>Local Name:</strong> "Yaazhpanam" (Land of the Lyre)
+                      <strong>Local Name:</strong> &ldquo;Yaazhpanam&rdquo; (Land of the Lyre)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">

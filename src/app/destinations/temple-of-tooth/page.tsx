@@ -32,7 +32,7 @@ export default function TempleOfToothKandyGuide() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/60" />
         <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Temple of the Tooth</h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Temple of the Tooth  / Sri Dalada Maligawa</h1>
           <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">
             Sri Lanka&apos;s Most Sacred Buddhist Sanctuary
           </p>
