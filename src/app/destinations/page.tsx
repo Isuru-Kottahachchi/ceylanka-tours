@@ -37,10 +37,10 @@ const destinations = [
   },
   {
     id: 3,
-    name: "Kandy",
+    name: "Kandy  / Mahanuwara",
     location: "Central Province",
     path: "kandy",
-    image: "/Kandy.jpeg",
+    image: "/Kandy-View.jpg",
     // rating: 4.9,
     // reviews: 1580,
     description: "Sacred city with the Temple of the Tooth, a UNESCO World Heritage site",
@@ -97,7 +97,7 @@ const destinations = [
   },
   {
     id: 8,
-    name: "Adams Peak",
+    name: "Adam's Peak / Sri Pada",
     location: "Central Province",
     path: "adams-peak",
     image: "/Adams-peak.jpeg",
@@ -122,7 +122,7 @@ const destinations = [
   {
     id: 10,
     name: "Wilpattu National Park",
-    location: "Central Province",
+    location: "North Western and North Central provinces",
     path: "wilpattu-national-park",
     image: "/Wilpattu.jpeg",
     // rating: 4.3,
@@ -131,7 +131,7 @@ const destinations = [
     highlights: ["Sri Lanka tiger", "Crocadiles", "Bird Watching"],
     category: "Wild Life",
   },
-   {
+  {
     id: 11,
     name: "Bentota",
     location: "Southern Province",
@@ -140,13 +140,13 @@ const destinations = [
     // rating: 4.3,
     // reviews: 890,
     description: "Beginning of down south beach tour with water sports",
-    highlights: ["Beach", "Sea foods", "River Safari"],
+    highlights: ["Beach", "Sea foods", "Water Sports", "River Safari"],
     category: "Beach",
   },
-    {
+  {
     id: 19,
     name: "Jaffna",
-    location: "North Province",
+    location: "Northern Province",
     path: "jaffna",
     image: "/Nallur-Kovil.jpg",
     // rating: 4.6,
@@ -155,7 +155,7 @@ const destinations = [
     highlights: ["Dutch Fort", "Nallur Temple", "Tamil Culture", "Delft Island", "Casuarina Beach", "Historic Library"],
     category: "Historical",
   },
-    {
+  {
     id: 14,
     name: "Haputhale",
     location: "Uva Province",
@@ -167,7 +167,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-    {
+  {
     id: 18,
     name: "Trincomalee",
     location: "Eastern Province",
@@ -200,7 +200,7 @@ const destinations = [
     // rating: 4.3,
     // reviews: 890,
     description: "Buddhist cave temple complex with stunning frescoes and statues",
-    highlights: ["Buddhist Temples", "Ancient Ruins", ""],
+    highlights: ["Buddhist Temples", "Ancient Ruins", "Cave temple", "Wall arts"],
     category: "Historical",
   },
 
@@ -219,24 +219,24 @@ const destinations = [
   {
     id: 16,
     name: "Delft Island",
-    location: "Central Province",
+    location: "Northern Province",
     path: "delft-island",
     image: "/placeholder.svg?height=400&width=600",
     // rating: 4.3,
     // reviews: 890,
-    description: "Hill station known as Little England with tea plantations",
+    description: "Island of Sri Lanka where unique wildlife and landscapes can be found",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
   {
     id: 17,
     name: "Bathangunduwa",
-    location: "Central Province",
+    location: "",
     path: "bathangunduwa",
     image: "/placeholder.svg?height=400&width=600",
     // rating: 4.3,
     // reviews: 890,
-    description: "Hill station known as Little England with tea plantations",
+    description: "Island of Sri Lanka",
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
@@ -251,7 +251,7 @@ const destinations = [
     // rating: 4.3,
     // reviews: 890,
     description: "Coastal town with stunning beaches and water sports",
-    highlights: ["Beaches", "Hot Climate", ""],
+    highlights: ["Beaches", "Hot Climate", "Surfing"],
     category: "Beach",
   },
   {
@@ -263,7 +263,19 @@ const destinations = [
     // rating: 4.3,
     // reviews: 890,
     description: "Coastal town with stunning beaches and water sports",
-    highlights: ["Beaches", "Hot Climate", ""],
+    highlights: ["Beaches", "Water Sports", "Surfing"],
+    category: "Beach",
+  },
+  {
+    id: 20,
+    name: "Hikkaduwa",
+    location: "Southern Province",
+    path: "hikkaduwa",
+    image: "/Hikkaduwa.jpg",
+    // rating: 4.3,
+    // reviews: 890,
+    description: "Coastal town with good places for surfing and beach activities",
+    highlights: ["Coral Reefs watching", "Water Sports", "Surfing"],
     category: "Beach",
   },
   {
@@ -302,10 +314,10 @@ const destinations = [
     highlights: ["Ancient Ruins", "Sacred Sites", "Historical Temples"],
     category: "Historical",
   },
-   {
+  {
     id: 24,
     name: "Ella",
-    location: "North Central Province",
+    location: "Uva Province",
     path: "/ella-town",
     image: "/placeholder.svg?height=400&width=600",
     // rating: 4.3,
@@ -314,7 +326,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-   {
+  {
     id: 25,
     name: "Mathale",
     location: "Central Province",
@@ -326,7 +338,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-   {
+  {
     id: 26,
     name: "Badulla",
     location: "Uva Province",
@@ -338,7 +350,7 @@ const destinations = [
     highlights: ["Mountains", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-     {
+  {
     id: 27,
     name: "Bandarawela",
     location: "Uva Province",
@@ -350,10 +362,10 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-     {
+  {
     id: 28,
     name: "Mahiyanganaya",
-    location: "Central Province",
+    location: "Uva Province",
     path: "/mahiyanganaya",
     image: "/placeholder.svg?height=400&width=600",
     // rating: 4.3,
@@ -362,7 +374,7 @@ const destinations = [
     highlights: ["Ancient people", "", ""],
     category: "Historical",
   },
-     {
+  {
     id: 29,
     name: "Katharagama",
     location: "Southern Province",
@@ -370,23 +382,23 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     // rating: 4.3,
     // reviews: 890,
-    description: "",
-    highlights: ["Religious Sites", "God Kataragama", ""],
+    description: "Where Lord Kataragama is worshipped",
+    highlights: ["Religious Sites", "God Kataragama", "Katharama Procession"],
     category: "Historical",
   },
   {
     id: 30,
     name: "Pinnawala Elephant Orphanage",
     location: "Sabaragamuwa Province",
-    path: "/pinnawala-elephant-orphanage",
+    path: "/Pinnawala-Elephant-Orphanage",
     image: "/Pinnawala.jpeg",
     // rating: 4.3,
     // reviews: 890,
-    description: "",
+    description: "Elephant orphanage and sanctuary for rescued elephants",
     highlights: ["Elephants", "Elephant bathing", "Elephant feeding"],
     category: "Animals",
   },
-    {
+  {
     id: 31,
     name: "Madu River Safari",
     location: "Southern Province",
@@ -394,11 +406,11 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     // rating: 4.3,
     // reviews: 890,
-    description: "",
-    highlights: ["Mangroves", "Wildlife", " Crocodiles"],
+    description: "Fish, Birds and Crocodile watching",
+    highlights: ["Mangroves", "Wildlife", "Crocodiles"],
     category: "Animals",
   },
-      {
+  {
     id: 32,
     name: "Negambo",
     location: "Western Province",
@@ -406,16 +418,16 @@ const destinations = [
     image: "/placeholder.svg?height=400&width=600",
     // rating: 4.3,
     // reviews: 890,
-    description: "",
+    description: "Coastal city known for its beaches and sea foods",
     highlights: ["Beaches", "Sea foods", "Catholic Churches"],
     category: "City",
   },
-      {
+  {
     id: 33,
     name: "Colombo City Tour",
     location: "Western Province",
     path: "/colombo-city-tour",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Colombo-City.jpeg",
     // rating: 4.3,
     // reviews: 890,
     description: "Around the heart of the Economic Capital of Sri Lanka",
@@ -428,12 +440,32 @@ const destinations = [
 const categories = ["All", "Historical", "Religious", "Nature", "Wildlife", "Beach", "Adventure"]
 
 export default function DestinationsPage() {
-  // const [category, setCategory] = React.useState("All")
   const [showSearchReminder, setShowSearchReminder] = React.useState(true);
   const [searchValue, setSearchValue] = React.useState("");
+  const [activeSearch, setActiveSearch] = React.useState(""); // This will hold the actual search term being filtered
+  const [searchResults, setSearchResults] = React.useState([]); // API search results
+  const [isSearching, setIsSearching] = React.useState(false); // Loading state
   const reminderInterval = 20000; // 20 seconds
   const reminderDuration = 5000; // 5 seconds
   const [category, setCategory] = React.useState("All");
+
+  // Use search results if we have an active search, otherwise use local destinations
+  const displayDestinations = activeSearch.trim() ? searchResults : destinations;
+
+  // Filter destinations based on category (only for local destinations)
+  const filteredDestinations = React.useMemo(() => {
+    let filtered = displayDestinations;
+
+    // Only apply category filter if we're not showing search results
+    if (category !== "All" && !activeSearch.trim()) {
+      filtered = filtered.filter(destination =>
+        destination.category.toLowerCase() === category.toLowerCase() ||
+        destination.category.toLowerCase().replace(" ", "") === category.toLowerCase()
+      );
+    }
+
+    return filtered;
+  }, [category, displayDestinations, activeSearch]);
 
   React.useEffect(() => {
     let intervalId: NodeJS.Timeout | null = null;
@@ -459,6 +491,38 @@ export default function DestinationsPage() {
 
   console.log("Category:", category);
 
+  const handleSearch = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (searchValue.trim()) {
+      setIsSearching(true);
+      setActiveSearch(searchValue);
+
+      try {
+        const response = await fetch(`/api/search?q=${encodeURIComponent(searchValue)}`);
+        const data = await response.json();
+        setSearchResults(data.results || []);
+        console.log("Search results:", data.results);
+      } catch (error) {
+        console.error("Search error:", error);
+        setSearchResults([]);
+      } finally {
+        setIsSearching(false);
+      }
+    } else {
+      // Clear search if empty
+      setActiveSearch("");
+      setSearchResults([]);
+    }
+  };
+
+  const clearSearch = () => {
+    setSearchValue("");
+    setActiveSearch("");
+    setSearchResults([]);
+    setCategory("All");
+  };
+
   // ...existing code...
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -471,11 +535,11 @@ export default function DestinationsPage() {
           </p>
 
           {/* Search and Filter */}
-          <div className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+          <form onSubmit={handleSearch} className="max-w-2xl mx-auto flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
             <div className="flex-1 w-full relative">
               <Input
                 type="search"
-                placeholder="Search destinations..."
+                placeholder="Search destinations, locations, categories..."
                 className={`bg-white text-black pl-10 transition-shadow ${showSearchReminder ? 'ring-2 ring-green-400 ring-offset-2' : ''}`}
                 value={searchValue}
                 onChange={e => setSearchValue(e.target.value)}
@@ -488,37 +552,35 @@ export default function DestinationsPage() {
                     className="absolute left-1/2 -translate-x-1/2 z-30 bg-green-600 text-white text-sm rounded-lg shadow-2xl px-4 py-3 border-2 border-white dark:border-green-400 font-semibold animate-bounce flex-col items-center hidden sm:flex top-full mt-4"
                   >
                     <svg className="absolute -top-4" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 0L23.1962 15L0.803847 15L12 0Z" fill="#22c55e"/>
+                      <path d="M12 0L23.1962 15L0.803847 15L12 0Z" fill="#22c55e" />
                     </svg>
                     <span className="flex items-center gap-2 mb-1">
                       <Search className="h-4 w-4 text-white" />
-                     Search your favorite destinations in Sri Lanka:
+                      Search your favorite destinations in Sri Lanka
                     </span>
-                
                   </div>
                 </>
               )}
             </div>
-            <Button className="bg-white text-green-600 hover:bg-gray-100 cursor-pointer">
+            <Button type="submit" disabled={isSearching} className="bg-white text-green-600 hover:bg-gray-100 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
               <Filter className="h-4 w-4 mr-2" />
-              Filter
+              {isSearching ? "Searching..." : "Filter"}
             </Button>
             {/* Mobile: popup below search input */}
             {showSearchReminder && (
               <div className="relative w-full flex flex-col items-center sm:hidden">
                 <div className="mt-2 bg-green-600 text-white text-sm rounded-lg shadow-2xl px-4 py-3 border-2 border-white dark:border-green-400 font-semibold animate-bounce flex flex-col items-center">
                   <svg className="absolute -top-4" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0L23.1962 15L0.803847 15L12 0Z" fill="#22c55e"/>
+                    <path d="M12 0L23.1962 15L0.803847 15L12 0Z" fill="#22c55e" />
                   </svg>
                   <span className="flex items-center gap-2 mb-1">
                     <Search className="h-4 w-4 text-white" />
-                    Search your favorite destinations in Sri Lanka:
+                    Search your favorite destinations in Sri Lanka
                   </span>
-      
                 </div>
               </div>
             )}
-          </div>
+          </form>
         </div>
       </section>
 
@@ -529,80 +591,125 @@ export default function DestinationsPage() {
             <Button
               key={category}
               variant={category === "All" ? "default" : "outline"}
-              className={category === "All" 
-                ? "bg-green-500 hover:bg-green-600 text-white cursor-pointer" 
+              className={category === "All"
+                ? "bg-green-500 hover:bg-green-600 text-white cursor-pointer"
                 : "border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-900 dark:text-gray-100  cursor-pointer"
               }
-              onClick={() => {setCategory(category)}}
+              onClick={() => { setCategory(category) }}
             >
               {category}
             </Button>
           ))}
         </div>
 
-        <AdBanner slot="destinations-top" />
+        {/* <AdBanner slot="destinations-top" /> */}
+
+        {/* Search Results Info */}
+        {activeSearch.trim() && (
+          <div className="mb-6 text-center">
+            <p className="text-gray-600 dark:text-gray-400">
+              {filteredDestinations.length === 0
+                ? `No destinations found for "${activeSearch}"`
+                : `Found ${filteredDestinations.length} destination${filteredDestinations.length === 1 ? '' : 's'} for "${activeSearch}"`
+              }
+            </p>
+          </div>
+        )}
+
+        {/* Category Results Info */}
+        {category !== "All" && !activeSearch.trim() && (
+          <div className="mb-6 text-center">
+            <p className="text-gray-600 dark:text-gray-400">
+              Showing {filteredDestinations.length} {category.toLowerCase()} destination{filteredDestinations.length === 1 ? '' : 's'}
+            </p>
+          </div>
+        )}
 
         {/* Destinations Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {destinations.map((destination) => (
-            <Card key={destination.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
-              <div className="relative overflow-hidden">
-                <Image
-                  src={destination.image || "/placeholder.svg"}
-                  alt={destination.name}
-                  width={600}
-                  height={400}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          {filteredDestinations.length === 0 ? (
+            <div className="col-span-full text-center py-12">
+              <div className="text-gray-400 dark:text-gray-500 mb-4">
+                <Search className="h-16 w-16 mx-auto mb-4 opacity-50" />
+                <h3 className="text-xl font-semibold mb-2">No destinations found</h3>
+                <p className="text-gray-500 dark:text-gray-400">
+                  {activeSearch.trim()
+                    ? `Try searching with different keywords or browse by category.`
+                    : `No destinations available in the ${category} category.`
+                  }
+                </p>
+              </div>
+              {activeSearch.trim() && (
+                <Button
+                  onClick={clearSearch}
+                  variant="outline"
+                  className="mt-4"
+                >
+                  Clear search and show all destinations
+                </Button>
+              )}
+            </div>
+          ) : (
+            filteredDestinations.map((destination) => (
+              <Card key={destination.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div className="relative overflow-hidden">
+                  <Image
+                    src={destination.image || "/placeholder.svg"}
+                    alt={destination.name}
+                    width={600}
+                    height={400}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-                {/* Rating Badge */}
-                {/* <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1 flex items-center space-x-1">
+                  {/* Rating Badge */}
+                  {/* <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1 flex items-center space-x-1">
                   <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
                   <span className="text-xs font-semibold">{destination.rating}</span>
                 </div> */}
 
-                {/* Category Badge */}
-                <Badge className="absolute top-3 left-3 bg-green-500 hover:bg-green-600 text-white border-0">{destination.category}</Badge>
+                  {/* Category Badge */}
+                  <Badge className="absolute top-3 left-3 bg-green-500 hover:bg-green-600 text-white border-0">{destination.category}</Badge>
 
-                {/* Location */}
-                <div className="absolute bottom-3 left-3 text-white">
-                  <h3 className="font-bold text-lg mb-1">{destination.name}</h3>
-                  <div className="flex items-center space-x-1 text-sm">
-                    <MapPin className="h-3 w-3" />
-                    <span>{destination.location}</span>
+                  {/* Location */}
+                  <div className="absolute bottom-3 left-3 text-white">
+                    <h3 className="font-bold text-lg mb-1">{destination.name}</h3>
+                    <div className="flex items-center space-x-1 text-sm">
+                      <MapPin className="h-3 w-3" />
+                      <span>{destination.location}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <CardContent className="p-4">
-                <p className="text-gray-600 dark:text-gray-300 text-sm mb-3 line-clamp-2">{destination.description}</p>
+                <CardContent className="p-4">
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mb-3 line-clamp-2">{destination.description}</p>
 
-                <div className="flex flex-wrap gap-1 mb-3">
-                  {destination.highlights.slice(0, 4).map((highlight, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
-                      {highlight}
-                    </Badge>
-                  ))}
-                  {destination.highlights.length > 4 && (
-                    <Badge variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
-                      +{destination.highlights.length - 4} more
-                    </Badge>
-                  )}
-                </div>
+                  <div className="flex flex-wrap gap-1 mb-3">
+                    {destination.highlights.slice(0, 4).map((highlight, index) => (
+                      <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
+                        {highlight}
+                      </Badge>
+                    ))}
+                    {destination.highlights.length > 4 && (
+                      <Badge variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
+                        +{destination.highlights.length - 4} more
+                      </Badge>
+                    )}
+                  </div>
 
-                <div className="flex items-center justify-between">
-                  {/* <div className="text-xs text-gray-500 dark:text-gray-400">{destination.reviews} reviews</div> */}
-                  <Link
-                    href={`/destinations/${destination.path}`}
-                    className="text-green-600 hover:text-green-700 font-semibold text-sm transition-colors"
-                  >
-                    Explore →
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                  <div className="flex items-center justify-between">
+                    {/* <div className="text-xs text-gray-500 dark:text-gray-400">{destination.reviews} reviews</div> */}
+                    <Link
+                      href={`/destinations/${destination.path}`}
+                      className="text-green-600 hover:text-green-700 font-semibold text-sm transition-colors"
+                    >
+                      Explore →
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            ))
+          )}
         </div>
 
         <AdBanner slot="destinations-bottom" />
