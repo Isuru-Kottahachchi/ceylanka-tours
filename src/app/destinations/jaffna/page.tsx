@@ -829,10 +829,10 @@ export default function JaffnaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Keerimalai Sacred Springs is one of Jaffna's most mystical and spiritually significant sites, 
+                      Keerimalai Sacred Springs is one of Jaffna&apos;s most mystical and spiritually significant sites, 
                       featuring natural freshwater springs that emerge from deep underground wells near the coast. 
                       According to ancient legends, these springs possess healing properties and have been considered 
-                      sacred for over 2,000 years. The name "Keerimalai" means "mongoose hill" in Tamil, referring 
+                      sacred for over 2,000 years. The name &ldquo;Keerimalai&rdquo; means &ldquo;mongoose hill&rdquo; in Tamil, referring 
                       to local folklore about the area.
                     </p>
                     <p className="text-muted-foreground mb-4">
@@ -904,7 +904,7 @@ export default function JaffnaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Nilavarai Bottomless Well is one of Jaffna's most intriguing natural mysteries, a circular 
+                      The Nilavarai Bottomless Well is one of Jaffna&apos;s most intriguing natural mysteries, a circular 
                       freshwater well whose depth has never been accurately measured despite numerous attempts. 
                       Located near the village of Puttur, about 6 kilometers from Jaffna town, this well has captured 
                       the imagination of locals and visitors for centuries with its crystal-clear water and seemingly 
@@ -989,7 +989,7 @@ export default function JaffnaGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Sakkotai Cape is one of Jaffna's best-kept secrets, a pristine coastal area that offers visitors 
+                      Sakkotai Cape is one of Jaffna&apos;s best-kept secrets, a pristine coastal area that offers visitors 
                       an authentic glimpse into traditional northern Sri Lankan fishing life. Located on the western 
                       coast of the Jaffna Peninsula, this secluded cape features untouched beaches, vibrant coral reefs, 
                       and fishing villages where time seems to have stood still for generations.
@@ -1116,7 +1116,7 @@ export default function JaffnaGuide() {
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Festivals and Celebrations</h3>
               <p className="text-muted-foreground mb-4">
-                Jaffna's calendar is filled with vibrant festivals that showcase the deep religious 
+                Jaffna&apos;s calendar is filled with vibrant festivals that showcase the deep religious 
                 and cultural traditions of the Tamil community. The most spectacular is the Nallur 
                 Festival, a 25-day celebration that transforms the entire city into a stage of 
                 devotion, music, and cultural performances.
@@ -1185,7 +1185,7 @@ export default function JaffnaGuide() {
               <h3 className="text-xl font-bold text-green-800 dark:text-green-200 mb-3">Mutton Rolls</h3>
               <p className="text-green-700 dark:text-slate-300 mb-3">
                 Crispy pastry rolls filled with spiced mutton, a beloved snack that originated 
-                in Jaffna's bakeries and spread across Sri Lanka.
+                in Jaffna&apos;s bakeries and spread across Sri Lanka.
               </p>
               <div className="text-sm text-green-600 dark:text-green-400">
                 <strong>Must Try:</strong> Rio Ice Cream parlor, local bakeries
@@ -1217,7 +1217,7 @@ export default function JaffnaGuide() {
                 <div>
                   <h4 className="font-semibold text-blue-700 dark:text-blue-300">Budget Accommodation</h4>
                   <p className="text-sm text-blue-600 dark:text-slate-300">
-                    Morgan's Guest House, YWCA, various guesthouses
+                    Morgan&apos;s Guest House, YWCA, various guesthouses
                   </p>
                 </div>
               </div>
@@ -1278,10 +1278,10 @@ export default function JaffnaGuide() {
               peninsula tells a story of resilience, faith, and cultural richness.
             </p>
             <p className="text-lg text-muted-foreground">
-              Whether you're drawn by the historical significance, the spiritual atmosphere, the delicious 
+              Whether you&apos;re drawn by the historical significance, the spiritual atmosphere, the delicious 
               cuisine, or the warm hospitality of the Tamil people, Jaffna promises an authentic and 
               unforgettable Sri Lankan experience that will leave you with a deeper appreciation for 
-              the island's diverse cultural heritage.
+              the island&apos;s diverse cultural heritage.
             </p>
           </div>
         </section>
