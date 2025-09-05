@@ -450,7 +450,7 @@ export default function WaterActivitiesPage() {
                         <span className="block text-cyan-300">Sri Lanka</span>
                     </h1>
                     <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">
-                        From world-class surfing breaks to thrilling white water rapids, discover the ultimate aquatic playground in the Indian Ocean's gem
+                        From world-class surfing breaks to thrilling white water rapids, discover the ultimate aquatic playground in the Indian Ocean&apos;s gem
                     </p>
                     <div className="flex flex-wrap justify-center gap-4 text-sm">
                         <Badge className="bg-white/20 text-white border-white/30 px-4 py-2">

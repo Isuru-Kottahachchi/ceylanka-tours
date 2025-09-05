@@ -5,9 +5,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
-import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Search, Menu, Sun, Moon, Phone, ChevronDown, ChevronRight } from "lucide-react"
+import { Menu, Sun, Moon, Phone, ChevronDown, ChevronRight } from "lucide-react"
 
 
 const topNavItems = [
@@ -288,7 +287,6 @@ function MobileHierarchicalMenu({ onItemClick }: { onItemClick?: () => void }) {
 }
 
 export function Header() {
-  const [searchQuery, setSearchQuery] = useState("")
   const { theme, setTheme } = useTheme()
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   // const [mounted, setMounted] = useState(false)
@@ -303,7 +301,7 @@ export function Header() {
       document.documentElement.classList.remove("light", "dark")
       document.documentElement.classList.add(savedTheme)
     }
-  }, [])
+  }, [setTheme])
 
   // Add refs for destinations dropdown
   const destinationsDropdownRef = useRef<HTMLDivElement>(null)
@@ -344,13 +342,6 @@ export function Header() {
 
   const toggleDestinationsDropdown = () => {
     setActiveDropdown(activeDropdown === "destinations" ? null : "destinations")
-  }
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (searchQuery.trim()) {
-      window.location.href = `/search?q=${encodeURIComponent(searchQuery)}`
-    }
   }
 
   return (
