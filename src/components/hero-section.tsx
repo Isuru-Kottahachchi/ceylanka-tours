@@ -34,7 +34,7 @@ export function HeroSection() {
         <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-6 leading-tight">
         The Island Life 
           <br />
-        You've Been Dreaming Of
+        You&apos;ve Been Dreaming Of
         </h1>
 
         <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto font-light leading-relaxed tracking-wide drop-shadow-lg">

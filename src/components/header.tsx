@@ -12,11 +12,12 @@ import { Menu, Sun, Moon, Phone, ChevronDown, ChevronRight } from "lucide-react"
 const topNavItems = [
   { name: "Home", href: "/" },
   // { name: "Site Map", href: "/sitemap" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "Contact Us", href: "/contact-us" },
   // { name: "Tourism News", href: "/news" },
   // { name: "Wildlife Streaming", href: "/wildlife-streaming" },
   { name: "About Us", href: "/about-us", hasDropdown: true },
   { name: "Privacy Policy", href: "/privacy-policy", hasDropdown: true },
+  { name: "Advertise", href: "/advertise", hasDropdown: true }
 ]
 
 const whatToDoItems = [

@@ -52,7 +52,8 @@ const searchVariations: { [key: string]: string[] } = {
   "kithulgala": ["kithulgala", "kitulgala"],
   "mannar": ["manar", "manaar"],
   "ambuluwawa": ["ambuluwawa", "ambuluwa"],
-  "ruwanwelisaya": ["ruwanwelisaya", "ruwanwalisaya", "ruvanwelisaya", "ruvan weli saya", "great stupa"]
+  "ruwanwelisaya": ["ruwanwelisaya", "ruwanwalisaya", "ruvanwelisaya", "ruvan weli saya", "great stupa"],
+  "hirikatiya": ["hiriketiya", "hirikatya", "hirikattya", "hirikatiya beach", "hiri", "hirketiya", "hirikatya", "hirikettiya"]
 }
 
 // Function to normalize search terms
@@ -510,6 +511,16 @@ const destinations: Destination[] = [
     description: "Sacred Buddhist temple in Kandy housing the relic of the tooth of Buddha, a UNESCO World Heritage site",
     highlights: ["Sacred Tooth Relic", "Buddhist Ceremonies", "UNESCO Heritage", "Royal Architecture", "Daily Rituals"],
     category: "Religious",
+  },
+  {
+    id: 43,
+    name: "Hirikatiya Beach",
+    location: "Southern Province",
+    path: "hirikatiya",
+    image: "/",
+    description: "Sri Lanka's ultimate surfing paradise with perfect horseshoe bay, world-class waves, and vibrant backpacker culture",
+    highlights: ["Perfect Surfing Waves", "Horseshoe Bay", "Backpacker Paradise", "Beach Yoga", "Coconut Grove"],
+    category: "Beach",
   }
 ]
 
