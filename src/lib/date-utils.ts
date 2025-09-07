@@ -8,7 +8,7 @@ export function formatDate(dateString: string): string {
       month: 'short',
       day: 'numeric'
     });
-  } catch (error) {
+  } catch {
     // Fallback for invalid dates
     return dateString;
   }
@@ -22,7 +22,7 @@ export function formatDateSafe(dateString: string): string {
                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     
     return `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
-  } catch (error) {
+  } catch {
     return dateString;
   }
 }
