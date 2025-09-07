@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Calendar, User, Eye, Search } from "lucide-react"
 import { AdBanner } from "@/components/ad-banner"
+import { formatDateSafe } from "@/lib/date-utils"
 
 const blogPosts = [
   {
@@ -167,7 +168,7 @@ export default function BlogPage() {
                         </div>
                         <div className="flex items-center space-x-1">
                           <Calendar className="h-4 w-4" />
-                          <span>{new Date(post.date).toLocaleDateString()}</span>
+                          <span>{formatDateSafe(post.date)}</span>
                         </div>
                       </div>
                       <div className="flex items-center space-x-1">
@@ -177,6 +178,14 @@ export default function BlogPage() {
                     </div>
 
                     <div className="mt-2 text-sm text-cyan-600 font-medium">{post.readTime}</div>
+
+                    <div className="mt-4">
+                      <Link href={`/blog/${post.id}`} className="block w-full">
+                        <button className="w-full bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200">
+                          Read Now
+                        </button>
+                      </Link>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
@@ -220,7 +229,7 @@ export default function BlogPage() {
                       </div>
                       <div className="flex items-center space-x-1">
                         <Calendar className="h-3 w-3" />
-                        <span>{new Date(post.date).toLocaleDateString()}</span>
+                        <span>{formatDateSafe(post.date)}</span>
                       </div>
                     </div>
                     <div className="flex items-center space-x-1">
@@ -230,6 +239,14 @@ export default function BlogPage() {
                   </div>
 
                   <div className="mt-2 text-xs text-cyan-600 font-medium">{post.readTime}</div>
+
+                  <div className="mt-4">
+                    <Link href={`/blog/${post.id}`} className="block w-full">
+                      <button className="w-full bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white font-medium py-2 px-3 rounded-md transition-colors duration-200 text-sm">
+                        Read Now
+                      </button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             ))}

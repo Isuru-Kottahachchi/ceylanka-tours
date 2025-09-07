@@ -80,7 +80,7 @@ const destinations = [
   },
   {
     id: 7,
-    name: "Adam's Peak",
+    name: "Adam's Peak / Sri Pada",
     path: "adams-peak",
     location: "Central Province",
     image: "/Adams-peak.jpeg",
@@ -161,10 +161,10 @@ export function PopularDestinations() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
                 {/* Rating Badge */}
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
+                {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
                   <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                   <span className="text-sm font-semibold">{destination.rating}</span>
-                </div>
+                </div> */}
 
                 {/* Category Badge */}
                 <Badge className="absolute top-4 left-4 bg-green-500 hover:bg-green-600 text-white border-0">{destination.category}</Badge>

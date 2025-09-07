@@ -27,7 +27,7 @@ const whatToDoItems = [
       { name: "Hiking & Trekking", href: "/activities/hiking" },
       { name: "Water Activities", href: "/water-activities" },
       { name: "Wildlife Safari", href: "/wild-safaries" },
-      { name: "Cultural Tours", href: "/activities/cultural" },
+      { name: "Cultural Tours", href: "/cultural-tours" },
     ],
   },
   {
@@ -109,17 +109,18 @@ const destinationsItems = [
       { name: "Yapahuwa", href: "/destinations/yapahuwa" },
     ],
   },
-  {
-    title: "Air/Sea Ports",
-    icon: "✈️",
-    hasSubmenu: true,
-    items: [
-      { name: "Colombo Airport (CMB)", href: "/destinations/colombo-airport" },
-      { name: "Mattala Airport (HRI)", href: "/destinations/mattala-airport" },
-      { name: "Colombo Port", href: "/destinations/colombo-port" },
-      { name: "Hambantota Port", href: "/destinations/hambantota-port" },
-    ],
-  },
+  // {
+  //   title: "Southern Coast Beaches",
+  //   icon: "🏄‍♂️",
+  //   hasSubmenu: true,
+  //   items: [
+  //     { name: "Hirikatiya Beach", href: "/destinations/hirikatiya" },
+  //     { name: "Galle Fort Beach", href: "/destinations/galle-fort" },
+  //     { name: "Unawatuna Beach", href: "/destinations/unawatuna" },
+  //     { name: "Weligama Bay", href: "/destinations/weligama" },
+  //     { name: "Coconut Tree Hill", href: "/destinations/coconut-tree-hill" },
+  //   ],
+  // },
 ]
 
 // const whereToGoItems = {
@@ -500,7 +501,7 @@ export function Header() {
                 )}
               </div>
 
-              <Link href="/events" className="text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
+              <Link href="/upcoming-events" className="text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
                 UPCOMING EVENTS
               </Link>
             </nav>
