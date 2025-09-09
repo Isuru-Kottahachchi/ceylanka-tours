@@ -311,7 +311,7 @@ export default function KoneswaramTempleGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Koneswaram Temple in the Ramayana Epic</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">King Ravana's Sacred Site</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">King Ravana&apos;s Sacred Site</h3>
               <p className="text-muted-foreground mb-4">
                 According to ancient Hindu texts and the Ramayana epic, Koneswaram Temple holds immense 
                 significance as the place where the mighty King Ravana of Lanka performed intense penance 
@@ -319,10 +319,10 @@ export default function KoneswaramTempleGuide() {
                 known as a great devotee of Shiva and a learned scholar of the Vedas.
               </p>
               <p className="text-muted-foreground mb-4">
-                Legend states that Ravana's devotion at this very cliff was so powerful that it pleased 
+                Legend states that Ravana&apos;s devotion at this very cliff was so powerful that it pleased 
                 Lord Shiva, who granted him immense strength and knowledge. It is said that Ravana 
                 offered his own heads as sacrifice to Shiva here, only to have them restored by the 
-                compassionate deity, earning him the name "Dashagriva" (ten-necked one).
+                compassionate deity, earning him the name &quot;Dashagriva&quot; (ten-necked one).
               </p>
               
               <div className="bg-purple-50 dark:bg-slate-800 p-4 rounded-lg border border-purple-200 dark:border-slate-600 mb-4">
@@ -343,7 +343,7 @@ export default function KoneswaramTempleGuide() {
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Mount Kailash Connection</h3>
               <p className="text-muted-foreground mb-4">
-                Hindu mythology describes how Ravana once attempted to lift Mount Kailash (Shiva's abode) 
+                Hindu mythology describes how Ravana once attempted to lift Mount Kailash (Shiva&apos;s abode) 
                 to Lanka. When Shiva pressed down the mountain with his toe, a piece broke off and fell 
                 to earth at Trincomalee, forming Swami Rock. This is why the site is considered as 
                 sacred as Mount Kailash itself.
@@ -352,7 +352,7 @@ export default function KoneswaramTempleGuide() {
               <div className="space-y-3 mb-4">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-orange-600" />
-                  <span className="text-sm">Ravana's place of penance and worship</span>
+                  <span className="text-sm">Ravana&apos;s place of penance and worship</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-orange-600" />
@@ -378,9 +378,9 @@ export default function KoneswaramTempleGuide() {
                       this temple's mythological history span thousands of years.
                     </p>
                     <ul className="text-sm text-orange-700 dark:text-slate-300 space-y-1">
-                      <li>• Ravana's reign and devotion to Shiva</li>
+                      <li>• Ravana&apos;s reign and devotion to Shiva</li>
                       <li>• Abduction of Sita and war with Rama</li>
-                      <li>• Temple's continued significance post-Ramayana</li>
+                      <li>• Temple&apos;s continued significance post-Ramayana</li>
                       <li>• Connection to other Pancha Ishwarams</li>
                     </ul>
                   </div>
@@ -393,14 +393,14 @@ export default function KoneswaramTempleGuide() {
           <div className="mt-8">
             <Card className="p-6 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950 dark:to-orange-950 border border-amber-200 dark:border-amber-800">
               <CardHeader className="pb-4">
-                <CardTitle className="text-2xl text-amber-800 dark:text-amber-300">The Scholarly King's Devotion</CardTitle>
+                <CardTitle className="text-2xl text-amber-800 dark:text-amber-300">The Scholarly King&apos;s Devotion</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-amber-800 dark:text-amber-300">Ravana's Achievements at Koneswaram:</h4>
+                    <h4 className="font-semibold mb-3 text-amber-800 dark:text-amber-300">Ravana&apos;s Achievements at Koneswaram:</h4>
                     <ul className="text-sm text-muted-foreground space-y-2">
-                      <li>• Composed the powerful "Shiva Tandava Stotram" hymn</li>
+                      <li>• Composed the powerful &quot;Shiva Tandava Stotram&quot; hymn</li>
                       <li>• Performed severe penances for thousands of years</li>
                       <li>• Received boons of invincibility and knowledge</li>
                       <li>• Established the temple as a major pilgrimage site</li>
@@ -412,7 +412,7 @@ export default function KoneswaramTempleGuide() {
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li>• Temple festivals honor this ancient connection</li>
                       <li>• Local folklore preserves Ramayana stories</li>
-                      <li>• Pilgrims seek blessings at Ravana's worship site</li>
+                      <li>• Pilgrims seek blessings at Ravana&apos;s worship site</li>
                       <li>• Sanskrit inscriptions reference epic events</li>
                       <li>• Archaeological evidence supports ancient origins</li>
                     </ul>
@@ -420,9 +420,9 @@ export default function KoneswaramTempleGuide() {
                 </div>
                 <div className="mt-4 p-3 bg-amber-100 dark:bg-amber-900 rounded-lg">
                   <p className="text-sm text-amber-800 dark:text-amber-300 italic">
-                    "Even today, devotees believe that worshipping at Koneswaram with the same devotion 
+                    &quot;Even today, devotees believe that worshipping at Koneswaram with the same devotion 
                     as Ravana can bring divine blessings and spiritual enlightenment, making this temple 
-                    a powerful connection to the epic Ramayana tradition."
+                    a powerful connection to the epic Ramayana tradition.&quot;
                   </p>
                 </div>
               </CardContent>
@@ -435,11 +435,11 @@ export default function KoneswaramTempleGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">The Legend of Ravana's Sword at Koneswaram</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">The Divine Weapon's Origin</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-foreground">The Divine Weapon&apos;s Origin</h3>
               <p className="text-muted-foreground mb-4">
-                According to ancient legends, King Ravana's most powerful weapon was not just any ordinary sword, 
+                According to ancient legends, King Ravana&apos;s most powerful weapon was not just any ordinary sword, 
                 but a divine blade blessed by Lord Shiva himself at Koneswaram Temple. This celestial weapon, 
-                known as "Chandrahasa" (Moon-blade), was granted to Ravana as a reward for his intense devotion 
+                known as &quot;Chandrahasa&quot; (Moon-blade), was granted to Ravana as a reward for his intense devotion 
                 and penance performed at this very sacred site.
               </p>
               <p className="text-muted-foreground mb-4">
