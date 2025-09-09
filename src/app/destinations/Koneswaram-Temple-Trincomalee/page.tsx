@@ -544,9 +544,9 @@ export default function KoneswaramTempleGuide() {
                 </div>
                 <div className="mt-4 p-3 bg-slate-100 dark:bg-slate-900 rounded-lg">
                   <p className="text-sm text-slate-800 dark:text-slate-300 italic">
-                    "The mark of Ravana's sword in the sacred rock serves as a tangible reminder that 
+                    &quot;The mark of Ravana&apos;s sword in the sacred rock serves as a tangible reminder that 
                     the divine and earthly realms once intersected at this holy site, making Koneswaram 
-                    Temple not just a place of worship, but a witness to epic history."
+                    Temple not just a place of worship, but a witness to epic history.&quot;
                   </p>
                 </div>
               </CardContent>
@@ -567,9 +567,9 @@ export default function KoneswaramTempleGuide() {
                 a piece of Mount Kailash that fell to earth.
               </p>
               <p className="text-muted-foreground mb-4">
-                The 130-foot high cliff offers breathtaking views of the Indian Ocean and Trincomalee's 
+                The 130-foot high cliff offers breathtaking views of the Indian Ocean and Trincomalee&apos;s 
                 natural harbor. Early morning and late evening visits provide the most spectacular lighting, 
-                with the temple's golden spire gleaming against the blue ocean backdrop.
+                with the temple&apos;s golden spire gleaming against the blue ocean backdrop.
               </p>
               
               <div className="bg-blue-50 dark:bg-slate-800 p-4 rounded-lg border border-blue-200 dark:border-slate-600">
@@ -596,25 +596,25 @@ export default function KoneswaramTempleGuide() {
 
         {/* Lover's Leap Section */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Lover's Leap: A Tale of Tragic Romance</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Lover&apos;s Leap: A Tale of Tragic Romance</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div>
               <ImageCarousel 
                 images={loversLeapImages} 
-                alt="Lover's Leap cliff overlooking the ocean with dramatic views" 
+                alt="Lover&apos;s Leap cliff overlooking the ocean with dramatic views" 
               />
             </div>
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">The Dutch Colonial Story</h3>
               <p className="text-muted-foreground mb-4">
-                Adjacent to Koneswaram Temple lies Lover's Leap, a cliff with a haunting colonial-era story. 
-                During Dutch rule in the 17th century, a Dutch officer's daughter and her local lover, 
+                Adjacent to Koneswaram Temple lies Lover&apos;s Leap, a cliff with a haunting colonial-era story. 
+                During Dutch rule in the 17th century, a Dutch officer&apos;s daughter and her local lover, 
                 unable to be together due to colonial restrictions, are said to have jumped from this cliff 
                 in a tragic act of eternal love.
               </p>
               <p className="text-muted-foreground mb-4">
-                Today, Lover's Leap offers some of the most dramatic coastal views in Sri Lanka. The cliff 
-                provides a different perspective of Trincomalee's coastline and is a popular spot for 
+                Today, Lover&apos;s Leap offers some of the most dramatic coastal views in Sri Lanka. The cliff 
+                provides a different perspective of Trincomalee&apos;s coastline and is a popular spot for 
                 photography and quiet contemplation.
               </p>
               
@@ -735,7 +735,7 @@ export default function KoneswaramTempleGuide() {
                 <p className="text-muted-foreground mb-4">
                   The most important festival at Koneswaram Temple, Maha Shivarathri attracts thousands of devotees 
                   from across Sri Lanka and South India. The celebration includes special pujas, cultural performances, 
-                  and a grand procession with the temple's sacred chariot.
+                  and a grand procession with the temple&apos;s sacred chariot.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -823,7 +823,7 @@ export default function KoneswaramTempleGuide() {
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Strategic Military Importance</h3>
               <p className="text-muted-foreground mb-4">
-                During World War II, Trincomalee's natural harbor became one of the most important Allied naval 
+                During World War II, Trincomalee&apos;s natural harbor became one of the most important Allied naval 
                 bases in the Indian Ocean. The temple area on Swami Rock served as a strategic observation point, 
                 offering commanding views of the harbor approaches and the surrounding seas.
               </p>
@@ -853,7 +853,7 @@ export default function KoneswaramTempleGuide() {
               <p className="text-muted-foreground mb-4">
                 Elderly residents of Trincomalee still share stories passed down about the war years. 
                 The temple served as a gathering place for families seeking comfort during air raid warnings. 
-                Many devotees believe the temple's spiritual protection helped keep the community safe during 
+                Many devotees believe the temple&apos;s spiritual protection helped keep the community safe during 
                 the dangerous wartime period.
               </p>
               
@@ -864,7 +864,7 @@ export default function KoneswaramTempleGuide() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-blue-600" />
-                  <span className="text-sm">Allied warships anchored in temple's view</span>
+                  <span className="text-sm">Allied warships anchored in temple&apos;s view</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-blue-600" />
@@ -1089,7 +1089,7 @@ export default function KoneswaramTempleGuide() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Relax on one of Sri Lanka's most beautiful beaches with crystal-clear water, 
+                  Relax on one of Sri Lanka&apos;s most beautiful beaches with crystal-clear water, 
                   perfect for swimming and snorkeling.
                 </p>
                 <Badge variant="outline" className="text-xs">15 minutes by car</Badge>
@@ -1227,7 +1227,7 @@ export default function KoneswaramTempleGuide() {
                 <div className="space-y-3">
                   <div className="flex items-start space-x-2">
                     <Heart className="h-5 w-5 text-orange-600 dark:text-orange-400 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-orange-700 dark:text-orange-400">Greet with "Vanakkam" (traditional Tamil greeting)</span>
+                    <span className="text-sm text-orange-700 dark:text-orange-400">Greet with &quot;Vanakkam&quot; (traditional Tamil greeting)</span>
                   </div>
                   <div className="flex items-start space-x-2">
                     <Heart className="h-5 w-5 text-orange-600 dark:text-orange-400 mt-0.5 flex-shrink-0" />
@@ -1335,7 +1335,7 @@ export default function KoneswaramTempleGuide() {
               <CardContent>
                 <p className="text-muted-foreground">
                   Allow 2-3 hours for a comprehensive visit. This includes exploring the main temple (30-45 minutes), 
-                  visiting Lover's Leap (30 minutes), taking photographs and enjoying ocean views (45 minutes), 
+                  visiting Lover&apos;s Leap (30 minutes), taking photographs and enjoying ocean views (45 minutes), 
                   and exploring Fort Frederick if desired (30-45 minutes). Add extra time during festival periods 
                   or if you want to participate in prayer ceremonies.
                 </p>
@@ -1349,7 +1349,7 @@ export default function KoneswaramTempleGuide() {
               <CardContent>
                 <p className="text-muted-foreground">
                   Local guides are usually available at the temple entrance, especially during peak tourist seasons. 
-                  Many speak English and can provide detailed information about the temple's history, architecture, 
+                  Many speak English and can provide detailed information about the temple&apos;s history, architecture, 
                   and religious significance. Tour guide fees typically range from Rs. 1,000-2,500 depending on 
                   group size and tour length. Hotels can also arrange professional guided tours.
                 </p>
@@ -1363,7 +1363,7 @@ export default function KoneswaramTempleGuide() {
               <CardContent>
                 <p className="text-muted-foreground">
                   Basic facilities include restrooms, drinking water, shoe storage areas, and small shops selling 
-                  religious items and refreshments. However, facilities are limited, so it's advisable to bring 
+                  religious items and refreshments. However, facilities are limited, so it&apos;s advisable to bring 
                   water, snacks, and any necessary items. The nearest restaurants and hotels are in Trincomalee town, 
                   about 2-3 km away.
                 </p>
@@ -1378,7 +1378,7 @@ export default function KoneswaramTempleGuide() {
                 <p className="text-muted-foreground">
                   The temple has some challenges for visitors with mobility issues due to its clifftop location and 
                   stone steps. However, the main temple area is relatively accessible, and the stunning ocean views 
-                  can be enjoyed from several vantage points. It's recommended to contact the temple authorities in 
+                  can be enjoyed from several vantage points. It&apos;s recommended to contact the temple authorities in 
                   advance to discuss specific accessibility needs and possible assistance.
                 </p>
               </CardContent>
@@ -1392,7 +1392,7 @@ export default function KoneswaramTempleGuide() {
             <CardHeader>
               <CardTitle className="text-3xl font-bold text-center mb-4">Plan Your Sacred Journey to Koneswaram Temple</CardTitle>
               <CardDescription className="text-lg text-center max-w-3xl mx-auto">
-                Experience the spiritual power and breathtaking beauty of Sri Lanka's most dramatically located temple. 
+                Experience the spiritual power and breathtaking beauty of Sri Lanka&apos;s most dramatically located temple. 
                 From ancient legends to stunning ocean views, Koneswaram Temple offers an unforgettable journey through 
                 faith, history, and natural beauty.
               </CardDescription>
