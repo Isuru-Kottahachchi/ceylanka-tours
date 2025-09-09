@@ -375,7 +375,7 @@ export default function KoneswaramTempleGuide() {
                     <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-1">Epic Timeline</h4>
                     <p className="text-sm text-orange-700 dark:text-slate-300 mb-2">
                       The Ramayana events are believed to have occurred in the Treta Yuga, making 
-                      this temple's mythological history span thousands of years.
+                      this temple&apos;s mythological history span thousands of years.
                     </p>
                     <ul className="text-sm text-orange-700 dark:text-slate-300 space-y-1">
                       <li>• Ravana&apos;s reign and devotion to Shiva</li>
@@ -432,7 +432,7 @@ export default function KoneswaramTempleGuide() {
 
         {/* Ravana's Sword Legend */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">The Legend of Ravana's Sword at Koneswaram</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">The Legend of Ravana&apos;s Sword at Koneswaram</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">The Divine Weapon&apos;s Origin</h3>
@@ -444,7 +444,7 @@ export default function KoneswaramTempleGuide() {
               </p>
               <p className="text-muted-foreground mb-4">
                 The legend states that after Ravana completed years of rigorous worship at Swami Rock, 
-                Lord Shiva was so pleased that he not only restored Ravana's sacrificed heads but also 
+                Lord Shiva was so pleased that he not only restored Ravana&apos;s sacrificed heads but also 
                 gifted him this supernatural sword. The weapon was said to shine like the crescent moon 
                 and could cut through any material in creation.
               </p>
@@ -455,7 +455,7 @@ export default function KoneswaramTempleGuide() {
                   <div>
                     <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-1">Chandrahasa - The Moon Blade</h4>
                     <p className="text-sm text-blue-700 dark:text-blue-200">
-                      The name "Chandrahasa" means "laughter of the moon" in Sanskrit, reflecting both 
+                      The name &quot;Chandrahasa&quot; means &quot;laughter of the moon&quot; in Sanskrit, reflecting both 
                       its curved, crescent-like shape and its divine radiance that could illuminate 
                       the darkest nights during battle.
                     </p>
@@ -467,7 +467,7 @@ export default function KoneswaramTempleGuide() {
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">The Sacred Cut in the Rock</h3>
               <p className="text-muted-foreground mb-4">
-                Local tradition tells of a dramatic moment when Ravana, in a display of the sword's 
+                Local tradition tells of a dramatic moment when Ravana, in a display of the sword&apos;s 
                 divine power, struck Swami Rock with Chandrahasa. The blade cut so deeply into the 
                 sacred stone that it created a permanent fissure that can still be seen today. This 
                 cut is believed to mark the exact spot where Ravana received his divine blessings.
@@ -484,11 +484,11 @@ export default function KoneswaramTempleGuide() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-red-600" />
-                  <span className="text-sm">Symbol of Ravana's supernatural powers</span>
+                  <span className="text-sm">Symbol of Ravana&apos;s supernatural powers</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-5 w-5 text-red-600" />
-                  <span className="text-sm">Connected to temple's sacred geography</span>
+                  <span className="text-sm">Connected to temple&apos;s sacred geography</span>
                 </div>
               </div>
 
@@ -496,14 +496,14 @@ export default function KoneswaramTempleGuide() {
                 <div className="flex items-start space-x-2">
                   <AlertTriangle className="h-5 w-5 text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-red-800 dark:text-red-300 mb-1">The Sword's Fate</h4>
+                    <h4 className="font-semibold text-red-800 dark:text-red-300 mb-1">The Sword&apos;s Fate</h4>
                     <p className="text-sm text-red-700 dark:text-red-400 mb-2">
                       According to Ramayana tradition, the Chandrahasa sword was eventually lost 
-                      during Ravana's final battle with Lord Rama, marking the end of his reign.
+                      during Ravana&apos;s final battle with Lord Rama, marking the end of his reign.
                     </p>
                     <ul className="text-sm text-red-700 dark:text-red-400 space-y-1">
                       <li>• Granted by Shiva at Koneswaram Temple</li>
-                      <li>• Used throughout Ravana's conquests</li>
+                      <li>• Used throughout Ravana&apos;s conquests</li>
                       <li>• Left its mark on the sacred rock</li>
                       <li>• Lost in the battle of Lanka</li>
                     </ul>
@@ -525,7 +525,7 @@ export default function KoneswaramTempleGuide() {
                     <h4 className="font-semibold mb-3 text-slate-800 dark:text-slate-300">Pilgrims and the Rock Cut:</h4>
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li>• Visitors seek out the legendary fissure in the rock</li>
-                      <li>• Local guides point out the "sword cut" to tourists</li>
+                      <li>• Local guides point out the &quot;sword cut&quot; to tourists</li>
                       <li>• Devotees touch the marked stone for blessings</li>
                       <li>• Photography spot for mythology enthusiasts</li>
                       <li>• Archaeological interest in rock formations</li>
@@ -535,10 +535,10 @@ export default function KoneswaramTempleGuide() {
                     <h4 className="font-semibold mb-3 text-slate-800 dark:text-slate-300">Cultural Significance:</h4>
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li>• Represents the power of divine blessings</li>
-                      <li>• Symbol of Ravana's devotion to Lord Shiva</li>
+                      <li>• Symbol of Ravana&apos;s devotion to Lord Shiva</li>
                       <li>• Connection between mythology and physical reality</li>
                       <li>• Inspiration for local art and literature</li>
-                      <li>• Part of temple's oral tradition</li>
+                      <li>• Part of temple&apos;s oral tradition</li>
                     </ul>
                   </div>
                 </div>
