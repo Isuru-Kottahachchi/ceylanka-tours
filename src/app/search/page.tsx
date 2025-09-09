@@ -118,12 +118,12 @@ function SearchContent() {
               ) : hasSearched && results.length === 0 ? (
                 <>
                   <X color="#ef4444" className="h-4 w-4 cursor-pointer" />
-                  <span>Found 0 results for "{query}"</span>
+                  <span>Found 0 results for &quot;{query}&quot;</span>
                 </>
               ) : hasSearched && results.length > 0 ? (
                 <>
                   <CircleCheck color="#3ebd0f" className="h-4 w-4" />
-                  <span>Found {total} result{total !== 1 ? 's' : ''} for "{query}"</span>
+                  <span>Found {total} result{total !== 1 ? 's' : ''} for &quot;{query}&quot;</span>
                 </>
               ) : null}
             </div>

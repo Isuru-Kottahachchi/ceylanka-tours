@@ -1,7 +1,7 @@
 "use client"
-import type { Metadata } from "next"
+
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Sun, Camera, Fish, TreePalm, Utensils, Bed, Car, Train, Users, AlertTriangle, Heart, Anchor, Compass, Wind, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Sun, TreePalm, Car, Train, Users, AlertTriangle, Heart,  Wind, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useState, useEffect } from "react"

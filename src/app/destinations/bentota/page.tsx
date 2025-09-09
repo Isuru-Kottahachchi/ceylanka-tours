@@ -36,7 +36,7 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                         <h2 className="text-2xl font-bold text-foreground">Stay Safe at Bentota Beach!</h2>
                         
                         <p className="text-muted-foreground text-sm leading-relaxed">
-                            Before you enjoy Bentota's beautiful waters, learn about important beach safety, 
+                            Before you enjoy Bentota&apos;s beautiful waters, learn about important beach safety, 
                             including rip currents, dangerous sea creatures, and monsoon conditions.
                         </p>
 
@@ -393,13 +393,13 @@ export default function BentotaGuide() {
                                 Beach Safety at Bentota
                             </CardTitle>
                             <CardDescription className="text-orange-600">
-                                Important safety information for enjoying Bentota's waters safely
+                                Important safety information for enjoying Bentota&apos;s waters safely
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
                             <div className="space-y-4">
                                 <p className="text-muted-foreground">
-                                    While Bentota is known for its calm waters and safe swimming conditions, it's important to understand 
+                                    While Bentota is known for its calm waters and safe swimming conditions, it&apos;s important to understand 
                                     ocean safety, especially during monsoon seasons when conditions can change dramatically.
                                 </p>
                                 

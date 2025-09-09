@@ -1,18 +1,12 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Camera, Heart, ChevronLeft, ChevronRight, Sunrise, Sunset, Car, Bus, Train, Plane, Anchor } from "lucide-react"
+import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Camera, Heart, ChevronLeft, ChevronRight, Sunrise, Car, Bus, Train, Anchor } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-
-interface ImageData {
-  src: string;
-  alt: string;
-  title?: string;
-}
 
 function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -118,7 +112,7 @@ export default function KoneswaramTempleGuide() {
         </div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Koneswaram Temple: Sri Lanka's Sacred Cliff Temple
+            Koneswaram Temple: Sri Lanka&apos;s Sacred Cliff Temple
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
             Discover the ancient Hindu temple perched dramatically on Swami Rock, 
@@ -149,7 +143,7 @@ export default function KoneswaramTempleGuide() {
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
               Standing majestically 130 feet above the crashing waves of the Indian Ocean, Koneswaram Temple 
-              is one of Sri Lanka's most sacred and dramatically positioned religious sites. This ancient Hindu 
+              is one of Sri Lanka&apos;s most sacred and dramatically positioned religious sites. This ancient Hindu 
               temple, dedicated to Lord Shiva as Koneshwara (Lord of the East), sits on the legendary Swami Rock 
               in Trincomalee and has been a place of worship for over 2,000 years.
             </p>
@@ -267,7 +261,7 @@ export default function KoneswaramTempleGuide() {
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Temple of the Thousand Pillars</h3>
               <p className="text-muted-foreground mb-4">
-                Koneswaram Temple was once known as the "Temple of the Thousand Pillars" due to its magnificent 
+                Koneswaram Temple was once known as the &quot;Temple of the Thousand Pillars&quot; due to its magnificent 
                 architecture. The current temple, rebuilt in the 1960s, features beautiful Dravidian-style 
                 architecture with a colorful gopuram (tower) that serves as a beacon visible from far out at sea.
               </p>
