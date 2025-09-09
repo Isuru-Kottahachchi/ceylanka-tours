@@ -238,7 +238,7 @@ export default function AnuradhapuraTravelGuide() {
                       </li>
                     </ul>
                     <div className="relative mt-6">
-                      <Link href="/destinations/ruwan-wali-saya">
+                      <Link href="/destinations/ruwanwali-saya">
                         <Button
                           className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                           variant="default"

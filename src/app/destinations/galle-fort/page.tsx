@@ -531,7 +531,7 @@ export default function GalleFortTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/destinations/kandeviharaya" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/Jungle-beach-roomassala" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>

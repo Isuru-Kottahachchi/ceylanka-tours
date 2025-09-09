@@ -6,6 +6,7 @@ import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { BackToTop } from "@/components/back-to-top"
+import { WhatsAppWidget } from "@/components/whatsapp-widget"
 import { ThemeProvider } from "next-themes"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -160,13 +161,14 @@ export default function RootLayout({
         <meta name="google-site-verification" content="your-verification-code" />
       </head>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="min-h-screen flex flex-col">
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
           <BackToTop />
+          <WhatsAppWidget />
         </ThemeProvider>
       </body>
     </html>

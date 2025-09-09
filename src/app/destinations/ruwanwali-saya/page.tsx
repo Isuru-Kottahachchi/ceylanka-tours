@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TreePine, Crown, Heart, Gem } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TreePine, Crown, Heart, Gem, Car } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -24,7 +24,7 @@ export default function RuwanwelisayaDetailedGuide() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=900&width=1400"
+          src="/Ruwanwalisaya.jpeg"
           alt="Magnificent white Ruwanwelisaya stupa with its distinctive dome and pilgrims offering prayers"
           fill
           className="object-cover"
@@ -99,6 +99,147 @@ export default function RuwanwelisayaDetailedGuide() {
         <div className="my-12 p-6 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-xl text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-orange-300 dark:border-orange-600">
           [Premium Advertisement Space - 728x90 Leaderboard]
         </div>
+
+        {/* How to Get There Section */}
+        <section className="mb-16">
+          <Card className="border-2 border-blue-200 dark:border-blue-700 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3 text-3xl text-blue-700 dark:text-blue-300">
+                <Car className="w-8 h-8 text-blue-500" />
+                How to Get to Ruwanwelisaya
+              </CardTitle>
+              <p className="text-lg text-blue-600 dark:text-blue-400 mt-2">
+                Multiple transportation options to reach this sacred UNESCO World Heritage Site in Anuradhapura
+              </p>
+            </CardHeader>
+            <CardContent>
+              <div className="grid lg:grid-cols-2 gap-8">
+                {/* By Private Vehicle - Recommended */}
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-3 bg-orange-100 dark:bg-orange-900/30 rounded-full">
+                      <Car className="w-6 h-6 text-orange-600 dark:text-orange-400" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-xl font-semibold text-orange-700 dark:text-orange-300">By Private Vehicle</h3>
+                        <Badge className="bg-green-100 text-green-700 border-green-300 dark:bg-green-900/30 dark:text-green-300 dark:border-green-600">
+                          Recommended
+                        </Badge>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-orange-200 dark:border-orange-700">
+                    <h4 className="font-semibold text-orange-600 dark:text-orange-400 mb-2">Via A1 Highway</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">Colombo → Kurunegala → Anuradhapura</p>
+                    <div className="flex justify-between text-sm">
+                      <span><strong>Distance:</strong> 205 km</span>
+                      <span><strong>Duration:</strong> 3-4 hours</span>
+                    </div>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-orange-200 dark:border-orange-700">
+                    <h4 className="font-semibold text-orange-600 dark:text-orange-400 mb-2">Taxi/Tuk-tuk</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">From Anuradhapura town center</p>
+                    <div className="flex justify-between text-sm">
+                      <span><strong>Taxi:</strong> Rs. 500-800</span>
+                      <span><strong>Tuk-tuk:</strong> Rs. 300-500</span>
+                    </div>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-orange-200 dark:border-orange-700">
+                    <h4 className="font-semibold text-orange-600 dark:text-orange-400 mb-2">Rental Car</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">Self-drive or with driver</p>
+                    <div className="flex justify-between text-sm">
+                      <span><strong>Self-drive:</strong> Rs. 8,000-12,000/day</span>
+                      <span><strong>With driver:</strong> Rs. 12,000-18,000/day</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* By Public Transport */}
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-3 bg-green-100 dark:bg-green-900/30 rounded-full">
+                      <Car className="w-6 h-6 text-green-600 dark:text-green-400" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-green-700 dark:text-green-300">By Public Bus</h3>
+                  </div>
+                  
+                  <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-green-200 dark:border-green-700">
+                    <h4 className="font-semibold text-green-600 dark:text-green-400 mb-2">From Colombo</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">Regular CTB and private buses to Anuradhapura</p>
+                    <div className="flex justify-between text-sm">
+                      <span><strong>Duration:</strong> 4-5 hours</span>
+                      <span><strong>Cost:</strong> Rs. 300-500</span>
+                    </div>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-green-200 dark:border-green-700">
+                    <h4 className="font-semibold text-green-600 dark:text-green-400 mb-2">From Kandy</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">Direct buses via Dambulla</p>
+                    <div className="flex justify-between text-sm">
+                      <span><strong>Duration:</strong> 2.5-3 hours</span>
+                      <span><strong>Cost:</strong> Rs. 200-350</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-3 mb-4 mt-6">
+                    <div className="p-3 bg-purple-100 dark:bg-purple-900/30 rounded-full">
+                      <MapPin className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-purple-700 dark:text-purple-300">By Train</h3>
+                  </div>
+                  
+                  <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-purple-200 dark:border-purple-700">
+                    <h4 className="font-semibold text-purple-600 dark:text-purple-400 mb-2">Intercity Express</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">Colombo Fort to Anuradhapura</p>
+                    <div className="flex justify-between text-sm">
+                      <span><strong>Duration:</strong> 3.5-4 hours</span>
+                      <span><strong>Cost:</strong> Rs. 400-1,500</span>
+                    </div>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border border-green-200 dark:border-green-700">
+                    <h4 className="font-semibold text-green-600 dark:text-green-400 mb-2">Local Transport</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">From Anuradhapura bus station to site</p>
+                    <div className="flex justify-between text-sm">
+                      <span><strong>Duration:</strong> 15-20 minutes</span>
+                      <span><strong>Cost:</strong> Rs. 30-50</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Important Travel Tips */}
+              <div className="mt-8 p-6 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 rounded-lg border border-amber-200 dark:border-amber-700">
+                <h3 className="font-semibold text-amber-700 dark:text-amber-300 mb-4 flex items-center gap-2">
+                  <Star className="w-5 h-5" />
+                  Important Travel Tips
+                </h3>
+                <div className="grid md:grid-cols-2 gap-4 text-sm">
+                  <div className="flex items-start gap-2">
+                    <Clock className="w-4 h-4 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700 dark:text-gray-300">Best visited early morning (6 AM - 9 AM) or late afternoon</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <MapPin className="w-4 h-4 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700 dark:text-gray-300">Free parking available at the archaeological site</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Calendar className="w-4 h-4 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700 dark:text-gray-300">Site open daily from 6:00 AM to 6:00 PM</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Star className="w-4 h-4 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0" />
+                    <span className="text-gray-700 dark:text-gray-300">Entry fee: Rs. 30 for locals, USD 30 for foreigners</span>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
         {/* Enhanced Quick Facts */}
         <section className="mb-16">

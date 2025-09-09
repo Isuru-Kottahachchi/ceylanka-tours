@@ -1,11 +1,85 @@
 "use client"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Waves, Sun, Palmtree, Fish, ChevronLeft, ChevronRight } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Waves, Sun, Palmtree, Fish, ChevronLeft, ChevronRight, X, AlertTriangle, Shield } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+
+// Beach Safety Popup Modal Component
+function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+    if (!isOpen) return null
+
+    return (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white dark:bg-gray-800 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
+                <div className="relative p-6">
+                    {/* Close button */}
+                    <Button
+                        variant="ghost"
+                        size="icon"
+                        className="absolute right-2 top-2 h-8 w-8"
+                        onClick={onClose}
+                    >
+                        <X className="h-4 w-4" />
+                    </Button>
+
+                    {/* Modal content */}
+                    <div className="text-center space-y-4">
+                        <div className="flex justify-center">
+                            <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full">
+                                <Waves className="h-8 w-8 text-blue-600" />
+                            </div>
+                        </div>
+                        
+                        <h2 className="text-2xl font-bold text-foreground">Stay Safe at Bentota Beach!</h2>
+                        
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                            Before you enjoy Bentota's beautiful waters, learn about important beach safety, 
+                            including rip currents, dangerous sea creatures, and monsoon conditions.
+                        </p>
+
+                        <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
+                            <div className="flex items-center gap-2 mb-2">
+                                <AlertTriangle className="h-5 w-5 text-orange-600" />
+                                <h3 className="font-semibold text-orange-800 dark:text-orange-400">Important Safety Topics:</h3>
+                            </div>
+                            <ul className="text-sm text-orange-700 dark:text-orange-300 space-y-1 text-left">
+                                <li>• How to escape rip currents</li>
+                                <li>• Identifying dangerous sea creatures</li>
+                                <li>• Monsoon season safety</li>
+                                <li>• Emergency procedures</li>
+                            </ul>
+                        </div>
+                          <p className="text-xs text-muted-foreground">
+                            Your safety is our priority. Take 2 minutes to learn these life-saving tips!
+                        </p>
+
+                        <div className="space-y-3">
+                            <Link href="/blog/things-you-aware-in-the-beach">
+                                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer" >
+                                    <Shield className="w-4 h-4 mr-2" />
+                                    Read Complete Beach Safety Guide
+                                </Button>
+                            </Link>
+                            
+                            <Button 
+                                variant="outline" 
+                                className="w-full cursor-pointer"
+                                onClick={onClose}
+                            >
+                                Continue to Bentota Page
+                            </Button>
+                        </div>
+
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 // Image carousel component
 function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
@@ -122,8 +196,27 @@ export default function BentotaGuide() {
         "/Lunugangabawa5.jpeg",
     ]
 
+    // Beach Safety Modal State
+    const [showSafetyModal, setShowSafetyModal] = useState(false)
+
+    // Show modal after page loads
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowSafetyModal(true)
+        }, 1500) // Show after 1.5 seconds
+
+        return () => clearTimeout(timer)
+    }, [])
+
+    const handleCloseModal = () => {
+        setShowSafetyModal(false)
+    }
+
     return (
         <main className="min-h-screen bg-background">
+            {/* Beach Safety Modal */}
+            <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} />
+            
             {/* Hero Section */}
             <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
                 <Image
@@ -163,7 +256,8 @@ export default function BentotaGuide() {
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                         <p className="text-lg mb-4">
                             Bentota is Sri Lanka&apos;s premier beach destination, where pristine golden beaches meet world-class
-                            luxury resorts. Located on the southwest coast, this tropical paradise offers the perfect blend of
+                            luxury resorts. Located on the southwest coast at the beginning of the Southern Province, this tropical paradise 
+                            sits at the border between the Southern and Western provinces. It offers the perfect blend of
                             relaxation, adventure, and natural beauty, making it a favorite among honeymooners, families, and water
                             sports enthusiasts.
                         </p>
@@ -173,10 +267,182 @@ export default function BentotaGuide() {
                             with Sri Lankan warmth and hospitality.
                         </p>
                         <p className="text-lg">
-                            There is a interesting fact about Bentota that many people don&apos;t know. The name &quot;Bentota&quot; is derived from the Sinhalese words &quot;Benthota,&quot; which means &quot;river of the benth,&quot; referring to the Bentota River that flows through the area. This river is not only a natural beauty but also a vital part of the local ecosystem, supporting diverse wildlife and providing opportunities for water sports and boat rides.
-                            There is a another intersting story, There was a deamon called &quot;Ben&quot;
+                            There is an interesting fact about Bentota that many people don&apos;t know. The name &quot;Bentota&quot; is derived from the Sinhalese words &quot;Benthota,&quot; which means &quot;river of the benth,&quot; referring to the Bentota River that flows through the area. This river is not only a natural beauty but also a vital part of the local ecosystem, supporting diverse wildlife and providing opportunities for water sports and boat rides.
+                            There is another interesting story: There was a demon called &quot;Ben&quot; who once inhabited this area, and the name is believed to have evolved from this ancient legend.
                         </p>
                     </div>
+                </section>
+
+                {/* How to Get to Bentota */}
+                <section className="mb-12">
+                    <h2 className="text-3xl font-bold mb-6 text-foreground">
+                        How to Get to Bentota
+                    </h2>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <Card>
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2">
+                                    <MapPin className="w-5 h-5 text-blue-500" />
+                                    From Colombo Airport (BIA)
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent className="space-y-4">
+                                <div>
+                                    <h4 className="font-semibold mb-2 text-foreground">Private Transfer (Recommended)</h4>
+                                    <ul className="text-sm text-muted-foreground space-y-1">
+                                        <li>• Duration: 1.5-2 hours (90km)</li>
+                                        <li>• Cost: $40-60 USD</li>
+                                        <li>• Direct route via Southern Expressway</li>
+                                        <li>• Most comfortable and convenient option</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold mb-2 text-foreground">Taxi Services</h4>
+                                    <ul className="text-sm text-muted-foreground space-y-1">
+                                        <li>• Airport taxis: $35-50 USD</li>
+                                        <li>• Uber/PickMe: $25-40 USD</li>
+                                        <li>• Duration: 1.5-2 hours</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold mb-2 text-foreground">Airport Shuttle</h4>
+                                    <ul className="text-sm text-muted-foreground space-y-1">
+                                        <li>• Cost: $15-25 USD per person</li>
+                                        <li>• Duration: 2-2.5 hours (multiple stops)</li>
+                                        <li>• Budget-friendly shared transport</li>
+                                    </ul>
+                                </div>
+                            </CardContent>
+                        </Card>
+                        
+                        <Card>
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2">
+                                    <Clock className="w-5 h-5 text-green-500" />
+                                    From Colombo City
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent className="space-y-4">
+                                <div>
+                                    <h4 className="font-semibold mb-2 text-foreground">By Train (Scenic Route)</h4>
+                                    <ul className="text-sm text-muted-foreground space-y-1">
+                                        <li>• Duration: 2-2.5 hours</li>
+                                        <li>• Cost: $2-5 USD (1st/2nd class)</li>
+                                        <li>• Coastal railway with ocean views</li>
+                                        <li>• Departs from Colombo Fort Station</li>
+                                        <li>• Multiple trains daily</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold mb-2 text-foreground">By Bus</h4>
+                                    <ul className="text-sm text-muted-foreground space-y-1">
+                                        <li>• Duration: 2-3 hours</li>
+                                        <li>• Cost: $1-3 USD</li>
+                                        <li>• From Colombo Central Bus Stand</li>
+                                        <li>• Regular services every 30 minutes</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold mb-2 text-foreground">Private Car/Rental</h4>
+                                    <ul className="text-sm text-muted-foreground space-y-1">
+                                        <li>• Duration: 1.5-2 hours</li>
+                                        <li>• Take Southern Expressway (E01)</li>
+                                        <li>• Most flexible option</li>
+                                    </ul>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
+                    
+                    <Card className="mt-6 bg-blue-50/50 border-blue-200">
+                        <CardHeader>
+                            <CardTitle className="text-blue-800 flex items-center gap-2">
+                                <Star className="w-5 h-5" />
+                                Travel Tips for Getting to Bentota
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <h4 className="font-semibold mb-2 text-blue-800">Best Routes</h4>
+                                    <ul className="text-sm text-blue-700 space-y-1">
+                                        <li>• Southern Expressway: Fastest route from airport</li>
+                                        <li>• Coastal road (A2): Scenic but slower</li>
+                                        <li>• Avoid rush hours (7-9 AM, 5-7 PM)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold mb-2 text-blue-800">Pro Tips</h4>
+                                    <ul className="text-sm text-blue-700 space-y-1">
+                                        <li>• Book transfers in advance for better rates</li>
+                                        <li>• Train offers beautiful coastal scenery</li>
+                                        <li>• Highway tolls: ~$3-5 USD (included in taxi fares)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </section>
+
+                {/* Beach Safety Section */}
+                <section className="mb-12">
+                    <Card className="border-orange-300 bg-orange-50/30">
+                        <CardHeader>
+                            <CardTitle className="text-orange-800 flex items-center gap-2">
+                                <Waves className="w-5 h-5" />
+                                Beach Safety at Bentota
+                            </CardTitle>
+                            <CardDescription className="text-orange-600">
+                                Important safety information for enjoying Bentota's waters safely
+                            </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="space-y-4">
+                                <p className="text-muted-foreground">
+                                    While Bentota is known for its calm waters and safe swimming conditions, it's important to understand 
+                                    ocean safety, especially during monsoon seasons when conditions can change dramatically.
+                                </p>
+                                
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-orange-800">Current Conditions at Bentota:</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                            <li>• Generally calm waters protected by coral reef</li>
+                                            <li>• Safe swimming most of the year</li>
+                                            <li>• Lifeguards present at major resort beaches</li>
+                                            <li>• Can have strong currents during monsoon (May-September)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-orange-800">Watch Out For:</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                            <li>• Rip currents near river mouth</li>
+                                            <li>• Stronger waves during southwest monsoon</li>
+                                            <li>• Jet ski and boat traffic in water sports areas</li>
+                                            <li>• Changing conditions with tides</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                                    <h4 className="font-semibold mb-3 text-blue-800 flex items-center gap-2">
+                                        <Star className="w-4 h-4" />
+                                        Complete Beach Safety Guide
+                                    </h4>
+                                    <p className="text-blue-700 mb-4">
+                                        Learn about rip currents, cross seas, monsoon safety, and emergency procedures 
+                                        to stay safe at all Sri Lankan beaches.
+                                    </p>
+                                    <Link href="/blog/things-you-aware-in-the-beach">
+                                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                                            <Waves className="w-4 h-4 mr-2" />
+                                            Read Complete Beach Safety Guide
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
                 </section>
 
                 {/* Ad Space */}
@@ -416,12 +682,42 @@ export default function BentotaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            When you visit Bentota, you can explore five ancient temples with rich history: Wanawasa Rajamaha
-                                            Viharaya, Galapatha Raja Maha Viharaya, and three others that showcase centuries of Buddhist
-                                            heritage and architecture.
+                                            When you visit Bentota, you can explore five ancient temples with rich history and centuries of Buddhist
+                                            heritage and architecture. These raja maha viharas are interconnected by ancient underground tunnels.
                                         </p>
-                                        <br></br><p>In the ancinet times, thease five rajamaha viharas were interconnected by a underground tunnel.This tunnel was used by Buddist monks. If you visit Wanawasa Rajamaha Viharaya You can still see part of that tunnel, and there is also the begining of the tunnel n Glapatha viharaya </p>
-                                        <br></br>
+                                        
+                                        <h4 className="font-semibold mb-3 text-foreground">The Five Raja Maha Viharas:</h4>
+                                        <ul className="space-y-2 text-muted-foreground mb-4">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                <strong>Wanawasa Rajamaha Viharaya</strong> - Main temple with visible tunnel entrance
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                <strong>Galapatha Raja Maha Viharaya</strong> - Historic temple with tunnel beginning
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                <strong>Bentota Raja Maha Viharaya</strong> - Central temple complex
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                <strong>Aluthgama Raja Maha Viharaya</strong> - Ancient meditation center
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                <strong>Induruwa Raja Maha Viharaya</strong> - Traditional Buddhist temple
+                                            </li>
+                                        </ul>
+                                        
+                                        <p className="text-muted-foreground mb-4">
+                                            In ancient times, these five rajamaha viharas were interconnected by underground tunnels. 
+                                            These tunnels were used by Buddhist monks for safe passage between temples. If you visit 
+                                            Wanawasa Rajamaha Viharaya, you can still see part of that tunnel, and there is also the 
+                                            beginning of the tunnel at Galapatha Viharaya.
+                                        </p>
+                                        
+                                        <h4 className="font-semibold mb-3 text-foreground">What You Can Experience:</h4>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -429,11 +725,15 @@ export default function BentotaGuide() {
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Meditation sessions available
+                                                Meditation sessions and spiritual guidance
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Historical and cultural significance
+                                                Historical and cultural significance tours
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Traditional Buddhist architecture and art
                                             </li>
                                         </ul>
                                     </div>

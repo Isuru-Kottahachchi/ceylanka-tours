@@ -111,15 +111,21 @@ function SearchContent() {
           <div className="mb-6">
             <div className="flex items-center gap-2 text-muted-foreground">
               {loading ? (
-                <Clock className="h-4 w-4" />
-              ) : !loading && results.length === 0 ? (
-                <X color="#ef4444" className="h-4 w-4 cursor-pointer" />
-              ) : (
-                <CircleCheck color="#3ebd0f" className="h-4 w-4" />
-              )}
-              <span>
-                {loading ? 'Searching...' : `Found ${total} result${total !== 1 ? 's' : ''} for "${query}"`}
-              </span>
+                <>
+                  <Clock className="h-4 w-4" />
+                  <span>Searching...</span>
+                </>
+              ) : hasSearched && results.length === 0 ? (
+                <>
+                  <X color="#ef4444" className="h-4 w-4 cursor-pointer" />
+                  <span>Found 0 results for "{query}"</span>
+                </>
+              ) : hasSearched && results.length > 0 ? (
+                <>
+                  <CircleCheck color="#3ebd0f" className="h-4 w-4" />
+                  <span>Found {total} result{total !== 1 ? 's' : ''} for "{query}"</span>
+                </>
+              ) : null}
             </div>
             
             {/* Search Suggestion */}

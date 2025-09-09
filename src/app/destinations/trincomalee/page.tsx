@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
+import Link from "next/link"
 
 interface ImageData {
   src: string;
@@ -274,7 +275,7 @@ export default function TrincomaleeTravelGuide() {
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Waves className="w-4 h-4 mr-1" />
-              Pristine Beaches & Whale Watching
+              Pristine Beaches
             </Badge>
           </div>
         </div>
@@ -708,13 +709,14 @@ export default function TrincomaleeTravelGuide() {
 
                 {/* See More Details Button */}
                 <div className="mt-6 text-center">
-                  <Button 
-                    variant="outline" 
-                    className="bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-700 text-blue-700 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900/50"
-                    onClick={() => window.open('https://en.wikipedia.org/wiki/Koneswaram_Temple', '_blank')}
+                    <Link href="/destinations/Koneswaram-Temple-Trincomalee">
+                  <Button
+                    className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                    variant="default"
                   >
-                    📖 See More Details About Koneswaram Temple
+                   See More Details About Koneswaram Temple
                   </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -1207,6 +1209,62 @@ export default function TrincomaleeTravelGuide() {
                   <Image
                     src="/placeholder.svg?height=300&width=400"
                     alt="China Bay Beach showing pristine white sand and clear blue waters with minimal development"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Sunrise Viewing Experience */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Spectacular Sunrise Viewing</CardTitle>
+                <CardDescription>Experience magical sunrises on the eastern coast beaches</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      One of Trincomalee&apos;s most magical experiences is watching the sunrise from its pristine eastern beaches. 
+                      Unlike the southern coast where you can only see sunsets over the ocean, Trincomalee&apos;s eastern position 
+                      offers breathtaking sunrise views directly over the Indian Ocean, painting the sky in brilliant oranges, 
+                      pinks, and golds.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The best sunrise viewing spots include Nilaveli Beach, Uppuveli Beach, and Koneswaram Temple grounds. 
+                      Early morning beach walks during sunrise hours (around 6:00-6:30 AM) provide an unforgettable experience 
+                      with minimal crowds and perfect lighting for photography. The contrast is remarkable - while southern 
+                      beaches like Mirissa and Unawatuna offer stunning sunsets, only the eastern coast provides this magical 
+                      sunrise experience over the ocean.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Stunning ocean sunrise views unavailable on southern coast
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect for early morning photography
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Peaceful beach walks with minimal crowds
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Best viewing: Nilaveli, Uppuveli, and Koneswaram area
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Star className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
+                        Optimal time: 6:00-6:30 AM year-round
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Beautiful sunrise over Trincomalee beach with golden light reflecting on the ocean waves"
                     width={400}
                     height={300}
                     className="rounded-lg"
