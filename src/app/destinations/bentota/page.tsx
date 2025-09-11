@@ -859,7 +859,7 @@ export default function BentotaGuide() {
                     {/* Para Motoring Adventure */}
                     <div className="mt-8 p-6 bg-gradient-to-r from-sky-50 to-blue-50 dark:from-sky-900/20 dark:to-blue-900/20 rounded-lg">
                         <p className="text-center text-lg font-medium text-sky-700 dark:text-sky-300 mb-2">
-                            Wanna see Bentota in bird's eye?
+                            Wanna see Bentota in bird&apos;s eye?
                         </p>
                         <h3 className="text-xl font-bold mb-4 text-center">🪂 Para Motoring - Soar Above Bentota Beach</h3>
                         
@@ -870,7 +870,7 @@ export default function BentotaGuide() {
                                     alt="Para motoring adventure showing aerial views, equipment, and flight scenes over Bentota beach"
                                 />
                                 <p className="text-sm text-muted-foreground mt-2 italic text-center">
-                                    Wanna see Bentota in bird's eye? - Experience breathtaking aerial views
+                                    Wanna see Bentota in bird&apos;s eye? - Experience breathtaking aerial views
                                 </p>
                             </div>
                             <div>
