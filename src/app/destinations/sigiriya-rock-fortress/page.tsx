@@ -177,9 +177,9 @@ export default function SigiriyaTravelGuide() {
 
         {/* Getting to Sigiriya from Colombo */}
         <section className="mb-12">
-          <Card className="border-blue-200 bg-blue-50/30">
+          <Card className="border-blue-200 dark:border-blue-800 bg-blue-50/30 dark:bg-blue-950/30">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-blue-800">
+              <CardTitle className="flex items-center gap-2 text-blue-800 dark:text-blue-200">
                 <MapPin className="w-5 h-5" />
                 How to Travel from Colombo to Sigiriya
               </CardTitle>
@@ -187,7 +187,7 @@ export default function SigiriyaTravelGuide() {
             <CardContent>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold mb-3 text-blue-700">By Private Car/Taxi (Recommended)</h4>
+                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• <strong>Distance:</strong> 170km (105 miles)</li>
                     <li>• <strong>Duration:</strong> 3.5-4 hours</li>
@@ -196,7 +196,7 @@ export default function SigiriyaTravelGuide() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-3 text-blue-700">By Bus</h4>
+                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• <strong>Route:</strong> Colombo → Dambulla/Habarana → Sigiriya</li>
                     <li>• <strong>Duration:</strong> 4-5 hours total</li>
@@ -205,8 +205,8 @@ export default function SigiriyaTravelGuide() {
                   </ul>
                 </div>
               </div>
-              <div className="mt-4 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500">
-                <p className="text-sm text-blue-800">
+              <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
+                <p className="text-sm text-blue-800 dark:text-blue-200">
                   <strong>💡 Pro Tip:</strong> Start early (6-7 AM) from Colombo to avoid traffic and reach Sigiriya before the midday heat.
                   Most visitors stay overnight in nearby Dambulla or Habarana for a more relaxed experience.
                 </p>
@@ -425,7 +425,39 @@ export default function SigiriyaTravelGuide() {
                   </p>
                   <br />
                   <br />
-                  <p className="text-sm text-orange-700">According to some locals, there was an entrance to enter inside of this big rock fortress, but it has been closed  later.</p>
+                  <div className="bg-amber-50 dark:bg-slate-800 border-l-4 border-amber-400 dark:border-amber-500 p-4 rounded-r-lg">
+                    <h4 className="font-semibold text-amber-800 dark:text-amber-100 mb-2">🔒 The Mystery of the Closed Interior Passages</h4>
+                    <p className="text-sm text-amber-700 dark:text-slate-200 mb-3">
+                      According to local folklore and some archaeological evidence, Sigiriya Rock once had secret interior passages and chambers that allowed access deep inside the rock fortress. These hidden tunnels were reportedly used by King Kashyapa and his court for:
+                    </p>
+                    <ul className="text-sm text-amber-700 dark:text-slate-200 mb-3 ml-4 space-y-1">
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Secret escape routes</strong> in case of enemy attacks</li>
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Hidden treasure chambers</strong> where royal valuables were stored</li>
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Underground water systems</strong> connecting to natural springs</li>
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Private meditation caves</strong> for the king's spiritual practices</li>
+                    </ul>
+                    <p className="text-sm text-amber-700 dark:text-slate-200 mb-3">
+                      <strong className="text-amber-800 dark:text-amber-200">Why were they closed?</strong> Several factors led to sealing these interior passages:
+                    </p>
+                    <ul className="text-sm text-amber-700 dark:text-slate-200 mb-3 ml-4 space-y-1">
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Safety concerns:</strong> Structural instability and risk of rockfalls</li>
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Preservation efforts:</strong> Protecting ancient artifacts and inscriptions inside</li>
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Wildlife protection:</strong> Bats and other creatures use these caves as habitat</li>
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Archaeological research:</strong> Ongoing studies require controlled access</li>
+                    </ul>
+                    <p className="text-sm text-amber-700 dark:text-slate-200 mb-3">
+                      <strong className="text-amber-800 dark:text-amber-200">H.C.P. Bell's Archaeological Work:</strong> The renowned British archaeologist H.C.P. Bell (Harry Charles Purvis Bell) conducted extensive research at Sigiriya in the early 1900s. According to local accounts and some historical references, Bell may have documented several interior passages and chambers within the rock fortress that were accessible at the time. However, these details are not 100% confirmed and should be considered as part of local folklore mixed with historical research. The reported features include:
+                    </p>
+                    <ul className="text-sm text-amber-700 dark:text-slate-200 mb-3 ml-4 space-y-1">
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Possible hidden chambers</strong> (unconfirmed accounts)</li>
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Alleged water cisterns</strong> carved into the rock</li>
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Rumored secret passages</strong> between different levels</li>
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Undocumented drainage systems</strong> (speculative)</li>
+                    </ul>
+                    <p className="text-sm text-amber-700 dark:text-slate-200">
+                      <strong className="text-amber-800 dark:text-amber-200">Important note:</strong> While H.C.P. Bell did conduct archaeological work at Sigiriya, the specific details about interior passages remain largely unverified and are based on local legends and incomplete historical records. Modern archaeologists continue to study the rock using advanced technology, but these mysterious interior spaces remain off-limits to visitors for safety and conservation reasons.
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -788,52 +820,52 @@ export default function SigiriyaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Dos */}
-            <Card className="border-green-200 bg-green-50/50">
+            <Card className="border-green-200 dark:border-green-800 bg-green-50/50 dark:bg-green-950/30">
               <CardHeader>
-                <CardTitle className="text-green-700 flex items-center gap-2">
+                <CardTitle className="text-green-700 dark:text-green-300 flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
                   DOs - For the Best Experience
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
                     <strong>Start early:</strong> Begin your climb by 6:30 AM to avoid crowds and heat
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
                     <strong>Wear comfortable shoes:</strong> Good grip is essential for the metal stairs
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
                     <strong>Bring water:</strong> At least 1-2 liters per person
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
                     <strong>Use sunscreen:</strong> The sun can be intense, especially at the summit
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Respect the site:</strong> Its a UNESCO World Heritage Site
+                    <strong>Respect the site:</strong> It&apos;s a UNESCO World Heritage Site
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
                     <strong>Take your time:</strong> Enjoy the journey, not just the destination
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
                     <strong>Hire a guide:</strong> Learn fascinating stories and history
                   </span>
@@ -842,60 +874,60 @@ export default function SigiriyaTravelGuide() {
             </Card>
 
             {/* Donts */}
-            <Card className="border-red-200 bg-red-50/50">
+            <Card className="border-red-200 dark:border-red-800 bg-red-50/50 dark:bg-red-950/30">
               <CardHeader>
-                <CardTitle className="text-red-700 flex items-center gap-2">
+                <CardTitle className="text-red-700 dark:text-red-300 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5" />
                   DONTs - Avoid These Mistakes
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
                     <strong>Don&apos;t make unnecessary noise:</strong> Hornets and bees live in the rock cracks and can become dangerous if you are too loud
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Dont visit midday:</strong> Its extremely hot and crowded (11 AM - 3 PM)
+                    <strong>Don&apos;t visit midday:</strong> It&apos;s extremely hot and crowded (11 AM - 3 PM)
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Dont wear flip-flops:</strong> The metal stairs can be slippery
+                    <strong>Don&apos;t wear flip-flops:</strong> The metal stairs can be slippery
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Dont photograph frescoes:</strong> Its strictly prohibited
+                    <strong>Don&apos;t photograph frescoes:</strong> It&apos;s strictly prohibited
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Dont rush:</strong> Take breaks and enjoy the views along the way
+                    <strong>Don&apos;t rush:</strong> Take breaks and enjoy the views along the way
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Dont litter:</strong> Keep this ancient wonder clean for future generations
+                    <strong>Don&apos;t litter:</strong> Keep this ancient wonder clean for future generations
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Dont climb if afraid of heights:</strong> The final stairs are quite steep
+                    <strong>Don&apos;t climb if afraid of heights:</strong> The final stairs are quite steep
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Dont forget tickets:</strong> Buy them at the entrance, not online
+                    <strong>Don&apos;t forget tickets:</strong> Buy them at the entrance, not online
                   </span>
                 </div>
               </CardContent>
@@ -1064,7 +1096,7 @@ export default function SigiriyaTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
                     See More →
                   </span>
                 </CardContent>
@@ -1087,7 +1119,7 @@ export default function SigiriyaTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings. 20 minutes away.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
                     See More →
                   </span>
                 </CardContent>
@@ -1110,7 +1142,7 @@ export default function SigiriyaTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Famous for &quot;The Gathering&quot; - hundreds of elephants come together during dry season. 1 hour drive.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
                     See More →
                   </span>
                 </CardContent>
@@ -1131,9 +1163,9 @@ export default function SigiriyaTravelGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                    Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                   Ancient city with well-preserved ruins of palaces, temples, and statues. 1.5 hours drive.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
                     See More →
                   </span>
                 </CardContent>
@@ -1156,7 +1188,7 @@ export default function SigiriyaTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
                     See More →
                   </span>
                 </CardContent>
@@ -1179,7 +1211,7 @@ export default function SigiriyaTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
                     See More →
                   </span>
                 </CardContent>

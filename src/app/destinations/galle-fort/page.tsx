@@ -120,6 +120,122 @@ export default function GalleFortTravelGuide() {
           </Card>
         </section>
 
+        {/* How to Get There */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">How to Get to Galle Fort</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-blue-500" />
+                  From Colombo
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2 text-green-600">By Train (Recommended)</h4>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Take the scenic coastal railway from Colombo Fort Station to Galle Station. Duration: 2.5-3 hours.
+                  </p>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• First Class: LKR 300-500</li>
+                    <li>• Second Class: LKR 150-250</li>
+                    <li>• Third Class: LKR 60-100</li>
+                    <li>• Book tickets in advance for first class</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2 text-purple-600">By Car/Van (Recommended for Groups)</h4>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Take the Southern Expressway for fastest route. Duration: 1.5-2 hours. Most comfortable option for families and groups.
+                  </p>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• <strong>Private car:</strong> $40-60 USD (up to 4 people)</li>
+                    <li>• <strong>Van/Mini-bus:</strong> $60-80 USD (up to 8 people)</li>
+                    <li>• <strong>Uber/PickMe:</strong> $25-40 USD (limited availability)</li>
+                    <li>• <strong>Car rental:</strong> $30-50 USD/day + fuel</li>
+                    <li>• <strong>Toll charges:</strong> LKR 500-700</li>
+                  </ul>
+                  <div className="mt-3 p-3 bg-orange-100 dark:bg-orange-800/30 rounded-md border-l-4 border-orange-400">
+                    <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                      <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Galle. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                    </p>
+                    <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                      <div className="flex items-center gap-2">
+                        <span>📞</span>
+                        <span><strong>Contact:</strong> +94 77 123 4567</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span>✈️</span>
+                        <Link href="/airport-transfers" className="underline hover:text-orange-600 dark:hover:text-orange-300">
+                          <strong>Airport Transfer Services</strong> - Click for details & booking
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2 text-blue-600">By Bus</h4>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Express buses from Colombo Bastian Mawatha Bus Station. Duration: 2-2.5 hours.
+                  </p>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Air-conditioned bus: LKR 200-300</li>
+                    <li>• Regular bus: LKR 100-150</li>
+                    <li>• Buses run every 30 minutes</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Clock className="w-5 h-5 text-orange-500" />
+                  From Other Cities
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2 text-green-600">From Kandy</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Take bus via Colombo or direct bus to Galle. Duration: 4-5 hours. Cost: LKR 300-500.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2 text-blue-600">From Bentota/Hikkaduwa</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Regular buses along the coastal road. Duration: 30-60 minutes. Cost: LKR 50-100.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2 text-purple-600">From Mirissa/Weligama</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Local buses or three-wheelers. Duration: 30-45 minutes. Cost: LKR 50-150.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2 text-red-600">From Bandaranaike Airport</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Airport taxi or bus to Colombo then connect to Galle. Duration: 3-4 hours total.
+                  </p>
+                </div>
+                <div className="bg-amber-50 p-4 rounded-lg mt-4">
+                  <h4 className="font-semibold text-amber-800 mb-2">💡 Pro Tips:</h4>
+                  <ul className="text-sm text-amber-700 space-y-1">
+                    <li>• <strong>Best for groups:</strong> Book a van (8-seater) for families or friend groups</li>
+                    <li>• Galle Fort is walkable from Galle Bus/Train Station</li>
+                    <li>• Three-wheelers available for short distances</li>
+                    <li>• Book train tickets online via Sri Lanka Railways</li>
+                    <li>• <strong>Van advantages:</strong> AC, luggage space, door-to-door service</li>
+                    <li>• Traffic is heaviest on weekends and holidays</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Historical Background */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">The Fascinating History of Galle Fort</h2>
@@ -548,7 +664,7 @@ export default function GalleFortTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
                     See More →
                   </span>
                 </CardContent>
@@ -571,7 +687,7 @@ export default function GalleFortTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Explore the lush Kanneliya rainforest, part of the Sinharaja Forest Reserve. Home to diverse flora and fauna, perfect for nature lovers.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
                     See More →
                   </span>
                 </CardContent>
@@ -594,7 +710,7 @@ export default function GalleFortTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                   Mirissa is a picturesque coastal town known for its stunning beaches and vibrant nightlife. Enjoy whale watching, water sports, and delicious seafood.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
                     See More →
                   </span>
                 </CardContent>
@@ -621,8 +737,8 @@ export default function GalleFortTravelGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Waligama</CardTitle>
-                <CardDescription>Part of a Sinharaja Forest</CardDescription>
+                <CardTitle className="text-lg">Hirikatiya</CardTitle>
+                <CardDescription>Best views of the coastline and Surfing</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
@@ -633,15 +749,15 @@ export default function GalleFortTravelGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings. 20 minutes away.
+                  Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. 30 min drive.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Waligama</CardTitle>
-                <CardDescription>Elephant gathering</CardDescription>
+                <CardTitle className="text-lg">Blue Beach</CardTitle>
+                <CardDescription>Beach that can campfire</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image

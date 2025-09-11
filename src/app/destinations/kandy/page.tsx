@@ -257,6 +257,117 @@ export default function KandyTravelGuide() {
           </Card>
         </section>
 
+        {/* How to Get to Kandy */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">How to Get to Kandy</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-blue-500" />
+                  From Colombo & Airport
+                </CardTitle>
+                <CardDescription>Multiple convenient options to reach Kandy</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+                  <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">🚂 By Train (Most Scenic)</h4>
+                  <ul className="text-sm text-green-700 dark:text-green-400 space-y-1">
+                    <li>• <strong>Duration:</strong> 3 hours from Colombo Fort Station</li>
+                    <li>• <strong>Cost:</strong> 500-1500 LKR depending on class</li>
+                    <li>• <strong>Frequency:</strong> Multiple trains daily (6:00 AM - 8:00 PM)</li>
+                    <li>• <strong>Best seats:</strong> Right side for mountain views</li>
+                    <li>• <strong>Tip:</strong> Book 1st or 2nd class for comfort</li>
+                  </ul>
+                </div>
+                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                  <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">🚌 By Bus (Budget Option)</h4>
+                  <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-1">
+                    <li>• <strong>Duration:</strong> 2.5-3 hours from Colombo</li>
+                    <li>• <strong>Cost:</strong> 200-400 LKR (very affordable)</li>
+                    <li>• <strong>Types:</strong> Government buses & private coaches</li>
+                    <li>• <strong>Departure:</strong> Bastian Mawatha Bus Station</li>
+                    <li>• <strong>Frequency:</strong> Every 30 minutes</li>
+                  </ul>
+                </div>
+                <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg">
+                  <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-2">🚗 By Car/Taxi</h4>
+                  <ul className="text-sm text-orange-700 dark:text-orange-400 space-y-1">
+                    <li>• <strong>Duration:</strong> 2.5 hours from Colombo</li>
+                    <li>• <strong>Cost:</strong> 8,000-15,000 LKR for taxi</li>
+                    <li>• <strong>Route:</strong> A1 Highway (well-maintained)</li>
+                    <li>• <strong>From Airport:</strong> 3.5 hours, 12,000-20,000 LKR</li>
+                    <li>• <strong>Best for:</strong> Families, groups, luggage convenience</li>
+                  </ul>
+                  <div className="mt-3 p-3 bg-orange-100 dark:bg-orange-800/30 rounded-md border-l-4 border-orange-400">
+                    <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                      <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Kandy. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                    </p>
+                    <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                      <div className="flex items-center gap-2">
+                        <span>📞</span>
+                        <span><strong>Contact:</strong> +94 77 123 4567</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span>✈️</span>
+                        <Link href="/airport-transfers" className="underline hover:text-orange-600 dark:hover:text-orange-300">
+                          <strong>Airport Transfer Services</strong> - Click for details & booking
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Mountain className="w-5 h-5 text-green-500" />
+                  From Other Cities
+                </CardTitle>
+                <CardDescription>Connections from popular destinations</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-purple-800 dark:text-purple-300 mb-2">🏖️ From Galle (South Coast)</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• <strong>Train:</strong> 4-5 hours via Colombo (scenic coastal route)</li>
+                    <li>• <strong>Bus:</strong> 3.5 hours direct or via Colombo</li>
+                    <li>• <strong>Car:</strong> 3 hours via A2 and A1 highways</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">🌿 From Nuwara Eliya (Hill Country)</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• <strong>Train:</strong> 3 hours (famous scenic route)</li>
+                    <li>• <strong>Bus:</strong> 2.5 hours through tea plantations</li>
+                    <li>• <strong>Car:</strong> 2 hours via A5 road (mountain driving)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-2">🦁 From Sigiriya (Cultural Triangle)</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• <strong>Bus:</strong> 2 hours direct buses available</li>
+                    <li>• <strong>Car:</strong> 1.5 hours via A6 and A9</li>
+                    <li>• <strong>Tour:</strong> Many combine both in day trips</li>
+                  </ul>
+                </div>
+                <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg mt-4">
+                  <h4 className="font-semibold text-purple-800 dark:text-purple-300 mb-2">💡 Pro Travel Tips</h4>
+                  <ul className="text-sm text-purple-700 dark:text-purple-400 space-y-1">
+                    <li>• <strong>Train booking:</strong> Reserve seats online at railway.gov.lk</li>
+                    <li>• <strong>Best travel time:</strong> Early morning for less traffic</li>
+                    <li>• <strong>Weather check:</strong> Hill roads can be foggy in evenings</li>
+                    <li>• <strong>Currency:</strong> Have small notes for bus fares</li>
+                    <li>• <strong>Language:</strong> Drivers usually speak basic English</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Temple of the Tooth */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Temple of the Tooth Relic (Sri Dalada Maligawa)</h2>
