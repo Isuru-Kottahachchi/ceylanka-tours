@@ -360,6 +360,50 @@ export default function ColomboTourGuide() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Port City Colombo */}
+            <Card>
+              <CardHeader>
+                <CardTitle>5. Port City Colombo</CardTitle>
+                <CardDescription>Sri Lanka&apos;s newest urban development marvel</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Port City Colombo showing modern skyscrapers, marina, and waterfront development"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Port City Colombo is Sri Lanka&apos;s most ambitious urban development project, built on reclaimed land 
+                      from the sea. This futuristic city-within-a-city features ultra-modern architecture, luxury residences, 
+                      world-class shopping and dining, business districts, and a state-of-the-art marina.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ultra-modern waterfront development
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Luxury shopping and fine dining venues
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        World-class marina and yacht facilities
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Stunning city and ocean views
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
@@ -367,6 +411,25 @@ export default function ColomboTourGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Modern Colombo: Shopping & Entertainment</h2>
           <div className="grid md:grid-cols-3 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Port City Colombo</CardTitle>
+                <CardDescription>Ultra-modern waterfront development</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Port City Colombo showing futuristic skyline and waterfront development"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Sri Lanka&apos;s newest and most ambitious development featuring luxury residences, shopping, business districts, and world-class marina facilities.
+                </p>
+              </CardContent>
+            </Card>
+
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">One Galle Face Mall</CardTitle>

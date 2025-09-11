@@ -434,7 +434,7 @@ export default function SigiriyaTravelGuide() {
                       <li>• <strong className="text-amber-800 dark:text-amber-200">Secret escape routes</strong> in case of enemy attacks</li>
                       <li>• <strong className="text-amber-800 dark:text-amber-200">Hidden treasure chambers</strong> where royal valuables were stored</li>
                       <li>• <strong className="text-amber-800 dark:text-amber-200">Underground water systems</strong> connecting to natural springs</li>
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Private meditation caves</strong> for the king's spiritual practices</li>
+                      <li>• <strong className="text-amber-800 dark:text-amber-200">Private meditation caves</strong> for the king&apos;s spiritual practices</li>
                     </ul>
                     <p className="text-sm text-amber-700 dark:text-slate-200 mb-3">
                       <strong className="text-amber-800 dark:text-amber-200">Why were they closed?</strong> Several factors led to sealing these interior passages:
@@ -446,7 +446,7 @@ export default function SigiriyaTravelGuide() {
                       <li>• <strong className="text-amber-800 dark:text-amber-200">Archaeological research:</strong> Ongoing studies require controlled access</li>
                     </ul>
                     <p className="text-sm text-amber-700 dark:text-slate-200 mb-3">
-                      <strong className="text-amber-800 dark:text-amber-200">H.C.P. Bell's Archaeological Work:</strong> The renowned British archaeologist H.C.P. Bell (Harry Charles Purvis Bell) conducted extensive research at Sigiriya in the early 1900s. According to local accounts and some historical references, Bell may have documented several interior passages and chambers within the rock fortress that were accessible at the time. However, these details are not 100% confirmed and should be considered as part of local folklore mixed with historical research. The reported features include:
+                      <strong className="text-amber-800 dark:text-amber-200">H.C.P. Bell&apos;s Archaeological Work:</strong> The renowned British archaeologist H.C.P. Bell (Harry Charles Purvis Bell) conducted extensive research at Sigiriya in the early 1900s. According to local accounts and some historical references, Bell may have documented several interior passages and chambers within the rock fortress that were accessible at the time. However, these details are not 100% confirmed and should be considered as part of local folklore mixed with historical research. The reported features include:
                     </p>
                     <ul className="text-sm text-amber-700 dark:text-slate-200 mb-3 ml-4 space-y-1">
                       <li>• <strong className="text-amber-800 dark:text-amber-200">Possible hidden chambers</strong> (unconfirmed accounts)</li>

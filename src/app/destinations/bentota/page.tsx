@@ -196,6 +196,21 @@ export default function BentotaGuide() {
         "/Lunugangabawa5.jpeg",
     ]
 
+    const paramotoringImages = [
+        "/placeholder.svg?height=300&width=400&text=Para+Motoring+Flight",
+        "/placeholder.svg?height=300&width=400&text=Aerial+Beach+View",
+        "/placeholder.svg?height=300&width=400&text=Paramotor+Equipment",
+        "/placeholder.svg?height=300&width=400&text=Takeoff+Scene",
+        "/placeholder.svg?height=300&width=400&text=Coastal+Aerial+View",
+    ]
+
+    const templeImages = [
+        "/placeholder.svg?height=200&width=300&text=Temple+Tunnel+Entrance",
+        "/placeholder.svg?height=200&width=300&text=Ancient+Temple+Architecture",
+        "/placeholder.svg?height=200&width=300&text=Underground+Tunnel+System",
+        "/placeholder.svg?height=200&width=300&text=Buddhist+Statues",
+    ]
+
     // Beach Safety Modal State
     const [showSafetyModal, setShowSafetyModal] = useState(false)
 
@@ -295,6 +310,23 @@ export default function BentotaGuide() {
                                         <li>• Direct route via Southern Expressway</li>
                                         <li>• Most comfortable and convenient option</li>
                                     </ul>
+                                    <div className="mt-3 p-3 bg-orange-100 dark:bg-orange-800/30 rounded-md border-l-4 border-orange-400">
+                                        <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                                            <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Bentota. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                                        </p>
+                                        <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                                            <div className="flex items-center gap-2">
+                                                <span>📞</span>
+                                                <span><strong>Contact:</strong> +94 77 123 4567</span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <span>✈️</span>
+                                                <Link href="/airport-transfers" className="underline hover:text-orange-600 dark:hover:text-orange-300">
+                                                    <strong>Airport Transfer Services</strong> - Click for details & booking
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div>
                                     <h4 className="font-semibold mb-2 text-foreground">Taxi Services</h4>
@@ -698,11 +730,11 @@ export default function BentotaGuide() {
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                <strong>Bentota Raja Maha Viharaya</strong> - Central temple complex
+                                                <strong>Bentota Udakotuwa Maha Viharaya</strong> - Central temple complex
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                <strong>Aluthgama Raja Maha Viharaya</strong> - Ancient meditation center
+                                                <strong>Gane Pansala Viharaya</strong> - Ancient meditation center
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -716,6 +748,17 @@ export default function BentotaGuide() {
                                             Wanawasa Rajamaha Viharaya, you can still see part of that tunnel, and there is also the 
                                             beginning of the tunnel at Galapatha Viharaya.
                                         </p>
+
+                                        {/* Small Image Carousel for Temple Tunnels */}
+                                        <div className="mb-4">
+                                            <ImageCarousel
+                                                images={templeImages}
+                                                alt="Ancient temple tunnels and Buddhist architecture in Bentota's Raja Maha Temples"
+                                            />
+                                            <p className="text-xs text-muted-foreground mt-2 italic text-center">
+                                                Ancient tunnel systems connecting the five Raja Maha Temples
+                                            </p>
+                                        </div>
                                         
                                         <h4 className="font-semibold mb-3 text-foreground">What You Can Experience:</h4>
                                         <ul className="space-y-2 text-muted-foreground">
@@ -811,6 +854,54 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
+                    </div>
+
+                    {/* Para Motoring Adventure */}
+                    <div className="mt-8 p-6 bg-gradient-to-r from-sky-50 to-blue-50 dark:from-sky-900/20 dark:to-blue-900/20 rounded-lg">
+                        <p className="text-center text-lg font-medium text-sky-700 dark:text-sky-300 mb-2">
+                            Wanna see Bentota in bird's eye?
+                        </p>
+                        <h3 className="text-xl font-bold mb-4 text-center">🪂 Para Motoring - Soar Above Bentota Beach</h3>
+                        
+                        <div className="grid md:grid-cols-2 gap-6 items-center mb-6">
+                            <div>
+                                <ImageCarousel
+                                    images={paramotoringImages}
+                                    alt="Para motoring adventure showing aerial views, equipment, and flight scenes over Bentota beach"
+                                />
+                                <p className="text-sm text-muted-foreground mt-2 italic text-center">
+                                    Wanna see Bentota in bird's eye? - Experience breathtaking aerial views
+                                </p>
+                            </div>
+                            <div>
+                                <p className="text-muted-foreground mb-4">
+                                    Experience the ultimate aerial adventure with para motoring over Bentota&apos;s stunning coastline! This thrilling activity combines 
+                                    the excitement of paragliding with the power of a motorized engine, giving you breathtaking bird&apos;s-eye views of the golden beaches, 
+                                    azure waters, and lush green landscape. Professional instructors ensure your safety while you enjoy 15-20 minutes of pure adrenaline 
+                                    and unforgettable views that stretch from the Indian Ocean to the tropical inland scenery.
+                                </p>
+                                <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg">
+                                    <p className="text-sm text-blue-800 dark:text-blue-300">
+                                        <strong>Duration:</strong> 15-20 minutes | <strong>Cost:</strong> $80-120 USD | <strong>Best Time:</strong> Morning or late afternoon
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="grid md:grid-cols-3 gap-4 text-center">
+                            <div className="bg-white dark:bg-slate-800 p-3 rounded-lg">
+                                <span className="text-2xl mb-2 block">🌊</span>
+                                <p className="text-sm font-medium">Coastal Views</p>
+                            </div>
+                            <div className="bg-white dark:bg-slate-800 p-3 rounded-lg">
+                                <span className="text-2xl mb-2 block">⚡</span>
+                                <p className="text-sm font-medium">Adrenaline Rush</p>
+                            </div>
+                            <div className="bg-white dark:bg-slate-800 p-3 rounded-lg">
+                                <span className="text-2xl mb-2 block">📸</span>
+                                <p className="text-sm font-medium">Aerial Photography</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -1126,27 +1217,8 @@ export default function BentotaGuide() {
                                 </CardContent>
                             </Card>
                         </Link>
-                        <Card>
-                            <CardHeader>
-                                <CardTitle className="text-lg">Kande Viharaya</CardTitle>
-                                <CardDescription>Historic Buddhist temple</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <Image
-                                    src="/Kandeviharaya.jpeg"
-                                    alt="Kande Viharaya Buddhist temple with ancient architecture and religious significance"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3"
-                                />
-                                <p className="text-sm text-muted-foreground">
-                                    Historic Buddhist temple with ancient architecture and significant religious importance. Features
-                                    traditional Sri Lankan temple design and peaceful meditation areas.
-                                </p>
-                            </CardContent>
-                        </Card>
 
-                        <Card>
+                          <Card>
                             <CardHeader>
                                 <CardTitle className="text-lg">Bawa Garden Kalawila</CardTitle>
                                 <CardDescription>Beautiful garden with diverse flora</CardDescription>
@@ -1165,6 +1237,46 @@ export default function BentotaGuide() {
                                 </p>
                             </CardContent>
                         </Card>
+                        <Card>
+                            <CardHeader>
+                                <CardTitle className="text-lg">Kalutara Temple</CardTitle>
+                                <CardDescription>Historic Buddhist temple</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Image
+                                    src="/KalutaraTemple.jpeg"
+                                    alt="Kande Viharaya Buddhist temple with ancient architecture and religious significance"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg mb-3"
+                                />
+                                <p className="text-sm text-muted-foreground">
+                                    Historic Buddhist temple with ancient architecture and significant religious importance. Features
+                                    traditional Sri Lankan temple design and peaceful meditation areas.
+                                </p>
+                            </CardContent>
+                        </Card>
+                         <Card>
+                            <CardHeader>
+                                <CardTitle className="text-lg">Richmond Castle</CardTitle>
+                                <CardDescription>Historic mansion with colonial architecture</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Image
+                                    src="/RichmondCastle.jpeg"
+                                    alt="Richmond Castle with colonial architecture and lush gardens"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg mb-3"
+                                />
+                                <p className="text-sm text-muted-foreground">
+                                    Historic Buddhist temple with ancient architecture and significant religious importance. Features
+                                    traditional Sri Lankan temple design and peaceful meditation areas.
+                                </p>
+                            </CardContent>
+                        </Card>
+
+                      
                     </div>
                 </section>
 

@@ -23,11 +23,11 @@ const exploreCategories = [
     title: "Adventure Activities",
     description: "Thrilling activities from white water rafting to zip lining across stunning landscapes",
     icon: Zap,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Kithulgala-waterrafting.jpg",
     highlights: ["White Water Rafting", "Zip Lining", "Rock Climbing", "Paragliding"],
     count: "15+ Activities",
-    href: "/explore/adventure-sports",
-    gradient: "from-orange-500 to-red-600"
+    href: "/adventure-activities",
+    // gradient: "from-orange-500 to-red-600"
   },
   {
     id: "famous-trails",
@@ -48,7 +48,7 @@ const exploreCategories = [
     image: "/Cuisineinsl.jpg",
     highlights: ["Rice & Curry", "Hoppers", "Kottu Roti", "Ceylon Tea"],
     count: "50+ Dishes",
-    href: "/explore/cuisine",
+    href: "/famous-cuisine",
     // gradient: "from-yellow-500 to-orange-600"
   },
   {
@@ -85,7 +85,7 @@ const exploreCategories = [
     // gradient: "from-teal-500 to-blue-600"
   },
   {
-    id: "gallery",
+    id: "unesco-heritage",
     title: "UNESCO Heritage",
     description: "Stunning photography showcasing Sri Lanka's natural beauty and cultural heritage",
     icon: Camera,
@@ -217,42 +217,6 @@ export default function ExplorePage() {
             <p className="text-gray-500 dark:text-gray-400">[Advertisement Space - 728x90 Leaderboard]</p>
           </div>
 
-          {/* Why Explore Sri Lanka */}
-          {/* <section className="mt-16 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-              Why Explore Sri Lanka?
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-blue-100 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Compact Diversity</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  Experience beaches, mountains, wildlife, and ancient cities all within a small island nation
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="bg-green-100 dark:bg-green-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Star className="w-8 h-8 text-green-600 dark:text-green-400" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Year-Round Destination</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  Different regions offer perfect weather throughout the year for various activities
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="bg-orange-100 dark:bg-orange-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Utensils className="w-8 h-8 text-orange-600 dark:text-orange-400" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Rich Culture</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
-                  2,500+ years of history, diverse cuisine, and warm hospitality create unforgettable experiences
-                </p>
-              </div>
-            </div>
-          </section> */}
-
           {/* Call to Action */}
           <section className="mt-16 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
@@ -264,7 +228,7 @@ export default function ExplorePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link 
-                href="/about-sri-lanka" 
+                href="/about-srilanka" 
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 Learn About Sri Lanka
