@@ -1223,19 +1223,19 @@ export default function DambullaTownGuide() {
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Every interaction in Dambulla is an opportunity to connect with the local community and understand Sri
-                  Lankan culture from the inside. Whether you're sharing a cup of tea with a market vendor, learning to
-                  make hoppers from a local family, or joining evening prayers at a neighborhood temple, you're not just
-                  observing Sri Lankan life - you're becoming part of it.
+                  Lankan culture from the inside. Whether you&apos;re sharing a cup of tea with a market vendor, learning to
+                  make hoppers from a local family, or joining evening prayers at a neighborhood temple, you&apos;re not just
+                  observing Sri Lankan life - you&apos;re becoming part of it.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  The memories you'll create in Dambulla town will be different from typical tourist experiences.
-                  They'll be personal, authentic, and deeply meaningful. You'll remember the taste of fresh king coconut
+                  The memories you&apos;ll create in Dambulla town will be different from typical tourist experiences.
+                  They&apos;ll be personal, authentic, and deeply meaningful. You&apos;ll remember the taste of fresh king coconut
                   on a hot afternoon, the sound of temple bells mixing with market calls, and the warmth of people who
                   welcomed you not as a tourist, but as a friend.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Take time to slow down and embrace the rhythm of local life. Wake up early to experience the market at
-                  its most vibrant, linger over meals to savor authentic flavors, and don't be afraid to strike up
+                  its most vibrant, linger over meals to savor authentic flavors, and don&apos;t be afraid to strike up
                   conversations with locals. Dambulla town rewards those who approach it with curiosity, respect, and an
                   open heart.
                 </p>
