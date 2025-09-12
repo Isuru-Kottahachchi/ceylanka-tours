@@ -53,7 +53,8 @@ const searchVariations: { [key: string]: string[] } = {
   "mannar": ["manar", "manaar"],
   "ambuluwawa": ["ambuluwawa", "ambuluwa"],
   "ruwanwelisaya": ["ruwanwelisaya", "ruwanwalisaya", "ruvanwelisaya", "ruvan weli saya", "great stupa"],
-  "hirikatiya": ["hiriketiya", "hirikatya", "hirikattya", "hirikatiya beach", "hiri", "hirketiya", "hirikatya", "hirikettiya"]
+  "hirikatiya": ["hiriketiya", "hirikatya", "hirikattya", "hirikatiya beach", "hiri", "hirketiya", "hirikatya", "hirikettiya"],
+  "kalpitiya": ["kalpitya", "kalpitiya", "kalpitiya beach"],
 }
 
 // Function to normalize search terms
@@ -250,6 +251,16 @@ const destinations: Destination[] = [
     image: "/jungle-beach.jpeg",
     description: "Beach surrounded by jungle with golden sands and clear waters",
     highlights: ["Jungle", "Beach", "Clear Waters"],
+    category: "Beach",
+  },
+     {
+    id: 14,
+    name: "Kalpitiya",
+    location: "North Western Province",
+    path: "kalpitiya",
+    image: "/Kalpitiya.jpeg",
+    description: "Beautiful beach destination known for its lagoons and water sports",
+    highlights: ["Kitesurfing", "Dolphin Watching", "Pristine Beaches"],
     category: "Beach",
   },
   {
