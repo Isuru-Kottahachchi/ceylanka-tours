@@ -65,7 +65,7 @@ export default function MahiyanganaayaTravelGuide() {
               remained largely unchanged through the centuries.
             </p>
             <p className="text-lg">
-              Far from the tourist crowds, Mahiyanganaya offers visitors an authentic glimpse into Sri Lanka's spiritual
+              Far from the tourist crowds, Mahiyanganaya offers visitors an authentic glimpse into Sri Lanka&apos;s spiritual
               heart and rural life. Here, ancient traditions live on, sacred sites inspire reverence, and the natural
               landscape provides a serene backdrop for reflection and discovery. This hidden gem represents the essence
               of Sri Lankan Buddhism and cultural heritage.
@@ -147,7 +147,7 @@ export default function MahiyanganaayaTravelGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                The sacred stupa where Lord Buddha's hair relic is enshrined
+                The sacred stupa where Lord Buddha&apos;s hair relic is enshrined
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
@@ -239,7 +239,7 @@ export default function MahiyanganaayaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built during the reign of King Dutugemunu (161-137 BCE), Sorabora Wewa is one of Sri Lanka's
+                      Built during the reign of King Dutugemunu (161-137 BCE), Sorabora Wewa is one of Sri Lanka&apos;s
                       ancient irrigation masterpieces. This scenic reservoir not only showcases ancient engineering
                       skills but also provides a peaceful setting surrounded by lush greenery and wildlife.
                     </p>
@@ -290,7 +290,7 @@ export default function MahiyanganaayaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Located near Mahiyanganaya, Dambana is home to the Vedda people, Sri Lanka's indigenous community.
+                      Located near Mahiyanganaya, Dambana is home to the Vedda people, Sri Lanka&apos;s indigenous community.
                       This authentic village experience offers insights into ancient traditions, hunting practices, and
                       a way of life that has remained unchanged for thousands of years.
                     </p>

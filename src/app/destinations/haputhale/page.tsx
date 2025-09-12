@@ -250,13 +250,13 @@ export default function HaputaleGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>2. Dambatenne Tea Factory</CardTitle>
-                <CardDescription>Sir Thomas Lipton's original tea factory from 1890</CardDescription>
+                <CardDescription>Sir Thomas Lipton&apos;s original tea factory from 1890</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in 1890 by Sir Thomas Lipton himself, Dambatenne Tea Factory is one of the oldest and most historic tea factories in Sri Lanka. Still operational today, it produces some of the world's finest high-grown Ceylon tea using traditional methods.
+                      Built in 1890 by Sir Thomas Lipton himself, Dambatenne Tea Factory is one of the oldest and most historic tea factories in Sri Lanka. Still operational today, it produces some of the world&apos;s finest high-grown Ceylon tea using traditional methods.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -347,20 +347,20 @@ export default function HaputaleGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                Sir Thomas Lipton's vision transformed these mountains into tea paradise
+                Sir Thomas Lipton&apos;s vision transformed these mountains into tea paradise
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                In the late 1800s, Scottish entrepreneur Sir Thomas Lipton purchased vast tracts of land around Haputale to establish his tea empire. He would often climb to the highest point - now known as Lipton's Seat - to survey his plantations and plan expansion.
+                In the late 1800s, Scottish entrepreneur Sir Thomas Lipton purchased vast tracts of land around Haputale to establish his tea empire. He would often climb to the highest point - now known as Lipton&apos;s Seat - to survey his plantations and plan expansion.
               </p>
               <p>
                 Lipton revolutionized the tea industry by controlling every aspect from plantation to packaging, creating the world's first vertically integrated tea business. His Dambatenne Tea Factory became the heart of this operation, producing premium Ceylon tea that made the Lipton brand famous worldwide.
               </p>
               <div className="bg-amber-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-amber-800 mb-2">Lipton's Legacy:</h4>
+                <h4 className="font-semibold text-amber-800 mb-2">Lipton&apos;s Legacy:</h4>
                 <ul className="text-sm text-amber-700 space-y-1">
-                  <li>• Established Ceylon tea as world's finest</li>
+                  <li>• Established Ceylon tea as world&apos;s finest</li>
                   <li>• Created first global tea brand</li>
                   <li>• Pioneered direct plantation-to-consumer sales</li>
                   <li>• Left lasting impact on Sri Lankan economy</li>
@@ -381,7 +381,7 @@ export default function HaputaleGuide() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Best visibility from Lipton's Seat</li>
+                  <li>• Best visibility from Lipton&apos;s Seat</li>
                   <li>• Clear mountain views</li>
                   <li>• Perfect sunrise photography</li>
                   <li>• Cool, comfortable temperatures</li>
@@ -552,7 +552,7 @@ export default function HaputaleGuide() {
               <CardContent>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold mb-2">Sunrise at Lipton's Seat:</h4>
+                    <h4 className="font-semibold mb-2">Sunrise at Lipton&apos;s Seat:</h4>
                     <p className="text-sm text-muted-foreground mb-2">
                       Wake up early for the most spectacular sunrise views in Sri Lanka. Clear mornings offer views across seven provinces.
                     </p>
@@ -611,7 +611,7 @@ export default function HaputaleGuide() {
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">Start your Lipton's Seat journey at 5:30 AM for best sunrise views</span>
+                  <span className="text-sm">Start your Lipton&apos;s Seat journey at 5:30 AM for best sunrise views</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -646,7 +646,7 @@ export default function HaputaleGuide() {
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">Roads to Lipton's Seat can be challenging in wet weather</span>
+                  <span className="text-sm">Roads to Lipton&apos;s Seat can be challenging in wet weather</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
@@ -683,7 +683,7 @@ export default function HaputaleGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Experience Sri Lanka's most perfect climate and visit the ancient Dowa Rock Temple.
+                  Experience Sri Lanka&apos;s most perfect climate and visit the ancient Dowa Rock Temple.
                 </p>
               </CardContent>
             </Card>
@@ -702,7 +702,7 @@ export default function HaputaleGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Visit the iconic Nine Arch Bridge and hike Little Adam's Peak for more stunning views.
+                  Visit the iconic Nine Arch Bridge and hike Little Adam&apos;s Peak for more stunning views.
                 </p>
               </CardContent>
             </Card>
@@ -721,7 +721,7 @@ export default function HaputaleGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Explore Sri Lanka's "Little England" with colonial charm and beautiful lake scenery.
+                  Explore Sri Lanka&apos;s &quot;Little England&quot; with colonial charm and beautiful lake scenery.
                 </p>
               </CardContent>
             </Card>

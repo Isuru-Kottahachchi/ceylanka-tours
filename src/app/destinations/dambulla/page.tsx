@@ -85,8 +85,8 @@ export default function DambullaTownGuide() {
               From the crack of dawn when the wholesale market comes alive with trucks loaded with fresh vegetables, to
               the evening when families gather at local temples for prayers, Dambulla offers an immersive experience
               into authentic Sri Lankan life. The town serves as the perfect base for exploring the cultural triangle,
-              but more importantly, it provides a window into the soul of Sri Lanka - a place where hospitality isn't
-              just a business practice, it's a way of life.
+              but more importantly, it provides a window into the soul of Sri Lanka - a place where hospitality isn&apos;t
+              just a business practice, it&apos;s a way of life.
             </p>
           </div>
         </section>
@@ -705,7 +705,7 @@ export default function DambullaTownGuide() {
               <CardHeader className="bg-gradient-to-r from-orange-50 to-red-50">
                 <CardTitle className="text-2xl text-orange-800">Dambulla Dedicated Economic Centre</CardTitle>
                 <CardDescription className="text-lg text-orange-600">
-                  Sri Lanka's largest wholesale market - a sensory explosion of colors, aromas, and energy
+                  Sri Lanka&apos;s largest wholesale market - a sensory explosion of colors, aromas, and energy
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-8">
@@ -719,23 +719,23 @@ export default function DambullaTownGuide() {
                   />
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      The Dambulla Dedicated Economic Centre is not just a market - it's the agricultural heartbeat of
+                      The Dambulla Dedicated Economic Centre is not just a market - it&apos;s the agricultural heartbeat of
                       Sri Lanka. This massive complex, covering over 27 hectares, comes alive every day before dawn as
                       trucks loaded with fresh produce arrive from farms across the island. By 4:00 AM, the market is
                       buzzing with activity as wholesale traders, retailers, and buyers from across the country gather
-                      to trade everything from exotic tropical fruits to the freshest vegetables you've ever seen.
+                      to trade everything from exotic tropical fruits to the freshest vegetables you&apos;ve ever seen.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       Walking through this market is like experiencing a symphony of Sri Lankan agriculture. The air is
                       filled with the sweet aroma of ripe mangoes, the earthy scent of fresh root vegetables, and the
                       spicy fragrance of chilies and herbs. Vendors call out prices in Sinhala and Tamil, creating a
-                      multilingual chorus that reflects Sri Lanka's diverse culture. The colors are absolutely stunning
+                      multilingual chorus that reflects Sri Lanka&apos;s diverse culture. The colors are absolutely stunning
                       - pyramids of bright red tomatoes, mountains of golden bananas, and rows of deep purple eggplants
                       create a visual feast.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      What makes this market truly special is its role in Sri Lankan society. This isn't just commerce -
-                      it's community. Families have been trading here for generations, passing down knowledge about
+                      What makes this market truly special is its role in Sri Lankan society. This isn&apos;t just commerce -
+                      it&apos;s community. Families have been trading here for generations, passing down knowledge about
                       seasonal produce, quality assessment, and the art of negotiation. The relationships between
                       farmers, wholesalers, and retailers are built on decades of trust and mutual respect.
                     </p>
@@ -793,18 +793,18 @@ export default function DambullaTownGuide() {
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      Dambulla's food scene is a delicious journey through authentic Sri Lankan cuisine, where family
+                      Dambulla&apos;s food scene is a delicious journey through authentic Sri Lankan cuisine, where family
                       recipes have been perfected over generations and every meal tells a story. Unlike tourist-oriented
                       restaurants, the local eateries in Dambulla serve food the way Sri Lankan families have been
                       preparing it for centuries - with love, tradition, and the freshest ingredients from the nearby
                       market.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      The town's location at the heart of Sri Lanka's agricultural region means that restaurants here
+                      The town&apos;s location at the heart of Sri Lanka&apos;s agricultural region means that restaurants here
                       have access to the freshest vegetables, fruits, and spices. Local cooks take pride in their curry
                       preparations, often grinding their own spice mixtures and using traditional clay pots that impart
-                      unique flavors to the food. The result is cuisine that's more authentic and flavorful than what
-                      you'll find in most tourist areas.
+                      unique flavors to the food. The result is cuisine that&apos;s more authentic and flavorful than what
+                      you&apos;ll find in most tourist areas.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       Street food culture thrives in Dambulla, with vendors setting up stalls near the market, bus

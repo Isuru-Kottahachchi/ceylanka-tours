@@ -66,7 +66,7 @@ export default function MihintaleGuide() {
             </p>
             <p className="text-lg">
               Climbing the 1,840 ancient stone steps to the top of Mihintale is like taking a journey through time.
-              Along the way, you'll see beautiful stupas, ancient ruins, and peaceful meditation spots. The mountain
+              Along the way, you&apos;ll see beautiful stupas, ancient ruins, and peaceful meditation spots. The mountain
               offers amazing views and a spiritual atmosphere that has inspired pilgrims for over 22 centuries. Every
               full moon day, thousands of people climb these steps to pay their respects at this holy place.
             </p>
@@ -119,7 +119,7 @@ export default function MihintaleGuide() {
                   <div className="flex items-center gap-2">
                     <Star className="w-4 h-4 text-yellow-500" />
                     <span>
-                      <strong>Significance:</strong> Buddhism's arrival in Sri Lanka
+                      <strong>Significance:</strong> Buddhism&apos;s arrival in Sri Lanka
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
