@@ -1023,7 +1023,7 @@ export default function DambullaTownGuide() {
                     <h4 className="font-semibold text-lg mb-2">Market Interactions</h4>
                     <p className="text-sm text-muted-foreground mb-2">
                       Bargaining is expected in markets, but do it with a smile and respect. Vendors appreciate
-                      customers who show genuine interest in their products. Don't be afraid to ask about unfamiliar
+                      customers who show genuine interest in their products. Don&apos;t be afraid to ask about unfamiliar
                       fruits or vegetables - locals love sharing knowledge about their produce.
                     </p>
                     <p className="text-xs text-blue-600 font-medium">
@@ -1034,7 +1034,7 @@ export default function DambullaTownGuide() {
                   <div className="border-l-4 border-purple-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Religious Respect</h4>
                     <p className="text-sm text-muted-foreground mb-2">
-                      When visiting local temples, dress modestly and remove shoes. Don't point your feet toward Buddha
+                      When visiting local temples, dress modestly and remove shoes. Don&apos;t point your feet toward Buddha
                       statues or monks. If invited to participate in ceremonies, follow the lead of locals. Photography
                       is usually okay, but ask permission first.
                     </p>
@@ -1045,8 +1045,8 @@ export default function DambullaTownGuide() {
                     <h4 className="font-semibold text-lg mb-2">Hospitality Culture</h4>
                     <p className="text-sm text-muted-foreground mb-2">
                       Sri Lankan hospitality is legendary, and Dambulla locals embody this tradition. If invited to
-                      someone's home, it's a great honor. Bring a small gift like sweets or fruit. Don't be surprised if
-                      you're offered tea or a meal - refusing might be considered rude.
+                      someone&apos;s home, it&apos;s a great honor. Bring a small gift like sweets or fruit. Don&apos;t be surprised if
+                      you&apos;re offered tea or a meal - refusing might be considered rude.
                     </p>
                     <p className="text-xs text-orange-600 font-medium">
                       Always accept at least a cup of tea when offered
@@ -1217,8 +1217,8 @@ export default function DambullaTownGuide() {
               <div className="space-y-6 text-center">
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Dambulla town offers something that no tourist attraction can provide - the authentic soul of Sri
-                  Lanka. Here, in the bustling markets, family-run restaurants, and community temples, you'll discover
-                  the real heart of this beautiful island nation. This is where Sri Lankan hospitality isn't a business
+                  Lanka. Here, in the bustling markets, family-run restaurants, and community temples, you&apos;ll discover
+                  the real heart of this beautiful island nation. This is where Sri Lankan hospitality isn&apos;t a business
                   strategy, but a genuine way of life that has been passed down through generations.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">

@@ -168,7 +168,7 @@ export default function MihintaleGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Mahinda was Emperor Ashoka's son
+                        Mahinda was Emperor Ashoka&apos;s son
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -354,7 +354,7 @@ export default function MihintaleGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        "Ambasthala" means mango place
+                        &quot;Ambasthala&quot; means mango place
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -411,7 +411,7 @@ export default function MihintaleGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-blue-600">What You'll See Along the Way</CardTitle>
+                <CardTitle className="text-blue-600">What You&apos;ll See Along the Way</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
@@ -494,7 +494,7 @@ export default function MihintaleGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Climbing Advice</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Take your time, don't rush</li>
+                    <li>• Take your time, don&apos;t rush</li>
                     <li>• Rest at the designated areas</li>
                     <li>• Stay hydrated throughout</li>
                     <li>• Be respectful to other pilgrims</li>
@@ -507,7 +507,7 @@ export default function MihintaleGuide() {
                     <li>• Remove shoes at sacred areas</li>
                     <li>• Dress modestly (cover shoulders/knees)</li>
                     <li>• Speak quietly and respectfully</li>
-                    <li>• Don't point feet toward stupas</li>
+                    <li>• Don&apos;t point feet toward stupas</li>
                   </ul>
                 </div>
               </CardContent>
@@ -523,14 +523,14 @@ export default function MihintaleGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Climbing Mihintale is more than just a physical journey - it's a spiritual pilgrimage that connects you
+                Climbing Mihintale is more than just a physical journey - it&apos;s a spiritual pilgrimage that connects you
                 with the very beginning of Buddhism in Sri Lanka. Every step you take follows the path of countless
                 pilgrims who have climbed this sacred mountain for over 2,200 years, all seeking the same peace and
                 wisdom that Arahat Mahinda brought to this island.
               </p>
               <p className="text-muted-foreground mb-4">
                 When you reach the summit and stand before the Mahaseya Dagoba, take a moment to appreciate the
-                incredible history of this place. You're standing where one of the most important conversations in Sri
+                incredible history of this place. You&apos;re standing where one of the most important conversations in Sri
                 Lankan history took place, and where the spiritual foundation of an entire nation was laid.
               </p>
               <p className="text-muted-foreground font-medium">
