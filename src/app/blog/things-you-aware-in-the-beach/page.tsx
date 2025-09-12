@@ -776,7 +776,7 @@ export default function BeachSafetyGuide() {
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                                            <span><strong>Don't swim to them:</strong> You might drown too</span>
+                                            <span><strong>Don&apos;t swim to them:</strong> You might drown too</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
@@ -889,7 +889,7 @@ export default function BeachSafetyGuide() {
                                     </Badge>
                                 </div>
                                 <p className="text-sm text-muted-foreground italic">
-                                    "The sea doesn't care if you're a good swimmer. It only cares if you're smart."
+                                    "                                    &quot;The sea doesn&apos;t care if you&apos;re a good swimmer. It only cares if you&apos;re smart.&quot;"
                                 </p>
                             </div>
                         </CardContent>

@@ -1,26 +1,107 @@
-import type { Metadata } from "next"
+"use client"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Palmtree } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Palmtree, X, AlertTriangle, Shield } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { useState, useEffect } from "react"
 
-export const metadata: Metadata = {
-  title: "Pasikuda Sri Lanka: Complete Beach Guide 2025 | Pristine Bay & Shallow Waters",
-  description:
-    "Discover Pasikuda, Sri Lankas pristine eastern beach paradise. Complete guide to shallow coral bay, luxury resorts, water sports, and the perfect tropical getaway.",
-  keywords:
-    "Pasikuda beach, Sri Lanka beaches, shallow bay, coral reef, luxury resorts, water sports, eastern coast, tropical paradise",
-  openGraph: {
-    title: "Pasikuda: Complete Beach Guide 2025",
-    description: "Your ultimate guide to Sri Lankas pristine eastern beach paradise",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
+// Beach Safety Popup Modal Component
+function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+    if (!isOpen) return null
+
+    return (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white dark:bg-gray-800 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
+                <div className="relative p-6">
+                    {/* Close button */}
+                    <Button
+                        variant="ghost"
+                        size="icon"
+                        className="absolute right-2 top-2 h-8 w-8"
+                        onClick={onClose}
+                    >
+                        <X className="h-4 w-4" />
+                    </Button>
+
+                    {/* Modal content */}
+                    <div className="text-center space-y-4">
+                        <div className="flex justify-center">
+                            <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full">
+                                <Waves className="h-8 w-8 text-blue-600" />
+                            </div>
+                        </div>
+                        
+                        <h2 className="text-2xl font-bold text-foreground">Stay Safe at Pasikuda Beach!</h2>
+                        
+                        <p className="text-muted-foreground text-sm leading-relaxed">
+                            Before you enjoy Pasikuda's crystal-clear shallow waters, learn about important beach safety, 
+                            including seasonal conditions, sea creatures, and emergency procedures.
+                        </p>
+
+                        <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
+                            <div className="flex items-center gap-2 mb-2">
+                                <AlertTriangle className="h-5 w-5 text-orange-600" />
+                                <h3 className="font-semibold text-orange-800 dark:text-orange-400">Important Safety Topics:</h3>
+                            </div>
+                            <ul className="text-sm text-orange-700 dark:text-orange-300 space-y-1 text-left">
+                                <li>• Northeast monsoon safety (Oct-Feb)</li>
+                                <li>• Identifying dangerous sea creatures</li>
+                                <li>• Understanding coral reef areas</li>
+                                <li>• Emergency procedures and contacts</li>
+                            </ul>
+                        </div>
+
+                        <div className="space-y-3">
+                            <Link href="/blog/things-you-aware-in-the-beach">
+                                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                                    <Shield className="w-4 h-4 mr-2" />
+                                    Read Complete Beach Safety Guide
+                                </Button>
+                            </Link>
+                            
+                            <Button 
+                                variant="outline" 
+                                className="w-full"
+                                onClick={onClose}
+                            >
+                                Continue to Pasikuda Page
+                            </Button>
+                        </div>
+
+                        <p className="text-xs text-muted-foreground">
+                            Your safety is our priority. Learn these essential tips for eastern coast beaches!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default function PasikudaTravelGuide() {
+  // Beach Safety Modal State
+  const [showSafetyModal, setShowSafetyModal] = useState(false)
+
+  // Show modal after page loads
+  useEffect(() => {
+      const timer = setTimeout(() => {
+          setShowSafetyModal(true)
+      }, 1500) // Show after 1.5 seconds
+
+      return () => clearTimeout(timer)
+  }, [])
+
+  const handleCloseModal = () => {
+      setShowSafetyModal(false)
+  }
+
   return (
     <main className="min-h-screen bg-background">
+      {/* Beach Safety Modal */}
+      <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} />
+      
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image

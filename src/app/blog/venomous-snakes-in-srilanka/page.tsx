@@ -1,8 +1,7 @@
 import Image from "next/image"
-import { AlertTriangle, Shield, Phone, MapPin, Clock, Heart, Eye, ChevronRight } from "lucide-react"
+import { AlertTriangle, Shield, Phone, MapPin, Heart, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
 
@@ -63,7 +62,7 @@ export default function VenomousSnakesGuide() {
                         </p>
                         <p className="text-lg mb-4">
                             About 20 snake species in Sri Lanka are venomous. Snake bites cause around 400 deaths each year in 
-                            Sri Lanka. But don't worry - with the right knowledge, you can stay safe and enjoy your trip.
+                            Sri Lanka. But don&apos;t worry - with the right knowledge, you can stay safe and enjoy your trip.
                         </p>
                         <p className="text-lg">
                             Remember: Most snakes are afraid of humans and will run away if they see you. Snake bites usually 
@@ -80,7 +79,7 @@ export default function VenomousSnakesGuide() {
                             <CardHeader>
                                 <CardTitle className="text-red-800 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
-                                    1. Russell's Viper (Polanga)
+                                    1. Russell&apos;s Viper (Polanga)
                                 </CardTitle>
                                 <CardDescription className="text-red-600">Most dangerous snake in Sri Lanka</CardDescription>
                             </CardHeader>
@@ -112,8 +111,8 @@ export default function VenomousSnakesGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100">
                                             <AlertDescription className="text-red-800 text-sm">
-                                                <strong>Danger:</strong> This snake doesn't move away when humans come near. 
-                                                Most snake bites in Sri Lanka are from Russell's Viper.
+                                                <strong>Danger:</strong> This snake doesn&apos;t move away when humans come near. 
+                                                Most snake bites in Sri Lanka are from Russell&apos;s Viper.
                                             </AlertDescription>
                                         </Alert>
                                     </div>
@@ -203,7 +202,7 @@ export default function VenomousSnakesGuide() {
                                         <Alert className="border-red-400 bg-red-100">
                                             <AlertDescription className="text-red-800 text-sm">
                                                 <strong>Very Dangerous:</strong> Kraits hunt at night and can enter houses. 
-                                                Their bite has no pain, so people don't know they were bitten!
+                                                Their bite has no pain, so people don&apos;t know they were bitten!
                                             </AlertDescription>
                                         </Alert>
                                     </div>
@@ -493,11 +492,11 @@ export default function VenomousSnakesGuide() {
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                        <span><strong>Don't touch:</strong> Never try to catch or kill a snake</span>
+                                        <span><strong>Don&apos;t touch:</strong> Never try to catch or kill a snake</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                        <span><strong>Stay on paths:</strong> Don't walk through tall grass or bushes</span>
+                                        <span><strong>Stay on paths:</strong> Don&apos;t walk through tall grass or bushes</span>
                                     </li>
                                 </ul>
                             </CardContent>

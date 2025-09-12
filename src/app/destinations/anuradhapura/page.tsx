@@ -341,8 +341,8 @@ export default function AnuradhapuraTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/Jetavanaramaya.jpg"
-                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    src="/Jethavanaramaya.jpg"
+                    alt="Massive Jethavanaramaya dagoba showing its impressive scale and ancient brick construction"
                     width={400}
                     height={300}
                     className="rounded-lg"
@@ -372,12 +372,12 @@ export default function AnuradhapuraTravelGuide() {
                       </li>
                     </ul>
                     <div className="relative mt-6">
-                      <Link href="/destinations/jetavanaramaya">
+                      <Link href="/destinations/jethawanaramaya">
                         <Button
                           className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                           variant="default"
                         >
-                          Visit Jetavanaramaya Dagoba
+                          Visit Jethawanaramaya Dagoba
                         </Button>
                       </Link>
                       {/* Blinking finger pointer pointing to button */}
@@ -721,6 +721,9 @@ export default function AnuradhapuraTravelGuide() {
                     <li>• Ancient hospital and medical facilities</li>
                     <li>• Samadhi Buddha statue</li>
                   </ul>
+                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
+                    Discover More →
+                  </span>
                 </div>
               </CardContent>
             </Card>
@@ -744,6 +747,9 @@ export default function AnuradhapuraTravelGuide() {
                     <li>• Surrounded by stone pillars</li>
                     <li>• Restored multiple times</li>
                   </ul>
+                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
+                    Learn More →
+                  </span>
                 </div>
               </CardContent>
             </Card>
@@ -778,7 +784,7 @@ export default function AnuradhapuraTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Famous for the &quot;Isurumuniya Lovers&quot; carving and beautiful rock-cut architecture from the 3rd century BC.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
                     See More →
                   </span>
                 </CardContent>
@@ -802,7 +808,7 @@ export default function AnuradhapuraTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Explore the mysterious Ranmusu uyana, an ancient site with unique stone carvings and a universal stargate.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
                     See More →
                   </span>
                 </CardContent>
@@ -825,7 +831,7 @@ export default function AnuradhapuraTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                    Just a few kilometers from Anuradhapura, Mihinthalaya is a sacred site where Buddhism was first introduced to Sri Lanka.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
+                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
                     See More →
                   </span>
                 </CardContent>
@@ -849,6 +855,9 @@ export default function AnuradhapuraTravelGuide() {
                 <p className="text-sm text-muted-foreground">
                   Masterpieces of ancient stone carving found at temple entrances, depicting Buddhist philosophy in art.
                 </p>
+                <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
+                  Learn More →
+                </span>
               </CardContent>
             </Card>
 
@@ -868,6 +877,9 @@ export default function AnuradhapuraTravelGuide() {
                 <p className="text-sm text-muted-foreground">
                   Sophisticated bathing pools for monks, showcasing advanced hydraulic engineering from ancient times.
                 </p>
+                <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
+                  Explore More →
+                </span>
               </CardContent>
             </Card>
           </div>
