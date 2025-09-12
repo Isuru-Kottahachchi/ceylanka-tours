@@ -3,7 +3,6 @@ import { MapPin, Clock, Camera, Waves, TreePine, Car, Bus, Bike, Star, Users, Ca
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
 
 export const metadata = {
   title: "Jungle Beach Unawatuna - Hidden Paradise in Roomassala | Ceylon Ka Tours",
@@ -43,7 +42,7 @@ export default function JungleBeachPage() {
             </Badge>
             <Badge variant="secondary" className="bg-orange-600/80 text-white border-orange-500">
               <Mountain className="w-4 h-4 mr-1" />
-              Hanuman's Hill
+              Hanuman&apos;s Hill
             </Badge>
           </div>
         </div>
@@ -85,11 +84,11 @@ export default function JungleBeachPage() {
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">
-            Discover Sri Lanka's Hidden Beach Paradise
+            Discover Sri Lanka&apos;s Hidden Beach Paradise
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Jungle Beach is one of Sri Lanka's best-kept secrets, hidden away on the mystical Roomassala Hill near 
+              Jungle Beach is one of Sri Lanka&apos;s best-kept secrets, hidden away on the mystical Roomassala Hill near 
               Unawatuna. This pristine beach offers crystal-clear waters, dramatic rocky cliffs, and a jungle backdrop 
               that makes it feel like your own private paradise.
             </p>
@@ -107,7 +106,7 @@ export default function JungleBeachPage() {
 
         {/* Hanuman and Roomassala Connection */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-orange-800 dark:text-orange-400">Hanuman's Sacred Connection to Roomassala</h2>
+          <h2 className="text-3xl font-bold mb-6 text-orange-800 dark:text-orange-400">Hanuman&apos;s Sacred Connection to Roomassala</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <Image
@@ -129,7 +128,7 @@ export default function JungleBeachPage() {
                 <CardContent>
                   <p className="text-orange-700 dark:text-orange-300 mb-4">
                     According to the ancient Ramayana epic, Roomassala Hill is where the mighty Hanuman landed when 
-                    he carried a piece of the Himalayas to heal Lakshmana, Lord Rama's brother.
+                    he carried a piece of the Himalayas to heal Lakshmana, Lord Rama&apos;s brother.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
@@ -661,7 +660,7 @@ export default function JungleBeachPage() {
                   <li>• Wear proper hiking shoes for rocky paths</li>
                   <li>• Bring plenty of water - no shops on the way</li>
                   <li>• Use sunscreen and wear a hat</li>
-                  <li>• Don't go alone - travel in groups</li>
+                  <li>• Don&apos;t go alone - travel in groups</li>
                   <li>• Be careful on wet rocks near water</li>
                   <li>• Check weather conditions before visiting</li>
                   <li>• Inform someone of your plans</li>
@@ -726,7 +725,7 @@ export default function JungleBeachPage() {
         <section className="text-center py-12 bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-950/20 dark:to-green-950/20 rounded-lg">
           <h2 className="text-3xl font-bold mb-4">Ready to Discover Jungle Beach?</h2>
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Experience the magic of Sri Lanka's hidden paradise where mythology meets natural beauty. 
+            Experience the magic of Sri Lanka&apos;s hidden paradise where mythology meets natural beauty. 
             Start planning your adventure to this sacred and stunning destination today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Eye, TreePine } from 'lucide-react'
+import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Eye, TreePine } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
@@ -39,11 +39,11 @@ export default function HaputaleGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Haputale</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Home of World-Famous Lipton's Seat</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Home of World-Famous Lipton&apos;s Seat</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Eye className="w-4 h-4 mr-1" />
-              World's Best Tea Views
+              World&apos;s Best Tea Views
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Mountain className="w-4 h-4 mr-1" />
@@ -70,7 +70,7 @@ export default function HaputaleGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Haputale: Where Tea Meets the Sky</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Perched dramatically on the edge of Sri Lanka's central highlands at 1,431 meters above sea level, Haputale is home to one of the world's most spectacular viewpoints - Lipton's Seat. This small mountain town offers breathtaking panoramic views that stretch across seven provinces on a clear day.
+              Perched dramatically on the edge of Sri Lanka&apos;s central highlands at 1,431 meters above sea level, Haputale is home to one of the world&apos;s most spectacular viewpoints - Lipton&apos;s Seat. This small mountain town offers breathtaking panoramic views that stretch across seven provinces on a clear day.
             </p>
             <p className="text-lg">
               Named after Sir Thomas Lipton, the tea magnate who used this vantage point to survey his vast tea empire, Haputale combines stunning natural beauty with rich tea heritage. From the historic Dambatenne Tea Factory to the charming Adisham Monastery, this destination offers unforgettable experiences at the edge of the world.
@@ -92,7 +92,7 @@ export default function HaputaleGuide() {
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Eye className="w-4 h-4 text-blue-500" />
-                    <span><strong>Famous For:</strong> Lipton's Seat Viewpoint</span>
+                    <span><strong>Famous For:</strong> Lipton&apos;s Seat Viewpoint</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Mountain className="w-4 h-4 text-green-500" />
@@ -207,8 +207,8 @@ export default function HaputaleGuide() {
             {/* Lipton's Seat */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Lipton's Seat</CardTitle>
-                <CardDescription>World's most famous tea plantation viewpoint</CardDescription>
+                <CardTitle>1. Lipton&apos;s Seat</CardTitle>
+                <CardDescription>World&apos;s most famous tea plantation viewpoint</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -221,7 +221,7 @@ export default function HaputaleGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      At 1,970 meters above sea level, Lipton's Seat offers one of the world's most spectacular viewpoints. On clear days, you can see across seven provinces, with endless tea plantations rolling like green carpets to the horizon. Sir Thomas Lipton used this spot to survey his tea empire.
+                      At 1,970 meters above sea level, Lipton&apos;s Seat offers one of the world&apos;s most spectacular viewpoints. On clear days, you can see across seven provinces, with endless tea plantations rolling like green carpets to the horizon. Sir Thomas Lipton used this spot to survey his tea empire.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">

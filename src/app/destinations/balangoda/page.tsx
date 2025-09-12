@@ -74,8 +74,8 @@ export default function BalangodaGuide() {
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
               Nestled in the Ratnapura District of Sabaragamuwa Province, Balangoda holds a unique place in human
-              history as the discovery site of "Balangoda Man" - prehistoric human remains dating back 37,000 years.
-              This fascinating town offers visitors a rare glimpse into Sri Lanka's ancient past through archaeological
+              history as the discovery site of &quot;Balangoda Man&quot; - prehistoric human remains dating back 37,000 years.
+              This fascinating town offers visitors a rare glimpse into Sri Lanka&apos;s ancient past through archaeological
               wonders and traditional crafts.
             </p>
             <p className="text-lg">
@@ -169,7 +169,7 @@ export default function BalangodaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The discovery of "Balangoda Man" in 1986 revolutionized understanding of prehistoric Sri Lanka.
+                      The discovery of &quot;Balangoda Man&quot; in 1986 revolutionized understanding of prehistoric Sri Lanka.
                       These archaeological sites contain evidence of human habitation spanning 37,000 years, making them
                       among the most significant prehistoric discoveries in South Asia.
                     </p>
@@ -299,7 +299,7 @@ export default function BalangodaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                     BAKERS BEND is a breathtaking viewpoint located in the Balangoda region, offering panoramic views of the surrounding mountains and valleys. This scenic spot is perfect for photography enthusiasts and nature lovers, providing a serene escape into the heart of Sri Lanka's natural beauty.
+                     BAKERS BEND is a breathtaking viewpoint located in the Balangoda region, offering panoramic views of the surrounding mountains and valleys. This scenic spot is perfect for photography enthusiasts and nature lovers, providing a serene escape into the heart of Sri Lanka&apos;s natural beauty.
                      <br />
                      <strong>Important:</strong>
                      The Nonpareil road is considered one of the challenging and dangerous roads in Sri Lanka. It is highly recommended to use a 4x4 vehicle to access this location. The road is steep and narrow, with sharp turns and steep drops, making it unsuitable for regular cars.
@@ -429,13 +429,13 @@ export default function BalangodaGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                Balangoda Man represents one of South Asia's most significant prehistoric discoveries
+                Balangoda Man represents one of South Asia&apos;s most significant prehistoric discoveries
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                In 1986, archaeologists made a groundbreaking discovery in Balangoda's cave systems - human remains
-                dating back 37,000 years. This prehistoric human, dubbed "Balangoda Man," represents one of the earliest
+                In 1986, archaeologists made a groundbreaking discovery in Balangoda&apos;s cave systems - human remains
+                dating back 37,000 years. This prehistoric human, dubbed &quot;Balangoda Man,&quot; represents one of the earliest
                 known inhabitants of Sri Lanka and provides crucial insights into human migration patterns in South
                 Asia.
               </p>
@@ -827,14 +827,14 @@ export default function BalangodaGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Explore Sri Lanka's gem capital with mine visits, gem museums, and traditional cutting workshops.
+                  Explore Sri Lanka&apos;s gem capital with mine visits, gem museums, and traditional cutting workshops.
                 </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Adam's Peak</CardTitle>
+                <CardTitle className="text-lg">Adam&apos;s Peak</CardTitle>
                 <CardDescription>Sacred mountain - 2 hours</CardDescription>
               </CardHeader>
               <CardContent>
@@ -846,7 +846,7 @@ export default function BalangodaGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Climb the sacred Adam's Peak for spiritual experiences and spectacular sunrise views.
+                  Climb the sacred Adam&apos;s Peak for spiritual experiences and spectacular sunrise views.
                 </p>
               </CardContent>
             </Card>
@@ -880,13 +880,13 @@ export default function BalangodaGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Balangoda offers a unique opportunity to connect with Sri Lanka's prehistoric past while experiencing
+                Balangoda offers a unique opportunity to connect with Sri Lanka&apos;s prehistoric past while experiencing
                 authentic traditional crafts and stunning natural beauty. From the groundbreaking archaeological
                 discoveries to the serene waters of Samanalawewa Reservoir, this destination provides insights into both
                 ancient and modern Sri Lankan life.
               </p>
               <p className="text-muted-foreground mb-4">
-                Whether you're fascinated by prehistoric human history, interested in traditional crafts, or simply
+                Whether you&apos;re fascinated by prehistoric human history, interested in traditional crafts, or simply
                 seeking peaceful natural settings, Balangoda delivers experiences that few other destinations can match.
                 This is where 37,000 years of human history comes alive.
               </p>

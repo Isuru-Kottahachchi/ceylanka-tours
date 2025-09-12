@@ -61,24 +61,24 @@ export default function DambullaTownGuide() {
             <p className="text-xl mb-6 leading-relaxed">
               While millions of visitors come to Dambulla to see the famous cave temples, the real treasure of this
               historic town lies in its vibrant streets, bustling markets, and the warm-hearted people who call it home.
-              Dambulla town is the beating heart of Sri Lanka's central province - a place where ancient traditions
+              Dambulla town is the beating heart of Sri Lanka&apos;s central province - a place where ancient traditions
               blend seamlessly with modern life, where the aroma of fresh spices fills the air, and where every corner
               tells a story of centuries-old trading heritage.
             </p>
             <p className="text-lg mb-6">
-              This isn't just another tourist destination - Dambulla is a living, breathing community that has been a
+              This isn&apos;t just another tourist destination - Dambulla is a living, breathing community that has been a
               major trading hub for over 2,000 years. Located at the crossroads of ancient trade routes, the town has
               always been a melting pot of cultures, religions, and traditions. Today, it continues this legacy as one
-              of Sri Lanka's most important agricultural and commercial centers, where farmers from across the region
+              of Sri Lanka&apos;s most important agricultural and commercial centers, where farmers from across the region
               bring their finest produce to the famous Dambulla Dedicated Economic Centre - the largest wholesale market
               in the country.
             </p>
             <p className="text-lg mb-6">
-              What makes Dambulla town truly special is its authenticity. Here, you won't find tourist traps or
-              artificial experiences designed for visitors. Instead, you'll discover the real Sri Lanka - families
-              running businesses that have been passed down through generations, street food vendors who've perfected
+              What makes Dambulla town truly special is its authenticity. Here, you won&apos;t find tourist traps or
+              artificial experiences designed for visitors. Instead, you&apos;ll discover the real Sri Lanka - families
+              running businesses that have been passed down through generations, street food vendors who&apos;ve perfected
               their recipes over decades, and a community that welcomes visitors not as tourists, but as friends. The
-              town's streets are alive with the sounds of tuk-tuks, the calls of vendors, and the laughter of children
+              town&apos;s streets are alive with the sounds of tuk-tuks, the calls of vendors, and the laughter of children
               playing in temple courtyards.
             </p>
             <p className="text-lg">

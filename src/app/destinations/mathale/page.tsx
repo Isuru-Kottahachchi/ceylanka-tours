@@ -205,7 +205,7 @@ export default function MataleGuide() {
                     <p className="text-muted-foreground mb-4">
                       Dating back to the 3rd century BCE, Aluvihare Rock Temple holds immense significance in Buddhist
                       history. This is where the Tripitaka (Buddhist scriptures) were first committed to writing on palm
-                      leaves, preserving Buddha's teachings for future generations.
+                      leaves, preserving Buddha&apos;s teachings for future generations.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -303,8 +303,8 @@ export default function MataleGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                For over two millennia, Matale has been the heart of Sri Lanka's spice trade. The region's unique
-                climate and soil conditions create perfect growing environments for the world's most prized spices,
+                For over two millennia, Matale has been the heart of Sri Lanka&apos;s spice trade. The region&apos;s unique
+                climate and soil conditions create perfect growing environments for the world&apos;s most prized spices,
                 particularly Ceylon cinnamon, which is considered the finest variety globally.
               </p>
               <p>
@@ -313,11 +313,11 @@ export default function MataleGuide() {
                 methods are still used, ensuring authentic flavors and premium quality.
               </p>
               <div className="bg-amber-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-amber-800 mb-2">Matale's Famous Spices:</h4>
+                <h4 className="font-semibold text-amber-800 mb-2">Matale&apos;s Famous Spices:</h4>
                 <ul className="text-sm text-amber-700 space-y-1">
-                  <li>• Ceylon Cinnamon - World's finest variety</li>
+                  <li>• Ceylon Cinnamon - World&apos;s finest variety</li>
                   <li>• Cardamom - Premium green and white varieties</li>
-                  <li>• Black Pepper - The "King of Spices"</li>
+                  <li>• Black Pepper - The &quot;King of Spices&quot;</li>
                   <li>• Nutmeg, Cloves, and Vanilla</li>
                 </ul>
               </div>
@@ -539,7 +539,7 @@ export default function MataleGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  Take home the authentic flavors of Matale's world-famous spices.
+                  Take home the authentic flavors of Matale&apos;s world-famous spices.
                 </p>
                 <ul className="text-sm text-muted-foreground space-y-1">
                   <li>• Premium Ceylon cinnamon sticks</li>
@@ -749,7 +749,7 @@ export default function MataleGuide() {
             <CardContent>
               <p className="text-muted-foreground mb-4">
                 Matale offers a unique sensory journey through the world of spices that have shaped global cuisine for
-                millennia. From the moment you arrive, you'll be enveloped in the intoxicating aromas of cinnamon,
+                millennia. From the moment you arrive, you&apos;ll be enveloped in the intoxicating aromas of cinnamon,
                 cardamom, and pepper that have made this region famous worldwide.
               </p>
               <p className="text-muted-foreground mb-4">

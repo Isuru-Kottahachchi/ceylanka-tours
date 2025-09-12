@@ -513,7 +513,7 @@ export default function VenomousSnakesGuide() {
                                 <ul className="space-y-3 text-sm text-muted-foreground">
                                     <li className="flex items-start gap-2">
                                         <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                                        <span><strong>Rice fields:</strong> Russell's vipers love these areas</span>
+                                        <span><strong>Rice fields:</strong> Russell&apos;s vipers love these areas</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
@@ -597,34 +597,34 @@ export default function VenomousSnakesGuide() {
                                 <CardHeader>
                                     <CardTitle className="text-red-800 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
-                                        DON'T Do These Things
+                                        DON&apos;T Do These Things
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
                                     <ul className="space-y-3 text-sm text-muted-foreground">
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                                            <span><strong>Don't cut:</strong> Never cut the bite wound</span>
+                                            <span><strong>Don&apos;t cut:</strong> Never cut the bite wound</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                                            <span><strong>Don't suck:</strong> Don't try to suck out venom</span>
+                                            <span><strong>Don&apos;t suck:</strong> Don&apos;t try to suck out venom</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                                            <span><strong>Don't ice:</strong> No ice or cold water on bite</span>
+                                            <span><strong>Don&apos;t ice:</strong> No ice or cold water on bite</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                                            <span><strong>Don't tie tight:</strong> No tight bandages above bite</span>
+                                            <span><strong>Don&apos;t tie tight:</strong> No tight bandages above bite</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                                            <span><strong>Don't drink:</strong> No alcohol or coffee</span>
+                                            <span><strong>Don&apos;t drink:</strong> No alcohol or coffee</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                                            <span><strong>Don't run:</strong> Don't make person walk or run</span>
+                                            <span><strong>Don&apos;t run:</strong> Don&apos;t make person walk or run</span>
                                         </li>
                                     </ul>
                                 </CardContent>
@@ -754,7 +754,7 @@ export default function VenomousSnakesGuide() {
                                 </p>
                                 <p className="text-muted-foreground">
                                     Most snakes are actually helpful - they eat rats and other pests. Snakes are more afraid of you 
-                                    than you are of them. With simple precautions, you can explore Sri Lanka's beautiful nature safely.
+                                    than you are of them. With simple precautions, you can explore Sri Lanka&apos;s beautiful nature safely.
                                 </p>
                                 <div className="bg-green-100 p-4 rounded-lg">
                                     <p className="text-green-800 font-medium text-center">

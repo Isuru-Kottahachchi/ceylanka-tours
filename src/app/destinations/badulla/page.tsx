@@ -71,13 +71,13 @@ export default function BadullaGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Badulla: Where History Meets Nature</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Nestled in the heart of Sri Lanka's Uva Province, Badulla is a captivating blend of ancient history and
+              Nestled in the heart of Sri Lanka&apos;s Uva Province, Badulla is a captivating blend of ancient history and
               natural beauty. As the provincial capital and the terminus of the famous hill country railway line, this
-              charming city serves as the perfect gateway to explore Sri Lanka's mountainous interior.
+              charming city serves as the perfect gateway to explore Sri Lanka&apos;s mountainous interior.
             </p>
             <p className="text-lg">
               From the sacred Muthiyangana Raja Maha Vihara temple to the thundering Dunhinda Falls, Badulla offers
-              travelers an authentic Sri Lankan experience away from the typical tourist crowds. Whether you're seeking
+              travelers an authentic Sri Lankan experience away from the typical tourist crowds. Whether you&apos;re seeking
               spiritual enlightenment, natural wonders, or cultural immersion, Badulla delivers unforgettable memories.
             </p>
           </div>
@@ -203,8 +203,8 @@ export default function BadullaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Just 5km from Badulla city, Dunhinda Falls is one of Sri Lanka's most beautiful waterfalls. The
-                      name means "mist-laden" in Sinhala, perfectly describing the ethereal spray that creates rainbows
+                      Just 5km from Badulla city, Dunhinda Falls is one of Sri Lanka&apos;s most beautiful waterfalls. The
+                      name means &quot;mist-laden&quot; in Sinhala, perfectly describing the ethereal spray that creates rainbows
                       in the sunlight.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -254,8 +254,8 @@ export default function BadullaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The end point of one of the world's most scenic train journeys, Badulla Railway Station is a piece
-                      of living history. Built during British colonial times, it's where the famous Kandy-Badulla hill
+                      The end point of one of the world&apos;s most scenic train journeys, Badulla Railway Station is a piece
+                      of living history. Built during British colonial times, it&apos;s where the famous Kandy-Badulla hill
                       country train journey concludes.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -303,8 +303,8 @@ export default function BadullaGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Badulla is surrounded by some of Sri Lanka's finest tea plantations, producing world-renowned Ceylon
-                tea. The region's high altitude and cool climate create perfect conditions for growing premium tea
+                Badulla is surrounded by some of Sri Lanka&apos;s finest tea plantations, producing world-renowned Ceylon
+                tea. The region&apos;s high altitude and cool climate create perfect conditions for growing premium tea
                 varieties.
               </p>
               <p>
@@ -391,7 +391,7 @@ export default function BadullaGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>By Train (Recommended)</CardTitle>
-                <CardDescription>One of the world's most scenic railway journeys</CardDescription>
+                <CardDescription>One of the world&apos;s most scenic railway journeys</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div>
@@ -574,7 +574,7 @@ export default function BadullaGuide() {
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">Carry cash - many local places don't accept cards</span>
+                  <span className="text-sm">Carry cash - many local places don&apos;t accept cards</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -638,7 +638,7 @@ export default function BadullaGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Visit the famous Nine Arch Bridge, Little Adam's Peak, and enjoy the cool mountain climate.
+                  Visit the famous Nine Arch Bridge, Little Adam&apos;s Peak, and enjoy the cool mountain climate.
                 </p>
               </CardContent>
             </Card>
@@ -665,7 +665,7 @@ export default function BadullaGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Haputale</CardTitle>
-                <CardDescription>Lipton's Seat viewpoint - 1.5 hours</CardDescription>
+                <CardDescription>Lipton&apos;s Seat viewpoint - 1.5 hours</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
@@ -676,7 +676,7 @@ export default function BadullaGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Experience world-famous Lipton's Seat viewpoint and Dambatenne Tea Factory.
+                  Experience world-famous Lipton&apos;s Seat viewpoint and Dambatenne Tea Factory.
                 </p>
               </CardContent>
             </Card>
@@ -692,7 +692,7 @@ export default function BadullaGuide() {
             <CardContent>
               <p className="text-muted-foreground mb-4">
                 Badulla offers the perfect blend of spiritual heritage, natural beauty, and cultural authenticity.
-                Whether you arrive by the scenic railway or winding mountain roads, you'll discover a side of Sri Lanka
+                Whether you arrive by the scenic railway or winding mountain roads, you&apos;ll discover a side of Sri Lanka
                 that few tourists experience.
               </p>
               <p className="text-muted-foreground mb-4">
@@ -700,7 +700,7 @@ export default function BadullaGuide() {
                 walks to railway station nostalgia, Badulla provides memories that will last a lifetime.
               </p>
               <p className="text-muted-foreground font-medium">
-                Plan your visit to this hidden gem and experience the authentic heart of Sri Lanka's hill country! 🏔️🚂
+                Plan your visit to this hidden gem and experience the authentic heart of Sri Lanka&apos;s hill country! 🏔️🚂
               </p>
             </CardContent>
           </Card>

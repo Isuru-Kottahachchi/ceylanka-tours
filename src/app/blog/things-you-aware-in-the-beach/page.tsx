@@ -889,7 +889,7 @@ export default function BeachSafetyGuide() {
                                     </Badge>
                                 </div>
                                 <p className="text-sm text-muted-foreground italic">
-                                    "                                    &quot;The sea doesn&apos;t care if you&apos;re a good swimmer. It only cares if you&apos;re smart.&quot;"
+                                    &quot;The sea doesn&apos;t care if you&apos;re a good swimmer. It only cares if you&apos;re smart.&quot;
                                 </p>
                             </div>
                         </CardContent>
