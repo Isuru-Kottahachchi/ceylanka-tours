@@ -1,24 +1,24 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, TreePine, Thermometer } from 'lucide-react'
+import {  MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, TreePine, Thermometer } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 
 export const metadata: Metadata = {
-  title: "Bandarawela Travel Guide 2024: Cool Climate Paradise | Sri Lanka Hill Country",
+  title: "Bandarawela Travel Guide 2025: Cool Climate Paradise | Sri Lanka Hill Country",
   description: "Discover Bandarawela, Sri Lanka's perfect climate hill station. Complete guide to Dowa Rock Temple, tea estates, colonial architecture, and mountain adventures.",
   keywords: "Bandarawela Sri Lanka, Dowa Rock Temple, hill country, tea plantations, colonial architecture, cool climate, travel guide",
   authors: [{ name: "Sri Lanka Travel Expert" }],
   openGraph: {
-    title: "Bandarawela Travel Guide 2024: Cool Climate Paradise",
+    title: "Bandarawela Travel Guide 2025: Cool Climate Paradise",
     description: "Your complete guide to Bandarawela - perfect weather, ancient temples, and tea country charm",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bandarawela Travel Guide 2024: Cool Climate Paradise",
+    title: "Bandarawela Travel Guide 2025: Cool Climate Paradise",
     description: "Your complete guide to Bandarawela - perfect weather, ancient temples, and tea country charm",
   },
 }
@@ -38,7 +38,7 @@ export default function BandarawelaGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Bandarawela</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Perfect Climate Paradise</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Perfect Climate Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Thermometer className="w-4 h-4 mr-1" />
@@ -69,7 +69,7 @@ export default function BandarawelaGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Bandarawela: Where Perfect Weather Meets Timeless Charm</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Perched at 1,230 meters above sea level in Sri Lanka's enchanting hill country, Bandarawela is renowned for having one of the world's most perfect climates. This charming colonial hill station offers year-round temperatures between 16-24°C (61-75°F), making it an ideal escape from tropical heat.
+              Perched at 1,230 meters above sea level in Sri Lanka&apos;s enchanting hill country, Bandarawela is renowned for having one of the world&apos;s most perfect climates. This charming colonial hill station offers year-round temperatures between 16-24°C (61-75°F), making it an ideal escape from tropical heat.
             </p>
             <p className="text-lg">
               From ancient rock temples to pristine tea estates, from colonial architecture to misty mountain mornings, Bandarawela provides the perfect blend of natural beauty, cultural heritage, and comfortable living that has attracted visitors for over a century.
@@ -183,7 +183,7 @@ export default function BandarawelaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Bandarawela is surrounded by some of Sri Lanka's finest tea estates, producing premium high-grown Ceylon tea. The cool climate and misty conditions create perfect growing conditions for world-renowned tea varieties.
+                      Bandarawela is surrounded by some of Sri Lanka&apos;s finest tea estates, producing premium high-grown Ceylon tea. The cool climate and misty conditions create perfect growing conditions for world-renowned tea varieties.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -232,7 +232,7 @@ export default function BandarawelaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Bandarawela's streets are lined with beautifully preserved colonial-era buildings, including churches, government buildings, and private residences that showcase British architectural influence from the late 19th and early 20th centuries.
+                      Bandarawela&apos;s streets are lined with beautifully preserved colonial-era buildings, including churches, government buildings, and private residences that showcase British architectural influence from the late 19th and early 20th centuries.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -279,7 +279,7 @@ export default function BandarawelaGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Bandarawela's elevation of 1,230 meters creates a unique microclimate that's consistently comfortable throughout the year. Unlike most tropical destinations, you'll never experience extreme heat or uncomfortable humidity here.
+                Bandarawela&apos;s elevation of 1,230 meters creates a unique microclimate that&apos;s consistently comfortable throughout the year. Unlike most tropical destinations, you&apos;ll never experience extreme heat or uncomfortable humidity here.
               </p>
               <p>
                 The town enjoys cool mornings (16°C), pleasant afternoons (24°C), and comfortable evenings perfect for outdoor dining and evening walks. This climate has made Bandarawela a favorite retreat for both locals and international visitors seeking respite from tropical heat.
@@ -532,7 +532,7 @@ export default function BandarawelaGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Visit the iconic Nine Arch Bridge, hike Little Adam's Peak, and enjoy Ella's vibrant atmosphere.
+                  Visit the iconic Nine Arch Bridge, hike Little Adam&apos;s Peak, and enjoy Ella&apos;s vibrant atmosphere.
                 </p>
               </CardContent>
             </Card>
@@ -540,7 +540,7 @@ export default function BandarawelaGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Haputale</CardTitle>
-                <CardDescription>Lipton's Seat viewpoint - 1 hour</CardDescription>
+                <CardDescription>Lipton&apos;s Seat viewpoint - 1 hour</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
@@ -551,7 +551,7 @@ export default function BandarawelaGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Experience the world-famous Lipton's Seat viewpoint and visit Dambatenne Tea Factory.
+                  Experience the world-famous Lipton&apos;s Seat viewpoint and visit Dambatenne Tea Factory.
                 </p>
               </CardContent>
             </Card>
@@ -653,13 +653,13 @@ export default function BandarawelaGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Bandarawela offers something truly special - a destination where the weather is never a concern. Whether you visit in January or July, you'll enjoy the same comfortable temperatures and pleasant conditions that have made this hill station a favorite for over a century.
+                Bandarawela offers something truly special - a destination where the weather is never a concern. Whether you visit in January or July, you&apos;ll enjoy the same comfortable temperatures and pleasant conditions that have made this hill station a favorite for over a century.
               </p>
               <p className="text-muted-foreground mb-4">
                 From ancient rock temples to colonial charm, from world-class tea experiences to peaceful mountain walks, Bandarawela provides the perfect blend of culture, nature, and comfort in an ideal climate setting.
               </p>
               <p className="text-muted-foreground font-medium">
-                Discover why Bandarawela is called Sri Lanka's perfect climate paradise! 🌤️🏔️
+                Discover why Bandarawela is called Sri Lanka&apos;s perfect climate paradise! 🌤️🏔️
               </p>
             </CardContent>
           </Card>

@@ -33,7 +33,7 @@ export default function JetavanaaramayaGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Jetavanaramaya</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">The World's Third Tallest Ancient Structure</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">The World&apos;s Third Tallest Ancient Structure</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -60,7 +60,7 @@ export default function JetavanaaramayaGuide() {
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
               Prepare to be amazed by Jetavanaramaya, one of the most incredible ancient structures ever built by
-              humans! This massive stupa was once the world's third tallest building, standing at 122 meters (400 feet)
+              humans! This massive stupa was once the world&apos;s third tallest building, standing at 122 meters (400 feet)
               high - taller than the Statue of Liberty! Built in the 3rd century AD, it was surpassed in height only by
               the two largest pyramids of Giza in Egypt.
             </p>
@@ -254,7 +254,7 @@ export default function JetavanaaramayaGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains Buddha's sash relic
+                        Contains Buddha&apos;s sash relic
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -389,7 +389,7 @@ export default function JetavanaaramayaGuide() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">What You'll See</h4>
+                  <h4 className="font-semibold mb-2">What You&apos;ll See</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Massive ancient brick structure</li>
                     <li>• Archaeological excavation sites</li>
@@ -435,7 +435,7 @@ export default function JetavanaaramayaGuide() {
               </p>
               <p className="text-muted-foreground mb-4">
                 The fact that this monument was built over 1,700 years ago using only human hands, simple tools, and
-                incredible determination makes it even more amazing. It's a testament to the faith, skill, and vision of
+                incredible determination makes it even more amazing. It&apos;s a testament to the faith, skill, and vision of
                 our ancestors, and a reminder that humans have always been capable of creating truly extraordinary
                 things.
               </p>

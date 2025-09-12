@@ -6,21 +6,21 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 
 export const metadata: Metadata = {
-  title: "Matale Travel Guide 2024: Spice Garden Capital of Sri Lanka | Complete Guide",
+  title: "Matale Travel Guide 2025: Spice Garden Capital of Sri Lanka | Complete Guide",
   description:
     "Discover Matale, Sri Lanka's spice garden capital. Complete guide to Aluvihare Rock Temple, spice plantations, Sembuwatta Lake, and authentic culinary experiences.",
   keywords:
     "Matale Sri Lanka, spice gardens, Aluvihare Rock Temple, Sembuwatta Lake, spice plantations, cinnamon, cardamom, pepper, culinary tours",
   authors: [{ name: "Sri Lanka Travel Expert" }],
   openGraph: {
-    title: "Matale Travel Guide 2024: Spice Garden Capital of Sri Lanka",
+    title: "Matale Travel Guide 2025: Spice Garden Capital of Sri Lanka",
     description: "Your complete guide to Matale - spice gardens, ancient temples, and authentic culinary adventures",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Matale Travel Guide 2024: Spice Garden Capital of Sri Lanka",
+    title: "Matale Travel Guide 2025: Spice Garden Capital of Sri Lanka",
     description: "Your complete guide to Matale - spice gardens, ancient temples, and authentic culinary adventures",
   },
 }
@@ -44,7 +44,7 @@ export default function MataleGuide() {
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Leaf className="w-4 h-4 mr-1" />
-              World's Finest Spices
+              World&apos;s Finest Spices
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -71,9 +71,9 @@ export default function MataleGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Matale: Where Spices Tell Stories</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Located in the heart of Sri Lanka's Central Province, Matale is renowned as the island's spice garden
+              Located in the heart of Sri Lanka&apos;s Central Province, Matale is renowned as the island&apos;s spice garden
               capital. This aromatic town has been the center of spice cultivation for over 2,000 years, producing the
-              world's finest cinnamon, cardamom, pepper, and countless other spices that have shaped global cuisine.
+              world&apos;s finest cinnamon, cardamom, pepper, and countless other spices that have shaped global cuisine.
             </p>
             <p className="text-lg">
               Beyond its fragrant spice gardens, Matale offers rich Buddhist heritage at the historic Aluvihare Rock
@@ -98,7 +98,7 @@ export default function MataleGuide() {
                   <div className="flex items-center gap-2">
                     <Leaf className="w-4 h-4 text-green-500" />
                     <span>
-                      <strong>Famous For:</strong> World's Finest Spices
+                      <strong>Famous For:</strong> World&apos;s Finest Spices
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -153,7 +153,7 @@ export default function MataleGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>1. Matale Spice Gardens</CardTitle>
-                <CardDescription>World's finest spice plantations and authentic experiences</CardDescription>
+                <CardDescription>World&apos;s finest spice plantations and authentic experiences</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -166,14 +166,14 @@ export default function MataleGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Matale's spice gardens are living museums where you can see, smell, and taste the world's finest
+                      Matale&apos;s spice gardens are living museums where you can see, smell, and taste the world&apos;s finest
                       spices in their natural habitat. Learn about traditional cultivation methods passed down through
                       generations and discover how these precious spices shaped world history.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        World's finest Ceylon cinnamon cultivation
+                        World&apos;s finest Ceylon cinnamon cultivation
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />

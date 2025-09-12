@@ -748,7 +748,7 @@ export default function AnuradhapuraTravelGuide() {
                     <li>• Restored multiple times</li>
                   </ul>
                   <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    Learn More →
+                    See More →
                   </span>
                 </div>
               </CardContent>
@@ -856,7 +856,7 @@ export default function AnuradhapuraTravelGuide() {
                   Masterpieces of ancient stone carving found at temple entrances, depicting Buddhist philosophy in art.
                 </p>
                 <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                  Learn More →
+                  See More →
                 </span>
               </CardContent>
             </Card>
@@ -878,7 +878,7 @@ export default function AnuradhapuraTravelGuide() {
                   Sophisticated bathing pools for monks, showcasing advanced hydraulic engineering from ancient times.
                 </p>
                 <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                  Explore More →
+                  See More →
                 </span>
               </CardContent>
             </Card>

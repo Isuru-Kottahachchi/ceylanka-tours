@@ -36,7 +36,7 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                         <h2 className="text-2xl font-bold text-foreground">Stay Safe at Pasikuda Beach!</h2>
                         
                         <p className="text-muted-foreground text-sm leading-relaxed">
-                            Before you enjoy Pasikuda's crystal-clear shallow waters, learn about important beach safety, 
+                            Before you enjoy Pasikuda&apos;s crystal-clear shallow waters, learn about important beach safety, 
                             including seasonal conditions, sea creatures, and emergency procedures.
                         </p>
 
