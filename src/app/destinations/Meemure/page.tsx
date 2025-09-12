@@ -1,10 +1,8 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Car, TreePine, Home, Thermometer, Utensils, Bed, Compass, Phone, Heart, Cloud, XCircle, Sun, CloudRain, Battery, Flashlight, Shirt, Footprints, Droplets, Bus } from "lucide-react"
+import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Car, TreePine, Home, Utensils, Bed, Compass, Cloud, XCircle, Sun, CloudRain, Battery, Flashlight, Shirt, Footprints } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Meemure Village: Complete Travel Guide 2025 | Hidden Mountain Paradise Sri Lanka",

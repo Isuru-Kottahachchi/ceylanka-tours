@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, CheckCircle, Star, Calendar, Users, Heart, TreePine, Waves, Camera, ChevronLeft, ChevronRight } from "lucide-react"
+import { Clock, CheckCircle, Star, Heart, TreePine, Waves, Camera, ChevronLeft, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"

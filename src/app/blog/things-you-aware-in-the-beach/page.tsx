@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import { AlertTriangle, Waves, Shield, Phone, MapPin, Clock, Heart, Eye, ChevronRight, Compass, ChevronLeft } from "lucide-react"
+import { AlertTriangle, Waves, Shield, Phone, Clock, Heart, Eye, ChevronRight, Compass, ChevronLeft } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -170,11 +170,11 @@ export default function BeachSafetyGuide() {
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                         <p className="text-lg mb-4">
                             Sri Lanka has beautiful beaches, but the ocean can be very dangerous. Every year, many people 
-                            get hurt or drown because they don't know about sea dangers. This guide will help you stay safe.
+                            get hurt or drown because they don&apos;t know about sea dangers. This guide will help you stay safe.
                         </p>
                         <p className="text-lg mb-4">
                             The sea around Sri Lanka has strong currents, big waves, and dangerous areas. Even good swimmers 
-                            can get into trouble if they don't know what to watch for.
+                            can get into trouble if they don&apos;t know what to watch for.
                         </p>
                         <p className="text-lg">
                             Remember: You might be a good swimmer, but the ocean is much stronger than any person. Always respect the sea and never swim alone.
@@ -212,7 +212,7 @@ export default function BeachSafetyGuide() {
                                         <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                                             <li>• Fast moving water going away from beach</li>
                                             <li>• Can pull you out to deep water very quickly</li>
-                                            <li>• Even strong swimmers can't swim against it</li>
+                                            <li>• Even strong swimmers can&apos;t swim against it</li>
                                             <li>• Most dangerous thing at the beach</li>
                                         </ul>
                                         <h4 className="font-semibold mb-3 text-red-800 dark:text-red-400">How to spot rip currents:</h4>
@@ -224,7 +224,7 @@ export default function BeachSafetyGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100 dark:bg-red-950/40 dark:border-red-600">
                                             <AlertDescription className="text-red-800 dark:text-red-300 text-sm">
-                                                <strong>If caught in rip current:</strong> Don't panic! Don't try to swim straight back. 
+                                                <strong>If caught in rip current:</strong> Don&apos;t panic! Don&apos;t try to swim straight back. 
                                                 Swim parallel to shore until you escape, then swim back at an angle.
                                             </AlertDescription>
                                         </Alert>
@@ -261,7 +261,7 @@ export default function BeachSafetyGuide() {
                                             <li>• Very unpredictable and dangerous</li>
                                             <li>• Can happen during monsoon changes</li>
                                         </ul>
-                                        <h4 className="font-semibold mb-3 text-red-800 dark:text-red-400">Why they're dangerous:</h4>
+                                        <h4 className="font-semibold mb-3 text-red-800 dark:text-red-400">Why they&apos;re dangerous:</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                                             <li>• Waves can hit you from any direction</li>
                                             <li>• Creates strong underwater currents</li>
@@ -404,7 +404,7 @@ export default function BeachSafetyGuide() {
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                        <span><strong>Know your limits:</strong> Don't go deeper than waist level</span>
+                                        <span><strong>Know your limits:</strong> Don&apos;t go deeper than waist level</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
@@ -485,7 +485,7 @@ export default function BeachSafetyGuide() {
                                                 <li>• <strong>Spines:</strong> Long, fan-like venomous spines</li>
                                                 <li>• <strong>Size:</strong> 15-45 cm long</li>
                                                 <li>• <strong>Habitat:</strong> Coral reefs and rocky areas</li>
-                                                <li>• <strong>Behavior:</strong> Slow-moving, doesn't flee from humans</li>
+                                                <li>• <strong>Behavior:</strong> Slow-moving, doesn&apos;t flee from humans</li>
                                             </ul>
                                             <Alert className="border-orange-400 bg-orange-100">
                                                 <AlertDescription className="text-orange-800 text-sm">
@@ -506,7 +506,7 @@ export default function BeachSafetyGuide() {
                                         Stone Fish - Master of Camouflage
                                     </CardTitle>
                                     <CardDescription className="text-red-600">
-                                        World's most venomous fish - extremely hard to spot
+                                        World&apos;s most venomous fish - extremely hard to spot
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
@@ -596,12 +596,12 @@ export default function BeachSafetyGuide() {
                                                 <li>• <strong>Tail:</strong> Flattened paddle-like tail for swimming</li>
                                                 <li>• <strong>Size:</strong> 1-2 meters long</li>
                                                 <li>• <strong>Behavior:</strong> Surface regularly to breathe air</li>
-                                                <li>• <strong>Movement:</strong> Graceful swimming, can't move on land</li>
+                                                <li>• <strong>Movement:</strong> Graceful swimming, can&apos;t move on land</li>
                                             </ul>
                                             <Alert className="border-blue-400 bg-blue-100">
                                                 <AlertDescription className="text-blue-800 text-sm">
                                                     <strong>Important:</strong> Very venomous but rarely aggressive. 
-                                                    Don't try to handle or catch them - just swim away calmly.
+                                                    Don&apos;t try to handle or catch them - just swim away calmly.
                                                 </AlertDescription>
                                             </Alert>
                                         </div>
@@ -633,7 +633,7 @@ export default function BeachSafetyGuide() {
                                                 <li>• <strong>Colors:</strong> Black, dark purple, or brown</li>
                                                 <li>• <strong>Size:</strong> 5-15 cm diameter with long spines</li>
                                                 <li>• <strong>Location:</strong> Rock pools, coral crevices, shallow reefs</li>
-                                                <li>• <strong>Behavior:</strong> Stay attached to rocks, don't move much</li>
+                                                <li>• <strong>Behavior:</strong> Stay attached to rocks, don&apos;t move much</li>
                                             </ul>
                                             <Alert className="border-gray-400 bg-gray-100">
                                                 <AlertDescription className="text-gray-800 text-sm">
@@ -666,7 +666,7 @@ export default function BeachSafetyGuide() {
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                                                <span><strong>Don't touch anything:</strong> Coral, rocks, or marine life can be dangerous</span>
+                                                <span><strong>Don&apos;t touch anything:</strong> Coral, rocks, or marine life can be dangerous</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
@@ -691,11 +691,11 @@ export default function BeachSafetyGuide() {
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                                                <span><strong>Don't rub the area:</strong> This makes venom spread more</span>
+                                                <span><strong>Don&apos;t rub the area:</strong> This makes venom spread more</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                                                <span><strong>Sea urchin spines:</strong> Soak in warm water, don't try to remove deeply embedded spines</span>
+                                                <span><strong>Sea urchin spines:</strong> Soak in warm water, don&apos;t try to remove deeply embedded spines</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
@@ -721,7 +721,7 @@ export default function BeachSafetyGuide() {
                             <AlertTriangle className="h-4 w-4 text-red-600" />
                             <AlertTitle className="text-red-800">EMERGENCY - Do This First!</AlertTitle>
                             <AlertDescription className="text-red-700">
-                                <strong>1. Stay calm and don't panic</strong><br />
+                                <strong>1. Stay calm and don&apos;t panic</strong><br />
                                 <strong>2. Call for help loudly</strong><br />
                                 <strong>3. Try to float and save energy</strong>
                             </AlertDescription>
@@ -739,7 +739,7 @@ export default function BeachSafetyGuide() {
                                     <ul className="space-y-3 text-sm text-muted-foreground">
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                            <span><strong>Don't fight the current:</strong> It will tire you out</span>
+                                            <span><strong>Don&apos;t fight the current:</strong> It will tire you out</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
