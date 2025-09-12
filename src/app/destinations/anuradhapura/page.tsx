@@ -134,6 +134,75 @@ export default function AnuradhapuraTravelGuide() {
           </Card>
         </section>
 
+        {/* How to Get There */}
+        <section className="mb-12">
+          <Card className="border-l-4 border-blue-500">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                <MapPin className="w-5 h-5" />
+                How to Get to Anuradhapura
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
+                    <li>• <strong>Duration:</strong> 4-4.5 hours</li>
+                    <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                    <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                  </ul>
+                  <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                    <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                      <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Anuradhapura. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                    </p>
+                    <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                      <div className="flex items-center gap-2">
+                        <span>📞</span>
+                        <span><strong>Contact:</strong> +94 77 123 4567</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span>✈️</span>
+                        <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                          <strong>Airport Transfer Services</strong> - Click for details & booking
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• <strong>Route:</strong> Colombo → Kurunegala → Anuradhapura</li>
+                    <li>• <strong>Duration:</strong> 5-6 hours</li>
+                    <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                    <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                  </ul>
+                  
+                  <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Train</h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• <strong>Route:</strong> Colombo Fort → Anuradhapura</li>
+                    <li>• <strong>Duration:</strong> 5.5-6 hours</li>
+                    <li>• <strong>Cost:</strong> $2-8 USD (depending on class)</li>
+                    <li>• <strong>Scenic journey:</strong> Through countryside</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Start early morning to avoid traffic and heat</li>
+                  <li>• Carry water and snacks for the journey</li>
+                  <li>• Book accommodations in advance during peak season</li>
+                  <li>• Consider staying overnight to explore all sites properly</li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
         {/* Sacred Sites */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Sacred Sites & Ancient Monuments</h2>

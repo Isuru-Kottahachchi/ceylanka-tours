@@ -40,25 +40,25 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                             including rip currents, dangerous sea creatures, and monsoon conditions.
                         </p>
 
-                        <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
+                        <div className="bg-orange-100 dark:bg-slate-700 border border-orange-300 dark:border-gray-600 rounded-lg p-4">
                             <div className="flex items-center gap-2 mb-2">
-                                <AlertTriangle className="h-5 w-5 text-orange-600" />
-                                <h3 className="font-semibold text-orange-800 dark:text-orange-400">Important Safety Topics:</h3>
+                                <AlertTriangle className="h-5 w-5 text-orange-600 dark:text-orange-400" />
+                                <h3 className="font-semibold text-orange-800 dark:text-orange-200">Important Safety Topics:</h3>
                             </div>
-                            <ul className="text-sm text-orange-700 dark:text-orange-300 space-y-1 text-left">
+                            <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 text-left">
                                 <li>• How to escape rip currents</li>
                                 <li>• Identifying dangerous sea creatures</li>
                                 <li>• Monsoon season safety</li>
                                 <li>• Emergency procedures</li>
                             </ul>
                         </div>
-                          <p className="text-xs text-muted-foreground">
+                          <p className="text-xs text-gray-600 dark:text-gray-400">
                             Your safety is our priority. Take 2 minutes to learn these life-saving tips!
                         </p>
 
                         <div className="space-y-3">
                             <Link href="/blog/things-you-aware-in-the-beach">
-                                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer" >
+                                <Button className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white cursor-pointer" >
                                     <Shield className="w-4 h-4 mr-2" />
                                     Read Complete Beach Safety Guide
                                 </Button>
@@ -66,7 +66,7 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                             
                             <Button 
                                 variant="outline" 
-                                className="w-full cursor-pointer"
+                                className="w-full cursor-pointer border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
                                 onClick={onClose}
                             >
                                 Continue to Bentota Page
@@ -138,7 +138,9 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
                         <button
                             key={index}
                             onClick={() => goToImage(index)}
-                            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
+                            className={`w-2 h-2 rounded-full transition-colors cursor-pointer ${index === currentIndex 
+                                ? "bg-blue-600 dark:bg-blue-400" 
+                                : "bg-gray-400 dark:bg-gray-500 hover:bg-gray-500 dark:hover:bg-gray-400"
                                 }`}
                         />
                     ))}
@@ -310,7 +312,7 @@ export default function BentotaGuide() {
                                         <li>• Direct route via Southern Expressway</li>
                                         <li>• Most comfortable and convenient option</li>
                                     </ul>
-                                    <div className="mt-3 p-3 bg-orange-100 dark:bg-orange-800/30 rounded-md border-l-4 border-orange-400">
+                                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                                         <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                                             <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Bentota. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                                         </p>
@@ -321,7 +323,7 @@ export default function BentotaGuide() {
                                             </div>
                                             <div className="flex items-center gap-2">
                                                 <span>✈️</span>
-                                                <Link href="/airport-transfers" className="underline hover:text-orange-600 dark:hover:text-orange-300">
+                                                <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
                                                     <strong>Airport Transfer Services</strong> - Click for details & booking
                                                 </Link>
                                             </div>
@@ -386,9 +388,9 @@ export default function BentotaGuide() {
                         </Card>
                     </div>
                     
-                    <Card className="mt-6 bg-blue-50/50 border-blue-200">
+                    <Card className="mt-6 bg-blue-50 dark:bg-slate-800 border-blue-200 dark:border-gray-700">
                         <CardHeader>
-                            <CardTitle className="text-blue-800 flex items-center gap-2">
+                            <CardTitle className="text-blue-800 dark:text-blue-200 flex items-center gap-2">
                                 <Star className="w-5 h-5" />
                                 Travel Tips for Getting to Bentota
                             </CardTitle>
@@ -396,16 +398,16 @@ export default function BentotaGuide() {
                         <CardContent>
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div>
-                                    <h4 className="font-semibold mb-2 text-blue-800">Best Routes</h4>
-                                    <ul className="text-sm text-blue-700 space-y-1">
+                                    <h4 className="font-semibold mb-2 text-blue-800 dark:text-blue-200">Best Routes</h4>
+                                    <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
                                         <li>• Southern Expressway: Fastest route from airport</li>
                                         <li>• Coastal road (A2): Scenic but slower</li>
                                         <li>• Avoid rush hours (7-9 AM, 5-7 PM)</li>
                                     </ul>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold mb-2 text-blue-800">Pro Tips</h4>
-                                    <ul className="text-sm text-blue-700 space-y-1">
+                                    <h4 className="font-semibold mb-2 text-blue-800 dark:text-blue-200">Pro Tips</h4>
+                                    <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
                                         <li>• Book transfers in advance for better rates</li>
                                         <li>• Train offers beautiful coastal scenery</li>
                                         <li>• Highway tolls: ~$3-5 USD (included in taxi fares)</li>
@@ -418,27 +420,27 @@ export default function BentotaGuide() {
 
                 {/* Beach Safety Section */}
                 <section className="mb-12">
-                    <Card className="border-orange-300 bg-orange-50/30">
+                    <Card className="border-orange-200 dark:border-gray-700 bg-orange-50 dark:bg-slate-800">
                         <CardHeader>
-                            <CardTitle className="text-orange-800 flex items-center gap-2">
+                            <CardTitle className="text-orange-800 dark:text-orange-300 flex items-center gap-2">
                                 <Waves className="w-5 h-5" />
                                 Beach Safety at Bentota
                             </CardTitle>
-                            <CardDescription className="text-orange-600">
+                            <CardDescription className="text-orange-700 dark:text-orange-300">
                                 Important safety information for enjoying Bentota&apos;s waters safely
                             </CardDescription>
                         </CardHeader>
                         <CardContent>
                             <div className="space-y-4">
-                                <p className="text-muted-foreground">
+                                <p className="text-gray-700 dark:text-gray-300">
                                     While Bentota is known for its calm waters and safe swimming conditions, it&apos;s important to understand 
                                     ocean safety, especially during monsoon seasons when conditions can change dramatically.
                                 </p>
                                 
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <h4 className="font-semibold mb-3 text-orange-800">Current Conditions at Bentota:</h4>
-                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                        <h4 className="font-semibold mb-3 text-orange-800 dark:text-orange-200">Current Conditions at Bentota:</h4>
+                                        <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                                             <li>• Generally calm waters protected by coral reef</li>
                                             <li>• Safe swimming most of the year</li>
                                             <li>• Lifeguards present at major resort beaches</li>
@@ -446,8 +448,8 @@ export default function BentotaGuide() {
                                         </ul>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold mb-3 text-orange-800">Watch Out For:</h4>
-                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                        <h4 className="font-semibold mb-3 text-orange-800 dark:text-orange-200">Watch Out For:</h4>
+                                        <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                                             <li>• Rip currents near river mouth</li>
                                             <li>• Stronger waves during southwest monsoon</li>
                                             <li>• Jet ski and boat traffic in water sports areas</li>
@@ -456,17 +458,17 @@ export default function BentotaGuide() {
                                     </div>
                                 </div>
 
-                                <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                                    <h4 className="font-semibold mb-3 text-blue-800 flex items-center gap-2">
+                                <div className="mt-6 p-4 bg-blue-100 dark:bg-slate-700 rounded-lg border border-blue-200 dark:border-gray-600">
+                                    <h4 className="font-semibold mb-3 text-blue-800 dark:text-blue-200 flex items-center gap-2">
                                         <Star className="w-4 h-4" />
                                         Complete Beach Safety Guide
                                     </h4>
-                                    <p className="text-blue-700 mb-4">
+                                    <p className="text-blue-700 dark:text-blue-300 mb-4">
                                         Learn about rip currents, cross seas, monsoon safety, and emergency procedures 
                                         to stay safe at all Sri Lankan beaches.
                                     </p>
                                     <Link href="/blog/things-you-aware-in-the-beach">
-                                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                                        <Button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white cursor-pointer">
                                             <Waves className="w-4 h-4 mr-2" />
                                             Read Complete Beach Safety Guide
                                         </Button>
@@ -857,11 +859,11 @@ export default function BentotaGuide() {
                     </div>
 
                     {/* Para Motoring Adventure */}
-                    <div className="mt-8 p-6 bg-gradient-to-r from-sky-50 to-blue-50 dark:from-sky-900/20 dark:to-blue-900/20 rounded-lg">
-                        <p className="text-center text-lg font-medium text-sky-700 dark:text-sky-300 mb-2">
+                    <div className="mt-8 p-6 bg-gradient-to-r from-sky-100 to-blue-100 dark:from-slate-800 dark:to-slate-700 rounded-lg">
+                        <p className="text-center text-lg font-medium text-sky-800 dark:text-sky-200 mb-2">
                             Wanna see Bentota in bird&apos;s eye?
                         </p>
-                        <h3 className="text-xl font-bold mb-4 text-center">🪂 Para Motoring - Soar Above Bentota Beach</h3>
+                        <h3 className="text-xl font-bold mb-4 text-center text-gray-800 dark:text-gray-200">🪂 Para Motoring - Soar Above Bentota Beach</h3>
                         
                         <div className="grid md:grid-cols-2 gap-6 items-center mb-6">
                             <div>
@@ -869,19 +871,19 @@ export default function BentotaGuide() {
                                     images={paramotoringImages}
                                     alt="Para motoring adventure showing aerial views, equipment, and flight scenes over Bentota beach"
                                 />
-                                <p className="text-sm text-muted-foreground mt-2 italic text-center">
+                                <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 italic text-center">
                                     Wanna see Bentota in bird&apos;s eye? - Experience breathtaking aerial views
                                 </p>
                             </div>
                             <div>
-                                <p className="text-muted-foreground mb-4">
+                                <p className="text-gray-700 dark:text-gray-300 mb-4">
                                     Experience the ultimate aerial adventure with para motoring over Bentota&apos;s stunning coastline! This thrilling activity combines 
                                     the excitement of paragliding with the power of a motorized engine, giving you breathtaking bird&apos;s-eye views of the golden beaches, 
                                     azure waters, and lush green landscape. Professional instructors ensure your safety while you enjoy 15-20 minutes of pure adrenaline 
                                     and unforgettable views that stretch from the Indian Ocean to the tropical inland scenery.
                                 </p>
-                                <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-lg">
-                                    <p className="text-sm text-blue-800 dark:text-blue-300">
+                                <div className="bg-blue-100 dark:bg-slate-600 p-3 rounded-lg border border-blue-200 dark:border-gray-500">
+                                    <p className="text-sm text-blue-800 dark:text-blue-200">
                                         <strong>Duration:</strong> 15-20 minutes | <strong>Cost:</strong> $80-120 USD | <strong>Best Time:</strong> Morning or late afternoon
                                     </p>
                                 </div>

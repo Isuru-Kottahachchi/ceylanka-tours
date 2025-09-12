@@ -90,7 +90,7 @@ const destinationsItems = [
     icon: "🐘",
     hasSubmenu: true,
     items: [
-      { name: "Yala National Park", href: "/destinations/yala" },
+      { name: "Yala National Park", href: "/destinations/yala-national-park" },
       { name: "Udawalawe National Park", href: "/destinations/udawalawa-national-park" },
       { name: "Minneriya National Park", href: "/destinations/minneriya-national-park" },
       { name: "Wilpattu National Park", href: "/destinations/wilpattu-national-park" },

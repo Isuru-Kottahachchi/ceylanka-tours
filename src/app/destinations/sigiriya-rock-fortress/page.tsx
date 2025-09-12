@@ -194,6 +194,23 @@ export default function SigiriyaTravelGuide() {
                     <li>• <strong>Cost:</strong> $50-80 USD for day trip</li>
                     <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                   </ul>
+                  <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                    <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                      <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Sigiriya. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                    </p>
+                    <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                      <div className="flex items-center gap-2">
+                        <span>📞</span>
+                        <span><strong>Contact:</strong> +94 77 123 4567</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span>✈️</span>
+                        <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                          <strong>Airport Transfer Services</strong> - Click for details & booking
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>

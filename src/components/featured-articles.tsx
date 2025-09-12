@@ -3,12 +3,13 @@ import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, User, Eye } from "lucide-react"
+import { formatDateSafe } from "@/lib/date-utils"
 
 const featuredArticles = [
   {
     id: 1,
     title: "Top 10 Must-Visit Beaches in Sri Lanka",
-    path:"top10-beaches-in-sri-lanka",
+    path: "top10-beaches-in-sri-lanka",
     excerpt:
       "From the golden sands of Unawatuna to the pristine shores of Mirissa, discover the most beautiful beaches...",
     image: "/Bentotabeach.jpeg",
@@ -20,9 +21,10 @@ const featuredArticles = [
   },
   {
     id: 2,
-    title: "Ancient Temples and Sacred Sites: A Spiritual Journey",
+    title: "Lunuganga Geoffrey Bawa's Garden Paradise",
+    path: "lunuganga-geoffrey-bawas-garden",
     excerpt: "Explore the rich Buddhist heritage of Sri Lanka through its magnificent temples and sacred sites...",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Lunugangabawa2.jpeg",
     category: "Culture",
     author: "Michael Chen",
     date: "2024-01-12",
@@ -31,7 +33,8 @@ const featuredArticles = [
   },
   {
     id: 3,
-    title: "Wildlife Safari: Spotting Elephants in Yala National Park",
+    title: "Wild Safari Parks in Sri Lanka",
+    path: "wild-safari-parks-in-srilanka",
     excerpt: "Your complete guide to experiencing the incredible wildlife of Sri Lanka's most famous national park...",
     image: "/placeholder.svg?height=300&width=400",
     category: "Wildlife",
@@ -42,8 +45,9 @@ const featuredArticles = [
   },
   {
     id: 4,
-    title: "Tea Country Adventures: Hill Country Exploration",
-    excerpt: "Journey through the misty mountains and emerald tea plantations of Nuwara Eliya and Ella...",
+    title: "Ramayana Sites in Sri Lanka",
+    path: "Ramayanaya-sites",
+    excerpt: "Journey through the ancient legends and discover the sacred sites connected to the Ramayana epic...",
     image: "/placeholder.svg?height=300&width=400",
     category: "Adventure",
     author: "David Kumar",
@@ -80,7 +84,7 @@ export function FeaturedArticles() {
 
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg font-semibold line-clamp-2 group-hover:text-cyan-600 transition-colors">
-                           {/* <Link href={`/blog/${article.id}`}>{article.title}</Link> */}
+                  {/* <Link href={`/blog/${article.id}`}>{article.title}</Link> */}
                   <Link href={`/blog/${article.path}`}>{article.title}</Link>
                 </CardTitle>
               </CardHeader>
@@ -96,7 +100,7 @@ export function FeaturedArticles() {
                     </div>
                     <div className="flex items-center space-x-1">
                       <Calendar className="h-3 w-3" />
-                      <span>{new Date(article.date).toLocaleDateString()}</span>
+                      <span>{formatDateSafe(article.date)}</span>
                     </div>
                   </div>
                   <div className="flex items-center space-x-1">
@@ -106,15 +110,26 @@ export function FeaturedArticles() {
                 </div>
 
                 <div className="mt-2 text-xs text-cyan-600 font-medium">{article.readTime}</div>
+                
+                {/* View Article Button */}
+                <div className="mt-4">
+                  <Link
+                    href={`/blog/${article.path}`}
+                    className="inline-flex items-center justify-center w-full px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-medium rounded-md transition-colors duration-200"
+                  >
+                    View Article
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
+        {/* View All Articles Button */}
         <div className="text-center mt-12">
           <Link
-            href="/blog"
-            className="inline-flex items-center px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg transition-colors duration-200"
+            href="/articles"
+            className="inline-flex items-center px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             View All Articles
           </Link>

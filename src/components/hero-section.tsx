@@ -49,7 +49,7 @@ export function HeroSection() {
         >
           <Input
             type="search"
-            placeholder="Search destinations, hotels, experiences..."
+            placeholder="Search your Sri Lankan destinations"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full sm:flex-1 h-12 text-black dark:text-white text-lg px-6 rounded-l-lg bg-white dark:bg-gray-800 placeholder:text-gray-500 dark:placeholder:text-gray-400"

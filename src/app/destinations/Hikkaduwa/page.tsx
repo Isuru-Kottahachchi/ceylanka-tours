@@ -106,7 +106,7 @@ export default function HikkaduwaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=900&width=1400"
+          src="/Hikkaduwabeach.jpeg"
           alt="Hikkaduwa beach with golden sand, palm trees, surfing waves and coral reef waters"
           fill
           className="object-cover"

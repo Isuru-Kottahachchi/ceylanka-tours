@@ -182,7 +182,7 @@ const destinations = [
   {
     id: 18,
     name: "Kalpitiya",
-    location: "Eastern Province",
+    location: "North Western Province",
     path: "kalpitiya",
     image: "/Kalpitiya.jpeg",
     // rating: 4.3,
@@ -587,7 +587,7 @@ export default function DestinationsPage() {
             <div className="flex-1 w-full relative">
               <Input
                 type="search"
-                placeholder="Search destinations, locations, categories..."
+                placeholder="Search your Sri Lankan destinations"
                 className={`bg-white text-black pl-10 transition-shadow ${showSearchReminder ? 'ring-2 ring-green-400 ring-offset-2' : ''}`}
                 value={searchValue}
                 onChange={e => setSearchValue(e.target.value)}

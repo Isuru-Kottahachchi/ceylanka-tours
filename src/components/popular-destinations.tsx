@@ -124,7 +124,7 @@ export function PopularDestinations() {
   const getDestinationHref = (destination: (typeof destinations)[0]) => {
     // Special handling for Yala National Park to link to our detailed page
     if (destination.name === "Yala National Park") {
-      return "/destinations/yala"
+      return "/destinations/yala-national-park"
     }
     // For other destinations, use a generic pattern
     return `/destinations/${destination.name
