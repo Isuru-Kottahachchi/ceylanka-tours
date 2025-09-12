@@ -808,7 +808,7 @@ export default function DambullaTownGuide() {
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       Street food culture thrives in Dambulla, with vendors setting up stalls near the market, bus
-                      station, and temple areas. These aren't just quick snacks - they're culinary traditions passed
+                      station, and temple areas. These aren&apos;t just quick snacks - they&apos;re culinary traditions passed
                       down through families. From crispy hoppers filled with spicy sambol to sweet treats like kokis and
                       kavum, every bite connects you to Sri Lankan food heritage.
                     </p>
@@ -881,8 +881,8 @@ export default function DambullaTownGuide() {
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
                       While tourists flock to the famous cave temples, the real spiritual heart of Dambulla beats in its
-                      community temples where local families have worshipped for generations. These temples aren't just
-                      religious sites - they're community centers where people gather for festivals, children learn
+                      community temples where local families have worshipped for generations. These temples aren&apos;t just
+                      religious sites - they&apos;re community centers where people gather for festivals, children learn
                       traditional values, and the elderly share wisdom with younger generations.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
@@ -892,7 +892,7 @@ export default function DambullaTownGuide() {
                       atmosphere provide a stark contrast to the bustling market life just streets away.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Hindu temples also play an important role in Dambulla's spiritual landscape, reflecting the town's
+                      Hindu temples also play an important role in Dambulla&apos;s spiritual landscape, reflecting the town&apos;s
                       multicultural heritage. During festival seasons, the entire town comes alive with colorful
                       processions, traditional music, and community celebrations that welcome everyone regardless of
                       their background.
@@ -1011,11 +1011,11 @@ export default function DambullaTownGuide() {
                     <h4 className="font-semibold text-lg mb-2">Language & Communication</h4>
                     <p className="text-sm text-muted-foreground mb-2">
                       While many people speak basic English, learning a few Sinhala phrases will open hearts and doors.
-                      "Ayubowan" (may you live long) is a traditional greeting that shows respect. Most locals are
+                      &quot;Ayubowan&quot; (may you live long) is a traditional greeting that shows respect. Most locals are
                       patient and helpful with visitors who make an effort to communicate in their language.
                     </p>
                     <p className="text-xs text-green-600 font-medium">
-                      Basic phrases: "Sthuthi" (thank you), "Kiyawada?" (how much?)
+                      Basic phrases: &quot;Sthuthi&quot; (thank you), &quot;Kiyawada?&quot; (how much?)
                     </p>
                   </div>
 

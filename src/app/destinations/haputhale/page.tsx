@@ -355,7 +355,7 @@ export default function HaputaleGuide() {
                 In the late 1800s, Scottish entrepreneur Sir Thomas Lipton purchased vast tracts of land around Haputale to establish his tea empire. He would often climb to the highest point - now known as Lipton&apos;s Seat - to survey his plantations and plan expansion.
               </p>
               <p>
-                Lipton revolutionized the tea industry by controlling every aspect from plantation to packaging, creating the world's first vertically integrated tea business. His Dambatenne Tea Factory became the heart of this operation, producing premium Ceylon tea that made the Lipton brand famous worldwide.
+                Lipton revolutionized the tea industry by controlling every aspect from plantation to packaging, creating the world&apos;s first vertically integrated tea business. His Dambatenne Tea Factory became the heart of this operation, producing premium Ceylon tea that made the Lipton brand famous worldwide.
               </p>
               <div className="bg-amber-50 p-4 rounded-lg">
                 <h4 className="font-semibold text-amber-800 mb-2">Lipton&apos;s Legacy:</h4>
@@ -736,13 +736,13 @@ export default function HaputaleGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Haputale offers one of Sri Lanka's most rewarding travel experiences - the chance to stand where Sir Thomas Lipton once stood and survey one of the world's most beautiful tea landscapes. The views from Lipton's Seat are truly unforgettable, especially when experienced at sunrise.
+                Haputale offers one of Sri Lanka&apos;s most rewarding travel experiences - the chance to stand where Sir Thomas Lipton once stood and survey one of the world&apos;s most beautiful tea landscapes. The views from Lipton&apos;s Seat are truly unforgettable, especially when experienced at sunrise.
               </p>
               <p className="text-muted-foreground mb-4">
                 Beyond the famous viewpoint, Haputale provides authentic tea heritage experiences, from historic factory tours to monastery visits, all set against the backdrop of some of the most spectacular mountain scenery in Asia.
               </p>
               <p className="text-muted-foreground font-medium">
-                Come discover why Haputale is considered the crown jewel of Sri Lanka's tea country! 🍃🏔️
+                Come discover why Haputale is considered the crown jewel of Sri Lanka&apos;s tea country! 🍃🏔️
               </p>
             </CardContent>
           </Card>

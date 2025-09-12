@@ -136,7 +136,7 @@ export default function MihintaleGuide() {
 
         {/* The Great Story */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">The Amazing Story of Buddhism's Arrival</h2>
+          <h2 className="text-3xl font-bold mb-6">The Amazing Story of Buddhism&apos;s Arrival</h2>
 
           <div className="space-y-8">
             {/* The Historic Meeting */}
@@ -158,7 +158,7 @@ export default function MihintaleGuide() {
                     <p className="text-muted-foreground mb-4">
                       Over 2,200 years ago, King Devanampiyatissa was hunting deer on this mountain when he met Arahat
                       Mahinda, a Buddhist monk from India. Mahinda was the son of Emperor Ashoka and had come to Sri
-                      Lanka to share Buddha's teachings. Their meeting changed the history of Sri Lanka forever,
+                      Lanka to share Buddha&apos;s teachings. Their meeting changed the history of Sri Lanka forever,
                       bringing Buddhism to the island.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -188,21 +188,21 @@ export default function MihintaleGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>The Famous Mango Test</CardTitle>
-                <CardDescription>How Mahinda tested the king's wisdom</CardDescription>
+                <CardDescription>How Mahinda tested the king&apos;s wisdom</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Before teaching Buddhism, Mahinda wanted to make sure the king was wise enough to understand
-                      Buddha's teachings. He asked the king clever questions about a mango tree. The king answered so
+                      Buddha&apos;s teachings. He asked the king clever questions about a mango tree. The king answered so
                       well that Mahinda knew he was ready to learn about Buddhism. This famous conversation is still
                       remembered today!
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Test of the king's intelligence
+                        Test of the king&apos;s intelligence
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -261,7 +261,7 @@ export default function MihintaleGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains Buddha's hair relics
+                        Contains Buddha&apos;s hair relics
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -291,7 +291,7 @@ export default function MihintaleGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This large flat rock is where Arahat Mahinda used to sit and meditate. It's a very peaceful spot
+                      This large flat rock is where Arahat Mahinda used to sit and meditate. It&apos;s a very peaceful spot
                       with beautiful views of the surrounding area. Many visitors come here to sit quietly and think,
                       just like Mahinda did over 2,000 years ago. The rock has a special spiritual energy that makes
                       people feel calm and peaceful.
@@ -299,7 +299,7 @@ export default function MihintaleGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Mahinda's meditation spot
+                        Mahinda&apos;s meditation spot
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -344,8 +344,8 @@ export default function MihintaleGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       This special stupa marks the exact spot where Arahat Mahinda first met King Devanampiyatissa.
-                      "Ambasthala" means "mango place" in the ancient language, remembering the famous mango tree
-                      conversation. Standing here, you're at the very place where Buddhism began in Sri Lanka!
+                      &quot;Ambasthala&quot; means &quot;mango place&quot; in the ancient language, remembering the famous mango tree
+                      conversation. Standing here, you&apos;re at the very place where Buddhism began in Sri Lanka!
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
