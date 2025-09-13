@@ -152,10 +152,10 @@ export default function BeachSafetyGuide() {
 
             <div className="max-w-4xl mx-auto px-4 py-8">
                 {/* Emergency Alert */}
-                <Alert className="mb-8 border-red-300 bg-red-50">
-                    <AlertTriangle className="h-4 w-4 text-red-600" />
-                    <AlertTitle className="text-red-800">Beach Emergency Numbers</AlertTitle>
-                    <AlertDescription className="text-red-700">
+                <Alert className="mb-8 border-red-300 bg-red-50 dark:border-red-600 dark:bg-red-950/30">
+                    <AlertTriangle className="h-4 w-4 text-red-600 dark:text-red-400" />
+                    <AlertTitle className="text-red-800 dark:text-red-300">Beach Emergency Numbers</AlertTitle>
+                    <AlertDescription className="text-red-700 dark:text-red-200">
                         <strong>Emergency: 119 or 110</strong>| <strong>Ambulance Service: 1990</strong> | <strong>Coast Guard: 071-217-6543</strong> | <strong>Navy: 011-244-5368</strong>
                         <br />
                         If someone is drowning, call for help immediately and throw something that floats!
@@ -377,9 +377,9 @@ export default function BeachSafetyGuide() {
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">How to Stay Safe at the Beach</h2>
                     <div className="grid md:grid-cols-2 gap-6">
-                        <Card className="border-green-300 bg-green-50/30">
+                        <Card className="border-green-300 bg-green-50/30 dark:border-green-600 dark:bg-green-950/20">
                             <CardHeader>
-                                <CardTitle className="text-green-800 dark:text-green-400 flex items-center gap-2">
+                                <CardTitle className="text-green-800 dark:text-green-300 flex items-center gap-2">
                                     <Shield className="w-5 h-5" />
                                     Before You Go Swimming
                                 </CardTitle>
@@ -387,15 +387,15 @@ export default function BeachSafetyGuide() {
                             <CardContent>
                                 <ul className="space-y-3 text-sm text-muted-foreground">
                                     <li className="flex items-start gap-2">
-                                        <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                                        <ChevronRight className="w-4 h-4 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
                                         <span><strong>Check conditions:</strong> Look for waves, currents, and weather</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                                        <ChevronRight className="w-4 h-4 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
                                         <span><strong>Find lifeguards:</strong> Swim only where lifeguards are present</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                                        <ChevronRight className="w-4 h-4 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
                                         <span><strong>Ask locals:</strong> They know which areas are safe</span>
                                     </li>
                                     <li className="flex items-start gap-2">
@@ -414,7 +414,7 @@ export default function BeachSafetyGuide() {
                             </CardContent>
                         </Card>
 
-                        <Card className="border-blue-300 bg-blue-50/30">
+                        <Card className="border-blue-300 bg-blue-50/30 dark:border-blue-600 dark:bg-blue-950/20">
                             <CardHeader>
                                 <CardTitle className="text-blue-800 dark:text-blue-400 flex items-center gap-2">
                                     <Eye className="w-5 h-5" />
@@ -422,29 +422,29 @@ export default function BeachSafetyGuide() {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <ul className="space-y-3 text-sm text-muted-foreground">
+                                <ul className="space-y-3 text-sm text-muted-foreground dark:text-gray-300">
                                     <li className="flex items-start gap-2">
-                                        <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                        <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                         <span><strong>Red flags:</strong> Means no swimming allowed</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                        <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                         <span><strong>Foam lines:</strong> Often show where rip currents are</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                        <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                         <span><strong>Choppy water:</strong> Sign of dangerous currents</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                        <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                         <span><strong>Birds diving:</strong> May show where currents meet</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                        <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                         <span><strong>Dark channels:</strong> Often deeper water and rip currents</span>
                                     </li>
                                     <li className="flex items-start gap-2">
-                                        <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                        <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                         <span><strong>Square waves:</strong> Cross sea patterns - stay out!</span>
                                     </li>
                                 </ul>
@@ -462,13 +462,13 @@ export default function BeachSafetyGuide() {
                         {/* Individual Creature Cards with Carousels */}
                         <div className="space-y-8">
                             {/* Lion Fish */}
-                            <Card className="border-orange-300 bg-orange-50/30">
+                            <Card className="border-orange-300 bg-orange-50/30 dark:border-orange-600 dark:bg-orange-950/20">
                                 <CardHeader>
                                     <CardTitle className="text-orange-800 dark:text-orange-400 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         Lion Fish - Beautiful but Deadly
                                     </CardTitle>
-                                    <CardDescription className="text-orange-600">
+                                    <CardDescription className="text-orange-600 dark:text-orange-300">
                                         Recognize this venomous fish by its distinctive appearance
                                     </CardDescription>
                                 </CardHeader>
@@ -479,16 +479,16 @@ export default function BeachSafetyGuide() {
                                             alt="Lion Fish identification showing different views and characteristics"
                                         />
                                         <div>
-                                            <h4 className="font-semibold mb-3 text-orange-800">How to Identify Lion Fish:</h4>
-                                            <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                                            <h4 className="font-semibold mb-3 text-orange-800 dark:text-orange-300">How to Identify Lion Fish:</h4>
+                                            <ul className="space-y-2 text-sm text-muted-foreground dark:text-gray-300 mb-4">
                                                 <li>• <strong>Colors:</strong> Red, orange, and white striped pattern</li>
                                                 <li>• <strong>Spines:</strong> Long, fan-like venomous spines</li>
                                                 <li>• <strong>Size:</strong> 15-45 cm long</li>
                                                 <li>• <strong>Habitat:</strong> Coral reefs and rocky areas</li>
                                                 <li>• <strong>Behavior:</strong> Slow-moving, doesn&apos;t flee from humans</li>
                                             </ul>
-                                            <Alert className="border-orange-400 bg-orange-100">
-                                                <AlertDescription className="text-orange-800 text-sm">
+                                            <Alert className="border-orange-400 bg-orange-100 dark:border-orange-600 dark:bg-orange-950/30">
+                                                <AlertDescription className="text-orange-800 dark:text-orange-300 text-sm">
                                                     <strong>Danger:</strong> Sting causes extreme pain, swelling, and can lead to infection. 
                                                     Never approach or touch these beautiful but deadly fish!
                                                 </AlertDescription>
@@ -499,13 +499,13 @@ export default function BeachSafetyGuide() {
                             </Card>
 
                             {/* Stone Fish */}
-                            <Card className="border-red-300 bg-red-50/30">
+                            <Card className="border-red-300 bg-red-50/30 dark:border-red-600 dark:bg-red-950/20">
                                 <CardHeader>
                                     <CardTitle className="text-red-800 dark:text-red-400 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         Stone Fish - Master of Camouflage
                                     </CardTitle>
-                                    <CardDescription className="text-red-600">
+                                    <CardDescription className="text-red-600 dark:text-red-300">
                                         World&apos;s most venomous fish - extremely hard to spot
                                     </CardDescription>
                                 </CardHeader>
@@ -516,16 +516,16 @@ export default function BeachSafetyGuide() {
                                             alt="Stone Fish camouflaged on reef showing how they hide among rocks and coral"
                                         />
                                         <div>
-                                            <h4 className="font-semibold mb-3 text-red-800">How to Identify Stone Fish:</h4>
-                                            <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                                            <h4 className="font-semibold mb-3 text-red-800 dark:text-red-300">How to Identify Stone Fish:</h4>
+                                            <ul className="space-y-2 text-sm text-muted-foreground dark:text-gray-300 mb-4">
                                                 <li>• <strong>Appearance:</strong> Looks exactly like a rock or coral</li>
                                                 <li>• <strong>Colors:</strong> Brown, gray, or mottled patterns</li>
                                                 <li>• <strong>Size:</strong> 15-40 cm long</li>
                                                 <li>• <strong>Texture:</strong> Bumpy, warty skin surface</li>
                                                 <li>• <strong>Location:</strong> Shallow reefs, tide pools, sandy bottoms</li>
                                             </ul>
-                                            <Alert className="border-red-400 bg-red-100">
-                                                <AlertDescription className="text-red-800 text-sm">
+                                            <Alert className="border-red-400 bg-red-100 dark:border-red-600 dark:bg-red-950/30">
+                                                <AlertDescription className="text-red-800 dark:text-red-300 text-sm">
                                                     <strong>Extreme Danger:</strong> Stepping on a stone fish can be fatal! 
                                                     Always wear water shoes and never step on rocks or coral.
                                                 </AlertDescription>
@@ -536,13 +536,13 @@ export default function BeachSafetyGuide() {
                             </Card>
 
                             {/* Jellyfish */}
-                            <Card className="border-purple-300 bg-purple-50/30">
+                            <Card className="border-purple-300 bg-purple-50/30 dark:border-purple-600 dark:bg-purple-950/20">
                                 <CardHeader>
                                     <CardTitle className="text-purple-800 dark:text-purple-400 flex items-center gap-2">
                                         <Waves className="w-5 h-5" />
                                         Jellyfish - Transparent Danger
                                     </CardTitle>
-                                    <CardDescription className="text-purple-600">
+                                    <CardDescription className="text-purple-600 dark:text-purple-300">
                                         Various species with different levels of danger
                                     </CardDescription>
                                 </CardHeader>
@@ -553,16 +553,16 @@ export default function BeachSafetyGuide() {
                                             alt="Different types of jellyfish found in Sri Lankan waters"
                                         />
                                         <div>
-                                            <h4 className="font-semibold mb-3 text-purple-800">How to Identify Jellyfish:</h4>
-                                            <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                                            <h4 className="font-semibold mb-3 text-purple-800 dark:text-purple-300">How to Identify Jellyfish:</h4>
+                                            <ul className="space-y-2 text-sm text-muted-foreground dark:text-gray-300 mb-4">
                                                 <li>• <strong>Body:</strong> Transparent, bell or umbrella-shaped</li>
                                                 <li>• <strong>Tentacles:</strong> Long, trailing stinging arms</li>
                                                 <li>• <strong>Movement:</strong> Float and pulse through water</li>
                                                 <li>• <strong>Colors:</strong> Clear, white, blue, or pink</li>
                                                 <li>• <strong>Size:</strong> From tiny to 30cm+ diameter</li>
                                             </ul>
-                                            <Alert className="border-purple-400 bg-purple-100">
-                                                <AlertDescription className="text-purple-800 text-sm">
+                                            <Alert className="border-purple-400 bg-purple-100 dark:border-purple-600 dark:bg-purple-950/30">
+                                                <AlertDescription className="text-purple-800 dark:text-purple-300 text-sm">
                                                     <strong>Warning:</strong> Can sting even when dead on the beach. 
                                                     Some species cause severe burns and systemic reactions.
                                                 </AlertDescription>
@@ -573,13 +573,13 @@ export default function BeachSafetyGuide() {
                             </Card>
 
                             {/* Sea Snakes */}
-                            <Card className="border-blue-300 bg-blue-50/30">
+                            <Card className="border-blue-300 bg-blue-50/30 dark:border-blue-600 dark:bg-blue-950/20">
                                 <CardHeader>
                                     <CardTitle className="text-blue-800 dark:text-blue-400 flex items-center gap-2">
                                         <Waves className="w-5 h-5" />
                                         Sea Snakes - Marine Serpents
                                     </CardTitle>
-                                    <CardDescription className="text-blue-600">
+                                    <CardDescription className="text-blue-600 dark:text-blue-300">
                                         Highly venomous but generally docile marine reptiles
                                     </CardDescription>
                                 </CardHeader>
@@ -590,16 +590,16 @@ export default function BeachSafetyGuide() {
                                             alt="Sea snakes showing banded patterns and swimming behavior"
                                         />
                                         <div>
-                                            <h4 className="font-semibold mb-3 text-blue-800">How to Identify Sea Snakes:</h4>
-                                            <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                                            <h4 className="font-semibold mb-3 text-blue-800 dark:text-blue-300">How to Identify Sea Snakes:</h4>
+                                            <ul className="space-y-2 text-sm text-muted-foreground dark:text-gray-300 mb-4">
                                                 <li>• <strong>Pattern:</strong> Black and white or yellow banded stripes</li>
                                                 <li>• <strong>Tail:</strong> Flattened paddle-like tail for swimming</li>
                                                 <li>• <strong>Size:</strong> 1-2 meters long</li>
                                                 <li>• <strong>Behavior:</strong> Surface regularly to breathe air</li>
                                                 <li>• <strong>Movement:</strong> Graceful swimming, can&apos;t move on land</li>
                                             </ul>
-                                            <Alert className="border-blue-400 bg-blue-100">
-                                                <AlertDescription className="text-blue-800 text-sm">
+                                            <Alert className="border-blue-400 bg-blue-100 dark:border-blue-600 dark:bg-blue-950/30">
+                                                <AlertDescription className="text-blue-800 dark:text-blue-300 text-sm">
                                                     <strong>Important:</strong> Very venomous but rarely aggressive. 
                                                     Don&apos;t try to handle or catch them - just swim away calmly.
                                                 </AlertDescription>
@@ -610,13 +610,13 @@ export default function BeachSafetyGuide() {
                             </Card>
 
                             {/* Sea Urchins */}
-                            <Card className="border-gray-300 bg-gray-50/30">
+                            <Card className="border-gray-300 bg-gray-50/30 dark:border-gray-600 dark:bg-gray-950/20">
                                 <CardHeader>
-                                    <CardTitle className="text-gray-800 dark:text-gray-400 flex items-center gap-2">
+                                    <CardTitle className="text-gray-800 dark:text-gray-300 flex items-center gap-2">
                                         <AlertTriangle className="w-5 h-5" />
                                         Sea Urchins - Spiny Bottom Dwellers
                                     </CardTitle>
-                                    <CardDescription className="text-gray-600">
+                                    <CardDescription className="text-gray-600 dark:text-gray-400">
                                         Sharp-spined creatures that hide in rocks and coral
                                     </CardDescription>
                                 </CardHeader>
@@ -627,16 +627,16 @@ export default function BeachSafetyGuide() {
                                             alt="Sea urchins showing dangerous spines and typical hiding spots"
                                         />
                                         <div>
-                                            <h4 className="font-semibold mb-3 text-gray-800">How to Identify Sea Urchins:</h4>
-                                            <ul className="space-y-2 text-sm text-muted-foreground mb-4">
+                                            <h4 className="font-semibold mb-3 text-gray-800 dark:text-gray-300">How to Identify Sea Urchins:</h4>
+                                            <ul className="space-y-2 text-sm text-muted-foreground dark:text-gray-300 mb-4">
                                                 <li>• <strong>Appearance:</strong> Round ball covered in sharp spines</li>
                                                 <li>• <strong>Colors:</strong> Black, dark purple, or brown</li>
                                                 <li>• <strong>Size:</strong> 5-15 cm diameter with long spines</li>
                                                 <li>• <strong>Location:</strong> Rock pools, coral crevices, shallow reefs</li>
                                                 <li>• <strong>Behavior:</strong> Stay attached to rocks, don&apos;t move much</li>
                                             </ul>
-                                            <Alert className="border-gray-400 bg-gray-100">
-                                                <AlertDescription className="text-gray-800 text-sm">
+                                            <Alert className="border-gray-400 bg-gray-100 dark:border-gray-600 dark:bg-gray-950/30">
+                                                <AlertDescription className="text-gray-800 dark:text-gray-300 text-sm">
                                                     <strong>Painful Injury:</strong> Spines break off in skin and are very hard to remove. 
                                                     Can cause infection and intense pain for days or weeks.
                                                 </AlertDescription>
@@ -648,9 +648,9 @@ export default function BeachSafetyGuide() {
                         </div>
                         
                         {/* Protection Tips */}
-                        <Card className="mt-6 border-blue-300 bg-blue-50/30">
+                        <Card className="mt-6 border-blue-300 bg-blue-50/30 dark:border-blue-600 dark:bg-blue-900/20">
                             <CardHeader>
-                                <CardTitle className="text-blue-800 dark:text-blue-400 flex items-center gap-2">
+                                <CardTitle className="text-blue-800 dark:text-blue-300 flex items-center gap-2">
                                     <Shield className="w-5 h-5" />
                                     How to Protect Yourself from Sea Creatures
                                 </CardTitle>
@@ -658,51 +658,51 @@ export default function BeachSafetyGuide() {
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <h4 className="font-semibold mb-3 text-blue-800">Prevention Tips:</h4>
-                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                        <h4 className="font-semibold mb-3 text-blue-800 dark:text-blue-300">Prevention Tips:</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground dark:text-gray-300">
                                             <li className="flex items-start gap-2">
-                                                <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                                 <span><strong>Wear water shoes:</strong> Essential protection from stone fish, sea urchins, and sharp coral</span>
                                             </li>
                                             <li className="flex items-start gap-2">
-                                                <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                                 <span><strong>Don&apos;t touch anything:</strong> Coral, rocks, or marine life can be dangerous</span>
                                             </li>
                                             <li className="flex items-start gap-2">
-                                                <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                                 <span><strong>Avoid rock pools:</strong> Sea urchins hide in crevices and shallow areas</span>
                                             </li>
                                             <li className="flex items-start gap-2">
-                                                <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                                 <span><strong>Stay in designated areas:</strong> Swim where lifeguards patrol</span>
                                             </li>
                                             <li className="flex items-start gap-2">
-                                                <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                                 <span><strong>Check before entering:</strong> Look for jellyfish warnings and creature alerts</span>
                                             </li>
                                         </ul>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold mb-3 text-blue-800">What to Do if Stung/Injured:</h4>
-                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                        <h4 className="font-semibold mb-3 text-blue-800 dark:text-blue-300">What to Do if Stung/Injured:</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground dark:text-gray-300">
                                             <li className="flex items-start gap-2">
-                                                <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                                 <span><strong>Get out of water:</strong> Move to shore immediately</span>
                                             </li>
                                             <li className="flex items-start gap-2">
-                                                <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                                 <span><strong>Don&apos;t rub the area:</strong> This makes venom spread more</span>
                                             </li>
                                             <li className="flex items-start gap-2">
-                                                <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                                 <span><strong>Sea urchin spines:</strong> Soak in warm water, don&apos;t try to remove deeply embedded spines</span>
                                             </li>
                                             <li className="flex items-start gap-2">
-                                                <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                                 <span><strong>Remove tentacles:</strong> Use tweezers, not bare hands</span>
                                             </li>
                                             <li className="flex items-start gap-2">
-                                                <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                                 <span><strong>Seek medical help:</strong> Call emergency services immediately</span>
                                             </li>
                                         </ul>
@@ -715,12 +715,12 @@ export default function BeachSafetyGuide() {
 
                 {/* Emergency Response */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold mb-6 text-red-800">What to Do in Water Emergency</h2>
+                    <h2 className="text-3xl font-bold mb-6 text-red-800 dark:text-red-400">What to Do in Water Emergency</h2>
                     <div className="space-y-6">
-                        <Alert className="border-red-400 bg-red-100">
-                            <AlertTriangle className="h-4 w-4 text-red-600" />
-                            <AlertTitle className="text-red-800">EMERGENCY - Do This First!</AlertTitle>
-                            <AlertDescription className="text-red-700">
+                        <Alert className="border-red-400 bg-red-100 dark:border-red-600 dark:bg-red-950/30">
+                            <AlertTriangle className="h-4 w-4 text-red-600 dark:text-red-400" />
+                            <AlertTitle className="text-red-800 dark:text-red-300">EMERGENCY - Do This First!</AlertTitle>
+                            <AlertDescription className="text-red-700 dark:text-red-300">
                                 <strong>1. Stay calm and don&apos;t panic</strong><br />
                                 <strong>2. Call for help loudly</strong><br />
                                 <strong>3. Try to float and save energy</strong>
@@ -728,7 +728,7 @@ export default function BeachSafetyGuide() {
                         </Alert>
 
                         <div className="grid md:grid-cols-2 gap-6">
-                            <Card className="border-green-300 bg-green-50/30">
+                            <Card className="border-green-300 bg-green-50/30 dark:border-green-600 dark:bg-green-950/20">
                                 <CardHeader>
                                     <CardTitle className="text-green-800 dark:text-green-400 flex items-center gap-2">
                                         <Heart className="w-5 h-5" />
@@ -736,7 +736,7 @@ export default function BeachSafetyGuide() {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <ul className="space-y-3 text-sm text-muted-foreground">
+                                    <ul className="space-y-3 text-sm text-muted-foreground dark:text-gray-300">
                                         <li className="flex items-start gap-2">
                                             <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
                                             <span><strong>Don&apos;t fight the current:</strong> It will tire you out</span>
@@ -746,22 +746,22 @@ export default function BeachSafetyGuide() {
                                             <span><strong>Float on your back:</strong> This saves energy</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                                            <ChevronRight className="w-4 h-4 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
                                             <span><strong>Wave for help:</strong> Raise one arm high and shout</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                                            <ChevronRight className="w-4 h-4 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
                                             <span><strong>If in rip current:</strong> Swim parallel to shore first</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <ChevronRight className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                                            <ChevronRight className="w-4 h-4 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
                                             <span><strong>Stay calm:</strong> Panic makes everything worse</span>
                                         </li>
                                     </ul>
                                 </CardContent>
                             </Card>
 
-                            <Card className="border-blue-300 bg-blue-50/30">
+                            <Card className="border-blue-300 bg-blue-50/30 dark:border-blue-600 dark:bg-blue-950/20">
                                 <CardHeader>
                                     <CardTitle className="text-blue-800 dark:text-blue-400 flex items-center gap-2">
                                         <Phone className="w-5 h-5" />
@@ -769,25 +769,25 @@ export default function BeachSafetyGuide() {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <ul className="space-y-3 text-sm text-muted-foreground">
+                                    <ul className="space-y-3 text-sm text-muted-foreground dark:text-gray-300">
                                         <li className="flex items-start gap-2">
-                                            <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                            <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                             <span><strong>Call for help first:</strong> Shout for lifeguard or call 119</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                            <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                             <span><strong>Don&apos;t swim to them:</strong> You might drown too</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                            <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                             <span><strong>Throw something:</strong> Life ring, rope, or anything that floats</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                            <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                             <span><strong>Use a boat:</strong> If available and you know how</span>
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <ChevronRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                            <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                                             <span><strong>Get trained help:</strong> Lifeguards know what to do</span>
                                         </li>
                                     </ul>
@@ -801,16 +801,16 @@ export default function BeachSafetyGuide() {
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6 text-blue-800 dark:text-blue-400">Best Beaches for Each Season</h2>
                     <div className="grid md:grid-cols-2 gap-6">
-                        <Card className="border-blue-300 bg-blue-50/30">
+                        <Card className="border-blue-300 bg-blue-50/30 dark:border-blue-600 dark:bg-blue-950/20">
                             <CardHeader>
                                 <CardTitle className="text-blue-800 dark:text-blue-400">May to September (Southwest Monsoon)</CardTitle>
-                                <CardDescription>When west and south coasts are dangerous</CardDescription>
+                                <CardDescription className="dark:text-gray-300">When west and south coasts are dangerous</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="space-y-4">
                                     <div>
-                                        <h4 className="font-semibold mb-2 text-green-700">Safe Beaches:</h4>
-                                        <ul className="space-y-1 text-sm text-muted-foreground">
+                                        <h4 className="font-semibold mb-2 text-green-700 dark:text-green-400">Safe Beaches:</h4>
+                                        <ul className="space-y-1 text-sm text-muted-foreground dark:text-gray-300">
                                             <li>• Arugam Bay (East Coast)</li>
                                             <li>• Pasikuda Beach (East Coast)</li>
                                             <li>• Kalkudah Beach (East Coast)</li>
@@ -818,8 +818,8 @@ export default function BeachSafetyGuide() {
                                         </ul>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold mb-2 text-red-700">Avoid These Beaches:</h4>
-                                        <ul className="space-y-1 text-sm text-muted-foreground">
+                                        <h4 className="font-semibold mb-2 text-red-700 dark:text-red-400">Avoid These Beaches:</h4>
+                                        <ul className="space-y-1 text-sm text-muted-foreground dark:text-gray-300">
                                             <li>• Hikkaduwa (Very dangerous)</li>
                                             <li>• Unawatuna (Strong currents)</li>
                                             <li>• Mirissa (Big waves)</li>
@@ -830,16 +830,16 @@ export default function BeachSafetyGuide() {
                             </CardContent>
                         </Card>
 
-                        <Card className="border-orange-300 bg-orange-50/30">
+                        <Card className="border-orange-300 bg-orange-50/30 dark:border-orange-600 dark:bg-orange-950/20">
                             <CardHeader>
                                 <CardTitle className="text-orange-800 dark:text-orange-400">October to February (Northeast Monsoon)</CardTitle>
-                                <CardDescription>When east and north coasts are dangerous</CardDescription>
+                                <CardDescription className="dark:text-gray-300">When east and north coasts are dangerous</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="space-y-4">
                                     <div>
-                                        <h4 className="font-semibold mb-2 text-green-700">Safe Beaches:</h4>
-                                        <ul className="space-y-1 text-sm text-muted-foreground">
+                                        <h4 className="font-semibold mb-2 text-green-700 dark:text-green-400">Safe Beaches:</h4>
+                                        <ul className="space-y-1 text-sm text-muted-foreground dark:text-gray-300">
                                             <li>• Negombo Beach (West Coast)</li>
                                             <li>• Bentota Beach (West Coast)</li>
                                             <li>• Hikkaduwa (West Coast)</li>
@@ -847,8 +847,8 @@ export default function BeachSafetyGuide() {
                                         </ul>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold mb-2 text-red-700">Avoid These Beaches:</h4>
-                                        <ul className="space-y-1 text-sm text-muted-foreground">
+                                        <h4 className="font-semibold mb-2 text-red-700 dark:text-red-400">Avoid These Beaches:</h4>
+                                        <ul className="space-y-1 text-sm text-muted-foreground dark:text-gray-300">
                                             <li>• Arugam Bay (Very rough)</li>
                                             <li>• Trincomalee (Strong currents)</li>
                                             <li>• Nilaveli (Big waves)</li>
@@ -863,7 +863,7 @@ export default function BeachSafetyGuide() {
 
                 {/* Final Tips */}
                 <section className="mb-12">
-                    <Card className="border-green-400 bg-green-50 dark:bg-green-950/30">
+                    <Card className="border-green-400 bg-green-50 dark:bg-green-950/30 dark:border-green-600">
                         <CardHeader>
                             <CardTitle className="text-green-800 dark:text-green-400 text-2xl text-center">
                                 Remember: The Ocean is Stronger Than You
@@ -871,24 +871,24 @@ export default function BeachSafetyGuide() {
                         </CardHeader>
                         <CardContent>
                             <div className="text-center space-y-4">
-                                <p className="text-lg text-muted-foreground">
+                                <p className="text-lg text-muted-foreground dark:text-gray-300">
                                     Even the strongest swimmers can get in trouble. Always respect the sea and follow safety rules.
                                 </p>
                                 <div className="flex flex-wrap justify-center gap-4 text-sm">
-                                    <Badge variant="outline" className="border-green-400 text-green-700">
+                                    <Badge variant="outline" className="border-green-400 text-green-700 dark:border-green-500 dark:text-green-400">
                                         Never swim alone
                                     </Badge>
-                                    <Badge variant="outline" className="border-green-400 text-green-700">
+                                    <Badge variant="outline" className="border-green-400 text-green-700 dark:border-green-500 dark:text-green-400">
                                         Check conditions first
                                     </Badge>
-                                    <Badge variant="outline" className="border-green-400 text-green-700">
+                                    <Badge variant="outline" className="border-green-400 text-green-700 dark:border-green-500 dark:text-green-400">
                                         Know your limits
                                     </Badge>
-                                    <Badge variant="outline" className="border-green-400 text-green-700">
+                                    <Badge variant="outline" className="border-green-400 text-green-700 dark:border-green-500 dark:text-green-400">
                                         When in doubt, stay out
                                     </Badge>
                                 </div>
-                                <p className="text-sm text-muted-foreground italic">
+                                <p className="text-sm text-muted-foreground dark:text-gray-400 italic">
                                     &quot;The sea doesn&apos;t care if you&apos;re a good swimmer. It only cares if you&apos;re smart.&quot;
                                 </p>
                             </div>

@@ -105,7 +105,7 @@ const destinationsItems = [
       { name: "Galle Fort", href: "/destinations/galle" },
       { name: "Temple of the Tooth", href: "/destinations/temple-of-tooth" },
       { name: "Adam's Peak", href: "/destinations/adams-peak" },
-      { name: "Mihintale", href: "/destinations/mihintale" },
+      { name: "Mihintale", href: "/destinations/mihinthalaya" },
       { name: "Yapahuwa", href: "/destinations/yapahuwa" },
     ],
   },

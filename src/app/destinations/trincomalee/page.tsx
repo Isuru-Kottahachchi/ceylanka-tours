@@ -709,7 +709,7 @@ export default function TrincomaleeTravelGuide() {
 
                 {/* See More Details Button */}
                 <div className="mt-6 text-center">
-                    <Link href="/destinations/Koneswaram-Temple-Trincomalee">
+                    <Link href="/destinations/koneswaram-temple-trincomalee">
                   <Button
                     className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                     variant="default"

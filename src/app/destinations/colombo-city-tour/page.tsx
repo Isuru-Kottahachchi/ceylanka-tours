@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Building, ShoppingBag, Camera } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Colombo City Tour Sri Lanka: Complete Guide 2025 | Commercial Capital Exploration",
@@ -224,7 +226,65 @@ export default function ColomboTourGuide() {
                         Historic Galle Face Hotel nearby
                       </li>
                     </ul>
+                    <div className="mt-6">
+                      <Link href="/destinations/galle-face-green">
+                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                          Explore More →
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Gangarama Temple */}
+            <Card>
+              <CardHeader>
+                <CardTitle>2. Gangarama Temple</CardTitle>
+                <CardDescription>Iconic Buddhist temple and cultural center</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Gangarama Temple is one of Colombo&apos;s most important Buddhist temples, known for its eclectic 
+                      architecture that blends Sri Lankan, Thai, Indian, and Chinese styles. The temple complex includes 
+                      a museum, library, and vocational training institute, making it a significant cultural and educational center.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Beautiful Buddha statues and religious artifacts
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Diverse architectural styles from multiple cultures
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Peaceful atmosphere for meditation and reflection
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Museum with extensive Buddhist art collection
+                      </li>
+                    </ul>
+                    <div className="mt-6">
+                      <Link href="/destinations/gangarama-temple">
+                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                          Explore More →
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Gangarama Temple in Colombo showing ornate Buddhist architecture and golden Buddha statues"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
                 </div>
               </CardContent>
             </Card>
@@ -232,7 +292,7 @@ export default function ColomboTourGuide() {
             {/* Pettah Market */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Pettah Floating Market & Bazaar</CardTitle>
+                <CardTitle>3. Pettah Floating Market & Bazaar</CardTitle>
                 <CardDescription>Vibrant traditional market experience</CardDescription>
               </CardHeader>
               <CardContent>
@@ -261,6 +321,13 @@ export default function ColomboTourGuide() {
                         Bargaining culture and local interaction
                       </li>
                     </ul>
+                    <div className="mt-6">
+                      <Link href="/destinations/pettah">
+                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                          Explore More →
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                   <Image
                     src="/placeholder.svg?height=300&width=400"
@@ -276,7 +343,7 @@ export default function ColomboTourGuide() {
             {/* Independence Square */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Independence Memorial Hall</CardTitle>
+                <CardTitle>4. Independence Memorial Hall</CardTitle>
                 <CardDescription>National monument and architectural masterpiece</CardDescription>
               </CardHeader>
               <CardContent>
@@ -312,6 +379,13 @@ export default function ColomboTourGuide() {
                         Popular jogging and exercise area
                       </li>
                     </ul>
+                    <div className="mt-6">
+                      <Link href="/destinations/independence-square">
+                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                          Explore More →
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -320,7 +394,7 @@ export default function ColomboTourGuide() {
             {/* Red Mosque */}
             <Card>
               <CardHeader>
-                <CardTitle>4. Red Mosque (Jami Ul-Alfar Mosque)</CardTitle>
+                <CardTitle>5. Red Mosque (Jami Ul-Alfar Mosque)</CardTitle>
                 <CardDescription>Stunning Indo-Saracenic architecture</CardDescription>
               </CardHeader>
               <CardContent>
@@ -349,6 +423,13 @@ export default function ColomboTourGuide() {
                         Respectful photography allowed from outside
                       </li>
                     </ul>
+                    <div className="mt-6">
+                      <Link href="/destinations/red-mosque">
+                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                          Explore More →
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                   <Image
                     src="/placeholder.svg?height=300&width=400"
@@ -364,7 +445,7 @@ export default function ColomboTourGuide() {
             {/* Port City Colombo */}
             <Card>
               <CardHeader>
-                <CardTitle>5. Port City Colombo</CardTitle>
+                <CardTitle>6. Port City Colombo</CardTitle>
                 <CardDescription>Sri Lanka&apos;s newest urban development marvel</CardDescription>
               </CardHeader>
               <CardContent>
@@ -400,6 +481,13 @@ export default function ColomboTourGuide() {
                         Stunning city and ocean views
                       </li>
                     </ul>
+                    <div className="mt-6">
+                      <Link href="/destinations/Port-city">
+                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                          Explore More →
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </CardContent>
