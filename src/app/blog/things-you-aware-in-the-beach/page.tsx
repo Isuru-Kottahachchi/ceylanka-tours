@@ -84,17 +84,14 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
 export default function BeachSafetyGuide() {
     // Define images for dangerous sea creatures
     const lionFishImages = [
-        "/placeholder.svg?height=300&width=400&text=Lion+Fish+Front+View",
-        "/placeholder.svg?height=300&width=400&text=Lion+Fish+Side+View", 
-        "/placeholder.svg?height=300&width=400&text=Lion+Fish+Spines",
-        "/placeholder.svg?height=300&width=400&text=Lion+Fish+Habitat"
+        "/Lionfish.jpeg",
+        "/Lionfish.jpg", 
+        "/Lionfish1.jpeg",
     ]
 
     const stoneFishImages = [
-        "/placeholder.svg?height=300&width=400&text=Stone+Fish+Camouflaged",
-        "/placeholder.svg?height=300&width=400&text=Stone+Fish+Close+Up",
-        "/placeholder.svg?height=300&width=400&text=Stone+Fish+Reef+Hiding",
-        "/placeholder.svg?height=300&width=400&text=Stone+Fish+Comparison"
+        "/Stonefish.jpg",
+        "/Stonefish1.jpg",
     ]
 
     const jellyfishImages = [

@@ -1035,15 +1035,16 @@ export default function TrincomaleeTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Perched on a hill overlooking Trincomalee bay, Girihandu Seya is believed to be one of the earliest 
-                      Buddhist stupas built in Sri Lanka, dating back to the 3rd century BC. According to Buddhist chronicles, 
-                      this sacred site houses relics of the Buddha brought by Arahat Mahinda during the introduction of 
-                      Buddhism to the island.
+                      Buddhist stupas built in Sri Lanka. According to Buddhist chronicles and ancient inscriptions found at 
+                      the site, this sacred stupa was built by two merchant brothers, Trapusa (Tapassu) and Bahalika (Bhalluka), 
+                      who received hair relics directly from the Buddha immediately after his enlightenment.
                     </p>
                     <p className="text-muted-foreground mb-4">
                       The stupa&apos;s name translates to &quot;Hill Stupa&quot; and it offers panoramic views of the natural harbour 
-                      and surrounding coastline. The site represents an important archaeological treasure that connects 
-                      visitors to the very beginnings of Buddhist civilization in Sri Lanka. The peaceful setting makes 
-                      it an ideal place for meditation and reflection.
+                      and surrounding coastline. Archaeological evidence shows the original structure was enlarged in the 
+                      8th century AD. The site represents an extraordinary archaeological treasure that connects visitors 
+                      to the very first disciples of the Buddha, making it potentially the earliest Buddhist monument in 
+                      Sri Lanka. The peaceful hilltop setting makes it an ideal place for meditation and reflection.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
