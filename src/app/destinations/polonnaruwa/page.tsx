@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useState } from "react"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Crown, ChevronRight, ChevronLeft } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Crown, ChevronRight, ChevronLeft, Car } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
@@ -213,6 +213,227 @@ export default function PolonnaruwaGuide() {
                             </div>
                         </CardContent>
                     </Card>
+                </section>
+
+                {/* How to Get In */}
+                <section className="mb-12">
+                    <Card className="border-blue-200 dark:border-blue-800 bg-blue-50/30 dark:bg-blue-950/30">
+                        <CardHeader>
+                            <CardTitle className="flex items-center gap-2 text-blue-800 dark:text-blue-200">
+                                <MapPin className="w-5 h-5" />
+                                How to Get to Polonnaruwa
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Cultural Triangle Tours (Recommended)</h4>
+                                    <ul className="space-y-2 text-sm text-muted-foreground">
+                                        <li>• <strong>Package Tours:</strong> 2-3 day Cultural Triangle packages</li>
+                                        <li>• <strong>Includes:</strong> Polonnaruwa, Sigiriya, and Dambulla</li>
+                                        <li>• <strong>Transport:</strong> Air-conditioned vehicles with guide</li>
+                                        <li>• <strong>Best option:</strong> Most comprehensive and educational</li>
+                                    </ul>
+                                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                                        <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                                            <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> specializes in Cultural Triangle expeditions with expert archaeological guides who bring ancient Polonnaruwa to life with fascinating historical insights and professional service.
+                                        </p>
+                                        <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                                            <div className="flex items-center gap-2">
+                                                <span>📞</span>
+                                                <span><strong>Contact:</strong> +94 77 123 4567</span>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <span>🏛️</span>
+                                                <span><strong>Archaeological Tours</strong> - Expert guides & cultural insights</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Transportation Options</h4>
+                                    <div className="space-y-3">
+                                        <div>
+                                            <h5 className="font-medium text-sm">From Colombo</h5>
+                                            <ul className="space-y-1 text-sm text-muted-foreground">
+                                                <li>• <strong>Distance:</strong> 216km (134 miles)</li>
+                                                <li>• <strong>Duration:</strong> 4-5 hours by car</li>
+                                                <li>• <strong>Cost:</strong> $60-90 USD private transport</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h5 className="font-medium text-sm">From Sigiriya</h5>
+                                            <ul className="space-y-1 text-sm text-muted-foreground">
+                                                <li>• <strong>Distance:</strong> 55km (34 miles)</li>
+                                                <li>• <strong>Duration:</strong> 1.5 hours</li>
+                                                <li>• <strong>Ideal:</strong> Combined Cultural Triangle tour</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h5 className="font-medium text-sm">From Kandy</h5>
+                                            <ul className="space-y-1 text-sm text-muted-foreground">
+                                                <li>• <strong>Distance:</strong> 140km (87 miles)</li>
+                                                <li>• <strong>Duration:</strong> 3 hours via A9 highway</li>
+                                                <li>• <strong>Route:</strong> Scenic drive through central Sri Lanka</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
+                                <p className="text-sm text-blue-800 dark:text-blue-200">
+                                    <strong>💡 Pro Tip:</strong> Start early morning visits to avoid crowds and heat. Most visitors combine Polonnaruwa with Sigiriya and Dambulla as part of a Cultural Triangle tour for the best historical experience.
+                                </p>
+                            </div>
+                            <div className="mt-4">
+                                <div className="grid md:grid-cols-3 gap-4">
+                                    <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+                                        <h5 className="font-medium text-blue-800 dark:text-blue-200">Entrance Fee</h5>
+                                        <p className="text-sm text-blue-600 dark:text-blue-300">$25 USD for foreign visitors</p>
+                                        <p className="text-xs text-muted-foreground">Includes site access and museum</p>
+                                    </div>
+                                    <div className="p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
+                                        <h5 className="font-medium text-green-800 dark:text-green-200">Opening Hours</h5>
+                                        <p className="text-sm text-green-600 dark:text-green-300">7:00 AM - 6:00 PM daily</p>
+                                        <p className="text-xs text-muted-foreground">Last entry at 5:30 PM</p>
+                                    </div>
+                                    <div className="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
+                                        <h5 className="font-medium text-purple-800 dark:text-purple-200">Best Time</h5>
+                                        <p className="text-sm text-purple-600 dark:text-purple-300">Early morning or late afternoon</p>
+                                        <p className="text-xs text-muted-foreground">Avoid midday heat</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </section>
+
+                <section className="mb-12">
+                    <Card className="border-gray-200 dark:border-gray-700 bg-gray-50/30 dark:bg-gray-900/30">
+                        <CardHeader>
+                            <CardTitle className="flex items-center gap-2 text-gray-800 dark:text-gray-200">
+                                <Car className="w-5 h-5" />
+                                All Transportation Options to Polonnaruwa
+                            </CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="space-y-6">
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-green-700 dark:text-green-300">🚗 Private Car/Taxi (Recommended)</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                            <li>• <strong>Duration:</strong> 4-5 hours from Colombo</li>
+                                            <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                                            <li>• <strong>Advantages:</strong> Flexible timing, door-to-door service</li>
+                                            <li>• <strong>Best for:</strong> Comfort and convenience</li>
+                                        </ul>
+                                        <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                                            <p className="text-xs text-orange-800 dark:text-orange-200 mb-1">
+                                                <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> - Professional drivers, comfortable vehicles, Cultural Triangle expertise
+                                            </p>
+                                            <p className="text-xs text-orange-800 dark:text-orange-200">📞 Contact: +94 77 123 4567</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">🚌 Public Bus</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                            <li>• <strong>Route:</strong> Colombo Pettah → Polonnaruwa</li>
+                                            <li>• <strong>Duration:</strong> 5-6 hours</li>
+                                            <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                                            <li>• <strong>Frequency:</strong> Every 30-60 minutes</li>
+                                            <li>• <strong>Note:</strong> Less comfortable, limited stops</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-purple-700 dark:text-purple-300">🚂 Train + Bus Combination</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                            <li>• <strong>Route:</strong> Colombo Fort → Gal Oya/Batticaloa line</li>
+                                            <li>• <strong>Stop:</strong> Get off at Gal Oya Junction</li>
+                                            <li>• <strong>Then:</strong> Local bus to Polonnaruwa (30 minutes)</li>
+                                            <li>• <strong>Total Duration:</strong> 6-7 hours</li>
+                                            <li>• <strong>Cost:</strong> $4-7 USD total</li>
+                                            <li>• <strong>Experience:</strong> Scenic but time-consuming</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-cyan-700 dark:text-cyan-300">🏍️ Alternative Options</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                            <li>• <strong>Motorcycle/Scooter:</strong> For experienced riders</li>
+                                            <li>• <strong>Organized Tours:</strong> Group bus tours from Colombo</li>
+                                            <li>• <strong>Rideshare:</strong> Uber/PickMe (expensive for long distance)</li>
+                                            <li>• <strong>Rental Car:</strong> Self-drive option available</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-700">
+                                    <h4 className="font-semibold mb-2 text-blue-800 dark:text-blue-300">💡 Transportation Tips:</h4>
+                                    <ul className="space-y-1 text-sm text-blue-700 dark:text-blue-300">
+                                        <li>• <strong>Private car is recommended</strong> for comfort, flexibility, and time efficiency</li>
+                                        <li>• <strong>Bus travel</strong> is budget-friendly but can be crowded and hot</li>
+                                        <li>• <strong>Train option</strong> offers scenic views but requires bus connection</li>
+                                        <li>• <strong>Start early</strong> regardless of transport method to avoid heat and crowds</li>
+                                        <li>• <strong>Book accommodation</strong> in nearby Habarana or Dambulla for convenient access</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </section>
+                <section className="mb-12">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle className="flex items-center gap-2">
+                                <Clock className="w-5 h-5 text-orange-500" />
+                                Site Information & Entry Requirements
+                            </CardTitle>
+                        </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-foreground">Opening Hours:</h4>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <Clock className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
+                                                <span><strong>Daily:</strong> 7:00 AM - 6:00 PM</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                <span><strong>Best Time:</strong> Early morning (7-9 AM) or late afternoon (4-6 PM)</span>
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                <span>Avoid midday heat (11 AM - 3 PM)</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-foreground">Entry Fees (2025):</h4>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex justify-between">
+                                                <span>Foreign Adults:</span>
+                                                <span className="font-medium">$30 USD</span>
+                                            </li>
+                                            <li className="flex justify-between">
+                                                <span>Foreign Children (6-12):</span>
+                                                <span className="font-medium">$15 USD</span>
+                                            </li>
+                                            <li className="flex justify-between">
+                                                <span>SAARC Nationals:</span>
+                                                <span className="font-medium">$15 USD</span>
+                                            </li>
+                                            <li className="flex justify-between">
+                                                <span>Bicycle Rental:</span>
+                                                <span className="font-medium">$5 USD</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
                 </section>
 
                 {/* Royal Complex */}

@@ -1,7 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, CheckCircle, Star, Heart, TreePine, Waves, Camera, ChevronLeft, ChevronRight } from "lucide-react"
+import Link from "next/link"
+import { Clock, CheckCircle, Star, Heart, TreePine, Waves, Camera, ChevronLeft, ChevronRight, ArrowLeft, ArrowRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -63,11 +64,10 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
             {images.map((_, index) => (
               <button
                 key={index}
-                className={`w-3 h-3 rounded-full transition-all duration-200 cursor-pointer ${
-                  index === currentIndex 
-                    ? 'bg-white scale-110' 
+                className={`w-3 h-3 rounded-full transition-all duration-200 cursor-pointer ${index === currentIndex
+                    ? 'bg-white scale-110'
                     : 'bg-white/60 hover:bg-white/80'
-                }`}
+                  }`}
                 onClick={() => goToImage(index)}
               />
             ))}
@@ -92,7 +92,7 @@ export default function PinnawalaElephantOrphanage() {
   ]
 
   const bathingImages = [
-    "/placeholder.svg?height=400&width=600", 
+    "/placeholder.svg?height=400&width=600",
     "/placeholder.svg?height=400&width=600"
   ]
 
@@ -134,22 +134,34 @@ export default function PinnawalaElephantOrphanage() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Pinnawala Elephant Orphanage</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Pinnawala Elephant Orphanage is the world&apos;s largest elephant orphanage and breeding program. 
-              Located in Kegalle district, this 20-hectare sanctuary is home to more than 80 elephants, including 
-              many baby elephants born at the facility. Started in 1975, this amazing place rescues orphaned and 
+              Pinnawala Elephant Orphanage is the world&apos;s largest elephant orphanage and breeding program.
+              Located in Kegalle district, this 20-hectare sanctuary is home to more than 80 elephants, including
+              many baby elephants born at the facility. Started in 1975, this amazing place rescues orphaned and
               injured elephants from across Sri Lanka.
             </p>
             <p className="text-lg">
-              Watch these gentle giants as they eat, play, and bathe in the Maha Oya river. The orphanage offers 
-              visitors a unique chance to see elephants up close in a safe environment. From tiny baby elephants 
+              Watch these gentle giants as they eat, play, and bathe in the Maha Oya river. The orphanage offers
+              visitors a unique chance to see elephants up close in a safe environment. From tiny baby elephants
               to massive adults, you can observe their natural behaviors and learn about elephant conservation efforts.
             </p>
+            <Link href="/blog/sri-lankan-elephants">
+              <Button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 h-12 cursor-pointer">
+                <span>Learn About Sri Lankan Elephants</span>
+                <ArrowRight className="h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </section>
 
         {/* Main Image Carousel */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6 text-center">Experience the Magic of Pinnawala</h2>
+          {/* Navigation Buttons */}
+          <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+
+
+
+          </div>
           <ImageCarousel images={elephantImages} alt="Pinnawala Elephant Orphanage elephants" />
         </section>
 
@@ -219,13 +231,13 @@ export default function PinnawalaElephantOrphanage() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The feeding sessions are the most popular activity at Pinnawala. Three times daily, all elephants 
-                      gather in the main area for their meals. Baby elephants drink milk from large bottles while adult 
+                      The feeding sessions are the most popular activity at Pinnawala. Three times daily, all elephants
+                      gather in the main area for their meals. Baby elephants drink milk from large bottles while adult
                       elephants eat fruits, vegetables, and specially prepared elephant food.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      This is the best time for photography as elephants are calm and stay in one area. You can see the 
-                      different personalities of each elephant and watch the babies learning to use their trunks. The 
+                      This is the best time for photography as elephants are calm and stay in one area. You can see the
+                      different personalities of each elephant and watch the babies learning to use their trunks. The
                       feeding area gets crowded, so arrive 15 minutes early for the best viewing spots.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -263,13 +275,13 @@ export default function PinnawalaElephantOrphanage() {
                   <ImageCarousel images={bathingImages} alt="Elephants bathing in Maha Oya river" />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Twice daily, the elephants walk down to the Maha Oya river for their bath time. This natural 
-                      behavior is essential for elephant health and happiness. You can watch from the riverbank as 
+                      Twice daily, the elephants walk down to the Maha Oya river for their bath time. This natural
+                      behavior is essential for elephant health and happiness. You can watch from the riverbank as
                       elephants spray water on themselves, play in the river, and cool down in the flowing water.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The walk to the river takes about 10 minutes as elephants slowly move through the village. Local 
-                      people come out to watch this daily parade. Young elephants often play in the shallow water while 
+                      The walk to the river takes about 10 minutes as elephants slowly move through the village. Local
+                      people come out to watch this daily parade. Young elephants often play in the shallow water while
                       mothers keep a watchful eye. This is one of the most natural and beautiful experiences at Pinnawala.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -305,13 +317,13 @@ export default function PinnawalaElephantOrphanage() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The nursery section houses the youngest elephants who need special care. These baby elephants are 
-                      fed milk every few hours and receive round-the-clock attention from trained keepers. Many of these 
+                      The nursery section houses the youngest elephants who need special care. These baby elephants are
+                      fed milk every few hours and receive round-the-clock attention from trained keepers. Many of these
                       babies were found alone in the wild after losing their mothers.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Watching baby elephants learn basic skills like using their trunks to eat and drink is incredibly 
-                      heartwarming. The smallest babies still use bottles for milk, while older ones learn to eat solid 
+                      Watching baby elephants learn basic skills like using their trunks to eat and drink is incredibly
+                      heartwarming. The smallest babies still use bottles for milk, while older ones learn to eat solid
                       food. This area shows the important rescue work that Pinnawala does for Sri Lankan elephants.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -361,13 +373,13 @@ export default function PinnawalaElephantOrphanage() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The small museum at Pinnawala provides valuable information about Asian elephants. You can learn 
-                      about elephant biology, behavior, and the threats they face in the wild. The displays explain why 
+                      The small museum at Pinnawala provides valuable information about Asian elephants. You can learn
+                      about elephant biology, behavior, and the threats they face in the wild. The displays explain why
                       orphanages like Pinnawala are important for elephant conservation.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Educational materials show how elephants live in family groups, their intelligence, and their role 
-                      in Sri Lankan culture. The museum also explains the history of Pinnawala and profiles of famous 
+                      Educational materials show how elephants live in family groups, their intelligence, and their role
+                      in Sri Lankan culture. The museum also explains the history of Pinnawala and profiles of famous
                       elephants who have lived at the orphanage. This helps visitors understand the mission behind the facility.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -400,7 +412,7 @@ export default function PinnawalaElephantOrphanage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-8">Visitor Tips & Guidelines</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            
+
             <Card>
               <CardHeader>
                 <CardTitle className="text-green-600">What to Bring</CardTitle>
@@ -513,7 +525,7 @@ export default function PinnawalaElephantOrphanage() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-8">How to Get There</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            
+
             <Card>
               <CardHeader>
                 <CardTitle>From Colombo</CardTitle>
@@ -553,13 +565,13 @@ export default function PinnawalaElephantOrphanage() {
             </CardHeader>
             <CardContent>
               <p className="text-green-700 dark:text-green-300 mb-4">
-                Pinnawala Elephant Orphanage plays a vital role in elephant conservation in Sri Lanka. Your visit helps 
-                fund the care of these magnificent animals and supports research into elephant behavior and breeding. 
+                Pinnawala Elephant Orphanage plays a vital role in elephant conservation in Sri Lanka. Your visit helps
+                fund the care of these magnificent animals and supports research into elephant behavior and breeding.
                 The orphanage has successfully bred many elephants, helping to maintain the Asian elephant population.
               </p>
               <p className="text-green-700 dark:text-green-300">
-                By visiting responsibly and following guidelines, you contribute to the protection of elephants while 
-                enjoying an unforgettable wildlife experience. Remember that these are rescued animals who depend on 
+                By visiting responsibly and following guidelines, you contribute to the protection of elephants while
+                enjoying an unforgettable wildlife experience. Remember that these are rescued animals who depend on
                 human care for survival, making Pinnawala an important sanctuary for Sri Lankan elephants.
               </p>
             </CardContent>
@@ -602,8 +614,8 @@ export default function PinnawalaElephantOrphanage() {
                 </div>
                 <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
                   <p className="text-blue-800 dark:text-blue-200 text-sm">
-                    <strong>Pro Tip:</strong> Morning visits are less crowded and offer better photography conditions. 
-                    Combine your visit with nearby attractions like Millennium Elephant Foundation or a spice garden 
+                    <strong>Pro Tip:</strong> Morning visits are less crowded and offer better photography conditions.
+                    Combine your visit with nearby attractions like Millennium Elephant Foundation or a spice garden
                     tour for a full day experience.
                   </p>
                 </div>
@@ -611,6 +623,8 @@ export default function PinnawalaElephantOrphanage() {
             </CardContent>
           </Card>
         </section>
+
+
 
       </div>
     </main>

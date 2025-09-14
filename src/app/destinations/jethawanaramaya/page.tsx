@@ -24,7 +24,7 @@ export default function JetavanaaramayaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/jetavanaramaya.jpg"
           alt="Massive Jetavanaramaya stupa showing its impressive scale and ancient brick construction"
           fill
           className="object-cover"
@@ -148,7 +148,7 @@ export default function JetavanaaramayaGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Jetavanaramaya.jpg"
                     alt="Size comparison showing Jetavanaramaya compared to pyramids and other famous structures"
                     width={400}
                     height={300}

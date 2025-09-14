@@ -482,7 +482,7 @@ export default function ColomboTourGuide() {
                       </li>
                     </ul>
                     <div className="mt-6">
-                      <Link href="/destinations/Port-city">
+                      <Link href="/destinations/port-city">
                         <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
                           Explore More →
                         </Button>

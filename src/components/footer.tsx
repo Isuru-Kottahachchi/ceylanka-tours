@@ -15,15 +15,15 @@ const TikTokIcon = ({ className }: { className?: string }) => (
 
 const footerLinks = {
   destinations: [
-    { name: "Colombo", href: "/destinations/colombo" },
+    { name: "Colombo city", href: "/destinations/colombo-city-tour" },
     { name: "Kandy", href: "/destinations/kandy" },
-    { name: "Galle", href: "/destinations/galle" },
-    { name: "Sigiriya", href: "/destinations/sigiriya" },
+    { name: "Galle", href: "/destinations/galle-fort" },
+    { name: "Sigiriya", href: "/destinations/sigiriya-rock-fortress" },
     { name: "Ella", href: "/destinations/ella" },
   ],
   travel: [
     { name: "Travel Guide", href: "/travel-guide" },
-    { name: "Hotels & Accommodation", href: "/hotels" },
+    // { name: "Hotels & Accommodation", href: "/hotels" },
     { name: "Transportation", href: "/transportation" },
     { name: "Travel Packages", href: "/packages" },
     { name: "Visa Information", href: "/visa" },

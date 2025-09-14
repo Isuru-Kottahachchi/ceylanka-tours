@@ -24,7 +24,7 @@ export default function MihintaleGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Mihinthale.jpg"
           alt="Sacred Mihintale mountain with white stupas and ancient stone steps leading to the summit"
           fill
           className="object-cover"
@@ -142,13 +142,13 @@ export default function MihintaleGuide() {
             {/* The Historic Meeting */}
             <Card>
               <CardHeader>
-                <CardTitle>The Historic Meeting of 247 BC</CardTitle>
+                <CardTitle>The Historic Meeting of 247 BC - (Mahindagamanaya)</CardTitle>
                 <CardDescription>When Arahat Mahinda met King Devanampiyatissa</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Mihinthale.jpg"
                     alt="Artistic representation of the historic meeting between Arahat Mahinda and King Devanampiyatissa"
                     width={400}
                     height={300}

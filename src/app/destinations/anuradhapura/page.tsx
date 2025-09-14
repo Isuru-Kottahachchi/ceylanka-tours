@@ -255,19 +255,15 @@ export default function AnuradhapuraTravelGuide() {
                         Protected by golden railings and platforms
                       </li>
                     </ul>
-                    <div className="relative mt-6">
+                    <div className="mt-6">
                       <Link href="/destinations/jaya-sri-maha-bodhi">
                         <Button
-                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                           variant="default"
                         >
                           Discover More about Sri Maha Bodhi
                         </Button>
                       </Link>
-                      {/* Blinking finger pointer pointing to button */}
-                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                        <div className="text-2xl animate-bounce">👉</div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -306,19 +302,15 @@ export default function AnuradhapuraTravelGuide() {
                         Restored to original glory in modern times
                       </li>
                     </ul>
-                    <div className="relative mt-6">
+                    <div className="mt-6">
                       <Link href="/destinations/ruwanwali-saya">
                         <Button
-                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                           variant="default"
                         >
                           Explore Ruwanwelisaya Dagaba
                         </Button>
                       </Link>
-                      {/* Blinking finger pointer pointing to button */}
-                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                        <div className="text-2xl animate-bounce">👉</div>
-                      </div>
                     </div>
                   </div>
                   <Image
@@ -341,7 +333,7 @@ export default function AnuradhapuraTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/Jethavanaramaya.jpg"
+                    src="/Jetavanaramaya.jpg"
                     alt="Massive Jethavanaramaya dagoba showing its impressive scale and ancient brick construction"
                     width={400}
                     height={300}
@@ -371,19 +363,15 @@ export default function AnuradhapuraTravelGuide() {
                         Ongoing archaeological excavations
                       </li>
                     </ul>
-                    <div className="relative mt-6">
+                    <div className="mt-6">
                       <Link href="/destinations/jethawanaramaya">
                         <Button
-                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                           variant="default"
                         >
                           Visit Jethawanaramaya Dagoba
                         </Button>
                       </Link>
-                      {/* Blinking finger pointer pointing to button */}
-                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                        <div className="text-2xl animate-bounce">👉</div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -392,54 +380,61 @@ export default function AnuradhapuraTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>4. Thuparamaya Dagoba</CardTitle>
-                <CardDescription>Once the worlds third tallest structure</CardDescription>
+                <CardDescription>The first dagoba built in Sri Lanka - oldest Buddhist monument</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Thooparamaya.jpeg"
-                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    alt="Thuparamaya dagoba showing the first Buddhist stupa built in Sri Lanka with its unique bell shape"
                     width={400}
                     height={300}
                     className="rounded-lg"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in the 3rd century AD, Jetavanaramaya was once the worlds third tallest structure after the
-                      pyramids of Giza. Though partially ruined, it still stands at an impressive 70 meters and
-                      showcases the engineering prowess of ancient Sri Lankan civilization.
+                      Thuparamaya holds the distinction of being the very first dagoba built in Sri Lanka, constructed in the 
+                      3rd century BCE by King Devanampiya Tissa. This sacred monument houses the right collarbone relic of 
+                      Lord Buddha, making it one of the most important pilgrimage sites in the Buddhist world. The original 
+                      bell-shaped design has influenced Sri Lankan stupa architecture for over 2,000 years.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      What makes Thuparamaya unique is its architectural evolution - it has been restored multiple times 
+                      throughout history, each restoration reflecting the artistic styles of different periods. The dagoba 
+                      is surrounded by stone pillars that once supported a wooden roof, a distinctive feature that sets 
+                      it apart from other stupas.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Originally 122 meters tall (400 feet)
+                        First dagoba built in Sri Lanka (3rd century BCE)
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Built with over 93 million bricks
+                        Contains Buddha's right collarbone relic
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains Buddhas sash relic
+                        Original bell-shaped architectural prototype
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Ongoing archaeological excavations
+                        Unique stone pillar arrangement around the stupa
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Multiple historical restorations spanning centuries
                       </li>
                     </ul>
-                    <div className="relative mt-6">
+                    <div className="mt-6">
                       <Link href="/destinations/thuparamaya">
                         <Button
-                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                           variant="default"
                         >
                           Explore Thuparamaya Dagoba
                         </Button>
                       </Link>
-                      {/* Blinking finger pointer pointing to button */}
-                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                        <div className="text-2xl animate-bounce">👉</div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -447,55 +442,63 @@ export default function AnuradhapuraTravelGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>5. Lovamahapaya</CardTitle>
-                <CardDescription>Once the worlds third tallest structure</CardDescription>
+                <CardTitle>5. Lovamahapaya (Brazen Palace)</CardTitle>
+                <CardDescription>Ancient nine-story monastery - marvel of ancient architecture</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Lovamahapaya.jpeg"
-                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    alt="Lovamahapaya stone pillars showing remains of the ancient nine-story Brazen Palace monastery"
                     width={400}
                     height={300}
                     className="rounded-lg"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in the 3rd century AD, Jetavanaramaya was once the worlds third tallest structure after the
-                      pyramids of Giza. Though partially ruined, it still stands at an impressive 70 meters and
-                      showcases the engineering prowess of ancient Sri Lankan civilization.
+                      Lovamahapaya, also known as the "Brazen Palace," was once a magnificent nine-story monastery built 
+                      by King Dutugemunu in the 2nd century BCE. This architectural marvel housed 1,000 monks and was 
+                      entirely covered with copper tiles, giving it the name "Brazen Palace." Today, only the stone 
+                      pillars remain, but they still convey the grandeur of this ancient structure.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The building was constructed using advanced engineering techniques of the time, with 1,600 stone 
+                      pillars supporting multiple floors. Each floor had specific purposes - from dining halls and 
+                      meditation chambers to libraries and living quarters. The palace was destroyed and rebuilt several 
+                      times throughout history, with the current stone pillars representing the foundation of various 
+                      reconstruction attempts.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Originally 122 meters tall (400 feet)
+                        Originally nine stories tall with 1,600 stone pillars
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Built with over 93 million bricks
+                        Housed 1,000 monks in its heyday
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains Buddhas sash relic
+                        Covered with copper tiles (hence "Brazen Palace")
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Ongoing archaeological excavations
+                        Advanced ancient engineering and architectural design
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Multiple reconstruction attempts throughout history
                       </li>
                     </ul>
-                    <div className="relative mt-6">
+                    <div className="mt-6">
                       <Link href="/destinations/lovamahapaya">
                         <Button
-                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                           variant="default"
                         >
                           Discover Lovamahapaya
                         </Button>
                       </Link>
-                      {/* Blinking finger pointer pointing to button */}
-                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                        <div className="text-2xl animate-bounce">👉</div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -504,54 +507,64 @@ export default function AnuradhapuraTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>6. Abhayagiri Dagaba</CardTitle>
-                <CardDescription>Once the worlds third tallest structure</CardDescription>
+                <CardDescription>Ancient monastery complex and center of Mahayana Buddhism</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Abhayagiriya.jpeg"
-                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    alt="Abhayagiri dagoba showing the impressive stupa that was once part of a vast monastery complex"
                     width={400}
                     height={300}
                     className="rounded-lg"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This stupa is bit similar to jetawanaramaya, built in the 3rd century AD, but the shape is bit different.
-                      <Link href="/destinations/anuradhapura/abhyagiri" className="text-blue-600 hover:underline">
-                        Read more about Shapes of Stupa</Link>
+                      Abhayagiri Dagaba was the centerpiece of one of the most important monastic complexes in ancient 
+                      Sri Lanka, built in the 1st century BCE by King Valagamba. This massive stupa, standing 75 meters 
+                      tall, was once part of a monastery that housed over 5,000 monks and served as a major center of 
+                      Mahayana Buddhist learning. The complex was so large it covered an area of 200 hectares.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The monastery was famous for its international character, attracting scholars from China, Korea, 
+                      and other Buddhist countries. It had advanced facilities including hospitals, libraries, and 
+                      refectories. The shape of this stupa is slightly different from Jetavanaramaya, featuring a more 
+                      elegant bell-shaped dome that has influenced Buddhist architecture across Asia.
+                      <Link href="/destinations/anuradhapura/abhyagiri" className="text-blue-600 hover:underline ml-1">
+                        Read more about Shapes of Stupa
+                      </Link>
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Originally 122 meters tall (400 feet)
+                        75 meters tall with 200-hectare monastery complex
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Built with over 93 million bricks
+                        Housed over 5,000 monks at its peak
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains Buddhas sash relic
+                        International center of Mahayana Buddhist learning
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Ongoing archaeological excavations
+                        Advanced facilities: hospitals, libraries, refectories
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Unique architectural style influencing Asian Buddhism
                       </li>
                     </ul>
-                    <div className="relative mt-6">
+                    <div className="mt-6">
                       <Link href="/destinations/abhayagiri">
                         <Button
-                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                           variant="default"
                         >
                           Learn About Abhayagiri
                         </Button>
                       </Link>
-                      {/* Blinking finger pointer pointing to button */}
-                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                        <div className="text-2xl animate-bounce">👉</div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -560,54 +573,62 @@ export default function AnuradhapuraTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>7. Mirisavetiya Stupa</CardTitle>
-                <CardDescription>Once the worlds third tallest structure</CardDescription>
+                <CardDescription>A monument of royal regret and Buddhist devotion</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Mirisawatiya.jpeg"
-                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    alt="Mirisavetiya Stupa surrounded by ancient ruins and Buddhist statuary"
                     width={400}
                     height={300}
                     className="rounded-lg"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in the 3rd century AD, Jetavanaramaya was once the worlds third tallest structure after the
-                      pyramids of Giza. Though partially ruined, it still stands at an impressive 70 meters and
-                      showcases the engineering prowess of ancient Sri Lankan civilization.
+                      Mirisavetiya Stupa has one of the most poignant origin stories in Sri Lankan Buddhist history. 
+                      Built by King Dutugemunu in the 2nd century BCE, this stupa was constructed as an act of 
+                      atonement. According to legend, the king once forgot to share his meal with the sangha (monks) 
+                      while eating chili curry, a breach of Buddhist protocol that deeply troubled his conscience.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      To atone for this oversight, the king built this beautiful stupa on the exact spot where he 
+                      had his meal. The name "Mirisavetiya" literally means "the place where chili was consumed." 
+                      Standing 60 meters tall, it enshrines sacred relics and represents the Buddhist principle 
+                      of mindfulness in daily actions. The surrounding area contains ruins of ancient buildings 
+                      and beautiful stone carvings.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Originally 122 meters tall (400 feet)
+                        Built as royal atonement for forgotten Buddhist protocol
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Built with over 93 million bricks
+                        60 meters tall with beautiful proportions
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains Buddhas sash relic
+                        Contains sacred Buddhist relics
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Ongoing archaeological excavations
+                        Surrounded by ancient ruins and stone carvings
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Symbol of mindfulness in Buddhist practice
                       </li>
                     </ul>
-                    <div className="relative mt-6">
+                    <div className="mt-6">
                       <Link href="/destinations/mirisavetiya">
                         <Button
-                          className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                           variant="default"
                         >
                           Visit Mirisavetiya Stupa
                         </Button>
                       </Link>
-                      {/* Blinking finger pointer pointing to button */}
-                      <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                        <div className="text-2xl animate-bounce">👉</div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -616,41 +637,64 @@ export default function AnuradhapuraTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>8. Lankarama Dagaba</CardTitle>
-                <CardDescription>Once the worlds third tallest structure</CardDescription>
+                <CardDescription>An intimate forest monastery with unique architectural features</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Lankaramaya.jpeg"
-                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    alt="Lankarama Dagaba nestled among trees showing its distinctive design and forest setting"
                     width={400}
                     height={300}
                     className="rounded-lg"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in the 3rd century AD, Jetavanaramaya was once the worlds third tallest structure after the
-                      pyramids of Giza. Though partially ruined, it still stands at an impressive 70 meters and
-                      showcases the engineering prowess of ancient Sri Lankan civilization.
+                      Lankarama Dagaba, built in the 1st century CE by King Valagamba, represents a unique architectural 
+                      style among Anuradhapura's great stupas. Unlike the massive monuments elsewhere in the city, 
+                      Lankarama was designed as an intimate forest monastery with distinctive circular stone pillars 
+                      surrounding the stupa. This 30-meter tall structure showcases the Vajrayana architectural 
+                      influence that was rare in Sri Lankan Buddhist construction.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The most striking feature of Lankarama is its unique design with stone pillars arranged in concentric 
+                      circles around the stupa base. These pillars once supported wooden structures that served as meditation 
+                      halls and living quarters for forest-dwelling monks. The peaceful forest setting and smaller scale 
+                      create an atmosphere perfect for contemplation and meditation, making it a favorite among visitors 
+                      seeking tranquility.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Originally 122 meters tall (400 feet)
+                        Unique circular stone pillar arrangement
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Built with over 93 million bricks
+                        Intimate 30-meter forest monastery design
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains Buddhas sash relic
+                        Vajrayana architectural influence
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Ongoing archaeological excavations
+                        Peaceful forest setting for meditation
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Built by King Valagamba in 1st century CE
                       </li>
                     </ul>
+                    <div className="mt-6">
+                      <Link href="/destinations/lankarama">
+                        <Button
+                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                          variant="default"
+                        >
+                          Explore Lankarama Dagaba
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -658,37 +702,50 @@ export default function AnuradhapuraTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>Sandahirusaya</CardTitle>
-                <CardDescription></CardDescription>
+                <CardDescription>A smaller but equally sacred stupa with unique historical significance</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Sandahirusaya.jpeg"
-                    alt="Massive Jetavanaramaya dagoba showing its impressive scale and ancient brick construction"
+                    alt="Sandahirusaya stupa showing its white dome structure similar to Ruwanwelisaya but smaller in scale"
                     width={400}
                     height={300}
                     className="rounded-lg"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      If you viisted to Anuradhapura you might have seen this stupa, its similar to teh Ruwanwalisaya but not that much big.
+                      If you visit Anuradhapura, you might have seen this stupa - it's similar to the Ruwanwelisaya but not as large. 
+                      Sandahirusaya, also known as "Sandahiru Seya," is a beautiful white dagoba that showcases the classic 
+                      bell-shaped architectural style of ancient Sri Lankan stupas. This is actually a modern construction, 
+                      built in recent times following traditional Buddhist architectural principles and designs.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      What makes Sandahirusaya unique is its role as a contemporary Buddhist monument that maintains traditional 
+                      design elements. While it may appear ancient due to its classical style, it represents modern Sri Lankan 
+                      Buddhist devotion and craftsmanship. The stupa is surrounded by well-maintained gardens and provides 
+                      excellent opportunities for meditation and photography, especially during sunrise and sunset.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Originally 122 meters tall (400 feet)
+                        Modern construction following traditional Buddhist architecture
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Built with over 93 million bricks
+                        Classic bell-shaped design with white limestone coating
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains Buddhas sash relic
+                        Contemporary Buddhist devotion and craftsmanship
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Ongoing archaeological excavations
+                        Peaceful setting ideal for meditation and reflection
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Less crowded alternative to ancient stupas
                       </li>
                     </ul>
                   </div>
@@ -721,9 +778,16 @@ export default function AnuradhapuraTravelGuide() {
                     <li>• Ancient hospital and medical facilities</li>
                     <li>• Samadhi Buddha statue</li>
                   </ul>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    Discover More →
-                  </span>
+                  <div className="mt-6">
+                    <Link href="/destinations/abhayagiri">
+                      <Button
+                        className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                        variant="default"
+                      >
+                        Discover More
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -747,9 +811,16 @@ export default function AnuradhapuraTravelGuide() {
                     <li>• Surrounded by stone pillars</li>
                     <li>• Restored multiple times</li>
                   </ul>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    See More →
-                  </span>
+                  <div className="mt-6">
+                    <Link href="/destinations/thuparamaya">
+                      <Button
+                        className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                        variant="default"
+                      >
+                        See More
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -784,9 +855,14 @@ export default function AnuradhapuraTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Famous for the &quot;Isurumuniya Lovers&quot; carving and beautiful rock-cut architecture from the 3rd century BC.
                   </p>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    See More →
-                  </span>
+                  <div className="mt-4">
+                    <Button
+                      className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm"
+                      variant="default"
+                    >
+                      See More →
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -799,7 +875,7 @@ export default function AnuradhapuraTravelGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/Minneriyanationalpark"
+                    src="/Ranmusuuyana.jpeg"
                     alt="View of Sigiriya Rock from Pidurangala Rock"
                     width={300}
                     height={200}
@@ -808,9 +884,14 @@ export default function AnuradhapuraTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Explore the mysterious Ranmusu uyana, an ancient site with unique stone carvings and a universal stargate.
                   </p>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    See More →
-                  </span>
+                  <div className="mt-4">
+                    <Button
+                      className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm"
+                      variant="default"
+                    >
+                      See More →
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -822,7 +903,7 @@ export default function AnuradhapuraTravelGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/Minneriyanationalpark"
+                    src="/Mihinthale.jpg"
                     alt="View of Sigiriya Rock from Pidurangala Rock"
                     width={300}
                     height={200}
@@ -831,9 +912,14 @@ export default function AnuradhapuraTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                    Just a few kilometers from Anuradhapura, Mihinthalaya is a sacred site where Buddhism was first introduced to Sri Lanka.
                   </p>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    See More →
-                  </span>
+                  <div className="mt-4">
+                    <Button
+                      className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm"
+                      variant="default"
+                    >
+                      See More →
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -855,9 +941,16 @@ export default function AnuradhapuraTravelGuide() {
                 <p className="text-sm text-muted-foreground">
                   Masterpieces of ancient stone carving found at temple entrances, depicting Buddhist philosophy in art.
                 </p>
-                <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                  See More →
-                </span>
+                <div className="mt-4">
+                  <Link href="/destinations/moonstone-guard-stones">
+                    <Button
+                      className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm"
+                      variant="default"
+                    >
+                      See More →
+                    </Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -877,9 +970,16 @@ export default function AnuradhapuraTravelGuide() {
                 <p className="text-sm text-muted-foreground">
                   Sophisticated bathing pools for monks, showcasing advanced hydraulic engineering from ancient times.
                 </p>
-                <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                  See More →
-                </span>
+                <div className="mt-4">
+                  <Link href="/destinations/kuttam-pokuna">
+                    <Button
+                      className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm"
+                      variant="default"
+                    >
+                      See More →
+                    </Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>

@@ -113,6 +113,9 @@ export default function SigiriyaTravelGuide() {
                   <strong>There can be strong winds:</strong> Be prepared for sudden gusts, especially near the summit.
                   Secure loose items and watch your step.
                 </p>
+                <p className="text-sm text-amber-700 mb-2">
+                  <strong>Stay hydrated:</strong> Bring enough water for the climb, especially on hot days.
+                </p>
 
               </div>
             </div>
@@ -718,6 +721,24 @@ export default function SigiriyaTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Your Complete Climbing Experience Guide</h2>
           <div className="space-y-8">
+            {/* Path Selection Note */}
+            <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
+              <div className="flex items-start gap-3">
+                <div className="bg-blue-100 dark:bg-blue-800 p-2 rounded-full">
+                  <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-300" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Important Path Information</h4>
+                  <p className="text-blue-700 dark:text-blue-300 text-sm leading-relaxed">
+                    <strong>Note:</strong> The sequence of attractions described below will be found according to the path you select. 
+                    There are multiple routes to reach the summit, and some areas may be visited in different orders depending 
+                    on your chosen climbing route and current site conditions. Your guide or the site map will show you the 
+                    best path for your visit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <Card>
               <CardHeader>
                 <CardTitle>The Step-by-Step Climbing Journey</CardTitle>
@@ -1165,7 +1186,7 @@ export default function SigiriyaTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/attractions/polonnaruwa" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Polonnaruwa</CardTitle>
@@ -1188,7 +1209,7 @@ export default function SigiriyaTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/attractions/anuradhapura" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Anuradapura</CardTitle>
@@ -1196,14 +1217,14 @@ export default function SigiriyaTravelGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/Anuradhapura.jpg"
                     alt="View of Sigiriya Rock from Pidurangala Rock"
                     width={300}
                     height={200}
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                    Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                  Explore the sacred city of Anuradhapura, the first capital and ancient heart of Sri Lanka. Famous for its massive dagobas, centuries-old monasteries, and the revered Sri Maha Bodhi tree, Anuradhapura is a UNESCO World Heritage Site and a center of Buddhist pilgrimage. Wander through sprawling ruins, marvel at ancient engineering, and experience the spiritual atmosphere of this legendary kingdom that shaped Sri Lankan civilization for over a thousand years. About 1.5 hours from Sigiriya.
                   </p>
                   <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
                     See More →
@@ -1211,7 +1232,7 @@ export default function SigiriyaTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/attractions/wasgamuwa-national-park" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Wasgamuwa National Park</CardTitle>
@@ -1219,8 +1240,8 @@ export default function SigiriyaTravelGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
-                    alt="View of Sigiriya Rock from Pidurangala Rock"
+                    src="/Wasgamuwa-National-Park"
+                    alt="View of Wasgamuwa National Park"
                     width={300}
                     height={200}
                     className="rounded-lg mb-3"

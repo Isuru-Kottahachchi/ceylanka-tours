@@ -1049,7 +1049,7 @@ export default function TrincomaleeTravelGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        One of Sri Lanka&apos;s earliest Buddhist stupas (3rd century BC)
+                        One of Sri Lanka&apos;s earliest Buddhist stupas built by Buddha&apos;s first disciples
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />

@@ -132,13 +132,13 @@ const relatedDestinations = [
     name: "Wilpattu National Park",
     image: "/placeholder.svg?height=200&width=300&text=Wilpattu",
     description: "Largest national park with unique natural lakes",
-    href: "/destinations/wilpattu",
+    href: "/destinations/wilpattu-national-park",
   },
   {
     name: "Minneriya National Park",
     image: "/placeholder.svg?height=200&width=300&text=Minneriya",
     description: "Famous for the great elephant gathering",
-    href: "/destinations/minneriya",
+    href: "/destinations/minneriya-national-park",
   },
 ]
 

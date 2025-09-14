@@ -17,7 +17,8 @@ const topNavItems = [
   // { name: "Wildlife Streaming", href: "/wildlife-streaming" },
   { name: "About Us", href: "/about-us", hasDropdown: true },
   { name: "Privacy Policy", href: "/privacy-policy", hasDropdown: true },
-  { name: "Advertise", href: "/advertise", hasDropdown: true }
+  { name: "Advertise", href: "/advertise", hasDropdown: true },
+  { name: "Store", href: "/store", hasDropdown: true }
 ]
 
 const whatToDoItems = [
@@ -39,7 +40,7 @@ const whatToDoItems = [
       },
       { name: "Cooking Classes", href: "/experiences/cooking" },
       { name: "Ayurveda & Spa", href: "/experiences/ayurveda" },
-      { name: "Train Journeys", href: "/experiences/trains" },
+      { name: "Train Journeys", href: "/train-journeys" },
     ],
   },
 ]
@@ -63,7 +64,7 @@ const destinationsItems = [
     icon: "⛰️",
     hasSubmenu: true,
     items: [
-      { name: "Nuwara Eliya", href: "/destinations/Nuwara-eliya" },
+      { name: "Nuwara Eliya", href: "/destinations/nuwara-eliya" },
       { name: "Ella", href: "/destinations/ella-town" },
       { name: "Hatton", href: "/destinations/hatton" },
       { name: "Badulla", href: "/destinations/badulla" },
@@ -94,7 +95,7 @@ const destinationsItems = [
       { name: "Udawalawe National Park", href: "/destinations/udawalawa-national-park" },
       { name: "Minneriya National Park", href: "/destinations/minneriya-national-park" },
       { name: "Wilpattu National Park", href: "/destinations/wilpattu-national-park" },
-      { name: "Sinharaja Forest", href: "/destinations/sinharaja" },
+      { name: "Sinharaja Forest", href: "/destinations/sinharaja-forest" },
     ],
   },
   {
@@ -102,10 +103,11 @@ const destinationsItems = [
     icon: "🏺",
     hasSubmenu: true,
     items: [
-      { name: "Galle Fort", href: "/destinations/galle" },
+      { name: "Galle Fort", href: "/destinations/galle-fort" },
       { name: "Temple of the Tooth", href: "/destinations/temple-of-tooth" },
       { name: "Adam's Peak", href: "/destinations/adams-peak" },
       { name: "Mihintale", href: "/destinations/mihinthalaya" },
+      { name: "Trincomalee", href: "/destinations/trincomalee" },
       { name: "Yapahuwa", href: "/destinations/yapahuwa" },
     ],
   },
@@ -165,11 +167,11 @@ const planYourTripItems = [
   {
     title: "Planning Tools",
     items: [
+      { name: "Visa Information", href: "/plan-your-trip/visa-information" },
       { name: "Trip Planner", href: "/plan/trip-planner" },
       { name: "Airport Transfer", href: "/plan-your-trip/airport-transfer-service" },
       { name: "Budget Calculator", href: "/plan/budget" },
       { name: "Weather Guide", href: "/plan/weather" },
-      { name: "Visa Information", href: "/plan-your-trip/visa-information" },
     ],
   },
   {
@@ -202,7 +204,7 @@ function DesktopHierarchicalDropdown({
   if (!isOpen) return null
 
   return (
-    <div ref={dropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-800 shadow-xl rounded-lg border border-gray-200 dark:border-gray-700 z-50">
+    <div ref={dropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border border-gray-200 dark:border-gray-700 z-50">
       <div className="p-4 max-h-96 overflow-y-auto">
         {destinationsItems.map((section) => (
           <div key={section.title} className="mb-2">
@@ -309,10 +311,11 @@ export function Header() {
   const destinationsDropdownRef = useRef<HTMLDivElement>(null)
   const destinationsButtonRef = useRef<HTMLButtonElement>(null)
   const whatToDoDropdownRef = useRef<HTMLDivElement>(null)
-  // const planTripDropdownRef = useRef<HTMLDivElement>(null)
+  const planTripDropdownRef = useRef<HTMLDivElement>(null)
 
   // Refs for desktop dropdown buttons (for click outside detection)
   const whatToDoButtonRef = useRef<HTMLButtonElement>(null)
+  const planTripButtonRef = useRef<HTMLButtonElement>(null)
 
   // Click outside detection for destinations dropdown
   useEffect(() => {
@@ -331,6 +334,14 @@ export function Header() {
         whatToDoButtonRef.current &&
         !whatToDoDropdownRef.current.contains(event.target as Node) &&
         !whatToDoButtonRef.current.contains(event.target as Node)
+      ) {
+        setActiveDropdown(null)
+      } else if (
+        activeDropdown === "plan-trip" &&
+        planTripDropdownRef.current &&
+        planTripButtonRef.current &&
+        !planTripDropdownRef.current.contains(event.target as Node) &&
+        !planTripButtonRef.current.contains(event.target as Node)
       ) {
         setActiveDropdown(null)
       }
@@ -464,17 +475,21 @@ export function Header() {
               </div>
 
               {/* Plan Your Trip Dropdown */}
-              <div
-                className="relative"
-                onMouseEnter={() => setActiveDropdown("plan-trip")}
-                onMouseLeave={() => setActiveDropdown(null)}
-              >
-                <Button className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer">
+              <div className="relative">
+                <Button 
+                  ref={planTripButtonRef}
+                  onClick={() => setActiveDropdown(activeDropdown === "plan-trip" ? null : "plan-trip")}
+                  className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer"
+                >
                   PLAN YOUR TRIP
-                  <ChevronDown className="h-4 w-4 ml-1 text-gray-600 dark:text-gray-300" />
+                  <ChevronDown 
+                    className={`h-4 w-4 ml-1 text-gray-600 dark:text-gray-300 transition-transform ${
+                      activeDropdown === "plan-trip" ? "rotate-180" : ""
+                    }`} 
+                  />
                 </Button>
                 {activeDropdown === "plan-trip" && (
-                  <div className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 z-50">
+                  <div ref={planTripDropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 z-50">
                     <div className="p-4">
                       <div className="grid grid-cols-2 gap-4">
                         {planYourTripItems.map((section) => (

@@ -55,6 +55,9 @@ const searchVariations: { [key: string]: string[] } = {
   "ruwanwelisaya": ["ruwanwelisaya", "ruwanwalisaya", "ruvanwelisaya", "ruvan weli saya", "great stupa"],
   "hirikatiya": ["hiriketiya", "hirikatya", "hirikattya", "hirikatiya beach", "hiri", "hirketiya", "hirikatya", "hirikettiya"],
   "kalpitiya": ["kalpitya", "kalpitiya", "kalpitiya beach"],
+  "mihinthalaya": ["mihintale", "mihinthale","mihinthalaya"],
+  "isurumuniya": ["isurumuniya", "isurumuni", "isuru muniya", "isuramuniya", "isurumuniya temple", "isuru"],
+  "jaya sri maha bodhi": ["jayasrimaha bodhi", "jaya sri maha bodhi", "jayasri maha bodhi", "jaya srimaha bodhi", "sri maha bodhi", "maha bodhi", "bodhi tree", "sacred bodhi tree", "jaya sri maha bodhiya"],
 }
 
 // Function to normalize search terms
@@ -247,7 +250,7 @@ const destinations: Destination[] = [
     id: 14,
     name: "Jungle Beach",
     location: "Southern Province",
-    path: "Jungle-beach-roomassala",
+    path: "jungle-beach-roomassala",
     image: "/jungle-beach.jpeg",
     description: "Beach surrounded by jungle with golden sands and clear waters",
     highlights: ["Jungle", "Beach", "Clear Waters"],
@@ -417,7 +420,7 @@ const destinations: Destination[] = [
     id: 30,
     name: "Waligama",
     location: "Southern Province",
-    path: "Waligama",
+    path: "waligama",
     image: "/Waligama.jpg",
     description: "Coastal town with stunning beaches and water sports",
     highlights: ["Beaches", "Water Sports", "Surfing"],
@@ -447,7 +450,7 @@ const destinations: Destination[] = [
     id: 33,
     name: "Pinnawala Elephant Orphanage",
     location: "Sabaragamuwa Province",
-    path: "Pinnawala-Elephant-Orphanage",
+    path: "pinnawala-elephant-orphanage",
     image: "/Pinnawala.jpeg",
     description: "Elephant sanctuary and orphanage",
     highlights: ["Elephants", "Elephant bathing", "Elephant feeding"],
@@ -552,6 +555,26 @@ const destinations: Destination[] = [
     description: "Sri Lanka's ultimate surfing paradise with perfect horseshoe bay, world-class waves, and vibrant backpacker culture",
     highlights: ["Perfect Surfing Waves", "Horseshoe Bay", "Backpacker Paradise", "Beach Yoga", "Coconut Grove"],
     category: "Beach",
+  },
+  {
+    id: 44,
+    name: "Isurumuniya Temple",
+    location: "North Central Province",
+    path: "isurumuniya",
+    image: "/Isurumuniya.jpeg",
+    description: "Ancient rock temple in Anuradhapura famous for the 'Isurumuniya Lovers' carving and beautiful rock-cut architecture from the 3rd century BC",
+    highlights: ["Isurumuniya Lovers Carving", "Rock-cut Architecture", "Ancient Buddhist Temple", "Archaeological Marvel"],
+    category: "Historical",
+  },
+  {
+    id: 45,
+    name: "Jaya Sri Maha Bodhi",
+    location: "North Central Province",
+    path: "jaya-sri-maha-bodhi",
+    image: "/JayaSrimahaBodhi.jpeg",
+    description: "The world's oldest recorded tree, a sacred Bo tree grown from a cutting brought from India in 288 BC, one of the holiest sites in Buddhism",
+    highlights: ["World's Oldest Recorded Tree", "Sacred Bo Tree", "2300+ Years Old", "Buddhist Pilgrimage Site", "Golden Railings"],
+    category: "Religious",
   }
 ]
 
