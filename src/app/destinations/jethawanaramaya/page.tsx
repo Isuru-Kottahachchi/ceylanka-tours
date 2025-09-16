@@ -24,7 +24,7 @@ export default function JetavanaaramayaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/jetavanaramaya.jpg"
+          src="/Jetavanaramaya.jpg"
           alt="Massive Jetavanaramaya stupa showing its impressive scale and ancient brick construction"
           fill
           className="object-cover"

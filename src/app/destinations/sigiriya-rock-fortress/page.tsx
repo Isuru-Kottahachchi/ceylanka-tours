@@ -1186,7 +1186,7 @@ export default function SigiriyaTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/polonnaruwa" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/polonnaruwa" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Polonnaruwa</CardTitle>
@@ -1209,7 +1209,7 @@ export default function SigiriyaTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/anuradhapura" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/anuradhapura" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Anuradapura</CardTitle>
@@ -1232,7 +1232,7 @@ export default function SigiriyaTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/wasgamuwa-national-park" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/wasgamuwa-national-park" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Wasgamuwa National Park</CardTitle>

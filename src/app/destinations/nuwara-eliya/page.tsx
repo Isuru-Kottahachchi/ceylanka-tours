@@ -470,47 +470,100 @@ export default function NuwaraEliyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Ambewela New Zealand Farm */}
             <Card>
               <CardHeader>
-                <CardTitle>Moon plains</CardTitle>
-                <CardDescription>UNESCO World Heritage site with Worlds End cliff</CardDescription>
+                <CardTitle>4. Ambewela New Zealand Farm</CardTitle>
+                <CardDescription>Scenic dairy farm with rolling green pastures</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Ambewela New Zealand Farm showing rolling green pastures, dairy cows, and beautiful mountain backdrop"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Located about 30km from Nuwara Eliya, Ambewela Farm is a picturesque dairy farm that resembles 
+                      the rolling hills of New Zealand. This working farm spans over 1,700 hectares and offers visitors 
+                      a unique experience of Sri Lanka&apos;s highland agriculture and stunning pastoral landscapes.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Rolling green pastures with grazing dairy cows
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Fresh milk and dairy products available
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Spectacular mountain views and photography opportunities
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Cool climate and peaceful rural atmosphere
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect for nature walks and picnics
+                      </li>
+                    </ul>
+                    <div className="mt-4 p-3 bg-green-50 rounded-lg">
+                      <p className="text-sm text-green-800">
+                        <strong>Best Experience:</strong> Visit during early morning or late afternoon for the best lighting and to see cows grazing peacefully in the fields.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>5. Moon Plains</CardTitle>
+                <CardDescription>Hidden grassland plateau with panoramic views</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Just 32km from Nuwara Eliya, Horton Plains offers one of Sri Lankas most spectacular hiking
-                      experiences. The highlight is Worlds End, a sheer cliff drop of 870 meters offering breathtaking
-                      views on clear days.<br />
-                      You can see worlds end
+                      A lesser-known gem located about 8km from Nuwara Eliya, Moon Plains is a beautiful grassland 
+                      plateau that offers stunning 360-degree views of the surrounding mountains and valleys. This 
+                      peaceful location is perfect for those seeking tranquility away from the crowds.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Worlds End viewpoint - 870m cliff drop
+                        Panoramic mountain and valley views
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Bakers Falls - beautiful 20m waterfall
+                        Peaceful grassland perfect for relaxation
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        9km circular hiking trail
+                        Excellent for sunset and sunrise photography
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Unique montane ecosystem and wildlife
+                        Less crowded alternative to popular viewpoints
                       </li>
                     </ul>
-                    <div className="mt-4 p-3 bg-orange-50 rounded-lg">
-                      <p className="text-sm text-orange-800">
-                        <strong>Best Time:</strong> Start early (6 AM) to avoid clouds at Worlds End
+                    <div className="mt-4 p-3 bg-purple-50 rounded-lg">
+                      <p className="text-sm text-purple-800">
+                        <strong>Hidden Gem:</strong> Best visited during clear weather for unobstructed mountain views. Ideal for a peaceful picnic or meditation.
                       </p>
                     </div>
                   </div>
                   <Image
                     src="/placeholder.svg?height=300&width=400"
-                    alt="Dramatic Worlds End cliff at Horton Plains showing the spectacular 870-meter drop with misty valleys below"
+                    alt="Moon Plains showing vast grassland plateau with panoramic mountain views and peaceful landscape"
                     width={400}
                     height={300}
                     className="rounded-lg"
@@ -647,6 +700,211 @@ export default function NuwaraEliyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </section>
+
+        {/* Nearby Places to Visit */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Nuwara Eliya adventure with these incredible destinations within easy reach
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Ella */}
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <div className="relative h-48">
+                <Image
+                  src="/Nine-arch-ella.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Ella</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Famous for the Nine Arch Bridge, Little Adam&apos;s Peak, and stunning train journeys through tea country.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  65 km from Nuwara Eliya
+                </div>
+                <Link href="/destinations/ella-town" className="text-blue-600 hover:underline text-sm">
+                  Explore Ella →
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Bandarawela */}
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Bandarawela town with rolling hills and tea plantations in the background"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Bandarawela</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Charming hill station with cooler climate, beautiful views, and the historic Bandarawela Hotel.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  45 km from Nuwara Eliya
+                </div>
+                <Link href="/destinations/bandarawela" className="text-blue-600 hover:underline text-sm">
+                  Explore Bandarawela →
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Haputhale */}
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Haputhale railway station and surrounding tea plantation landscapes"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-purple-600 text-white text-xs px-2 py-1 rounded">
+                  1 hour
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Haputhale</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Small town famous for Lipton&apos;s Seat viewpoint and Dambatenne Tea Factory with panoramic views.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  30 km from Nuwara Eliya
+                </div>
+                <Link href="/destinations/haputhale" className="text-blue-600 hover:underline text-sm">
+                  Explore Haputhale →
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Badulla */}
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Badulla town nestled in mountains with ancient temples and railway heritage"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-orange-600 text-white text-xs px-2 py-1 rounded">
+                  2.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Badulla</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  End point of the famous hill country train journey with ancient temples and beautiful waterfalls.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  75 km from Nuwara Eliya
+                </div>
+                <Link href="/destinations/badulla" className="text-blue-600 hover:underline text-sm">
+                  Explore Badulla →
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Kandy */}
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <div className="relative h-48">
+                <Image
+                  src="/Kandy.jpeg"
+                  alt="Temple of the Tooth in Kandy with traditional Sri Lankan architecture"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded">
+                  3 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Kandy</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Cultural capital with the Temple of the Tooth, beautiful lake, and traditional performances.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  75 km from Nuwara Eliya
+                </div>
+                <Link href="/destinations/kandy" className="text-blue-600 hover:underline text-sm">
+                  Explore Kandy →
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Adam's Peak */}
+            <Card className="hover:shadow-lg transition-shadow duration-300">
+              <div className="relative h-48">
+                <Image
+                  src="/Adams-peak.jpeg"
+                  alt="Adam's Peak mountain with pilgrims climbing the sacred summit at sunrise"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-yellow-600 text-white text-xs px-2 py-1 rounded">
+                  4 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Adam&apos;s Peak</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sacred mountain pilgrimage site famous for sunrise views and the sacred footprint at the summit.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  90 km from Nuwara Eliya
+                </div>
+                <Link href="/destinations/adams-peak" className="text-blue-600 hover:underline text-sm">
+                  Explore Adam&apos;s Peak →
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Day Trip Suggestions */}
+          <div className="mt-8 bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-center">Suggested Day Trip Combinations</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">Tea Country Adventure</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Nuwara Eliya → Ambewela Farm → Haputhale (Lipton&apos;s Seat) → Return
+                </p>
+                <div className="flex items-center text-xs text-green-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Full day trip (8-10 hours)
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Hill Country Explorer</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Nuwara Eliya → Ella (Nine Arch Bridge) → Bandarawela → Return
+                </p>
+                <div className="flex items-center text-xs text-blue-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Full day trip (10-12 hours)
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

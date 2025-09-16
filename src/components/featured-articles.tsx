@@ -36,7 +36,7 @@ const featuredArticles = [
     title: "Wild Safari Parks in Sri Lanka",
     path: "wild-safari-parks-in-srilanka",
     excerpt: "Your complete guide to experiencing the incredible wildlife of Sri Lanka's most famous national park...",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Yala-national-park.jpg",
     category: "Wildlife",
     author: "Emma Wilson",
     date: "2024-01-10",

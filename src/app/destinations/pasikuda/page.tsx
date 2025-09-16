@@ -19,7 +19,7 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                     <Button
                         variant="ghost"
                         size="icon"
-                        className="absolute right-2 top-2 h-8 w-8"
+                        className="absolute right-2 top-2 h-8 w-8 cursor-pointer"
                         onClick={onClose}
                     >
                         <X className="h-4 w-4" />

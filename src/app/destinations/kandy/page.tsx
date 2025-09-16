@@ -401,19 +401,15 @@ export default function KandyTravelGuide() {
                   <li>• Evening: 6:30 PM - 8:00 PM</li>
                 </ul>
               </div>
-              <div className="relative">
+              <div className="mt-6">
                 <Link href="/destinations/temple-of-tooth">
                   <Button
-                    className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                    className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                     variant="default"
                   >
                     Discover More about Temple of the Tooth
                   </Button>
                 </Link>
-                {/* Blinking finger pointer pointing to button */}
-                <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                  <div className="text-2xl animate-bounce">👉</div>
-                </div>
               </div>
             </div>
           </div>
@@ -723,9 +719,11 @@ export default function KandyTravelGuide() {
                   <div className="text-xs text-muted-foreground mb-3">
                     📍 Distance: 45 minutes from Kandy | 🎫 Entry: 200 LKR | ⏰ Best time: Morning or late afternoon
                   </div>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
-                    Learn More →
-                  </span>
+                  <div className="mt-4">
+                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
+                      Read More →
+                    </span>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -751,14 +749,16 @@ export default function KandyTravelGuide() {
                   <div className="text-xs text-muted-foreground mb-3">
                     📍 Distance: 30 minutes from Kandy | 🥾 Difficulty: Easy to Moderate | ⏰ Duration: 2-6 hours
                   </div>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
-                    Explore Trails →
-                  </span>
+                  <div className="mt-4">
+                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
+                      Read More →
+                    </span>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
 
-            <Link href="/destinations/hanthana-birds-park" className="block hover:shadow-md transition-shadow duration-200">
+            {/* <Link href="/destinations/hanthana-birds-park" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer h-full">
                 <CardHeader>
                   <CardTitle className="text-lg">Hanthana Birds Park - Wildlife Heaven</CardTitle>
@@ -784,7 +784,7 @@ export default function KandyTravelGuide() {
                   </span>
                 </CardContent>
               </Card>
-            </Link>
+            </Link> */}
 
             <Link href="/destinations/nelligala" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer h-full">
@@ -794,7 +794,7 @@ export default function KandyTravelGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/Minneriyanationalpark"
+                    src="/Nelligala.png"
                     alt="Nelligala Temple with ancient caves and mountain views"
                     width={300}
                     height={200}
@@ -807,142 +807,164 @@ export default function KandyTravelGuide() {
                   <div className="text-xs text-muted-foreground mb-3">
                     📍 Distance: 40 minutes from Kandy | 🧘 Activity: Meditation & sightseeing | 🎫 Entry: Free
                   </div>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
-                    Find Peace →
-                  </span>
+                  <div className="mt-4">
+                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
+                      Read More →
+                    </span>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
 
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="text-lg">Knuckles Mountain Range - Adventure</CardTitle>
-                <CardDescription>UNESCO World Heritage hiking and camping destination</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Knuckles Mountain Range with hiking trails and misty peaks"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground mb-3">
-                  Named because the peaks look like knuckles of a clenched fist. This UNESCO site offers serious hiking, 
-                  camping, and some of the best mountain views in Sri Lanka. Great for adventure seekers!
-                </p>
-                <div className="text-xs text-muted-foreground mb-3">
-                  📍 Distance: 1.5 hours from Kandy | 🏕️ Activity: Hiking & camping | 🥾 Difficulty: Challenging
-                </div>
-                <span className="text-sm font-medium text-primary mt-3 inline-block">
-                  Plan Adventure →
-                </span>
-              </CardContent>
-            </Card>
+            <Link href="/destinations/knuckles-mountain-range" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer h-full">
+                <CardHeader>
+                  <CardTitle className="text-lg">Knuckles Mountain Range - Adventure</CardTitle>
+                  <CardDescription>UNESCO World Heritage hiking and camping destination</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="Knuckles Mountain Range with hiking trails and misty peaks"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Named because the peaks look like knuckles of a clenched fist. This UNESCO site offers serious hiking, 
+                    camping, and some of the best mountain views in Sri Lanka. Great for adventure seekers!
+                  </p>
+                  <div className="text-xs text-muted-foreground mb-3">
+                    📍 Distance: 1.5 hours from Kandy | 🏕️ Activity: Hiking & camping | 🥾 Difficulty: Challenging
+                  </div>
+                  <div className="mt-4">
+                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
+                      Read More →
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="text-lg">Gadaladeniya Temple - Ancient Art</CardTitle>
-                <CardDescription>14th-century temple with stunning architecture</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Gadaladeniya Temple showing ancient Sinhalese architecture"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground mb-3">
-                  Built in 1344, this temple shows a unique mix of Sinhalese and South Indian architecture. 
-                  The stone carvings and old paintings are incredible. Less touristy but equally beautiful.
-                </p>
-                <div className="text-xs text-muted-foreground mb-3">
-                  📍 Distance: 45 minutes from Kandy | 🏛️ Built: 1344 CE | 🎫 Entry: Small donation
-                </div>
-                <span className="text-sm font-medium text-primary mt-3 inline-block">
-                  Explore History →
-                </span>
-              </CardContent>
-            </Card>
+            <Link href="/destinations/gadaladeniya-temple" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer h-full">
+                <CardHeader>
+                  <CardTitle className="text-lg">Gadaladeniya Temple - Ancient Art</CardTitle>
+                  <CardDescription>14th-century temple with stunning architecture</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="Gadaladeniya Temple showing ancient Sinhalese architecture"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Built in 1344, this temple shows a unique mix of Sinhalese and South Indian architecture. 
+                    The stone carvings and old paintings are incredible. Less touristy but equally beautiful.
+                  </p>
+                  <div className="text-xs text-muted-foreground mb-3">
+                    📍 Distance: 45 minutes from Kandy | 🏛️ Built: 1344 CE | 🎫 Entry: Small donation
+                  </div>
+                  <div className="mt-4">
+                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
+                      Read More →
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="text-lg">Lankatilaka Temple - Sacred Heights</CardTitle>
-                <CardDescription>Ancient temple on a hilltop with panoramic views</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Lankatilaka Temple perched on hilltop with valley views"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground mb-3">
-                  Another 14th-century masterpiece built on a rock outcrop. The climb up is worth it for the views and 
-                  the sense of peace you&apos;ll feel. The architecture is a perfect example of ancient Sinhalese design.
-                </p>
-                <div className="text-xs text-muted-foreground mb-3">
-                  📍 Distance: 50 minutes from Kandy | ⛰️ Location: Hilltop | 🚶 Climb: Moderate
-                </div>
-                <span className="text-sm font-medium text-primary mt-3 inline-block">
-                  Climb Higher →
-                </span>
-              </CardContent>
-            </Card>
+            <Link href="/destinations/lankatilaka-temple" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer h-full">
+                <CardHeader>
+                  <CardTitle className="text-lg">Lankatilaka Temple - Sacred Heights</CardTitle>
+                  <CardDescription>Ancient temple on a hilltop with panoramic views</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="Lankatilaka Temple perched on hilltop with valley views"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Another 14th-century masterpiece built on a rock outcrop. The climb up is worth it for the views and 
+                    the sense of peace you&apos;ll feel. The architecture is a perfect example of ancient Sinhalese design.
+                  </p>
+                  <div className="text-xs text-muted-foreground mb-3">
+                    📍 Distance: 50 minutes from Kandy | ⛰️ Location: Hilltop | 🚶 Climb: Moderate
+                  </div>
+                  <div className="mt-4">
+                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
+                      Read More →
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="text-lg">Embekke Devalaya - Wood Carving Art</CardTitle>
-                <CardDescription>Famous for intricate wooden pillars and carvings</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Embekke Devalaya showing detailed wooden pillar carvings"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground mb-3">
-                  Famous for having the most beautiful wooden carvings in Sri Lanka. Each pillar is unique with amazing 
-                  details of dancers, musicians, and animals. Art lovers will be amazed by the craftsmanship.
-                </p>
-                <div className="text-xs text-muted-foreground mb-3">
-                  📍 Distance: 40 minutes from Kandy | 🎨 Famous for: Wood carvings | 📸 Photography: Allowed
-                </div>
-                <span className="text-sm font-medium text-primary mt-3 inline-block">
-                  See Art →
-                </span>
-              </CardContent>
-            </Card>
+            <Link href="/destinations/embekke-devalaya" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer h-full">
+                <CardHeader>
+                  <CardTitle className="text-lg">Embekke Devalaya - Wood Carving Art</CardTitle>
+                  <CardDescription>Famous for intricate wooden pillars and carvings</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="Embekke Devalaya showing detailed wooden pillar carvings"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Famous for having the most beautiful wooden carvings in Sri Lanka. Each pillar is unique with amazing 
+                    details of dancers, musicians, and animals. Art lovers will be amazed by the craftsmanship.
+                  </p>
+                  <div className="text-xs text-muted-foreground mb-3">
+                    📍 Distance: 40 minutes from Kandy | 🎨 Famous for: Wood carvings | 📸 Photography: Allowed
+                  </div>
+                  <div className="mt-4">
+                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
+                      Read More →
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
 
-            <Card className="h-full">
-              <CardHeader>
-                <CardTitle className="text-lg">Pinnawala Elephant Orphanage</CardTitle>
-                <CardDescription>See elephants being cared for and bathing in the river</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Elephants at Pinnawala Elephant Orphanage bathing and being cared for"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground mb-3">
-                  Watch baby elephants being bottle-fed and see the whole herd bathing in the river. Started as a home 
-                  for orphaned elephants, now it&apos;s one of the most popular attractions near Kandy.
-                </p>
-                <div className="text-xs text-muted-foreground mb-3">
-                  📍 Distance: 1 hour from Kandy | 🐘 Elephants: 80+ | ⏰ Feeding: 9AM, 1PM, 5PM
-                </div>
-                <span className="text-sm font-medium text-primary mt-3 inline-block">
-                  Meet Elephants →
-                </span>
-              </CardContent>
-            </Card>
+            <Link href="/destinations/pinnawala-elephant-orphanage" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer h-full">
+                <CardHeader>
+                  <CardTitle className="text-lg">Pinnawala Elephant Orphanage</CardTitle>
+                  <CardDescription>See elephants being cared for and bathing in the river</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/Pinnawala.jpeg"
+                    alt="Elephants at Pinnawala Elephant Orphanage bathing and being cared for"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Watch baby elephants being bottle-fed and see the whole herd bathing in the river. Started as a home 
+                    for orphaned elephants, now it&apos;s one of the most popular attractions near Kandy.
+                  </p>
+                  <div className="text-xs text-muted-foreground mb-3">
+                    📍 Distance: 1 hour from Kandy | 🐘 Elephants: 80+ | ⏰ Feeding: 9AM, 1PM, 5PM
+                  </div>
+                  <div className="mt-4">
+                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
+                      Read More →
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           {/* Day Trip Suggestions */}
@@ -976,41 +998,41 @@ export default function KandyTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts for Kandy</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-green-200 bg-green-50/50">
+            <Card className="border-green-200 dark:border-green-700 bg-green-50/50 dark:bg-green-900/20">
               <CardHeader>
-                <CardTitle className="text-green-700 flex items-center gap-2">
+                <CardTitle className="text-green-700 dark:text-green-300 flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
                   DOs - Respect the Sacred City
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
                     <strong>Dress modestly:</strong> Cover shoulders and knees, especially at temples
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
                     <strong>Remove shoes:</strong> Always remove footwear before entering temples
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
                     <strong>Attend a puja:</strong> Experience the spiritual atmosphere during prayer times
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
                     <strong>Try local food:</strong> Sample authentic Kandyan cuisine
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
+                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
                     <strong>Learn basic Sinhala:</strong> &quot;Ayubowan&quot; (hello) goes a long way
 
                   </span>
@@ -1018,41 +1040,41 @@ export default function KandyTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card className="border-red-200 bg-red-50/50">
+            <Card className="border-red-200 dark:border-red-700 bg-red-50/50 dark:bg-red-900/20">
               <CardHeader>
-                <CardTitle className="text-red-700 flex items-center gap-2">
+                <CardTitle className="text-red-700 dark:text-red-300 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5" />
                   DONTs - Avoid Cultural Mistakes
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
                     <strong>Dont point feet:</strong> Never point your feet toward Buddha statues
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
                     <strong>Dont turn your back:</strong> Avoid turning your back to Buddha statues
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
                     <strong>Dont wear hats:</strong> Remove hats and caps inside temples
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
                     <strong>Dont be loud:</strong> Maintain respectful silence in sacred areas
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
+                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 dark:text-gray-300">
                     <strong>Dont rush:</strong> Take time to appreciate the spiritual atmosphere
                   </span>
                 </div>
@@ -1240,9 +1262,9 @@ export default function KandyTravelGuide() {
 
         {/* Final Tips */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-purple-50 to-pink-50 border-purple-200">
+          <Card className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-purple-200 dark:border-purple-700">
             <CardHeader>
-              <CardTitle className="text-purple-800">Your Kandy Adventure Awaits</CardTitle>
+              <CardTitle className="text-purple-800 dark:text-purple-300">Your Kandy Adventure Awaits</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">

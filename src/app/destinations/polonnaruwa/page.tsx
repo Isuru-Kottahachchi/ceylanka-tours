@@ -474,20 +474,14 @@ export default function PolonnaruwaGuide() {
                                                 Royal audience hall and private chambers
                                             </li>
                                         </ul>
-                                        <div className="relative mt-6">
-                                            <Link href="/destinations/royal-palace-polonnaruwa">
-                                                <Button
-                                                    className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                    variant="default"
-                                                >
-                                                    Explore Royal Palace Complex
-                                                </Button>
-                                            </Link>
-                                            {/* Blinking finger pointer pointing to button */}
-                                            <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                                                <div className="text-2xl animate-bounce">👉</div>
-                                            </div>
-                                        </div>
+                                        <Link href="/destinations/royal-palace-polonnaruwa">
+                                            <Button
+                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                                                variant="default"
+                                            >
+                                                Explore Royal Palace Complex
+                                            </Button>
+                                        </Link>
                                     </div>
                                 </div>
                             </CardContent>
@@ -522,20 +516,14 @@ export default function PolonnaruwaGuide() {
                                                 Excellent example of Polonnaruwa architecture
                                             </li>
                                         </ul>
-                                        <div className="relative mt-6">
-                                            <Link href="/destinations/audience-hall-polonnaruwa">
-                                                <Button
-                                                    className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                    variant="default"
-                                                >
-                                                    Visit Nissanka Latha Mandapaya
-                                                </Button>
-                                            </Link>
-                                            {/* Blinking finger pointer pointing to button */}
-                                            <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                                                <div className="text-2xl animate-bounce">👉</div>
-                                            </div>
-                                        </div>
+                                        <Link href="/destinations/audience-hall-polonnaruwa">
+                                            <Button
+                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                                                variant="default"
+                                            >
+                                                Visit Nissanka Latha Mandapaya
+                                            </Button>
+                                        </Link>
                                     </div>
                                     <Image
                                         src="/placeholder.svg?height=300&width=400&text=Lotus+Pillars"
@@ -593,20 +581,14 @@ export default function PolonnaruwaGuide() {
                                                 Active place of worship and pilgrimage
                                             </li>
                                         </ul>
-                                        <div className="relative mt-6">
-                                            <Link href="/destinations/gal-vihara">
-                                                <Button
-                                                    className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                    variant="default"
-                                                >
-                                                    Explore Gal Vihara Rock Temple
-                                                </Button>
-                                            </Link>
-                                            {/* Blinking finger pointer pointing to button */}
-                                            <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                                                <div className="text-2xl animate-bounce">👉</div>
-                                            </div>
-                                        </div>
+                                        <Link href="/destinations/gal-vihara">
+                                            <Button
+                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                                                variant="default"
+                                            >
+                                                Explore Gal Vihara Rock Temple
+                                            </Button>
+                                        </Link>
                                     </div>
                                 </div>
                             </CardContent>
@@ -641,20 +623,14 @@ export default function PolonnaruwaGuide() {
                                                 Well-preserved with original lime plaster
                                             </li>
                                         </ul>
-                                        <div className="relative mt-6">
-                                            <Link href="/destinations/rankoth-vehera">
-                                                <Button
-                                                    className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                    variant="default"
-                                                >
-                                                    Visit Rankoth Vehera Dagoba
-                                                </Button>
-                                            </Link>
-                                            {/* Blinking finger pointer pointing to button */}
-                                            <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                                                <div className="text-2xl animate-bounce">👉</div>
-                                            </div>
-                                        </div>
+                                        <Link href="/destinations/rankoth-vehera">
+                                            <Button
+                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                                                variant="default"
+                                            >
+                                                Visit Rankoth Vehera Dagoba
+                                            </Button>
+                                        </Link>
                                     </div>
                                     <ImageCarousel
                                         images={rankothveheraImages}
@@ -700,20 +676,14 @@ export default function PolonnaruwaGuide() {
                                                 Excellent preservation of medieval architecture
                                             </li>
                                         </ul>
-                                        <div className="relative mt-6">
-                                            <Link href="/destinations/lankatilaka-temple">
-                                                <Button
-                                                    className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                    variant="default"
-                                                >
-                                                    Discover Lankatilaka Image House
-                                                </Button>
-                                            </Link>
-                                            {/* Blinking finger pointer pointing to button */}
-                                            <div className="absolute -left-8 top-1/2 transform -translate-y-1/2 animate-pulse">
-                                                <div className="text-2xl animate-bounce">👉</div>
-                                            </div>
-                                        </div>
+                                        <Link href="/destinations/lankatilaka-temple">
+                                            <Button
+                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                                                variant="default"
+                                            >
+                                                Discover Lankatilaka Image House
+                                            </Button>
+                                        </Link>
                                     </div>
                                 </div>
                             </CardContent>
