@@ -231,6 +231,223 @@ export default function EllaTownGuide() {
           </div>
         </section>
 
+        {/* Tea Picking Experiences */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Tea Picking &amp; Plantation Experiences</h2>
+          <div className="space-y-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Authentic Tea Picking Sessions</CardTitle>
+                <CardDescription>Experience the art of Ceylon tea harvesting firsthand</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Tea pickers in traditional dress harvesting tea leaves in Ella&apos;s mountain plantations at sunrise"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Join local tea pluckers in the misty morning hours to learn the traditional &quot;two leaves and a bud&quot; picking technique. These authentic experiences offer insight into the lives of plantation workers and the meticulous process behind Ceylon tea production.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Early morning sessions (6:00-9:00 AM)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Learn traditional picking techniques
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Meet local tea pluckers
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Coffee className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
+                        Fresh tea tasting included
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Tea Factory Tours</CardTitle>
+                <CardDescription>From leaf to cup - witness the complete tea processing journey</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Visit nearby tea factories like Halpewatte or Newburgh Estate to see how freshly picked leaves are transformed into world-renowned Ceylon tea. Watch the withering, rolling, oxidation, and drying processes that create different tea grades.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Guided factory tours available
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Learn about tea grading system
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Purchase fresh tea directly
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Coffee className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
+                        Multiple tea varieties to sample
+                      </li>
+                    </ul>
+                    <div className="mt-4 p-3 bg-green-50 rounded-lg border border-green-200">
+                      <p className="text-sm text-green-700">
+                        <strong>Tip:</strong> Best factories to visit include Halpewatte Tea Factory (20 min drive) and Newburgh Estate (15 min drive from Ella town).
+                      </p>
+                    </div>
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Traditional tea factory machinery with workers processing Ceylon tea leaves in Ella mountain region"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Waterfalls Near Ella */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Spectacular Waterfalls Around Ella</h2>
+          <div className="space-y-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Ravana Falls</CardTitle>
+                <CardDescription>Sri Lanka&apos;s most famous waterfall with legendary significance</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Majestic Ravana Falls cascading down rocky cliffs near Ella with pool for swimming"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Named after the legendary King Ravana from the Ramayana epic, this 25-meter waterfall is one of Sri Lanka&apos;s widest. Located just 6km from Ella, it offers swimming opportunities in natural pools and spectacular photo opportunities year-round.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        6km from Ella town center
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Swimming in natural pools
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Historical Ravana Cave nearby
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <AlertTriangle className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
+                        Can be crowded during peak season
+                      </li>
+                    </ul>
+                    <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                      <p className="text-sm text-blue-700">
+                        <strong>Best time to visit:</strong> Early morning (7-9 AM) or late afternoon (4-6 PM) for fewer crowds and better lighting.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Diyaluma Falls</CardTitle>
+                <CardDescription>Sri Lanka&apos;s second-highest waterfall - an adventurous journey</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      At 220 meters, Diyaluma Falls is Sri Lanka&apos;s second-tallest waterfall. Located about 45 minutes from Ella, it requires a short hike but rewards visitors with stunning natural infinity pools and breathtaking mountain views.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        45-minute drive from Ella
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Natural infinity pools for swimming
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        220-meter cascading waterfall
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                        Requires moderate hiking ability
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Diyaluma Falls dramatic 220-meter cascade with natural infinity pools and mountain landscape view"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Other Beautiful Waterfalls</CardTitle>
+                <CardDescription>Hidden gems within reach of Ella</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-2">Bambaragama Falls</h4>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      A lesser-known gem perfect for those seeking solitude. 30-minute drive plus short walk through tea plantations.
+                    </p>
+                    <h4 className="font-semibold mb-2">Secret Falls</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Local hidden waterfall accessible via guided hike. Ask locals for directions - it&apos;s worth the adventure!
+                    </p>
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+                    <h4 className="font-semibold text-green-800 mb-2">Waterfall Safety Tips</h4>
+                    <ul className="text-sm text-green-700 space-y-1">
+                      <li>• Never swim alone</li>
+                      <li>• Check water flow conditions</li>
+                      <li>• Wear appropriate footwear</li>
+                      <li>• Respect local guidelines</li>
+                      <li>• Carry water and snacks</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Ad Space */}
         <div className="my-8 p-4 bg-muted/50 rounded-lg text-center text-muted-foreground border-2 border-dashed border-muted-foreground/30">
           [Advertisement Space - 300x250 Medium Rectangle]

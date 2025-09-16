@@ -136,7 +136,7 @@ export default function BuddhismInSriLanka() {
                         Buddhism in Sri Lanka
                     </h1>
                     <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light text-orange-100">
-                        Discover the sacred history of Buddhism in Sri Lanka, from Arahant Mahinda's arrival to the sacred tooth relic tradition
+                        Discover the sacred history of Buddhism in Sri Lanka, from Arahant Mahinda&apos;s arrival to the sacred tooth relic tradition
                     </p>
                     {/* <div className="flex flex-wrap gap-4 justify-center">
                         <Button 
@@ -181,13 +181,13 @@ export default function BuddhismInSriLanka() {
                         <CardContent className="p-8">
                             <div className="prose max-w-none">
                                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                                    Sri Lanka, known as the "Pearl of the Indian Ocean," holds a special place in Buddhist history. 
+                                    Sri Lanka, known as the &quot;Pearl of the Indian Ocean&quot;, holds a special place in Buddhist history. 
                                     For over 2,300 years, Theravada Buddhism has been the heart and soul of Sri Lankan culture, shaping its 
-                                    art, architecture, and way of life. This ancient island nation is home to some of the world's 
+                                    art, architecture, and way of life. This ancient island nation is home to some of the world&apos;s 
                                     most sacred Buddhist sites and preserves the oldest continuous Theravada Buddhist tradition.
                                 </p>
                                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                                    Buddhism is not just a religion - it is a philosophy of Buddha's teachings about how to avoid 
+                                    Buddhism is not just a religion - it is a philosophy of Buddha&apos;s teachings about how to avoid 
                                     suffering and find peace in life. These teachings show people the path to wisdom, compassion, 
                                     and inner happiness through understanding the true nature of existence.
                                 </p>
@@ -235,7 +235,7 @@ export default function BuddhismInSriLanka() {
                                         <CardTitle className="text-2xl text-gray-900 dark:text-white">
                                             Arahant Mahinda Thero: The Buddhist Pioneer
                                             <span className="block text-sm font-normal text-orange-600 dark:text-orange-400 mt-1">
-                                                Known as "Mahindagamanaya" (The Arrival of Mahinda)
+                                                Known as &quot;Mahindagamanaya&quot; (The Arrival of Mahinda)
                                             </span>
                                         </CardTitle>
                                     </CardHeader>
@@ -248,17 +248,17 @@ export default function BuddhismInSriLanka() {
                                                 hill when he encountered this remarkable Buddhist monk standing serenely among the trees.
                                             </p>
                                             <p className="text-gray-700 dark:text-gray-300">
-                                                The king, surprised to see the monk, called out "Samanera!" (which means monk). Mahinda 
+                                                The king, surprised to see the monk, called out &quot;Samanera!&quot; (which means monk). Mahinda 
                                                 Thero spoke calmly with the king and asked him clever questions to test how smart he was. 
-                                                The famous "mango dialogue" was a simple test to see if the king was intelligent enough 
-                                                to understand Buddha's teachings. When Mahinda saw that the king was very smart, he gave 
+                                                The famous &quot;mango dialogue&quot; was a simple test to see if the king was intelligent enough 
+                                                to understand Buddha&apos;s teachings. When Mahinda saw that the king was very smart, he gave 
                                                 his first sermon and brought Buddhism to Sri Lanka.
                                             </p>
                                             <p className="text-gray-700 dark:text-gray-300">
                                                 This divine encounter on Poson Poya day transformed not only the king but the entire nation. 
-                                                This historic event is reverently called "Mahindagamanaya", meaning 
-                                                "The Arrival of Mahinda," and is considered the most significant moment in Sri Lankan Buddhist history. 
-                                                Today, Poson Poya is celebrated as one of Sri Lanka's most important Buddhist festivals, 
+                                                This historic event is reverently called &quot;Mahindagamanaya&quot;, meaning 
+                                                &quot;The Arrival of Mahinda&quot;, and is considered the most significant moment in Sri Lankan Buddhist history. 
+                                                Today, Poson Poya is celebrated as one of Sri Lanka&apos;s most important Buddhist festivals, 
                                                 commemorating the arrival of the Dhamma (Buddhist teachings) to the island and marking 
                                                 the beginning of over 2,300 years of continuous Buddhist heritage.
                                             </p>
