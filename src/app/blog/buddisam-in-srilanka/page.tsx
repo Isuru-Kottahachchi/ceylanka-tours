@@ -300,7 +300,7 @@ export default function BuddhismInSriLanka() {
                                 <div className="grid md:grid-cols-2 gap-8">
                                     <div>
                                         <h4 className="font-semibold mb-3 text-gray-900 dark:text-white">
-                                            King Devanampiya Tissa's Conversion
+                                            King Devanampiya Tissa&apos;s Conversion
                                         </h4>
                                         <p className="text-gray-700 dark:text-gray-300 mb-4">
                                             After meeting Arahant Mahinda, King Devanampiya Tissa became the first royal patron 
@@ -308,7 +308,7 @@ export default function BuddhismInSriLanka() {
                                             which became the center of Buddhist learning.
                                         </p>
                                         <h4 className="font-semibold mb-3 text-gray-900 dark:text-white">
-                                            Sanghamitta Theri's Arrival
+                                            Sanghamitta Theri&apos;s Arrival
                                         </h4>
                                         <p className="text-gray-700 dark:text-gray-300">
                                             Later, Sanghamitta Theri, daughter of Emperor Ashoka and sister of Mahinda, 
@@ -322,7 +322,7 @@ export default function BuddhismInSriLanka() {
                                         </h4>
                                         <p className="text-gray-700 dark:text-gray-300 mb-4">
                                             The early period saw the establishment of numerous monasteries and stupas. 
-                                            The Thuparamaya, built to house Buddha's collarbone relic, was the first 
+                                            The Thuparamaya, built to house Buddha&apos;s collarbone relic, was the first 
                                             stupa constructed in Sri Lanka.
                                         </p>
                                         <h4 className="font-semibold mb-3 text-gray-900 dark:text-white">
@@ -343,7 +343,7 @@ export default function BuddhismInSriLanka() {
                 {/* Sacred Tooth Relic */}
                 <section id="tooth-relic" className="mb-12">
                     <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
-                        The Sacred Tooth Relic: Sri Lanka's Most Precious Treasure
+                        The Sacred Tooth Relic: Sri Lanka&apos;s Most Precious Treasure
                     </h2>
                     
                     <Card className="overflow-hidden">
@@ -364,7 +364,7 @@ export default function BuddhismInSriLanka() {
                                         Sacred Relic
                                     </Badge>
                                     <CardTitle className="text-2xl text-gray-900 dark:text-white">
-                                        The Tooth Relic's Journey to Sri Lanka
+                                        The Tooth Relic&apos;s Journey to Sri Lanka
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent className="p-0">
@@ -385,7 +385,7 @@ export default function BuddhismInSriLanka() {
                                             </h4>
                                             <p className="text-sm text-gray-700 dark:text-gray-300">
                                                 The tooth relic has been moved several times throughout history for protection 
-                                                during invasions. It finally found its permanent home in Kandy's Temple of the 
+                                                during invasions. It finally found its permanent home in Kandy&apos;s Temple of the 
                                                 Tooth (Sri Dalada Maligawa) in the 16th century.
                                             </p>
                                         </div>
@@ -474,7 +474,7 @@ export default function BuddhismInSriLanka() {
                                     className="w-full h-48 object-cover rounded-lg mb-4"
                                 />
                                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                    Known as the "Cradle of Buddhism in Sri Lanka," this is where Arahant Mahinda 
+                                    Known as the &quot;Cradle of Buddhism in Sri Lanka&quot;, this is where Arahant Mahinda 
                                     first introduced Buddhism to King Devanampiya Tissa.
                                 </p>
                                 <div className="flex items-center gap-2 text-sm text-green-600">
@@ -569,7 +569,7 @@ export default function BuddhismInSriLanka() {
                                         <li className="flex items-start gap-2">
                                             <div className="w-2 h-2 bg-orange-600 rounded-full mt-2 flex-shrink-0"></div>
                                             <div>
-                                                <strong>Vesak Festival:</strong> Celebrating Buddha's birth, enlightenment, and passing away (May)
+                                                <strong>Vesak Festival:</strong> Celebrating Buddha&apos;s birth, enlightenment, and passing away (May)
                                             </div>
                                         </li>
                                         <li className="flex items-start gap-2">
@@ -653,7 +653,7 @@ export default function BuddhismInSriLanka() {
                 {/* Visiting Information */}
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
-                        Visiting Buddhist Sites: A Pilgrim's Guide
+                        Visiting Buddhist Sites: A Pilgrim&apos;s Guide
                     </h2>
                     
                     <Card>
@@ -680,7 +680,7 @@ export default function BuddhismInSriLanka() {
                                         <li>• Remove shoes before entering temple buildings</li>
                                         <li>• Dress modestly covering shoulders and knees</li>
                                         <li>• Lower your voice and maintain respectful behavior</li>
-                                        <li>• Don't point feet toward Buddha statues</li>
+                                        <li>• Don&apos;t point feet toward Buddha statues</li>
                                     </ul>
                                 </div>
                                 <div>
