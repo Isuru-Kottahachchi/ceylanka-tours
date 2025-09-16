@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { Calendar, Clock, MapPin, Star, Users, Mountain, Camera, AlertTriangle, CheckCircle, Car, Heart, TreePine, Book } from "lucide-react"
+import { Calendar, Clock, MapPin, Star, Users, Mountain, AlertTriangle, Heart, TreePine, Book } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -66,23 +66,23 @@ export default function JayaSriMahaBodhiGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Jaya Sri Maha Bodhi: The World&apos;s Most Sacred Tree</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into the presence of living history at Jaya Sri Maha Bodhi, the sacred Bo tree that has been growing 
-              in Anuradhapura for over 2,300 years! This magnificent tree is not just any ordinary plant - it&apos;s a direct 
+              Step into the presence of living history at Jaya Sri Maha Bodhi, the sacred Bo tree that has been growing
+              in Anuradhapura for over 2,300 years! This magnificent tree is not just any ordinary plant - it&apos;s a direct
               descendant of the very Bodhi tree under which Lord Buddha attained enlightenment in Bodh Gaya, India.
             </p>
             <p className="text-lg mb-4">
-              Brought to Sri Lanka in 288 BC by Princess Sanghamitta, daughter of Emperor Ashoka, this sacred sapling has 
-              witnessed the rise and fall of kingdoms, survived invasions, and continued to inspire millions of pilgrims 
+              Brought to Sri Lanka in 288 BC by Princess Sanghamitta, daughter of Emperor Ashoka, this sacred sapling has
+              witnessed the rise and fall of kingdoms, survived invasions, and continued to inspire millions of pilgrims
               from around the world. Today, it stands as the oldest human-planted tree in the world with a recorded history.
             </p>
             <p className="text-lg mb-4">
-              What makes this tree truly special is its unbroken spiritual lineage connecting directly to Buddha himself. 
-              For Buddhists worldwide, visiting Jaya Sri Maha Bodhi is one of the most important pilgrimages they can make. 
+              What makes this tree truly special is its unbroken spiritual lineage connecting directly to Buddha himself.
+              For Buddhists worldwide, visiting Jaya Sri Maha Bodhi is one of the most important pilgrimages they can make.
               The peaceful energy surrounding this ancient tree creates an atmosphere of deep meditation and spiritual reflection.
             </p>
             <p className="text-lg">
-              Whether you&apos;re a devoted Buddhist, a spiritual seeker, or someone interested in ancient history and culture, 
-              Jaya Sri Maha Bodhi offers a profound experience that touches the heart and soul. The tree continues to thrive, 
+              Whether you&apos;re a devoted Buddhist, a spiritual seeker, or someone interested in ancient history and culture,
+              Jaya Sri Maha Bodhi offers a profound experience that touches the heart and soul. The tree continues to thrive,
               its branches reaching toward the sky as they have for over two millennia, offering shade and blessings to all who visit.
             </p>
           </div>
@@ -92,11 +92,11 @@ export default function JayaSriMahaBodhiGuide() {
               <div>
                 <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Respectful Visiting Guidelines</h4>
                 <p className="text-sm text-amber-700 dark:text-amber-300 mb-2">
-                  <strong>Sacred Space:</strong> This is an active place of worship. Please dress modestly, speak quietly, 
+                  <strong>Sacred Space:</strong> This is an active place of worship. Please dress modestly, speak quietly,
                   and remove shoes when entering the inner platform area.
                 </p>
                 <p className="text-sm text-amber-700 dark:text-amber-300">
-                  <strong>Photography:</strong> While photography is generally allowed, be respectful of worshippers and 
+                  <strong>Photography:</strong> While photography is generally allowed, be respectful of worshippers and
                   follow any posted guidelines. Flash photography may be restricted in certain areas.
                 </p>
               </div>
@@ -289,21 +289,21 @@ export default function JayaSriMahaBodhiGuide() {
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold">A Direct Connection to Buddha</h3>
               <p className="text-muted-foreground">
-                The story begins over 2,300 years ago when Emperor Ashoka of India, after converting to Buddhism, 
-                wanted to spread the Buddha&apos;s teachings throughout the world. Earlier, his son Arahant Mahinda Thero 
-                had already introduced Buddhism to Sri Lanka in 247 BCE through his historic meeting with King 
-                Devanampiya Tissa at Mihintale. Following this spiritual foundation, his daughter, Princess Sanghamitta, 
-                was chosen for the sacred mission of bringing the sacred Bo tree to complete the spiritual establishment 
+                The story begins over 2,300 years ago when Emperor Ashoka of India, after converting to Buddhism,
+                wanted to spread the Buddha&apos;s teachings throughout the world. Earlier, his son Arahant Mahinda Thero
+                had already introduced Buddhism to Sri Lanka in 247 BCE through his historic meeting with King
+                Devanampiya Tissa at Mihintale. Following this spiritual foundation, his daughter, Princess Sanghamitta,
+                was chosen for the sacred mission of bringing the sacred Bo tree to complete the spiritual establishment
                 of Buddhism in Sri Lanka.
               </p>
               <p className="text-muted-foreground">
-                She carried with her a precious sapling from the original Bodhi tree in Bodh Gaya, India - the very 
-                tree under which Prince Siddhartha became the Buddha. This sapling was planted in the royal gardens 
+                She carried with her a precious sapling from the original Bodhi tree in Bodh Gaya, India - the very
+                tree under which Prince Siddhartha became the Buddha. This sapling was planted in the royal gardens
                 of Anuradhapura, where it has grown and thrived for over two millennia.
               </p>
               <p className="text-muted-foreground">
-                What makes this tree truly remarkable is its unbroken lineage. Unlike many ancient sites that have 
-                been rebuilt or restored, Jaya Sri Maha Bodhi is the same living tree that was planted in 288 BC, 
+                What makes this tree truly remarkable is its unbroken lineage. Unlike many ancient sites that have
+                been rebuilt or restored, Jaya Sri Maha Bodhi is the same living tree that was planted in 288 BC,
                 making it a direct, living connection to the Buddha himself.
               </p>
               <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950/20 border-l-4 border-blue-400 dark:border-blue-600 rounded-r-lg">
@@ -314,7 +314,7 @@ export default function JayaSriMahaBodhiGuide() {
                       Discover the complete story of how Arahant Mahinda Thero brought Buddhism to Sri Lanka and how the sacred Bo tree became part of this spiritual heritage.
                     </p>
                   </div>
-                  <Link 
+                  <Link
                     href="/blog/buddisam-in-srilanka"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200 whitespace-nowrap"
                   >
@@ -330,7 +330,7 @@ export default function JayaSriMahaBodhiGuide() {
         {/* Spiritual Significance */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Spiritual Significance & What Makes It Special</h2>
-          
+
           <div className="space-y-8">
             <Card>
               <CardHeader>
@@ -339,8 +339,8 @@ export default function JayaSriMahaBodhiGuide() {
               <CardContent>
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                    Jaya Sri Maha Bodhi represents the oldest living symbol of Buddhism in the world. For over 2,300 years, 
-                    this sacred tree has been continuously venerated, making it a unique repository of spiritual energy 
+                    Jaya Sri Maha Bodhi represents the oldest living symbol of Buddhism in the world. For over 2,300 years,
+                    this sacred tree has been continuously venerated, making it a unique repository of spiritual energy
                     and Buddhist heritage that cannot be found anywhere else.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
@@ -376,8 +376,8 @@ export default function JayaSriMahaBodhiGuide() {
               <CardContent>
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                    Throughout its long history, Jaya Sri Maha Bodhi has survived invasions, natural disasters, and 
-                    the rise and fall of kingdoms. Many consider its survival itself to be miraculous, as it has 
+                    Throughout its long history, Jaya Sri Maha Bodhi has survived invasions, natural disasters, and
+                    the rise and fall of kingdoms. Many consider its survival itself to be miraculous, as it has
                     witnessed over two millennia of human history while continuing to grow and flourish.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
@@ -413,8 +413,8 @@ export default function JayaSriMahaBodhiGuide() {
               <CardContent>
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
-                    Daily rituals and special ceremonies take place at Jaya Sri Maha Bodhi, creating a continuous 
-                    atmosphere of devotion and spiritual practice. These ceremonies connect modern practitioners 
+                    Daily rituals and special ceremonies take place at Jaya Sri Maha Bodhi, creating a continuous
+                    atmosphere of devotion and spiritual practice. These ceremonies connect modern practitioners
                     with traditions that have been maintained for over 2,000 years.
                   </p>
                   <div className="grid md:grid-cols-2 gap-4">
@@ -453,7 +453,7 @@ export default function JayaSriMahaBodhiGuide() {
         {/* Visiting Experience */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Your Spiritual Journey Experience</h2>
-          
+
           <div className="space-y-8">
             <Card>
               <CardHeader>
@@ -526,7 +526,7 @@ export default function JayaSriMahaBodhiGuide() {
         {/* Practical Information */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Practical Pilgrimage Information</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
@@ -609,7 +609,7 @@ export default function JayaSriMahaBodhiGuide() {
                 </CardContent>
               </Card>
             </Link>
-            
+
             <Link href="/destinations/thuparamaya" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
@@ -625,7 +625,7 @@ export default function JayaSriMahaBodhiGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                    The first Buddhist stupa built in Sri Lanka (3rd century BCE), housing Buddha's sacred collarbone relic.
+                    The first Buddhist stupa built in Sri Lanka (3rd century BCE), housing Buddha&apos;s sacred collarbone relic.
                   </p>
                   <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
                     <Clock className="w-3 h-3" />
@@ -637,7 +637,7 @@ export default function JayaSriMahaBodhiGuide() {
                 </CardContent>
               </Card>
             </Link>
-            
+
             <Link href="/destinations/abhayagiri" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
@@ -670,7 +670,7 @@ export default function JayaSriMahaBodhiGuide() {
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Jetavanaramaya Stupa</CardTitle>
-                  <CardDescription>World's Third Tallest Ancient Structure</CardDescription>
+                  <CardDescription>World&apos;s Third Tallest Ancient Structure</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Image
@@ -681,7 +681,7 @@ export default function JayaSriMahaBodhiGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                    Built in 3rd century AD, once the world's third tallest structure. Contains Buddha's sash relic and showcases ancient engineering.
+                    Built in 3rd century AD, once the world&apos;s third tallest structure. Contains Buddha&apos;s sash relic and showcases ancient engineering.
                   </p>
                   <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
                     <Clock className="w-3 h-3" />
@@ -768,15 +768,15 @@ export default function JayaSriMahaBodhiGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground dark:text-gray-300 mb-4">
-                Jaya Sri Maha Bodhi offers more than just a visit to an ancient tree - it provides a profound spiritual 
-                experience that connects you directly with the Buddha&apos;s enlightenment energy. Whether you come as a 
-                devout Buddhist seeking blessings, a spiritual seeker exploring inner peace, or a history enthusiast 
+                Jaya Sri Maha Bodhi offers more than just a visit to an ancient tree - it provides a profound spiritual
+                experience that connects you directly with the Buddha&apos;s enlightenment energy. Whether you come as a
+                devout Buddhist seeking blessings, a spiritual seeker exploring inner peace, or a history enthusiast
                 fascinated by living heritage, this sacred tree offers something deeply meaningful.
               </p>
               <p className="text-muted-foreground dark:text-gray-300">
-                As you stand beneath its ancient branches, you&apos;ll join millions of pilgrims who have found peace, 
-                inspiration, and spiritual awakening in this sacred space. The tree continues to grow and flourish, 
-                just as it has for over 2,300 years, offering its timeless blessings to all who visit with respect 
+                As you stand beneath its ancient branches, you&apos;ll join millions of pilgrims who have found peace,
+                inspiration, and spiritual awakening in this sacred space. The tree continues to grow and flourish,
+                just as it has for over 2,300 years, offering its timeless blessings to all who visit with respect
                 and devotion. May your pilgrimage to Jaya Sri Maha Bodhi bring you wisdom, peace, and spiritual fulfillment! 🙏🌳✨
               </p>
             </CardContent>

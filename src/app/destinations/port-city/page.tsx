@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { Calendar, Clock, MapPin, Star, Users, Building, Camera, AlertTriangle, CheckCircle, Car, Ship, ShoppingBag } from "lucide-react"
+import { Calendar, Clock, MapPin, Star, Users, Building, Camera, AlertTriangle, Car, Ship, ShoppingBag } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
