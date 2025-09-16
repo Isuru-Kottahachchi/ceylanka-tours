@@ -1,10 +1,8 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Anchor, Fish, Waves, Church, Coffee, Utensils, ShoppingBag } from "lucide-react"
+import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Anchor, Fish, Waves, Church, Coffee, Utensils} from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Negombo Travel Guide 2025: Gateway to Sri Lanka | Complete Beach & Culture Guide",

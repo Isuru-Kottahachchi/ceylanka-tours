@@ -33,7 +33,7 @@ export default function MannarGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Mannar Island</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Mystical Northern Paradise</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Mystical Northern Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -57,13 +57,13 @@ export default function MannarGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Mannar: Where Time Stands Still</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Discover the enchanting island of Mannar, Sri Lanka's best-kept secret in the far north, where ancient
+              Discover the enchanting island of Mannar, Sri Lanka&apos;s best-kept secret in the far north, where ancient
               baobab trees stand as silent sentinels over pristine beaches and a landscape that seems untouched by time.
               Connected to the mainland by a causeway, this mystical island offers a unique blend of natural wonders,
               cultural heritage, and spiritual significance that sets it apart from any other destination in Sri Lanka.
             </p>
             <p className="text-lg">
-              From the legendary Adam's Bridge (Rama Setu) that connects Sri Lanka to India, to the majestic baobab
+              From the legendary Adam&apos;s Bridge (Rama Setu) that connects Sri Lanka to India, to the majestic baobab
               trees that create an almost African landscape in the heart of the Indian Ocean, Mannar is a place where
               mythology meets reality. This remote paradise offers pristine beaches, rich birdlife, ancient temples, and
               a pace of life that allows visitors to truly disconnect and experience the raw beauty of untouched Sri
@@ -183,7 +183,7 @@ export default function MannarGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle>2. Adam's Bridge (Rama Setu)</CardTitle>
+                <CardTitle>2. Adam&apos;s Bridge (Rama Setu)</CardTitle>
                 <CardDescription>Legendary causeway connecting Sri Lanka to India</CardDescription>
               </CardHeader>
               <CardContent>
@@ -191,7 +191,7 @@ export default function MannarGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       This chain of limestone shoals, coral, and sandstone extends 30 km from Mannar to Rameswaram in
-                      India. Steeped in mythology and mentioned in the Ramayana, it's both a geological wonder and a
+                      India. Steeped in mythology and mentioned in the Ramayana, it&apos;s both a geological wonder and a
                       site of immense spiritual significance.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -240,7 +240,7 @@ export default function MannarGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Mannar's 130 km coastline offers some of Sri Lanka's most pristine and undeveloped beaches. These
+                      Mannar&apos;s 130 km coastline offers some of Sri Lanka&apos;s most pristine and undeveloped beaches. These
                       secluded shores provide perfect solitude and stunning natural beauty away from commercial tourism.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -295,7 +295,7 @@ export default function MannarGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Built by the Portuguese in 1560 and later expanded by the Dutch, Mannar Fort stands as a testament
-                      to the island's strategic importance in colonial maritime trade routes.
+                      to the island&apos;s strategic importance in colonial maritime trade routes.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -329,7 +329,7 @@ export default function MannarGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Mannar's diverse religious heritage is reflected in its ancient temples, churches, and mosques,
+                      Mannar&apos;s diverse religious heritage is reflected in its ancient temples, churches, and mosques,
                       showcasing the harmonious coexistence of different faiths throughout history.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -572,8 +572,8 @@ export default function MannarGuide() {
                 encounters with wildlife, stunning natural beauty, and genuine cultural experiences.
               </p>
               <p className="text-muted-foreground mb-4">
-                As you stand beneath the ancient baobab trees or watch the sunset paint the sky over Adam's Bridge,
-                you'll understand why Mannar has remained one of Sri Lanka's best-kept secrets. The island's untouched
+                As you stand beneath the ancient baobab trees or watch the sunset paint the sky over Adam&apos;s Bridge,
+                you&apos;ll understand why Mannar has remained one of Sri Lanka&apos;s best-kept secrets. The island&apos;s untouched
                 beauty and peaceful atmosphere provide the perfect escape from the modern world, offering a chance to
                 reconnect with nature and discover the magic of slow travel.
               </p>

@@ -1,9 +1,8 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Droplets, Crown, Building, Eye } from "lucide-react"
+import { Clock, MapPin, Camera, CheckCircle, Star, Calendar, Droplets, Crown, Building, Eye } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Kuttam Pokuna: Ancient Twin Pools of Anuradhapura | Complete Archaeological Guide 2025",
