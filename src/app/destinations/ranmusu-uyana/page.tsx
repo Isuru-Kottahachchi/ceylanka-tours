@@ -66,10 +66,10 @@ export default function RanmusuUyanaGuide() {
               the 3rd century BC, was once a royal pleasure garden for the kings of Anuradhapura.
             </p>
             <p className="text-lg">
-              What makes Ranmusu Uyana truly fascinating is the enigmatic "Stargate" or "Universal Gate" - a mysterious
+              What makes Ranmusu Uyana truly fascinating is the enigmatic &quot;Stargate&quot; or &quot;Universal Gate&quot; - a mysterious
               carved stone panel featuring an intricate diagram of circles and symbols that has sparked countless
-              theories about its purpose and origin. Whether you're an archaeology enthusiast, history buff, or simply
-              curious about ancient mysteries, Ranmusu Uyana offers a unique glimpse into Sri Lanka's rich and enigmatic
+              theories about its purpose and origin. Whether you&apos;re an archaeology enthusiast, history buff, or simply
+              curious about ancient mysteries, Ranmusu Uyana offers a unique glimpse into Sri Lanka&apos;s rich and enigmatic
               past.
             </p>
           </div>
@@ -150,7 +150,7 @@ export default function RanmusuUyanaGuide() {
             <div className="space-y-4 text-muted-foreground">
               <p>
                 The most intriguing feature of Ranmusu Uyana is undoubtedly the mysterious carved stone panel known as
-                the "Stargate" or "Universal Gate." This fascinating artifact features an intricate diagram of
+                the &quot;Stargate&quot; or &quot;Universal Gate&quot;. This fascinating artifact features an intricate diagram of
                 concentric circles, rectangular compartments, and various symbols carved into the rock face.
               </p>
               <p>
@@ -204,7 +204,7 @@ export default function RanmusuUyanaGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Also known as "Sakwala Chakraya" (Universe Cycle)
+                        Also known as &quot;Sakwala Chakraya&quot; (Universe Cycle)
                       </li>
                     </ul>
                   </div>
@@ -303,7 +303,7 @@ export default function RanmusuUyanaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Throughout the park, you'll find various ancient inscriptions and carvings:
+                      Throughout the park, you&apos;ll find various ancient inscriptions and carvings:
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -320,7 +320,7 @@ export default function RanmusuUyanaGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Evidence of the site's importance through different eras
+                        Evidence of the site&apos;s importance through different eras
                       </li>
                     </ul>
                   </div>
@@ -424,7 +424,7 @@ export default function RanmusuUyanaGuide() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Hire a knowledgeable guide:</strong> To understand the site's significance
+                    <strong>Hire a knowledgeable guide:</strong> To understand the site&apos;s significance
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
@@ -448,7 +448,7 @@ export default function RanmusuUyanaGuide() {
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
-                    <strong>Respect the site:</strong> It's an important archaeological treasure
+                    <strong>Respect the site:</strong> It&apos;s an important archaeological treasure
                   </span>
                 </div>
               </CardContent>
@@ -632,7 +632,7 @@ export default function RanmusuUyanaGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                    The world's oldest documented tree, grown from a cutting of the original Bodhi tree under which
+                    The world&apos;s oldest documented tree, grown from a cutting of the original Bodhi tree under which
                     Buddha attained enlightenment.
                   </p>
                   <span className="text-sm font-medium text-primary mt-3 inline-block">See More →</span>
@@ -654,7 +654,7 @@ export default function RanmusuUyanaGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                    Impressive white stupa built in 140 BC, standing 103 meters tall and considered one of the world's
+                    Impressive white stupa built in 140 BC, standing 103 meters tall and considered one of the world&apos;s
                     most venerated Buddhist sites.
                   </p>
                   <span className="text-sm font-medium text-primary mt-3 inline-block">See More →</span>
@@ -672,13 +672,13 @@ export default function RanmusuUyanaGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Ranmusu Uyana offers a unique opportunity to connect with Sri Lanka's ancient past and ponder one of
-                archaeology's most intriguing mysteries. The Universal Gate carving continues to fascinate researchers
+                Ranmusu Uyana offers a unique opportunity to connect with Sri Lanka&apos;s ancient past and ponder one of
+                archaeology&apos;s most intriguing mysteries. The Universal Gate carving continues to fascinate researchers
                 and visitors alike, inviting us to question what advanced knowledge our ancestors may have possessed.
               </p>
               <p className="text-muted-foreground mb-4">
                 As you explore this ancient site, take time to appreciate both the natural beauty and the remarkable
-                human achievements it contains. Whether you're drawn by archaeological interest, spiritual curiosity, or
+                human achievements it contains. Whether you&apos;re drawn by archaeological interest, spiritual curiosity, or
                 simply the allure of ancient mysteries, Ranmusu Uyana provides a thought-provoking experience that will
                 stay with you long after your visit.
               </p>

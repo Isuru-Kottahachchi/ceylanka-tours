@@ -567,7 +567,7 @@ export default function MannarGuide() {
             <CardContent>
               <p className="text-muted-foreground mb-4">
                 Mannar Island offers a travel experience unlike anywhere else in Sri Lanka—a place where ancient baobab
-                trees create African landscapes, pristine beaches stretch endlessly, and time seems to move at nature's
+                trees create African landscapes, pristine beaches stretch endlessly, and time seems to move at nature&apos;s
                 pace. This remote paradise rewards those who venture beyond the beaten path with unforgettable
                 encounters with wildlife, stunning natural beauty, and genuine cultural experiences.
               </p>
