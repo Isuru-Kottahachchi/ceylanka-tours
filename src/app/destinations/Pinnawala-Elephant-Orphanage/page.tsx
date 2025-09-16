@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Clock, CheckCircle, Star, Heart, TreePine, Waves, Camera, ChevronLeft, ChevronRight, ArrowLeft, ArrowRight } from "lucide-react"
+import { Clock, CheckCircle, Star, Heart, TreePine, Waves, Camera, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"

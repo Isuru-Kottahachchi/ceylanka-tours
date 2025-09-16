@@ -411,7 +411,7 @@ export default function AnuradhapuraTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains Buddha's right collarbone relic
+                        Contains Buddha&apos;s right collarbone relic
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -456,9 +456,9 @@ export default function AnuradhapuraTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Lovamahapaya, also known as the "Brazen Palace," was once a magnificent nine-story monastery built 
+                      Lovamahapaya, also known as the &quot;Brazen Palace,&quot; was once a magnificent nine-story monastery built 
                       by King Dutugemunu in the 2nd century BCE. This architectural marvel housed 1,000 monks and was 
-                      entirely covered with copper tiles, giving it the name "Brazen Palace." Today, only the stone 
+                      entirely covered with copper tiles, giving it the name &quot;Brazen Palace.&quot; Today, only the stone 
                       pillars remain, but they still convey the grandeur of this ancient structure.
                     </p>
                     <p className="text-muted-foreground mb-4">
@@ -479,7 +479,7 @@ export default function AnuradhapuraTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Covered with copper tiles (hence "Brazen Palace")
+                        Covered with copper tiles (hence &quot;Brazen Palace&quot;)
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -593,7 +593,7 @@ export default function AnuradhapuraTravelGuide() {
                     </p>
                     <p className="text-muted-foreground mb-4">
                       To atone for this oversight, the king built this beautiful stupa on the exact spot where he 
-                      had his meal. The name "Mirisavetiya" literally means "the place where chili was consumed." 
+                      had his meal. The name &quot;Mirisavetiya&quot; literally means &quot;the place where chili was consumed.&quot; 
                       Standing 60 meters tall, it enshrines sacred relics and represents the Buddhist principle 
                       of mindfulness in daily actions. The surrounding area contains ruins of ancient buildings 
                       and beautiful stone carvings.
@@ -651,7 +651,7 @@ export default function AnuradhapuraTravelGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Lankarama Dagaba, built in the 1st century CE by King Valagamba, represents a unique architectural 
-                      style among Anuradhapura's great stupas. Unlike the massive monuments elsewhere in the city, 
+                      style among Anuradhapura&apos;s great stupas. Unlike the massive monuments elsewhere in the city, 
                       Lankarama was designed as an intimate forest monastery with distinctive circular stone pillars 
                       surrounding the stupa. This 30-meter tall structure showcases the Vajrayana architectural 
                       influence that was rare in Sri Lankan Buddhist construction.
@@ -715,8 +715,8 @@ export default function AnuradhapuraTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      If you visit Anuradhapura, you might have seen this stupa - it's similar to the Ruwanwelisaya but not as large. 
-                      Sandahirusaya, also known as "Sandahiru Seya," is a beautiful white dagoba that showcases the classic 
+                      If you visit Anuradhapura, you might have seen this stupa - it&apos;s similar to the Ruwanwelisaya but not as large. 
+                      Sandahirusaya, also known as &quot;Sandahiru Seya,&quot; is a beautiful white dagoba that showcases the classic 
                       bell-shaped architectural style of ancient Sri Lankan stupas. This is actually a modern construction, 
                       built in recent times following traditional Buddhist architectural principles and designs.
                     </p>

@@ -125,10 +125,10 @@ const waterActivities = [
         name: "Scuba Diving (Swimming skills not required)",
         locations: ["Hikkaduwa", "Unawatuna", "Trincomalee", "Kalpitiya"],
         images: [
-            { src: "/scuba-diving-hikkaduwa.jpg", title: "Coral Reefs at Hikkaduwa" },
-            { src: "/diving-trincomalee.jpg", title: "Shipwreck Diving in Trincomalee" },
-            { src: "/underwater-coral.jpg", title: "Vibrant Marine Life" },
-            { src: "/diving-kalpitiya.jpg", title: "Bar Reef Diving" }
+            { src: "/Scruba-diving.jpeg", title: "Scuba diving in Sri Lanka" },
+            { src: "/Scruba-diving2.jpeg", title: "" },
+            { src: "/Scruba-diving3.jpeg", title: "Vibrant Marine Life" },
+            { src: "/Scruba-diving.jpeg", title: "Bar Reef Diving" }
         ],
         bestTime: "November to April (South/West), April to September (East)",
         difficulty: "Beginner to Advanced",
@@ -375,7 +375,7 @@ function ImageCarousel({ images, difficulty }: { images: { src: string; title: s
 
     return (
         <div 
-            className="relative h-64 md:h-full group"
+            className="relative h-64 md:h-80 lg:h-72 xl:h-80 group"
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
@@ -469,7 +469,7 @@ export default function WaterActivitiesPage() {
                 </div>
             </section>
 
-            <div className="container mx-auto px-4 py-12">
+            <div className="max-w-6xl mx-auto px-4 py-4">
                 {/* Quick Navigation */}
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
@@ -550,7 +550,7 @@ export default function WaterActivitiesPage() {
                     <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
                         Water Activities Guide
                     </h2>
-                    <div className="space-y-12">
+                    <div className="space-y-8 lg:space-y-12">
                         {waterActivities.map((activity) => (
                             <div
                                 key={activity.id}
@@ -558,12 +558,12 @@ export default function WaterActivitiesPage() {
                                 className="scroll-mt-20"
                             >
                                 <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-                                    <div className="md:flex">
-                                        <div className="md:w-1/2">
+                                    <div className="md:flex md:gap-6">
+                                        <div className="md:w-2/5 lg:w-1/3">
                                             <ImageCarousel images={activity.images} difficulty={activity.difficulty} />
                                         </div>
 
-                                        <div className="md:w-1/2 p-6">
+                                        <div className="md:w-3/5 lg:w-2/3 p-6">
                                             <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                                                 {activity.name}
                                             </h3>
