@@ -4,24 +4,26 @@ import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, TreePine, Le
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Matale Travel Guide 2025: Spice Garden Capital of Sri Lanka | Complete Guide",
   description:
-    "Discover Matale, Sri Lanka's spice garden capital. Complete guide to Aluvihare Rock Temple, spice plantations, Sembuwatta Lake, and authentic culinary experiences.",
+    "Discover Matale, Sri Lanka's spice garden capital. Complete guide to Aluvihare Rock Temple, spice plantations, Sembuwatta Lake, Sera Ella waterfall, Nalanda Gedige, Riverston Peak, and authentic culinary experiences.",
   keywords:
-    "Matale Sri Lanka, spice gardens, Aluvihare Rock Temple, Sembuwatta Lake, spice plantations, cinnamon, cardamom, pepper, culinary tours",
+    "Matale Sri Lanka, spice gardens, Aluvihare Rock Temple, Sembuwatta Lake, Sera Ella, Nalanda Gedige, Riverston Peak, Pitawala Pathana, Knuckles Mountains, spice plantations, cinnamon, cardamom, pepper, culinary tours",
   authors: [{ name: "Sri Lanka Travel Expert" }],
   openGraph: {
     title: "Matale Travel Guide 2025: Spice Garden Capital of Sri Lanka",
-    description: "Your complete guide to Matale - spice gardens, ancient temples, and authentic culinary adventures",
+    description: "Your complete guide to Matale - spice gardens, ancient temples, waterfalls, mountain peaks, and authentic culinary adventures",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Matale Travel Guide 2025: Spice Garden Capital of Sri Lanka",
-    description: "Your complete guide to Matale - spice gardens, ancient temples, and authentic culinary adventures",
+    description: "Your complete guide to Matale - spice gardens, ancient temples, waterfalls, mountain peaks, and authentic culinary adventures",
   },
 }
 
@@ -139,6 +141,75 @@ export default function MataleGuide() {
           </Card>
         </section>
 
+        {/* Getting to Matale (moved up) */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Getting to Matale</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>By Road</CardTitle>
+                <CardDescription>Most convenient access to spice gardens</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div>
+                  <strong>From Colombo:</strong>
+                  <p className="text-sm text-muted-foreground">3-4 hours via A1 highway through Kandy</p>
+                </div>
+                <div>
+                  <strong>From Kandy:</strong>
+                  <p className="text-sm text-muted-foreground">1 hour via A9 road - very scenic route</p>
+                </div>
+                <div>
+                  <strong>From Dambulla:</strong>
+                  <p className="text-sm text-muted-foreground">45 minutes via B162 road</p>
+                </div>
+                <div className="bg-green-50 p-3 rounded-lg">
+                  <p className="text-sm text-green-800">
+                    <strong>Tip:</strong> Many spice gardens offer pickup services from Kandy
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>By Public Transport</CardTitle>
+                <CardDescription>Budget-friendly travel options</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <div>
+                  <strong>Bus from Colombo:</strong>
+                  <p className="text-sm text-muted-foreground">4-5 hours via Kandy, frequent services</p>
+                </div>
+                <div>
+                  <strong>Bus from Kandy:</strong>
+                  <p className="text-sm text-muted-foreground">1.5 hours, regular departures every 30 minutes</p>
+                </div>
+                <div>
+                  <strong>Train + Bus:</strong>
+                  <p className="text-sm text-muted-foreground">Train to Kandy, then bus to Matale</p>
+                </div>
+                <div className="bg-blue-50 p-3 rounded-lg">
+                  <p className="text-sm text-blue-800">
+                    <strong>Note:</strong> Tuk-tuks available for local transportation
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="mt-6 p-4 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg">
+            <div className="flex items-start gap-2">
+              <Star className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-amber-800">Recommended Tour Operator</p>
+                <p className="text-amber-700 text-sm mt-1">
+                  For a hassle-free and insightful journey to Matale, we recommend booking with <strong>Ceylanka Tours</strong>—a trusted local operator offering guided tours, private transfers, and authentic experiences throughout the region.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Top Attractions */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Top Attractions in Matale</h2>
@@ -149,10 +220,62 @@ export default function MataleGuide() {
           </div>
 
           <div className="space-y-8">
+
+            {/* Riverston Peak (Moved to 1st) */}
+            <Card>
+              <CardHeader>
+                <CardTitle>1. Riverston Peak</CardTitle>
+                <CardDescription>Dramatic cliff-top viewpoint with panoramic vistas</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Rising 1,348 meters above sea level, Riverston Peak offers one of the most spectacular viewpoints 
+                      in the Matale region. This dramatic cliff-top location provides breathtaking panoramic views 
+                      across the Knuckles Mountain Range and the surrounding valleys, especially stunning at sunrise 
+                      and sunset.
+                    </p>
+                    <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">The Famous Wind Area</h4>
+                      <p className="text-sm text-blue-900 dark:text-blue-100">
+                        Just before reaching the summit, you will pass through the legendary <strong>Riverston Wind Gap</strong>—a narrow mountain pass famous for its incredibly strong, howling winds and swirling mist. Here, gusts can reach over 60 km/h, making it feel like you are walking through a natural wind tunnel! The sudden drop in temperature, thick fog, and the roar of the wind create an unforgettable, almost otherworldly experience. Hold onto your hats and enjoy the thrill—this is one of the most unique natural phenomena in Sri Lanka.
+                      </p>
+                    </div>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        360-degree panoramic mountain views
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Spectacular sunrise and sunset vistas
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Cool mountain climate year-round
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Popular camping and hiking destination
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Riverston Peak dramatic cliff viewpoint overlooking Knuckles Mountain Range with misty valleys below"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Spice Gardens */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Matale Spice Gardens</CardTitle>
+                <CardTitle>2. Matale Spice Gardens</CardTitle>
                 <CardDescription>World&apos;s finest spice plantations and authentic experiences</CardDescription>
               </CardHeader>
               <CardContent>
@@ -196,7 +319,7 @@ export default function MataleGuide() {
             {/* Aluvihare Rock Temple */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Aluvihare Rock Temple</CardTitle>
+                <CardTitle>3. Aluvihare Rock Temple</CardTitle>
                 <CardDescription>Historic temple where Buddhist scriptures were first written</CardDescription>
               </CardHeader>
               <CardContent>
@@ -240,7 +363,7 @@ export default function MataleGuide() {
             {/* Sembuwatta Lake */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Sembuwatta Lake</CardTitle>
+                <CardTitle>4. Sembuwatta Lake</CardTitle>
                 <CardDescription>Pristine mountain lake with natural beauty and adventure</CardDescription>
               </CardHeader>
               <CardContent>
@@ -277,6 +400,190 @@ export default function MataleGuide() {
                       </li>
                     </ul>
                   </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Sera Ella Waterfall */}
+            <Card>
+              <CardHeader>
+                <CardTitle>4. Sera Ella Waterfall</CardTitle>
+                <CardDescription>Hidden cascade through lush tropical forest</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Tucked away in the dense forests near Matale, Sera Ella is a magnificent waterfall that cascades 
+                      down rocky cliffs into crystal-clear pools below. This hidden gem offers a refreshing escape 
+                      into nature, where the sound of rushing water mingles with the calls of tropical birds.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Multi-tiered waterfall with natural pools
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect for nature photography
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Hiking trail through tropical forest
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Natural swimming opportunities
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Sera Ella waterfall cascading through lush tropical forest with natural pools and rocks"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Nalanda Gedige */}
+            <Card>
+              <CardHeader>
+                <CardTitle>5. Nalanda Gedige</CardTitle>
+                <CardDescription>Ancient stone temple with unique architectural fusion</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Nalanda Gedige ancient stone temple with intricate Buddhist and Hindu architectural elements"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Dating from the 8th to 10th centuries, Nalanda Gedige is a remarkable archaeological site that 
+                      showcases a unique blend of Buddhist and Hindu architectural styles. This ancient stone temple, 
+                      built entirely without mortar, demonstrates the sophisticated engineering skills of ancient 
+                      Sri Lankan craftsmen.
+                    </p>
+                    <div className="p-3 mb-4 rounded border-l-4 border-blue-500 bg-blue-100 dark:bg-blue-900">
+                      <span className="font-semibold text-blue-900 dark:text-blue-100">Note:</span> <span className="text-blue-900 dark:text-blue-100">Nalanda Gedige is considered by many to be the geographical center of Sri Lanka, making it a symbolic heart of the island as well as an archaeological treasure.</span>
+                    </div>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        8th-10th century stone architecture
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Buddhist-Hindu architectural fusion
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Built without mortar - ancient engineering
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Intricate stone carvings and sculptures
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            {/* Pitawala Pathana */}
+            <Card>
+              <CardHeader>
+                <CardTitle>6. Pitawala Pathana</CardTitle>
+                <CardDescription>Mini World&apos;s End with rolling grasslands</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Pitawala Pathana rolling grasslands with dramatic cliff edge overlooking misty valleys"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Often called the &apos;Mini World&apos;s End&apos;, Pitawala Pathana is a stunning plateau featuring rolling 
+                      grasslands that suddenly drop off into dramatic cliff faces. This lesser-known gem offers 
+                      incredible views without the crowds of its more famous counterpart, making it perfect for 
+                      peaceful contemplation and photography.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Dramatic cliff-edge viewpoint
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Rolling montane grasslands
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Less crowded than World&apos;s End
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect for sunrise photography
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Knuckles Mountain Range */}
+            <Card>
+              <CardHeader>
+                <CardTitle>7. Knuckles Mountain Range</CardTitle>
+                <CardDescription>UNESCO World Heritage biodiversity hotspot</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      The Knuckles Mountain Range, easily accessible from Matale, is a UNESCO World Heritage site 
+                      renowned for its incredible biodiversity and unique ecosystems. This mountain range offers 
+                      some of the best hiking in Sri Lanka, with trails ranging from easy walks to challenging 
+                      multi-day treks through pristine cloud forests.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        UNESCO World Heritage site
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Incredible biodiversity hotspot
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Multiple hiking trails for all levels
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Endemic flora and fauna species
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Knuckles Mountain Range showing lush cloud forests and distinctive rocky peaks"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                  />
                 </div>
               </CardContent>
             </Card>
@@ -380,64 +687,6 @@ export default function MataleGuide() {
         <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
           [Advertisement Space - 728x90 Leaderboard - Authentic Spice Products & Cooking Equipment]
         </div>
-
-        {/* Getting There */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Getting to Matale</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>By Road</CardTitle>
-                <CardDescription>Most convenient access to spice gardens</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <strong>From Colombo:</strong>
-                  <p className="text-sm text-muted-foreground">3-4 hours via A1 highway through Kandy</p>
-                </div>
-                <div>
-                  <strong>From Kandy:</strong>
-                  <p className="text-sm text-muted-foreground">1 hour via A9 road - very scenic route</p>
-                </div>
-                <div>
-                  <strong>From Dambulla:</strong>
-                  <p className="text-sm text-muted-foreground">45 minutes via B162 road</p>
-                </div>
-                <div className="bg-green-50 p-3 rounded-lg">
-                  <p className="text-sm text-green-800">
-                    <strong>Tip:</strong> Many spice gardens offer pickup services from Kandy
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>By Public Transport</CardTitle>
-                <CardDescription>Budget-friendly travel options</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <strong>Bus from Colombo:</strong>
-                  <p className="text-sm text-muted-foreground">4-5 hours via Kandy, frequent services</p>
-                </div>
-                <div>
-                  <strong>Bus from Kandy:</strong>
-                  <p className="text-sm text-muted-foreground">1.5 hours, regular departures every 30 minutes</p>
-                </div>
-                <div>
-                  <strong>Train + Bus:</strong>
-                  <p className="text-sm text-muted-foreground">Train to Kandy, then bus to Matale</p>
-                </div>
-                <div className="bg-blue-50 p-3 rounded-lg">
-                  <p className="text-sm text-blue-800">
-                    <strong>Note:</strong> Tuk-tuks available for local transportation
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
 
         {/* Where to Stay */}
         <section className="mb-12">
@@ -609,6 +858,168 @@ export default function MataleGuide() {
           </div>
         </section>
 
+        {/* Nearby Places & Archaeological Wonders */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places & Archaeological Wonders</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/destinations/dambulla" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Dambulla Cave Temple</CardTitle>
+                  <CardDescription>UNESCO World Heritage Site</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/dambulla-cave-temple.jpg"
+                    alt="Dambulla Cave Temple with ancient Buddhist murals and statues inside rock caves"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Marvel at the largest and best-preserved cave temple complex in Sri Lanka, filled with ancient murals and Buddha statues.
+                  </p>
+                  <div className="mt-4">
+                    <Button className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm" variant="default">
+                      See More →
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link href="/destinations/sigiriya-rock-fortress" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Sigiriya Rock Fortress</CardTitle>
+                  <CardDescription>Ancient Royal Citadel</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/Sigiriya.jpeg"
+                    alt="Sigiriya Rock Fortress with lion paws and ancient frescoes on a massive rock column"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Climb the iconic Lion Rock to discover ancient frescoes, water gardens, and breathtaking views from the summit.
+                  </p>
+                  <div className="mt-4">
+                    <Button className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm" variant="default">
+                      See More →
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link href="/destinations/kandy" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Kandy</CardTitle>
+                  <CardDescription>Cultural Capital</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/Kandy-View.jpg"
+                    alt="Kandy city view with the Temple of the Tooth and surrounding hills"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                      Explore Sri Lanka&apos;s last royal capital, home to the sacred Temple of the Tooth and vibrant cultural festivals.
+                  </p>
+                  <div className="mt-4">
+                    <Button className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm" variant="default">
+                      See More →
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link href="/destinations/ritigala" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Ritigala Monastery</CardTitle>
+                  <CardDescription>Ancient Forest Monastery</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="Ritigala forest monastery ruins with stone steps and lush jungle surroundings"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Explore mysterious ruins hidden in the jungle, once home to meditating monks and ancient legends.
+                  </p>
+                  <div className="mt-4">
+                    <Button className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm" variant="default">
+                      See More →
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link href="/destinations/kurunegala" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Kurunegala</CardTitle>
+                  <CardDescription>Historic Royal City</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="Kurunegala rock outcrop and cityscape with ancient royal history"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Visit the ancient capital with its famous rock outcrops, royal relics, and panoramic city views.
+                  </p>
+                  <div className="mt-4">
+                    <Button className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm" variant="default">
+                      See More →
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link href="/destinations/aluvihare" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Aluvihare Rock Temple</CardTitle>
+                  <CardDescription>Historic Buddhist Site</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="Aluvihare Rock Temple with ancient cave temples and Buddhist murals"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Discover the birthplace of the written Buddhist scriptures, with ancient caves and beautiful murals.
+                  </p>
+                  <div className="mt-4">
+                    <Button className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm" variant="default">
+                      See More →
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </section>
+
         {/* Travel Tips */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Essential Travel Tips</h2>
@@ -672,69 +1083,6 @@ export default function MataleGuide() {
                   <AlertTriangle className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">Carry insect repellent for plantation visits</span>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Nearby Attractions */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Kandy</CardTitle>
-                <CardDescription>Cultural capital - 1 hour</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Kandy&apos;s Temple of the Tooth and beautiful lake surrounded by hills"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Visit the sacred Temple of the Tooth, explore Kandy Lake, and experience traditional cultural shows.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Dambulla</CardTitle>
-                <CardDescription>Cave temples - 45 minutes</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Dambulla Cave Temple complex with ancient Buddha statues and murals"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Explore the magnificent cave temple complex with ancient Buddha statues and beautiful murals.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Sigiriya</CardTitle>
-                <CardDescription>Ancient rock fortress - 1.5 hours</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Sigiriya Rock Fortress rising majestically from the jungle with ancient ruins"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Climb the famous Lion Rock fortress and discover ancient palace ruins and frescoes.
-                </p>
               </CardContent>
             </Card>
           </div>
