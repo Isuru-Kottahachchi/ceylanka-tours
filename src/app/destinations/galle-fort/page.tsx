@@ -697,7 +697,7 @@ export default function GalleFortTravelGuide() {
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Hummanaya Blowhole</CardTitle>
-                  <CardDescription>Sri Lanka's only natural blowhole</CardDescription>
+                  <CardDescription>Sri Lanka&apos;s only natural blowhole</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Image

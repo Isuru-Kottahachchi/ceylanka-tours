@@ -58,6 +58,7 @@ const searchVariations: { [key: string]: string[] } = {
   "mihinthalaya": ["mihintale", "mihinthale","mihinthalaya"],
   "isurumuniya": ["isurumuniya", "isurumuni", "isuru muniya", "isuramuniya", "isurumuniya temple", "isuru"],
   "jaya sri maha bodhi": ["jayasrimaha bodhi", "jaya sri maha bodhi", "jayasri maha bodhi", "jaya srimaha bodhi", "sri maha bodhi", "maha bodhi", "bodhi tree", "sacred bodhi tree", "jaya sri maha bodhiya"],
+  "rathnapura": ["rathnapura", "rathnapure","ratnapuraya","ratnapure"],
 }
 
 // Function to normalize search terms
@@ -351,7 +352,7 @@ const destinations: Destination[] = [
     name: "Horton Plains National Park",
     location: "Central Province",
     path: "horton-plains",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Hortonplains2.jpeg",
     description: "UNESCO World Heritage site featuring World's End cliff and diverse wildlife",
     highlights: ["World's End", "Baker's Falls", "Cloud Forest", "Endemic Species", "UNESCO Heritage"],
     category: "Nature",
@@ -374,6 +375,16 @@ const destinations: Destination[] = [
     image: "/placeholder.svg?height=400&width=600",
     description: "Hill station with tea plantations and mountain views",
     highlights: ["Tea Factories", "Cool Climate", "Mountain Views"],
+    category: "Nature",
+  },
+    {
+    id: 25,
+    name: "Rathnapura",
+    location: "Sabaragamuwa Province",
+    path: "rathnapura",
+    image: "/placeholder.svg?height=400&width=600",
+    description: "City of Gems, known for its gem mines and waterfalls",
+    highlights: ["Gem Mining", "Waterfalls", "Tea Plantations"],
     category: "Nature",
   },
   {

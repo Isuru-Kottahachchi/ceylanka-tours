@@ -474,7 +474,7 @@ export default function PolonnaruwaGuide() {
                                                 Royal audience hall and private chambers
                                             </li>
                                         </ul>
-                                        <Link href="/destinations/royal-palace-polonnaruwa">
+                                        <Link href="/destinations/parakkramabahu-royal-palace">
                                             <Button
                                                 className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                                                 variant="default"
@@ -548,6 +548,7 @@ export default function PolonnaruwaGuide() {
                     <h2 className="text-3xl font-bold mb-6">Sacred Buddhist Sites</h2>
 
                     <div className="space-y-8">
+
                         <Card>
                             <CardHeader>
                                 <CardTitle>3. Gal Vihara Rock Temple</CardTitle>
@@ -593,6 +594,52 @@ export default function PolonnaruwaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
+                         {/* Polonnaruwa Vatadageya */}
+                    <Card className="mb-8">
+                        <CardHeader>
+                            <CardTitle>Polonnaruwa Vatadageya</CardTitle>
+                            <CardDescription>Ancient Relic House & Architectural Masterpiece</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="grid md:grid-cols-2 gap-6 items-center">
+                                <ImageCarousel
+                                    images={["/PolonnaruwaVatadageya.jpg", "/PolonnaruwaVatadageya2.jpg", "/PolonnaruwaVatadageya3.jpg"]}
+                                    alt="Polonnaruwa Vatadageya showing various views of the circular relic house and stone carvings"
+                                />
+                                <div>
+                                    <p className="text-muted-foreground mb-4">
+                                        The Polonnaruwa Vatadageya is one of Sri Lanka's most iconic ancient structures—a circular relic house built to protect sacred Buddhist relics. Dating to the 12th century, it features concentric stone platforms, beautifully carved guard stones, and a famous moonstone at the entrance. Four Buddha statues face the cardinal directions, symbolizing protection and enlightenment.
+                                    </p>
+                                    <ul className="space-y-2 text-muted-foreground">
+                                        <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                            Unique circular shrine architecture
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                            Intricate moonstone and guard stones
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                            Four Buddha statues facing cardinal points
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                            UNESCO World Heritage highlight
+                                        </li>
+                                    </ul>
+                                    <Link href="/destinations/polonnaruwa-vatadageya">
+                                        <Button
+                                            className="mt-2 bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-600 dark:text-white border-none cursor-pointer"
+                                            variant="default"
+                                        >
+                                            Explore Polonnaruwa Vatadageya
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
 
                         <Card>
                             <CardHeader>
