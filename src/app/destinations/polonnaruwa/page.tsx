@@ -608,7 +608,7 @@ export default function PolonnaruwaGuide() {
                                 />
                                 <div>
                                     <p className="text-muted-foreground mb-4">
-                                        The Polonnaruwa Vatadageya is one of Sri Lanka's most iconic ancient structures—a circular relic house built to protect sacred Buddhist relics. Dating to the 12th century, it features concentric stone platforms, beautifully carved guard stones, and a famous moonstone at the entrance. Four Buddha statues face the cardinal directions, symbolizing protection and enlightenment.
+                                        The Polonnaruwa Vatadageya is one of Sri Lanka&apos;s most iconic ancient structures—a circular relic house built to protect sacred Buddhist relics. Dating to the 12th century, it features concentric stone platforms, beautifully carved guard stones, and a famous moonstone at the entrance. Four Buddha statues face the cardinal directions, symbolizing protection and enlightenment.
                                     </p>
                                     <ul className="space-y-2 text-muted-foreground">
                                         <li className="flex items-start gap-2">

@@ -483,7 +483,7 @@ export default function SinharajaForestGuide() {
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• No flash photography (disturbs wildlife)</li>
                     <li>• Maintain respectful distance from animals</li>
-                    <li>• Don't remove or damage any plants</li>
+                    <li>• Don&apos;t remove or damage any plants</li>
                     <li>• Follow guide instructions for wildlife encounters</li>
                   </ul>
                 </div>
@@ -567,7 +567,7 @@ export default function SinharajaForestGuide() {
               </p>
               <p className="text-muted-foreground font-medium">
                 May your journey through Sinharaja inspire a deeper connection with nature and a commitment to
-                protecting our planet's biodiversity! 🌿🦜🌧️
+                protecting our planet&apos;s biodiversity! 🌿🦜🌧️
               </p>
             </CardContent>
           </Card>
