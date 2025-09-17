@@ -59,7 +59,7 @@ export default function SinharajaForestGuide() {
             <p className="text-lg mb-4">
               Enter the mystical world of Sinharaja Forest Reserve, Sri Lanka&apos;s last remaining pristine lowland
               rainforest and a UNESCO World Heritage site since 1988. This 11,187-hectare biological treasure trove
-              represents one of the world's most important biodiversity hotspots, harboring an extraordinary collection
+              represents one of the world&apos;s most important biodiversity hotspots, harboring an extraordinary collection
               of endemic species found nowhere else on Earth.
             </p>
             <p className="text-lg">
