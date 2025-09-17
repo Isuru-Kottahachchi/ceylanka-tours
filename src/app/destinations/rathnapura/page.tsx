@@ -71,16 +71,16 @@ export default function RathnapuraGuide() {
               <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Rathnapura</h2>
               <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                 <p className="text-lg mb-4">
-                  Rathnapura, literally meaning "City of Gems" in Sinhala, stands as Sri Lanka's most celebrated
-                  gem-mining center and one of the world's most important sources of precious stones. Located in the
+                  Rathnapura, literally meaning &quot;City of Gems&quot; in Sinhala, stands as Sri Lanka&apos;s most celebrated
+                  gem-mining center and one of the world&apos;s most important sources of precious stones. Located in the
                   Sabaragamuwa Province, approximately 100 kilometers southeast of Colombo, this historic city has been
                   synonymous with gemstone trading for over 2,000 years.
                 </p>
                 <p className="text-lg mb-4">
                   The city sits in a valley surrounded by hills that contain some of the richest gem deposits on Earth.
-                  Rathnapura's alluvial deposits have yielded world-famous sapphires, rubies, cat's eyes, and other
+                  Rathnapura&apos;s alluvial deposits have yielded world-famous sapphires, rubies, cat&apos;s eyes, and other
                   precious stones that have adorned royal crowns and collections across the globe. The legendary Blue
-                  Belle of Asia, one of the world's largest blue sapphires, was discovered in these very hills.
+                  Belle of Asia, one of the world&apos;s largest blue sapphires, was discovered in these very hills.
                 </p>
                 <p className="text-lg mb-4">
                   Beyond its geological treasures, Rathnapura offers visitors a unique glimpse into traditional Sri
@@ -111,9 +111,9 @@ export default function RathnapuraGuide() {
                       <div className="flex items-start gap-3">
                         <Gem className="w-5 h-5 text-blue-600 mt-1 flex-shrink-0" />
                         <div>
-                          <h4 className="font-semibold text-amber-800 mb-1">World's Gem Capital</h4>
+                          <h4 className="font-semibold text-amber-800 mb-1">World&apos;s Gem Capital</h4>
                           <p className="text-sm text-amber-700">
-                            Rathnapura produces over 90% of Sri Lanka's precious stones, including the world's finest
+                            Rathnapura produces over 90% of Sri Lanka&apos;s precious stones, including the world&apos;s finest
                             blue sapphires.
                           </p>
                         </div>

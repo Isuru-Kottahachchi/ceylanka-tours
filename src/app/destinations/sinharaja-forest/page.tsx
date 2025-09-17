@@ -33,7 +33,7 @@ export default function SinharajaForestGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Sinharaja Forest Reserve</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Last Pristine Rainforest</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Last Pristine Rainforest</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -54,18 +54,18 @@ export default function SinharajaForestGuide() {
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Sinharaja: Nature's Living Laboratory</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Sinharaja: Nature&apos;s Living Laboratory</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Enter the mystical world of Sinharaja Forest Reserve, Sri Lanka's last remaining pristine lowland
+              Enter the mystical world of Sinharaja Forest Reserve, Sri Lanka&apos;s last remaining pristine lowland
               rainforest and a UNESCO World Heritage site since 1988. This 11,187-hectare biological treasure trove
               represents one of the world's most important biodiversity hotspots, harboring an extraordinary collection
               of endemic species found nowhere else on Earth.
             </p>
             <p className="text-lg">
               From the haunting calls of endemic birds echoing through the misty canopy to the discovery of new species
-              still being made by scientists today, Sinharaja offers an unparalleled journey into one of nature's most
-              complex and fascinating ecosystems. This ancient forest, whose name means "Lion King," has survived for
+              still being made by scientists today, Sinharaja offers an unparalleled journey into one of nature&apos;s most
+              complex and fascinating ecosystems. This ancient forest, whose name means &quot;Lion King,&quot; has survived for
               millions of years and continues to reveal its secrets to those who venture into its emerald depths.
             </p>
           </div>
@@ -153,7 +153,7 @@ export default function SinharajaForestGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Sinharaja is home to 26 of Sri Lanka's 33 endemic bird species, making it the most important bird
+                      Sinharaja is home to 26 of Sri Lanka&apos;s 33 endemic bird species, making it the most important bird
                       conservation area on the island. The forest resonates with the calls of rare and beautiful birds
                       found nowhere else in the world.
                     </p>
@@ -239,7 +239,7 @@ export default function SinharajaForestGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Over 60% of Sinharaja's trees are endemic to Sri Lanka, creating a unique forest ecosystem. The
+                      Over 60% of Sinharaja&apos;s trees are endemic to Sri Lanka, creating a unique forest ecosystem. The
                       multi-layered canopy structure supports an incredible diversity of plant life, from towering
                       emergent trees to delicate orchids.
                     </p>
@@ -550,19 +550,19 @@ export default function SinharajaForestGuide() {
         <section className="mb-12">
           <Card className="bg-gradient-to-r from-green-50 to-emerald-50 border-green-200">
             <CardHeader>
-              <CardTitle className="text-green-800">Your Journey into Nature's Sanctuary</CardTitle>
+              <CardTitle className="text-green-800">Your Journey into Nature&apos;s Sanctuary</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Sinharaja Forest Reserve offers one of the world's most extraordinary biodiversity experiences, where
+                Sinharaja Forest Reserve offers one of the world&apos;s most extraordinary biodiversity experiences, where
                 every step reveals new wonders and every sound tells a story of millions of years of evolution. This
-                ancient rainforest is not just a destination—it's a living laboratory that continues to teach us about
+                ancient rainforest is not just a destination—it&apos;s a living laboratory that continues to teach us about
                 the intricate connections that sustain life on Earth.
               </p>
               <p className="text-muted-foreground mb-4">
-                As you trek through the misty trails and listen to the symphony of endemic birds, remember that you're
+                As you trek through the misty trails and listen to the symphony of endemic birds, remember that you&apos;re
                 experiencing something truly irreplaceable. Your visit contributes to the conservation of this precious
-                ecosystem and helps ensure that future generations can also witness the magic of Sri Lanka's last
+                ecosystem and helps ensure that future generations can also witness the magic of Sri Lanka&apos;s last
                 pristine rainforest.
               </p>
               <p className="text-muted-foreground font-medium">
