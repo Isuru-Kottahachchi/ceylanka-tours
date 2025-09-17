@@ -29,7 +29,7 @@ export default function KuttamPokunaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Kuttampokuna.jpeg"
           alt="Magnificent aerial view of Kuttam Pokuna twin pools showing ancient stepped architecture and crystal-clear water in Anuradhapura, Sri Lanka"
           fill
           className="object-cover"
