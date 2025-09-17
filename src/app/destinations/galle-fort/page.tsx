@@ -693,6 +693,30 @@ export default function GalleFortTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
+            <Link href="/destinations/hummanaya" className="block hover:shadow-md transition-shadow duration-200">
+              <Card className="cursor-pointer">
+                <CardHeader>
+                  <CardTitle className="text-lg">Hummanaya Blowhole</CardTitle>
+                  <CardDescription>Sri Lanka's only natural blowhole</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/HummanayaBlowhole.jpeg"
+                    alt="Hummanaya Blowhole spraying water high above the rocky coast"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Witness the power of the Indian Ocean at Hummanaya, where water shoots up to 25 meters through a coastal rock crevice. A unique natural wonder and a must-see for nature lovers!
+                  </p>
+                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
+                    See More →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+
             <Link href="/destinations/mirissa" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
@@ -722,16 +746,21 @@ export default function GalleFortTravelGuide() {
                 <CardDescription>Best views of the coastline</CardDescription>
               </CardHeader>
               <CardContent>
-                <Image
-                  src="/Waligama.jpg"
-                  alt="View of Waligama"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Waligama is a charming coastal town known for its stunning beaches and vibrant fishing community. Enjoy fresh seafood, water sports, and breathtaking sunsets.
-                </p>
+                <Link href="/destinations/waligama" className="block hover:shadow-md transition-shadow duration-200">
+                  <Image
+                    src="/Waligama.jpg"
+                    alt="View of Waligama"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Waligama is a charming coastal town known for its stunning beaches and vibrant fishing community. Enjoy fresh seafood, water sports, and breathtaking sunsets.
+                  </p>
+                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
+                    See More →
+                  </span>
+                </Link>
               </CardContent>
             </Card>
 
@@ -741,16 +770,21 @@ export default function GalleFortTravelGuide() {
                 <CardDescription>Best views of the coastline and Surfing</CardDescription>
               </CardHeader>
               <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Dambulla Cave Temple showing ancient Buddhist statues and paintings inside rock caves"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. 30 min drive.
-                </p>
+                <Link href="/destinations/hirikatiya" className="block hover:shadow-md transition-shadow duration-200">
+                  <Image
+                    src="/Hirikatiya.jpg"
+                    alt="Dambulla Cave Temple showing ancient Buddhist statues and paintings inside rock caves"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. 30 min drive.
+                  </p>
+                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
+                    See More →
+                  </span>
+                </Link>
               </CardContent>
             </Card>
 
@@ -760,16 +794,46 @@ export default function GalleFortTravelGuide() {
                 <CardDescription>Beach that can campfire</CardDescription>
               </CardHeader>
               <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Large herd of elephants gathering at Minneriya National Park during dry season"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
-                </p>
+                <Link href="/destinations/blue-beach" className="block hover:shadow-md transition-shadow duration-200">
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
+                  </p>
+                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
+                    See More →
+                  </span>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Thalpe Beach */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Thalpe Beach</CardTitle>
+                <CardDescription>Coral wells & peaceful sands</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Link href="/destinations/thalpe-beach" className="block hover:shadow-md transition-shadow duration-200">
+                  <Image
+                    src="/placeholder.svg?height=200&width=300"
+                    alt="Thalpe Beach coral wells and golden sand with turquoise water"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Discover Thalpe Beach, just south of Galle. Famous for its unique coral wells—natural pools carved into the reef—this quiet beach is perfect for swimming at low tide, relaxing on golden sand, and enjoying local seafood. Watch for sea urchins in the wells and enjoy a peaceful, uncrowded atmosphere.
+                  </p>
+                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
+                    See More →
+                  </span>
+                </Link>
               </CardContent>
             </Card>
           </div>

@@ -55,7 +55,7 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
 
                         <div className="space-y-3">
                             <Link href="/blog/things-you-aware-in-the-beach">
-                                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer transition-colors flex items-center justify-center">
                                     <Shield className="w-4 h-4 mr-2" />
                                     Read Complete Beach Safety Guide
                                 </Button>
@@ -63,7 +63,7 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                             
                             <Button 
                                 variant="outline" 
-                                className="w-full"
+                                className="w-full cursor-pointer"
                                 onClick={onClose}
                             >
                                 Continue to Pasikuda Page
@@ -218,7 +218,7 @@ export default function PasikudaTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/PasikudainEve.jpeg"
                 alt="Crystal clear shallow waters of Pasikuda bay showing coral formations and tropical fish underwater"
                 width={600}
                 height={400}

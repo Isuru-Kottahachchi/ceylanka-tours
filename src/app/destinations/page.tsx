@@ -335,7 +335,7 @@ const destinations = [
     // rating: 4.3,
     // reviews: 890,
     description: "Short lived capital in ancient Sri Lanka with unique rock fortress",
-    highlights: ["Past Kingdom", "Rock Fortress", ""],
+    highlights: ["Past Kingdom", "Rock Fortress"],
     category: "Nature",
   },
   {
@@ -375,6 +375,18 @@ const destinations = [
     category: "Nature",
   },
   {
+    id: 25,
+    name: "Rathnapura",
+    location: "Sabaragamuwa Province",
+    path: "/rathnapura",
+    image: "/placeholder.svg?height=400&width=600",
+    // rating: 4.3,
+    // reviews: 890,
+    description: "City of Gems, known for its gem mines and waterfalls",
+    highlights: ["Gem Mining", "Waterfalls", "Tea Plantations"],
+    category: "Nature",
+  },
+    {
     id: 25,
     name: "Mathale",
     location: "Central Province",
