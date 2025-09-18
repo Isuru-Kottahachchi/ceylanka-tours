@@ -24,7 +24,7 @@ export default function ArugamBayTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Arugam-bay2.jpg"
           alt="Perfect surf break at Arugam Bay with surfers riding waves, palm trees, and golden beach"
           fill
           className="object-cover"
@@ -139,7 +139,7 @@ export default function ArugamBayTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/Arugam-bay1.jpg"
                 alt="Perfect right-hand wave breaking at Arugam Bay Main Point with surfer riding the wave"
                 width={600}
                 height={400}

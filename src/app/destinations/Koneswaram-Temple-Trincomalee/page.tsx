@@ -89,7 +89,7 @@ export default function KoneswaramTempleGuide() {
   ]
 
   const swamirockImages = [
-    "/placeholder.jpg",
+    "/Swami-Rock.jpeg",
     "/Koneshwaram.jpeg",
   ]
 

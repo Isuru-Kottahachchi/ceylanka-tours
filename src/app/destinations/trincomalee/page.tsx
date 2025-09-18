@@ -1,11 +1,11 @@
 "use client"
 
 import Image from "next/image"
+import { useState } from "react"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Anchor, TriangleAlert, ChevronLeft, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { useState } from "react"
 import Link from "next/link"
 
 interface ImageData {
@@ -16,8 +16,10 @@ interface ImageData {
 
 
 
+
 export default function TrincomaleeTravelGuide() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
   const [koneswaramIndex, setKoneswaramIndex] = useState(0);
   const [harbourIndex, setHarbourIndex] = useState(0);
   const [nilaveliIndex, setNilaveliIndex] = useState(0);
@@ -25,7 +27,21 @@ export default function TrincomaleeTravelGuide() {
   const [kanniyaIndex, setKanniyaIndex] = useState(0);
   const [girihanduIndex, setGirihanduIndex] = useState(0);
   const [arisiMaleIndex, setArisiMaleIndex] = useState(0);
-  
+  // Sunrise carousel state
+  const sunriseImages: ImageData[] = [
+    {
+      src: "/Sunrise-in-trinco.jpeg",
+      alt: "Beautiful sunrise over Trincomalee beach with golden light reflecting on the ocean waves",
+      title: "Trincomalee Beach Sunrise"
+    },
+    {
+    src: "/Sunrise-in-trinco1.jpeg",
+      alt: "Sunrise with palm trees and calm sea at Nilaveli Beach",
+      title: "Trinco Beach Sunrise"
+    },
+  ];
+  const [sunriseIndex, setSunriseIndex] = useState(0);
+
   const carouselImages = [
     {
       src: "/Trinco.jpeg",
@@ -33,7 +49,7 @@ export default function TrincomaleeTravelGuide() {
       title: "Trincomalee Harbor & Coastline"
     },
     {
-      src: "/Koneshwaram.jpeg", 
+      src: "/Koneshwaram.jpeg",
       alt: "Koneswaram Temple perched on Swami Rock overlooking the Indian Ocean",
       title: "Koneswaram Temple on Swami Rock"
     },
@@ -93,22 +109,22 @@ export default function TrincomaleeTravelGuide() {
 
   const nilaveliImages = [
     {
-      src: "/Pasikuda.jpeg",
+      src: "/Nilaveli-beach.jpg",
       alt: "Nilaveli Beach with crystal clear turquoise waters",
       title: "Nilaveli Beach Paradise"
     },
     {
-      src: "/Pasikudabeach.jpeg",
+      src: "/Nilaveli-beach1.jpg",
       alt: "Pristine Nilaveli coastline with white sand",
       title: "White Sand Coastline"
     },
     {
-      src: "/PasikudaCover.jpeg",
+      src: "/Nilaveli-beach2.jpg",
       alt: "Stunning sunset views over Nilaveli Beach",
       title: "Magical Beach Sunsets"
     },
     {
-      src: "/Bentotabeach.jpeg",
+      src: "/Nilaveli-beach3.jpg",
       alt: "Beautiful tropical beach with palm trees and clear waters",
       title: "Tropical Beach Paradise"
     }
@@ -116,32 +132,49 @@ export default function TrincomaleeTravelGuide() {
 
   const pigeonIslandImages = [
     {
-      src: "/Sea-turtle-bentota.jpeg",
+      src: "/Pigeon-island.jpg",
       alt: "Marine life around Pigeon Island National Park",
       title: "Marine Biodiversity"
     },
     {
-      src: "/jungle-beach.jpeg",
+      src: "/Pigeon-island1.webp",
       alt: "Pristine beach environment and coastal nature",
       title: "Untouched Coastal Nature"
     },
     {
-      src: "/Mirissa.jpg",
+      src: "/Pigeon-island2.jpg",
+      alt: "Crystal clear waters perfect for snorkeling and diving",
+      title: "Snorkeling Paradise"
+    },
+    {
+      src: "/Pigeon-island6.jpg",
+      alt: "Crystal clear waters perfect for snorkeling and diving",
+      title: "Snorkeling Paradise"
+    },
+    {
+      src: "/Pigeon-island4.jpg",
+      alt: "Crystal clear waters perfect for snorkeling and diving",
+      title: "Snorkeling Paradise"
+    }, 
+    {
+      src: "/Pigeon-island5.jpg",
       alt: "Crystal clear waters perfect for snorkeling and diving",
       title: "Snorkeling Paradise"
     }
+
+
   ];
 
   const kanniyaImages = [
     {
-      src: "/River.jpg",
+      src: "/Kanniya-Hot-Springs.jpg",
       alt: "Natural water springs and tropical vegetation",
       title: "Sacred Hot Springs"
     },
     {
-      src: "/Kanneliya.jpg",
-      alt: "Lush tropical forest surroundings of natural springs",
-      title: "Forest Spring Environment"
+      src: "/Kanniya-Hot-Springs1.jpg",
+      alt: "Natural springs",
+      title: "Sacred Hot Springs"
     }
   ];
 
@@ -152,12 +185,22 @@ export default function TrincomaleeTravelGuide() {
       title: "Ancient Buddhist Stupa"
     },
     {
-      src: "/Ruwanwalisaya.jpeg",
+      src: "/Girihandu-Seya.jpeg",
+      alt: "Traditional Sri Lankan Buddhist stupa architecture",
+      title: "Buddhist Heritage"
+    },
+        {
+      src: "/Girihandu-Seya1.jpeg",
       alt: "Traditional Sri Lankan Buddhist stupa architecture",
       title: "Buddhist Heritage"
     },
     {
-      src: "/JayaSrimahaBodhi.jpeg",
+      src: "/Girihandu-Seya2.jpeg",
+      alt: "Sacred Buddhist sites and religious significance",
+      title: "Sacred Buddhist Sites"
+    },
+      {
+      src: "/Girihandu-Seya3.jpeg",
       alt: "Sacred Buddhist sites and religious significance",
       title: "Sacred Buddhist Sites"
     }
@@ -200,23 +243,55 @@ export default function TrincomaleeTravelGuide() {
             src={images[currentIndex].src}
             alt={images[currentIndex].alt}
             fill
-            className="object-cover transition-all duration-500 ease-in-out"
+            className="object-cover transition-all duration-500 ease-in-out cursor-zoom-in"
             style={{ objectPosition: 'center' }}
+            onClick={() => setShowModal(true)}
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
-          
-          {/* Navigation Buttons */}
+
+          {/* Modal for full-size image */}
+          {showModal && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+              onClick={() => setShowModal(false)}
+            >
+              <div
+                className="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center"
+                onClick={e => e.stopPropagation()}
+              >
+                <Image
+                  src={images[currentImageIndex].src}
+                  alt={images[currentImageIndex].alt}
+                  width={900}
+                  height={900}
+                  className="block w-auto h-auto max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl bg-black"
+                  style={{ objectFit: 'contain' }}
+                  priority
+                />
+                <button
+                  className="absolute top-2 right-2 bg-black/60 hover:bg-black/80 text-white rounded-full p-2 cursor-pointer"
+                  onClick={() => setShowModal(false)}
+                  aria-label="Close preview"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          )}
           <button
             onClick={() => setIndex((currentIndex - 1 + images.length) % images.length)}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-1 rounded-full backdrop-blur-sm transition-all duration-200"
+            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white/90 text-gray-900 dark:bg-gray-800/80 dark:hover:bg-gray-700 dark:text-white p-1 rounded-full backdrop-blur-sm transition-all duration-200 cursor-pointer shadow-lg border border-white/60 dark:border-gray-700"
             aria-label="Previous image"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
-          
+
           <button
             onClick={() => setIndex((currentIndex + 1) % images.length)}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-1 rounded-full backdrop-blur-sm transition-all duration-200"
+            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white/90 text-gray-900 dark:bg-gray-800/80 dark:hover:bg-gray-700 dark:text-white p-1 rounded-full backdrop-blur-sm transition-all duration-200 cursor-pointer shadow-lg border border-white/60 dark:border-gray-700"
             aria-label="Next image"
           >
             <ChevronRight className="w-4 h-4" />
@@ -236,11 +311,10 @@ export default function TrincomaleeTravelGuide() {
             <button
               key={index}
               onClick={() => setIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-200 ${
-                index === currentIndex 
-                  ? 'bg-blue-600' 
-                  : 'bg-gray-300 hover:bg-gray-400'
-              }`}
+              className={`w-2 h-2 rounded-full transition-all duration-200 ${index === currentIndex
+                ? 'bg-blue-600'
+                : 'bg-gray-300 hover:bg-gray-400'
+                }`}
               aria-label={`Go to image ${index + 1}`}
             />
           ))}
@@ -281,7 +355,7 @@ export default function TrincomaleeTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Trincomalee: Where History Meets Paradise</h2>
@@ -303,7 +377,7 @@ export default function TrincomaleeTravelGuide() {
         {/* Image Carousel */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6 text-center">Discover Trincomalee&apos;s Beauty</h2>
-          <div className="relative w-full max-w-4xl mx-auto">
+          <div className="relative w-full max-w-6xl mx-auto">
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
               <Image
                 src={carouselImages[currentImageIndex].src}
@@ -314,7 +388,7 @@ export default function TrincomaleeTravelGuide() {
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
-              
+
               {/* Navigation Buttons */}
               <button
                 onClick={prevImage}
@@ -323,7 +397,7 @@ export default function TrincomaleeTravelGuide() {
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
-              
+
               <button
                 onClick={nextImage}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full backdrop-blur-sm transition-all duration-200"
@@ -346,11 +420,10 @@ export default function TrincomaleeTravelGuide() {
                 <button
                   key={index}
                   onClick={() => setCurrentImageIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                    index === currentImageIndex 
-                      ? 'bg-blue-600' 
-                      : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-all duration-200 ${index === currentImageIndex
+                    ? 'bg-blue-600'
+                    : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
                   aria-label={`Go to image ${index + 1}`}
                 />
               ))}
@@ -362,11 +435,10 @@ export default function TrincomaleeTravelGuide() {
                 <button
                   key={index}
                   onClick={() => setCurrentImageIndex(index)}
-                  className={`relative w-20 h-16 rounded-lg overflow-hidden flex-shrink-0 transition-all duration-200 ${
-                    index === currentImageIndex 
-                      ? 'ring-2 ring-blue-600 ring-offset-2' 
-                      : 'opacity-70 hover:opacity-100'
-                  }`}
+                  className={`relative w-20 h-16 rounded-lg overflow-hidden flex-shrink-0 transition-all duration-200 ${index === currentImageIndex
+                    ? 'ring-2 ring-blue-600 ring-offset-2'
+                    : 'opacity-70 hover:opacity-100'
+                    }`}
                 >
                   <Image
                     src={image.src}
@@ -496,8 +568,8 @@ export default function TrincomaleeTravelGuide() {
               </div>
               <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-950/50 rounded-lg border-l-4 border-blue-500">
                 <p className="text-sm text-blue-800 dark:text-blue-200">
-                  <strong>💡 Travel Tips:</strong> Start your journey early morning to avoid traffic and arrive before dark. 
-                  The road can be challenging in some sections, especially during monsoon season (November-March). 
+                  <strong>💡 Travel Tips:</strong> Start your journey early morning to avoid traffic and arrive before dark.
+                  The road can be challenging in some sections, especially during monsoon season (November-March).
                   Stock up on snacks and water for the journey.
                 </p>
               </div>
@@ -538,17 +610,17 @@ export default function TrincomaleeTravelGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Rising majestically 130 feet above the churning Indian Ocean on the iconic Swami Rock, 
-                      Koneswaram Temple stands as one of Sri Lanka&apos;s most sacred and dramatically located temples. 
-                      This ancient Hindu temple, dedicated to Lord Shiva in his form as Koneshwara (&quot;Lord of the East&quot;), 
-                      is one of the revered Pancha Ishwarams (five abodes of Shiva) and has been a place of 
+                      Rising majestically 130 feet above the churning Indian Ocean on the iconic Swami Rock,
+                      Koneswaram Temple stands as one of Sri Lanka&apos;s most sacred and dramatically located temples.
+                      This ancient Hindu temple, dedicated to Lord Shiva in his form as Koneshwara (&quot;Lord of the East&quot;),
+                      is one of the revered Pancha Ishwarams (five abodes of Shiva) and has been a place of
                       continuous worship for over 2,000 years.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The temple&apos;s stunning Dravidian architecture features a magnificent 7-tiered gopuram (tower) 
-                      adorned with intricate sculptures of Hindu deities, mythical creatures, and celestial beings. 
-                      Ancient chronicles describe this as the legendary &quot;Temple of a Thousand Pillars&quot; (Dakshina 
-                      Kailasam) before its destruction by Portuguese colonizers in 1624. The current structure, 
+                      The temple&apos;s stunning Dravidian architecture features a magnificent 7-tiered gopuram (tower)
+                      adorned with intricate sculptures of Hindu deities, mythical creatures, and celestial beings.
+                      Ancient chronicles describe this as the legendary &quot;Temple of a Thousand Pillars&quot; (Dakshina
+                      Kailasam) before its destruction by Portuguese colonizers in 1624. The current structure,
                       lovingly rebuilt in 1963, maintains the spiritual essence and architectural grandeur.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -583,15 +655,15 @@ export default function TrincomaleeTravelGuide() {
                       <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-3">Ancient History & Legends</h4>
                       <div className="text-sm text-purple-700 dark:text-purple-300 space-y-2">
                         <p>
-                          <strong>Ramayana Connection:</strong> According to legend, King Ravana&apos;s mother Kaikasi 
+                          <strong>Ramayana Connection:</strong> According to legend, King Ravana&apos;s mother Kaikasi
                           worshipped Lord Shiva at this very spot, making it one of the most ancient religious sites in Asia.
                         </p>
                         <p>
-                          <strong>Mahabharata References:</strong> The temple is mentioned in ancient Sanskrit texts 
+                          <strong>Mahabharata References:</strong> The temple is mentioned in ancient Sanskrit texts
                           as &quot;Gokanna&quot; or &quot;Gokarna,&quot; meaning &quot;cow&apos;s ear,&quot; referring to the unique shape of the bay.
                         </p>
                         <p>
-                          <strong>Tamil Literature:</strong> Celebrated in classical Tamil works including Tevaram hymns 
+                          <strong>Tamil Literature:</strong> Celebrated in classical Tamil works including Tevaram hymns
                           by Saint Sambandar (7th century AD), who called it the &quot;Rome of the Pagans.&quot;
                         </p>
                       </div>
@@ -601,15 +673,15 @@ export default function TrincomaleeTravelGuide() {
                       <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">Architectural Marvels</h4>
                       <div className="text-sm text-blue-700 dark:text-blue-300 space-y-2">
                         <p>
-                          <strong>Gopuram Design:</strong> The 7-tiered tower follows traditional South Indian 
+                          <strong>Gopuram Design:</strong> The 7-tiered tower follows traditional South Indian
                           Dravidian architecture with over 1,000 individual sculptural elements.
                         </p>
                         <p>
-                          <strong>Sacred Geometry:</strong> The temple layout follows ancient Vastu Shastra principles, 
+                          <strong>Sacred Geometry:</strong> The temple layout follows ancient Vastu Shastra principles,
                           with the main shrine perfectly aligned to face the rising sun.
                         </p>
                         <p>
-                          <strong>Stone Carving:</strong> Features intricate depictions of the 108 dance poses 
+                          <strong>Stone Carving:</strong> Features intricate depictions of the 108 dance poses
                           (Karanas) of Lord Shiva, mythological scenes, and celestial beings.
                         </p>
                       </div>
@@ -644,17 +716,17 @@ export default function TrincomaleeTravelGuide() {
                     <h4 className="font-semibold text-red-800 dark:text-red-200 mb-3">Colonial Period & Reconstruction</h4>
                     <div className="text-sm text-red-700 dark:text-red-300 space-y-2">
                       <p>
-                        <strong>Portuguese Destruction (1624):</strong> The original temple complex was systematically 
-                        destroyed by Portuguese colonizers who built Fort Frederick using the temple stones. Many 
+                        <strong>Portuguese Destruction (1624):</strong> The original temple complex was systematically
+                        destroyed by Portuguese colonizers who built Fort Frederick using the temple stones. Many
                         precious artifacts and sculptures were thrown into the ocean.
                       </p>
                       <p>
-                        <strong>Dutch Period:</strong> During Dutch rule, the site remained abandoned, though local 
+                        <strong>Dutch Period:</strong> During Dutch rule, the site remained abandoned, though local
                         Hindus continued secret worship in small shrines around the area.
                       </p>
                       <p>
-                        <strong>Modern Restoration (1963):</strong> The temple was magnificently rebuilt by the 
-                        Hindu community with support from devotees across South Asia. The new structure combines 
+                        <strong>Modern Restoration (1963):</strong> The temple was magnificently rebuilt by the
+                        Hindu community with support from devotees across South Asia. The new structure combines
                         traditional Dravidian architecture with modern engineering techniques.
                       </p>
                     </div>
@@ -690,18 +762,18 @@ export default function TrincomaleeTravelGuide() {
                   <h4 className="font-semibold text-indigo-800 dark:text-indigo-200 mb-3">🌊 Lover&apos;s Leap - The Dramatic Cliff</h4>
                   <div className="text-sm text-indigo-700 dark:text-indigo-300 space-y-2">
                     <p>
-                      <strong>Historic Tragedy:</strong> Just beside Koneswaram Temple lies the famous Lover&apos;s Leap, 
-                      a dramatic cliff where according to legend, a Dutch officer&apos;s daughter and her native lover 
+                      <strong>Historic Tragedy:</strong> Just beside Koneswaram Temple lies the famous Lover&apos;s Leap,
+                      a dramatic cliff where according to legend, a Dutch officer&apos;s daughter and her native lover
                       chose to leap to their deaths rather than be separated by colonial prejudices.
                     </p>
                     <p>
-                      <strong>Spectacular Views:</strong> Today, this 130-foot cliff offers some of the most breathtaking 
-                      panoramic views of the Indian Ocean. The spot provides an incredible vantage point for photography 
+                      <strong>Spectacular Views:</strong> Today, this 130-foot cliff offers some of the most breathtaking
+                      panoramic views of the Indian Ocean. The spot provides an incredible vantage point for photography
                       and witnessing the raw power of waves crashing against the rocks below.
                     </p>
                     <p className="flex items-center gap-2">
                       <span className="text-amber-600 dark:text-amber-400">⚠️</span>
-                      <strong>Safety Note:</strong> Exercise extreme caution near the cliff edge. Strong winds and 
+                      <strong>Safety Note:</strong> Exercise extreme caution near the cliff edge. Strong winds and
                       unstable footing make this area potentially dangerous.
                     </p>
                   </div>
@@ -709,13 +781,13 @@ export default function TrincomaleeTravelGuide() {
 
                 {/* See More Details Button */}
                 <div className="mt-6 text-center">
-                    <Link href="/destinations/koneswaram-temple-trincomalee">
-                  <Button
-                    className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                    variant="default"
-                  >
-                   See More Details About Koneswaram Temple
-                  </Button>
+                  <Link href="/destinations/koneswaram-temple-trincomalee">
+                    <Button
+                      className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                      variant="default"
+                    >
+                      See More Details About Koneswaram Temple
+                    </Button>
                   </Link>
                 </div>
               </CardContent>
@@ -731,15 +803,15 @@ export default function TrincomaleeTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Trincomalee boasts one of the world&apos;s most magnificent natural harbours, ranked as the 5th largest 
-                      globally. This deep-water harbour stretches over 30 square kilometers and can accommodate the 
-                      largest naval vessels. Its strategic importance has made it a coveted prize for colonial powers 
+                      Trincomalee boasts one of the world&apos;s most magnificent natural harbours, ranked as the 5th largest
+                      globally. This deep-water harbour stretches over 30 square kilometers and can accommodate the
+                      largest naval vessels. Its strategic importance has made it a coveted prize for colonial powers
                       throughout history.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The harbour&apos;s crystal-clear blue waters are protected by land on three sides, creating perfect 
-                      conditions for both commercial shipping and recreational activities. Admiral Horatio Nelson once 
-                      declared it the &quot;finest harbour in the world,&quot; and today it continues to serve as Sri Lanka&apos;s 
+                      The harbour&apos;s crystal-clear blue waters are protected by land on three sides, creating perfect
+                      conditions for both commercial shipping and recreational activities. Admiral Horatio Nelson once
+                      declared it the &quot;finest harbour in the world,&quot; and today it continues to serve as Sri Lanka&apos;s
                       premier eastern port.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -800,14 +872,14 @@ export default function TrincomaleeTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Stretching for over 5 kilometers along the northeastern coast, Nilaveli Beach is often hailed as 
-                      Sri Lanka&apos;s most spectacular beach. This untouched paradise features powder-soft white sand, 
+                      Stretching for over 5 kilometers along the northeastern coast, Nilaveli Beach is often hailed as
+                      Sri Lanka&apos;s most spectacular beach. This untouched paradise features powder-soft white sand,
                       crystal-clear turquoise waters, and gentle waves that make it perfect for swimming and water sports.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Unlike the busier southern beaches, Nilaveli maintains its pristine character with minimal 
-                      development and fewer crowds. The beach serves as the gateway to Pigeon Island National Park, 
-                      and its shallow, calm waters make it ideal for families with children. Palm trees provide natural 
+                      Unlike the busier southern beaches, Nilaveli maintains its pristine character with minimal
+                      development and fewer crowds. The beach serves as the gateway to Pigeon Island National Park,
+                      and its shallow, calm waters make it ideal for families with children. Palm trees provide natural
                       shade, and local fishermen add authentic charm to the scene.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -892,15 +964,15 @@ export default function TrincomaleeTravelGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Just a 15-minute boat ride from Nilaveli Beach, Pigeon Island National Park consists of two small 
-                      coral islands surrounded by some of Sri Lanka&apos;s most pristine coral reefs. This marine sanctuary 
-                      is home to over 100 species of coral and 300 species of tropical fish, making it a snorkeling and 
+                      Just a 15-minute boat ride from Nilaveli Beach, Pigeon Island National Park consists of two small
+                      coral islands surrounded by some of Sri Lanka&apos;s most pristine coral reefs. This marine sanctuary
+                      is home to over 100 species of coral and 300 species of tropical fish, making it a snorkeling and
                       diving paradise.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The park gets its name from the rock pigeons that nest on the larger island. Visitors can spot 
-                      blacktip reef sharks, sea turtles, and colorful parrotfish in the crystal-clear waters. The 
-                      shallow reefs are perfect for beginners, while deeper areas offer exciting experiences for 
+                      The park gets its name from the rock pigeons that nest on the larger island. Visitors can spot
+                      blacktip reef sharks, sea turtles, and colorful parrotfish in the crystal-clear waters. The
+                      shallow reefs are perfect for beginners, while deeper areas offer exciting experiences for
                       advanced divers.
                     </p>
                     <p>If you are good to swim you can snorkeling here and see closer sharks with the guidance of local experts.</p>
@@ -975,15 +1047,15 @@ export default function TrincomaleeTravelGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Located just 8km northwest of Trincomalee, the Kanniya Hot Springs consist of seven natural 
-                      thermal wells with water temperatures reaching 40°C (104°F). These springs hold deep cultural 
-                      significance and are mentioned in the ancient Ramayana epic, where they&apos;re associated with 
+                      Located just 8km northwest of Trincomalee, the Kanniya Hot Springs consist of seven natural
+                      thermal wells with water temperatures reaching 40°C (104°F). These springs hold deep cultural
+                      significance and are mentioned in the ancient Ramayana epic, where they&apos;re associated with
                       Ravana&apos;s mother&apos;s tears.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Each of the seven wells is said to have different mineral compositions and healing properties. 
-                      Local tradition believes bathing in these waters can cure various ailments, and the site remains 
-                      an important pilgrimage destination for both Hindus and Buddhists. The springs are surrounded by 
+                      Each of the seven wells is said to have different mineral compositions and healing properties.
+                      Local tradition believes bathing in these waters can cure various ailments, and the site remains
+                      an important pilgrimage destination for both Hindus and Buddhists. The springs are surrounded by
                       lush tropical vegetation, creating a serene natural spa environment.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -1013,11 +1085,11 @@ export default function TrincomaleeTravelGuide() {
                 <div className="mt-6 p-4 bg-purple-50 dark:bg-purple-950/50 rounded-lg border-l-4 border-purple-400">
                   <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">Visitor Information:</h4>
                   <p className="text-sm text-purple-700 dark:text-purple-300 mb-2">
-                    <strong>Entry Fee:</strong> Small nominal charge for maintenance. 
+                    <strong>Entry Fee:</strong> Small nominal charge for maintenance.
                     <strong>Best Time:</strong> Early morning or late afternoon to avoid crowds.
                   </p>
                   <p className="text-sm text-purple-700 dark:text-purple-300">
-                    <strong>Note:</strong> Bring a towel and change of clothes. Photography is allowed but be respectful 
+                    <strong>Note:</strong> Bring a towel and change of clothes. Photography is allowed but be respectful
                     of pilgrims and religious activities. The water is safe for bathing.
                   </p>
                 </div>
@@ -1034,16 +1106,16 @@ export default function TrincomaleeTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Perched on a hill overlooking Trincomalee bay, Girihandu Seya is believed to be one of the earliest 
-                      Buddhist stupas built in Sri Lanka. According to Buddhist chronicles and ancient inscriptions found at 
-                      the site, this sacred stupa was built by two merchant brothers, Trapusa (Tapassu) and Bahalika (Bhalluka), 
+                      Perched on a hill overlooking Trincomalee bay, Girihandu Seya is believed to be one of the earliest
+                      Buddhist stupas built in Sri Lanka. According to Buddhist chronicles and ancient inscriptions found at
+                      the site, this sacred stupa was built by two merchant brothers, Trapusa (Tapassu) and Bahalika (Bhalluka),
                       who received hair relics directly from the Buddha immediately after his enlightenment.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The stupa&apos;s name translates to &quot;Hill Stupa&quot; and it offers panoramic views of the natural harbour 
-                      and surrounding coastline. Archaeological evidence shows the original structure was enlarged in the 
-                      8th century AD. The site represents an extraordinary archaeological treasure that connects visitors 
-                      to the very first disciples of the Buddha, making it potentially the earliest Buddhist monument in 
+                      The stupa&apos;s name translates to &quot;Hill Stupa&quot; and it offers panoramic views of the natural harbour
+                      and surrounding coastline. Archaeological evidence shows the original structure was enlarged in the
+                      8th century AD. The site represents an extraordinary archaeological treasure that connects visitors
+                      to the very first disciples of the Buddha, making it potentially the earliest Buddhist monument in
                       Sri Lanka. The peaceful hilltop setting makes it an ideal place for meditation and reflection.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -1084,8 +1156,8 @@ export default function TrincomaleeTravelGuide() {
                 <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-950/50 rounded-lg border-l-4 border-amber-400">
                   <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">Cultural Significance:</h4>
                   <p className="text-sm text-amber-700 dark:text-amber-300">
-                    This stupa marks the beginning of Buddhism in Sri Lanka and represents over 2,300 years of continuous 
-                    religious tradition. Visitors often combine their visit with nearby Koneswaram Temple to experience 
+                    This stupa marks the beginning of Buddhism in Sri Lanka and represents over 2,300 years of continuous
+                    religious tradition. Visitors often combine their visit with nearby Koneswaram Temple to experience
                     both Buddhist and Hindu heritage in one trip.
                   </p>
                 </div>
@@ -1113,14 +1185,14 @@ export default function TrincomaleeTravelGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This lesser-known beach near Trincomalee offers a completely different coastal experience with its 
-                      unique sand formations and rugged natural beauty. Unlike the gentle shores of Nilaveli, Arugam Male 
-                      features dramatic coastal landscapes shaped by wind and waves over centuries, creating fascinating 
+                      This lesser-known beach near Trincomalee offers a completely different coastal experience with its
+                      unique sand formations and rugged natural beauty. Unlike the gentle shores of Nilaveli, Arugam Male
+                      features dramatic coastal landscapes shaped by wind and waves over centuries, creating fascinating
                       geological formations.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The beach is perfect for photography enthusiasts and nature lovers who appreciate untouched coastal 
-                      environments. While not suitable for swimming due to strong currents and rocky areas, it offers 
+                      The beach is perfect for photography enthusiasts and nature lovers who appreciate untouched coastal
+                      environments. While not suitable for swimming due to strong currents and rocky areas, it offers
                       excellent opportunities for coastal walks, bird watching, and experiencing Sri Lanka&apos;s raw natural beauty.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -1150,8 +1222,8 @@ export default function TrincomaleeTravelGuide() {
                 <div className="mt-6 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
                   <h4 className="font-semibold text-yellow-800 mb-2">Safety & Access Information:</h4>
                   <p className="text-sm text-yellow-700">
-                    <strong>Access:</strong> Requires local transportation or guided tour as it&apos;s off the main tourist path. 
-                    <strong>Safety:</strong> Stay away from water&apos;s edge due to unpredictable waves and currents. 
+                    <strong>Access:</strong> Requires local transportation or guided tour as it&apos;s off the main tourist path.
+                    <strong>Safety:</strong> Stay away from water&apos;s edge due to unpredictable waves and currents.
                     Best visited during dry season for easier access.
                   </p>
                 </div>
@@ -1174,14 +1246,14 @@ export default function TrincomaleeTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Located within the naval base area, China Bay Beach is one of Trincomalee&apos;s best-kept secrets. 
-                      This pristine stretch of coastline features incredibly clear waters, soft white sand, and minimal 
-                      crowds due to its controlled access. The beach is named after Chinese traders who once used this 
+                      Located within the naval base area, China Bay Beach is one of Trincomalee&apos;s best-kept secrets.
+                      This pristine stretch of coastline features incredibly clear waters, soft white sand, and minimal
+                      crowds due to its controlled access. The beach is named after Chinese traders who once used this
                       bay as a safe harbor.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      While access requires permission from naval authorities, the effort is worthwhile for those seeking 
-                      an unspoiled beach experience. The protected status has preserved its natural beauty, making it 
+                      While access requires permission from naval authorities, the effort is worthwhile for those seeking
+                      an unspoiled beach experience. The protected status has preserved its natural beauty, making it
                       feel like a private paradise with excellent swimming conditions and stunning sunset views.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -1228,16 +1300,16 @@ export default function TrincomaleeTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      One of Trincomalee&apos;s most magical experiences is watching the sunrise from its pristine eastern beaches. 
-                      Unlike the southern coast where you can only see sunsets over the ocean, Trincomalee&apos;s eastern position 
-                      offers breathtaking sunrise views directly over the Indian Ocean, painting the sky in brilliant oranges, 
+                      One of Trincomalee&apos;s most magical experiences is watching the sunrise from its pristine eastern beaches.
+                      Unlike the southern coast where you can only see sunsets over the ocean, Trincomalee&apos;s eastern position
+                      offers breathtaking sunrise views directly over the Indian Ocean, painting the sky in brilliant oranges,
                       pinks, and golds.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The best sunrise viewing spots include Nilaveli Beach, Uppuveli Beach, and Koneswaram Temple grounds. 
-                      Early morning beach walks during sunrise hours (around 6:00-6:30 AM) provide an unforgettable experience 
-                      with minimal crowds and perfect lighting for photography. The contrast is remarkable - while southern 
-                      beaches like Mirissa and Unawatuna offer stunning sunsets, only the eastern coast provides this magical 
+                      The best sunrise viewing spots include Nilaveli Beach, Uppuveli Beach, and Koneswaram Temple grounds.
+                      Early morning beach walks during sunrise hours (around 6:00-6:30 AM) provide an unforgettable experience
+                      with minimal crowds and perfect lighting for photography. The contrast is remarkable - while southern
+                      beaches like Mirissa and Unawatuna offer stunning sunsets, only the eastern coast provides this magical
                       sunrise experience over the ocean.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -1263,13 +1335,16 @@ export default function TrincomaleeTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Beautiful sunrise over Trincomalee beach with golden light reflecting on the ocean waves"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  {/* Sunrise Image Carousel */}
+                  {createAttractionCarousel(sunriseImages, sunriseIndex, setSunriseIndex) || (
+                    <Image
+                      src={sunriseImages[0].src}
+                      alt={sunriseImages[0].alt}
+                      width={400}
+                      height={300}
+                      className="rounded-lg"
+                    />
+                  )}
                 </div>
               </CardContent>
             </Card>
@@ -1291,13 +1366,13 @@ export default function TrincomaleeTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Located about 45km from Trincomalee, this ancient Buddhist temple houses one of the most sacred 
-                      relics in Sri Lanka - a piece of the Buddha&apos;s forehead bone. The temple complex features a 
+                      Located about 45km from Trincomalee, this ancient Buddhist temple houses one of the most sacred
+                      relics in Sri Lanka - a piece of the Buddha&apos;s forehead bone. The temple complex features a
                       magnificent white dagoba surrounded by smaller stupas and meditation halls in a serene forest setting.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The site dates back over 2,000 years and has been continuously maintained as a place of worship. 
-                      The temple is particularly significant for Buddhist pilgrims and offers visitors a chance to 
+                      The site dates back over 2,000 years and has been continuously maintained as a place of worship.
+                      The temple is particularly significant for Buddhist pilgrims and offers visitors a chance to
                       experience authentic religious practices in a peaceful, natural environment away from tourist crowds.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -1343,8 +1418,8 @@ export default function TrincomaleeTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      A secluded beach located about 6km from Trincomalee town, Marble Beach gets its name from the 
-                      smooth, marble-like rocks that line the shore. The beach offers excellent snorkeling opportunities 
+                      A secluded beach located about 6km from Trincomalee town, Marble Beach gets its name from the
+                      smooth, marble-like rocks that line the shore. The beach offers excellent snorkeling opportunities
                       and pristine waters perfect for swimming.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -1394,8 +1469,8 @@ export default function TrincomaleeTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This ancient Buddhist monastery complex dates back to the 2nd century BC and features impressive 
-                      ruins including stupas, stone pillars, and meditation halls. It&apos;s an important archaeological 
+                      This ancient Buddhist monastery complex dates back to the 2nd century BC and features impressive
+                      ruins including stupas, stone pillars, and meditation halls. It&apos;s an important archaeological
                       site that offers insights into early Buddhist civilization in Sri Lanka.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">

@@ -336,7 +336,7 @@ export default function HortonPlainsDetailedGuide() {
                     </div>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=500&width=600"
+                    src="/Hortonplains9.jpeg"
                     alt="Baker&apos;s Falls waterfall cascading through lush forest with rocks and native vegetation"
                     width={600}
                     height={500}

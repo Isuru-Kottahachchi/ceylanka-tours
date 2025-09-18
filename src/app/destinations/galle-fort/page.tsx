@@ -51,7 +51,7 @@ export default function GalleFortTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+  <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Galle Fort: A Living Colonial Museum</h2>
@@ -508,14 +508,14 @@ export default function GalleFortTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts for Galle Fort</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-green-200 bg-green-50/50">
+            <Card className="border-green-200 bg-green-50/50 dark:bg-green-900/60 dark:border-green-700">
               <CardHeader>
-                <CardTitle className="text-green-700 flex items-center gap-2">
+                <CardTitle className="text-green-700 dark:text-green-100 flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
                   DOs - Make the Most of Your Visit
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-3">
+              <CardContent className="space-y-3 text-green-900 dark:text-green-100">
                 <div className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
@@ -549,14 +549,14 @@ export default function GalleFortTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card className="border-red-200 bg-red-50/50">
+            <Card className="border-red-200 bg-red-50/50 dark:bg-red-900/60 dark:border-red-700">
               <CardHeader>
-                <CardTitle className="text-red-700 flex items-center gap-2">
+                <CardTitle className="text-red-700 dark:text-red-100 flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5" />
                   DONTs - Avoid These Common Mistakes
                 </CardTitle>
               </CardHeader>
-              <CardContent className="space-y-3">
+              <CardContent className="space-y-3 text-red-900 dark:text-red-100">
                 <div className="flex items-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
@@ -773,7 +773,7 @@ export default function GalleFortTravelGuide() {
                 <Link href="/destinations/hirikatiya" className="block hover:shadow-md transition-shadow duration-200">
                   <Image
                     src="/Hirikatiya.jpg"
-                    alt="Dambulla Cave Temple showing ancient Buddhist statues and paintings inside rock caves"
+                    alt="Hirikatiya Beach with surfers riding waves and palm trees lining the shore"
                     width={300}
                     height={200}
                     className="rounded-lg mb-3"

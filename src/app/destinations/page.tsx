@@ -343,7 +343,7 @@ const destinations = [
     name: "Arugam Bay",
     location: "Eastern Province",
     path: "arugambay",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Arugam-bay.jpeg",
     // rating: 4.3,
     // reviews: 890,
     description: "Popular surfing destination with stunning beaches and vibrant nightlife",
