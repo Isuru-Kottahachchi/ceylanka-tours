@@ -1,8 +1,8 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
+import Image from "next/image"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -18,23 +18,27 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative h-[700px] flex items-center justify-center">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url(/images/stockvault-sunset-at-sri-lanka-southern-beach280430.jpg)",
-        }}
-      >
-        <div className="absolute inset-0 bg-black/40" />
-      </div>
+    <section className="relative h-[700px] flex items-center justify-center overflow-hidden">
+      {/* Optimized Background Image */}
+      <Image
+        src="/images/stockvault-sunset-at-sri-lanka-southern-beach280430.jpg"
+        alt="Sunset at Sri Lanka southern beach"
+        fill
+        priority
+        quality={70}
+        placeholder="blur"
+        blurDataURL="/images/hero-blur.jpg"
+        className="object-cover object-center z-0"
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-black/40 z-0" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-6 leading-tight">
-        The Island Life 
+          The Island Life
           <br />
-        You&apos;ve Been Dreaming Of
+          You&apos;ve Been Dreaming Of
         </h1>
 
         <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto font-light leading-relaxed tracking-wide drop-shadow-lg">
