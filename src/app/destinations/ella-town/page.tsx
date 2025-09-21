@@ -22,7 +22,7 @@ export default function EllaTownGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Ella.jpg"
           alt="Panoramic view of Ella town nestled in misty mountains with tea plantations and the famous Ella Gap"
           fill
           className="object-cover"
@@ -336,7 +336,7 @@ export default function EllaTownGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Ravana-Falls.jpg"
                     alt="Majestic Ravana Falls cascading down rocky cliffs near Ella with pool for swimming"
                     width={400}
                     height={300}

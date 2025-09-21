@@ -770,7 +770,7 @@ export default function NuwaraEliyaTravelGuide() {
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Bandarawela.jpeg"
                   alt="Bandarawela town with rolling hills and tea plantations in the background"
                   fill
                   className="object-cover rounded-t-lg"
@@ -798,7 +798,7 @@ export default function NuwaraEliyaTravelGuide() {
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Haputhale.jpeg"
                   alt="Haputhale railway station and surrounding tea plantation landscapes"
                   fill
                   className="object-cover rounded-t-lg"
@@ -826,7 +826,7 @@ export default function NuwaraEliyaTravelGuide() {
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Badulla.jpeg"
                   alt="Badulla town nestled in mountains with ancient temples and railway heritage"
                   fill
                   className="object-cover rounded-t-lg"

@@ -14,9 +14,9 @@ const featuredArticles = [
       "From the golden sands of Unawatuna to the pristine shores of Mirissa, discover the most beautiful beaches...",
     image: "/Bentotabeach.jpeg",
     category: "Beaches",
-    author: "Isuru Kottahachchi",
-    date: "2024-01-15",
-    views: "2.5K",
+    // author: "Isuru Kottahachchi",
+    // date: "2024-01-15",
+    // views: "2.5K",
     readTime: "8 min read",
   },
   {
@@ -92,6 +92,7 @@ export function FeaturedArticles() {
               <CardContent className="pt-0">
                 <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-3 mb-4">{article.excerpt}</p>
 
+                {/*
                 <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
                   <div className="flex items-center space-x-3">
                     <div className="flex items-center space-x-1">
@@ -108,6 +109,7 @@ export function FeaturedArticles() {
                     <span>{article.views}</span>
                   </div>
                 </div>
+                */}
 
                 <div className="mt-2 text-xs text-cyan-600 font-medium">{article.readTime}</div>
                 
@@ -117,7 +119,7 @@ export function FeaturedArticles() {
                     href={`/blog/${article.path}`}
                     className="inline-flex items-center justify-center w-full px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-medium rounded-md transition-colors duration-200"
                   >
-                    View Article
+                    Read Article
                   </Link>
                 </div>
               </CardContent>

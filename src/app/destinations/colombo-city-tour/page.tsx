@@ -3,7 +3,6 @@
 import Image from "next/image"
 import { useState } from "react"
 
-// CarouselImage type and ImageCarousel component (copied from Katharagama)
 type CarouselImage = { src: string; caption: string }
 function ImageCarousel({ images, alt }: { images: CarouselImage[]; alt: string }) {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -210,8 +209,8 @@ export default function ColomboTourGuide() {
               <div className="rounded-xl shadow-lg overflow-hidden">
                 <ImageCarousel
                   images={[
-                    { src: "/placeholder.svg?height=300&width=400", caption: "Independence Memorial Hall exterior" },
-                    { src: "/placeholder.svg?height=300&width=400&text=Independence+Square+Night", caption: "Independence Square illuminated at night" }
+                    { src: "/placeholder.svg", caption: "Independence Memorial Hall exterior" },
+                    { src: "/placeholder.svg", caption: "Independence Square illuminated at night" }
                   ]}
                   alt="Independence Memorial Hall in Colombo showing national monument and Kandyan-style architecture"
                 />
@@ -267,7 +266,7 @@ export default function ColomboTourGuide() {
                     <ImageCarousel
                       images={[
                         { src: "/Galle-face.jpg", caption: "Galle Face Green with families and city skyline" },
-                        { src: "/placeholder.svg?height=300&width=400&text=Galle+Face+Sunset", caption: "Sunset at Galle Face Green promenade" }
+                        { src: "/placeholder.svg", caption: "Sunset at Galle Face Green promenade" }
                       ]}
                       alt="Galle Face Green in Colombo showing families enjoying the oceanfront park with city skyline"
                     />
@@ -412,8 +411,8 @@ export default function ColomboTourGuide() {
                   <div className="rounded-xl shadow-lg overflow-hidden">
                     <ImageCarousel
                       images={[
-                        { src: "/placeholder.svg?height=300&width=400", caption: "Pettah market with vendors and spices" },
-                        { src: "/placeholder.svg?height=300&width=400&text=Pettah+Floating+Market", caption: "Floating market on Beira Lake, Pettah" }
+                        { src: "/placeholder.svg", caption: "Pettah market with vendors and spices" },
+                        { src: "/placeholder.svg", caption: "Floating market on Beira Lake, Pettah" }
                       ]}
                       alt="Busy Pettah market in Colombo showing vendors, spices, and traditional shopping atmosphere"
                     />
@@ -433,9 +432,9 @@ export default function ColomboTourGuide() {
                   <div className="rounded-xl shadow-lg overflow-hidden">
                     <ImageCarousel
                       images={[
-                        { src: "/placeholder.svg?height=300&width=400", caption: "Independence Memorial Hall exterior" },
-                        { src: "/placeholder.svg?height=300&width=400&text=Independence+Square+Night", caption: "Independence Square illuminated at night" },
-                        { src: "/placeholder.svg?height=300&width=400&text=Independence+Square+Park", caption: "Park area around Independence Memorial Hall" }
+                        { src: "/placeholder.svg", caption: "Independence Memorial Hall exterior" },
+                        { src: "/placeholder.svg", caption: "Independence Square illuminated at night" },
+                        { src: "/placeholder.svg", caption: "Park area around Independence Memorial Hall" }
                       ]}
                       alt="Independence Memorial Hall in Colombo showing the grand monument and surrounding park"
                     />
@@ -544,8 +543,8 @@ export default function ColomboTourGuide() {
                   <div className="rounded-xl shadow-lg overflow-hidden">
                     <ImageCarousel
                       images={[
-                        { src: "/placeholder.svg?height=300&width=400", caption: "Port City Colombo with modern skyscrapers" },
-                        { src: "/placeholder.svg?height=300&width=400&text=Port+City+Marina", caption: "Marina and waterfront at Port City Colombo" }
+                        { src: "/placeholder.svg", caption: "Port City Colombo with modern skyscrapers" },
+                        { src: "/placeholder.svg", caption: "Marina and waterfront at Port City Colombo" }
                       ]}
                       alt="Port City Colombo showing modern skyscrapers, marina, and waterfront development"
                     />
@@ -601,8 +600,8 @@ export default function ColomboTourGuide() {
                 <div className="rounded-xl shadow-lg overflow-hidden mb-3">
                   <ImageCarousel
                     images={[
-                      { src: "/placeholder.svg?height=200&width=300", caption: "Port City Colombo futuristic skyline" },
-                      { src: "/placeholder.svg?height=200&width=300&text=Port+City+Night", caption: "Port City Colombo at night" }
+                      { src: "/placeholder.svg", caption: "Port City Colombo futuristic skyline" },
+                      { src: "/placeholder.svg", caption: "Port City Colombo at night" }
                     ]}
                     alt="Port City Colombo showing futuristic skyline and waterfront development"
                   />
@@ -622,8 +621,8 @@ export default function ColomboTourGuide() {
                 <div className="rounded-xl shadow-lg overflow-hidden mb-3">
                   <ImageCarousel
                     images={[
-                      { src: "/placeholder.svg?height=200&width=300", caption: "One Galle Face Mall exterior" },
-                      { src: "/placeholder.svg?height=200&width=300&text=One+Galle+Face+Interior", caption: "Interior of One Galle Face Mall" }
+                      { src: "/placeholder.svg", caption: "One Galle Face Mall exterior" },
+                      { src: "/placeholder.svg", caption: "Interior of One Galle Face Mall" }
                     ]}
                     alt="One Galle Face Mall showing modern shopping complex with luxury stores"
                   />
@@ -643,8 +642,8 @@ export default function ColomboTourGuide() {
                 <div className="rounded-xl shadow-lg overflow-hidden mb-3">
                   <ImageCarousel
                     images={[
-                      { src: "/placeholder.svg?height=200&width=300", caption: "Colombo City Centre exterior" },
-                      { src: "/placeholder.svg?height=200&width=300&text=City+Centre+Shops", caption: "Shops inside Colombo City Centre" }
+                      { src: "/placeholder.svg", caption: "Colombo City Centre exterior" },
+                      { src: "/placeholder.svg", caption: "Shops inside Colombo City Centre" }
                     ]}
                     alt="Colombo City Centre showing modern architecture and shopping facilities"
                   />
@@ -664,8 +663,8 @@ export default function ColomboTourGuide() {
                 <div className="rounded-xl shadow-lg overflow-hidden mb-3">
                   <ImageCarousel
                     images={[
-                      { src: "/placeholder.svg?height=200&width=300", caption: "Arcade Independence Square exterior" },
-                      { src: "/placeholder.svg?height=200&width=300&text=Arcade+Shops", caption: "Shops at Arcade Independence Square" }
+                      { src: "/placeholder.svg", caption: "Arcade Independence Square exterior" },
+                      { src: "/placeholder.svg", caption: "Shops at Arcade Independence Square" }
                     ]}
                     alt="Arcade Independence Square showing colonial-style shopping arcade"
                   />

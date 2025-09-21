@@ -31,7 +31,7 @@ export default function RathnapuraGuide() {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/rathnapura-gem-mining-landscape-with-mountains-and.jpg"
+          src="/Saman-devalaya.jpeg"
           alt="Rathnapura gem mining landscape with traditional buildings and lush mountains"
           fill
           className="object-cover"

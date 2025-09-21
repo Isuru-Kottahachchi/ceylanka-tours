@@ -279,14 +279,17 @@ export default function BentotaGuide() {
                             sports enthusiasts.
                         </p>
                         <p className="text-lg">
-                            From thrilling water sports on the Bentota River to peaceful turtle watching at nearby hatcheries, from
+                            Bentota is an ideal place to enjoy the beach and river. From thrilling water sports on the Bentota River to peaceful turtle watching at nearby hatcheries, from
                             luxurious spa treatments to fresh seafood dining, Bentota provides the ultimate tropical beach experience
                             with Sri Lankan warmth and hospitality.
                         </p>
-                        <p className="text-lg">
-                            There is an interesting fact about Bentota that many people don&apos;t know. The name &quot;Bentota&quot; is derived from the Sinhalese words &quot;Benthota,&quot; which means &quot;river of the benth,&quot; referring to the Bentota River that flows through the area. This river is not only a natural beauty but also a vital part of the local ecosystem, supporting diverse wildlife and providing opportunities for water sports and boat rides.
+                    <div className="my-8 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900/60 border-l-4 border-yellow-400 dark:border-yellow-500">
+                      <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-1">Did you know?</h4>
+                      <p className="text-gray-800 dark:text-yellow-100">
+                        There is an interesting fact about Bentota that many people don&apos;t know. The name &quot;Bentota&quot; is derived from the Sinhalese words &quot;Benthota,&quot; which means &quot;river of the benth,&quot; referring to the Bentota River that flows through the area. This river is not only a natural beauty but also a vital part of the local ecosystem, supporting diverse wildlife and providing opportunities for water sports and boat rides.
                             There is another interesting story: There was a demon called &quot;Ben&quot; who once inhabited this area, and the name is believed to have evolved from this ancient legend.
-                        </p>
+                      </p>
+                    </div>
                     </div>
                 </section>
 

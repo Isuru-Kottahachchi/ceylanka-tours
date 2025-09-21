@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -10,7 +10,8 @@ import { Calendar, User, Eye, Search, Filter } from "lucide-react"
 import { AdBanner } from "@/components/ad-banner"
 import React from "react"
 
-const articles = [
+type Article = typeof originalArticles[number];
+const originalArticles = [
   {
     id: 1,
     title: "Top 10 Must-Visit Beaches in Sri Lanka",
@@ -56,13 +57,13 @@ const articles = [
   {
     id: 4,
     title: "Ramayana Sites in Sri Lanka",
-    path: "Ramayanaya-sites",
+    path: "ramayanaya-sites",
     category: "Culture",
     author: "David Kumar",
     date: "2024-01-08",
     views: "2.1K",
     readTime: "15 min read",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Ramayanaya-Sites.png",
     description: "Journey through the ancient legends and discover the sacred sites connected to the Ramayana epic in beautiful Sri Lanka.",
     highlights: ["Ashok Vatika", "Ravana Falls", "Sita Amman Temple"],
     featured: false,
@@ -146,7 +147,7 @@ const articles = [
     date: "2023-12-22",
     views: "2.0K",
     readTime: "16 min read",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Ramayanaya.png",
     description: "Follow the epic journey of the Ramayana from India to Sri Lanka and discover the historical connections between these ancient lands.",
     highlights: ["Epic Journey", "Historical Sites", "Cultural Connections"],
     featured: false,
@@ -216,7 +217,7 @@ const articles = [
     date: "2023-12-10",
     views: "1.3K",
     readTime: "11 min read",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Ten-giants-of-dutugamunu.png",
     description: "Learn about the legendary warriors who served King Dutugamunu in his quest to unite ancient Sri Lanka.",
     highlights: ["Ancient Warriors", "Royal History", "Epic Battles"],
     featured: false,
@@ -237,6 +238,20 @@ const articles = [
   },
   {
     id: 17,
+    title: "How to save from bees/ hornets attack",
+    path: "how-to-save-from-bees-hornets-attack",
+    category: "Travel Tips",
+    author: "Southern Explorer",
+    date: "2023-12-05",
+    views: "2.2K",
+    readTime: "13 min read",
+    image: "/GalleFort.jpeg",
+    description: "Essential safety guide: what to do before, during, and after a hornet or bee attack.",
+    highlights: ["Hornet Safety", "Guide", "Survival Tips"],
+    featured: false,
+  },
+  {
+    id: 18,
     title: "Places Don't Miss in Down South",
     path: "placesdont missin downsouth",
     category: "Travel Tips",
@@ -257,14 +272,36 @@ export default function ArticlesPage() {
   const [showSearchReminder, setShowSearchReminder] = React.useState(true);
   const [searchValue, setSearchValue] = React.useState("");
   const [activeSearch, setActiveSearch] = React.useState(""); // This will hold the actual search term being filtered
-  const [searchResults, setSearchResults] = React.useState<typeof articles>([]); // API search results
+  const [searchResults, setSearchResults] = React.useState<Article[]>([]); // API search results
   const [isSearching, setIsSearching] = React.useState(false); // Loading state
   const reminderInterval = 20000; // 20 seconds
   const reminderDuration = 5000; // 5 seconds
   const [category, setCategory] = React.useState("All");
 
-  // Use search results if we have an active search, otherwise use local articles
-  const displayArticles = activeSearch.trim() ? searchResults : articles;
+
+  // State for shuffled articles
+  const [shuffledArticles, setShuffledArticles] = React.useState<typeof originalArticles>([...originalArticles]);
+
+  // Shuffle function
+  function shuffleArray(array: typeof originalArticles) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  // Shuffle every 10 seconds
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setShuffledArticles((prev) => shuffleArray(prev));
+    }, 60000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Use search results if we have an active search, otherwise use shuffled articles
+  const displayArticles = activeSearch.trim() ? searchResults : shuffledArticles;
 
   // Filter articles based on category (only for local articles)
   const filteredArticles = React.useMemo(() => {
@@ -272,7 +309,7 @@ export default function ArticlesPage() {
 
     // Only apply category filter if we're not showing search results
     if (category !== "All" && !activeSearch.trim()) {
-      filtered = filtered.filter(article =>
+      filtered = filtered.filter((article: Article) =>
         article.category.toLowerCase() === category.toLowerCase() ||
         article.category.toLowerCase().replace(" ", "") === category.toLowerCase()
       );
@@ -311,7 +348,7 @@ export default function ArticlesPage() {
       setActiveSearch(searchValue);
 
       // For now, we'll do a simple local search since we don't have article search API
-      const localResults = articles.filter(article =>
+      const localResults = originalArticles.filter((article: Article) =>
         article.title.toLowerCase().includes(searchValue.toLowerCase()) ||
         article.description.toLowerCase().includes(searchValue.toLowerCase()) ||
         article.category.toLowerCase().includes(searchValue.toLowerCase()) ||
@@ -509,16 +546,15 @@ export default function ArticlesPage() {
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
             {activeSearch ? "Search Results" : category === "All" ? "All Articles" : `${category} Articles`}
           </h2>
-          
+
           {filteredArticles.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-gray-600 dark:text-gray-400 text-lg">
-                {activeSearch 
-                  ? "No articles found matching your search criteria." 
-                  : `No articles found in the ${category} category.`
-                }
+                {activeSearch
+                  ? "No articles found matching your search criteria."
+                  : `No articles found in the ${category} category.`}
               </p>
-              <Button 
+              <Button
                 onClick={clearSearch}
                 className="mt-4 bg-cyan-600 hover:bg-cyan-700 text-white"
               >
@@ -526,67 +562,47 @@ export default function ArticlesPage() {
               </Button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredArticles.map((article) => (
-                <Card key={article.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {filteredArticles.map((article: Article) => (
+                <Card key={article.id} className="group hover:shadow-lg transition-shadow duration-300 overflow-hidden">
                   <div className="relative overflow-hidden">
                     <Image
                       src={article.image || "/placeholder.svg"}
                       alt={article.title}
                       width={400}
-                      height={250}
+                      height={300}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <Badge className="absolute top-3 left-3 bg-cyan-500 hover:bg-cyan-600">
-                      {article.category}
-                    </Badge>
-                    {article.featured && (
-                      <div className="absolute top-3 right-3 bg-orange-600 text-white px-2 py-1 rounded text-xs font-medium">
-                        Featured
-                      </div>
-                    )}
+                    <Badge className="absolute top-3 left-3 bg-cyan-500 hover:bg-cyan-600">{article.category}</Badge>
                   </div>
 
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-cyan-600 transition-colors line-clamp-2">
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-lg font-semibold line-clamp-2 group-hover:text-cyan-600 transition-colors">
                       <Link href={`/blog/${article.path}`}>{article.title}</Link>
-                    </h3>
-                    
-                    <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">{article.description}</p>
+                    </CardTitle>
+                  </CardHeader>
+
+                  <CardContent className="pt-0">
+                    <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-3 mb-4">{article.description}</p>
 
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {article.highlights.map((highlight, index) => (
+                      {article.highlights.map((highlight: string, index: number) => (
                         <Badge key={index} variant="secondary" className="text-xs">
                           {highlight}
                         </Badge>
                       ))}
                     </div>
 
-                    <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-4">
-                      <div className="flex items-center space-x-3">
-                        <div className="flex items-center space-x-1">
-                          <User className="h-3 w-3" />
-                          <span>{article.author}</span>
-                        </div>
-                        <div className="flex items-center space-x-1">
-                          <Calendar className="h-3 w-3" />
-                          <span>{new Date(article.date).toLocaleDateString()}</span>
-                        </div>
-                      </div>
-                      <div className="flex items-center space-x-3">
-                        <div className="flex items-center space-x-1">
-                          <Eye className="h-3 w-3" />
-                          <span>{article.views}</span>
-                        </div>
-                        <span className="text-cyan-600 font-medium">{article.readTime}</span>
-                      </div>
-                    </div>
-                    
-                    <Link href={`/blog/${article.path}`}>
-                      <Button className="w-full bg-cyan-600 hover:bg-cyan-700 text-white cursor-pointer">
+                    <div className="mt-2 text-xs text-cyan-600 font-medium">{article.readTime}</div>
+
+                    <div className="mt-4">
+                      <Link
+                        href={`/blog/${article.path}`}
+                        className="inline-flex items-center justify-center w-full px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-medium rounded-md transition-colors duration-200"
+                      >
                         Read Article
-                      </Button>
-                    </Link>
+                      </Link>
+                    </div>
                   </CardContent>
                 </Card>
               ))}

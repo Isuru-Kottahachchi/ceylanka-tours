@@ -367,7 +367,7 @@ const destinations = [
     name: "Ella",
     location: "Uva Province",
     path: "/ella-town",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Ella.jpg",
     // rating: 4.3,
     // reviews: 890,
     description: "Cool hill town known for its tea plantations and scenic views",
@@ -379,7 +379,7 @@ const destinations = [
     name: "Rathnapura",
     location: "Sabaragamuwa Province",
     path: "/rathnapura",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Saman-devalaya.jpeg",
     // rating: 4.3,
     // reviews: 890,
     description: "City of Gems, known for its gem mines and waterfalls",
@@ -499,7 +499,7 @@ const destinations = [
     name: "Negombo",
     location: "Western Province",
     path: "/negombo",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Negombo.jpg",
     // rating: 4.3,
     // reviews: 890,
     description: "Coastal city known for its beaches and sea foods",
@@ -742,6 +742,9 @@ export default function DestinationsPage() {
                     width={600}
                     height={400}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    placeholder="blur"
+                    blurDataURL="/placeholder.svg"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 

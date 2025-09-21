@@ -29,7 +29,7 @@ export default function NegomboTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Negombo.jpg"
           alt="Stunning aerial view of Negombo Beach with traditional fishing boats, golden sand, and vibrant Catholic church spires in Sri Lanka"
           fill
           className="object-cover"
