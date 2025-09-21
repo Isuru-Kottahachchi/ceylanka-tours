@@ -5,7 +5,8 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Calendar, User, Eye, Search } from "lucide-react"
-import { AdBanner } from "@/components/ad-banner"
+import dynamic from "next/dynamic"
+const AdBanner = dynamic(() => import("@/components/ad-banner").then(mod => mod.AdBanner), { ssr: false })
 import { formatDateSafe } from "@/lib/date-utils"
 
 const blogPosts = [

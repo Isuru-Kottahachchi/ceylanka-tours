@@ -94,6 +94,7 @@ const destinationsItems = [
       { name: "Yala National Park", href: "/destinations/yala-national-park" },
       { name: "Udawalawe National Park", href: "/destinations/udawalawa-national-park" },
       { name: "Minneriya National Park", href: "/destinations/minneriya-national-park" },
+      { name: "Kaudulla Park", href: "/destinations/kaudulla-national-park" },
       { name: "Wilpattu National Park", href: "/destinations/wilpattu-national-park" },
       { name: "Sinharaja Forest", href: "/destinations/sinharaja-forest" },
     ],
@@ -105,6 +106,7 @@ const destinationsItems = [
     items: [
       { name: "Galle Fort", href: "/destinations/galle-fort" },
       { name: "Temple of the Tooth", href: "/destinations/temple-of-tooth" },
+      { name: "Katharagama", href: "/destinations/katharagama" },
       { name: "Adam's Peak", href: "/destinations/adams-peak" },
       { name: "Mihintale", href: "/destinations/mihinthalaya" },
       { name: "Trincomalee", href: "/destinations/trincomalee" },
