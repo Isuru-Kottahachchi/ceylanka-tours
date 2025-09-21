@@ -1201,7 +1201,7 @@ export default function SigiriyaTravelGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                    Explore the gateway town of Habarana, a key access point to Sri Lanka's Cultural Triangle. Surrounded by lush forests and ancient ruins, Habarana is the perfect base for exploring nearby attractions like Sigiriya Rock Fortress and the ancient city of Polonnaruwa. Experience the rich history and natural beauty of this region, making it a must-visit destination for travelers. About 1.5 hours from Sigiriya.
+                    Explore the gateway town of Habarana, a key access point to Sri Lanka&apos;s Cultural Triangle. Surrounded by lush forests and ancient ruins, Habarana is the perfect base for exploring nearby attractions like Sigiriya Rock Fortress and the ancient city of Polonnaruwa. Experience the rich history and natural beauty of this region, making it a must-visit destination for travelers. About 1.5 hours from Sigiriya.
                   </p>
                   <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
                     See More →

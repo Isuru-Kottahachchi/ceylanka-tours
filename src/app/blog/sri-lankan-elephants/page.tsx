@@ -1,5 +1,5 @@
 "use client"
-import type { Metadata } from "next"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -17,8 +17,6 @@ import {
   TreePine,
   Droplets,
   Users,
-  Baby,
-  Calendar
 } from "lucide-react"
 import { useState } from "react"
 
@@ -179,7 +177,7 @@ export default function SriLankanElephantsPage() {
                   These gentle giants have lived in Sri Lanka for thousands of years and are loved by people all over the world.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Scientists call them "Elephas maximus maximus" which means they are the biggest type of Asian elephant. 
+                  Scientists call them &quot;Elephas maximus maximus&quot; which means they are the biggest type of Asian elephant. 
                   They are different from African elephants because they are smaller and have smaller ears. 
                   Only some male Sri Lankan elephants have tusks, while most females do not have them at all.
                 </p>
@@ -403,7 +401,7 @@ export default function SriLankanElephantsPage() {
                   </div>
                   <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                     <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Minneriya National Park</h4>
-                    <p className="text-gray-700 dark:text-gray-300 text-sm">Home to "The Gathering" - hundreds of elephants</p>
+                    <p className="text-gray-700 dark:text-gray-300 text-sm">Home to &quot;The Gathering&quot; - hundreds of elephants</p>
                   </div>
                   <div className="p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                     <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Wilpattu National Park</h4>
@@ -573,7 +571,7 @@ export default function SriLankanElephantsPage() {
                   <Link href="/destinations/minneriya-national-park" className="block">
                     <div className="p-3 bg-white dark:bg-gray-800 rounded-lg hover:shadow-md transition-shadow">
                       <h4 className="font-semibold text-green-800 dark:text-green-200">Minneriya National Park</h4>
-                      <p className="text-green-700 dark:text-green-300 text-sm">Famous for "The Gathering"</p>
+                      <p className="text-green-700 dark:text-green-300 text-sm">Famous for &quot;The Gathering&quot;</p>
                     </div>
                   </Link>
                   

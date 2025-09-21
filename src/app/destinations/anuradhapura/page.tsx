@@ -342,6 +342,7 @@ export default function AnuradhapuraTravelGuide() {
                         Restored to original glory in modern times
                       </li>
                     </ul>
+                    
                     <div className="mt-6">
                       <Link href="/destinations/ruwanwali-saya">
                         <Button
@@ -408,6 +409,7 @@ export default function AnuradhapuraTravelGuide() {
                         Ongoing archaeological excavations
                       </li>
                     </ul>
+                    
                     <div className="mt-6">
                       <Link href="/destinations/jethawanaramaya">
                         <Button
@@ -456,6 +458,7 @@ export default function AnuradhapuraTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                    
                         Contains Buddha&apos;s right collarbone relic
                       </li>
                       <li className="flex items-start gap-2">
@@ -876,6 +879,96 @@ export default function AnuradhapuraTravelGuide() {
         <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
           [Advertisement Space - 728x90 Leaderboard]
         </div>
+
+        {/* Itinerary Section */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-blue-700 dark:text-blue-300">Sample Itinerary for Visiting Anuradhapura</h2>
+          <div className="prose prose-lg max-w-none text-muted-foreground mb-8">
+            <p>
+              Make the most of your day in Anuradhapura with this practical, time-efficient itinerary. Adjust the schedule to your pace and interests!
+            </p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="min-w-full border rounded-lg bg-white dark:bg-slate-900 text-sm shadow-md">
+              <thead>
+                <tr className="bg-blue-50 dark:bg-slate-800">
+                  <th className="px-4 py-2 text-left font-semibold text-blue-900 dark:text-blue-200">Time</th>
+                  <th className="px-4 py-2 text-left font-semibold text-blue-900 dark:text-blue-200">Activity</th>
+                  <th className="px-4 py-2 text-left font-semibold text-blue-900 dark:text-blue-200">Highlights</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="px-4 py-2">6:30 AM</td>
+                  <td className="px-4 py-2">Arrive in Anuradhapura</td>
+                  <td className="px-4 py-2">Start early to beat the heat and crowds</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">7:00 AM</td>
+                  <td className="px-4 py-2">Sri Maha Bodhi Tree</td>
+                  <td className="px-4 py-2">Morning prayers, peaceful atmosphere</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">8:00 AM</td>
+                  <td className="px-4 py-2">Ruwanwelisaya Dagoba</td>
+                  <td className="px-4 py-2">Iconic stupa, elephant wall, photo ops</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">9:00 AM</td>
+                  <td className="px-4 py-2">Thuparamaya & Lovamahapaya</td>
+                  <td className="px-4 py-2">Oldest dagoba, Brazen Palace pillars</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">10:00 AM</td>
+                  <td className="px-4 py-2">Abhayagiri Monastery Complex</td>
+                  <td className="px-4 py-2">Stupa, museum, Samadhi Buddha</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">11:30 AM</td>
+                  <td className="px-4 py-2">Jetavanaramaya Dagoba</td>
+                  <td className="px-4 py-2">Massive brick stupa, quiet grounds</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">12:30 PM</td>
+                  <td className="px-4 py-2">Lunch Break</td>
+                  <td className="px-4 py-2">Try a local rice & curry restaurant</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">1:30 PM</td>
+                  <td className="px-4 py-2">Kuttam Pokuna (Twin Ponds)</td>
+                  <td className="px-4 py-2">Ancient bathing pools, engineering marvel</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">2:00 PM</td>
+                  <td className="px-4 py-2">Lankarama & Mirisavetiya</td>
+                  <td className="px-4 py-2">Forest monastery, stupa with legend</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">3:00 PM</td>
+                  <td className="px-4 py-2">Isurumuniya Temple</td>
+                  <td className="px-4 py-2">Rock carvings, Isurumuniya Lovers</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">4:00 PM</td>
+                  <td className="px-4 py-2">Ranmusu Uyana & Moonstone</td>
+                  <td className="px-4 py-2">Royal gardens, unique stonework</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2">5:00 PM</td>
+                  <td className="px-4 py-2">Sunset at Ruwanwelisaya or Mihinthale</td>
+                  <td className="px-4 py-2">Golden hour photos, spiritual close</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-6 prose prose-sm text-muted-foreground max-w-none">
+            <ul>
+              <li>Wear modest, light clothing and bring water, sunscreen, and a hat.</li>
+              <li>Bicycles or tuk-tuks are the best way to get around the vast site.</li>
+              <li>Adjust the schedule for your interests—consider a second day for a deeper experience!</li>
+            </ul>
+          </div>
+        </section>
 
         {/* Archaeological Wonders */}
         <section className="mb-12">

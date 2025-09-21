@@ -101,7 +101,7 @@ export default function KatharagamaGuide() {
         <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-foreground">Katharagama</h1>
           <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed text-primary">
-            Sri Lanka's Most Sacred Pilgrimage Site
+            Sri Lanka&apos;s Most Sacred Pilgrimage Site
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-background/80 text-foreground border-border px-4 py-2">
@@ -127,7 +127,7 @@ export default function KatharagamaGuide() {
           {/* ...existing code... */}
           <div className="prose prose-xl max-w-none text-foreground dark:text-foreground leading-relaxed space-y-6">
             <p className="text-xl mb-6 leading-relaxed text-muted-foreground dark:text-muted-foreground">
-              Katharagama is Sri Lanka's most important pilgrimage destination, a sacred place where Hindus, Buddhists,
+              Katharagama is Sri Lanka&apos;s most important pilgrimage destination, a sacred place where Hindus, Buddhists,
               Muslims, and indigenous Vedda people have worshipped together for over 2,000 years. This ancient holy city
               in the southeastern part of Sri Lanka attracts millions of devotees annually who come seeking blessings,
               spiritual healing, and divine intervention. The main deity worshipped here is Lord Murugan (also known as
@@ -152,7 +152,7 @@ export default function KatharagamaGuide() {
               Beyond its religious significance, Katharagama is located near Yala National Park, making it possible to
               combine spiritual experiences with wildlife viewing. The town also serves as a gateway to understanding
               Sri Lankan religious culture, traditional healing practices, and the deep faith that plays such an
-              important role in local people's daily lives. Whether you come as a pilgrim seeking spiritual fulfillment
+              important role in local people&apos;s daily lives. Whether you come as a pilgrim seeking spiritual fulfillment
               or as a traveler interested in cultural experiences, Katharagama offers profound insights into the
               spiritual heart of Sri Lanka.
             </p>
@@ -303,7 +303,7 @@ export default function KatharagamaGuide() {
                       beats, and the flickering light of thousands of oil lamps.
                     </p>
                     <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                      Many pilgrims come to Katharagama to fulfill vows made during difficult times in their lives. It's
+                      Many pilgrims come to Katharagama to fulfill vows made during difficult times in their lives. It&apos;s
                       common to see devotees who have traveled hundreds of miles on foot, carrying kavadi (decorated
                       structures) as offerings, or performing various forms of penance as expressions of their devotion
                       and gratitude. The temple is believed to be especially powerful for granting wishes related to
@@ -369,14 +369,14 @@ export default function KatharagamaGuide() {
                       Hindu counterparts.
                     </p>
                     <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                      The name "Kiri Vehera" means "Milk White Temple" in Sinhala, referring to the stupa's pristine
+                      The name &quot;Kiri Vehera&quot; means &quot;Milk White Temple&quot; in Sinhala, referring to the stupa&apos;s pristine
                       white color that gleams beautifully against the blue sky. Buddhist devotees circumambulate the
                       stupa while chanting prayers and offering flowers, creating a peaceful atmosphere that contrasts
                       with the more intense energy of the main Hindu temple. Many visitors find this to be an ideal
                       place for quiet reflection and meditation.
                     </p>
                     <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                      What makes Kiri Vehera special is how it represents the inclusive nature of Katharagama's
+                      What makes Kiri Vehera special is how it represents the inclusive nature of Katharagama&apos;s
                       spirituality. Hindu and Buddhist pilgrims often visit both temples during their pilgrimage,
                       showing respect for all religious traditions. The temple is particularly beautiful during full
                       moon nights when special ceremonies are held and the white stupa is illuminated by moonlight and
@@ -935,7 +935,7 @@ export default function KatharagamaGuide() {
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• Learn basic greetings in Sinhala/Tamil</li>
                       <li>• Understand significance of rituals you observe</li>
-                      <li>• Don't judge unfamiliar religious practices</li>
+                      <li>• Don&apos;t judge unfamiliar religious practices</li>
                       <li>• Show respect to all pilgrims regardless of background</li>
                       <li>• Ask questions politely if curious about customs</li>
                     </ul>
