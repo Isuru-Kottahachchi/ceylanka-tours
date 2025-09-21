@@ -8,8 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { AdBanner } from "@/components/ad-banner"
 import { 
   ArrowLeft, 
-  ArrowRight, 
-  MapPin, 
+  ArrowRight,  
   Clock, 
   Ruler, 
   Weight, 

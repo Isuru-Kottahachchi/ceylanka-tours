@@ -144,7 +144,7 @@ export default function KatharagamaGuide() {
             <p className="text-lg mb-6 text-muted-foreground dark:text-muted-foreground">
               What makes Katharagama unique is its multi-religious character. While primarily a Hindu temple complex, it
               also contains Buddhist temples, a mosque, and sites sacred to the indigenous Vedda people. This religious
-              harmony reflects Sri Lanka's diverse spiritual heritage and creates a powerful atmosphere of universal
+              harmony reflects Sri Lanka&apos;s diverse spiritual heritage and creates a powerful atmosphere of universal
               devotion that transcends religious boundaries. Visitors of all faiths are welcome to participate in
               ceremonies and experience the profound spiritual energy that permeates this sacred place.
             </p>
@@ -458,16 +458,16 @@ export default function KatharagamaGuide() {
                   </div>
                   <div className="space-y-6">
                     <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                      Within the Katharagama sacred complex, you'll find a small but significant mosque that serves the
+                      Within the Katharagama sacred complex, you&apos;ll find a small but significant mosque that serves the
                       Muslim community and demonstrates the remarkable religious tolerance that characterizes this holy
                       site. Muslim pilgrims also come to Katharagama seeking blessings, and many participate in the
                       general spiritual atmosphere while maintaining their own religious practices. This coexistence of
                       different faiths in one sacred space is rare and beautiful.
                     </p>
                     <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                      The indigenous Vedda people, Sri Lanka's original inhabitants, also consider Katharagama sacred
+                      The indigenous Vedda people, Sri Lanka&apos;s original inhabitants, also consider Katharagama sacred
                       and have their own traditional worship sites within the area. Their ancient spiritual practices,
-                      which predate all other religions on the island, add another layer to Katharagama's
+                      which predate all other religions on the island, add another layer to Katharagama&apos;s
                       multi-religious character. Vedda shamans sometimes perform traditional ceremonies, especially
                       during major festivals.
                     </p>
