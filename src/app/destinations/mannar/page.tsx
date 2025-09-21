@@ -184,7 +184,7 @@ export default function MannarGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>2. Adam&apos;s Bridge (Rama Setu)</CardTitle>
-                <CardDescription>Legendary causeway connecting Sri Lanka to India</CardDescription>
+                <CardDescription>Legendary causeway said to connect Sri Lanka to India in ancient texts</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">

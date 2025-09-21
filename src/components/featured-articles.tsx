@@ -48,7 +48,7 @@ const featuredArticles = [
     title: "Ramayana Sites in Sri Lanka",
     path: "ramayanaya-sites",
     excerpt: "Journey through the ancient legends and discover the sacred sites connected to the Ramayana epic...",
-    image: "/Ramayanaya-sites.png",
+    image: "/Ramayanaya-Sites.png",
     category: "History",
     author: "David Kumar",
     date: "2024-01-08",
