@@ -3,6 +3,8 @@ import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Users, TreePine, ShoppingBag, Utensils, Car } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Dambulla Town Sri Lanka: Complete Guide 2025 | Local Life, Markets & Cultural Heritage",
@@ -98,9 +100,9 @@ export default function DambullaTownGuide() {
 
         {/* Enhanced Quick Facts */}
         <section className="mb-16">
-          <Card className="border-2 border-green-200 bg-gradient-to-br from-green-50 to-emerald-50">
+          <Card className="border-2 border-green-200 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-slate-800 dark:to-slate-900">
             <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-3xl">
+              <CardTitle className="flex items-center gap-3 text-3xl text-foreground dark:text-green-200">
                 <Star className="w-8 h-8 text-green-500" />
                 Essential Dambulla Town Information
               </CardTitle>
@@ -108,82 +110,82 @@ export default function DambullaTownGuide() {
             <CardContent>
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-xl text-green-700 mb-4">Location & Geography</h4>
+                  <h4 className="font-semibold text-xl text-green-700 dark:text-green-300 mb-4">Location & Geography</h4>
                   <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5 text-blue-500" />
-                    <span>
+                    <MapPin className="w-5 h-5 text-blue-500 dark:text-blue-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>Province:</strong> Central Province, Matale District
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Car className="w-5 h-5 text-purple-500" />
-                    <span>
+                    <Car className="w-5 h-5 text-purple-500 dark:text-purple-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>From Colombo:</strong> 148 km (3 hours drive)
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <TreePine className="w-5 h-5 text-green-500" />
-                    <span>
+                    <TreePine className="w-5 h-5 text-green-500 dark:text-green-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>Elevation:</strong> 300 meters above sea level
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Users className="w-5 h-5 text-orange-500" />
-                    <span>
+                    <Users className="w-5 h-5 text-orange-500 dark:text-orange-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>Population:</strong> Approximately 75,000 residents
                     </span>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-xl text-blue-700 mb-4">Economic Importance</h4>
+                  <h4 className="font-semibold text-xl text-blue-700 dark:text-blue-300 mb-4">Economic Importance</h4>
                   <div className="flex items-center gap-3">
-                    <ShoppingBag className="w-5 h-5 text-red-500" />
-                    <span>
+                    <ShoppingBag className="w-5 h-5 text-red-500 dark:text-red-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>Market:</strong> Largest wholesale market in Sri Lanka
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <TreePine className="w-5 h-5 text-green-500" />
-                    <span>
+                    <TreePine className="w-5 h-5 text-green-500 dark:text-green-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>Agriculture:</strong> Major vegetable & fruit trading hub
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Star className="w-5 h-5 text-yellow-500" />
-                    <span>
+                    <Star className="w-5 h-5 text-yellow-500 dark:text-yellow-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>Tourism:</strong> Gateway to Cultural Triangle
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Car className="w-5 h-5 text-purple-500" />
-                    <span>
+                    <Car className="w-5 h-5 text-purple-500 dark:text-purple-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>Transport:</strong> Major bus and transport hub
                     </span>
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-xl text-purple-700 mb-4">Cultural Highlights</h4>
+                  <h4 className="font-semibold text-xl text-purple-700 dark:text-purple-300 mb-4">Cultural Highlights</h4>
                   <div className="flex items-center gap-3">
-                    <Utensils className="w-5 h-5 text-orange-500" />
-                    <span>
+                    <Utensils className="w-5 h-5 text-orange-500 dark:text-orange-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>Cuisine:</strong> Authentic local food scene
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Users className="w-5 h-5 text-blue-500" />
-                    <span>
+                    <Users className="w-5 h-5 text-blue-500 dark:text-blue-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>Community:</strong> Multi-ethnic harmony
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <TreePine className="w-5 h-5 text-green-500" />
-                    <span>
+                    <TreePine className="w-5 h-5 text-green-500 dark:text-green-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>Temples:</strong> Multiple Buddhist & Hindu sites
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Clock className="w-5 h-5 text-red-500" />
-                    <span>
+                    <Clock className="w-5 h-5 text-red-500 dark:text-red-300" />
+                    <span className="text-foreground dark:text-gray-100">
                       <strong>History:</strong> 2,000+ years of trading heritage
                     </span>
                   </div>
@@ -271,6 +273,13 @@ export default function DambullaTownGuide() {
                           </span>
                         </li>
                       </ul>
+                    </div>
+                    <div className="mt-6 flex justify-end">
+                      <Link href="/destinations/dambulla-cave-temple">
+                        <Button className="bg-yellow-600 hover:bg-yellow-700 text-white dark:bg-yellow-500 dark:hover:bg-yellow-600 font-semibold px-6 py-3 rounded-lg shadow-md transition-colors cursor-pointer">
+                          Explore Dambulla Cave Temple
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </div>

@@ -1,7 +1,5 @@
 "use client"
 
-
-import type { Metadata } from "next"
 import Image from "next/image"
 import { useState } from "react"
 // Kandy-style local image carousel
@@ -541,13 +539,13 @@ export default function KatharagamaGuide() {
                 </div>
                 <div className="space-y-6">
                   <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                    Okanda Dewalaya is a revered Hindu shrine on Sri Lanka's wild eastern coast, dedicated to Lord Murugan (Kataragama Deviyo). According to legend, Lord Murugan landed here from India on his peacock mount, splitting the great Okanda rock with his divine spear (vel) to mark the start of his journey to Katharagama. The name "Okanda" is believed to derive from the Tamil "Ukantai" meaning "to sit", as the deity is said to have rested here before continuing his pilgrimage.
+                    Okanda Dewalaya is a revered Hindu shrine on Sri Lanka&apos;s wild eastern coast, dedicated to Lord Murugan (Kataragama Deviyo). According to legend, Lord Murugan landed here from India on his peacock mount, splitting the great Okanda rock with his divine spear (vel) to mark the start of his journey to Katharagama. The name &quot;Okanda&quot; is believed to derive from the Tamil &quot;Ukantai&quot; meaning &quot;to sit&quot;, as the deity is said to have rested here before continuing his pilgrimage.
                   </p>
                   <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
                     Today, Okanda Dewalaya is a vital stop for pilgrims walking the ancient Pada Yatra route from the north and east to Katharagama, especially during the Esala festival. Pilgrims rest, offer prayers, and bathe in the sea before continuing their journey. The shrine is set amidst dramatic coastal scenery, with the Indian Ocean on one side and dense jungle on the other. Okanda is also popular with surfers and travelers seeking a spiritual, off-the-beaten-path experience.
                   </p>
                   <ul className="list-disc pl-5 text-muted-foreground dark:text-muted-foreground">
-                    <li>Legendary landing site of Lord Murugan's journey to Katharagama</li>
+                    <li>Legendary landing site of Lord Murugan&apos;s journey to Katharagama</li>
                     <li>Key stop on the traditional Pada Yatra pilgrimage</li>
                     <li>Beautiful, remote beach setting</li>
                     <li>Annual festival in July/August draws thousands of devotees</li>
@@ -664,7 +662,7 @@ export default function KatharagamaGuide() {
               <CardContent className="p-6 space-y-6">
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    The Esala Festival is Katharagama's most important celebration, lasting for two weeks in July or
+                    The Esala Festival is Katharagama&apos;s most important celebration, lasting for two weeks in July or
                     August. During this time, hundreds of thousands of pilgrims arrive from across Sri Lanka and South
                     India, transforming the quiet town into a vibrant spiritual center filled with devotional
                     activities, colorful processions, and intense religious fervor.
@@ -712,7 +710,7 @@ export default function KatharagamaGuide() {
               <CardContent className="p-6 space-y-6">
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Fire-walking is one of Katharagama's most dramatic and spiritually significant ceremonies. Devoted
+                    Fire-walking is one of Katharagama&apos;s most dramatic and spiritually significant ceremonies. Devoted
                     pilgrims walk barefoot across beds of burning coals as an expression of their faith and to fulfill
                     vows made to Lord Murugan. This ancient practice requires intense spiritual preparation and is
                     considered a powerful form of penance and devotion.
@@ -883,9 +881,9 @@ export default function KatharagamaGuide() {
                     <h4 className="font-semibold text-lg mb-2">Behavior Guidelines</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• Maintain quiet, respectful demeanor</li>
-                      <li>• Don't point feet toward shrines</li>
+                      <li>• Don&apos;t point feet toward shrines</li>
                       <li>• Follow the flow of other devotees</li>
-                      <li>• Don't interrupt prayers or ceremonies</li>
+                      <li>• Don&apos;t interrupt prayers or ceremonies</li>
                       <li>• Ask permission before taking photos</li>
                     </ul>
                   </div>
@@ -971,8 +969,8 @@ export default function KatharagamaGuide() {
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   As you plan your visit to this sacred site, remember that Katharagama is not just a tourist
-                  destination - it's a living center of faith where real people come with real hopes, fears, and dreams.
-                  Approach your visit with respect, openness, and humility, and you'll discover that Katharagama has the
+                  destination - it&apos;s a living center of faith where real people come with real hopes, fears, and dreams.
+                  Approach your visit with respect, openness, and humility, and you&apos;ll discover that Katharagama has the
                   power to transform not just the lives of devoted pilgrims, but anyone who enters its sacred space with
                   a sincere heart.
                 </p>

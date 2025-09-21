@@ -79,6 +79,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Preload hero image for Speed Index */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/stockvault-sunset-at-sri-lanka-southern-beach280430.jpg"
+          imageSrcSet="/images/stockvault-sunset-at-sri-lanka-southern-beach280430.jpg 1920w"
+          imageSizes="100vw"
+        />
         {/* Google AdSense - Replace with your actual publisher ID */}
         <script
           async

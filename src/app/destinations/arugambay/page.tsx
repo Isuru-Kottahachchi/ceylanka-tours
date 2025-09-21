@@ -34,7 +34,7 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
             </div>
             <h2 className="text-2xl font-bold text-foreground">Stay Safe at Arugam Bay!</h2>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Before you enjoy Arugam Bay's world-famous surf and beaches, please review these important safety tips for the east coast, including seasonal currents, wildlife, and emergency contacts.
+              Before you enjoy Arugam Bay&apos;&s world-famous surf and beaches, please review these important safety tips for the east coast, including seasonal currents, wildlife, and emergency contacts.
             </p>
             <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
               <div className="flex items-center gap-2 mb-2">

@@ -189,7 +189,7 @@ export default function DambullaTravelGuide() {
             {/* Water Drop Note */}
             <div className="my-8 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg border-l-4 border-blue-400 dark:border-blue-500">
               <p className="text-blue-900 dark:text-blue-200 text-base">
-                <strong>Did you know?</strong> One of Dambulla Cave Temple's most intriguing features is the <span className="font-semibold">eternal water drop</span>—a tiny stream of water that drips from the cave ceiling into a stone basin, even during the driest months. This natural phenomenon is considered sacred and is used for rituals and offerings by monks and pilgrims.
+                <strong>Did you know?</strong> One of Dambulla Cave Temple&apos;s most intriguing features is the <span className="font-semibold">eternal water drop</span>—a tiny stream of water that drips from the cave ceiling into a stone basin, even during the driest months. This natural phenomenon is considered sacred and is used for rituals and offerings by monks and pilgrims.
               </p>
             </div>
 

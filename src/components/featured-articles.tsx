@@ -46,10 +46,10 @@ const featuredArticles = [
   {
     id: 4,
     title: "Ramayana Sites in Sri Lanka",
-    path: "Ramayanaya-sites",
+    path: "ramayanaya-sites",
     excerpt: "Journey through the ancient legends and discover the sacred sites connected to the Ramayana epic...",
-    image: "/placeholder.svg?height=300&width=400",
-    category: "Adventure",
+    image: "/Ramayanaya-sites.png",
+    category: "History",
     author: "David Kumar",
     date: "2024-01-08",
     views: "2.1K",
@@ -62,9 +62,9 @@ export function FeaturedArticles() {
     <section className="py-16 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Travel Stories</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Stories</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Discover the best of Sri Lanka through our carefully curated travel guides and insider tips
+            Discover the best of Sri Lanka through our carefully curated travel guides, history, and insider tips
           </p>
         </div>
 
