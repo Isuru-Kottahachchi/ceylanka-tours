@@ -31,7 +31,7 @@ export default function WilpattuNationalParkTravelGuide() {
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+  <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Wilpattu National Park</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Largest Wildlife Sanctuary</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -51,7 +51,7 @@ export default function WilpattuNationalParkTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+  <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Wilpattu: Land of Natural Lakes</h2>
@@ -321,42 +321,79 @@ export default function WilpattuNationalParkTravelGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>3. Kuwenis place</CardTitle>
-                <CardDescription>Rare and elusive forest dwellers</CardDescription>
+                <CardTitle>3. Thambapanni: The Legendary Landing</CardTitle>
+                <CardDescription>Where Sri Lanka’s story began</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Rare sloth bear foraging in Wilpattu forest showing distinctive shaggy black coat and long claws"
+                    src="/Thambapanni.jpg"
+                    alt="Wilpattu coastal area believed to be ancient Thambapanni, with wild beach and forest meeting the sea"
                     width={400}
                     height={300}
                     className="rounded-lg"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Wilpattu is one of the few places in Sri Lanka where you might encounter the elusive sloth bear.
-                      These shaggy, black-coated bears are primarily nocturnal but occasionally spotted during early
-                      morning or late evening safaris, especially when foraging for termites and fruits.
+                      The northwestern coast of Wilpattu is believed to be the legendary Thambapanni, where Prince Vijaya—the first recorded king of Sri Lanka—landed with his followers over 2,500 years ago. The name “Thambapanni” means “copper-colored sands,” inspired by the reddish hue of the beaches here.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Rare sighting opportunity
+                        Considered the birthplace of Sri Lankan civilization, but there are some other theories as well
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Most active during dawn and dusk
+                        Famous for its unique coppery sand and wild, untouched coastline
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Distinctive long claws for digging
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Excellent climbers despite appearance
+                        Steeped in myth and legend—said to be where the first Sinhalese kingdom began
                       </li>
                     </ul>
+                    <p className="text-muted-foreground mt-4">
+                      Today, Thambapanni is a remote and beautiful part of Wilpattu, perfect for those who want to connect with the island’s ancient roots and enjoy a wild, unspoiled landscape.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>4. Kuweni’s Palace: The Queen of Wilpattu</CardTitle>
+                <CardDescription>Legend, love, and betrayal in the jungle</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Kuwenis-palace.jpeg"
+                    alt="Wilpattu forest clearing believed to be the site of Queen Kuweni’s ancient palace"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Deep within Wilpattu’s forests lies the legendary site of Kuweni’s Palace. According to Sri Lankan folklore, Kuweni was the Yaksha queen who helped Prince Vijaya establish the first kingdom on the island. Their story is one of love, betrayal, and heartbreak.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Said to be the site where Queen Kuweni lived and ruled
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Local legend says her spirit still lingers in the forest, especially at dusk
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        A place of mystery, history, and ancient sorrow
+                      </li>
+                    </ul>
+                    <p className="text-muted-foreground mt-4">
+                      While no grand ruins remain, the story of Kuweni and Vijaya is woven into the very landscape of Wilpattu. Visiting this area is a chance to reflect on the island’s earliest legends and the powerful women who shaped its destiny.
+                    </p>
                   </div>
                 </div>
               </CardContent>
@@ -625,6 +662,54 @@ export default function WilpattuNationalParkTravelGuide() {
               </CardContent>
             </Card>
           </div>
+        </section>
+
+        {/* How to Get In */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">How to Get In</h2>
+          <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed mb-6">
+            <p>
+              <strong>Wilpattu National Park</strong> is located in the North Western Province of Sri Lanka, about 30 km west of Anuradhapura and 180 km from Colombo. The main entrance is at Hunuwilgama, close to the town of Nochchiyagama.
+            </p>
+            <ul>
+              <li><strong>By Road:</strong> The park is best reached by private vehicle or taxi. From Colombo, take the Puttalam–Anuradhapura road (A12) and follow signs to Wilpattu. The journey takes 4–5 hours.</li>
+              <li><strong>By Bus:</strong> Regular buses run from Colombo and Anuradhapura to Nochchiyagama. From there, tuk-tuks or taxis can take you to the park entrance (about 8 km).</li>
+              <li><strong>By Train:</strong> The nearest railway station is at Puttalam or Anuradhapura. Continue by road to the park.</li>
+              <li><strong>Entrances:</strong> The main gate is Hunuwilgama. All safari jeeps and visitors must enter here for tickets and registration.</li>
+            </ul>
+            <p>
+              <strong>Travel Tip:</strong> Arrive early for the morning safari or stay overnight in nearby towns for a head start. Roads inside the park can be rough—4x4 vehicles are recommended.
+            </p>
+          </div>
+        </section>
+
+        {/* Recommended: Ceylanka Tours */}
+        <section className="mb-12">
+          <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 border-yellow-200 shadow-lg">
+            <CardHeader>
+              <CardTitle className="text-orange-700 flex items-center gap-2">
+                <Star className="w-5 h-5 text-yellow-500" />
+                Recommended: Ceylanka Tours
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground mb-2">
+                For a hassle-free and memorable Wilpattu safari, we recommend <span className="font-semibold text-orange-800">Ceylanka Tours</span>—a trusted local operator known for expert guides, comfortable jeeps, and personalized service.
+              </p>
+              <ul className="list-disc pl-5 text-sm text-orange-900 mb-2">
+                <li>Experienced wildlife trackers and English-speaking guides</li>
+                <li>Flexible half-day and full-day safari packages</li>
+                <li>Private and group tours available</li>
+                <li>Easy online booking and transparent pricing</li>
+              </ul>
+              <a
+                href="/contact"
+                className="inline-block mt-2 px-4 py-2 rounded bg-orange-600 text-white font-semibold hover:bg-orange-700 transition"
+              >
+                Book Your Wilpattu Safari with Ceylanka Tours
+              </a>
+            </CardContent>
+          </Card>
         </section>
 
         {/* Final Tips */}

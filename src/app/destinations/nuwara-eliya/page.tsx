@@ -11,85 +11,120 @@ import { Button } from "@/components/ui/button"
 
 
 function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
-    const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-    const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+  }
 
-    const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-    }
+  const prevImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+  }
 
-    const goToImage = (index: number) => {
-        setCurrentIndex(index)
-    }
+  const goToImage = (index: number) => {
+    setCurrentIndex(index)
+  }
 
-    return (
-        <div className="relative">
-            <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[500px] sm:h-[350px] flex items-center justify-center">
-                <Image
-                    src={images[currentIndex] || "/placeholder.svg"}
-                    alt={`${alt} - Image ${currentIndex + 1}`}
-                    width={400}
-                    height={300}
-                    className="rounded-lg transition-all duration-300 object-contain w-full h-full"
-                />
+  return (
+    <div className="relative">
+      <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[500px] sm:h-[350px] flex items-center justify-center">
+        <Image
+          src={images[currentIndex] || "/placeholder.svg"}
+          alt={`${alt} - Image ${currentIndex + 1}`}
+          width={400}
+          height={300}
+          className="rounded-lg transition-all duration-300 object-contain w-full h-full"
+        />
 
-                {/* Navigation buttons */}
-                {images.length > 1 && (
-                    <>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-                            onClick={prevImage}
-                        >
-                            <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-                        </Button>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-                            onClick={nextImage}
-                        >
-                            <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-                        </Button>
-                    </>
-                )}
-            </div>
+        {/* Navigation buttons */}
+        {images.length > 1 && (
+          <>
+            <Button
+              variant="outline"
+              size="icon"
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
+              onClick={prevImage}
+            >
+              <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
+            </Button>
+            <Button
+              variant="outline"
+              size="icon"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
+              onClick={nextImage}
+            >
+              <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
+            </Button>
+          </>
+        )}
+      </div>
 
-            {/* Dots indicator */}
-            {images.length > 1 && (
-                <div className="flex justify-center mt-3 space-x-2">
-                    {images.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => goToImage(index)}
-                            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-                                }`}
-                        />
-                    ))}
-                </div>
-            )}
-
-            {/* Image counter */}
-            {images.length > 1 && (
-                <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-                    {currentIndex + 1} / {images.length}
-                </div>
-            )}
+      {/* Dots indicator */}
+      {images.length > 1 && (
+        <div className="flex justify-center mt-3 space-x-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToImage(index)}
+              className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
+                }`}
+            />
+          ))}
         </div>
-    )
+      )}
+
+      {/* Image counter */}
+      {images.length > 1 && (
+        <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+          {currentIndex + 1} / {images.length}
+        </div>
+      )}
+    </div>
+  )
 }
 
 export default function NuwaraEliyaTravelGuide() {
 
-    const hortonPlainsImages = [
-        "/Hortonplains16.jpeg",
-        "/Hortonplains2.jpeg",
-        "/Hortonplains3.jpeg",
-    ]
+  const hortonPlainsImages = [
+    "/Hortonplains16.jpeg",
+    "/Hortonplains2.jpeg",
+    "/Hortonplains3.jpeg",
+  ]
+
+  const moonPlainsImages = [
+    "/MoonPlains1.jpeg",
+    "/MoonPlains2.jpeg",
+    "/MoonPlains3.jpeg",
+  ]
+
+  const gregoryLakeImages = [
+    "/Gregory_Lake.jpg",
+    "/Gregory_Lake2.jpg",
+  ]
+
+  const victoriaParkImages = [
+    "/Victoria-park2.jpg",
+    "/Victoria-park10.jpg",
+    "/Victoria-park.jpg",
+    "/Victoria-park3.jpg",
+    "/Victoria-park11.jpg",
+    "/Victoria-park1.jpg",
+    "/Flowers-in-vic-park.jpg",
+    "/Victoria-park4.jpg",
+    "/Victoria-park6.jpg",
+    "/Victoria-park7.jpg",
+    "/Vicpark-pond.jpg",
+    "/Vic-flower.jpg",
+    "/Vic-flower1.jpg",
+  ]
+
+
+  const ambewealaFarmImages = [
+    "/Ambewela1.jpeg",
+    "/Ambewela2.jpeg",
+    "/Ambewela3.jpeg",
+  ]
+
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -122,7 +157,7 @@ export default function NuwaraEliyaTravelGuide() {
         </div>
       </section>
 
-  <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Nuwara Eliya: Sri Lanka&apos;s Cool Escape</h2>
@@ -252,7 +287,7 @@ export default function NuwaraEliyaTravelGuide() {
                       <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Nanu Oya station</span></li>
                       <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li>
                     </ul>
-                    
+
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo → Kandy → Nuwara Eliya</li>
@@ -337,12 +372,10 @@ export default function NuwaraEliyaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/Gregory_Lake.jpg"
+
+                  <ImageCarousel
+                    images={gregoryLakeImages}
                     alt="Beautiful Gregory Lake in Nuwara Eliya with paddle boats, walking paths, and surrounding hills"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -388,7 +421,7 @@ export default function NuwaraEliyaTravelGuide() {
                       views on clear days.<br />
                       You can see World&apos;s End
                     </p>
-                    
+
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -437,16 +470,14 @@ export default function NuwaraEliyaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Victoria Park in Nuwara Eliya showing well-maintained gardens, colorful flowers, and visitors enjoying the peaceful atmosphere"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={victoriaParkImages}
+                    alt="Victoria Park showcasing the beautiful botanical gardens and diverse flora"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Named after Queen Victoria, this 27-acre park is a delightful escape in the heart of Nuwara Eliya.
+                      Named after Queen Victoria, this 27-acre park is a delightful escape in the heart of Nuwara Eliya. If you are a flower lover,this is the place to be.
+                      The park is home to a variety of flora including vibrant flower beds, towering trees.
                       With its well-maintained gardens, diverse bird life, and peaceful atmosphere, its perfect for a
                       leisurely stroll or family outing.
                     </p>
@@ -481,17 +512,14 @@ export default function NuwaraEliyaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Ambewela New Zealand Farm showing rolling green pastures, dairy cows, and beautiful mountain backdrop"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={ambewealaFarmImages}
+                    alt="Ambewela New Zealand Farm showcasing the scenic dairy farm and rolling green pastures"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Located about 30km from Nuwara Eliya, Ambewela Farm is a picturesque dairy farm that resembles 
-                      the rolling hills of New Zealand. This working farm spans over 1,700 hectares and offers visitors 
+                      Located about 30km from Nuwara Eliya, Ambewela Farm is a picturesque dairy farm that resembles
+                      the rolling hills of New Zealand. This working farm spans over 1,700 hectares and offers visitors
                       a unique experience of Sri Lanka&apos;s highland agriculture and stunning pastoral landscapes.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -535,8 +563,8 @@ export default function NuwaraEliyaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      A lesser-known gem located about 8km from Nuwara Eliya, Moon Plains is a beautiful grassland 
-                      plateau that offers stunning 360-degree views of the surrounding mountains and valleys. This 
+                      A lesser-known gem located about 8km from Nuwara Eliya, Moon Plains is a beautiful grassland
+                      plateau that offers stunning 360-degree views of the surrounding mountains and valleys. This
                       peaceful location is perfect for those seeking tranquility away from the crowds.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -563,12 +591,9 @@ export default function NuwaraEliyaTravelGuide() {
                       </p>
                     </div>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Moon Plains showing vast grassland plateau with panoramic mountain views and peaceful landscape"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={moonPlainsImages}
+                    alt="Moon Plains showcasing the stunning landscapes, unique flora, and fauna"
                   />
                 </div>
               </CardContent>
@@ -711,7 +736,7 @@ export default function NuwaraEliyaTravelGuide() {
           <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
             Extend your Nuwara Eliya adventure with these incredible destinations within easy reach
           </p>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Ella */}
             <Card className="hover:shadow-lg transition-shadow duration-300">

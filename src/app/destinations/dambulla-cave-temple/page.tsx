@@ -51,7 +51,7 @@ export default function DambullaTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+  <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Dambulla: Temple of Ancient Wonders</h2>
@@ -185,6 +185,13 @@ export default function DambullaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Water Drop Note */}
+            <div className="my-8 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg border-l-4 border-blue-400 dark:border-blue-500">
+              <p className="text-blue-900 dark:text-blue-200 text-base">
+                <strong>Did you know?</strong> One of Dambulla Cave Temple's most intriguing features is the <span className="font-semibold">eternal water drop</span>—a tiny stream of water that drips from the cave ceiling into a stone basin, even during the driest months. This natural phenomenon is considered sacred and is used for rituals and offerings by monks and pilgrims.
+              </p>
+            </div>
 
             {/* Cave 2 */}
             <Card>
@@ -339,7 +346,7 @@ export default function DambullaTravelGuide() {
               </div>
             </div>
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src="/Rangiri-Dambulu.jpg"
               alt="Golden Temple at Dambulla showing the impressive 30-meter golden Buddha statue and modern architecture"
               width={600}
               height={400}

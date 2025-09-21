@@ -391,7 +391,7 @@ const destinations = [
     name: "Mathale",
     location: "Central Province",
     path: "/mathale",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Walpolmulla1.jpg",
     // rating: 4.3,
     // reviews: 890,
     description: "",
@@ -439,7 +439,7 @@ const destinations = [
     name: "Katharagama",
     location: "Southern Province",
     path: "/katharagama",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Katharagama.jpg",
     // rating: 4.3,
     // reviews: 890,
     description: "Where Lord Kataragama is worshipped",
@@ -487,11 +487,11 @@ const destinations = [
     name: "Mannar",
     location: "Northern Province",
     path: "/mannar",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Mannar.jpg",
     // rating: 4.3,
     // reviews: 890,
-    description: "Biodiversity hotspot and UNESCO World Heritage site with dense rainforest",
-    highlights: ["Mangroves", "Wildlife", "Crocodiles"],
+    description: "The Largest Island of Sri Lanka",
+    highlights: ["Beaches", "Wildlife", "portuguese Fort"],
     category: "Nature",
   },
   {
@@ -607,7 +607,6 @@ export default function DestinationsPage() {
     setCategory("All");
   };
 
-  // ...existing code...
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Hero Section */}

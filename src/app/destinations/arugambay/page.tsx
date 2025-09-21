@@ -1,26 +1,99 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Wind, Camera } from "lucide-react"
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { X, AlertTriangle, Shield } from "lucide-react"
+import { useState, useEffect } from "react"
+function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+  if (!isOpen) return null
 
-export const metadata: Metadata = {
-  title: "Arugam Bay Sri Lanka: Ultimate Surf Guide 2025 | World-Class Surfing Paradise",
-  description:
-    "Discover Arugam Bay, Sri Lanka's premier surfing destination. Complete guide to world-class surf breaks, beach culture, wildlife, and the best things to do in this surfer's paradise.",
-  keywords:
-    "Arugam Bay Sri Lanka, surfing, surf breaks, Main Point, Whiskey Point, Pottuvil, elephant watching, beach culture",
-  openGraph: {
-    title: "Arugam Bay: World-Class Surfing Paradise Guide 2025",
-    description: "Your complete guide to Sri Lanka's legendary surf destination",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+      <div className="bg-white dark:bg-gray-800 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
+        <div className="relative p-6">
+          {/* Close button */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="absolute right-2 top-2 h-8 w-8 cursor-pointer"
+            onClick={onClose}
+          >
+            <X className="h-4 w-4" />
+          </Button>
+
+          {/* Modal content */}
+          <div className="text-center space-y-4">
+            <div className="flex justify-center">
+              <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full">
+                <Waves className="h-8 w-8 text-blue-600" />
+              </div>
+            </div>
+            <h2 className="text-2xl font-bold text-foreground">Stay Safe at Arugam Bay!</h2>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Before you enjoy Arugam Bay's world-famous surf and beaches, please review these important safety tips for the east coast, including seasonal currents, wildlife, and emergency contacts.
+            </p>
+            <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <AlertTriangle className="h-5 w-5 text-orange-600" />
+                <h3 className="font-semibold text-orange-800 dark:text-orange-400">Key Safety Topics:</h3>
+              </div>
+              <ul className="text-sm text-orange-700 dark:text-orange-300 space-y-1 text-left">
+                <li>• Strong rip currents, especially during surf season (Apr-Oct)</li>
+                <li>• Monsoon and storm safety (Nov-Mar)</li>
+                <li>• Surf etiquette and board safety</li>
+                <li>• Jellyfish, sea urchins, and wildlife awareness</li>
+                <li>• Emergency procedures and local contacts</li>
+              </ul>
+            </div>
+            <div className="space-y-3">
+              <a href="/blog/things-you-aware-in-the-beach">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer transition-colors flex items-center justify-center">
+                  <Shield className="w-4 h-4 mr-2" />
+                  Read Complete Beach Safety Guide
+                </Button>
+              </a>
+              <Button 
+                variant="outline" 
+                className="w-full cursor-pointer"
+                onClick={onClose}
+              >
+                Continue to Arugam Bay Page
+              </Button>
+            </div>
+            <p className="text-xs text-muted-foreground">
+              Your safety is our priority. Please review these tips for a safe and enjoyable visit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default function ArugamBayTravelGuide() {
+  // Beach Safety Modal State
+  const [showSafetyModal, setShowSafetyModal] = useState(false)
+
+  // Show modal after page loads
+  useEffect(() => {
+      const timer = setTimeout(() => {
+          setShowSafetyModal(true)
+      }, 1500) // Show after 1.5 seconds
+      return () => clearTimeout(timer)
+  }, [])
+
+  const handleCloseModal = () => {
+      setShowSafetyModal(false)
+  }
+
   return (
     <main className="min-h-screen bg-background">
+      {/* Beach Safety Modal */}
+      <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} />
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
@@ -31,7 +104,7 @@ export default function ArugamBayTravelGuide() {
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+  <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Arugam Bay</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">World-Class Surfing Paradise on Sri Lanka&apos;s East Coast</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -51,7 +124,7 @@ export default function ArugamBayTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+  <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">

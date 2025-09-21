@@ -170,10 +170,10 @@ export default function AboutPage() {
                                 height={500}
                                 className="rounded-lg shadow-xl"
                             />
-                            <div className="absolute -bottom-6 -right-6 bg-cyan-500 text-white p-6 rounded-lg shadow-lg">
+                            {/* <div className="absolute -bottom-6 -right-6 bg-cyan-500 text-white p-6 rounded-lg shadow-lg">
                                 <div className="text-2xl font-bold">15+</div>
                                 <div className="text-sm">Years of Experience</div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -318,7 +318,7 @@ export default function AboutPage() {
                         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-600 dark:text-gray-300">
                             <div className="flex items-center gap-2">
                                 <Mail className="w-5 h-5" />
-                                <span>e.com</span>
+                                <span>ceylanaktoursinfo.com</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <Phone className="w-5 h-5" />

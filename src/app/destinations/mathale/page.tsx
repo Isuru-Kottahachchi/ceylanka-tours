@@ -33,7 +33,7 @@ export default function MataleGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Walpolmulla1.jpg"
           alt="Lush spice gardens in Matale with cinnamon, cardamom, and pepper plants growing in terraced hillsides"
           fill
           className="object-cover"

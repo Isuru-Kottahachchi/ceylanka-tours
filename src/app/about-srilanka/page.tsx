@@ -3,7 +3,7 @@ import { MapPin, Users, Mountain, Waves, Sun, Leaf, Calendar, Globe, Utensils, E
 function SriLankaAboutCompact() {
     return (
         <section className="py-12 bg-white dark:bg-gray-900 transition-colors">
-            <div className="max-w-3xl mx-auto px-4 sm:px-6">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* Header */}
                 <div className="text-center mb-8">
                     <h2
@@ -190,13 +190,7 @@ function SriLankaAboutCompact() {
                     </div>
                 </div>
 
-                {/* More About Sri Lanka Button */}
-                <div className="text-center mt-8" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center mx-auto cursor-pointer">
-                        <Globe className="h-5 w-5 mr-2" />
-                        More About Sri Lanka
-                    </button>
-                </div>
+                
             </div>
         </section>
     )

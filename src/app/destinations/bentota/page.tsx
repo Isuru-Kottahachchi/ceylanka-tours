@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Waves, Sun, Palmtree, Fish, ChevronLeft, ChevronRight, X, AlertTriangle, Shield } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Waves, Sun, Palmtree, Fish, ChevronLeft, ChevronRight, X, AlertTriangle, Shield, Utensils, Hotel, Plane, Train, Car, Globe, DollarSign } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -264,7 +264,7 @@ export default function BentotaGuide() {
                 </div>
             </section>
 
-            <div className="max-w-4xl mx-auto px-4 py-8">
+            <div className="max-w-6xl mx-auto px-4 py-12">
                 {/* Introduction */}
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6 text-foreground">

@@ -24,14 +24,14 @@ export default function MannarGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200&text=Mannar+Baobab+Trees"
+          src="/Mannar.jpg"
           alt="Ancient baobab trees silhouetted against sunset sky in Mannar Island with pristine landscape"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+  <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Mannar Island</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Mystical Northern Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -51,7 +51,7 @@ export default function MannarGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+  <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Mannar: Where Time Stands Still</h2>
@@ -190,9 +190,13 @@ export default function MannarGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This chain of limestone shoals, coral, and sandstone extends 30 km from Mannar to Rameswaram in
-                      India. Steeped in mythology and mentioned in the Ramayana, it&apos;s both a geological wonder and a
-                      site of immense spiritual significance.
+                      This chain of limestone shoals, coral, and sandstone extends 30 km from Mannar to Rameswaram in India. Steeped in mythology and mentioned in the Ramayana, it&apos;s both a geological wonder and a site of immense spiritual significance.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      <strong>Ramayana Connection:</strong> According to the ancient Hindu epic <em>Ramayana</em>, Adam&apos;s Bridge is believed to be the legendary <strong>Rama Setu</strong> built by Lord Rama&apos;s vanara (monkey) army, led by the devoted Hanuman. The bridge was constructed to allow Rama and his allies to cross from India to Lanka (Sri Lanka) to rescue his wife Sita from the demon king Ravana. Hanuman&apos;s pivotal role included leaping across the sea to locate Sita and later helping to organize the construction of this massive causeway using floating stones inscribed with Rama&apos;s name.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      For millions of Hindus, Adam&apos;s Bridge is not only a natural marvel but also a sacred symbol of faith, devotion, and the triumph of good over evil. Pilgrims and visitors are inspired by the story of Hanuman&apos;s strength, loyalty, and the collective effort of Rama&apos;s army, which are celebrated in festivals and rituals to this day.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -201,7 +205,7 @@ export default function MannarGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Mentioned in ancient Hindu epic Ramayana
+                        Central to the Ramayana epic and Hanuman legends
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />

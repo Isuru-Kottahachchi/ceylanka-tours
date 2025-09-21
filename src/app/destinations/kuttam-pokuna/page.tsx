@@ -60,7 +60,311 @@ export default function KuttamPokunaTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      {/* Ad Space */}
+      <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
+        [Advertisement Space - 728x90 Leaderboard]
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 py-12">
+        {/* Quick Facts & How to Get There */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-12">
+          {/* Essential Kuttam Pokuna Facts */}
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Essential Kuttam Pokuna Facts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4 text-blue-500" />
+                      <span>
+                        <strong>Built:</strong> 6th Century AD
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Building className="w-4 h-4 text-green-500" />
+                      <span>
+                        <strong>Purpose:</strong> Monastic Bathing Facility
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Droplets className="w-4 h-4 text-cyan-500" />
+                      <span>
+                        <strong>Water System:</strong> Ancient Filtration & Circulation
+                      </span>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4 text-red-500" />
+                      <span>
+                        <strong>Location:</strong> Abhayagiri Complex
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Star className="w-4 h-4 text-yellow-500" />
+                      <span>
+                        <strong>UNESCO Status:</strong> World Heritage Zone
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-orange-500" />
+                      <span>
+                        <strong>Visit Duration:</strong> 30–60 minutes
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="hidden lg:block mt-6 space-y-4">
+                  <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
+                    <Image
+                      src="/Kuttampokuna.jpeg"
+                      alt="Kuttam Pokuna pools overview"
+                      width={120}
+                      height={80}
+                      className="rounded shadow-md object-cover"
+                    />
+                    <div>
+                      <p className="text-base text-blue-900 font-semibold mb-1">Hydraulic Marvel</p>
+                      <p className="text-sm text-blue-800">
+                        The pools use a natural sand and gravel filtration system, keeping water clear for centuries. Underground channels connect the two pools for circulation.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-8">
+                    <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                      <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
+                      <p className="text-sm text-yellow-800">30–60 minutes to explore the pools and nearby ruins.</p>
+                    </div>
+                    <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
+                      <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
+                      <p className="text-sm text-green-800">Early morning or late afternoon for best light and fewer crowds.</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+          {/* How to Get to Kuttam Pokuna */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Kuttam Pokuna
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>From Colombo:</strong> 205km (4–4.5 hours)</li>
+                      <li>• <strong>From Anuradhapura town:</strong> 4km (10 min by tuk-tuk)</li>
+                      <li>• <strong>Best option:</strong> Flexible and comfortable</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus or Train</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Bus:</strong> Colombo → Anuradhapura, then tuk-tuk to site</li>
+                      <li>• <strong>Train:</strong> Colombo Fort → Anuradhapura, then tuk-tuk</li>
+                      <li>• <strong>Budget-friendly:</strong> Public transport is cheap and frequent</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Arrive early to avoid heat and crowds</li>
+                    <li>• Carry water and sun protection</li>
+                    <li>• Combine with Abhayagiri and Samadhi Statue for a half-day tour</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
+
+        {/* Ad Space */}
+        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
+          [Advertisement Space - 300x250 Medium Rectangle]
+        </div>
+
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Abhayagiri Dagoba</CardTitle>
+                <CardDescription>Massive ancient stupa, 5-minute walk</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Abhayagiriya.jpeg"
+                  alt="Abhayagiri Dagoba near Kuttam Pokuna"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <p className="text-sm text-muted-foreground">
+                  One of the largest stupas in Sri Lanka, part of the ancient monastic complex.
+                </p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Samadhi Buddha Statue</CardTitle>
+                <CardDescription>Serene meditation statue, 10-minute walk</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/SamadhiBuddha.jpeg"
+                  alt="Samadhi Buddha Statue near Kuttam Pokuna"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Famous for its tranquil expression, this statue is a masterpiece of Buddhist sculpture.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Sample Itinerary */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-blue-700 dark:text-blue-300">Sample Itinerary for Visiting Kuttam Pokuna</h2>
+          <div className="overflow-x-auto">
+            <table className="min-w-full border rounded-lg bg-white dark:bg-slate-900 text-sm shadow-md">
+              <thead>
+                <tr className="bg-blue-50 dark:bg-slate-800">
+                  <th className="px-4 py-2 text-left font-semibold text-blue-900 dark:text-blue-200">Time</th>
+                  <th className="px-4 py-2 text-left font-semibold text-blue-900 dark:text-blue-200">Activity</th>
+                  <th className="px-4 py-2 text-left font-semibold text-blue-900 dark:text-blue-200">Highlights</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="px-4 py-2">7:00 AM</td>
+                  <td className="px-4 py-2">Arrive at Anuradhapura</td>
+                  <td className="px-4 py-2">Start early to beat the heat</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">8:00 AM</td>
+                  <td className="px-4 py-2">Abhayagiri Dagoba</td>
+                  <td className="px-4 py-2">Massive stupa, ancient ruins</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">9:00 AM</td>
+                  <td className="px-4 py-2">Kuttam Pokuna</td>
+                  <td className="px-4 py-2">Explore twin pools, take photos</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="px-4 py-2">10:00 AM</td>
+                  <td className="px-4 py-2">Samadhi Buddha Statue</td>
+                  <td className="px-4 py-2">Meditation statue, peaceful setting</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2">11:00 AM</td>
+                  <td className="px-4 py-2">Other Abhayagiri sites</td>
+                  <td className="px-4 py-2">Monastery ruins, museum</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-6 prose prose-sm text-muted-foreground max-w-none">
+            <ul>
+              <li>Wear comfortable shoes and bring water, sunscreen, and a hat.</li>
+              <li>Respect archaeological sites—do not climb on ancient structures.</li>
+              <li>Combine with other Anuradhapura sites for a full-day experience.</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* Visiting Guide */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Complete Visiting Guide</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-purple-600">Planning Your Visit</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2">Entry Fees & Tickets</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Included in Anuradhapura site ticket</li>
+                    <li>• Valid for same day only</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Best Time to Visit</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Early morning (6:00–9:00 AM)</li>
+                    <li>• Late afternoon (4:00–6:00 PM)</li>
+                    <li>• Avoid midday heat (11 AM–3 PM)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Transportation</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Tuk-tuk from Anuradhapura town</li>
+                    <li>• Bicycle rental</li>
+                    <li>• Private car with driver</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-orange-600">Essential Tips</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2">What to Bring</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Comfortable walking shoes</li>
+                    <li>• Sun protection (hat, sunscreen)</li>
+                    <li>• Water bottles</li>
+                    <li>• Modest clothing for temples</li>
+                    <li>• Camera</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Cultural Etiquette</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Remove shoes at sacred sites</li>
+                    <li>• Cover shoulders and knees</li>
+                    <li>• Maintain respectful silence</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Health & Safety</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Stay hydrated in hot weather</li>
+                    <li>• Watch for uneven ancient surfaces</li>
+                    <li>• Use insect repellent</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Ad Space */}
+        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
+          [Advertisement Space - 728x90 Leaderboard]
+        </div>
+
+        {/* ...existing code... */}
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Kuttam Pokuna: Where Ancient Engineering Meets Spiritual Purification</h2>

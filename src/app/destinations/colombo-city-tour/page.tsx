@@ -1,24 +1,91 @@
+"use client"
+
 import type { Metadata } from "next"
 import Image from "next/image"
+import { useState } from "react"
+
+// CarouselImage type and ImageCarousel component (copied from Katharagama)
+type CarouselImage = { src: string; caption: string }
+function ImageCarousel({ images, alt }: { images: CarouselImage[]; alt: string }) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+  }
+
+  const prevImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+  }
+
+  const goToImage = (index: number) => {
+    setCurrentIndex(index)
+  }
+
+  return (
+    <div className="relative">
+      <div className="relative overflow-hidden rounded-xl" style={{ height: '400px', width: '100%' }}>
+        <Image
+          src={images[currentIndex]?.src || "/placeholder.svg"}
+          alt={`${alt} - Image ${currentIndex + 1}`}
+          fill
+          className="rounded-xl transition-all duration-300 object-cover"
+          sizes="(max-width: 768px) 100vw, 400px"
+        />
+        {/* Caption */}
+        {images[currentIndex]?.caption && (
+          <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-sm px-4 py-2 rounded-b-xl">
+            {images[currentIndex].caption}
+          </div>
+        )}
+        {images.length > 1 && (
+          <>
+            <Button
+              variant="outline"
+              size="icon"
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
+              onClick={prevImage}
+            >
+              <span className="sr-only">Previous</span>
+              &#8592;
+            </Button>
+            <Button
+              variant="outline"
+              size="icon"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
+              onClick={nextImage}
+            >
+              <span className="sr-only">Next</span>
+              &#8594;
+            </Button>
+          </>
+        )}
+      </div>
+      {images.length > 1 && (
+        <div className="flex justify-center mt-3 space-x-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToImage(index)}
+              className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"}`}
+            />
+          ))}
+        </div>
+      )}
+      {images.length > 1 && (
+        <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+          {currentIndex + 1} / {images.length}
+        </div>
+      )}
+    </div>
+  )
+}
 import Link from "next/link"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Building, ShoppingBag, Camera } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 
-export const metadata: Metadata = {
-  title: "Colombo City Tour Sri Lanka: Complete Guide 2025 | Commercial Capital Exploration",
-  description:
-    "Discover Colombo, Sri Lanka&apos;s vibrant commercial capital. Complete city tour guide covering historic sites, modern attractions, shopping, dining, and cultural experiences.",
-  keywords:
-    "Colombo Sri Lanka, city tour, Galle Face Green, Pettah Market, Independence Square, Red Mosque, colonial architecture, shopping",
-  openGraph: {
-    title: "Colombo City Tour: Complete Urban Adventure Guide 2025",
-    description: "Your ultimate guide to exploring Sri Lanka&apos;s dynamic commercial capital",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+
 
 export default function ColomboTourGuide() {
   return (
@@ -26,7 +93,7 @@ export default function ColomboTourGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Colombo-City.jpeg"
           alt="Colombo skyline showing modern buildings, colonial architecture, and bustling city life"
           fill
           className="object-cover"
@@ -53,7 +120,7 @@ export default function ColomboTourGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">
@@ -141,13 +208,15 @@ export default function ColomboTourGuide() {
           <h2 className="text-3xl font-bold mb-6">Historic Districts & Colonial Heritage</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Colonial architecture in Colombo Fort district showing historic buildings and busy streets"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
+              <div className="rounded-xl shadow-lg overflow-hidden">
+                <ImageCarousel
+                  images={[
+                    { src: "/placeholder.svg?height=300&width=400", caption: "Independence Memorial Hall exterior" },
+                    { src: "/placeholder.svg?height=300&width=400&text=Independence+Square+Night", caption: "Independence Square illuminated at night" }
+                  ]}
+                  alt="Independence Memorial Hall in Colombo showing national monument and Kandyan-style architecture"
+                />
+              </div>
               <p className="text-sm text-muted-foreground mt-2 italic">
                 The Fort district showcases Colombo&apos;s rich colonial architectural heritage
               </p>
@@ -195,13 +264,15 @@ export default function ColomboTourGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Galle Face Green in Colombo showing families enjoying the oceanfront park with city skyline"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-xl shadow-lg overflow-hidden">
+                    <ImageCarousel
+                      images={[
+                        { src: "/Galle-face.jpg", caption: "Galle Face Green with families and city skyline" },
+                        { src: "/placeholder.svg?height=300&width=400&text=Galle+Face+Sunset", caption: "Sunset at Galle Face Green promenade" }
+                      ]}
+                      alt="Galle Face Green in Colombo showing families enjoying the oceanfront park with city skyline"
+                    />
+                  </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
                       This half-kilometer stretch of oceanfront lawn is Colombo&apos;s most beloved public space. Originally
@@ -248,8 +319,8 @@ export default function ColomboTourGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Gangarama Temple is one of Colombo&apos;s most important Buddhist temples, known for its eclectic 
-                      architecture that blends Sri Lankan, Thai, Indian, and Chinese styles. The temple complex includes 
+                      Gangarama Temple is one of Colombo&apos;s most important Buddhist temples, known for its eclectic
+                      architecture that blends Sri Lankan, Thai, Indian, and Chinese styles. The temple complex includes
                       a museum, library, and vocational training institute, making it a significant cultural and educational center.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -278,13 +349,23 @@ export default function ColomboTourGuide() {
                       </Link>
                     </div>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Gangarama Temple in Colombo showing ornate Buddhist architecture and golden Buddha statues"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-xl shadow-lg overflow-hidden">
+                    <ImageCarousel
+                      images={[
+                        { src: "/Gangaramaya-temple.jpg", caption: "Gangarama Temple with golden Buddha statues" },
+                        { src: "/Gangaramaya4.jpg", caption: "Gangarama Temple illuminated at night" },
+                        { src: "/Gangaramaya-temple3.jpg", caption: "Gangarama Temple illuminated at night" },
+                        { src: "/Gangaramaya-temple4.jpg", caption: "Gangarama Temple illuminated at night" },
+                        { src: "/Gangaramaya-temple-at-night.jpg", caption: "Gangarama Temple illuminated at night" },
+                        { src: "/Gangaramaya1.jpg", caption: "Gangarama Temple illuminated at night" },
+                        { src: "/Gangaramaya8.jpg", caption: "Gangarama Temple illuminated at night" },
+                        { src: "/Gangaramaya7.jpg", caption: "Gangarama Temple illuminated at night" },
+                        { src: "/Gangaramaya2.jpg", caption: "Gangarama Temple illuminated at night" },
+                        { src: "/Gangaramaya6.jpg", caption: "Gangarama Temple illuminated at night" },
+                      ]}
+                      alt="Gangarama Temple in Colombo showing ornate Buddhist architecture and golden Buddha statues"
+                    />
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -329,13 +410,15 @@ export default function ColomboTourGuide() {
                       </Link>
                     </div>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Busy Pettah market in Colombo showing vendors, spices, and traditional shopping atmosphere"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-xl shadow-lg overflow-hidden">
+                    <ImageCarousel
+                      images={[
+                        { src: "/placeholder.svg?height=300&width=400", caption: "Pettah market with vendors and spices" },
+                        { src: "/placeholder.svg?height=300&width=400&text=Pettah+Floating+Market", caption: "Floating market on Beira Lake, Pettah" }
+                      ]}
+                      alt="Busy Pettah market in Colombo showing vendors, spices, and traditional shopping atmosphere"
+                    />
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -348,13 +431,16 @@ export default function ColomboTourGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Independence Memorial Hall in Colombo showing the grand monument and surrounding park"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-xl shadow-lg overflow-hidden">
+                    <ImageCarousel
+                      images={[
+                        { src: "/placeholder.svg?height=300&width=400", caption: "Independence Memorial Hall exterior" },
+                        { src: "/placeholder.svg?height=300&width=400&text=Independence+Square+Night", caption: "Independence Square illuminated at night" },
+                        { src: "/placeholder.svg?height=300&width=400&text=Independence+Square+Park", caption: "Park area around Independence Memorial Hall" }
+                      ]}
+                      alt="Independence Memorial Hall in Colombo showing the grand monument and surrounding park"
+                    />
+                  </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Built to commemorate Sri Lanka&apos;s independence from British rule in 1948, this magnificent monument
@@ -431,13 +517,19 @@ export default function ColomboTourGuide() {
                       </Link>
                     </div>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Red Mosque in Colombo showing distinctive red and white striped architecture"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-xl shadow-lg overflow-hidden">
+                    <ImageCarousel
+                      images={[
+                        { src: "/Red-mosq-colombo.jpg", caption: "Red Mosque with red and white stripes" },
+                        { src: "/Red-mosq.webp", caption: "Red Mosque with red and white stripes" },
+                        { src: "/Red-mosq2.webp", caption: "Another view of Red Mosque" },
+                        { src: "/Red-mosq3.webp", caption: "Another view of Red Mosque" },
+                        { src: "/Red-mosq-colombo1.jpg", caption: "Red Mosque with red and white stripes" },
+                        { src: "/Red-mosq1.webp", caption: "Interior view of Jami Ul-Alfar Mosque" }
+                      ]}
+                      alt="Red Mosque in Colombo showing distinctive red and white striped architecture"
+                    />
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -450,17 +542,19 @@ export default function ColomboTourGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Port City Colombo showing modern skyscrapers, marina, and waterfront development"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-xl shadow-lg overflow-hidden">
+                    <ImageCarousel
+                      images={[
+                        { src: "/placeholder.svg?height=300&width=400", caption: "Port City Colombo with modern skyscrapers" },
+                        { src: "/placeholder.svg?height=300&width=400&text=Port+City+Marina", caption: "Marina and waterfront at Port City Colombo" }
+                      ]}
+                      alt="Port City Colombo showing modern skyscrapers, marina, and waterfront development"
+                    />
+                  </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Port City Colombo is Sri Lanka&apos;s most ambitious urban development project, built on reclaimed land 
-                      from the sea. This futuristic city-within-a-city features ultra-modern architecture, luxury residences, 
+                      Port City Colombo is Sri Lanka&apos;s most ambitious urban development project, built on reclaimed land
+                      from the sea. This futuristic city-within-a-city features ultra-modern architecture, luxury residences,
                       world-class shopping and dining, business districts, and a state-of-the-art marina.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -505,13 +599,15 @@ export default function ColomboTourGuide() {
                 <CardDescription>Ultra-modern waterfront development</CardDescription>
               </CardHeader>
               <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Port City Colombo showing futuristic skyline and waterfront development"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
+                <div className="rounded-xl shadow-lg overflow-hidden mb-3">
+                  <ImageCarousel
+                    images={[
+                      { src: "/placeholder.svg?height=200&width=300", caption: "Port City Colombo futuristic skyline" },
+                      { src: "/placeholder.svg?height=200&width=300&text=Port+City+Night", caption: "Port City Colombo at night" }
+                    ]}
+                    alt="Port City Colombo showing futuristic skyline and waterfront development"
+                  />
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Sri Lanka&apos;s newest and most ambitious development featuring luxury residences, shopping, business districts, and world-class marina facilities.
                 </p>
@@ -524,13 +620,15 @@ export default function ColomboTourGuide() {
                 <CardDescription>Luxury shopping destination</CardDescription>
               </CardHeader>
               <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="One Galle Face Mall showing modern shopping complex with luxury stores"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
+                <div className="rounded-xl shadow-lg overflow-hidden mb-3">
+                  <ImageCarousel
+                    images={[
+                      { src: "/placeholder.svg?height=200&width=300", caption: "One Galle Face Mall exterior" },
+                      { src: "/placeholder.svg?height=200&width=300&text=One+Galle+Face+Interior", caption: "Interior of One Galle Face Mall" }
+                    ]}
+                    alt="One Galle Face Mall showing modern shopping complex with luxury stores"
+                  />
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Premium shopping mall with international brands, fine dining, and entertainment options.
                 </p>
@@ -543,13 +641,15 @@ export default function ColomboTourGuide() {
                 <CardDescription>Modern mixed-use development</CardDescription>
               </CardHeader>
               <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Colombo City Centre showing modern architecture and shopping facilities"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
+                <div className="rounded-xl shadow-lg overflow-hidden mb-3">
+                  <ImageCarousel
+                    images={[
+                      { src: "/placeholder.svg?height=200&width=300", caption: "Colombo City Centre exterior" },
+                      { src: "/placeholder.svg?height=200&width=300&text=City+Centre+Shops", caption: "Shops inside Colombo City Centre" }
+                    ]}
+                    alt="Colombo City Centre showing modern architecture and shopping facilities"
+                  />
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Contemporary shopping, dining, and residential complex in the heart of the city.
                 </p>
@@ -562,13 +662,15 @@ export default function ColomboTourGuide() {
                 <CardDescription>Historic shopping arcade</CardDescription>
               </CardHeader>
               <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Arcade Independence Square showing colonial-style shopping arcade"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
+                <div className="rounded-xl shadow-lg overflow-hidden mb-3">
+                  <ImageCarousel
+                    images={[
+                      { src: "/placeholder.svg?height=200&width=300", caption: "Arcade Independence Square exterior" },
+                      { src: "/placeholder.svg?height=200&width=300&text=Arcade+Shops", caption: "Shops at Arcade Independence Square" }
+                    ]}
+                    alt="Arcade Independence Square showing colonial-style shopping arcade"
+                  />
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Beautifully restored colonial building housing boutique shops and restaurants.
                 </p>

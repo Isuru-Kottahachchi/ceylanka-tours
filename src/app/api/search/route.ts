@@ -422,7 +422,7 @@ const destinations: Destination[] = [
     name: "Katharagama",
     location: "Southern Province",
     path: "katharagama",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Katharagama.jpg",
     description: "Sacred pilgrimage site for multiple religions",
     highlights: ["Religious Sites", "God Kataragama", "Pilgrimage"],
     category: "Religious",
