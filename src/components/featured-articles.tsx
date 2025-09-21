@@ -2,8 +2,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, User, Eye } from "lucide-react"
-import { formatDateSafe } from "@/lib/date-utils"
 
 const featuredArticles = [
   {
