@@ -376,7 +376,7 @@ export default function ArticlesPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Explore Sri Lanka Travel Stories</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Explore Sri Lanka Stories</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             From expert guides to insider tips, discover comprehensive articles about every aspect of Sri Lankan travel
           </p>
@@ -396,7 +396,7 @@ export default function ArticlesPage() {
             <Button 
               type="submit" 
               disabled={isSearching}
-              className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors"
+              className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors  cursor-pointer "
             >
               {isSearching ? "Searching..." : "Search"}
             </Button>
@@ -436,7 +436,7 @@ export default function ArticlesPage() {
 
       <div className="container mx-auto px-4 py-8">
         {/* Category Filter */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <div className="flex items-center gap-4 mb-4">
             <Filter className="h-5 w-5 text-gray-600 dark:text-gray-400" />
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Filter by Category</h3>
@@ -457,7 +457,7 @@ export default function ArticlesPage() {
               </Button>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Search Results Info */}
         {activeSearch && (

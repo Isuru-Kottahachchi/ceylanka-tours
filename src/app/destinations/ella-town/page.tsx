@@ -76,7 +76,7 @@ export default function EllaTownGuide() {
 
   <div className="max-w-6xl mx-auto px-4 py-8">
     {/* Introduction */}
-  <section className="mb-12 scroll-mt-24" id="introduction">
+  <section className="mb-12 scroll-mt-48 bg-background" id="introduction">
           <h2 className="text-3xl font-bold mb-6 text-foreground flex items-center gap-2">
             <Info className="w-7 h-7 text-primary" />
             Welcome to Ella: Where Mountains Meet Magic
@@ -108,7 +108,8 @@ export default function EllaTownGuide() {
         </div>
 
         {/* Quick Facts */}
-  <section className="mb-12 scroll-mt-24" id="quick-facts">
+  <section className="mb-12 scroll-mt-48 bg-muted/50" id="quick-facts">
+    <div className="h-1 w-full bg-gradient-to-r from-primary/10 to-transparent rounded-full mb-8" />
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -152,7 +153,8 @@ export default function EllaTownGuide() {
         </section>
 
         {/* Top Attractions */}
-  <section className="mb-12 scroll-mt-24" id="attractions">
+  <section className="mb-12 scroll-mt-48 bg-background" id="attractions">
+    <div className="h-1 w-full bg-gradient-to-r from-yellow-400/20 to-transparent rounded-full mb-8" />
           <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
             <Star className="w-7 h-7 text-yellow-500" />
             Top Attractions in Ella
@@ -272,7 +274,8 @@ export default function EllaTownGuide() {
         </section>
 
         {/* Tea Picking Experiences */}
-  <section className="mb-12 scroll-mt-24" id="food">
+  <section className="mb-12 scroll-mt-48 bg-muted/50" id="food">
+    <div className="h-1 w-full bg-gradient-to-r from-green-400/20 to-transparent rounded-full mb-8" />
           <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
             <Utensils className="w-7 h-7 text-primary" />
             Tea Picking &amp; Plantation Experiences
@@ -368,7 +371,8 @@ export default function EllaTownGuide() {
         </section>
 
         {/* Waterfalls Near Ella */}
-        <section className="mb-12 scroll-mt-24" id="tips">
+        <section className="mb-12 scroll-mt-48 bg-background" id="tips">
+          <div className="h-1 w-full bg-gradient-to-r from-blue-400/20 to-transparent rounded-full mb-8" />
           <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
             <Lightbulb className="w-7 h-7 text-primary" />
             Spectacular Waterfalls Around Ella

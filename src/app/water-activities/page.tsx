@@ -555,7 +555,7 @@ export default function WaterActivitiesPage() {
                             <div
                                 key={activity.id}
                                 id={activity.name.toLowerCase().replace(/\s+/g, '-')}
-                                className="scroll-mt-20"
+                                className="scroll-mt-40"
                             >
                                 <Card className="overflow-hidden hover:shadow-xl transition-shadow">
                                     <div className="md:flex md:gap-6">

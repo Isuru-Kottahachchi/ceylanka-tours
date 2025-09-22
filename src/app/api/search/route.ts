@@ -373,7 +373,7 @@ const destinations: Destination[] = [
     name: "Balangoda",
     location: "Uva Province",
     path: "balangoda",
-    image: "/Balangoda.jpg",
+    image: "/Balangoda1.jpeg",
     description: "Cool village known for its tea plantations and scenic views",
     highlights: ["Tea Factories", "Cool Climate", "Scenic Views"],
     category: "Nature",
