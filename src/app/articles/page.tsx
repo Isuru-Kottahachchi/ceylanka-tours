@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Search, Filter } from "lucide-react"
+import { Search } from "lucide-react"
 import { AdBanner } from "@/components/ad-banner"
 import React from "react"
 
@@ -266,7 +266,7 @@ const originalArticles = [
   }
 ]
 
-const categories = ["All", "Beaches", "Culture", "Wildlife", "Nature", "Adventure", "Travel Tips", "Safety", "Religion", "History", "Architecture"]
+// const categories = ["All", "Beaches", "Culture", "Wildlife", "Nature", "Adventure", "Travel Tips", "Safety", "Religion", "History", "Architecture"]
 
 export default function ArticlesPage() {
   const [showSearchReminder, setShowSearchReminder] = React.useState(true);

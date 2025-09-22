@@ -605,7 +605,7 @@ export default function AnuradhapuraTravelGuide() {
                       </li>
                     </ul>
                     <div className="mt-6">
-                      <Link href="/destinations/abhayagiri">
+                      <Link href="/destinations/abhayagiriya">
                         <Button
                           className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                           variant="default"
