@@ -4,7 +4,6 @@ import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, User
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Delft Island: Wild Horses & Ancient Baobabs | Complete Travel Guide 2025",
