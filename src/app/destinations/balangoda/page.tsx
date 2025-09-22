@@ -31,7 +31,7 @@ export default function BalangodaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Balangoda.jpeg"
           alt="Balangoda's ancient cave complexes and archaeological sites with Samanalawewa Reservoir in the background"
           fill
           className="object-cover"
@@ -65,7 +65,7 @@ export default function BalangodaGuide() {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+  <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">
@@ -189,6 +189,88 @@ export default function BalangodaGuide() {
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                         Guided archaeological tours available
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            {/* Lime Stone Pool Attraction Card */}
+            <Card>
+              <CardHeader>
+                <CardTitle>4. Lime Stone Pool</CardTitle>
+                <CardDescription>Natural rock pool with crystal-clear waters</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/public/PasikudaCover.jpeg" // Placeholder, replace with actual lime stone pool image if available
+                    alt="Lime Stone Pool in Balangoda, a natural pool surrounded by limestone formations and lush greenery"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Hidden amidst the hills near Balangoda, the Lime Stone Pool is a stunning natural formation where cool, clear spring water collects in a basin carved from limestone rock. Surrounded by lush forest, this tranquil pool is perfect for a refreshing dip and a peaceful escape into nature. The unique mineral content of the limestone gives the water a beautiful turquoise hue, making it a favorite spot for both locals and adventurous travelers.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Safe for swimming and relaxing
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Surrounded by scenic forest trails
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Unique turquoise water from limestone minerals
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ideal for picnics and nature photography
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            {/* Nagrak Village Attraction Card */}
+            <Card>
+              <CardHeader>
+                <CardTitle>5. Nagrak Village</CardTitle>
+                <CardDescription>Remote mountain village with breathtaking views</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/public/Nuwara-Eliya1.jpg" // Placeholder, replace with actual Nagrak Village image if available
+                    alt="Nagrak Village in the hills near Balangoda, surrounded by tea estates and misty mountains"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Perched high in the central highlands, Nagrak Village is a hidden gem known for its panoramic mountain vistas, cool climate, and authentic rural charm. The village is accessible via scenic hiking trails and is a popular base for trekkers exploring the Horton Plains and surrounding tea estates. Visitors can experience traditional village life, enjoy home-cooked meals, and wake up to breathtaking sunrises above the clouds.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Gateway to Horton Plains trekking
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Authentic homestay experiences
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Spectacular sunrise and mountain views
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Surrounded by tea plantations and cloud forests
                       </li>
                     </ul>
                   </div>
@@ -335,7 +417,7 @@ export default function BalangodaGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Pahanthudawa.jpeg"
                     alt="Traditional pottery making in Balangoda villages with artisans creating clay pots using ancient techniques"
                     width={400}
                     height={300}

@@ -59,6 +59,7 @@ const searchVariations: { [key: string]: string[] } = {
   "isurumuniya": ["isurumuniya", "isurumuni", "isuru muniya", "isuramuniya", "isurumuniya temple", "isuru"],
   "jaya sri maha bodhi": ["jayasrimaha bodhi", "jaya sri maha bodhi", "jayasri maha bodhi", "jaya srimaha bodhi", "sri maha bodhi", "maha bodhi", "bodhi tree", "sacred bodhi tree", "jaya sri maha bodhiya"],
   "rathnapura": ["rathnapura", "rathnapure","ratnapuraya","ratnapure"],
+  "balangoda": ["balangoda", "balangoda"],
 }
 
 // Function to normalize search terms
@@ -364,6 +365,16 @@ const destinations: Destination[] = [
     path: "ella-town",
     image: "/Ella.jpg",
     description: "Cool hill town known for its tea plantations and scenic views",
+    highlights: ["Tea Factories", "Cool Climate", "Scenic Views"],
+    category: "Nature",
+  },
+    {
+    id: 24,
+    name: "Balangoda",
+    location: "Uva Province",
+    path: "balangoda",
+    image: "/Balangoda.jpg",
+    description: "Cool village known for its tea plantations and scenic views",
     highlights: ["Tea Factories", "Cool Climate", "Scenic Views"],
     category: "Nature",
   },

@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Mountain, Train, Coffee, Thermometer } from 'lucide-react'
+import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Mountain, Train, Coffee, Thermometer, Info, Landmark, Utensils, Lightbulb, Bed } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 }
 
 export default function EllaTownGuide() {
+
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -29,7 +30,7 @@ export default function EllaTownGuide() {
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Ella Town</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Most Scenic Hill Station Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -49,10 +50,35 @@ export default function EllaTownGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Introduction */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">
+      {/* Section Navigation */}
+      <nav className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-muted mb-8 shadow-md">
+        <div className="max-w-6xl mx-auto px-4 py-3 flex flex-wrap gap-3 justify-center text-sm font-medium">
+          <a href="#introduction" className="flex items-center gap-1 px-4 py-2 rounded-full bg-muted hover:bg-primary/10 hover:text-primary transition-colors shadow-sm">
+            <Info className="w-4 h-4" /> Introduction
+          </a>
+          <a href="#quick-facts" className="flex items-center gap-1 px-4 py-2 rounded-full bg-muted hover:bg-primary/10 hover:text-primary transition-colors shadow-sm">
+            <Landmark className="w-4 h-4" /> Quick Facts
+          </a>
+          <a href="#attractions" className="flex items-center gap-1 px-4 py-2 rounded-full bg-muted hover:bg-primary/10 hover:text-primary transition-colors shadow-sm">
+            <Star className="w-4 h-4" /> Top Attractions
+          </a>
+          <a href="#food" className="flex items-center gap-1 px-4 py-2 rounded-full bg-muted hover:bg-primary/10 hover:text-primary transition-colors shadow-sm">
+            <Utensils className="w-4 h-4" /> Food & Cafés
+          </a>
+          <a href="#tips" className="flex items-center gap-1 px-4 py-2 rounded-full bg-muted hover:bg-primary/10 hover:text-primary transition-colors shadow-sm">
+            <Lightbulb className="w-4 h-4" /> Travel Tips
+          </a>
+          <a href="#accommodation" className="flex items-center gap-1 px-4 py-2 rounded-full bg-muted hover:bg-primary/10 hover:text-primary transition-colors shadow-sm">
+            <Bed className="w-4 h-4" /> Accommodation
+          </a>
+        </div>
+      </nav>
+
+  <div className="max-w-6xl mx-auto px-4 py-8">
+    {/* Introduction */}
+  <section className="mb-12 scroll-mt-24" id="introduction">
+          <h2 className="text-3xl font-bold mb-6 text-foreground flex items-center gap-2">
+            <Info className="w-7 h-7 text-primary" />
             Welcome to Ella: Where Mountains Meet Magic
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
@@ -62,8 +88,19 @@ export default function EllaTownGuide() {
             <p className="text-lg">
               Whether you&apos;re seeking adventure on hiking trails, Instagram-worthy views from mountain peaks, or simply want to relax in cozy cafes overlooking tea gardens, Ella provides an unforgettable hill country experience that combines natural beauty with warm Sri Lankan hospitality.
             </p>
-          </div>
-        </section>
+
+            {/* Did you know? Quick Fact Box */}
+            <div className="my-8 p-4 bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-400 dark:border-blue-600 rounded-r-lg shadow-sm max-w-2xl">
+              <div className="flex items-center gap-2 mb-2">
+                <Info className="w-5 h-5 text-blue-500 dark:text-blue-300" />
+                <span className="font-semibold text-blue-800 dark:text-blue-200">Did you know?</span>
+              </div>
+              <p className="text-blue-900 dark:text-blue-100 text-sm">
+                Ella is home to the famous Nine Arch Bridge, built entirely out of brick, stone, and cement—without a single piece of steel! This engineering marvel is one of the most photographed spots in Sri Lanka and a must-see for train lovers and Instagrammers alike.
+              </p>
+            </div>
+        </div>
+      </section>
 
         {/* Ad Space */}
         <div className="my-8 p-4 bg-muted/50 rounded-lg text-center text-muted-foreground border-2 border-dashed border-muted-foreground/30">
@@ -71,11 +108,11 @@ export default function EllaTownGuide() {
         </div>
 
         {/* Quick Facts */}
-        <section className="mb-12">
+  <section className="mb-12 scroll-mt-24" id="quick-facts">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
+                <Landmark className="w-6 h-6 text-primary" />
                 Ella Town Essential Facts
               </CardTitle>
             </CardHeader>
@@ -115,8 +152,11 @@ export default function EllaTownGuide() {
         </section>
 
         {/* Top Attractions */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Top Attractions in Ella</h2>
+  <section className="mb-12 scroll-mt-24" id="attractions">
+          <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
+            <Star className="w-7 h-7 text-yellow-500" />
+            Top Attractions in Ella
+          </h2>
           <div className="space-y-8">
             <Card>
               <CardHeader>
@@ -232,8 +272,11 @@ export default function EllaTownGuide() {
         </section>
 
         {/* Tea Picking Experiences */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Tea Picking &amp; Plantation Experiences</h2>
+  <section className="mb-12 scroll-mt-24" id="food">
+          <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
+            <Utensils className="w-7 h-7 text-primary" />
+            Tea Picking &amp; Plantation Experiences
+          </h2>
           <div className="space-y-8">
             <Card>
               <CardHeader>
@@ -325,8 +368,27 @@ export default function EllaTownGuide() {
         </section>
 
         {/* Waterfalls Near Ella */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Spectacular Waterfalls Around Ella</h2>
+        <section className="mb-12 scroll-mt-24" id="tips">
+          <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
+            <Lightbulb className="w-7 h-7 text-primary" />
+            Spectacular Waterfalls Around Ella
+          </h2>
+
+          {/* Local Tips, Safety, and Best Time Box */}
+          <div className="mb-8 p-4 bg-yellow-50 dark:bg-yellow-900/30 border-l-4 border-yellow-400 dark:border-yellow-600 rounded-r-lg shadow-sm max-w-2xl">
+            <div className="flex items-center gap-2 mb-2">
+              <AlertTriangle className="w-5 h-5 text-yellow-500 dark:text-yellow-300" />
+              <span className="font-semibold text-yellow-800 dark:text-yellow-200">Local Tips & Safety</span>
+            </div>
+            <ul className="list-disc pl-5 text-yellow-900 dark:text-yellow-100 text-sm space-y-1">
+              <li><strong>Best time to visit:</strong> December to March for clear skies and lush scenery.</li>
+              <li>Start hikes early in the morning to avoid midday heat and crowds.</li>
+              <li>Always carry a light rain jacket—Ella’s weather can change quickly!</li>
+              <li>Respect local customs when visiting temples and rural villages (cover shoulders/knees).</li>
+              <li>Use only marked trails and beware of leeches during the rainy season.</li>
+              <li>For safety, avoid swimming in waterfalls after heavy rain due to strong currents.</li>
+            </ul>
+          </div>
           <div className="space-y-8">
             <Card>
               <CardHeader>

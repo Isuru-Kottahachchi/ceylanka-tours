@@ -743,7 +743,7 @@ export default function BentotaGuide() {
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                <strong>Induruwa Raja Maha Viharaya</strong> - Traditional Buddhist temple
+                                                <strong>Bodhimaluwa Raja Maha Viharaya</strong> - Traditional Buddhist temple
                                             </li>
                                         </ul>
                                         
@@ -1174,10 +1174,10 @@ export default function BentotaGuide() {
                     <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
                     <div className="grid md:grid-cols-3 gap-6">
 
-                        <Link href="/destinations/kandeviharaya" className="block hover:shadow-md transition-shadow duration-200">
+                        <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" className="block hover:shadow-md transition-shadow duration-200">
                             <Card className="cursor-pointer">
                                 <CardHeader>
-                                    <CardTitle className="text-lg">Lunuganga Geoffrey Bawa Garden</CardTitle>
+                                    <CardTitle className="text-lg">Lunuganga Garden by Geoffrey Bawa</CardTitle>
                                     <CardDescription>Architectural masterpiece with stunning views</CardDescription>
                                 </CardHeader>
                                 <CardContent>
@@ -1225,12 +1225,12 @@ export default function BentotaGuide() {
 
                           <Card>
                             <CardHeader>
-                                <CardTitle className="text-lg">Bawa Garden Kalawila</CardTitle>
+                                <CardTitle className="text-lg">Brief Garden by Bevis Bawa Kalawila</CardTitle>
                                 <CardDescription>Beautiful garden with diverse flora</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <Image
-                                    src="/placeholder.svg?height=200&width=300"
+                                    src="/Breif-Garden-by-Bawa.jpg"
                                     alt="Bawa Garden Kalawila with tropical plants and landscape design"
                                     width={300}
                                     height={200}
@@ -1268,7 +1268,7 @@ export default function BentotaGuide() {
                             </CardHeader>
                             <CardContent>
                                 <Image
-                                    src="/RichmondCastle.jpeg"
+                                    src="/Richmond-Castle.jpg"
                                     alt="Richmond Castle with colonial architecture and lush gardens"
                                     width={300}
                                     height={200}

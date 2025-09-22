@@ -35,7 +35,7 @@ export default function KandeViharayaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200&text=Kande+Viharaya+Temple"
+          src="/Kandeviharaya.jpeg"
           alt="Majestic white seated Buddha statue at Kande Viharaya temple with surrounding temple buildings"
           fill
           className="object-cover"
