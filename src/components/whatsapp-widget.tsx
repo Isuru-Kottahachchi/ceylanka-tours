@@ -71,7 +71,7 @@ export function WhatsAppWidget() {
                 className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                 aria-label="Close chat preview"
               >
-                <X className="w-4 h-4" />
+                <X className="w-4 h-4 cursor-pointer" />
               </button>
             </div>
             
@@ -86,7 +86,7 @@ export function WhatsAppWidget() {
             
             <button
               onClick={handleWhatsAppClick}
-              className="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+              className="w-full bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 cursor-pointer"
             >
               <MessageCircle className="w-4 h-4" />
               Start Chat

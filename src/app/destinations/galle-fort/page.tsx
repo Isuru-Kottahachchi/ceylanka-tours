@@ -796,7 +796,7 @@ export default function GalleFortTravelGuide() {
               <CardContent>
                 <Link href="/destinations/blue-beach" className="block hover:shadow-md transition-shadow duration-200">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/Blue-beach.jpg"
                     alt="Large herd of elephants gathering at Minneriya National Park during dry season"
                     width={300}
                     height={200}
@@ -821,7 +821,7 @@ export default function GalleFortTravelGuide() {
               <CardContent>
                 <Link href="/destinations/thalpe-beach" className="block hover:shadow-md transition-shadow duration-200">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/Thalpe-beach.jpg"
                     alt="Thalpe Beach coral wells and golden sand with turquoise water"
                     width={300}
                     height={200}

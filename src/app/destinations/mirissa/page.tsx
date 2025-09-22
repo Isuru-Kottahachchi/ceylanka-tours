@@ -24,7 +24,7 @@ export default function MirissaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Mirissa.jpg"
           alt="Stunning aerial view of Mirissa beach showing golden sand, turquoise waters, palm trees, and the iconic coconut hill"
           fill
           className="object-cover"
@@ -51,9 +51,22 @@ export default function MirissaTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Introduction */}
-        <section className="mb-12">
+      {/* Section Navigation */}
+      <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
+          <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Introduction</a>
+          <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
+          <a href="#whale-watching" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Whale Watching</a>
+          <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Attractions</a>
+          <a href="#surfing" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Surfing</a>
+          <a href="#cuisine" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Cuisine</a>
+          <a href="#tips" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Travel Tips</a>
+        </div>
+      </nav>
+
+      <div className="max-w-6xl mx-auto px-4 py-12">
+  {/* Introduction */}
+  <section className="mb-12 scroll-mt-24" id="introduction">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Mirissa: Where Ocean Dreams Come True</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
@@ -75,8 +88,8 @@ export default function MirissaTravelGuide() {
           [Advertisement Space - 728x90 Leaderboard]
         </div>
 
-        {/* Quick Facts */}
-        <section className="mb-12">
+  {/* Quick Facts */}
+  <section className="mb-12 scroll-mt-24" id="quick-facts">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -131,8 +144,8 @@ export default function MirissaTravelGuide() {
           </Card>
         </section>
 
-        {/* Whale Watching */}
-        <section className="mb-12">
+  {/* Whale Watching */}
+  <section className="mb-12 scroll-mt-24" id="whale-watching">
           <h2 className="text-3xl font-bold mb-6">World&apos;s Best Whale Watching Experience</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
@@ -171,8 +184,8 @@ export default function MirissaTravelGuide() {
           </div>
         </section>
 
-        {/* Top Attractions */}
-        <section className="mb-12">
+  {/* Top Attractions */}
+  <section className="mb-12 scroll-mt-24" id="attractions">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Mirissa</h2>
 
           {/* Ad Space */}

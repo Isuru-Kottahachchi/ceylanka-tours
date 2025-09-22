@@ -15,7 +15,7 @@ interface Destination {
 // Common misspellings and variations mapping
 const searchVariations: { [key: string]: string[] } = {
   "sigiriya": ["seegriya", "sseegiriya", "sigirya", "segeriya", "sigeria", "sigiraya", "sigeriya", "segiriya"],
-  "kandy": ["candy", "kandi", "kady","mahanuwara"],
+  "kandy": ["candy", "kandi", "kady", "mahanuwara"],
   "anuradhapura": ["anuradhpura", "anuradhpur", "anuradhapra", "anuradhapuri"],
   "nuwara eliya": ["nuwara", "nuwaraeliya", "nuwara elya", "nuwareliya"],
   "galle": ["gale", "gall", "galley"],
@@ -28,8 +28,8 @@ const searchVariations: { [key: string]: string[] } = {
   "jaffna": ["jafna", "jaffana", "jafna"],
   "polonnaruwa": ["polonarwa", "polonnaruva", "polonarua", "polonnaruawa", "polonnarua", "polannaruwa"],
   "dambulla": ["dambula", "dambula", "dambala"],
-  "pinnawala": ["pinawala", "pinnawela", "pinawela","pinanwala"],
-  "wilpattu": ["wilpatu", "wilpathu", "willpattu","vilpattu","wilpaththu"],
+  "pinnawala": ["pinawala", "pinnawela", "pinawela", "pinanwala"],
+  "wilpattu": ["wilpatu", "wilpathu", "willpattu", "vilpattu", "wilpaththu"],
   "horton plains": ["horton", "hortons", "horten plains", "hortan plains", "horton plain", "horten plain"],
   "adams peak": ["adam peak", "adams", "adam's peak", "sri pada"],
   "sri pada": ["adams peak", "adam peak", "sripada"],
@@ -43,7 +43,7 @@ const searchVariations: { [key: string]: string[] } = {
   "badulla": ["badula", "badula"],
   "mathale": ["matale", "mathale"],
   "yapahuwa": ["yapahuwa", "yapahuva"],
-  "waligama": ["waligama", "waligaama","waligana"],
+  "waligama": ["waligama", "waligaama", "waligana"],
   "katharagama": ["kataragama", "katharigama"],
   "mahiyanganaya": ["mahiyangana", "mahiyanganaya"],
   "sinharaja": ["sinharaja", "sinharaja forest"],
@@ -55,11 +55,12 @@ const searchVariations: { [key: string]: string[] } = {
   "ruwanwelisaya": ["ruwanwelisaya", "ruwanwalisaya", "ruvanwelisaya", "ruvan weli saya", "great stupa"],
   "hirikatiya": ["hiriketiya", "hirikatya", "hirikattya", "hirikatiya beach", "hiri", "hirketiya", "hirikatya", "hirikettiya"],
   "kalpitiya": ["kalpitya", "kalpitiya", "kalpitiya beach"],
-  "mihinthalaya": ["mihintale", "mihinthale","mihinthalaya"],
+  "mihinthalaya": ["mihintale", "mihinthale", "mihinthalaya"],
   "isurumuniya": ["isurumuniya", "isurumuni", "isuru muniya", "isuramuniya", "isurumuniya temple", "isuru"],
   "jaya sri maha bodhi": ["jayasrimaha bodhi", "jaya sri maha bodhi", "jayasri maha bodhi", "jaya srimaha bodhi", "sri maha bodhi", "maha bodhi", "bodhi tree", "sacred bodhi tree", "jaya sri maha bodhiya"],
-  "rathnapura": ["rathnapura", "rathnapure","ratnapuraya","ratnapure"],
+  "rathnapura": ["rathnapura", "rathnapure", "ratnapuraya", "ratnapure"],
   "balangoda": ["balangoda", "balangoda"],
+  "hummanaya": ["hummanaya","hummane", "hummanaya blow hole", "hummanaya blowhole"],
 }
 
 // Function to normalize search terms
@@ -70,13 +71,13 @@ function normalizeSearchTerm(term: string): string {
 // Function to find the best match for a search term
 function findBestMatch(searchTerm: string): string {
   const normalized = normalizeSearchTerm(searchTerm)
-  
+
   // Check exact matches first
   for (const [correct, variations] of Object.entries(searchVariations)) {
     if (normalized === correct || normalized.includes(correct) || correct.includes(normalized)) {
       return correct
     }
-    
+
     // Check variations
     for (const variation of variations) {
       if (normalized === variation || normalized.includes(variation) || variation.includes(normalized)) {
@@ -84,17 +85,17 @@ function findBestMatch(searchTerm: string): string {
       }
     }
   }
-  
+
   return normalized
 }
 
 // Levenshtein distance function for fuzzy matching
 function levenshteinDistance(str1: string, str2: string): number {
   const matrix = Array(str2.length + 1).fill(null).map(() => Array(str1.length + 1).fill(null))
-  
+
   for (let i = 0; i <= str1.length; i++) matrix[0][i] = i
   for (let j = 0; j <= str2.length; j++) matrix[j][0] = j
-  
+
   for (let j = 1; j <= str2.length; j++) {
     for (let i = 1; i <= str1.length; i++) {
       const substitutionCost = str1[i - 1] === str2[j - 1] ? 0 : 1
@@ -105,7 +106,7 @@ function levenshteinDistance(str1: string, str2: string): number {
       )
     }
   }
-  
+
   return matrix[str2.length][str1.length]
 }
 
@@ -248,7 +249,7 @@ const destinations: Destination[] = [
     highlights: ["Buddhist Temples", "Ancient Ruins", "Sacred Art"],
     category: "Historical",
   },
-   {
+  {
     id: 14,
     name: "Jungle Beach",
     location: "Southern Province",
@@ -258,7 +259,7 @@ const destinations: Destination[] = [
     highlights: ["Jungle", "Beach", "Clear Waters"],
     category: "Beach",
   },
-     {
+  {
     id: 14,
     name: "Kalpitiya",
     location: "North Western Province",
@@ -329,6 +330,36 @@ const destinations: Destination[] = [
     category: "Beach",
   },
   {
+    id: 20,
+    name: "Thalpe Beach",
+    location: "Southern Province",
+    path: "thalpe-beach",
+    image: "/Thalpe-beach.jpg",
+    description: "Beautiful beach destination with Coral pools in Southern Sri Lanka",
+    highlights: ["Crystal Clear Water", "Coral Reefs", "Coral pools"],
+    category: "Beach",
+  },
+      {
+    id: 20,
+    name: "Blue Beach",
+    location: "Southern Province",
+    path: "blue-beach",
+    image: "/Blue-beach.jpg",
+    description: "Private Island Beach destination in Southern Sri Lanka",
+    highlights: ["Crystal Clear Water", "Public Island", "Beach Camping"],
+    category: "Beach",
+  },
+      {
+    id: 20,
+    name: "Hummanaya Blow Hole",
+    location: "Southern Province",
+    path: "hummanaya",
+    image: "/HummanayaBlowHole.jpeg",
+    description: "Natural blowhole and scenic spot in Southern Sri Lanka",
+    highlights: ["Natural Wonder", "Scenic Views", "Photography"],
+    category: "Beach",
+  },
+  {
     id: 21,
     name: "Colombo City Tour",
     location: "Western Province",
@@ -368,7 +399,7 @@ const destinations: Destination[] = [
     highlights: ["Tea Factories", "Cool Climate", "Scenic Views"],
     category: "Nature",
   },
-    {
+  {
     id: 24,
     name: "Balangoda",
     location: "Uva Province",
@@ -383,12 +414,12 @@ const destinations: Destination[] = [
     name: "Mathale",
     location: "Central Province",
     path: "mathale",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Walpolmulla1.jpg",
     description: "Hill station with tea plantations and mountain views",
     highlights: ["Tea Factories", "Cool Climate", "Mountain Views"],
     category: "Nature",
   },
-    {
+  {
     id: 25,
     name: "Rathnapura",
     location: "Sabaragamuwa Province",
@@ -396,6 +427,16 @@ const destinations: Destination[] = [
     image: "/Saman-devalaya.jpeg",
     description: "City of Gems, known for its gem mines and waterfalls",
     highlights: ["Gem Mining", "Waterfalls", "Tea Plantations"],
+    category: "Nature",
+  },
+  {
+    id: 25,
+    name: "Hatton",
+    location: "Central Province",
+    path: "hatton",
+    image: "/Hatton1.jpg",
+    description: "Hill town and gateway to Adam's Peak, surrounded by tea plantations",
+    highlights: ["Tea Plantations", "Waterfalls", "Hiking"],
     category: "Nature",
   },
   {
@@ -502,8 +543,8 @@ const destinations: Destination[] = [
     id: 36,
     name: "Sinharaja Forest Reserve",
     location: "Sabaragamuwa Province",
-    path: "sinharaja",
-    image: "/placeholder.svg?height=400&width=600",
+    path: "sinharaja-forest",
+    image: "/Sinharaja-forest.jpg",
     description: "UNESCO World Heritage rainforest with endemic species",
     highlights: ["Rainforest", "Endemic Species", "Bird Watching"],
     category: "Nature",
@@ -609,12 +650,12 @@ export async function GET(request: NextRequest) {
   }
 
   const originalSearchTerm = query.toLowerCase().trim()
-  
+
   // Try to find the best match for potential typos
   const correctedSearchTerm = findBestMatch(originalSearchTerm)
-  
+
   // Search through destinations with both original and corrected terms
-  const searchTerms = [originalSearchTerm, correctedSearchTerm].filter((term, index, arr) => 
+  const searchTerms = [originalSearchTerm, correctedSearchTerm].filter((term, index, arr) =>
     arr.indexOf(term) === index // Remove duplicates
   )
 
@@ -633,7 +674,7 @@ export async function GET(request: NextRequest) {
       // Exact matches
       const nameExact = destination.name.toLowerCase() === searchTerm
       const locationExact = destination.location.toLowerCase() === searchTerm
-      
+
       if (nameExact) {
         bestScore = Math.max(bestScore, 1.0)
         bestMatchType = 'exact_name'
@@ -647,7 +688,7 @@ export async function GET(request: NextRequest) {
       const locationMatch = destination.location.toLowerCase().includes(searchTerm)
       const descriptionMatch = destination.description.toLowerCase().includes(searchTerm)
       const categoryMatch = destination.category.toLowerCase().includes(searchTerm)
-      const highlightsMatch = destination.highlights.some(highlight => 
+      const highlightsMatch = destination.highlights.some(highlight =>
         highlight.toLowerCase().includes(searchTerm)
       )
 
@@ -701,7 +742,7 @@ export async function GET(request: NextRequest) {
   // Sort results by score (highest first)
   const sortedResults = scoredResults.sort((a, b) => {
     if (b.score !== a.score) return b.score - a.score
-    
+
     // Secondary sort by match type priority
     const matchTypePriority: { [key: string]: number } = {
       'exact_name': 10,
@@ -714,7 +755,7 @@ export async function GET(request: NextRequest) {
       'fuzzy_name': 3,
       'fuzzy_highlights': 2
     }
-    
+
     return (matchTypePriority[b.matchType] || 0) - (matchTypePriority[a.matchType] || 0)
   })
 

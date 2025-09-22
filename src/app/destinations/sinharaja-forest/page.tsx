@@ -24,7 +24,7 @@ export default function SinharajaForestGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200&text=Sinharaja+Rainforest"
+          src="/Sinharaja-forest.jpg"
           alt="Dense canopy of Sinharaja rainforest with misty atmosphere and lush green vegetation"
           fill
           className="object-cover"
