@@ -3,7 +3,6 @@ import Image from "next/image"
 import { MapPin, Landmark, Calendar, Star, Clock, Users, CheckCircle, Train, Coffee } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Hatton Sri Lanka: Complete Travel Guide 2025 | Tea Country, Waterfalls & Adventure",
@@ -445,7 +444,7 @@ export default function HattonTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Hatton is more than a stopover—it's a destination where Sri Lanka’s natural beauty, tea heritage, and spiritual traditions come together. Whether you’re trekking to Adam’s Peak, wandering through tea fields, or relaxing by a misty lake, Hatton promises memories that linger long after your journey ends.
+                Hatton is more than a stopover—it&apos;s a destination where Sri Lanka’s natural beauty, tea heritage, and spiritual traditions come together. Whether you’re trekking to Adam’s Peak, wandering through tea fields, or relaxing by a misty lake, Hatton promises memories that linger long after your journey ends.
               </p>
               <p className="text-muted-foreground font-medium">
                 Plan your Hatton adventure and experience the soul of Sri Lanka’s hill country.

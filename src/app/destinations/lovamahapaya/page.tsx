@@ -3,8 +3,6 @@ import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TreePine, Landmark } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
 
 export const metadata: Metadata = {
 	title: "Lovamahapaya (Brazen Palace) Sri Lanka: Complete Guide 2025 | Ancient Marvel of Anuradhapura",

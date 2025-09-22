@@ -3,8 +3,6 @@ import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Landmark } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Abhayagiriya Stupa Sri Lanka: Complete Guide 2025 | Ancient Monastery & Marvel",
@@ -35,7 +33,7 @@ export default function AbhayagiriyaTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Abhayagiriya</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Ancient Monastic Marvel</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Ancient Monastic Marvel</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -289,7 +287,7 @@ export default function AbhayagiriyaTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Abhayagiriya is more than a monument—it's a living testament to Sri Lanka’s spiritual and cultural heritage. Take your time to explore, reflect, and absorb the peaceful atmosphere that has inspired pilgrims for over two millennia.
+                Abhayagiriya is more than a monument—it&apos;s a living testament to Sri Lanka’s spiritual and cultural heritage. Take your time to explore, reflect, and absorb the peaceful atmosphere that has inspired pilgrims for over two millennia.
               </p>
               <p className="text-muted-foreground mb-4">
                 Don’t miss the chance to visit the Abhayagiriya Museum for a deeper understanding of the site’s history and significance. Whether you’re a history buff, a spiritual seeker, or a curious traveler, Abhayagiriya offers a journey through time and faith.

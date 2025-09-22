@@ -1,14 +1,12 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import { MapPin, Calendar, Star, Camera, CheckCircle, AlertTriangle } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Thalpe Beach Sri Lanka: Complete Travel Guide 2025 | Coral Wells & Natural Beauty",
-  description:
-    "Discover Thalpe Beach, Sri Lanka's hidden coastal gem. Complete travel guide with tips, photos, best time to visit, and everything you need to know about the famous coral wells, sea urchins, and more.",
+  description: "Discover Thalpe Beach, Sri Lanka&apos;s hidden coastal gem. Complete travel guide with tips, photos, best time to visit, and everything you need to know about the famous coral wells, sea urchins, and more.",
   keywords: "Thalpe Beach, Sri Lanka, coral wells, sea urchins, travel guide, best beaches, southern coast, swimming, snorkeling, tourism",
   authors: [{ name: "Sri Lanka Beach Expert" }],
   openGraph: {
@@ -22,7 +20,7 @@ export const metadata: Metadata = {
     title: "Thalpe Beach Sri Lanka: Complete Travel Guide 2025",
     description: "Your ultimate guide to Thalpe Beach, including coral wells and sea urchin safety tips.",
   },
-}
+};
 
 export default function ThalpeBeachGuide() {
   return (
@@ -63,7 +61,7 @@ export default function ThalpeBeachGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Thalpe Beach</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Thalpe Beach is a peaceful stretch of golden sand just south of Galle. Known for its crystal-clear water, palm trees, and famous coral wells, Thalpe is perfect for relaxing, swimming, and exploring Sri Lanka's southern coast.
+              Thalpe Beach is a peaceful stretch of golden sand just south of Galle. Known for its crystal-clear water, palm trees, and famous coral wells, Thalpe is perfect for relaxing, swimming, and exploring Sri Lanka&apos;s southern coast.
             </p>
             <p className="text-lg">
               The beach is less crowded than Unawatuna or Mirissa, making it ideal for families and couples. Early mornings and late afternoons are the best times to enjoy the calm sea and gentle breeze.
@@ -145,7 +143,7 @@ export default function ThalpeBeachGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Thalpe's coral wells are shallow pools carved into the coral reef by local fishermen decades ago. These natural pools fill with seawater at high tide and are perfect for a refreshing dip when the tide is low. The water is clear and calm, making it a favorite spot for families and Instagram photos.
+                Thalpe&apos;s coral wells are shallow pools carved into the coral reef by local fishermen decades ago. These natural pools fill with seawater at high tide and are perfect for a refreshing dip when the tide is low. The water is clear and calm, making it a favorite spot for families and Instagram photos.
               </p>
               <p>
                 <strong>Important:</strong> Always check the tide times before visiting. The coral can be sharp, and sea urchins sometimes hide in the wells—wear water shoes and step carefully.
@@ -226,7 +224,7 @@ export default function ThalpeBeachGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Thalpe Beach is a true hidden gem on Sri Lanka's southern coast. Whether you come for the coral wells, the peaceful sand, or the beautiful sunsets, you'll leave with wonderful memories. Respect the reef, watch for sea urchins, and enjoy your time in paradise!
+                Thalpe Beach is a true hidden gem on Sri Lanka&apos;s southern coast. Whether you come for the coral wells, the peaceful sand, or the beautiful sunsets, you&apos;ll leave with wonderful memories. Respect the reef, watch for sea urchins, and enjoy your time in paradise!
               </p>
               <p className="text-muted-foreground font-medium">
                 Safe travels and happy beach days! 🏖️🌊
