@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TreePine } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TreePine, Landmark } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 }
 
 export default function AnuradhapuraTravelGuide() {
+
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -52,6 +53,18 @@ export default function AnuradhapuraTravelGuide() {
           </div>
         </div>
       </section>
+
+      {/* Section Navigation */}
+      <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
+          <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Introduction</a>
+          <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
+          <a href="#sacred-sites" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Sacred Sites</a>
+          <a href="#itinerary" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Sample Itinerary</a>
+          <a href="#archaeology" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Archaeological Wonders</a>
+          <a href="#guide" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Visiting Guide</a>
+        </div>
+      </nav>
 
   <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
