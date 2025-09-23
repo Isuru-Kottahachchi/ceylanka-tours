@@ -1,28 +1,15 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link"
 import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Eye, TreePine } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 
-export const metadata: Metadata = {
-  title: "Haputale Travel Guide 2025: Lipton's Seat & Edge of the World | Sri Lanka",
-  description: "Discover Haputale, home to world-famous Lipton's Seat viewpoint. Complete guide to Dambatenne Tea Factory, Adisham Monastery, and breathtaking mountain views.",
-  keywords: "Haputale Sri Lanka, Lipton's Seat, Dambatenne Tea Factory, Adisham Monastery, hill country, tea plantations, viewpoints",
-  authors: [{ name: "Sri Lanka Travel Expert" }],
-  openGraph: {
-    title: "Haputale Travel Guide 2025: Lipton's Seat & Edge of the World",
-    description: "Your complete guide to Haputale - world-famous viewpoints, tea heritage, and mountain adventures",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Haputale Travel Guide 2025: Lipton's Seat & Edge of the World",
-    description: "Your complete guide to Haputale - world-famous viewpoints, tea heritage, and mountain adventures",
-  },
-}
+
 
 export default function HaputaleGuide() {
   return (
@@ -30,7 +17,7 @@ export default function HaputaleGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Haputhale.jpeg"
           alt="Spectacular panoramic view from Lipton's Seat in Haputale showing endless tea plantations and mountain ranges"
           fill
           className="object-cover"
@@ -58,13 +45,13 @@ export default function HaputaleGuide() {
       </section>
 
       {/* Ad Banner - Top */}
-      <div className="max-w-4xl mx-auto px-4 py-4">
+      <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
           [Advertisement Space - 728x90 Leaderboard - Mountain View Hotels & Tea Tours]
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Haputale: Where Tea Meets the Sky</h2>
@@ -203,6 +190,7 @@ export default function HaputaleGuide() {
             [Advertisement Space - 300x250 Medium Rectangle - Scenic Tours & Photography Packages]
           </div>
 
+          {/* Top Attractions with Carousels */}
           <div className="space-y-8">
             {/* Lipton's Seat */}
             <Card>
@@ -212,12 +200,27 @@ export default function HaputaleGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Lipton-seat.jpg",
+                        alt: "Panoramic view from Lipton's Seat with tea plantations and sunrise",
+                        caption: "Sunrise at Lipton's Seat",
+                        title: "Lipton's Seat - Sunrise View"
+                      },
+                      {
+                        src: "/Haputhale.jpeg",
+                        alt: "Wide view of Haputale mountains and tea fields",
+                        caption: "Haputale's rolling tea hills",
+                        title: "Haputale Tea Country"
+                      },
+                      {
+                        src: "/placeholder.svg?height=300&width=400",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      }
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -241,6 +244,13 @@ export default function HaputaleGuide() {
                         30-minute scenic drive from Haputale town
                       </li>
                     </ul>
+
+                    {/* See More Button */}
+                    <div className="mt-4">
+                      <Button asChild variant="outline" size="sm">
+                        <a href="/destinations/liptons-seat">See More</a>
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -254,6 +264,28 @@ export default function HaputaleGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Dambatenne-tea-factory.jpg",
+                        alt: "Historic Dambatenne Tea Factory with traditional machinery and workers processing Ceylon tea",
+                        caption: "Dambatenne Tea Factory exterior",
+                        title: "Dambatenne Tea Factory"
+                      },
+                      {
+                        src: "/Tea-factory-interior.jpg",
+                        alt: "Inside the tea factory with machinery and tea leaves",
+                        caption: "Inside the factory",
+                        title: "Tea Processing Room"
+                      },
+                      {
+                        src: "/placeholder.svg?height=300&width=400",
+                        alt: "Workers processing tea at Dambatenne",
+                        caption: "Traditional tea processing",
+                        title: "Tea Workers in Action"
+                      }
+                    ]}
+                  />
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Built in 1890 by Sir Thomas Lipton himself, Dambatenne Tea Factory is one of the oldest and most historic tea factories in Sri Lanka. Still operational today, it produces some of the world&apos;s finest high-grown Ceylon tea using traditional methods.
@@ -276,14 +308,14 @@ export default function HaputaleGuide() {
                         Learn about traditional tea-making methods
                       </li>
                     </ul>
+
+                    {/* See More Button */}
+                    <div className="mt-4">
+                      <Button asChild variant="outline" size="sm">
+                        <a href="/destinations/dambatenne-tea-factory">See More</a>
+                      </Button>
+                    </div>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Historic Dambatenne Tea Factory with traditional machinery and workers processing Ceylon tea"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
-                  />
                 </div>
               </CardContent>
             </Card>
@@ -296,12 +328,76 @@ export default function HaputaleGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Adisham Monastery showing English Tudor architecture surrounded by mountain gardens"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Adisham-Monastery.jpeg",
+                        alt: "Adisham Monastery showing English Tudor architecture surrounded by mountain gardens",
+                        caption: "Adisham Monastery exterior",
+                        title: "Adisham Monastery"
+                      },
+                      {
+                        src: "/Adisham-bungalow3.jpg",
+                        alt: "Beautiful gardens at Adisham Monastery with mountain backdrop",
+                        caption: "Monastery gardens and views",
+                        title: "Monastery Gardens"
+                      },
+                      {
+                        src: "/Adisham-bungalow2.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                         {
+                        src: "/Adisham-bungalow.jpg",
+                        alt: "Beautiful gardens at Adisham Monastery with mountain backdrop",
+                        caption: "Monastery gardens and views",
+                        title: "Monastery Gardens"
+                      },
+                         {
+                        src: "/Adisham-bungalow10.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                         {
+                        src: "/Adisham-bungalow4.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                         {
+                        src: "/Adisham-bungalow5.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                         {
+                        src: "/Adisham-bungalow6.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                         {
+                        src: "/Adisham-bungalow7.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                         {
+                        src: "/Adisham-bungalow8.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                         {
+                        src: "/Adisham-bungalow9.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                      
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -325,6 +421,13 @@ export default function HaputaleGuide() {
                         Stunning mountain and valley views
                       </li>
                     </ul>
+
+                    {/* See More Button */}
+                    <div className="mt-4">
+                      <Button asChild variant="outline" size="sm">
+                        <a href="/destinations/adisham-monastery">See More</a>
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -352,7 +455,7 @@ export default function HaputaleGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                In the late 1800s, Scottish entrepreneur Sir Thomas Lipton purchased vast tracts of land around Haputale to establish his tea empire. He would often climb to the highest point - now known as Lipton&apos;s Seat - to survey his plantations and plan expansion.
+                In the late 1800s, Scottish entrepreneur Sir Thomas Lipton purchased vast tracts of land around Haputale to establish his tea empire. Born in Glasgow, Scotland, Lipton would often climb to the highest point – now known as Lipton&apos;s Seat – to survey his plantations and plan expansion.
               </p>
               <p>
                 Lipton revolutionized the tea industry by controlling every aspect from plantation to packaging, creating the world&apos;s first vertically integrated tea business. His Dambatenne Tea Factory became the heart of this operation, producing premium Ceylon tea that made the Lipton brand famous worldwide.

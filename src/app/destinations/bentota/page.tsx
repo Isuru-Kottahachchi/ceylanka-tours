@@ -1173,7 +1173,7 @@ export default function BentotaGuide() {
                             </CardHeader>
                             <CardContent>
                                 <Image
-                                    src="/Breif-Garden-by-Bawa.jpg"
+                                    src="/Brief-Garden-by-Bawa.jpg"
                                     alt="Bawa Garden Kalawila with tropical plants and landscape design"
                                     width={300}
                                     height={200}

@@ -436,6 +436,18 @@ const destinations = [
   },
     {
     id: 27,
+    name: "Mandaram Nuwara",
+    location: "Uva Province",
+    path: "/mandaram-nuwara",
+    image: "/Mandaram-Nuwara.jpeg",
+    // rating: 4.3,
+    // reviews: 890,
+    description: "Cool village with stunning views and tea estates",
+    highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
+    category: "Nature",
+  },
+    {
+    id: 27,
     name: "Idalgashinna",
     location: "Uva Province",
     path: "/idalgashinna",

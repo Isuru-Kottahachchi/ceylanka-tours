@@ -92,7 +92,7 @@ export default function NuwaraEliyaTravelGuide() {
   ]
 
   const moonPlainsImages = [
-    "/MoonPlains1.jpeg",
+    "/Moon-plains.jpg",
     "/MoonPlains2.jpeg",
     "/MoonPlains3.jpeg",
   ]
@@ -352,6 +352,36 @@ export default function NuwaraEliyaTravelGuide() {
               </div>
             </div>
           </div>
+            {/* St. Clair's Falls Section */}
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+              <div>
+                <Image
+                  src="/St-Clairs-Falls.jpg"
+                  alt="St. Clair's Falls near Thalawakale, cascading through lush tea country on the way to Nuwara Eliya"
+                  width={500}
+                  height={300}
+                  className="rounded-lg shadow-lg"
+                  placeholder="blur"
+                  blurDataURL="/public/images/hero-waterfall.jpg"
+                />
+                <p className="text-sm text-muted-foreground mt-2 italic">
+                  St. Clair's Falls, often called the 'Little Niagara of Sri Lanka', is a breathtaking sight on the journey to Nuwara Eliya.
+                </p>
+              </div>
+              <div className="space-y-4 text-muted-foreground">
+                <h3 className="text-2xl font-semibold mb-2">See St. Clair's Falls on Your Way</h3>
+                <p>
+                  As you travel towards Nuwara Eliya, especially along the Hatton–Talawakelle–Nanu Oya road, make sure to pause near Thalawakale to witness the majestic St. Clair's Falls. This wide, multi-tiered waterfall tumbles through emerald tea estates, creating a picture-perfect scene that is one of Sri Lanka's most photographed natural wonders.
+                </p>
+                <p>
+              The falls are easily visible from the main road, and there are several viewpoints where you can stop for photos or simply soak in the cool, misty air. St. Clair's is especially impressive during the rainy season, when the water flow is at its peak. However, outside of the wet season, the falls may appear as a muggy trickle or even a drained stream due to water diversions and drier weather—so plan your visit accordingly if you want to see the waterfall in its full glory.
+                </p>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <span className="font-semibold text-blue-800">Travel Tip:</span>
+                  <span className="ml-2 text-blue-700 text-sm">Combine your tea factory tour with a stop at St. Clair's Falls for a truly unforgettable hill country experience!</span>
+                </div>
+              </div>
+            </div>
         </section>
 
         {/* Top Attractions */}

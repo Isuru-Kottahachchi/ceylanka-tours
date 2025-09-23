@@ -24,7 +24,7 @@ export default function UdawalaweNationalParkGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Udawalawa-park.jpeg"
           alt="Herd of elephants in Udawalawe National Park grasslands with safari jeep in background"
           fill
           className="object-cover"
@@ -146,7 +146,7 @@ export default function UdawalaweNationalParkGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Udawalawa-park.jpeg"
                     alt="Wild elephant family with baby elephants feeding in grasslands of Udawalawe"
                     width={400}
                     height={300}

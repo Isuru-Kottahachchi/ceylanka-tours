@@ -377,7 +377,7 @@ export default function RathnapuraGuide() {
                   <CardContent>
                     <div className="grid md:grid-cols-2 gap-6 items-center">
                       <Image
-                        src="/maha-saman-devalaya-buddhist-temple-in-rathnapura-.jpg"
+                        src="/Saman-devalaya.jpeg"
                         alt="Maha Saman Devalaya Buddhist temple with traditional Sri Lankan architecture"
                         width={300}
                         height={200}
@@ -437,7 +437,7 @@ export default function RathnapuraGuide() {
                         </ul>
                       </div>
                       <Image
-                        src="/bopath-ella-waterfall-in-rathnapura-shaped-like-bo.jpg"
+                        src="/Bopath-Ella.jpeg"
                         alt="Bopath Ella waterfall with its distinctive Bo tree leaf shape"
                         width={300}
                         height={200}

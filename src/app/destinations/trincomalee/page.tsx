@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 import { useState } from "react"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Anchor, TriangleAlert, ChevronLeft, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -35,7 +36,7 @@ export default function TrincomaleeTravelGuide() {
       title: "Trincomalee Beach Sunrise"
     },
     {
-    src: "/Sunrise-in-trinco1.jpeg",
+      src: "/Sunrise-in-trinco1.jpeg",
       alt: "Sunrise with palm trees and calm sea at Nilaveli Beach",
       title: "Trinco Beach Sunrise"
     },
@@ -155,7 +156,7 @@ export default function TrincomaleeTravelGuide() {
       src: "/Pigeon-island4.jpg",
       alt: "Crystal clear waters perfect for snorkeling and diving",
       title: "Snorkeling Paradise"
-    }, 
+    },
     {
       src: "/Pigeon-island5.jpg",
       alt: "Crystal clear waters perfect for snorkeling and diving",
@@ -189,7 +190,7 @@ export default function TrincomaleeTravelGuide() {
       alt: "Traditional Sri Lankan Buddhist stupa architecture",
       title: "Buddhist Heritage"
     },
-        {
+    {
       src: "/Girihandu-Seya1.jpeg",
       alt: "Traditional Sri Lankan Buddhist stupa architecture",
       title: "Buddhist Heritage"
@@ -199,7 +200,7 @@ export default function TrincomaleeTravelGuide() {
       alt: "Sacred Buddhist sites and religious significance",
       title: "Sacred Buddhist Sites"
     },
-      {
+    {
       src: "/Girihandu-Seya3.jpeg",
       alt: "Sacred Buddhist sites and religious significance",
       title: "Sacred Buddhist Sites"
@@ -325,8 +326,18 @@ export default function TrincomaleeTravelGuide() {
 
   return (
     <main className="min-h-screen bg-background">
+      {/* Section Navigation */}
+      <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
+          <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Introduction</a>
+          <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
+          <a href="#how-to-get" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">How to Get There</a>
+          <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Top Attractions</a>
+          <a href="#more-places" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">More Places</a>
+        </div>
+      </nav>
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section id="introduction" className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Trinco.jpeg"
           alt="Stunning aerial view of Trincomalee showing pristine beaches, turquoise waters, and the ancient Koneswaram temple on rocky cliffs"
@@ -357,7 +368,7 @@ export default function TrincomaleeTravelGuide() {
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
-        <section className="mb-12">
+        <section id="quick-facts" className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Trincomalee: Where History Meets Paradise</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
@@ -375,7 +386,7 @@ export default function TrincomaleeTravelGuide() {
         </section>
 
         {/* Image Carousel */}
-        <section className="mb-12">
+        <section id="how-to-get" className="mb-12">
           <h2 className="text-2xl font-bold mb-6 text-center">Discover Trincomalee&apos;s Beauty</h2>
           <div className="relative w-full max-w-6xl mx-auto">
             <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
@@ -578,7 +589,7 @@ export default function TrincomaleeTravelGuide() {
         </section>
 
         {/* Top Attractions */}
-        <section className="mb-12">
+        <section id="attractions" className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Trincomalee</h2>
 
           {/* Ad Space */}
@@ -1352,17 +1363,32 @@ export default function TrincomaleeTravelGuide() {
             {/* Seruwila Ancient Temple */}
             <Card>
               <CardHeader>
-                <CardTitle>Seruwila Mangala Raja Maha Vihara</CardTitle>
+                <CardTitle>Seruwawila Mangala Raja Maha Vihara</CardTitle>
                 <CardDescription>Ancient Buddhist temple with sacred forehead relic</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Seruwila temple showing white dagoba surrounded by lush greenery and smaller stupas"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Seruwawila-temple.jpeg",
+                        alt: "Seruwila temple showing white dagoba surrounded by lush greenery and smaller stupas",
+                        caption: "Seruwawila Mangala Raja Maha Vihara - Main Stupa",
+                        title: "Seruwawila Mangala Raja Maha Vihara"
+                      },
+                      {
+                        src: "/Seruwawila-temple2.jpeg",
+                        alt: "Pilgrims and monks at Seruwawila temple complex",
+                        caption: "Pilgrims at the ancient temple grounds",
+                        title: "Pilgrims at Seruwawila"
+                      },
+                      {
+                        src: "/placeholder.svg?height=300&width=400",
+                        alt: "Seruwawila dagoba and forest setting",
+                        caption: "White dagoba in a peaceful forest setting",
+                        title: "Forest Setting"
+                      }
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -1401,11 +1427,70 @@ export default function TrincomaleeTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+            {/* Lankapatuna Samudragiri Viharaya (moved here) */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Lankapatuna Samudragiri Viharaya</CardTitle>
+                <CardDescription>Seaside Buddhist temple with legendary landing site of the Sacred Tooth Relic</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Lankapatuna-viharaya.jpeg",
+                        alt: "Lankapatuna Samudragiri Viharaya stupa by the sea with dramatic sky",
+                        caption: "Lankapatuna stupa overlooking the Indian Ocean",
+                        title: "Lankapatuna Samudragiri Viharaya"
+                      },
+                      {
+                        src: "/Lankapatuna-bridge.jpeg",
+                        alt: "Colorful pedestrian bridge leading to Lankapatuna temple complex",
+                        caption: "Bridge to the temple complex",
+                        title: "Bridge to Lankapatuna"
+                      },
+                      {
+                        src: "/placeholder.svg?height=300&width=400",
+                        alt: "Seaside view of Lankapatuna temple and coastline",
+                        caption: "Temple and coastline at Lankapatuna",
+                        title: "Seaside Temple View"
+                      }
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Lankapatuna Samudragiri Viharaya is a unique Buddhist temple dramatically set on the eastern coast, about 50km south of Trincomalee. According to legend, this is the historic site where Prince Dantha and Princess Hemamala landed in the 4th century AD, bringing the Sacred Tooth Relic of the Buddha to Sri Lanka from India.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The temple complex features a striking white stupa, a colorful pedestrian bridge, and panoramic views of the Indian Ocean. The site is both a place of pilgrimage and a scenic spot for visitors, offering a blend of spiritual significance and natural beauty. The peaceful setting is ideal for meditation, reflection, and photography.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Legendary landing site of the Sacred Tooth Relic
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Beautiful seaside stupa and temple complex
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Colorful bridge and panoramic ocean views
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Peaceful atmosphere for meditation and reflection
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
         {/* Additional Places to Visit */}
-        <section className="mb-12">
+        <section id="more-places" className="mb-12">
           <h2 className="text-3xl font-bold mb-6">More Amazing Places Near Trincomalee</h2>
           <div className="space-y-8">
             {/* Marble Beach */}
@@ -1559,6 +1644,11 @@ export default function TrincomaleeTravelGuide() {
                 <p className="text-sm text-muted-foreground">
                   A more local and authentic beach experience with fishing boats, fewer tourists, and beautiful sunrises.
                 </p>
+                <div className="mt-4">
+                  <Button asChild variant="outline" size="sm">
+                    <a href="/destinations/uppuveli-beach">See More</a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
@@ -1579,6 +1669,11 @@ export default function TrincomaleeTravelGuide() {
                   Built by the Portuguese and later occupied by Dutch and British, offering great harbor views and
                   historical insights.
                 </p>
+                <div className="mt-4">
+                  <Button asChild variant="outline" size="sm">
+                    <a href="/destinations/fort-frederick">See More</a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
@@ -1598,6 +1693,11 @@ export default function TrincomaleeTravelGuide() {
                 <p className="text-sm text-muted-foreground">
                   A dramatic cliff near Koneswaram Temple with stunning ocean views and a tragic local legend.
                 </p>
+                <div className="mt-4">
+                  <Button asChild variant="outline" size="sm">
+                    <a href="/destinations/lovers-leap">See More</a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
@@ -1617,6 +1717,11 @@ export default function TrincomaleeTravelGuide() {
                 <p className="text-sm text-muted-foreground">
                   A serene bay perfect for kayaking through mangroves and observing local birdlife in their natural habitat.
                 </p>
+                <div className="mt-4">
+                  <Button asChild variant="outline" size="sm">
+                    <a href="/destinations/dutch-bay">See More</a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
@@ -1636,6 +1741,11 @@ export default function TrincomaleeTravelGuide() {
                 <p className="text-sm text-muted-foreground">
                   A beautifully maintained cemetery honoring Commonwealth soldiers who died during World War II in the region.
                 </p>
+                <div className="mt-4">
+                  <Button asChild variant="outline" size="sm">
+                    <a href="/destinations/trincomalee-war-cemetery">See More</a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
@@ -1655,6 +1765,11 @@ export default function TrincomaleeTravelGuide() {
                 <p className="text-sm text-muted-foreground">
                   Home to elephants, leopards, and diverse bird species. Perfect for wildlife enthusiasts seeking safari adventures.
                 </p>
+                <div className="mt-4">
+                  <Button asChild variant="outline" size="sm">
+                    <a href="/destinations/somawathiya-national-park">See More</a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
