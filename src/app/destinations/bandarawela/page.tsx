@@ -29,14 +29,14 @@ export default function BandarawelaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Bandarawela.jpeg"
           alt="Bandarawela town nestled in rolling hills with tea plantations and colonial buildings under perfect blue sky"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+  <div className="relative z-10 text-center text-white px-4 md:max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Bandarawela</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Perfect Climate Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -57,13 +57,13 @@ export default function BandarawelaGuide() {
       </section>
 
       {/* Ad Banner - Top */}
-      <div className="max-w-4xl mx-auto px-4 py-4">
+  <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
           [Advertisement Space - 728x90 Leaderboard - Hill Country Hotels & Resorts]
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+  <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Bandarawela: Where Perfect Weather Meets Timeless Charm</h2>

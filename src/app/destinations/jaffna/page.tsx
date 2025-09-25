@@ -93,13 +93,26 @@ export default function JaffnaGuide() {
     "/placeholder.jpg",
   ]
 
-  const delftIslandImages = [
-    "/placeholder.jpg",
+  const jaffnaLibraryImages = [
+    "/Jaffna-library.jpg",
     "/placeholder.jpg",
   ]
 
-  const casuarinaBeachImages = [
+  const delftIslandImages = [
+    "/Delft-Island.jpg",
     "/placeholder.jpg",
+  ]
+
+
+
+  const casuarinaBeachImages = [
+    "/Casuarina-Beach.jpg",
+    "/placeholder.jpg",
+  ]
+
+
+  const nilavaraiWellImages = [
+    "/Nilavarai-Bottomless-Well.jpeg",
     "/placeholder.jpg",
   ]
 
@@ -108,7 +121,7 @@ export default function JaffnaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.jpg"
+          src="/Nallur-Kovil.jpg"
           alt="Beautiful view of Jaffna with Dutch Fort, Nallur Temple and northern peninsula landscape"
           fill
           className="object-cover"
@@ -135,7 +148,7 @@ export default function JaffnaGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+  <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Jaffna: The Heart of Tamil Sri Lanka</h2>
@@ -739,7 +752,7 @@ export default function JaffnaGuide() {
                   </div>
                   <div>
                     <ImageCarousel
-                      images={templeImages}
+                      images={jaffnaLibraryImages}
                       alt="Jaffna Public Library showing modern architecture and Tamil cultural design elements"
                     />
                     <p className="text-sm text-muted-foreground mt-2 italic">
@@ -813,6 +826,11 @@ export default function JaffnaGuide() {
                     <div className="text-sm text-muted-foreground italic">
                       🧭 <strong>Geographic Fact:</strong> Point Pedro is approximately 9°50&apos;N latitude, 
                       making it the true northernmost inhabited point of Sri Lanka.
+                    </div>
+                    <div className="mt-3 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg text-sm text-muted-foreground">
+                      💡 <strong>Quick Tip:</strong> If you enjoy geographic extremes, note that Sri Lanka&apos;s
+                      southernmost point is Deundara Thuduwa (Dondra Head, near Dondra/Matara) — a dramatic contrast to Point Pedro and
+                      a great pairing for travelers planning a north-to-south island itinerary.
                     </div>
                   </div>
                 </div>
@@ -959,7 +977,7 @@ export default function JaffnaGuide() {
                   </div>
                   <div>
                     <ImageCarousel
-                      images={casuarinaBeachImages}
+                      images={nilavaraiWellImages}
                       alt="Nilavarai Bottomless Well showing the mysterious circular freshwater well"
                     />
                     <p className="text-sm text-muted-foreground mt-2 italic">

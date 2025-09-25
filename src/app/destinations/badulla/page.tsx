@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Train, TreePine } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 
 export const metadata: Metadata = {
@@ -31,14 +33,14 @@ export default function BadullaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Badulla.jpeg"
           alt="Panoramic view of Badulla city nestled in lush green mountains with ancient temples and modern buildings"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center text-white px-4 max-w-4xl md:max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Badulla</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Ancient Capital of the Uva Province</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -59,13 +61,13 @@ export default function BadullaGuide() {
       </section>
 
       {/* Ad Banner - Top */}
-      <div className="max-w-4xl mx-auto px-4 py-4">
+      <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
           [Advertisement Space - 728x90 Leaderboard - Travel & Tourism Ads]
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Badulla: Where History Meets Nature</h2>
@@ -624,60 +626,76 @@ export default function BadullaGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card>
+
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg">Ella</CardTitle>
                 <CardDescription>Famous hill station - 1 hour away</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Ella-Town.jpg"
                   alt="Ella town with Nine Arch Bridge and Little Adam's Peak visible in the distance"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
                   Visit the famous Nine Arch Bridge, Little Adam&apos;s Peak, and enjoy the cool mountain climate.
                 </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ella-town" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg">Bandarawela</CardTitle>
                 <CardDescription>Colonial hill station - 45 minutes</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Bandarawela.jpeg"
                   alt="Bandarawela town with colonial architecture and tea plantations in the background"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
                   Explore British colonial architecture, Dowa Rock Temple, and pristine tea estates.
                 </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/bandarawela" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg">Haputale</CardTitle>
                 <CardDescription>Lipton&apos;s Seat viewpoint - 1.5 hours</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Haputhale.jpeg"
                   alt="Haputale's Lipton's Seat viewpoint with panoramic views of tea plantations and mountains"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
                   Experience world-famous Lipton&apos;s Seat viewpoint and Dambatenne Tea Factory.
                 </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/haputhale" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -685,23 +703,24 @@ export default function BadullaGuide() {
 
         {/* Final Recommendations */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
+          <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-green-200 dark:from-slate-800 dark:to-slate-700 dark:border-slate-600">
             <CardHeader>
-              <CardTitle className="text-green-800">Your Badulla Adventure Awaits</CardTitle>
+              <CardTitle className="text-green-800 dark:text-green-200">Your Badulla Adventure Awaits</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground dark:text-slate-200 mb-4">
                 Badulla offers the perfect blend of spiritual heritage, natural beauty, and cultural authenticity.
                 Whether you arrive by the scenic railway or winding mountain roads, you&apos;ll discover a side of Sri Lanka
                 that few tourists experience.
               </p>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground dark:text-slate-200 mb-4">
                 From the sacred halls of Muthiyangana Temple to the misty spray of Dunhinda Falls, from tea plantation
                 walks to railway station nostalgia, Badulla provides memories that will last a lifetime.
               </p>
-              <p className="text-muted-foreground font-medium">
+              <p className="text-muted-foreground dark:text-slate-200 font-medium">
                 Plan your visit to this hidden gem and experience the authentic heart of Sri Lanka&apos;s hill country! 🏔️🚂
               </p>
+
             </CardContent>
           </Card>
         </section>

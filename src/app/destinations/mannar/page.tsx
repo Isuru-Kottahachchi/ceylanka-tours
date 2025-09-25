@@ -1,24 +1,52 @@
-import type { Metadata } from "next"
+"use client"
 import Image from "next/image"
+import Link from "next/link"
 import { Clock, MapPin, CheckCircle, Star, Waves, Users, Compass } from "lucide-react"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 
-export const metadata: Metadata = {
-  title: "Mannar Sri Lanka: Complete Guide 2025 | Ancient Island & Baobab Trees",
-  description:
-    "Discover Mannar Island, Sri Lanka's hidden gem with ancient baobab trees, pristine beaches, and rich cultural heritage. Complete travel guide with attractions and tips.",
-  keywords:
-    "Mannar Island, baobab trees Sri Lanka, Mannar Fort, Adam's Bridge, pristine beaches, cultural heritage, northern Sri Lanka",
-  openGraph: {
-    title: "Mannar Island: Complete Guide 2025",
-    description: "Your ultimate guide to Sri Lanka's mystical northern island with ancient baobab trees",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+
 
 export default function MannarGuide() {
+
+
+  const mannarCarouselImages = [
+    {
+      src: "/Baobab.jpg",
+      alt: "Baobab trees at sunset on Mannar Island"
+    },
+    {
+      src: "/Mannar.jpg",
+      alt: "Pristine beach landscape on Mannar Island"
+    },
+    {
+
+      src: "/placeholder.svg?height=400&width=600&text=Mannar+Island+View",
+      alt: "Aerial view of Mannar Island and Adam's Bridge"
+    }]
+
+  const mannarAdamBridgeImages = [
+    { src: "/placeholder.svg?height=300&width=400&text=Adams+Bridge", alt: "Aerial view of Adam's Bridge showing the chain of coral and limestone formations" },
+    { src: "/placeholder.svg?height=300&width=400&text=Rama+Setu+Satellite", alt: "Satellite view of Adam's Bridge (Rama Setu)" }
+  ]
+
+  const mannarBeachesImages = [
+    { src: "/placeholder.svg?height=300&width=400&text=Mannar+Beaches", alt: "Pristine beaches of Mannar with white sand and clear waters" },
+    { src: "/Mannar.jpg", alt: "Sunset over Mannar Island beach" }
+  ]
+
+  const mannarFortImages = [
+    { src: "/Mannar-Fort.jpg", alt: "Historic Mannar Fort with stone walls and ramparts overlooking the sea" },
+    { src: "/Mannar-Fort1.jpg", alt: "Inside Mannar Fort ramparts and walkways" },
+    { src: "/Mannar-Fort2.jpg", alt: "Inside Mannar Fort ramparts and walkways" }
+  ]
+
+  const mannarReligiousImages = [
+    { src: "/placeholder.svg?height=300&width=400&text=Religious+Sites", alt: "Ancient temple architecture in Mannar showing diverse religious heritage" },
+    { src: "/placeholder.svg?height=300&width=400&text=Church+Mosque+Temple", alt: "Various religious sites in Mannar including temples, churches and mosques" }
+  ]
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -145,13 +173,9 @@ export default function MannarGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400&text=Baobab+Trees"
-                    alt="Majestic baobab trees in Mannar with their distinctive bottle-shaped trunks against blue sky"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-lg overflow-hidden">
+                    <ImageCarousel images={mannarCarouselImages} />
+                  </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Mannar is home to some of the most magnificent baobab trees outside of Africa and Madagascar.
@@ -217,13 +241,9 @@ export default function MannarGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400&text=Adams+Bridge"
-                    alt="Aerial view of Adam's Bridge showing the chain of coral and limestone formations"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-lg overflow-hidden">
+                    <ImageCarousel images={mannarAdamBridgeImages} />
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -235,13 +255,9 @@ export default function MannarGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400&text=Mannar+Beaches"
-                    alt="Pristine beaches of Mannar with white sand, clear blue water, and minimal development"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-lg overflow-hidden">
+                    <ImageCarousel images={mannarBeachesImages} />
+                  </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Mannar&apos;s 130 km coastline offers some of Sri Lanka&apos;s most pristine and undeveloped beaches. These
@@ -289,13 +305,9 @@ export default function MannarGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400&text=Mannar+Fort"
-                    alt="Historic Mannar Fort with stone walls and ramparts overlooking the sea"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-lg overflow-hidden">
+                    <ImageCarousel images={mannarFortImages} />
+                  </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Built by the Portuguese in 1560 and later expanded by the Dutch, Mannar Fort stands as a testament
@@ -355,13 +367,9 @@ export default function MannarGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400&text=Religious+Sites"
-                    alt="Ancient temple architecture in Mannar showing diverse religious heritage"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <div className="rounded-lg overflow-hidden">
+                    <ImageCarousel images={mannarReligiousImages} />
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -557,6 +565,87 @@ export default function MannarGuide() {
                   <li>• Sunset viewing opportunities</li>
                   <li>• Unique adventure experience</li>
                 </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Delft Island</CardTitle>
+                <CardDescription>Rugged island with wild horses and colonial ruins</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Delft-Island.jpeg"
+                  alt="Delft Island rugged landscape with wild ponies and coral rock formations"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  A short boat ride from Mannar, Delft Island is known for its wild ponies, ancient baobabs, and
+                  Portuguese-era ruins — an unforgettable offbeat excursion.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/delft-island" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Nainativu</CardTitle>
+                <CardDescription>Ancient Hindu pilgrimage island</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Nainativu.jpeg"
+                  alt="Nainativu island temple and coastal view with pilgrims and traditional boats"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  A sacred island with centuries-old temples and a serene coastal atmosphere; popular with pilgrims
+                  and history buffs alike.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/nainativu" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Jaffna</CardTitle>
+                <CardDescription>Vibrant cultural city — 2-hour drive</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Jaffna.jpg"
+                  alt="Jaffna cityscape with Nallur Kandaswamy Kovil and coastal skyline"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  The cultural heart of the north, Jaffna offers temples, vibrant markets, and unique Tamil cuisine —
+                  perfect for a day trip from Mannar.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/jaffna" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>

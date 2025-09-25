@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Mountain, Thermometer, ChevronLeft, ChevronRight } from "lucide-react"
+import { haggalaGardenImages } from "./haggalaGardenImages"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -429,6 +430,45 @@ export default function NuwaraEliyaTravelGuide() {
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                         Perfect for picnics and photography
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Haggala Botanical Garden */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Haggala Botanical Garden</CardTitle>
+                <CardDescription>Sri Lanka's second largest botanical garden, famed for its cool-climate blooms</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={haggalaGardenImages}
+                    alt="Colorful flowers and lush landscapes at Haggala Botanical Garden, Nuwara Eliya"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Located just 10km from Nuwara Eliya, Haggala Botanical Garden is a floral paradise set against the dramatic backdrop of Hakgala Rock. Established in 1861, it is renowned for its vibrant displays of roses, orchids, ferns, and rare alpine plants that thrive in the region's cool, misty climate.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Over 10,000 species of flora, including rare orchids and medicinal plants
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Best time to visit: March–April for the rose and orchid blooms
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Picturesque walking paths, picnic spots, and mountain views
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Family-friendly, with a dedicated children's garden
                       </li>
                     </ul>
                   </div>

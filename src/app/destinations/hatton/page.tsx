@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import Image from "next/image"
+import Link from "next/link"
 import { MapPin, Landmark, Star, Clock, Users, CheckCircle, Train, Coffee } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Hatton Sri Lanka: Complete Travel Guide 2025 | Tea Country, Waterfalls & Adventure",
@@ -188,7 +190,7 @@ export default function HattonTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/adams-peak-hatton.jpg"
+                    src="/Sri-pada-from-hatton.jpg"
                     alt="Pilgrims climbing Adam's Peak at dawn near Hatton"
                     width={400}
                     height={300}
@@ -262,7 +264,7 @@ export default function HattonTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/st-clairs-falls-hatton.jpg"
+                    src="/St-Clairs-Falls.jpg"
                     alt="St. Clair's Falls cascading through tea country near Hatton"
                     width={400}
                     height={300}
@@ -434,6 +436,85 @@ export default function HattonTravelGuide() {
               </ul>
             </CardContent>
           </Card>
+        </section>
+
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Nuwara Eliya</CardTitle>
+                <CardDescription>Scenic hill station & colonial charm</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Nuwara-Eliya.jpg"
+                  alt="Nuwara Eliya lake with colonial buildings and rolling hills"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Known as 'Little England', Nuwara Eliya offers cool climates, colonial architecture, and beautiful
+                  tea gardens — a delightful extension to a Hatton itinerary.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/nuwara-eliya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Ella</CardTitle>
+                <CardDescription>Scenic village with the Nine Arch Bridge</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Nine-arch-ella.jpg"
+                  alt="Nine Arch Bridge in Ella surrounded by lush tea plantations"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  A short scenic drive from Hatton, Ella is famous for hiking, panoramic views and relaxed cafes.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ella-town" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Baker's Falls</CardTitle>
+                <CardDescription>Forest waterfall near Hakgala tea estates</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Bakers-Falls.jpg"
+                  alt="Baker's Falls cascading through montane forest near Hakgala"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  A beautiful cascade set in the Horton Plains foothills — perfect for nature lovers and photographers.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/bakers-falls" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
         {/* Final Inspiration */}

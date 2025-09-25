@@ -1244,9 +1244,9 @@ export default function BentotaGuide() {
 
                 {/* Final Tips */}
                 <section className="mb-12">
-                    <Card className="bg-gradient-to-r from-blue-50 to-cyan-50 border-blue-200">
+                    <Card className="bg-gradient-to-r from-blue-50 to-cyan-50 border-blue-200 dark:from-slate-800 dark:to-slate-700 dark:border-slate-600">
                         <CardHeader>
-                            <CardTitle className="text-blue-800">Your Bentota Beach Paradise</CardTitle>
+                            <CardTitle className="text-blue-800 dark:text-blue-200">Your Bentota Beach Paradise</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-muted-foreground mb-4">
@@ -1260,7 +1260,7 @@ export default function BentotaGuide() {
                                 sunsets over the Indian Ocean.
                             </p>
                             <p className="text-muted-foreground font-medium">
-                                Welcome to Bentota  where every day feels like a tropical dream! 🏖️🌊
+                                Welcome to Bentota where every day feels like a tropical dream! 🏖️🌊
                             </p>
                         </CardContent>
                     </Card>
