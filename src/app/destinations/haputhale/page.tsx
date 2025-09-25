@@ -209,10 +209,10 @@ export default function HaputaleGuide() {
                         title: "Lipton's Seat - Sunrise View"
                       },
                       {
-                        src: "/Haputhale.jpeg",
+                        src: "/Lipton-seat1.jpg",
                         alt: "Wide view of Haputale mountains and tea fields",
                         caption: "Haputale's rolling tea hills",
-                        title: "Haputale Tea Country"
+                        title: "Viewpoint Tea Country"
                       },
                       {
                         src: "/placeholder.svg?height=300&width=400",

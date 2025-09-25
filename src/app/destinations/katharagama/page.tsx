@@ -262,6 +262,47 @@ export default function KatharagamaGuide() {
           </Card>
         </section>
 
+          {/* How to Get to Katharagama */}
+          <section className="mb-16" id="how-to-get">
+            <Card className="border-2 border-blue-200 dark:border-blue-700 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/40 dark:to-cyan-900/40">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3 text-3xl text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-8 h-8 text-blue-500" />
+                  How to Get to Katharagama
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="font-semibold text-xl text-blue-700 dark:text-blue-300 mb-4">By Road</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>• <strong>From Colombo:</strong> 5–6 hours (290 km) via Ratnapura and Embilipitiya</li>
+                      <li>• <strong>From Kandy:</strong> 4–5 hours (220 km) via Badulla and Wellawaya</li>
+                      <li>• <strong>From Yala National Park:</strong> 30 minutes (20 km)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-xl text-blue-700 dark:text-blue-300 mb-4">By Public Transport</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li>• <strong>Bus:</strong> Direct buses from Colombo, Kandy, and Matara; frequent local buses from nearby towns</li>
+                      <li>• <strong>Train:</strong> Nearest station is in Matara or Badulla, then bus/taxi to Katharagama</li>
+                      <li>• <strong>Tuk-tuk:</strong> Widely available for short trips and local travel</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/40 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Book accommodation in advance during festival season</li>
+                    <li>• Roads can be busy during major religious events</li>
+                    <li>• Early morning or late evening travel recommended for cooler weather</li>
+                    <li>• Combine your visit with a safari in Yala National Park for a unique experience</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
         {/* Sacred Sites & Temples */}
   <section className="mb-16" id="sacred-sites">
           <h2 className="text-4xl font-bold mb-10 text-foreground">Sacred Sites & Temples in Katharagama</h2>
