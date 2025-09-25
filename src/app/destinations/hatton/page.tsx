@@ -459,11 +459,11 @@ export default function HattonTravelGuide() {
                   Known as 'Little England', Nuwara Eliya offers cool climates, colonial architecture, and beautiful
                   tea gardens — a delightful extension to a Hatton itinerary.
                 </p>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/nuwara-eliya" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/nuwara-eliya" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
               </CardContent>
             </Card>
 
@@ -493,13 +493,13 @@ export default function HattonTravelGuide() {
 
             <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
-                <CardTitle className="text-lg">Baker's Falls</CardTitle>
+                <CardTitle className="text-lg">Baker&apos;s Falls</CardTitle>
                 <CardDescription>Forest waterfall near Hakgala tea estates</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
                   src="/Bakers-Falls.jpg"
-                  alt="Baker's Falls cascading through montane forest near Hakgala"
+                  alt="Baker&apos;s Falls cascading through montane forest near Hakgala"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"

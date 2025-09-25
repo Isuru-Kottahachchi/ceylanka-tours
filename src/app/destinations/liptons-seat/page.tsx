@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { MapPin, Landmark, Star, Clock, Users, CheckCircle, Train, Coffee } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { MapPin, Landmark, Coffee } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
@@ -25,15 +24,15 @@ export default function LiptonsSeatPage() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Lipton-seat.jpg"
-          alt="Panoramic view from Lipton's Seat overlooking tea estates in Haputale, Sri Lanka"
+          alt="Panoramic view from Lipton&apos;s Seat overlooking tea estates in Haputale, Sri Lanka"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Lipton's Seat</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka’s Legendary Tea Country Viewpoint</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Lipton&apos;s Seat</h1>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&rsquo;s Legendary Tea Country Viewpoint</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -67,10 +66,10 @@ export default function LiptonsSeatPage() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Lipton's Seat: The Crown of Sri Lanka’s Tea Country</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Lipton's Seat is a world-famous viewpoint perched high above the emerald tea fields of Haputale, in Sri Lanka’s central highlands. From this iconic spot, you can gaze across rolling plantations, misty valleys, and distant peaks—just as Sir Thomas Lipton did over a century ago.
+              Lipton&apos;s Seat is a world-famous viewpoint perched high above the emerald tea fields of Haputale, in Sri Lanka&rsquo;s central highlands. From this iconic spot, you can gaze across rolling plantations, misty valleys, and distant peaks—just as Sir Thomas Lipton did over a century ago.
             </p>
             <p className="text-lg">
-              Whether you’re a nature lover, history buff, or tea enthusiast, Lipton's Seat offers a unique blend of breathtaking scenery and fascinating heritage. It’s a must-visit for anyone exploring the island’s hill country.
+              Whether you&rsquo;re a nature lover, history buff, or tea enthusiast, Lipton&apos;s Seat offers a unique blend of breathtaking scenery and fascinating heritage. It&rsquo;s a must-visit for anyone exploring the island&rsquo;s hill country.
             </p>
           </div>
         </section>
@@ -80,10 +79,10 @@ export default function LiptonsSeatPage() {
           <h2 className="text-2xl font-bold mb-4 text-foreground">The Story of Sir Thomas Lipton & His Tea Empire</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p>
-              Lipton's Seat is named after Sir Thomas Lipton, the Scottish tea magnate who revolutionized the global tea trade. Arriving in Sri Lanka (then Ceylon) in the late 19th century, Lipton purchased vast tracts of land in Haputale and established the Dambatenne Tea Estate. His vision was simple: to bring high-quality Ceylon tea directly to the world, making it affordable and accessible for all.
+              Lipton&apos;s Seat is named after Sir Thomas Lipton, the Scottish tea magnate who revolutionized the global tea trade. Arriving in Sri Lanka (then Ceylon) in the late 19th century, Lipton purchased vast tracts of land in Haputale and established the Dambatenne Tea Estate. His vision was simple: to bring high-quality Ceylon tea directly to the world, making it affordable and accessible for all.
             </p>
             <p>
-              Sir Thomas Lipton was known for his hands-on approach. He would often climb to this very spot—now called Lipton's Seat—to survey his flourishing plantations and chat with estate workers. His legacy lives on in the Lipton tea brand, which remains a household name worldwide.
+              Sir Thomas Lipton was known for his hands-on approach. He would often climb to this very spot—now called Lipton&apos;s Seat—to survey his flourishing plantations and chat with estate workers. His legacy lives on in the Lipton tea brand, which remains a household name worldwide.
             </p>
             <ul>
               <li><strong>Born:</strong> Glasgow, Scotland, 1848</li>
@@ -98,10 +97,10 @@ export default function LiptonsSeatPage() {
           <h2 className="text-2xl font-bold mb-4 text-foreground">Lipton's Seat: A Panoramic Wonder</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p>
-              The journey to Lipton's Seat is as memorable as the destination itself. Winding through lush tea gardens, you’ll pass smiling tea pluckers and colonial-era factories before reaching the summit. On a clear day, the view stretches across five provinces, with dramatic vistas of tea estates, lakes, and distant mountains.
+              The journey to Lipton&apos;s Seat is as memorable as the destination itself. Winding through lush tea gardens, you&rsquo;ll pass smiling tea pluckers and colonial-era factories before reaching the summit. On a clear day, the view stretches across five provinces, with dramatic vistas of tea estates, lakes, and distant mountains.
             </p>
             <p>
-              Sunrise is especially magical here, as golden light spills over the misty hills. There’s a statue of Sir Thomas Lipton at the viewpoint, commemorating his enduring connection to Sri Lanka’s tea country.
+              Sunrise is especially magical here, as golden light spills over the misty hills. There&rsquo;s a statue of Sir Thomas Lipton at the viewpoint, commemorating his enduring connection to Sri Lanka&rsquo;s tea country.
             </p>
           </div>
         </section>
@@ -114,7 +113,7 @@ export default function LiptonsSeatPage() {
               <li><strong>Location:</strong> Near Haputale, Badulla District, Sri Lanka</li>
               <li><strong>Best Time:</strong> Early morning for sunrise and clear views</li>
               <li><strong>Getting There:</strong> Scenic drive or tuk-tuk from Haputale; hike from Dambatenne Tea Factory (about 7 km)</li>
-              <li><strong>Facilities:</strong> Small café, rest area, and statue of Sir Thomas Lipton</li>
+              <li><strong>Facilities:</strong> Small caf&eacute;, rest area, and statue of Sir Thomas Lipton</li>
               <li><strong>Tip:</strong> Combine your visit with a tour of the Dambatenne Tea Factory for a full tea country experience</li>
             </ul>
           </div>
