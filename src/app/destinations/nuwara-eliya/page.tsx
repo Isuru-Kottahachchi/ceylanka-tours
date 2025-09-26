@@ -446,7 +446,7 @@ export default function NuwaraEliyaTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>Haggala Botanical Garden</CardTitle>
-                <CardDescription>Sri Lanka's second largest botanical garden, famed for its cool-climate blooms</CardDescription>
+                <CardDescription>Sri Lanka&apos;s second largest botanical garden, famed for its cool-climate blooms</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -456,7 +456,7 @@ export default function NuwaraEliyaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Located just 10km from Nuwara Eliya, Haggala Botanical Garden is a floral paradise set against the dramatic backdrop of Hakgala Rock. Established in 1861, it is renowned for its vibrant displays of roses, orchids, ferns, and rare alpine plants that thrive in the region's cool, misty climate.
+                      Located just 10km from Nuwara Eliya, Haggala Botanical Garden is a floral paradise set against the dramatic backdrop of Hakgala Rock. Established in 1861, it is renowned for its vibrant displays of roses, orchids, ferns, and rare alpine plants that thrive in the region&apos;s cool, misty climate.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -473,7 +473,7 @@ export default function NuwaraEliyaTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Family-friendly, with a dedicated children's garden
+                        Family-friendly, with a dedicated children&apos;s garden
                       </li>
                     </ul>
                   </div>
