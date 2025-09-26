@@ -456,7 +456,7 @@ export default function HattonTravelGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Known as 'Little England', Nuwara Eliya offers cool climates, colonial architecture, and beautiful
+                  Known as &apos;Little England&apos;, Nuwara Eliya offers cool climates, colonial architecture, and beautiful
                   tea gardens — a delightful extension to a Hatton itinerary.
                 </p>
                   <div className="mt-4 flex justify-start">

@@ -63,7 +63,7 @@ export default function LiptonsSeatPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12 scroll-mt-40" id="introduction">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Lipton's Seat: The Crown of Sri Lanka’s Tea Country</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Lipton&apos;s Seat: The Crown of Sri Lanka&rsquo;s Tea Country</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
               Lipton&apos;s Seat is a world-famous viewpoint perched high above the emerald tea fields of Haputale, in Sri Lanka&rsquo;s central highlands. From this iconic spot, you can gaze across rolling plantations, misty valleys, and distant peaks—just as Sir Thomas Lipton did over a century ago.
@@ -94,7 +94,7 @@ export default function LiptonsSeatPage() {
 
         {/* The Viewpoint Section */}
         <section className="mb-12 scroll-mt-40" id="viewpoint">
-          <h2 className="text-2xl font-bold mb-4 text-foreground">Lipton's Seat: A Panoramic Wonder</h2>
+          <h2 className="text-2xl font-bold mb-4 text-foreground">Lipton&apos;s Seat: A Panoramic Wonder</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p>
               The journey to Lipton&apos;s Seat is as memorable as the destination itself. Winding through lush tea gardens, you&rsquo;ll pass smiling tea pluckers and colonial-era factories before reaching the summit. On a clear day, the view stretches across five provinces, with dramatic vistas of tea estates, lakes, and distant mountains.
@@ -107,7 +107,7 @@ export default function LiptonsSeatPage() {
 
         {/* Visiting Guide Section */}
         <section className="mb-12 scroll-mt-40" id="visiting-guide">
-          <h2 className="text-2xl font-bold mb-4 text-foreground">How to Visit Lipton's Seat</h2>
+          <h2 className="text-2xl font-bold mb-4 text-foreground">How to Visit Lipton&apos;s Seat</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <ul>
               <li><strong>Location:</strong> Near Haputale, Badulla District, Sri Lanka</li>
