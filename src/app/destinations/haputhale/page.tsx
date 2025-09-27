@@ -787,7 +787,7 @@ export default function HaputaleGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Lipton's Seat offers breathtaking views of the surrounding tea estates and is a must-visit for nature lovers.
+                  Lipton&apos;s Seat offers breathtaking views of the surrounding tea estates and is a must-visit for nature lovers.
                 </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/badulla" passHref legacyBehavior>
@@ -837,7 +837,7 @@ export default function HaputaleGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Diyaluma Falls is one of Sri Lanka's tallest waterfalls, offering stunning views and natural pools for a refreshing dip.
+                  Diyaluma Falls is one of Sri Lanka&apos;s tallest waterfalls, offering stunning views and natural pools for a refreshing dip.
                 </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/ella" passHref legacyBehavior>

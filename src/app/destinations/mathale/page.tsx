@@ -606,7 +606,7 @@ export default function MataleGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Kalabokka View Point is one of Matale's best-kept secrets, offering breathtaking 360-degree views of the Knuckles Mountain Range, lush tea estates, and distant valleys. The viewpoint is especially magical at sunrise and sunset, when the mist rolls over the hills and the landscape glows with golden light.
+                      Kalabokka View Point is one of Matale&apos;s best-kept secrets, offering breathtaking 360-degree views of the Knuckles Mountain Range, lush tea estates, and distant valleys. The viewpoint is especially magical at sunrise and sunset, when the mist rolls over the hills and the landscape glows with golden light.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">

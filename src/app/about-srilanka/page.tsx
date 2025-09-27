@@ -192,10 +192,13 @@ function SriLankaAboutCompact() {
 
                 {/* More About Sri Lanka Button */}
                 <div className="text-center mt-8" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 flex items-center mx-auto cursor-pointer">
+                    <a 
+                        href="/more-about-sri-lanka"
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center justify-center mx-auto cursor-pointer"
+                    >
                         <Globe className="h-5 w-5 mr-2" />
                         More About Sri Lanka
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>

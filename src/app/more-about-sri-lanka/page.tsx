@@ -12,7 +12,7 @@ const MoreAboutSriLanka = () => {
                         Discover Sri Lanka
                     </h1>
                     <p className="text-xl text-gray-600 dark:text-gray-300">
-                        A land of rich culture, breathtaking landscapes, and fascinating history, Sri Lanka is also probably the world's most friendly and welcoming country.
+                        A land of rich culture, breathtaking landscapes, and fascinating history, Sri Lanka is also probably the world&apos;s most friendly and welcoming country.
                     </p>
                 </div>
 
@@ -85,8 +85,7 @@ const MoreAboutSriLanka = () => {
                         <li><strong>1505:</strong> The Portuguese arrive, marking the beginning of European influence. They establish control over coastal areas and introduce Christianity.</li>
                         <li><strong>1658:</strong> The Dutch take over from the Portuguese, focusing on trade and fortifications, including the iconic Galle Fort.</li>
                         <li><strong>1796:</strong> The British replace the Dutch, eventually making Sri Lanka (then Ceylon) a crown colony in 1802. They introduce tea plantations and modern infrastructure.</li>
-                        <li><strong>1948:</strong> Sri Lanka gains independence, ending nearly 450 years of colonial rule.
-                        </li>
+                        <li><strong>1948:</strong> Sri Lanka gains independence, ending nearly 450 years of colonial rule.</li>
                     </ul>
                 </div>
 
@@ -102,8 +101,8 @@ const MoreAboutSriLanka = () => {
                 <div className="mb-12">
                     <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Interesting Facts</h2>
                     <ul className="list-disc list-inside text-lg text-gray-700 dark:text-gray-300">
-                        <li>Sri Lanka is one of the world's top biodiversity hotspots.</li>
-                        <li>The island is home to the world's oldest human-planted tree, the Jaya Sri Maha Bodhi.</li>
+                        <li>Sri Lanka is one of the world&apos;s top biodiversity hotspots.</li>
+                        <li>The island is home to the world&apos;s oldest human-planted tree, the Jaya Sri Maha Bodhi.</li>
                         <li>It has a literacy rate of over 92%, one of the highest in South Asia.</li>
                     </ul>
                 </div>

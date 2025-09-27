@@ -160,25 +160,25 @@ export default function OhiyaTravelGuide() {
             </p>
             <ul className="list-disc list-inside">
               <li>
-                <strong>Devil's Staircase:</strong> A thrilling hiking trail with steep climbs, sharp turns, and breathtaking views of the surrounding valleys and tea plantations.
+                <strong>Devil&apos;s Staircase:</strong> A thrilling hiking trail with steep climbs, sharp turns, and breathtaking views of the surrounding valleys and tea plantations.
               </li>
               <li>
                 <strong>Idalgashinna Hike:</strong> A scenic trek that takes you through lush greenery, misty hills, and panoramic vistas, perfect for adventure enthusiasts.
               </li>
               <li>
-                <strong>Horton Plains National Park:</strong> Just a short distance from Ohiya, this UNESCO World Heritage site is home to the famous World's End cliff and Baker's Falls.
+                <strong>Horton Plains National Park:</strong> Just a short distance from Ohiya, this UNESCO World Heritage site is home to the famous World&apos;s End cliff and Baker&apos;s Falls.
               </li>
             </ul>
           </div>
         </section>
-        {/* What You'll See During Your Visit */}
+        {/* What You&apos;ll See During Your Visit */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">What You'll See During Your Visit</h2>
+          <h2 className="text-3xl font-bold mb-6">What You&apos;ll See During Your Visit</h2>
           <div className="space-y-8">
-            {/* Devil's Staircase */}
+            {/* Devil&apos;s Staircase */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Devil's Staircase</CardTitle>
+                <CardTitle>1. Devil&apos;s Staircase</CardTitle>
                 <CardDescription>A thrilling hike with breathtaking views</CardDescription>
               </CardHeader>
               <CardContent>
@@ -187,21 +187,21 @@ export default function OhiyaTravelGuide() {
                     images={[
                       {
                         src: "/DevilsStaircase.jpeg",
-                        alt: "Devil's Staircase trail view 1",
+                        alt: "Devil&apos;s Staircase trail view 1",
                         caption: "Steep and scenic paths",
-                        title: "Devil's Staircase - Adventure Awaits",
+                        title: "Devil&apos;s Staircase - Adventure Awaits",
                       },
                       {
                         src: "/devils-staircase2.jpg",
-                        alt: "Devil's Staircase trail view 2",
+                        alt: "Devil&apos;s Staircase trail view 2",
                         caption: "Breathtaking mountain views",
-                        title: "Devil's Staircase - Nature's Beauty",
+                        title: "Devil&apos;s Staircase - Nature&apos;s Beauty",
                       },
                     ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Devil's Staircase is a thrilling hiking trail that challenges adventurers with its steep paths and rugged terrain. The journey rewards you with panoramic views of the surrounding hills and valleys.
+                      The Devil&apos;s Staircase is a thrilling hiking trail that challenges adventurers with its steep paths and rugged terrain. The journey rewards you with panoramic views of the surrounding hills and valleys.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -244,7 +244,7 @@ export default function OhiyaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Idalgashinna Hike offers a serene journey through lush tea plantations and misty landscapes. It's a perfect trail for those seeking tranquility and natural beauty.
+                      The Idalgashinna Hike offers a serene journey through lush tea plantations and misty landscapes. It&apos;s a perfect trail for those seeking tranquility and natural beauty.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -265,7 +265,7 @@ export default function OhiyaTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>3. Horton Plains National Park</CardTitle>
-                <CardDescription>Home to World's End and Baker's Falls</CardDescription>
+                <CardDescription>Home to World&apos;s End and Baker&apos;s Falls</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -274,25 +274,25 @@ export default function OhiyaTravelGuide() {
                       {
                         src: "/horton-plains1.jpg",
                         alt: "Horton Plains view 1",
-                        caption: "World's End viewpoint",
+                        caption: "World&apos;s End viewpoint",
                         title: "Horton Plains - Majestic Views",
                       },
                       {
                         src: "/horton-plains2.jpg",
                         alt: "Horton Plains view 2",
-                        caption: "Baker's Falls in full flow",
-                        title: "Horton Plains - Nature's Wonder",
+                        caption: "Baker&apos;s Falls in full flow",
+                        title: "Horton Plains - Nature&apos;s Wonder",
                       },
                     ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Horton Plains National Park is a UNESCO World Heritage Site known for its stunning landscapes, diverse wildlife, and iconic attractions like World's End and Baker's Falls.
+                      Horton Plains National Park is a UNESCO World Heritage Site known for its stunning landscapes, diverse wildlife, and iconic attractions like World&apos;s End and Baker&apos;s Falls.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Spectacular views from World's End
+                        Spectacular views from World&apos;s End
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
