@@ -770,62 +770,80 @@ export default function HaputaleGuide() {
 
         {/* Nearby Attractions */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
+          <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Lipton's Seat Card */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Badulla</CardTitle>
+                <CardDescription>Panoramic views of tea plantations</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/liptons-seat.jpg"
+                  alt="Lipton's Seat"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Lipton's Seat offers breathtaking views of the surrounding tea estates and is a must-visit for nature lovers.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/badulla" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Adisham Bungalow Card */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg">Bandarawela</CardTitle>
-                <CardDescription>Perfect climate hill station - 1 hour</CardDescription>
+                <CardDescription>Historic colonial mansion</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Bandarawela town with colonial architecture and perfect weather conditions"
+                  src="/adisham-bungalow.jpg"
+                  alt="Adisham Bungalow"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Experience Sri Lanka&apos;s most perfect climate and visit the ancient Dowa Rock Temple.
+                  Adisham Bungalow is a charming colonial-era mansion surrounded by lush gardens and serene landscapes.
                 </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/bandarawela" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
+            {/* Diyaluma Falls Card */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg">Ella</CardTitle>
-                <CardDescription>Nine Arch Bridge - 1.5 hours</CardDescription>
+                <CardDescription>Spectacular cascading waterfall</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Ella's famous Nine Arch Bridge with train crossing through tea country"
+                  src="/diyaluma-falls.jpg"
+                  alt="Diyaluma Falls"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Visit the iconic Nine Arch Bridge and hike Little Adam&apos;s Peak for more stunning views.
+                  Diyaluma Falls is one of Sri Lanka's tallest waterfalls, offering stunning views and natural pools for a refreshing dip.
                 </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Nuwara Eliya</CardTitle>
-                <CardDescription>Little England - 2.5 hours</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Nuwara Eliya's colonial architecture and cool climate hill station atmosphere"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Explore Sri Lanka&apos;s &quot;Little England&quot; with colonial charm and beautiful lake scenery.
-                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ella" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>

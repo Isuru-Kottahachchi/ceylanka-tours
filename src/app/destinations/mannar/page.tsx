@@ -59,7 +59,7 @@ export default function MannarGuide() {
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
-  <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Mannar Island</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Mystical Northern Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -79,7 +79,7 @@ export default function MannarGuide() {
         </div>
       </section>
 
-  <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Mannar: Where Time Stands Still</h2>
@@ -581,7 +581,7 @@ export default function MannarGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/Delft-Island.jpeg"
+                  src="/Delft-Island.jpg"
                   alt="Delft Island rugged landscape with wild ponies and coral rock formations"
                   width={300}
                   height={200}
@@ -631,7 +631,7 @@ export default function MannarGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/Jaffna.jpg"
+                  src="/Nallur-Kovil.jpg"
                   alt="Jaffna cityscape with Nallur Kandaswamy Kovil and coastal skyline"
                   width={300}
                   height={200}

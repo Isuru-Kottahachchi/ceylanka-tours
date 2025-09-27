@@ -151,6 +151,47 @@ export default function BadullaGuide() {
           </div>
 
           <div className="space-y-8">
+            {/* Gale Pansala (Stone Temple) */}
+            <Card>
+              <CardHeader>
+                <CardTitle>1. Gale Pansala (Stone Temple)</CardTitle>
+                <CardDescription>Ancient Buddhist cave temple with unique stone architecture</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Badulla.jpeg"
+                    alt="Gale Pansala ancient stone cave temple in Badulla with Buddha statues and rock carvings"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Gale Pansala, also known as the Stone Temple, is a remarkable Buddhist cave temple carved into solid rock. Dating back centuries, it features serene Buddha statues, ancient murals, and intricate stone carvings that showcase the region's rich spiritual heritage.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Unique stone architecture and cave shrines
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ancient Buddha statues and murals
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Peaceful setting ideal for meditation
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Off the beaten path, less crowded
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
             {/* Muthiyangana Temple */}
             <Card>
               <CardHeader>
@@ -229,7 +270,7 @@ export default function BadullaGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Dunhinda-Falls.jpg"
                     alt="Dunhinda Falls cascading 64 meters through lush green jungle with mist creating rainbows"
                     width={400}
                     height={300}
@@ -634,7 +675,7 @@ export default function BadullaGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/Ella-Town.jpg"
+                  src="/Ella.jpg"
                   alt="Ella town with Nine Arch Bridge and Little Adam's Peak visible in the distance"
                   width={300}
                   height={200}

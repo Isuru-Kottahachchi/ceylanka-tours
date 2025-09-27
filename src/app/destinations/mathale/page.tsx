@@ -61,13 +61,13 @@ export default function MataleGuide() {
       </section>
 
       {/* Ad Banner - Top */}
-      <div className="max-w-4xl mx-auto px-4 py-4">
+  <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
           [Advertisement Space - 728x90 Leaderboard - Spice Garden Tours & Culinary Experiences]
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+  <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Matale: Where Spices Tell Stories</h2>
@@ -438,7 +438,7 @@ export default function MataleGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Sera-Ella.jpg"
                     alt="Sera Ella waterfall cascading through lush tropical forest with natural pools and rocks"
                     width={400}
                     height={300}
@@ -584,6 +584,49 @@ export default function MataleGuide() {
                     height={300}
                     className="rounded-lg shadow-lg"
                   />
+                </div>
+              </CardContent>
+            </Card>
+              {/* ...existing code for Riverston Peak, Spice Gardens, Aluvihare Rock Temple, Sembuwatta Lake... */}
+
+            {/* Kalabokka View Point */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Kalabokka View Point</CardTitle>
+                <CardDescription>Stunning panoramic viewpoint over the Knuckles and central highlands</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Kalabokka View Point with dramatic mountain vistas, rolling tea fields, and misty valleys in Matale"
+                    width={400}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Kalabokka View Point is one of Matale's best-kept secrets, offering breathtaking 360-degree views of the Knuckles Mountain Range, lush tea estates, and distant valleys. The viewpoint is especially magical at sunrise and sunset, when the mist rolls over the hills and the landscape glows with golden light.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Panoramic vistas of Knuckles and central highlands
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ideal for sunrise, sunset, and photography
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Surrounded by tea plantations and rural villages
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Peaceful, less crowded than other viewpoints
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -863,7 +906,7 @@ export default function MataleGuide() {
           <h2 className="text-3xl font-bold mb-6">Nearby Places & Archaeological Wonders</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Link href="/destinations/dambulla" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
+              <Card className="cursor-pointer min-h-[430px] flex flex-col">
                 <CardHeader>
                   <CardTitle className="text-lg">Dambulla Cave Temple</CardTitle>
                   <CardDescription>UNESCO World Heritage Site</CardDescription>
@@ -889,7 +932,7 @@ export default function MataleGuide() {
             </Link>
 
             <Link href="/destinations/sigiriya-rock-fortress" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
+              <Card className="cursor-pointer min-h-[430px] flex flex-col">
                 <CardHeader>
                   <CardTitle className="text-lg">Sigiriya Rock Fortress</CardTitle>
                   <CardDescription>Ancient Royal Citadel</CardDescription>
@@ -915,7 +958,7 @@ export default function MataleGuide() {
             </Link>
             
             <Link href="/destinations/kandy" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
+              <Card className="cursor-pointer min-h-[430px] flex flex-col">
                 <CardHeader>
                   <CardTitle className="text-lg">Kandy</CardTitle>
                   <CardDescription>Cultural Capital</CardDescription>
@@ -941,7 +984,7 @@ export default function MataleGuide() {
             </Link>
 
             <Link href="/destinations/ritigala" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
+              <Card className="cursor-pointer min-h-[430px] flex flex-col">
                 <CardHeader>
                   <CardTitle className="text-lg">Ritigala Monastery</CardTitle>
                   <CardDescription>Ancient Forest Monastery</CardDescription>
@@ -967,7 +1010,7 @@ export default function MataleGuide() {
             </Link>
 
             <Link href="/destinations/kurunegala" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
+              <Card className="cursor-pointer min-h-[430px] flex flex-col">
                 <CardHeader>
                   <CardTitle className="text-lg">Kurunegala</CardTitle>
                   <CardDescription>Historic Royal City</CardDescription>
@@ -993,7 +1036,7 @@ export default function MataleGuide() {
             </Link>
 
             <Link href="/destinations/aluvihare" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
+              <Card className="cursor-pointer min-h-[430px] flex flex-col">
                 <CardHeader>
                   <CardTitle className="text-lg">Aluvihare Rock Temple</CardTitle>
                   <CardDescription>Historic Buddhist Site</CardDescription>

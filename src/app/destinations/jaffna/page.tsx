@@ -1308,62 +1308,80 @@ export default function JaffnaGuide() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Northern Destinations</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Link href="/destinations/trincomalee" className="group">
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-video relative">
-                  <Image
-                    src="/Trinco.jpeg"
-                    alt="Trincomalee"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+            {/* Trincomalee Card */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Trincomalee</CardTitle>
+                <CardDescription>Historic port city & beautiful beaches</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Trinco.jpeg"
+                  alt="Trincomalee harbor and Koneswaram Temple"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Trincomalee is famed for its deep-water natural harbor, pristine beaches, and the revered Koneswaram Temple perched on Swami Rock.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/trincomalee" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
                 </div>
-                <CardContent className="p-4">
-                  <h3 className="font-bold text-lg mb-2">Trincomalee</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Historic port city with beautiful beaches and Koneswaram Temple
-                  </p>
-                </CardContent>
-              </Card>
-            </Link>
+              </CardContent>
+            </Card>
 
-            <Link href="/destinations/anuradhapura" className="group">
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-video relative">
-                  <Image
-                    src="/Anuradhapura.jpg"
-                    alt="Anuradhapura"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <CardContent className="p-4">
-                  <h3 className="font-bold text-lg mb-2">Anuradhapura</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Ancient capital with sacred Buddhist monuments and stupas
+            {/* Nainativu Card */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Nainativu</CardTitle>
+                <CardDescription>Ancient capital & Buddhist monuments</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Nainativu.jpg"
+                  alt="Nainativu"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Nainativu is a sacred island known for its ancient temples, including the Naguleswaram Hindu Temple and the Buddhist Nagadeepa Vihara.
                   </p>
-                </CardContent>
-              </Card>
-            </Link>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/nainativu" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
-            <Link href="/destinations/wilpattu-national-park" className="group">
-              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-video relative">
-                  <Image
-                    src="/Wilpattu.jpeg"
-                    alt="Wilpattu National Park"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+            {/* Wilpattu National Park Card */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Wilpattu National Park</CardTitle>
+                <CardDescription>Sri Lanka&apos;s largest national park</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Wilpattu.jpeg"
+                  alt="Wilpattu National Park wildlife and lakes"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Wilpattu is renowned for its leopard population, natural lakes (villus), and untamed wilderness—perfect for wildlife enthusiasts.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/wilpattu-national-park" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
                 </div>
-                <CardContent className="p-4">
-                  <h3 className="font-bold text-lg mb-2">Wilpattu National Park</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Sri Lanka&apos;s largest national park with diverse wildlife
-                  </p>
-                </CardContent>
-              </Card>
-            </Link>
+              </CardContent>
+            </Card>
           </div>
         </section>
       </div>

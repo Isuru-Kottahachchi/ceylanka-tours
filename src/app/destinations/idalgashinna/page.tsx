@@ -24,7 +24,7 @@ export default function IdalgashinnaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/idalgashinna-hero.jpg"
+          src="/Idalgashinna.jpg"
           alt="Idalgashinna railway station surrounded by misty hills and tea plantations"
           fill
           className="object-cover"
@@ -188,7 +188,7 @@ export default function IdalgashinnaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/idalgashinna-station.jpg"
+                    src="/Idalgashinna.jpg"
                     alt="Idalgashinna railway station with mist and tea fields"
                     width={400}
                     height={300}
