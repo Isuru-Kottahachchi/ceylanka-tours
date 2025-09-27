@@ -168,7 +168,7 @@ export default function BadullaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Gale Pansala, also known as the Stone Temple, is a remarkable Buddhist cave temple carved into solid rock. Dating back centuries, it features serene Buddha statues, ancient murals, and intricate stone carvings that showcase the region's rich spiritual heritage.
+                      Gale Pansala, also known as the Stone Temple, is a remarkable Buddhist cave temple carved into solid rock. Dating back centuries, it features serene Buddha statues, ancient murals, and intricate stone carvings that showcase the region&apos;s rich spiritual heritage.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">

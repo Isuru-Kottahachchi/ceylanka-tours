@@ -79,7 +79,7 @@ const MoreAboutSriLanka = () => {
                 <div className="mb-12">
                     <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Colonial Influence</h2>
                     <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-                        The Portuguese, Dutch, and British arrivals have significantly shaped Sri Lanka's history and culture. Here are the key timelines:
+                        The Portuguese, Dutch, and British arrivals have significantly shaped Sri Lanka&apos;s history and culture. Here are the key timelines:
                     </p>
                     <ul className="list-disc list-inside text-lg text-gray-700 dark:text-gray-300">
                         <li><strong>1505:</strong> The Portuguese arrive, marking the beginning of European influence. They establish control over coastal areas and introduce Christianity.</li>

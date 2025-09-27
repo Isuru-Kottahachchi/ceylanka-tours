@@ -33,7 +33,7 @@ export default function MandaramNuwaraGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Mandaram Nuwara</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka's Hidden Misty Valley</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Hidden Misty Valley</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
@@ -145,7 +145,7 @@ export default function MandaramNuwaraGuide() {
                       className="rounded shadow-md object-cover"
                     />
                     <div>
-                      <p className="text-base text-blue-900 font-semibold mb-1">Sri Lanka's Last Valley</p>
+                      <p className="text-base text-blue-900 font-semibold mb-1">Sri Lanka&apos;s Last Valley</p>
                       <p className="text-sm text-blue-800">
                         Mandaram Nuwara is called the &quot;last valley&quot; because it sits at the end of a winding road, surrounded by mountains on three sides and open only to the east. The village is often covered in mist, creating a magical, timeless atmosphere.
                       </p>

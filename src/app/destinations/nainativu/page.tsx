@@ -72,10 +72,10 @@ export default function NainativuTravelGuide() {
               Nainativu, also known as Nagadeepa, is a tiny island off the Jaffna Peninsula, revered by both Buddhists and Hindus for centuries. This sacred land is home to the Nagadeepa Purana Viharaya—one of the holiest Buddhist sites in Sri Lanka—and the vibrant Nagapooshani Amman Kovil, a major Hindu temple dedicated to the goddess Parvati. The island&apos;s unique spiritual atmosphere, where two faiths coexist peacefully, makes it a symbol of reconciliation and religious harmony in Sri Lanka.
             </p>
             <p className="text-lg mb-4">
-              According to Buddhist chronicles, the Buddha himself visited Nagadeepa in the 6th century BCE to resolve a dispute between two Naga kings, bringing peace to the land. Today, pilgrims and travelers alike are drawn to the island's tranquil shores, ancient legends, and colorful rituals. Whether you seek spiritual solace, cultural discovery, or a glimpse into Sri Lanka's multi-faith heritage, Nainativu offers a truly unforgettable experience.
+              According to Buddhist chronicles, the Buddha himself visited Nagadeepa in the 6th century BCE to resolve a dispute between two Naga kings, bringing peace to the land. Today, pilgrims and travelers alike are drawn to the island&apos;s tranquil shores, ancient legends, and colorful rituals. Whether you seek spiritual solace, cultural discovery, or a glimpse into Sri Lanka&apos;s multi-faith heritage, Nainativu offers a truly unforgettable experience.
             </p>
             <p className="text-lg">
-              The journey to Nagadeepa is as memorable as the destination—crossing scenic causeways and taking a short boat ride across the Palk Strait, you'll witness the beauty of the northern lagoons and the resilience of island communities. Plan your visit to coincide with temple festivals for a vibrant display of devotion, music, and tradition.
+              The journey to Nagadeepa is as memorable as the destination—crossing scenic causeways and taking a short boat ride across the Palk Strait, you&apos;ll witness the beauty of the northern lagoons and the resilience of island communities. Plan your visit to coincide with temple festivals for a vibrant display of devotion, music, and tradition.
             </p>
           </div>
         </section>
@@ -151,7 +151,7 @@ export default function NainativuTravelGuide() {
                     <div>
                       <p className="text-base text-blue-900 font-semibold mb-1">A Living Island of Faith</p>
                       <p className="text-sm text-blue-800">
-                        Nainativu is one of the few places in the world where Buddhist and Hindu shrines stand side by side, drawing pilgrims from across Sri Lanka and South India. The island's annual temple festivals are a vibrant celebration of devotion and unity.
+                        Nainativu is one of the few places in the world where Buddhist and Hindu shrines stand side by side, drawing pilgrims from across Sri Lanka and South India. The island&apos;s annual temple festivals are a vibrant celebration of devotion and unity.
                       </p>
                     </div>
                   </div>
@@ -222,7 +222,7 @@ export default function NainativuTravelGuide() {
                   According to the Mahavamsa chronicle, the Buddha visited Nagadeepa in the 6th century BCE to mediate a conflict between two Naga kings, Chulodara and Mahodara. The Nagadeepa Viharaya commemorates this event and is a revered pilgrimage site, especially during the annual Poson festival. The temple complex features a gleaming white stupa, sacred Bo tree, and ancient relics.
                 </p>
                 <p className="text-muted-foreground">
-                  Visitors are welcome to observe rituals, offer flowers, and learn about the island's Buddhist heritage. Modest dress and respectful behavior are expected.
+                  Visitors are welcome to observe rituals, offer flowers, and learn about the island&apos;s Buddhist heritage. Modest dress and respectful behavior are expected.
                 </p>
               </CardContent>
             </Card>
