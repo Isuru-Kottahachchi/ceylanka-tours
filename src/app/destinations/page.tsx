@@ -523,7 +523,7 @@ const destinations = [
     name: "Madu River Safari",
     location: "Southern Province",
     path: "/madu-river-safari",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Madu-river-safari.jpg",
     // rating: 4.3,
     // reviews: 890,
     description: "Fish, Birds and Crocodile watching",

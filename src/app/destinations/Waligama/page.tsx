@@ -3,6 +3,8 @@ import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Sun, Camera, Fish, TreePalm, Utensils, Bed, Car, Train, Users, AlertTriangle } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Weligama Sri Lanka: Complete Travel Guide 2025 | Stilt Fishermen & Surfing Paradise",
@@ -51,9 +53,30 @@ export default function WeligamaTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        {/* Introduction */}
-        <section className="mb-12">
+      {/* Section Navigation */}
+      <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
+          <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Introduction</a>
+          <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
+          <a href="#getting-there" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Getting There</a>
+          <a href="#stilt-fishermen" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Stilt Fishermen</a>
+          <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Attractions</a>
+          <a href="#surfing" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Surfing</a>
+          <a href="#cuisine" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Cuisine</a>
+          <a href="#culture" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Culture</a>
+          <a href="#nature" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Nature</a>
+          <a href="#adventure" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Adventure</a>
+          <a href="#nearby" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Nearby Attractions</a>
+          <a href="#shopping" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Shopping</a>
+          <a href="#accommodation" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Accommodation</a>
+          <a href="#tips" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Travel Tips</a>
+          <a href="#transport" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Getting Around</a>
+        </div>
+      </nav>
+
+      <div className="max-w-6xl mx-auto px-4 py-8">
+  {/* Introduction */}
+  <section className="mb-12 scroll-mt-24" id="introduction">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Weligama: Where Tradition Meets Paradise</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
@@ -74,8 +97,8 @@ export default function WeligamaTravelGuide() {
           [Advertisement Space - 728x90 Leaderboard]
         </div>
 
-        {/* Quick Facts */}
-        <section className="mb-12">
+  {/* Quick Facts */}
+  <section className="mb-12 scroll-mt-24" id="quick-facts">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -129,8 +152,8 @@ export default function WeligamaTravelGuide() {
             </CardContent>
           </Card>
         </section>
-        {/* Getting There */}
-        <section className="mb-12">
+  {/* Getting There */}
+  <section className="mb-12 scroll-mt-24" id="getting-there">
           <h2 className="text-3xl font-bold mb-6">How to Get to Weligama</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
@@ -184,8 +207,8 @@ export default function WeligamaTravelGuide() {
           </div>
         </section>
 
-        {/* Stilt Fishermen */}
-        <section className="mb-12">
+  {/* Stilt Fishermen */}
+  <section className="mb-12 scroll-mt-24" id="stilt-fishermen">
           <h2 className="text-3xl font-bold mb-6">World-Famous Stilt Fishermen Tradition</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
@@ -225,8 +248,8 @@ export default function WeligamaTravelGuide() {
           </div>
         </section>
 
-        {/* Top Attractions */}
-        <section className="mb-12">
+  {/* Top Attractions */}
+  <section className="mb-12 scroll-mt-24" id="attractions">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Weligama</h2>
 
           {/* Ad Space */}
@@ -987,50 +1010,106 @@ export default function WeligamaTravelGuide() {
           </div>
         </section>
 
+        {/* Nearby Attractions & Day Trips */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions & Day Trips</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                 {/* Mirissa */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
-                <CardTitle>Mirissa (15 minutes)</CardTitle>
-                <CardDescription>World-famous whale watching destination</CardDescription>
+                <CardTitle className="text-lg">Hirikatiya</CardTitle>
+                <CardDescription>Surfing paradise</CardDescription>
               </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                <p>Visit the renowned whale watching capital of Sri Lanka. Blue whales, sperm whales, and dolphins frequent these waters from November to April.</p>
-                <p className="mt-2"><strong>Distance:</strong> 8km east • <strong>Travel time:</strong> 15 minutes by tuk-tuk</p>
+              <CardContent>
+                <Image
+                  src="/Hirikatiya.jpg"
+                  alt="Hirikatiya Beach with golden sands and turquoise waters"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Hiriketiya is a hidden gem known for its excellent surfing conditions and laid-back atmosphere. Perfect for both beginners and experienced surfers.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hirikatiya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            {/* Mirissa */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Mirissa</CardTitle>
+                <CardDescription>Whale watching and pristine beaches</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/mirissa-beach.jpg"
+                  alt="Mirissa Beach with golden sands and turquoise waters"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Mirissa is famous for its whale watching tours and stunning beaches. Enjoy a relaxing day by the sea or embark on an exciting marine adventure.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mirissa" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
+            {/* Galle Fort */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
-                <CardTitle>Galle Fort (45 minutes)</CardTitle>
-                <CardDescription>UNESCO World Heritage colonial fortress</CardDescription>
+                <CardTitle className="text-lg">Galle Fort</CardTitle>
+                <CardDescription>Historic Dutch colonial fort</CardDescription>
               </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                <p>Explore the best-preserved colonial fortification in Asia, built by the Portuguese and Dutch. Perfect for history lovers and photography.</p>
-                <p className="mt-2"><strong>Distance:</strong> 35km west • <strong>Travel time:</strong> 45 minutes by car</p>
+              <CardContent>
+                <Image
+                  src="/galle-fort.jpg"
+                  alt="Galle Fort with its iconic lighthouse and colonial architecture"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the UNESCO World Heritage Site of Galle Fort, known for its well-preserved colonial architecture, boutique shops, and vibrant history.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/galle-fort" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
+            {/* Unawatuna */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
-                <CardTitle>Hiriketiya Beach (30 minutes)</CardTitle>
-                <CardDescription>Trendy surfing and beach hangout spot</CardDescription>
+                <CardTitle className="text-lg">Unawatuna</CardTitle>
+                <CardDescription>Golden beaches and coral reefs</CardDescription>
               </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                <p>A perfect horseshoe-shaped bay popular with international surfers. Great restaurants, beach bars, and consistent surf breaks.</p>
-                <p className="mt-2"><strong>Distance:</strong> 20km east • <strong>Travel time:</strong> 30 minutes by tuk-tuk</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Mulkirigala Temple (1 hour)</CardTitle>
-                <CardDescription>Ancient rock temple with stunning views</CardDescription>
-              </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                <p>Climb this magnificent rock temple complex dating back to the 2nd century BC. Features ancient murals and panoramic countryside views.</p>
-                <p className="mt-2"><strong>Distance:</strong> 25km inland • <strong>Travel time:</strong> 1 hour by car</p>
+              <CardContent>
+                <Image
+                  src="/unawatuna-beach.jpg"
+                  alt="Unawatuna Beach with its golden sands and calm waters"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Unawatuna offers a perfect blend of relaxation and adventure with its golden beaches, coral reefs, and vibrant nightlife.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/unawatuna" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>
