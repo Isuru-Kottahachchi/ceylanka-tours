@@ -71,7 +71,7 @@ export default function OhiyaTravelGuide() {
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <TreePine className="w-4 h-4 mr-1" />
-              Nature's Paradise
+              Nature&apos;s Paradise
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
               <Calendar className="w-4 h-4 mr-1" />
@@ -96,13 +96,13 @@ export default function OhiyaTravelGuide() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section id="introduction" className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Ohiya: Nature's Hidden Gem</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Ohiya: Nature&apos;s Hidden Gem</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Nestled in the heart of Sri Lanka's hill country, Ohiya is a tranquil escape for nature lovers and adventure seekers alike. Known for its proximity to Horton Plains National Park and the breathtaking World's End viewpoint, Ohiya offers a serene retreat surrounded by lush greenery and misty mountains.
+              Nestled in the heart of Sri Lanka&apos;s hill country, Ohiya is a tranquil escape for nature lovers and adventure seekers alike. Known for its proximity to Horton Plains National Park and the breathtaking World&apos;s End viewpoint, Ohiya offers a serene retreat surrounded by lush greenery and misty mountains.
             </p>
             <p className="text-lg">
-              Whether you're embarking on a scenic train journey through the hills, exploring hidden waterfalls, or hiking through pristine landscapes, Ohiya promises an unforgettable experience that connects you with the raw beauty of nature.
+              Whether you&apos;re embarking on a scenic train journey through the hills, exploring hidden waterfalls, or hiking through pristine landscapes, Ohiya promises an unforgettable experience that connects you with the raw beauty of nature.
             </p>
           </div>
         </section>
@@ -142,7 +142,7 @@ export default function OhiyaTravelGuide() {
                   <div className="flex items-center gap-2">
                     <TreePine className="w-4 h-4 text-green-500" />
                     <span>
-                      <strong>Highlights:</strong> Horton Plains, World's End, and scenic train rides.
+                      <strong>Highlights:</strong> Horton Plains, World&apos;s End, and scenic train rides.
                     </span>
                   </div>
                 </div>
@@ -325,7 +325,7 @@ export default function OhiyaTravelGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Haputale is known for its panoramic views, tea estates, and the famous Lipton's Seat viewpoint.
+                  Haputale is known for its panoramic views, tea estates, and the famous Lipton&apos;s Seat viewpoint.
                 </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/haputale" passHref legacyBehavior>
@@ -350,7 +350,7 @@ export default function OhiyaTravelGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Pattipola is a quaint village and home to Sri Lanka's highest railway station, offering scenic train journeys.
+                  Pattipola is a quaint village and home to Sri Lanka&apos;s highest railway station, offering scenic train journeys.
                 </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/pattipola" passHref legacyBehavior>
@@ -375,7 +375,7 @@ export default function OhiyaTravelGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Ambewela, often called "Little New Zealand," is known for its picturesque landscapes and dairy farms.
+                  Ambewela, often called &quot;Little New Zealand,&quot; is known for its picturesque landscapes and dairy farms.
                 </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/ambewela" passHref legacyBehavior>

@@ -1,10 +1,9 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Anchor, Landmark, Heart, ShieldCheck, Bus } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Anchor, Landmark, Heart, ShieldCheck } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+
 
 export const metadata: Metadata = {
   title: "Nagadeepa (Nainativu) Sri Lanka: Complete Guide 2025 | Sacred Island for Buddhists & Hindus",
@@ -70,7 +69,7 @@ export default function NainativuTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Nagadeepa (Nainativu): Island of Legends & Harmony</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Nainativu, also known as Nagadeepa, is a tiny island off the Jaffna Peninsula, revered by both Buddhists and Hindus for centuries. This sacred land is home to the Nagadeepa Purana Viharaya—one of the holiest Buddhist sites in Sri Lanka—and the vibrant Nagapooshani Amman Kovil, a major Hindu temple dedicated to the goddess Parvati. The island's unique spiritual atmosphere, where two faiths coexist peacefully, makes it a symbol of reconciliation and religious harmony in Sri Lanka.
+              Nainativu, also known as Nagadeepa, is a tiny island off the Jaffna Peninsula, revered by both Buddhists and Hindus for centuries. This sacred land is home to the Nagadeepa Purana Viharaya—one of the holiest Buddhist sites in Sri Lanka—and the vibrant Nagapooshani Amman Kovil, a major Hindu temple dedicated to the goddess Parvati. The island&apos;s unique spiritual atmosphere, where two faiths coexist peacefully, makes it a symbol of reconciliation and religious harmony in Sri Lanka.
             </p>
             <p className="text-lg mb-4">
               According to Buddhist chronicles, the Buddha himself visited Nagadeepa in the 6th century BCE to resolve a dispute between two Naga kings, bringing peace to the land. Today, pilgrims and travelers alike are drawn to the island's tranquil shores, ancient legends, and colorful rituals. Whether you seek spiritual solace, cultural discovery, or a glimpse into Sri Lanka's multi-faith heritage, Nainativu offers a truly unforgettable experience.
@@ -241,7 +240,7 @@ export default function NainativuTravelGuide() {
                   className="rounded-lg mb-4 w-full object-cover aspect-[4/3]"
                 />
                 <p className="text-muted-foreground mb-2">
-                  The Nagapooshani Amman Kovil is one of the 64 Shakti Peethas in South Asia and a major center of goddess worship. Its towering gopuram (gateway tower) is adorned with thousands of colorful sculptures. The temple's annual Ther Thiruvizha (chariot festival) draws thousands of devotees from Sri Lanka and India, filling the island with music, dance, and devotion.
+                  The Nagapooshani Amman Kovil is one of the 64 Shakti Peethas in South Asia and a major center of goddess worship. Its towering gopuram (gateway tower) is adorned with thousands of colorful sculptures. The temple&apos;s annual Ther Thiruvizha (chariot festival) draws thousands of devotees from Sri Lanka and India, filling the island with music, dance, and devotion.
                 </p>
                 <p className="text-muted-foreground">
                   Non-Hindu visitors are welcome to enter most areas (except the innermost sanctum). Dress modestly, remove shoes, and respect temple customs.
@@ -294,7 +293,7 @@ export default function NainativuTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Nainativu is more than a destination—it's a living testament to Sri Lanka's spiritual diversity and resilience. Whether you come as a pilgrim or a curious traveler, the island's sacred sites, warm community, and peaceful shores will leave a lasting impression.
+                Nainativu is more than a destination—it&apos;s a living testament to Sri Lanka&apos;s spiritual diversity and resilience. Whether you come as a pilgrim or a curious traveler, the island&apos;s sacred sites, warm community, and peaceful shores will leave a lasting impression.
               </p>
               <p className="text-muted-foreground font-medium">
                 Plan your journey to Nagadeepa and discover the harmony of faiths at the heart of the northern seas.

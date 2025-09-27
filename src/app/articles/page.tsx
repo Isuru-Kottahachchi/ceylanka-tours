@@ -91,7 +91,7 @@ const originalArticles = [
     date: "2024-01-03",
     views: "1.5K",
     readTime: "9 min read",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/SL-venoumous-snakes.png",
     description: "Essential guide to identifying and avoiding dangerous snakes while exploring Sri Lanka's wilderness and natural habitats.",
     highlights: ["Russell's Viper", "Cobra Species", "Safety Tips"],
     featured: false,

@@ -63,7 +63,7 @@ const MoreAboutSriLanka = () => {
                 <div className="mb-12">
                     <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Culture</h2>
                     <p className="text-lg text-gray-700 dark:text-gray-300">
-                        Sri Lanka's culture is a blend of traditional Sinhalese and Tamil influences, enriched by centuries of interaction with traders and colonizers from around the world. Festivals like Vesak, Thai Pongal, and Sinhala and Tamil New Year highlight the island's vibrant traditions.
+                        Sri Lanka&apos;s culture is a blend of traditional Sinhalese and Tamil influences, enriched by centuries of interaction with traders and colonizers from around the world. Festivals like Vesak, Thai Pongal, and Sinhala and Tamil New Year highlight the island&apos;s vibrant traditions.
                     </p>
                 </div>
 

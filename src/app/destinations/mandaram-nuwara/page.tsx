@@ -1,10 +1,8 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TreePine, Bus, Car, Train, Mountain } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TreePine, Mountain } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Mandaram Nuwara Sri Lanka: Hidden Valley Guide 2025 | Misty Village & Waterfalls",
@@ -70,7 +68,7 @@ export default function MandaramNuwaraGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Mandaram Nuwara: The Valley of Mist</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Mandaram Nuwara is a secluded village nestled at the base of Piduruthalagala, Sri Lanka's tallest mountain. Known as the "village without midday" because the sun rarely shines directly into the valley, Mandaram Nuwara is shrouded in mist, surrounded by lush tea fields, waterfalls, and dense forests. This hidden gem offers a tranquil escape for nature lovers, hikers, and anyone seeking authentic rural life far from the crowds.
+              Mandaram Nuwara is a secluded village nestled at the base of Piduruthalagala, Sri Lanka&apos;s tallest mountain. Known as the &quot;village without midday&quot; because the sun rarely shines directly into the valley, Mandaram Nuwara is shrouded in mist, surrounded by lush tea fields, waterfalls, and dense forests. This hidden gem offers a tranquil escape for nature lovers, hikers, and anyone seeking authentic rural life far from the crowds.
             </p>
             <p className="text-lg">
               The village remains untouched by mass tourism, preserving its unique charm and slow pace. Here, you can wander through tea gardens, discover secret waterfalls, and experience the hospitality of local families. Mandaram Nuwara is a paradise for photographers and adventurers, with cool mountain air and breathtaking scenery at every turn.
@@ -149,7 +147,7 @@ export default function MandaramNuwaraGuide() {
                     <div>
                       <p className="text-base text-blue-900 font-semibold mb-1">Sri Lanka's Last Valley</p>
                       <p className="text-sm text-blue-800">
-                        Mandaram Nuwara is called the "last valley" because it sits at the end of a winding road, surrounded by mountains on three sides and open only to the east. The village is often covered in mist, creating a magical, timeless atmosphere.
+                        Mandaram Nuwara is called the &quot;last valley&quot; because it sits at the end of a winding road, surrounded by mountains on three sides and open only to the east. The village is often covered in mist, creating a magical, timeless atmosphere.
                       </p>
                     </div>
                   </div>
@@ -211,7 +209,7 @@ export default function MandaramNuwaraGuide() {
                   <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Start early to enjoy the morning mist and avoid afternoon rain</li>
-                    <li>• Roads are narrow and winding—drive carefully</li>
+                    <li>• Roads are narrow and winding drive carefully</li>
                     <li>• Bring cash, as there are no ATMs in the village</li>
                     <li>• Book accommodation in advance, especially on weekends</li>
                   </ul>
