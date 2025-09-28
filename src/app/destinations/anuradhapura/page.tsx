@@ -6,6 +6,20 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
+export const metadata: Metadata = {
+  title: "Anuradhapura Sri Lanka: Complete Guide 2025 | Ancient Capital & Sacred City",
+  description:
+    "Explore Anuradhapura, Sri Lankas first capital and sacred Buddhist city. Complete guide to ancient ruins, sacred Bodhi tree, and UNESCO World Heritage sites.",
+  keywords:
+    "Anuradhapura, ancient capital Sri Lanka, sacred Bodhi tree, Buddhist temples, UNESCO World Heritage, ancient ruins, dagobas",
+  openGraph: {
+    title: "Anuradhapura: Complete Guide 2025",
+    description: "Your ultimate guide to Sri Lankas ancient sacred capital",
+    type: "article",
+    images: ["/placeholder.svg?height=630&width=1200"],
+  },
+}
+
 export default function AnuradhapuraTravelGuide() {
 
   return (
