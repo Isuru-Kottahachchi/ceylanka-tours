@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Camera, Heart, ChevronLeft, ChevronRight, Sunrise, Sunset, Car, Bus, Train, Plane, Anchor, Book, Building, TreePine, Waves, Mountain, Droplets } from "lucide-react"
+import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Camera, Heart, ChevronLeft, ChevronRight, Sunrise, Sunset, Car, Bus, Train, Plane, Book, Building, Waves, Mountain, Droplets } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
