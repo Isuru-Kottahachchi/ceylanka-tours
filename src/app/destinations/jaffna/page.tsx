@@ -103,17 +103,20 @@ export default function JaffnaGuide() {
     "/placeholder.jpg",
   ]
 
-
-
   const casuarinaBeachImages = [
     "/Casuarina-Beach.jpg",
     "/placeholder.jpg",
   ]
 
-
   const nilavaraiWellImages = [
     "/Nilavarai-Bottomless-Well.jpeg",
     "/placeholder.jpg",
+  ]
+
+  const pointPedroImages = [
+    "/Point-Pedro.jpg",
+    "/Point-Pedro2.jpg",
+    "/Point-Pedro1.jpg",
   ]
 
   return (
@@ -148,32 +151,32 @@ export default function JaffnaGuide() {
         </div>
       </section>
 
-  <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Jaffna: The Heart of Tamil Sri Lanka</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Located at the northern tip of Sri Lanka, Jaffna is a fascinating city that offers visitors a completely 
-              different cultural experience from the rest of the island. This ancient city has been the center of Tamil 
-              civilization for over 2,000 years, preserving unique traditions, language, and customs that make it feel 
+              Located at the northern tip of Sri Lanka, Jaffna is a fascinating city that offers visitors a completely
+              different cultural experience from the rest of the island. This ancient city has been the center of Tamil
+              civilization for over 2,000 years, preserving unique traditions, language, and customs that make it feel
               like stepping into a different country altogether.
             </p>
             <p className="text-lg mb-4">
-              Jaffna was once the capital of an independent Tamil kingdom that ruled northern Sri Lanka for over 400 years. 
-              Despite centuries of colonization by Portuguese, Dutch, and British forces, the city has managed to maintain 
-              its distinct identity. Today, you&apos;ll find magnificent Hindu temples alongside colonial forts, traditional 
+              Jaffna was once the capital of an independent Tamil kingdom that ruled northern Sri Lanka for over 400 years.
+              Despite centuries of colonization by Portuguese, Dutch, and British forces, the city has managed to maintain
+              its distinct identity. Today, you&apos;ll find magnificent Hindu temples alongside colonial forts, traditional
               palmyra palm cultivation next to modern developments, and warm Tamil hospitality everywhere you go.
             </p>
             <p className="text-lg mb-4">
-              What makes Jaffna truly special is its authentic atmosphere. Unlike tourist-heavy southern beaches or hill 
-              country towns, Jaffna offers genuine cultural immersion. Here, you&apos;ll hear Tamil spoken on every street 
-              corner, see women in colorful saris buying fresh palmyra products at markets, and witness ancient religious 
+              What makes Jaffna truly special is its authentic atmosphere. Unlike tourist-heavy southern beaches or hill
+              country towns, Jaffna offers genuine cultural immersion. Here, you&apos;ll hear Tamil spoken on every street
+              corner, see women in colorful saris buying fresh palmyra products at markets, and witness ancient religious
               festivals that have been celebrated the same way for generations.
             </p>
             <p className="text-lg">
-              The city is surrounded by beautiful lagoons, pristine beaches, and unique coral islands that can only be 
-              reached by boat. Whether you&apos;re interested in history, spirituality, culture, or nature, Jaffna provides 
+              The city is surrounded by beautiful lagoons, pristine beaches, and unique coral islands that can only be
+              reached by boat. Whether you&apos;re interested in history, spirituality, culture, or nature, Jaffna provides
               an authentic Sri Lankan experience that few visitors get to enjoy.
             </p>
           </div>
@@ -188,7 +191,7 @@ export default function JaffnaGuide() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold mb-6 text-foreground">How to Reach Jaffna</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            
+
             {/* By Car */}
             <Card className="p-4 bg-blue-50 dark:bg-slate-800 border-blue-200 dark:border-slate-600">
               <div className="flex items-center space-x-3 mb-3">
@@ -329,8 +332,8 @@ export default function JaffnaGuide() {
               <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                 <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">Why Jaffna is Special:</h4>
                 <p className="text-sm text-blue-700 dark:text-blue-400">
-                  Jaffna is the only place in Sri Lanka where you can experience authentic Tamil culture in its purest form. 
-                  The city maintained its independence for centuries and developed unique traditions, cuisine, and art forms 
+                  Jaffna is the only place in Sri Lanka where you can experience authentic Tamil culture in its purest form.
+                  The city maintained its independence for centuries and developed unique traditions, cuisine, and art forms
                   that you won&apos;t find anywhere else on the island. It&apos;s like visiting a different country without leaving Sri Lanka!
                 </p>
               </div>
@@ -345,40 +348,40 @@ export default function JaffnaGuide() {
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Ancient Jaffna Kingdom</h3>
               <p className="text-muted-foreground mb-4">
-                Jaffna&apos;s history stretches back over two millennia, with the region serving as the capital 
-                of the independent Jaffna Kingdom from the 13th to 17th centuries. The kingdom was established 
-                by Chandragupta, a prince from the Kalinga dynasty, and became a powerful Tamil state that 
+                Jaffna&apos;s history stretches back over two millennia, with the region serving as the capital
+                of the independent Jaffna Kingdom from the 13th to 17th centuries. The kingdom was established
+                by Chandragupta, a prince from the Kalinga dynasty, and became a powerful Tamil state that
                 controlled northern Sri Lanka and parts of southern India.
               </p>
               <p className="text-muted-foreground mb-4">
-                The kingdom reached its zenith under rulers like Cankili I and Cankili II, who fiercely 
-                resisted Portuguese colonization. The strategic location of Jaffna, with its natural harbors 
+                The kingdom reached its zenith under rulers like Cankili I and Cankili II, who fiercely
+                resisted Portuguese colonization. The strategic location of Jaffna, with its natural harbors
                 and fertile lands, made it a crucial trading hub connecting South India with Southeast Asia.
               </p>
-              
+
               <div className="bg-blue-50 dark:bg-slate-800 p-4 rounded-lg border border-blue-200 dark:border-slate-600 mb-4">
                 <div className="flex items-start space-x-2">
                   <Star className="h-5 w-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-1">Royal Legacy</h4>
                     <p className="text-sm text-blue-700 dark:text-slate-300">
-                      The Jaffna Kingdom maintained its independence for over 400 years, developing a unique 
+                      The Jaffna Kingdom maintained its independence for over 400 years, developing a unique
                       Tamil culture that blended South Indian traditions with local customs.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Colonial Era</h3>
               <p className="text-muted-foreground mb-4">
-                The Portuguese conquered Jaffna in 1619, ending centuries of independence. They built the 
-                first European fort and introduced Christianity, though many Hindu traditions persisted. 
-                The Dutch later captured the city in 1658, significantly expanding the fortifications and 
+                The Portuguese conquered Jaffna in 1619, ending centuries of independence. They built the
+                first European fort and introduced Christianity, though many Hindu traditions persisted.
+                The Dutch later captured the city in 1658, significantly expanding the fortifications and
                 establishing the impressive star-shaped fort that stands today.
               </p>
-              
+
               <div className="space-y-3 mb-4">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-600" />
@@ -404,7 +407,7 @@ export default function JaffnaGuide() {
                   <div>
                     <h4 className="font-semibold text-yellow-800 dark:text-yellow-300 mb-1">Cultural Resilience</h4>
                     <p className="text-sm text-yellow-700 dark:text-slate-300">
-                      Despite centuries of foreign rule, Jaffna maintained its distinct Tamil identity, 
+                      Despite centuries of foreign rule, Jaffna maintained its distinct Tamil identity,
                       language, and Hindu religious traditions.
                     </p>
                   </div>
@@ -443,17 +446,17 @@ export default function JaffnaGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The magnificent Nallur Kandaswamy Temple stands as the most important Hindu temple 
-                      in Northern Sri Lanka, dedicated to Lord Murugan (Kandaswamy). Originally built 
-                      in 948 AD and reconstructed multiple times, the current structure showcases stunning 
-                      Dravidian architecture with intricate carvings and a towering gopuram that dominates 
+                      The magnificent Nallur Kandaswamy Temple stands as the most important Hindu temple
+                      in Northern Sri Lanka, dedicated to Lord Murugan (Kandaswamy). Originally built
+                      in 948 AD and reconstructed multiple times, the current structure showcases stunning
+                      Dravidian architecture with intricate carvings and a towering gopuram that dominates
                       Jaffna&apos;s skyline.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The temple serves as the spiritual heart of Jaffna&apos;s Tamil community, hosting the 
-                      famous 25-day Nallur Festival annually. The complex includes multiple shrines, 
-                      a sacred tank, and beautiful pavilions where thousands gather for daily prayers 
-                      and special ceremonies. Even outside festival time, the daily pujas here are deeply 
+                      The temple serves as the spiritual heart of Jaffna&apos;s Tamil community, hosting the
+                      famous 25-day Nallur Festival annually. The complex includes multiple shrines,
+                      a sacred tank, and beautiful pavilions where thousands gather for daily prayers
+                      and special ceremonies. Even outside festival time, the daily pujas here are deeply
                       moving spiritual experiences that offer visitors insight into authentic Tamil Hindu traditions.
                     </p>
                     <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg mb-4">
@@ -489,8 +492,8 @@ export default function JaffnaGuide() {
                       </ul>
                     </div>
                     <div className="text-sm text-muted-foreground italic">
-                      🏛️ <strong>Historical Note:</strong> The temple was a royal temple of the Jaffna Kingdom 
-                      and has been the center of Tamil Hindu culture in Sri Lanka for over 1,000 years. 
+                      🏛️ <strong>Historical Note:</strong> The temple was a royal temple of the Jaffna Kingdom
+                      and has been the center of Tamil Hindu culture in Sri Lanka for over 1,000 years.
                       The annual festival attracts devotees from around the world.
                     </div>
                   </div>
@@ -517,15 +520,15 @@ export default function JaffnaGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The imposing Jaffna Fort is one of the largest and best-preserved Dutch fortifications in Asia, 
-                      covering an incredible 22 hectares on the shores of Jaffna Lagoon. Originally built by the Portuguese 
-                      in 1618 and massively expanded by the Dutch, this star-shaped fortress tells the story of European 
+                      The imposing Jaffna Fort is one of the largest and best-preserved Dutch fortifications in Asia,
+                      covering an incredible 22 hectares on the shores of Jaffna Lagoon. Originally built by the Portuguese
+                      in 1618 and massively expanded by the Dutch, this star-shaped fortress tells the story of European
                       colonial ambitions in the Indian Ocean.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      What makes this fort extraordinary is its sheer size and the quality of its construction. The massive 
-                      stone walls, built from coral and limestone, have survived centuries of monsoons, wars, and time itself. 
-                      Walking through the fort feels like traveling back in time - you can almost hear the footsteps of Dutch 
+                      What makes this fort extraordinary is its sheer size and the quality of its construction. The massive
+                      stone walls, built from coral and limestone, have survived centuries of monsoons, wars, and time itself.
+                      Walking through the fort feels like traveling back in time - you can almost hear the footsteps of Dutch
                       soldiers and see the ships that once anchored in the protected harbor.
                     </p>
                     <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg mb-4">
@@ -557,7 +560,7 @@ export default function JaffnaGuide() {
                       </ul>
                     </div>
                     <div className="text-sm text-muted-foreground italic">
-                      🏰 <strong>Archaeological Note:</strong> Currently under restoration by the Archaeological Department, 
+                      🏰 <strong>Archaeological Note:</strong> Currently under restoration by the Archaeological Department,
                       revealing fascinating insights into colonial military architecture and daily life of Dutch soldiers.
                     </div>
                   </div>
@@ -575,15 +578,15 @@ export default function JaffnaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Delft Island is like nowhere else in Sri Lanka - a small coral island that feels almost mythical 
-                      with its wild horses roaming freely, ancient baobab trees, and ruins that tell stories of colonial 
-                      times. Getting here requires a 45-minute boat ride from Kurikadduwan jetty, but the journey itself 
+                      Delft Island is like nowhere else in Sri Lanka - a small coral island that feels almost mythical
+                      with its wild horses roaming freely, ancient baobab trees, and ruins that tell stories of colonial
+                      times. Getting here requires a 45-minute boat ride from Kurikadduwan jetty, but the journey itself
                       is part of the adventure as you cruise through beautiful lagoons.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The island gets its name from the Dutch word for Delft pottery, as the Dutch established a small 
-                      settlement here. Today, only about 5,000 people live on this 50-square-kilometer island, maintaining 
-                      a simple lifestyle that hasn&apos;t changed much over centuries. The wild horses are descendants of horses 
+                      The island gets its name from the Dutch word for Delft pottery, as the Dutch established a small
+                      settlement here. Today, only about 5,000 people live on this 50-square-kilometer island, maintaining
+                      a simple lifestyle that hasn&apos;t changed much over centuries. The wild horses are descendants of horses
                       brought by the Portuguese centuries ago.
                     </p>
                     <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mb-4">
@@ -649,15 +652,15 @@ export default function JaffnaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Just 8 kilometers from Jaffna town, Casuarina Beach is a stunning stretch of golden sand that feels 
-                      like your own private paradise. Named after the casuarina trees that line the shore, this beach 
-                      offers some of the most spectacular sunsets in Sri Lanka. Unlike the crowded southern beaches, 
+                      Just 8 kilometers from Jaffna town, Casuarina Beach is a stunning stretch of golden sand that feels
+                      like your own private paradise. Named after the casuarina trees that line the shore, this beach
+                      offers some of the most spectacular sunsets in Sri Lanka. Unlike the crowded southern beaches,
                       Casuarina Beach maintains a peaceful, almost untouched atmosphere.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The beach faces west, making it absolutely perfect for sunset photography. The gentle waves and 
-                      shallow waters make it safe for swimming, while the soft sand is ideal for long walks. The casuarina 
-                      trees provide natural shade during the day, and you&apos;ll often see local families having picnics under 
+                      The beach faces west, making it absolutely perfect for sunset photography. The gentle waves and
+                      shallow waters make it safe for swimming, while the soft sand is ideal for long walks. The casuarina
+                      trees provide natural shade during the day, and you&apos;ll often see local families having picnics under
                       their branches, especially on weekends.
                     </p>
                     <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg mb-4">
@@ -686,7 +689,7 @@ export default function JaffnaGuide() {
                       </ul>
                     </div>
                     <div className="text-sm text-muted-foreground italic">
-                      🏖️ <strong>Local Tip:</strong> Bring your own food and drinks as there are limited facilities. 
+                      🏖️ <strong>Local Tip:</strong> Bring your own food and drinks as there are limited facilities.
                       The beach is most beautiful in the late afternoon when the light is perfect for photography.
                     </div>
                   </div>
@@ -713,15 +716,15 @@ export default function JaffnaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Jaffna Public Library stands as more than just a repository of books - it&apos;s a powerful symbol 
-                      of knowledge, resilience, and Tamil cultural identity. Originally built in 1933, the library was 
-                      one of the largest in South Asia before its tragic destruction in 1981. The current magnificent 
+                      The Jaffna Public Library stands as more than just a repository of books - it&apos;s a powerful symbol
+                      of knowledge, resilience, and Tamil cultural identity. Originally built in 1933, the library was
+                      one of the largest in South Asia before its tragic destruction in 1981. The current magnificent
                       structure, rebuilt and reopened in 2003, represents the unbreakable spirit of Jaffna&apos;s people.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Today, the library houses over 97,000 volumes, including rare Tamil manuscripts, historical documents, 
-                      and one of the finest collections of Tamil literature in the world. The architecture combines 
-                      traditional Tamil design elements with modern functionality, featuring beautiful reading halls, 
+                      Today, the library houses over 97,000 volumes, including rare Tamil manuscripts, historical documents,
+                      and one of the finest collections of Tamil literature in the world. The architecture combines
+                      traditional Tamil design elements with modern functionality, featuring beautiful reading halls,
                       research sections, and digital facilities.
                     </p>
                     <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mb-4">
@@ -746,7 +749,7 @@ export default function JaffnaGuide() {
                       </ul>
                     </div>
                     <div className="text-sm text-muted-foreground italic">
-                      📚 <strong>Cultural Note:</strong> The library serves as a center for Tamil cultural activities, 
+                      📚 <strong>Cultural Note:</strong> The library serves as a center for Tamil cultural activities,
                       hosting literary events, exhibitions, and educational programs throughout the year.
                     </div>
                   </div>
@@ -766,14 +769,14 @@ export default function JaffnaGuide() {
             {/* Point Pedro */}
             <Card>
               <CardHeader>
-                <CardTitle>6. Point Pedro - Northernmost Tip of Sri Lanka</CardTitle>
+                <CardTitle>6. Point Pedro ( Sakkotai Cape) - Northernmost Tip of Sri Lanka</CardTitle>
                 <CardDescription>The geographical extremity of the island with lighthouse, beaches, and coastal views</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <ImageCarousel
-                      images={casuarinaBeachImages}
+                      images={pointPedroImages}
                       alt="Point Pedro lighthouse and coastal landscape at Sri Lanka's northernmost point"
                     />
                     <p className="text-sm text-muted-foreground mt-2 italic">
@@ -782,16 +785,24 @@ export default function JaffnaGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Point Pedro holds the distinction of being the northernmost point of Sri Lanka, offering visitors 
-                      a unique geographical experience and stunning coastal scenery. This small fishing town, about 
-                      38 kilometers from Jaffna, provides panoramic views of the Indian Ocean and, on clear days, 
+                      Point Pedro town holds the distinction of being the northernmost point of Sri Lanka, offering visitors
+                      a unique geographical experience and stunning coastal scenery. This small fishing town, about
+                      38 kilometers from Jaffna, provides panoramic views of the Indian Ocean and, on clear days,
                       you might even catch glimpses of the Indian coastline in the distance.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The area is dominated by the historic Point Pedro Lighthouse, built during the British colonial 
-                      period, which has guided ships safely through these waters for over a century. The surrounding 
-                      coastline features pristine beaches, rocky outcrops, and traditional fishing villages where 
-                      life moves at a peaceful, unhurried pace.
+                      The area is dominated by the historic Point Pedro Lighthouse, built during the British colonial
+                      period, which has guided ships safely through these waters for over a century. The surrounding
+                      coastline, including the beautiful Sakkotai Cape area, features pristine beaches, rocky outcrops,
+                      and vibrant coral reefs. The traditional fishing villages maintain their authentic character, with
+                      outrigger boats (catamarans) dotting the shoreline, creating picture-perfect scenes especially
+                      during sunrise and sunset.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The shallow lagoons around Sakkotai Cape are perfect for spotting marine life and snorkeling,
+                      while the untouched beaches offer a peaceful escape from the more touristy destinations. The
+                      local fishing communities welcome visitors, providing a genuine glimpse into traditional northern
+                      Sri Lankan coastal life.
                     </p>
                     <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-4">
                       <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">Point Pedro Attractions:</h4>
@@ -824,7 +835,7 @@ export default function JaffnaGuide() {
                       </ul>
                     </div>
                     <div className="text-sm text-muted-foreground italic">
-                      🧭 <strong>Geographic Fact:</strong> Point Pedro is approximately 9°50&apos;N latitude, 
+                      🧭 <strong>Geographic Fact:</strong> Point Pedro is approximately 9°50&apos;N latitude,
                       making it the true northernmost inhabited point of Sri Lanka.
                     </div>
                     <div className="mt-3 p-3 bg-green-50 dark:bg-green-900/20 rounded-lg text-sm text-muted-foreground">
@@ -847,16 +858,16 @@ export default function JaffnaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Keerimalai Sacred Springs is one of Jaffna&apos;s most mystical and spiritually significant sites, 
-                      featuring natural freshwater springs that emerge from deep underground wells near the coast. 
-                      According to ancient legends, these springs possess healing properties and have been considered 
-                      sacred for over 2,000 years. The name &ldquo;Keerimalai&rdquo; means &ldquo;mongoose hill&rdquo; in Tamil, referring 
+                      Keerimalai Sacred Springs is one of Jaffna&apos;s most mystical and spiritually significant sites,
+                      featuring natural freshwater springs that emerge from deep underground wells near the coast.
+                      According to ancient legends, these springs possess healing properties and have been considered
+                      sacred for over 2,000 years. The name &ldquo;Keerimalai&rdquo; means &ldquo;mongoose hill&rdquo; in Tamil, referring
                       to local folklore about the area.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      What makes Keerimalai truly remarkable is the phenomenon of fresh water springs emerging so close 
-                      to the sea. The natural pools formed by these springs maintain a constant temperature and are 
-                      believed to have therapeutic qualities. Hindu devotees from across Sri Lanka visit these springs, 
+                      What makes Keerimalai truly remarkable is the phenomenon of fresh water springs emerging so close
+                      to the sea. The natural pools formed by these springs maintain a constant temperature and are
+                      believed to have therapeutic qualities. Hindu devotees from across Sri Lanka visit these springs,
                       especially during religious festivals, to bathe in the sacred waters.
                     </p>
                     <div className="bg-cyan-50 dark:bg-cyan-900/20 p-4 rounded-lg mb-4">
@@ -895,7 +906,7 @@ export default function JaffnaGuide() {
                       </ul>
                     </div>
                     <div className="text-sm text-muted-foreground italic">
-                      🙏 <strong>Spiritual Note:</strong> The springs are mentioned in ancient Tamil literature and are 
+                      🙏 <strong>Spiritual Note:</strong> The springs are mentioned in ancient Tamil literature and are
                       considered one of the five sacred bathing sites (Panchai Theertham) in Tamil tradition.
                     </div>
                   </div>
@@ -922,17 +933,17 @@ export default function JaffnaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Nilavarai Bottomless Well is one of Jaffna&apos;s most intriguing natural mysteries, a circular 
-                      freshwater well whose depth has never been accurately measured despite numerous attempts. 
-                      Located near the village of Puttur, about 6 kilometers from Jaffna town, this well has captured 
-                      the imagination of locals and visitors for centuries with its crystal-clear water and seemingly 
+                      The Nilavarai Bottomless Well is one of Jaffna&apos;s most intriguing natural mysteries, a circular
+                      freshwater well whose depth has never been accurately measured despite numerous attempts.
+                      Located near the village of Puttur, about 6 kilometers from Jaffna town, this well has captured
+                      the imagination of locals and visitors for centuries with its crystal-clear water and seemingly
                       infinite depth.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      What makes this well extraordinary is not just its mysterious depth, but also the legend 
-                      surrounding it. According to local folklore, the well was created by a meteor impact in ancient 
-                      times, while others believe it connects to underground river systems. The water remains 
-                      consistently fresh and clear throughout the year, never running dry even during severe droughts 
+                      What makes this well extraordinary is not just its mysterious depth, but also the legend
+                      surrounding it. According to local folklore, the well was created by a meteor impact in ancient
+                      times, while others believe it connects to underground river systems. The water remains
+                      consistently fresh and clear throughout the year, never running dry even during severe droughts
                       that affect other wells in the region.
                     </p>
                     <div className="bg-indigo-50 dark:bg-indigo-900/20 p-4 rounded-lg mb-4">
@@ -971,7 +982,7 @@ export default function JaffnaGuide() {
                       </ul>
                     </div>
                     <div className="text-sm text-muted-foreground italic">
-                      🔬 <strong>Scientific Interest:</strong> Geologists and hydrologists continue to study this natural 
+                      🔬 <strong>Scientific Interest:</strong> Geologists and hydrologists continue to study this natural
                       phenomenon, making it both a tourist attraction and a subject of ongoing research.
                     </div>
                   </div>
@@ -988,81 +999,7 @@ export default function JaffnaGuide() {
               </CardContent>
             </Card>
 
-            {/* Sakkotai Cape */}
-            <Card>
-              <CardHeader>
-                <CardTitle>9. Sakkotai Cape - Hidden Coastal Gem</CardTitle>
-                <CardDescription>Secluded cape with pristine beaches, coral reefs, and traditional fishing communities</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <ImageCarousel
-                      images={delftIslandImages}
-                      alt="Sakkotai Cape showing pristine coastline, fishing boats, and coral reef waters"
-                    />
-                    <p className="text-sm text-muted-foreground mt-2 italic">
-                      Sakkotai Cape - where pristine nature meets traditional fishing heritage
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Sakkotai Cape is one of Jaffna&apos;s best-kept secrets, a pristine coastal area that offers visitors 
-                      an authentic glimpse into traditional northern Sri Lankan fishing life. Located on the western 
-                      coast of the Jaffna Peninsula, this secluded cape features untouched beaches, vibrant coral reefs, 
-                      and fishing villages where time seems to have stood still for generations.
-                    </p>
-                    <p className="text-muted-foreground mb-4">
-                      Unlike the more touristy destinations, Sakkotai Cape maintains its wild, natural character. 
-                      The shallow lagoons here are perfect for spotting marine life, while the coral formations 
-                      visible from the shore make it an excellent location for snorkeling and underwater photography. 
-                      The traditional outrigger boats (catamarans) dotting the coastline create picture-perfect scenes, 
-                      especially during sunrise and sunset.
-                    </p>
-                    <div className="bg-teal-50 dark:bg-teal-900/20 p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-teal-800 dark:text-teal-300 mb-2">Cape Attractions:</h4>
-                      <ul className="space-y-2 text-muted-foreground">
-                        <li className="flex items-start gap-2">
-                          <Waves className="w-4 h-4 text-teal-500 mt-1 flex-shrink-0" />
-                          <span><strong>Pristine Beaches:</strong> Untouched sandy shores with clear turquoise water</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <Anchor className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
-                          <span><strong>Traditional Fishing:</strong> Active fishing community with outrigger boats</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <TreePine className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          <span><strong>Coral Reefs:</strong> Shallow reefs perfect for snorkeling and marine observation</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <Camera className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
-                          <span><strong>Photography:</strong> Spectacular sunrise and sunset views over the ocean</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <Users className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                          <span><strong>Cultural Experience:</strong> Interaction with friendly fishing families</span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="bg-sky-50 dark:bg-sky-900/20 p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-sky-800 dark:text-sky-300 mb-2">Planning Your Visit:</h4>
-                      <ul className="text-sm text-sky-700 dark:text-sky-400 space-y-1">
-                        <li>• <strong>Access:</strong> Requires local transport or 4WD vehicle for final approach</li>
-                        <li>• <strong>Best Time:</strong> November to April for calm seas and clear weather</li>
-                        <li>• <strong>Activities:</strong> Beach walks, snorkeling, fishing boat rides, photography</li>
-                        <li>• <strong>What to Bring:</strong> Snorkeling gear, sunscreen, water, local guide recommended</li>
-                        <li>• <strong>Duration:</strong> Half-day minimum, full day recommended for complete experience</li>
-                        <li>• <strong>Facilities:</strong> Basic facilities only - bring supplies for day trip</li>
-                      </ul>
-                    </div>
-                    <div className="text-sm text-muted-foreground italic">
-                      🌊 <strong>Conservation Note:</strong> This pristine area depends on responsible tourism. 
-                      Please respect the marine environment and local fishing communities during your visit.
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+
 
           </div>
         </section>
@@ -1099,18 +1036,18 @@ export default function JaffnaGuide() {
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Tamil Traditions and Arts</h3>
               <p className="text-muted-foreground mb-4">
-                Jaffna is the beating heart of Tamil culture in Sri Lanka, preserving ancient traditions 
-                that have been passed down through generations. The city is renowned for its classical 
-                music, traditional dance, and literary contributions that have enriched Tamil culture 
+                Jaffna is the beating heart of Tamil culture in Sri Lanka, preserving ancient traditions
+                that have been passed down through generations. The city is renowned for its classical
+                music, traditional dance, and literary contributions that have enriched Tamil culture
                 across the world.
               </p>
               <p className="text-muted-foreground mb-4">
-                The traditional arts flourish here, from Bharatanatyam dance performances to Carnatic 
-                music concerts. The Tamil language spoken in Jaffna has unique dialectical features 
-                that distinguish it from other Tamil-speaking regions, reflecting centuries of 
+                The traditional arts flourish here, from Bharatanatyam dance performances to Carnatic
+                music concerts. The Tamil language spoken in Jaffna has unique dialectical features
+                that distinguish it from other Tamil-speaking regions, reflecting centuries of
                 independent cultural development.
               </p>
-              
+
               <div className="space-y-3 mb-4">
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="h-4 w-4 text-green-600" />
@@ -1130,16 +1067,16 @@ export default function JaffnaGuide() {
                 </div>
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">Festivals and Celebrations</h3>
               <p className="text-muted-foreground mb-4">
-                Jaffna&apos;s calendar is filled with vibrant festivals that showcase the deep religious 
-                and cultural traditions of the Tamil community. The most spectacular is the Nallur 
-                Festival, a 25-day celebration that transforms the entire city into a stage of 
+                Jaffna&apos;s calendar is filled with vibrant festivals that showcase the deep religious
+                and cultural traditions of the Tamil community. The most spectacular is the Nallur
+                Festival, a 25-day celebration that transforms the entire city into a stage of
                 devotion, music, and cultural performances.
               </p>
-              
+
               <div className="bg-red-50 dark:bg-slate-800 p-4 rounded-lg border border-red-200 dark:border-slate-600">
                 <div className="flex items-start space-x-2">
                   <Calendar className="h-5 w-5 text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0" />
@@ -1155,15 +1092,15 @@ export default function JaffnaGuide() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-4 bg-orange-50 dark:bg-slate-800 p-4 rounded-lg border border-orange-200 dark:border-slate-600">
                 <div className="flex items-start space-x-2">
                   <Star className="h-5 w-5 text-orange-600 dark:text-orange-400 mt-0.5 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-1">Cultural Experiences</h4>
                     <p className="text-sm text-orange-700 dark:text-slate-300">
-                      Visitors can witness traditional palmyra crafts, taste authentic Jaffna cuisine 
-                      including crab curry and palmyra-based sweets, and experience the unique 
+                      Visitors can witness traditional palmyra crafts, taste authentic Jaffna cuisine
+                      including crab curry and palmyra-based sweets, and experience the unique
                       hospitality of Tamil families.
                     </p>
                   </div>
@@ -1180,7 +1117,7 @@ export default function JaffnaGuide() {
             <Card className="p-6 bg-red-50 dark:bg-slate-800 border-red-200 dark:border-slate-600">
               <h3 className="text-xl font-bold text-red-800 dark:text-red-300 mb-3">Jaffna Crab Curry</h3>
               <p className="text-red-700 dark:text-slate-300 mb-3">
-                The signature dish of Jaffna, featuring fresh lagoon crabs cooked in a rich, 
+                The signature dish of Jaffna, featuring fresh lagoon crabs cooked in a rich,
                 spicy coconut curry with unique Tamil spice blends.
               </p>
               <div className="text-sm text-red-600 dark:text-red-400">
@@ -1191,7 +1128,7 @@ export default function JaffnaGuide() {
             <Card className="p-6 bg-yellow-50 dark:bg-slate-800 border-yellow-200 dark:border-slate-600">
               <h3 className="text-xl font-bold text-yellow-800 dark:text-yellow-300 mb-3">Palmyra Products</h3>
               <p className="text-yellow-700 dark:text-slate-300 mb-3">
-                Traditional sweets and dishes made from palmyra palm including odiyal, panankarkandu, 
+                Traditional sweets and dishes made from palmyra palm including odiyal, panankarkandu,
                 and refreshing palmyra toddy.
               </p>
               <div className="text-sm text-yellow-600 dark:text-yellow-400">
@@ -1202,7 +1139,7 @@ export default function JaffnaGuide() {
             <Card className="p-6 bg-green-50 dark:bg-slate-800 border-green-200 dark:border-slate-600">
               <h3 className="text-xl font-bold text-green-800 dark:text-green-200 mb-3">Mutton Rolls</h3>
               <p className="text-green-700 dark:text-slate-300 mb-3">
-                Crispy pastry rolls filled with spiced mutton, a beloved snack that originated 
+                Crispy pastry rolls filled with spiced mutton, a beloved snack that originated
                 in Jaffna&apos;s bakeries and spread across Sri Lanka.
               </p>
               <div className="text-sm text-green-600 dark:text-green-400">
@@ -1215,7 +1152,7 @@ export default function JaffnaGuide() {
         {/* Practical Information */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Practical Travel Information</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="p-6 bg-blue-50 dark:bg-slate-800 border-blue-200 dark:border-slate-600">
               <h3 className="text-xl font-bold text-blue-800 dark:text-blue-200 mb-4">Where to Stay</h3>
@@ -1290,15 +1227,15 @@ export default function JaffnaGuide() {
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 p-8 rounded-lg border border-blue-200 dark:border-slate-600">
             <h2 className="text-3xl font-bold mb-4 text-foreground">Experience the Soul of Tamil Sri Lanka</h2>
             <p className="text-lg text-muted-foreground mb-4">
-              Jaffna offers visitors a unique journey through time, culture, and tradition. From the ancient 
-              stones of Dutch Fort to the sacred halls of Nallur Temple, from the pristine beaches of 
-              Casuarina to the mystical landscapes of Delft Island, every corner of this remarkable 
+              Jaffna offers visitors a unique journey through time, culture, and tradition. From the ancient
+              stones of Dutch Fort to the sacred halls of Nallur Temple, from the pristine beaches of
+              Casuarina to the mystical landscapes of Delft Island, every corner of this remarkable
               peninsula tells a story of resilience, faith, and cultural richness.
             </p>
             <p className="text-lg text-muted-foreground">
-              Whether you&apos;re drawn by the historical significance, the spiritual atmosphere, the delicious 
-              cuisine, or the warm hospitality of the Tamil people, Jaffna promises an authentic and 
-              unforgettable Sri Lankan experience that will leave you with a deeper appreciation for 
+              Whether you&apos;re drawn by the historical significance, the spiritual atmosphere, the delicious
+              cuisine, or the warm hospitality of the Tamil people, Jaffna promises an authentic and
+              unforgettable Sri Lankan experience that will leave you with a deeper appreciation for
               the island&apos;s diverse cultural heritage.
             </p>
           </div>
@@ -1349,7 +1286,7 @@ export default function JaffnaGuide() {
                 />
                 <p className="text-sm text-muted-foreground">
                   Nainativu is a sacred island known for its ancient temples, including the Naguleswaram Hindu Temple and the Buddhist Nagadeepa Vihara.
-                  </p>
+                </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/nainativu" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>

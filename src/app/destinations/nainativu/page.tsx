@@ -212,7 +212,7 @@ export default function NainativuTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/Nagadeepa-Viharaya.jpg"
+                  src="/Nagadeepa-Viharaya.jpeg"
                   alt="White stupa and shrine of Nagadeepa Purana Viharaya, Nainativu"
                   width={400}
                   height={220}

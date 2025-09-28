@@ -1,31 +1,14 @@
-import type { Metadata } from "next"
+"use client"
 import Image from "next/image"
 import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, TreePine, Leaf, Droplets } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-export const metadata: Metadata = {
-  title: "Matale Travel Guide 2025: Spice Garden Capital of Sri Lanka | Complete Guide",
-  description:
-    "Discover Matale, Sri Lanka's spice garden capital. Complete guide to Aluvihare Rock Temple, spice plantations, Sembuwatta Lake, Sera Ella waterfall, Nalanda Gedige, Riverston Peak, and authentic culinary experiences.",
-  keywords:
-    "Matale Sri Lanka, spice gardens, Aluvihare Rock Temple, Sembuwatta Lake, Sera Ella, Nalanda Gedige, Riverston Peak, Pitawala Pathana, Knuckles Mountains, spice plantations, cinnamon, cardamom, pepper, culinary tours",
-  authors: [{ name: "Sri Lanka Travel Expert" }],
-  openGraph: {
-    title: "Matale Travel Guide 2025: Spice Garden Capital of Sri Lanka",
-    description: "Your complete guide to Matale - spice gardens, ancient temples, waterfalls, mountain peaks, and authentic culinary adventures",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Matale Travel Guide 2025: Spice Garden Capital of Sri Lanka",
-    description: "Your complete guide to Matale - spice gardens, ancient temples, waterfalls, mountain peaks, and authentic culinary adventures",
-  },
-}
+
 
 export default function MataleGuide() {
   return (
@@ -60,14 +43,26 @@ export default function MataleGuide() {
         </div>
       </section>
 
+      {/* Section Navigation */}
+      <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
+          <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-orange-700 dark:text-orange-200 hover:bg-orange-100 dark:hover:bg-orange-900 transition">Introduction</a>
+          <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-orange-700 dark:text-orange-200 hover:bg-orange-100 dark:hover:bg-orange-900 transition">Quick Facts</a>
+          <a href="#getting-there" className="px-3 py-1 rounded-full font-medium text-orange-700 dark:text-orange-200 hover:bg-orange-100 dark:hover:bg-orange-900 transition">Getting There</a>
+          <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-orange-700 dark:text-orange-200 hover:bg-orange-100 dark:hover:bg-orange-900 transition">Attractions</a>
+          <a href="#spice-heritage" className="px-3 py-1 rounded-full font-medium text-orange-700 dark:text-orange-200 hover:bg-orange-100 dark:hover:bg-orange-900 transition">Spice Heritage</a>
+          <a href="#stay" className="px-3 py-1 rounded-full font-medium text-orange-700 dark:text-orange-200 hover:bg-orange-100 dark:hover:bg-orange-900 transition">Where to Stay</a>
+        </div>
+      </nav>
+
       {/* Ad Banner - Top */}
-  <div className="max-w-6xl mx-auto px-4 py-4">
+      {/* <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
           [Advertisement Space - 728x90 Leaderboard - Spice Garden Tours & Culinary Experiences]
         </div>
-      </div>
+      </div> */}
 
-  <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Matale: Where Spices Tell Stories</h2>
@@ -86,7 +81,7 @@ export default function MataleGuide() {
         </section>
 
         {/* Quick Facts */}
-        <section className="mb-12">
+        <section className="mb-12 scroll-mt-20" id="quick-facts">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -142,7 +137,7 @@ export default function MataleGuide() {
         </section>
 
         {/* Getting to Matale (moved up) */}
-        <section className="mb-12">
+        <section className="mb-12 scroll-mt-20" id="getting-there">
           <h2 className="text-3xl font-bold mb-6">Getting to Matale</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
@@ -211,13 +206,13 @@ export default function MataleGuide() {
         </section>
 
         {/* Top Attractions */}
-        <section className="mb-12">
+        <section className="mb-12 scroll-mt-20" id="attractions">
           <h2 className="text-3xl font-bold mb-6">Top Attractions in Matale</h2>
 
           {/* Ad Banner - Mid Content */}
-          <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
+          {/* <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
             [Advertisement Space - 300x250 Medium Rectangle - Spice Plantation Tours & Cooking Classes]
-          </div>
+          </div> */}
 
           <div className="space-y-8">
 
@@ -261,12 +256,27 @@ export default function MataleGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Riverston Peak dramatic cliff viewpoint overlooking Knuckles Mountain Range with misty valleys below"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Riverston-Peak.jpg",
+                        alt: "Dramatic cliff viewpoint at Riverston Peak",
+                        caption: "Panoramic view of the Knuckles Mountain Range",
+                        title: "Riverston Peak Vista"
+                      },
+                      {
+                        src: "/Riverston-Wind-Gap.jpg",
+                        alt: "The famous Riverston Wind Gap",
+                        caption: "Experience the powerful winds at Wind Gap",
+                        title: "Riverston Wind Gap"
+                      },
+                      {
+                        src: "/Riverston-Sunrise.jpg",
+                        alt: "Sunrise view from Riverston Peak",
+                        caption: "Misty sunrise over the valleys",
+                        title: "Sunrise at Riverston"
+                      }
+                    ]}
                   />
                 </div>
               </CardContent>
@@ -280,12 +290,27 @@ export default function MataleGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Matale spice gardens showing cinnamon, cardamom, pepper, and other spices growing in natural plantation setting"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Matale-Spice-Garden.jpg",
+                        alt: "Traditional spice garden in Matale",
+                        caption: "Aromatic spices growing in their natural habitat",
+                        title: "Matale Spice Gardens"
+                      },
+                      {
+                        src: "/Cinnamon-Processing.jpg",
+                        alt: "Traditional cinnamon processing",
+                        caption: "Traditional cinnamon peeling techniques",
+                        title: "Ceylon Cinnamon Processing"
+                      },
+                      {
+                        src: "/Spice-Display.jpg",
+                        alt: "Colorful display of various spices",
+                        caption: "Various spices produced in Matale",
+                        title: "Spice Varieties"
+                      }
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -349,12 +374,27 @@ export default function MataleGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Aluvihare Rock Temple with ancient cave temples carved into rock face and beautiful Buddhist murals"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Aluvihare-Temple.jpg",
+                        alt: "Ancient Aluvihare Rock Temple",
+                        caption: "Historic Buddhist temple complex",
+                        title: "Aluvihare Rock Temple"
+                      },
+                      {
+                        src: "/Aluvihare-Caves.jpg",
+                        alt: "Sacred cave temples at Aluvihare",
+                        caption: "Ancient cave temples with Buddhist murals",
+                        title: "Aluvihare Cave Temples"
+                      },
+                      {
+                        src: "/Aluvihare-Scriptures.jpg",
+                        alt: "Ancient Buddhist scriptures",
+                        caption: "Historic Buddhist texts and artifacts",
+                        title: "Ancient Buddhist Scriptures"
+                      }
+                    ]}
                   />
                 </div>
               </CardContent>
@@ -368,12 +408,27 @@ export default function MataleGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Sembuwatta Lake surrounded by lush mountains with crystal clear water and natural swimming areas"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Sembuwatta-Lake.jpg",
+                        alt: "Pristine Sembuwatta Lake",
+                        caption: "Crystal clear waters surrounded by mountains",
+                        title: "Sembuwatta Lake"
+                      },
+                      {
+                        src: "/Sembuwatta-Activities.jpg",
+                        alt: "Adventure activities at Sembuwatta",
+                        caption: "Zip-lining and water activities",
+                        title: "Adventure at Sembuwatta"
+                      },
+                      {
+                        src: "/Sembuwatta-Sunset.jpg",
+                        alt: "Sunset at Sembuwatta Lake",
+                        caption: "Beautiful sunset reflections on the lake",
+                        title: "Sembuwatta Sunset"
+                      }
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -437,12 +492,28 @@ export default function MataleGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/Sera-Ella.jpg"
-                    alt="Sera Ella waterfall cascading through lush tropical forest with natural pools and rocks"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+           
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Sera-Ella.jpg",
+                        alt: "Dramatic cliff viewpoint at Riverston Peak",
+                        caption: "Panoramic view of the Knuckles Mountain Range",
+                        title: "Riverston Peak Vista"
+                      },
+                      {
+                        src: "/Riverston-Wind-Gap.jpg",
+                        alt: "The famous Riverston Wind Gap",
+                        caption: "Experience the powerful winds at Wind Gap",
+                        title: "Riverston Wind Gap"
+                      },
+                      {
+                        src: "/Riverston-Sunrise.jpg",
+                        alt: "Sunrise view from Riverston Peak",
+                        caption: "Misty sunrise over the valleys",
+                        title: "Sunrise at Riverston"
+                      }
+                    ]}
                   />
                 </div>
               </CardContent>
@@ -456,12 +527,27 @@ export default function MataleGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Nalanda Gedige ancient stone temple with intricate Buddhist and Hindu architectural elements"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Nalanda-Gedige.jpg",
+                        alt: "Ancient Nalanda Gedige temple",
+                        caption: "Unique Buddhist-Hindu architectural fusion",
+                        title: "Nalanda Gedige Temple"
+                      },
+                      {
+                        src: "/Nalanda-Carvings.jpg",
+                        alt: "Intricate stone carvings at Nalanda",
+                        caption: "Ancient stone craftsmanship",
+                        title: "Stone Carvings at Nalanda"
+                      },
+                      {
+                        src: "/Nalanda-Architecture.jpg",
+                        alt: "Architectural details of Nalanda Gedige",
+                        caption: "Sophisticated ancient engineering",
+                        title: "Architectural Details"
+                      }
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -506,12 +592,27 @@ export default function MataleGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Pitawala Pathana rolling grasslands with dramatic cliff edge overlooking misty valleys"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Pitawala-Pathana.jpg",
+                        alt: "Mini World's End at Pitawala Pathana",
+                        caption: "Dramatic cliffs and rolling grasslands",
+                        title: "Pitawala Pathana"
+                      },
+                      {
+                        src: "/Pitawala-Sunrise.jpg",
+                        alt: "Sunrise at Pitawala Pathana",
+                        caption: "Golden sunrise over misty valleys",
+                        title: "Pitawala Sunrise"
+                      },
+                      {
+                        src: "/Pitawala-Grasslands.jpg",
+                        alt: "Rolling grasslands of Pitawala",
+                        caption: "Pristine montane grasslands",
+                        title: "Pitawala Grasslands"
+                      }
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -577,12 +678,27 @@ export default function MataleGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Knuckles Mountain Range showing lush cloud forests and distinctive rocky peaks"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Knuckles-Range.jpg",
+                        alt: "Knuckles Mountain Range panorama",
+                        caption: "UNESCO World Heritage mountain landscape",
+                        title: "Knuckles Mountain Range"
+                      },
+                      {
+                        src: "/Knuckles-Forest.jpg",
+                        alt: "Cloud forests of Knuckles",
+                        caption: "Pristine cloud forest ecosystem",
+                        title: "Knuckles Cloud Forest"
+                      },
+                      {
+                        src: "/Knuckles-Trail.jpg",
+                        alt: "Hiking trail in Knuckles",
+                        caption: "Scenic hiking trails through the mountains",
+                        title: "Knuckles Hiking Trail"
+                      }
+                    ]}
                   />
                 </div>
               </CardContent>
@@ -597,12 +713,27 @@ export default function MataleGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Kalabokka View Point with dramatic mountain vistas, rolling tea fields, and misty valleys in Matale"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Kalabokka-Viewpoint.jpg",
+                        alt: "Panoramic view from Kalabokka",
+                        caption: "360-degree views of mountains and valleys",
+                        title: "Kalabokka View Point"
+                      },
+                      {
+                        src: "/Kalabokka-Sunrise.jpg",
+                        alt: "Sunrise at Kalabokka",
+                        caption: "Golden sunrise over tea estates",
+                        title: "Kalabokka Sunrise"
+                      },
+                      {
+                        src: "/Kalabokka-Tea.jpg",
+                        alt: "Tea plantations near Kalabokka",
+                        caption: "Rolling tea estates and mountain views",
+                        title: "Kalabokka Tea Estates"
+                      }
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -636,7 +767,7 @@ export default function MataleGuide() {
         <Separator className="my-12" />
 
         {/* Spice Heritage */}
-        <section className="mb-12">
+        <section className="mb-12 scroll-mt-20" id="spice-heritage">
           <h2 className="text-3xl font-bold mb-6">The Spice Heritage of Matale</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
@@ -727,12 +858,12 @@ export default function MataleGuide() {
         </section>
 
         {/* Ad Banner - Mid Content 2 */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
+        {/* <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
           [Advertisement Space - 728x90 Leaderboard - Authentic Spice Products & Cooking Equipment]
-        </div>
+        </div> */}
 
         {/* Where to Stay */}
-        <section className="mb-12">
+        {/* <section className="mb-12 scroll-mt-20" id="stay">
           <h2 className="text-3xl font-bold mb-6">Where to Stay in Matale</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
@@ -783,7 +914,7 @@ export default function MataleGuide() {
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
         {/* Local Cuisine */}
         <section className="mb-12">
@@ -1156,9 +1287,9 @@ export default function MataleGuide() {
         </section>
 
         {/* Ad Banner - Bottom */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
+        {/* <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
           [Advertisement Space - 728x90 Leaderboard - Premium Spice Products & Culinary Tours]
-        </div>
+        </div> */}
       </div>
     </main>
   )

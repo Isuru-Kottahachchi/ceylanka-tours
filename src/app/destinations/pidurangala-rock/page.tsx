@@ -1,22 +1,9 @@
-import type { Metadata } from "next"
+
 import Image from "next/image"
 import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Users, Mountain, Sunrise } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-
-export const metadata: Metadata = {
-  title: "Pidurangala Rock: Complete Travel Guide 2025 | Best Views of Sigiriya",
-  description:
-    "Discover Pidurangala Rock, the perfect viewpoint for Sigiriya. Complete guide with climbing tips, sunrise views, and everything you need to know.",
-  keywords: "Pidurangala Rock, Sigiriya views, Sri Lanka travel, sunrise, rock climbing, photography",
-  openGraph: {
-    title: "Pidurangala Rock: Complete Travel Guide 2025",
-    description: "Your ultimate guide to climbing Pidurangala Rock for the best Sigiriya views",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
 
 export default function PidurangalaRockGuide() {
   return (
@@ -51,7 +38,7 @@ export default function PidurangalaRockGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">

@@ -270,6 +270,72 @@ export default function EllaTownGuide() {
                 </div>
               </CardContent>
             </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Ravana Cave</CardTitle>
+                <CardDescription>Ancient cave with legendary significance</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Located near Ravana Falls, this historic cave is believed to be where King Ravana hid Princess Sita after abducting her from India, according to the Ramayana epic. The cave offers a glimpse into ancient Sri Lankan history and architecture.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Short walk from Ravana Falls
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Historical significance
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <AlertTriangle className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
+                        Bring a flashlight for better visibility
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Historic Ravana Cave entrance with ancient stone work and steps"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Nil Diya Pokuna (Blue Water Pool)</CardTitle>
+                <CardDescription>Currently closed to visitors</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Scenic view of Nil Diya Pokuna natural pool surrounded by forest"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      A natural pool with crystal clear blue water surrounded by lush forest. While historically a popular swimming spot, Nil Diya Pokuna is currently not open for visitors due to safety and conservation measures.
+                    </p>
+                    <div className="mt-4 p-3 bg-red-50 rounded-lg border border-red-200">
+                      <p className="text-sm text-red-700 flex items-center gap-2">
+                        <AlertTriangle className="w-4 h-4" />
+                        <strong>Important Notice:</strong> This location is currently closed to visitors. Please respect local regulations and do not attempt to access the site.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
           </div>
         </section>
 
@@ -440,6 +506,7 @@ export default function EllaTownGuide() {
               </CardContent>
             </Card>
 
+            
             <Card>
               <CardHeader>
                 <CardTitle>Diyaluma Falls</CardTitle>

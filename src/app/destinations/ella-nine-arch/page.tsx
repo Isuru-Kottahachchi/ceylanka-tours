@@ -1,22 +1,19 @@
-import type { Metadata } from "next"
+
 import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Users, Camera, TreePine, Train } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle,  } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
-export const metadata: Metadata = {
-  title: "Nine Arch Bridge Ella: Complete Guide 2025 | Train Spotting & Photography Paradise",
-  description:
-    "Explore the iconic Nine Arch Bridge in Ella, Sri Lanka's most photographed railway bridge. Complete guide to train times, best viewpoints, and photography tips.",
-  keywords:
-    "Nine Arch Bridge, Ella Sri Lanka, train spotting, railway bridge, photography, Demodara Bridge, hill country attractions",
-  openGraph: {
-    title: "Nine Arch Bridge Ella: Complete Photography & Train Spotting Guide",
-    description: "Your ultimate guide to Sri Lanka's most iconic railway bridge and train spotting paradise",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+
+
+const navigationLinks = [
+  { href: "#introduction", label: "Introduction" },
+  { href: "#quick-facts", label: "Quick Facts" },
+  { href: "#train-spotting", label: "Train Spotting" },
+  { href: "#photography", label: "Photography" },
+  { href: "#engineering", label: "Engineering" },
+  { href: "#visiting-guide", label: "Visiting Guide" }
+];
 
 export default function NineArchBridgeGuide() {
   return (
@@ -24,7 +21,7 @@ export default function NineArchBridgeGuide() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=900&width=1400"
+          src="/Nine-arch-ella.jpg"
           alt="Nine Arch Bridge with blue train crossing through lush green tea plantations"
           fill
           className="object-cover"
@@ -50,6 +47,21 @@ export default function NineArchBridgeGuide() {
           </div>
         </div>
       </section>
+
+      {/* Section Navigation */}
+      <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
+          {navigationLinks.map((link) => (
+            <a 
+              key={link.href}
+              href={link.href}
+              className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      </nav>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Detailed Introduction */}
@@ -97,10 +109,10 @@ export default function NineArchBridgeGuide() {
         </div>
 
         {/* Enhanced Quick Facts */}
-        <section className="mb-16">
-          <Card className="border-2 border-green-200 bg-gradient-to-br from-green-50 to-emerald-50">
+        <section id="quick-facts" className="mb-16 scroll-mt-20">
+          <Card className="border-2 border-green-200/50 bg-gradient-to-br from-green-50/10 to-emerald-50/10 dark:from-green-950/50 dark:to-emerald-950/50">
             <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-3xl">
+              <CardTitle className="flex items-center gap-3 text-3xl text-foreground">
                 <Train className="w-8 h-8 text-green-500" />
                 Essential Bridge Information
               </CardTitle>
@@ -108,7 +120,7 @@ export default function NineArchBridgeGuide() {
             <CardContent>
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-xl text-green-700 mb-4">Engineering Marvel</h4>
+                  <h4 className="font-semibold text-xl text-green-700 dark:text-green-400 mb-4">Engineering Marvel</h4>
                   <div className="flex items-center gap-3">
                     <Train className="w-5 h-5 text-blue-500" />
                     <span>
@@ -135,7 +147,7 @@ export default function NineArchBridgeGuide() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-xl text-blue-700 mb-4">Train Schedule</h4>
+                  <h4 className="font-semibold text-xl text-blue-700 dark:text-blue-400 mb-4">Train Schedule</h4>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-orange-500" />
                     <span>
@@ -162,7 +174,7 @@ export default function NineArchBridgeGuide() {
                   </div>
                 </div>
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-xl text-purple-700 mb-4">Photography Tips</h4>
+                  <h4 className="font-semibold text-xl text-purple-700 dark:text-purple-400 mb-4">Photography Tips</h4>
                   <div className="flex items-center gap-3">
                     <Camera className="w-5 h-5 text-green-500" />
                     <span>
@@ -194,15 +206,15 @@ export default function NineArchBridgeGuide() {
         </section>
 
         {/* Main Experiences */}
-        <section className="mb-16">
+        <section id="train-spotting" className="mb-16 scroll-mt-20">
           <h2 className="text-4xl font-bold mb-10">The Complete Nine Arch Bridge Experience</h2>
 
           <div className="space-y-12">
             {/* Train Spotting Experience */}
-            <Card className="overflow-hidden border-2 border-blue-200">
-              <CardHeader className="bg-gradient-to-r from-blue-50 to-sky-50">
-                <CardTitle className="text-2xl text-blue-800">Train Spotting & Railway Romance</CardTitle>
-                <CardDescription className="text-lg text-blue-600">
+            <Card className="overflow-hidden border border-border">
+              <CardHeader className="bg-muted">
+                <CardTitle className="text-2xl text-foreground">Train Spotting & Railway Romance</CardTitle>
+                <CardDescription className="text-lg text-muted-foreground">
                   Witness the magic of vintage trains crossing this architectural marvel
                 </CardDescription>
               </CardHeader>
@@ -216,21 +228,21 @@ export default function NineArchBridgeGuide() {
                     className="rounded-xl shadow-lg"
                   />
                   <div className="space-y-6">
-                    <p className="text-muted-foreground text-lg leading-relaxed">
+                    <p className="text-foreground text-lg leading-relaxed">
                       The heart-stopping moment when a train appears around the bend and slowly makes its way across the
                       Nine Arch Bridge is pure magic that never gets old, no matter how many times you witness it. The
                       vintage blue and red carriages of Sri Lanka Railways, often packed with locals and tourists alike,
                       create a scene straight out of a romantic movie as they curve gracefully across the stone arches
                       while surrounded by emerald tea plantations and misty hills.
                     </p>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-foreground leading-relaxed">
                       What makes train spotting here so special is the interaction between passengers and spectators.
                       Train passengers often wave enthusiastically from windows and doorways, creating a joyful
                       connection between those on the bridge and those watching from below. The slow speed of trains
                       crossing the bridge (for safety reasons) gives everyone plenty of time to capture photos, wave,
                       and soak in the magical atmosphere.
                     </p>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-foreground leading-relaxed">
                       The most popular train crossing is the evening service around 6:10 PM, when the golden hour light
                       creates perfect conditions for photography. However, the early morning crossings offer a more
                       serene experience with fewer crowds and often dramatic mist rising from the valley below. Each
@@ -238,24 +250,24 @@ export default function NineArchBridgeGuide() {
                       afternoon trains are filled with tourists exploring the hill country.
                     </p>
 
-                    <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                      <h4 className="font-semibold text-blue-800 mb-3">Train Spotting Highlights:</h4>
-                      <ul className="space-y-3 text-muted-foreground">
+                    <div className="bg-muted p-6 rounded-lg border border-border">
+                      <h4 className="font-semibold text-foreground mb-3">Train Spotting Highlights:</h4>
+                      <ul className="space-y-3">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
+                          <span className="text-foreground">
                             <strong>Daily Crossings:</strong> 6-8 trains cross the bridge daily in both directions
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
+                          <span className="text-foreground">
                             <strong>Vintage Carriages:</strong> Classic blue and red Sri Lankan railway cars
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
+                          <span className="text-foreground">
                             <strong>Passenger Interaction:</strong> Friendly waves and photo opportunities
                           </span>
                         </li>
@@ -311,9 +323,9 @@ export default function NineArchBridgeGuide() {
                       crisp and clear in dry weather.
                     </p>
 
-                    <div className="bg-purple-50 p-6 rounded-lg border border-purple-200">
-                      <h4 className="font-semibold text-purple-800 mb-3">Photography Locations:</h4>
-                      <ul className="space-y-3 text-muted-foreground">
+                    <div className="bg-muted p-6 rounded-lg border border-border">
+                      <h4 className="font-semibold text-foreground mb-3">Photography Locations:</h4>
+                      <ul className="space-y-3">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                           <span>
@@ -400,9 +412,9 @@ export default function NineArchBridgeGuide() {
                       while the foundation design has proven earthquake-resistant.
                     </p>
 
-                    <div className="bg-orange-50 p-6 rounded-lg border border-orange-200">
-                      <h4 className="font-semibold text-orange-800 mb-3">Engineering Features:</h4>
-                      <ul className="space-y-3 text-muted-foreground">
+                    <div className="bg-muted p-6 rounded-lg border border-border">
+                      <h4 className="font-semibold text-foreground mb-3">Engineering Features:</h4>
+                      <ul className="space-y-3">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                           <span>
@@ -448,7 +460,7 @@ export default function NineArchBridgeGuide() {
         </div>
 
         {/* Practical Visiting Information */}
-        <section className="mb-16">
+        <section id="visiting-guide" className="mb-16 scroll-mt-20">
           <h2 className="text-4xl font-bold mb-10">Planning Your Nine Arch Bridge Visit</h2>
           <div className="grid lg:grid-cols-2 gap-10">
             <Card className="border-2 border-green-200">
@@ -460,7 +472,7 @@ export default function NineArchBridgeGuide() {
                   <h4 className="font-semibold text-lg mb-3 text-green-800">Transportation Options</h4>
                   <div className="space-y-3">
                     <div className="bg-green-50 p-3 rounded border-l-4 border-green-500">
-                      <p className="font-medium text-green-700 mb-1">From Ella Town:</p>
+                      <p className="font-medium text-foreground mb-1">From Ella Town:</p>
                       <p className="text-sm text-green-600">
                         30-minute walk through tea plantations or 10-minute tuk-tuk ride. Walking is recommended for the
                         scenic experience.
@@ -605,11 +617,137 @@ export default function NineArchBridgeGuide() {
           </div>
         </section>
 
+        {/* Railway Engineering Marvels */}
+        <section id="railway-engineering" className="mb-16">
+          <Card className="overflow-hidden border-2 border-amber-200/50 bg-gradient-to-br from-amber-50/10 to-orange-50/10 dark:from-amber-950/50 dark:to-orange-950/50">
+            <CardHeader className="space-y-4">
+              <CardTitle className="text-2xl text-foreground">
+                Beyond Nine Arch: Railway Engineering Marvels
+              </CardTitle>
+              <CardDescription className="text-lg">
+                Discover the ingenious railway engineering of Sri Lanka&apos;s hill country
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-8">
+              {/* Demodara Loop */}
+              <div className="grid lg:grid-cols-2 gap-8 items-start">
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">The Famous Demodara Loop</h3>
+                  <div className="prose prose-lg text-muted-foreground">
+                    <p>
+                      Just a few kilometers from the Nine Arch Bridge lies another engineering marvel - the Demodara Loop. This unique spiral railway, also known as the Demodara Spiral, is one of only three spiral railways in the world where a train loops under itself to gain elevation.
+                    </p>
+                    <ul className="mt-4 space-y-2">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                        <span><strong>Height Gain:</strong> Climbs 30 meters through a complete 360-degree spiral</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                        <span><strong>Loop Length:</strong> 441 meters</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                        <span><strong>Built:</strong> 1914</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <Image
+                  src="/placeholder.svg?height=400&width=600"
+                  alt="Demodara Loop Railway Spiral"
+                  width={600}
+                  height={400}
+                  className="rounded-xl shadow-lg"
+                />
+              </div>
+
+              {/* Other Interesting Facts */}
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold mb-4 text-amber-700 dark:text-amber-400">Fascinating Railway Facts</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="bg-white/50 dark:bg-black/20">
+                    <CardHeader>
+                      <CardTitle className="text-lg">Tea Country Railway</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>The railway from Kandy to Badulla climbs from 500m to 1,800m above sea level</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Features 46 tunnels and over 250 bridges</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/50 dark:bg-black/20">
+                    <CardHeader>
+                      <CardTitle className="text-lg">Engineering Feats</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>The steepest gradient on the line is 1 in 44</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Construction took over 8 years to complete</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/50 dark:bg-black/20">
+                    <CardHeader>
+                      <CardTitle className="text-lg">Local Innovation</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Local craftsmen developed unique stone-cutting techniques</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Traditional methods were combined with British engineering</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/50 dark:bg-black/20">
+                    <CardHeader>
+                      <CardTitle className="text-lg">Historical Significance</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Opened in 1921 to transport tea and supplies</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Now considered one of the most scenic railway journeys in the world</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
         {/* Final Inspirational Section */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-br from-green-50 via-emerald-50 to-blue-50 border-2 border-green-200 overflow-hidden">
+          <Card className="bg-card border border-border overflow-hidden">
             <CardHeader className="text-center pb-6">
-              <CardTitle className="text-3xl text-green-800 mb-4">
+              <CardTitle className="text-3xl text-foreground mb-4">
                 Capture the Magic of Sri Lanka&apos;s Most Iconic Bridge
               </CardTitle>
             </CardHeader>
@@ -628,8 +766,8 @@ export default function NineArchBridgeGuide() {
                   vegetation ensure that no two visits are ever the same. This is a place that rewards patience,
                   creativity, and multiple visits to fully appreciate its beauty and capture its magic.
                 </p>
-                <div className="bg-white/70 p-6 rounded-xl border border-green-200 mt-8">
-                  <p className="text-xl font-semibold text-green-800 mb-2">
+                <div className="bg-muted p-6 rounded-xl border border-border mt-8">
+                  <p className="text-xl font-semibold text-foreground mb-2">
                     Experience the iconic Nine Arch Bridge in all its glory! 🚂🌉📸✨
                   </p>
                   <p className="text-sm text-green-600">

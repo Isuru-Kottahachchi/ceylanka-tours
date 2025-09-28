@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Mountain, Sunrise } from "lucide-react"
+import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Mountain, Sunrise, Landmark } from "lucide-react"
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -155,6 +156,30 @@ export default function AdamsPeakTravelGuide() {
                 meters long. This sacred impression is revered by four major religions, each with their own
                 interpretation of its divine origin.
               </p>
+              <div className="bg-amber-50 p-4 rounded-lg mb-4 border border-amber-200">
+                <h4 className="font-semibold text-amber-800 mb-2 flex items-center gap-2">
+                  <Landmark className="w-4 h-4" />
+                  Baghawa Lena (Diva Guhawa)
+                </h4>
+                <p className="text-sm text-amber-700 mb-2">
+                  Located near the peak, this ancient cave has significant historical and spiritual importance. According to local tradition, it served as a resting place for pilgrims making their way to the sacred summit.
+                </p>
+                <ul className="text-sm text-amber-700 space-y-1">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    Historical resting point for pilgrims
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    Protected ancient site
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-amber-600 mt-1 flex-shrink-0" />
+                    Accessible via the main pilgrimage path
+                  </li>
+                </ul>
+              </div>
+
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-blue-800 mb-2">Buddhism</h4>

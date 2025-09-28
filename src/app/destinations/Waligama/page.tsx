@@ -1,24 +1,12 @@
-import type { Metadata } from "next"
+"use client"
 import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Sun, Camera, Fish, TreePalm, Utensils, Bed, Car, Train, Users, AlertTriangle } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export const metadata: Metadata = {
-  title: "Weligama Sri Lanka: Complete Travel Guide 2025 | Stilt Fishermen & Surfing Paradise",
-  description:
-    "Discover Weligama, Sri Lanka's charming coastal town famous for stilt fishermen, beginner surfing, Snake Island, and Coconut Tree Hill. Complete travel guide with tips and nearby attractions.",
-  keywords:
-    "Weligama Sri Lanka, stilt fishermen, surfing lessons, Snake Island, Coconut Tree Hill, Taprobane Island, Sri Lanka beaches, southern coast, beginner surfing",
-  openGraph: {
-    title: "Weligama: Ultimate Stilt Fishermen & Surfing Guide 2025",
-    description: "Your complete guide to Sri Lanka's authentic coastal paradise with stilt fishermen and perfect surfing conditions",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
 
 export default function WeligamaTravelGuide() {
   return (
@@ -61,14 +49,8 @@ export default function WeligamaTravelGuide() {
           <a href="#getting-there" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Getting There</a>
           <a href="#stilt-fishermen" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Stilt Fishermen</a>
           <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Attractions</a>
-          <a href="#surfing" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Surfing</a>
-          <a href="#cuisine" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Cuisine</a>
-          <a href="#culture" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Culture</a>
-          <a href="#nature" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Nature</a>
           <a href="#adventure" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Adventure</a>
           <a href="#nearby" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Nearby Attractions</a>
-          <a href="#shopping" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Shopping</a>
-          <a href="#accommodation" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Accommodation</a>
           <a href="#tips" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Travel Tips</a>
           <a href="#transport" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Getting Around</a>
         </div>
@@ -266,12 +248,21 @@ export default function WeligamaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Aerial view of Snake Island Taprobane showing the colonial villa surrounded by ocean with sandy causeway visible at low tide"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Waligama-Snake-Island.jpeg",
+                        alt: "Aerial view of Snake Island Taprobane",
+                        caption: "Snake Island with its colonial villa",
+                        title: "Snake Island from Above"
+                      },
+                      {
+                        src: "/Waligama-Snake-Island1.jpeg",
+                        alt: "Sandy causeway connecting Snake Island to mainland",
+                        caption: "Low tide reveals the magical sand path",
+                        title: "Snake Island Causeway"
+                      },
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -303,7 +294,7 @@ export default function WeligamaTravelGuide() {
             </Card>
 
             {/* Coconut Tree Hill */}
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle>2. Coconut Tree Hill Weligama</CardTitle>
                 <CardDescription>Instagram-famous hilltop with panoramic coastal views</CardDescription>
@@ -335,31 +326,61 @@ export default function WeligamaTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Coconut Tree Hill in Weligama showing iconic palm trees silhouetted against golden sunset sky with ocean views"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Waligama-Snake-Island.jpeg",
+                        alt: "Aerial view of Snake Island Taprobane",
+                        caption: "Snake Island with its colonial villa",
+                        title: "Snake Island from Above"
+                      },
+                      {
+                        src: "/Snake-Island-Causeway.jpg",
+                        alt: "Sandy causeway connecting Snake Island to mainland",
+                        caption: "Low tide reveals the magical sand path",
+                        title: "Snake Island Causeway"
+                      },
+                      {
+                        src: "/Snake-Island-Villa.jpg",
+                        alt: "Colonial villa on Snake Island",
+                        caption: "Historic colonial-era villa on the island",
+                        title: "Snake Island Villa"
+                      }
+                    ]}
                   />
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Weligama Bay Beach */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Weligama Bay Beach</CardTitle>
+                <CardTitle>2. Weligama Bay Beach</CardTitle>
                 <CardDescription>Protected bay perfect for swimming and surfing lessons</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Weligama Bay Beach showing the curved golden sand bay with colorful fishing boats and palm trees"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src:"/IMG_8209.jpg",
+                        alt: "Aerial view of Snake Island Taprobane",
+                        caption: "Snake Island with its colonial villa",
+                        title: "Snake Island from Above"
+                      },
+                      {
+                        src: "/Waligama-Bay-Beach.jpg",
+                        alt: "Sandy causeway connecting Snake Island to mainland",
+                        caption: "Low tide reveals the magical sand path",
+                        title: "Snake Island Causeway"
+                      },
+                      {
+                        src: "/Snake-Island-Villa.jpg",
+                        alt: "Colonial villa on Snake Island",
+                        caption: "Historic colonial-era villa on the island",
+                        title: "Snake Island Villa"
+                      }
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -423,12 +444,27 @@ export default function WeligamaTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Weligama fish market showing local fishermen with fresh catch, vendors, and traditional boats in background"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Waligama-Snake-Island.jpeg",
+                        alt: "Aerial view of Snake Island Taprobane",
+                        caption: "Snake Island with its colonial villa",
+                        title: "Snake Island from Above"
+                      },
+                      {
+                        src: "/Snake-Island-Causeway.jpg",
+                        alt: "Sandy causeway connecting Snake Island to mainland",
+                        caption: "Low tide reveals the magical sand path",
+                        title: "Snake Island Causeway"
+                      },
+                      {
+                        src: "/Snake-Island-Villa.jpg",
+                        alt: "Colonial villa on Snake Island",
+                        caption: "Historic colonial-era villa on the island",
+                        title: "Snake Island Villa"
+                      }
+                    ]}
                   />
                 </div>
               </CardContent>

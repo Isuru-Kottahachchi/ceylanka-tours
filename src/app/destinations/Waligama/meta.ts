@@ -1,7 +1,7 @@
 import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
 
 export const metadata: Metadata = {
-  title: "Weligama Travel Guide 202d - Best Things to Do, Beaches & Surfing | Sri Lanka",
+  title: "Weligama Travel Guide 2025 - Best Things to Do, Beaches & Surfing | Sri Lanka",
   description:
     "Complete Weligama travel guide with best beaches, surfing spots, stilt fishermen, accommodation, and local attractions. Plan your perfect Sri Lankan coastal adventure.",
   keywords:
