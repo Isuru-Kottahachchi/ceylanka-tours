@@ -276,20 +276,18 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-  {
-    id: 17,
-    name: "Bathangunduwa",
-    location: "",
-    path: "bathangunduwa",
-    image: "/placeholder.svg?height=400&width=600",
-    // rating: 4.3,
-    // reviews: 890,
-    description: "Island of Sri Lanka",
-    highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
-    category: "Nature",
-  },
-
-
+  // {
+  //   id: 17,
+  //   name: "Bathangunduwa",
+  //   location: "",
+  //   path: "bathangunduwa",
+  //   image: "/placeholder.svg?height=400&width=600",
+  //   // rating: 4.3,
+  //   // reviews: 890,
+  //   description: "Island of Sri Lanka",
+  //   highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
+  //   category: "Nature",
+  // },
   {
     id: 20,
     name: "Pasikuda",

@@ -43,7 +43,7 @@ const searchVariations: { [key: string]: string[] } = {
   "badulla": ["badula", "badula"],
   "mathale": ["matale", "mathale"],
   "yapahuwa": ["yapahuwa", "yapahuva"],
-  "waligama": ["waligama", "waligaama", "waligana"],
+  "waligama": ["waligama", "waligaama", "waligana","weligama"],
   "katharagama": ["kataragama", "katharigama"],
   "mahiyanganaya": ["mahiyangana", "mahiyanganaya"],
   "sinharaja": ["sinharaja", "sinharaja forest"],

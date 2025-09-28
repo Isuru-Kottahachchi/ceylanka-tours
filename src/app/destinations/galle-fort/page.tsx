@@ -693,7 +693,7 @@ export default function GalleFortTravelGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/destinations/hummanaya" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/hummanaya-blowhole" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Hummanaya Blowhole</CardTitle>

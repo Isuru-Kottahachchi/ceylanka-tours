@@ -1,22 +1,15 @@
+"use client"
+
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Sun, Camera } from 'lucide-react'
+import { Clock, MapPin, Star, Calendar, Waves, Sun, Camera, CheckCircle } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ImageCarousel } from "@/components/ui/image-carousel"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
-export const metadata: Metadata = {
-  title: "Mirissa Sri Lanka: Ultimate Beach Guide 2025 | Whale Watching Paradise",
-  description:
-    "Discover Mirissa, Sri Lanka&apos;s premier beach destination. Complete guide to whale watching, surfing, pristine beaches, and the best things to do in this tropical paradise.",
-  keywords:
-    "Mirissa Sri Lanka, whale watching, blue whales, surfing, beach paradise, coconut hill, stilt fishermen, tropical beaches",
-  openGraph: {
-    title: "Mirissa: Ultimate Beach Paradise Guide 2025",
-    description: "Your complete guide to Sri Lanka&apos;s most beautiful beach destination",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+
 
 export default function MirissaTravelGuide() {
   return (
@@ -65,8 +58,8 @@ export default function MirissaTravelGuide() {
       </nav>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
-  {/* Introduction */}
-  <section className="mb-12 scroll-mt-24" id="introduction">
+        {/* Introduction */}
+        <section className="mb-12 scroll-mt-24" id="introduction">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Mirissa: Where Ocean Dreams Come True</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
@@ -88,8 +81,8 @@ export default function MirissaTravelGuide() {
           [Advertisement Space - 728x90 Leaderboard]
         </div>
 
-  {/* Quick Facts */}
-  <section className="mb-12 scroll-mt-24" id="quick-facts">
+        {/* Quick Facts */}
+        <section className="mb-12 scroll-mt-24" id="quick-facts">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -144,8 +137,8 @@ export default function MirissaTravelGuide() {
           </Card>
         </section>
 
-  {/* Whale Watching */}
-  <section className="mb-12 scroll-mt-24" id="whale-watching">
+        {/* Whale Watching */}
+        <section className="mb-12 scroll-mt-24" id="whale-watching">
           <h2 className="text-3xl font-bold mb-6">World&apos;s Best Whale Watching Experience</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
@@ -184,8 +177,8 @@ export default function MirissaTravelGuide() {
           </div>
         </section>
 
-  {/* Top Attractions */}
-  <section className="mb-12 scroll-mt-24" id="attractions">
+        {/* Top Attractions */}
+        <section className="mb-12 scroll-mt-24" id="attractions">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Mirissa</h2>
 
           {/* Ad Space */}
@@ -202,12 +195,21 @@ export default function MirissaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Coconut Hill in Mirissa with palm trees silhouetted against golden sunset sky"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/coconut-hill-1.jpg",
+                        alt: "Coconut Hill with sunset view",
+                        caption: "Sunset at Coconut Hill",
+                        title: "Coconut Hill",
+                      },
+                      {
+                        src: "/coconut-hill-2.jpg",
+                        alt: "Coconut Hill with panoramic ocean view",
+                        caption: "Panoramic views from Coconut Hill",
+                        title: "Coconut Hill",
+                      },
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -246,6 +248,22 @@ export default function MirissaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/mirissa-beach-1.jpg",
+                        alt: "Mirissa Beach with golden sand",
+                        caption: "Relaxing at Mirissa Beach",
+                        title: "Mirissa Beach",
+                      },
+                      {
+                        src: "/mirissa-beach-2.jpg",
+                        alt: "Mirissa Beach with palm trees",
+                        caption: "Palm trees at Mirissa Beach",
+                        title: "Mirissa Beach",
+                      },
+                    ]}
+                  />
                   <div>
                     <p className="text-muted-foreground mb-4">
                       The main beach stretches for over a kilometer of pristine golden sand, fringed by swaying palm trees
@@ -271,13 +289,6 @@ export default function MirissaTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Mirissa main beach showing golden sand, clear blue water, palm trees, and beachgoers relaxing"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
                 </div>
               </CardContent>
             </Card>
@@ -290,12 +301,21 @@ export default function MirissaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Secret Beach in Mirissa showing secluded cove with pristine sand and fewer crowds"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/secret-beach.jpeg",
+                        alt: "Secret Beach with pristine sand",
+                        caption: "Secluded Secret Beach",
+                        title: "Secret Beach",
+                      },
+                      {
+                        src: "/secret-beach-2.jpg",
+                        alt: "Secret Beach with tide pools",
+                        caption: "Tide pools at Secret Beach",
+                        title: "Secret Beach",
+                      },
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -435,6 +455,87 @@ export default function MirissaTravelGuide() {
                   <li>• Dramatic stormy seascapes</li>
                   <li>• Not ideal for beach activities</li>
                 </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Weligama Card */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Weligama</CardTitle>
+                <CardDescription>Surfing paradise with sandy beaches</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/IMG_8209.jpg"
+                  alt="Weligama Beach"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Weligama is a popular destination for beginner surfers, offering gentle waves and a laid-back atmosphere.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/waligama" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Galle Fort Card */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Galle Fort</CardTitle>
+                <CardDescription>Historic UNESCO World Heritage Site</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/galle-fort-sarmat-batagov-unsplash.jpg"
+                  alt="Galle Fort"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Galle Fort is a historic colonial-era fortification with charming streets, boutique shops, and ocean views.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/galle-fort" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Unawatuna Card */}
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Unawatuna</CardTitle>
+                <CardDescription>Vibrant beach town with coral reefs</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/unawatuna.jpg"
+                  alt="Unawatuna Beach"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Unawatuna is known for its vibrant nightlife, coral reefs, and golden sandy beaches perfect for snorkeling.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/unawatuna" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>

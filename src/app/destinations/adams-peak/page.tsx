@@ -51,7 +51,7 @@ export default function AdamsPeakTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">
@@ -284,7 +284,7 @@ export default function AdamsPeakTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-                {/* Ratnapura Route */}
+            {/* Ratnapura Route */}
             <Card>
               <CardHeader>
                 <CardTitle>3. Kuruwita Erantha Road (Challenging)</CardTitle>
@@ -331,7 +331,7 @@ export default function AdamsPeakTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-                {/* Ratnapura Route */}
+            {/* Ratnapura Route */}
             <Card>
               <CardHeader>
                 <CardTitle>Sandagala thannna (Challenging and not main)</CardTitle>

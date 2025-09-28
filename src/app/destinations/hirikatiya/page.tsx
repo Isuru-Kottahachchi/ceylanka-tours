@@ -1,10 +1,12 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Sun, TreePalm, Car, Train, Users, AlertTriangle, Heart,  Wind, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Sun, TreePalm, Car, Train, Users, AlertTriangle, Heart, Wind, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useState, useEffect } from "react"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 
 
@@ -19,12 +21,12 @@ function HiriketiyaImageCarousel() {
       caption: "The famous horseshoe-shaped bay"
     },
     {
-      src: "/Hirikatiya.jpg", 
+      src: "/Hirikatiya.jpg",
       alt: "Surfers riding perfect waves at Hiriketiya Beach during golden hour",
       caption: "Perfect surfing waves at sunset"
     },
     {
-      src: "/Hirikatiyabeach.jpg",
+      src: "/Hiriketiyabeach.jpg",
       alt: "Aerial view of Hiriketiya Beach showing the protected bay and surf breaks",
       caption: "Aerial view of the surfing paradise"
     },
@@ -36,13 +38,13 @@ function HiriketiyaImageCarousel() {
   ]
 
   const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => 
+    setCurrentImageIndex((prevIndex) =>
       prevIndex === hiriketiyaImages.length - 1 ? 0 : prevIndex + 1
     )
   }
 
   const prevImage = () => {
-    setCurrentImageIndex((prevIndex) => 
+    setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? hiriketiyaImages.length - 1 : prevIndex - 1
     )
   }
@@ -66,18 +68,18 @@ function HiriketiyaImageCarousel() {
           className="object-cover transition-opacity duration-500"
           priority={currentImageIndex === 0}
         />
-        
+
         {/* Navigation Arrows */}
         <button
           onClick={prevImage}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 z-10"
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer z-10"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
-        
+
         <button
           onClick={nextImage}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 z-10"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer z-10"
         >
           <ChevronRight className="w-5 h-5" />
         </button>
@@ -94,11 +96,10 @@ function HiriketiyaImageCarousel() {
           <button
             key={index}
             onClick={() => setCurrentImageIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentImageIndex 
-                ? 'bg-blue-600 scale-110' 
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentImageIndex
+                ? 'bg-blue-600 scale-110'
                 : 'bg-gray-300 hover:bg-gray-400'
-            }`}
+              }`}
           />
         ))}
       </div>
@@ -139,19 +140,19 @@ export default function HiriketiyaTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Hiriketiya: The Crown Jewel of Sri Lankan Surfing</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Nestled along Sri Lanka&apos;s stunning southern coast, Hiriketiya Beach has emerged as the island&apos;s most beloved surfing destination and backpacker paradise. 
-              This perfect horseshoe-shaped bay offers consistent, world-class waves, a vibrant international community, and an irresistible laid-back atmosphere that captures the hearts of travelers from around the globe. 
+              Nestled along Sri Lanka&apos;s stunning southern coast, Hiriketiya Beach has emerged as the island&apos;s most beloved surfing destination and backpacker paradise.
+              This perfect horseshoe-shaped bay offers consistent, world-class waves, a vibrant international community, and an irresistible laid-back atmosphere that captures the hearts of travelers from around the globe.
               Known locally as &quot;Hiri,&quot; this small fishing village has transformed into a surfing mecca while retaining its authentic Sri Lankan charm.
             </p>
             <p className="text-lg">
-              From dawn patrol surf sessions to sunset yoga on pristine sand, from beachfront cafes serving fresh smoothie bowls to evening bonfires under starlit skies, 
-              Hiriketiya offers the quintessential tropical beach experience. The bay&apos;s unique geography creates perfect surfing conditions for all levels, 
+              From dawn patrol surf sessions to sunset yoga on pristine sand, from beachfront cafes serving fresh smoothie bowls to evening bonfires under starlit skies,
+              Hiriketiya offers the quintessential tropical beach experience. The bay&apos;s unique geography creates perfect surfing conditions for all levels,
               while the surrounding coconut groves and traditional fishing village atmosphere provide an authentic taste of coastal Sri Lankan life that&apos;s increasingly rare in today&apos;s world.
             </p>
           </div>
@@ -224,17 +225,17 @@ export default function HiriketiyaTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <HiriketiyaImageCarousel />
-          
+
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Hiriketiya&apos;s unique horseshoe-shaped geography creates one of the most consistent and forgiving surf breaks in Sri Lanka. 
-                The bay offers multiple surf spots suitable for all levels - from gentle white water perfect for beginners on the inside, 
+                Hiriketiya&apos;s unique horseshoe-shaped geography creates one of the most consistent and forgiving surf breaks in Sri Lanka.
+                The bay offers multiple surf spots suitable for all levels - from gentle white water perfect for beginners on the inside,
                 to powerful reef breaks that challenge even experienced surfers. The protected bay ensures surfable waves even when other spots are flat or too rough.
               </p>
               <p>
-                What makes Hiriketiya special is the variety of waves within one compact bay. The main break offers long, clean rides perfect for progression, 
-                while the left-hand point break provides more advanced waves. The sandy bottom in most areas makes it safe for learning, 
+                What makes Hiriketiya special is the variety of waves within one compact bay. The main break offers long, clean rides perfect for progression,
+                while the left-hand point break provides more advanced waves. The sandy bottom in most areas makes it safe for learning,
                 and the consistent swell from the Indian Ocean ensures waves almost year-round.
               </p>
               <div className="bg-blue-50 p-4 rounded-lg">
@@ -429,8 +430,8 @@ export default function HiriketiyaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Hiriketiya has evolved into Sri Lanka&apos;s most international beach destination, attracting travelers from around the world who come for the waves and stay for the community. 
-                      The bay buzzes with a unique energy where European backpackers, Australian surfers, local fishermen, and digital nomads create an atmosphere found nowhere else in Sri Lanka. 
+                      Hiriketiya has evolved into Sri Lanka&apos;s most international beach destination, attracting travelers from around the world who come for the waves and stay for the community.
+                      The bay buzzes with a unique energy where European backpackers, Australian surfers, local fishermen, and digital nomads create an atmosphere found nowhere else in Sri Lanka.
                       This multicultural mix has created a vibrant scene of beach bars, international restaurants, and a laid-back lifestyle that embodies the best of tropical beach living.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -657,9 +658,9 @@ export default function HiriketiyaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Hiriketiya&apos;s international community has created one of Sri Lanka&apos;s most diverse culinary scenes. 
-                      From healthy smoothie bowls and avocado toast to authentic Sri Lankan curries and fresh seafood, 
-                      the bay offers something for every palate. Most restaurants feature beachfront seating where you can watch surfers while enjoying your meal, 
+                      Hiriketiya&apos;s international community has created one of Sri Lanka&apos;s most diverse culinary scenes.
+                      From healthy smoothie bowls and avocado toast to authentic Sri Lankan curries and fresh seafood,
+                      the bay offers something for every palate. Most restaurants feature beachfront seating where you can watch surfers while enjoying your meal,
                       and many cater specifically to health-conscious travelers with organic, vegan, and gluten-free options.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -809,8 +810,8 @@ export default function HiriketiyaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Hiriketiya has become a major wellness destination, with daily yoga classes, meditation sessions, and wellness retreats. 
-                      The beach provides the perfect natural yoga studio, with classes typically held at sunrise and sunset when the light is magical and the temperatures are perfect. 
+                      Hiriketiya has become a major wellness destination, with daily yoga classes, meditation sessions, and wellness retreats.
+                      The beach provides the perfect natural yoga studio, with classes typically held at sunrise and sunset when the light is magical and the temperatures are perfect.
                       Many accommodations offer yoga decks, and several dedicated studios provide various styles from Hatha to Vinyasa flow.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -1072,6 +1073,89 @@ export default function HiriketiyaTravelGuide() {
             </Card>
           </div>
         </section>
+
+        {/* Nearby Attractions */}
+        <div className="max-w-6xl mx-auto px-4 py-12">
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Dickwella Beach Card */}
+              <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                <CardHeader>
+                  <CardTitle className="text-lg">Dickwella Beach</CardTitle>
+                  <CardDescription>Relaxed beach with calm waters</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/dickwella-beach.jpg"
+                    alt="Dickwella Beach"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Dickwella Beach is perfect for families and those seeking a tranquil beach experience with shallow waters.
+                  </p>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/dickwella" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Tangalle Beach Card */}
+              <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                <CardHeader>
+                  <CardTitle className="text-lg">Tangalle Beach</CardTitle>
+                  <CardDescription>Scenic beach with golden sands</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/tangalle-beach.jpg"
+                    alt="Tangalle Beach"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Tangalle Beach offers stunning views, golden sands, and a peaceful atmosphere for relaxation.
+                  </p>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/tangalle" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Kudawella Blowhole Card */}
+              <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                <CardHeader>
+                  <CardTitle className="text-lg">Kudawella Blowhole</CardTitle>
+                  <CardDescription>Natural wonder by the sea</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/HummanayaBlowhole.jpeg"
+                    alt="Kudawella Blowhole"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    The Kudawella Blowhole is a unique natural attraction where seawater shoots up dramatically through a rock formation.
+                  </p>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/hummanaya-blowhole" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+        </div>
 
         {/* Ad Space */}
         <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">

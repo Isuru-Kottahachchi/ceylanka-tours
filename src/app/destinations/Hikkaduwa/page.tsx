@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Clock,CheckCircle, Waves, Fish, Camera, ChevronLeft, ChevronRight } from "lucide-react"
+import { Clock, CheckCircle, Waves, Fish, Camera, ChevronLeft, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -63,11 +63,10 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
             {images.map((_, index) => (
               <button
                 key={index}
-                className={`w-3 h-3 rounded-full transition-all duration-200 cursor-pointer ${
-                  index === currentIndex 
-                    ? 'bg-white scale-110' 
+                className={`w-3 h-3 rounded-full transition-all duration-200 cursor-pointer ${index === currentIndex
+                    ? 'bg-white scale-110'
                     : 'bg-white/60 hover:bg-white/80'
-                }`}
+                  }`}
                 onClick={() => goToImage(index)}
               />
             ))}
@@ -92,7 +91,7 @@ export default function HikkaduwaTravelGuide() {
   ]
 
   const surfingImages = [
-    "/placeholder.svg?height=400&width=600", 
+    "/placeholder.svg?height=400&width=600",
     "/placeholder.svg?height=400&width=600"
   ]
 
@@ -133,21 +132,21 @@ export default function HikkaduwaTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Hikkaduwa Beach Paradise</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Hikkaduwa is Sri Lanka&apos;s most famous beach destination, located on the stunning southern coast. 
-              This vibrant coastal town offers the perfect mix of adventure and relaxation with its coral reef 
-              sanctuary, world-class surfing waves, sea turtle watching, and lively beach culture. From snorkeling 
+              Hikkaduwa is Sri Lanka&apos;s most famous beach destination, located on the stunning southern coast.
+              This vibrant coastal town offers the perfect mix of adventure and relaxation with its coral reef
+              sanctuary, world-class surfing waves, sea turtle watching, and lively beach culture. From snorkeling
               in crystal-clear waters to catching perfect waves, Hikkaduwa has something for every beach lover.
             </p>
             <p className="text-lg">
-              The town stretches along 4 kilometers of golden sandy beach, where traditional fishing boats share 
-              the waves with surfers from around the world. The protected coral sanctuary makes it one of the best 
-              snorkeling spots in Sri Lanka, while the consistent surf breaks attract both beginners and experienced 
+              The town stretches along 4 kilometers of golden sandy beach, where traditional fishing boats share
+              the waves with surfers from around the world. The protected coral sanctuary makes it one of the best
+              snorkeling spots in Sri Lanka, while the consistent surf breaks attract both beginners and experienced
               surfers year-round.
             </p>
           </div>
@@ -226,13 +225,13 @@ export default function HikkaduwaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Hikkaduwa National Park is a protected coral sanctuary covering 101 hectares of marine area. 
-                      This underwater wonderland is home to over 60 species of coral and 170 species of colorful tropical 
+                      The Hikkaduwa National Park is a protected coral sanctuary covering 101 hectares of marine area.
+                      This underwater wonderland is home to over 60 species of coral and 170 species of colorful tropical
                       fish. The shallow reef makes it perfect for snorkeling, even for beginners.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Glass bottom boat tours offer a dry way to explore the reef, while snorkeling gives you the full 
-                      underwater experience. The best time for snorkeling is early morning when the water is calmest and 
+                      Glass bottom boat tours offer a dry way to explore the reef, while snorkeling gives you the full
+                      underwater experience. The best time for snorkeling is early morning when the water is calmest and
                       visibility is at its peak. You can see parrotfish, angelfish, butterflyfish, and even small reef sharks.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -270,14 +269,14 @@ export default function HikkaduwaTravelGuide() {
                   <ImageCarousel images={surfingImages} alt="Surfing at Hikkaduwa beach" />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Hikkaduwa is the birthplace of surfing in Sri Lanka and remains the top surf destination. The beach 
-                      offers consistent waves year-round, with the best conditions from November to April. Multiple surf 
-                      breaks cater to different skill levels, from gentle waves perfect for beginners to more challenging 
+                      Hikkaduwa is the birthplace of surfing in Sri Lanka and remains the top surf destination. The beach
+                      offers consistent waves year-round, with the best conditions from November to April. Multiple surf
+                      breaks cater to different skill levels, from gentle waves perfect for beginners to more challenging
                       breaks for advanced surfers.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The main surf spots include the north end near the coral sanctuary (gentle waves), the main beach 
-                      (medium waves), and Coconut Tree Hill area (more advanced). Surf schools line the beach offering 
+                      The main surf spots include the north end near the coral sanctuary (gentle waves), the main beach
+                      (medium waves), and Coconut Tree Hill area (more advanced). Surf schools line the beach offering
                       lessons in multiple languages, and board rentals are available everywhere.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -313,14 +312,14 @@ export default function HikkaduwaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Hikkaduwa Turtle Hatchery is a conservation project that protects sea turtle eggs and raises 
-                      baby turtles before releasing them into the ocean. Five species of sea turtles visit these shores: 
+                      The Hikkaduwa Turtle Hatchery is a conservation project that protects sea turtle eggs and raises
+                      baby turtles before releasing them into the ocean. Five species of sea turtles visit these shores:
                       Green, Hawksbill, Olive Ridley, Loggerhead, and Leatherback turtles.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Visitors can learn about turtle conservation efforts, see baby turtles, and even participate in 
-                      turtle releases during nesting season (October to April). The center also treats injured turtles 
-                      and educates visitors about marine conservation. Early morning or evening visits offer the best 
+                      Visitors can learn about turtle conservation efforts, see baby turtles, and even participate in
+                      turtle releases during nesting season (October to April). The center also treats injured turtles
+                      and educates visitors about marine conservation. Early morning or evening visits offer the best
                       chance to see turtle activity on the beach.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -364,13 +363,13 @@ export default function HikkaduwaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Hikkaduwa comes alive as the sun sets with beachfront restaurants, bars, and live music venues. 
-                      The main beach strip is lined with restaurants serving fresh seafood, international cuisine, and 
+                      Hikkaduwa comes alive as the sun sets with beachfront restaurants, bars, and live music venues.
+                      The main beach strip is lined with restaurants serving fresh seafood, international cuisine, and
                       local favorites. Many places offer tables right on the sand with stunning sunset views.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The nightlife scene includes beach bars with live music, DJ nights, and even occasional beach 
-                      parties. Fire dancing shows are common along the beach, and many restaurants stay open late. 
+                      The nightlife scene includes beach bars with live music, DJ nights, and even occasional beach
+                      parties. Fire dancing shows are common along the beach, and many restaurants stay open late.
                       The atmosphere is relaxed and friendly, attracting travelers from around the world.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -403,7 +402,7 @@ export default function HikkaduwaTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-8">Activity Tips & Guidelines</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            
+
             <Card>
               <CardHeader>
                 <CardTitle className="text-blue-600">Water Activities</CardTitle>
@@ -514,7 +513,7 @@ export default function HikkaduwaTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-8">Where to Stay</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            
+
             <Card>
               <CardHeader>
                 <CardTitle>Beach Hotels</CardTitle>
@@ -568,13 +567,13 @@ export default function HikkaduwaTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-blue-700 dark:text-blue-300 mb-4">
-                Hikkaduwa&apos;s coral reef is a fragile ecosystem that needs our protection. The coral sanctuary faces 
-                threats from pollution, climate change, and tourism pressure. As a responsible visitor, you can help 
+                Hikkaduwa&apos;s coral reef is a fragile ecosystem that needs our protection. The coral sanctuary faces
+                threats from pollution, climate change, and tourism pressure. As a responsible visitor, you can help
                 preserve this underwater paradise for future generations.
               </p>
               <p className="text-blue-700 dark:text-blue-300">
-                Use only reef-safe sunscreen, don&apos;t touch or stand on corals, avoid single-use plastics, and 
-                choose eco-friendly tour operators. Support local conservation efforts by visiting the turtle hatchery 
+                Use only reef-safe sunscreen, don&apos;t touch or stand on corals, avoid single-use plastics, and
+                choose eco-friendly tour operators. Support local conservation efforts by visiting the turtle hatchery
                 and learning about marine protection initiatives. Your conscious choices make a real difference.
               </p>
             </CardContent>
@@ -615,8 +614,8 @@ export default function HikkaduwaTravelGuide() {
                 </div>
                 <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
                   <p className="text-yellow-800 dark:text-yellow-200 text-sm">
-                    <strong>Local Tip:</strong> Visit during the week for fewer crowds and better deals. Book 
-                    accommodation in advance during peak season (December-March). Try the local fish curry at 
+                    <strong>Local Tip:</strong> Visit during the week for fewer crowds and better deals. Book
+                    accommodation in advance during peak season (December-March). Try the local fish curry at
                     small restaurants for authentic flavors.
                   </p>
                 </div>

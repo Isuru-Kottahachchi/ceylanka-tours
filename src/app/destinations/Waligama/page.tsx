@@ -75,8 +75,8 @@ export default function WeligamaTravelGuide() {
       </nav>
 
       <div className="max-w-6xl mx-auto px-4 py-8">
-  {/* Introduction */}
-  <section className="mb-12 scroll-mt-24" id="introduction">
+        {/* Introduction */}
+        <section className="mb-12 scroll-mt-24" id="introduction">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Weligama: Where Tradition Meets Paradise</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
@@ -97,8 +97,8 @@ export default function WeligamaTravelGuide() {
           [Advertisement Space - 728x90 Leaderboard]
         </div>
 
-  {/* Quick Facts */}
-  <section className="mb-12 scroll-mt-24" id="quick-facts">
+        {/* Quick Facts */}
+        <section className="mb-12 scroll-mt-24" id="quick-facts">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -152,8 +152,8 @@ export default function WeligamaTravelGuide() {
             </CardContent>
           </Card>
         </section>
-  {/* Getting There */}
-  <section className="mb-12 scroll-mt-24" id="getting-there">
+        {/* Getting There */}
+        <section className="mb-12 scroll-mt-24" id="getting-there">
           <h2 className="text-3xl font-bold mb-6">How to Get to Weligama</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
@@ -207,8 +207,8 @@ export default function WeligamaTravelGuide() {
           </div>
         </section>
 
-  {/* Stilt Fishermen */}
-  <section className="mb-12 scroll-mt-24" id="stilt-fishermen">
+        {/* Stilt Fishermen */}
+        <section className="mb-12 scroll-mt-24" id="stilt-fishermen">
           <h2 className="text-3xl font-bold mb-6">World-Famous Stilt Fishermen Tradition</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
@@ -248,8 +248,8 @@ export default function WeligamaTravelGuide() {
           </div>
         </section>
 
-  {/* Top Attractions */}
-  <section className="mb-12 scroll-mt-24" id="attractions">
+        {/* Top Attractions */}
+        <section className="mb-12 scroll-mt-24" id="attractions">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Weligama</h2>
 
           {/* Ad Space */}
@@ -1014,7 +1014,7 @@ export default function WeligamaTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions & Day Trips</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                 {/* Mirissa */}
+            {/* Mirissa */}
             <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg">Hirikatiya</CardTitle>
@@ -1046,7 +1046,7 @@ export default function WeligamaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/mirissa-beach.jpg"
+                  src="/Mirissa-beach.jpg"
                   alt="Mirissa Beach with golden sands and turquoise waters"
                   width={300}
                   height={200}
@@ -1071,7 +1071,7 @@ export default function WeligamaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/galle-fort.jpg"
+                  src="/galle-fort-sarmat-batagov-unsplash.jpg"
                   alt="Galle Fort with its iconic lighthouse and colonial architecture"
                   width={300}
                   height={200}
