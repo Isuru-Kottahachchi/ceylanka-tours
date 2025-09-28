@@ -278,7 +278,7 @@ export default function RamayanaySitesPage() {
                 <CardContent>
                   <p className="mb-3 text-muted-foreground">Perched atop Swami Rock, Koneswaram Temple is a dramatic clifftop shrine dedicated to Lord Shiva. The temple is steeped in Ramayana lore, with legends stating that Ravana and his mother worshipped here. The panoramic views of the Indian Ocean and the temple’s vibrant festivals make it a must-visit. The temple is also famous for its annual chariot festival and ancient lingam.</p>
                   <ul className="list-disc pl-5 text-muted-foreground text-sm mb-2">
-                    <li>Known as the "Temple of a Thousand Pillars"</li>
+                    <li>Known as the &ldquo;Temple of a Thousand Pillars&rdquo;</li>
                     <li>Offers breathtaking ocean views</li>
                     <li>Hosts the annual Ther (Chariot) Festival</li>
                   </ul>
@@ -322,7 +322,7 @@ export default function RamayanaySitesPage() {
                   <CardDescription className="text-muted-foreground">Ella – Ancient cave system with historical significance</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-3 text-muted-foreground">This extensive cave complex is believed to be one of the hiding places where King Ravana kept Sita during her captivity. The cave's remarkable architecture showcases ancient engineering, with its complex network of tunnels and chambers carved into the rock face. Archaeological discoveries within the cave, including ancient inscriptions and artifacts, provide tangible connections to its historical significance.</p>
+                  <p className="mb-3 text-muted-foreground">This extensive cave complex is believed to be one of the hiding places where King Ravana kept Sita during her captivity. The cave&apos;s remarkable architecture showcases ancient engineering, with its complex network of tunnels and chambers carved into the rock face. Archaeological discoveries within the cave, including ancient inscriptions and artifacts, provide tangible connections to its historical significance.</p>
                   <ul className="list-disc pl-5 text-muted-foreground text-sm mb-2">
                     <li>Complex network of tunnels and chambers</li>
                     <li>Evidence of ancient habitation found</li>
@@ -379,12 +379,12 @@ export default function RamayanaySitesPage() {
                 <div>
                   <h3 className="text-xl font-semibold mb-3 text-orange-600">Key Events in Lanka</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>• Sita's captivity in Ashok Vatika (now Sita Amman Temple area)</li>
-                    <li>• Hanuman's search and discovery of Sita</li>
-                    <li>• The burning of Lanka by Hanuman's tail</li>
-                    <li>• Rama's arrival with his army</li>
+                    <li>• Sita&apos;s captivity in Ashok Vatika (now Sita Amman Temple area)</li>
+                    <li>• Hanuman&apos;s search and discovery of Sita</li>
+                    <li>• The burning of Lanka by Hanuman&apos;s tail</li>
+                    <li>• Rama&apos;s arrival with his army</li>
                     <li>• The great battle between Rama and Ravana</li>
-                    <li>• Sita's rescue and return to India</li>
+                    <li>• Sita&apos;s rescue and return to India</li>
                   </ul>
                 </div>
                 
