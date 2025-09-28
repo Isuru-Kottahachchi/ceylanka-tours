@@ -5,7 +5,9 @@ import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"             
 import { Badge } from "@/components/ui/badge"
-import { Calendar, User, Eye, Clock, ArrowLeft } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Separator } from "@/components/ui/separator"
+import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Eye, TreePine, Book, Building2, Landmark, ArrowLeft, Clock, User } from "lucide-react"
 
 
 
@@ -347,7 +349,7 @@ export default function RamayanaySitesPage() {
                   <CardDescription className="text-muted-foreground">Ella – Ancient sacred pool (Currently closed)</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="mb-3 text-muted-foreground">Near the Ravana Cave complex lies the mysterious Nil Diya Pokuna, a natural pool with crystal-clear blue waters. Historically associated with the Ramayana period, this pool is believed to have been used during Ravana's time. The pristine waters and surrounding landscape create an almost mystical atmosphere that connects visitors to the ancient past.</p>
+                  <p className="mb-3 text-muted-foreground">Near the Ravana Cave complex lies the mysterious Nil Diya Pokuna, a natural pool with crystal-clear blue waters. Historically associated with the Ramayana period, this pool is believed to have been used during Ravana&apos;s time. The pristine waters and surrounding landscape create an almost mystical atmosphere that connects visitors to the ancient past.</p>
                   <div className="bg-red-50 p-4 rounded-lg border border-red-200 mb-4">
                     <p className="text-sm text-red-700 font-medium">Important Notice: Nil Diya Pokuna is currently closed to visitors for conservation purposes and safety measures. Please respect local regulations and do not attempt to access the site.</p>
                   </div>
