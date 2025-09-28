@@ -1,47 +1,48 @@
 "use client"
+
 import Image from "next/image"
 import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"             
 import { Badge } from "@/components/ui/badge"
-import { Calendar, User, Eye, MapPin, Clock, ArrowLeft } from "lucide-react"
+import { Calendar, User, Eye, Clock, ArrowLeft } from "lucide-react"
 
 
 
-const ramayanaLocationData = [
-  {
-    name: "Sita Amman Temple",
-    location: "Nuwara Eliya",
-    significance: "Where Sita was held captive by Ravana",
-    description: "A sacred temple built at the site where Sita Devi was imprisoned in Ashok Vatika",
-    image: "/placeholder.svg?height=300&width=400",
-    activities: ["Temple visit", "Prayer ceremony", "Garden exploration"]
-  },
-  {
-    name: "Ravana Falls",
-    location: "Ella",
-    significance: "Named after King Ravana",
-    description: "Magnificent waterfall associated with Ravana's bathing area",
-    image: "/placeholder.svg?height=300&width=400",
-    activities: ["Waterfall viewing", "Photography", "Nature walk"]
-  },
-  {
-    name: "Ravana Caves",
-    location: "Ella",
-    significance: "Ravana's hiding place",
-    description: "Ancient caves where Ravana is believed to have hidden Sita",
-    image: "/placeholder.svg?height=300&width=400",
-    activities: ["Cave exploration", "Historical tour", "Local legends"]
-  },
-  {
-    name: "Hanuman Temple",
-    location: "Ramboda",
-    significance: "Hanuman's search for Sita",
-    description: "Temple dedicated to Hanuman who searched for Sita in these hills",
-    image: "/placeholder.svg?height=300&width=400",
-    activities: ["Temple worship", "Mountain views", "Devotional activities"]
-  }
-]
+// const ramayanaLocationData = [
+//   {
+//     name: "Sita Amman Temple",
+//     location: "Nuwara Eliya",
+//     significance: "Where Sita was held captive by Ravana",
+//     description: "A sacred temple built at the site where Sita Devi was imprisoned in Ashok Vatika",
+//     image: "/placeholder.svg?height=300&width=400",
+//     activities: ["Temple visit", "Prayer ceremony", "Garden exploration"]
+//   },
+//   {
+//     name: "Ravana Falls",
+//     location: "Ella",
+//     significance: "Named after King Ravana",
+//     description: "Magnificent waterfall associated with Ravana's bathing area",
+//     image: "/placeholder.svg?height=300&width=400",
+//     activities: ["Waterfall viewing", "Photography", "Nature walk"]
+//   },
+//   {
+//     name: "Ravana Caves",
+//     location: "Ella",
+//     significance: "Ravana's hiding place",
+//     description: "Ancient caves where Ravana is believed to have hidden Sita",
+//     image: "/placeholder.svg?height=300&width=400",
+//     activities: ["Cave exploration", "Historical tour", "Local legends"]
+//   },
+//   {
+//     name: "Hanuman Temple",
+//     location: "Ramboda",
+//     significance: "Hanuman's search for Sita",
+//     description: "Temple dedicated to Hanuman who searched for Sita in these hills",
+//     image: "/placeholder.svg?height=300&width=400",
+//     activities: ["Temple worship", "Mountain views", "Devotional activities"]
+//   }
+// ]
 
 export default function RamayanaySitesPage() {
   return (
@@ -109,7 +110,7 @@ export default function RamayanaySitesPage() {
             
             <p className="text-lg leading-relaxed text-muted-foreground">
               From sacred temples built where Sita was held captive to caves where Ravana is believed to have 
-              hidden, these locations provide insight into one of the world's greatest epics. Whether you're 
+              hidden, these locations provide insight into one of the world&apos;s greatest epics. Whether you&apos;re 
               a devotee, history enthusiast, or curious traveler, the Ramayana trail in Sri Lanka offers an 
               unforgettable journey through myth and legend.
             </p>
@@ -303,6 +304,58 @@ export default function RamayanaySitesPage() {
                     <li>Popular trekking route for pilgrims</li>
                     <li>Rich in endemic plant species</li>
                     <li>Offers panoramic views of Nuwara Eliya</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Ravana Cave */}
+              <Card className="group hover:shadow-xl transition-all duration-300">
+                <div className="relative overflow-hidden">
+                  <ImageCarousel images={[
+                    { src: "/Ravana-Cave.jpg", alt: "Ravana Cave entrance", caption: "Ancient Ravana Cave entrance" },
+                    { src: "/placeholder.svg?height=300&width=400", alt: "Inside Ravana Cave", caption: "Interior view of the historic cave" }
+                  ]} />
+                  <div className="absolute top-3 left-3"><Badge className="bg-orange-600 text-white">Historic Cave</Badge></div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl font-bold group-hover:text-orange-600 transition-colors">Ravana Cave (Ravana Guhawa)</CardTitle>
+                  <CardDescription className="text-muted-foreground">Ella – Ancient cave system with historical significance</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="mb-3 text-muted-foreground">This extensive cave complex is believed to be one of the hiding places where King Ravana kept Sita during her captivity. The cave's remarkable architecture showcases ancient engineering, with its complex network of tunnels and chambers carved into the rock face. Archaeological discoveries within the cave, including ancient inscriptions and artifacts, provide tangible connections to its historical significance.</p>
+                  <ul className="list-disc pl-5 text-muted-foreground text-sm mb-2">
+                    <li>Complex network of tunnels and chambers</li>
+                    <li>Evidence of ancient habitation found</li>
+                    <li>Located over 1,000 meters above sea level</li>
+                    <li>Guided tours available with local experts</li>
+                    <li>Archaeological artifacts discovered inside</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Nil Diya Pokuna */}
+              <Card className="group hover:shadow-xl transition-all duration-300">
+                <div className="relative overflow-hidden">
+                  <ImageCarousel images={[
+                    { src: "/placeholder.svg?height=300&width=400", alt: "Nil Diya Pokuna natural pool", caption: "The mysterious Blue Water Pool" },
+                    { src: "/placeholder.svg?height=300&width=400", alt: "Surrounding landscape of Nil Diya Pokuna", caption: "Scenic surroundings of the pool" }
+                  ]} />
+                  <div className="absolute top-3 left-3"><Badge className="bg-orange-600 text-white">Sacred Pool</Badge></div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl font-bold group-hover:text-orange-600 transition-colors">Nil Diya Pokuna (Blue Water Pool)</CardTitle>
+                  <CardDescription className="text-muted-foreground">Ella – Ancient sacred pool (Currently closed)</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="mb-3 text-muted-foreground">Near the Ravana Cave complex lies the mysterious Nil Diya Pokuna, a natural pool with crystal-clear blue waters. Historically associated with the Ramayana period, this pool is believed to have been used during Ravana's time. The pristine waters and surrounding landscape create an almost mystical atmosphere that connects visitors to the ancient past.</p>
+                  <div className="bg-red-50 p-4 rounded-lg border border-red-200 mb-4">
+                    <p className="text-sm text-red-700 font-medium">Important Notice: Nil Diya Pokuna is currently closed to visitors for conservation purposes and safety measures. Please respect local regulations and do not attempt to access the site.</p>
+                  </div>
+                  <ul className="list-disc pl-5 text-muted-foreground text-sm mb-2">
+                    <li>Natural pool with crystal-clear waters</li>
+                    <li>Historical connection to Ramayana period</li>
+                    <li>Surrounded by pristine forest</li>
+                    <li>Protected natural heritage site</li>
                   </ul>
                 </CardContent>
               </Card>
