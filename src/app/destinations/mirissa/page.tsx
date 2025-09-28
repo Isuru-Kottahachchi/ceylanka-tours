@@ -1,6 +1,5 @@
 "use client"
 
-import type { Metadata } from "next"
 import Image from "next/image"
 import { Clock, MapPin, Star, Calendar, Waves, Sun, Camera, CheckCircle } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
