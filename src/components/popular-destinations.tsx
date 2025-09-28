@@ -80,7 +80,7 @@ const destinations = [
   },
   {
     id: 7,
-    name: "Adam's Peak / Sri Pada",
+    name: "Adam's Peak",
     path: "adams-peak",
     location: "Central Province",
     image: "/Adams-peak.jpeg",

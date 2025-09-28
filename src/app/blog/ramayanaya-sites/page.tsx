@@ -5,9 +5,7 @@ import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"             
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
-import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Eye, TreePine, Book, Building2, Landmark, ArrowLeft, Clock, User } from "lucide-react"
+import { Calendar, User, Eye, Clock, ArrowLeft } from "lucide-react"
 
 
 
