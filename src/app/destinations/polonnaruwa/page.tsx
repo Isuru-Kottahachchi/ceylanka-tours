@@ -693,7 +693,7 @@ export default function PolonnaruwaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            The Thivanka Image House is one of Polonnaruwa's most unique religious monuments, famous for its
+                                            The Thivanka Image House is one of Polonnaruwa&apos;s most unique religious monuments, famous for its
                                             Buddha statue in a distinctive three-bend posture (thivanka) and its remarkably preserved medieval
                                             frescoes. Dating to the reign of Parakramabahu I, this temple showcases some of the finest examples
                                             of Polonnaruwa period art.

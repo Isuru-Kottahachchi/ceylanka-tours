@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Clock, MapPin, CheckCircle, Star, Calendar, TreePine } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
@@ -56,10 +56,10 @@ export default function KanneliyaTravelGuide() {
         <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Kanneliya: A Rainforest Paradise</h2>
         <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
           <p className="text-lg mb-4">
-            Kanneliya, located in Sri Lanka's Southern Province, is a pristine rainforest that forms part of the Kanneliya-Dediyagala-Nakiyadeniya (KDN) forest complex. Recognized as a UNESCO Biosphere Reserve, Kanneliya is a biodiversity hotspot teeming with endemic flora and fauna. This lush rainforest offers a tranquil escape into nature, with scenic trails, cascading waterfalls, and a serene atmosphere.
+            Kanneliya, located in Sri Lanka&apos;s Southern Province, is a pristine rainforest that forms part of the Kanneliya-Dediyagala-Nakiyadeniya (KDN) forest complex. Recognized as a UNESCO Biosphere Reserve, Kanneliya is a biodiversity hotspot teeming with endemic flora and fauna. This lush rainforest offers a tranquil escape into nature, with scenic trails, cascading waterfalls, and a serene atmosphere.
           </p>
           <p className="text-lg">
-            Whether you're a nature enthusiast, a birdwatcher, or simply seeking a peaceful retreat, Kanneliya has something to offer. From exploring its rich biodiversity to enjoying the soothing sounds of its waterfalls, this rainforest paradise is a must-visit destination for eco-tourism in Sri Lanka.
+            Whether you&apos;re a nature enthusiast, a birdwatcher, or simply seeking a peaceful retreat, Kanneliya has something to offer. From exploring its rich biodiversity to enjoying the soothing sounds of its waterfalls, this rainforest paradise is a must-visit destination for eco-tourism in Sri Lanka.
           </p>
         </div>
       </section>
@@ -128,10 +128,10 @@ export default function KanneliyaTravelGuide() {
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground mb-4">
-              Kanneliya is more than just a rainforest; it's a living testament to Sri Lanka's incredible biodiversity. Whether you're trekking through its lush trails, marveling at its cascading waterfalls, or spotting rare bird species, Kanneliya offers an unforgettable experience for nature lovers.
+              Kanneliya is more than just a rainforest; it&apos;s a living testament to Sri Lanka&apos;s incredible biodiversity. Whether you&apos;re trekking through its lush trails, marveling at its cascading waterfalls, or spotting rare bird species, Kanneliya offers an unforgettable experience for nature lovers.
             </p>
             <p className="text-muted-foreground mb-4">
-              Plan your visit to Kanneliya and immerse yourself in the beauty and tranquility of one of Sri Lanka's most treasured natural wonders.
+              Plan your visit to Kanneliya and immerse yourself in the beauty and tranquility of one of Sri Lanka&apos;s most treasured natural wonders.
             </p>
             <p className="text-muted-foreground font-medium">Your rainforest adventure awaits! 🌿🌊</p>
           </CardContent>

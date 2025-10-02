@@ -2,12 +2,9 @@
 
 import Image from "next/image"
 import { ImageCarousel } from "@/components/ui/image-carousel"
-import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
-import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Eye, TreePine, Clock, Tent, Bird, Shield } from 'lucide-react'
+import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Eye, TreePine, Clock, Bird, Shield } from 'lucide-react'
 
 export default function WangedigalaGuide() {
   return (
