@@ -414,7 +414,7 @@ export default function WeligamaTravelGuide() {
             {/* Local Fish Market */}
             <Card>
               <CardHeader>
-                <CardTitle>4. Weligama Fish Market</CardTitle>
+                <CardTitle>3. Weligama Fish Market</CardTitle>
                 <CardDescription>Authentic cultural experience with daily fresh catch</CardDescription>
               </CardHeader>
               <CardContent>

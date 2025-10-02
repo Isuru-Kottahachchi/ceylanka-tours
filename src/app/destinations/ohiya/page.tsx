@@ -229,7 +229,7 @@ export default function OhiyaTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/idalgashinna1.jpg",
+                        src: "/Idalgashinna.jpg",
                         alt: "Idalgashinna trail view 1",
                         caption: "Tea plantations and misty hills",
                         title: "Idalgashinna - Scenic Beauty",
@@ -318,7 +318,7 @@ export default function OhiyaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/Haputale.jpg"
+                  src="/Haputhale.jpeg"
                   alt="Haputale"
                   width={300}
                   height={200}

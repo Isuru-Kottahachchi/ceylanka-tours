@@ -10,26 +10,29 @@ import { Button } from "@/components/ui/button"
 
 // metadata moved to metadata.ts for Next.js compliance
 
-function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
-    const [currentIndex, setCurrentIndex] = useState(0)
+type CarouselImage = { src: string; caption: string };
+function ImageCarousel({ images, alt }: { images: CarouselImage[]; alt: string }) {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
 
     const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-    }
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
 
     const goToImage = (index: number) => {
-        setCurrentIndex(index)
-    }
+        setCurrentIndex(index);
+    };
+
+    const current = images[currentIndex] || { src: "/placeholder.svg", caption: "" };
 
     return (
         <div className="relative">
             <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[500px] sm:h-[350px] flex items-center justify-center">
                 <Image
-                    src={images[currentIndex] || "/placeholder.svg"}
+                    src={current.src}
                     alt={`${alt} ${images.length > 1 ? `(${currentIndex + 1} of ${images.length})` : ''}`}
                     width={400}
                     height={300}
@@ -59,6 +62,13 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
                 )}
             </div>
 
+            {/* Caption */}
+            {current.caption && (
+                <div className="text-center mt-2 text-sm text-muted-foreground font-medium">
+                    {current.caption}
+                </div>
+            )}
+
             {/* Dots indicator */}
             {images.length > 1 && (
                 <div className="flex justify-center mt-3 space-x-2">
@@ -66,8 +76,7 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
                         <button
                             key={index}
                             onClick={() => goToImage(index)}
-                            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-                                }`}
+                            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"}`}
                         />
                     ))}
                 </div>
@@ -80,33 +89,33 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
                 </div>
             )}
         </div>
-    )
+    );
 }
 
 export default function PolonnaruwaGuide() {
 
 
     const polonnaruwaImages = [
-        "/Polonnaruwa2.jpeg",
-        "/Polonnaruwa3.jpeg",
-    ]
+        { src: "/Polonnaruwa2.jpeg", caption: "Ruins of the Royal Palace of King Parakramabahu I" },
+        { src: "/Polonnaruwa3.jpeg", caption: "Ancient brick walls and palace foundations" },
+    ];
 
     const galviharayaImages = [
-        "/Galviharaya.jpeg",
-        "/Galviharaya2.jpeg",
-        "/Galviharaya3.jpeg",
-        "/Galviharaya4.jpeg",
-        "/Galviharaya5.jpeg"
-    ]
+        { src: "/Galviharaya.jpeg", caption: "Gal Vihara: Seated Buddha statue carved from granite" },
+        { src: "/Galviharaya2.jpeg", caption: "Standing Buddha statue at Gal Vihara" },
+        { src: "/Galviharaya3.jpeg", caption: "Reclining Buddha representing Parinirvana at Gal Vihara" },
+        { src: "/Galviharaya4.jpeg", caption: "Close-up of Gal Vihara Buddha face details" },
+        { src: "/Galviharaya5.jpeg", caption: "Worshippers at Gal Vihara rock temple" },
+    ];
 
     const rankothveheraImages = [
-        "/Rankothvehera.jpeg",
-        "/Rankothvehera1.jpeg",
-        "/Rankothvehera2.jpeg",
-        "/Rankothvehera3.jpeg",
-        "/Rankothvehera4.jpeg",
-        "/Rankothvehera5.jpeg",
-    ]
+        { src: "/Rankothvehera.jpeg", caption: "Rankoth Vehera: The largest dagoba in Polonnaruwa" },
+        { src: "/Rankothvehera1.jpeg", caption: "Stupa and surrounding ruins at Rankoth Vehera" },
+        { src: "/Rankothvehera2.jpeg", caption: "Ancient stairway leading to Rankoth Vehera" },
+        { src: "/Rankothvehera3.jpeg", caption: "View of Rankoth Vehera from the base" },
+        { src: "/Rankothvehera4.jpeg", caption: "Devotees at Rankoth Vehera stupa" },
+        { src: "/Rankothvehera5.jpeg", caption: "Rankoth Vehera: Architectural details of the stupa" },
+    ];
 
     return (
         <main className="min-h-screen bg-background">
@@ -140,7 +149,7 @@ export default function PolonnaruwaGuide() {
                 </div>
             </section>
 
-            <div className="max-w-4xl mx-auto px-4 py-8">
+            <div className="max-w-6xl mx-auto px-4 py-12">
                 {/* Introduction */}
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Polonnaruwa: The Golden Age Capital</h2>
@@ -155,157 +164,177 @@ export default function PolonnaruwaGuide() {
                 </section>
 
                 {/* Ad Space */}
-                <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
+                {/* <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
                     [Advertisement Space - 728x90 Leaderboard]
-                </div>
+                </div> */}
 
                 {/* Quick Facts */}
                 <section className="mb-12">
-                    <Card>
-                        <CardHeader>
-                            <CardTitle className="flex items-center gap-2">
-                                <Star className="w-5 h-5 text-yellow-500" />
-                                Essential Polonnaruwa Facts
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <div className="space-y-3">
-                                    <div className="flex items-center gap-2">
-                                        <Calendar className="w-4 h-4 text-blue-500" />
-                                        <span>
-                                            <strong>Capital Period:</strong> 1070-1293 AD
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <Users className="w-4 h-4 text-green-500" />
-                                        <span>
-                                            <strong>Founded by:</strong> King Vijayabahu I
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <Crown className="w-4 h-4 text-purple-500" />
-                                        <span>
-                                            <strong>Golden Age:</strong> King Parakramabahu I era
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="space-y-3">
-                                    <div className="flex items-center gap-2">
-                                        <MapPin className="w-4 h-4 text-red-500" />
-                                        <span>
-                                            <strong>Area:</strong> 122 square kilometers
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <Star className="w-4 h-4 text-yellow-500" />
-                                        <span>
-                                            <strong>UNESCO Status:</strong> World Heritage (1982)
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <Clock className="w-4 h-4 text-orange-500" />
-                                        <span>
-                                            <strong>Visit Duration:</strong> Full day (6-8 hours)
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </section>
-
-                {/* How to Get In */}
-                <section className="mb-12">
-                    <Card className="border-blue-200 dark:border-blue-800 bg-blue-50/30 dark:bg-blue-950/30">
-                        <CardHeader>
-                            <CardTitle className="flex items-center gap-2 text-blue-800 dark:text-blue-200">
-                                <MapPin className="w-5 h-5" />
-                                How to Get to Polonnaruwa
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div>
-                                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Cultural Triangle Tours (Recommended)</h4>
-                                    <ul className="space-y-2 text-sm text-muted-foreground">
-                                        <li>• <strong>Package Tours:</strong> 2-3 day Cultural Triangle packages</li>
-                                        <li>• <strong>Includes:</strong> Polonnaruwa, Sigiriya, and Dambulla</li>
-                                        <li>• <strong>Transport:</strong> Air-conditioned vehicles with guide</li>
-                                        <li>• <strong>Best option:</strong> Most comprehensive and educational</li>
-                                    </ul>
-                                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
-                                        <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
-                                            <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> specializes in Cultural Triangle expeditions with expert archaeological guides who bring ancient Polonnaruwa to life with fascinating historical insights and professional service.
-                                        </p>
-                                        <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
-                                            <div className="flex items-center gap-2">
-                                                <span>📞</span>
-                                                <span><strong>Contact:</strong> +94 77 123 4567</span>
-                                            </div>
-                                            <div className="flex items-center gap-2">
-                                                <span>🏛️</span>
-                                                <span><strong>Archaeological Tours</strong> - Expert guides & cultural insights</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Transportation Options</h4>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        {/* Essential Facts */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2">
+                                    <Star className="w-5 h-5 text-yellow-500" />
+                                    Essential Polonnaruwa Facts
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-4">
                                     <div className="space-y-3">
-                                        <div>
-                                            <h5 className="font-medium text-sm">From Colombo</h5>
-                                            <ul className="space-y-1 text-sm text-muted-foreground">
-                                                <li>• <strong>Distance:</strong> 216km (134 miles)</li>
-                                                <li>• <strong>Duration:</strong> 4-5 hours by car</li>
-                                                <li>• <strong>Cost:</strong> $60-90 USD private transport</li>
-                                            </ul>
+                                        <div className="flex items-center gap-2">
+                                            <Calendar className="w-4 h-4 text-blue-500" />
+                                            <span>
+                                                <strong>Capital Period:</strong> 1070-1293 AD
+                                            </span>
                                         </div>
-                                        <div>
-                                            <h5 className="font-medium text-sm">From Sigiriya</h5>
-                                            <ul className="space-y-1 text-sm text-muted-foreground">
-                                                <li>• <strong>Distance:</strong> 55km (34 miles)</li>
-                                                <li>• <strong>Duration:</strong> 1.5 hours</li>
-                                                <li>• <strong>Ideal:</strong> Combined Cultural Triangle tour</li>
-                                            </ul>
+                                        <div className="flex items-center gap-2">
+                                            <Users className="w-4 h-4 text-green-500" />
+                                            <span>
+                                                <strong>Founded by:</strong> King Vijayabahu I
+                                            </span>
                                         </div>
-                                        <div>
-                                            <h5 className="font-medium text-sm">From Kandy</h5>
-                                            <ul className="space-y-1 text-sm text-muted-foreground">
-                                                <li>• <strong>Distance:</strong> 140km (87 miles)</li>
-                                                <li>• <strong>Duration:</strong> 3 hours via A9 highway</li>
-                                                <li>• <strong>Route:</strong> Scenic drive through central Sri Lanka</li>
-                                            </ul>
+                                        <div className="flex items-center gap-2">
+                                            <Crown className="w-4 h-4 text-purple-500" />
+                                            <span>
+                                                <strong>Golden Age:</strong> King Parakramabahu I era
+                                            </span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <MapPin className="w-4 h-4 text-red-500" />
+                                            <span>
+                                                <strong>Area:</strong> 122 square kilometers
+                                            </span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <Star className="w-4 h-4 text-yellow-500" />
+                                            <span>
+                                                <strong>UNESCO Status:</strong> World Heritage (1982)
+                                            </span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <Clock className="w-4 h-4 text-orange-500" />
+                                            <span>
+                                                <strong>Visit Duration:</strong> Full day (6-8 hours)
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className="space-y-3">
+                                        <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+                                            <h5 className="font-medium text-blue-800 dark:text-blue-200">Entrance Fee</h5>
+                                            <p className="text-sm text-blue-600 dark:text-blue-300">$25 USD for foreign visitors</p>
+                                            <p className="text-xs text-muted-foreground">Includes site access and museum</p>
+                                        </div>
+                                        <div className="p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
+                                            <h5 className="font-medium text-green-800 dark:text-green-200">Opening Hours</h5>
+                                            <p className="text-sm text-green-600 dark:text-green-300">7:00 AM - 6:00 PM daily</p>
+                                            <p className="text-xs text-muted-foreground">Last entry at 5:30 PM</p>
+                                        </div>
+                                        <div className="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
+                                            <h5 className="font-medium text-purple-800 dark:text-purple-200">Best Time</h5>
+                                            <p className="text-sm text-purple-600 dark:text-purple-300">Early morning or late afternoon</p>
+                                            <p className="text-xs text-muted-foreground">Avoid midday heat</p>
+                                        </div>
+                                        <div className="p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
+                                            <p className="text-sm text-blue-800 dark:text-blue-200">
+                                                <strong>💡 Pro Tip:</strong> Start early morning visits to avoid crowds and heat. Most visitors combine Polonnaruwa with Sigiriya and Dambulla as part of a Cultural Triangle tour for the best historical experience.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
-                                <p className="text-sm text-blue-800 dark:text-blue-200">
-                                    <strong>💡 Pro Tip:</strong> Start early morning visits to avoid crowds and heat. Most visitors combine Polonnaruwa with Sigiriya and Dambulla as part of a Cultural Triangle tour for the best historical experience.
-                                </p>
-                            </div>
-                            <div className="mt-4">
-                                <div className="grid md:grid-cols-3 gap-4">
-                                    <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
-                                        <h5 className="font-medium text-blue-800 dark:text-blue-200">Entrance Fee</h5>
-                                        <p className="text-sm text-blue-600 dark:text-blue-300">$25 USD for foreign visitors</p>
-                                        <p className="text-xs text-muted-foreground">Includes site access and museum</p>
+                            </CardContent>
+                        </Card>
+                        {/* How to Get In */}
+                        <Card className="border-blue-200 dark:border-blue-800 bg-blue-50/30 dark:bg-blue-950/30">
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2 text-blue-800 dark:text-blue-200">
+                                    <MapPin className="w-5 h-5" />
+                                    How to Get to Polonnaruwa
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Cultural Triangle Tours (Recommended)</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                            <li>• <strong>Package Tours:</strong> 2-3 day Cultural Triangle packages</li>
+                                            <li>• <strong>Includes:</strong> Polonnaruwa, Sigiriya, and Dambulla</li>
+                                            <li>• <strong>Transport:</strong> Air-conditioned vehicles with guide</li>
+                                            <li>• <strong>Best option:</strong> Most comprehensive and educational</li>
+                                        </ul>
+                                        <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                                            <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                                                <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> specializes in Cultural Triangle expeditions with expert archaeological guides who bring ancient Polonnaruwa to life with fascinating historical insights and professional service.
+                                            </p>
+                                            <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                                                <div className="flex items-center gap-2">
+                                                    <span>📞</span>
+                                                    <span><strong>Contact:</strong> +94 77 123 4567</span>
+                                                </div>
+                                                <div className="flex items-center gap-2">
+                                                    <span>🏛️</span>
+                                                    <span><strong>Archaeological Tours</strong> - Expert guides & cultural insights</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
-                                        <h5 className="font-medium text-green-800 dark:text-green-200">Opening Hours</h5>
-                                        <p className="text-sm text-green-600 dark:text-green-300">7:00 AM - 6:00 PM daily</p>
-                                        <p className="text-xs text-muted-foreground">Last entry at 5:30 PM</p>
-                                    </div>
-                                    <div className="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
-                                        <h5 className="font-medium text-purple-800 dark:text-purple-200">Best Time</h5>
-                                        <p className="text-sm text-purple-600 dark:text-purple-300">Early morning or late afternoon</p>
-                                        <p className="text-xs text-muted-foreground">Avoid midday heat</p>
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Transportation Options</h4>
+                                        <div className="space-y-3">
+                                            <div>
+                                                <h5 className="font-medium text-sm">From Colombo</h5>
+                                                <ul className="space-y-1 text-sm text-muted-foreground">
+                                                    <li>• <strong>Distance:</strong> 216km (134 miles)</li>
+                                                    <li>• <strong>Duration:</strong> 4-5 hours by car</li>
+                                                    <li>• <strong>Cost:</strong> $60-90 USD private transport</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5 className="font-medium text-sm">From Sigiriya</h5>
+                                                <ul className="space-y-1 text-sm text-muted-foreground">
+                                                    <li>• <strong>Distance:</strong> 55km (34 miles)</li>
+                                                    <li>• <strong>Duration:</strong> 1.5 hours</li>
+                                                    <li>• <strong>Ideal:</strong> Combined Cultural Triangle tour</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5 className="font-medium text-sm">From Kandy</h5>
+                                                <ul className="space-y-1 text-sm text-muted-foreground">
+                                                    <li>• <strong>Distance:</strong> 140km (87 miles)</li>
+                                                    <li>• <strong>Duration:</strong> 3 hours via A9 highway</li>
+                                                    <li>• <strong>Route:</strong> Scenic drive through central Sri Lanka</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </CardContent>
-                    </Card>
+                                <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
+                                    <p className="text-sm text-blue-800 dark:text-blue-200">
+                                        <strong>💡 Pro Tip:</strong> Start early morning visits to avoid crowds and heat. Most visitors combine Polonnaruwa with Sigiriya and Dambulla as part of a Cultural Triangle tour for the best historical experience.
+                                    </p>
+                                </div>
+                                <div className="mt-4">
+                                    <div className="grid md:grid-cols-3 gap-4">
+                                        <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+                                            <h5 className="font-medium text-blue-800 dark:text-blue-200">Entrance Fee</h5>
+                                            <p className="text-sm text-blue-600 dark:text-blue-300">$25 USD for foreign visitors</p>
+                                            <p className="text-xs text-muted-foreground">Includes site access and museum</p>
+                                        </div>
+                                        <div className="p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
+                                            <h5 className="font-medium text-green-800 dark:text-green-200">Opening Hours</h5>
+                                            <p className="text-sm text-green-600 dark:text-green-300">7:00 AM - 6:00 PM daily</p>
+                                            <p className="text-xs text-muted-foreground">Last entry at 5:30 PM</p>
+                                        </div>
+                                        <div className="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
+                                            <h5 className="font-medium text-purple-800 dark:text-purple-200">Best Time</h5>
+                                            <p className="text-sm text-purple-600 dark:text-purple-300">Early morning or late afternoon</p>
+                                            <p className="text-xs text-muted-foreground">Avoid midday heat</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
                 </section>
 
                 <section className="mb-12">
@@ -345,7 +374,7 @@ export default function PolonnaruwaGuide() {
                                         </ul>
                                     </div>
                                 </div>
-                                
+
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <h4 className="font-semibold mb-3 text-purple-700 dark:text-purple-300">🚂 Train + Bus Combination</h4>
@@ -391,49 +420,49 @@ export default function PolonnaruwaGuide() {
                                 Site Information & Entry Requirements
                             </CardTitle>
                         </CardHeader>
-                            <CardContent>
-                                <div className="grid md:grid-cols-2 gap-6">
-                                    <div>
-                                        <h4 className="font-semibold mb-3 text-foreground">Opening Hours:</h4>
-                                        <ul className="space-y-2 text-muted-foreground">
-                                            <li className="flex items-start gap-2">
-                                                <Clock className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                                                <span><strong>Daily:</strong> 7:00 AM - 6:00 PM</span>
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                <span><strong>Best Time:</strong> Early morning (7-9 AM) or late afternoon (4-6 PM)</span>
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                <span>Avoid midday heat (11 AM - 3 PM)</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <h4 className="font-semibold mb-3 text-foreground">Entry Fees (2025):</h4>
-                                        <ul className="space-y-2 text-muted-foreground">
-                                            <li className="flex justify-between">
-                                                <span>Foreign Adults:</span>
-                                                <span className="font-medium">$30 USD</span>
-                                            </li>
-                                            <li className="flex justify-between">
-                                                <span>Foreign Children (6-12):</span>
-                                                <span className="font-medium">$15 USD</span>
-                                            </li>
-                                            <li className="flex justify-between">
-                                                <span>SAARC Nationals:</span>
-                                                <span className="font-medium">$15 USD</span>
-                                            </li>
-                                            <li className="flex justify-between">
-                                                <span>Bicycle Rental:</span>
-                                                <span className="font-medium">$5 USD</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+                        <CardContent>
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 className="font-semibold mb-3 text-foreground">Opening Hours:</h4>
+                                    <ul className="space-y-2 text-muted-foreground">
+                                        <li className="flex items-start gap-2">
+                                            <Clock className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
+                                            <span><strong>Daily:</strong> 7:00 AM - 6:00 PM</span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                            <span><strong>Best Time:</strong> Early morning (7-9 AM) or late afternoon (4-6 PM)</span>
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                            <span>Avoid midday heat (11 AM - 3 PM)</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </CardContent>
-                        </Card>
+                                <div>
+                                    <h4 className="font-semibold mb-3 text-foreground">Entry Fees (2025):</h4>
+                                    <ul className="space-y-2 text-muted-foreground">
+                                        <li className="flex justify-between">
+                                            <span>Foreign Adults:</span>
+                                            <span className="font-medium">$30 USD</span>
+                                        </li>
+                                        <li className="flex justify-between">
+                                            <span>Foreign Children (6-12):</span>
+                                            <span className="font-medium">$15 USD</span>
+                                        </li>
+                                        <li className="flex justify-between">
+                                            <span>SAARC Nationals:</span>
+                                            <span className="font-medium">$15 USD</span>
+                                        </li>
+                                        <li className="flex justify-between">
+                                            <span>Bicycle Rental:</span>
+                                            <span className="font-medium">$5 USD</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
                 </section>
 
                 {/* Royal Complex */}
@@ -525,12 +554,14 @@ export default function PolonnaruwaGuide() {
                                             </Button>
                                         </Link>
                                     </div>
-                                    <Image
-                                        src="/placeholder.svg?height=300&width=400&text=Lotus+Pillars"
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
+                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                        ]}
                                         alt="Unique lotus-shaped stone pillars of the Audience Hall at Polonnaruwa"
-                                        width={400}
-                                        height={300}
-                                        className="rounded-lg"
                                     />
                                 </div>
                             </CardContent>
@@ -539,9 +570,9 @@ export default function PolonnaruwaGuide() {
                 </section>
 
                 {/* Ad Space */}
-                <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
+                {/* <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
                     [Advertisement Space - 300x250 Medium Rectangle]
-                </div>
+                </div> */}
 
                 {/* Religious Sites */}
                 <section className="mb-12">
@@ -594,56 +625,162 @@ export default function PolonnaruwaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-                         {/* Polonnaruwa Vatadageya */}
-                    <Card className="mb-8">
-                        <CardHeader>
-                            <CardTitle>Polonnaruwa Vatadageya</CardTitle>
-                            <CardDescription>Ancient Relic House & Architectural Masterpiece</CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            <div className="grid md:grid-cols-2 gap-6 items-center">
-                                <ImageCarousel
-                                    images={["/PolonnaruwaVatadageya.jpg", "/PolonnaruwaVatadageya2.jpg", "/PolonnaruwaVatadageya3.jpg"]}
-                                    alt="Polonnaruwa Vatadageya showing various views of the circular relic house and stone carvings"
-                                />
-                                <div>
-                                    <p className="text-muted-foreground mb-4">
-                                        The Polonnaruwa Vatadageya is one of Sri Lanka&apos;s most iconic ancient structures—a circular relic house built to protect sacred Buddhist relics. Dating to the 12th century, it features concentric stone platforms, beautifully carved guard stones, and a famous moonstone at the entrance. Four Buddha statues face the cardinal directions, symbolizing protection and enlightenment.
-                                    </p>
-                                    <ul className="space-y-2 text-muted-foreground">
-                                        <li className="flex items-start gap-2">
-                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                            Unique circular shrine architecture
-                                        </li>
-                                        <li className="flex items-start gap-2">
-                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                            Intricate moonstone and guard stones
-                                        </li>
-                                        <li className="flex items-start gap-2">
-                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                            Four Buddha statues facing cardinal points
-                                        </li>
-                                        <li className="flex items-start gap-2">
-                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                            UNESCO World Heritage highlight
-                                        </li>
-                                    </ul>
-                                    <Link href="/destinations/polonnaruwa-vatadageya">
-                                        <Button
-                                            className="mt-2 bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-600 dark:text-white border-none cursor-pointer"
-                                            variant="default"
-                                        >
-                                            Explore Polonnaruwa Vatadageya
-                                        </Button>
-                                    </Link>
+                        {/* Polonnaruwa Vatadageya */}
+                        <Card className="mb-8">
+                            <CardHeader>
+                                <CardTitle>Polonnaruwa Vatadageya</CardTitle>
+                                <CardDescription>Ancient Relic House & Architectural Masterpiece</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/Watadageya.jpg", caption: "Polonnaruwa Vatadageya: Circular relic house with stone pillars" },
+                                            { src: "/Watadageya1.jpg", caption: "Vatadageya: Intricate stone carvings and moonstone" },
+                                            { src: "/PolonnaruwaVatadageya3.jpg", caption: "Vatadageya: Buddha statues and central stupa base" },
+                                        ]}
+                                        alt="Polonnaruwa Vatadageya showing various views of the circular relic house and stone carvings"
+                                    />
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            The Polonnaruwa Vatadageya is one of Sri Lanka&apos;s most iconic ancient structures a circular relic house built to protect sacred Buddhist relics. Dating to the 12th century, it features concentric stone platforms, beautifully carved guard stones, and a famous moonstone at the entrance. Four Buddha statues face the cardinal directions, symbolizing protection and enlightenment.
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Unique circular shrine architecture
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Intricate moonstone and guard stones
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Four Buddha statues facing cardinal points
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                UNESCO World Heritage highlight
+                                            </li>
+                                        </ul>
+                                        <Link href="/destinations/polonnaruwa-vatadageya">
+                                            <Button
+                                                className="mt-2 bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-600 dark:text-white border-none cursor-pointer"
+                                                variant="default"
+                                            >
+                                                Explore Polonnaruwa Vatadageya
+                                            </Button>
+                                        </Link>
+                                    </div>
                                 </div>
-                            </div>
-                        </CardContent>
-                    </Card>
+                            </CardContent>
+                        </Card>
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>4. Rankoth Vehera</CardTitle>
+                                <CardTitle>4. Thivanka Image House (Thivanka Pilima Ge)</CardTitle>
+                                <CardDescription>Ancient shrine with unique bent-posture Buddha and rare frescoes</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/Thivanka-Image-House1.jpg", caption: "Thivanka Image House exterior view" },
+                                            { src: "/Thivanka-Image-House2.jpg", caption: "Ancient frescoes inside Thivanka Image House" },
+                                            { src: "/Thivanka-Image-House3.jpg", caption: "Unique bent-posture Buddha statue" }
+                                        ]}
+                                        alt="Thivanka Image House showing architectural details and ancient frescoes"
+                                    />
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            The Thivanka Image House is one of Polonnaruwa's most unique religious monuments, famous for its
+                                            Buddha statue in a distinctive three-bend posture (thivanka) and its remarkably preserved medieval
+                                            frescoes. Dating to the reign of Parakramabahu I, this temple showcases some of the finest examples
+                                            of Polonnaruwa period art.
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Unique three-bent posture Buddha statue (only one of its kind)
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Rare 12th-century frescoes depicting Jataka tales
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Original painted plaster still visible on walls
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Architectural features blend Sinhalese and South Indian styles
+                                            </li>
+                                        </ul>
+                                        <div className="mt-4 p-3 bg-amber-50 dark:bg-amber-900/20 rounded-lg">
+                                            <p className="text-sm text-amber-800 dark:text-amber-200">
+                                                <strong>🎨 Art Historical Note:</strong> The frescoes here are particularly significant as they
+                                                represent a unique style bridging classical Anuradhapura and medieval Polonnaruwa periods.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>5. Sathmahal Prasada (Seven-Story Palace)</CardTitle>
+                                <CardDescription>Unique stepped pyramid structure with possible Southeast Asian influences</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            The Sathmahal Prasada is a unique seven-storied pyramid-style building that stands out from
+                                            typical Sinhalese architecture. Its design shows possible influences from Southeast Asian
+                                            temple architecture, particularly from Cambodia and Thailand, suggesting international
+                                            cultural connections during the Polonnaruwa period.
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Unique stepped pyramid design with seven levels
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Shows possible Cambodian architectural influence
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                One of the few surviving multi-storied structures
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Evidence of international cultural exchange
+                                            </li>
+                                        </ul>
+                                        <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                                            <p className="text-sm text-blue-800 dark:text-blue-200">
+                                                <strong>🏛️ Architectural Note:</strong> This structure is particularly important as it
+                                                demonstrates the international connections and architectural diversity of medieval Sri Lanka.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/Sathmahal-Prasada1.jpg", caption: "Seven-story pyramid structure of Sathmahal Prasada" },
+                                            { src: "/Sathmahal-Prasada2.jpg", caption: "Detailed view of the architectural features" },
+                                            { src: "/Sathmahal-Prasada3.jpg", caption: "Evening view showing the unique stepped design" }
+                                        ]}
+                                        alt="Sathmahal Prasada showing the unique stepped pyramid architecture"
+                                    />
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>6. Rankoth Vehera</CardTitle>
                                 <CardDescription>Largest dagoba in Polonnaruwa</CardDescription>
                             </CardHeader>
                             <CardContent>
