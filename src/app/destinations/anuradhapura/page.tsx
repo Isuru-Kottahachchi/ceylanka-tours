@@ -86,11 +86,6 @@ export default function AnuradhapuraTravelGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
 
         {/* Quick Facts & How to Get There side by side */}
         <div className="flex flex-col lg:flex-row gap-8 mb-12">
@@ -234,7 +229,7 @@ export default function AnuradhapuraTravelGuide() {
                 </div>
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
                   <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
+                  <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
                     <li>• Start early morning to avoid traffic and heat</li>
                     <li>• Carry water and snacks for the journey</li>
                     <li>• Book accommodations in advance during peak season</li>
@@ -249,12 +244,6 @@ export default function AnuradhapuraTravelGuide() {
         {/* Sacred Sites */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Sacred Sites & Ancient Monuments</h2>
-
-
-          {/* Ad Space */}
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
 
           <div className="space-y-8">
             <h3 className="text-xl font-semibold mb-4">
@@ -282,8 +271,8 @@ export default function AnuradhapuraTravelGuide() {
                       Pilgrims from all over the world come to offer flowers, light oil lamps, and walk quietly around the golden railings. The air is filled with the scent of jasmine and the gentle sound of prayers. Visiting at dawn or dusk is especially magical, as the tree glows in the soft light and the atmosphere is calm and spiritual.
                     </p>
                     <div className="bg-yellow-50 dark:bg-yellow-900/30 p-4 rounded-lg border-l-4 border-yellow-400 dark:border-yellow-600 mt-4">
-                      <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-2">Visitor Tip</h4>
-                      <p className="text-sm text-yellow-700 dark:text-yellow-100">Dress modestly, remove your shoes, and bring a small flower offering. Take a moment to sit quietly and reflect under the ancient branches.</p>
+                      <h4 className="font-semibold text-yellow-800 dark:text-yellow-100 mb-2">Visitor Tip</h4>
+                      <p className="text-sm text-yellow-700 dark:text-gray-200">Dress modestly, remove your shoes, and bring a small flower offering. Take a moment to sit quietly and reflect under the ancient branches.</p>
                     </div>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -334,8 +323,8 @@ export default function AnuradhapuraTravelGuide() {
                       The stupa is especially beautiful at sunrise and sunset, when its white dome glows against the sky and the chanting of monks fills the air. During full moon (Poya) days, thousands of devotees gather here, creating a sea of white-clad pilgrims and colorful lotus flowers. Restoration efforts have kept the dagoba shining for generations to come.
                     </p>
                     <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
-                      <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Did You Know?</h4>
-                      <p className="text-sm text-blue-700 dark:text-blue-100">The Ruwanwelisaya is believed to enshrine the largest collection of Buddha relics in Sri Lanka. Walk clockwise around the stupa for good luck and spiritual merit.</p>
+                      <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Did You Know?</h4>
+                      <p className="text-sm text-blue-700 dark:text-gray-200">The Ruwanwelisaya is believed to enshrine the largest collection of Buddha relics in Sri Lanka. Walk clockwise around the stupa for good luck and spiritual merit.</p>
                     </div>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -887,11 +876,6 @@ export default function AnuradhapuraTravelGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
 
         {/* Itinerary Section */}
         <section className="mb-12">
