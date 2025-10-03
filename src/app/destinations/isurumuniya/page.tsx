@@ -1,22 +1,13 @@
-import type { Metadata } from "next"
+"use client";
 import Image from "next/image"
 import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Heart } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
-export const metadata: Metadata = {
-  title: "Isurumuniya Temple: Complete Guide 2025 | Ancient Rock Temple & Lovers",
-  description: "Discover Isurumuniya Temple in Anuradhapura, famous for the Lovers sculpture and ancient rock carvings. Complete travel guide with history and tips.",
-  keywords: "Isurumuniya Temple, Anuradhapura, Lovers sculpture, rock temple, Sri Lanka Buddhism, ancient art",
-  openGraph: {
-    title: "Isurumuniya Temple: Complete Guide 2025",
-    description: "Explore the ancient rock temple famous for its romantic sculptures and Buddhist heritage",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+
 
 export default function IsurumuniyaTempleGuide() {
   return (
@@ -24,7 +15,7 @@ export default function IsurumuniyaTempleGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200&text=Isurumuniya+Temple"
+          src="/Isurumuniya.jpeg"
           alt="Ancient Isurumuniya rock temple with carved Buddha statues and lotus pond in Anuradhapura"
           fill
           className="object-cover"
@@ -51,7 +42,7 @@ export default function IsurumuniyaTempleGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Isurumuniya: Where Art Meets Spirituality</h2>
@@ -115,10 +106,10 @@ export default function IsurumuniyaTempleGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Lovers+Sculpture"
+                src="/Isurumuniya-Couple.jpg"
                 alt="Famous Isurumuniya Lovers sculpture showing intimate couple carved in stone"
-                width={600}
-                height={400}
+                width={400}
+                height={300}
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
@@ -179,11 +170,47 @@ export default function IsurumuniyaTempleGuide() {
                 </div>
               </CardContent>
             </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Man and Horse head sculpture</CardTitle>
+                <CardDescription>World-renowned romantic carving</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Horse-head-Isurumuniya.jpg"
+                    alt="Close-up detail of the Isurumuniya Lovers sculpture showing intricate carving work"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      The centerpiece of Isurumuniya, this sculpture is considered one of the finest examples of ancient Sri Lankan art:
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Exquisite detail showing intimate human emotion
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect preservation after 2,000+ years
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Symbol of eternal love and devotion
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>2. The Elephant Pond Sculpture</CardTitle>
-                <CardDescription>Magnificent elephants in their natural habitat</CardDescription>
+                <CardTitle>The Elephant Pond Sculpture</CardTitle>
+                <CardDescription>Masterpiece of Natural Observation</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -207,7 +234,7 @@ export default function IsurumuniyaTempleGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400&text=Elephant+Sculpture"
+                    src="/Isurumuniya1.jpg"
                     alt="Ancient stone carving of elephants at water pond showing family group"
                     width={400}
                     height={300}
@@ -225,7 +252,7 @@ export default function IsurumuniyaTempleGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400&text=Royal+Family"
+                    src="/Kings-family.jpg"
                     alt="Stone carving showing ancient Sri Lankan royal family in traditional dress"
                     width={400}
                     height={300}
@@ -294,57 +321,57 @@ export default function IsurumuniyaTempleGuide() {
         </section>
 
         <Separator className="my-12" />
-              <section className="mb-12">
+        <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Near by Archaeological Wonders</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            
 
-            <Link href="/destinations/ranmusuuyana" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Ranmusu uyana with universal stargate</CardTitle>
-                  <CardDescription>Ancient city</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Minneriyanationalpark"
-                    alt="View of Sigiriya Rock from Pidurangala Rock"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Explore the mysterious Ranmusu uyana, an ancient site with unique stone carvings and a universal stargate.
-                  </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
-                    See More →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/mihinthalaya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Mihinthalaya</CardTitle>
-                  <CardDescription>Scared site </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Minneriyanationalpark"
-                    alt="View of Sigiriya Rock from Pidurangala Rock"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                   Just a few kilometers from Anuradhapura, Mihinthalaya is a sacred site where Buddhism was first introduced to Sri Lanka.
-                  </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">
-                    See More →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
+
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Ranmusu Uyana</CardTitle>
+                <CardDescription>Ancient royal pleasure gardens</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Ranmusuuyana.jpeg"
+                  alt="Ancient Ranmusu Uyana with its mysterious symbols and carvings"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the mysterious Ranmusu uyana, an ancient site with unique stone carvings and a universal stargate.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ranmusu-uyana" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <CardHeader>
+                <CardTitle className="text-lg">Mihinthalaya</CardTitle>
+                <CardDescription>Birthplace of Buddhism in Sri Lanka</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Mihinthale.jpg"
+                  alt="Sacred Mihinthale temple complex with its ancient steps and stupas"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Just a few kilometers from Anuradhapura, Mihinthalaya is the sacred site where Buddhism was first introduced to Sri Lanka.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
 
             <Card>
@@ -363,6 +390,11 @@ export default function IsurumuniyaTempleGuide() {
                 <p className="text-sm text-muted-foreground">
                   Masterpieces of ancient stone carving found at temple entrances, depicting Buddhist philosophy in art.
                 </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/moonstone-and-guard-stones" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -382,6 +414,11 @@ export default function IsurumuniyaTempleGuide() {
                 <p className="text-sm text-muted-foreground">
                   Sophisticated bathing pools for monks, showcasing advanced hydraulic engineering from ancient times.
                 </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kuttam-pokuna" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>

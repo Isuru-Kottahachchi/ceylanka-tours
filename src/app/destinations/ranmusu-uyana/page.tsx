@@ -26,7 +26,7 @@ export default function RanmusuUyanaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200&text=Ranmusu+Uyana+Ancient+Park"
+          src="/Ranmusuuyana.jpeg"
           alt="Ancient stone structures and rock formations at Ranmusu Uyana park with lush greenery"
           fill
           className="object-cover"
@@ -53,7 +53,7 @@ export default function RanmusuUyanaGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">
@@ -173,7 +173,7 @@ export default function RanmusuUyanaGuide() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>1. The Universal Gate (Sakwala Chakraya)</CardTitle>
+                <CardTitle>1. The Universal/Star Gate (Sakwala Chakraya)</CardTitle>
                 <CardDescription>Mysterious ancient carving with unknown purpose</CardDescription>
               </CardHeader>
               <CardContent>
@@ -188,6 +188,7 @@ export default function RanmusuUyanaGuide() {
                   <div>
                     <p className="text-muted-foreground mb-4">
                       The centerpiece of Ranmusu Uyana that draws researchers and mystery enthusiasts:
+                      There is a conspiracy theory that there are aliens behind this gate and similar gates around the world. Ex Peru and Egypt
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -603,7 +604,7 @@ export default function RanmusuUyanaGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=Isurumuniya+Temple"
+                    src="/Isurumuniya.jpeg"
                     alt="Ancient Isurumuniya rock temple with carved Buddha statues and lotus pond"
                     width={300}
                     height={200}
@@ -625,7 +626,7 @@ export default function RanmusuUyanaGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=Sri+Maha+Bodhi"
+                    src="/JayaSriMahaBodhi.jpeg"
                     alt="Ancient Sri Maha Bodhi tree with prayer flags and worshippers"
                     width={300}
                     height={200}
@@ -647,7 +648,7 @@ export default function RanmusuUyanaGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=Ruwanwelisaya+Stupa"
+                    src="/Ruwanwalisaya.jpeg"
                     alt="Massive white Ruwanwelisaya stupa with ceremonial elephants and worshippers"
                     width={300}
                     height={200}

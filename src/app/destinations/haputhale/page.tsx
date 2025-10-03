@@ -780,8 +780,8 @@ export default function HaputaleGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/liptons-seat.jpg"
-                  alt="Lipton's Seat"
+                  src="/Badulla.jpeg"
+                  alt="Badull"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"

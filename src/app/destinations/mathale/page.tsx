@@ -81,7 +81,7 @@ export default function MataleGuide() {
         </section>
 
         {/* Quick Facts */}
-        <section className="mb-12 scroll-mt-20" id="quick-facts">
+        <section className="mb-12 scroll-mt-40" id="quick-facts">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -137,7 +137,7 @@ export default function MataleGuide() {
         </section>
 
         {/* Getting to Matale (moved up) */}
-        <section className="mb-12 scroll-mt-20" id="getting-there">
+        <section className="mb-12 scroll-mt-40" id="getting-there">
           <h2 className="text-3xl font-bold mb-6">Getting to Matale</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
@@ -206,7 +206,7 @@ export default function MataleGuide() {
         </section>
 
         {/* Top Attractions */}
-        <section className="mb-12 scroll-mt-20" id="attractions">
+        <section className="mb-12 scroll-mt-40" id="attractions">
           <h2 className="text-3xl font-bold mb-6">Top Attractions in Matale</h2>
 
           {/* Ad Banner - Mid Content */}
@@ -377,7 +377,7 @@ export default function MataleGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Aluvihare-Temple.jpg",
+                        src: "/Mathale-Aluvihare.jpg",
                         alt: "Ancient Aluvihare Rock Temple",
                         caption: "Historic Buddhist temple complex",
                         title: "Aluvihare Rock Temple"
@@ -417,7 +417,7 @@ export default function MataleGuide() {
                         title: "Sembuwatta Lake"
                       },
                       {
-                        src: "/Sembuwatta-Activities.jpg",
+                        src: "/Sembuwatta-Lake1.jpg",
                         alt: "Adventure activities at Sembuwatta",
                         caption: "Zip-lining and water activities",
                         title: "Adventure at Sembuwatta"
@@ -530,7 +530,7 @@ export default function MataleGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Nalanda-Gedige.jpg",
+                        src: "/Nalanda-Gedige.jpeg",
                         alt: "Ancient Nalanda Gedige temple",
                         caption: "Unique Buddhist-Hindu architectural fusion",
                         title: "Nalanda Gedige Temple"
@@ -595,7 +595,7 @@ export default function MataleGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Pitawala-Pathana.jpg",
+                        src: "/Pitawala-pathana.jpg",
                         alt: "Mini World's End at Pitawala Pathana",
                         caption: "Dramatic cliffs and rolling grasslands",
                         title: "Pitawala Pathana"
@@ -1174,7 +1174,7 @@ export default function MataleGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/Mathale-Aluvihare.jpg"
                     alt="Aluvihare Rock Temple with ancient cave temples and Buddhist murals"
                     width={300}
                     height={200}
