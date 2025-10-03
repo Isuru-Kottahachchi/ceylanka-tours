@@ -363,7 +363,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-slate-900 text-white shadow-lg">
       {/* Top Navigation Bar */}
       <div className="border-b border-slate-700">
-        <div className="container mx-auto px-4 py-2">
+        <div className="container mx-auto px-8 py-2">
           <div className="flex items-center justify-between text-sm">
             <div className="hidden lg:flex items-center space-x-6">
               {topNavItems.map((item) => (
@@ -376,7 +376,7 @@ export function Header() {
                 </Link>
               ))}
             </div>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-4 w-full md:w-auto lg:justify-start justify-between">
               <div className="flex items-center space-x-1">
                 <Phone className="h-4 w-4" />
                 <span>Tourism Hotline: 1912</span>
