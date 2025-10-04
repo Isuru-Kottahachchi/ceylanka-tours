@@ -1031,3 +1031,8 @@
 //     </div>
 //   )
 // }
+
+
+export default function AirportTransferServicePage() {
+  return <div>Airport Transfer Service Page</div>
+}
