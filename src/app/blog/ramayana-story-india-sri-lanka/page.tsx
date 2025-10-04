@@ -74,7 +74,7 @@ export default function RamayanaStoryPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Known as the "Adi Kavi" (First Poet), Sage Valmiki wrote the original Ramayana in Sanskrit around 
+                  Known as the &apos;Adi Kavi&apos; (First Poet), Sage Valmiki wrote the original Ramayana in Sanskrit around 
                   500-400 BCE. His beautiful verses tell the complete story in 24,000 verses divided into 7 books. 
                   He is considered the father of Sanskrit poetry.
                 </p>
@@ -92,7 +92,7 @@ export default function RamayanaStoryPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  The great Tamil poet Kambar wrote "Kamba Ramayanam" in the 12th century. His version is very popular 
+                  The great Tamil poet Kambar wrote &quot;Kamba Ramayanam&quot; in the 12th century. His version is very popular 
                   in Tamil Nadu and Sri Lanka. He added beautiful Tamil poetry and cultural elements that made the 
                   story more meaningful for Tamil-speaking people.
                 </p>
@@ -735,7 +735,7 @@ export default function RamayanaStoryPage() {
                     </p>
                     <p>
                       In Sri Lanka, there are beautiful Sinhala and Tamil versions. The Tamil poet <strong>Kambar</strong> 
-                      wrote the famous "Kamba Ramayanam" in the 12th century, which is very popular in both Tamil Nadu 
+                      wrote the famous &quot;Kamba Ramayanam&quot; in the 12th century, which is very popular in both Tamil Nadu 
                       and Sri Lanka. Other notable authors include <strong>Tulsidas</strong> (Hindi), <strong>Krittibas</strong> (Bengali), 
                       and many Sinhala poets.
                     </p>
