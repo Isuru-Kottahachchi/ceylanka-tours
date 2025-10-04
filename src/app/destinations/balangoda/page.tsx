@@ -139,11 +139,6 @@ export default function BalangodaGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Top Attractions in Balangoda</h2>
 
-          {/* Ad Banner - Mid Content */}
-          <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
-            [Advertisement Space - 300x250 Medium Rectangle - Archaeological Site Tours & Educational Experiences]
-          </div>
-
           <div className="space-y-8">
             {/* Archaeological Sites */}
             <Card>
@@ -583,11 +578,7 @@ export default function BalangodaGuide() {
           </div>
         </section>
 
-        {/* Ad Banner - Mid Content 2 */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
-          [Advertisement Space - 728x90 Leaderboard - Traditional Craft Workshops & Cultural Tours]
-        </div>
-
+  
         {/* Getting There */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Getting to Balangoda</h2>
@@ -972,10 +963,6 @@ export default function BalangodaGuide() {
           </Card>
         </section>
 
-        {/* Ad Banner - Bottom */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
-          [Advertisement Space - 728x90 Leaderboard - Heritage Tours & Traditional Craft Experiences]
-        </div>
       </div>
     </main>
   )

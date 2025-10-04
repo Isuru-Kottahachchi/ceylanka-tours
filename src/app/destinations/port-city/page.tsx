@@ -264,11 +264,6 @@ export default function PortCityTravelGuide() {
           </Card>
         </section>
 
-        {/* Ad Banner Space */}
-        <div className="my-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-gray-300 dark:border-gray-600">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Things to Do */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Things to Do in Port City Colombo</h2>
@@ -452,11 +447,6 @@ export default function PortCityTravelGuide() {
           </div>
         </section>
 
-        {/* Ad Banner Space */}
-        <div className="my-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-gray-300 dark:border-gray-600">
-          [Advertisement Space - 300x250 Medium Rectangle]
-        </div>
-
         {/* Entertainment & Nightlife */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Entertainment & Nightlife</h2>
@@ -633,11 +623,6 @@ export default function PortCityTravelGuide() {
             </Link>
           </div>
         </section>
-
-        {/* Ad Banner Space */}
-        <div className="my-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-gray-300 dark:border-gray-600">
-          [Advertisement Space - 300x250 Medium Rectangle]
-        </div>
 
         {/* Conclusion */}
         <section className="mb-12">

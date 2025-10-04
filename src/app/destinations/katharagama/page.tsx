@@ -159,11 +159,6 @@ export default function KatharagamaGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-orange-100/80 to-red-100/80 dark:from-orange-900/40 dark:to-red-900/40 rounded-xl text-center text-muted-foreground border-2 border-dashed border-orange-300 dark:border-orange-700">
-          [Premium Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Quick Facts */}
   <section className="mb-16" id="quick-facts">
           <Card className="border-2 border-orange-200 dark:border-orange-700 bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/40 dark:to-red-900/40">
@@ -684,11 +679,6 @@ export default function KatharagamaGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl text-center text-gray-500 border-2 border-dashed border-purple-300">
-          [Premium Advertisement Space - 300x250 Medium Rectangle]
-        </div>
 
         {/* Festivals & Ceremonies */}
   <section className="mb-16" id="festivals">

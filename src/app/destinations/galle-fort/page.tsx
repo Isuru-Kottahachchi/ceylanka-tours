@@ -71,11 +71,6 @@ export default function GalleFortTravelGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Quick Facts */}
         <section className="mb-12">
           <Card>
@@ -281,11 +276,6 @@ export default function GalleFortTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Must-See Attractions in Galle Fort</h2>
 
-          {/* Ad Space */}
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
-
           <div className="space-y-8">
             {/* Fort Ramparts */}
             <Card>
@@ -447,11 +437,6 @@ export default function GalleFortTravelGuide() {
         {/* Shopping & Dining */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Shopping & Dining in Galle Fort</h2>
-
-          {/* Ad Space */}
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 728x90 Leaderboard]
-          </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <Card>

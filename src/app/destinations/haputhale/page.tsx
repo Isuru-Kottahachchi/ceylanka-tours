@@ -177,11 +177,6 @@ export default function HaputaleGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Top Attractions in Haputale</h2>
           
-          {/* Ad Banner - Mid Content */}
-          <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
-            [Advertisement Space - 300x250 Medium Rectangle - Scenic Tours & Photography Packages]
-          </div>
-
           {/* Top Attractions with Carousels */}
           <div className="space-y-8">
             {/* Lipton's Seat */}
@@ -861,10 +856,6 @@ export default function HaputaleGuide() {
           </Card>
         </section>
 
-        {/* Ad Banner - Bottom */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
-          [Advertisement Space - 728x90 Leaderboard - Tea Heritage Tours & Mountain Adventures]
-        </div>
       </div>
     </main>
   )

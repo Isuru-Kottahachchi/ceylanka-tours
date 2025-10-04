@@ -76,11 +76,6 @@ export default function MandaramNuwaraGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Quick Facts & How to Get There side by side */}
         <div className="flex flex-col lg:flex-row gap-8 mb-12">
           {/* Essential Mandaram Nuwara Facts */}
@@ -222,10 +217,6 @@ export default function MandaramNuwaraGuide() {
         {/* Highlights & Waterfalls */}
         <section className="mb-12" scroll-mt-12 id="highlights">
           <h2 className="text-3xl font-bold mb-6">Highlights & Waterfalls</h2>
-
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
 
           <div className="space-y-8">
             <Card>

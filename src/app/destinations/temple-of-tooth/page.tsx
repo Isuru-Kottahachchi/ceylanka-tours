@@ -195,11 +195,6 @@ export default function TempleOfToothKandyGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-xl text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-yellow-300 dark:border-yellow-600">
-          [Premium Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Enhanced Quick Facts */}
         <section className="mb-16">
           <Card className="border-2 border-yellow-200 dark:border-yellow-700 bg-gradient-to-br from-yellow-50 to-amber-50 dark:from-yellow-900/20 dark:to-amber-900/20">
@@ -626,11 +621,6 @@ export default function TempleOfToothKandyGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-purple-300 dark:border-purple-600">
-          [Premium Advertisement Space - 300x250 Medium Rectangle]
-        </div>
 
         {/* Esala Perahera Festival */}
         <section className="mb-16">

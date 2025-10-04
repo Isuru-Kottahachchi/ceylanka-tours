@@ -103,11 +103,6 @@ export default function NineArchBridgeGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl text-center text-gray-500 border-2 border-dashed border-green-300">
-          [Premium Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Enhanced Quick Facts */}
         <section id="quick-facts" className="mb-16 scroll-mt-40">
           <Card className="border-2 border-green-200/50 bg-gradient-to-br from-green-50/10 to-emerald-50/10 dark:from-green-950/50 dark:to-emerald-950/50">

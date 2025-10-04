@@ -138,11 +138,6 @@ export default function BadullaGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Top Attractions in Badulla</h2>
 
-          {/* Ad Banner - Mid Content */}
-          <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
-            [Advertisement Space - 300x250 Medium Rectangle - Hotel Booking Ads]
-          </div>
-
           <div className="space-y-8">
             {/* Gale Pansala (Stone Temple) */}
             <Card>
@@ -758,11 +753,7 @@ export default function BadullaGuide() {
             </CardContent>
           </Card>
         </section>
-
-        {/* Ad Banner - Bottom */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
-          [Advertisement Space - 728x90 Leaderboard - Travel Insurance & Services]
-        </div>
+   
       </div>
     </main>
   )

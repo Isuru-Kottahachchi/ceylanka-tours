@@ -243,11 +243,6 @@ export default function ColomboTourGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Colombo</h2>
 
-          {/* Ad Space */}
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
-
           <div className="space-y-8">
             {/* Galle Face Green */}
             <Card>
@@ -783,11 +778,6 @@ export default function ColomboTourGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
 
         {/* Final Section */}
         <section className="mb-12">

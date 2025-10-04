@@ -576,11 +576,6 @@ export default function EllaTownGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-muted/50 rounded-lg text-center text-muted-foreground border-2 border-dashed border-muted-foreground/30">
-          [Advertisement Space - 300x250 Medium Rectangle]
-        </div>
-
         {/* Where to Stay */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Where to Stay in Ella</h2>

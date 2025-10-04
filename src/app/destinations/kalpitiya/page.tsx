@@ -273,11 +273,6 @@ export default function KalpitiyaGuide() {
           </Card>
         </section>
 
-        {/* Ad Banner Space */}
-        <div className="my-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-gray-300 dark:border-gray-600">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Top Activities */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Amazing Activities in Kalpitiya</h2>
@@ -444,11 +439,6 @@ export default function KalpitiyaGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Banner Space */}
-        <div className="my-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-gray-300 dark:border-gray-600">
-          [Advertisement Space - 300x250 Medium Rectangle]
-        </div>
 
         {/* More Activities */}
         <section className="mb-12">

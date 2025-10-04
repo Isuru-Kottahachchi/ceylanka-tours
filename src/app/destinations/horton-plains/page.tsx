@@ -102,11 +102,6 @@ export default function HortonPlainsDetailedGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Premium Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Enhanced Quick Facts */}
         <section className="mb-16">
           <Card className="border-2 border-blue-200 dark:border-blue-800 bg-gradient-to-br from-blue-50 to-white dark:from-blue-950 dark:to-gray-900">
