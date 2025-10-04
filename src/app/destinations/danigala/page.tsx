@@ -66,7 +66,7 @@ export default function DanigalaGuide() {
             <p className="text-lg mb-4 tracking-wide">
               Rising mysteriously from the landscapes of Sri Lanka&apos;s Aralaganwila region, Danigala 
               Mountain stands as one of the island&apos;s most enigmatic natural formations. Known locally
-              as the "UFO Mountain" due to its distinctive flat top and perfect circular shape, this
+              as the &quot;UFO Mountain&quot; due to its distinctive flat top and perfect circular shape, this
               geological wonder has captured the imagination of both locals and visitors for generations.
             </p>
             <p className="text-lg mb-4 tracking-wide">
@@ -190,7 +190,7 @@ export default function DanigalaGuide() {
                     <p className="text-gray-800 dark:text-white/90 mb-4">
                       According to ancient Sri Lankan chronicles and local legends, Danigala played a
                       significant role in the story of King Ravana. The mountain&apos;s flat top is said to
-                      have served as a landing site for his flying machine, the "Dandu Monara" or
+                      have served as a landing site for his flying machine, the &quot;Dandu Monara&quot; or
                       Wooden Peacock.
                     </p>
                     <div className="space-y-3 text-gray-800 dark:text-white/90">

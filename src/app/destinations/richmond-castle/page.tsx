@@ -64,17 +64,17 @@ export default function RichmondCastleGuide() {
           </h2>
           <div className="prose prose-lg max-w-none text-gray-800 dark:text-white/90 leading-relaxed font-medium">
             <p className="text-lg mb-4 tracking-wide">
-              Richmond Castle stands as one of Sri Lanka's most remarkable examples of colonial-era 
-              architecture, combining the grandeur of Edwardian design with local architectural elements. 
-              Built in 1896 by the wealthy landowner Mudaliyar Don Arthur de Silva Wijesinghe Siriwardena, 
-              this magnificent mansion showcases the cultural fusion that characterized Sri Lanka's elite 
+              Richmond Castle stands as one of Sri Lanka&apos;s most remarkable examples of colonial-era
+              architecture, combining the grandeur of Edwardian design with local architectural elements.
+              Built in 1896 by the wealthy landowner Mudaliyar Don Arthur de Silva Wijesinghe Siriwardena,
+              this magnificent mansion showcases the cultural fusion that characterized Sri Lanka&apos;s elite
               society at the turn of the 20th century.
             </p>
             <p className="text-lg mb-4">
-              The castle's design was inspired by an Indian Maharaja's palace that caught the Mudaliyar's 
-              attention during his travels. He commissioned its construction to British architects, who 
-              created this unique blend of British colonial architecture with Indian and Sinhalese design 
-              elements, resulting in a structure that stands unique among Sri Lanka's historical buildings.
+              The castle&apos;s design was inspired by an Indian Maharaja&apos;s palace that caught the Mudaliyar&apos;s
+              attention during his travels. He commissioned its construction to British architects, who
+              created this unique blend of British colonial architecture with Indian and Sinhalese design
+              elements, resulting in a structure that stands unique among Sri Lanka&apos;s historical buildings.
             </p>
             <p className="text-lg mb-4">
               Spread across 42 acres of lush gardens, the two-story mansion boasts 99 doors and 34 windows, 
@@ -83,7 +83,7 @@ export default function RichmondCastleGuide() {
               taste of its original owner.
             </p>
             <p className="text-lg">
-              Today, Richmond Castle serves as both a historical monument and a children's home, managed by 
+              Today, Richmond Castle serves as both a historical monument and a children&apos;s home, managed by
               the Public Trustee of Sri Lanka. Its preservation allows visitors to step back in time and 
               experience the opulence of colonial-era Sri Lanka while supporting a worthy social cause.
             </p>
@@ -190,7 +190,7 @@ export default function RichmondCastleGuide() {
                   </div>
                   <div>
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
-                      The castle's exterior showcases a masterful blend of European and Asian architectural 
+                      The castle&apos;s exterior showcases a masterful blend of European and Asian architectural
                       styles, featuring distinctive elements that make it unique among colonial-era buildings 
                       in Sri Lanka.
                     </p>
