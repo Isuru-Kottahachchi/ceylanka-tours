@@ -151,7 +151,7 @@ export default function JayaSriMahaBodhiGuide() {
                     <div className="flex items-center gap-2">
                       <Star className="w-4 h-4 text-yellow-500" />
                       <span>
-                        <strong>Significance:</strong>Direct lineage to Buddha's Bodhi tree
+                        <strong>Significance:</strong>Direct lineage to Buddha&apos;s Bodhi tree
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
