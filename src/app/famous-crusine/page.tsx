@@ -443,7 +443,7 @@ export default function FamousCuisinePage() {
                     <h4 className="font-semibold text-red-700 dark:text-red-400 mb-2">For Beginners:</h4>
                     <p className="text-sm text-muted-foreground mb-2">
                       Start with mild dishes like plain rice, dhal curry, and coconut sambol (just a tiny bit). 
-                      Ask for &quot;less spicy&quot; when ordering. Most restaurants are happy to adjust spice levels for tourists.
+                      Ask for &apos;less spicy&apos; when ordering. Most restaurants are happy to adjust spice levels for tourists.
                     </p>
                     <ul className="text-xs text-muted-foreground space-y-1">
                       <li>• Safe options: Fried rice, noodles, grilled fish</li>
