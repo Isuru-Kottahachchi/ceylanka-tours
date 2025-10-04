@@ -93,10 +93,7 @@ export default function DambullaTownGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl text-center text-gray-500 border-2 border-dashed border-green-300">
-          [Premium Advertisement Space - 728x90 Leaderboard]
-        </div>
+    
 
         {/* Enhanced Quick Facts */}
         <section className="mb-16">
@@ -945,12 +942,6 @@ export default function DambullaTownGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-xl text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-yellow-300 dark:border-yellow-600">
-          [Premium Advertisement Space - 300x250 Medium Rectangle]
-        </div>
-
        
         {/* Local Life & Culture */}
         <section className="mb-16">

@@ -74,9 +74,9 @@ export default function EllaTownGuide() {
         </div>
       </nav>
 
-  <div className="max-w-6xl mx-auto px-4 py-8">
-    {/* Introduction */}
-  <section className="mb-12 scroll-mt-48 bg-background" id="introduction">
+      <div className="max-w-6xl mx-auto px-4 py-8">
+        {/* Introduction */}
+        <section className="mb-12 scroll-mt-48 bg-background" id="introduction">
           <h2 className="text-3xl font-bold mb-6 text-foreground flex items-center gap-2">
             <Info className="w-7 h-7 text-primary" />
             Welcome to Ella: Where Mountains Meet Magic
@@ -99,17 +99,12 @@ export default function EllaTownGuide() {
                 Ella is home to the famous Nine Arch Bridge, built entirely out of brick, stone, and cement—without a single piece of steel! This engineering marvel is one of the most photographed spots in Sri Lanka and a must-see for train lovers and Instagrammers alike.
               </p>
             </div>
-        </div>
-      </section>
-
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-muted/50 rounded-lg text-center text-muted-foreground border-2 border-dashed border-muted-foreground/30">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
+          </div>
+        </section>
 
         {/* Quick Facts */}
-  <section className="mb-12 scroll-mt-48 bg-muted/50" id="quick-facts">
-    <div className="h-1 w-full bg-gradient-to-r from-primary/10 to-transparent rounded-full mb-8" />
+        <section className="mb-12 scroll-mt-48 bg-muted/50" id="quick-facts">
+          <div className="h-1 w-full bg-gradient-to-r from-primary/10 to-transparent rounded-full mb-8" />
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -153,8 +148,8 @@ export default function EllaTownGuide() {
         </section>
 
         {/* Top Attractions */}
-  <section className="mb-12 scroll-mt-48 bg-background" id="attractions">
-    <div className="h-1 w-full bg-gradient-to-r from-yellow-400/20 to-transparent rounded-full mb-8" />
+        <section className="mb-12 scroll-mt-48 bg-background" id="attractions">
+          <div className="h-1 w-full bg-gradient-to-r from-yellow-400/20 to-transparent rounded-full mb-8" />
           <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
             <Star className="w-7 h-7 text-yellow-500" />
             Top Attractions in Ella
@@ -340,8 +335,8 @@ export default function EllaTownGuide() {
         </section>
 
         {/* Tea Picking Experiences */}
-  <section className="mb-12 scroll-mt-48 bg-muted/50" id="food">
-    <div className="h-1 w-full bg-gradient-to-r from-green-400/20 to-transparent rounded-full mb-8" />
+        <section className="mb-12 scroll-mt-48 bg-muted/50" id="food">
+          <div className="h-1 w-full bg-gradient-to-r from-green-400/20 to-transparent rounded-full mb-8" />
           <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
             <Utensils className="w-7 h-7 text-primary" />
             Tea Picking &amp; Plantation Experiences
@@ -506,7 +501,7 @@ export default function EllaTownGuide() {
               </CardContent>
             </Card>
 
-            
+
             <Card>
               <CardHeader>
                 <CardTitle>Diyaluma Falls</CardTitle>

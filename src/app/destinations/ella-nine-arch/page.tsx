@@ -109,7 +109,7 @@ export default function NineArchBridgeGuide() {
         </div>
 
         {/* Enhanced Quick Facts */}
-        <section id="quick-facts" className="mb-16 scroll-mt-20">
+        <section id="quick-facts" className="mb-16 scroll-mt-40">
           <Card className="border-2 border-green-200/50 bg-gradient-to-br from-green-50/10 to-emerald-50/10 dark:from-green-950/50 dark:to-emerald-950/50">
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-3xl text-foreground">
@@ -654,7 +654,7 @@ export default function NineArchBridgeGuide() {
                   </div>
                 </div>
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Ella-Train-Loop.jpg"
                   alt="Demodara Loop Railway Spiral"
                   width={600}
                   height={400}

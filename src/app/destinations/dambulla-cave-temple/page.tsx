@@ -71,11 +71,6 @@ export default function DambullaTravelGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Quick Facts */}
         <section className="mb-12">
           <Card>
@@ -354,11 +349,6 @@ export default function DambullaTravelGuide() {
             />
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
 
         {/* Art & Architecture */}
         <section className="mb-12">

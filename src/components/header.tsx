@@ -6,7 +6,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Sun, Moon, Phone, ChevronDown, ChevronRight } from "lucide-react"
+import { Menu, Sun, Moon, Phone, ChevronDown, ChevronRight} from "lucide-react"
 
 
 const topNavItems = [
@@ -547,7 +547,7 @@ export function Header() {
 
                   {/* Mobile Navigation */}
                   <nav className="flex flex-col space-y-3 pb-20">
-                    <Link href="/" className="py-2 border-b" onClick={() => setIsSheetOpen(false)}>
+                    <Link href="/" className="py-2 border-b border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 font-medium" onClick={() => setIsSheetOpen(false)}>
                       HOME
                     </Link>
                     
@@ -556,7 +556,7 @@ export function Header() {
                       <Link 
                         key={item.name} 
                         href={item.href} 
-                        className="py-2 border-b" 
+                        className="py-2 border-b border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 font-medium" 
                         onClick={() => setIsSheetOpen(false)}
                       >
                         {item.name.toUpperCase()}

@@ -128,7 +128,7 @@ export default function PinnawalaElephantOrphanage() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+     <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Pinnawala Elephant Orphanage</h2>

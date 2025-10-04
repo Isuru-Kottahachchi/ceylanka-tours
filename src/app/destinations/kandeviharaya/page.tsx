@@ -15,6 +15,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Kande Viharaya Aluthgama: Complete Guide 2025 | Sacred Buddhist Temple",
@@ -62,7 +63,7 @@ export default function KandeViharayaGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Kande Viharaya: A Spiritual Haven</h2>
@@ -544,7 +545,11 @@ export default function KandeViharayaGuide() {
                     Beautiful beach destination just 10 minutes from Kande Viharaya. Perfect for relaxation after temple
                     visit.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">See More →</span>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -565,7 +570,11 @@ export default function KandeViharayaGuide() {
                   <p className="text-sm text-muted-foreground">
                     Former home of landscape architect Bevis Bawa with beautiful tropical gardens and art collection.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">See More →</span>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/attractions/brief-garden" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -587,7 +596,11 @@ export default function KandeViharayaGuide() {
                     Explore the biodiversity of Madu River&apos;s mangrove ecosystem with a boat safari through narrow
                     channels.
                   </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">See More →</span>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </Link>

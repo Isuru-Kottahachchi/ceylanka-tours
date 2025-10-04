@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Sigiriya Rock Fortress: Complete Travel Guide 2025 | Ancient Wonder of Sri Lanka",
@@ -38,7 +39,7 @@ export default function SigiriyaTravelGuide() {
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
-  <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Sigiriya Rock Fortress</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Discover Sri Lanka&apos;s Ancient Wonder in the Sky</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -64,7 +65,7 @@ export default function SigiriyaTravelGuide() {
         </div>
       </section>
 
-  <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Sigiriya: The Lion Rock</h2>
@@ -279,9 +280,9 @@ export default function SigiriyaTravelGuide() {
                 rather than be captured.
               </p>
               <p>
-                After the king died, nobody lived in his beautiful palace anymore. Later, Buddhist monks came and 
-                turned it into a quiet place where they could pray and meditate. The monks stayed there until the 
-                1400s. Today, people from all over the world visit Sigiriya because it shows how clever and skilled 
+                After the king died, nobody lived in his beautiful palace anymore. Later, Buddhist monks came and
+                turned it into a quiet place where they could pray and meditate. The monks stayed there until the
+                1400s. Today, people from all over the world visit Sigiriya because it shows how clever and skilled
                 ancient builders were.
               </p>
               <h1>The forgotten rock fortress remained hidden in the jungle until British Army Major Jonathan Forbes stumbled upon it in 1831, sparking the first systematic archaeological studies that would eventually uncover the incredible secrets of King Kashyapa&apos;s ancient citadel.</h1>
@@ -730,9 +731,9 @@ export default function SigiriyaTravelGuide() {
                 <div>
                   <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Important Path Information</h4>
                   <p className="text-blue-700 dark:text-blue-300 text-sm leading-relaxed">
-                    <strong>Note:</strong> The sequence of attractions described below will be found according to the path you select. 
-                    There are multiple routes to reach the summit, and some areas may be visited in different orders depending 
-                    on your chosen climbing route and current site conditions. Your guide or the site map will show you the 
+                    <strong>Note:</strong> The sequence of attractions described below will be found according to the path you select.
+                    There are multiple routes to reach the summit, and some areas may be visited in different orders depending
+                    on your chosen climbing route and current site conditions. Your guide or the site map will show you the
                     best path for your visit.
                   </p>
                 </div>
@@ -1134,9 +1135,11 @@ export default function SigiriyaTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
                   </p>
-                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
-                    See More →
-                  </span>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/pidurangala" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -1157,9 +1160,11 @@ export default function SigiriyaTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings. 20 minutes away.
                   </p>
-                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
-                    See More →
-                  </span>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -1180,13 +1185,15 @@ export default function SigiriyaTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Famous for &quot;The Gathering&quot; - hundreds of elephants come together during dry season. 1 hour drive.
                   </p>
-                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
-                    See More →
-                  </span>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
-             <Link href="/destinations/habarana" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/habarana" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Habarana</CardTitle>
@@ -1203,9 +1210,11 @@ export default function SigiriyaTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Explore the gateway town of Habarana, a key access point to Sri Lanka&apos;s Cultural Triangle. Surrounded by lush forests and ancient ruins, Habarana is the perfect base for exploring nearby attractions like Sigiriya Rock Fortress and the ancient city of Polonnaruwa. Experience the rich history and natural beauty of this region, making it a must-visit destination for travelers. About 1.5 hours from Sigiriya.
                   </p>
-                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
-                    See More →
-                  </span>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -1224,11 +1233,13 @@ export default function SigiriyaTravelGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                   Ancient city with well-preserved ruins of palaces, temples, and statues. 1.5 hours drive.
+                    Ancient city with well-preserved ruins of palaces, temples, and statues. 1.5 hours drive.
                   </p>
-                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
-                    See More →
-                  </span>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -1247,11 +1258,13 @@ export default function SigiriyaTravelGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                  Explore the sacred city of Anuradhapura, the first capital and ancient heart of Sri Lanka. Famous for its massive dagobas, centuries-old monasteries, and the revered Sri Maha Bodhi tree, Anuradhapura is a UNESCO World Heritage Site and a center of Buddhist pilgrimage. Wander through sprawling ruins, marvel at ancient engineering, and experience the spiritual atmosphere of this legendary kingdom that shaped Sri Lankan civilization for over a thousand years. About 1.5 hours from Sigiriya.
+                    Explore the sacred city of Anuradhapura, the first capital and ancient heart of Sri Lanka. Famous for its massive dagobas, centuries-old monasteries, and the revered Sri Maha Bodhi tree, Anuradhapura is a UNESCO World Heritage Site and a center of Buddhist pilgrimage. Wander through sprawling ruins, marvel at ancient engineering, and experience the spiritual atmosphere of this legendary kingdom that shaped Sri Lankan civilization for over a thousand years. About 1.5 hours from Sigiriya.
                   </p>
-                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
-                    See More →
-                  </span>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </Link>
@@ -1272,9 +1285,11 @@ export default function SigiriyaTravelGuide() {
                   <p className="text-sm text-muted-foreground">
                     Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
                   </p>
-                  <span className="text-sm font-bold text-primary mt-3 inline-block border-2 border-primary px-3 py-1 rounded-md hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
-                    See More →
-                  </span>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             </Link>

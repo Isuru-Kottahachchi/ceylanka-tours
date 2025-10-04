@@ -28,7 +28,7 @@ export default function KalpitiyaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.jpg"
+          src="/Kalpitiya.jpeg"
           alt="Kalpitiya Peninsula showing pristine lagoon waters with dolphins jumping and kitesurfers in the background"
           fill
           className="object-cover"

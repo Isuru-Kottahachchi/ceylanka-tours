@@ -217,7 +217,7 @@ export default function PidurangalaRockGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400&text=Reclining+Buddha"
+                    src="/Pidurangala-Reclining-Buddha.jpg"
                     alt="Large reclining Buddha statue carved into Pidurangala Rock face"
                     width={400}
                     height={300}
@@ -235,7 +235,7 @@ export default function PidurangalaRockGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/Pidurangala.jpeg"
+                    src="/Pidurangala-Summit-View.jpg"
                     alt="Spectacular sunrise view of Sigiriya Rock from Pidurangala summit with golden light"
                     width={400}
                     height={300}
@@ -390,16 +390,16 @@ export default function PidurangalaRockGuide() {
 
         {/* Final Tips */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-orange-50 to-yellow-50 border-orange-200">
+          <Card className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-purple-200 dark:border-purple-700">
             <CardHeader>
-              <CardTitle className="text-orange-800">Your Pidurangala Adventure Awaits</CardTitle>
+              <CardTitle className="text-orange-800 dark:text-orange-400">Your Pidurangala Adventure Awaits</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground mb-4 text-neutral-800 dark:text-neutral-200">
                 Pidurangala Rock offers one of the most rewarding experiences in Sri Lanka. The combination of ancient
                 Buddhist heritage, moderate adventure, and absolutely stunning views makes it a must-visit destination.
               </p>
-              <p className="text-muted-foreground font-medium">
+              <p className="text-muted-foreground font-medium text-neutral-800 dark:text-neutral-200">
                 Wake up early, embrace the adventure, and prepare to witness one of the most beautiful sunrises of your
                 life! 🌅🏔️
               </p>

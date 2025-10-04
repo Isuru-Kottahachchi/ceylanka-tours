@@ -66,7 +66,7 @@ export default function AnuradhapuraTravelGuide() {
         </div>
       </nav>
 
-  <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Anuradhapura: Cradle of Buddhism</h2>
@@ -217,7 +217,7 @@ export default function AnuradhapuraTravelGuide() {
                       <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
                       <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
                     </ul>
-                    
+
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Train</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo Fort → Anuradhapura</li>
@@ -292,14 +292,9 @@ export default function AnuradhapuraTravelGuide() {
                         Protected by golden railings and platforms
                       </li>
                     </ul>
-                    <div className="mt-6">
-                      <Link href="/destinations/jaya-sri-maha-bodhi">
-                        <Button
-                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                          variant="default"
-                        >
-                          Discover More about Sri Maha Bodhi
-                        </Button>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/jaya-sri-maha-bodhi" passHref legacyBehavior>
+                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read more →</Button>
                       </Link>
                     </div>
                   </div>
@@ -344,15 +339,10 @@ export default function AnuradhapuraTravelGuide() {
                         Restored to original glory in modern times
                       </li>
                     </ul>
-                    
-                    <div className="mt-6">
-                      <Link href="/destinations/ruwanwali-saya">
-                        <Button
-                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                          variant="default"
-                        >
-                          Explore Ruwanwelisaya Dagaba
-                        </Button>
+
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/ruwanwali-saya" passHref legacyBehavior>
+                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read more →</Button>
                       </Link>
                     </div>
                   </div>
@@ -411,15 +401,10 @@ export default function AnuradhapuraTravelGuide() {
                         Ongoing archaeological excavations
                       </li>
                     </ul>
-                    
-                    <div className="mt-6">
-                      <Link href="/destinations/jethawanaramaya">
-                        <Button
-                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                          variant="default"
-                        >
-                          Visit Jethawanaramaya Dagoba
-                        </Button>
+
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/jethawanaramaya" passHref legacyBehavior>
+                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read more →</Button>
                       </Link>
                     </div>
                   </div>
@@ -442,15 +427,15 @@ export default function AnuradhapuraTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Thuparamaya holds the distinction of being the very first dagoba built in Sri Lanka, constructed in the 
-                      3rd century BCE by King Devanampiya Tissa. This sacred monument houses the right collarbone relic of 
-                      Lord Buddha, making it one of the most important pilgrimage sites in the Buddhist world. The original 
+                      Thuparamaya holds the distinction of being the very first dagoba built in Sri Lanka, constructed in the
+                      3rd century BCE by King Devanampiya Tissa. This sacred monument houses the right collarbone relic of
+                      Lord Buddha, making it one of the most important pilgrimage sites in the Buddhist world. The original
                       bell-shaped design has influenced Sri Lankan stupa architecture for over 2,000 years.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      What makes Thuparamaya unique is its architectural evolution - it has been restored multiple times 
-                      throughout history, each restoration reflecting the artistic styles of different periods. The dagoba 
-                      is surrounded by stone pillars that once supported a wooden roof, a distinctive feature that sets 
+                      What makes Thuparamaya unique is its architectural evolution - it has been restored multiple times
+                      throughout history, each restoration reflecting the artistic styles of different periods. The dagoba
+                      is surrounded by stone pillars that once supported a wooden roof, a distinctive feature that sets
                       it apart from other stupas.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -460,7 +445,7 @@ export default function AnuradhapuraTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                    
+
                         Contains Buddha&apos;s right collarbone relic
                       </li>
                       <li className="flex items-start gap-2">
@@ -476,14 +461,9 @@ export default function AnuradhapuraTravelGuide() {
                         Multiple historical restorations spanning centuries
                       </li>
                     </ul>
-                    <div className="mt-6">
-                      <Link href="/destinations/thuparamaya">
-                        <Button
-                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                          variant="default"
-                        >
-                          Explore Thuparamaya Dagoba
-                        </Button>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/thuparamaya" passHref legacyBehavior>
+                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read more →</Button>
                       </Link>
                     </div>
                   </div>
@@ -506,16 +486,16 @@ export default function AnuradhapuraTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Lovamahapaya, also known as the &quot;Brazen Palace,&quot; was once a magnificent nine-story monastery built 
-                      by King Dutugemunu in the 2nd century BCE. This architectural marvel housed 1,000 monks and was 
-                      entirely covered with copper tiles, giving it the name &quot;Brazen Palace.&quot; Today, only the stone 
+                      Lovamahapaya, also known as the &quot;Brazen Palace,&quot; was once a magnificent nine-story monastery built
+                      by King Dutugemunu in the 2nd century BCE. This architectural marvel housed 1,000 monks and was
+                      entirely covered with copper tiles, giving it the name &quot;Brazen Palace.&quot; Today, only the stone
                       pillars remain, but they still convey the grandeur of this ancient structure.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The building was constructed using advanced engineering techniques of the time, with 1,600 stone 
-                      pillars supporting multiple floors. Each floor had specific purposes - from dining halls and 
-                      meditation chambers to libraries and living quarters. The palace was destroyed and rebuilt several 
-                      times throughout history, with the current stone pillars representing the foundation of various 
+                      The building was constructed using advanced engineering techniques of the time, with 1,600 stone
+                      pillars supporting multiple floors. Each floor had specific purposes - from dining halls and
+                      meditation chambers to libraries and living quarters. The palace was destroyed and rebuilt several
+                      times throughout history, with the current stone pillars representing the foundation of various
                       reconstruction attempts.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -540,14 +520,9 @@ export default function AnuradhapuraTravelGuide() {
                         Multiple reconstruction attempts throughout history
                       </li>
                     </ul>
-                    <div className="mt-6">
-                      <Link href="/destinations/lovamahapaya">
-                        <Button
-                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                          variant="default"
-                        >
-                          Discover Lovamahapaya
-                        </Button>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/lovamahapaya" passHref legacyBehavior>
+                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read more →</Button>
                       </Link>
                     </div>
                   </div>
@@ -570,15 +545,15 @@ export default function AnuradhapuraTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Abhayagiri Dagaba was the centerpiece of one of the most important monastic complexes in ancient 
-                      Sri Lanka, built in the 1st century BCE by King Valagamba. This massive stupa, standing 75 meters 
-                      tall, was once part of a monastery that housed over 5,000 monks and served as a major center of 
+                      Abhayagiri Dagaba was the centerpiece of one of the most important monastic complexes in ancient
+                      Sri Lanka, built in the 1st century BCE by King Valagamba. This massive stupa, standing 75 meters
+                      tall, was once part of a monastery that housed over 5,000 monks and served as a major center of
                       Mahayana Buddhist learning. The complex was so large it covered an area of 200 hectares.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The monastery was famous for its international character, attracting scholars from China, Korea, 
-                      and other Buddhist countries. It had advanced facilities including hospitals, libraries, and 
-                      refectories. The shape of this stupa is slightly different from Jetavanaramaya, featuring a more 
+                      The monastery was famous for its international character, attracting scholars from China, Korea,
+                      and other Buddhist countries. It had advanced facilities including hospitals, libraries, and
+                      refectories. The shape of this stupa is slightly different from Jetavanaramaya, featuring a more
                       elegant bell-shaped dome that has influenced Buddhist architecture across Asia.
                       <Link href="/destinations/anuradhapura/abhyagiri" className="text-blue-600 hover:underline ml-1">
                         Read more about Shapes of Stupa
@@ -606,14 +581,9 @@ export default function AnuradhapuraTravelGuide() {
                         Unique architectural style influencing Asian Buddhism
                       </li>
                     </ul>
-                    <div className="mt-6">
-                      <Link href="/destinations/abhayagiriya">
-                        <Button
-                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                          variant="default"
-                        >
-                          Learn About Abhayagiri
-                        </Button>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/abhayagiriya" passHref legacyBehavior>
+                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read more →</Button>
                       </Link>
                     </div>
                   </div>
@@ -636,16 +606,16 @@ export default function AnuradhapuraTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Mirisavetiya Stupa has one of the most poignant origin stories in Sri Lankan Buddhist history. 
-                      Built by King Dutugemunu in the 2nd century BCE, this stupa was constructed as an act of 
-                      atonement. According to legend, the king once forgot to share his meal with the sangha (monks) 
+                      Mirisavetiya Stupa has one of the most poignant origin stories in Sri Lankan Buddhist history.
+                      Built by King Dutugemunu in the 2nd century BCE, this stupa was constructed as an act of
+                      atonement. According to legend, the king once forgot to share his meal with the sangha (monks)
                       while eating chili curry, a breach of Buddhist protocol that deeply troubled his conscience.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      To atone for this oversight, the king built this beautiful stupa on the exact spot where he 
-                      had his meal. The name &quot;Mirisavetiya&quot; literally means &quot;the place where chili was consumed.&quot; 
-                      Standing 60 meters tall, it enshrines sacred relics and represents the Buddhist principle 
-                      of mindfulness in daily actions. The surrounding area contains ruins of ancient buildings 
+                      To atone for this oversight, the king built this beautiful stupa on the exact spot where he
+                      had his meal. The name &quot;Mirisavetiya&quot; literally means &quot;the place where chili was consumed.&quot;
+                      Standing 60 meters tall, it enshrines sacred relics and represents the Buddhist principle
+                      of mindfulness in daily actions. The surrounding area contains ruins of ancient buildings
                       and beautiful stone carvings.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -670,14 +640,10 @@ export default function AnuradhapuraTravelGuide() {
                         Symbol of mindfulness in Buddhist practice
                       </li>
                     </ul>
-                    <div className="mt-6">
-                      <Link href="/destinations/mirisavetiya">
-                        <Button
-                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                          variant="default"
-                        >
-                          Visit Mirisavetiya Stupa
-                        </Button>
+
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/mirisawatiya" passHref legacyBehavior>
+                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read more →</Button>
                       </Link>
                     </div>
                   </div>
@@ -700,17 +666,17 @@ export default function AnuradhapuraTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Lankarama Dagaba, built in the 1st century CE by King Valagamba, represents a unique architectural 
-                      style among Anuradhapura&apos;s great stupas. Unlike the massive monuments elsewhere in the city, 
-                      Lankarama was designed as an intimate forest monastery with distinctive circular stone pillars 
-                      surrounding the stupa. This 30-meter tall structure showcases the Vajrayana architectural 
+                      Lankarama Dagaba, built in the 1st century CE by King Valagamba, represents a unique architectural
+                      style among Anuradhapura&apos;s great stupas. Unlike the massive monuments elsewhere in the city,
+                      Lankarama was designed as an intimate forest monastery with distinctive circular stone pillars
+                      surrounding the stupa. This 30-meter tall structure showcases the Vajrayana architectural
                       influence that was rare in Sri Lankan Buddhist construction.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The most striking feature of Lankarama is its unique design with stone pillars arranged in concentric 
-                      circles around the stupa base. These pillars once supported wooden structures that served as meditation 
-                      halls and living quarters for forest-dwelling monks. The peaceful forest setting and smaller scale 
-                      create an atmosphere perfect for contemplation and meditation, making it a favorite among visitors 
+                      The most striking feature of Lankarama is its unique design with stone pillars arranged in concentric
+                      circles around the stupa base. These pillars once supported wooden structures that served as meditation
+                      halls and living quarters for forest-dwelling monks. The peaceful forest setting and smaller scale
+                      create an atmosphere perfect for contemplation and meditation, making it a favorite among visitors
                       seeking tranquility.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -735,14 +701,9 @@ export default function AnuradhapuraTravelGuide() {
                         Built by King Valagamba in 1st century CE
                       </li>
                     </ul>
-                    <div className="mt-6">
-                      <Link href="/destinations/lankarama">
-                        <Button
-                          className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                          variant="default"
-                        >
-                          Explore Lankarama Dagaba
-                        </Button>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/lankarama" passHref legacyBehavior>
+                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read more →</Button>
                       </Link>
                     </div>
                   </div>
@@ -765,15 +726,15 @@ export default function AnuradhapuraTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      If you visit Anuradhapura, you might have seen this stupa - it&apos;s similar to the Ruwanwelisaya but not as large. 
-                      Sandahirusaya, also known as &quot;Sandahiru Seya,&quot; is a beautiful white dagoba that showcases the classic 
-                      bell-shaped architectural style of ancient Sri Lankan stupas. This is actually a modern construction, 
+                      If you visit Anuradhapura, you might have seen this stupa - it&apos;s similar to the Ruwanwelisaya but not as large.
+                      Sandahirusaya, also known as &quot;Sandahiru Seya,&quot; is a beautiful white dagoba that showcases the classic
+                      bell-shaped architectural style of ancient Sri Lankan stupas. This is actually a modern construction,
                       built in recent times following traditional Buddhist architectural principles and designs.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      What makes Sandahirusaya unique is its role as a contemporary Buddhist monument that maintains traditional 
-                      design elements. While it may appear ancient due to its classical style, it represents modern Sri Lankan 
-                      Buddhist devotion and craftsmanship. The stupa is surrounded by well-maintained gardens and provides 
+                      What makes Sandahirusaya unique is its role as a contemporary Buddhist monument that maintains traditional
+                      design elements. While it may appear ancient due to its classical style, it represents modern Sri Lankan
+                      Buddhist devotion and craftsmanship. The stupa is surrounded by well-maintained gardens and provides
                       excellent opportunities for meditation and photography, especially during sunrise and sunset.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -971,7 +932,7 @@ export default function AnuradhapuraTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Near by Archaeological Wonders</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            
+
 
             <Link href="/destinations/isurumuniya" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
@@ -1045,7 +1006,7 @@ export default function AnuradhapuraTravelGuide() {
                     className="rounded-lg mb-3"
                   />
                   <p className="text-sm text-muted-foreground">
-                   Just a few kilometers from Anuradhapura, Mihinthalaya is a sacred site where Buddhism was first introduced to Sri Lanka.
+                    Just a few kilometers from Anuradhapura, Mihinthalaya is a sacred site where Buddhism was first introduced to Sri Lanka.
                   </p>
                   <div className="mt-4">
                     <Button

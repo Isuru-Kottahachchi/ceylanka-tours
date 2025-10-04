@@ -164,6 +164,54 @@ export default function MaduRiverSafariGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Top Attractions During the Madu River Safari</h2>
           <div className="space-y-8">
+                  <Card>
+              <CardHeader>
+                <CardTitle>Cinnamon Island (Kurudu Doowa)</CardTitle>
+                <CardDescription>Island where you can see cinnamon cultivation and processing</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Kothduwa-Temple.jpg",
+                        alt: "Kothduwa Temple surrounded by lush greenery",
+                        caption: "A serene Buddhist temple on an island",
+                        title: "Kothduwa Temple - Tranquility in Nature",
+                      },
+                      {
+                        src: "/Kothduwa-Temple1.jpg",
+                        alt: "Another view of Kothduwa Temple with the river",
+                        caption: "Aerial view of Kothduwa Temple",
+                        title: "Kothduwa Temple - Riverside Serenity",
+                      },
+                      {
+                        src: "/Kothduwa-Temple2.jpg",
+                        alt: "Another view of Kothduwa Temple with the river",
+                        caption: "View from Kothduwa Temple",
+                        title: "Kothduwa Temple - Riverside Serenity",
+                      },
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Kothduwa Temple is a tranquil Buddhist sanctuary located on an island in the Madu River. Accessible only by boat, this temple offers a peaceful retreat surrounded by lush mangroves and the gentle sounds of nature.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Accessible only by boat
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ideal for meditation and relaxation
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+             
             {/* Kothduwa Temple */}
             <Card>
               <CardHeader>
@@ -186,7 +234,142 @@ export default function MaduRiverSafariGuide() {
                         caption: "Aerial view of Kothduwa Temple",
                         title: "Kothduwa Temple - Riverside Serenity",
                       },
-                          {
+                      {
+                        src: "/Kothduwa-Temple2.jpg",
+                        alt: "Another view of Kothduwa Temple with the river",
+                        caption: "View from Kothduwa Temple",
+                        title: "Kothduwa Temple - Riverside Serenity",
+                      },
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Kothduwa Temple is a tranquil Buddhist sanctuary located on an island in the Madu River. Accessible only by boat, this temple offers a peaceful retreat surrounded by lush mangroves and the gentle sounds of nature.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Accessible only by boat
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ideal for meditation and relaxation
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+                  <Card>
+              <CardHeader>
+                <CardTitle>Birds and Wildlife</CardTitle>
+                <CardDescription>A serene Buddhist temple on an island</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Kothduwa-Temple.jpg",
+                        alt: "Kothduwa Temple surrounded by lush greenery",
+                        caption: "A serene Buddhist temple on an island",
+                        title: "Kothduwa Temple - Tranquility in Nature",
+                      },
+                      {
+                        src: "/Kothduwa-Temple1.jpg",
+                        alt: "Another view of Kothduwa Temple with the river",
+                        caption: "Aerial view of Kothduwa Temple",
+                        title: "Kothduwa Temple - Riverside Serenity",
+                      },
+                      {
+                        src: "/Kothduwa-Temple2.jpg",
+                        alt: "Another view of Kothduwa Temple with the river",
+                        caption: "View from Kothduwa Temple",
+                        title: "Kothduwa Temple - Riverside Serenity",
+                      },
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Kothduwa Temple is a tranquil Buddhist sanctuary located on an island in the Madu River. Accessible only by boat, this temple offers a peaceful retreat surrounded by lush mangroves and the gentle sounds of nature.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Accessible only by boat
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ideal for meditation and relaxation
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Sathapaha doowa</CardTitle>
+                <CardDescription>A tiny island in the Madu River</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src:"/Madu-River-Safari.jpg",
+                        alt: "Kothduwa Temple surrounded by lush greenery",
+                        caption: "A serene Buddhist temple on an island",
+                        title: "Kothduwa Temple - Tranquility in Nature",
+                      },
+                      {
+                        src: "/Kothduwa-Temple1.jpg",
+                        alt: "Another view of Kothduwa Temple with the river",
+                        caption: "Aerial view of Kothduwa Temple",
+                        title: "Kothduwa Temple - Riverside Serenity",
+                      },
+                      {
+                        src: "/Kothduwa-Temple2.jpg",
+                        alt: "Another view of Kothduwa Temple with the river",
+                        caption: "View from Kothduwa Temple",
+                        title: "Kothduwa Temple - Riverside Serenity",
+                      },
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Kothduwa Temple is a tranquil Buddhist sanctuary located on an island in the Madu River. Accessible only by boat, this temple offers a peaceful retreat surrounded by lush mangroves and the gentle sounds of nature.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Accessible only by boat
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ideal for meditation and relaxation
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>Fish therapy</CardTitle>
+                <CardDescription>Good for relaxation and rejuvenation</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Kothduwa-Themple1.jpg",
+                        alt: "Another view of Kothduwa Temple with the river",
+                        caption: "Aerial view of Kothduwa Temple",
+                        title: "Kothduwa Temple - Riverside Serenity",
+                      },
+                      {
                         src: "/Kothduwa-Temple2.jpg",
                         alt: "Another view of Kothduwa Temple with the river",
                         caption: "View from Kothduwa Temple",

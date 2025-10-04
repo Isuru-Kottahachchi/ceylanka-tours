@@ -184,12 +184,6 @@ export default function NuwaraEliyaTravelGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
-
         {/* Quick Facts & How to Get There side by side */}
         <div className="flex flex-col lg:flex-row gap-8 mb-12">
           {/* Essential Nuwara Eliya Facts */}
@@ -393,11 +387,6 @@ export default function NuwaraEliyaTravelGuide() {
         {/* Top Attractions */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Nuwara Eliya</h2>
-
-          {/* Ad Space */}
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
 
           <div className="space-y-8">
             {/* Gregory Lake */}
@@ -741,11 +730,6 @@ export default function NuwaraEliyaTravelGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Activities & Experiences */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Unique Experiences in Nuwara Eliya</h2>
@@ -835,9 +819,11 @@ export default function NuwaraEliyaTravelGuide() {
                   <MapPin className="w-3 h-3 mr-1" />
                   65 km from Nuwara Eliya
                 </div>
-                <Link href="/destinations/ella-town" className="text-blue-600 hover:underline text-sm">
-                  Explore Ella →
-                </Link>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ella-town" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -863,9 +849,11 @@ export default function NuwaraEliyaTravelGuide() {
                   <MapPin className="w-3 h-3 mr-1" />
                   45 km from Nuwara Eliya
                 </div>
-                <Link href="/destinations/bandarawela" className="text-blue-600 hover:underline text-sm">
-                  Explore Bandarawela →
-                </Link>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/bandarawela" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -891,9 +879,11 @@ export default function NuwaraEliyaTravelGuide() {
                   <MapPin className="w-3 h-3 mr-1" />
                   30 km from Nuwara Eliya
                 </div>
-                <Link href="/destinations/haputhale" className="text-blue-600 hover:underline text-sm">
-                  Explore Haputhale →
-                </Link>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/badulla" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -919,9 +909,11 @@ export default function NuwaraEliyaTravelGuide() {
                   <MapPin className="w-3 h-3 mr-1" />
                   75 km from Nuwara Eliya
                 </div>
-                <Link href="/destinations/badulla" className="text-blue-600 hover:underline text-sm">
-                  Explore Badulla →
-                </Link>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/badullla" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -947,9 +939,11 @@ export default function NuwaraEliyaTravelGuide() {
                   <MapPin className="w-3 h-3 mr-1" />
                   75 km from Nuwara Eliya
                 </div>
-                <Link href="/destinations/kandy" className="text-blue-600 hover:underline text-sm">
-                  Explore Kandy →
-                </Link>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kandy" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -975,9 +969,11 @@ export default function NuwaraEliyaTravelGuide() {
                   <MapPin className="w-3 h-3 mr-1" />
                   90 km from Nuwara Eliya
                 </div>
-                <Link href="/destinations/adams-peak" className="text-blue-600 hover:underline text-sm">
-                  Explore Adam&apos;s Peak →
-                </Link>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/adams-peak" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>

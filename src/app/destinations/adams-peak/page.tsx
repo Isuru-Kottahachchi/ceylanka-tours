@@ -73,11 +73,6 @@ export default function AdamsPeakTravelGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Quick Facts */}
         <section className="mb-12">
           <Card>
@@ -205,12 +200,7 @@ export default function AdamsPeakTravelGuide() {
         {/* Climbing Routes */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Climbing Routes to the Summit</h2>
-          Ambalam in rouits
-
-          {/* Ad Space */}
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
+          Ambalam in routes
 
           <div className="space-y-8">
             {/* Nallathanniya Route */}
@@ -510,11 +500,6 @@ export default function AdamsPeakTravelGuide() {
             </div>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
 
         {/* Safety & Preparation */}
         <section className="mb-12">

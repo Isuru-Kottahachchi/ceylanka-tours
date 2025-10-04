@@ -479,11 +479,6 @@ export default function BentotaGuide() {
                     </Card>
                 </section>
 
-                {/* Ad Space */}
-                <div className="my-8 p-4 bg-muted/50 rounded-lg text-center text-muted-foreground border-2 border-dashed border-muted-foreground/30">
-                    [Advertisement Space - 728x90 Leaderboard]
-                </div>
-
                 {/* Quick Facts */}
                 {/* <section className="mb-12 scroll-mt-40" id="quick-facts">
                     <Card>
@@ -907,10 +902,6 @@ export default function BentotaGuide() {
                     </div>
                 </section>
 
-                {/* Ad Space */}
-                <div className="my-8 p-4 bg-muted/50 rounded-lg text-center text-muted-foreground border-2 border-dashed border-muted-foreground/30">
-                    [Advertisement Space - 300x250 Medium Rectangle]
-                </div>
 
                 {/* Luxury Resorts */}
                 <section className="mb-12 scroll-mt-40" id="luxury-resorts">
