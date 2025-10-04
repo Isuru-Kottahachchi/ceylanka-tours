@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function YalaNationalParkTravelGuide() {
   return (
-    <main className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
@@ -64,9 +64,9 @@ export default function YalaNationalParkTravelGuide() {
               elephants and elusive leopards to colorful birds and ancient ruins.
             </p>
             <p className="text-lg">
-              Whether you’re a wildlife photographer, nature enthusiast, or adventure seeker, Yala offers an
+              Whether you&apos;re a wildlife photographer, nature enthusiast, or adventure seeker, Yala offers an
               unforgettable safari experience where every game drive brings the possibility of extraordinary wildlife
-              encounters in one of Asia’s most biodiverse ecosystems.
+              encounters in one of Asia&apos;s most biodiverse ecosystems.
             </p>
           </div>
         </section>
@@ -451,10 +451,10 @@ export default function YalaNationalParkTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>1. Sri Lankan Leopards (Panthera pardus kotiya)</CardTitle>
-                <CardDescription>The stars of Yala - highest density in the world</CardDescription>
+                <CardDescription>The Apex Predators of Yala - Home to World&apos;s Densest Leopard Population</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
+                <div className="flex flex-col gap-6">
                   <Image
                     src="/Srilankanleopard.jpg"
                     alt="Magnificent Sri Lankan leopard in Yala National Park showing distinctive spotted coat and powerful build"
@@ -494,10 +494,45 @@ export default function YalaNationalParkTravelGuide() {
             {/* Asian Elephants */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Asian Elephants</CardTitle>
-                <CardDescription>Gentle giants roaming in herds</CardDescription>
+                <CardTitle>2. Asian Elephants (Elephas maximus maximus)</CardTitle>
+                <CardDescription>Majestic herds of Sri Lanka&apos;s native gentle giants</CardDescription>
               </CardHeader>
               <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center mb-6">
+                  <Image
+                    src="/yala-elephant.jpg"
+                    alt="A herd of Asian elephants in Yala National Park"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Yala National Park is home to significant populations of Sri Lankan elephants, the largest of all Asian elephant subspecies.
+                      These intelligent pachyderms can be observed year-round, with the best viewing opportunities during the dry season when they
+                      gather around water holes.
+                    </p>
+                    <div className="space-y-4">
+                      <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
+                        <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Key Features</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
+                            Males can reach heights of up to 3.5 meters
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
+                            Highly social, living in matriarchal family groups
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
+                            Excellent swimmers and skilled diggers
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -815,13 +850,13 @@ export default function YalaNationalParkTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Yala National Park offers one of the world’s most thrilling wildlife experiences. From the
+                Yala National Park offers one of the world&apos;s most thrilling wildlife experiences. From the
                 heart-stopping moment of spotting a leopard to the gentle giants of elephant herds, every safari brings
                 new discoveries and unforgettable memories. Remember that wildlife viewing requires patience - the best
                 moments often come to those who wait quietly and observe carefully.
               </p>
               <p className="text-muted-foreground mb-4">
-                Respect the wildlife and their habitat by following your guide’s instructions, maintaining safe
+                Respect the wildlife and their habitat by following your guide&apos;s instructions, maintaining safe
                 distances, and keeping noise to a minimum. Your visit helps support conservation efforts that protect
                 these magnificent creatures for future generations.
               </p>
@@ -832,7 +867,7 @@ export default function YalaNationalParkTravelGuide() {
           </Card>
         </section>
       </div>
-    </main>
+    </div>
 
   )
 }

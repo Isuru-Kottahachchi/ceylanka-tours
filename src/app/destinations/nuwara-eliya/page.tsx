@@ -134,7 +134,7 @@ export default function NuwaraEliyaTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Nuwara-Eliya.jpg"
           alt="Stunning panoramic view of Nuwara Eliya showing lush green tea plantations, colonial buildings, and misty mountains"
@@ -163,13 +163,26 @@ export default function NuwaraEliyaTravelGuide() {
         </div>
       </section>
 
+      {/* Section Navigation */}
+      <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
+        <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
+          <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Introduction</a>
+          <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
+          <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Attractions</a>
+          <a href="#activities" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Activities</a>
+          <a href="#best-time-to-visit" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Best Time to Visit</a>
+          <a href="#where-to-stay" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Where to Stay</a>
+          <a href="#travel-tips" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Travel Tips</a>
+        </div>
+      </nav>
+
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
-        <section className="mb-12">
+        <section id="introduction" className="mb-12 scroll-mt-40">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Nuwara Eliya: Sri Lanka&apos;s Cool Escape</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Escape the tropical heat and step into a world that feels like a slice of England transported to the heart
+              Escape the tropical heat within a few hours and step into a world that feels like a slice of England transported to the heart
               of Sri Lanka. Nuwara Eliya, fondly known as &quot;Little England,&quot; sits majestically at 1,868 meters above sea
               level, offering a refreshing cool climate, rolling green tea plantations, and charming colonial
               architecture that tells stories of a bygone era.
@@ -185,58 +198,80 @@ export default function NuwaraEliyaTravelGuide() {
         </section>
 
         {/* Quick Facts & How to Get There side by side */}
-        <div className="flex flex-col lg:flex-row gap-8 mb-12">
+        <div className="flex flex-col lg:flex-row gap-8 ">
           {/* Essential Nuwara Eliya Facts */}
-          <section className="flex-1">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Star className="w-5 h-5 text-yellow-500" />
+          <section id="quick-facts" className="flex-1 scroll-mt-40">
+            <Card className="border-2 border-primary/10 bg-gradient-to-br from-background to-muted">
+              <CardHeader className="border-b border-primary/10 bg-muted/50">
+                <CardTitle className="flex items-center gap-3 text-2xl">
+                  <Star className="w-6 h-6 text-yellow-500" />
                   Essential Nuwara Eliya Facts
                 </CardTitle>
+                <CardDescription>
+                  Key information about Sri Lanka&apos;s Little England
+                </CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4 text-blue-500" />
-                      <span>
-                        <strong>Established:</strong> 1846 by British
-                      </span>
+              <CardContent className="pt-4">
+                <div className="grid gap-2">
+                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
+                        <Calendar className="w-4 h-4 text-primary/80" />
+                      </div>
+                      <div className="flex justify-between items-center flex-1">
+                        <span className="text-sm font-medium text-muted-foreground">Established</span>
+                        <span className="text-sm font-medium">1846 by British</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <Mountain className="w-4 h-4 text-green-500" />
-                      <span>
-                        <strong>Elevation:</strong> 1,868m (6,128 feet)
-                      </span>
+
+                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
+                        <Mountain className="w-4 h-4 text-primary/80" />
+                      </div>
+                      <div className="flex justify-between items-center flex-1">
+                        <span className="text-sm font-medium text-muted-foreground">Elevation</span>
+                        <span className="text-sm font-medium">1,868m (6,128 feet) from sea level</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <Thermometer className="w-4 h-4 text-purple-500" />
-                      <span>
-                        <strong>Temperature:</strong> 15-20°C year-round
-                      </span>
+
+                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
+                        <Thermometer className="w-4 h-4 text-primary/80" />
+                      </div>
+                      <div className="flex justify-between items-center flex-1">
+                        <span className="text-sm font-medium text-muted-foreground">Temperature</span>
+                        <span className="text-sm font-medium">15-20°C year-round</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-red-500" />
-                      <span>
-                        <strong>Distance from Colombo:</strong> 180km
-                      </span>
+
+                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
+                        <MapPin className="w-4 h-4 text-primary/80" />
+                      </div>
+                      <div className="flex justify-between items-center flex-1">
+                        <span className="text-sm font-medium text-muted-foreground">Distance from Colombo</span>
+                        <span className="text-sm font-medium">180km</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <Star className="w-4 h-4 text-yellow-500" />
-                      <span>
-                        <strong>Famous for:</strong> Ceylon Tea & Cool Climate
-                      </span>
+
+                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
+                        <Star className="w-4 h-4 text-primary/80" />
+                      </div>
+                      <div className="flex justify-between items-center flex-1">
+                        <span className="text-sm font-medium text-muted-foreground">Famous for</span>
+                        <span className="text-sm font-medium">Ceylon Tea & Cool Climate</span>
+                      </div>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-orange-500" />
-                      <span>
-                        <strong>Best Visit Duration:</strong> 2-3 days
-                      </span>
+
+                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
+                        <Clock className="w-4 h-4 text-primary/80" />
+                      </div>
+                      <div className="flex justify-between items-center flex-1">
+                        <span className="text-sm font-medium text-muted-foreground">Best Visit Duration</span>
+                        <span className="text-sm font-medium">2-3 days</span>
+                      </div>
                     </div>
-                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -385,7 +420,7 @@ export default function NuwaraEliyaTravelGuide() {
         </section>
 
         {/* Top Attractions */}
-        <section className="mb-12">
+        <section id="attractions" className="mb-12 scroll-mt-40">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Nuwara Eliya</h2>
 
           <div className="space-y-8">
@@ -1007,7 +1042,7 @@ export default function NuwaraEliyaTravelGuide() {
         </section>
 
         {/* Weather & Best Time to Visit */}
-        <section className="mb-12">
+        <section id="best-time-to-visit" className="mb-12 scroll-mt-40">
           <h2 className="text-3xl font-bold mb-6">Weather & Best Time to Visit</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>

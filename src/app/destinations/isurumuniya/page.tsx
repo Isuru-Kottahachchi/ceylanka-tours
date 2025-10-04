@@ -66,8 +66,13 @@ export default function IsurumuniyaTempleGuide() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-3">
+                  <h3 className="font-semibold mb-4">Temple Information</h3>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-blue-500" />
+                    <span><strong>Location:</strong> Anuradhapura Ancient City</span>
+                  </div>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-blue-500" />
                     <span><strong>Built:</strong> 3rd Century BC</span>
@@ -80,12 +85,6 @@ export default function IsurumuniyaTempleGuide() {
                     <Heart className="w-4 h-4 text-red-500" />
                     <span><strong>Famous for:</strong> Lovers sculpture</span>
                   </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-green-500" />
-                    <span><strong>Location:</strong> Anuradhapura Ancient City</span>
-                  </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-orange-500" />
                     <span><strong>Visit Duration:</strong> 1-2 hours</span>
@@ -95,6 +94,25 @@ export default function IsurumuniyaTempleGuide() {
                     <span><strong>Entry:</strong> Included in Anuradhapura ticket</span>
                   </div>
                 </div>
+                <div className="space-y-3">
+                  <h3 className="font-semibold mb-4">Distances to Major Landmarks</h3>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-green-500" />
+                    <span><strong>To Ruwanwelisaya:</strong> 2.8 km</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-green-500" />
+                    <span><strong>To Jetavanaramaya:</strong> 4.4 km</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-green-500" />
+                    <span><strong>From City Center:</strong> 1.8 km</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-green-500" />
+                    <span><strong>From Jaya Sri Maha Bodhi:</strong> 2.1 km</span>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>
@@ -102,7 +120,7 @@ export default function IsurumuniyaTempleGuide() {
 
         {/* The Story */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">The Romantic Legend Behind the Temple</h2>
+          <h2 className="text-3xl font-bold mb-6">The Romantic Legend Behind the Temple (The Lovers Sculpture)</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
@@ -118,13 +136,16 @@ export default function IsurumuniyaTempleGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                The temple&apos;s most famous sculpture tells a romantic story that has captivated visitors for centuries. The &quot;Lovers&quot; carving is believed to represent Prince Saliya (son of King Dutugemunu) and his beloved Asokamala, a woman of lower caste.
+                The temple&apos;s most famous sculpture tells a romantic story that has captivated visitors for centuries. The &quot;Lovers&quot; carving, dating back to the 6th-7th century AD, is believed to represent Prince Saliya (son of the legendary King Dutugemunu) and his beloved Asokamala, a woman of lower caste. The sculpture showcases remarkable artistic detail, with the couple portrayed in an intimate embrace, their expressions and postures reflecting deep emotional connection.
               </p>
               <p>
-                According to legend, Prince Saliya gave up his right to the throne for love, choosing to marry Asokamala despite social conventions. This sculpture immortalizes their eternal love story in stone.
+                According to historical chronicles, particularly the Mahavamsa, Prince Saliya was the heir apparent to the Anuradhapura Kingdom during its golden age. Despite his royal status and the expectations of his position, he fell deeply in love with Asokamala, a beautiful woman from the Chandala caste. In a remarkable act of devotion, Prince Saliya willingly renounced his claim to the throne to marry her, choosing love over power and position. This decision was unprecedented in ancient Sri Lankan royal history and continues to symbolize the triumph of love over social barriers.
               </p>
               <p>
-                However, some scholars believe the sculpture might represent a divine couple or celestial beings, adding to the mystery and allure of this ancient masterpiece.
+                The sculpture itself is a masterpiece of Sinhalese classical art, carved with exceptional skill in the distinctive style of the Anuradhapura period. The figures are adorned with intricate jewelry and royal attire, their poses reflecting both intimacy and nobility. The technical excellence of the carving, particularly in the delicate rendering of facial expressions and ornate details, demonstrates the advanced artistic capabilities of ancient Sri Lankan sculptors.
+              </p>
+              <p>
+                However, some scholars present an alternative interpretation, suggesting the sculpture might represent divine couple or celestial beings, possibly Shiva and Parvati from Hindu mythology, or semi-divine beings known as Gandharvas and Apsaras. This scholarly debate adds another layer of mystery and allure to this ancient masterpiece, making it not just a symbol of love but also a subject of ongoing historical and cultural discourse.
               </p>
             </div>
           </div>
@@ -134,7 +155,7 @@ export default function IsurumuniyaTempleGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Artistic Treasures to Discover</h2>
           <div className="space-y-8">
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle>1. The Lovers Sculpture</CardTitle>
                 <CardDescription>World-renowned romantic carving</CardDescription>
@@ -169,7 +190,7 @@ export default function IsurumuniyaTempleGuide() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
             <Card>
               <CardHeader>
                 <CardTitle>Man and Horse head sculpture</CardTitle>
