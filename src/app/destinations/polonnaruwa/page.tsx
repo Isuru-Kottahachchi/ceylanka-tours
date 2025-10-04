@@ -204,8 +204,7 @@ export default function PolonnaruwaGuide() {
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <div className="grid md:grid-cols-2 gap-4">
-                                    <div className="space-y-3">
+                                <div className="space-y-3">
                                         <div className="flex items-center gap-2">
                                             <Calendar className="w-4 h-4 text-blue-500" />
                                             <span>
@@ -242,7 +241,6 @@ export default function PolonnaruwaGuide() {
                                                 <strong>Visit Duration:</strong> Full day (6-8 hours)
                                             </span>
                                         </div>
-                                    </div>
                                     <div className="space-y-3">
                                         <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
                                             <h5 className="font-medium text-blue-800 dark:text-blue-200">Entrance Fee</h5>
@@ -1010,7 +1008,7 @@ export default function PolonnaruwaGuide() {
                                     <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                                         <p className="text-sm text-blue-800 dark:text-blue-200">
                                             <span className="font-semibold">Did You Know? </span>
-                                            The Parakrama Samudra was so vast that ancient mariners mistook it for the ocean when approaching from the sea, hence its name "The Sea of Parakrama"!
+                                            The Parakrama Samudra was so vast that ancient mariners mistook it for the ocean when approaching from the sea, hence its name &quot;The Sea of Parakrama&quot;!
                                         </p>
                                     </div>
                                     <ul className="text-sm text-muted-foreground space-y-1">

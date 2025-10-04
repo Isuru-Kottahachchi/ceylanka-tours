@@ -1135,7 +1135,7 @@ export default function SigiriyaTravelGuide() {
                     Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
                   </p>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/pidurangala" passHref legacyBehavior>
+                    <Link href="/destinations/pidurangala-rock" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>
