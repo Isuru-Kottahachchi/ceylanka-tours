@@ -613,7 +613,7 @@ CONTACT:
                   <CardContent className="pt-0">
                     <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg mb-6">
                       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        A Visit Visa represents an official entry permit that demonstrates the Sri Lankan Government's
+                        A Visit Visa represents an official entry permit that demonstrates the Sri Lankan Government&apos;s
                         consent for foreign nationals to enter the country. This visa clearly outlines the permitted
                         duration of stay and specific conditions that must be observed during the visit.
                       </p>
@@ -630,7 +630,7 @@ CONTACT:
                         </div>
                         <div className="space-y-3">
                           <p className="text-gray-600 dark:text-gray-300 text-sm">
-                            Designed for genuine tourists seeking to explore Sri Lanka's natural beauty, culture, and attractions.
+                            Designed for genuine tourists seeking to explore Sri Lanka&apos;s natural beauty, culture, and attractions.
                           </p>
                           <div>
                             <h4 className="font-medium text-gray-900 dark:text-gray-100 mb-2">Perfect for:</h4>
