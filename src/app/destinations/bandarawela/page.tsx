@@ -56,13 +56,6 @@ export default function BandarawelaGuide() {
         </div>
       </section>
 
-      {/* Ad Banner - Top */}
-      <div className="max-w-6xl mx-auto px-4 py-4">
-        <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
-          [Advertisement Space - 728x90 Leaderboard - Hill Country Hotels & Resorts]
-        </div>
-      </div>
-
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
@@ -124,11 +117,6 @@ export default function BandarawelaGuide() {
         {/* Top Attractions */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Top Attractions in Bandarawela</h2>
-
-          {/* Ad Banner - Mid Content */}
-          <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
-            [Advertisement Space - 300x250 Medium Rectangle - Tea Estate Tours & Activities]
-          </div>
 
           <div className="space-y-8">
             {/* Dowa Rock Temple */}
@@ -347,11 +335,6 @@ export default function BandarawelaGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Banner - Mid Content 2 */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
-          [Advertisement Space - 728x90 Leaderboard - Wellness Retreats & Spa Packages]
-        </div>
 
         {/* Getting There */}
         <section className="mb-12">

@@ -58,13 +58,6 @@ export default function BalangodaGuide() {
         </div>
       </section>
 
-      {/* Ad Banner - Top */}
-      <div className="max-w-4xl mx-auto px-4 py-4">
-        <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
-          [Advertisement Space - 728x90 Leaderboard - Archaeological Tours & Cultural Heritage Experiences]
-        </div>
-      </div>
-
   <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
