@@ -234,7 +234,7 @@ export default function BentotaGuide() {
             {/* Beach Safety Modal */}
             <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} />
 
-       
+
 
             {/* Hero Section */}
             <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
@@ -247,7 +247,7 @@ export default function BentotaGuide() {
                 />
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4">Bentota Beach</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4">Bentota</h1>
                     <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Golden Coast Paradise</p>
                     <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
                         <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
@@ -265,7 +265,7 @@ export default function BentotaGuide() {
                     </div>
                 </div>
             </section>
-                 {/* Section Navigation Bar */}
+            {/* Section Navigation Bar */}
             <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
                 <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
                     <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Introduction</a>
@@ -311,112 +311,112 @@ export default function BentotaGuide() {
                 </section>
 
 
-                                {/* Quick Facts & How to Get There side by side */}
-                                                <div className="flex flex-col lg:flex-row gap-8 mb-12">
-                                                    {/* Bentota Essential Facts (left) */}
-                                                    <section className="flex-1" id="quick-facts">
-                                                        <Card>
-                                                            <CardHeader>
-                                                                <CardTitle className="flex items-center gap-2">
-                                                                    <Star className="w-5 h-5 text-yellow-500" />
-                                                                    Bentota Essential Facts
-                                                                </CardTitle>
-                                                            </CardHeader>
-                                                            <CardContent>
-                                                                <div className="grid md:grid-cols-2 gap-4">
-                                                                    <div className="space-y-3">
-                                                                        <div className="flex items-center gap-2">
-                                                                            <MapPin className="w-4 h-4 text-blue-500" />
-                                                                            <span>
-                                                                                <strong>Location:</strong> 65km south of Colombo
-                                                                            </span>
-                                                                        </div>
-                                                                        <div className="flex items-center gap-2">
-                                                                            <Waves className="w-4 h-4 text-cyan-500" />
-                                                                            <span>
-                                                                                <strong>Beach length:</strong> 5km of golden sand
-                                                                            </span>
-                                                                        </div>
-                                                                        <div className="flex items-center gap-2">
-                                                                            <Sun className="w-4 h-4 text-yellow-500" />
-                                                                            <span>
-                                                                                <strong>Climate:</strong> Tropical, 26-32°C
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div className="space-y-3">
-                                                                        <div className="flex items-center gap-2">
-                                                                            <Fish className="w-4 h-4 text-green-500" />
-                                                                            <span>
-                                                                                <strong>Famous for:</strong> Water sports & turtle hatchery
-                                                                            </span>
-                                                                        </div>
-                                                                        <div className="flex items-center gap-2">
-                                                                            <Palmtree className="w-4 h-4 text-green-600" />
-                                                                            <span>
-                                                                                <strong>Best for:</strong> Beach relaxation & luxury
-                                                                            </span>
-                                                                        </div>
-                                                                        <div className="flex items-center gap-2">
-                                                                            <Clock className="w-4 h-4 text-orange-500" />
-                                                                            <span>
-                                                                                <strong>Best time:</strong> December–April (peak season)
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </CardContent>
-                                                        </Card>
-                                                    </section>
-                                                    {/* How to Get to Bentota (right, condensed) */}
-                                                    <section className="flex-1" id="how-to-get">
-                                                        <Card>
-                                                            <CardHeader>
-                                                                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
-                                                                    <MapPin className="w-5 h-5 text-blue-500" />
-                                                                    How to Get to Bentota
-                                                                </CardTitle>
-                                                            </CardHeader>
-                                                            <CardContent className="space-y-2">
-                                                                <div>
-                                                                    <h4 className="font-semibold mb-1 text-foreground">Private Transfer (Recommended)</h4>
-                                                                    <ul className="text-sm text-muted-foreground space-y-0.5">
-                                                                        <li>• 1.5-2 hours (90km) via Expressway</li>
-                                                                        <li>• $40-60 USD</li>
-                                                                        <li>• Most comfortable & direct</li>
-                                                                        <li className="mt-2"><span className="inline-block bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-200 px-2 py-1 rounded text-xs font-semibold">We recommend <span className="font-bold">Ceylanka Tours</span> for private transfers—reliable, safe, and comfortable rides with friendly local drivers. Book in advance for a seamless start to your Bentota adventure!</span></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div>
-                                                                    <h4 className="font-semibold mb-1 text-foreground">Taxi/Uber/PickMe</h4>
-                                                                    <ul className="text-sm text-muted-foreground space-y-0.5">
-                                                                        <li>• $25-50 USD</li>
-                                                                        <li>• 1.5-2 hours</li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div>
-                                                                    <h4 className="font-semibold mb-1 text-foreground">Train (Scenic)</h4>
-                                                                    <ul className="text-sm text-muted-foreground space-y-0.5">
-                                                                        <li>• 2-2.5 hours, $2-5 USD</li>
-                                                                        <li>• Ocean views, departs Colombo Fort</li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div>
-                                                                    <h4 className="font-semibold mb-1 text-foreground">Bus</h4>
-                                                                    <ul className="text-sm text-muted-foreground space-y-0.5">
-                                                                        <li>• 2-3 hours, $1-3 USD</li>
-                                                                        <li>• Frequent from Colombo Central</li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div className="mt-3 p-2 bg-orange-100 dark:bg-slate-700 rounded border-l-4 border-orange-500 dark:border-orange-400">
-                                                                    <p className="text-xs text-orange-800 dark:text-orange-200">
-                                                                        <strong>🌟 Tip:</strong> Book transfers in advance for best rates. Avoid rush hours (7-9 AM, 5-7 PM).
-                                                                    </p>
-                                                                </div>
-                                                            </CardContent>
-                                                        </Card>
-                                                    </section>
-                                                </div>
+                {/* Quick Facts & How to Get There side by side */}
+                <div className="flex flex-col lg:flex-row gap-8 mb-12">
+                    {/* Bentota Essential Facts (left) */}
+                    <section className="flex-1" id="quick-facts">
+                        <Card>
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2">
+                                    <Star className="w-5 h-5 text-yellow-500" />
+                                    Bentota Essential Facts
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-4">
+                                    <div className="space-y-3">
+                                        <div className="flex items-center gap-2">
+                                            <MapPin className="w-4 h-4 text-blue-500" />
+                                            <span>
+                                                <strong>Location:</strong> 65km south of Colombo
+                                            </span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <Waves className="w-4 h-4 text-cyan-500" />
+                                            <span>
+                                                <strong>Beach length:</strong> 5km of golden sand
+                                            </span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <Sun className="w-4 h-4 text-yellow-500" />
+                                            <span>
+                                                <strong>Climate:</strong> Tropical, 26-32°C
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div className="space-y-3">
+                                        <div className="flex items-center gap-2">
+                                            <Fish className="w-4 h-4 text-green-500" />
+                                            <span>
+                                                <strong>Famous for:</strong> Water sports & turtle hatchery
+                                            </span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <Palmtree className="w-4 h-4 text-green-600" />
+                                            <span>
+                                                <strong>Best for:</strong> Beach relaxation & luxury
+                                            </span>
+                                        </div>
+                                        <div className="flex items-center gap-2">
+                                            <Clock className="w-4 h-4 text-orange-500" />
+                                            <span>
+                                                <strong>Best time:</strong> December–April (peak season)
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </section>
+                    {/* How to Get to Bentota (right, condensed) */}
+                    <section className="flex-1" id="how-to-get">
+                        <Card>
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                                    <MapPin className="w-5 h-5 text-blue-500" />
+                                    How to Get to Bentota
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent className="space-y-2">
+                                <div>
+                                    <h4 className="font-semibold mb-1 text-foreground">Private Transfer (Recommended)</h4>
+                                    <ul className="text-sm text-muted-foreground space-y-0.5">
+                                        <li>• 1.5-2 hours (90km) via Expressway</li>
+                                        <li>• $40-60 USD</li>
+                                        <li>• Most comfortable & direct</li>
+                                        <li className="mt-2"><span className="inline-block bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-200 px-2 py-1 rounded text-xs font-semibold">We recommend <span className="font-bold">Ceylanka Tours</span> for private transfers reliable, safe, and comfortable rides with friendly local drivers. Book in advance for a seamless start to your Bentota adventure!</span></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold mb-1 text-foreground">Taxi/Uber/PickMe</h4>
+                                    <ul className="text-sm text-muted-foreground space-y-0.5">
+                                        <li>• $25-50 USD</li>
+                                        <li>• 1.5-2 hours</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold mb-1 text-foreground">Train (Scenic)</h4>
+                                    <ul className="text-sm text-muted-foreground space-y-0.5">
+                                        <li>• 2-2.5 hours, $2-5 USD</li>
+                                        <li>• Ocean views, departs Colombo Fort</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 className="font-semibold mb-1 text-foreground">Bus</h4>
+                                    <ul className="text-sm text-muted-foreground space-y-0.5">
+                                        <li>• 2-3 hours, $1-3 USD</li>
+                                        <li>• Frequent from Colombo Central</li>
+                                    </ul>
+                                </div>
+                                <div className="mt-3 p-2 bg-orange-100 dark:bg-slate-700 rounded border-l-4 border-orange-500 dark:border-orange-400">
+                                    <p className="text-xs text-orange-800 dark:text-orange-200">
+                                        <strong>🌟 Tip:</strong> Book transfers in advance for best rates. Avoid rush hours (7-9 AM, 5-7 PM).
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </section>
+                </div>
 
                 {/* Beach Safety Section */}
                 <section className="mb-12 scroll-mt-40" id="beach-safety">
@@ -774,6 +774,83 @@ export default function BentotaGuide() {
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                                                 Traditional Buddhist architecture and art
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>4. Bentota Railway Station</CardTitle>
+                                <CardDescription>Another architectural gem by Bawa</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <Image
+                                        src="/placeholder.svg?height=300&width=400"
+                                        alt="Bentota River safari through mangroves with wildlife and traditional fishing boats"
+                                        width={400}
+                                        height={300}
+                                        className="rounded-lg"
+                                    />
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            Take a peaceful boat safari along the Bentota River through lush mangrove forests. Spot various
+                                            bird species, monitor lizards, and experience the traditional fishing village life along the
+                                            riverbanks.
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Bird watching opportunities
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Mangrove ecosystem exploration
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Traditional fishing village visits
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+<Card>
+                            <CardHeader>
+                                <CardTitle>4.Old Bentota Bridge</CardTitle>
+                                <CardDescription>Another architectural gem by Bawa</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <Image
+                                        src="/placeholder.svg?height=300&width=400"
+                                        alt="Bentota River safari through mangroves with wildlife and traditional fishing boats"
+                                        width={400}
+                                        height={300}
+                                        className="rounded-lg"
+                                    />
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            Take a peaceful boat safari along the Bentota River through lush mangrove forests. Spot various
+                                            bird species, monitor lizards, and experience the traditional fishing village life along the
+                                            riverbanks.
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Bird watching opportunities
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Mangrove ecosystem exploration
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Traditional fishing village visits
                                             </li>
                                         </ul>
                                     </div>
@@ -1147,7 +1224,7 @@ export default function BentotaGuide() {
                                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                                 />
                                 <p className="text-sm text-muted-foreground">
-                          Located in Aluthgama, this temple is famous for its towering 160 foot seated Buddha statue, one of the tallest in the world. It also features an ancient Bodhi tree, a sacred stupa, and colorful murals that attract thousands of devotees and visitors each year.
+                                    Located in Aluthgama, this temple is famous for its towering 160 foot seated Buddha statue, one of the tallest in the world. It also features an ancient Bodhi tree, a sacred stupa, and colorful murals that attract thousands of devotees and visitors each year.
                                 </p>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/kandeviharaya" passHref legacyBehavior>
@@ -1219,7 +1296,7 @@ export default function BentotaGuide() {
                                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                                 />
                                 <p className="text-sm text-muted-foreground">
-                                   Richmond Castle is a grand colonial mansion built in the early 20th century by Mudaliyar Don Arthur de Silva. Blending Indian and British architectural styles, the castle features intricate wooden carvings, stained glass windows, and sprawling gardens
+                                    Richmond Castle is a grand colonial mansion built in the early 20th century by Mudaliyar Don Arthur de Silva. Blending Indian and British architectural styles, the castle features intricate wooden carvings, stained glass windows, and sprawling gardens
                                 </p>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/richmond-castle" passHref legacyBehavior>

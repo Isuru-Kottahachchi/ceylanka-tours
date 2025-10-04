@@ -60,37 +60,37 @@ export default function LunugangaTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Lunuganga: Where Architecture Meets Nature</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into the extraordinary world of Geoffrey Bawa at Lunuganga, where one man&apos;s vision transformed 
-              a simple rubber plantation into one of the most beautiful and influential gardens in Asia! Located on 
-              the serene banks of the Bentota River, this 25-acre masterpiece represents over 50 years of continuous 
-              design evolution by Sri Lanka&apos;s most celebrated architect, creating a seamless harmony between 
+              Step into the extraordinary world of Geoffrey Bawa at Lunuganga, where one man&apos;s vision transformed
+              a simple rubber plantation into one of the most beautiful and influential gardens in Asia! Located on
+              the serene banks of the Bentota River, this 25-acre masterpiece represents over 50 years of continuous
+              design evolution by Sri Lanka&apos;s most celebrated architect, creating a seamless harmony between
               architecture, landscape, and the natural environment.
             </p>
             <p className="text-lg mb-4">
-              Lunuganga is not just a garden or a house - it&apos;s a living laboratory of tropical design that 
-              revolutionized how we think about living in harmony with nature. Every pathway, every view, and every 
-              architectural element was carefully planned by Bawa to create what he called &apos;a series of spaces&apos; 
-              that flow naturally from indoor to outdoor, from built to natural, creating an experience that feels 
+              Lunuganga is not just a garden or a house - it&apos;s a living laboratory of tropical design that
+              revolutionized how we think about living in harmony with nature. Every pathway, every view, and every
+              architectural element was carefully planned by Bawa to create what he called &apos;a series of spaces&apos;
+              that flow naturally from indoor to outdoor, from built to natural, creating an experience that feels
               both intimate and expansive at the same time.
             </p>
             <p className="text-lg mb-4">
-              When you visit Lunuganga, you&apos;re walking through the creative mind of the architect who invented 
-              &apos;Tropical Modernism&apos; - a design philosophy that influenced architecture across South and 
-              Southeast Asia. From the famous terraced lawns that seem to float above the lake, to the hidden 
-              courtyards filled with frangipani and temple trees, every corner reveals new surprises that demonstrate 
+              When you visit Lunuganga, you&apos;re walking through the creative mind of the architect who invented
+              &apos;Tropical Modernism&apos; - a design philosophy that influenced architecture across South and
+              Southeast Asia. From the famous terraced lawns that seem to float above the lake, to the hidden
+              courtyards filled with frangipani and temple trees, every corner reveals new surprises that demonstrate
               Bawa&apos;s genius for creating magical spaces that feel both sophisticated and completely natural.
             </p>
             <p className="text-lg">
-              The experience at Lunuganga is deliberately slow and contemplative - plan to spend at least 2-3 hours 
-              wandering through the various garden rooms, sitting by the lake, and discovering the architectural 
-              details that make this place so special. Whether you&apos;re an architecture enthusiast, a garden lover, 
-              or simply someone who appreciates beautiful spaces, Lunuganga offers an unforgettable journey through 
+              The experience at Lunuganga is deliberately slow and contemplative - plan to spend at least 2-3 hours
+              wandering through the various garden rooms, sitting by the lake, and discovering the architectural
+              details that make this place so special. Whether you&apos;re an architecture enthusiast, a garden lover,
+              or simply someone who appreciates beautiful spaces, Lunuganga offers an unforgettable journey through
               one of the world&apos;s most important examples of tropical landscape design.
             </p>
           </div>
@@ -100,15 +100,15 @@ export default function LunugangaTravelGuide() {
               <div>
                 <h4 className="font-semibold text-green-800 mb-2">Visitor Guidelines</h4>
                 <p className="text-sm text-green-700 mb-2">
-                  <strong>Respect the living space:</strong> Lunuganga remains a private residence and working garden. 
+                  <strong>Respect the living space:</strong> Lunuganga remains a private residence and working garden.
                   Please maintain quiet voices and follow designated pathways to preserve the tranquil atmosphere.
                 </p>
                 <p className="text-sm text-green-700 mb-2">
-                  <strong>Photography etiquette:</strong> While photography is encouraged, please be mindful of other 
+                  <strong>Photography etiquette:</strong> While photography is encouraged, please be mindful of other
                   visitors and avoid using flash indoors. Some areas may have photography restrictions.
                 </p>
                 <p className="text-sm text-green-700">
-                  <strong>Advance booking required:</strong> Lunuganga requires advance reservations for all visits. 
+                  <strong>Advance booking required:</strong> Lunuganga requires advance reservations for all visits.
                   Contact the estate directly or book through authorized tour operators.
                 </p>
               </div>
@@ -204,7 +204,7 @@ export default function LunugangaTravelGuide() {
               </div>
               <div className="mt-4 p-3 bg-blue-100 rounded-lg border-l-4 border-blue-500">
                 <p className="text-sm text-blue-800">
-                  <strong>💡 Pro Tip:</strong> Visit during afternoon hours (2-5 PM) for the best lighting and cooler 
+                  <strong>💡 Pro Tip:</strong> Visit during afternoon hours (2-5 PM) for the best lighting and cooler
                   temperatures. Morning visits offer peaceful atmosphere but harsh light for photography.
                 </p>
               </div>
@@ -225,33 +225,33 @@ export default function LunugangaTravelGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                Geoffrey Bawa in his beloved Lunuganga garden, where he spent over 50 years perfecting his vision 
+                Geoffrey Bawa in his beloved Lunuganga garden, where he spent over 50 years perfecting his vision
                 of tropical modernist design.
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                The story of Lunuganga begins in 1948 when a young Geoffrey Bawa, fresh from studying law at 
-                Cambridge, purchased a modest 10-acre rubber estate on the banks of Dedduwa Lake. What started 
-                as a weekend retreat would become a lifetime obsession and the birthplace of a revolutionary 
+                The story of Lunuganga begins in 1948 when a young Geoffrey Bawa, fresh from studying law at
+                Cambridge, purchased a modest 10-acre rubber estate on the banks of Dedduwa Lake. What started
+                as a weekend retreat would become a lifetime obsession and the birthplace of a revolutionary
                 architectural movement that would influence design across the tropical world.
               </p>
               <p>
-                Bawa had no formal training in architecture when he began transforming the estate, but he possessed 
-                something more valuable - an intuitive understanding of how spaces should feel and how buildings 
-                should respond to their environment. Working with skilled local craftsmen and gardeners, he began 
+                Bawa had no formal training in architecture when he began transforming the estate, but he possessed
+                something more valuable - an intuitive understanding of how spaces should feel and how buildings
+                should respond to their environment. Working with skilled local craftsmen and gardeners, he began
                 creating a series of interconnected spaces that seemed to grow naturally from the landscape itself.
               </p>
               <p>
-                Over the next five decades, Bawa continuously refined and expanded Lunuganga, treating it as both 
-                his home and his experimental laboratory. Every element - from the placement of a single tree to 
-                the orientation of a pavilion - was carefully considered to create what he called &apos;a series of 
+                Over the next five decades, Bawa continuously refined and expanded Lunuganga, treating it as both
+                his home and his experimental laboratory. Every element - from the placement of a single tree to
+                the orientation of a pavilion - was carefully considered to create what he called &apos;a series of
                 experiences&apos; that would unfold as visitors moved through the space.
               </p>
               <p>
-                The genius of Lunuganga lies not in any single dramatic gesture, but in the accumulation of 
-                countless subtle decisions that create an overall sense of harmony and discovery. Bawa believed 
-                that good design should feel effortless and natural, even when it required enormous thought and 
+                The genius of Lunuganga lies not in any single dramatic gesture, but in the accumulation of
+                countless subtle decisions that create an overall sense of harmony and discovery. Bawa believed
+                that good design should feel effortless and natural, even when it required enormous thought and
                 skill to achieve such apparent simplicity.
               </p>
             </div>
@@ -288,7 +288,7 @@ export default function LunugangaTravelGuide() {
         {/* What to See and Experience */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Discovering the Spaces of Lunuganga</h2>
-          
+
           <div className="grid gap-8">
             {/* The House and Verandas */}
             <Card className="border-l-4 border-l-blue-500">
@@ -323,9 +323,9 @@ export default function LunugangaTravelGuide() {
                   />
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  The heart of Lunuganga is Bawa&apos;s residence, a low-rise structure that seems to float above 
-                  the landscape. The house demonstrates all of Bawa&apos;s key principles: wide verandas that blur 
-                  the boundary between inside and outside, carefully framed views of the lake and garden, and 
+                  The heart of Lunuganga is Bawa&apos;s residence, a low-rise structure that seems to float above
+                  the landscape. The house demonstrates all of Bawa&apos;s key principles: wide verandas that blur
+                  the boundary between inside and outside, carefully framed views of the lake and garden, and
                   rooms that open completely to catch every breeze.
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
@@ -374,9 +374,9 @@ export default function LunugangaTravelGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Perhaps the most famous feature of Lunuganga is the series of terraced lawns that appear 
-                      to float above Dedduwa Lake. These geometric grass platforms, created by Bawa in the 1960s, 
-                      represent one of the most photographed garden features in Asia and demonstrate his genius 
+                      Perhaps the most famous feature of Lunuganga is the series of terraced lawns that appear
+                      to float above Dedduwa Lake. These geometric grass platforms, created by Bawa in the 1960s,
+                      represent one of the most photographed garden features in Asia and demonstrate his genius
                       for creating dramatic effects through simple means.
                     </p>
                     <h4 className="font-semibold mb-2">What Makes Them Special:</h4>
@@ -402,29 +402,29 @@ export default function LunugangaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Lunuganga is organized as a series of &apos;garden rooms&apos; - distinct spaces with their own 
-                  character and purpose, connected by carefully planned pathways that create a sense of journey 
+                  Lunuganga is organized as a series of &apos;garden rooms&apos; - distinct spaces with their own
+                  character and purpose, connected by carefully planned pathways that create a sense of journey
                   and discovery. Each room offers different experiences and reveals new aspects of Bawa&apos;s design vision.
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div>
                     <h4 className="font-semibold mb-2 text-purple-700">The Cinnamon Hill</h4>
                     <p className="text-sm text-muted-foreground">
-                      The highest point of the estate offering panoramic views across the entire garden and lake. 
+                      The highest point of the estate offering panoramic views across the entire garden and lake.
                       Features a small pavilion perfect for sunset viewing and meditation.
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2 text-purple-700">The Water Garden</h4>
                     <p className="text-sm text-muted-foreground">
-                      A series of reflecting pools and water channels that mirror the sky and surrounding 
+                      A series of reflecting pools and water channels that mirror the sky and surrounding
                       vegetation, creating a cooling microclimate in the tropical heat.
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2 text-purple-700">The Entrance Court</h4>
                     <p className="text-sm text-muted-foreground">
-                      A formal arrival space that sets the tone for the garden visit, featuring geometric 
+                      A formal arrival space that sets the tone for the garden visit, featuring geometric
                       patterns and specimen trees that frame the view toward the main house.
                     </p>
                   </div>
@@ -510,7 +510,7 @@ export default function LunugangaTravelGuide() {
               </div>
               <div className="mt-4 p-3 bg-pink-100 rounded-lg border-l-4 border-pink-500">
                 <p className="text-sm text-pink-800">
-                  <strong>📸 Photography Etiquette:</strong> While photography is encouraged, please be respectful of other 
+                  <strong>📸 Photography Etiquette:</strong> While photography is encouraged, please be respectful of other
                   visitors and the peaceful atmosphere. Some interior spaces may have restrictions, so always ask permission.
                 </p>
               </div>
@@ -572,7 +572,7 @@ export default function LunugangaTravelGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  Created by Geoffrey Bawa&apos;s brother Bevis, this artistic garden features sculptures, 
+                  Created by Geoffrey Bawa&apos;s brother Bevis, this artistic garden features sculptures,
                   exotic plants, and whimsical design elements in a more intimate setting.
                 </p>
                 <p className="text-xs text-muted-foreground"><strong>Distance:</strong> 10km from Lunuganga</p>
@@ -593,7 +593,7 @@ export default function LunugangaTravelGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  One of Sri Lanka&apos;s most beautiful beaches, perfect for relaxation after your garden visit. 
+                  One of Sri Lanka&apos;s most beautiful beaches, perfect for relaxation after your garden visit.
                   Offers water sports, seafood restaurants, and sunset viewing.
                 </p>
                 <p className="text-xs text-muted-foreground"><strong>Distance:</strong> 5km from Lunuganga</p>
@@ -614,7 +614,7 @@ export default function LunugangaTravelGuide() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  Learn about sea turtle conservation and see baby turtles being cared for before their 
+                  Learn about sea turtle conservation and see baby turtles being cared for before their
                   release into the ocean. Great family-friendly activity.
                 </p>
                 <p className="text-xs text-muted-foreground"><strong>Distance:</strong> 15km from Lunuganga</p>
@@ -665,9 +665,9 @@ export default function LunugangaTravelGuide() {
             <CardContent className="pt-6">
               <h2 className="text-2xl font-bold mb-4 text-center">Experience the Magic of Lunuganga</h2>
               <p className="text-lg text-center text-muted-foreground leading-relaxed">
-                Lunuganga is more than just a garden - it&apos;s a masterclass in how human creativity can enhance and 
-                celebrate the natural world. Geoffrey Bawa&apos;s vision continues to inspire architects, landscape 
-                designers, and garden lovers from around the globe, making this one of the most important cultural 
+                Lunuganga is more than just a garden - it&apos;s a masterclass in how human creativity can enhance and
+                celebrate the natural world. Geoffrey Bawa&apos;s vision continues to inspire architects, landscape
+                designers, and garden lovers from around the globe, making this one of the most important cultural
                 sites in Sri Lanka.
               </p>
               <div className="flex justify-center mt-6">
