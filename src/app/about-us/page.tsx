@@ -69,11 +69,11 @@ const achievements = [
         title: "500K+ Travelers Helped",
         description: "We've assisted over half a million travelers in planning their Sri Lankan adventures.",
     },
-    {
-        icon: Award,
-        title: "Travel Blog Awards",
-        description: "Winner of Best Destination Blog 2023 and Top Travel Resource 2022.",
-    },
+    // {
+    //     icon: Award,
+    //     title: "Travel Blog Awards",
+    //     description: "Winner of Best Destination Blog 2023 and Top Travel Resource 2022.",
+    // },
     {
         icon: Globe,
         title: "Sustainable Tourism Advocate",
