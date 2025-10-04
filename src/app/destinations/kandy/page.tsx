@@ -176,11 +176,6 @@ export default function KandyTravelGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Quick Facts */}
         <section className="mb-12">
           <Card>
@@ -418,11 +413,6 @@ export default function KandyTravelGuide() {
         {/* Top Attractions */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Kandy</h2>
-
-          {/* Ad Space */}
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
 
           <div className="space-y-8">
             {/* Kandy Lake */}
@@ -989,11 +979,6 @@ export default function KandyTravelGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* Dos and Donts */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts for Kandy</h2>
@@ -1199,11 +1184,6 @@ export default function KandyTravelGuide() {
         {/* Food Guide */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Kandyan Cuisine & Where to Eat</h2>
-
-          {/* Ad Space */}
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <Card>

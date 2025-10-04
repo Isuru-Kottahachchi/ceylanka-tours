@@ -149,6 +149,30 @@ export default function PolonnaruwaGuide() {
                 </div>
             </section>
 
+            {/* Section Navigation */}
+            {/* <section className="sticky top-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-gray-900/60 border-b border-gray-200 dark:border-gray-700 shadow-sm">
+                <nav className="flex items-center gap-4 p-4 max-w-6xl mx-auto overflow-x-auto whitespace-nowrap">
+                    <Link href="#quick-facts">
+                        <Button variant="ghost" size="sm">Quick Facts</Button>
+                    </Link>
+                    <Link href="#royal-palace">
+                        <Button variant="ghost" size="sm">Royal Palace Complex</Button>
+                    </Link>
+                    <Link href="#sacred-quadrangle">
+                        <Button variant="ghost" size="sm">Sacred Quadrangle</Button>
+                    </Link>
+                    <Link href="#watadage">
+                        <Button variant="ghost" size="sm">Vatadage</Button>
+                    </Link>
+                    <Link href="#lotus-pond">
+                        <Button variant="ghost" size="sm">Lotus Pond</Button>
+                    </Link>
+                    <Link href="#tips">
+                        <Button variant="ghost" size="sm">Tips & Guidelines</Button>
+                    </Link>
+                </nav>
+            </section> */}
+
             <div className="max-w-6xl mx-auto px-4 py-12">
                 {/* Introduction */}
                 <section className="mb-12">
@@ -169,7 +193,7 @@ export default function PolonnaruwaGuide() {
                 </div> */}
 
                 {/* Quick Facts */}
-                <section className="mb-12">
+                <section id="quick-facts" className="mb-12 scroll-mt-20">
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* Essential Facts */}
                         <Card>
@@ -466,8 +490,8 @@ export default function PolonnaruwaGuide() {
                 </section>
 
                 {/* Royal Complex */}
-                <section className="mb-12">
-                    <h2 className="text-3xl font-bold mb-6">Royal Palace Complex & Administrative Buildings</h2>
+                <section id="royal-palace" className="mb-12 scroll-mt-20">
+                    <h2 className="text-3xl font-bold mb-6">Places to Visit in Polonnaruwa</h2>
 
                     <div className="space-y-8">
                         <Card>
@@ -545,7 +569,7 @@ export default function PolonnaruwaGuide() {
                                                 Excellent example of Polonnaruwa architecture
                                             </li>
                                         </ul>
-                                        <Link href="/destinations/audience-hall-polonnaruwa">
+                                        <Link href="/destinations/nissanka-latha-mandapaya">
                                             <Button
                                                 className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                                                 variant="default"
@@ -567,6 +591,59 @@ export default function PolonnaruwaGuide() {
                             </CardContent>
                         </Card>
                     </div>
+                </section>
+
+                {/* Lotus Pond Section */}
+                <section id="lotus-pond" className="mb-12 scroll-mt-20">
+                    <Card>
+                        <CardHeader>
+                            <CardTitle>Lotus Pond (Nelum Pokuna)</CardTitle>
+                            <CardDescription>Ancient engineering marvel shaped like a lotus flower</CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="grid md:grid-cols-2 gap-6 items-center">
+                                <ImageCarousel
+                                    images={[
+                                        { src: "/Lotus-Pond.jpeg", caption: "Aerial view of the Lotus Pond" },
+                                        { src: "/LotusPond2.jpg", caption: "Detailed stone craftsmanship" },
+                                        { src: "/LotusPond3.jpg", caption: "Architectural details" }
+                                    ]} alt={""} />
+                                <div>
+                                    <p className="text-muted-foreground mb-4">
+                                        The Lotus Pond is a unique architectural creation shaped like an eight-petaled lotus flower.
+                                        This ancient swimming pool demonstrates the advanced engineering and artistic capabilities of
+                                        ancient Sri Lankan civilization.
+                                    </p>
+                                    <ul className="space-y-2 text-muted-foreground">
+                                        <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                            Unique lotus-shaped design
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                            Advanced hydraulic engineering
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                            Original water filtering system
+                                        </li>
+                                        <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                            Perfectly preserved structure
+                                        </li>
+                                    </ul>
+                                    <Link href="/destinations/lotus-pond-polonnaruwa">
+                                        <Button
+                                            className="mt-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                                            variant="default"
+                                        >
+                                            Discover Lotus Pond
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
                 </section>
 
                 {/* Ad Space */}
@@ -662,10 +739,26 @@ export default function PolonnaruwaGuide() {
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                                                 UNESCO World Heritage highlight
                                             </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Four seated Buddha statues in pristine condition
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Intricate moonstone and guard stones
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Concentric stone platforms
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Remarkable stone craftsmanship
+                                            </li>
                                         </ul>
                                         <Link href="/destinations/polonnaruwa-vatadageya">
                                             <Button
-                                                className="mt-2 bg-amber-600 text-white hover:bg-amber-700 dark:bg-amber-500 dark:hover:bg-amber-600 dark:text-white border-none cursor-pointer"
+                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
                                                 variant="default"
                                             >
                                                 Explore Polonnaruwa Vatadageya
@@ -685,8 +778,8 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Thivanka-Image-House1.jpg", caption: "Thivanka Image House exterior view" },
-                                            { src: "/Thivanka-Image-House2.jpg", caption: "Ancient frescoes inside Thivanka Image House" },
+                                            { src: "/Thivanka-Image-House.jpeg", caption: "Thivanka Image House exterior view" },
+                                            { src: "/Thivanka-Image-House1.jpeg", caption: "Ancient frescoes inside Thivanka Image House" },
                                             { src: "/Thivanka-Image-House3.jpg", caption: "Unique bent-posture Buddha statue" }
                                         ]}
                                         alt="Thivanka Image House showing architectural details and ancient frescoes"
@@ -722,6 +815,14 @@ export default function PolonnaruwaGuide() {
                                                 represent a unique style bridging classical Anuradhapura and medieval Polonnaruwa periods.
                                             </p>
                                         </div>
+                                        <Link href="/destinations/thivanka-pilimage">
+                                            <Button
+                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                                                variant="default"
+                                            >
+                                                Explore Thivanka Pilimage
+                                            </Button>
+                                        </Link>
                                     </div>
                                 </div>
                             </CardContent>
@@ -765,11 +866,19 @@ export default function PolonnaruwaGuide() {
                                                 demonstrates the international connections and architectural diversity of medieval Sri Lanka.
                                             </p>
                                         </div>
+                                        <Link href="/destinations/sathmahal-prasada">
+                                            <Button
+                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                                                variant="default"
+                                            >
+                                                Explore Sathmahal Prasada
+                                            </Button>
+                                        </Link>
                                     </div>
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Sathmahal-Prasada1.jpg", caption: "Seven-story pyramid structure of Sathmahal Prasada" },
-                                            { src: "/Sathmahal-Prasada2.jpg", caption: "Detailed view of the architectural features" },
+                                            { src: "/Sathmahal-prasadaya1.jpg", caption: "Seven-story pyramid structure of Sathmahal Prasada" },
+                                            { src: "/Sathmahal-prasadaya.jpg", caption: "Detailed view of the architectural features" },
                                             { src: "/Sathmahal-Prasada3.jpg", caption: "Evening view showing the unique stepped design" }
                                         ]}
                                         alt="Sathmahal Prasada showing the unique stepped pyramid architecture"
@@ -831,12 +940,13 @@ export default function PolonnaruwaGuide() {
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <Image
-                                        src="/placeholder.svg?height=300&width=400&text=Lankatilaka+Temple"
-                                        alt="Towering brick walls of Lankatilaka temple with massive Buddha statue inside"
-                                        width={400}
-                                        height={300}
-                                        className="rounded-lg"
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/Lankatilaka-Image-House.jpeg", caption: "Towering brick walls of Lankatilaka temple" },
+                                            { src: "/Lankatilaka-Image-House1.jpeg", caption: "Interior view with headless Buddha statue" },
+                                            { src: "/Lankatilaka-Image-House2.jpeg", caption: "Impressive brick architecture and detail" }
+                                        ]}
+                                        alt="Lankatilaka Image House showing the impressive architecture and Buddha statue"
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -897,6 +1007,12 @@ export default function PolonnaruwaGuide() {
                                     <p className="text-sm text-muted-foreground mb-2">
                                         This massive reservoir, covering 2,400 hectares, demonstrates the advanced hydraulic engineering of ancient Sri Lanka.
                                     </p>
+                                    <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                                        <p className="text-sm text-blue-800 dark:text-blue-200">
+                                            <span className="font-semibold">Did You Know? </span>
+                                            The Parakrama Samudra was so vast that ancient mariners mistook it for the ocean when approaching from the sea, hence its name "The Sea of Parakrama"!
+                                        </p>
+                                    </div>
                                     <ul className="text-sm text-muted-foreground space-y-1">
                                         <li>• Built by connecting three separate reservoirs</li>
                                         <li>• 14 km long embankment system</li>
@@ -914,7 +1030,7 @@ export default function PolonnaruwaGuide() {
                             </CardHeader>
                             <CardContent className="space-y-4">
                                 <Image
-                                    src="/placeholder.svg?height=200&width=350&text=Lotus+Bath"
+                                    src="/Lotus-Pond.jpg"
                                     alt="Lotus-shaped stone bathing pool with eight-petaled design at Polonnaruwa"
                                     width={350}
                                     height={200}
@@ -958,9 +1074,37 @@ export default function PolonnaruwaGuide() {
                                     <p className="text-sm text-muted-foreground">
                                         The famous Lion Rock fortress, just 1.5 hours from Polonnaruwa, showcasing 5th-century royal architecture.
                                     </p>
-                                    <span className="text-sm font-medium text-primary mt-3 inline-block">
-                                        See More →
-                                    </span>
+                                    <div className="mt-4 flex justify-start">
+                                        <Link href="/destinations/sigiriya-rock-fortress" passHref legacyBehavior>
+                                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                        </Link>
+                                    </div>
+                                </CardContent>
+                            </Card>
+                        </Link>
+
+                        <Link href="/destinations/minneriya-national-park" className="block hover:shadow-md transition-shadow duration-200">
+                            <Card className="cursor-pointer">
+                                <CardHeader>
+                                    <CardTitle className="text-lg">Anuradhapura</CardTitle>
+                                    <CardDescription>First Capital of Sri Lanka</CardDescription>
+                                </CardHeader>
+                                <CardContent>
+                                    <Image
+                                        src="/Anuradhapura.jpg"
+                                        alt="Ancient capital Anuradhapura"
+                                        width={300}
+                                        height={200}
+                                        className="rounded-lg mb-3"
+                                    />
+                                    <p className="text-sm text-muted-foreground">
+                                        Witness one of the world&apos;s largest elephant gathering, just 30 minutes from Polonnaruwa.
+                                    </p>
+                                    <div className="mt-4 flex justify-start">
+                                        <Link href="/destinations/anuradhapura" passHref legacyBehavior>
+                                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                        </Link>
+                                    </div>
                                 </CardContent>
                             </Card>
                         </Link>
@@ -982,9 +1126,11 @@ export default function PolonnaruwaGuide() {
                                     <p className="text-sm text-muted-foreground">
                                         Witness one of the world&apos;s largest elephant gathering, just 30 minutes from Polonnaruwa.
                                     </p>
-                                    <span className="text-sm font-medium text-primary mt-3 inline-block">
-                                        See More →
-                                    </span>
+                                    <div className="mt-4 flex justify-start">
+                                        <Link href="/destinations/minneriya-national-park" passHref legacyBehavior>
+                                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                        </Link>
+                                    </div>
                                 </CardContent>
                             </Card>
                         </Link>
