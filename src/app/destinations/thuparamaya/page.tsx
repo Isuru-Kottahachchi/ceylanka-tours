@@ -61,7 +61,7 @@ export default function ThuparamayaTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Thuparamaya: Where Buddhism Began in Sri Lanka</h2>
@@ -162,6 +162,51 @@ export default function ThuparamayaTravelGuide() {
                     <span>
                       <strong>Visit Duration:</strong> 30-45 minutes
                     </span>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+        {/* Getting There */}
+        <section className="mb-12">
+          <Card className="border-green-200 dark:border-green-800 bg-green-50/30 dark:bg-green-950/30">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-green-800 dark:text-green-200">
+                <MapPin className="w-5 h-5" />
+                How to Reach Thuparamaya Temple
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-semibold mb-3 text-green-700 dark:text-green-300">From Anuradhapura City</h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• <strong>Distance:</strong> 5km from city center</li>
+                    <li>• <strong>By Tuktuk:</strong> 15-20 minutes, $3-5 USD</li>
+                    <li>• <strong>By Bicycle:</strong> 20-30 minutes (available for rent)</li>
+                    <li>• <strong>Walking:</strong> 45 minutes through ancient ruins</li>
+                  </ul>
+                  <div className="mt-3 p-3 bg-green-100 dark:bg-slate-700 rounded-md border-l-4 border-green-500 dark:border-green-400">
+                    <p className="text-sm text-green-800 dark:text-green-200">
+                      <strong>Pro Tip:</strong> Combine your visit with other nearby ancient sites like Ruwanwelisaya 
+                      and Jaya Sri Maha Bodhi for a complete sacred city experience.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-3 text-green-700 dark:text-green-300">From Colombo</h4>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• <strong>Distance:</strong> 205km (127 miles)</li>
+                    <li>• <strong>By Car:</strong> 4-5 hours via A1 highway</li>
+                    <li>• <strong>By Bus:</strong> 5-6 hours, frequent services</li>
+                    <li>• <strong>By Train:</strong> 4.5 hours to Anuradhapura station</li>
+                  </ul>
+                  <div className="mt-3 p-3 bg-amber-100 dark:bg-slate-700 rounded-md border-l-4 border-amber-500 dark:border-amber-400">
+                    <p className="text-sm text-amber-800 dark:text-amber-200">
+                      <strong>Best Option:</strong> Stay overnight in Anuradhapura to explore all ancient sites 
+                      at a comfortable pace without rushing.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -346,51 +391,7 @@ export default function ThuparamayaTravelGuide() {
           </Card>
         </section>
 
-        {/* Getting There */}
-        <section className="mb-12">
-          <Card className="border-green-200 dark:border-green-800 bg-green-50/30 dark:bg-green-950/30">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-green-800 dark:text-green-200">
-                <MapPin className="w-5 h-5" />
-                How to Reach Thuparamaya Temple
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold mb-3 text-green-700 dark:text-green-300">From Anuradhapura City</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Distance:</strong> 5km from city center</li>
-                    <li>• <strong>By Tuktuk:</strong> 15-20 minutes, $3-5 USD</li>
-                    <li>• <strong>By Bicycle:</strong> 20-30 minutes (available for rent)</li>
-                    <li>• <strong>Walking:</strong> 45 minutes through ancient ruins</li>
-                  </ul>
-                  <div className="mt-3 p-3 bg-green-100 dark:bg-slate-700 rounded-md border-l-4 border-green-500 dark:border-green-400">
-                    <p className="text-sm text-green-800 dark:text-green-200">
-                      <strong>Pro Tip:</strong> Combine your visit with other nearby ancient sites like Ruwanwelisaya 
-                      and Jaya Sri Maha Bodhi for a complete sacred city experience.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-3 text-green-700 dark:text-green-300">From Colombo</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Distance:</strong> 205km (127 miles)</li>
-                    <li>• <strong>By Car:</strong> 4-5 hours via A1 highway</li>
-                    <li>• <strong>By Bus:</strong> 5-6 hours, frequent services</li>
-                    <li>• <strong>By Train:</strong> 4.5 hours to Anuradhapura station</li>
-                  </ul>
-                  <div className="mt-3 p-3 bg-amber-100 dark:bg-slate-700 rounded-md border-l-4 border-amber-500 dark:border-amber-400">
-                    <p className="text-sm text-amber-800 dark:text-amber-200">
-                      <strong>Best Option:</strong> Stay overnight in Anuradhapura to explore all ancient sites 
-                      at a comfortable pace without rushing.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+        
 
         {/* Best Time to Visit */}
         <section className="mb-12">

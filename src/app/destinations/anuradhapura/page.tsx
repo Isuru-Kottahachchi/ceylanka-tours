@@ -59,10 +59,11 @@ export default function AnuradhapuraTravelGuide() {
         <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
           <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Introduction</a>
           <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
+          <a href="#how-to-get-there" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">How to Get There</a>
           <a href="#sacred-sites" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Sacred Sites</a>
           <a href="#itinerary" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Sample Itinerary</a>
-          <a href="#archaeology" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Archaeological Wonders</a>
-          <a href="#guide" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Visiting Guide</a>
+          <a href="#nearby-archaeological-wonders" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Archaeological Wonders</a>
+          <a href="#visiting-guide" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Visiting Guide</a>
         </div>
       </nav>
 
@@ -88,7 +89,7 @@ export default function AnuradhapuraTravelGuide() {
 
 
         {/* Quick Facts & How to Get There side by side */}
-        <div className="flex flex-col lg:flex-row gap-8 mb-12">
+        <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
           {/* Essential Anuradhapura Facts */}
           <section className="flex-1">
             <Card>
@@ -170,7 +171,7 @@ export default function AnuradhapuraTravelGuide() {
           </section>
           {/* How to Get to Anuradhapura */}
           <section className="flex-1">
-            <Card className="border-l-4 border-blue-500">
+            <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get-there">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
                   <MapPin className="w-5 h-5" />
@@ -239,7 +240,7 @@ export default function AnuradhapuraTravelGuide() {
 
         {/* Sacred Sites */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Sacred Sites & Ancient Monuments</h2>
+          <h2 className="text-3xl font-bold mb-6 scroll-mt-40" id="sacred-sites">Sacred Sites & Ancient Monuments</h2>
 
           <div className="space-y-8">
             <h3 className="text-xl font-semibold mb-4">
@@ -638,7 +639,7 @@ export default function AnuradhapuraTravelGuide() {
                     </ul>
 
                     <div className="mt-4 flex justify-start">
-                      <Link href="/destinations/mirisawatiya" passHref legacyBehavior>
+                      <Link href="/destinations/mirisavatiya" passHref legacyBehavior>
                         <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read more →</Button>
                       </Link>
                     </div>
@@ -706,7 +707,14 @@ export default function AnuradhapuraTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            
+          </div>
+        </section>
+
+        {/* More Sacred Sites */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Additional Sacred Sites</h2>
+          <Card>
               <CardHeader>
                 <CardTitle>Sandahirusaya</CardTitle>
                 <CardDescription>A smaller but equally sacred stupa with unique historical significance</CardDescription>
@@ -759,79 +767,7 @@ export default function AnuradhapuraTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </section>
 
-        {/* More Sacred Sites */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Additional Sacred Sites</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-blue-600">Abhayagiri Monastery</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">Historical Significance</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Once housed 5,000 monks and was a major center of Buddhist learning for over 1,000 years.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Key Features</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• 75-meter tall dagoba</li>
-                    <li>• Extensive monastery ruins</li>
-                    <li>• Ancient hospital and medical facilities</li>
-                    <li>• Samadhi Buddha statue</li>
-                  </ul>
-                  <div className="mt-6">
-                    <Link href="/destinations/abhayagiri">
-                      <Button
-                        className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                        variant="default"
-                      >
-                        Discover More
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-green-600">Thuparamaya Dagoba</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">First Dagoba in Sri Lanka</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Built in 3rd century BC, its the oldest dagoba in Sri Lanka and contains Buddhas collarbone relic.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Unique Features</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Bell-shaped design (original style)</li>
-                    <li>• Contains Buddhas collarbone</li>
-                    <li>• Surrounded by stone pillars</li>
-                    <li>• Restored multiple times</li>
-                  </ul>
-                  <div className="mt-6">
-                    <Link href="/destinations/thuparamaya">
-                      <Button
-                        className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                        variant="default"
-                      >
-                        See More
-                      </Button>
-                    </Link>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </section>
 
         {/* Itinerary Section */}
@@ -926,7 +862,7 @@ export default function AnuradhapuraTravelGuide() {
 
         {/* Archaeological Wonders */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Near by Archaeological Wonders</h2>
+          <h2 className="text-3xl font-bold mb-6 scroll-mt-40" id="nearby-archaeological-wonders">Near by Archaeological Wonders</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
 
@@ -934,7 +870,7 @@ export default function AnuradhapuraTravelGuide() {
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Isurumuniya Temple</CardTitle>
-                  <CardDescription>Ancient city</CardDescription>
+                  <CardDescription>Ancient temple</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Image
@@ -963,7 +899,7 @@ export default function AnuradhapuraTravelGuide() {
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Ranmusu uyana with universal stargate</CardTitle>
-                  <CardDescription>Ancient city</CardDescription>
+                  <CardDescription>Royal park with ancient ruins</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Image
@@ -991,7 +927,7 @@ export default function AnuradhapuraTravelGuide() {
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Mihinthalaya</CardTitle>
-                  <CardDescription>Scared site </CardDescription>
+                  <CardDescription>Sacred site</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Image
@@ -1079,7 +1015,7 @@ export default function AnuradhapuraTravelGuide() {
 
         {/* Visiting Guide */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Complete Visiting Guide</h2>
+          <h2 className="text-3xl font-bold mb-6 scroll-mt-40" id="visiting-guide">Complete Visiting Guide</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>

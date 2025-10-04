@@ -86,10 +86,6 @@ export default function LovamahapayaGuide() {
 					</div>
 				</section>
 
-				{/* Ad Space */}
-				<div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-					[Advertisement Space - 728x90 Leaderboard]
-				</div>
 
 				{/* Quick Facts & How to Get There */}
 				<div className="flex flex-col lg:flex-row gap-8 mb-12" id="quick-facts">
@@ -103,36 +99,47 @@ export default function LovamahapayaGuide() {
 								</CardTitle>
 							</CardHeader>
 							<CardContent>
-								<div className="grid md:grid-cols-2 gap-4">
-									<div className="space-y-3">
-										<div className="flex items-center gap-2">
-											<Calendar className="w-4 h-4 text-blue-500" />
-											<span><strong>Built:</strong> 2nd Century BCE</span>
-										</div>
-										<div className="flex items-center gap-2">
-											<Users className="w-4 h-4 text-green-500" />
-											<span><strong>Capacity:</strong> 1,000 monks</span>
-										</div>
-										<div className="flex items-center gap-2">
-											<TreePine className="w-4 h-4 text-purple-500" />
-											<span><strong>Material:</strong> 1,600 stone pillars, copper roof</span>
-										</div>
+								<div className="space-y-3">
+									<div className="flex items-center gap-2">
+										<Calendar className="w-4 h-4 text-blue-500" />
+										<span>
+											<strong>Built:</strong> 2nd Century BCE by King Dutugamunu
+										</span>
 									</div>
-									<div className="space-y-3">
-										<div className="flex items-center gap-2">
-											<MapPin className="w-4 h-4 text-red-500" />
-											<span><strong>Location:</strong> Sacred City, Anuradhapura</span>
-										</div>
-										<div className="flex items-center gap-2">
-											<Star className="w-4 h-4 text-yellow-500" />
-											<span><strong>UNESCO:</strong> World Heritage Site</span>
-										</div>
-										<div className="flex items-center gap-2">
-											<Clock className="w-4 h-4 text-orange-500" />
-											<span><strong>Visit Duration:</strong> 30–60 minutes</span>
-										</div>
+									<div className="flex items-center gap-2">
+										<Users className="w-4 h-4 text-green-500" />
+										<span>
+											<strong>Capacity:</strong> 1,000 monks
+										</span>
+									</div>
+									<div className="flex items-center gap-2">
+										<Landmark className="w-4 h-4 text-purple-500" />
+										<span>
+											<strong>Material:</strong> 1,600 stone pillars, copper roof
+										</span>
+									</div>
+									<div className="flex items-center gap-2">
+										<MapPin className="w-4 h-4 text-red-500" />
+										<span>
+											<strong>Location:</strong> Sacred City, Anuradhapura
+										</span>
+									</div>
+									<div className="flex items-center gap-2">
+										<Star className="w-4 h-4 text-yellow-500" />
+										<span>
+											<strong>UNESCO:</strong> World Heritage Site
+										</span>
+									</div>
+									<div className="flex items-center gap-2">
+										<Clock className="w-4 h-4 text-orange-500" />
+										<span>
+											<strong>Visit Duration:</strong> 30–60 minutes
+										</span>
 									</div>
 								</div>
+							</CardContent>
+							<CardContent>
+				
 								{/* Valuable Fact for Desktop */}
 								<div className="hidden lg:block mt-6 space-y-4">
 									<div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
