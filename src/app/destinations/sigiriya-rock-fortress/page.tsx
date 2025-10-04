@@ -123,56 +123,54 @@ export default function SigiriyaTravelGuide() {
           </div>
         </section>
 
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Quick Facts About Sigiriya
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-blue-500" />
-                    <span>
-                      <strong>Built:</strong> 5th Century AD (477-495 AD)
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mountain className="w-4 h-4 text-green-500" />
-                    <span>
-                      <strong>Height:</strong> 200 meters (660 feet)
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="w-4 h-4 text-purple-500" />
-                    <span>
-                      <strong>Built by:</strong> King Kashyapa I
-                    </span>
-                  </div>
+        {/* Quick Facts and Travel Info Section */}
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {/* Quick Facts */}
+          <section>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Facts About Sigiriya
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+              <div className="space-y-3">
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-blue-500" />
+                  <span>
+                    <strong>Built:</strong> 5th Century AD (477-495 AD)
+                  </span>
                 </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-red-500" />
-                    <span>
-                      <strong>Location:</strong> Central Province, Sri Lanka
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Star className="w-4 h-4 text-yellow-500" />
-                    <span>
-                      <strong>UNESCO Status:</strong> World Heritage Site (1982)
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-orange-500" />
-                    <span>
-                      <strong>Climb Time:</strong> 2-3 hours round trip
-                    </span>
-                  </div>
+                <div className="flex items-center gap-2">
+                  <Mountain className="w-4 h-4 text-green-500" />
+                  <span>
+                    <strong>Height:</strong> 200 meters (660 feet)
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="w-4 h-4 text-purple-500" />
+                  <span>
+                    <strong>Built by:</strong> King Kashyapa I
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-red-500" />
+                  <span>
+                    <strong>Location:</strong> Central Province, Sri Lanka
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Star className="w-4 h-4 text-yellow-500" />
+                  <span>
+                    <strong>UNESCO Status:</strong> World Heritage Site (1982)
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-orange-500" />
+                  <span>
+                    <strong>Climb Time:</strong> 2-3 hours round trip
+                  </span>
                 </div>
               </div>
             </CardContent>
@@ -180,10 +178,10 @@ export default function SigiriyaTravelGuide() {
         </section>
 
         {/* Getting to Sigiriya from Colombo */}
-        <section className="mb-12">
+        <section>
           <Card className="border-blue-200 dark:border-blue-800 bg-blue-50/30 dark:bg-blue-950/30">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-blue-800 dark:text-blue-200">
+              <CardTitle className="flex items-center gap-2  text-blue-700 dark:text-blue-300">
                 <MapPin className="w-5 h-5" />
                 How to Travel from Colombo to Sigiriya
               </CardTitle>
@@ -235,6 +233,7 @@ export default function SigiriyaTravelGuide() {
             </CardContent>
           </Card>
         </section>
+        </div>
 
         {/* The Story */}
         <section className="mb-12">

@@ -623,7 +623,7 @@ const destinations: Destination[] = [
     id: 41,
     name: "Ambuluwawa",
     location: "Central Province",
-    path: "Ambuluwawa",
+    path: "ambuluwawa",
     image: "/placeholder.svg?height=400&width=600",
     description: "Unique tower with panoramic views and biodiversity",
     highlights: ["Panoramic Views", "Unique Tower", "Biodiversity"],

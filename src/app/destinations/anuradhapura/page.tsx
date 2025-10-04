@@ -99,8 +99,7 @@ export default function AnuradhapuraTravelGuide() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-3">
+                <div className="space-y-3">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-blue-500" />
                       <span>
@@ -119,8 +118,6 @@ export default function AnuradhapuraTravelGuide() {
                         <strong>Sacred Bodhi Tree:</strong> 2,300+ years old
                       </span>
                     </div>
-                  </div>
-                  <div className="space-y-3">
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4 text-red-500" />
                       <span>
@@ -139,7 +136,6 @@ export default function AnuradhapuraTravelGuide() {
                         <strong>Visit Duration:</strong> Full day (8+ hours)
                       </span>
                     </div>
-                  </div>
                 </div>
                 {/* Valuable Fact for Desktop */}
                 <div className="hidden lg:block mt-6 space-y-4">
@@ -212,7 +208,7 @@ export default function AnuradhapuraTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo → Kurunegala → Anuradhapura</li>
+                      <li>• <strong>Route:</strong> Colombo Fort → Kurunegala → Anuradhapura</li>
                       <li>• <strong>Duration:</strong> 5-6 hours</li>
                       <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
                       <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
