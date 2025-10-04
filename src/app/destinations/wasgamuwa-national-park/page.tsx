@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Leaf, Building, History, Sun } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Clock, MapPin, Camera, AlertTriangle, Star, Calendar, Leaf, Building, History, Sun } from "lucide-react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
@@ -70,8 +70,8 @@ export default function WasgamuwaGuide() {
               and fauna.
             </p>
             <p className="text-lg mb-4 tracking-wide">
-              The park&apos;s name "Wasgamuwa" derives from the words "Walas Gamuwa," meaning the "woods 
-              of bear," reflecting its historical significance as a habitat for sloth bears. Today, 
+              The park&apos;s name &quot;Wasgamuwa&quot; derives from the words &quot;Walas Gamuwa,&quot; meaning the &quot;woods 
+              of bear,&quot; reflecting its historical significance as a habitat for sloth bears. Today, 
               while bears still roam these forests, the park is particularly renowned for its 
               substantial elephant population and peaceful atmosphere away from the more crowded 
               safari circuits.
