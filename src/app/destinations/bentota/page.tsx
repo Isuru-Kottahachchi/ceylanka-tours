@@ -904,7 +904,7 @@ export default function BentotaGuide() {
 
 
                 {/* Luxury Resorts */}
-                <section className="mb-12 scroll-mt-40" id="luxury-resorts">
+                {/* <section className="mb-12 scroll-mt-40" id="luxury-resorts">
                     <h2 className="text-3xl font-bold mb-6">Luxury Beach Resorts</h2>
                     <div className="grid md:grid-cols-2 gap-6">
                         <Card>
@@ -958,7 +958,7 @@ export default function BentotaGuide() {
                             </CardContent>
                         </Card>
                     </div>
-                </section>
+                </section> */}
 
                 {/* Water Sports & Activities */}
                 <section className="mb-12 scroll-mt-40" id="water-sports">

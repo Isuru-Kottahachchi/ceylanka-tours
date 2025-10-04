@@ -267,11 +267,6 @@ export default function KandyEsalaPeraheraGuide() {
           </Card>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 rounded-xl text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-orange-300 dark:border-orange-600">
-          [Premium Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* History Section */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-10">The Amazing History of Esala Perahera</h2>
@@ -710,10 +705,6 @@ export default function KandyEsalaPeraheraGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-xl text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-green-300 dark:border-green-600">
-          [Premium Advertisement Space - 300x250 Medium Rectangle]
-        </div>
 
         {/* Nilame Costumes Section */}
         <section className="mb-16">
@@ -1076,12 +1067,6 @@ export default function KandyEsalaPeraheraGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-purple-300 dark:border-purple-600">
-          [Premium Advertisement Space - 728x90 Leaderboard]
-        </div>
-
 
         {/* Practical Information */}
         <section className="mb-16">

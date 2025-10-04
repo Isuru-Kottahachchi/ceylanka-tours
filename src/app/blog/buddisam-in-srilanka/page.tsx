@@ -181,6 +181,7 @@ export default function BuddhismInSriLanka() {
                         <CardContent className="p-8">
                             <div className="prose max-w-none">
                                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+                                    First get to know a bit about buddisim in the world , There are two main branches of Buddhism: Theravada and Mahayana.
                                     Sri Lanka, known as the &quot;Pearl of the Indian Ocean&quot;, holds a special place in Buddhist history. 
                                     For over 2,300 years, Theravada Buddhism has been the heart and soul of Sri Lankan culture, shaping its 
                                     art, architecture, and way of life. This ancient island nation is home to some of the world&apos;s 
