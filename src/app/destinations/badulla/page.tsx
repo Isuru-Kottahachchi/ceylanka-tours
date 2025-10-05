@@ -183,7 +183,7 @@ export default function BadullaGuide() {
             {/* Muthiyangana Temple */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Muthiyangana Raja Maha Vihara</CardTitle>
+                <CardTitle>2. Muthiyangana Raja Maha Vihara</CardTitle>
                 <CardDescription>Sacred Buddhist temple with 2,000+ years of history</CardDescription>
               </CardHeader>
               <CardContent>
@@ -227,7 +227,7 @@ export default function BadullaGuide() {
             {/* Dunhinda Falls */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Dunhinda Falls</CardTitle>
+                <CardTitle>3. Dunhinda Falls</CardTitle>
                 <CardDescription>Spectacular 64-meter waterfall through pristine jungle</CardDescription>
               </CardHeader>
               <CardContent>
@@ -271,7 +271,7 @@ export default function BadullaGuide() {
             {/* Badulla Railway Station */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Badulla Railway Station</CardTitle>
+                <CardTitle>4. Badulla Railway Station</CardTitle>
                 <CardDescription>Historic terminus of the scenic hill country railway</CardDescription>
               </CardHeader>
               <CardContent>
@@ -409,11 +409,6 @@ export default function BadullaGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Banner - Mid Content 2 */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
-          [Advertisement Space - 728x90 Leaderboard - Tour Packages & Activities]
-        </div>
 
         {/* Getting There & Around */}
         <section className="mb-12">

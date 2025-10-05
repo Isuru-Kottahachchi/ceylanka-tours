@@ -47,15 +47,15 @@ export default function KandeViharayaGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Kande Viharaya Temple</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sacred Buddhist Sanctuary of Aluthgama</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Aluthgama, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <PrayingIcon className="w-4 h-4 mr-1" />
               Sacred Buddhist Site
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Calendar className="w-4 h-4 mr-1" />
               Founded 1734
             </Badge>
@@ -527,10 +527,10 @@ export default function KandeViharayaGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/attractions/bentota-beach" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/bentota" className="block hover:shadow-md transition-shadow duration-200">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Bentota Beach</CardTitle>
+                  <CardTitle className="text-lg">Bentota</CardTitle>
                   <CardDescription>Golden sands and water sports</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -546,14 +546,14 @@ export default function KandeViharayaGuide() {
                     visit.
                   </p>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                    <Link href="/destinations/bentota" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/brief-garden" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/brief-garden-by-bevis-bawa" className="block hover:shadow-md transition-shadow duration-200">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Brief Garden</CardTitle>
@@ -561,7 +561,7 @@ export default function KandeViharayaGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=Brief+Garden"
+                    src="/Brief-Garden-by-Bawa.jpg"
                     alt="Lush tropical garden with sculptures and pathways at Brief Garden"
                     width={300}
                     height={200}
@@ -571,14 +571,39 @@ export default function KandeViharayaGuide() {
                     Former home of landscape architect Bevis Bawa with beautiful tropical gardens and art collection.
                   </p>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/attractions/brief-garden" passHref legacyBehavior>
+                    <Link href="/destinations/brief-garden-by-bevis-bawa" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/madu-river" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/brief-garden-by-bevis-bawa" className="block hover:shadow-md transition-shadow duration-200">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Lunuganga Garden</CardTitle>
+                  <CardDescription>Tropical landscape garden</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/Lunuganga-Garden.jpg"
+                    alt="Lush tropical garden with sculptures and pathways at Lunuganga Garden"
+                    width={300}
+                    height={200}
+                    className="rounded-lg mb-3"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Former home of landscape architect Bevis Bawa with beautiful tropical gardens and art collection.
+                  </p>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/brief-garden-by-bevis-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/destinations/madu-river" className="block hover:shadow-md transition-shadow duration-200">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Madu River Safari</CardTitle>
@@ -586,7 +611,7 @@ export default function KandeViharayaGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=Madu+River"
+                    src="/Madu-river-safari.jpg"
                     alt="Boat safari through mangroves on Madu River with wildlife"
                     width={300}
                     height={200}

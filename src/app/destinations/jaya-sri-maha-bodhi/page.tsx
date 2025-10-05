@@ -44,15 +44,15 @@ export default function JayaSriMahaBodhiGuide() {
             The Sacred Bo Tree - 2,300 Years of Spiritual Heritage
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <TreePine className="w-4 h-4 mr-1" />
-              Sacred Buddhist Site
+              Worlds recorded oldest human-planted tree
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <Calendar className="w-4 h-4 mr-1" />
               288 BC - Present
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Heart className="w-4 h-4 mr-1" />
               Pilgrimage Destination
             </Badge>
@@ -453,39 +453,86 @@ export default function JayaSriMahaBodhiGuide() {
 
         {/* Spiritual Significance */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Spiritual Significance & What Makes It Special</h2>
+          <h2 className="text-3xl font-bold mb-6">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-orange-600 dark:from-amber-400 dark:to-orange-500">
+              Spiritual Significance & Sacred Heritage
+            </span>
+          </h2>
+          <p className="text-lg text-muted-foreground mb-8 max-w-3xl">
+            Discover the profound spiritual legacy of Jaya Sri Maha Bodhi, where ancient wisdom meets living tradition in a sacred space that has inspired millions for over two millennia.
+          </p>
 
           <div className="space-y-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>1. Living Buddhist Heritage</CardTitle>
+            <Card className="border-l-4 border-amber-500 dark:border-amber-400 bg-gradient-to-r from-amber-50 to-transparent dark:from-amber-950/30">
+              <CardHeader className="space-y-4">
+                <Badge variant="outline" className="w-fit border-amber-500 text-amber-700 dark:text-amber-400">
+                  <TreePine className="w-4 h-4 mr-2" />
+                  Living Heritage
+                </Badge>
+                <CardTitle className="text-2xl">Sacred Living Connection to Buddha</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground">
+                <div className="space-y-6">
+                  <p className="text-muted-foreground text-lg">
                     Jaya Sri Maha Bodhi represents the oldest living symbol of Buddhism in the world. For over 2,300 years,
                     this sacred tree has been continuously venerated, making it a unique repository of spiritual energy
                     and Buddhist heritage that cannot be found anywhere else.
                   </p>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <h4 className="font-semibold mb-2">Spiritual Benefits:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Deep meditation and inner peace</li>
-                        <li>• Connection to Buddha&apos;s enlightenment energy</li>
-                        <li>• Purification of negative karma</li>
-                        <li>• Inspiration for spiritual growth</li>
-                        <li>• Blessings for wisdom and compassion</li>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                      <h4 className="font-semibold mb-3 text-amber-700 dark:text-amber-400 flex items-center">
+                        <Heart className="w-4 h-4 mr-2" />
+                        Spiritual Benefits
+                      </h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                          Deep meditation and inner peace
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                          Connection to Buddha&apos;s enlightenment energy
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                          Purification of negative karma
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                          Inspiration for spiritual growth
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                          Blessings for wisdom and compassion
+                        </li>
                       </ul>
                     </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Pilgrimage Practices:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Circumambulation (walking around the tree)</li>
-                        <li>• Offering flowers, water, and incense</li>
-                        <li>• Meditation under the sacred branches</li>
-                        <li>• Chanting Buddhist prayers and sutras</li>
-                        <li>• Taking the Five Precepts</li>
+                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                      <h4 className="font-semibold mb-3 text-amber-700 dark:text-amber-400 flex items-center">
+                        <Users className="w-4 h-4 mr-2" />
+                        Pilgrimage Practices
+                      </h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                          Circumambulation (walking around the tree)
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                          Offering flowers, water, and incense
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                          Meditation under the sacred branches
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                          Chanting Buddhist prayers and sutras
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                          Taking the Five Precepts
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -493,36 +540,76 @@ export default function JayaSriMahaBodhiGuide() {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>2. Miraculous Survival Through History</CardTitle>
+            <Card className="border-l-4 border-blue-500 dark:border-blue-400 bg-gradient-to-r from-blue-50 to-transparent dark:from-blue-950/30">
+              <CardHeader className="space-y-4">
+                <Badge variant="outline" className="w-fit border-blue-500 text-blue-700 dark:text-blue-400">
+                  <Book className="w-4 h-4 mr-2" />
+                  Historical Legacy
+                </Badge>
+                <CardTitle className="text-2xl">Miraculous Survival Through History</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground">
+                <div className="space-y-6">
+                  <p className="text-muted-foreground text-lg">
                     Throughout its long history, Jaya Sri Maha Bodhi has survived invasions, natural disasters, and
                     the rise and fall of kingdoms. Many consider its survival itself to be miraculous, as it has
                     witnessed over two millennia of human history while continuing to grow and flourish.
                   </p>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <h4 className="font-semibold mb-2">Historical Challenges:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Multiple foreign invasions and wars</li>
-                        <li>• Natural disasters and weather changes</li>
-                        <li>• Political upheavals and kingdom changes</li>
-                        <li>• Periods of neglect and restoration</li>
-                        <li>• Modern urban development pressures</li>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                      <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-400 flex items-center">
+                        <AlertTriangle className="w-4 h-4 mr-2" />
+                        Historical Challenges
+                      </h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                          Multiple foreign invasions and wars
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                          Natural disasters and weather changes
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                          Political upheavals and kingdom changes
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                          Periods of neglect and restoration
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                          Modern urban development pressures
+                        </li>
                       </ul>
                     </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Protected Features:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Golden protective railings around the tree</li>
-                        <li>• Dedicated temple complex and grounds</li>
-                        <li>• Round-the-clock security and maintenance</li>
-                        <li>• Government protection as heritage site</li>
-                        <li>• International Buddhist community support</li>
+                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                      <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-400 flex items-center">
+                        <Star className="w-4 h-4 mr-2" />
+                        Protected Features
+                      </h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                          Golden protective railings around the tree
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                          Dedicated temple complex and grounds
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                          Round-the-clock security and maintenance
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                          Government protection as heritage site
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                          International Buddhist community support
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -530,36 +617,76 @@ export default function JayaSriMahaBodhiGuide() {
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle>3. The Sacred Rituals and Ceremonies</CardTitle>
+            <Card className="border-l-4 border-purple-500 dark:border-purple-400 bg-gradient-to-r from-purple-50 to-transparent dark:from-purple-950/30">
+              <CardHeader className="space-y-4">
+                <Badge variant="outline" className="w-fit border-purple-500 text-purple-700 dark:text-purple-400">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  Sacred Traditions
+                </Badge>
+                <CardTitle className="text-2xl">Living Rituals & Sacred Ceremonies</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground">
+                <div className="space-y-6">
+                  <p className="text-muted-foreground text-lg">
                     Daily rituals and special ceremonies take place at Jaya Sri Maha Bodhi, creating a continuous
                     atmosphere of devotion and spiritual practice. These ceremonies connect modern practitioners
                     with traditions that have been maintained for over 2,000 years.
                   </p>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <h4 className="font-semibold mb-2">Daily Rituals:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Morning puja (worship ceremony) at dawn</li>
-                        <li>• Offering of flowers and water throughout the day</li>
-                        <li>• Evening prayers and chanting</li>
-                        <li>• Continuous meditation by pilgrims</li>
-                        <li>• Oil lamp lighting ceremonies</li>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                      <h4 className="font-semibold mb-3 text-purple-700 dark:text-purple-400 flex items-center">
+                        <Clock className="w-4 h-4 mr-2" />
+                        Daily Rituals
+                      </h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          Morning puja (worship ceremony) at dawn
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          Offering of flowers and water throughout the day
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          Evening prayers and chanting
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          Continuous meditation by pilgrims
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          Oil lamp lighting ceremonies
+                        </li>
                       </ul>
                     </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Special Occasions:</h4>
-                      <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Poya Day celebrations (monthly full moon)</li>
-                        <li>• Vesak festival (Buddha&apos;s birth, enlightenment, death)</li>
-                        <li>• Annual Bodhi Puja ceremony</li>
-                        <li>• International Buddhist gatherings</li>
-                        <li>• Meditation retreats and teachings</li>
+                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                      <h4 className="font-semibold mb-3 text-purple-700 dark:text-purple-400 flex items-center">
+                        <Calendar className="w-4 h-4 mr-2" />
+                        Special Occasions
+                      </h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          Poya Day celebrations (monthly full moon)
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          Vesak festival (Buddha&apos;s birth, enlightenment, death)
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          Annual Bodhi Puja ceremony
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          International Buddhist gatherings
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                          Meditation retreats and teachings
+                        </li>
                       </ul>
                     </div>
                   </div>

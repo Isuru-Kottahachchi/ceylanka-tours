@@ -577,7 +577,7 @@ export default function EllaTownGuide() {
         </section>
 
         {/* Where to Stay */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Where to Stay in Ella</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
@@ -634,61 +634,7 @@ export default function EllaTownGuide() {
               </CardContent>
             </Card>
           </div>
-        </section>
-
-        {/* Best Restaurants */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Best Restaurants &amp; Cafes</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Must-Try Restaurants</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-1">Cafe Chill</h4>
-                  <p className="text-sm text-muted-foreground">Famous for views and Western food. Great breakfast spot.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Adam&apos;s Breeze</h4>
-                  <p className="text-sm text-muted-foreground">Rooftop dining with panoramic mountain views.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Ella Spice Garden</h4>
-                  <p className="text-sm text-muted-foreground">Authentic Sri Lankan cuisine with fresh spices.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Dream Cafe</h4>
-                  <p className="text-sm text-muted-foreground">Popular backpacker spot with good food and atmosphere.</p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Local Specialties to Try</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-1">Ceylon Tea</h4>
-                  <p className="text-sm text-muted-foreground">Fresh from surrounding plantations - try different grades.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Kottu Roti</h4>
-                  <p className="text-sm text-muted-foreground">Chopped roti with vegetables, egg, and meat.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Rice &amp; Curry</h4>
-                  <p className="text-sm text-muted-foreground">Traditional Sri Lankan meal with multiple curries.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Fresh Fruit Juices</h4>
-                  <p className="text-sm text-muted-foreground">Passion fruit, wood apple, and tropical blends.</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+        </section> */}
 
         {/* Getting Around */}
         <section className="mb-12">

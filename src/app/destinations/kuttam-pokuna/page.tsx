@@ -40,27 +40,69 @@ export default function KuttamPokunaTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Kuttam Pokuna</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Ancient Twin Pools - Masterpiece of Hydraulic Engineering</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Anuradhapura, North Central Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <Calendar className="w-4 h-4 mr-1" />
               6th Century AD
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Droplets className="w-4 h-4 mr-1" />
               Ancient Bathing Pools
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              <Building className="w-4 h-4 mr-1" />
-              UNESCO World Heritage Zone
-            </Badge>
+            
           </div>
         </div>
       </section>
+      
 
       <div className="max-w-6xl mx-auto px-4 py-12">
+             {/* Introduction */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Kuttam Pokuna: Where Ancient Engineering Meets Spiritual Purification</h2>
+          <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
+            <p className="text-lg mb-4">
+              Step into one of the most remarkable achievements of ancient Sri Lankan civilization! Kuttam Pokuna, 
+              meaning &quot;Twin Pools&quot; in Sinhala, represents the pinnacle of 6th-century hydraulic engineering and 
+              spiritual architecture. These magnificent bathing pools, built during the reign of King Aggabodhi I 
+              (571-604 AD), showcase the incredible sophistication of ancient Anuradhapura&apos;s monastic civilization.
+            </p>
+            <p className="text-lg mb-4">
+              What makes Kuttam Pokuna truly extraordinary is not just its age - over 1,400 years old - but the 
+              ingenious engineering that still functions perfectly today! These pools were designed with such precision 
+              that they maintain crystal-clear water through an intricate underground filtration system that would 
+              impress modern engineers. The larger pool measures 91 feet in length, while the smaller companion pool 
+              stretches 51 feet, both connected by an underground channel that creates a natural circulation system.
+            </p>
+            <p className="text-lg mb-4">
+              Originally constructed as bathing facilities for Buddhist monks of the great Abhayagiri Monastery, 
+              these pools served a dual purpose - physical cleansing and spiritual purification. The elegant stepped 
+              design, carved from solid granite, features beautifully sculpted makara (dragon) heads that serve as 
+              water spouts, while lotus motifs and geometric patterns adorn the pool edges, creating a harmonious 
+              blend of functionality and artistic beauty.
+            </p>
+            <p className="text-lg">
+              Today, Kuttam Pokuna stands as a testament to the remarkable achievements of ancient Sri Lankan civilization. 
+              As you walk around these pristine pools, you&apos;re not just observing ancient architecture - you&apos;re 
+              witnessing a 1,400-year-old engineering marvel that continues to function exactly as its creators intended, 
+              making it one of the most perfectly preserved examples of ancient hydraulic technology in the world.
+            </p>
+          </div>
+          <div className="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg">
+            <div className="flex items-start gap-2">
+              <Droplets className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
+              <div>
+                <p className="font-semibold text-blue-800">Engineering Marvel Still Active</p>
+                <p className="text-blue-700 text-sm mt-1">
+                  The pools&apos; original filtration system continues to work after 1,400 years, automatically maintaining 
+                  water clarity through underground channels and natural sedimentation chambers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* Quick Facts & How to Get There */}
         <div className="flex flex-col lg:flex-row gap-8 mb-12">
           {/* Essential Kuttam Pokuna Facts */}
@@ -349,51 +391,7 @@ export default function KuttamPokunaTravelGuide() {
           </div>
         </section>
 
-        {/* ...existing code... */}
-        {/* Introduction */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Kuttam Pokuna: Where Ancient Engineering Meets Spiritual Purification</h2>
-          <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
-            <p className="text-lg mb-4">
-              Step into one of the most remarkable achievements of ancient Sri Lankan civilization! Kuttam Pokuna, 
-              meaning &quot;Twin Pools&quot; in Sinhala, represents the pinnacle of 6th-century hydraulic engineering and 
-              spiritual architecture. These magnificent bathing pools, built during the reign of King Aggabodhi I 
-              (571-604 AD), showcase the incredible sophistication of ancient Anuradhapura&apos;s monastic civilization.
-            </p>
-            <p className="text-lg mb-4">
-              What makes Kuttam Pokuna truly extraordinary is not just its age - over 1,400 years old - but the 
-              ingenious engineering that still functions perfectly today! These pools were designed with such precision 
-              that they maintain crystal-clear water through an intricate underground filtration system that would 
-              impress modern engineers. The larger pool measures 91 feet in length, while the smaller companion pool 
-              stretches 51 feet, both connected by an underground channel that creates a natural circulation system.
-            </p>
-            <p className="text-lg mb-4">
-              Originally constructed as bathing facilities for Buddhist monks of the great Abhayagiri Monastery, 
-              these pools served a dual purpose - physical cleansing and spiritual purification. The elegant stepped 
-              design, carved from solid granite, features beautifully sculpted makara (dragon) heads that serve as 
-              water spouts, while lotus motifs and geometric patterns adorn the pool edges, creating a harmonious 
-              blend of functionality and artistic beauty.
-            </p>
-            <p className="text-lg">
-              Today, Kuttam Pokuna stands as a testament to the remarkable achievements of ancient Sri Lankan civilization. 
-              As you walk around these pristine pools, you&apos;re not just observing ancient architecture - you&apos;re 
-              witnessing a 1,400-year-old engineering marvel that continues to function exactly as its creators intended, 
-              making it one of the most perfectly preserved examples of ancient hydraulic technology in the world.
-            </p>
-          </div>
-          <div className="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg">
-            <div className="flex items-start gap-2">
-              <Droplets className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
-              <div>
-                <p className="font-semibold text-blue-800">Engineering Marvel Still Active</p>
-                <p className="text-blue-700 text-sm mt-1">
-                  The pools&apos; original filtration system continues to work after 1,400 years, automatically maintaining 
-                  water clarity through underground channels and natural sedimentation chambers.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+   
 
         {/* Quick Facts */}
         <section className="mb-12">

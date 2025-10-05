@@ -28,15 +28,15 @@ export default function HaputaleGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Haputale</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Home of World-Famous Lipton&apos;s Seat</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <Eye className="w-4 h-4 mr-1" />
               World&apos;s Best Tea Views
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <Mountain className="w-4 h-4 mr-1" />
               1,431m Above Sea Level
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <TreePine className="w-4 h-4 mr-1" />
               Tea Heritage Capital
             </Badge>

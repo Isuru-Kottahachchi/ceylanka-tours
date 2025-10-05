@@ -40,15 +40,15 @@ export default function BandarawelaGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Bandarawela</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Perfect Climate Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <Thermometer className="w-4 h-4 mr-1" />
               Perfect Year-Round Climate
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Mountain className="w-4 h-4 mr-1" />
               1,230m Above Sea Level
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <TreePine className="w-4 h-4 mr-1" />
               Colonial Hill Station
             </Badge>
@@ -647,11 +647,6 @@ export default function BandarawelaGuide() {
             </CardContent>
           </Card>
         </section>
-
-        {/* Ad Banner - Bottom */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-6 text-center text-gray-500">
-          [Advertisement Space - 728x90 Leaderboard - Climate-Controlled Accommodations]
-        </div>
       </div>
     </main>
   )

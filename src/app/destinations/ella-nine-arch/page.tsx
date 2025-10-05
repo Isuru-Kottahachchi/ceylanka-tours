@@ -32,15 +32,15 @@ export default function NineArchBridgeGuide() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Nine Arch Bridge</h1>
           <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">Ella&apos;s Iconic Railway Marvel</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-yellow-600/80 text-white border-yellow-500">
               <Train className="w-4 h-4 mr-2" />
               Historic Railway Bridge
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-blue-600/80 text-white border-blue-500">
               <Camera className="w-4 h-4 mr-2" />
               Photography Paradise
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
               <TreePine className="w-4 h-4 mr-2" />
               Tea Country Views
             </Badge>

@@ -247,9 +247,9 @@ export default function TrincomaleeTravelGuide() {
                         title: "Fort Frederick - Sunrise View"
                       },
                       {
-                        src: "/Lipton-seat1.jpg",
-                        alt: "Wide view of Haputale mountains and tea fields",
-                        caption: "Haputale's rolling tea hills",
+                        src: "/Fort-Frederick1.jpg",
+                        alt: "View from Fort Frederick",
+                        caption: "Inside Fort Frederick",
                         title: "Viewpoint Tea Country"
                       },
                       {

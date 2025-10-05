@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Users, TreePine, Mountain } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Users, TreePine, Mountain, AlertTriangle } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Ambuluwawa Tower Sri Lanka: Complete Guide 2025 | Multi-Religious Sacred Site & Scenic Views",
@@ -35,15 +36,15 @@ export default function AmbuluwawaGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Ambuluwawa Tower</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Unique Multi-Religious Sacred Site</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-600">
               <MapPin className="w-4 h-4 mr-1" />
               Gampola, Central Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-600">
               <Mountain className="w-4 h-4 mr-1" />
               1,087m Above Sea Level
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-600">
               <TreePine className="w-4 h-4 mr-1" />
               Biodiversity Center
             </Badge>
@@ -51,7 +52,7 @@ export default function AmbuluwawaGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Ambuluwawa: Where All Religions Meet</h2>
@@ -68,6 +69,18 @@ export default function AmbuluwawaGuide() {
               visitors feel calm and happy. It&apos;s a perfect place for people who love nature, photography, and learning
               about different cultures and religions.
             </p>
+             <div className="mt-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-lg">
+            <div className="flex items-start gap-2">
+              <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+              <div>
+                <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
+                <p className="text-sm text-amber-700 mb-2">
+                  <strong>Always be aware about the crowd:</strong> If you are fear of heights, be cautious when visiting the tower as it can get crowded and may cause discomfort and If you a tall person (above 6 feet), the narrow spiral stairs tower may be challenging to navigate and handrail also a bit low.
+                </p>
+             
+              </div>
+            </div>
+          </div>
           </div>
         </section>
 

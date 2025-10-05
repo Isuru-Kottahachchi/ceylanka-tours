@@ -29,7 +29,7 @@ export default function BriefGardenGuide() {
             {/* Hero Section */}
             <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
                 <Image
-                    src="/brief-garden-main.jpg"
+                    src="/Brief-Garden-by-Bawa.jpg"
                     alt="Enchanting entrance of Brief Garden showing lush tropical vegetation and artistic pathways"
                     fill
                     className="object-cover"
@@ -40,19 +40,19 @@ export default function BriefGardenGuide() {
                     <h1 className="text-4xl md:text-6xl font-bold mb-4">Brief Garden</h1>
                     <p className="text-xl md:text-2xl mb-6 font-light">An Artistic Paradise by Bevis Bawa</p>
                     <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
                             <MapPin className="w-4 h-4 mr-1" />
                             Kalawila, Sri Lanka
                         </Badge>
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
                             <Home className="w-4 h-4 mr-1" />
                             Artistic Garden Estate
                         </Badge>
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
                             <Calendar className="w-4 h-4 mr-1" />
                             Est. 1929
                         </Badge>
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
                             <Palette className="w-4 h-4 mr-1" />
                             Tropical Art Garden
                         </Badge>

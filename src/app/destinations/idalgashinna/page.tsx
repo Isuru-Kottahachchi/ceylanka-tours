@@ -35,15 +35,15 @@ export default function IdalgashinnaTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Idalgashinna</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka’s Misty Mountain Escape</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Uva Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Landmark className="w-4 h-4 mr-1" />
               Hill Country
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Mountain className="w-4 h-4 mr-1" />
               Scenic Hikes
             </Badge>
@@ -56,6 +56,7 @@ export default function IdalgashinnaTravelGuide() {
         <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
           <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-emerald-700 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-emerald-900 transition">Introduction</a>
           <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-emerald-700 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-emerald-900 transition">Quick Facts</a>
+          <a href="#how-to-get-there" className="px-3 py-1 rounded-full font-medium text-emerald-700 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-emerald-900 transition">How to Get There</a>
           <a href="#highlights" className="px-3 py-1 rounded-full font-medium text-emerald-700 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-emerald-900 transition">Highlights</a>
           <a href="#itinerary" className="px-3 py-1 rounded-full font-medium text-emerald-700 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-emerald-900 transition">Sample Itinerary</a>
           <a href="#nature-culture" className="px-3 py-1 rounded-full font-medium text-emerald-700 dark:text-emerald-200 hover:bg-emerald-100 dark:hover:bg-emerald-900 transition">Nature & Culture</a>
@@ -78,7 +79,7 @@ export default function IdalgashinnaTravelGuide() {
         </section>
 
         {/* Quick Facts & How to Get There */}
-        <div className="flex flex-col lg:flex-row gap-8 mb-12" id="quick-facts">
+        <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
           {/* Quick Facts */}
           <section className="flex-1">
             <Card>
@@ -136,7 +137,7 @@ export default function IdalgashinnaTravelGuide() {
           </section>
           {/* How to Get There */}
           <section className="flex-1">
-            <Card className="border-l-4 border-emerald-500">
+            <Card className="border-l-4 border-emerald-500 scroll-mt-40" id="how-to-get-there">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-emerald-700 dark:text-emerald-300">
                   <MapPin className="w-5 h-5" />

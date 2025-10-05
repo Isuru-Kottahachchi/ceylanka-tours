@@ -29,7 +29,7 @@ export default function GalViharayaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Galviharaya.jpeg"
+          src="/Galviharaya3.jpeg"
           alt="Magnificent rock-cut Buddha statues at Gal Viharaya showing the seated, standing and reclining figures"
           fill
           className="object-cover"
@@ -42,15 +42,15 @@ export default function GalViharayaGuide() {
             The Masterpiece of Ancient Sri Lankan Rock Carving
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Polonnaruwa, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <Calendar className="w-4 h-4 mr-1" />
               12th Century AD
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Crown className="w-4 h-4 mr-1" />
               Built by King Parakramabahu I
             </Badge>
@@ -216,7 +216,7 @@ export default function GalViharayaGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/GalviharayaSeated.jpg"
+                    src="/Galviharaya5.jpeg"
                     alt="Seated Buddha statue at Gal Viharaya showing meditation posture and detailed carving work"
                     width={400}
                     height={300}
@@ -291,7 +291,7 @@ export default function GalViharayaGuide() {
                     </div>
                   </div>
                   <Image
-                    src="/GalviharayaStanding.jpg"
+                    src="/Galviharaya4.jpeg"
                     alt="Standing Buddha statue at Gal Viharaya with unique crossed arms pose"
                     width={400}
                     height={300}
@@ -310,7 +310,7 @@ export default function GalViharayaGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/GalviharayaReclining.jpg"
+                    src="/Galviharaya3.jpeg"
                     alt="Reclining Buddha statue at Gal Viharaya showing the moment of final nirvana"
                     width={400}
                     height={300}

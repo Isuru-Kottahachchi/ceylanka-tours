@@ -126,6 +126,7 @@ export default function YalaNationalParkTravelGuide() {
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
                     <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                        <li>• Plan to visit weekdays to avoid crowds in weekends</li>
                       <li>• Start early morning to avoid traffic and heat</li>
                       <li>• Carry water and snacks for the journey</li>
                       <li>• Book accommodations in advance during peak season</li>

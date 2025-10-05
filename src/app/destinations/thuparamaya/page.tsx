@@ -41,19 +41,16 @@ export default function ThuparamayaTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Thuparamaya Temple</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s First Buddhist Sacred Shrine</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Anuradhapura, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              <Building className="w-4 h-4 mr-1" />
-              UNESCO World Heritage Site
-            </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <Calendar className="w-4 h-4 mr-1" />
               3rd Century BC
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Star className="w-4 h-4 mr-1" />
               First Buddhist Stupa
             </Badge>
@@ -67,30 +64,30 @@ export default function ThuparamayaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Thuparamaya: Where Buddhism Began in Sri Lanka</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into sacred history at Thuparamaya Temple, the very first Buddhist stupa ever built in Sri Lanka! 
-              This remarkable ancient shrine marks the beginning of Buddhism&apos;s 2,300-year journey on the island, 
-              making it one of the most significant religious and historical sites you can visit. Built in the 3rd century BC, 
-              Thuparamaya holds the distinction of being the oldest surviving stupa in the country and represents a pivotal 
+              Step into sacred history at Thuparamaya Temple, the very first Buddhist stupa ever built in Sri Lanka!
+              This remarkable ancient shrine marks the beginning of Buddhism&apos;s 2,300-year journey on the island,
+              making it one of the most significant religious and historical sites you can visit. Built in the 3rd century BC,
+              Thuparamaya holds the distinction of being the oldest surviving stupa in the country and represents a pivotal
               moment when Buddhism was first introduced to Sri Lankan soil.
             </p>
             <p className="text-lg mb-4">
-              What makes Thuparamaya truly special is not just its age, but its profound spiritual significance. According to 
-              ancient chronicles, this sacred stupa contains the right collar bone relic of Lord Buddha himself, making it 
-              one of the most venerated Buddhist sites in the world. When you walk among the ancient stone pillars that 
-              once supported a magnificent wooden structure protecting the stupa, you&apos;re experiencing the same sacred 
+              What makes Thuparamaya truly special is not just its age, but its profound spiritual significance. According to
+              ancient chronicles, this sacred stupa contains the right collar bone relic of Lord Buddha himself, making it
+              one of the most venerated Buddhist sites in the world. When you walk among the ancient stone pillars that
+              once supported a magnificent wooden structure protecting the stupa, you&apos;re experiencing the same sacred
               space that has drawn Buddhist pilgrims for over two millennia.
             </p>
             <p className="text-lg mb-4">
-              The temple complex showcases fascinating early Buddhist architecture with its unique &quot;vatadage&quot; design - 
-              a circular arrangement of granite pillars that originally supported a wooden roof to protect the precious stupa. 
-              This architectural innovation was later adopted throughout Sri Lanka and became a distinctive feature of 
-              Sinhalese Buddhist temple design. The remaining stone pillars, standing like silent sentinels around the 
+              The temple complex showcases fascinating early Buddhist architecture with its unique &quot;vatadage&quot; design -
+              a circular arrangement of granite pillars that originally supported a wooden roof to protect the precious stupa.
+              This architectural innovation was later adopted throughout Sri Lanka and became a distinctive feature of
+              Sinhalese Buddhist temple design. The remaining stone pillars, standing like silent sentinels around the
               white-washed stupa, create an atmosphere of profound peace and spiritual contemplation.
             </p>
             <p className="text-lg">
-              Visiting Thuparamaya is like opening the first chapter of Sri Lanka&apos;s Buddhist story. Whether you&apos;re 
-              interested in ancient history, religious architecture, or simply seeking a peaceful spiritual experience, 
-              this sacred site offers a unique window into the foundations of Sri Lankan Buddhist civilization. The gentle 
+              Visiting Thuparamaya is like opening the first chapter of Sri Lanka&apos;s Buddhist story. Whether you&apos;re
+              interested in ancient history, religious architecture, or simply seeking a peaceful spiritual experience,
+              this sacred site offers a unique window into the foundations of Sri Lankan Buddhist civilization. The gentle
               atmosphere and timeless beauty make it an essential stop for anyone exploring the ancient city of Anuradhapura.
             </p>
           </div>
@@ -189,7 +186,7 @@ export default function ThuparamayaTravelGuide() {
                   </ul>
                   <div className="mt-3 p-3 bg-green-100 dark:bg-slate-700 rounded-md border-l-4 border-green-500 dark:border-green-400">
                     <p className="text-sm text-green-800 dark:text-green-200">
-                      <strong>Pro Tip:</strong> Combine your visit with other nearby ancient sites like Ruwanwelisaya 
+                      <strong>Pro Tip:</strong> Combine your visit with other nearby ancient sites like Ruwanwelisaya
                       and Jaya Sri Maha Bodhi for a complete sacred city experience.
                     </p>
                   </div>
@@ -204,7 +201,7 @@ export default function ThuparamayaTravelGuide() {
                   </ul>
                   <div className="mt-3 p-3 bg-amber-100 dark:bg-slate-700 rounded-md border-l-4 border-amber-500 dark:border-amber-400">
                     <p className="text-sm text-amber-800 dark:text-amber-200">
-                      <strong>Best Option:</strong> Stay overnight in Anuradhapura to explore all ancient sites 
+                      <strong>Best Option:</strong> Stay overnight in Anuradhapura to explore all ancient sites
                       at a comfortable pace without rushing.
                     </p>
                   </div>
@@ -217,7 +214,7 @@ export default function ThuparamayaTravelGuide() {
         {/* Historical Significance */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">The Sacred History of Thuparamaya</h2>
-          
+
           <Card className="mb-6">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -227,21 +224,21 @@ export default function ThuparamayaTravelGuide() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground">
-                The story of Thuparamaya begins with one of the most significant moments in Sri Lankan history. In 247 BC, 
-                Arahant Mahinda, son of the great Indian Emperor Ashoka, arrived in Sri Lanka carrying the sacred teachings 
-                of Buddhism. King Devanampiyatissa, who ruled from the ancient capital of Anuradhapura, welcomed these 
+                The story of Thuparamaya begins with one of the most significant moments in Sri Lankan history. In 247 BC,
+                Arahant Mahinda, son of the great Indian Emperor Ashoka, arrived in Sri Lanka carrying the sacred teachings
+                of Buddhism. King Devanampiyatissa, who ruled from the ancient capital of Anuradhapura, welcomed these
                 teachings and became the first Buddhist king of Sri Lanka.
               </p>
               <p className="text-muted-foreground">
-                To commemorate this momentous conversion and to house the precious collar bone relic of Lord Buddha 
-                brought by Arahant Mahinda, King Devanampiyatissa commissioned the construction of Thuparamaya. This 
-                was not just building a temple - it was establishing the very foundation upon which Sri Lankan Buddhist 
+                To commemorate this momentous conversion and to house the precious collar bone relic of Lord Buddha
+                brought by Arahant Mahinda, King Devanampiyatissa commissioned the construction of Thuparamaya. This
+                was not just building a temple - it was establishing the very foundation upon which Sri Lankan Buddhist
                 culture would flourish for the next 2,300 years.
               </p>
               <p className="text-muted-foreground">
-                The name &quot;Thuparamaya&quot; comes from the Sanskrit word &quot;stupa&quot; (a Buddhist reliquary monument) 
-                and &quot;aramaya&quot; (temple or monastery), literally meaning &quot;the temple of the stupa.&quot; This simple 
-                name reflects the temple&apos;s primary purpose: to serve as a sacred repository for Buddha&apos;s relics 
+                The name &quot;Thuparamaya&quot; comes from the Sanskrit word &quot;stupa&quot; (a Buddhist reliquary monument)
+                and &quot;aramaya&quot; (temple or monastery), literally meaning &quot;the temple of the stupa.&quot; This simple
+                name reflects the temple&apos;s primary purpose: to serve as a sacred repository for Buddha&apos;s relics
                 and a place of worship for the growing Buddhist community.
               </p>
             </CardContent>
@@ -256,21 +253,21 @@ export default function ThuparamayaTravelGuide() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-muted-foreground">
-                Thuparamaya introduced a revolutionary architectural concept that would influence Buddhist temple design 
-                across Sri Lanka for centuries. The original structure featured a unique &quot;vatadage&quot; design - a 
-                circular wooden building supported by concentric rings of stone pillars that protected the central stupa 
+                Thuparamaya introduced a revolutionary architectural concept that would influence Buddhist temple design
+                across Sri Lanka for centuries. The original structure featured a unique &quot;vatadage&quot; design - a
+                circular wooden building supported by concentric rings of stone pillars that protected the central stupa
                 from the elements.
               </p>
               <p className="text-muted-foreground">
-                Today, visitors can still see the remains of these granite pillars arranged in three concentric circles 
-                around the stupa. The innermost circle had 20 pillars, the middle circle had 32, and the outer circle 
-                had 40 pillars. These pillars, some standing over 8 feet tall, once supported an elaborate wooden roof 
+                Today, visitors can still see the remains of these granite pillars arranged in three concentric circles
+                around the stupa. The innermost circle had 20 pillars, the middle circle had 32, and the outer circle
+                had 40 pillars. These pillars, some standing over 8 feet tall, once supported an elaborate wooden roof
                 that sheltered the precious stupa below.
               </p>
               <p className="text-muted-foreground">
-                The engineering precision required to create this structure in the 3rd century BC demonstrates the 
-                advanced architectural skills of ancient Sri Lankan craftsmen. The perfect circular arrangement and 
-                the mathematical precision in the pillar placement show a sophisticated understanding of both engineering 
+                The engineering precision required to create this structure in the 3rd century BC demonstrates the
+                advanced architectural skills of ancient Sri Lankan craftsmen. The perfect circular arrangement and
+                the mathematical precision in the pillar placement show a sophisticated understanding of both engineering
                 and sacred geometry.
               </p>
             </CardContent>
@@ -280,7 +277,7 @@ export default function ThuparamayaTravelGuide() {
         {/* What to See */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">What to See at Thuparamaya</h2>
-          
+
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             <Card>
               <CardHeader>
@@ -291,9 +288,9 @@ export default function ThuparamayaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-3">
-                  The centerpiece of Thuparamaya is the bell-shaped white stupa that rises 19 meters into the sky. 
-                  This sacred dome, rebuilt several times throughout history, maintains its original proportions and 
-                  spiritual significance. The stupa&apos;s perfectly white surface gleams in the sunlight, creating 
+                  The centerpiece of Thuparamaya is the bell-shaped white stupa that rises 19 meters into the sky.
+                  This sacred dome, rebuilt several times throughout history, maintains its original proportions and
+                  spiritual significance. The stupa&apos;s perfectly white surface gleams in the sunlight, creating
                   a striking contrast against the ancient granite pillars surrounding it.
                 </p>
                 <div className="space-y-2 text-sm">
@@ -322,9 +319,9 @@ export default function ThuparamayaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-3">
-                  The granite pillars arranged in three concentric circles are among the most photographed features 
-                  of Thuparamaya. These weathered stone columns, some carved with lotus designs, stand as silent 
-                  witnesses to over 2,000 years of Buddhist devotion. Each pillar was carefully positioned to support 
+                  The granite pillars arranged in three concentric circles are among the most photographed features
+                  of Thuparamaya. These weathered stone columns, some carved with lotus designs, stand as silent
+                  witnesses to over 2,000 years of Buddhist devotion. Each pillar was carefully positioned to support
                   the original wooden roof structure.
                 </p>
                 <div className="space-y-2 text-sm">
@@ -357,32 +354,32 @@ export default function ThuparamayaTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2 text-purple-700 dark:text-purple-300">Altar and Offering Area</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    The eastern side of the stupa features a traditional altar where devotees place offerings of flowers, 
-                    incense, and oil lamps. This sacred space maintains the ancient ritual traditions that have been 
+                    The eastern side of the stupa features a traditional altar where devotees place offerings of flowers,
+                    incense, and oil lamps. This sacred space maintains the ancient ritual traditions that have been
                     practiced here for over two millennia.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2 text-purple-700 dark:text-purple-300">Meditation Platforms</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Several raised stone platforms around the stupa provide peaceful spaces for meditation and 
-                    contemplation. These platforms offer different perspectives of the sacred structure and are 
+                    Several raised stone platforms around the stupa provide peaceful spaces for meditation and
+                    contemplation. These platforms offer different perspectives of the sacred structure and are
                     ideal spots for quiet reflection.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2 text-purple-700 dark:text-purple-300">Ancient Inscriptions</h4>
                   <p className="text-sm text-muted-foreground">
-                    Look for ancient Brahmi script inscriptions on some of the stone pillars and nearby rocks. 
-                    These historical records provide fascinating insights into the temple&apos;s construction and 
+                    Look for ancient Brahmi script inscriptions on some of the stone pillars and nearby rocks.
+                    These historical records provide fascinating insights into the temple&apos;s construction and
                     the early Buddhist community that worshipped here.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2 text-purple-700 dark:text-purple-300">Bodhi Tree Grove</h4>
                   <p className="text-sm text-muted-foreground">
-                    The temple grounds feature several sacred Bodhi trees, descendants of the original Sri Maha Bodhi 
-                    tree. These trees provide natural shade and add to the peaceful, contemplative atmosphere of 
+                    The temple grounds feature several sacred Bodhi trees, descendants of the original Sri Maha Bodhi
+                    tree. These trees provide natural shade and add to the peaceful, contemplative atmosphere of
                     the sacred site.
                   </p>
                 </div>
@@ -391,7 +388,7 @@ export default function ThuparamayaTravelGuide() {
           </Card>
         </section>
 
-        
+
 
         {/* Best Time to Visit */}
         <section className="mb-12">
@@ -407,28 +404,28 @@ export default function ThuparamayaTravelGuide() {
                 <div className="text-center">
                   <h4 className="font-semibold mb-2 text-orange-700 dark:text-orange-300">Early Morning</h4>
                   <p className="text-sm text-muted-foreground">
-                    6:00 AM - 8:00 AM<br/>
+                    6:00 AM - 8:00 AM<br />
                     Cool weather, peaceful atmosphere, golden sunrise light for photography
                   </p>
                 </div>
                 <div className="text-center">
                   <h4 className="font-semibold mb-2 text-orange-700 dark:text-orange-300">Late Afternoon</h4>
                   <p className="text-sm text-muted-foreground">
-                    4:00 PM - 6:00 PM<br/>
+                    4:00 PM - 6:00 PM<br />
                     Comfortable temperature, beautiful sunset colors, active prayer times
                   </p>
                 </div>
                 <div className="text-center">
                   <h4 className="font-semibold mb-2 text-orange-700 dark:text-orange-300">Full Moon Days</h4>
                   <p className="text-sm text-muted-foreground">
-                    Poya Days<br/>
+                    Poya Days<br />
                     Special ceremonies, increased devotional activities, spiritual atmosphere
                   </p>
                 </div>
               </div>
-              
+
               <Separator className="my-4" />
-              
+
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <h4 className="font-semibold mb-2 text-orange-700 dark:text-orange-300">Best Seasons</h4>
@@ -456,7 +453,7 @@ export default function ThuparamayaTravelGuide() {
         {/* Practical Information */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Practical Visiting Information</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-6">
             <Card>
               <CardHeader>
@@ -531,7 +528,7 @@ export default function ThuparamayaTravelGuide() {
         {/* Nearby Attractions */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Explore Nearby Sacred Sites</h2>
-          
+
           <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6">
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
@@ -540,7 +537,7 @@ export default function ThuparamayaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-3">
-                  The oldest living human-planted tree in the world, grown from a cutting of the original Bodhi tree 
+                  The oldest living human-planted tree in the world, grown from a cutting of the original Bodhi tree
                   under which Buddha attained enlightenment.
                 </p>
                 <div className="flex items-center gap-2 text-sm">
@@ -557,7 +554,7 @@ export default function ThuparamayaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-3">
-                  One of the largest and most beautiful stupas in Sri Lanka, built by King Dutugemunu in the 2nd century BC. 
+                  One of the largest and most beautiful stupas in Sri Lanka, built by King Dutugemunu in the 2nd century BC.
                   A masterpiece of ancient architecture.
                 </p>
                 <div className="flex items-center gap-2 text-sm">
@@ -574,7 +571,7 @@ export default function ThuparamayaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Ruins of one of the most important monasteries in ancient Sri Lanka, featuring a massive stupa and 
+                  Ruins of one of the most important monasteries in ancient Sri Lanka, featuring a massive stupa and
                   fascinating archaeological remains.
                 </p>
                 <div className="flex items-center gap-2 text-sm">
@@ -650,21 +647,21 @@ export default function ThuparamayaTravelGuide() {
                 Experience the Sacred Beginning of Sri Lankan Buddhism
               </h3>
               <p className="text-blue-700 dark:text-blue-300 mb-4">
-                Thuparamaya Temple offers you a unique opportunity to connect with over 2,300 years of Buddhist tradition 
-                and spiritual heritage. As you walk among the ancient stone pillars and circumambulate the sacred stupa 
-                containing Buddha&apos;s relic, you&apos;re participating in the same rituals that have brought peace and 
+                Thuparamaya Temple offers you a unique opportunity to connect with over 2,300 years of Buddhist tradition
+                and spiritual heritage. As you walk among the ancient stone pillars and circumambulate the sacred stupa
+                containing Buddha&apos;s relic, you&apos;re participating in the same rituals that have brought peace and
                 inspiration to countless pilgrims throughout the centuries.
               </p>
               <p className="text-blue-700 dark:text-blue-300 mb-4">
-                This sacred site represents much more than just historical ruins - it&apos;s a living testament to the 
-                enduring power of Buddhist teachings and the deep spiritual roots of Sri Lankan culture. Whether you come 
-                seeking spiritual enrichment, historical understanding, or simply peaceful contemplation, Thuparamaya 
+                This sacred site represents much more than just historical ruins - it&apos;s a living testament to the
+                enduring power of Buddhist teachings and the deep spiritual roots of Sri Lankan culture. Whether you come
+                seeking spiritual enrichment, historical understanding, or simply peaceful contemplation, Thuparamaya
                 provides a profound and moving experience that will stay with you long after your visit.
               </p>
               <p className="text-blue-700 dark:text-blue-300">
-                Take your time here. Sit quietly among the ancient pillars, observe the devoted pilgrims, and feel the 
-                timeless serenity that has made this sacred spot a beacon of peace for over two millennia. Your journey 
-                to Thuparamaya is not just a visit to an ancient site - it&apos;s a pilgrimage to the very heart of 
+                Take your time here. Sit quietly among the ancient pillars, observe the devoted pilgrims, and feel the
+                timeless serenity that has made this sacred spot a beacon of peace for over two millennia. Your journey
+                to Thuparamaya is not just a visit to an ancient site - it&apos;s a pilgrimage to the very heart of
                 Sri Lankan Buddhist civilization.
               </p>
             </CardContent>

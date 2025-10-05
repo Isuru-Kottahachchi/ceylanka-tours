@@ -533,7 +533,7 @@ export default function MinneriyaNationalParkGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Combine with Nearby Attractions</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/attractions/sigiriya" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/sigiriya-rock-fortress" className="block hover:shadow-md transition-shadow duration-200">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Sigiriya Rock Fortress</CardTitle>
@@ -554,7 +554,7 @@ export default function MinneriyaNationalParkGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Pidurangala Rock</CardTitle>
@@ -576,7 +576,7 @@ export default function MinneriyaNationalParkGuide() {
               </Card>
             </Link>
             <Link
-              href="/attractions/dambulla-cave-temple"
+              href="/destinations/dambulla-cave-temple"
               className="block hover:shadow-md transition-shadow duration-200"
             >
               <Card>

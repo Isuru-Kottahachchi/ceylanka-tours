@@ -914,7 +914,7 @@ export default function NuwaraEliyaTravelGuide() {
                   30 km from Nuwara Eliya
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/badulla" passHref legacyBehavior>
+                  <Link href="/destinations/haputhale" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -944,7 +944,7 @@ export default function NuwaraEliyaTravelGuide() {
                   75 km from Nuwara Eliya
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/badullla" passHref legacyBehavior>
+                  <Link href="/destinations/badulla" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>

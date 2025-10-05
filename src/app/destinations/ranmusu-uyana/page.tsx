@@ -594,7 +594,7 @@ export default function RanmusuUyanaGuide() {
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Link
-              href="/attractions/isurumuniya-temple"
+              href="/destinations/isurumuniya-temple"
               className="block hover:shadow-md transition-shadow duration-200"
             >
               <Card>
@@ -618,7 +618,7 @@ export default function RanmusuUyanaGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/sri-maha-bodhi" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/jaya-sri-maha-bodhi" className="block hover:shadow-md transition-shadow duration-200">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Sri Maha Bodhi</CardTitle>
@@ -640,7 +640,7 @@ export default function RanmusuUyanaGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/attractions/ruwanwelisaya" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/ruwan-wali-saya" className="block hover:shadow-md transition-shadow duration-200">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Ruwanwelisaya Stupa</CardTitle>
