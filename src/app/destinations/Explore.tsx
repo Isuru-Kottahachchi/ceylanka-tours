@@ -138,11 +138,6 @@ export default function ExplorePage() {
             </div>
           </div>
 
-          {/* Ad Banner */}
-          <div className="mb-12 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg text-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-            <p className="text-gray-500 dark:text-gray-400">[Advertisement Space - 728x90 Leaderboard]</p>
-          </div>
-
           {/* Explore Categories Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {exploreCategories.map((category) => (
@@ -210,11 +205,6 @@ export default function ExplorePage() {
                 </Card>
               </Link>
             ))}
-          </div>
-
-          {/* Ad Banner */}
-          <div className="mt-12 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg text-center border-2 border-dashed border-gray-300 dark:border-gray-600">
-            <p className="text-gray-500 dark:text-gray-400">[Advertisement Space - 728x90 Leaderboard]</p>
           </div>
 
           {/* Call to Action */}

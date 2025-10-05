@@ -35,16 +35,16 @@ export default function GalleFortTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Galle Fort</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Where Colonial History Meets Ocean Waves</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-red-500">
               <MapPin className="w-4 h-4 mr-1" />
               Southern Province, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Ship className="w-4 h-4 mr-1" />
               UNESCO World Heritage Site
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              <Calendar className="w-4 h-4 mr-1" />
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
+              <Calendar className="w-4 h-4 mr-1"  />
               Built 1663 AD
             </Badge>
           </div>
@@ -70,50 +70,156 @@ export default function GalleFortTravelGuide() {
             </p>
           </div>
         </section>
+        {/* Quick Facts & How to Get There side by side */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
+          {/* Essential Galle Fort Facts */}
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Essential Galle Fort Facts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4 text-blue-500" />
+                      <span>
+                        <strong>Built by Dutch:</strong> 1663 AD
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Users className="w-4 h-4 text-green-500" />
+                      <span>
+                        <strong>Area:</strong>  52 hectares (130 acres)
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Users className="w-4 h-4 text-purple-500" />
+                      <span>
+                        <strong>Population:</strong> ~4,000 residents
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4 text-red-500" />
+                      <span>
+                        <strong>Area:</strong> 40 square kilometers
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Star className="w-4 h-4 text-yellow-500" />
+                      <span>
+                        <strong>UNESCO Status:</strong> World Heritage (1988)
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-orange-500" />
+                      <span>
+                        <strong>Visit Duration:</strong> Full day (8+ hours)
+                      </span>
+                    </div>
+                </div>
+                {/* Valuable Fact for Desktop */}
+                <div className="hidden lg:block mt-6 space-y-4">
+                  <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
+                    <Image
+                      src="/Gregory_Lake.jpg"
+                      alt="Ancient reservoir in Anuradhapura, Sri Lanka"
+                      width={120}
+                      height={80}
+                      className="rounded shadow-md object-cover"
+                    />
+                    <div>
+                      <p className="text-base text-blue-900 font-semibold mb-1">Irrigation Marvels of the Ancient World</p>
+                      <p className="text-sm text-blue-800">
+                        Anuradhapura’s ancient engineers built massive reservoirs (tanks) like Nuwara Wewa and Tissa Wewa, some over 2,000 years old and still functioning today. These marvels turned the dry zone into a lush, thriving kingdom—an engineering legacy admired worldwide.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-8">
+                    <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                      <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
+                      <p className="text-sm text-yellow-800">1–2 full days to explore the sacred sites, ancient tanks, and local culture at a relaxed pace.</p>
+                    </div>
+                    <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
+                      <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
+                      <p className="text-sm text-green-800">May to September (dry season) for pleasant weather and clear skies. Early mornings and late afternoons are best for sightseeing.</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+          {/* How to Get to Galle Fort */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get-there">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Galle Fort
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
+                      <li>• <strong>Duration:</strong> 4-4.5 hours</li>
+                      <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Anuradhapura. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Recommended)</h4>
+                   <p>Take the scenic coastal railway from Colombo Fort Station to Galle Station</p> 
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
+                      <li>• <strong>Duration:</strong> 2.5-3 hours</li>
+                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                      <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                    </ul>
 
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Essential Galle Fort Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-blue-500" />
-                    <span><strong>Built by Dutch:</strong> 1663 AD</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Ship className="w-4 h-4 text-green-500" />
-                    <span><strong>Area:</strong> 52 hectares (130 acres)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="w-4 h-4 text-purple-500" />
-                    <span><strong>Population:</strong> ~4,000 residents</span>
+                    <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
+                      <li>• <strong>Duration:</strong> 2.5-3 hours</li>
+                      <li>• <strong>Cost:</strong> $2-8 USD (depending on the bus type)</li>
+                      <li>• <strong>Scenic journey:</strong> Through Coastline road</li>
+                    </ul>
                   </div>
                 </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-red-500" />
-                    <span><strong>Distance from Colombo:</strong> 119km</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Star className="w-4 h-4 text-yellow-500" />
-                    <span><strong>UNESCO Status:</strong> World Heritage (1988)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-orange-500" />
-                    <span><strong>Best Visit Duration:</strong> 1-2 days</span>
-                  </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>• Start early morning to beat the heat</li>
+                    <li>• Carry water and use sun protection</li>
+                    <li>• Wear comfortable clothing and footwear</li>
+                    <li>• Plan your itinerary to cover key attractions</li>
+                  </ul>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
 
         {/* How to Get There */}
         <section className="mb-12">
@@ -237,10 +343,10 @@ export default function GalleFortTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/Galle-Fort.jpg"
                 alt="Historical Dutch colonial buildings inside Galle Fort showing traditional architecture with red tile roofs"
-                width={600}
-                height={400}
+                width={400}
+                height={300}
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
@@ -277,10 +383,72 @@ export default function GalleFortTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">Must-See Attractions in Galle Fort</h2>
 
           <div className="space-y-8">
+            {/* Clock Tower */}
+            <Card>
+              <CardHeader>
+                <CardTitle>1. The Iconic Clock Tower</CardTitle>
+                <CardDescription>A historic sentinel and modern cricket landmark</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <Image
+                    src="/Galle-Clock-Tower.jpg"
+                    alt="Historic Galle Fort Clock Tower with cricket ground in the background"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Standing proudly at the fort&apos;s southeastern corner since 1887, the Clock Tower has been an enduring symbol
+                      of Galle&apos;s maritime heritage. Originally built to signal ships approaching the harbor, it has witnessed
+                      countless historic moments and evolved into one of cricket&apos;s most recognizable landmarks.
+                    </p>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">Historical Significance:</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                            Built during British colonial era to monitor port activities
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                            Used for naval communications and weather monitoring
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                            Survived the devastating 2004 tsunami intact
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-2 text-green-700 dark:text-green-300">Cricket Connection:</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                            Overlooks the iconic Galle International Cricket Stadium
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                            Featured in countless cricket broadcasts worldwide
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                            Popular spot for cricket photographers and commentators
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Fort Ramparts */}
             <Card>
               <CardHeader>
-                <CardTitle>1. The Historic Ramparts</CardTitle>
+                <CardTitle>2. The Historic Ramparts</CardTitle>
                 <CardDescription>Walk along 400-year-old fortress walls</CardDescription>
               </CardHeader>
               <CardContent>
@@ -366,7 +534,7 @@ export default function GalleFortTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Galle-Church.jpg"
                     alt="Interior of Dutch Reformed Church in Galle Fort showing colonial architecture and historical tombstones"
                     width={400}
                     height={300}
@@ -402,7 +570,7 @@ export default function GalleFortTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Housed in a beautiful Dutch warehouse, this museum showcases Sri Lankas rich maritime history.
+                      Housed in a beautiful Dutch warehouse, this museum showcases Sri Lanka&apos;s rich maritime history.Honestly It&apos;s a small museum when compared to others but worthy of a quick visit if you have time.
                       From ancient fishing techniques to colonial trade routes, its a fascinating journey through the
                       islands relationship with the sea.
                     </p>
@@ -422,7 +590,7 @@ export default function GalleFortTravelGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Maritime-Museum-Galle.jpg"
                     alt="Maritime museum displays showing ancient ship models and colonial trading artifacts"
                     width={400}
                     height={300}
@@ -488,7 +656,7 @@ export default function GalleFortTravelGuide() {
             </Card>
           </div>
         </section>
-
+      
         {/* Dos and Donts */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts for Galle Fort</h2>
