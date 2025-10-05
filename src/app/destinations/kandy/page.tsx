@@ -128,18 +128,18 @@ export default function KandyTravelGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
   <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-neutral-900 dark:text-neutral-100">Kandy</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light text-neutral-800 dark:text-neutral-200">Sri Lanka&apos;s Sacred Cultural Capital</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-neutral-100 dark:text-neutral-100">Kandy</h1>
+          <p className="text-xl md:text-2xl mb-6 font-light text-neutral-100 dark:text-neutral-200">Sri Lanka&apos;s Sacred Cultural Capital</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 border-neutral-300 dark:border-neutral-700">
+            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Central Province, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 border-neutral-300 dark:border-neutral-700">
+            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-green-600/80 text-white border-green-500">
               <Heart className="w-4 h-4 mr-1" />
               UNESCO World Heritage Site
             </Badge>
-            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 border-neutral-300 dark:border-neutral-700">
+            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-blue-600/80 text-white border-blue-500">
               <Mountain className="w-4 h-4 mr-1" />
               500m Above Sea Level
             </Badge>

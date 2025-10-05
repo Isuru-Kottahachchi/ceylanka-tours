@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { Calendar, Clock, MapPin, Star, Users, Crown, Hammer, Book, Heart } from "lucide-react"
+import { Calendar, Clock, MapPin, Star, Crown, Hammer, Book, Heart } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -64,7 +64,7 @@ export default function GalViharayaGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Gal Viharaya: A Marvel of Buddhist Rock Art</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Gal Viharaya, meaning "Rock Temple" in Sinhala, stands as one of the most remarkable achievements of ancient 
+              Gal Viharaya, meaning &quot;Rock Temple&quot; in Sinhala, stands as one of the most remarkable achievements of ancient
               Sri Lankan sculptural art. Created during the reign of King Parakramabahu I (1153-1186 AD), this masterpiece 
               features four colossal Buddha statues carved with extraordinary precision from a single granite rock face.
             </p>

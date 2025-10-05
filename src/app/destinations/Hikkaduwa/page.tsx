@@ -78,12 +78,6 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
 }
 
 export default function HikkaduwaTravelGuide() {
-  const beachImages = [
-    "/placeholder.svg?height=500&width=800",
-    "/placeholder.svg?height=500&width=800",
-    "/placeholder.svg?height=500&width=800",
-    "/placeholder.svg?height=500&width=800"
-  ]
 
   const coralImages = [
     "/placeholder.svg?height=400&width=600",

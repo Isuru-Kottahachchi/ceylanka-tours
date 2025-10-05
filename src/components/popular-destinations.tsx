@@ -28,7 +28,7 @@ const destinations = [
     rating: 4.7,
     reviews: 980,
     description: "Historic fortified city built by Portuguese and Dutch colonizers",
-    highlights: ["Colonial Architecture", "Lighthouse", "Rampart Walk"],
+    highlights: ["UNESCO World Heritage", "Colonial Architecture", "Lighthouse"],
     category: "Historical",
   },
   {
@@ -40,7 +40,7 @@ const destinations = [
     rating: 4.9,
     reviews: 1580,
     description: "Sacred Buddhist temple housing the relic of Buddha's tooth",
-    highlights: ["Sacred Tooth Relic", "Cultural Shows", "Royal Palace"],
+    highlights: ["UNESCO World Heritage", "Sacred Tooth Relic", "Cultural Shows"],
     category: "Religious",
   },
   {
@@ -109,7 +109,7 @@ const destinations = [
     rating: 4.3,
     reviews: 890,
     description: "Ancient city with well-preserved ruins and sacred sites",
-    highlights: ["Buddhist Temples", "Sacred Sites", "Ancient Ruins"],
+    highlights: ["UNESCO World Heritage", "Sacred Sites", "Ancient Ruins"],
     category: "Historical",
   },
 

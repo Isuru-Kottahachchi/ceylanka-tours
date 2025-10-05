@@ -79,12 +79,6 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
 }
 
 export default function PinnawalaElephantOrphanage() {
-  const elephantImages = [
-    "/Pinnawala.jpeg",
-    "/placeholder.svg?height=500&width=800",
-    "/placeholder.svg?height=500&width=800",
-    "/placeholder.svg?height=500&width=800"
-  ]
 
   const feedingImages = [
     "/placeholder.svg?height=400&width=600",
