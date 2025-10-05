@@ -3,7 +3,6 @@ import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Users, TreePine, Mountain, AlertTriangle } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Ambuluwawa Tower Sri Lanka: Complete Guide 2025 | Multi-Religious Sacred Site & Scenic Views",
