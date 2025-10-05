@@ -449,11 +449,6 @@ export default function NineArchBridgeGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl text-center text-gray-500 border-2 border-dashed border-blue-300">
-          [Premium Advertisement Space - 300x250 Medium Rectangle]
-        </div>
-
         {/* Practical Visiting Information */}
         <section id="visiting-guide" className="mb-16 scroll-mt-20">
           <h2 className="text-4xl font-bold mb-10">Planning Your Nine Arch Bridge Visit</h2>

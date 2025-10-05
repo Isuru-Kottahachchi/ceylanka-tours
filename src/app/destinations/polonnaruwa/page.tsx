@@ -933,7 +933,7 @@ export default function PolonnaruwaGuide() {
                                         </div>
 
                                         <div className="mt-4 flex justify-start">
-                                            <Link href="/destinations/sathmahal-prasada" passHref legacyBehavior>
+                                            <Link href="/destinations/sathmahal-prasadaya" passHref legacyBehavior>
                                                 <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
                                             </Link>
                                         </div>

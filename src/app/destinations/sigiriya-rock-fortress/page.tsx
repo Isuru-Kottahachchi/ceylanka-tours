@@ -1238,7 +1238,7 @@ export default function SigiriyaTravelGuide() {
                     UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings. 20 minutes away.
                   </p>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                    <Link href="/destinations/dambulla-cave-temple" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>
@@ -1313,7 +1313,7 @@ export default function SigiriyaTravelGuide() {
                     Ancient city with well-preserved ruins of palaces, temples, and statues. 1.5 hours drive.
                   </p>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                    <Link href="/destinations/anuradhapura" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>

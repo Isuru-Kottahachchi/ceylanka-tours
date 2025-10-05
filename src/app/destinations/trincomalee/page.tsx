@@ -2,8 +2,7 @@
 
 import Image from "next/image"
 import { ImageCarousel } from "@/components/ui/image-carousel"
-import { useState } from "react"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Anchor, TriangleAlert, ChevronLeft, ChevronRight } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Anchor, TriangleAlert, Thermometer } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -16,310 +15,7 @@ interface ImageData {
 }
 
 export default function TrincomaleeTravelGuide() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [showModal, setShowModal] = useState(false);
-  const [koneswaramIndex, setKoneswaramIndex] = useState(0);
-  const [harbourIndex, setHarbourIndex] = useState(0);
-  const [nilaveliIndex, setNilaveliIndex] = useState(0);
-  const [pigeonIslandIndex, setPigeonIslandIndex] = useState(0);
-  const [kanniyaIndex, setKanniyaIndex] = useState(0);
-  const [girihanduIndex, setGirihanduIndex] = useState(0);
-  const [arisiMaleIndex, setArisiMaleIndex] = useState(0);
-  // Sunrise carousel state
-  const sunriseImages: ImageData[] = [
-    {
-      src: "/Sunrise-in-trinco.jpeg",
-      alt: "Beautiful sunrise over Trincomalee beach with golden light reflecting on the ocean waves",
-      title: "Trincomalee Beach Sunrise"
-    },
-    {
-      src: "/Sunrise-in-trinco1.jpeg",
-      alt: "Sunrise with palm trees and calm sea at Nilaveli Beach",
-      title: "Trinco Beach Sunrise"
-    },
-  ];
-  const [sunriseIndex, setSunriseIndex] = useState(0);
-
-  const carouselImages = [
-    {
-      src: "/Trinco.jpeg",
-      alt: "Aerial view of Trincomalee showing the beautiful coastline and harbor",
-      title: "Trincomalee Harbor & Coastline"
-    },
-    {
-      src: "/Koneshwaram.jpeg",
-      alt: "Koneswaram Temple perched on Swami Rock overlooking the Indian Ocean",
-      title: "Koneswaram Temple on Swami Rock"
-    },
-    {
-      src: "/Pasikuda.jpeg",
-      alt: "Crystal clear turquoise waters and white sand beaches of Pasikuda",
-      title: "Pasikuda Beach Paradise"
-    },
-    {
-      src: "/Pasikudabeach.jpeg",
-      alt: "Pristine shoreline with palm trees and shallow clear waters perfect for swimming",
-      title: "Pasikuda Beach Shoreline"
-    },
-    {
-      src: "/PasikudaCover.jpeg",
-      alt: "Stunning sunset view over Pasikuda with golden reflections on calm waters",
-      title: "Pasikuda Sunset Views"
-    },
-    {
-      src: "/Sea-turtle-bentota.jpeg",
-      alt: "Sea turtle swimming in crystal clear waters near Trincomalee coast",
-      title: "Marine Life & Sea Turtles"
-    }
-  ];
-
-  // Individual attraction image collections
-  const koneswaramImages = [
-    {
-      src: "/Koneshwaram.jpeg",
-      alt: "Koneswaram Temple perched on Swami Rock with 7-tiered gopuram",
-      title: "Temple on Swami Rock"
-    },
-    {
-      src: "/Trinco.jpeg",
-      alt: "Aerial view showing Koneswaram Temple's clifftop location",
-      title: "Clifftop Temple Complex"
-    },
-    {
-      src: "/Temple-of-the-tooth.jpeg",
-      alt: "Traditional Sri Lankan temple architecture and religious ceremonies",
-      title: "Sacred Temple Traditions"
-    }
-  ];
-
-  const harbourImages = [
-    {
-      src: "/Trinco.jpeg",
-      alt: "Trincomalee Natural Harbour - world's 5th largest natural harbor",
-      title: "Natural Harbour Overview"
-    },
-    {
-      src: "/Ramparts_in_galle.jpeg",
-      alt: "Historic coastal fortifications and harbor views",
-      title: "Historic Harbor Defenses"
-    }
-  ];
-
-  const nilaveliImages = [
-    {
-      src: "/Nilaveli-beach.jpg",
-      alt: "Nilaveli Beach with crystal clear turquoise waters",
-      title: "Nilaveli Beach Paradise"
-    },
-    {
-      src: "/Nilaveli-beach1.jpg",
-      alt: "Pristine Nilaveli coastline with white sand",
-      title: "White Sand Coastline"
-    },
-    {
-      src: "/Nilaveli-beach2.jpg",
-      alt: "Stunning sunset views over Nilaveli Beach",
-      title: "Magical Beach Sunsets"
-    },
-    {
-      src: "/Nilaveli-beach3.jpg",
-      alt: "Beautiful tropical beach with palm trees and clear waters",
-      title: "Tropical Beach Paradise"
-    }
-  ];
-
-  const pigeonIslandImages = [
-    {
-      src: "/Pigeon-island.jpg",
-      alt: "Marine life around Pigeon Island National Park",
-      title: "Marine Biodiversity"
-    },
-    {
-      src: "/Pigeon-island1.webp",
-      alt: "Pristine beach environment and coastal nature",
-      title: "Untouched Coastal Nature"
-    },
-    {
-      src: "/Pigeon-island2.jpg",
-      alt: "Crystal clear waters perfect for snorkeling and diving",
-      title: "Snorkeling Paradise"
-    },
-    {
-      src: "/Pigeon-island6.jpg",
-      alt: "Crystal clear waters perfect for snorkeling and diving",
-      title: "Snorkeling Paradise"
-    },
-    {
-      src: "/Pigeon-island4.jpg",
-      alt: "Crystal clear waters perfect for snorkeling and diving",
-      title: "Snorkeling Paradise"
-    },
-    {
-      src: "/Pigeon-island5.jpg",
-      alt: "Crystal clear waters perfect for snorkeling and diving",
-      title: "Snorkeling Paradise"
-    }
-
-
-  ];
-
-  const kanniyaImages = [
-    {
-      src: "/Kanniya-Hot-Springs.jpg",
-      alt: "Natural water springs and tropical vegetation",
-      title: "Sacred Hot Springs"
-    },
-    {
-      src: "/Kanniya-Hot-Springs1.jpg",
-      alt: "Natural springs",
-      title: "Sacred Hot Springs"
-    }
-  ];
-
-  const girihanduImages = [
-    {
-      src: "/Girihadusaya.jpeg",
-      alt: "Girihandu Seya ancient Buddhist stupa on hilltop",
-      title: "Ancient Buddhist Stupa"
-    },
-    {
-      src: "/Girihandu-Seya.jpeg",
-      alt: "Traditional Sri Lankan Buddhist stupa architecture",
-      title: "Buddhist Heritage"
-    },
-    {
-      src: "/Girihandu-Seya1.jpeg",
-      alt: "Traditional Sri Lankan Buddhist stupa architecture",
-      title: "Buddhist Heritage"
-    },
-    {
-      src: "/Girihandu-Seya2.jpeg",
-      alt: "Sacred Buddhist sites and religious significance",
-      title: "Sacred Buddhist Sites"
-    },
-    {
-      src: "/Girihandu-Seya3.jpeg",
-      alt: "Sacred Buddhist sites and religious significance",
-      title: "Sacred Buddhist Sites"
-    }
-  ];
-
-  const arisiMaleImages = [
-    {
-      src: "/Arisimale.jpeg",
-      alt: "Arisi Male Beach unique coastal formations",
-      title: "Unique Beach Formations"
-    },
-    {
-      src: "/Waligama.jpg",
-      alt: "Dramatic coastal landscapes and rocky shores",
-      title: "Dramatic Coastline"
-    },
-    {
-      src: "/Pasikuda.jpeg",
-      alt: "Secluded beach paradise with pristine waters",
-      title: "Secluded Beach Paradise"
-    }
-  ];
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % carouselImages.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
-  };
-
-  // Helper function to create attraction-specific carousel
-  const createAttractionCarousel = (images: ImageData[], currentIndex: number, setIndex: (index: number) => void) => {
-    if (images.length <= 1) return null;
-
-    return (
-      <div className="relative mb-4">
-        <div className="relative h-[300px] rounded-lg overflow-hidden">
-          <Image
-            src={images[currentIndex].src}
-            alt={images[currentIndex].alt}
-            fill
-            className="object-cover transition-all duration-500 ease-in-out cursor-zoom-in"
-            style={{ objectPosition: 'center' }}
-            onClick={() => setShowModal(true)}
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
-
-          {/* Modal for full-size image */}
-          {showModal && (
-            <div
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
-              onClick={() => setShowModal(false)}
-            >
-              <div
-                className="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center"
-                onClick={e => e.stopPropagation()}
-              >
-                <Image
-                  src={images[currentImageIndex].src}
-                  alt={images[currentImageIndex].alt}
-                  width={900}
-                  height={900}
-                  className="block w-auto h-auto max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl bg-black"
-                  style={{ objectFit: 'contain' }}
-                  priority
-                />
-                <button
-                  className="absolute top-2 right-2 bg-black/60 hover:bg-black/80 text-white rounded-full p-2 cursor-pointer"
-                  onClick={() => setShowModal(false)}
-                  aria-label="Close preview"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          )}
-          <button
-            onClick={() => setIndex((currentIndex - 1 + images.length) % images.length)}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white/90 text-gray-900 dark:bg-gray-800/80 dark:hover:bg-gray-700 dark:text-white p-1 rounded-full backdrop-blur-sm transition-all duration-200 cursor-pointer shadow-lg border border-white/60 dark:border-gray-700"
-            aria-label="Previous image"
-          >
-            <ChevronLeft className="w-4 h-4" />
-          </button>
-
-          <button
-            onClick={() => setIndex((currentIndex + 1) % images.length)}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/70 hover:bg-white/90 text-gray-900 dark:bg-gray-800/80 dark:hover:bg-gray-700 dark:text-white p-1 rounded-full backdrop-blur-sm transition-all duration-200 cursor-pointer shadow-lg border border-white/60 dark:border-gray-700"
-            aria-label="Next image"
-          >
-            <ChevronRight className="w-4 h-4" />
-          </button>
-
-          {/* Image Title */}
-          <div className="absolute bottom-2 left-2 right-2">
-            <h4 className="text-white text-sm font-medium">
-              {images[currentIndex].title}
-            </h4>
-          </div>
-        </div>
-
-        {/* Dot Indicators */}
-        <div className="flex justify-center space-x-1 mt-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-200 ${index === currentIndex
-                ? 'bg-blue-600'
-                : 'bg-gray-300 hover:bg-gray-400'
-                }`}
-              aria-label={`Go to image ${index + 1}`}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  };
+  
 
   return (
     <main className="min-h-screen bg-background">
@@ -338,15 +34,15 @@ export default function TrincomaleeTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Trincomalee</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Eastern Coastal Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Eastern Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Anchor className="w-4 h-4 mr-1" />
               World&apos;s 5th Largest Natural Harbor
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Waves className="w-4 h-4 mr-1" />
               Pristine Beaches
             </Badge>
@@ -366,7 +62,7 @@ export default function TrincomaleeTravelGuide() {
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
-        <section id="quick-facts" className="mb-12">
+        <section id="introduction" className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Trincomalee: Where History Meets Paradise</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
@@ -382,97 +78,18 @@ export default function TrincomaleeTravelGuide() {
             </p>
           </div>
         </section>
-
-        {/* Image Carousel */}
-        <section id="how-to-get" className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-center">Discover Trincomalee&apos;s Beauty</h2>
-          <div className="relative w-full max-w-6xl mx-auto">
-            <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden">
-              <Image
-                src={carouselImages[currentImageIndex].src}
-                alt={carouselImages[currentImageIndex].alt}
-                fill
-                className="object-cover transition-all duration-500 ease-in-out"
-                style={{ objectPosition: 'center' }}
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
-
-              {/* Navigation Buttons */}
-              <button
-                onClick={prevImage}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full backdrop-blur-sm transition-all duration-200"
-                aria-label="Previous image"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-
-              <button
-                onClick={nextImage}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full backdrop-blur-sm transition-all duration-200"
-                aria-label="Next image"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-
-              {/* Image Title */}
-              <div className="absolute bottom-6 left-6 right-6">
-                <h3 className="text-white text-xl md:text-2xl font-semibold mb-2">
-                  {carouselImages[currentImageIndex].title}
-                </h3>
-              </div>
-            </div>
-
-            {/* Dot Indicators */}
-            <div className="flex justify-center space-x-2 mt-4">
-              {carouselImages.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImageIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-200 ${index === currentImageIndex
-                    ? 'bg-blue-600'
-                    : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
-                  aria-label={`Go to image ${index + 1}`}
-                />
-              ))}
-            </div>
-
-            {/* Thumbnail Strip */}
-            <div className="hidden md:flex justify-center space-x-2 mt-4 overflow-x-auto">
-              {carouselImages.map((image, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentImageIndex(index)}
-                  className={`relative w-20 h-16 rounded-lg overflow-hidden flex-shrink-0 transition-all duration-200 ${index === currentImageIndex
-                    ? 'ring-2 ring-blue-600 ring-offset-2'
-                    : 'opacity-70 hover:opacity-100'
-                    }`}
-                >
-                  <Image
-                    src={image.src}
-                    alt={`Thumbnail ${index + 1}`}
-                    fill
-                    className="object-cover"
-                    style={{ objectPosition: 'center' }}
-                  />
-                </button>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Essential Trincomalee Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
+        {/* Quick Facts & How to Get There side by side */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-12" >
+          {/* Essential Trincomalee Facts */}
+          <section className="flex-1">
+            <Card className="scroll-mt-40" id="quick-facts">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Essential Trincomalee Facts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-blue-500" />
@@ -481,19 +98,24 @@ export default function TrincomaleeTravelGuide() {
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
+                    <Thermometer className="w-4 h-4 text-blue-500" />
+                    <span>
+                      <strong>Average Temperature:</strong> 28.5°C (83.3°F).
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-2">
                     <Anchor className="w-4 h-4 text-green-500" />
                     <span>
-                      <strong>Harbor Ranking:</strong> World&apos;s 5th largest natural harbor
+                      <strong>Harbor Ranking:</strong> World's 5th largest natural harbor
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Waves className="w-4 h-4 text-purple-500" />
                     <span>
-                      <strong>Best Beach Season:</strong> May to September
+                      <strong>Best Beach Season:</strong>May to September
                     </span>
                   </div>
-                </div>
-                <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
                     <span>
@@ -503,110 +125,224 @@ export default function TrincomaleeTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Star className="w-4 h-4 text-yellow-500" />
                     <span>
-                      <strong>Famous for:</strong> Whale watching & pristine beaches
+                      <strong>Famous for:</strong>Whale watching & pristine beaches
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-orange-500" />
                     <span>
-                      <strong>Ideal Stay Duration:</strong> 3-5 days
+                      <strong>Visit Duration:</strong> 3-5 days
                     </span>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+                {/* Valuable Fact for Desktop */}
+                <div className="hidden lg:block mt-6 space-y-4">
+                  <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                    <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                    <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                      <li>• Trincomalee is typically hot and humid, so dress accordingly</li>
+                      <li>• Carry water and snacks for the journey</li>
+                      <li>• Book accommodations in advance during peak season</li>
+                      <li>• Consider staying overnight to explore all sites properly</li>
+                    </ul>
+                  </div>
+                  <div className="flex gap-8">
+                    <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                      <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
+                      <p className="text-sm text-yellow-800">1–2 full days to explore the sacred sites, ancient tanks, and local culture at a relaxed pace.</p>
+                    </div>
+                    <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
+                      <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
+                      <p className="text-sm text-green-800">April to October (dry season) for pleasant weather and clear skies. Early mornings and late afternoons are best for sightseeing.</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+          {/* How to Get to Trincomalee */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Trincomalee
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 257km (127 miles) from Colombo</li>
+                      <li>• <strong>Route:</strong>Colombo → Kurunegala → Dambulla → Habarana → Trincomalee</li>
+                      <li>• <strong>Duration:</strong> 5-7 hours</li>
+                      <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul><div>
+                      <br></br>
+                      <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Air (Fastest)</h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li>• <strong>Airport:</strong> China Bay Airport (military, limited civilian use)</li>
+                        <li>• <strong>Duration:</strong> 45 minutes flight</li>
+                        <li>• <strong>Availability:</strong> Charter flights only</li>
+                        <li>• <strong>Alternative:</strong> Fly to Batticaloa, then drive 2 hours</li>
+                      </ul>
+                    </div>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Trincoma. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong>Colombo → Kurunegala → Dambulla → Habarana → Trincomalee</li>
+                      <li>• <strong>Duration:</strong> 6-7 hours</li>
+                      <li>• <strong>Cost:</strong> $4-8 USD (air-conditioned buses)</li>
+                      <li>• <strong>Frequency:</strong> Multiple departures daily</li>
+                    </ul>
 
-        {/* How to Get to Trincomalee */}
-        <section className="mb-12">
-          <Card className="border-blue-200 bg-blue-50/30 dark:border-blue-800 dark:bg-blue-950/30">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-blue-800 dark:text-blue-200">
-                <MapPin className="w-5 h-5" />
-                How to Get to Trincomalee
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Most Popular)</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Distance:</strong> 257km from Colombo</li>
-                    <li>• <strong>Duration:</strong> 5-6 hours via A6 highway</li>
-                    <li>• <strong>Cost:</strong> $80-120 USD for round trip</li>
-                    <li>• <strong>Route:</strong> Colombo → Kurunegala → Dambulla → Habarana → Trincomalee</li>
-                    <li>• <strong>Best option:</strong> Comfortable and flexible timing</li>
-                  </ul>
+                    <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Train</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Trincomalee</li>
+                      <li>• <strong>Duration:</strong> 6-7 hours</li>
+                      <li>• <strong>Cost:</strong> $2-8 USD (depending on class)</li>
+                      <li>• <strong>Scenic journey:</strong> Through countryside</li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus (Budget Option)</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Route:</strong> Colombo Central Bus Stand → Trincomalee</li>
-                    <li>• <strong>Duration:</strong> 6-7 hours (with stops)</li>
-                    <li>• <strong>Cost:</strong> $4-8 USD (air-conditioned buses)</li>
-                    <li>• <strong>Frequency:</strong> Multiple departures daily</li>
-                    <li>• <strong>Note:</strong> Book intercity express buses for comfort</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="mt-6 grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Route:</strong> Colombo Fort → Trincomalee (limited service)</li>
-                    <li>• <strong>Duration:</strong> 7-8 hours</li>
-                    <li>• <strong>Cost:</strong> $3-12 USD depending on class</li>
-                    <li>• <strong>Note:</strong> Check schedule as service may be irregular</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Air (Fastest)</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Airport:</strong> China Bay Airport (military, limited civilian use)</li>
-                    <li>• <strong>Duration:</strong> 45 minutes flight</li>
-                    <li>• <strong>Availability:</strong> Charter flights only</li>
-                    <li>• <strong>Alternative:</strong> Fly to Batticaloa, then drive 2 hours</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-950/50 rounded-lg border-l-4 border-blue-500">
-                <p className="text-sm text-blue-800 dark:text-blue-200">
-                  <strong>💡 Travel Tips:</strong> Start your journey early morning to avoid traffic and arrive before dark.
-                  The road can be challenging in some sections, especially during monsoon season (November-March).
-                  Stock up on snacks and water for the journey.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
+
 
         {/* Top Attractions */}
-        <section id="attractions" className="mb-12">
+        <section id="attractions" className="mb-12 scroll-mt-40">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Trincomalee</h2>
 
           <div className="space-y-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>1. Fort Frederick</CardTitle>
+                <CardDescription>Historic fort with stunning views and rich history</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Fort-Frederick.jpg",
+                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
+                        caption: "Sunrise at Fort Frederick",
+                        title: "Fort Frederick - Sunrise View"
+                      },
+                      {
+                        src: "/Lipton-seat1.jpg",
+                        alt: "Wide view of Haputale mountains and tea fields",
+                        caption: "Haputale's rolling tea hills",
+                        title: "Viewpoint Tea Country"
+                      },
+                      {
+                        src: "/placeholder.svg?height=300&width=400",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      }
+                    ]}
+                  />
+
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      This was built during the Portuguese ruled season in 1600s and later expanded by the Dutch
+                      in the 17th century. The fort offers panoramic views of the Trincomalee harbor and coastline.
+                      Explore the ramparts, old cannons, and historic buildings within the fort complex. It is a great
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      spot for photography, especially during sunrise and sunset. The fort is still an active
+                      military base, so some areas may be restricted. Entry is free, and it is open to visitors daily.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Seven distinct thermal wells with unique properties
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Water temperatures around 40°C (104°F)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Rich in minerals with believed healing properties
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Historical significance in Ramayana epic
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Important pilgrimage site for multiple religions
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-purple-50 dark:bg-purple-950/50 rounded-lg border-l-4 border-purple-400">
+                  <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">Visitor Information:</h4>
+                  <p className="text-sm text-purple-700 dark:text-purple-300 mb-2">
+                    <strong>Entry Fee:</strong> Small nominal charge for maintenance.
+                    <strong>Best Time:</strong> Early morning or late afternoon to avoid crowds.
+                  </p>
+                  <p className="text-sm text-purple-700 dark:text-purple-300">
+                    <strong>Note:</strong> Bring a towel and change of clothes. Photography is allowed but be respectful
+                    of pilgrims and religious activities. The water is safe for bathing.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
             {/* Koneswaram Temple */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Koneswaram Temple</CardTitle>
+                <CardTitle>2. Koneswaram Temple</CardTitle>
                 <CardDescription>Ancient Hindu temple on dramatic clifftop - One of the Pancha Ishwarams</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    {createAttractionCarousel(koneswaramImages, koneswaramIndex, setKoneswaramIndex) || (
-                      <div className="relative h-[300px] rounded-lg overflow-hidden">
-                        <Image
-                          src="/Koneshwaram.jpeg"
-                          alt="Koneswaram Temple perched on Swami Rock cliff overlooking the Indian Ocean with colorful gopuram"
-                          fill
-                          className="object-cover rounded-lg"
-                          style={{ objectPosition: 'center' }}
-                        />
-                      </div>
-                    )}
-                  </div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Koneshwaram.jpeg",
+                        alt: "Panoramic view from Koneshwaram Temple with Indian Ocean backdrop",
+                        caption: "Sunrise at Koneshwaram Temple",
+                        title: "Koneshwaram Temple - Sunrise View"
+                      },
+                      {
+                        src: "/Lipton-seat1.jpg",
+                        alt: "Wide view of Haputale mountains and tea fields",
+                        caption: "Haputale's rolling tea hills",
+                        title: "Viewpoint Tea Country"
+                      },
+                      {
+                        src: "/placeholder.svg?height=300&width=400",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      }
+                    ]}
+                  />
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Rising majestically 130 feet above the churning Indian Ocean on the iconic Swami Rock,
@@ -795,7 +531,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Trincomalee Natural Harbour */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Trincomalee Natural Harbour</CardTitle>
+                <CardTitle>3. Trincomalee Natural Harbour</CardTitle>
                 <CardDescription>World&apos;s 5th largest natural deep-water harbour</CardDescription>
               </CardHeader>
               <CardContent>
@@ -836,17 +572,28 @@ export default function TrincomaleeTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <div>
-                    {createAttractionCarousel(harbourImages, harbourIndex, setHarbourIndex) || (
-                      <Image
-                        src="/Trinco.jpeg"
-                        alt="Aerial view of Trincomalee Natural Harbour showing vast blue waters surrounded by green coastline"
-                        width={400}
-                        height={300}
-                        className="rounded-lg"
-                      />
-                    )}
-                  </div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Trinco.jpeg",
+                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
+                        caption: "Sunrise at Fort Frederick",
+                        title: "Fort Frederick - Sunrise View"
+                      },
+                      {
+                        src: "/Lipton-seat1.jpg",
+                        alt: "Wide view of Haputale mountains and tea fields",
+                        caption: "Haputale's rolling tea hills",
+                        title: "Viewpoint Tea Country"
+                      },
+                      {
+                        src: "/placeholder.svg?height=300&width=400",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      }
+                    ]}
+                  />
                 </div>
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950/50 rounded-lg border-l-4 border-blue-400">
                   <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Harbour Activities:</h4>
@@ -864,7 +611,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Nilaveli Beach */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Nilaveli Beach</CardTitle>
+                <CardTitle>4. Nilaveli Beach</CardTitle>
                 <CardDescription>Pristine white sand paradise - Sri Lanka&apos;s most beautiful beach</CardDescription>
               </CardHeader>
               <CardContent>
@@ -904,7 +651,35 @@ export default function TrincomaleeTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Nilaveli-beach.jpg",
+                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
+                        caption: "Sunrise at Fort Frederick",
+                        title: "Fort Frederick - Sunrise View"
+                      },
+                      {
+                        src: "/Nilaveli-beach1.jpg",
+                        alt: "Wide view of Haputale mountains and tea fields",
+                        caption: "Haputale's rolling tea hills",
+                        title: "Viewpoint Tea Country"
+                      },
+                      {
+                        src: "/Nilaveli-beach2.jpg",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      },
+                      {
+                        src: "/Nilaveli-beach3.jpg",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      },        
+                    ]}
+                  />
+                  {/* <div>
                     {createAttractionCarousel(nilaveliImages, nilaveliIndex, setNilaveliIndex) || (
                       <Image
                         src="/Pasikuda.jpeg"
@@ -914,7 +689,7 @@ export default function TrincomaleeTravelGuide() {
                         className="rounded-lg"
                       />
                     )}
-                  </div>
+                  </div> */}
                 </div>
                 <div className="mt-6 p-4 bg-teal-50 rounded-lg border-l-4 border-teal-400">
                   <h4 className="font-semibold text-teal-800 mb-2">Beach Activities & Tips:</h4>
@@ -945,12 +720,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Pigeon Island */}
             <Card>
               <CardHeader>
-                <CardTitle>4. Pigeon Island National Park</CardTitle>
+                <CardTitle>5. Pigeon Island National Park</CardTitle>
                 <CardDescription>Marine sanctuary with incredible coral reefs and diverse marine life</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
+                  {/* <div>
                     {createAttractionCarousel(pigeonIslandImages, pigeonIslandIndex, setPigeonIslandIndex) || (
                       <Image
                         src="/Sea-turtle-bentota.jpeg"
@@ -960,7 +735,47 @@ export default function TrincomaleeTravelGuide() {
                         className="rounded-lg"
                       />
                     )}
-                  </div>
+                  </div> */}
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Pigeon-island.jpg",
+                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
+                        caption: "Sunrise at Fort Frederick",
+                        title: "Fort Frederick - Sunrise View"
+                      },
+                      {
+                        src: "/Pigeon-island1.webp",
+                        alt: "Wide view of Haputale mountains and tea fields",
+                        caption: "Haputale's rolling tea hills",
+                        title: "Viewpoint Tea Country"
+                      },
+                      {
+                        src: "/Pigeon-island2.jpg",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      },
+                        {
+                        src: "/Pigeon-island6.jpg",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      },
+                        {
+                        src: "/Pigeon-island4.jpg",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      },
+                        {
+                        src: "/Pigeon-island5.jpg",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      }
+                    ]}
+                  />
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Just a 15-minute boat ride from Nilaveli Beach, Pigeon Island National Park consists of two small
@@ -1028,12 +843,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Kanniya Hot Springs */}
             <Card>
               <CardHeader>
-                <CardTitle>5. Kanniya Hot Springs</CardTitle>
+                <CardTitle>6. Kanniya Hot Springs</CardTitle>
                 <CardDescription>Natural thermal springs with healing properties and ancient legends</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
+                  {/* <div>
                     {createAttractionCarousel(kanniyaImages, kanniyaIndex, setKanniyaIndex) || (
                       <Image
                         src="/placeholder.jpg"
@@ -1043,7 +858,23 @@ export default function TrincomaleeTravelGuide() {
                         className="rounded-lg"
                       />
                     )}
-                  </div>
+                  </div> */}
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Kanniya-Hot-Springs.jpg",
+                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
+                        caption: "Sunrise at Fort Frederick",
+                        title: "Fort Frederick - Sunrise View"
+                      },
+                      {
+                        src: "/Kanniya-Hot-Springs1.jpg",
+                        alt: "Wide view of Haputale mountains and tea fields",
+                        caption: "Haputale's rolling tea hills",
+                        title: "Viewpoint Tea Country"
+                      },
+                    ]}
+                  />
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Located just 8km northwest of Trincomalee, the Kanniya Hot Springs consist of seven natural
@@ -1098,7 +929,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Girihandu Seya */}
             <Card>
               <CardHeader>
-                <CardTitle>6. Girihandu Seya</CardTitle>
+                <CardTitle>7. Girihandu Seya</CardTitle>
                 <CardDescription>Ancient Buddhist stupa with profound historical significance</CardDescription>
               </CardHeader>
               <CardContent>
@@ -1140,7 +971,7 @@ export default function TrincomaleeTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <div>
+                  {/* <div>
                     {createAttractionCarousel(girihanduImages, girihanduIndex, setGirihanduIndex) || (
                       <Image
                         src="/Girihadusaya.jpeg"
@@ -1150,7 +981,35 @@ export default function TrincomaleeTravelGuide() {
                         className="rounded-lg"
                       />
                     )}
-                  </div>
+                  </div> */}
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Girihadusaya.jpeg",
+                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
+                        caption: "Sunrise at Fort Frederick",
+                        title: "Fort Frederick - Sunrise View"
+                      },
+                      {
+                        src: "/Girihandu-Seya.jpeg",
+                        alt: "Wide view of Haputale mountains and tea fields",
+                        caption: "Haputale's rolling tea hills",
+                        title: "Viewpoint Tea Country"
+                      },
+                        {
+                        src: "/Girihandu-Seya1.jpeg",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      },
+                      {
+                        src: "/Girihandu-Seya2.jpeg",
+                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                        caption: "Viewpoint across 7 provinces",
+                        title: "Panoramic Viewpoint"
+                      },
+                    ]}
+                  />
                 </div>
                 <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-950/50 rounded-lg border-l-4 border-amber-400">
                   <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">Cultural Significance:</h4>
@@ -1166,22 +1025,27 @@ export default function TrincomaleeTravelGuide() {
             {/* Arisi Male Beach */}
             <Card>
               <CardHeader>
-                <CardTitle>7. Arisi Male Beach</CardTitle>
+                <CardTitle>8. Arisi Male Beach</CardTitle>
                 <CardDescription>Unique coastal landscape with distinctive sand formations</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    {createAttractionCarousel(arisiMaleImages, arisiMaleIndex, setArisiMaleIndex) || (
-                      <Image
-                        src="/Arisimale.jpeg"
-                        alt="Arisi Male Beach showing unique sand formations and coastal landscape"
-                        width={400}
-                        height={300}
-                        className="rounded-lg"
-                      />
-                    )}
-                  </div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Arisimale.jpeg",
+                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
+                        caption: "Sunrise at Fort Frederick",
+                        title: "Fort Frederick - Sunrise View"
+                      },
+                      {
+                        src: "/Kanniya-Hot-Springs1.jpg",
+                        alt: "Wide view of Haputale mountains and tea fields",
+                        caption: "Haputale's rolling tea hills",
+                        title: "Viewpoint Tea Country"
+                      },
+                    ]}
+                  />
                   <div>
                     <p className="text-muted-foreground mb-4">
                       This lesser-known beach near Trincomalee offers a completely different coastal experience with its
@@ -1335,15 +1199,22 @@ export default function TrincomaleeTravelGuide() {
                     </ul>
                   </div>
                   {/* Sunrise Image Carousel */}
-                  {createAttractionCarousel(sunriseImages, sunriseIndex, setSunriseIndex) || (
-                    <Image
-                      src={sunriseImages[0].src}
-                      alt={sunriseImages[0].alt}
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
-                    />
-                  )}
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Sunrise-in-trinco.jpeg",
+                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
+                        caption: "Sunrise at Fort Frederick",
+                        title: "Fort Frederick - Sunrise View"
+                      },
+                      {
+                        src: "/Sunrise-in-trinco1.jpeg",
+                        alt: "Wide view of Haputale mountains and tea fields",
+                        caption: "Haputale's rolling tea hills",
+                        title: "Viewpoint Tea Country"
+                      },
+                    ]}
+                  />
                 </div>
               </CardContent>
             </Card>
@@ -1426,7 +1297,7 @@ export default function TrincomaleeTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Lankapatuna-viharaya.jpeg",
+                        src: "/Lankapatuna-viharaya.jpg",
                         alt: "Lankapatuna Samudragiri Viharaya stupa by the sea with dramatic sky",
                         caption: "Lankapatuna stupa overlooking the Indian Ocean",
                         title: "Lankapatuna Samudragiri Viharaya"
@@ -1478,7 +1349,7 @@ export default function TrincomaleeTravelGuide() {
         </section>
 
         {/* Additional Places to Visit */}
-        <section id="more-places" className="mb-12">
+        <section id="more-places" className="mb-12 scroll-mt-40">
           <h2 className="text-3xl font-bold mb-6">More Amazing Places Near Trincomalee</h2>
           <div className="space-y-8">
             {/* Marble Beach */}
@@ -1609,7 +1480,7 @@ export default function TrincomaleeTravelGuide() {
 
         {/* More Attractions */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Additional Attractions</h2>
+          <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardHeader>

@@ -60,11 +60,6 @@ export default function KuttamPokunaTravelGuide() {
         </div>
       </section>
 
-      {/* Ad Space */}
-      <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-        [Advertisement Space - 728x90 Leaderboard]
-      </div>
-
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Quick Facts & How to Get There */}
         <div className="flex flex-col lg:flex-row gap-8 mb-12">
@@ -189,11 +184,6 @@ export default function KuttamPokunaTravelGuide() {
               </CardContent>
             </Card>
           </section>
-        </div>
-
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 300x250 Medium Rectangle]
         </div>
 
         {/* Nearby Attractions */}
@@ -358,11 +348,6 @@ export default function KuttamPokunaTravelGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
 
         {/* ...existing code... */}
         {/* Introduction */}

@@ -895,7 +895,7 @@ export default function AnuradhapuraTravelGuide() {
               </Card>
             </Link>
 
-            <Link href="/destinations/ranmusuuyana" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/ranmusu-uyana" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
                   <CardTitle className="text-lg">Ranmusu uyana with universal stargate</CardTitle>

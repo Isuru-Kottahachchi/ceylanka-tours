@@ -135,7 +135,7 @@ export default function JaffnaGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Jaffna</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Cultural Capital of Northern Sri Lanka</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-red-500">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Northern Province, Sri Lanka
             </Badge>
@@ -785,7 +785,7 @@ export default function JaffnaGuide() {
                       period, which has guided ships safely through these waters for over a century. The surrounding
                       coastline, including the beautiful Sakkotai Cape area, features pristine beaches, rocky outcrops,
                       and vibrant coral reefs. The traditional fishing villages maintain their authentic character, with
-                      outrigger boats (catamarans) dotting the shoreline, creating picture-perfect scenes especially
+                      outrigger boats (catamarans) dotting the shoreline, creating picture perfect scenes especially
                       during sunrise and sunset.
                     </p>
                     <p className="text-muted-foreground mb-4">
@@ -1300,7 +1300,7 @@ export default function JaffnaGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Wilpattu is renowned for its leopard population, natural lakes (villus), and untamed wilderness—perfect for wildlife enthusiasts.
+                  Wilpattu is renowned for its leopard population, natural lakes (villus), and untamed wilderness perfect for wildlife enthusiasts.
                 </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/wilpattu-national-park" passHref legacyBehavior>

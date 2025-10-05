@@ -293,7 +293,7 @@ export default function MirissaTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/secret-beach.jpeg",
+                        src: "/Secret-beach.jpeg",
                         alt: "Secret Beach with pristine sand",
                         caption: "Secluded Secret Beach",
                         title: "Secret Beach",
