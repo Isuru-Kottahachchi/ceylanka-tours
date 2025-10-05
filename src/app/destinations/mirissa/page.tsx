@@ -76,12 +76,12 @@ export default function MirissaTravelGuide() {
         </section>
 
         {/* Quick Facts */}
-        <section className="mb-12 scroll-mt-24" id="quick-facts">
+        <section className="mb-12 scroll-mt-40" id="quick-facts">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-500" />
-                Essential Mirissa Facts
+                Quick Mirissa Facts
               </CardTitle>
             </CardHeader>
             <CardContent>

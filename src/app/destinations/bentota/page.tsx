@@ -267,9 +267,10 @@ export default function BentotaGuide() {
             <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
                 <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
                     <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Introduction</a>
+                      <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
                     <a href="#how-to-get" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">How to Get There</a>
                     <a href="#beach-safety" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Beach Safety</a>
-                    <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
+                  
                     <a href="#top-attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Top Attractions</a>
                     <a href="#luxury-resorts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Luxury Resorts</a>
                     <a href="#water-sports" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Water Sports</a>
@@ -312,12 +313,12 @@ export default function BentotaGuide() {
                 {/* Quick Facts & How to Get There side by side */}
                 <div className="flex flex-col lg:flex-row gap-8 mb-12">
                     {/* Bentota Essential Facts (left) */}
-                    <section className="flex-1" id="quick-facts">
+                    <section className="flex-1 scroll-mt-40" id="quick-facts">
                         <Card>
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-2">
                                     <Star className="w-5 h-5 text-yellow-500" />
-                                    Bentota Essential Facts
+                                    Bentota Quick Facts
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
@@ -367,7 +368,7 @@ export default function BentotaGuide() {
                         </Card>
                     </section>
                     {/* How to Get to Bentota (right, condensed) */}
-                    <section className="flex-1" id="how-to-get">
+                    <section className="flex-1 scroll-mt-40" id="how-to-get">
                         <Card>
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
@@ -817,7 +818,7 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-<Card>
+                        <Card>
                             <CardHeader>
                                 <CardTitle>4.Old Bentota Bridge</CardTitle>
                                 <CardDescription>A bridge with more than 100 years of history</CardDescription>
@@ -846,7 +847,7 @@ export default function BentotaGuide() {
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Popular photography spot        
+                                                Popular photography spot
                                             </li>
                                         </ul>
                                     </div>

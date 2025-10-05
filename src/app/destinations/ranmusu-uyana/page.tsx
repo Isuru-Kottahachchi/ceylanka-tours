@@ -640,7 +640,7 @@ export default function RanmusuUyanaGuide() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/destinations/ruwan-wali-saya" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/ruwanwali-saya" className="block hover:shadow-md transition-shadow duration-200">
               <Card>
                 <CardHeader>
                   <CardTitle className="text-lg">Ruwanwelisaya Stupa</CardTitle>

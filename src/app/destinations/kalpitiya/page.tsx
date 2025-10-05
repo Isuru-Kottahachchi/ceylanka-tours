@@ -59,7 +59,7 @@ export default function KalpitiyaGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Kalpitiya Peninsula: Sri Lanka&apos;s Best Kept Beach Secret</h2>
@@ -600,11 +600,6 @@ export default function KalpitiyaGuide() {
             </CardContent>
           </Card>
         </section>
-
-        {/* Ad Banner Space */}
-        <div className="my-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-gray-300 dark:border-gray-600">
-          [Advertisement Space - 300x250 Medium Rectangle]
-        </div>
 
         {/* Accommodation Options */}
         <section className="mb-12">

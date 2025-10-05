@@ -90,13 +90,13 @@ export default function AnuradhapuraTravelGuide() {
 
         {/* Quick Facts & How to Get There side by side */}
         <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
-          {/* Essential Anuradhapura Facts */}
+          {/* Quick Anuradhapura Facts */}
           <section className="flex-1">
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500" />
-                  Essential Anuradhapura Facts
+                  Quick Anuradhapura Facts
                 </CardTitle>
               </CardHeader>
               <CardContent>

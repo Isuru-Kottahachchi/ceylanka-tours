@@ -101,7 +101,7 @@ export default function DambullaTownGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-3xl text-foreground dark:text-green-200">
                 <Star className="w-8 h-8 text-green-500" />
-                Essential Dambulla Town Information
+                Quick Dambulla Town Information
               </CardTitle>
             </CardHeader>
             <CardContent>

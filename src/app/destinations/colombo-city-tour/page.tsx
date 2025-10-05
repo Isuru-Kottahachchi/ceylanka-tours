@@ -146,7 +146,7 @@ export default function ColomboTourGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-500" />
-                Essential Colombo Facts
+                Quick Colombo Facts
               </CardTitle>
             </CardHeader>
             <CardContent>

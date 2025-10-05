@@ -65,15 +65,15 @@ export default function OhiyaTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Ohiya</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Gateway to Horton Plains & Scenic Beauty</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Uva Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <TreePine className="w-4 h-4 mr-1" />
               Nature&apos;s Paradise
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Calendar className="w-4 h-4 mr-1" />
               Perfect Year-Round
             </Badge>
@@ -328,7 +328,7 @@ export default function OhiyaTravelGuide() {
                   Haputale is known for its panoramic views, tea estates, and the famous Lipton&apos;s Seat viewpoint.
                 </p>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/haputale" passHref legacyBehavior>
+                  <Link href="/destinations/haputhale" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>

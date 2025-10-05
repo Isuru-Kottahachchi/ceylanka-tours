@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Mountain, Train, Coffee, Thermometer, Info, Landmark, Utensils, Lightbulb, Bed } from 'lucide-react'
+import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Mountain, Train, Coffee, Thermometer, Info, Landmark, Utensils, Lightbulb, Bed, Calendar, Users } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Ella Town Sri Lanka: Complete Travel Guide 2025 | Hill Country Paradise",
@@ -101,19 +103,18 @@ export default function EllaTownGuide() {
             </div>
           </div>
         </section>
-
-        {/* Quick Facts */}
-        <section className="mb-12 scroll-mt-48 bg-muted/50" id="quick-facts">
-          <div className="h-1 w-full bg-gradient-to-r from-primary/10 to-transparent rounded-full mb-8" />
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Landmark className="w-6 h-6 text-primary" />
-                Ella Town Essential Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
+        {/* Quick Facts & How to Get There side by side */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
+          {/* Quick Ella Town Facts */}
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Ella Town Quick Facts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Mountain className="w-4 h-4 text-green-500" />
@@ -127,8 +128,7 @@ export default function EllaTownGuide() {
                     <Train className="w-4 h-4 text-purple-500" />
                     <span><strong>Famous for:</strong> Nine Arch Bridge &amp; scenic railway</span>
                   </div>
-                </div>
-                <div className="space-y-3">
+
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
                     <span><strong>Province:</strong> Uva Province</span>
@@ -142,10 +142,105 @@ export default function EllaTownGuide() {
                     <span><strong>Best time:</strong> December to March</span>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+                {/* Valuable Fact for Desktop */}
+                <div className="hidden lg:block mt-6 space-y-4">
+                  <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
+                    <Image
+                      src="/Gregory_Lake.jpg"
+                      alt="Ancient reservoir in Ella town, Sri Lanka"
+                      width={120}
+                      height={80}
+                      className="rounded shadow-md object-cover"
+                    />
+                    <div>
+                      <p className="text-base text-blue-900 font-semibold mb-1">Irrigation Marvels of the Ancient World</p>
+                      <p className="text-sm text-blue-800">
+                        Ella town’s ancient engineers built massive reservoirs (tanks) like Nuwara Wewa and Tissa Wewa, some over 2,000 years old and still functioning today. These marvels turned the dry zone into a lush, thriving kingdom—an engineering legacy admired worldwide.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-8">
+                    <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                      <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
+                      <p className="text-sm text-yellow-800">1–2 full days to explore the sacred sites, ancient tanks, and local culture at a relaxed pace.</p>
+                    </div>
+                    <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
+                      <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
+                      <p className="text-sm text-green-800">May to September (dry season) for pleasant weather and clear skies. Early mornings and late afternoons are best for sightseeing.</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+          {/* How to Get to Ella Town */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get-there">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Ella Town
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
+                      <li>• <strong>Duration:</strong> 4-4.5 hours</li>
+                      <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Ella Town. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Kurunegala → Anuradhapura</li>
+                      <li>• <strong>Duration:</strong> 5-6 hours</li>
+                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                      <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                    </ul>
+
+                    <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Train</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Anuradhapura</li>
+                      <li>• <strong>Duration:</strong> 5.5-6 hours</li>
+                      <li>• <strong>Cost:</strong> $2-8 USD (depending on class)</li>
+                      <li>• <strong>Scenic journey:</strong> Through countryside</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>• Start early morning to avoid traffic and heat</li>
+                    <li>• Ready for changing weather conditions</li>
+                    <li>• Book accommodations in advance during peak season</li>
+                    <li>• Consider staying overnight to explore all sites properly</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
 
         {/* Top Attractions */}
         <section className="mb-12 scroll-mt-48 bg-background" id="attractions">
@@ -448,7 +543,7 @@ export default function EllaTownGuide() {
             <ul className="list-disc pl-5 text-yellow-900 dark:text-yellow-100 text-sm space-y-1">
               <li><strong>Best time to visit:</strong> December to March for clear skies and lush scenery.</li>
               <li>Start hikes early in the morning to avoid midday heat and crowds.</li>
-              <li>Always carry a light rain jacket—Ella’s weather can change quickly!</li>
+              <li>Always carry a light rain jacket, Ella’s weather can change quickly!</li>
               <li>Respect local customs when visiting temples and rural villages (cover shoulders/knees).</li>
               <li>Use only marked trails and beware of leeches during the rainy season.</li>
               <li>For safety, avoid swimming in waterfalls after heavy rain due to strong currents.</li>
@@ -743,6 +838,86 @@ export default function EllaTownGuide() {
             </Card>
           </div>
         </section>
+        {/* Nearby Attractions */}
+                <section className="mb-12">
+                  <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* Lipton's Seat Card */}
+                    <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                      <CardHeader>
+                        <CardTitle className="text-lg">Badulla</CardTitle>
+                        <CardDescription>Panoramic views of tea plantations</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <Image
+                          src="/Badulla.jpeg"
+                          alt="Badull"
+                          width={300}
+                          height={200}
+                          className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                        />
+                        <p className="text-sm text-muted-foreground">
+                          Lipton&apos;s Seat offers breathtaking views of the surrounding tea estates and is a must-visit for nature lovers.
+                        </p>
+                        <div className="mt-4 flex justify-start">
+                          <Link href="/destinations/badulla" passHref legacyBehavior>
+                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+        
+                    {/* Adisham Bungalow Card */}
+                    <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                      <CardHeader>
+                        <CardTitle className="text-lg">Bandarawela</CardTitle>
+                        <CardDescription>Historic colonial mansion</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <Image
+                          src="/adisham-bungalow.jpg"
+                          alt="Adisham Bungalow"
+                          width={300}
+                          height={200}
+                          className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                        />
+                        <p className="text-sm text-muted-foreground">
+                          Adisham Bungalow is a charming colonial-era mansion surrounded by lush gardens and serene landscapes.
+                        </p>
+                        <div className="mt-4 flex justify-start">
+                          <Link href="/destinations/bandarawela" passHref legacyBehavior>
+                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+        
+                    {/* Diyaluma Falls Card */}
+                    <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                      <CardHeader>
+                        <CardTitle className="text-lg">Ella</CardTitle>
+                        <CardDescription>Spectacular cascading waterfall</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <Image
+                          src="/diyaluma-falls.jpg"
+                          alt="Diyaluma Falls"
+                          width={300}
+                          height={200}
+                          className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                        />
+                        <p className="text-sm text-muted-foreground">
+                          Diyaluma Falls is one of Sri Lanka&apos;s tallest waterfalls, offering stunning views and natural pools for a refreshing dip.
+                        </p>
+                        <div className="mt-4 flex justify-start">
+                          <Link href="/destinations/ella" passHref legacyBehavior>
+                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </section>
 
         {/* Final Tips */}
         <section className="mb-12">

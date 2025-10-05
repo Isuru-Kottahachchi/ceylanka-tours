@@ -96,12 +96,12 @@ export default function GalViharayaGuide() {
         {/* Quick Facts & How to Get There */}
         <section className="mb-12">
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Essential Facts */}
+            {/* Quick Facts */}
             <Card className="h-fit">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500" />
-                  Essential Gal Viharaya Facts
+                  Gal Viharaya Quick Facts
                 </CardTitle>
               </CardHeader>
               <CardContent>

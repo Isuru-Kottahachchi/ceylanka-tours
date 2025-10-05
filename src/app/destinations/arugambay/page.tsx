@@ -151,7 +151,7 @@ export default function ArugamBayTravelGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-500" />
-                Essential Arugam Bay Facts
+                Quick Arugam Bay Facts
               </CardTitle>
             </CardHeader>
             <CardContent>

@@ -170,7 +170,6 @@ export default function NuwaraEliyaTravelGuide() {
           <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Attractions</a>
           <a href="#activities" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Activities</a>
           <a href="#best-time-to-visit" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Best Time to Visit</a>
-          <a href="#where-to-stay" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Where to Stay</a>
           <a href="#travel-tips" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Travel Tips</a>
         </div>
       </nav>
@@ -198,13 +197,13 @@ export default function NuwaraEliyaTravelGuide() {
 
         {/* Quick Facts & How to Get There side by side */}
         <div className="flex flex-col lg:flex-row gap-8 ">
-          {/* Essential Nuwara Eliya Facts */}
+          {/* Quick Nuwara Eliya Facts */}
           <section id="quick-facts" className="flex-1 scroll-mt-40">
             <Card className="border-2 border-primary/10 bg-gradient-to-br from-background to-muted">
               <CardHeader className="border-b border-primary/10 bg-muted/50">
                 <CardTitle className="flex items-center gap-3 text-2xl">
                   <Star className="w-6 h-6 text-yellow-500" />
-                  Essential Nuwara Eliya Facts
+                  Quick Nuwara Eliya Facts
                 </CardTitle>
                 <CardDescription>
                   Key information about Sri Lanka&apos;s Little England

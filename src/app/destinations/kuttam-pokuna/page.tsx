@@ -111,7 +111,7 @@ export default function KuttamPokunaTravelGuide() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500" />
-                  Essential Kuttam Pokuna Facts
+                  Quick Kuttam Pokuna Facts
                 </CardTitle>
               </CardHeader>
               <CardContent>

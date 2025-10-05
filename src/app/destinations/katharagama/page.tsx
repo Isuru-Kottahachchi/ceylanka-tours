@@ -165,7 +165,7 @@ export default function KatharagamaGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-3 text-3xl text-foreground" id="essential-info">
                 <Star className="w-8 h-8 text-orange-500" />
-                Essential Katharagama Information
+                Quick Katharagama Information
               </CardTitle>
             </CardHeader>
             <CardContent>

@@ -75,13 +75,13 @@ export default function TrincomaleeTravelGuide() {
         </section>
         {/* Quick Facts & How to Get There side by side */}
         <div className="flex flex-col lg:flex-row gap-8 mb-12" >
-          {/* Essential Trincomalee Facts */}
+          {/* Quick Trincomalee Facts */}
           <section className="flex-1">
             <Card className="scroll-mt-40" id="quick-facts">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500" />
-                  Essential Trincomalee Facts
+                  Quick Trincomalee Facts
                 </CardTitle>
               </CardHeader>
               <CardContent>

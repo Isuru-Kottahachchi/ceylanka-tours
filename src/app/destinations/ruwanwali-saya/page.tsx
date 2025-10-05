@@ -95,11 +95,6 @@ export default function RuwanwelisayaDetailedGuide() {
           </div>
         </section>
 
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-xl text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-orange-300 dark:border-orange-600">
-          [Premium Advertisement Space - 728x90 Leaderboard]
-        </div>
-
         {/* How to Get There Section */}
         <section className="mb-16">
           <Card className="border-2 border-blue-200 dark:border-blue-700 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20">
@@ -595,11 +590,6 @@ export default function RuwanwelisayaDetailedGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-12 p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl text-center text-gray-500 dark:text-gray-400 border-2 border-dashed border-purple-300 dark:border-purple-600">
-          [Premium Advertisement Space - 300x250 Medium Rectangle]
-        </div>
 
         {/* Detailed Architecture & Spiritual Symbolism */}
         <section className="mb-16">

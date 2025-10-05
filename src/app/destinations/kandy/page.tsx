@@ -182,7 +182,7 @@ export default function KandyTravelGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-700 dark:text-yellow-400" />
-                <span className="text-neutral-900 dark:text-neutral-100">Essential Kandy Facts - Everything You Need to Know</span>
+                <span className="text-neutral-900 dark:text-neutral-100">Quick Kandy Facts - Everything You Need to Know</span>
               </CardTitle>
             </CardHeader>
             <CardContent>

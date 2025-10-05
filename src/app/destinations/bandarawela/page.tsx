@@ -76,7 +76,7 @@ export default function BandarawelaGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-500" />
-                Essential Bandarawela Facts
+                Quick Bandarawela Facts
               </CardTitle>
             </CardHeader>
             <CardContent>
