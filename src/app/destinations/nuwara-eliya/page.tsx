@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Mountain, Thermometer, ChevronLeft, ChevronRight } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Mountain, ChevronLeft, ChevronRight, Thermometer } from "lucide-react"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -196,80 +196,55 @@ export default function NuwaraEliyaTravelGuide() {
         </section>
 
         {/* Quick Facts & How to Get There side by side */}
-        <div className="flex flex-col lg:flex-row gap-8 ">
+        <div className="flex flex-col lg:flex-row gap-8 scroll-mt-40" id="quick-facts">
           {/* Quick Nuwara Eliya Facts */}
-          <section id="quick-facts" className="flex-1 scroll-mt-40">
-            <Card className="border-2 border-primary/10 bg-gradient-to-br from-background to-muted">
-              <CardHeader className="border-b border-primary/10 bg-muted/50">
-                <CardTitle className="flex items-center gap-3 text-2xl">
-                  <Star className="w-6 h-6 text-yellow-500" />
-                  Quick Nuwara Eliya Facts
+          {/* Quick Facts */}
+          <section>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Facts About Nuwara Eliya
                 </CardTitle>
-                <CardDescription>
-                  Key information about Sri Lanka&apos;s Little England
-                </CardDescription>
               </CardHeader>
-              <CardContent className="pt-4">
-                <div className="grid gap-2">
-                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
-                        <Calendar className="w-4 h-4 text-primary/80" />
-                      </div>
-                      <div className="flex justify-between items-center flex-1">
-                        <span className="text-sm font-medium text-muted-foreground">Established</span>
-                        <span className="text-sm font-medium">1846 by British</span>
-                      </div>
-                    </div>
-
-                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
-                        <Mountain className="w-4 h-4 text-primary/80" />
-                      </div>
-                      <div className="flex justify-between items-center flex-1">
-                        <span className="text-sm font-medium text-muted-foreground">Elevation</span>
-                        <span className="text-sm font-medium">1,868m (6,128 feet) from sea level</span>
-                      </div>
-                    </div>
-
-                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
-                        <Thermometer className="w-4 h-4 text-primary/80" />
-                      </div>
-                      <div className="flex justify-between items-center flex-1">
-                        <span className="text-sm font-medium text-muted-foreground">Temperature</span>
-                        <span className="text-sm font-medium">15-20°C year-round</span>
-                      </div>
-                    </div>
-
-                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
-                        <MapPin className="w-4 h-4 text-primary/80" />
-                      </div>
-                      <div className="flex justify-between items-center flex-1">
-                        <span className="text-sm font-medium text-muted-foreground">Distance from Colombo</span>
-                        <span className="text-sm font-medium">180km</span>
-                      </div>
-                    </div>
-
-                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
-                        <Star className="w-4 h-4 text-primary/80" />
-                      </div>
-                      <div className="flex justify-between items-center flex-1">
-                        <span className="text-sm font-medium text-muted-foreground">Famous for</span>
-                        <span className="text-sm font-medium">Ceylon Tea & Cool Climate</span>
-                      </div>
-                    </div>
-
-                    <div className="group relative flex items-center gap-3 rounded-lg border border-muted/60 p-2.5 transition-all hover:border-primary/20 hover:bg-muted/40">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/5 group-hover:bg-primary/10 transition-colors">
-                        <Clock className="w-4 h-4 text-primary/80" />
-                      </div>
-                      <div className="flex justify-between items-center flex-1">
-                        <span className="text-sm font-medium text-muted-foreground">Best Visit Duration</span>
-                        <span className="text-sm font-medium">2-3 days</span>
-                      </div>
-                    </div>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-blue-500" />
+                    <span>
+                      <strong>Established:</strong>1846 by British
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Mountain className="w-4 h-4 text-green-500" />
+                    <span>
+                      <strong>Elevation:</strong> 1,868m (6,128 feet) from sea level
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Thermometer className="w-4 h-4 text-purple-500" />
+                    <span>
+                      <strong>Temperature:</strong> 15-20°C year round
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-red-500" />
+                    <span>
+                      <strong>Distance from Colombo:</strong> 180km (112 miles)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Star className="w-4 h-4 text-yellow-500" />
+                    <span>
+                      <strong>Famous for:</strong> Ceylon Tea & Cool Climate
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-orange-500" />
+                    <span>
+                      <strong>Best Visit Duration:</strong> 2-3 days
+                    </span>
+                  </div>
                 </div>
               </CardContent>
             </Card>

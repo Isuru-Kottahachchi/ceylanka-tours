@@ -116,15 +116,15 @@ export default function PasikudaTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Pasikuda</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Pristine Eastern Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Eastern Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Waves className="w-4 h-4 mr-1" />
               Shallow Coral Bay
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Palmtree className="w-4 h-4 mr-1" />
               Luxury Beach Resorts
             </Badge>

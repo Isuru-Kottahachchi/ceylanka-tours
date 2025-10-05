@@ -82,7 +82,7 @@ export default function BlueBeachGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-blue-500" />
-                Essential Blue Beach Facts
+                Quick Blue Beach Facts
               </CardTitle>
             </CardHeader>
             <CardContent>

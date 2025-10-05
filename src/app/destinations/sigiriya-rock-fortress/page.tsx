@@ -58,7 +58,6 @@ export default function SigiriyaTravelGuide() {
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Calendar className="w-4 h-4 mr-1" />
-
               8th Wonder of the World
             </Badge>
           </div>
@@ -175,7 +174,7 @@ export default function SigiriyaTravelGuide() {
                 <div className="flex items-center gap-2">
                   <Clock className="w-4 h-4 text-orange-500" />
                   <span>
-                    <strong>Climb Time:</strong> 2-3 hours round trip
+                    <strong>Climb Time:</strong> 1-3 hours round trip (depending on pace and fitness level)
                   </span>
                 </div>
               </div>
@@ -1288,7 +1287,7 @@ export default function SigiriyaTravelGuide() {
                     Explore the gateway town of Habarana, a key access point to Sri Lanka&apos;s Cultural Triangle. Surrounded by lush forests and ancient ruins, Habarana is the perfect base for exploring nearby attractions like Sigiriya Rock Fortress and the ancient city of Polonnaruwa. Experience the rich history and natural beauty of this region, making it a must-visit destination for travelers. About 1.5 hours from Sigiriya.
                   </p>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                    <Link href="/destinations/habarana" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>

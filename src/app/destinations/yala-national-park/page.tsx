@@ -88,7 +88,7 @@ export default function YalaNationalParkTravelGuide() {
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-blue-500" />
                       <span>
-                        <strong> Established::</strong> 1938 (Sri Lanka’s first national park)
+                        <strong> Established:</strong> 1938 (Sri Lanka’s first national park)
                       </span>
                     </div>
                     <div className="flex items-center gap-2">

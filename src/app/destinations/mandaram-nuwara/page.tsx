@@ -78,13 +78,13 @@ export default function MandaramNuwaraGuide() {
 
         {/* Quick Facts & How to Get There side by side */}
         <div className="flex flex-col lg:flex-row gap-8 mb-12">
-          {/* Essential Mandaram Nuwara Facts */}
+          {/* Quick Mandaram Nuwara Facts */}
           <section className="flex-1" id="quick-facts">
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500" />
-                  Essential Mandaram Nuwara Facts
+                  Quick Mandaram Nuwara Facts
                 </CardTitle>
               </CardHeader>
               <CardContent>

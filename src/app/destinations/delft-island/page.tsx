@@ -41,19 +41,19 @@ export default function DelftIslandTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Delft Island</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Remote Paradise of Wild Horses & Ancient Giants</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-600">
               <MapPin className="w-4 h-4 mr-1" />
               Northern Province, Jaffna Peninsula
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-gray-600/80 text-white border-gray-600">
               <House className="w-4 h-4 mr-1" />
               Wild Horse Sanctuary
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-600">
               <TreePine className="w-4 h-4 mr-1" />
               Ancient Baobab Forest
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-600">
               <Waves className="w-4 h-4 mr-1" />
               Coral Stone Heritage
             </Badge>
@@ -61,7 +61,7 @@ export default function DelftIslandTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Delft Island: Where Time Stands Still</h2>
@@ -115,7 +115,7 @@ export default function DelftIslandTravelGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-500" />
-                Essential Delft Island Information
+                Quick Delft Island Information
               </CardTitle>
             </CardHeader>
             <CardContent>

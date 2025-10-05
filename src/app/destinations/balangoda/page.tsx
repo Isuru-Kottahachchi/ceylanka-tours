@@ -85,7 +85,7 @@ export default function BalangodaGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-500" />
-                Essential Balangoda Facts
+                Quick Balangoda Facts
               </CardTitle>
             </CardHeader>
             <CardContent>
