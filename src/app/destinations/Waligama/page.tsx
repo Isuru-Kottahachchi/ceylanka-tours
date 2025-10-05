@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Sun, Camera, Fish, TreePalm, Utensils, Bed, Car, Train, Users, AlertTriangle } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -47,7 +48,6 @@ export default function WeligamaTravelGuide() {
           <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Introduction</a>
           <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
           <a href="#getting-there" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Getting There</a>
-          <a href="#stilt-fishermen" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Stilt Fishermen</a>
           <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Attractions</a>
           <a href="#adventure" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Adventure</a>
           <a href="#nearby" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Nearby Attractions</a>
@@ -279,65 +279,6 @@ export default function WeligamaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-
-            {/* Coconut Tree Hill */}
-            {/* <Card>
-              <CardHeader>
-                <CardTitle>2. Coconut Tree Hill Weligama</CardTitle>
-                <CardDescription>Instagram-famous hilltop with panoramic coastal views</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      This small hill crowned with coconut palms has become one of Sri Lanka&apos;s most photographed locations on social media.
-                      The 360-degree views of the southern coastline and Instagram-worthy palm tree frames make it a must-visit spot for travelers,
-                      especially during golden hour when the sky transforms into a canvas of orange and pink hues.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Perfect Instagram photo opportunities with palm frames
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        360-degree panoramic views of southern coastline
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Best visited 1 hour before sunrise or sunset
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Free access with secluded beach below
-                      </li>
-                    </ul>
-                  </div>
-                  <ImageCarousel
-                    images={[
-                      {
-                        src: "/Waligama-Snake-Island.jpeg",
-                        alt: "Aerial view of Snake Island Taprobane",
-                        caption: "Snake Island with its colonial villa",
-                        title: "Snake Island from Above"
-                      },
-                      {
-                        src: "/Snake-Island-Causeway.jpg",
-                        alt: "Sandy causeway connecting Snake Island to mainland",
-                        caption: "Low tide reveals the magical sand path",
-                        title: "Snake Island Causeway"
-                      },
-                      {
-                        src: "/Snake-Island-Villa.jpg",
-                        alt: "Colonial villa on Snake Island",
-                        caption: "Historic colonial-era villa on the island",
-                        title: "Snake Island Villa"
-                      }
-                    ]}
-                  />
-                </div>
-              </CardContent>
-            </Card> */}
 
             {/* Weligama Bay Beach */}
             <Card>
