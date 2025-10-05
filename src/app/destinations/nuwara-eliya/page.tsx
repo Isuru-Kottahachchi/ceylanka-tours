@@ -251,7 +251,7 @@ export default function NuwaraEliyaTravelGuide() {
           </section>
           {/* How to Get to Nuwara Eliya */}
           <section className="flex-1">
-            <Card className="border-l-4 border-blue-500">
+            <Card className="border-l-4 border-blue-500 mb-10">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
                   <MapPin className="w-5 h-5" />

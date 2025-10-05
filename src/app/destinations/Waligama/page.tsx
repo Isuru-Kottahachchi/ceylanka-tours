@@ -163,9 +163,6 @@ export default function WeligamaTravelGuide() {
                 <p className="text-xs mt-2 text-blue-600">Most scenic and comfortable option</p>
               </CardContent>
             </Card>
-
-
-
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-purple-600">
