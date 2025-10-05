@@ -8,11 +8,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-interface ImageData {
-  src: string;
-  alt: string;
-  title?: string;
-}
 
 export default function TrincomaleeTravelGuide() {
   
@@ -107,7 +102,7 @@ export default function TrincomaleeTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Anchor className="w-4 h-4 text-green-500" />
                     <span>
-                      <strong>Harbor Ranking:</strong> World's 5th largest natural harbor
+                      <strong>Harbor Ranking:</strong> World&apos;s 5th largest natural harbor
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
