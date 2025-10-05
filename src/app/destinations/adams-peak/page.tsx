@@ -70,6 +70,10 @@ export default function AdamsPeakTravelGuide() {
               worlds most spectacular sunrises, the climb to Adams Peak is a transformative experience that combines
               ancient pilgrimage traditions with breathtaking natural beauty.
             </p>
+            <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
+              <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Did You Know?</h4>
+              <p className="text-sm text-blue-700 dark:text-gray-200">Adams&apos; Peak is the 4th highest mountain in Sri Lanka, standing at 2,243 meters (7,359 feet) above sea level.</p>
+            </div>
           </div>
         </section>
 

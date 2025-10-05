@@ -821,8 +821,8 @@ export default function PolonnaruwaGuide() {
                                         </div>
                                         <div className="mt-4 p-3 bg-amber-50 dark:bg-amber-900/30 rounded-lg border-l-4 border-amber-500">
                                             <p className="text-sm text-amber-800 dark:text-amber-200">
-                                                <strong>🏛️ Historical Note:</strong> The name "Hatadage" is believed to derive from "hata" (sixty)
-                                                and "da" (relic), referring to the sixty relics once housed here. The building&apos;s dual role as both
+                                                <strong>🏛️ Historical Note:</strong> The name &quot;Hatadage&quot; is believed to derive from &quot;hata&quot; (sixty)
+                                                and &quot;da&quot; (relic), referring to the sixty relics once housed here. The building&apos;s dual role as both
                                                 religious shrine and royal library makes it unique among Polonnaruwa&apos;s monuments.
                                             </p>
                                         </div>
