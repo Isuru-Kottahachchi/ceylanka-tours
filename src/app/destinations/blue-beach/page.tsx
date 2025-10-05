@@ -35,15 +35,15 @@ export default function BlueBeachGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Blue Beach</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka’s Hidden Blue-Water Escape</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Southern Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Waves className="w-4 h-4 mr-1" />
               Calm Blue Waters
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Sun className="w-4 h-4 mr-1" />
               Family Friendly
             </Badge>

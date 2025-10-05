@@ -136,7 +136,7 @@ const destinations: Destination[] = [
     location: "Southern Province",
     image: "/galle-fort-sarmat-batagov-unsplash.jpg",
     description: "Historic fortified city built by Portuguese and Dutch colonizers",
-    highlights: ["Colonial Architecture", "Lighthouse", "Rampart Walk"],
+    highlights: ["UNESCO World Heritage", "Colonial Architecture", "Lighthouse"],
     category: "Historical",
   },
   {
@@ -146,7 +146,7 @@ const destinations: Destination[] = [
     path: "kandy",
     image: "/Kandy.jpeg",
     description: "Sacred city with the Temple of the Tooth, a UNESCO World Heritage site",
-    highlights: ["Sacred Tooth Relic", "Cultural Shows", "Royal Palace"],
+    highlights: ["UNESCO World Heritage","Sacred Tooth Relic", "Cultural Shows" ],
     category: "Religious",
   },
   {
@@ -186,7 +186,7 @@ const destinations: Destination[] = [
     path: "anuradhapura",
     image: "/Anuradhapura.jpg",
     description: "Sri Lanka's ancient capital with sacred Buddhist sites",
-    highlights: ["Buddhist Temples", "Ancient Ruins", "Sacred Sites"],
+    highlights: ["UNESCO World Heritage", "Ancient Ruins", "Sacred Sites"],
     category: "Historical",
   },
   {
@@ -246,7 +246,7 @@ const destinations: Destination[] = [
     path: "dambulla-cave-temple",
     image: "/Rangiri-Dambulu.jpg",
     description: "Buddhist cave temple complex with stunning frescoes and statues",
-    highlights: ["Buddhist Temples", "Ancient Ruins", "Sacred Art"],
+    highlights: ["UNESCO World Heritage", "Buddhist Cave Temples", "Sacred Art"],
     category: "Historical",
   },
   {
@@ -376,7 +376,7 @@ const destinations: Destination[] = [
     path: "polonnaruwa",
     image: "/Polonnaruwa.jpeg",
     description: "Ancient royal capital with well-preserved ruins and archaeological treasures",
-    highlights: ["Ancient Palace", "UNESCO World Heritage", "Royal Gardens", "Stone Sculptures", "Buddhist Ruins"],
+    highlights: ["UNESCO World Heritage", "Ancient Palace", "Royal Gardens", "Stone Sculptures", "Buddhist Ruins"],
     category: "Historical",
   },
   {

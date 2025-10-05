@@ -19,13 +19,13 @@ export default function HummanayaBlowholeGuide() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Hummanaya Blowhole</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka’s Roaring Natural Wonder</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               Southern Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              Dikwella
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
+              Blowhole
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               Natural Phenomenon
             </Badge>
           </div>

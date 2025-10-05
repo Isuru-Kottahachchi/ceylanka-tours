@@ -514,10 +514,6 @@ export default function HaputaleGuide() {
           </div>
         </section>
 
-        {/* Ad Banner - Mid Content 2 */}
-        <div className="my-8 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-4 text-center text-gray-500">
-          [Advertisement Space - 728x90 Leaderboard - Sunrise Tours & Photography Workshops]
-        </div>
 
         {/* Getting There */}
         <section className="mb-12">
