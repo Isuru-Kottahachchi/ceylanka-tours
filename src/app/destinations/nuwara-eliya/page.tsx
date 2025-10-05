@@ -118,7 +118,6 @@ export default function NuwaraEliyaTravelGuide() {
     "/Vic-flower1.jpg",
   ]
 
-
   const ambewealaFarmImages = [
     "/Ambewela1.jpeg",
     "/Ambewela2.jpeg",
@@ -147,15 +146,15 @@ export default function NuwaraEliyaTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Nuwara Eliya</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Little England in the Heart of Tea Country</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-600">
               <MapPin className="w-4 h-4 mr-1" />
               Central Province, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Mountain className="w-4 h-4 mr-1" />
               1,868m Above Sea Level
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Thermometer className="w-4 h-4 mr-1" />
               Cool Climate Year-Round
             </Badge>

@@ -43,20 +43,20 @@ export default function SigiriyaTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Sigiriya Rock Fortress</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Discover Sri Lanka&apos;s Ancient Wonder in the Sky</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Matale District, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Mountain className="w-4 h-4 mr-1" />
               UNESCO World Heritage Site
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <Calendar className="w-4 h-4 mr-1" />
               5th Century AD
 
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Calendar className="w-4 h-4 mr-1" />
 
               8th Wonder of the World
@@ -77,7 +77,7 @@ export default function SigiriyaTravelGuide() {
               magnificent royal palace that housed the most powerful king of ancient Sri Lanka.
             </p>
             <p className="text-lg mb-4">
-              Known locally as &quot;Sinhagiri&quot; (Lion Rock), Sigiriya is not just a tourist attraction — it&apos;s a journey
+              Known locally as &quot;Sinhagiri&quot; (Lion Rock), Sigiriya is not just a tourist attraction it&apos;s a journey
               through time that will leave you breathless, both from the climb and the stunning views that await at the
               top! This incredible fortress-palace represents one of the most ambitious architectural projects ever
               attempted in the ancient world, combining military defense, royal luxury, and artistic beauty in ways
@@ -105,17 +105,23 @@ export default function SigiriyaTravelGuide() {
                   <strong>Stay quiet during your climb:</strong> Hornets and bees live in the rock cracks and can become
                   aggressive if disturbed by loud noises. Speak softly and avoid sudden movements near the rock face.
                 </p>
-                <p className="text-sm text-amber-700">
-                  Local guides will show you safe areas to rest and take photos. Follow their instructions for a safe and
-                  enjoyable experience.
-                </p>
-                <Link className="text-sm text-amber-700" href={""}>Things you should do during a hornet or bee attack</Link>
+             
+                <Link 
+                  href="/blog/how-to-save-from-bees-hornets-attack"
+                  className="inline-block px-3 py-1 text-xs font-medium text-amber-700 bg-amber-300 rounded-full hover:bg-amber-200 transition-colors"
+                >
+                  🐝 Safety Tips: Hornet & Bee Attacks
+                </Link>
                 <p className="text-sm text-amber-700 mb-2">
                   <strong>There can be strong winds:</strong> Be prepared for sudden gusts, especially near the summit.
                   Secure loose items and watch your step.
                 </p>
                 <p className="text-sm text-amber-700 mb-2">
                   <strong>Stay hydrated:</strong> Bring enough water for the climb, especially on hot days.
+                </p>
+                   <p className="text-sm text-amber-700">
+                  Local guides will show you safe areas to rest and take photos. Follow their instructions for a safe and
+                  enjoyable experience.
                 </p>
 
               </div>
@@ -636,9 +642,81 @@ export default function SigiriyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* King's Throne */}
             <Card>
               <CardHeader>
-                <CardTitle>5. The Sigiriya Mirror Wall - Ancient Guest Book</CardTitle>
+                <CardTitle>5. King Kashyapa&apos;s Throne - The Seat of Ancient Power</CardTitle>
+                <CardDescription>A magnificent stone throne where a king once ruled his kingdom from the clouds</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      At the summit of Sigiriya, one of the most significant features is the ancient stone throne where
+                      King Kashyapa would sit in royal splendor to conduct court business and religious ceremonies.
+                      This throne, carved from solid rock and once decorated with precious gems and gold, represented
+                      the absolute peak of power in ancient Sri Lanka - both literally and figuratively!
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The throne was strategically positioned so that anyone approaching would have to climb hundreds of
+                      steps and walk through multiple ceremonial gateways before finally reaching the king. This journey
+                      was designed to humble visitors and demonstrate the king&apos;s power and authority. The throne also
+                      offered panoramic views of the surrounding landscape, allowing the king to survey his domain.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      Archaeological evidence suggests that the throne was once sheltered by an elaborate wooden
+                      pavilion with a gilded roof. The pavilion&apos;s posts would have been anchored in the carved holes
+                      still visible in the rock today. During ceremonies, cool mountain breezes would have rustled
+                      through silk curtains while the king sat in judgment, surrounded by courtiers and guards.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Original stone throne still visible with carved details and post holes
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect example of how architecture was used to demonstrate royal power
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Evidence of elaborate decorative pavilion that once covered the throne
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Spectacular 360-degree views from the throne position
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/Sigiriya-throne.jpg"
+                    alt="Ancient stone throne at Sigiriya summit where King Kashyapa once ruled"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+                <div className="mt-6 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
+                  <h4 className="font-semibold text-yellow-800 mb-2">Royal Ceremonies:</h4>
+                  <p className="text-sm text-yellow-700 mb-2">
+                    Historical records suggest that King Kashyapa would hold elaborate court ceremonies at sunrise,
+                    when the first rays of the morning sun would illuminate his golden throne pavilion. This created
+                    a dazzling effect that made the king appear to be sitting in divine light - a powerful symbol
+                    of his authority as both political and religious leader.
+                  </p>
+                  <p className="text-sm text-yellow-700">
+                    The throne&apos;s position at the highest point of Sigiriya wasn&apos;t just for show - it was carefully
+                    planned to create perfect acoustics. The king&apos;s voice would carry clearly to everyone in the
+                    audience hall, while the surrounding rock walls created natural amplification effects.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>6. The Sigiriya Mirror Wall - Ancient Guest Book</CardTitle>
                 <CardDescription>World&apos;s oldest visitor comments dating back over 1,000 years</CardDescription>
               </CardHeader>
               <CardContent>

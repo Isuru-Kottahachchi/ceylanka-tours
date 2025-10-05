@@ -8,8 +8,6 @@ import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-// metadata moved to metadata.ts for Next.js compliance
-
 type CarouselImage = { src: string; caption: string };
 function ImageCarousel({ images, alt }: { images: CarouselImage[]; alt: string }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -114,7 +112,7 @@ export default function PolonnaruwaGuide() {
         { src: "/Rankothvehera2.jpeg", caption: "Ancient stairway leading to Rankoth Vehera" },
         { src: "/Rankothvehera3.jpeg", caption: "View of Rankoth Vehera from the base" },
         { src: "/Rankothvehera4.jpeg", caption: "Devotees at Rankoth Vehera stupa" },
-        { src: "/Rankothvehera5.jpeg", caption: "Rankoth Vehera: Architectural details of the stupa" },
+        // { src: "/Rankothvehera5.jpeg", caption: "Rankoth Vehera: Architectural details of the stupa" },
     ];
 
     return (
@@ -133,15 +131,15 @@ export default function PolonnaruwaGuide() {
                     <h1 className="text-4xl md:text-6xl font-bold mb-4">Polonnaruwa</h1>
                     <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Medieval Archaeological Marvel</p>
                     <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
                             <MapPin className="w-4 h-4 mr-1" />
                             North Central Province
                         </Badge>
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
                             <Crown className="w-4 h-4 mr-1" />
                             Medieval Capital
                         </Badge>
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
                             <Calendar className="w-4 h-4 mr-1" />
                             11th-13th Century AD
                         </Badge>
@@ -205,42 +203,42 @@ export default function PolonnaruwaGuide() {
                             </CardHeader>
                             <CardContent>
                                 <div className="space-y-3">
-                                        <div className="flex items-center gap-2">
-                                            <Calendar className="w-4 h-4 text-blue-500" />
-                                            <span>
-                                                <strong>Capital Period:</strong> 1070-1293 AD
-                                            </span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <Users className="w-4 h-4 text-green-500" />
-                                            <span>
-                                                <strong>Founded by:</strong> King Vijayabahu I
-                                            </span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <Crown className="w-4 h-4 text-purple-500" />
-                                            <span>
-                                                <strong>Golden Age:</strong> King Parakramabahu I era
-                                            </span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <MapPin className="w-4 h-4 text-red-500" />
-                                            <span>
-                                                <strong>Area:</strong> 122 square kilometers
-                                            </span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <Star className="w-4 h-4 text-yellow-500" />
-                                            <span>
-                                                <strong>UNESCO Status:</strong> World Heritage (1982)
-                                            </span>
-                                        </div>
-                                        <div className="flex items-center gap-2">
-                                            <Clock className="w-4 h-4 text-orange-500" />
-                                            <span>
-                                                <strong>Visit Duration:</strong> Full day (6-8 hours)
-                                            </span>
-                                        </div>
+                                    <div className="flex items-center gap-2">
+                                        <Calendar className="w-4 h-4 text-blue-500" />
+                                        <span>
+                                            <strong>Capital Period:</strong> 1070-1293 AD
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Users className="w-4 h-4 text-green-500" />
+                                        <span>
+                                            <strong>Founded by:</strong> King Vijayabahu I
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Crown className="w-4 h-4 text-purple-500" />
+                                        <span>
+                                            <strong>Golden Age:</strong> King Parakramabahu I era
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <MapPin className="w-4 h-4 text-red-500" />
+                                        <span>
+                                            <strong>Area:</strong> 122 square kilometers
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Star className="w-4 h-4 text-yellow-500" />
+                                        <span>
+                                            <strong>UNESCO Status:</strong> World Heritage (1982)
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Clock className="w-4 h-4 text-orange-500" />
+                                        <span>
+                                            <strong>Visit Duration:</strong> Full day (6-8 hours)
+                                        </span>
+                                    </div>
                                     <div className="space-y-3">
                                         <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
                                             <h5 className="font-medium text-blue-800 dark:text-blue-200">Entrance Fee</h5>
@@ -525,14 +523,12 @@ export default function PolonnaruwaGuide() {
                                                 Royal audience hall and private chambers
                                             </li>
                                         </ul>
-                                        <Link href="/destinations/parakkramabahu-royal-palace">
-                                            <Button
-                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                variant="default"
-                                            >
-                                                Explore Royal Palace Complex
-                                            </Button>
-                                        </Link>
+
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/parakkramabahu-royal-palace" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </CardContent>
@@ -567,14 +563,12 @@ export default function PolonnaruwaGuide() {
                                                 Excellent example of Polonnaruwa architecture
                                             </li>
                                         </ul>
-                                        <Link href="/destinations/nissanka-latha-mandapaya">
-                                            <Button
-                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                variant="default"
-                                            >
-                                                Visit Nissanka Latha Mandapaya
-                                            </Button>
-                                        </Link>
+
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/nissanka-latha-mandapaya" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                            </Link>
+                                        </div>
                                     </div>
                                     <ImageCarousel
                                         images={[
@@ -615,7 +609,7 @@ export default function PolonnaruwaGuide() {
                                     <ul className="space-y-2 text-muted-foreground">
                                         <li className="flex items-start gap-2">
                                             <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                            Unique lotus-shaped design
+                                            Unique  Eight-petaled lotus-shaped design
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -629,15 +623,18 @@ export default function PolonnaruwaGuide() {
                                             <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                                             Perfectly preserved structure
                                         </li>
+                                           <li className="flex items-start gap-2">
+                                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                           Underground water supply system
+                                        </li>
                                     </ul>
-                                    <Link href="/destinations/lotus-pond-polonnaruwa">
-                                        <Button
-                                            className="mt-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                            variant="default"
-                                        >
-                                            Discover Lotus Pond
-                                        </Button>
-                                    </Link>
+
+                                    <div className="mt-4 flex justify-start">
+                                        <Link href="/destinations/lotus-pond-polonnaruwa" passHref legacyBehavior>
+                                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                        </Link>
+                                    </div>
+
                                 </div>
                             </div>
                         </CardContent>
@@ -688,14 +685,12 @@ export default function PolonnaruwaGuide() {
                                                 Active place of worship and pilgrimage
                                             </li>
                                         </ul>
-                                        <Link href="/destinations/gal-vihara">
-                                            <Button
-                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                variant="default"
-                                            >
-                                                Explore Gal Vihara Rock Temple
-                                            </Button>
-                                        </Link>
+
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/gal-viharaya" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </CardContent>
@@ -754,14 +749,88 @@ export default function PolonnaruwaGuide() {
                                                 Remarkable stone craftsmanship
                                             </li>
                                         </ul>
-                                        <Link href="/destinations/polonnaruwa-vatadageya">
-                                            <Button
-                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                variant="default"
-                                            >
-                                                Explore Polonnaruwa Vatadageya
-                                            </Button>
-                                        </Link>
+
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/polonnaruwa-vatadageya" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Hatadage */}
+                        <Card className="mb-8">
+                            <CardHeader>
+                                <CardTitle>The Sacred Hatadage</CardTitle>
+                                <CardDescription>Royal Relic Shrine & Ancient Library</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/Hatadage.jpg", caption: "Hatadage: Ancient royal relic shrine with stone columns" },
+                                            { src: "/Hatadage1.jpg", caption: "Hatadage: Intricate stone carvings and entrance" },
+                                            { src: "/Hatadage2.jpg", caption: "Hatadage: Interior view showing Buddha statues" }
+                                        ]}
+                                        alt="Hatadage showing various views of the ancient royal relic shrine and its architectural features"
+                                    />
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            The Hatadage, built by King Nissankamalla (1187-1196 AD), served as both a sacred relic shrine and
+                                            royal library. Its name suggests it once housed sixty Buddhist relics, including the sacred Tooth Relic.
+                                            This remarkable structure combines religious significance with royal grandeur, featuring exquisite stone
+                                            carvings and architectural innovations of the Polonnaruwa period.
+                                        </p>
+                                        <div className="space-y-4">
+                                            <div>
+                                                <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">Architectural Features:</h4>
+                                                <ul className="space-y-2 text-sm text-muted-foreground">
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                                                        Three Buddha statues in seated position
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                                                        Distinctive stone columns and moonstone
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                                                        Elaborate guard stones and stone carvings
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h4 className="font-semibold mb-2 text-green-700 dark:text-green-300">Historical Significance:</h4>
+                                                <ul className="space-y-2 text-sm text-muted-foreground">
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                        Former home of the Sacred Tooth Relic
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                        Served as royal library and document repository
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                        Inscriptions detail King Nissankamalla&apos;s achievements
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className="mt-4 p-3 bg-amber-50 dark:bg-amber-900/30 rounded-lg border-l-4 border-amber-500">
+                                            <p className="text-sm text-amber-800 dark:text-amber-200">
+                                                <strong>🏛️ Historical Note:</strong> The name "Hatadage" is believed to derive from "hata" (sixty)
+                                                and "da" (relic), referring to the sixty relics once housed here. The building&apos;s dual role as both
+                                                religious shrine and royal library makes it unique among Polonnaruwa&apos;s monuments.
+                                            </p>
+                                        </div>
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/polonnaruwa-hatadageya" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </CardContent>
@@ -813,14 +882,12 @@ export default function PolonnaruwaGuide() {
                                                 represent a unique style bridging classical Anuradhapura and medieval Polonnaruwa periods.
                                             </p>
                                         </div>
-                                        <Link href="/destinations/thivanka-pilimage">
-                                            <Button
-                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                variant="default"
-                                            >
-                                                Explore Thivanka Pilimage
-                                            </Button>
-                                        </Link>
+
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/thivanka-pilimage" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </CardContent>
@@ -864,14 +931,12 @@ export default function PolonnaruwaGuide() {
                                                 demonstrates the international connections and architectural diversity of medieval Sri Lanka.
                                             </p>
                                         </div>
-                                        <Link href="/destinations/sathmahal-prasada">
-                                            <Button
-                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                variant="default"
-                                            >
-                                                Explore Sathmahal Prasada
-                                            </Button>
-                                        </Link>
+
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/sathmahal-prasada" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                            </Link>
+                                        </div>
                                     </div>
                                     <ImageCarousel
                                         images={[
@@ -914,14 +979,12 @@ export default function PolonnaruwaGuide() {
                                                 Well-preserved with original lime plaster
                                             </li>
                                         </ul>
-                                        <Link href="/destinations/rankoth-vehera">
-                                            <Button
-                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                variant="default"
-                                            >
-                                                Visit Rankoth Vehera Dagoba
-                                            </Button>
-                                        </Link>
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/rankoth-vehera" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                            </Link>
+                                        </div>
+
                                     </div>
                                     <ImageCarousel
                                         images={rankothveheraImages}
@@ -968,14 +1031,12 @@ export default function PolonnaruwaGuide() {
                                                 Excellent preservation of medieval architecture
                                             </li>
                                         </ul>
-                                        <Link href="/destinations/lankatilaka-temple">
-                                            <Button
-                                                className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                                                variant="default"
-                                            >
-                                                Discover Lankatilaka Image House
-                                            </Button>
-                                        </Link>
+
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/lankatilaka-temple" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                            </Link>
+                                        </div>
                                     </div>
                                 </div>
                             </CardContent>
@@ -1023,13 +1084,13 @@ export default function PolonnaruwaGuide() {
 
                         <Card>
                             <CardHeader>
-                                <CardTitle className="text-green-600">Lotus Bath (Nelum Pokuna)</CardTitle>
-                                <CardDescription>Royal bathing pool</CardDescription>
+                                <CardTitle className="text-green-600">Statue of King Parakramabahu</CardTitle>
+                                <CardDescription>A King who united Sri Lanka</CardDescription>
                             </CardHeader>
                             <CardContent className="space-y-4">
                                 <Image
-                                    src="/Lotus-Pond.jpg"
-                                    alt="Lotus-shaped stone bathing pool with eight-petaled design at Polonnaruwa"
+                                    src="/Statue-Of-Parakkramabahu.jpg"
+                                    alt="Statue of King Parakramabahu at Polonnaruwa"
                                     width={350}
                                     height={200}
                                     className="rounded-lg"
@@ -1037,7 +1098,8 @@ export default function PolonnaruwaGuide() {
                                 <div>
                                     <h4 className="font-semibold mb-2">Architectural Artistry</h4>
                                     <p className="text-sm text-muted-foreground mb-2">
-                                        This unique eight-petaled lotus-shaped bath showcases the artistic sophistication of royal architecture.
+                                        You can see the statue of King Parakramabahu who successfully united the three kingdoms of the island under one rule and built a magnificent empire. Also launched a punitive expedition against Burma in the 1160s and another later in 1180.
+                                        But, some scholars present an alternative interpretation, suggesting this is a statue of Pulastya Rishi, an ancient sage from Hindu mythology, based on certain iconographic features.
                                     </p>
                                     <ul className="text-sm text-muted-foreground space-y-1">
                                         <li>• Eight-petaled lotus design</li>
@@ -1053,7 +1115,7 @@ export default function PolonnaruwaGuide() {
 
                 {/* Nearby Attractions */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold mb-6">Nearby Archaeological Sites</h2>
+                    <h2 className="text-3xl font-bold mb-6">Nearby Places to Explore</h2>
                     <div className="grid md:grid-cols-3 gap-6">
                         <Link href="/destinations/sigiriya-rock-fortress" className="block hover:shadow-md transition-shadow duration-200">
                             <Card className="cursor-pointer">
@@ -1135,20 +1197,25 @@ export default function PolonnaruwaGuide() {
 
                         <Card>
                             <CardHeader>
-                                <CardTitle className="text-lg">Medirigiriya Vatadage</CardTitle>
-                                <CardDescription>Circular relic house</CardDescription>
+                                <CardTitle className="text-lg">Wasgamuwa National Park</CardTitle>
+                                <CardDescription>Elephant habitat</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <Image
-                                    src="/placeholder.svg?height=200&width=300&text=Medirigiriya+Vatadage"
-                                    alt="Circular stone structure of Medirigiriya Vatadage with concentric terraces"
+                                    src="/placeholder.svg?height=200&width=300&text=Wasgamuwa+National+Park"
+                                    alt="Wasgamuwa National Park"
                                     width={300}
                                     height={200}
                                     className="rounded-lg mb-3"
                                 />
                                 <p className="text-sm text-muted-foreground">
-                                    Well-preserved circular relic house with intricate stone carvings, 30 km from Polonnaruwa.
+                                    A lesser-known gem, Wasgamuwa offers pristine wilderness and rich biodiversity, just over an hour from Polonnaruwa.
                                 </p>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/wasgamuwa-national-park" passHref legacyBehavior>
+                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                    </Link>
+                                </div>
                             </CardContent>
                         </Card>
                     </div>
