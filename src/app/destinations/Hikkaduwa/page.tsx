@@ -152,12 +152,6 @@ export default function HikkaduwaTravelGuide() {
           </div>
         </section>
 
-        {/* Main Image Carousel */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-center">Experience Hikkaduwa&apos;s Beauty</h2>
-          <ImageCarousel images={beachImages} alt="Hikkaduwa beach and activities" />
-        </section>
-
         {/* Quick Info */}
         <section className="mb-12">
           <Card>

@@ -170,8 +170,6 @@ export default function BentotaGuide() {
         "/Panchakpaduwaisland7.jpeg",
         "/Panchakpaduwaisland8.jpeg",
         "/Panchakpaduwaisland9.jpeg",
-
-
     ]
 
     const seaTurtleImages = [
@@ -250,15 +248,15 @@ export default function BentotaGuide() {
                     <h1 className="text-4xl md:text-6xl font-bold mb-4">Bentota</h1>
                     <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Golden Coast Paradise</p>
                     <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
                             <MapPin className="w-4 h-4 mr-1" />
-                            Southern Province, West Coast
+                            Southern Province,South Coast
                         </Badge>
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
                             <Waves className="w-4 h-4 mr-1" />
                             Premium Beach Resort
                         </Badge>
-                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                        <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
                             <Sun className="w-4 h-4 mr-1" />
                             Year-Round Sunshine
                         </Badge>
@@ -552,7 +550,7 @@ export default function BentotaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Bentota&apos;s main beach stretches for 5 kilometers of soft golden sand, protected by a coral
+                                            Visiting Bentota without experiencing its main beach?? You will definitely regret it! Bentota&apos;s main beach stretches for 5 kilometers of soft golden sand, protected by a coral
                                             reef that keeps the waters calm and perfect for swimming. The beach is lined with luxury resorts
                                             and offers excellent facilities for visitors.
                                         </p>
@@ -822,12 +820,12 @@ export default function BentotaGuide() {
 <Card>
                             <CardHeader>
                                 <CardTitle>4.Old Bentota Bridge</CardTitle>
-                                <CardDescription>Another architectural gem by Bawa</CardDescription>
+                                <CardDescription>A bridge with more than 100 years of history</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <Image
-                                        src="/placeholder.svg?height=300&width=400"
+                                        src="/Bentota-Bridge.jpg"
                                         alt="Bentota River safari through mangroves with wildlife and traditional fishing boats"
                                         width={400}
                                         height={300}
@@ -835,22 +833,20 @@ export default function BentotaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Take a peaceful boat safari along the Bentota River through lush mangrove forests. Spot various
-                                            bird species, monitor lizards, and experience the traditional fishing village life along the
-                                            riverbanks.
+                                            You can take a few photos of the Old Bentota Bridge, which was built by the British in 1894. This is abandoned
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Bird watching opportunities
+                                                Built by the British in 1894
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Mangrove ecosystem exploration
+                                                Abandoned and in ruins
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Traditional fishing village visits
+                                                Popular photography spot        
                                             </li>
                                         </ul>
                                     </div>

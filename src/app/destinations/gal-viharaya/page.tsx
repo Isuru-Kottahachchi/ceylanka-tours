@@ -1,10 +1,9 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { Calendar, Clock, MapPin, Star, Users, Crown, ChevronRight, ChevronLeft, Hammer, Book, Heart } from "lucide-react"
+import { Calendar, Clock, MapPin, Star, Users, Crown, Hammer, Book, Heart } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Gal Viharaya Polonnaruwa: Complete Guide 2025 | Rock Temple's Sacred Statues",
@@ -70,10 +69,10 @@ export default function GalViharayaGuide() {
               features four colossal Buddha statues carved with extraordinary precision from a single granite rock face.
             </p>
             <p className="text-lg mb-4">
-              Each statue represents different aspects of the Buddha's life and teachings, showcasing not only the 
+              Each statue represents different aspects of the Buddha&apos;s life and teachings, showcasing not only the 
               spiritual devotion of ancient Sri Lankans but also their exceptional mastery over stone carving. The 
               site continues to be an important place of worship and stands as a testament to the golden age of 
-              Polonnaruwa's artistic achievement.
+              Polonnaruwa&apos;s artistic achievement.
             </p>
             <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-950/20 border-l-4 border-amber-400 dark:border-amber-600 rounded-r-lg">
               <div className="flex items-start gap-2">
@@ -179,7 +178,7 @@ export default function GalViharayaGuide() {
 
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-orange-800/30 rounded-md border-l-4 border-orange-400">
                       <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
-                        <strong>🌟 Recommended:</strong> Book a guided tour for detailed explanations of the statues' 
+                        <strong>🌟 Recommended:</strong> Book a guided tour for detailed explanations of the statues&apos; 
                         symbolism and historical significance. Guides can enhance your understanding of Buddhist 
                         iconography and ancient sculptural techniques.
                       </p>
@@ -306,7 +305,7 @@ export default function GalViharayaGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>3. The Reclining Buddha</CardTitle>
-                <CardDescription>Parinirvana Posture: Buddha's Final Liberation</CardDescription>
+                <CardDescription>Parinirvana Posture: Buddha&apos;s Final Liberation</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -319,7 +318,7 @@ export default function GalViharayaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The massive 14-meter long reclining Buddha depicts the moment of Buddha's parinirvana (final 
+                      The massive 14-meter long reclining Buddha depicts the moment of Buddha&apos;s parinirvana (final
                       release from the cycle of rebirth). This statue is celebrated for its serene expression and 
                       the flowing lines of its robe, demonstrating extraordinary skill in transforming hard granite 
                       into an image of peaceful transition.
@@ -489,7 +488,7 @@ export default function GalViharayaGuide() {
                     <h4 className="font-semibold mb-2">Photography Guidelines:</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• No flash photography near statues</li>
-                      <li>• Respect "no photo" signs</li>
+                      <li>• Respect &quot;no photo&quot; signs</li>
                       <li>• Avoid disturbing worshippers</li>
                       <li>• Ask permission for close-up shots</li>
                     </ul>

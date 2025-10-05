@@ -32,7 +32,7 @@ const destinations = [
     // rating: 4.7,
     // reviews: 980,
     description: "Historic fortified city built by Portuguese and Dutch colonizers",
-    highlights: ["Colonial Architecture", "Lighthouse", "Rampart Walk"],
+    highlights: ["UNESCO World Heritage", "Colonial Architecture", "Lighthouse"],
     category: "Historical",
   },
   {
@@ -44,7 +44,7 @@ const destinations = [
     // rating: 4.9,
     // reviews: 1580,
     description: "Sacred city with the Temple of the Tooth, a UNESCO World Heritage site",
-    highlights: ["Sacred Tooth Relic", "Cultural Shows", "Royal Palace"],
+    highlights: ["UNESCO World Heritage", "Sacred Tooth Relic", "Cultural Shows"],
     category: "Religious",
   },
   {
@@ -92,7 +92,7 @@ const destinations = [
     // rating: 4.7,
     // reviews: 1100,
     description: "Sri Lanka's ancient capital with sacred Buddhist sites",
-    highlights: ["Buddhist Temples", "Ancient Ruins", "Sacred Sites"],
+    highlights: ["UNESCO World Heritage", "Ancient Ruins", "Sacred Sites"],
     category: "Historical",
   },
   {
@@ -224,7 +224,7 @@ const destinations = [
     // rating: 4.3,
     // reviews: 890,
     description: "Buddhist cave temple complex with stunning frescoes and statues",
-    highlights: ["Buddhist Temples", "Ancient Ruins", "Cave temple", "Wall arts"],
+    highlights: ["UNESCO World Heritage", "Buddhist Temples", "Cave temple", "Wall arts"],
     category: "Historical",
   },
   {
@@ -357,7 +357,7 @@ const destinations = [
     // rating: 4.3,
     // reviews: 890,
     description: "Ancient city with well-preserved ruins and sacred sites",
-    highlights: ["Ancient Ruins", "Sacred Sites", "Historical Temples"],
+    highlights: ["UNESCO World Heritage", "Ancient Ruins", "Sacred Sites"],
     category: "Historical",
   },
   {
@@ -372,7 +372,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-   {
+  {
     id: 24,
     name: "Balangoda",
     location: "Sabaragamuwa Province",
@@ -396,7 +396,7 @@ const destinations = [
     highlights: ["Gem Mining", "Waterfalls", "Tea Plantations"],
     category: "Nature",
   },
-    {
+  {
     id: 25,
     name: "Mathale",
     location: "Central Province",
@@ -432,7 +432,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-    {
+  {
     id: 27,
     name: "Mandaram Nuwara",
     location: "Uva Province",
@@ -444,7 +444,7 @@ const destinations = [
     highlights: ["Tea Factories", "Cool Climate", "Colonial Architecture"],
     category: "Nature",
   },
-    {
+  {
     id: 27,
     name: "Idalgashinna",
     location: "Uva Province",
@@ -456,7 +456,7 @@ const destinations = [
     highlights: ["Rail Trails", "Camping", "Cold and Pleasant"],
     category: "Nature",
   },
-    {
+  {
     id: 27,
     name: "Bandarawela",
     location: "Uva Province",
@@ -513,7 +513,7 @@ const destinations = [
     // rating: 4.3,
     // reviews: 890,
     description: "Biodiversity hotspot and UNESCO World Heritage site with dense rainforest",
-    highlights: ["Mangroves", "Wildlife", "Crocodiles"],
+    highlights: ["UNESCO World Heritage","Mangroves", "Wildlife" ],
     category: "Nature",
   },
   {
@@ -528,7 +528,7 @@ const destinations = [
     highlights: ["Mangroves", "Wildlife", "Crocodiles"],
     category: "Animals",
   },
-    {
+  {
     id: 31,
     name: "Mannar",
     location: "Northern Province",

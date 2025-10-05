@@ -127,15 +127,15 @@ export default function TempleOfToothKandyGuide() {
             Sri Lanka&apos;s Most Sacred Buddhist Sanctuary
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-yellow-600/80 text-white border-yellow-500">
               <Crown className="w-4 h-4 mr-2" />
               Sacred Tooth Relic
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
               <Users className="w-4 h-4 mr-2" />
               UNESCO World Heritage
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white px-4 py-2 bg-blue-600/80 text-white border-blue-500">
               <Star className="w-4 h-4 mr-2" />
               Royal Palace Complex
             </Badge>

@@ -27,15 +27,15 @@ export default function MirissaTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Mirissa</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Premier Whale Watching Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Southern Province, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Waves className="w-4 h-4 mr-1" />
               World-Class Whale Watching
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Sun className="w-4 h-4 mr-1" />
               Year-Round Tropical Paradise
             </Badge>
@@ -174,11 +174,6 @@ export default function MirissaTravelGuide() {
         {/* Top Attractions */}
         <section className="mb-12 scroll-mt-24" id="attractions">
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Mirissa</h2>
-
-          {/* Ad Space */}
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
 
           <div className="space-y-8">
             {/* Coconut Hill */}
@@ -534,11 +529,6 @@ export default function MirissaTravelGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
 
         {/* Final Section */}
         <section className="mb-12">

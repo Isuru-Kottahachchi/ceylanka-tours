@@ -35,15 +35,15 @@ export default function WilpattuNationalParkTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Wilpattu National Park</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Largest Wildlife Sanctuary</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               North Western Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <TreePine className="w-4 h-4 mr-1" />
               Largest National Park
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-500/80 text-white border-green-500">
               <Binoculars className="w-4 h-4 mr-1" />
               Unique Villu Ecosystem
             </Badge>
@@ -75,11 +75,6 @@ export default function WilpattuNationalParkTravelGuide() {
             </p>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
 
         {/* Quick Facts */}
         <section className="mb-12">
@@ -181,11 +176,6 @@ export default function WilpattuNationalParkTravelGuide() {
         {/* Wildlife Highlights */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Incredible Wildlife of Wilpattu</h2>
-
-          {/* Ad Space */}
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
 
           <div className="space-y-8">
             {/* Sri Lankan Leopards */}
@@ -470,11 +460,6 @@ export default function WilpattuNationalParkTravelGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Ad Space */}
-        <div className="my-8 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-          [Advertisement Space - 728x90 Leaderboard]
-        </div>
 
         {/* Bird Watching */}
         <section className="mb-12">
