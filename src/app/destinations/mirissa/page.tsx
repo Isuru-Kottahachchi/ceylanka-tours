@@ -50,8 +50,8 @@ export default function MirissaTravelGuide() {
           <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
           <a href="#whale-watching" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Whale Watching</a>
           <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Attractions</a>
-          <a href="#surfing" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Surfing</a>
-          <a href="#cuisine" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Cuisine</a>
+          {/* <a href="#surfing" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Surfing</a>
+          <a href="#cuisine" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Cuisine</a> */}
           <a href="#tips" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Travel Tips</a>
         </div>
       </nav>
@@ -105,7 +105,7 @@ export default function MirissaTravelGuide() {
                       <strong>Best Weather:</strong> November to April
                     </span>
                   </div>
-                
+
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-purple-500" />
                     <span>
@@ -123,6 +123,17 @@ export default function MirissaTravelGuide() {
                     <span>
                       <strong>Ideal Stay:</strong> 3-4 days
                     </span>
+                  </div>
+                  <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                    <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">🕒 Tips for Visiting Mirissa</h4>
+                    <ul className="text-sm text-blue-600 dark:text-blue-400 space-y-1">
+                      <li>• Early Morning (6-8 AM): Perfect for peaceful walks</li>
+                      <li>• Late Afternoon (3-6 PM): Best for swimming</li>
+                      <li>• Avoid weekends and public holidays for a quieter experience</li>
+                      <li>• Bring reef-safe sunscreen to protect marine life</li>
+                      <li>• Respect local customs and the environment</li>
+                      <li>• Book whale watching tours in advance during peak season</li>
+                    </ul>
                   </div>
                 </div>
               </CardContent>
@@ -143,7 +154,7 @@ export default function MirissaTravelGuide() {
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo</li>
-                      <li>• <strong>Duration:</strong> 4-5 hours</li>
+                      <li>• <strong>Duration:</strong> 2.5-3.5 hours</li>
                       <li>• <strong>Cost:</strong> $60-85 USD for day trip</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
@@ -168,21 +179,28 @@ export default function MirissaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo → Kandy → Nanu Oya</li>
-                      <li>• <strong>Duration:</strong> 6-7 hours total</li>
+                      <li>• <strong>Route:</strong> Colombo Fort → Mirissa railway station</li>
+                      <li>• <strong>Duration:</strong> 3-6 hours total</li>
                       <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
-                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Nanu Oya station</span></li>
-                      <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li>
+                      <li>• <strong>From Mirissa:</strong> hire taxi/tuk-tuk</li>
                     </ul>
 
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo → Kandy → Nuwara Eliya</li>
-                      <li>• <strong>Duration:</strong> 5-6 hours</li>
+                      <li>• <strong>Route:</strong> Colombo Fort → Mirissa bus station  (Coast road)</li>
+                      <li>• <strong>Duration:</strong> 4-6 hours</li>
                       <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
-                      <li>• <strong>Frequency:</strong> Regular departures from Kandy</li>
+                      <li>• <strong>Frequency:</strong> Regular departures from Colombo Fort Bus Station</li>
                     </ul>
                   </div>
+                </div>
+                <div className="mt-6">
+                  <a href="https://maps.app.goo.gl/mApRuVKgTQKqDKyg6" target="_blank" rel="noopener noreferrer">
+                    <Button className="w-full bg-green-600 text-white hover:bg-green-700 dark:bg-green-600 dark:hover:bg-green-700 cursor-pointer">
+                      <MapPin className="w-4 h-4 mr-2" />
+                      Open in Google Maps
+                    </Button>
+                  </a>
                 </div>
                 {/* <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
                   <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">🚂 Special Note about Train Journey</h4>
@@ -202,27 +220,27 @@ export default function MirissaTravelGuide() {
         </div>
 
         {/* Whale Watching */}
-        <section className="mb-12 scroll-mt-24" id="whale-watching">
+        <section className="mb-12 scroll-mt-40" id="whale-watching">
           <h2 className="text-3xl font-bold mb-6">World&apos;s Best Whale Watching Experience</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <ImageCarousel
-                    images={[
-                        {
-                        src: "/Whale-Shark-at-Mirissa.jpg",
-                        alt: "Whale Shark swimming in the ocean",
-                        caption: "Whale Shark sighting in Mirissa",
-                        title: "Whale Shark",
-                      },
-                      {
-                        src: "/Whale-in-Mirissa.jpg",
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
-                      },
-                    
-                    ]}
-                  />
+                images={[
+                  {
+                    src: "/Whale-Shark-at-Mirissa.jpg",
+                    alt: "Whale Shark swimming in the ocean",
+                    caption: "Whale Shark sighting in Mirissa",
+                    title: "Whale Shark",
+                  },
+                  {
+                    src: "/Whale-in-Mirissa.jpg",
+                    alt: "Whale watching in Mirissa",
+                    caption: "Whale watching in Mirissa",
+                    title: "Whale Watching",
+                  },
+
+                ]}
+              />
               {/* <p className="text-sm text-muted-foreground mt-2 italic">
                 Blue whales, the largest animals on Earth, frequent Mirissa&apos;s waters
               </p> */}
@@ -242,12 +260,19 @@ export default function MirissaTravelGuide() {
                 <h4 className="font-semibold text-blue-800 mb-2">What You Might See:</h4>
                 <ul className="text-sm text-blue-700 space-y-1">
                   <li>• Blue Whales (largest animals on Earth)</li>
-                   <li>• Whale Sharks (Largest Fish in the world)</li>
+                  <li>• Whale Sharks (Largest Fish in the world)</li>
                   <li>• Sperm Whales and Pilot Whales</li>
                   <li>• Spinner and Bottlenose Dolphins</li>
                   <li>• Flying Fish and Sea Turtles</li>
                 </ul>
               </div>
+              <div className="mt-8">
+            <Link href="/blog/marine-life-experience">
+              <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 cursor-pointer">
+                Read More About Sri Lankan Marine Life
+              </Button>
+            </Link>
+          </div>
             </div>
           </div>
         </section>
@@ -267,7 +292,7 @@ export default function MirissaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <ImageCarousel
                     images={[
-                        {
+                      {
                         src: "/Mirissa1.jpg",
                         alt: "Coconut Hill with panoramic ocean view",
                         caption: "Panoramic views from Coconut Hill",
@@ -279,7 +304,7 @@ export default function MirissaTravelGuide() {
                         caption: "Sunset at Coconut Hill",
                         title: "Coconut Hill",
                       },
-                    
+
                     ]}
                   />
                   <div>
@@ -359,6 +384,51 @@ export default function MirissaTravelGuide() {
                         Perfect for sunbathing and relaxation
                       </li>
                     </ul>
+
+                    <div className="mt-6 space-y-4">
+                      {/* Best Time to Visit */}
+                      <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                        <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">🕒 Best Time to Visit</h4>
+                        <ul className="text-sm text-blue-600 dark:text-blue-400 space-y-1">
+                          <li>• Early Morning (6-8 AM): Perfect for peaceful walks</li>
+                          <li>• Late Afternoon (3-6 PM): Best for swimming</li>
+                          <li>• December-April: Ideal beach weather</li>
+                        </ul>
+                      </div>
+
+                      {/* Things to Do */}
+                      <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
+                        <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">🏖 Beach Activities</h4>
+                        <ul className="text-sm text-green-600 dark:text-green-400 space-y-1">
+                          <li>• Swimming and snorkeling</li>
+                          <li>• Beach volleyball and cricket</li>
+                          <li>• Beachside dining</li>
+                          <li>• Sunset watching</li>
+                        </ul>
+                      </div>
+
+                      {/* Safety & Guidelines */}
+                      <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg border border-amber-200 dark:border-amber-800">
+                        <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">⚠️ Safety Tips</h4>
+                        <ul className="text-sm text-amber-600 dark:text-amber-400 space-y-1">
+                          <li>• Swim between the flags</li>
+                          <li>• Watch for seasonal rip currents</li>
+                          <li>• Use sunscreen and stay hydrated</li>
+                          <li>• Keep valuables secure</li>
+                        </ul>
+                      </div>
+
+                      {/* Fun Facts */}
+                      <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg border border-purple-200 dark:border-purple-800">
+                        <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">🌟 Interesting Facts</h4>
+                        <ul className="text-sm text-purple-600 dark:text-purple-400 space-y-1">
+                          <li>• Longest beach stretch in Mirissa</li>
+                          <li>• Home to diverse marine life</li>
+                          <li>• Traditional fishing boats dock here</li>
+                          <li>• Perfect surf waves during season</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -397,6 +467,51 @@ export default function MirissaTravelGuide() {
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                         Safe swimming with gentle waves
                       </li>
+
+                      <div className="mt-6 space-y-4">
+                        {/* Best Time to Visit */}
+                        <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                          <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">🕒 Best Time to Visit</h4>
+                          <ul className="text-sm text-blue-600 dark:text-blue-400 space-y-1">
+                            <li>• Early Morning (7-9 AM): Best for snorkeling</li>
+                            <li>• Low Tide: Easier access to the rock</li>
+                            <li>• Sunset: Perfect for photography</li>
+                          </ul>
+                        </div>
+
+                        {/* Things to Do */}
+                        <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
+                          <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">🏖 Activities</h4>
+                          <ul className="text-sm text-green-600 dark:text-green-400 space-y-1">
+                            <li>• Snorkeling around the rock</li>
+                            <li>• Photography from various angles</li>
+                            <li>• Rock climbing (with care)</li>
+                            <li>• Marine life observation</li>
+                          </ul>
+                        </div>
+
+                        {/* Safety & Guidelines */}
+                        <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg border border-amber-200 dark:border-amber-800">
+                          <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">⚠️ Safety Tips</h4>
+                          <ul className="text-sm text-amber-600 dark:text-amber-400 space-y-1">
+                            <li>• Check tide times before visiting</li>
+                            <li>• Wear appropriate footwear</li>
+                            {/* <li>• Don't climb when wet</li> */}
+                            <li>• Watch for slippery surfaces</li>
+                          </ul>
+                        </div>
+
+                        {/* Fun Facts */}
+                        <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg border border-purple-200 dark:border-purple-800">
+                          <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">🌟 Interesting Facts</h4>
+                          <ul className="text-sm text-purple-600 dark:text-purple-400 space-y-1">
+                            <li>• Named for its bird-like shape</li>
+                            <li>• Rich marine ecosystem around base</li>
+                            <li>• Popular Instagram spot</li>
+                            <li>• Unique geological formation</li>
+                          </ul>
+                        </div>
+                      </div>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                         Beachside restaurants and bars
