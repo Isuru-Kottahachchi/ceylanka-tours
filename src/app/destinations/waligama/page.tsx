@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Sun, Camera, Fish, TreePalm, Utensils, Bed, Car, Train, Users, AlertTriangle } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Calendar, Waves, Sun, Fish, TreePalm, Utensils, Bed, Car, Users, AlertTriangle } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ImageCarousel } from "@/components/ui/image-carousel"
