@@ -3,7 +3,7 @@ import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 
 interface ImageCarouselProps {
-  images: { src: string; alt: string; caption?: string; title?: string }[]
+  images: { src: string; alt: string; caption?: string; title?: string }[];
 }
 
 export const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
@@ -14,7 +14,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
 
   return (
     <div className="relative w-full max-w-full">
-      <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
+      <div className="relative h-[400px] md:h-[600px] rounded-lg overflow-hidden">
         <Image
           src={images[current].src}
           alt={images[current].alt}
