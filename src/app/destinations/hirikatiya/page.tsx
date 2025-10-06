@@ -881,7 +881,7 @@ export default function HiriketiyaTravelGuide() {
                         <li>• Mulkirigala Temple - ancient rock temple (1 hour)</li>
                         <li>• Wewurukannala Vihara - giant Buddha statue</li>
                         <li>• Blow holes near Dickwella (20 minutes)</li>
-                        <li>• Snake Island & Weligama stilt fishermen</li>
+                        <li>• Taprobane Island & Weligama stilt fishermen</li>
                         <li>• Galle Fort UNESCO site (1.5 hours)</li>
                       </ul>
                     </div>

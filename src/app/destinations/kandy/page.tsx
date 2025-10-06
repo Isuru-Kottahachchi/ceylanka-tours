@@ -688,7 +688,7 @@ export default function KandyTravelGuide() {
           </p>
           <div className="grid md:grid-cols-3 gap-6">
 
-            <Link href="/destinations/ambuluwawa" className="block hover:shadow-md transition-shadow duration-200">
+            <Link href="/destinations/ambuluwawa-tower" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer h-full">
                 <CardHeader>
                   <CardTitle className="text-lg">Ambuluwawa Tower - Amazing Views</CardTitle>

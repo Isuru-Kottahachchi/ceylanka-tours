@@ -73,20 +73,20 @@ export default function WeligamaTravelGuide() {
             </p>
           </div>
         </section>
-
-        {/* Quick Facts */}
-        <section className="mb-12 scroll-mt-24" id="quick-facts">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Quick Weligama Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
+        {/* Quick Facts & How to Get There side by side */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-10 scroll-mt-40" id="quick-facts">
+          {/* Quick Facts */}
+          <section>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Facts About Weligama
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
                 <div className="space-y-3">
-                  <div className="flex items-center gap-2">
+                 <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-blue-500" />
                     <span>
                       <strong>Location:</strong> Southern Coast, 150km from Colombo
@@ -104,20 +104,19 @@ export default function WeligamaTravelGuide() {
                       <strong>Best Weather:</strong> November to April
                     </span>
                   </div>
-                </div>
-                <div className="space-y-3">
+               
                   <div className="flex items-center gap-2">
                     <Waves className="w-4 h-4 text-purple-500" />
                     <span>
                       <strong>Surf Season:</strong> November to April
                     </span>
                   </div>
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <Camera className="w-4 h-4 text-red-500" />
                     <span>
-                      <strong>Must-See:</strong> Coconut Tree Hill & Snake Island
+                      <strong>Must-See:</strong>  Island
                     </span>
-                  </div>
+                  </div> */}
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-teal-500" />
                     <span>
@@ -125,61 +124,81 @@ export default function WeligamaTravelGuide() {
                     </span>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-        {/* Getting There */}
-        <section className="mb-12 scroll-mt-24" id="getting-there">
-          <h2 className="text-3xl font-bold mb-6">How to Get to Weligama</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-green-600">
-                  <Car className="w-5 h-5" />
-                  By Car/Taxi (Recommended)
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                <p>A2 Southern Expressway via Galle</p>
-                <p className="mt-2"><strong>From Colombo:</strong> 3-4 hours (150km)</p>
-                <p><strong>From Airport:</strong> 4-5 hours (180km)</p>
-                <p><strong>Taxi Cost:</strong> $60-80 from Colombo</p>
-                <p className="text-xs mt-2 text-green-600">Most convenient for groups</p>
               </CardContent>
             </Card>
-            <Card>
+          </section>
+          {/* How to Get to  */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-blue-600">
-                  <Train className="w-5 h-5" />
-                  By Train
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Waligama
                 </CardTitle>
               </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                <p>Scenic coastal railway direct to Weligama station</p>
-                <p className="mt-2"><strong>From Colombo:</strong> 3.5-4 hours</p>
-                <p><strong>From Galle:</strong> 45 minutes</p>
-                <p><strong>Cost:</strong> 200-800 LKR depending on class</p>
-                <p className="text-xs mt-2 text-blue-600">Most scenic and comfortable option</p>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo (Depends on the road Express way or coastal road)</li>
+                      <li>• <strong>Duration:</strong> 4-5 hours</li>
+                      <li>• <strong>Cost:</strong> Around $60 USD</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Mirissa. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo → Waligama</li>
+                      <li>• <strong>Duration:</strong> 6-7 hours total</li>
+                      <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
+                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Nanu Oya station</span></li>
+                      <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li>
+                    </ul>
+
+                    <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo → Waligama</li>
+                      <li>• <strong>Duration:</strong> 5-6 hours</li>
+                      <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
+                      <li>• <strong>Frequency:</strong> Regular departures from Kandy</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">🚂 Special Note about Train Journey</h4>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    The train journey from Kandy to Nanu Oya is considered one of the world&apos;s most scenic train rides, passing through breathtaking tea plantations, mountain tunnels, and misty landscapes. <strong>Important:</strong> Nanu Oya is the closest railway station to Nuwara Eliya - you&apos;ll need to take a taxi or tuk-tuk for the final 8km uphill journey to the town center.
+                  </p>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Book reserved seats in advance for the best views</li>
+                    <li>• Sit on the right side for better mountain scenery</li>
+                    <li>• Bring warm clothes - it gets cool in the mountains</li>
+                    <li>• Pre-arrange transport from Nanu Oya station</li>
+                  </ul>
+                </div>
               </CardContent>
             </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-purple-600">
-                  <Users className="w-5 h-5" />
-                  By Bus
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-sm text-muted-foreground">
-                <p>Regular AC and non-AC buses via Galle</p>
-                <p className="mt-2"><strong>From Colombo:</strong> 4-5 hours</p>
-                <p><strong>From Galle:</strong> 1 hour</p>
-                <p><strong>Cost:</strong> 200-600 LKR</p>
-                <p className="text-xs mt-2 text-purple-600">Most economical option</p>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+          </section>
+        </div>
 
         {/* Stilt Fishermen */}
         <section className="mb-12 scroll-mt-24" id="stilt-fishermen">
@@ -230,7 +249,7 @@ export default function WeligamaTravelGuide() {
             {/* Snake Island */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Snake Island (Taprobane Island)</CardTitle>
+                <CardTitle>1. Taprobane Island</CardTitle>
                 <CardDescription>Private island villa accessible during low tide</CardDescription>
               </CardHeader>
               <CardContent>
@@ -1010,7 +1029,7 @@ export default function WeligamaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/Mirissa-beach.jpg"
+                  src="/Mirissa1.jpg"
                   alt="Mirissa Beach with golden sands and turquoise waters"
                   width={300}
                   height={200}

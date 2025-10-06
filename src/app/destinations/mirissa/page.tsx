@@ -16,7 +16,7 @@ export default function MirissaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Mirissa.jpg"
+          src="/Mirissa-Coco-Hill.jpeg"
           alt="Stunning aerial view of Mirissa beach showing golden sand, turquoise waters, palm trees, and the iconic coconut hill"
           fill
           className="object-cover"
@@ -184,7 +184,7 @@ export default function MirissaTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                {/* <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
                   <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">🚂 Special Note about Train Journey</h4>
                   <p className="text-sm text-muted-foreground mb-2">
                     The train journey from Kandy to Nanu Oya is considered one of the world&apos;s most scenic train rides, passing through breathtaking tea plantations, mountain tunnels, and misty landscapes. <strong>Important:</strong> Nanu Oya is the closest railway station to Nuwara Eliya - you&apos;ll need to take a taxi or tuk-tuk for the final 8km uphill journey to the town center.
@@ -195,7 +195,7 @@ export default function MirissaTravelGuide() {
                     <li>• Bring warm clothes - it gets cool in the mountains</li>
                     <li>• Pre-arrange transport from Nanu Oya station</li>
                   </ul>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           </section>
@@ -206,20 +206,30 @@ export default function MirissaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">World&apos;s Best Whale Watching Experience</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Magnificent blue whale surfacing near Mirissa with whale watching boat in background"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-2 italic">
+              <ImageCarousel
+                    images={[
+                        {
+                        src: "/Whale-Shark-at-Mirissa.jpg",
+                        alt: "Whale Shark swimming in the ocean",
+                        caption: "Whale Shark sighting in Mirissa",
+                        title: "Whale Shark",
+                      },
+                      {
+                        src: "/Whale-in-Mirissa.jpg",
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+                    
+                    ]}
+                  />
+              {/* <p className="text-sm text-muted-foreground mt-2 italic">
                 Blue whales, the largest animals on Earth, frequent Mirissa&apos;s waters
-              </p>
+              </p> */}
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Mirissa is globally recognized as one of the best places to spot blue whales, sperm whales, and dolphins.
+                You might know about Mirissa Coconut tree hill but also Mirissa is globally recognized as one of the best places to spot blue whales, sperm whales, and dolphins.
                 The continental shelf drops dramatically just off the coast, creating deep waters where these magnificent
                 creatures feed and play, often coming remarkably close to shore.
               </p>
@@ -232,6 +242,7 @@ export default function MirissaTravelGuide() {
                 <h4 className="font-semibold text-blue-800 mb-2">What You Might See:</h4>
                 <ul className="text-sm text-blue-700 space-y-1">
                   <li>• Blue Whales (largest animals on Earth)</li>
+                   <li>• Whale Sharks (Largest Fish in the world)</li>
                   <li>• Sperm Whales and Pilot Whales</li>
                   <li>• Spinner and Bottlenose Dolphins</li>
                   <li>• Flying Fish and Sea Turtles</li>
@@ -256,18 +267,19 @@ export default function MirissaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <ImageCarousel
                     images={[
-                      {
-                        src: "/coconut-hill-1.jpg",
-                        alt: "Coconut Hill with sunset view",
-                        caption: "Sunset at Coconut Hill",
-                        title: "Coconut Hill",
-                      },
-                      {
-                        src: "/coconut-hill-2.jpg",
+                        {
+                        src: "/Mirissa1.jpg",
                         alt: "Coconut Hill with panoramic ocean view",
                         caption: "Panoramic views from Coconut Hill",
                         title: "Coconut Hill",
                       },
+                      {
+                        src: "/Mirissa-Coconut-Hill.jpg",
+                        alt: "Coconut Hill with sunset view",
+                        caption: "Sunset at Coconut Hill",
+                        title: "Coconut Hill",
+                      },
+                    
                     ]}
                   />
                   <div>
@@ -310,7 +322,7 @@ export default function MirissaTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/mirissa-beach-1.jpg",
+                        src: "/Mirissa-Beach.jpg",
                         alt: "Mirissa Beach with golden sand",
                         caption: "Relaxing at Mirissa Beach",
                         title: "Mirissa Beach",
@@ -352,6 +364,56 @@ export default function MirissaTravelGuide() {
               </CardContent>
             </Card>
 
+            {/* Mirissa Beach */}
+            <Card>
+              <CardHeader>
+                <CardTitle>3. Mirissa Parrot Rock</CardTitle>
+                <CardDescription>Good viewpoint with snorkeller&apos;s friendly environment</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Parrot-Rock.jpg",
+                        alt: "Mirissa Beach with golden sand",
+                        caption: "Relaxing at Mirissa Beach",
+                        title: "Mirissa Beach",
+                      },
+                      {
+                        src: "/mirissa-beach-2.jpg",
+                        alt: "Mirissa Beach with palm trees",
+                        caption: "Palm trees at Mirissa Beach",
+                        title: "Mirissa Beach",
+                      },
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Basically a small rock outcrop in the middle of the beach, this is a great spot to climb up and get a different perspective of the coastline. You can see Mirissa coasline and the beautiful horizon as your surroundings
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Safe swimming with gentle waves
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Beachside restaurants and bars
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Water sports and boat trips available
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect for sunbathing and relaxation
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
             {/* Secret Beach */}
             <Card>
               <CardHeader>
