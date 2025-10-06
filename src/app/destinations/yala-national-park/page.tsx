@@ -1,23 +1,13 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TelescopeIcon as Binoculars } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TelescopeIcon as Binoculars, AlertTriangle } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-export const metadata: Metadata = {
-  title: "Yala National Park Sri Lanka: Complete Safari Guide 2025 | Leopard Capital of the World",
-  description:
-    "Discover Yala National Park, Sri Lanka’s premier wildlife destination. Complete safari guide with leopard spotting tips, best times to visit, and everything you need to know.",
-  keywords:
-    "Yala National Park, Sri Lanka safari, leopard spotting, wildlife photography, elephant watching, safari tours, national park Sri Lanka",
-  openGraph: {
-    title: "Yala National Park: Complete Safari Guide 2025",
-    description: "Your ultimate guide to Sri Lanka’s most famous national park",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+
 
 export default function YalaNationalParkTravelGuide() {
   return (
@@ -123,11 +113,13 @@ export default function YalaNationalParkTravelGuide() {
                     </div>
                   </div>
                   {/* Valuable Fact for Desktop */}
-                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
                     <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
                     <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
-                        <li>• Plan to visit weekdays to avoid crowds in weekends</li>
+                      <li>• Plan to visit weekdays to avoid crowds in weekends</li>
                       <li>• Start early morning to avoid traffic and heat</li>
+                      <li>• Bring binoculars for better wildlife viewing</li>
+                      <li>• Don&apos;t feed the animals during the safari</li>
                       <li>• Carry water and snacks for the journey</li>
                       <li>• Book accommodations in advance during peak season</li>
                       <li>• Consider staying overnight to explore all sites properly</li>
@@ -176,16 +168,16 @@ export default function YalaNationalParkTravelGuide() {
                     <div>
                       <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• <strong>Route:</strong> Colombo Fort → Kurunegala → Anuradhapura</li>
+                        <li>• <strong>Route:</strong> Colombo Fort → Thissamaharama</li>
                         <li>• <strong>Duration:</strong> 5-6 hours</li>
                         <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
                         <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
                       </ul>
 
-                      
+
                     </div>
                   </div>
-                  
+
                 </CardContent>
               </Card>
             </section>
@@ -456,12 +448,54 @@ export default function YalaNationalParkTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="flex flex-col gap-6">
-                  <Image
-                    src="/Srilankanleopard.jpg"
-                    alt="Magnificent Sri Lankan leopard in Yala National Park showing distinctive spotted coat and powerful build"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Srilankanleopard.jpg",
+                        alt: "Whale Shark swimming in the ocean",
+                        caption: "Whale Shark sighting in Mirissa",
+                        title: "Whale Shark",
+                      },
+                        {
+                        src: "/Leopard-in-Yala.jpg",
+                        alt: "Leopard in Yala",
+                        caption: "Leopard in Yala",
+                        title: "Leopard in Yala",
+                      },
+
+                      {
+                        src: "/Yala-national-park.jpg",
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+                      {
+                        src: "/Leopard1.webp",
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+
+                      {
+                        src: "/Leopard2.webp",
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+                      {
+                        src: "/Leopard3.webp",
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+                      {
+                        src: "/Leopard4.webp", 
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -469,6 +503,70 @@ export default function YalaNationalParkTravelGuide() {
                       magnificent big cats are larger than their African and Asian counterparts, with males weighing up
                       to 77kg. Unlike other leopard populations, Yala’s leopards are often active during daylight.
                     </p>
+                    <div className="space-y-4">
+                      <div className="bg-green-50 dark:bg-green-950/30 p-4 rounded-lg mb-10">
+                        <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Did you know?</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
+                            <div>
+                              <p className="mb-4">The mystical black leopards of Yala, also known as melanistic leopards, are one of the rarest and most elusive big cats in the world. These magnificent creatures appear almost entirely black due to a recessive genetic mutation that causes excess melanin production in their coat.</p>
+                              <div className="grid md:grid-cols-2 gap-6 items-start">
+                                <div>
+                                  <Image
+                                    src="/Black-Leopard.jpg"
+                                    alt="Rare black leopard (melanistic leopard) in Yala National Park"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg shadow-lg"
+                                  />
+                                </div>
+                                <div>
+                                  <ul className="text-sm space-y-3">
+                                    <li className="flex items-start gap-2">
+                                      <span className="text-amber-500 mt-1">•</span>
+                                      <div>
+                                        <strong className="text-amber-700 dark:text-amber-400">Unique Pattern:</strong>
+                                        <p>Their rosette patterns are still visible in bright sunlight, appearing as dark spots against their jet-black coat</p>
+                                      </div>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                      <span className="text-amber-500 mt-1">•</span>
+                                      <div>
+                                        <strong className="text-amber-700 dark:text-amber-400">Genetic Marvel:</strong>
+                                        <p>Melanism occurs in about 11% of leopards globally, but is extremely rare in Sri Lanka</p>
+                                      </div>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                      <span className="text-amber-500 mt-1">•</span>
+                                      <div>
+                                        <strong className="text-amber-700 dark:text-amber-400">Hunting Advantage:</strong>
+                                        <p>Their dark coloration provides superior camouflage during nighttime hunting</p>
+                                      </div>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                      <span className="text-amber-500 mt-1">•</span>
+                                      <div>
+                                        <strong className="text-amber-700 dark:text-amber-400">Cultural Significance:</strong>
+                                        <p>Known as &lsquo;Kalu Kotiya&rsquo; in Sinhala, they hold a special place in Sri Lankan folklore</p>
+                                      </div>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                      <span className="text-amber-500 mt-1">•</span>
+                                      <div>
+                                        <strong className="text-amber-700 dark:text-amber-400">Recent Sightings:</strong>
+                                        <p>While extremely rare, there have been confirmed sightings in Yala&apos;s Block I and the surrounding regions</p>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -500,12 +598,23 @@ export default function YalaNationalParkTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center mb-6">
-                  <Image
-                    src="/yala-elephant.jpg"
-                    alt="A herd of Asian elephants in Yala National Park"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Thunpath-Rana.jpg",
+                        alt: "Thun Path Rana herd of elephants",
+                        caption: "Thun Path Rana herd of elephants",
+                        title: "Thun Path Rana",
+                      },
+                      {
+                        src: "/Whale-in-Mirissa.jpg",
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -513,6 +622,40 @@ export default function YalaNationalParkTravelGuide() {
                       These intelligent pachyderms can be observed year-round, with the best viewing opportunities during the dry season when they
                       gather around water holes.
                     </p>
+                    <div className="bg-purple-50 dark:bg-purple-950/30 p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-purple-800 dark:text-purple-400 mb-2">Thun Path Rana: The Three-Generation Herd</h4>
+                      <p className="text-sm text-muted-foreground mb-2">
+                        In Sri Lankan elephant society, the term "Thun Path Rana" refers to the three-generation family structure
+                        that forms the core of each herd. This consists of:
+                      </p>
+                      <ul className="text-sm text-muted-foreground space-y-2">
+                        <li>•<b> The matriarch (grandmother)</b> - The wise leader who guides the herd through ancient migration routes</li>
+                        <li>•<b> Her daughters (mothers)</b> - Who nurture and protect the current generation</li>
+                        <li>•<b> The calves (children)</b> - The newest generation learning vital survival skills</li>
+                      </ul>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        Young male elephants naturally separate from the herd around 12-15 years of age, a process known
+                        as "dispersal." These males then either live solitary lives or form loose bachelor groups, only
+                        returning to the herds during mating season. This natural behavior helps prevent inbreeding and
+                        maintains genetic diversity.
+                      </p>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="bg-green-50 dark:bg-green-950/30 p-4 rounded-lg">
+                        <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Did you know?</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
+                            Did you know female elephants are pregnant for a whopping 22 months? Yep, almost two years! That means if we lose a baby elephant, we have to wait ages for another one to arrive. No wonder their population grows so slowly  and in Sri Lanka, there are already fewer than 7,000 left. So let&apos;s be kind and protect these gentle giants, because our future generations deserve to meet them too!
+                          </li>
+
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
+                            Life span of 60-70 years in the wild but this can be reduced due to habitat loss, human-elephant conflict, and poaching.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                     <div className="space-y-4">
                       <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
                         <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Key Features</h4>
@@ -532,6 +675,7 @@ export default function YalaNationalParkTravelGuide() {
                         </ul>
                       </div>
                     </div>
+                    <Link className="text-amber-500 underline" href="/blog/sri-lankan-elephants">Learn more about Elephants Park</Link>
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -571,10 +715,176 @@ export default function YalaNationalParkTravelGuide() {
               </CardContent>
             </Card>
 
-            {/* Other Wildlife */}
+            {/* Sloth Bears */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Other Amazing Wildlife</CardTitle>
+                <CardTitle>3. Sloth Bears (Melursus ursinus)</CardTitle>
+                <CardDescription>The Mysterious Honey-Loving Bears of Yala</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center mb-6">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Sloth-Bear.jpg",
+                        alt: "Whale Shark swimming in the ocean",
+                        caption: "Whale Shark sighting in Mirissa",
+                        title: "Whale Shark",
+                      },
+                      {
+                        src: "/Whale-in-Mirissa.jpg",
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+
+                    ]}
+                  />
+
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Yala&apos;s Sloth Bears are fascinating creatures known for their shaggy black fur and distinctive pale snout.
+                      These unique bears have evolved specialized features for their insectivorous diet, including the ability
+                      to close their nostrils to protect against dust while blowing away dirt to access termites.
+                    </p>
+                    <div className="space-y-4">
+                      <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
+                        <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Unique Characteristics</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
+                            Long curved claws for digging termite mounds
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
+                            Excellent sense of smell for locating food
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
+                            Can close nostrils while feeding on insects
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Marsh Crocodiles */}
+            <Card>
+              <CardHeader>
+                <CardTitle>4. Marsh Crocodiles (Crocodylus palustris)</CardTitle>
+                <CardDescription>Ancient Predators of Yala&apos;s Waterways</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center mb-6">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Whale-Shark-at-Mirissa.jpg",
+                        alt: "Whale Shark swimming in the ocean",
+                        caption: "Whale Shark sighting in Mirissa",
+                        title: "Whale Shark",
+                      },
+                      {
+                        src: "/Whale-in-Mirissa.jpg",
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Yala&apos;s waterways are home to impressive populations of Marsh Crocodiles, also known as Mugger Crocodiles.
+                      These powerful reptiles can grow up to 5 meters in length and are perfectly adapted to life in the park&apos;s
+                      various water bodies, from lakes to seasonal pools.
+                    </p>
+                    <div className="space-y-4">
+                      <div className="bg-green-50 dark:bg-green-950/30 p-4 rounded-lg">
+                        <h4 className="font-semibold text-green-800 dark:text-green-400 mb-2">Behavior & Habitat</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                            Most active during dawn and dusk
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                            Often seen basking on riverbanks
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                            Excellent swimmers and ambush predators
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Water Buffalo */}
+            <Card>
+              <CardHeader>
+                <CardTitle>5. Wild Water Buffalo (Bubalus arnee)</CardTitle>
+                <CardDescription>The Powerful Grazers of Yala&apos;s Grasslands</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center mb-6">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Whale-Shark-at-Mirissa.jpg",
+                        alt: "Whale Shark swimming in the ocean",
+                        caption: "Whale Shark sighting in Mirissa",
+                        title: "Whale Shark",
+                      },
+                      {
+                        src: "/Whale-in-Mirissa.jpg",
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Wild Water Buffalo are among Yala&apos;s most impressive residents, with massive curved horns that can span up
+                      to 2 meters tip to tip. These powerful bovines play a crucial role in maintaining the park&apos;s grassland
+                      ecosystems and can be formidable when protecting their territory.
+                    </p>
+                    <div className="space-y-4">
+                      <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg">
+                        <h4 className="font-semibold text-blue-800 dark:text-blue-400 mb-2">Key Features</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                            Massive body size, adults weigh over 1,000 kg
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                            Excellent swimmers, spend hours in water
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                            Form strong family bonds in herds
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Other Notable Wildlife */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Other Notable Wildlife</CardTitle>
                 <CardDescription>Diverse ecosystem with 44 mammal species</CardDescription>
               </CardHeader>
               <CardContent>
@@ -582,27 +892,130 @@ export default function YalaNationalParkTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">Mammals</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• Sloth Bears - Excellent tree climbers</li>
-                      <li>• Water Buffalo - Large herds in grasslands</li>
                       <li>• Spotted Deer - Most common prey species</li>
-                      <li>• Wild Boar - Often seen in family groups</li>
-                      <li>• Sambur Deer - Largest deer species</li>
-                      <li>• Golden Jackal - Opportunistic hunters</li>
-                      <li>• Fishing Cat - Semi-aquatic feline</li>
+                      <li>• Sambur Deer - Largest deer species in Sri Lanka</li>
+                      <li>• Golden Jackal - Skilled opportunistic hunters</li>
+                      <li>• Fishing Cat - Specialized aquatic hunters</li>
+                      <li>• Toque Macaque - Endemic primate species</li>
+                      <li>• Grey Langur - Agile tree-dwelling monkeys</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-3">Birds & Reptiles</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• 215 bird species including migrants</li>
-                      <li>• Peacocks - National bird of Sri Lanka</li>
-                      <li>• Painted Stork - Large wading bird</li>
-                      <li>• Crocodiles - In lagoons and water bodies</li>
-                      <li>• Monitor Lizards - Up to 2 meters long</li>
-                      <li>• Various snake species</li>
-                      <li>• Sea turtles on coastal areas</li>
+                      <li>• Peacocks - Spectacular courtship displays</li>
+                      <li>• Painted Stork - Elegant wading birds</li>
+                      <li>• Monitor Lizards - Skilled hunters up to 2m long</li>
+                      <li>• Python - Sri Lanka&apos;s largest snake</li>
+                      <li>• Sea Eagles - Coastal raptor species</li>
+                      <li>• Spoonbills - Unique feeding adaptations</li>
                     </ul>
                   </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+        {/* Dos and Donts */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts for Safari </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="border-green-200 bg-green-50/50 dark:bg-green-900/60 dark:border-green-700">
+              <CardHeader>
+                <CardTitle className="text-green-700 dark:text-green-100 flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5" />
+                  DOs - Make the Most of Your Visit
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3 text-green-900 dark:text-green-100">
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Wear comfortable clothing:</strong> Temperature can vary, light layers recommended
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Follow your guides intructions:</strong> They know the park and animal behavior best
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Use binoculars:</strong> Enhance your wildlife viewing experience
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Visit during weekdays:</strong> Less crowded and more peaceful
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Book your Safari in advance:</strong> Ensure availability and the best experience
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Take photographs to make memories:</strong> Visiting this paradise without capturing the moments is a missed opportunity. But remember to respect wildlife and avoid flash photography.
+                  </span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-red-200 bg-red-50/50 dark:bg-red-900/60 dark:border-red-700">
+              <CardHeader>
+                <CardTitle className="text-red-700 dark:text-red-100 flex items-center gap-2">
+                  <AlertTriangle className="w-5 h-5" />
+                  DONTs - Avoid These Common Mistakes
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3 text-red-900 dark:text-red-100">
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Dont feed animals:</strong> Yes, you might get a cute photo, but it harms their health and not a good thing at all
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Dont make unnecessary noise:</strong> Disturbs wildlife and other visitors and somtimes animal can be aggeressive too
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Dont use flasher for photography:</strong> Flashers can make animals aggeressive or panic and spoil your experience
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Dont litter:</strong> Help to save these beautiful places and wildlife
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Dont rush through:</strong> Take time to appreciate the colonial architecture
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Dont be panic but be aware:</strong> Very rarely we have to face some challenges during the safari, so always listen to your guide, dont worry they are well trained to handle such situations
+                  </span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
+                  <span className="text-sm">
+                    <strong>Dont visit only during midday:</strong> Very hot and crowded with tour groups
+                  </span>
                 </div>
               </CardContent>
             </Card>
