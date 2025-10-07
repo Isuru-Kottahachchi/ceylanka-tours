@@ -220,7 +220,7 @@ export default function AmbalangodaGuide() {
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li>• String puppets (most common)</li>
                       <li>• Rod puppets for special characters</li>
-                      <li>• Hand puppets for children's shows</li>
+                      <li>• Hand puppets for children&apos;s shows</li>
                       <li>• Giant puppets for festivals</li>
                     </ul>
                   </div>
