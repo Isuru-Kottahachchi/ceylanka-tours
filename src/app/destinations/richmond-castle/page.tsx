@@ -40,15 +40,15 @@ export default function RichmondCastleGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Richmond Castle</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">An Architectural Gem in Kalutara</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Kalutara, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Building className="w-4 h-4 mr-1" />
               Edwardian Mansion
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <Calendar className="w-4 h-4 mr-1" />
               Built 1896
             </Badge>

@@ -550,10 +550,10 @@ export default function YalaNationalParkTravelGuide() {
                               <div className="grid md:grid-cols-2 gap-6 items-start">
                                 <div>
                                   <Image
-                                    src="/Black-Leopard.jpg"
+                                    src="/Black-Leopard.jpeg"
                                     alt="Rare black leopard (melanistic leopard) in Yala National Park"
-                                    width={300}
-                                    height={200}
+                                    width={400}
+                                    height={300}
                                     className="rounded-lg shadow-lg"
                                   />
                                 </div>

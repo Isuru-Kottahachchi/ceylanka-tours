@@ -104,8 +104,8 @@ export default function SigiriyaTravelGuide() {
                   <strong>Stay quiet during your climb:</strong> Hornets and bees live in the rock cracks and can become
                   aggressive if disturbed by loud noises. Speak softly and avoid sudden movements near the rock face.
                 </p>
-             
-                <Link 
+
+                <Link
                   href="/blog/how-to-save-from-bees-hornets-attack"
                   className="inline-block px-3 py-1 text-xs font-medium text-amber-700 bg-amber-300 rounded-full hover:bg-amber-200 transition-colors"
                 >
@@ -118,7 +118,7 @@ export default function SigiriyaTravelGuide() {
                 <p className="text-sm text-amber-700 mb-2">
                   <strong>Stay hydrated:</strong> Bring enough water for the climb, especially on hot days.
                 </p>
-                   <p className="text-sm text-amber-700">
+                <p className="text-sm text-amber-700">
                   Local guides will show you safe areas to rest and take photos. Follow their instructions for a safe and
                   enjoyable experience.
                 </p>
@@ -140,104 +140,104 @@ export default function SigiriyaTravelGuide() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-blue-500" />
-                  <span>
-                    <strong>Built:</strong> 5th Century AD (477-495 AD)
-                  </span>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-blue-500" />
+                    <span>
+                      <strong>Built:</strong> 5th Century AD (477-495 AD)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Mountain className="w-4 h-4 text-green-500" />
+                    <span>
+                      <strong>Height:</strong> 200 meters (660 feet)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users className="w-4 h-4 text-purple-500" />
+                    <span>
+                      <strong>Built by:</strong> King Kashyapa I
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-red-500" />
+                    <span>
+                      <strong>Location:</strong> Central Province, Sri Lanka
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Star className="w-4 h-4 text-yellow-500" />
+                    <span>
+                      <strong>UNESCO Status:</strong> World Heritage Site (1982)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-orange-500" />
+                    <span>
+                      <strong>Climb Time:</strong> 1-3 hours round trip (depending on pace and fitness level)
+                    </span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Mountain className="w-4 h-4 text-green-500" />
-                  <span>
-                    <strong>Height:</strong> 200 meters (660 feet)
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Users className="w-4 h-4 text-purple-500" />
-                  <span>
-                    <strong>Built by:</strong> King Kashyapa I
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4 text-red-500" />
-                  <span>
-                    <strong>Location:</strong> Central Province, Sri Lanka
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Star className="w-4 h-4 text-yellow-500" />
-                  <span>
-                    <strong>UNESCO Status:</strong> World Heritage Site (1982)
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-orange-500" />
-                  <span>
-                    <strong>Climb Time:</strong> 1-3 hours round trip (depending on pace and fitness level)
-                  </span>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+              </CardContent>
+            </Card>
+          </section>
 
-        {/* Getting to Sigiriya from Colombo */}
-        <section>
-          <Card className="border-blue-200 dark:border-blue-800 bg-blue-50/30 dark:bg-blue-950/30">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2  text-blue-700 dark:text-blue-300">
-                <MapPin className="w-5 h-5" />
-                How to Travel from Colombo to Sigiriya
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Distance:</strong> 170km (105 miles)</li>
-                    <li>• <strong>Duration:</strong> 3.5-4 hours</li>
-                    <li>• <strong>Cost:</strong> $50-80 USD for day trip</li>
-                    <li>• <strong>Best option:</strong> Most convenient and flexible</li>
-                  </ul>
-                  <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
-                    <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
-                      <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Sigiriya. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
-                    </p>
-                    <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
-                      <div className="flex items-center gap-2">
-                        <span>📞</span>
-                        <span><strong>Contact:</strong> +94 77 123 4567</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span>✈️</span>
-                        <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
-                          <strong>Airport Transfer Services</strong> - Click for details & booking
-                        </Link>
+          {/* Getting to Sigiriya from Colombo */}
+          <section>
+            <Card className="border-blue-200 dark:border-blue-800 bg-blue-50/30 dark:bg-blue-950/30">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2  text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Travel from Colombo to Sigiriya
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 170km (105 miles)</li>
+                      <li>• <strong>Duration:</strong> 3.5-4 hours</li>
+                      <li>• <strong>Cost:</strong> $50-80 USD for day trip</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Sigiriya. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo → Dambulla/Habarana → Sigiriya</li>
+                      <li>• <strong>Duration:</strong> 4-5 hours total</li>
+                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                      <li>• <strong>Note:</strong> Requires bus change in Dambulla or Habarana</li>
+                    </ul>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Route:</strong> Colombo → Dambulla/Habarana → Sigiriya</li>
-                    <li>• <strong>Duration:</strong> 4-5 hours total</li>
-                    <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
-                    <li>• <strong>Note:</strong> Requires bus change in Dambulla or Habarana</li>
-                  </ul>
+                <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
+                  <p className="text-sm text-blue-800 dark:text-blue-200">
+                    <strong>💡 Pro Tip:</strong> Start early (6-7 AM) from Colombo to avoid traffic and reach Sigiriya before the midday heat.
+                    Most visitors stay overnight in nearby Dambulla or Habarana for a more relaxed experience.
+                  </p>
                 </div>
-              </div>
-              <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
-                <p className="text-sm text-blue-800 dark:text-blue-200">
-                  <strong>💡 Pro Tip:</strong> Start early (6-7 AM) from Colombo to avoid traffic and reach Sigiriya before the midday heat.
-                  Most visitors stay overnight in nearby Dambulla or Habarana for a more relaxed experience.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+              </CardContent>
+            </Card>
+          </section>
         </div>
 
         {/* The Story */}
@@ -1194,181 +1194,181 @@ export default function SigiriyaTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/destinations/pidurangala-rock" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Pidurangala Rock</CardTitle>
-                  <CardDescription>Best views of Sigiriya</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Pidurangala.jpeg"
-                    alt="View of Sigiriya Rock from Pidurangala Rock"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/pidurangala-rock" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/dambulla-cave-temple" className="block hover:shadow-md transition-shadow duration-200">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Dambulla Cave Temple</CardTitle>
-                  <CardDescription>Golden Temple complex</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Dambullacavetemple.jpeg"
-                    alt="Dambulla Cave Temple showing ancient Buddhist statues and paintings inside rock caves"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings. 20 minutes away.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/dambulla-cave-temple" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/minneriya-national-park" className="block hover:shadow-md transition-shadow duration-200">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Minneriya National Park</CardTitle>
-                  <CardDescription>Elephant gathering</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Minneriyanationalpark.jpeg"
-                    alt="Large herd of elephants gathering at Minneriya National Park during dry season"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Famous for &quot;The Gathering&quot; - hundreds of elephants come together during dry season. 1 hour drive.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/habarana" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Habarana</CardTitle>
-                  <CardDescription>Gateway to Cultural Triangle</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Habarana.jpg"
-                    alt="Habarana town entrance sign"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Explore the gateway town of Habarana, a key access point to Sri Lanka&apos;s Cultural Triangle. Surrounded by lush forests and ancient ruins, Habarana is the perfect base for exploring nearby attractions like Sigiriya Rock Fortress and the ancient city of Polonnaruwa. Experience the rich history and natural beauty of this region, making it a must-visit destination for travelers. About 1.5 hours from Sigiriya.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/habarana" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/polonnaruwa" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Polonnaruwa</CardTitle>
-                  <CardDescription>Ancient city</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Polonnaruwa3.jpeg"
-                    alt="View of Sigiriya Rock from Pidurangala Rock"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Ancient city with well-preserved ruins of palaces, temples, and statues. 1.5 hours drive.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/anuradhapura" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/anuradhapura" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Anuradapura</CardTitle>
-                  <CardDescription>Ancient city</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Anuradhapura.jpg"
-                    alt="View of Sigiriya Rock from Pidurangala Rock"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Explore the sacred city of Anuradhapura, the first capital and ancient heart of Sri Lanka. Famous for its massive dagobas, centuries-old monasteries, and the revered Sri Maha Bodhi tree, Anuradhapura is a UNESCO World Heritage Site and a center of Buddhist pilgrimage. Wander through sprawling ruins, marvel at ancient engineering, and experience the spiritual atmosphere of this legendary kingdom that shaped Sri Lankan civilization for over a thousand years. About 1.5 hours from Sigiriya.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/wasgamuwa-national-park" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Wasgamuwa National Park</CardTitle>
-                  <CardDescription>National park</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Wasgamuwa-National-Park"
-                    alt="View of Wasgamuwa National Park"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Pidurangala Rock</CardTitle>
+                <CardDescription>Best views of Sigiriya</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Pidurangala.jpeg"
+                  alt="View of Sigiriya Rock from Pidurangala Rock"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/pidurangala-rock" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Dambulla Cave Temple</CardTitle>
+                <CardDescription>Golden Temple complex</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Dambullacavetemple.jpeg"
+                  alt="Dambulla Cave Temple showing ancient Buddhist statues and paintings inside rock caves"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  UNESCO site with 5 cave temples filled with Buddha statues and ancient paintings.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/dambulla-cave-temple" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Minneriya National Park</CardTitle>
+                <CardDescription>Elephant gathering</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Minneriyanationalpark.jpeg"
+                  alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Famous for &quot;The Gathering&quot; - hundreds of elephants come together during dry season.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/minneriya-national-park" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card >
+              <CardHeader>
+                <CardTitle className="text-lg">Habarana</CardTitle>
+                <CardDescription>Gateway to Cultural Triangle</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Habarana.jpg"
+                  alt="Habarana town entrance sign"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the gateway town of Habarana, a key access point to Sri Lanka&apos;s Cultural Triangle. Surrounded by lush forests and ancient ruins, Habarana is the perfect base for exploring nearby attractions like Sigiriya Rock Fortress and the ancient city of Polonnaruwa. Experience the rich history and natural beauty of this region, making it a must-visit destination for travelers. About 1.5 hours from Sigiriya.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/habarana" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card >
+              <CardHeader>
+                <CardTitle className="text-lg">Polonnaruwa</CardTitle>
+                <CardDescription>Ancient city</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Polonnaruwa3.jpeg"
+                  alt="View of Sigiriya Rock from Pidurangala Rock"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Ancient city with well-preserved ruins of palaces, temples, and statues. 1.5 hours drive.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/polonnaruwa" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card >
+              <CardHeader>
+                <CardTitle className="text-lg">Anuradapura</CardTitle>
+                <CardDescription>Ancient city</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Anuradhapura.jpg"
+                  alt="View of Sigiriya Rock from Pidurangala Rock"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the sacred city of Anuradhapura, the first capital and ancient heart of Sri Lanka. Famous for its massive dagobas, centuries-old monasteries, and the revered Sri Maha Bodhi tree, Anuradhapura is a UNESCO World Heritage Site and a center of Buddhist pilgrimage. Wander through sprawling ruins, marvel at ancient engineering, and experience the spiritual atmosphere of this legendary kingdom that shaped Sri Lankan civilization for over a thousand years. About 1.5 hours from Sigiriya.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/anuradhapura" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card >
+              <CardHeader>
+                <CardTitle className="text-lg">Wasgamuwa National Park</CardTitle>
+                <CardDescription>National park</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Wasgamuwa-National-Park"
+                  alt="View of Wasgamuwa National Park"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Climb this nearby rock for the perfect photo of Sigiriya. Easier climb, amazing sunrise views!
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/wasgamuwa-national-park" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
 
           </div>
         </section>

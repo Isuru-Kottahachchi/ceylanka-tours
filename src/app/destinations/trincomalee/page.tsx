@@ -268,13 +268,14 @@ export default function TrincomaleeTravelGuide() {
                       Explore the ramparts, old cannons, and historic buildings within the fort complex. It is a great
                     </p>
                     <p className="text-muted-foreground mb-4">
+                      Koneshwaram Kovil is located within this fort complex. Also a one of Irish Colonel Arthur Wellesley's bungalow also located here. 
                       spot for photography, especially during sunrise and sunset. The fort is still an active
                       military base, so some areas may be restricted. Entry is free, and it is open to visitors daily.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Seven distinct thermal wells with unique properties
+                       Portuguese colonial architecture
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -284,14 +285,7 @@ export default function TrincomaleeTravelGuide() {
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                         Rich in minerals with believed healing properties
                       </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Historical significance in Ramayana epic
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Important pilgrimage site for multiple religions
-                      </li>
+                     
                     </ul>
                   </div>
                 </div>

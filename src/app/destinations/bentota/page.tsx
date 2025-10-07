@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 // Beach Safety Popup Modal Component
 function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
@@ -82,136 +83,8 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
     )
 }
 
-// Image carousel component
-function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
-    const [currentIndex, setCurrentIndex] = useState(0)
-
-    const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }
-
-    const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-    }
-
-    const goToImage = (index: number) => {
-        setCurrentIndex(index)
-    }
-
-    return (
-        <div className="relative">
-            <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[500px] sm:h-[350px] flex items-center justify-center">
-                <Image
-                    src={images[currentIndex] || "/placeholder.svg"}
-                    alt={`${alt} - Image ${currentIndex + 1}`}
-                    width={400}
-                    height={300}
-                    className="rounded-lg transition-all duration-300 object-contain w-full h-full"
-                />
-
-                {/* Navigation buttons */}
-                {images.length > 1 && (
-                    <>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-                            onClick={prevImage}
-                        >
-                            <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-                        </Button>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-                            onClick={nextImage}
-                        >
-                            <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-                        </Button>
-                    </>
-                )}
-            </div>
-
-            {/* Dots indicator */}
-            {images.length > 1 && (
-                <div className="flex justify-center mt-3 space-x-2">
-                    {images.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => goToImage(index)}
-                            className={`w-2 h-2 rounded-full transition-colors cursor-pointer ${index === currentIndex
-                                ? "bg-blue-600 dark:bg-blue-400"
-                                : "bg-gray-400 dark:bg-gray-500 hover:bg-gray-500 dark:hover:bg-gray-400"
-                                }`}
-                        />
-                    ))}
-                </div>
-            )}
-
-            {/* Image counter */}
-            {images.length > 1 && (
-                <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-                    {currentIndex + 1} / {images.length}
-                </div>
-            )}
-        </div>
-    )
-}
-
 export default function BentotaGuide() {
-    // Define images for Panchakapaduwa Island
-    const panchakapaduwImages = [
-        "/Panchakpaduwaisland.jpeg",
-        "/Panchakpaduwaisland1.jpeg",
-        "/Panchakpaduwaisland2.jpeg",
-        "/Panchakpaduwaisland3.jpeg",
-        "/Panchakpaduwaisland4.jpeg",
-        "/Panchakpaduwaisland5.jpeg",
-        "/Panchakpaduwaisland6.jpeg",
-        "/Panchakpaduwaisland7.jpeg",
-        "/Panchakpaduwaisland8.jpeg",
-        "/Panchakpaduwaisland9.jpeg",
-    ]
-
-    const seaTurtleImages = [
-        "/Sea-turtle-bentota.jpeg",
-        "/placeholder.svg?height=300&width=400&text=Island+View+2",
-        "/placeholder.svg?height=300&width=400&text=Temple+View",
-        "/placeholder.svg?height=300&width=400&text=Meditation+Area",
-        "/placeholder.svg?height=300&width=400&text=Island+Sunset",
-    ]
-
-    const bentotaBeachImages = [
-        "/Bentotabeach.jpeg",
-        "/placeholder.svg?height=300&width=400&text=Island+View+2",
-        "/placeholder.svg?height=300&width=400&text=Temple+View",
-        "/placeholder.svg?height=300&width=400&text=Meditation+Area",
-        "/placeholder.svg?height=300&width=400&text=Island+Sunset",
-    ]
-
-    const LunugangabawagardenImages = [
-        "/Lunugangabawa.jpeg",
-        "/Lunugangabawa2.jpeg",
-        "/Lunugangabawa3.jpeg",
-        "/Lunugangabawa4.jpeg",
-        "/Lunugangabawa5.jpeg",
-    ]
-
-    const paramotoringImages = [
-        "/placeholder.svg?height=300&width=400&text=Para+Motoring+Flight",
-        "/placeholder.svg?height=300&width=400&text=Aerial+Beach+View",
-        "/placeholder.svg?height=300&width=400&text=Paramotor+Equipment",
-        "/placeholder.svg?height=300&width=400&text=Takeoff+Scene",
-        "/placeholder.svg?height=300&width=400&text=Coastal+Aerial+View",
-    ]
-
-    const templeImages = [
-        "/placeholder.svg?height=200&width=300&text=Temple+Tunnel+Entrance",
-        "/placeholder.svg?height=200&width=300&text=Ancient+Temple+Architecture",
-        "/placeholder.svg?height=200&width=300&text=Underground+Tunnel+System",
-        "/placeholder.svg?height=200&width=300&text=Buddhist+Statues",
-    ]
-
+   
     // Beach Safety Modal State
     const [showSafetyModal, setShowSafetyModal] = useState(false)
 
@@ -542,8 +415,21 @@ export default function BentotaGuide() {
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
-                                        images={bentotaBeachImages}
-                                        alt="Panchakapaduwa Island showing various views of the mystical island, temples, and meditation areas"
+                                        images={[
+                                            {
+                                                src: "/Bentota-beach.jpeg",
+                                                alt: "Scenic view of Bentota Beach with golden sand, turquoise waters and palm trees",
+                                                caption: "Bentota Beach View",
+                                                title: "Bentota Beach"
+                                            },
+                                            {
+                                                src: "/Bentotabeach.jpeg",
+                                                alt: "Bentota Beach with golden sand and clear waters",
+                                                caption: "Bentota Beach",
+                                                title: "Bentota Beach"
+                                            },
+
+                                        ]}
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -644,8 +530,38 @@ export default function BentotaGuide() {
                                         </Link>
                                     </div>
                                     <ImageCarousel
-                                        images={LunugangabawagardenImages}
-                                        alt="Lunuganga Geoffrey Bawa Garden with tropical landscaping and lagoon views"
+                                        images={[
+                                            {
+                                                src: "/Lunugangabawa.jpeg",
+                                                alt: "The first cave of Dambulla showing the reclining Buddha statue",
+                                                caption: "Devaraja Lena Interior",
+                                                title: "Cave of the Divine King"
+                                            },
+                                            {
+                                                src: "/Lunugangabawa2.jpeg",
+                                                alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                                                caption: "Lunuganga Garden",
+                                                title: "Cave 1 Murals"
+                                            },
+                                            {
+                                                src: "/Lunugangabawa3.jpeg",
+                                                alt: "Detailed view of Buddha statue in Cave 1",
+                                                caption: "Buddha Statue Detail",
+                                                title: "Cave 1 Buddha Statue"
+                                            },
+                                            {
+                                                src: "/Lunugangabawa4.jpeg",
+                                                alt: "Detailed view of Buddha statue in Cave 1",
+                                                caption: "Buddha Statue Detail",
+                                                title: "Cave 1 Buddha Statue"
+                                            },
+                                            {
+                                                src: "/Lunugangabawa5.jpeg",
+                                                alt: "Detailed view of Buddha statue in Cave 1",
+                                                caption: "Buddha Statue Detail",
+                                                title: "Cave 1 Buddha Statue"
+                                            }
+                                        ]}
                                     />
                                 </div>
                             </CardContent>
@@ -744,8 +660,26 @@ export default function BentotaGuide() {
                                         {/* Small Image Carousel for Temple Tunnels */}
                                         <div className="mb-4">
                                             <ImageCarousel
-                                                images={templeImages}
-                                                alt="Ancient temple tunnels and Buddhist architecture in Bentota's Raja Maha Temples"
+                                                images={[
+                                                    {
+                                                        src: "/Bentotabeach.jpeg",
+                                                        alt: "Bentota Beach with golden sand and clear waters",
+                                                        caption: "Bentota Beach",
+                                                        title: "Bentota Beach"
+                                                    },
+                                                    {
+                                                        src: "/Lunugangabawa2.jpeg",
+                                                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                                                        caption: "Ancient Cave Paintings",
+                                                        title: "Cave 1 Murals"
+                                                    },
+                                                    {
+                                                        src: "Lunugangabawa3.jpeg",
+                                                        alt: "Detailed view of Buddha statue in Cave 1",
+                                                        caption: "Buddha Statue Detail",
+                                                        title: "Cave 1 Buddha Statue"
+                                                    }
+                                                ]}
                                             />
                                             <p className="text-xs text-muted-foreground mt-2 italic text-center">
                                                 Ancient tunnel systems connecting the five Raja Maha Temples
@@ -859,8 +793,21 @@ export default function BentotaGuide() {
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
-                                        images={seaTurtleImages}
-                                        alt="Panchakapaduwa Island showing various views of the mystical island, temples, and meditation areas"
+                                        images={[
+                                            {
+                                                src: "/Sea-turtle-bentota.jpeg",
+                                                alt: "Bentota Beach with golden sand and clear waters",
+                                                caption: "Bentota Beach",
+                                                title: "Bentota Beach"
+                                            },
+                                            {
+                                                src: "/Sea-turtle-bentota.jpeg",
+                                                alt: "Bentota Beach with golden sand and clear waters",
+                                                caption: "Bentota Beach",
+                                                title: "Bentota Beach"
+                                            },
+
+                                        ]}
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -894,8 +841,68 @@ export default function BentotaGuide() {
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
-                                        images={panchakapaduwImages}
-                                        alt="Panchakapaduwa Island showing various views of the mystical island, temples, and meditation areas"
+                                        images={[
+                                            {
+                                                src: "/Panchakpaduwaisland.jpeg",
+                                                alt: "Bentota Beach with golden sand and clear waters",
+                                                caption: "Bentota Beach",
+                                                title: "Bentota Beach"
+                                            },
+                                               {
+                                                src: "/Panchakpaduwaisland1.jpeg",
+                                                alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                                                caption: "Ancient Cave Paintings",
+                                                title: "Cave 1 Murals"
+                                            },
+                                            {
+                                                src: "/Panchakpaduwaisland2.jpeg",
+                                                alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                                                caption: "Ancient Cave Paintings",
+                                                title: "Cave 1 Murals"
+                                            },
+                                            {
+                                                src: "/Panchakpaduwaisland3.jpeg",
+                                                alt: "Detailed view of Buddha statue in Cave 1",
+                                                caption: "Buddha Statue Detail",
+                                                title: "Cave 1 Buddha Statue"
+                                            }
+                                            , {
+                                                src: "/Panchakpaduwaisland4.jpeg",
+                                                alt: "Detailed view of Buddha statue in Cave 1",
+                                                caption: "Buddha Statue Detail",
+                                                title: "Cave 1 Buddha Statue"
+                                            }
+                                            , {
+                                                src: "/Panchakpaduwaisland5.jpeg",
+                                                alt: "Detailed view of Buddha statue in Cave 1",
+                                                caption: "Buddha Statue Detail",
+                                                title: "Cave 1 Buddha Statue"
+                                            }
+                                            , {
+                                                src: "/Panchakpaduwaisland6.jpeg",
+                                                alt: "Detailed view of Buddha statue in Cave 1",
+                                                caption: "Buddha Statue Detail",
+                                                title: "Cave 1 Buddha Statue"
+                                            }
+                                            , {
+                                                src: "/Panchakpaduwaisland7.jpeg",
+                                                alt: "Detailed view of Buddha statue in Cave 1",
+                                                caption: "Buddha Statue Detail",
+                                                title: "Cave 1 Buddha Statue"
+                                            },
+                                            {
+                                                src: "/Panchakpaduwaisland8.jpeg",
+                                                alt: "Detailed view of Buddha statue in Cave 1",
+                                                caption: "Buddha Statue Detail",
+                                                title: "Cave 1 Buddha Statue"
+                                            },
+                                            {
+                                                src: "/Panchakpaduwaisland9.jpeg",
+                                                alt: "Detailed view of Buddha statue in Cave 1",
+                                                caption: "Buddha Statue Detail",
+                                                title: "Cave 1 Buddha Statue"
+                                            }
+                                        ]}
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -933,8 +940,21 @@ export default function BentotaGuide() {
                         <div className="grid md:grid-cols-2 gap-6 items-center mb-6">
                             <div>
                                 <ImageCarousel
-                                    images={paramotoringImages}
-                                    alt="Para motoring adventure showing aerial views, equipment, and flight scenes over Bentota beach"
+                                    images={[
+                                        {
+                                            src: "/Bentotabeach.jpeg",
+                                            alt: "Bentota Beach with golden sand and clear waters",
+                                            caption: "Bentota Beach",
+                                            title: "Bentota Beach"
+                                        },
+                                        {
+                                            src: "/Lunugangabawa2.jpeg",
+                                            alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                                            caption: "Ancient Cave Paintings",
+                                            title: "Cave 1 Murals"
+                                        },
+
+                                    ]}
                                 />
                                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 italic text-center">
                                     Wanna see Bentota in bird&apos;s eye? - Experience breathtaking aerial views

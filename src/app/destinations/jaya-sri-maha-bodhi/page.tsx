@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Calendar, Clock, MapPin, Star, Users, AlertTriangle, Heart, TreePine, Book } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Jaya Sri Maha Bodhi: Complete Pilgrimage Guide 2025 | Sacred Bo Tree of Anuradhapura",
@@ -119,11 +120,11 @@ export default function JayaSriMahaBodhiGuide() {
                 <CardContent>
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-red-500" />
-                    <span>
-                      <strong>Location:</strong> Mahamewna Gardens, Anuradhapura
-                    </span>
-                  </div>
+                      <MapPin className="w-4 h-4 text-red-500" />
+                      <span>
+                        <strong>Location:</strong> Mahamewna Gardens, Anuradhapura
+                      </span>
+                    </div>
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-blue-500" />
                       <span>
@@ -131,7 +132,7 @@ export default function JayaSriMahaBodhiGuide() {
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                     <TreePine className="w-4 h-4 text-green-500" />
+                      <TreePine className="w-4 h-4 text-green-500" />
                       <span>
                         <strong>Species:</strong>  Ficus religiosa (Bo tree)
                       </span>
@@ -160,12 +161,12 @@ export default function JayaSriMahaBodhiGuide() {
                         <strong>Record:</strong> Oldest planted tree with written history
                       </span>
                     </div>
-                     <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-cyan-500" />
-                    <span>
-                      <strong>Visit Duration:</strong> 1-2 hours for complete experience
-                    </span>
-                  </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-cyan-500" />
+                      <span>
+                        <strong>Visit Duration:</strong> 1-2 hours for complete experience
+                      </span>
+                    </div>
                   </div>
                   {/* Valuable Fact for Desktop */}
                   <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
@@ -828,173 +829,185 @@ export default function JayaSriMahaBodhiGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Other Sacred Sites in Anuradhapura</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/destinations/ruwanweli-saya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Ruwanwelisaya Stupa</CardTitle>
-                  <CardDescription>The Great White Stupa</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Ruwanwalisaya.jpeg"
-                    alt="Magnificent white Ruwanwelisaya stupa showing its perfect dome structure"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Magnificent white stupa built by King Dutugemunu in 140 BC. Contains sacred relics of Buddha and showcases ancient engineering.
-                  </p>
-                  <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
-                    <Clock className="w-3 h-3" />
-                    <span>5 minutes walk from Jaya Sri Maha Bodhi</span>
-                  </div>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    Visit Ruwanwelisaya →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
 
-            <Link href="/destinations/thuparamaya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Thuparamaya Stupa</CardTitle>
-                  <CardDescription>First Buddhist Monument</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Thooparamaya.jpeg"
-                    alt="Ancient Thuparamaya stupa with its unique bell-shaped design and surrounding pillars"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    The first Buddhist stupa built in Sri Lanka (3rd century BCE), housing Buddha&apos;s sacred collarbone relic.
-                  </p>
-                  <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
-                    <Clock className="w-3 h-3" />
-                    <span>10 minutes walk from Jaya Sri Maha Bodhi</span>
-                  </div>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    Explore Thuparamaya →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Ruwanwelisaya Stupa</CardTitle>
+                <CardDescription>The Great White Stupa</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Ruwanwalisaya.jpeg"
+                  alt="Magnificent white Ruwanwelisaya stupa showing its perfect dome structure"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Magnificent white stupa built by King Dutugemunu in 140 BC. Contains sacred relics of Buddha and showcases ancient engineering.
+                </p>
+                <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
+                  <Clock className="w-3 h-3" />
+                  <span>5 minutes walk from Jaya Sri Maha Bodhi</span>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ruwanwali-saya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
-            <Link href="/destinations/abhayagiri" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Abhayagiri Monastery</CardTitle>
-                  <CardDescription>Ancient Learning Center</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Abhayagiriya.jpeg"
-                    alt="Abhayagiri monastery complex showing the massive stupa and surrounding ruins"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Ancient monastery complex that housed 5,000 monks and was a major center of Buddhist learning for over 1,000 years.
-                  </p>
-                  <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
-                    <Clock className="w-3 h-3" />
-                    <span>15 minutes drive from Jaya Sri Maha Bodhi</span>
-                  </div>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    Discover Abhayagiri →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
 
-            <Link href="/destinations/jethawanaramaya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Jetavanaramaya Stupa</CardTitle>
-                  <CardDescription>World&apos;s Third Tallest Ancient Structure</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Jetavanaramaya.jpg"
-                    alt="Massive Jetavanaramaya stupa showing its impressive scale and ancient brick construction"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Built in 3rd century AD, once the world&apos;s third tallest structure. Contains Buddha&apos;s sash relic and showcases ancient engineering.
-                  </p>
-                  <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
-                    <Clock className="w-3 h-3" />
-                    <span>12 minutes walk from Jaya Sri Maha Bodhi</span>
-                  </div>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    Visit Jetavanaramaya →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
 
-            <Link href="/destinations/lovamahapaya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Lovamahapaya (Brazen Palace)</CardTitle>
-                  <CardDescription>Ancient Nine-Story Monastery</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Lovamahapaya.jpeg"
-                    alt="Lovamahapaya stone pillars showing remains of the ancient Brazen Palace monastery"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Ancient nine-story monastery built by King Dutugemunu. Once housed 1,000 monks and was covered with copper tiles.
-                  </p>
-                  <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
-                    <Clock className="w-3 h-3" />
-                    <span>8 minutes walk from Jaya Sri Maha Bodhi</span>
-                  </div>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    Explore Lovamahapaya →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
+            <Card className="cursor-pointer">
+              <CardHeader>
+                <CardTitle className="text-lg">Thuparamaya Stupa</CardTitle>
+                <CardDescription>First Buddhist Monument</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Thooparamaya.jpeg"
+                  alt="Ancient Thuparamaya stupa with its unique bell-shaped design and surrounding pillars"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  The first Buddhist stupa built in Sri Lanka (3rd century BCE), housing Buddha&apos;s sacred collarbone relic.
+                </p>
+                <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
+                  <Clock className="w-3 h-3" />
+                  <span>10 minutes walk from Jaya Sri Maha Bodhi</span>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thuparamaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
-            <Link href="/destinations/mihinthalaya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Mihintale</CardTitle>
-                  <CardDescription>Cradle of Buddhism in Sri Lanka</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Mihinthale.jpg"
-                    alt="Sacred Mihintale hill where Buddhism was first introduced to Sri Lanka"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Sacred site where Arahant Mahinda first introduced Buddhism to King Devanampiya Tissa in 247 BCE.
-                  </p>
-                  <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
-                    <Clock className="w-3 h-3" />
-                    <span>20 minutes drive from Jaya Sri Maha Bodhi</span>
-                  </div>
-                  <span className="inline-flex items-center text-sm font-semibold text-blue-600 dark:text-blue-400 mt-3 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-md border-2 border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors shadow-sm">
-                    Visit Mihintale →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Abhayagiri Monastery</CardTitle>
+                <CardDescription>Ancient Learning Center</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Abhayagiriya.jpeg"
+                  alt="Abhayagiri monastery complex showing the massive stupa and surrounding ruins"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Ancient monastery complex that housed 5,000 monks and was a major center of Buddhist learning for over 1,000 years.
+                </p>
+                <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
+                  <Clock className="w-3 h-3" />
+                  <span>15 minutes drive from Jaya Sri Maha Bodhi</span>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/abhayagiriya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Jetavanaramaya Stupa</CardTitle>
+                <CardDescription>World&apos;s Third Tallest Ancient Structure</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Jetavanaramaya.jpg"
+                  alt="Massive Jetavanaramaya stupa showing its impressive scale and ancient brick construction"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Built in 3rd century AD, once the world&apos;s third tallest structure. Contains Buddha&apos;s sash relic and showcases ancient engineering.
+                </p>
+                <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
+                  <Clock className="w-3 h-3" />
+                  <span>12 minutes walk from Jaya Sri Maha Bodhi</span>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/jethawanaramaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            <Card >
+              <CardHeader>
+                <CardTitle className="text-lg">Lovamahapaya (Brazen Palace)</CardTitle>
+                <CardDescription>Ancient Nine-Story Monastery</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Lovamahapaya.jpeg"
+                  alt="Lovamahapaya stone pillars showing remains of the ancient Brazen Palace monastery"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Ancient nine-story monastery built by King Dutugemunu. Once housed 1,000 monks and was covered with copper tiles.
+                </p>
+                <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
+                  <Clock className="w-3 h-3" />
+                  <span>8 minutes walk from Jaya Sri Maha Bodhi</span>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/lovamahapaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            <Card >
+              <CardHeader>
+                <CardTitle className="text-lg">Mihintale</CardTitle>
+                <CardDescription>Cradle of Buddhism in Sri Lanka</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Mihinthale.jpg"
+                  alt="Sacred Mihintale hill where Buddhism was first introduced to Sri Lanka"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Sacred site where Arahant Mahinda first introduced Buddhism to King Devanampiya Tissa in 247 BCE.
+                </p>
+                <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
+                  <Clock className="w-3 h-3" />
+                  <span>20 minutes drive from Jaya Sri Maha Bodhi</span>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
           </div>
         </section>
 

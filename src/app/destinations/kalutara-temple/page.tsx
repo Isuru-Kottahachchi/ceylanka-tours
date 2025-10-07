@@ -40,15 +40,15 @@ export default function KalutaraTempleGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Kalutara Temple</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sacred Bodhiya and Magnificent Stupa</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Kalutara, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Building className="w-4 h-4 mr-1" />
               Sacred Buddhist Site
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <History className="w-4 h-4 mr-1" />
               Est. 1960s
             </Badge>
@@ -56,7 +56,7 @@ export default function KalutaraTempleGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">

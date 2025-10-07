@@ -148,7 +148,7 @@ export default function WeligamaTravelGuide() {
                     </ul>
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                       <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
-                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Mirissa. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Waligama. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                       </p>
                       <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
                         <div className="flex items-center gap-2">
@@ -170,8 +170,8 @@ export default function WeligamaTravelGuide() {
                       <li>• <strong>Route:</strong> Colombo → Waligama</li>
                       <li>• <strong>Duration:</strong> 6-7 hours total</li>
                       <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
-                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Nanu Oya station</span></li>
-                      <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li>
+                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Waligama station</span></li>
+                      {/* <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li> */}
                     </ul>
 
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
@@ -182,18 +182,6 @@ export default function WeligamaTravelGuide() {
                       <li>• <strong>Frequency:</strong> Regular departures from Kandy</li>
                     </ul>
                   </div>
-                </div>
-                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
-                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">🚂 Special Note about Train Journey</h4>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    The train journey from Kandy to Nanu Oya is considered one of the world&apos;s most scenic train rides, passing through breathtaking tea plantations, mountain tunnels, and misty landscapes. <strong>Important:</strong> Nanu Oya is the closest railway station to Nuwara Eliya - you&apos;ll need to take a taxi or tuk-tuk for the final 8km uphill journey to the town center.
-                  </p>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Book reserved seats in advance for the best views</li>
-                    <li>• Sit on the right side for better mountain scenery</li>
-                    <li>• Bring warm clothes - it gets cool in the mountains</li>
-                    <li>• Pre-arrange transport from Nanu Oya station</li>
-                  </ul>
                 </div>
               </CardContent>
             </Card>

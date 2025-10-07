@@ -670,6 +670,48 @@ export default function NuwaraEliyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>6. Shanthipura Village and View Point</CardTitle>
+                <CardDescription>Sri Lanka&apos;s highest village</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      The highest village which is located above Elevation of 2000m. A peaceful village with stunning views of the surrounding mountains and valleys. A great place to experience local culture and hospitality.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Highest village in Sri Lanka at over 2000m elevation
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Panoramic mountain and valley views
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Excellent for sunset and sunrise photography
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Less crowded alternative to popular viewpoints
+                      </li>
+                    </ul>
+                    <div className="mt-4 p-3 bg-purple-50 rounded-lg">
+                      <p className="text-sm text-purple-800">
+                        <strong>Hidden Gem:</strong> Best visited during clear weather for unobstructed mountain views. Ideal for a peaceful picnic or meditation.
+                      </p>
+                    </div>
+                  </div>
+                  <ImageCarousel
+                    images={moonPlainsImages}
+                    alt="Moon Plains showcasing the stunning landscapes, unique flora, and fauna"
+                  />
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 

@@ -921,9 +921,7 @@ export default function AnuradhapuraTravelGuide() {
         {/* Archaeological Wonders */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 scroll-mt-40" id="nearby-archaeological-wonders">Near by Archaeological Wonders</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-
+            <div className="grid md:grid-cols-3 gap-6">
             <Link href="/destinations/isurumuniya" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer">
                 <CardHeader>
@@ -936,7 +934,7 @@ export default function AnuradhapuraTravelGuide() {
                     alt="Isurumuniya rock temple showing ancient stone carvings and cave architecture"
                     width={300}
                     height={200}
-                    className="rounded-lg mb-3"
+                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                   />
                   <p className="text-sm text-muted-foreground">
                     Famous for the &quot;Isurumuniya Lovers&quot; carving and beautiful rock-cut architecture from the 3rd century BC.
@@ -965,7 +963,7 @@ export default function AnuradhapuraTravelGuide() {
                     alt="View of Sigiriya Rock from Pidurangala Rock"
                     width={300}
                     height={200}
-                    className="rounded-lg mb-3"
+                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                   />
                   <p className="text-sm text-muted-foreground">
                     Explore the mysterious Ranmusu uyana, an ancient site with unique stone carvings and a universal stargate.
@@ -993,7 +991,7 @@ export default function AnuradhapuraTravelGuide() {
                     alt="View of Sigiriya Rock from Pidurangala Rock"
                     width={300}
                     height={200}
-                    className="rounded-lg mb-3"
+                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                   />
                   <p className="text-sm text-muted-foreground">
                     Just a few kilometers from Anuradhapura, Mihinthalaya is a sacred site where Buddhism was first introduced to Sri Lanka.
@@ -1051,7 +1049,7 @@ export default function AnuradhapuraTravelGuide() {
                   alt="Twin Ponds showing sophisticated ancient water management system with stone steps"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
                   Sophisticated bathing pools for monks, showcasing advanced hydraulic engineering from ancient times.

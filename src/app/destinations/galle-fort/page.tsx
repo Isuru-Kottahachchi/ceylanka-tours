@@ -4,6 +4,7 @@ import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Ship 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 
 export const metadata: Metadata = {
@@ -44,14 +45,14 @@ export default function GalleFortTravelGuide() {
               UNESCO World Heritage Site
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
-              <Calendar className="w-4 h-4 mr-1"  />
+              <Calendar className="w-4 h-4 mr-1" />
               Built 1663 AD
             </Badge>
           </div>
         </div>
       </section>
 
-  <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Galle Fort: A Living Colonial Museum</h2>
@@ -83,42 +84,42 @@ export default function GalleFortTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4 text-blue-500" />
-                      <span>
-                        <strong>Built by Dutch:</strong> 1663 AD
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-green-500" />
-                      <span>
-                        <strong>Area:</strong>  52 hectares (130 acres)
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-purple-500" />
-                      <span>
-                        <strong>Population:</strong> ~4,000 residents
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-red-500" />
-                      <span>
-                        <strong>Area:</strong> 40 square kilometers
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Star className="w-4 h-4 text-yellow-500" />
-                      <span>
-                        <strong>UNESCO Status:</strong> World Heritage (1988)
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-orange-500" />
-                      <span>
-                        <strong>Visit Duration:</strong> Full day (8+ hours)
-                      </span>
-                    </div>
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4 text-blue-500" />
+                    <span>
+                      <strong>Built by Dutch:</strong> 1663 AD
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users className="w-4 h-4 text-green-500" />
+                    <span>
+                      <strong>Area:</strong>  52 hectares (130 acres)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users className="w-4 h-4 text-purple-500" />
+                    <span>
+                      <strong>Population:</strong> ~4,000 residents
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-red-500" />
+                    <span>
+                      <strong>Area:</strong> 40 square kilometers
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Star className="w-4 h-4 text-yellow-500" />
+                    <span>
+                      <strong>UNESCO Status:</strong> World Heritage (1988)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-orange-500" />
+                    <span>
+                      <strong>Visit Duration:</strong> Full day (8+ hours)
+                    </span>
+                  </div>
                 </div>
                 {/* Valuable Fact for Desktop */}
                 <div className="hidden lg:block mt-6 space-y-4">
@@ -190,7 +191,7 @@ export default function GalleFortTravelGuide() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Recommended)</h4>
-                   <p>Take the scenic coastal railway from Colombo Fort Station to Galle Station</p> 
+                    <p>Take the scenic coastal railway from Colombo Fort Station to Galle Station</p>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
                       <li>• <strong>Duration:</strong> 2.5-3 hours</li>
@@ -656,7 +657,7 @@ export default function GalleFortTravelGuide() {
             </Card>
           </div>
         </section>
-      
+
         {/* Dos and Donts */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts for Galle Fort</h2>
@@ -800,120 +801,127 @@ export default function GalleFortTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/destinations/jungle-beach-roomassala" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
-                  <CardDescription>Best views of Galle</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/jungle-beach.jpeg"
-                    alt="View of Jungle Beach"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
-                  </p>
-                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
-                    See More →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/kanneliya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Kanneliya</CardTitle>
-                  <CardDescription>Part of a Sinharaja Forest</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Kanneliya.jpg"
-                    alt="View of Kanneliya"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Explore the lush Kanneliya rainforest, part of the Sinharaja Forest Reserve. Home to diverse flora and fauna, perfect for nature lovers.
-                  </p>
-                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
-                    See More →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/hummanaya-blowhole" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Hummanaya Blowhole</CardTitle>
-                  <CardDescription>Sri Lanka&apos;s only natural blowhole</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/HummanayaBlowhole.jpeg"
-                    alt="Hummanaya Blowhole spraying water high above the rocky coast"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Witness the power of the Indian Ocean at Hummanaya, where water shoots up to 25 meters through a coastal rock crevice. A unique natural wonder and a must-see for nature lovers!
-                  </p>
-                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
-                    See More →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
 
-            <Link href="/destinations/mirissa" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Mirissa</CardTitle>
-                  <CardDescription>Best views of the coastline</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Mirissa1.jpg"
-                    alt="View of Mirissa"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
+                <CardDescription>A beach with a great atmosphere</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/jungle-beach.jpeg"
+                  alt="View of Jungle Beach"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/jungle-beach-roomassala" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card >
+              <CardHeader>
+                <CardTitle className="text-lg">Kanneliya</CardTitle>
+                <CardDescription>Part of a Kanneliya Dediyagala Nakiyadeniya Complex</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Kanneliya.jpg"
+                  alt="View of Kanneliya"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the lush Kanneliya rainforest, part of the Sinharaja Forest Reserve. Home to diverse flora and fauna, perfect for nature lovers.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kanneliya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Hummanaya Blowhole</CardTitle>
+                <CardDescription>Sri Lanka&apos;s only natural blowhole</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/HummanayaBlowhole.jpeg"
+                  alt="Hummanaya Blowhole spraying water high above the rocky coast"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Witness the power of the Indian Ocean at Hummanaya, where water shoots up to 25 meters through a coastal rock crevice. A unique natural wonder and a must-see for nature lovers!
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hummanaya-blowhole" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card >
+              <CardHeader>
+                <CardTitle className="text-lg">Mirissa</CardTitle>
+                <CardDescription>Best views of the coastline</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Mirissa1.jpg"
+                  alt="View of Mirissa"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
                   Mirissa is a picturesque coastal town known for its stunning beaches and vibrant nightlife. Enjoy whale watching, water sports, and delicious seafood.
-                  </p>
-                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
-                    See More →
-                  </span>
-                </CardContent>
-              </Card>
-            </Link>
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mirissa" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Waligama</CardTitle>
                 <CardDescription>Best views of the coastline</CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/destinations/waligama" className="block hover:shadow-md transition-shadow duration-200">
-                  <Image
-                    src="/Waligama.jpg"
-                    alt="View of Waligama"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Waligama is a charming coastal town known for its stunning beaches and vibrant fishing community. Enjoy fresh seafood, water sports, and breathtaking sunsets.
-                  </p>
-                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
-                    See More →
-                  </span>
-                </Link>
+                <Image
+                  src="/Waligama.jpg"
+                  alt="View of Waligama"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Waligama is a charming coastal town known for its stunning beaches and vibrant fishing community. Enjoy fresh seafood, water sports, and breathtaking sunsets.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/waligama" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -923,21 +931,21 @@ export default function GalleFortTravelGuide() {
                 <CardDescription>Best views of the coastline and Surfing</CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/destinations/hirikatiya" className="block hover:shadow-md transition-shadow duration-200">
-                  <Image
-                    src="/Hirikatiya.jpg"
-                    alt="Hirikatiya Beach with surfers riding waves and palm trees lining the shore"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. 30 min drive.
-                  </p>
-                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
-                    See More →
-                  </span>
-                </Link>
+                <Image
+                  src="/Hirikatiya.jpg"
+                  alt="Hirikatiya Beach with surfers riding waves and palm trees lining the shore"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. 30 min drive.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hirikatiya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -947,21 +955,21 @@ export default function GalleFortTravelGuide() {
                 <CardDescription>Beach that can campfire</CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/destinations/blue-beach" className="block hover:shadow-md transition-shadow duration-200">
-                  <Image
-                    src="/Blue-beach.jpg"
-                    alt="Large herd of elephants gathering at Minneriya National Park during dry season"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
-                  </p>
-                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
-                    See More →
-                  </span>
-                </Link>
+                <Image
+                  src="/Blue-beach.jpg"
+                  alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/blue-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
@@ -972,21 +980,21 @@ export default function GalleFortTravelGuide() {
                 <CardDescription>Coral wells & peaceful sands</CardDescription>
               </CardHeader>
               <CardContent>
-                <Link href="/destinations/thalpe-beach" className="block hover:shadow-md transition-shadow duration-200">
-                  <Image
-                    src="/Thalpe-beach.jpg"
-                    alt="Thalpe Beach coral wells and golden sand with turquoise water"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Discover Thalpe Beach, just south of Galle. Famous for its unique coral wells—natural pools carved into the reef—this quiet beach is perfect for swimming at low tide, relaxing on golden sand, and enjoying local seafood. Watch for sea urchins in the wells and enjoy a peaceful, uncrowded atmosphere.
-                  </p>
-                  <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-3 inline-block">
-                    See More →
-                  </span>
-                </Link>
+                <Image
+                  src="/Thalpe-beach.jpg"
+                  alt="Thalpe Beach coral wells and golden sand with turquoise water"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Discover Thalpe Beach, just south of Galle. Famous for its unique coral wells—natural pools carved into the reef—this quiet beach is perfect for swimming at low tide, relaxing on golden sand, and enjoying local seafood.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>

@@ -248,7 +248,7 @@ export default function HaputaleGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/Lipton-tea.jpg"
                 alt="Historical photo recreation of Sir Thomas Lipton surveying his tea empire from Lipton's Seat"
                 width={600}
                 height={400}
@@ -395,7 +395,7 @@ export default function HaputaleGuide() {
           </div>
         </section>
 
-        <Separator className="my-12" />
+        {/* <Separator className="my-12" /> */}
 
    
         <section className="mb-12">

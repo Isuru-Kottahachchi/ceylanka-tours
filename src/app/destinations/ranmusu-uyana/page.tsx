@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Ranmusu Uyana: Complete Guide 2025 | Ancient Park & Stargate Mystery",
@@ -593,75 +594,84 @@ export default function RanmusuUyanaGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link
-              href="/destinations/isurumuniya-temple"
-              className="block hover:shadow-md transition-shadow duration-200"
-            >
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Isurumuniya Temple</CardTitle>
-                  <CardDescription>Famous rock temple with Lovers sculpture</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Isurumuniya.jpeg"
-                    alt="Ancient Isurumuniya rock temple with carved Buddha statues and lotus pond"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Beautiful rock temple famous for its romantic Lovers sculpture, just a short walk from Ranmusu
-                    Uyana.
-                  </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">See More →</span>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/jaya-sri-maha-bodhi" className="block hover:shadow-md transition-shadow duration-200">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Sri Maha Bodhi</CardTitle>
-                  <CardDescription>Sacred ancient tree</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/JayaSriMahaBodhi.jpeg"
-                    alt="Ancient Sri Maha Bodhi tree with prayer flags and worshippers"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    The world&apos;s oldest documented tree, grown from a cutting of the original Bodhi tree under which
-                    Buddha attained enlightenment.
-                  </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">See More →</span>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/ruwanwali-saya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Ruwanwelisaya Stupa</CardTitle>
-                  <CardDescription>Magnificent ancient Buddhist monument</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Ruwanwalisaya.jpeg"
-                    alt="Massive white Ruwanwelisaya stupa with ceremonial elephants and worshippers"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Impressive white stupa built in 140 BC, standing 103 meters tall and considered one of the world&apos;s
-                    most venerated Buddhist sites.
-                  </p>
-                  <span className="text-sm font-medium text-primary mt-3 inline-block">See More →</span>
-                </CardContent>
-              </Card>
-            </Link>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Isurumuniya Temple</CardTitle>
+                <CardDescription>Famous rock temple with Lovers sculpture</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Isurumuniya.jpeg"
+                  alt="Ancient Isurumuniya rock temple with carved Buddha statues and lotus pond"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Beautiful rock temple famous for its romantic Lovers sculpture, just a short walk from Ranmusu
+                  Uyana.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/isurumuniya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Sri Maha Bodhi</CardTitle>
+                <CardDescription>The world's oldest documented tree</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/JayaSriMahaBodhi.jpeg"
+                  alt="Ancient Sri Maha Bodhi tree with prayer flags and worshippers"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  The world&apos;s oldest documented tree, grown from a cutting of the original Bodhi tree under which
+                  Buddha attained enlightenment.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/jaya-sri-maha-bodhi" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Ruwanwelisaya Stupa</CardTitle>
+                <CardDescription>Magnificent ancient Buddhist monument</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Ruwanwalisaya.jpeg"
+                  alt="Massive white Ruwanwelisaya stupa with ceremonial elephants and worshippers"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Impressive white stupa built in 140 BC, standing 103 meters tall and considered one of the world&apos;s
+                  most venerated Buddhist sites.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ruwanwali-saya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
           </div>
         </section>
 

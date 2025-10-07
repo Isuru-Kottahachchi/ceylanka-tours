@@ -347,7 +347,7 @@ export default function IsurumuniyaTempleGuide() {
           <div className="grid md:grid-cols-3 gap-6">
 
 
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg">Ranmusu Uyana</CardTitle>
                 <CardDescription>Ancient royal pleasure gardens</CardDescription>
@@ -370,7 +370,7 @@ export default function IsurumuniyaTempleGuide() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg">Mihinthalaya</CardTitle>
                 <CardDescription>Birthplace of Buddhism in Sri Lanka</CardDescription>
@@ -406,7 +406,7 @@ export default function IsurumuniyaTempleGuide() {
                   alt="Intricate moonstone carving showing concentric circles with animals and lotus designs"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
                   Masterpieces of ancient stone carving found at temple entrances, depicting Buddhist philosophy in art.
@@ -430,7 +430,7 @@ export default function IsurumuniyaTempleGuide() {
                   alt="Twin Ponds showing sophisticated ancient water management system with stone steps"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
                   Sophisticated bathing pools for monks, showcasing advanced hydraulic engineering from ancient times.
