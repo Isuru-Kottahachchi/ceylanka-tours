@@ -723,7 +723,7 @@ export default function AnuradhapuraTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/Avukana-Statue.jpg"
+                    src="/Avukana-statue.jpg"
                     alt="Avukana Buddha Statue showing its intricate details and serene expression"
                     width={400}
                     height={300}

@@ -878,7 +878,7 @@ export default function GalleFortTravelGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/mirissa.jpg"
+                    src="/Mirissa1.jpg"
                     alt="View of Mirissa"
                     width={300}
                     height={200}

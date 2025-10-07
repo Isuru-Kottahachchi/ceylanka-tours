@@ -206,7 +206,7 @@ export default function WeligamaTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/Stilt-fishing.jpg"
                 alt="Traditional stilt fishermen of Weligama balancing on wooden poles in shallow coral reef waters during golden hour sunset"
                 width={600}
                 height={400}

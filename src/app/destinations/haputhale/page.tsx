@@ -32,11 +32,11 @@ export default function HaputaleGuide() {
               <Eye className="w-4 h-4 mr-1" />
               World&apos;s Best Tea Views
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Mountain className="w-4 h-4 mr-1" />
               1,431m Above Sea Level
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <TreePine className="w-4 h-4 mr-1" />
               Tea Heritage Capital
             </Badge>
@@ -146,7 +146,7 @@ export default function HaputaleGuide() {
                     <li>• <strong>Cost:</strong> $4-15 USD (depending on class)</li>
                     <li>• <strong>Highlight:</strong> One of world&apos;s most scenic train rides</li>
                   </ul>
-                  
+
                   <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• <strong>Route:</strong> Colombo → Bandarawela → Haputale</li>
@@ -156,7 +156,7 @@ export default function HaputaleGuide() {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
                 <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">🚂 Special Note about Train Journey</h4>
                 <p className="text-sm text-muted-foreground mb-2">
@@ -176,7 +176,7 @@ export default function HaputaleGuide() {
         {/* Top Attractions */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Top Attractions in Haputale</h2>
-          
+
           {/* Top Attractions with Carousels */}
           <div className="space-y-8">
             {/* Lipton's Seat */}
@@ -242,75 +242,48 @@ export default function HaputaleGuide() {
                 </div>
               </CardContent>
             </Card>
+                 {/* Tea Heritage */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">The Lipton Tea Legacy</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+            <div>
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                alt="Historical photo recreation of Sir Thomas Lipton surveying his tea empire from Lipton's Seat"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-2 italic">
+                Sir Thomas Lipton&apos;s vision transformed these mountains into tea paradise
+              </p>
+            </div>
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                In the late 1800s, Scottish entrepreneur Sir Thomas Lipton purchased vast tracts of land around Haputale to establish his tea empire. Born in Glasgow, Scotland, Lipton would often climb to the highest point – now known as Lipton&apos;s Seat – to survey his plantations and plan expansion.
+              </p>
+              <p>
+                Lipton revolutionized the tea industry by controlling every aspect from plantation to packaging, creating the world&apos;s first vertically integrated tea business. His Dambatenne Tea Factory became the heart of this operation, producing premium Ceylon tea that made the Lipton brand famous worldwide.
+              </p>
+              <div className="bg-amber-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-amber-800 mb-2">Lipton&apos;s Legacy:</h4>
+                <ul className="text-sm text-amber-700 space-y-1">
+                  <li>• Established Ceylon tea as world&apos;s finest</li>
+                  <li>• Created first global tea brand</li>
+                  <li>• Pioneered direct plantation-to-consumer sales</li>
+                  <li>• Left lasting impact on Sri Lankan economy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-            {/* Dambatenne Tea Factory */}
-            <Card>
-              <CardHeader>
-                <CardTitle>2. Dambatenne Tea Factory</CardTitle>
-                <CardDescription>Sir Thomas Lipton&apos;s original tea factory from 1890</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <ImageCarousel
-                    images={[
-                      {
-                        src: "/Dambatenne-tea-factory.jpg",
-                        alt: "Historic Dambatenne Tea Factory with traditional machinery and workers processing Ceylon tea",
-                        caption: "Dambatenne Tea Factory exterior",
-                        title: "Dambatenne Tea Factory"
-                      },
-                      {
-                        src: "/Tea-factory-interior.jpg",
-                        alt: "Inside the tea factory with machinery and tea leaves",
-                        caption: "Inside the factory",
-                        title: "Tea Processing Room"
-                      },
-                      {
-                        src: "/placeholder.svg?height=300&width=400",
-                        alt: "Workers processing tea at Dambatenne",
-                        caption: "Traditional tea processing",
-                        title: "Tea Workers in Action"
-                      }
-                    ]}
-                  />
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Built in 1890 by Sir Thomas Lipton himself, Dambatenne Tea Factory is one of the oldest and most historic tea factories in Sri Lanka. Still operational today, it produces some of the world&apos;s finest high-grown Ceylon tea using traditional methods.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Historic factory from 1890, still operational
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Guided tours showing tea processing
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Premium tea tastings and purchases
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Learn about traditional tea-making methods
-                      </li>
-                    </ul>
 
-                    {/* See More Button */}
-                    <div className="mt-4">
-                      <Button asChild variant="outline" size="sm">
-                        <a href="/destinations/dambatenne-tea-factory">See More</a>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
             {/* Adisham Monastery */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Adisham Monastery</CardTitle>
+                <CardTitle>2. Adisham Monastery</CardTitle>
                 <CardDescription>English country house turned Benedictine monastery</CardDescription>
               </CardHeader>
               <CardContent>
@@ -335,55 +308,55 @@ export default function HaputaleGuide() {
                         caption: "Tudor-style architecture",
                         title: "Tudor-Style Architecture"
                       },
-                         {
+                      {
                         src: "/Adisham-bungalow.jpg",
                         alt: "Beautiful gardens at Adisham Monastery with mountain backdrop",
                         caption: "Monastery gardens and views",
                         title: "Monastery Gardens"
                       },
-                         {
+                      {
                         src: "/Adisham-bungalow10.jpg",
                         alt: "Adisham Monastery with English Tudor architecture",
                         caption: "Tudor-style architecture",
                         title: "Tudor-Style Architecture"
                       },
-                         {
+                      {
                         src: "/Adisham-bungalow4.jpg",
                         alt: "Adisham Monastery with English Tudor architecture",
                         caption: "Tudor-style architecture",
                         title: "Tudor-Style Architecture"
                       },
-                         {
+                      {
                         src: "/Adisham-bungalow5.jpg",
                         alt: "Adisham Monastery with English Tudor architecture",
                         caption: "Tudor-style architecture",
                         title: "Tudor-Style Architecture"
                       },
-                         {
+                      {
                         src: "/Adisham-bungalow6.jpg",
                         alt: "Adisham Monastery with English Tudor architecture",
                         caption: "Tudor-style architecture",
                         title: "Tudor-Style Architecture"
                       },
-                         {
+                      {
                         src: "/Adisham-bungalow7.jpg",
                         alt: "Adisham Monastery with English Tudor architecture",
                         caption: "Tudor-style architecture",
                         title: "Tudor-Style Architecture"
                       },
-                         {
+                      {
                         src: "/Adisham-bungalow8.jpg",
                         alt: "Adisham Monastery with English Tudor architecture",
                         caption: "Tudor-style architecture",
                         title: "Tudor-Style Architecture"
                       },
-                         {
+                      {
                         src: "/Adisham-bungalow9.jpg",
                         alt: "Adisham Monastery with English Tudor architecture",
                         caption: "Tudor-style architecture",
                         title: "Tudor-Style Architecture"
                       },
-                      
+
                     ]}
                   />
                   <div>
@@ -424,42 +397,73 @@ export default function HaputaleGuide() {
 
         <Separator className="my-12" />
 
-        {/* Tea Heritage */}
+   
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">The Lipton Tea Legacy</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-            <div>
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Historical photo recreation of Sir Thomas Lipton surveying his tea empire from Lipton's Seat"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                Sir Thomas Lipton&apos;s vision transformed these mountains into tea paradise
-              </p>
-            </div>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                In the late 1800s, Scottish entrepreneur Sir Thomas Lipton purchased vast tracts of land around Haputale to establish his tea empire. Born in Glasgow, Scotland, Lipton would often climb to the highest point – now known as Lipton&apos;s Seat – to survey his plantations and plan expansion.
-              </p>
-              <p>
-                Lipton revolutionized the tea industry by controlling every aspect from plantation to packaging, creating the world&apos;s first vertically integrated tea business. His Dambatenne Tea Factory became the heart of this operation, producing premium Ceylon tea that made the Lipton brand famous worldwide.
-              </p>
-              <div className="bg-amber-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-amber-800 mb-2">Lipton&apos;s Legacy:</h4>
-                <ul className="text-sm text-amber-700 space-y-1">
-                  <li>• Established Ceylon tea as world&apos;s finest</li>
-                  <li>• Created first global tea brand</li>
-                  <li>• Pioneered direct plantation-to-consumer sales</li>
-                  <li>• Left lasting impact on Sri Lankan economy</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+          {/* Dambatenne Tea Factory */}
+          <Card>
+            <CardHeader>
+              <CardTitle>3. Dambatenne Tea Factory</CardTitle>
+              <CardDescription>Sir Thomas Lipton&apos;s original tea factory from 1890</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <ImageCarousel
+                  images={[
+                    {
+                      src: "/Dambatenna-Tea-factory.webp",
+                      alt: "Historic Dambatenne Tea Factory with traditional machinery and workers processing Ceylon tea",
+                      caption: "Dambatenne Tea Factory exterior",
+                      title: "Dambatenne Tea Factory"
+                    },
+                    {
+                      src: "/Tea-factory-interior.jpg",
+                      alt: "Inside the tea factory with machinery and tea leaves",
+                      caption: "Inside the factory",
+                      title: "Tea Processing Room"
+                    },
+                    {
+                      src: "/placeholder.svg?height=300&width=400",
+                      alt: "Workers processing tea at Dambatenne",
+                      caption: "Traditional tea processing",
+                      title: "Tea Workers in Action"
+                    }
+                  ]}
+                />
+                <div>
+                  <p className="text-muted-foreground mb-4">
+                    Built in 1890 by Sir Thomas Lipton himself, Dambatenne Tea Factory is one of the oldest and most historic tea factories in Sri Lanka. Still operational today, it produces some of the world&apos;s finest high-grown Ceylon tea using traditional methods.
+                    If you are a tea enthusiast, this would be a must-visit to see how authentic Ceylon tea is made. You can see the entire tea processing from plucking to packaging.
+                  </p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Historic factory from 1890, still operational
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Guided tours showing tea processing
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Premium tea tastings and purchases
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Learn about traditional tea-making methods
+                    </li>
+                  </ul>
 
+                  {/* See More Button */}
+                  <div className="mt-4">
+                    <Button asChild variant="outline" size="sm">
+                      <a href="/destinations/dambatenne-tea-factory">See More</a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
         {/* Best Time to Visit */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">When to Visit Haputale</h2>
