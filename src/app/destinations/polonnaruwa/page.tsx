@@ -1101,12 +1101,12 @@ export default function PolonnaruwaGuide() {
                                         You can see the statue of King Parakramabahu who successfully united the three kingdoms of the island under one rule and built a magnificent empire. Also launched a punitive expedition against Burma in the 1160s and another later in 1180.
                                         But, some scholars present an alternative interpretation, suggesting this is a statue of Pulastya Rishi, an ancient sage from Hindu mythology, based on certain iconographic features.
                                     </p>
-                                    <ul className="text-sm text-muted-foreground space-y-1">
+                                    {/* <ul className="text-sm text-muted-foreground space-y-1">
                                         <li>• Eight-petaled lotus design</li>
                                         <li>• Carved from solid stone</li>
                                         <li>• Underground water supply system</li>
                                         <li>• Symbol of purity and enlightenment</li>
-                                    </ul>
+                                    </ul> */}
                                 </div>
                             </CardContent>
                         </Card>

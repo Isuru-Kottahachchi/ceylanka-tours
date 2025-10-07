@@ -1,11 +1,4 @@
 import Image from "next/image";
-
-const palaceImages = [
-  "/Polonnaruwa2.jpeg",
-  "/Polonnaruwa3.jpeg",
-  "/PolonnaruwaVatadageya.jpg",
-  "/Rankothvehera.jpeg"
-];
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
