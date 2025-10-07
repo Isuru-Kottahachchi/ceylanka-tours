@@ -115,6 +115,12 @@ export default function PolonnaruwaGuide() {
         // { src: "/Rankothvehera5.jpeg", caption: "Rankoth Vehera: Architectural details of the stupa" },
     ];
 
+    const shivaDevaleImages = [
+        { src: "/ShivaDevale1.jpeg", caption: "Shiva Devale No. 1 Temple" },
+        { src: "/ShivaDevale2.jpeg", caption: "Shiva Devale No. 2 Temple" },
+        { src: "/ShivaDevale3.jpeg", caption: "Shiva Devale No. 3 Temple" },
+    ];
+
     return (
         <main className="min-h-screen bg-background">
             {/* Hero Section */}
@@ -578,23 +584,7 @@ export default function PolonnaruwaGuide() {
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
-                                        images={[
-                                            {
-                                                src: "/shiva-devale2.jpg",
-                                                caption: "Shiva Devale No. 2 Temple",
-                                                title: "Main Temple Structure"
-                                            },
-                                            {
-                                                src: "/shiva-devale2-detail.jpg",
-                                                caption: "Intricate Stone Carvings",
-                                                title: "Temple Carvings"
-                                            },
-                                            {
-                                                src: "/shiva-devale2-entrance.jpg",
-                                                caption: "Temple Entrance",
-                                                title: "Gateway"
-                                            }
-                                        ]}
+                                        images={shivaDevaleImages}
                                         alt="Ancient Shiva Temple at Polonnaruwa showing various architectural details"
                                     />
                                     <div>
@@ -637,7 +627,7 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Pabalu Vehera, meaning &quot;Pearl Shrine,&quot; was built during the reign of King
+                                            Pabalu Vehera, meaning &Pearl Shrine," was built during the reign of King
                                             Parakramabahu I and was reportedly funded by pearl merchants. This Buddhist
                                             stupa showcases the typical architectural style of the Polonnaruwa period with
                                             its unique features and historical significance.
