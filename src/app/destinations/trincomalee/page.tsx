@@ -268,7 +268,7 @@ export default function TrincomaleeTravelGuide() {
                       Explore the ramparts, old cannons, and historic buildings within the fort complex. It is a great
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Koneshwaram Kovil is located within this fort complex. Also a one of Irish Colonel Arthur Wellesley's bungalow also located here. 
+                      Koneshwaram Kovil is located within this fort complex. Also a one of Irish Colonel Arthur Wellesley&apos;s bungalow also located here. 
                       spot for photography, especially during sunrise and sunset. The fort is still an active
                       military base, so some areas may be restricted. Entry is free, and it is open to visitors daily.
                     </p>

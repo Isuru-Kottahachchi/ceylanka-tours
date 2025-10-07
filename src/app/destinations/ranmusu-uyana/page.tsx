@@ -624,7 +624,7 @@ export default function RanmusuUyanaGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Sri Maha Bodhi</CardTitle>
-                <CardDescription>The world's oldest documented tree</CardDescription>
+                <CardDescription>The world&apos;s oldest documented tree</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
