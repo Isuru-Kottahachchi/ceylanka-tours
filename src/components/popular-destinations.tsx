@@ -71,7 +71,7 @@ const destinations = [
     name: "Mirissa",
     location: "Southern Province",
     path: "mirissa",
-    image: "/Mirissa.jpg",
+    image: "/Mirissa-Coco-Hill.jpeg",
     rating: 4.7,
     reviews: 1100,
     description: "Pristine beach perfect for whale watching and surfing",

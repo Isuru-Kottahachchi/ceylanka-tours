@@ -742,7 +742,7 @@ export default function AnuradhapuraTravelGuide() {
                     </Link>
                     <p className="text-muted-foreground mb-4">
                       The statue is set against a natural rock backdrop, creating a striking contrast that enhances its
-                      visual impact. The serene expression on the Buddha's face and the intricate details of the carving
+                      visual impact. The serene expression on the Buddha&apos;s face and the intricate details of the carving
                       invite contemplation and reflection.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">

@@ -814,7 +814,7 @@ export default function YalaNationalParkTravelGuide() {
                     <p className="text-muted-foreground mb-4">
                       Yala&apos;s Sloth Bears are fascinating creatures known for their unique feeding habits and behavior. 
                       These adaptable bears have evolved specialized features for their diverse diet, which includes termites, 
-                      ants, fruits, and their favorite - honey, earning them the nickname "Bambaru Walaha" (honey bear) in Sinhala.
+                      ants, fruits, and their favorite - honey, earning them the nickname &quot;Bambaru Walaha&quot; (honey bear) in Sinhala.
                     </p>
                     <div className="space-y-4">
                       <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
@@ -977,7 +977,7 @@ export default function YalaNationalParkTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      In Sri Lanka you can see two species of crocodiles, the Saltwater Crocodile (Crocodylus porosus) locals called them as "Hala Kimbula" and the Marsh Crocodile (Crocodylus palustris) also known as "Gata Kimbula" by locals.
+                      In Sri Lanka you can see two species of crocodiles, the Saltwater Crocodile (Crocodylus porosus) locals called them as &quot;Hala Kimbula&quot; and the Marsh Crocodile (Crocodylus palustris) also known as &quot;Gata Kimbula&quot; by locals.
                       While the Saltwater Crocodile is more commonly found in coastal areas and estuaries, the Marsh Crocodile, also known as the Mugger Crocodile,
                       is prevalent in freshwater habitats such as lakes, rivers, and marshes within Yala National Park.
                     </p>
