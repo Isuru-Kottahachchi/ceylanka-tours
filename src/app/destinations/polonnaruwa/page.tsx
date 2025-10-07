@@ -531,12 +531,160 @@ export default function PolonnaruwaGuide() {
                                         </div>
                                     </div>
                                 </div>
+
+                                {/* Royal Swimming Pool */}
+                                <div className="mt-6 border-t pt-6">
+                                    <h4 className="font-semibold text-lg mb-3">Royal Swimming Pool</h4>
+                                    <div className="grid md:grid-cols-2 gap-4">
+                                        <Image
+                                            src="/royal-swimming-pool.jpg"
+                                            alt="Ancient Royal Swimming Pool at Polonnaruwa showing sophisticated water engineering"
+                                            width={400}
+                                            height={300}
+                                            className="rounded-lg"
+                                        />
+                                        <div>
+                                            <p className="text-muted-foreground mb-3">
+                                                Adjacent to the Royal Palace lies the sophisticated royal swimming pool, a testament
+                                                to the advanced engineering capabilities of ancient Sri Lanka. This rectangular pool
+                                                features crocodile mouth spouts and an intricate water filtering system.
+                                            </p>
+                                            <ul className="space-y-2 text-muted-foreground">
+                                                <li className="flex items-start gap-2">
+                                                    <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                    Original stone steps and platforms preserved
+                                                </li>
+                                                <li className="flex items-start gap-2">
+                                                    <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                    Advanced water filtering and circulation system
+                                                </li>
+                                                <li className="flex items-start gap-2">
+                                                    <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                    Decorative crocodile mouth water spouts
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Shiva Devale No. 2 */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Shiva Devale No. 2</CardTitle>
+                                <CardDescription>One of the oldest Hindu temples in Polonnaruwa</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <ImageCarousel
+                                        images={[
+                                            {
+                                                src: "/shiva-devale2.jpg",
+                                                caption: "Shiva Devale No. 2 Temple",
+                                                title: "Main Temple Structure"
+                                            },
+                                            {
+                                                src: "/shiva-devale2-detail.jpg",
+                                                caption: "Intricate Stone Carvings",
+                                                title: "Temple Carvings"
+                                            },
+                                            {
+                                                src: "/shiva-devale2-entrance.jpg",
+                                                caption: "Temple Entrance",
+                                                title: "Gateway"
+                                            }
+                                        ]}
+                                        alt="Ancient Shiva Temple at Polonnaruwa showing various architectural details"
+                                    />
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            Built entirely of stone in the South Indian Dravidian style during the 11th century,
+                                            Shiva Devale No. 2 is one of the oldest structures in Polonnaruwa. Its remarkable
+                                            preservation and architectural precision make it a significant example of ancient
+                                            Hindu temple architecture.
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Complete stone construction without mortar
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Traditional Dravidian architectural features
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Original stone doorframe and steps
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Evidence of ancient Hindu worship practices
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Pabalu Vehera */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Pabalu Vehera</CardTitle>
+                                <CardDescription>Buddhist stupa famous for its pearl merchants' patronage</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            Pabalu Vehera, meaning "Pearl Shrine," was built during the reign of King
+                                            Parakramabahu I and was reportedly funded by pearl merchants. This Buddhist
+                                            stupa showcases the typical architectural style of the Polonnaruwa period with
+                                            its unique features and historical significance.
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Traditional bell-shaped stupa design
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Surrounded by smaller stupas and shrines
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Evidence of ancient merchant patronage
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Well-preserved stone moonstone and steps
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ImageCarousel
+                                        images={[
+                                            {
+                                                src: "/pabalu-vehera.jpg",
+                                                caption: "Pabalu Vehera Main Stupa - Bell-shaped Design"
+                                            },
+                                            {
+                                                src: "/pabalu-vehera-entrance.jpg",
+                                                caption: "Temple Entrance with Stone Steps"
+                                            },
+                                            {
+                                                src: "/pabalu-vehera-detail.jpg",
+                                                caption: "Detailed Architectural Features"
+                                            }
+                                        ]}
+                                        alt="Pabalu Vehera Buddhist stupa showing various architectural features"
+                                    />
+                                </div>
                             </CardContent>
                         </Card>
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>2. Audience Hall (Nissanka Latha Mandapaya)</CardTitle>
+                                <CardTitle>2. Nissanka Latha Mandapaya</CardTitle>
                                 <CardDescription>Unique architectural masterpiece with lotus-shaped pillars</CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -623,9 +771,9 @@ export default function PolonnaruwaGuide() {
                                             <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                                             Perfectly preserved structure
                                         </li>
-                                           <li className="flex items-start gap-2">
+                                        <li className="flex items-start gap-2">
                                             <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                           Underground water supply system
+                                            Underground water supply system
                                         </li>
                                     </ul>
 
@@ -639,6 +787,57 @@ export default function PolonnaruwaGuide() {
                             </div>
                         </CardContent>
                     </Card>
+
+                    <section id="lotus-pond" className="mt-12 scroll-mt-20">
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>2. Audience Hall of Nissanka Malla</CardTitle>
+                                <CardDescription>Unique architectural masterpiece with lotus-shaped pillars</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                           
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                48 unique lotus-shaped stone pillars
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Each pillar has different decorative motifs
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Royal throne platform in the center
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Excellent example of Polonnaruwa architecture
+                                            </li>
+                                        </ul>
+
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/nissanka-latha-mandapaya" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
+                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                        ]}
+                                        alt="Unique lotus-shaped stone pillars of the Audience Hall at Polonnaruwa"
+                                    />
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </section>
                 </section>
 
                 {/* Ad Space */}

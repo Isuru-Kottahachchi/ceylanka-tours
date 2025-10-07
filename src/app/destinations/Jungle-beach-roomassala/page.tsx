@@ -3,6 +3,7 @@ import { MapPin, Clock, Camera, Waves, TreePine, Car, Bus, Bike, Star, Users, Ca
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export const metadata = {
   title: "Jungle Beach Unawatuna - Hidden Paradise in Roomassala | Ceylon Ka Tours",
@@ -88,17 +89,17 @@ export default function JungleBeachPage() {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Jungle Beach is one of Sri Lanka&apos;s best-kept secrets, hidden away on the mystical Roomassala Hill near 
-              Unawatuna. This pristine beach offers crystal-clear waters, dramatic rocky cliffs, and a jungle backdrop 
+              Jungle Beach is one of Sri Lanka&apos;s best-kept secrets, hidden away on the mystical Roomassala Hill near
+              Unawatuna. This pristine beach offers crystal-clear waters, dramatic rocky cliffs, and a jungle backdrop
               that makes it feel like your own private paradise.
             </p>
             <p className="text-lg mb-4">
-              Located on the sacred Roomassala Hill, this beach is not just beautiful but also deeply connected to 
-              Sri Lankan mythology and the ancient Ramayana epic. The journey to reach this hidden gem is as rewarding 
+              Located on the sacred Roomassala Hill, this beach is not just beautiful but also deeply connected to
+              Sri Lankan mythology and the ancient Ramayana epic. The journey to reach this hidden gem is as rewarding
               as the destination itself.
             </p>
             <p className="text-lg">
-              Perfect for swimming, snorkeling, photography, and peaceful relaxation, Jungle Beach offers an escape 
+              Perfect for swimming, snorkeling, photography, and peaceful relaxation, Jungle Beach offers an escape
               from the crowded tourist beaches while remaining easily accessible from Galle and Unawatuna.
             </p>
           </div>
@@ -127,7 +128,7 @@ export default function JungleBeachPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-orange-700 dark:text-orange-300 mb-4">
-                    According to the ancient Ramayana epic, Roomassala Hill is where the mighty Hanuman landed when 
+                    According to the ancient Ramayana epic, Roomassala Hill is where the mighty Hanuman landed when
                     he carried a piece of the Himalayas to heal Lakshmana, Lord Rama&apos;s brother.
                   </p>
                   <div className="space-y-3">
@@ -453,13 +454,18 @@ export default function JungleBeachPage() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  Famous curved bay with golden sand, perfect for swimming and water sports. 
+                  Famous curved bay with golden sand, perfect for swimming and water sports.
                   Excellent restaurants and beach bars.
                 </p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline">Swimming</Badge>
                   <Badge variant="outline">Dining</Badge>
                   <Badge variant="outline">Nightlife</Badge>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -478,13 +484,47 @@ export default function JungleBeachPage() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  UNESCO World Heritage Dutch colonial fort with museums, galleries, 
+                  UNESCO World Heritage Dutch colonial fort with museums, galleries,
                   boutique shops, and stunning ocean views.
                 </p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline">History</Badge>
                   <Badge variant="outline">Shopping</Badge>
                   <Badge variant="outline">Culture</Badge>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-green-800 dark:text-green-400">Ambalangoda</CardTitle>
+                <CardDescription>Famous for Traditional Mask Making and puppets</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/placeholder.svg?height=200&width=300&text=Ambalangoda"
+                  alt="Ambalangoda - famous for its traditional mask making"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  Japanese Buddhist temple on the hilltop offering panoramic views
+                  of the southern coastline and peaceful meditation spaces.
+                </p>
+                <div className="flex flex-wrap gap-1">
+                  <Badge variant="outline">Spiritual</Badge>
+                  <Badge variant="outline">Views</Badge>
+                  <Badge variant="outline">Meditation</Badge>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -503,13 +543,18 @@ export default function JungleBeachPage() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  Japanese Buddhist temple on the hilltop offering panoramic views 
+                  Japanese Buddhist temple on the hilltop offering panoramic views
                   of the southern coastline and peaceful meditation spaces.
                 </p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline">Spiritual</Badge>
                   <Badge variant="outline">Views</Badge>
                   <Badge variant="outline">Meditation</Badge>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -521,14 +566,14 @@ export default function JungleBeachPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300&text=Coconut+Tree+Hill"
+                  src="/Mirissa1.jpg"
                   alt="Coconut Tree Hill - iconic palm trees overlooking the ocean"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  Instagram-famous hilltop covered with coconut palms offering 
+                  Instagram-famous hilltop covered with coconut palms offering
                   spectacular sunset views and photo opportunities.
                 </p>
                 <div className="flex flex-wrap gap-1">
@@ -536,12 +581,17 @@ export default function JungleBeachPage() {
                   <Badge variant="outline">Sunset</Badge>
                   <Badge variant="outline">Views</Badge>
                 </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-green-800 dark:text-green-400">Snake Island</CardTitle>
+                <CardTitle className="text-green-800 dark:text-green-400">Tabrobane Island</CardTitle>
                 <CardDescription>Beach access from Unawatuna</CardDescription>
               </CardHeader>
               <CardContent>
@@ -553,13 +603,18 @@ export default function JungleBeachPage() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  Small rocky island accessible at low tide, perfect for snorkeling 
+                  Small rocky island accessible at low tide, perfect for snorkeling
                   and exploring marine life in crystal-clear waters.
                 </p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline">Snorkeling</Badge>
                   <Badge variant="outline">Adventure</Badge>
                   <Badge variant="outline">Marine Life</Badge>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -578,13 +633,18 @@ export default function JungleBeachPage() {
                   className="rounded-lg mb-3"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  Picturesque beach famous for its palm tree rope swing, calm waters, 
+                  Picturesque beach famous for its palm tree rope swing, calm waters,
                   and excellent swimming conditions with fewer crowds.
                 </p>
                 <div className="flex flex-wrap gap-1">
                   <Badge variant="outline">Swimming</Badge>
                   <Badge variant="outline">Rope Swing</Badge>
                   <Badge variant="outline">Peaceful</Badge>
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -725,7 +785,7 @@ export default function JungleBeachPage() {
         <section className="text-center py-12 bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-950/20 dark:to-green-950/20 rounded-lg">
           <h2 className="text-3xl font-bold mb-4">Ready to Discover Jungle Beach?</h2>
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Experience the magic of Sri Lanka&apos;s hidden paradise where mythology meets natural beauty. 
+            Experience the magic of Sri Lanka&apos;s hidden paradise where mythology meets natural beauty.
             Start planning your adventure to this sacred and stunning destination today.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
