@@ -627,7 +627,7 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Pabalu Vehera, meaning &Pearl Shrine," was built during the reign of King
+                                            Pabalu Vehera, meaning &quot;Pearl Shrine,&quot; was built during the reign of King
                                             Parakramabahu I and was reportedly funded by pearl merchants. This Buddhist
                                             stupa showcases the typical architectural style of the Polonnaruwa period with
                                             its unique features and historical significance.
