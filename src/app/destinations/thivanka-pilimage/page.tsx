@@ -22,18 +22,17 @@ export default function ThivankaPilimagePage() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Thivanka Pilimage</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Ancient Buddhist Image House of Polonnaruwa</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <History className="w-4 h-4 mr-1" />
               12th Century CE
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-blue-500">
               <Palette className="w-4 h-4 mr-1" />
               Ancient Murals
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Book className="w-4 h-4 mr-1" />
               UNESCO Heritage
             </Badge>

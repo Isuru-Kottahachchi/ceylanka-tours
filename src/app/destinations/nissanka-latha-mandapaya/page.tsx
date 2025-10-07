@@ -40,15 +40,15 @@ export default function NissankaLathaMandapayaGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Nissanka Latha Mandapaya</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">A Masterpiece of Ancient Stone Architecture</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Anuradhapura, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500 ">
               <History className="w-4 h-4 mr-1" />
               Built 12th Century
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500 ">
               <Home className="w-4 h-4 mr-1" />
               Ancient Dance Pavilion
             </Badge>
@@ -56,7 +56,7 @@ export default function NissankaLathaMandapayaGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">

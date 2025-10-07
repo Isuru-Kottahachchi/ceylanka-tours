@@ -623,9 +623,9 @@ export default function YalaNationalParkTravelGuide() {
                       gather around water holes.
                     </p>
                     <div className="bg-purple-50 dark:bg-purple-950/30 p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-purple-800 dark:text-purple-400 mb-2">Thun Path Rana: The Three-Generation Herd</h4>
+                      <h4 className="font-semibold text-purple-800 dark:text-purple-400 mb-2">Thun Path Rana: The Three Generation Herd</h4>
                       <p className="text-sm text-muted-foreground mb-2">
-                        In Sri Lankan elephant society, the term "Thun Path Rana" refers to the three-generation family structure
+                        In Sri Lankan elephant society, the term &quot;Thun Path Rana&quot; refers to the three-generation family structure
                         that forms the core of each herd. This consists of:
                       </p>
                       <ul className="text-sm text-muted-foreground space-y-2">
@@ -635,7 +635,7 @@ export default function YalaNationalParkTravelGuide() {
                       </ul>
                       <p className="text-sm text-muted-foreground mt-2">
                         Young male elephants naturally separate from the herd around 12-15 years of age, a process known
-                        as "dispersal." These males then either live solitary lives or form loose bachelor groups, only
+                        as &quot;dispersal.&quot; These males then either live solitary lives or form loose bachelor groups, only
                         returning to the herds during mating season. This natural behavior helps prevent inbreeding and
                         maintains genetic diversity.
                       </p>

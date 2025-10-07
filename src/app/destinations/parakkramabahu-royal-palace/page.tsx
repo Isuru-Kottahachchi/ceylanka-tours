@@ -26,13 +26,13 @@ export default function ParakkramabahuRoyalPalaceGuide() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Parakkramabahu Royal Palace</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">The Majestic Heart of Ancient Polonnaruwa</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              Polonnaruwa
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
+              Royal Palace
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               North Central Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               12th Century AD
             </Badge>
           </div>
@@ -41,7 +41,7 @@ export default function ParakkramabahuRoyalPalaceGuide() {
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         {/* Image Gallery Section */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-2xl font-bold mb-4 text-foreground">Image Gallery: Explore the Palace</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {palaceImages.map((img, idx) => (
@@ -57,7 +57,7 @@ export default function ParakkramabahuRoyalPalaceGuide() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to the Royal Palace of King Parakkramabahu</h2>
@@ -92,7 +92,7 @@ export default function ParakkramabahuRoyalPalaceGuide() {
           </div>
         </section>
 
-  {/* How to Get In Section */}
+        {/* How to Get In Section */}
         <section className="mb-12">
           <Card>
             <CardHeader>
@@ -135,7 +135,7 @@ export default function ParakkramabahuRoyalPalaceGuide() {
           </Card>
         </section>
 
-  {/* Beliefs & Legends Section */}
+        {/* Beliefs & Legends Section */}
         <section className="mb-12">
           <Card>
             <CardHeader>

@@ -39,19 +39,15 @@ export default function MeemureTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Meemure Village</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Experience Sri Lanka&apos;s Last Traditional Mountain Village</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Knuckles Mountains, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Mountain className="w-4 h-4 mr-1" />
               1,100m Above Sea Level
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              <Calendar className="w-4 h-4 mr-1" />
-              1000+ Years Old
-            </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Users className="w-4 h-4 mr-1" />
               Living Heritage Village
             </Badge>
@@ -59,7 +55,7 @@ export default function MeemureTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Meemure: Sri Lanka&apos;s Last Traditional Village</h2>
