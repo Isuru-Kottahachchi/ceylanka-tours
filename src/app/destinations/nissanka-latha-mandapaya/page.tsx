@@ -29,7 +29,7 @@ export default function NissankaLathaMandapayaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/nissanka-latha-mandapaya.jpg"
+          src="/Nishshankalatha-mandapaya.jpg"
           alt="The ancient stone pillars of Nissanka Latha Mandapaya showing intricate lotus carvings in Anuradhapura"
           fill
           className="object-cover"
@@ -183,7 +183,7 @@ export default function NissankaLathaMandapayaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <Image
-                      src="/nissanka-pillars.jpg"
+                      src="/Lotus-pillars.jpg"
                       alt="Close-up of the intricately carved lotus pillars at Nissanka Latha Mandapaya"
                       width={400}
                       height={300}
