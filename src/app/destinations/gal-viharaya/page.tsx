@@ -310,7 +310,7 @@ export default function GalViharayaGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/Galviharaya3.jpeg"
+                    src="/Sleeping-Buddha.jpg"
                     alt="Reclining Buddha statue at Gal Viharaya showing the moment of final nirvana"
                     width={400}
                     height={300}

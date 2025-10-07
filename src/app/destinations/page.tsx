@@ -243,7 +243,7 @@ const destinations = [
     id: 14,
     name: "Meemure",
     location: "Central Province",
-    path: "Meemure",
+    path: "meemure",
     image: "/Meemure.jpeg",
     // rating: 4.3,
     // reviews: 890,

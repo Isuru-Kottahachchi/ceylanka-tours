@@ -101,42 +101,42 @@ export default function AnuradhapuraTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4 text-blue-500" />
-                      <span>
-                        <strong>Founded:</strong> 4th Century BC
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-green-500" />
-                      <span>
-                        <strong>Capital Period:</strong> 1,400 years (380 BC - 1017 AD)
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <TreePine className="w-4 h-4 text-purple-500" />
-                      <span>
-                        <strong>Sacred Bodhi Tree:</strong> 2,300+ years old
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-red-500" />
-                      <span>
-                        <strong>Area:</strong> 40 square kilometers
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Star className="w-4 h-4 text-yellow-500" />
-                      <span>
-                        <strong>UNESCO Status:</strong> World Heritage (1982)
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-orange-500" />
-                      <span>
-                        <strong>Visit Duration:</strong> Full day (8+ hours)
-                      </span>
-                    </div>
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4 text-blue-500" />
+                    <span>
+                      <strong>Founded:</strong> 4th Century BC
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users className="w-4 h-4 text-green-500" />
+                    <span>
+                      <strong>Capital Period:</strong> 1,400 years (380 BC - 1017 AD)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <TreePine className="w-4 h-4 text-purple-500" />
+                    <span>
+                      <strong>Sacred Bodhi Tree:</strong> 2,300+ years old
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-red-500" />
+                    <span>
+                      <strong>Area:</strong> 40 square kilometers
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Star className="w-4 h-4 text-yellow-500" />
+                    <span>
+                      <strong>UNESCO Status:</strong> World Heritage (1982)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-orange-500" />
+                    <span>
+                      <strong>Visit Duration:</strong> Full day (8+ hours)
+                    </span>
+                  </div>
                 </div>
                 {/* Valuable Fact for Desktop */}
                 <div className="hidden lg:block mt-6 space-y-4">
@@ -707,66 +707,124 @@ export default function AnuradhapuraTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-            
+
           </div>
         </section>
 
         {/* More Sacred Sites */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Additional Sacred Sites</h2>
-          <Card>
+          <section className="mb-12">
+            <Card>
               <CardHeader>
-                <CardTitle>Sandahirusaya</CardTitle>
-                <CardDescription>A smaller but equally sacred stupa with unique historical significance</CardDescription>
+                <CardTitle>Avukana Buddha Statue</CardTitle>
+                <CardDescription>A stunning rock-cut statue of the Buddha in a serene meditation pose</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/Sandahirusaya.jpeg"
-                    alt="Sandahirusaya stupa showing its white dome structure similar to Ruwanwelisaya but smaller in scale"
+                    src="/Avukana-Statue.jpg"
+                    alt="Avukana Buddha Statue showing its intricate details and serene expression"
                     width={400}
                     height={300}
                     className="rounded-lg"
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      If you visit Anuradhapura, you might have seen this stupa - it&apos;s similar to the Ruwanwelisaya but not as large.
-                      Sandahirusaya, also known as &quot;Sandahiru Seya,&quot; is a beautiful white dagoba that showcases the classic
-                      bell-shaped architectural style of ancient Sri Lankan stupas. This is actually a modern construction,
-                      built in recent times following traditional Buddhist architectural principles and designs.
+                      The Avukana Buddha Statue is a magnificent rock-cut statue located about 8 kilometers from
+                      Anuradhapura. Carved out of a large granite rock face in the 5th century AD, this statue stands
+                      approximately 12 meters tall and depicts the Buddha in a standing posture with his right hand
+                      raised in the gesture of reassurance (abhaya mudra). The intricate details of the robe and
+                      facial features showcase the exceptional craftsmanship of ancient Sri Lankan artisans.
                     </p>
+                    <Link href="/destinations/anuradhapura/avukana-buddha" className="text-blue-600 hover:underline mb-4 inline-block">
+                      If you want to know more about the gesture
+                    </Link>
                     <p className="text-muted-foreground mb-4">
-                      What makes Sandahirusaya unique is its role as a contemporary Buddhist monument that maintains traditional
-                      design elements. While it may appear ancient due to its classical style, it represents modern Sri Lankan
-                      Buddhist devotion and craftsmanship. The stupa is surrounded by well-maintained gardens and provides
-                      excellent opportunities for meditation and photography, especially during sunrise and sunset.
+                      The statue is set against a natural rock backdrop, creating a striking contrast that enhances its
+                      visual impact. The serene expression on the Buddha's face and the intricate details of the carving
+                      invite contemplation and reflection.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Modern construction following traditional Buddhist architecture
+                        Carved from a single granite rock face
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Classic bell-shaped design with white limestone coating
+                        Stands approximately 12 meters tall
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contemporary Buddhist devotion and craftsmanship
+                        Depicts Buddha in abhaya mudra (gesture of reassurance)
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Peaceful setting ideal for meditation and reflection
+                        Exceptional craftsmanship with intricate details
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Less crowded alternative to ancient stupas
+                        Set against a natural rock backdrop for visual impact
                       </li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
+          </section>
+          <Card>
+            <CardHeader>
+              <CardTitle>Sandahirusaya</CardTitle>
+              <CardDescription>A smaller but equally sacred stupa with unique historical significance</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <Image
+                  src="/Sandahirusaya.jpeg"
+                  alt="Sandahirusaya stupa showing its white dome structure similar to Ruwanwelisaya but smaller in scale"
+                  width={400}
+                  height={300}
+                  className="rounded-lg"
+                />
+                <div>
+                  <p className="text-muted-foreground mb-4">
+                    If you visit Anuradhapura, you might have seen this stupa - it&apos;s similar to the Ruwanwelisaya but not as large.
+                    Sandahirusaya, also known as &quot;Sandahiru Seya,&quot; is a beautiful white dagoba that showcases the classic
+                    bell-shaped architectural style of ancient Sri Lankan stupas. This is actually a modern construction,
+                    built in recent times following traditional Buddhist architectural principles and designs.
+                  </p>
+                  <p className="text-muted-foreground mb-4">
+                    What makes Sandahirusaya unique is its role as a contemporary Buddhist monument that maintains traditional
+                    design elements. While it may appear ancient due to its classical style, it represents modern Sri Lankan
+                    Buddhist devotion and craftsmanship. The stupa is surrounded by well-maintained gardens and provides
+                    excellent opportunities for meditation and photography, especially during sunrise and sunset.
+                  </p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Modern construction following traditional Buddhist architecture
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Classic bell-shaped design with white limestone coating
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Contemporary Buddhist devotion and craftsmanship
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Peaceful setting ideal for meditation and reflection
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Less crowded alternative to ancient stupas
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
         </section>
 

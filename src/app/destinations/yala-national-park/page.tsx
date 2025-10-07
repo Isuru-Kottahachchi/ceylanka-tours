@@ -32,7 +32,7 @@ export default function YalaNationalParkTravelGuide() {
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Binoculars className="w-4 h-4 mr-1" />
-              Highest Leopard Density
+              Highest Leopard Density in the World
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Calendar className="w-4 h-4 mr-1" />
@@ -445,17 +445,52 @@ export default function YalaNationalParkTravelGuide() {
               <CardHeader>
                 <CardTitle>1. Sri Lankan Leopards (Panthera pardus kotiya)</CardTitle>
                 <CardDescription>The Apex Predators of Yala - Home to World&apos;s Densest Leopard Population</CardDescription>
+                <div className="mt-4">
+                  <div className="bg-amber-50/50 dark:bg-amber-950/30 p-4 rounded-lg">
+                    <p className="text-sm text-muted-foreground">
+                      The Sri Lankan leopard (Panthera pardus kotiya) is a majestic subspecies endemic to Sri Lanka. As the island&apos; apex predator, 
+                      it has evolved unique characteristics that set it apart from other leopard subspecies. These powerful cats play a crucial role 
+                      in maintaining the ecological balance of Yala&apos;s diverse ecosystem. They are very good at climbing trees and often rest on tree branches during the heat of the day.
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-4 mt-4">
+                      <div>
+                        <h5 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Physical Characteristics</h5>
+                        <ul className="text-xs space-y-1 text-muted-foreground">
+                          <li>• Males: 70-77 kg | Females: 29-35 kg</li>
+                          <li>• Larger and more muscular than other Asian leopards</li>
+                          <li>• Distinctive rosette patterns unique to Sri Lanka</li>
+                          <li>• Powerful build adapted for hunting large prey</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Population Status</h5>
+                        <ul className="text-xs space-y-1 text-muted-foreground">
+                          <li>• Estimated 700-1000 individuals in Sri Lanka</li>
+                          <li>• Yala has world&apos;s highest leopard density</li>
+                          <li>• Protected under Sri Lankan law</li>
+                          <li>• Listed as endangered species</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-col gap-6">
 
                   <ImageCarousel
                     images={[
+                      //  {
+                      //   src: "/Leopard-Mom-Yala.jpg", 
+                      //   alt: "Leopard mom with cubs in Yala National Park",
+                      //   caption: "Leopard mom with cubs in Yala National Park",
+                      //   title: "Leopard Mom",
+                      // },
                       {
                         src: "/Srilankanleopard.jpg",
-                        alt: "Whale Shark swimming in the ocean",
-                        caption: "Whale Shark sighting in Mirissa",
-                        title: "Whale Shark",
+                        alt: "Sri Lankan Leopard in Yala National Park",
+                        caption: "Sri Lankan Leopard resting on a tree branch",
+                        title: "Sri Lankan Leopard",
                       },
                         {
                         src: "/Leopard-in-Yala.jpg",
@@ -472,29 +507,30 @@ export default function YalaNationalParkTravelGuide() {
                       },
                       {
                         src: "/Leopard1.webp",
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
+                        alt: "Leopard in Yala National Park",
+                        caption: "Leopard in Yala National Park",
+                        title: "Leopard in Yala National Park",
                       },
 
                       {
                         src: "/Leopard2.webp",
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
+                        alt: "Leopard in Yala National Park",
+                        caption: "Leopard in Yala National Park",
+                        title: "Leopard in Yala National Park",
                       },
                       {
                         src: "/Leopard3.webp",
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
+                        alt: "Leopard in Yala National Park",
+                        caption: "Leopard in Yala National Park",
+                        title: "Leopard in Yala National Park",
                       },
                       {
-                        src: "/Leopard4.webp", 
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
+                        src: "/Leopard4.webp",
+                        alt: "Leopard in Yala National Park",
+                        caption: "Leopard in Yala National Park",
+                        title: "Leopard in Yala National Park",
                       },
+                      
                     ]}
                   />
                   <div>
@@ -510,7 +546,7 @@ export default function YalaNationalParkTravelGuide() {
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
                             <div>
-                              <p className="mb-4">The mystical black leopards of Yala, also known as melanistic leopards, are one of the rarest and most elusive big cats in the world. These magnificent creatures appear almost entirely black due to a recessive genetic mutation that causes excess melanin production in their coat.</p>
+                              <p className="mb-4">If you are so lucky you will be see very rare black Sri Lankan Leopards in Yala national park. The mystical black leopards of Yala, also known as melanistic leopards, are one of the rarest and most elusive big cats in the world. This melanistic trait causes Panthera onca (jaguar) as well. These magnificent creatures appear almost entirely black due to a recessive genetic mutation that causes excess melanin production in their coat.</p>
                               <div className="grid md:grid-cols-2 gap-6 items-start">
                                 <div>
                                   <Image
@@ -586,6 +622,12 @@ export default function YalaNationalParkTravelGuide() {
                       </li>
                     </ul>
                   </div>
+                  <Link
+                    href="/blog/sri-lankan-leopard"
+                    className="mt-4 inline-block text-sm text-blue-600 dark:text-blue-400 hover:underline focus:underline"
+                  >
+                    Cant you identyfy  leopards and jaguars? Read our detailed blog post to learn more about the differences between leopards and jaguars.
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -602,16 +644,16 @@ export default function YalaNationalParkTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
+                        src: "/Elephant-fam.jpg",
+                        alt: "Whale watching in Mirissa",
+                        caption: "Whale watching in Mirissa",
+                        title: "Whale Watching",
+                      },
+                      {
                         src: "/Thunpath-Rana.jpg",
                         alt: "Thun Path Rana herd of elephants",
                         caption: "Thun Path Rana herd of elephants",
                         title: "Thun Path Rana",
-                      },
-                      {
-                        src: "/Whale-in-Mirissa.jpg",
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
                       },
 
                     ]}
@@ -720,50 +762,187 @@ export default function YalaNationalParkTravelGuide() {
               <CardHeader>
                 <CardTitle>3. Sloth Bears (Melursus ursinus)</CardTitle>
                 <CardDescription>The Mysterious Honey-Loving Bears of Yala</CardDescription>
+                <div className="mt-4">
+                  <div className="bg-amber-50/50 dark:bg-amber-950/30 p-4 rounded-lg">
+                    <p className="text-sm text-muted-foreground">
+                      The only bear species native to Sri Lanka, the Sloth Bear (Melursus ursinus) is a unique and fascinating creature. 
+                      Despite their name, they are not related to sloths but earned the name due to their long, curved claws and occasional hanging behavior in trees.
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-4 mt-4">
+                      <div>
+                        <h5 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Physical Features</h5>
+                        <ul className="text-xs space-y-1 text-muted-foreground">
+                          <li>• Weight: Males 80-140 kg, Females 55-95 kg</li>
+                          <li>• Distinctive pale U-shaped chest mark</li>
+                          <li>• Shaggy black fur adapted for insect protection</li>
+                          <li>• Specialized lips for insect feeding</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Conservation Status</h5>
+                        <ul className="text-xs space-y-1 text-muted-foreground">
+                          <li>• Vulnerable species (IUCN Red List)</li>
+                          <li>• Estimated 500-600 bears in Sri Lanka</li>
+                          <li>• Protected under strict wildlife laws</li>
+                          <li>• Main threats: habitat loss & human conflict</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center mb-6">
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Sloth-Bear.jpg",
-                        alt: "Whale Shark swimming in the ocean",
-                        caption: "Whale Shark sighting in Mirissa",
-                        title: "Whale Shark",
+                        src: "/Sloth-Bear-in-Yala.jpg",
+                        alt: "Sloth Bear in Yala National Park",
+                        caption: "Sloth Bear foraging for termites",
+                        title: "Sloth Bear",
                       },
                       {
-                        src: "/Whale-in-Mirissa.jpg",
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
-                      },
-
+                        src: "/Sloth-Bear.jpg",
+                        alt: "Sloth Bear in Yala National Park",
+                        caption: "Sloth Bear resting in the shade",
+                        title: "Sloth Bear",
+                      }
                     ]}
                   />
 
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Yala&apos;s Sloth Bears are fascinating creatures known for their shaggy black fur and distinctive pale snout.
-                      These unique bears have evolved specialized features for their insectivorous diet, including the ability
-                      to close their nostrils to protect against dust while blowing away dirt to access termites.
+                      Yala&apos;s Sloth Bears are fascinating creatures known for their unique feeding habits and behavior. 
+                      These adaptable bears have evolved specialized features for their diverse diet, which includes termites, 
+                      ants, fruits, and their favorite - honey, earning them the nickname "Bambaru Walaha" (honey bear) in Sinhala.
                     </p>
                     <div className="space-y-4">
                       <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
-                        <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Unique Characteristics</h4>
+                        <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Unique Adaptations</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
-                            Long curved claws for digging termite mounds
+                            <div>
+                              <strong>Feeding Adaptations:</strong>
+                              <p>Long curved claws for digging, gap-closing lips to create suction for feeding, and closable nostrils to prevent dust inhalation</p>
+                            </div>
                           </li>
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
-                            Excellent sense of smell for locating food
+                            <div>
+                              <strong>Sensory Skills:</strong>
+                              <p>Excellent sense of smell for locating food, specially adapted for detecting termite nests and honey</p>
+                            </div>
                           </li>
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
-                            Can close nostrils while feeding on insects
+                            <div>
+                              <strong>Behavior Pattern:</strong>
+                              <p>Primarily nocturnal, but can be seen during early mornings and late evenings in Yala</p>
+                            </div>
                           </li>
                         </ul>
+                      </div>
+                      <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg">
+                        <h4 className="font-semibold text-blue-800 dark:text-blue-400 mb-2">Best Viewing Tips</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li>• Dawn and dusk are prime viewing times</li>
+                          <li>• Look for them near termite mounds and fruit trees</li>
+                          <li>• Listen for their distinctive huffing sound</li>
+                          <li>• Keep safe distance as they can be defensive</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Sri Lankan Endemic Species */}
+            <Card>
+              <CardHeader>
+                <CardTitle>6. Sri Lankan Endemic Species</CardTitle>
+                <CardDescription>Unique Wildlife Found Nowhere Else in the World</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <div className="bg-green-50 dark:bg-green-950/30 p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-green-800 dark:text-green-400 mb-2">Endemic Mammals</h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          <div>
+                            <strong>Toque Macaque:</strong>
+                            <p>Sri Lanka&apos;s endemic primate, recognized by its distinctive cap-like whorl of hair</p>
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          <div>
+                            <strong>Red Slender Loris:</strong>
+                            <p>Nocturnal primate with large eyes, found in Yala&apos;s forested areas</p>
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          <div>
+                            <strong>Golden Palm Civet:</strong>
+                            <p>Endemic civet species with distinctive golden-brown fur</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="bg-purple-50 dark:bg-purple-950/30 p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-purple-800 dark:text-purple-400 mb-2">Endemic Birds & Reptiles</h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                          <div>
+                            <strong>Sri Lanka Junglefowl:</strong>
+                            <p>National bird of Sri Lanka, ancestor of domestic chickens</p>
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                          <div>
+                            <strong>Sri Lanka Green Pit Viper:</strong>
+                            <p>Endemic venomous snake with excellent camouflage</p>
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                          <div>
+                            <strong>Black-necked Stork:</strong>
+                            <p>Rare resident bird found in Yala&apos;s wetlands</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-span-2">
+                    <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
+                      <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Conservation Status</h4>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Sri Lanka is recognized as one of the world&apos;s 36 biodiversity hotspots, with Yala National Park playing a crucial role in protecting many endemic species. 
+                        These unique animals face various threats including habitat loss, human encroachment, and climate change. Conservation efforts are ongoing to ensure their survival 
+                        for future generations.
+                      </p>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="text-center p-3 bg-white dark:bg-gray-800 rounded-lg">
+                          <p className="font-semibold text-amber-800 dark:text-amber-400">33</p>
+                          <p className="text-xs text-muted-foreground">Endemic Mammals</p>
+                        </div>
+                        <div className="text-center p-3 bg-white dark:bg-gray-800 rounded-lg">
+                          <p className="font-semibold text-amber-800 dark:text-amber-400">26</p>
+                          <p className="text-xs text-muted-foreground">Endemic Birds</p>
+                        </div>
+                        <div className="text-center p-3 bg-white dark:bg-gray-800 rounded-lg">
+                          <p className="font-semibold text-amber-800 dark:text-amber-400">21</p>
+                          <p className="text-xs text-muted-foreground">Endemic Reptiles</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -782,21 +961,26 @@ export default function YalaNationalParkTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Whale-Shark-at-Mirissa.jpg",
-                        alt: "Whale Shark swimming in the ocean",
-                        caption: "Whale Shark sighting in Mirissa",
-                        title: "Whale Shark",
+                        src: "/Mugger-Crocodiles.jpg",
+                        alt: "Mugger Crocodiles in Yala National Park",
+                        caption: "Two Mugger Crocodiles in Yala National Park",
+                        title: "Mugger Crocodiles",
                       },
                       {
-                        src: "/Whale-in-Mirissa.jpg",
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
+                        src: "/Mugger-Crocadiles1.jpg",
+                        alt: "Mugger Crocodile basking in the sun",
+                        caption: "Mugger Crocodile basking in the sun",
+                        title: "Mugger Crocodile",
                       },
 
                     ]}
                   />
                   <div>
+                    <p className="text-muted-foreground mb-4">
+                      In Sri Lanka you can see two species of crocodiles, the Saltwater Crocodile (Crocodylus porosus) locals called them as "Hala Kimbula" and the Marsh Crocodile (Crocodylus palustris) also known as "Gata Kimbula" by locals.
+                      While the Saltwater Crocodile is more commonly found in coastal areas and estuaries, the Marsh Crocodile, also known as the Mugger Crocodile,
+                      is prevalent in freshwater habitats such as lakes, rivers, and marshes within Yala National Park.
+                    </p>
                     <p className="text-muted-foreground mb-4">
                       Yala&apos;s waterways are home to impressive populations of Marsh Crocodiles, also known as Mugger Crocodiles.
                       These powerful reptiles can grow up to 5 meters in length and are perfectly adapted to life in the park&apos;s
@@ -837,7 +1021,7 @@ export default function YalaNationalParkTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Whale-Shark-at-Mirissa.jpg",
+                        src: "/Wild-Water-Buffalo.jpg",
                         alt: "Whale Shark swimming in the ocean",
                         caption: "Whale Shark sighting in Mirissa",
                         title: "Whale Shark",
