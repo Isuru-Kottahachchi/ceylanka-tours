@@ -1,22 +1,10 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Palette } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-
-export const metadata: Metadata = {
-  title: "Dambulla Cave Temple Sri Lanka: Complete Guide 2025 | Golden Temple & Ancient Buddhist Art",
-  description:
-    "Explore Dambulla Cave Temple, Sri Lankas largest cave temple complex. Complete guide to the Golden Temple, ancient Buddhist art, and UNESCO World Heritage site.",
-  keywords:
-    "Dambulla Cave Temple, Golden Temple, Buddhist caves, ancient art, UNESCO World Heritage, Sri Lanka temples, cave paintings",
-  openGraph: {
-    title: "Dambulla Cave Temple: Complete Guide 2025",
-    description: "Your ultimate guide to Sri Lankas magnificent cave temple complex",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 export default function DambullaTravelGuide() {
   return (
@@ -33,7 +21,7 @@ export default function DambullaTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Dambulla Cave Temple</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Largest Cave Temple Complex</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Largest Cave Temple Complex</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
@@ -51,13 +39,13 @@ export default function DambullaTravelGuide() {
         </div>
       </section>
 
-  <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Dambulla: Temple of Ancient Wonders</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into a world where ancient artistry meets spiritual devotion at Dambulla Cave Temple, Sri Lankas
+              Step into a world where ancient artistry meets spiritual devotion at Dambulla Cave Temple, Sri Lanka&apos;s
               largest and best-preserved cave temple complex. This UNESCO World Heritage site houses over 150 Buddha
               statues, intricate cave paintings spanning 2,100 square meters, and 2,000 years of continuous Buddhist
               worship in five magnificent caves carved into a massive rock outcrop.
@@ -70,6 +58,7 @@ export default function DambullaTravelGuide() {
             </p>
           </div>
         </section>
+
 
         {/* Quick Facts */}
         <section className="mb-12">
@@ -126,6 +115,51 @@ export default function DambullaTravelGuide() {
             </CardContent>
           </Card>
         </section>
+        {/* Historical Engineering */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Ancient Engineering Marvel</h2>
+          <Card>
+            <CardContent className="p-6">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Cave Construction Techniques</h3>
+                  <ul className="space-y-3 text-muted-foreground">
+                    <li>• Natural caves were carefully expanded using ancient chiseling techniques</li>
+                    <li>• Water drainage systems were integrated to protect the artwork</li>
+                    <li>• Precise calculations were used to ensure cave stability</li>
+                    <li>• Special drip ledges were carved to direct rainwater away</li>
+                  </ul>
+                  <div className="mt-6 p-4 bg-orange-50 rounded-lg">
+                    <p className="text-sm text-orange-800">
+                      <strong>Engineering Fact:</strong> The caves were carved following the natural rock formation&apos;s stress lines, demonstrating the ancient engineers&apos; understanding of structural integrity. This is why the caves have survived for over 2,000 years without collapsing!
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Construction Timeline</h3>
+                  <div className="space-y-4">
+                    <div>
+                      <h4 className="font-medium text-blue-600">1st Century BCE</h4>
+                      <p className="text-sm text-muted-foreground">Initial cave excavation and basic temple structure</p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-blue-600">5th Century CE</h4>
+                      <p className="text-sm text-muted-foreground">Major expansion and addition of more Buddha statues</p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-blue-600">12th Century CE</h4>
+                      <p className="text-sm text-muted-foreground">Additional caves carved and paintings added</p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-blue-600">18th Century CE</h4>
+                      <p className="text-sm text-muted-foreground">Kandyan era renovations and new artwork</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
 
         {/* The Five Caves */}
         <section className="mb-12">
@@ -140,12 +174,27 @@ export default function DambullaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Cave 1 at Dambulla showing the reclining Buddha statue and ancient rock paintings"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Devaraja-lena.jpg",
+                        alt: "The first cave of Dambulla showing the reclining Buddha statue",
+                        caption: "Devaraja Lena Interior",
+                        title: "Cave of the Divine King"
+                      },
+                      {
+                        src: "/cave1-paintings.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+                      {
+                        src: "/buddha-statue-cave1.jpg",
+                        alt: "Detailed view of Buddha statue in Cave 1",
+                        caption: "Buddha Statue Detail",
+                        title: "Cave 1 Buddha Statue"
+                      }
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -176,11 +225,23 @@ export default function DambullaTravelGuide() {
               </CardContent>
             </Card>
 
-            {/* Water Drop Note */}
-            <div className="my-8 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg border-l-4 border-blue-400 dark:border-blue-500">
-              <p className="text-blue-900 dark:text-blue-200 text-base">
-                <strong>Did you know?</strong> One of Dambulla Cave Temple&apos;s most intriguing features is the <span className="font-semibold">eternal water drop</span>—a tiny stream of water that drips from the cave ceiling into a stone basin, even during the driest months. This natural phenomenon is considered sacred and is used for rituals and offerings by monks and pilgrims.
-              </p>
+            {/* Did You Know Section */}
+            <div className="space-y-4">
+              <div className="p-4 bg-blue-50 dark:bg-slate-800 rounded-lg border-l-4 border-blue-400 dark:border-blue-500">
+                <p className="text-blue-900 dark:text-blue-200 text-base">
+                  <strong>Did you know?</strong> One of Dambulla Cave Temple&apos;s most intriguing features is the <span className="font-semibold">eternal water drop</span>—a tiny stream of water that drips from the cave ceiling into a stone basin, even during the driest months. This natural phenomenon is considered sacred and is used for rituals and offerings by monks and pilgrims.
+                </p>
+              </div>
+              <div className="p-4 bg-amber-50 dark:bg-slate-800 rounded-lg border-l-4 border-amber-400 dark:border-amber-500">
+                <p className="text-amber-900 dark:text-amber-200 text-base">
+                  <strong>Historical Fact:</strong> King Valagamba (also known as Vattagamani Abhaya) took refuge in these caves in 103 BCE when exiled from Anuradhapura. After regaining his throne 14 years later, he transformed the caves into a magnificent temple complex as a gesture of gratitude.
+                </p>
+              </div>
+              <div className="p-4 bg-green-50 dark:bg-slate-800 rounded-lg border-l-4 border-green-400 dark:border-green-500">
+                <p className="text-green-900 dark:text-green-200 text-base">
+                  <strong>Artistic Marvel:</strong> The cave paintings at Dambulla use a unique technique where natural pigments were mixed with egg whites and wild honey to create colors that have remained vibrant for over 2,000 years!
+                </p>
+              </div>
             </div>
 
             {/* Cave 2 */}
@@ -216,13 +277,35 @@ export default function DambullaTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Cave 2 interior showing magnificent ceiling paintings and multiple Buddha statues in golden light"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                 <ImageCarousel
+                    images={[
+                      {
+                        src: "/maharaja-lena.jpg",
+                        alt: "The magnificent interior of Cave 2 showing multiple Buddha statues and painted ceiling",
+                        caption: "Cave of the Great Kings Interior",
+                        title: "Maharaja Lena"
+                      },
+                      {
+                        src: "/cave2-ceiling.jpg",
+                        alt: "Detailed view of the intricately painted ceiling in Cave 2",
+                        caption: "Ceiling Murals",
+                        title: "Cave 2 Ceiling Art"
+                      },
+                      {
+                        src: "/buddha-statues-cave2.jpg",
+                        alt: "Collection of Buddha statues in various poses within Cave 2",
+                        caption: "Buddha Statues Array",
+                        title: "Cave 2 Buddha Statues"
+                      }
+                    ]}
                   />
+
+                  {/* Cave 2 Facts */}
+                  <div className="mt-6 p-4 bg-purple-50 dark:bg-slate-800 rounded-lg border-l-4 border-purple-400">
+                    <p className="text-purple-900 dark:text-purple-200 text-base">
+                      <strong>Did you know?</strong> Cave 2 contains the temple&apos;s oldest paintings, dating back to the 1st century BCE. The ceiling murals use a special technique where artists had to paint while lying on their backs on scaffolding, similar to Michelangelo&apos;s work in the Sistine Chapel!
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -235,13 +318,35 @@ export default function DambullaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Cave 3 showing Kandyan period Buddha statues and colorful paintings from the 18th century"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/maha-alut-viharaya.jpg",
+                        alt: "The interior of Cave 3 showing Kandyan era paintings and statues",
+                        caption: "Great New Monastery Interior",
+                        title: "Maha Alut Viharaya"
+                      },
+                      {
+                        src: "/cave3-paintings.jpg",
+                        alt: "Detailed view of the Kandyan era paintings in Cave 3",
+                        caption: "Kandyan Era Art",
+                        title: "Cave 3 Wall Paintings"
+                      },
+                      {
+                        src: "/statues-cave3.jpg",
+                        alt: "Buddha statues from the Kandyan period in Cave 3",
+                        caption: "Kandyan Buddha Statues",
+                        title: "Cave 3 Statues"
+                      }
+                    ]}
                   />
+
+                  {/* Cave 3 Facts */}
+                  <div className="mt-6 p-4 bg-emerald-50 dark:bg-slate-800 rounded-lg border-l-4 border-emerald-400">
+                    <p className="text-emerald-900 dark:text-emerald-200 text-base">
+                      <strong>Did you know?</strong> Cave 3 showcases a unique blend of Kandyan era art styles with traditional Buddhist iconography. The artists used vibrant natural pigments including vermilion, lapis lazuli, and gold, creating some of the most colorful murals in ancient Sri Lankan art.
+                    </p>
+                  </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Built during the Kandyan period (18th century), this cave showcases the evolution of Sri Lankan
@@ -479,6 +584,112 @@ export default function DambullaTravelGuide() {
           </div>
         </section>
 
+        {/* Sacred Rituals & Ceremonies */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Sacred Rituals & Ceremonies</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Daily Rituals</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2">Morning Offerings (Buddha Puja)</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Dawn offerings of flowers and incense</li>
+                    <li>• Chanting of Buddhist sutras</li>
+                    <li>• Lighting of oil lamps</li>
+                    <li>• Meditation sessions</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Evening Ceremonies</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Sunset drum ceremonies</li>
+                    <li>• Group meditation</li>
+                    <li>• Evening chanting</li>
+                    <li>• Blessing ceremonies</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Special Ceremonies</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2">Full Moon (Poya) Days</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Special alms giving</li>
+                    <li>• All-night meditation</li>
+                    <li>• Traditional dance offerings</li>
+                    <li>• Mass prayer gatherings</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Annual Festivals</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Vesak celebrations</li>
+                    <li>• Temple anniversary ceremonies</li>
+                    <li>• New Year rituals</li>
+                    <li>• Kathina ceremony</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Conservation & Preservation */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Conservation & Preservation</h2>
+          <Card>
+            <CardContent className="p-6">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Current Conservation Efforts</h4>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li>• Climate control systems to protect paintings</li>
+                      <li>• Regular restoration of damaged artwork</li>
+                      <li>• Documentation of art and architecture</li>
+                      <li>• Scientific monitoring of cave conditions</li>
+                      <li>• Protection against water seepage</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">Challenges Faced</h4>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li>• Natural weathering of rock surfaces</li>
+                      <li>• Impact of increased tourism</li>
+                      <li>• Maintaining authentic restoration</li>
+                      <li>• Balancing accessibility with preservation</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-lg mb-2">How Visitors Can Help</h4>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li>• Follow photography guidelines</li>
+                      <li>• Maintain distance from paintings</li>
+                      <li>• Report any damage to authorities</li>
+                      <li>• Support conservation funds</li>
+                    </ul>
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg">
+                    <p className="text-sm text-green-800">
+                      <strong>Conservation Success:</strong> Thanks to careful preservation efforts, Dambulla&apos;s cave paintings have survived for over two millennia, making them some of the best-preserved ancient Buddhist art in South Asia.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
         {/* Best Time to Visit */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Best Time to Visit Dambulla</h2>
@@ -614,7 +825,7 @@ export default function DambullaTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Dambulla Cave Temple offers one of Sri Lankas most profound cultural and spiritual experiences. As you
+                Dambulla Cave Temple offers one of Sri Lanka&apos;s most profound cultural and spiritual experiences. As you
                 explore these ancient caves, youre walking through 2,000 years of continuous Buddhist devotion and
                 artistic achievement. Each cave tells a story, each painting holds meaning, and each statue represents
                 centuries of faith and craftsmanship.

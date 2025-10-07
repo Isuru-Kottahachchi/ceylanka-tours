@@ -14,7 +14,7 @@ export default function SathmahalPrasadaya() {
             {/* Hero Section */}
             <section className="relative h-[60vh] min-h-[600px] bg-black">
                 <Image
-                    src="/SathmahalPrasadaya.jpg"
+                    src="/Sathmahal-prasadaya.jpg"
                     alt="Sathmahal Prasadaya in Polonnaruwa"
                     fill
                     className="object-cover opacity-80"

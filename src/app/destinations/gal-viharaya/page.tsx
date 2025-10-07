@@ -29,7 +29,7 @@ export default function GalViharayaGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Galviharaya3.jpeg"
+          src="/GalViharaya3.jpeg"
           alt="Magnificent rock-cut Buddha statues at Gal Viharaya showing the seated, standing and reclining figures"
           fill
           className="object-cover"
@@ -216,7 +216,7 @@ export default function GalViharayaGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/Galviharaya5.jpeg"
+                    src="/GalViharaya5.jpeg"
                     alt="Seated Buddha statue at Gal Viharaya showing meditation posture and detailed carving work"
                     width={400}
                     height={300}
@@ -291,7 +291,7 @@ export default function GalViharayaGuide() {
                     </div>
                   </div>
                   <Image
-                    src="/Galviharaya4.jpeg"
+                    src="/GalViharaya4.jpeg"
                     alt="Standing Buddha statue at Gal Viharaya with unique crossed arms pose"
                     width={400}
                     height={300}
