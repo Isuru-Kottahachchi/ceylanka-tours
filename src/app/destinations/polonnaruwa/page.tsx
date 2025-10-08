@@ -1,8 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Crown, ChevronRight, ChevronLeft, Car } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Crown, Car } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
@@ -34,12 +33,6 @@ export default function PolonnaruwaGuide() {
         { src: "/Rankothvehera3.jpeg", caption: "View of Rankoth Vehera from the base", alt: "View of Rankoth Vehera from the base" },
         { src: "/Rankothvehera4.jpeg", caption: "Devotees at Rankoth Vehera stupa", alt: "Devotees at Rankoth Vehera stupa" },
         // { src: "/Rankothvehera5.jpeg", caption: "Rankoth Vehera: Architectural details of the stupa" },
-    ];
-
-    const shivaDevaleImages = [
-        { src: "/ShivaDevale1.jpeg", caption: "Shiva Devale No. 1 Temple" },
-        { src: "/ShivaDevale2.jpeg", caption: "Shiva Devale No. 2 Temple" },
-        { src: "/ShivaDevale3.jpeg", caption: "Shiva Devale No. 3 Temple" },
     ];
 
     return (
