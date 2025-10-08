@@ -7,111 +7,32 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-type CarouselImage = { src: string; caption: string };
-function ImageCarousel({ images, alt }: { images: CarouselImage[]; alt: string }) {
-    const [currentIndex, setCurrentIndex] = useState(0);
 
-    const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
-
-    const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-    };
-
-    const goToImage = (index: number) => {
-        setCurrentIndex(index);
-    };
-
-    const current = images[currentIndex] || { src: "/placeholder.svg", caption: "" };
-
-    return (
-        <div className="relative">
-            <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[500px] sm:h-[350px] flex items-center justify-center">
-                <Image
-                    src={current.src}
-                    alt={`${alt} ${images.length > 1 ? `(${currentIndex + 1} of ${images.length})` : ''}`}
-                    width={400}
-                    height={300}
-                    className="rounded-lg transition-all duration-300 object-contain w-full h-full"
-                />
-
-                {/* Navigation buttons */}
-                {images.length > 1 && (
-                    <>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-                            onClick={prevImage}
-                        >
-                            <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-                        </Button>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-                            onClick={nextImage}
-                        >
-                            <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-                        </Button>
-                    </>
-                )}
-            </div>
-
-            {/* Caption */}
-            {current.caption && (
-                <div className="text-center mt-2 text-sm text-muted-foreground font-medium">
-                    {current.caption}
-                </div>
-            )}
-
-            {/* Dots indicator */}
-            {images.length > 1 && (
-                <div className="flex justify-center mt-3 space-x-2">
-                    {images.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => goToImage(index)}
-                            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"}`}
-                        />
-                    ))}
-                </div>
-            )}
-
-            {/* Image counter */}
-            {images.length > 1 && (
-                <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-                    {currentIndex + 1} / {images.length}
-                </div>
-            )}
-        </div>
-    );
-}
 
 export default function PolonnaruwaGuide() {
 
 
     const polonnaruwaImages = [
-        { src: "/Polonnaruwa2.jpeg", caption: "Ruins of the Royal Palace of King Parakramabahu I" },
-        { src: "/Polonnaruwa3.jpeg", caption: "Ancient brick walls and palace foundations" },
+        { src: "/Polonnaruwa2.jpeg", caption: "Ruins of the Royal Palace of King Parakramabahu I", alt: "Ruins of the Royal Palace of King Parakramabahu I" },
+        { src: "/Polonnaruwa3.jpeg", caption: "Ancient brick walls and palace foundations", alt: "Ancient brick walls and palace foundations" },
     ];
 
     const galviharayaImages = [
-        { src: "/Galviharaya.jpeg", caption: "Gal Vihara: Seated Buddha statue carved from granite" },
-        { src: "/Galviharaya2.jpeg", caption: "Standing Buddha statue at Gal Vihara" },
-        { src: "/Galviharaya3.jpeg", caption: "Reclining Buddha representing Parinirvana at Gal Vihara" },
-        { src: "/Galviharaya4.jpeg", caption: "Close-up of Gal Vihara Buddha face details" },
-        { src: "/Galviharaya5.jpeg", caption: "Worshippers at Gal Vihara rock temple" },
+        { src: "/Galviharaya.jpeg", caption: "Gal Vihara: Seated Buddha statue carved from granite", alt: "Gal Vihara: Seated Buddha statue carved from granite" },
+        { src: "/Galviharaya2.jpeg", caption: "Standing Buddha statue at Gal Vihara", alt: "Standing Buddha statue at Gal Vihara" },
+        { src: "/Galviharaya3.jpeg", caption: "Reclining Buddha representing Parinirvana at Gal Vihara", alt: "Reclining Buddha representing Parinirvana at Gal Vihara" },
+        { src: "/Galviharaya4.jpeg", caption: "Close-up of Gal Vihara Buddha face details", alt: "Close-up of Gal Vihara Buddha face details" },
+        { src: "/Galviharaya5.jpeg", caption: "Worshippers at Gal Vihara rock temple", alt: "Worshippers at Gal Vihara rock temple" },
     ];
 
     const rankothveheraImages = [
-        { src: "/Rankothvehera.jpeg", caption: "Rankoth Vehera: The largest dagoba in Polonnaruwa" },
-        { src: "/Rankothvehera1.jpeg", caption: "Stupa and surrounding ruins at Rankoth Vehera" },
-        { src: "/Rankothvehera2.jpeg", caption: "Ancient stairway leading to Rankoth Vehera" },
-        { src: "/Rankothvehera3.jpeg", caption: "View of Rankoth Vehera from the base" },
-        { src: "/Rankothvehera4.jpeg", caption: "Devotees at Rankoth Vehera stupa" },
+        { src: "/Rankothvehera.jpeg", caption: "Rankoth Vehera: The largest dagoba in Polonnaruwa", alt: "Rankoth Vehera: The largest dagoba in Polonnaruwa" },
+        { src: "/Rankothvehera1.jpeg", caption: "Stupa and surrounding ruins at Rankoth Vehera", alt: "Stupa and surrounding ruins at Rankoth Vehera" },
+        { src: "/Rankothvehera2.jpeg", caption: "Ancient stairway leading to Rankoth Vehera", alt: "Ancient stairway leading to Rankoth Vehera" },
+        { src: "/Rankothvehera3.jpeg", caption: "View of Rankoth Vehera from the base", alt: "View of Rankoth Vehera from the base" },
+        { src: "/Rankothvehera4.jpeg", caption: "Devotees at Rankoth Vehera stupa", alt: "Devotees at Rankoth Vehera stupa" },
         // { src: "/Rankothvehera5.jpeg", caption: "Rankoth Vehera: Architectural details of the stupa" },
     ];
 
@@ -503,9 +424,12 @@ export default function PolonnaruwaGuide() {
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <ImageCarousel
+                                    {/* <ImageCarousel
                                         images={polonnaruwaImages}
                                         alt="Royal Palace Complex of Polonnaruwa showing various views of the ancient palace ruins and architectural details"
+                                    /> */}
+                                    <ImageCarousel
+                                        images={polonnaruwaImages}
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -584,9 +508,14 @@ export default function PolonnaruwaGuide() {
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
-                                        images={shivaDevaleImages}
-                                        alt="Ancient Shiva Temple at Polonnaruwa showing various architectural details"
+                                        images={[{
+                                            src: "/placeholder.svg?height=300&width=400",
+                                            alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                                            caption: "Viewpoint across 7 provinces",
+                                            title: "Panoramic Viewpoint"
+                                        }]}
                                     />
+
                                     <div>
                                         <p className="text-muted-foreground mb-4">
                                             Built entirely of stone in the South Indian Dravidian style during the 11th century,
@@ -654,19 +583,13 @@ export default function PolonnaruwaGuide() {
                                     <ImageCarousel
                                         images={[
                                             {
-                                                src: "/pabalu-vehera.jpg",
-                                                caption: "Pabalu Vehera Main Stupa - Bell-shaped Design"
-                                            },
-                                            {
-                                                src: "/pabalu-vehera-entrance.jpg",
-                                                caption: "Temple Entrance with Stone Steps"
-                                            },
-                                            {
-                                                src: "/pabalu-vehera-detail.jpg",
-                                                caption: "Detailed Architectural Features"
+                                                src: "/placeholder.svg?height=300&width=400",
+                                                alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                                                caption: "Viewpoint across 7 provinces",
+                                                title: "Panoramic Viewpoint"
                                             }
                                         ]}
-                                        alt="Pabalu Vehera Buddhist stupa showing various architectural features"
+
                                     />
                                 </div>
                             </CardContent>
@@ -710,12 +633,12 @@ export default function PolonnaruwaGuide() {
                                     </div>
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
-                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
-                                            { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
-                                            { src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform", alt: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
+                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
                                         ]}
-                                        alt="Unique lotus-shaped stone pillars of the Audience Hall at Polonnaruwa"
+
                                     />
                                 </div>
                             </CardContent>
@@ -734,10 +657,10 @@ export default function PolonnaruwaGuide() {
                             <div className="grid md:grid-cols-2 gap-6 items-center">
                                 <ImageCarousel
                                     images={[
-                                        { src: "/Lotus-Pond.jpeg", caption: "Aerial view of the Lotus Pond" },
-                                        { src: "/LotusPond2.jpg", caption: "Detailed stone craftsmanship" },
-                                        { src: "/LotusPond3.jpg", caption: "Architectural details" }
-                                    ]} alt={""} />
+                                        { src: "/Lotus-Pond.jpeg", caption: "Aerial view of the Lotus Pond", alt: "Aerial view of the Lotus Pond" },
+                                        { src: "/LotusPond2.jpg", caption: "Detailed stone craftsmanship", alt: "Detailed stone craftsmanship" },
+                                        { src: "/LotusPond3.jpg", caption: "Architectural details", alt: "Architectural details" }
+                                    ]} />
                                 <div>
                                     <p className="text-muted-foreground mb-4">
                                         The Lotus Pond is a unique architectural creation shaped like an eight-petaled lotus flower.
@@ -788,7 +711,7 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                           
+
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
@@ -817,12 +740,16 @@ export default function PolonnaruwaGuide() {
                                     </div>
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
-                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
-                                            { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
-                                            { src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform", alt: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
+                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            {
+                                                src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall",
+                                                alt: "Close-up of intricately carved lotus pillars at the Audience Hall"
+
+                                            },
                                         ]}
-                                        alt="Unique lotus-shaped stone pillars of the Audience Hall at Polonnaruwa"
+
                                     />
                                 </div>
                             </CardContent>
@@ -850,7 +777,7 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
                                         images={galviharayaImages}
-                                        alt="Gal Vihara showing various views of the rock temple and Buddha statues"
+
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -894,11 +821,11 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Watadageya.jpg", caption: "Polonnaruwa Vatadageya: Circular relic house with stone pillars" },
-                                            { src: "/Watadageya1.jpg", caption: "Vatadageya: Intricate stone carvings and moonstone" },
-                                            { src: "/PolonnaruwaVatadageya3.jpg", caption: "Vatadageya: Buddha statues and central stupa base" },
+                                            { src: "/Watadageya.jpg", caption: "Polonnaruwa Vatadageya: Circular relic house with stone pillars", alt: "Polonnaruwa Vatadageya: Circular relic house with stone pillars" },
+                                            { src: "/Watadageya1.jpg", caption: "Vatadageya: Intricate stone carvings and moonstone", alt: "Vatadageya: Intricate stone carvings and moonstone" },
+                                            { src: "/PolonnaruwaVatadageya3.jpg", caption: "Vatadageya: Buddha statues and central stupa base", alt: "Vatadageya: Buddha statues and central stupa base" },
                                         ]}
-                                        alt="Polonnaruwa Vatadageya showing various views of the circular relic house and stone carvings"
+
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -959,11 +886,11 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Hatadage.jpg", caption: "Hatadage: Ancient royal relic shrine with stone columns" },
-                                            { src: "/Hatadage1.jpg", caption: "Hatadage: Intricate stone carvings and entrance" },
-                                            { src: "/Hatadage2.jpg", caption: "Hatadage: Interior view showing Buddha statues" }
+                                            { src: "/Hatadage.jpg", caption: "Hatadage: Ancient royal relic shrine with stone columns", alt: "Hatadage: Ancient royal relic shrine with stone columns" },
+                                            { src: "/Hatadage1.jpg", caption: "Hatadage: Intricate stone carvings and entrance", alt: "Hatadage: Intricate stone carvings and entrance" },
+                                            { src: "/Hatadage2.jpg", caption: "Hatadage: Interior view showing Buddha statues", alt: "Hatadage: Interior view showing Buddha statues" }
                                         ]}
-                                        alt="Hatadage showing various views of the ancient royal relic shrine and its architectural features"
+
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -1034,11 +961,11 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Thivanka-Image-House.jpeg", caption: "Thivanka Image House exterior view" },
-                                            { src: "/Thivanka-Image-House1.jpeg", caption: "Ancient frescoes inside Thivanka Image House" },
-                                            { src: "/Thivanka-Image-House3.jpg", caption: "Unique bent-posture Buddha statue" }
+                                            { src: "/Thivanka-Image-House.jpeg", caption: "Thivanka Image House exterior view", alt: "Thivanka Image House exterior view" },
+                                            { src: "/Thivanka-Image-House1.jpeg", caption: "Ancient frescoes inside Thivanka Image House", alt: "Ancient frescoes inside Thivanka Image House" },
+                                            { src: "/Thivanka-Image-House3.jpg", caption: "Unique bent-posture Buddha statue", alt: "Unique bent-posture Buddha statue" }
                                         ]}
-                                        alt="Thivanka Image House showing architectural details and ancient frescoes"
+
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
@@ -1129,11 +1056,11 @@ export default function PolonnaruwaGuide() {
                                     </div>
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Sathmahal-prasadaya1.jpg", caption: "Seven-story pyramid structure of Sathmahal Prasada" },
-                                            { src: "/Sathmahal-prasadaya.jpg", caption: "Detailed view of the architectural features" },
-                                            { src: "/Sathmahal-Prasada3.jpg", caption: "Evening view showing the unique stepped design" }
+                                            { src: "/Sathmahal-prasadaya1.jpg", caption: "Seven-story pyramid structure of Sathmahal Prasada", alt: "Seven-story pyramid structure of Sathmahal Prasada" },
+                                            { src: "/Sathmahal-prasadaya.jpg", caption: "Detailed view of the architectural features", alt: "Detailed view of the architectural features" },
+                                            { src: "/Sathmahal-Prasada3.jpg", caption: "Evening view showing the unique stepped design", alt: "Evening view showing the unique stepped design" }
                                         ]}
-                                        alt="Sathmahal Prasada showing the unique stepped pyramid architecture"
+
                                     />
                                 </div>
                             </CardContent>
@@ -1177,7 +1104,7 @@ export default function PolonnaruwaGuide() {
                                     </div>
                                     <ImageCarousel
                                         images={rankothveheraImages}
-                                        alt="Rankoth Vehera showing the large dagoba and surrounding ruins"
+                                       
                                     />
                                 </div>
                             </CardContent>
@@ -1192,11 +1119,11 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Lankatilaka-Image-House.jpeg", caption: "Towering brick walls of Lankatilaka temple" },
-                                            { src: "/Lankatilaka-Image-House1.jpeg", caption: "Interior view with headless Buddha statue" },
-                                            { src: "/Lankatilaka-Image-House2.jpeg", caption: "Impressive brick architecture and detail" }
+                                            { src: "/Lankatilaka-Image-House.jpeg", caption: "Towering brick walls of Lankatilaka temple", alt: "Towering brick walls of Lankatilaka temple" },
+                                            { src: "/Lankatilaka-Image-House1.jpeg", caption: "Interior view with headless Buddha statue", alt: "Interior view with headless Buddha statue" },
+                                            { src: "/Lankatilaka-Image-House2.jpeg", caption: "Impressive brick architecture and detail", alt: "Impressive brick architecture and detail" }
                                         ]}
-                                        alt="Lankatilaka Image House showing the impressive architecture and Buddha statue"
+
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
