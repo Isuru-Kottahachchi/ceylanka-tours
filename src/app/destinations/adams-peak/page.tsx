@@ -71,7 +71,7 @@ export default function AdamsPeakTravelGuide() {
             </p>
             <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
               <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Did You Know?</h4>
-              <p className="text-sm text-blue-700 dark:text-gray-200">Adams&apos; Peak is the 4th highest mountain in Sri Lanka, standing at 2,243 meters (7,359 feet) above sea level.</p>
+              <p className="text-sm text-blue-700 dark:text-gray-200">Adams&apos; Peak is the 4th highest mountain in Sri Lanka, standing at 2,243 meters (7,359 feet) above sea level. In the past, climbing Sri Padha was no easy task. Before beginning the sacred journey to the summit, many people even handed over their property to their children unsure if they would ever return. Back then, there were no proper steps, handrails, or safety measures. The path was steep, wild, and dangerous. Some pilgrims never made it back, which shows just how deep their faith and devotion truly were. Today, the climb is much safer, but the spiritual spirit of those early pilgrims still lives on with every step to the top</p>
             </div>
           </div>
         </section>
@@ -151,7 +151,7 @@ export default function AdamsPeakTravelGuide() {
             <div className="space-y-4 text-muted-foreground">
               <p>
                 At the summit of Adams Peak lies a mysterious footprint-shaped depression in the rock, measuring 1.8
-                meters long. This sacred impression is revered by four major religions, each with their own
+                meters long. People believe that this is the Lord Buddha&apos;s footprint from his third visit to Sri Lanka. This sacred impression is revered by four major religions, each with their own
                 interpretation of its divine origin.
               </p>
               <div className="bg-amber-50 p-4 rounded-lg mb-4 border border-amber-200">
@@ -200,16 +200,212 @@ export default function AdamsPeakTravelGuide() {
           </div>
         </section>
 
+        {/* God Saman and Sacred Territory */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">God Saman: Guardian of the Sacred Mountain</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>God Saman and His Adaviya</CardTitle>
+                <CardDescription>The divine protector of Sri Pada</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-muted-foreground">
+                  God Saman (Saman Deviyo) is the guardian deity of Sri Pada and the Sabaragamuwa region. According to 
+                  Buddhist tradition, he was present when the Buddha visited Sri Lanka and was entrusted with protecting 
+                  the sacred mountain and its surroundings, known as the Saman Adaviya.
+                </p>
+                <div className="space-y-3">
+                  <h4 className="font-semibold">Saman Adaviya Includes:</h4>
+                  <ul className="text-sm text-muted-foreground space-y-2">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      The sacred peak and surrounding wilderness
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Ancient pilgrimage paths
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Sacred forests and waterfalls
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Traditional villages and temples
+                    </li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Saman Devalaya and Sacred Traditions</CardTitle>
+                <CardDescription>Ancient temple and rituals</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-muted-foreground">
+                  The Saman Devalaya in Ratnapura is the main temple dedicated to God Saman. Pilgrims traditionally
+                  seek his blessings before beginning their ascent to Sri Pada. The annual Esala perahera of the
+                  temple is a significant cultural event celebrating the deity&apos;s protection.
+                </p>
+                <div className="bg-purple-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-purple-800 mb-2">Sacred Perahera</h4>
+                  <ul className="text-sm text-purple-700 space-y-2">
+                    <li>• Annual procession in July/August</li>
+                    <li>• Traditional dancers and drummers</li>
+                    <li>• Sacred elephant parade</li>
+                    <li>• Ancient rituals and ceremonies</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Natural Features */}
+          <div className="mt-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Sacred Natural Features</CardTitle>
+                <CardDescription>Ancient landmarks and natural wonders</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3">Kunudiya Pawwa</h4>
+                    <p className="text-muted-foreground mb-4">
+                      A significant rock formation along the pilgrimage path where, according to tradition, pilgrims would 
+                      stop to dry their wet clothes. The name "Kunudiya" refers to the warmth of the rock even during cold weather.
+                    </p>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Traditional resting point
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Unique geological formation
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Historical significance
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-3">The Sacred Footprint</h4>
+                    <p className="text-muted-foreground mb-4">
+                      The Sri Pada (Sacred Footprint) at the summit is believed to be protected by God Saman himself. 
+                      The depression measures 1.8 meters in length and has been a sacred site for various religions for centuries.
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded-lg">
+                      <p className="text-sm text-amber-800">
+                        <strong>Did You Know?</strong> Small herds of wild elephants still inhabit the lower slopes of 
+                        the mountain, considered sacred and under God Saman&apos;s protection. These elephants are rarely seen 
+                        but are an important part of the mountain&apos;s ecosystem and cultural significance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Climbing Routes */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Climbing Routes to the Summit</h2>
-          Ambalam in routes
+          Don&apos;t worry there are a few rest houses whuch is called ambalamas along the way where you can take a break and have some tea and snacks. Thease Ambalsm are run by local villagers and they will be very happy to help you out and you will find diffrenet Ambalams accorddingto the route you take.
+          You can see some Special points Like SeethaGangula, Idikatu paana, Haramiti paana, like special points along the way. Each and every points related a some story from Buddhas hike to the summit.
+
+          {/* Sacred Points Along Buddha's Journey */}
+          <div className="my-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Sacred Points Along Buddha&apos;s Journey</CardTitle>
+                <CardDescription>Historic locations marking Buddha&apos;s ascent to Sri Pada</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3">Seetha Gangula</h4>
+                    <p className="text-muted-foreground mb-4">
+                      Known as the "Cold Stream," this is where the Buddha is said to have paused to refresh himself. 
+                      The water here remains remarkably cool even during the hottest days, and pilgrims often stop 
+                      to wash their faces in its rejuvenating waters.
+                    </p>
+                    <div className="bg-blue-50 p-3 rounded-lg">
+                      <p className="text-sm text-blue-800">
+                        <strong>Did You Know?</strong> Pilgrims believe that washing your face in Seetha Gangula&apos;s
+                        waters will help cleanse both body and mind for the sacred journey ahead.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-3">Geththapana</h4>
+                    <p className="text-muted-foreground mb-4">
+                      This location marks where the Buddha is believed to have tied his robe before beginning the 
+                      final ascent to the peak. The name "Geththapana" refers to the act of tying or knotting, 
+                      and it&apos;s considered a significant point of preparation on the pilgrimage route.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-3">Haramithi Pana</h4>
+                    <p className="text-muted-foreground mb-4">
+                      Also known as "Aramithi Pana," this is where the Buddha is said to have rested and practiced 
+                      meditation. The spot is marked by a distinctive rock formation and offers a natural resting 
+                      place for weary pilgrims.
+                    </p>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Traditional meditation spot
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Natural rock shelter
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-3">Maha Giri Damba</h4>
+                    <p className="text-muted-foreground mb-4">
+                      This massive rock formation is where the Buddha is believed to have given a discourse to the 
+                      deity Maha Saman. The name means "Great Rock Peak" and it offers spectacular views of the 
+                      surrounding landscape.
+                    </p>
+                    <div className="bg-amber-50 p-3 rounded-lg">
+                      <p className="text-sm text-amber-800">
+                        This is also where, according to tradition, the Buddha explained to Saman Deviyo the 
+                        importance of protecting the sacred mountain and its surroundings.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 bg-purple-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-purple-800 mb-2">Pilgrim&apos;s Note</h4>
+                  <p className="text-sm text-purple-700">
+                    Each of these sacred points forms part of the traditional pilgrimage experience. Taking time to 
+                    pause and reflect at these locations helps connect modern-day pilgrims with the ancient spiritual 
+                    history of Sri Pada.
+                    Each and every point is a bit different from the path you selected but Lord Buddha selected the Rathnapura route to climb the mountain. 
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
 
           <div className="space-y-8">
             {/* Nallathanniya Route */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Nallathanniya Route (Most Popular)</CardTitle>
+                <CardTitle>1. Nallathanniya Route (Most Popular and Easiest)</CardTitle>
                 <CardDescription>The traditional pilgrimage path with facilities</CardDescription>
               </CardHeader>
               <CardContent>
@@ -472,7 +668,7 @@ export default function AdamsPeakTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">Pilgrimage Season Experience</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src="/Udamaluwa.jpeg"
               alt="Thousands of pilgrims climbing Adams Peak during pilgrimage season with illuminated path at night"
               width={600}
               height={400}
@@ -500,6 +696,9 @@ export default function AdamsPeakTravelGuide() {
                 has continued for over 1,000 years, climbing alongside people from all walks of life united in their
                 spiritual quest.
               </p>
+              <div>
+                <p>There is a another tradition on the top of the summit, pilgrims ring the bell to denote the times they have reached the peak.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -688,7 +887,7 @@ export default function AdamsPeakTravelGuide() {
               </div>
             </div>
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src="/Adams-peak.jpeg"
               alt="Spectacular sunrise from Adams Peak showing the triangular shadow cast by the mountain across the landscape"
               width={600}
               height={400}

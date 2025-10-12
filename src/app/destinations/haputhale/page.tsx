@@ -761,7 +761,7 @@ export default function HaputaleGuide() {
             <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg">Badulla</CardTitle>
-                <CardDescription>Panoramic views of tea plantations</CardDescription>
+                <CardDescription>Cool climate, scenic tea plantations</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
@@ -786,12 +786,12 @@ export default function HaputaleGuide() {
             <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
               <CardHeader>
                 <CardTitle className="text-lg">Bandarawela</CardTitle>
-                <CardDescription>Historic colonial mansion</CardDescription>
+                <CardDescription>Cool climate ,scenic tea plantations</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/adisham-bungalow.jpg"
-                  alt="Adisham Bungalow"
+                  src="/Bandarawela.jpeg"
+                  alt="Bandarawela"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"

@@ -38,15 +38,15 @@ export default function RanmusuUyanaGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Ranmusu Uyana</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Ancient Park & The Mysterious Universal Gate</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Anuradhapura, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Compass className="w-4 h-4 mr-1" />
               Enigmatic Stargate
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <History className="w-4 h-4 mr-1" />
               3rd Century BC
             </Badge>
@@ -138,7 +138,7 @@ export default function RanmusuUyanaGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Universal+Gate+Carving"
+                src="/Universal-Gate.jpeg"
                 alt="Mysterious Universal Gate carving at Ranmusu Uyana showing intricate circular patterns and symbols"
                 width={600}
                 height={400}
@@ -245,7 +245,7 @@ export default function RanmusuUyanaGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400&text=Ancient+Pools"
+                    src="/Ranmusu-Uyana-Pool.jpeg"
                     alt="Ancient stone swimming pools carved into bedrock at Ranmusu Uyana"
                     width={400}
                     height={300}

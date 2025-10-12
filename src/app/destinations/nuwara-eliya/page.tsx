@@ -118,10 +118,10 @@ export default function NuwaraEliyaTravelGuide() {
     "/Vic-flower1.jpg",
   ]
 
-  const ambewealaFarmImages = [
-    "/Ambewela1.jpeg",
-    "/Ambewela2.jpeg",
-    "/Ambewela3.jpeg",
+  const ambewelaFarmImages = [
+    "/New-Zealand-Farm.jpg",
+    "/New-Zealand-Farm1.jpg",
+    "/New-Zealand-Farm2.jpg",
   ]
 
   const haggalaGardenImages = [
@@ -585,7 +585,7 @@ export default function NuwaraEliyaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <ImageCarousel
-                    images={ambewealaFarmImages}
+                    images={ambewelaFarmImages}
                     alt="Ambewela New Zealand Farm showcasing the scenic dairy farm and rolling green pastures"
                   />
                   <div>

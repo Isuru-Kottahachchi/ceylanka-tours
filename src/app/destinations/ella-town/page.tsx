@@ -387,7 +387,7 @@ export default function EllaTownGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Ravana-Cave.jpeg"
                     alt="Historic Ravana Cave entrance with ancient stone work and steps"
                     width={400}
                     height={300}

@@ -35,6 +35,14 @@ export default function PolonnaruwaGuide() {
         // { src: "/Rankothvehera5.jpeg", caption: "Rankoth Vehera: Architectural details of the stupa" },
     ];
 
+
+    const kumaraPokunaImages = [
+        { src: "/KumaraPokuna1.jpg", caption: "Kumara Pokuna: The Royal Bath", alt: "Kumara Pokuna: The Royal Bath" },
+        { src: "/KumaraPokuna2.jpg", caption: "Intricate stone carvings at Kumara Pokuna", alt: "Intricate stone carvings at Kumara Pokuna" },
+        { src: "/KumaraPokuna3.jpg", caption: "Water channels and lotus ponds at Kumara Pokuna", alt: "Water channels and lotus ponds at Kumara Pokuna" },
+        { src: "/KumaraPokuna4.jpg", caption: "Water channels and lotus ponds at Kumara Pokuna", alt: "Water channels and lotus ponds at Kumara Pokuna" },
+    ];
+
     return (
         <main className="min-h-screen bg-background">
             {/* Hero Section */}
@@ -457,20 +465,16 @@ export default function PolonnaruwaGuide() {
 
                                 {/* Royal Swimming Pool */}
                                 <div className="mt-6 border-t pt-6">
-                                    <h4 className="font-semibold text-lg mb-3">Royal Swimming Pool</h4>
+                                    <h4 className="font-semibold text-lg mb-3">Kumara Pokuna aka Royal Bath</h4>
                                     <div className="grid md:grid-cols-2 gap-4">
-                                        <Image
-                                            src="/royal-swimming-pool.jpg"
-                                            alt="Ancient Royal Swimming Pool at Polonnaruwa showing sophisticated water engineering"
-                                            width={400}
-                                            height={300}
-                                            className="rounded-lg"
-                                        />
+                                        <ImageCarousel
+                                            images={kumaraPokunaImages}
+                                    />
                                         <div>
                                             <p className="text-muted-foreground mb-3">
                                                 Adjacent to the Royal Palace lies the sophisticated royal swimming pool, a testament
                                                 to the advanced engineering capabilities of ancient Sri Lanka. This rectangular pool
-                                                features crocodile mouth spouts and an intricate water filtering system.
+                                                features dragon mouth spouts and an intricate water filtering system.
                                             </p>
                                             <ul className="space-y-2 text-muted-foreground">
                                                 <li className="flex items-start gap-2">
@@ -488,6 +492,84 @@ export default function PolonnaruwaGuide() {
                                             </ul>
                                         </div>
                                     </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Nissanka Malla's Palace Complex */}
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Nissanka Malla&apos;s Palace Complex</CardTitle>
+                                <CardDescription>Royal palace with unique stone inscriptions and architectural features</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            The palace complex of King Nissanka Malla (1187-1196 AD) is a remarkable example of late 
+                                            Polonnaruwa period architecture. Known for its extensive stone inscriptions and unique 
+                                            architectural features, this complex provides invaluable insights into royal life and 
+                                            governance during medieval Sri Lanka.
+                                        </p>
+                                        <div className="space-y-4">
+                                            <div>
+                                                <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">Palace Features:</h4>
+                                                <ul className="space-y-2 text-sm text-muted-foreground">
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                                                        Three-story royal residence
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                                                        Stone-carved lion throne
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                                                        Council Chamber with stone seats
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                                                        Royal bathing pool
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div className="p-3 bg-amber-50 dark:bg-amber-900/30 rounded-lg">
+                                                <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">Famous Inscriptions</h4>
+                                                <ul className="text-sm text-amber-700 dark:text-amber-300 space-y-2">
+                                                    <li>• Detailed records of royal appointments</li>
+                                                    <li>• King&apos;s genealogy and achievements</li>
+                                                    <li>• Administrative regulations</li>
+                                                    <li>• Royal court protocols</li>
+                                                </ul>
+                                            </div>
+
+                                            <div>
+                                                <h4 className="font-semibold mb-2 text-green-700 dark:text-green-300">Historical Significance:</h4>
+                                                <ul className="space-y-2 text-sm text-muted-foreground">
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                        Most detailed inscriptions from medieval Sri Lanka
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                        Evidence of advanced administrative systems
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                        Insights into medieval royal court life
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/placeholder.svg?height=300&width=400&text=Nissanka+Malla+Palace", caption: "Ruins of Nissanka Malla's Palace", alt: "Ruins of Nissanka Malla's Palace showing stone architecture" },
+                                            { src: "/placeholder.svg?height=300&width=400&text=Stone+Inscriptions", caption: "Stone inscriptions on palace walls", alt: "Ancient stone inscriptions detailing royal records" },
+                                            { src: "/placeholder.svg?height=300&width=400&text=Council+Chamber", caption: "Council Chamber with stone seats", alt: "Stone seats in the royal council chamber" }
+                                        ]}
+                                    />
                                 </div>
                             </CardContent>
                         </Card>
@@ -626,8 +708,8 @@ export default function PolonnaruwaGuide() {
                                     </div>
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform", alt: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
-                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/NissankaLathaMandapaya.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/𝗡𝗶𝘀𝘀𝗮𝗻𝗸𝗮𝗹𝗮𝘁𝗵𝗮-𝗠𝗮𝗻𝗱𝗮𝗽𝗮𝘆𝗮.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform", alt: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
                                             { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
                                             { src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
                                         ]}

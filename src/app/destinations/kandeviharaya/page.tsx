@@ -186,7 +186,7 @@ export default function KandeViharayaGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400&text=Giant+Buddha+Statue"
+                    src="/Kandeviharaya.jpeg"
                     alt="Massive white seated Buddha statue at Kande Viharaya towering above the temple complex"
                     width={400}
                     height={300}
@@ -539,7 +539,7 @@ export default function KandeViharayaGuide() {
                     alt="Golden sands of Bentota Beach with palm trees and blue water"
                     width={300}
                     height={200}
-                    className="rounded-lg mb-3"
+                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                   />
                   <p className="text-sm text-muted-foreground">
                     Beautiful beach destination just 10 minutes from Kande Viharaya. Perfect for relaxation after temple
@@ -565,7 +565,7 @@ export default function KandeViharayaGuide() {
                     alt="Lush tropical garden with sculptures and pathways at Brief Garden"
                     width={300}
                     height={200}
-                    className="rounded-lg mb-3"
+                      className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                   />
                   <p className="text-sm text-muted-foreground">
                     Former home of landscape architect Bevis Bawa with beautiful tropical gardens and art collection.
@@ -586,11 +586,11 @@ export default function KandeViharayaGuide() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/Lunuganga-Garden.jpg"
+                    src="/Lunugangabawa2.jpeg"
                     alt="Lush tropical garden with sculptures and pathways at Lunuganga Garden"
                     width={300}
                     height={200}
-                    className="rounded-lg mb-3"
+                      className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                   />
                   <p className="text-sm text-muted-foreground">
                     Former home of landscape architect Bevis Bawa with beautiful tropical gardens and art collection.
@@ -615,7 +615,7 @@ export default function KandeViharayaGuide() {
                     alt="Boat safari through mangroves on Madu River with wildlife"
                     width={300}
                     height={200}
-                    className="rounded-lg mb-3"
+                      className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                   />
                   <p className="text-sm text-muted-foreground">
                     Explore the biodiversity of Madu River&apos;s mangrove ecosystem with a boat safari through narrow
