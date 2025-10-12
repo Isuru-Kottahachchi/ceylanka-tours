@@ -376,7 +376,7 @@ export default function AdamsPeakTravelGuide() {
                     <h4 className="font-semibold mb-3">Maha Giri Damba</h4>
                     <p className="text-muted-foreground mb-4">
                       This massive rock formation is where the Buddha is believed to have given a discourse to the 
-                      deity Maha Saman. The name means Great Rock Peak" and it offers spectacular views of the 
+                      deity Maha Saman. The name means &quot;Great Rock Peak&quot; and it offers spectacular views of the 
                       surrounding landscape.
                     </p>
                     <div className="bg-amber-50 p-3 rounded-lg">
