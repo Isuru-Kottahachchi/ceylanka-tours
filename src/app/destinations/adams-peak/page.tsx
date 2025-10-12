@@ -275,8 +275,8 @@ export default function AdamsPeakTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">Kunudiya Pawwa</h4>
                     <p className="text-muted-foreground mb-4">
-                      A significant rock formation along the pilgrimage path where, according to tradition, pilgrims would 
-                      stop to dry their wet clothes. The name "Kunudiya" refers to the warmth of the rock even during cold weather.
+                      A significant rock formation along the pilgrimage path where, according to tradition, pilgrims would
+                      stop to dry their wet clothes. The name &quot;Kunudiya&quot; refers to the warmth of the rock even during cold weather.
                     </p>
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li className="flex items-start gap-2">
@@ -332,7 +332,7 @@ export default function AdamsPeakTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">Seetha Gangula</h4>
                     <p className="text-muted-foreground mb-4">
-                      Known as the "Cold Stream," this is where the Buddha is said to have paused to refresh himself. 
+                      Known as the &quot;Cold Stream,&quot; this is where the Buddha is said to have paused to refresh himself. 
                       The water here remains remarkably cool even during the hottest days, and pilgrims often stop 
                       to wash their faces in its rejuvenating waters.
                     </p>
@@ -348,7 +348,7 @@ export default function AdamsPeakTravelGuide() {
                     <h4 className="font-semibold mb-3">Geththapana</h4>
                     <p className="text-muted-foreground mb-4">
                       This location marks where the Buddha is believed to have tied his robe before beginning the 
-                      final ascent to the peak. The name "Geththapana" refers to the act of tying or knotting, 
+                      final ascent to the peak. The name &quot;Geththapana&quot; refers to the act of tying or knotting, 
                       and it&apos;s considered a significant point of preparation on the pilgrimage route.
                     </p>
                   </div>
@@ -356,7 +356,7 @@ export default function AdamsPeakTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">Haramithi Pana</h4>
                     <p className="text-muted-foreground mb-4">
-                      Also known as "Aramithi Pana," this is where the Buddha is said to have rested and practiced 
+                       this is where the Buddha is said to have rested and practiced 
                       meditation. The spot is marked by a distinctive rock formation and offers a natural resting 
                       place for weary pilgrims.
                     </p>
@@ -376,7 +376,7 @@ export default function AdamsPeakTravelGuide() {
                     <h4 className="font-semibold mb-3">Maha Giri Damba</h4>
                     <p className="text-muted-foreground mb-4">
                       This massive rock formation is where the Buddha is believed to have given a discourse to the 
-                      deity Maha Saman. The name means "Great Rock Peak" and it offers spectacular views of the 
+                      deity Maha Saman. The name means Great Rock Peak" and it offers spectacular views of the 
                       surrounding landscape.
                     </p>
                     <div className="bg-amber-50 p-3 rounded-lg">
