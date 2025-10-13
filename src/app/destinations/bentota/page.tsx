@@ -84,7 +84,7 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
 }
 
 export default function BentotaGuide() {
-   
+
     // Beach Safety Modal State
     const [showSafetyModal, setShowSafetyModal] = useState(false)
 
@@ -172,7 +172,7 @@ export default function BentotaGuide() {
                             <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-1">Did you know?</h4>
                             <p className="text-gray-800 dark:text-yellow-100">
                                 There is an interesting fact about Bentota that many people don&apos;t know. The name &quot;Bentota&quot; is derived from the Sinhalese words &quot;Benthota,&quot; which means &quot;river of the benth,&quot; referring to the Bentota River that flows through the area. This river is not only a natural beauty but also a vital part of the local ecosystem, supporting diverse wildlife and providing opportunities for water sports and boat rides.
-                                There is another interesting story: There was a demon called &quot;Ben&quot; who once inhabited this area, and the name is believed to have evolved from this ancient legend.
+                                There is another interesting story: There was a  mythical demon named called &quot;Ben&quot; who once inhabited this area, and the name is believed to have evolved from this ancient legend.
                             </p>
                         </div>
                     </div>
@@ -458,7 +458,7 @@ export default function BentotaGuide() {
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>2. Bentota River & Water Sports</CardTitle>
+                                <CardTitle>2. Bentota River & Baot Safari</CardTitle>
                                 <CardDescription>Adventure hub for jet skiing, boat rides, and water sports</CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -483,13 +483,69 @@ export default function BentotaGuide() {
                                                 Windsurfing and banana boat rides
                                             </li>
                                         </ul>
+                                        During the boat safari, you might spot monitor lizards, kingfishers, and even crocodiles in their natural habitat. Your boat will go close to the estuary of Bentota river, where the Bentota river meets the indian ocean, providing stunning views of both landscapes.
                                     </div>
-                                    <Image
-                                        src="/placeholder.svg?height=300&width=400"
-                                        alt="Exciting water sports on Bentota River with jet skis, boats and mangrove forests in background"
-                                        width={400}
-                                        height={300}
-                                        className="rounded-lg"
+                                    <ImageCarousel
+                                        images={[
+                                            {
+                                                src: "/Bentota-River.jpg",
+                                                alt: "Scenic view of Bentota River with golden sand, turquoise waters and palm trees",
+                                                caption: "Bentota River View",
+                                                title: "Bentota River"
+                                            },
+                                            {
+                                                src: "/Bentota-River1.jpg",
+                                                alt: "Bentota River with golden sand and clear waters",
+                                                caption: "Bentota River",
+                                                title: "Bentota River"
+                                            },
+                                            {
+                                                src: "/Bentota-River2.jpg",
+                                                alt: "Bentota River with golden sand and clear waters",
+                                                caption: "Bentota River",
+                                                title: "Bentota River"
+                                            },
+                                            {
+                                                src: "/Bentota-River3.jpg",
+                                                alt: "Bentota River with golden sand and clear waters",
+                                                caption: "Bentota River",
+                                                title: "Bentota River"
+                                            },
+                                            {
+                                                src: "/Bentota-River4.jpeg",
+                                                alt: "Bentota River with golden sand and clear waters",
+                                                caption: "Bentota River",
+                                                title: "Bentota River"
+                                            },
+                                            {
+                                                src: "/Bentota-River5.jpeg",
+                                                alt: "Bentota River with golden sand and clear waters",
+                                                caption: "Bentota River",
+                                                title: "Bentota River"
+                                            },
+                                            {
+                                                src: "/Bentota-River6.jpeg",
+                                                alt: "Bentota River with golden sand and clear waters",
+                                                caption: "Bentota River",
+                                                title: "Bentota River"
+                                            },
+                                            {
+                                                src: "/Bentota-River7.jpeg",
+                                                alt: "Bentota River with golden sand and clear waters",
+                                                caption: "Bentota River",
+                                                title: "Bentota River"
+                                            },
+                                            {
+                                                src: "/Bentota-River8.jpeg",
+                                                alt: "Bentota River with golden sand and clear waters",
+                                                caption: "Bentota River",
+                                                title: "Bentota River"
+                                            },
+
+
+
+
+                                        ]}
                                     />
                                 </div>
                             </CardContent>
@@ -528,6 +584,12 @@ export default function BentotaGuide() {
                                         <Link href="/blog/lunuganga-geoffrey-bawas-garden" className="text-blue-600 hover:underline">
                                             Read more about Lunuganga Garden
                                         </Link>
+                                        <div className="bg-amber-50 p-3 rounded-lg">
+                                            <p className="text-sm text-amber-800">
+                                                <strong>Did You Know?</strong><br></br> Renowned architect Geoffrey Bawa is the architect who designed the Sri Lanka parliament building, Bentota railway station, University of Ruhuna, Heritance Kandalama, and many other iconic buildings in Sri Lanka. In fact Bevis baws was the Geoffrey Bawa&apos;s brother.
+                                            </p>
+                                        </div>
+
                                     </div>
                                     <ImageCarousel
                                         images={[
@@ -567,7 +629,7 @@ export default function BentotaGuide() {
                             </CardContent>
                         </Card>
 
-                        <Card>
+                        {/* <Card>
                             <CardHeader>
                                 <CardTitle>4. Bentota River Safari</CardTitle>
                                 <CardDescription>Explore the mangroves and wildlife along the Bentota River</CardDescription>
@@ -604,11 +666,11 @@ export default function BentotaGuide() {
                                     </div>
                                 </div>
                             </CardContent>
-                        </Card>
+                        </Card> */}
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>5. Five Raja Maha Temples in Bentota</CardTitle>
+                                <CardTitle>4. Five Raja Maha Temples in Bentota</CardTitle>
                                 <CardDescription>Visit ancient temples with great historical significance</CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -709,133 +771,9 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-
-                        <Card>
+                               <Card>
                             <CardHeader>
-                                <CardTitle>4. Bentota Railway Station</CardTitle>
-                                <CardDescription>Another architectural gem by Bawa</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <Image
-                                        src="/placeholder.svg?height=300&width=400"
-                                        alt="Bentota River safari through mangroves with wildlife and traditional fishing boats"
-                                        width={400}
-                                        height={300}
-                                        className="rounded-lg"
-                                    />
-                                    <div>
-                                        <p className="text-muted-foreground mb-4">
-                                            Take a peaceful boat safari along the Bentota River through lush mangrove forests. Spot various
-                                            bird species, monitor lizards, and experience the traditional fishing village life along the
-                                            riverbanks.
-                                        </p>
-                                        <ul className="space-y-2 text-muted-foreground">
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Bird watching opportunities
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Mangrove ecosystem exploration
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Traditional fishing village visits
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </CardContent>
-                        </Card>
-                        <Card>
-                            <CardHeader>
-                                <CardTitle>4.Old Bentota Bridge</CardTitle>
-                                <CardDescription>A bridge with more than 100 years of history</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <Image
-                                        src="/Bentota-Bridge.jpg"
-                                        alt="Bentota River safari through mangroves with wildlife and traditional fishing boats"
-                                        width={400}
-                                        height={300}
-                                        className="rounded-lg"
-                                    />
-                                    <div>
-                                        <p className="text-muted-foreground mb-4">
-                                            You can take a few photos of the Old Bentota Bridge, which was built by the British in 1894. This is abandoned
-                                        </p>
-                                        <ul className="space-y-2 text-muted-foreground">
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Built by the British in 1894
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Abandoned and in ruins
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Popular photography spot
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card>
-                            <CardHeader>
-                                <CardTitle>6. Sea Turtle Hatchery</CardTitle>
-                                <CardDescription>Conservation center protecting endangered sea turtles</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <ImageCarousel
-                                        images={[
-                                            {
-                                                src: "/Sea-turtle-bentota.jpeg",
-                                                alt: "Bentota Beach with golden sand and clear waters",
-                                                caption: "Bentota Beach",
-                                                title: "Bentota Beach"
-                                            },
-                                            {
-                                                src: "/Sea-turtle-bentota.jpeg",
-                                                alt: "Bentota Beach with golden sand and clear waters",
-                                                caption: "Bentota Beach",
-                                                title: "Bentota Beach"
-                                            },
-
-                                        ]}
-                                    />
-                                    <div>
-                                        <p className="text-muted-foreground mb-4">
-                                            You can see Sea turtle Hatchery in Bentota, which is a conservation project dedicated to protecting
-                                            endangered sea turtles. Visitors can learn about the life cycle of these magnificent creatures,
-                                        </p>
-                                        <ul className="space-y-2 text-muted-foreground">
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Educational tours available
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Baby turtle release experiences
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Support conservation efforts
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card>
-                            <CardHeader>
-                                <CardTitle>7. Panchakapaduwa Island</CardTitle>
+                                <CardTitle>5. Panchakapaduwa Island</CardTitle>
                                 <CardDescription>A mystical island separated from the mainland with ancient history</CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -848,7 +786,7 @@ export default function BentotaGuide() {
                                                 caption: "Bentota Beach",
                                                 title: "Bentota Beach"
                                             },
-                                               {
+                                            {
                                                 src: "/Panchakpaduwaisland1.jpeg",
                                                 alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
                                                 caption: "Ancient Cave Paintings",
@@ -928,6 +866,155 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
+
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>6. Bentota Railway Station</CardTitle>
+                                <CardDescription>Another architectural gem by Bawa</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <ImageCarousel
+                                        images={[
+                                            {
+                                                src: "/Bentota-Railway-Station.jpg",
+                                                alt: "Scenic view of Bentota Railway Station with lush greenery",
+                                                caption: "Bentota Railway Station",
+                                                title: "Bentota Railway Station"
+                                            },
+                                            {
+                                                src: "/Bentota-Railway-Station3.jpg",
+                                                alt: "Scenic view of Bentota Railway Station with lush greenery",
+                                                caption: "Bentota Railway Station",
+                                                title: "Bentota Railway Station"
+                                            },
+                                            {
+                                                src: "/Bentota-Railway-Station4.jpg",
+                                                alt: "Scenic view of Bentota Railway Station with lush greenery",
+                                                caption: "Bentota Railway Station",
+                                                title: "Bentota Railway Station"
+                                            },
+                                            {
+                                                src: "/Bentota-Railway-Station1.jpg",
+                                                alt: "Scenic view of Bentota Railway Station with lush greenery",
+                                                caption: "Bentota Railway Station",
+                                                title: "Bentota Railway Station"
+                                            },
+                                            {
+                                                src: "/Bentota-Railway-Station5.jpg",
+                                                alt: "Scenic view of Bentota Railway Station with lush greenery",
+                                                caption: "Bentota Railway Station",
+                                                title: "Bentota Railway Station"
+                                            },
+
+
+                                        ]}
+                                    />
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            A very small and quite railway station located opposite to the Bentota beach, the Bentota Railway Station is another architectural gem by renowned architect Geoffrey Bawa. The station features a unique design with windows resembling those of airplanes.
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Designed by Geoffrey Bawa
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Nice view of Bentota beach from the station
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>7. Old Bentota Bridge</CardTitle>
+                                <CardDescription>A bridge with more than 100 years of history</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <Image
+                                        src="/Bentota-Bridge.jpg"
+                                        alt="Bentota River safari through mangroves with wildlife and traditional fishing boats"
+                                        width={400}
+                                        height={300}
+                                        className="rounded-lg"
+                                    />
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            You can take a few photos of the Old Bentota Bridge, which was built by the British in 1894. This is abandoned
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Built by the British in 1894
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Abandoned and in ruins
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Popular photography spot
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>8. Sea Turtle Hatchery</CardTitle>
+                                <CardDescription>Conservation center protecting endangered sea turtles</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <ImageCarousel
+                                        images={[
+                                            {
+                                                src: "/Sea-turtle-bentota.jpeg",
+                                                alt: "Bentota Beach with golden sand and clear waters",
+                                                caption: "Bentota Beach",
+                                                title: "Bentota Beach"
+                                            },
+                                            {
+                                                src: "/Sea-turtle-bentota.jpeg",
+                                                alt: "Bentota Beach with golden sand and clear waters",
+                                                caption: "Bentota Beach",
+                                                title: "Bentota Beach"
+                                            },
+
+                                        ]}
+                                    />
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            You can see Sea turtle Hatchery in Bentota, which is a conservation project dedicated to protecting
+                                            endangered sea turtles. Visitors can learn about the life cycle of these magnificent creatures,
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Educational tours available
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Baby turtle release experiences
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Support conservation efforts
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                 
                     </div>
 
                     {/* Para Motoring Adventure */}
