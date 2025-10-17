@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
+import Link from "next/link"
 
 
 
@@ -64,8 +65,8 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-all duration-200 cursor-pointer ${index === currentIndex
-                    ? 'bg-white scale-110'
-                    : 'bg-white/60 hover:bg-white/80'
+                  ? 'bg-white scale-110'
+                  : 'bg-white/60 hover:bg-white/80'
                   }`}
                 onClick={() => goToImage(index)}
               />
@@ -112,7 +113,7 @@ export default function HikkaduwaTravelGuide() {
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-yellow-600/80 text-white border-yellow-500">
               <Waves className="w-4 h-4 mr-2" />
-             Down South
+              Down South
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
               <Fish className="w-4 h-4 mr-2" />
@@ -136,7 +137,7 @@ export default function HikkaduwaTravelGuide() {
               This vibrant coastal town offers the perfect mix of adventure and relaxation with its coral reef
               sanctuary, world-class surfing waves, sea turtle watching, and lively beach culture. From snorkeling
               in crystal-clear waters to catching perfect waves, Hikkaduwa has something for every beach lover.
-              <br/>
+              <br />
               You can explore one of the three marine national parks in Sri Lanka, the Hikkaduwa National Park, which is a protected coral sanctuary
             </p>
             <p className="text-lg">
@@ -302,7 +303,7 @@ export default function HikkaduwaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      If you visit to the Turtle beach in Hikkaduwa, you can see freely roaming sea turtles in their natural habitat. You can take some photos with them, but not recommend to touch them and disturb them. <br/>The Hikkaduwa Turtle Hatchery is a conservation project that protects sea turtle eggs and raises
+                      If you visit to the Turtle beach in Hikkaduwa, you can see freely roaming sea turtles in their natural habitat. You can take some photos with them, but not recommend to touch them and disturb them. <br />The Hikkaduwa Turtle Hatchery is a conservation project that protects sea turtle eggs and raises
                       The Hikkaduwa Turtle Hatchery is a conservation project that protects sea turtle eggs and raises
                       baby turtles before releasing them into the ocean. Five species of sea turtles visit these shores:
                       Green, Hawksbill, Olive Ridley, Loggerhead, and Leatherback turtles.
@@ -613,6 +614,208 @@ export default function HikkaduwaTravelGuide() {
               </div>
             </CardContent>
           </Card>
+        </section>
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
+                <CardDescription>A beach with a great atmosphere</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/jungle-beach.jpeg"
+                  alt="View of Jungle Beach"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/jungle-beach-roomassala" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Kanneliya</CardTitle>
+                <CardDescription>Part of a Kanneliya Dediyagala Nakiyadeniya Complex</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Kanneliya.jpg"
+                  alt="View of Kanneliya"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the lush Kanneliya rainforest, part of the Sinharaja Forest Reserve. Home to diverse flora and fauna, perfect for nature lovers.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kanneliya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Hummanaya Blowhole</CardTitle>
+                <CardDescription>Sri Lanka&apos;s only natural blowhole</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/HummanayaBlowhole.jpeg"
+                  alt="Hummanaya Blowhole spraying water high above the rocky coast"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Witness the power of the Indian Ocean at Hummanaya, where water shoots up to 25 meters through a coastal rock crevice. A unique natural wonder and a must-see for nature lovers!
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hummanaya-blowhole" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Mirissa</CardTitle>
+                <CardDescription>Best views of the coastline</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Mirissa1.jpg"
+                  alt="View of Mirissa"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Mirissa is a picturesque coastal town known for its stunning beaches and vibrant nightlife. Enjoy whale watching, water sports, and delicious seafood.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mirissa" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Waligama</CardTitle>
+                <CardDescription>Best views of the coastline</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Waligama.jpg"
+                  alt="View of Waligama"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Waligama is a charming coastal town known for its stunning beaches and vibrant fishing community. Enjoy fresh seafood, water sports, and breathtaking sunsets.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/waligama" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Hirikatiya</CardTitle>
+                <CardDescription>Best views of the coastline and Surfing</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Hirikatiya.jpg"
+                  alt="Hirikatiya Beach with surfers riding waves and palm trees lining the shore"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. 30 min drive.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hirikatiya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Blue Beach</CardTitle>
+                <CardDescription>Beach that can campfire</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Blue-beach.jpg"
+                  alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/blue-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Thalpe Beach */}
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Thalpe Beach</CardTitle>
+                <CardDescription>Coral wells & peaceful sands</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Thalpe-beach.jpg"
+                  alt="Thalpe Beach coral wells and golden sand with turquoise water"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Discover Thalpe Beach, just south of Galle. Famous for its unique coral wells natural pools carved into the reef this quiet beach is perfect for swimming at low tide, relaxing on golden sand, and enjoying local seafood.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
       </div>
