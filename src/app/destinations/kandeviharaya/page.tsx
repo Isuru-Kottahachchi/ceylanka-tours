@@ -527,108 +527,104 @@ export default function KandeViharayaGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/destinations/bentota" className="block hover:shadow-md transition-shadow duration-200">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Bentota</CardTitle>
-                  <CardDescription>Golden sands and water sports</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Bentotabeach.jpeg"
-                    alt="Golden sands of Bentota Beach with palm trees and blue water"
-                    width={300}
-                    height={200}
-                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Beautiful beach destination just 10 minutes from Kande Viharaya. Perfect for relaxation after temple
-                    visit.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/bentota" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/brief-garden-by-bevis-bawa" className="block hover:shadow-md transition-shadow duration-200">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Brief Garden</CardTitle>
-                  <CardDescription>Tropical landscape garden</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Brief-Garden-by-Bawa.jpg"
-                    alt="Lush tropical garden with sculptures and pathways at Brief Garden"
-                    width={300}
-                    height={200}
-                      className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Former home of landscape architect Bevis Bawa with beautiful tropical gardens and art collection.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/brief-garden-by-bevis-bawa" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/brief-garden-by-bevis-bawa" className="block hover:shadow-md transition-shadow duration-200">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Lunuganga Garden</CardTitle>
-                  <CardDescription>Tropical landscape garden</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Lunugangabawa2.jpeg"
-                    alt="Lush tropical garden with sculptures and pathways at Lunuganga Garden"
-                    width={300}
-                    height={200}
-                      className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Former home of landscape architect Bevis Bawa with beautiful tropical gardens and art collection.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/brief-garden-by-bevis-bawa" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/madu-river" className="block hover:shadow-md transition-shadow duration-200">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Madu River Safari</CardTitle>
-                  <CardDescription>Mangrove ecosystem exploration</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Madu-river-safari.jpg"
-                    alt="Boat safari through mangroves on Madu River with wildlife"
-                    width={300}
-                    height={200}
-                      className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Explore the biodiversity of Madu River&apos;s mangrove ecosystem with a boat safari through narrow
-                    channels.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Bentota</CardTitle>
+                <CardDescription>Golden sands and water sports</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Bentotabeach.jpeg"
+                  alt="Golden sands of Bentota Beach with palm trees and blue water"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Beautiful beach destination just 10 minutes from Kande Viharaya. Perfect for relaxation after temple
+                  visit.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/bentota" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Brief Garden</CardTitle>
+                <CardDescription>Tropical landscape garden</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Brief-Garden-by-Bawa.jpg"
+                  alt="Lush tropical garden with sculptures and pathways at Brief Garden"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Former home of landscape architect Bevis Bawa with beautiful tropical gardens and art collection.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/brief-garden-by-bevis-bawa" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Lunuganga Garden</CardTitle>
+                <CardDescription>Tropical landscape garden</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Lunugangabawa2.jpeg"
+                  alt="Lush tropical garden with sculptures and pathways at Lunuganga Garden"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Former home of landscape architect Bevis Bawa with beautiful tropical gardens and art collection.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/brief-garden-by-bevis-bawa" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Madu River Safari</CardTitle>
+                <CardDescription>Mangrove ecosystem exploration</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Madu-river-safari.jpg"
+                  alt="Boat safari through mangroves on Madu River with wildlife"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the biodiversity of Madu River&apos;s mangrove ecosystem with a boat safari through narrow
+                  channels.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 

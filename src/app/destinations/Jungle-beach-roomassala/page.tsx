@@ -437,6 +437,9 @@ export default function JungleBeachPage() {
         </section>
 
         {/* Nearby Attractions */}
+        {/* <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
+          <div className="grid md:grid-cols-3 gap-6"> */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">Nearby Places to Explore</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -447,11 +450,11 @@ export default function JungleBeachPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300&text=Unawatuna+Beach"
+                  src="/Unawatuna.jpg"
                   alt="Unawatuna Beach - famous curved bay near Jungle Beach"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
                   Famous curved bay with golden sand, perfect for swimming and water sports.
@@ -463,7 +466,7 @@ export default function JungleBeachPage() {
                   <Badge variant="outline">Nightlife</Badge>
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                  <Link href="/destinations/unawatuna" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -481,7 +484,7 @@ export default function JungleBeachPage() {
                   alt="Galle Fort - UNESCO World Heritage site near Jungle Beach"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
                   UNESCO World Heritage Dutch colonial fort with museums, galleries,
@@ -493,7 +496,7 @@ export default function JungleBeachPage() {
                   <Badge variant="outline">Culture</Badge>
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                  <Link href="/destinations/galle-fort" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -510,7 +513,7 @@ export default function JungleBeachPage() {
                   alt="Ambalangoda - famous for its traditional mask making"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
                   Japanese Buddhist temple on the hilltop offering panoramic views
@@ -522,7 +525,7 @@ export default function JungleBeachPage() {
                   <Badge variant="outline">Meditation</Badge>
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                  <Link href="/destinations/ambalangoda" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -540,7 +543,7 @@ export default function JungleBeachPage() {
                   alt="Peace Pagoda on Rumassala Hill overlooking the ocean"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
                   Japanese Buddhist temple on the hilltop offering panoramic views
@@ -570,7 +573,7 @@ export default function JungleBeachPage() {
                   alt="Coconut Tree Hill - iconic palm trees overlooking the ocean"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
                   Instagram-famous hilltop covered with coconut palms offering
@@ -582,7 +585,7 @@ export default function JungleBeachPage() {
                   <Badge variant="outline">Views</Badge>
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                  <Link href="/destinations/coconut-tree-hill" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -600,7 +603,7 @@ export default function JungleBeachPage() {
                   alt="Snake Island - small island accessible at low tide from Unawatuna"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
                   Small rocky island accessible at low tide, perfect for snorkeling
@@ -630,7 +633,7 @@ export default function JungleBeachPage() {
                   alt="Dalawella Beach with famous rope swing and palm trees"
                   width={300}
                   height={200}
-                  className="rounded-lg mb-3"
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
                   Picturesque beach famous for its palm tree rope swing, calm waters,

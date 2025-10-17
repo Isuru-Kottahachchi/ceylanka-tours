@@ -771,7 +771,7 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-                               <Card>
+                        <Card>
                             <CardHeader>
                                 <CardTitle>5. Panchakapaduwa Island</CardTitle>
                                 <CardDescription>A mystical island separated from the mainland with ancient history</CardDescription>
@@ -1014,7 +1014,7 @@ export default function BentotaGuide() {
                             </CardContent>
                         </Card>
 
-                 
+
                     </div>
 
                     {/* Para Motoring Adventure */}
@@ -1285,7 +1285,7 @@ export default function BentotaGuide() {
                     <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
                     <div className="grid md:grid-cols-3 gap-6">
 
-                        <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                             <CardHeader>
                                 <CardTitle className="text-lg">Lunuganga Garden by Geoffrey Bawa</CardTitle>
                                 <CardDescription>Architectural masterpiece with stunning views</CardDescription>
@@ -1310,7 +1310,8 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-                        <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                        
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                             <CardHeader>
                                 <CardTitle className="text-lg">Kandeviharaya Temple</CardTitle>
                                 <CardDescription>Historic Buddhist temple</CardDescription>
@@ -1334,7 +1335,7 @@ export default function BentotaGuide() {
                             </CardContent>
                         </Card>
 
-                        <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                             <CardHeader>
                                 <CardTitle className="text-lg">Brief Garden by Bevis Bawa Kalawila</CardTitle>
                                 <CardDescription>Beautiful garden with diverse flora</CardDescription>
@@ -1358,7 +1359,7 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-                        <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                             <CardHeader>
                                 <CardTitle className="text-lg">Kalutara Temple</CardTitle>
                                 <CardDescription>Historic Buddhist temple</CardDescription>
@@ -1382,7 +1383,7 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-                        <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                             <CardHeader>
                                 <CardTitle className="text-lg">Richmond Castle</CardTitle>
                                 <CardDescription>Historic mansion with colonial architecture</CardDescription>

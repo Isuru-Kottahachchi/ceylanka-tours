@@ -921,92 +921,83 @@ export default function AnuradhapuraTravelGuide() {
         {/* Archaeological Wonders */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 scroll-mt-40" id="nearby-archaeological-wonders">Near by Archaeological Wonders</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-            <Link href="/destinations/isurumuniya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Isurumuniya Temple</CardTitle>
-                  <CardDescription>Ancient temple</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Isurumuniya.jpeg"
-                    alt="Isurumuniya rock temple showing ancient stone carvings and cave architecture"
-                    width={300}
-                    height={200}
-                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Famous for the &quot;Isurumuniya Lovers&quot; carving and beautiful rock-cut architecture from the 3rd century BC.
-                  </p>
-                  <div className="mt-4">
-                    <Button
-                      className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm"
-                      variant="default"
-                    >
-                      See More →
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
+          <div className="grid md:grid-cols-3 gap-6">
 
-            <Link href="/destinations/ranmusu-uyana" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Ranmusu uyana with universal stargate</CardTitle>
-                  <CardDescription>Royal park with ancient ruins</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Ranmusuuyana.jpeg"
-                    alt="View of Sigiriya Rock from Pidurangala Rock"
-                    width={300}
-                    height={200}
-                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Explore the mysterious Ranmusu uyana, an ancient site with unique stone carvings and a universal stargate.
-                  </p>
-                  <div className="mt-4">
-                    <Button
-                      className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm"
-                      variant="default"
-                    >
-                      See More →
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href="/destinations/mihinthalaya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer">
-                <CardHeader>
-                  <CardTitle className="text-lg">Mihinthalaya</CardTitle>
-                  <CardDescription>Sacred site</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Mihinthale.jpg"
-                    alt="View of Sigiriya Rock from Pidurangala Rock"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Just a few kilometers from Anuradhapura, Mihinthalaya is a sacred site where Buddhism was first introduced to Sri Lanka.
-                  </p>
-                  <div className="mt-4">
-                    <Button
-                      className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm"
-                      variant="default"
-                    >
-                      See More →
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Isurumuniya Temple</CardTitle>
+                <CardDescription>Ancient temple</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Isurumuniya.jpeg"
+                  alt="Isurumuniya rock temple showing ancient stone carvings and cave architecture"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Famous for the &quot;Isurumuniya Lovers&quot; carving and beautiful rock-cut architecture from the 3rd century BC.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/isurumuniya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Ranmusu uyana with universal stargate</CardTitle>
+                <CardDescription>Royal park with ancient ruins</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Ranmusuuyana.jpeg"
+                  alt="View of Sigiriya Rock from Pidurangala Rock"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the mysterious Ranmusu uyana, an ancient site with unique stone carvings and a universal stargate.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ranmusu-uyana" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Mihinthalaya</CardTitle>
+                <CardDescription>Sacred site</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Mihinthale.jpg"
+                  alt="View of Sigiriya Rock from Pidurangala Rock"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Just a few kilometers from Anuradhapura, Mihinthalaya is a sacred site where Buddhism was first introduced to Sri Lanka.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
 
 
             {/* <Card>
@@ -1038,7 +1029,7 @@ export default function AnuradhapuraTravelGuide() {
               </CardContent>
             </Card> */}
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Twin Ponds (Kuttam Pokuna)</CardTitle>
                 <CardDescription>Ancient hydraulic engineering</CardDescription>
@@ -1054,14 +1045,9 @@ export default function AnuradhapuraTravelGuide() {
                 <p className="text-sm text-muted-foreground">
                   Sophisticated bathing pools for monks, showcasing advanced hydraulic engineering from ancient times.
                 </p>
-                <div className="mt-4">
-                  <Link href="/destinations/kuttam-pokuna">
-                    <Button
-                      className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm"
-                      variant="default"
-                    >
-                      See More →
-                    </Button>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kuttam-pokuna" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
               </CardContent>

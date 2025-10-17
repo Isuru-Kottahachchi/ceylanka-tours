@@ -802,7 +802,7 @@ export default function GalleFortTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
           <div className="grid md:grid-cols-3 gap-6">
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
                 <CardDescription>A beach with a great atmosphere</CardDescription>
@@ -827,7 +827,7 @@ export default function GalleFortTravelGuide() {
             </Card>
 
 
-            <Card >
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Kanneliya</CardTitle>
                 <CardDescription>Part of a Kanneliya Dediyagala Nakiyadeniya Complex</CardDescription>
@@ -852,7 +852,7 @@ export default function GalleFortTravelGuide() {
             </Card>
 
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Hummanaya Blowhole</CardTitle>
                 <CardDescription>Sri Lanka&apos;s only natural blowhole</CardDescription>
@@ -877,7 +877,7 @@ export default function GalleFortTravelGuide() {
             </Card>
 
 
-            <Card >
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Mirissa</CardTitle>
                 <CardDescription>Best views of the coastline</CardDescription>
@@ -901,7 +901,7 @@ export default function GalleFortTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Waligama</CardTitle>
                 <CardDescription>Best views of the coastline</CardDescription>
@@ -925,7 +925,7 @@ export default function GalleFortTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Hirikatiya</CardTitle>
                 <CardDescription>Best views of the coastline and Surfing</CardDescription>
@@ -949,7 +949,7 @@ export default function GalleFortTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Blue Beach</CardTitle>
                 <CardDescription>Beach that can campfire</CardDescription>
@@ -974,7 +974,7 @@ export default function GalleFortTravelGuide() {
             </Card>
 
             {/* Thalpe Beach */}
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Thalpe Beach</CardTitle>
                 <CardDescription>Coral wells & peaceful sands</CardDescription>

@@ -684,7 +684,7 @@ export default function NuwaraEliyaTravelGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                      Highest village in Sri Lanka at over 2000m elevation
+                        Highest village in Sri Lanka at over 2000m elevation
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -848,7 +848,7 @@ export default function NuwaraEliyaTravelGuide() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Ella */}
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/Nine-arch-ella.jpg"
@@ -878,7 +878,7 @@ export default function NuwaraEliyaTravelGuide() {
             </Card>
 
             {/* Bandarawela */}
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/Bandarawela.jpeg"
@@ -908,7 +908,7 @@ export default function NuwaraEliyaTravelGuide() {
             </Card>
 
             {/* Haputhale */}
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/Haputhale.jpeg"
@@ -938,7 +938,7 @@ export default function NuwaraEliyaTravelGuide() {
             </Card>
 
             {/* Badulla */}
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/Badulla.jpeg"
@@ -968,7 +968,7 @@ export default function NuwaraEliyaTravelGuide() {
             </Card>
 
             {/* Kandy */}
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/Kandy.jpeg"
@@ -998,7 +998,7 @@ export default function NuwaraEliyaTravelGuide() {
             </Card>
 
             {/* Adam&apos;s Peak */}
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/Adams-peak.jpeg"

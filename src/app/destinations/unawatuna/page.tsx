@@ -1,10 +1,12 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Waves, Car, Sun } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Waves, Car, Sun, Camera, Calendar } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ImageCarousel } from "@/components/ui/image-carousel"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function UnawatunaTravelGuide() {
     const beachImages = [
@@ -62,21 +64,21 @@ export default function UnawatunaTravelGuide() {
                     <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Unawatuna: A Coastal Paradise</h2>
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                         <p className="text-lg mb-4">
-                            Unawatuna, a crescent-shaped beach paradise nestled along Sri Lanka&apos;s southern coast, is renowned 
-                            for its golden sands, crystal-clear waters, and vibrant marine life. This charming coastal town, 
-                            just 6 kilometers southeast of historic Galle, perfectly blends natural beauty with modern beach 
+                            Unawatuna, a crescent-shaped beach paradise nestled along Sri Lanka&apos;s southern coast, is renowned
+                            for its golden sands, crystal-clear waters, and vibrant marine life. This charming coastal town,
+                            just 6 kilometers southeast of historic Galle, perfectly blends natural beauty with modern beach
                             life.
                         </p>
                         <p className="text-lg">
-                            From world-class snorkeling and diving opportunities to cultural experiences and 
-                            beachfront dining, Unawatuna offers something for every traveler. The beach is protected by 
+                            From world-class snorkeling and diving opportunities to cultural experiences and
+                            beachfront dining, Unawatuna offers something for every traveler. The beach is protected by
                             a coral reef, making it one of the safest swimming spots along the southern coast.
                         </p>
                         <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
                             <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Did You Know?</h4>
                             <p className="text-sm text-blue-700 dark:text-gray-200">
-                                Unawatuna was once named one of the &quot;World&apos;s Best Beaches&quot; by Discovery Channel and CNN. 
-                                The beach has made a remarkable recovery since the 2004 tsunami, showcasing nature&apos;s resilience 
+                                Unawatuna was once named one of the &quot;World&apos;s Best Beaches&quot; by Discovery Channel and CNN.
+                                The beach has made a remarkable recovery since the 2004 tsunami, showcasing nature&apos;s resilience
                                 and the community&apos;s determination.
                             </p>
                         </div>
@@ -138,6 +140,144 @@ export default function UnawatunaTravelGuide() {
                         </CardContent>
                     </Card>
                 </section>
+                <div className="flex flex-col lg:flex-row gap-8 mb-10 scroll-mt-40" id="quick-facts">
+                    {/* Quick Facts */}
+                    <section>
+                        <Card>
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2">
+                                    <Star className="w-5 h-5 text-yellow-500" />
+                                    Quick Facts About Unawatuna
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="space-y-3">
+                                    <div className="flex items-center gap-2">
+                                        <MapPin className="w-4 h-4 text-blue-500" />
+                                        <span>
+                                            <strong>Location:</strong> Southern Coast, 240km from Colombo
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Waves className="w-4 h-4 text-green-500" />
+                                        <span>
+                                            <strong>Famous for:</strong> Safe swimming, snorkeling, diving
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Sun className="w-4 h-4 text-orange-500" />
+                                        <span>
+                                            <strong>Best Weather:</strong> November to April
+                                        </span>
+                                    </div>
+
+
+                                    <div className="flex items-center gap-2">
+                                        <Camera className="w-4 h-4 text-red-500" />
+                                        <span>
+                                            <strong>Must-See:</strong> Coconut Hill Sunset
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Clock className="w-4 h-4 text-teal-500" />
+                                        <span>
+                                            <strong>Ideal Stay:</strong> 1-2 days
+                                        </span>
+                                    </div>
+                                    <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                                        <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">🕒 Tips for Visiting Mirissa</h4>
+                                        <ul className="text-sm text-blue-600 dark:text-blue-400 space-y-1">
+                                            <li>• Early Morning (6-8 AM): Perfect for peaceful walks</li>
+                                            <li>• Late Afternoon (3-6 PM): Best for swimming</li>
+                                            <li>• Avoid weekends and public holidays for a quieter experience</li>
+                                            <li>• Bring reef-safe sunscreen to protect marine life</li>
+                                            <li>• Respect local customs and the environment</li>
+                                            <li>• Book whale watching tours in advance during peak season</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </section>
+                    {/* How to Get to  */}
+                    <section className="flex-1">
+                        <Card className="border-l-4 border-blue-500">
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                                    <MapPin className="w-5 h-5" />
+                                    How to Get to Unawatuna
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                            <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo</li>
+                                            <li>• <strong>Duration:</strong> 2.5-3.5 hours</li>
+                                            <li>• <strong>Cost:</strong> $60-85 USD for day trip</li>
+                                            <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                                        </ul>
+                                        <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                                            <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                                                <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Mirissa. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                                            </p>
+                                            <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                                                <div className="flex items-center gap-2">
+                                                    <span>📞</span>
+                                                    <span><strong>Contact:</strong> +94 77 123 4567</span>
+                                                </div>
+                                                <div className="flex items-center gap-2">
+                                                    <span>✈️</span>
+                                                    <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                                                        <strong>Airport Transfer Services</strong> - Click for details & booking
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                            <li>• <strong>Route:</strong> Colombo Fort → Mirissa railway station</li>
+                                            <li>• <strong>Duration:</strong> 3-6 hours total</li>
+                                            <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
+                                            <li>• <strong>From Mirissa:</strong> hire taxi/tuk-tuk</li>
+                                        </ul>
+
+                                        <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                                        <ul className="space-y-2 text-sm text-muted-foreground">
+                                            <li>• <strong>Route:</strong> Colombo Fort → Mirissa bus station  (Coast road)</li>
+                                            <li>• <strong>Duration:</strong> 4-6 hours</li>
+                                            <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
+                                            <li>• <strong>Frequency:</strong> Regular departures from Colombo Fort Bus Station</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="mt-6">
+                                    <a href="https://maps.app.goo.gl/mApRuVKgTQKqDKyg6" target="_blank" rel="noopener noreferrer">
+                                        <Button className="w-full bg-green-600 text-white hover:bg-green-700 dark:bg-green-600 dark:hover:bg-green-700 cursor-pointer">
+                                            <MapPin className="w-4 h-4 mr-2" />
+                                            Open in Google Maps
+                                        </Button>
+                                    </a>
+                                </div>
+                                {/* <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">🚂 Special Note about Train Journey</h4>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    The train journey from Kandy to Nanu Oya is considered one of the world&apos;s most scenic train rides, passing through breathtaking tea plantations, mountain tunnels, and misty landscapes. <strong>Important:</strong> Nanu Oya is the closest railway station to Nuwara Eliya - you&apos;ll need to take a taxi or tuk-tuk for the final 8km uphill journey to the town center.
+                  </p>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Book reserved seats in advance for the best views</li>
+                    <li>• Sit on the right side for better mountain scenery</li>
+                    <li>• Bring warm clothes - it gets cool in the mountains</li>
+                    <li>• Pre-arrange transport from Nanu Oya station</li>
+                  </ul>
+                </div> */}
+                            </CardContent>
+                        </Card>
+                    </section>
+                </div>
 
                 {/* Beach Activities */}
                 <section className="mb-12">
@@ -153,8 +293,8 @@ export default function UnawatunaTravelGuide() {
                                     <ImageCarousel images={beachImages} />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            The crescent-shaped beach of Unawatuna is protected by a coral reef, creating 
-                                            perfect conditions for swimming and snorkeling. The calm waters and gentle slope 
+                                            The crescent-shaped beach of Unawatuna is protected by a coral reef, creating
+                                            perfect conditions for swimming and snorkeling. The calm waters and gentle slope
                                             make it ideal for families and casual swimmers.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
@@ -190,8 +330,8 @@ export default function UnawatunaTravelGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Unawatuna offers excellent opportunities for water sports and marine exploration. 
-                                            The coral reef houses diverse marine life, making it a popular spot for snorkeling 
+                                            Unawatuna offers excellent opportunities for water sports and marine exploration.
+                                            The coral reef houses diverse marine life, making it a popular spot for snorkeling
                                             and diving enthusiasts.
                                         </p>
                                         <div className="space-y-4">
@@ -234,9 +374,9 @@ export default function UnawatunaTravelGuide() {
                                     <ImageCarousel images={templeImages} />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Beyond the beach, Unawatuna offers rich cultural experiences with ancient temples 
-                                            and historical sites. The Japanese Peace Pagoda provides panoramic views of the 
-                                            coastline, while the Yatagala Raja Maha Viharaya offers insights into Sri Lankan 
+                                            Beyond the beach, Unawatuna offers rich cultural experiences with ancient temples
+                                            and historical sites. The Japanese Peace Pagoda provides panoramic views of the
+                                            coastline, while the Yatagala Raja Maha Viharaya offers insights into Sri Lankan
                                             Buddhist heritage.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
@@ -456,6 +596,205 @@ export default function UnawatunaTravelGuide() {
                             </div>
                         </CardContent>
                     </Card>
+                </section>
+                {/* Nearby Attractions */}
+                <section className="mb-12">
+                    <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
+                    <div className="grid md:grid-cols-3 gap-6">
+
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
+                                <CardDescription>A beach with a great atmosphere</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Image
+                                    src="/jungle-beach.jpeg"
+                                    alt="View of Jungle Beach"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                />
+                                <p className="text-sm text-muted-foreground">
+                                    Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                                </p>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/jungle-beach-roomassala" passHref legacyBehavior>
+                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                    </Link>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Kanneliya</CardTitle>
+                                <CardDescription>Part of a Kanneliya Dediyagala Nakiyadeniya Complex</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Image
+                                    src="/Kanneliya.jpg"
+                                    alt="View of Kanneliya"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                />
+                                <p className="text-sm text-muted-foreground">
+                                    Explore the lush Kanneliya rainforest, part of the Sinharaja Forest Reserve. Home to diverse flora and fauna, perfect for nature lovers.
+                                </p>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/kanneliya" passHref legacyBehavior>
+                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                    </Link>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Hummanaya Blowhole</CardTitle>
+                                <CardDescription>Sri Lanka&apos;s only natural blowhole</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Image
+                                    src="/HummanayaBlowhole.jpeg"
+                                    alt="Hummanaya Blowhole spraying water high above the rocky coast"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                />
+                                <p className="text-sm text-muted-foreground">
+                                    Witness the power of the Indian Ocean at Hummanaya, where water shoots up to 25 meters through a coastal rock crevice. A unique natural wonder and a must-see for nature lovers!
+                                </p>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/hummanaya-blowhole" passHref legacyBehavior>
+                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                    </Link>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Mirissa</CardTitle>
+                                <CardDescription>Best views of the coastline</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Image
+                                    src="/Mirissa1.jpg"
+                                    alt="View of Mirissa"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                />
+                                <p className="text-sm text-muted-foreground">
+                                    Mirissa is a picturesque coastal town known for its stunning beaches and vibrant nightlife. Enjoy whale watching, water sports, and delicious seafood.
+                                </p>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/mirissa" passHref legacyBehavior>
+                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                    </Link>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Waligama</CardTitle>
+                                <CardDescription>Best views of the coastline</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Image
+                                    src="/Waligama.jpg"
+                                    alt="View of Waligama"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                />
+                                <p className="text-sm text-muted-foreground">
+                                    Waligama is a charming coastal town known for its stunning beaches and vibrant fishing community. Enjoy fresh seafood, water sports, and breathtaking sunsets.
+                                </p>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/waligama" passHref legacyBehavior>
+                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                    </Link>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Hirikatiya</CardTitle>
+                                <CardDescription>Best views of the coastline and Surfing</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Image
+                                    src="/Hirikatiya.jpg"
+                                    alt="Hirikatiya Beach with surfers riding waves and palm trees lining the shore"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                />
+                                <p className="text-sm text-muted-foreground">
+                                    Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. 30 min drive.
+                                </p>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/hirikatiya" passHref legacyBehavior>
+                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                    </Link>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                         <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Blue Beach</CardTitle>
+                                <CardDescription>Beach that can campfire</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Image
+                                    src="/Blue-beach.jpg"
+                                    alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                />
+                                <p className="text-sm text-muted-foreground">
+                                    Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
+                                </p>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/blue-beach" passHref legacyBehavior>
+                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                    </Link>
+                                </div>
+                            </CardContent>
+                        </Card>
+
+                        {/* Thalpe Beach */}
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                            <CardHeader>
+                                <CardTitle className="text-lg">Thalpe Beach</CardTitle>
+                                <CardDescription>Coral wells & peaceful sands</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <Image
+                                    src="/Thalpe-beach.jpg"
+                                    alt="Thalpe Beach coral wells and golden sand with turquoise water"
+                                    width={300}
+                                    height={200}
+                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                />
+                                <p className="text-sm text-muted-foreground">
+                                    Discover Thalpe Beach, just south of Galle. Famous for its unique coral wells natural pools carved into the reef this quiet beach is perfect for swimming at low tide, relaxing on golden sand, and enjoying local seafood.
+                                </p>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                                    </Link>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </div>
                 </section>
             </div>
         </main>

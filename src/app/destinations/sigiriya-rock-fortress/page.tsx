@@ -1195,7 +1195,7 @@ export default function SigiriyaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
           <div className="grid md:grid-cols-3 gap-6">
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Pidurangala Rock</CardTitle>
                 <CardDescription>Best views of Sigiriya</CardDescription>
@@ -1220,7 +1220,7 @@ export default function SigiriyaTravelGuide() {
             </Card>
 
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Dambulla Cave Temple</CardTitle>
                 <CardDescription>Golden Temple complex</CardDescription>
@@ -1245,7 +1245,7 @@ export default function SigiriyaTravelGuide() {
             </Card>
 
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Minneriya National Park</CardTitle>
                 <CardDescription>Elephant gathering</CardDescription>
@@ -1270,7 +1270,7 @@ export default function SigiriyaTravelGuide() {
             </Card>
 
 
-            <Card >
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Habarana</CardTitle>
                 <CardDescription>Gateway to Cultural Triangle</CardDescription>
@@ -1295,7 +1295,7 @@ export default function SigiriyaTravelGuide() {
             </Card>
 
 
-            <Card >
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Polonnaruwa</CardTitle>
                 <CardDescription>Ancient city</CardDescription>
@@ -1320,7 +1320,7 @@ export default function SigiriyaTravelGuide() {
             </Card>
 
 
-            <Card >
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Anuradapura</CardTitle>
                 <CardDescription>Ancient city</CardDescription>
@@ -1345,7 +1345,7 @@ export default function SigiriyaTravelGuide() {
             </Card>
 
 
-            <Card >
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Wasgamuwa National Park</CardTitle>
                 <CardDescription>National park</CardDescription>

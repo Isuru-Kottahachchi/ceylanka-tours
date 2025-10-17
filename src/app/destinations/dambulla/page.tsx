@@ -37,15 +37,15 @@ export default function DambullaTownGuide() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Dambulla</h1>
           <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">UNESCO world heritage site</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
               <ShoppingBag className="w-4 h-4 mr-2" />
               UNESCO World Heritage Site
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-yellow-600/80 text-white border-yellow-500">
               <Utensils className="w-4 h-4 mr-2" />
               Authentic Local Cuisine
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-blue-600/80 text-white border-blue-500">
               <Users className="w-4 h-4 mr-2" />
               Real Sri Lankan Culture
             </Badge>
@@ -271,13 +271,19 @@ export default function DambullaTownGuide() {
                         </li>
                       </ul>
                     </div>
-                    <div className="mt-6 flex justify-end">
+
+                    {/* <div className="mt-6 flex justify-start">
                       <Link href="/destinations/dambulla-cave-temple">
-                        <Button className="bg-yellow-600 hover:bg-yellow-700 text-white dark:bg-yellow-500 dark:hover:bg-yellow-600 font-semibold px-6 py-3 rounded-lg shadow-md transition-colors cursor-pointer">
+                        <Button variant="secondary" className="bg-yellow-600 hover:bg-yellow-700 text-white dark:bg-yellow-500 dark:hover:bg-yellow-600 font-semibold px-6 py-3 rounded-lg shadow-md transition-colors cursor-pointer">
                           Explore Dambulla Cave Temple
                         </Button>
                       </Link>
-                    </div>
+                    </div> */}
+                    <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/dambulla-cave-temple" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                  </Link>
+                </div>
                   </div>
                 </div>
               </CardContent>

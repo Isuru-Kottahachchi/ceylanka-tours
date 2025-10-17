@@ -340,14 +340,14 @@ export default function IsurumuniyaTempleGuide() {
             </Card>
           </div>
         </section>
-
+        
         <Separator className="my-12" />
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Near by Archaeological Wonders</h2>
           <div className="grid md:grid-cols-3 gap-6">
 
 
-            <Card className="hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Ranmusu Uyana</CardTitle>
                 <CardDescription>Ancient royal pleasure gardens</CardDescription>
@@ -370,7 +370,7 @@ export default function IsurumuniyaTempleGuide() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Mihinthalaya</CardTitle>
                 <CardDescription>Birthplace of Buddhism in Sri Lanka</CardDescription>
@@ -395,7 +395,7 @@ export default function IsurumuniyaTempleGuide() {
             </Card>
 
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Moonstone & Guard Stones</CardTitle>
                 <CardDescription>Exquisite stone craftsmanship</CardDescription>
@@ -419,7 +419,7 @@ export default function IsurumuniyaTempleGuide() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Twin Ponds (Kuttam Pokuna)</CardTitle>
                 <CardDescription>Ancient hydraulic engineering</CardDescription>

@@ -267,12 +267,12 @@ export default function MirissaTravelGuide() {
                 </ul>
               </div>
               <div className="mt-8">
-            <Link href="/blog/marine-life-experience">
-              <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 cursor-pointer">
-                Read More About Sri Lankan Marine Life
-              </Button>
-            </Link>
-          </div>
+                <Link href="/blog/marine-life-experience">
+                  <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 cursor-pointer">
+                    Read More About Sri Lankan Marine Life
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -701,7 +701,7 @@ export default function MirissaTravelGuide() {
           <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Weligama Card */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Weligama</CardTitle>
                 <CardDescription>Surfing paradise with sandy beaches</CardDescription>
@@ -726,7 +726,7 @@ export default function MirissaTravelGuide() {
             </Card>
 
             {/* Galle Fort Card */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Galle Fort</CardTitle>
                 <CardDescription>Historic UNESCO World Heritage Site</CardDescription>
@@ -751,7 +751,7 @@ export default function MirissaTravelGuide() {
             </Card>
 
             {/* Unawatuna Card */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Unawatuna</CardTitle>
                 <CardDescription>Vibrant beach town with coral reefs</CardDescription>
