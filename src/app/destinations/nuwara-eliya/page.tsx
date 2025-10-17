@@ -7,6 +7,7 @@ import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import InsuranceBanner from "@/components/insurance-banner"
 
 
 
@@ -248,6 +249,7 @@ export default function NuwaraEliyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+            <InsuranceBanner />
           </section>
           {/* How to Get to Nuwara Eliya */}
           <section className="flex-1">
@@ -295,14 +297,14 @@ export default function NuwaraEliyaTravelGuide() {
                       <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Nanu Oya station</span></li>
                       <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li>
                     </ul>
-
+{/* 
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo → Kandy → Nuwara Eliya</li>
                       <li>• <strong>Duration:</strong> 5-6 hours</li>
                       <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
                       <li>• <strong>Frequency:</strong> Regular departures from Kandy</li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
@@ -382,7 +384,7 @@ export default function NuwaraEliyaTravelGuide() {
                 As you travel towards Nuwara Eliya, especially along the Hatton–Talawakelle–Nanu Oya road, make sure to pause near Thalawakale to witness the majestic St. Clair&apos;s Falls. This wide, multi-tiered waterfall tumbles through emerald tea estates, creating a picture-perfect scene that is one of Sri Lanka&apos;s most photographed natural wonders.
               </p>
               <p>
-                The falls are easily visible from the main road, and there are several viewpoints where you can stop for photos or simply soak in the cool, misty air. St. Clair&apos;s is especially impressive during the rainy season, when the water flow is at its peak. However, outside of the wet season, the falls may appear as a muggy trickle or even a drained stream due to water diversions and drier weather—so plan your visit accordingly if you want to see the waterfall in its full glory.
+                The falls are easily visible from the main road, and there are several viewpoints where you can stop for photos or simply soak in the cool, misty air. St. Clair&apos;s is especially impressive during the rainy season, when the water flow is at its peak. However, outside of the wet season, the falls may appear as a muggy trickle or even a drained stream due to water diversions and drier weather so plan your visit accordingly if you want to see the waterfall in its full glory.
               </p>
               <div className="bg-blue-50 p-4 rounded-lg">
                 <span className="font-semibold text-blue-800">Travel Tip:</span>
