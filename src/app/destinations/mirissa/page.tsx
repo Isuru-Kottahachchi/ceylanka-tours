@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import InsuranceBanner from "@/components/insurance-banner"
 
 
 
@@ -218,6 +219,8 @@ export default function MirissaTravelGuide() {
             </Card>
           </section>
         </div>
+
+        <InsuranceBanner />
 
         {/* Whale Watching */}
         <section className="mb-12 scroll-mt-40" id="whale-watching">

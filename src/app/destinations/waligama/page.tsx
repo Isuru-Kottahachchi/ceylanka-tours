@@ -86,7 +86,7 @@ export default function WeligamaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                 <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-blue-500" />
                     <span>
                       <strong>Location:</strong> Southern Coast, 150km from Colombo
@@ -104,7 +104,7 @@ export default function WeligamaTravelGuide() {
                       <strong>Best Weather:</strong> November to April
                     </span>
                   </div>
-               
+
                   <div className="flex items-center gap-2">
                     <Waves className="w-4 h-4 text-purple-500" />
                     <span>
@@ -298,7 +298,7 @@ export default function WeligamaTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src:"/IMG_8209.jpg",
+                        src: "/IMG_8209.jpg",
                         alt: "Aerial view of Snake Island Taprobane",
                         caption: "Snake Island with its colonial villa",
                         title: "Snake Island from Above"
@@ -986,7 +986,7 @@ export default function WeligamaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions & Day Trips</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Mirissa */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Hirikatiya</CardTitle>
                 <CardDescription>Surfing paradise</CardDescription>
@@ -1010,7 +1010,7 @@ export default function WeligamaTravelGuide() {
               </CardContent>
             </Card>
             {/* Mirissa */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Mirissa</CardTitle>
                 <CardDescription>Whale watching and pristine beaches</CardDescription>
@@ -1035,7 +1035,7 @@ export default function WeligamaTravelGuide() {
             </Card>
 
             {/* Galle Fort */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Galle Fort</CardTitle>
                 <CardDescription>Historic Dutch colonial fort</CardDescription>
@@ -1060,14 +1060,14 @@ export default function WeligamaTravelGuide() {
             </Card>
 
             {/* Unawatuna */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Unawatuna</CardTitle>
                 <CardDescription>Golden beaches and coral reefs</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/unawatuna-beach.jpg"
+                  src="/Unawatuna1.jpg"
                   alt="Unawatuna Beach with its golden sands and calm waters"
                   width={300}
                   height={200}
