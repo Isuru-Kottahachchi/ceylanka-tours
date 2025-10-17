@@ -80,7 +80,7 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
 export default function HikkaduwaTravelGuide() {
 
   const coralImages = [
-    "/placeholder.svg?height=400&width=600",
+    "/Hikkaduwa-Corals.webp",
     "/placeholder.svg?height=400&width=600"
   ]
 
@@ -90,7 +90,7 @@ export default function HikkaduwaTravelGuide() {
   ]
 
   const turtleImages = [
-    "/placeholder.svg?height=400&width=600",
+    "/Turtles-In-Hikka.jpg",
     "/placeholder.svg?height=400&width=600"
   ]
 
@@ -110,15 +110,15 @@ export default function HikkaduwaTravelGuide() {
           <h1 className="text-5xl md:text-8xl font-bold mb-6 tracking-tight">Hikkaduwa</h1>
           <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">Surf, Coral Reef & Sea Turtle Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-yellow-600/80 text-white border-yellow-500">
               <Waves className="w-4 h-4 mr-2" />
-              World-Class Surfing
+             Down South
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
               <Fish className="w-4 h-4 mr-2" />
               Coral Sanctuary
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-blue-600/80 text-white border-blue-500">
               <Camera className="w-4 h-4 mr-2" />
               Sea Turtle Watching
             </Badge>
@@ -136,6 +136,8 @@ export default function HikkaduwaTravelGuide() {
               This vibrant coastal town offers the perfect mix of adventure and relaxation with its coral reef
               sanctuary, world-class surfing waves, sea turtle watching, and lively beach culture. From snorkeling
               in crystal-clear waters to catching perfect waves, Hikkaduwa has something for every beach lover.
+              <br/>
+              You can explore one of the three marine national parks in Sri Lanka, the Hikkaduwa National Park, which is a protected coral sanctuary
             </p>
             <p className="text-lg">
               The town stretches along 4 kilometers of golden sandy beach, where traditional fishing boats share
@@ -293,13 +295,14 @@ export default function HikkaduwaTravelGuide() {
             {/* Sea Turtle Watching */}
             <Card>
               <CardHeader>
-                <CardTitle>Sea Turtle Sanctuary</CardTitle>
+                <CardTitle> Turtle beach  and Sea Turtle Sanctuary</CardTitle>
                 <CardDescription>Conservation center and turtle watching</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
+                      If you visit to the Turtle beach in Hikkaduwa, you can see freely roaming sea turtles in their natural habitat. You can take some photos with them, but not recommend to touch them and disturb them. <br/>The Hikkaduwa Turtle Hatchery is a conservation project that protects sea turtle eggs and raises
                       The Hikkaduwa Turtle Hatchery is a conservation project that protects sea turtle eggs and raises
                       baby turtles before releasing them into the ocean. Five species of sea turtles visit these shores:
                       Green, Hawksbill, Olive Ridley, Loggerhead, and Leatherback turtles.
