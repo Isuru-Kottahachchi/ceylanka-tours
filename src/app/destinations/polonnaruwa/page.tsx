@@ -169,9 +169,9 @@ export default function PolonnaruwaGuide() {
                                     </div>
                                     <div className="space-y-3">
                                         <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
-                                            <h5 className="font-medium text-blue-800 dark:text-blue-200">Entrance Fee</h5>
+                                            <h5 className="font-medium text-blue-800 dark:text-blue-200">Entrance Fee for ancient city of Polonnaruwa </h5>
                                             <p className="text-sm text-blue-600 dark:text-blue-300">$25 USD for foreign visitors</p>
-                                            <p className="text-xs text-muted-foreground">Includes site access and museum</p>
+                                            <p className="text-xs text-muted-foreground">Includes archaeological site access and museum</p>
                                         </div>
                                         <div className="p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
                                             <h5 className="font-medium text-green-800 dark:text-green-200">Opening Hours</h5>
@@ -183,11 +183,7 @@ export default function PolonnaruwaGuide() {
                                             <p className="text-sm text-purple-600 dark:text-purple-300">Early morning or late afternoon</p>
                                             <p className="text-xs text-muted-foreground">Avoid midday heat</p>
                                         </div>
-                                        <div className="p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
-                                            <p className="text-sm text-blue-800 dark:text-blue-200">
-                                                <strong>💡 Pro Tip:</strong> Start early morning visits to avoid crowds and heat. Most visitors combine Polonnaruwa with Sigiriya and Dambulla as part of a Cultural Triangle tour for the best historical experience.
-                                            </p>
-                                        </div>
+                                
                                     </div>
                                 </div>
                             </CardContent>
@@ -261,31 +257,12 @@ export default function PolonnaruwaGuide() {
                                         <strong>💡 Pro Tip:</strong> Start early morning visits to avoid crowds and heat. Most visitors combine Polonnaruwa with Sigiriya and Dambulla as part of a Cultural Triangle tour for the best historical experience.
                                     </p>
                                 </div>
-                                <div className="mt-4">
-                                    <div className="grid md:grid-cols-3 gap-4">
-                                        <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
-                                            <h5 className="font-medium text-blue-800 dark:text-blue-200">Entrance Fee</h5>
-                                            <p className="text-sm text-blue-600 dark:text-blue-300">$25 USD for foreign visitors</p>
-                                            <p className="text-xs text-muted-foreground">Includes site access and museum</p>
-                                        </div>
-                                        <div className="p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
-                                            <h5 className="font-medium text-green-800 dark:text-green-200">Opening Hours</h5>
-                                            <p className="text-sm text-green-600 dark:text-green-300">7:00 AM - 6:00 PM daily</p>
-                                            <p className="text-xs text-muted-foreground">Last entry at 5:30 PM</p>
-                                        </div>
-                                        <div className="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
-                                            <h5 className="font-medium text-purple-800 dark:text-purple-200">Best Time</h5>
-                                            <p className="text-sm text-purple-600 dark:text-purple-300">Early morning or late afternoon</p>
-                                            <p className="text-xs text-muted-foreground">Avoid midday heat</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </CardContent>
                         </Card>
                     </div>
                 </section>
 
-                <section className="mb-12">
+                {/* <section className="mb-12">
                     <Card className="border-gray-200 dark:border-gray-700 bg-gray-50/30 dark:bg-gray-900/30">
                         <CardHeader>
                             <CardTitle className="flex items-center gap-2 text-gray-800 dark:text-gray-200">
@@ -359,7 +336,7 @@ export default function PolonnaruwaGuide() {
                             </div>
                         </CardContent>
                     </Card>
-                </section>
+                </section> */}
                 <section className="mb-12">
                     <Card>
                         <CardHeader>
