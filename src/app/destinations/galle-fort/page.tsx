@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import InsuranceBanner from "@/components/insurance-banner";
 
 
 export const metadata: Metadata = {
@@ -123,7 +124,7 @@ export default function GalleFortTravelGuide() {
                 </div>
                 {/* Valuable Fact for Desktop */}
                 <div className="hidden lg:block mt-6 space-y-4">
-                  <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
+                  {/* <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
                     <Image
                       src="/Gregory_Lake.jpg"
                       alt="Ancient reservoir in Anuradhapura, Sri Lanka"
@@ -132,16 +133,16 @@ export default function GalleFortTravelGuide() {
                       className="rounded shadow-md object-cover"
                     />
                     <div>
-                      <p className="text-base text-blue-900 font-semibold mb-1">Irrigation Marvels of the Ancient World</p>
+                      <p className="text-base text-blue-900 font-semibold mb-1">Wonderful streets among ancient reservoirs</p>
                       <p className="text-sm text-blue-800">
-                        Anuradhapura’s ancient engineers built massive reservoirs (tanks) like Nuwara Wewa and Tissa Wewa, some over 2,000 years old and still functioning today. These marvels turned the dry zone into a lush, thriving kingdom—an engineering legacy admired worldwide.
+                       Galle fort is a historic fortress that showcases stunning Dutch colonial architecture, surrounded by the Indian Ocean waves.
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="flex gap-8">
                     <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                       <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
-                      <p className="text-sm text-yellow-800">1–2 full days to explore the sacred sites, ancient tanks, and local culture at a relaxed pace.</p>
+                      <p className="text-sm text-yellow-800">1 full day to explore the fort and its surroundings.</p>
                     </div>
                     <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
                       <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
@@ -199,13 +200,13 @@ export default function GalleFortTravelGuide() {
                       <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
                     </ul>
 
-                    <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    {/* <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
                       <li>• <strong>Duration:</strong> 2.5-3 hours</li>
                       <li>• <strong>Cost:</strong> $2-8 USD (depending on the bus type)</li>
                       <li>• <strong>Scenic journey:</strong> Through Coastline road</li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
@@ -276,7 +277,7 @@ export default function GalleFortTravelGuide() {
                     </div>
                   </div>
                 </div>
-                <div>
+                {/* <div>
                   <h4 className="font-semibold mb-2 text-blue-600">By Bus</h4>
                   <p className="text-sm text-muted-foreground mb-2">
                     Express buses from Colombo Bastian Mawatha Bus Station. Duration: 2-2.5 hours.
@@ -286,7 +287,7 @@ export default function GalleFortTravelGuide() {
                     <li>• Regular bus: LKR 100-150</li>
                     <li>• Buses run every 30 minutes</li>
                   </ul>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
 
@@ -337,6 +338,8 @@ export default function GalleFortTravelGuide() {
             </Card>
           </div>
         </section>
+
+        <InsuranceBanner />
 
         {/* Historical Background */}
         <section className="mb-12">
@@ -750,7 +753,7 @@ export default function GalleFortTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Where to Stay in Galle Fort</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle className="text-green-600">Budget Options</CardTitle>
                 <CardDescription>$20-50 per night</CardDescription>
@@ -780,7 +783,7 @@ export default function GalleFortTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="relative overflow-hidden group">
               <CardHeader>
                 <CardTitle className="text-purple-600">Luxury Properties</CardTitle>
                 <CardDescription>$150+ per night</CardDescription>
@@ -792,6 +795,96 @@ export default function GalleFortTravelGuide() {
                   <li>• Ocean or fort views</li>
                   <li>• Fine dining restaurants</li>
                 </ul>
+                <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <h4 className="font-semibold text-purple-600 dark:text-purple-400 flex items-center gap-2">
+                    <Star className="w-4 h-4" />
+                    Featured: The Charleston
+                  </h4>
+                  <div className="relative h-48 mt-2 rounded-md overflow-hidden">
+                    <Image
+                      src="/charleston-galle-fort.jpg"
+                      alt="The Charleston Galle Fort Hotel's colonial elegance"
+                      fill
+                      className="object-cover transition-transform group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="mt-3">
+                    <p className="text-sm text-muted-foreground mb-2">
+                      Luxury colonial mansion with authentic period features and modern comforts.
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm font-medium text-purple-600 dark:text-purple-400">From $250/night</span>
+                      <a 
+                        href="https://www.wearecreativeleap.com/en/destinations/the-charleston"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-medium"
+                      >
+                        View Details →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card> */}
+
+            <Card className="col-span-3 mt-6 border-purple-200 bg-purple-50/30 dark:bg-purple-900/20">
+              <CardHeader>
+                <CardTitle className="text-purple-600 dark:text-purple-300 flex items-center gap-2">
+                  <Star className="w-5 h-5" />
+                  Featured: The Charleston Galle Fort Hotel
+                </CardTitle>
+                <CardDescription>Historic Luxury in the Heart of Galle Fort</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-start">
+                  <div>
+                    <Image
+                      src="/charleston-galle-fort.jpg"
+                      alt="The Charleston Galle Fort Hotel's elegant colonial architecture and luxurious interior"
+                      width={500}
+                      height={300}
+                      className="rounded-lg shadow-lg mb-4 object-cover"
+                    />
+                    <p className="text-sm text-muted-foreground italic text-center">
+                      Experience timeless elegance in a beautifully restored Dutch colonial mansion
+                    </p>
+                  </div>
+                  <div className="space-y-4">
+                    <p className="text-muted-foreground">
+                      The Charleston Galle Fort Hotel represents the pinnacle of luxury accommodation within the historic walls of Galle Fort. This meticulously restored Dutch colonial mansion combines centuries of history with modern luxury.
+                    </p>
+                    <div className="space-y-2">
+                      <h4 className="font-semibold text-purple-700 dark:text-purple-300">Signature Features:</h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                          Authentic colonial architecture with modern amenities
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                          Luxurious suites with period furniture and ocean views
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                          Fine dining restaurant serving international cuisine
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                          Courtyard pool and garden for relaxation
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm">
+                      <h4 className="font-semibold text-purple-700 dark:text-purple-300 mb-2">Contact & Booking</h4>
+                      <div className="space-y-1 text-sm text-muted-foreground">
+                        <p>🌐 <a href="https://www.wearecreativeleap.com/en/destinations/the-charleston" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Official Website</a></p>
+                        <p>📍 28 Church Street, Fort, Galle, Sri Lanka</p>
+                        <p>💰 Starting from $250 per night</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>

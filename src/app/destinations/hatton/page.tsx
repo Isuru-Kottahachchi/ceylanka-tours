@@ -168,7 +168,7 @@ export default function HattonTravelGuide() {
                   <h4 className="font-semibold mb-2 text-cyan-700 dark:text-cyan-300">💡 Travel Tips</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Book train tickets in advance for best seats</li>
-                    <li>• Roads are winding—motion sickness tablets may help</li>
+                    <li>• Roads are winding motion sickness tablets may help</li>
                     <li>• Early morning trains offer the best scenery</li>
                   </ul>
                 </div>

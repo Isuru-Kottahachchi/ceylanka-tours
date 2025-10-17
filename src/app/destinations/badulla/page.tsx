@@ -121,6 +121,12 @@ export default function BadullaGuide() {
                       <strong>Famous for:</strong> Ceylon Tea & Cool Climate
                     </span>
                   </div>
+                   <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4 text-orange-500" />
+                    <span>
+                      <strong>Best Time:</strong> December to April
+                    </span>
+                  </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-orange-500" />
                     <span>
@@ -171,20 +177,20 @@ export default function BadullaGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo → Kandy → Nanu Oya</li>
+                      <li>• <strong>Route:</strong> Colombo → Badulla</li>
                       <li>• <strong>Duration:</strong> 6-7 hours total</li>
                       <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
-                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Nanu Oya station</span></li>
-                      <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li>
+                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Badulla station</span></li>
+
                     </ul>
 
-                    <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    {/* <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo → Kandy → Nuwara Eliya</li>
                       <li>• <strong>Duration:</strong> 5-6 hours</li>
                       <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
                       <li>• <strong>Frequency:</strong> Regular departures from Kandy</li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
@@ -204,61 +210,6 @@ export default function BadullaGuide() {
           </section>
         </div>
 
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Essential Badulla Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-blue-500" />
-                    <span>
-                      <strong>Province:</strong> Uva Province Capital
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mountain className="w-4 h-4 text-green-500" />
-                    <span>
-                      <strong>Elevation:</strong> 680 meters (2,230 feet)
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="w-4 h-4 text-purple-500" />
-                    <span>
-                      <strong>Population:</strong> ~42,000 residents
-                    </span>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Train className="w-4 h-4 text-red-500" />
-                    <span>
-                      <strong>Railway:</strong> Hill Country Line Terminus
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-orange-500" />
-                    <span>
-                      <strong>Best Time:</strong> December to April
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <TreePine className="w-4 h-4 text-green-600" />
-                    <span>
-                      <strong>Climate:</strong> Cool & Pleasant Year-Round
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
 
         {/* Top Attractions */}
         <section className="mb-12">
@@ -777,7 +728,7 @@ export default function BadullaGuide() {
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
           <div className="grid md:grid-cols-3 gap-6">
 
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Ella</CardTitle>
                 <CardDescription>Famous hill station - 1 hour away</CardDescription>
@@ -801,7 +752,7 @@ export default function BadullaGuide() {
               </CardContent>
             </Card>
 
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Bandarawela</CardTitle>
                 <CardDescription>Colonial hill station - 45 minutes</CardDescription>
@@ -825,7 +776,7 @@ export default function BadullaGuide() {
               </CardContent>
             </Card>
 
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Haputale</CardTitle>
                 <CardDescription>Lipton&apos;s Seat viewpoint - 1.5 hours</CardDescription>

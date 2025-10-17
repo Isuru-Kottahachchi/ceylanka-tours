@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import InsuranceBanner from '@/components/insurance-banner'
 
 export const metadata: Metadata = {
   title: "Sigiriya Rock Fortress: Complete Travel Guide 2025 | Ancient Wonder of Sri Lanka",
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     description: "Your ultimate guide to visiting Sigiriya Rock Fortress in Sri Lanka",
   },
 }
+
 
 export default function SigiriyaTravelGuide() {
   return (
@@ -95,6 +97,10 @@ export default function SigiriyaTravelGuide() {
               unique archaeological sites, Sigiriya has something special waiting for you.
             </p>
           </div>
+
+          {/* UK Travel Insurance Ad Banner */}
+          <InsuranceBanner />
+
           <div className="mt-6 p-4 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg">
             <div className="flex items-start gap-2">
               <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />

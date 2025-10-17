@@ -3,6 +3,8 @@ import Image from "next/image"
 import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Leaf, Home, Palette } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Lunuganga Geoffrey Bawa's Garden: Complete Visitor Guide 2025 | Architectural Paradise in Sri Lanka",
@@ -558,7 +560,7 @@ export default function LunugangaTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Explore More in the Bentota Area</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Brief Garden</CardTitle>
                 <CardDescription>Bevis Bawa&apos;s landscape masterpiece</CardDescription>
@@ -576,12 +578,17 @@ export default function LunugangaTravelGuide() {
                   exotic plants, and whimsical design elements in a more intimate setting.
                 </p>
                 <p className="text-xs text-muted-foreground"><strong>Distance:</strong> 10km from Lunuganga</p>
+                 <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/brief-garden-by-bevis-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
-                <CardTitle className="text-lg">Bentota Beach</CardTitle>
+                <CardTitle className="text-lg">Bentota</CardTitle>
                 <CardDescription>Golden sand and water sports</CardDescription>
               </CardHeader>
               <CardContent>
@@ -597,10 +604,15 @@ export default function LunugangaTravelGuide() {
                   Offers water sports, seafood restaurants, and sunset viewing.
                 </p>
                 <p className="text-xs text-muted-foreground"><strong>Distance:</strong> 5km from Lunuganga</p>
+                 <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/bentota" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Kosgoda Turtle Hatchery</CardTitle>
                 <CardDescription>Sea turtle conservation center</CardDescription>
@@ -618,6 +630,11 @@ export default function LunugangaTravelGuide() {
                   release into the ocean. Great family-friendly activity.
                 </p>
                 <p className="text-xs text-muted-foreground"><strong>Distance:</strong> 15km from Lunuganga</p>
+                 <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                    </Link>
+                  </div>
               </CardContent>
             </Card>
           </div>
