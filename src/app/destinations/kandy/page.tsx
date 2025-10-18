@@ -127,7 +127,7 @@ export default function KandyTravelGuide() {
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
-  <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-neutral-100 dark:text-neutral-100">Kandy</h1>
           <p className="text-xl md:text-2xl mb-6 font-light text-neutral-100 dark:text-neutral-200">Sri Lanka&apos;s Sacred Cultural Capital</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -147,30 +147,30 @@ export default function KandyTravelGuide() {
         </div>
       </section>
 
-  <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Kandy: The Heart of Sri Lankan Culture</h2>
           <div className="prose prose-lg max-w-none text-neutral-800 dark:text-neutral-200 leading-relaxed">
             <p className="text-lg mb-4">
-              Nestled in the misty hills of central Sri Lanka, Kandy is a magical city that will steal your heart the moment you step foot here. 
-              This beautiful city sits 500 meters above sea level, surrounded by green mountains and filled with cool, fresh air. 
-              As the last royal capital of ancient Sri Lanka and home to the sacred Temple of the Tooth Relic, Kandy is where ancient 
+              Nestled in the misty hills of central Sri Lanka, Kandy is a magical city that will steal your heart the moment you step foot here.
+              This beautiful city sits 500 meters above sea level, surrounded by green mountains and filled with cool, fresh air.
+              As the last royal capital of ancient Sri Lanka and home to the sacred Temple of the Tooth Relic, Kandy is where ancient
               spirituality meets stunning natural beauty.
             </p>
             <p className="text-lg mb-4">
-              Kandy is special because it&apos;s a UNESCO World Heritage site that has kept its old-world charm alive. The city was the final 
-              kingdom to resist British rule, making it the keeper of pure Sri Lankan traditions. You&apos;ll see this everywhere - in the 
+              Kandy is special because it&apos;s a UNESCO World Heritage site that has kept its old-world charm alive. The city was the final
+              kingdom to resist British rule, making it the keeper of pure Sri Lankan traditions. You&apos;ll see this everywhere - in the
               traditional dances, the way people dress for temple visits, the old wooden houses, and the peaceful way of life.
             </p>
             <p className="text-lg mb-4">
-              What makes Kandy truly unique is how it blends the old with the new. Ancient temples sit next to modern shops, traditional 
-              craftsmen work alongside young entrepreneurs, and age-old festivals happen in a city that&apos;s very much alive today. 
+              What makes Kandy truly unique is how it blends the old with the new. Ancient temples sit next to modern shops, traditional
+              craftsmen work alongside young entrepreneurs, and age-old festivals happen in a city that&apos;s very much alive today.
               The weather here is perfect - not too hot, not too cold - making it comfortable to explore all year round.
             </p>
             <p className="text-lg">
-              Whether you want to find inner peace at Buddhist temples, learn about Sri Lankan history, enjoy nature walks around the 
-              beautiful lake, or shop for authentic handicrafts, Kandy has something for everyone. This city doesn&apos;t just show you 
+              Whether you want to find inner peace at Buddhist temples, learn about Sri Lankan history, enjoy nature walks around the
+              beautiful lake, or shop for authentic handicrafts, Kandy has something for everyone. This city doesn&apos;t just show you
               Sri Lankan culture - it lets you live and breathe it.
             </p>
           </div>
@@ -243,8 +243,8 @@ export default function KandyTravelGuide() {
               <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                 <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-2">Why Kandy is Special:</h4>
                 <p className="text-sm text-blue-900 dark:text-blue-200">
-                  Kandy was the last independent kingdom of Sri Lanka, never fully conquered by Portuguese or Dutch colonizers. 
-                  This is why you&apos;ll find the purest forms of Sri Lankan culture, traditions, and architecture here. The city 
+                  Kandy was the last independent kingdom of Sri Lanka, never fully conquered by Portuguese or Dutch colonizers.
+                  This is why you&apos;ll find the purest forms of Sri Lankan culture, traditions, and architecture here. The city
                   is also the birthplace of the famous Kandy dance and is home to some of the most skilled traditional craftsmen in the country.
                 </p>
               </div>
@@ -372,7 +372,7 @@ export default function KandyTravelGuide() {
                 images={TempleOfTheToothImages}
                 alt="Temple of the Tooth Relic showing various views of the sacred site"
               />
-         
+
               <p className="text-sm text-muted-foreground mt-2 italic">
                 The sacred Temple of the Tooth Relic - Buddhisms most important shrine
               </p>
@@ -434,13 +434,13 @@ export default function KandyTravelGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This beautiful man-made lake was created in 1807 by King Sri Wickrama Rajasinghe, the last king of Kandy. 
-                      The lake covers about 18 hectares and is the centerpiece of the city. What makes it extra special is that it&apos;s 
+                      This beautiful man-made lake was created in 1807 by King Sri Wickrama Rajasinghe, the last king of Kandy.
+                      The lake covers about 18 hectares and is the centerpiece of the city. What makes it extra special is that it&apos;s
                       right in front of the Temple of the Tooth, making it a sacred place for many visitors.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The lake has an interesting story - when the king first wanted to build it, his ministers were against it because 
-                      they thought it was too expensive. But the king built it anyway, and today everyone agrees it was one of the best 
+                      The lake has an interesting story - when the king first wanted to build it, his ministers were against it because
+                      they thought it was too expensive. But the king built it anyway, and today everyone agrees it was one of the best
                       decisions ever made! The lake helps keep the city cool and provides a peaceful escape from busy streets.
                     </p>
                     <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mb-4">
@@ -469,7 +469,7 @@ export default function KandyTravelGuide() {
                       </ul>
                     </div>
                     <div className="text-sm text-muted-foreground italic">
-                      💡 <strong>Local Tip:</strong> The best photos are taken from the pathway on the Temple of the Tooth side, 
+                      💡 <strong>Local Tip:</strong> The best photos are taken from the pathway on the Temple of the Tooth side,
                       especially during sunset when the mountains reflect in the water.
                     </div>
                   </div>
@@ -487,14 +487,14 @@ export default function KandyTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Just 6km from Kandy city (15 minutes by tuk-tuk), these world-famous botanical gardens are like stepping 
-                      into a green paradise. Originally created as a pleasure garden for Kandyan royalty in 1371, today it&apos;s 
-                      home to over 4,000 different types of plants from all over the world. It&apos;s so beautiful that even Queen 
+                      Just 6km from Kandy city (15 minutes by tuk-tuk), these world-famous botanical gardens are like stepping
+                      into a green paradise. Originally created as a pleasure garden for Kandyan royalty in 1371, today it&apos;s
+                      home to over 4,000 different types of plants from all over the world. It&apos;s so beautiful that even Queen
                       Elizabeth II planted a tree here!
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The gardens are huge - 147 acres - but don&apos;t worry, there are clear paths and helpful signs everywhere. 
-                      You can easily spend a whole day here, and there are plenty of shady spots to rest. The best part? 
+                      The gardens are huge - 147 acres - but don&apos;t worry, there are clear paths and helpful signs everywhere.
+                      You can easily spend a whole day here, and there are plenty of shady spots to rest. The best part?
                       It&apos;s not just pretty to look at - you&apos;ll learn so much about plants, trees, and flowers.
                     </p>
                     <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg mb-4">
@@ -558,13 +558,13 @@ export default function KandyTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      High up on Bahirawakanda hill stands a magnificent 88-foot tall white Buddha statue that watches over 
-                      the entire city of Kandy. Built in 1993, this peaceful temple complex is one of the best places to see 
+                      High up on Bahirawakanda hill stands a magnificent 88-foot tall white Buddha statue that watches over
+                      the entire city of Kandy. Built in 1993, this peaceful temple complex is one of the best places to see
                       Kandy from above. The climb up the hill might make you a bit tired, but the views are absolutely worth it!
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      This place is special because it&apos;s very quiet and peaceful, unlike the busier temples in the city center. 
-                      Many locals come here early in the morning or evening to meditate and pray. The white statue looks especially 
+                      This place is special because it&apos;s very quiet and peaceful, unlike the busier temples in the city center.
+                      Many locals come here early in the morning or evening to meditate and pray. The white statue looks especially
                       beautiful during sunset when it glows against the colorful sky.
                     </p>
                     <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg mb-4">
@@ -593,7 +593,7 @@ export default function KandyTravelGuide() {
                       </ul>
                     </div>
                     <div className="text-sm text-muted-foreground italic">
-                      🚗 <strong>Getting There:</strong> 15-minute tuk-tuk ride from city center. The road gets steep, 
+                      🚗 <strong>Getting There:</strong> 15-minute tuk-tuk ride from city center. The road gets steep,
                       so make sure your driver is experienced with hill driving!
                     </div>
                   </div>
@@ -629,13 +629,13 @@ export default function KandyTravelGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Don&apos;t leave Kandy without watching these incredible cultural shows! These aren&apos;t just performances - 
-                      they&apos;re living pieces of Sri Lankan history that have been passed down from parent to child for over 
+                      Don&apos;t leave Kandy without watching these incredible cultural shows! These aren&apos;t just performances -
+                      they&apos;re living pieces of Sri Lankan history that have been passed down from parent to child for over
                       500 years. You&apos;ll see dancers in beautiful, colorful costumes performing moves that tell ancient stories.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The shows usually last about 1 hour and include different types of traditional dances, drumming that will 
-                      make your heart beat faster, and the famous fire walking ceremony where performers walk on burning coals! 
+                      The shows usually last about 1 hour and include different types of traditional dances, drumming that will
+                      make your heart beat faster, and the famous fire walking ceremony where performers walk on burning coals!
                       Don&apos;t worry - it&apos;s completely safe to watch, and the performers are highly skilled.
                     </p>
                     <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg mb-4">
@@ -683,70 +683,70 @@ export default function KandyTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">More Amazing Places to Visit Near Kandy</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Kandy is surrounded by incredible places that are perfect for day trips. Each of these spots offers something 
+            Kandy is surrounded by incredible places that are perfect for day trips. Each of these spots offers something
             unique - from adventure and nature to spirituality and breathtaking views. Most are within 1-2 hours from the city center.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
 
-            <Link href="/destinations/ambuluwawa-tower" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer h-full">
-                <CardHeader>
-                  <CardTitle className="text-lg">Ambuluwawa Tower - Amazing Views</CardTitle>
-                  <CardDescription>Multi-religious harmony site with stunning 360° views</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Ambuluwawa-tower.jpg"
-                    alt="Ambuluwawa Tower showing stunning views and unique architecture"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground mb-3">
-                    This unique place represents religious harmony with Buddhist, Hindu, Islamic, and Christian symbols all in one location. 
-                    The tower offers incredible 360-degree views of the central highlands. Perfect for a half-day trip!
-                  </p>
-                  <div className="text-xs text-muted-foreground mb-3">
-                    📍 Distance: 45 minutes from Kandy | 🎫 Entry: 200 LKR | ⏰ Best time: Morning or late afternoon
-                  </div>
-                  <div className="mt-4">
-                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
-                      Read More →
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
 
-            <Link href="/destinations/hanthana-mountain-range" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer h-full">
-                <CardHeader>
-                  <CardTitle className="text-lg">Hanthana Mountain Range - Hiking Paradise</CardTitle>
-                  <CardDescription>Seven peaks with hiking trails and tea plantations</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Hanthana-mountain-range.jpeg"
-                    alt="View of Sigiriya Rock from Pidurangala Rock"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Seven beautiful mountain peaks perfect for hiking and nature lovers. You&apos;ll walk through tea plantations, 
-                    see amazing views, and breathe the freshest mountain air. Different trails for beginners and experienced hikers.
-                  </p>
-                  <div className="text-xs text-muted-foreground mb-3">
-                    📍 Distance: 30 minutes from Kandy | 🥾 Difficulty: Easy to Moderate | ⏰ Duration: 2-6 hours
-                  </div>
-                  <div className="mt-4">
-                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
-                      Read More →
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Ambuluwawa Tower - Amazing Views</CardTitle>
+                <CardDescription>Multi-religious harmony site with stunning 360° views</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Ambuluwawa-tower.jpg"
+                  alt="Ambuluwawa Tower showing stunning views and unique architecture"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  This unique place represents religious harmony with Buddhist, Hindu, Islamic, and Christian symbols all in one location.
+                  The tower offers incredible 360-degree views of the central highlands. Perfect for a half-day trip!
+                </p>
+                <div className="text-xs text-muted-foreground mb-3">
+                  📍 Distance: 45 minutes from Kandy | 🎫 Entry: 200 LKR | ⏰ Best time: Morning or late afternoon
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Hanthana Mountain Range - Hiking Paradise</CardTitle>
+                <CardDescription>Seven peaks with hiking trails and tea plantations</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Hanthana-mountain-range.jpeg"
+                  alt="View of Sigiriya Rock from Pidurangala Rock"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  Seven beautiful mountain peaks perfect for hiking and nature lovers. You&apos;ll walk through tea plantations,
+                  see amazing views, and breathe the freshest mountain air. Different trails for beginners and experienced hikers.
+                </p>
+                <div className="text-xs text-muted-foreground mb-3">
+                  📍 Distance: 30 minutes from Kandy | 🥾 Difficulty: Easy to Moderate | ⏰ Duration: 2-6 hours
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
 
             {/* <Link href="/destinations/hanthana-birds-park" className="block hover:shadow-md transition-shadow duration-200">
               <Card className="cursor-pointer h-full">
@@ -776,185 +776,185 @@ export default function KandyTravelGuide() {
               </Card>
             </Link> */}
 
-            <Link href="/destinations/nelligala" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer h-full">
-                <CardHeader>
-                  <CardTitle className="text-lg">Nelligala Temple - Peace & Views</CardTitle>
-                  <CardDescription>Ancient temple with meditation caves and scenic beauty</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Nelligala.png"
-                    alt="Nelligala Temple with ancient caves and mountain views"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground mb-3">
-                    A peaceful ancient temple built into natural rock caves. Perfect for meditation and quiet reflection. 
-                    The views of the surrounding valleys are breathtaking, and it&apos;s much less crowded than city temples.
-                  </p>
-                  <div className="text-xs text-muted-foreground mb-3">
-                    📍 Distance: 40 minutes from Kandy | 🧘 Activity: Meditation & sightseeing | 🎫 Entry: Free
-                  </div>
-                  <div className="mt-4">
-                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
-                      Read More →
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
 
-            <Link href="/destinations/knuckles-mountain-range" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer h-full">
-                <CardHeader>
-                  <CardTitle className="text-lg">Knuckles Mountain Range - Adventure</CardTitle>
-                  <CardDescription>UNESCO World Heritage hiking and camping destination</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/placeholder.svg?height=200&width=300"
-                    alt="Knuckles Mountain Range with hiking trails and misty peaks"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Named because the peaks look like knuckles of a clenched fist. This UNESCO site offers serious hiking, 
-                    camping, and some of the best mountain views in Sri Lanka. Great for adventure seekers!
-                  </p>
-                  <div className="text-xs text-muted-foreground mb-3">
-                    📍 Distance: 1.5 hours from Kandy | 🏕️ Activity: Hiking & camping | 🥾 Difficulty: Challenging
-                  </div>
-                  <div className="mt-4">
-                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
-                      Read More →
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Nelligala Temple - Peace & Views</CardTitle>
+                <CardDescription>Ancient temple with meditation caves and scenic beauty</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Nelligala.png"
+                  alt="Nelligala Temple with ancient caves and mountain views"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  A peaceful ancient temple built into natural rock caves. Perfect for meditation and quiet reflection.
+                  The views of the surrounding valleys are breathtaking, and it&apos;s much less crowded than city temples.
+                </p>
+                <div className="text-xs text-muted-foreground mb-3">
+                  📍 Distance: 40 minutes from Kandy | 🧘 Activity: Meditation & sightseeing | 🎫 Entry: Free
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
-            <Link href="/destinations/gadaladeniya-temple" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer h-full">
-                <CardHeader>
-                  <CardTitle className="text-lg">Gadaladeniya Temple - Ancient Art</CardTitle>
-                  <CardDescription>14th-century temple with stunning architecture</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/placeholder.svg?height=200&width=300"
-                    alt="Gadaladeniya Temple showing ancient Sinhalese architecture"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Built in 1344, this temple shows a unique mix of Sinhalese and South Indian architecture. 
-                    The stone carvings and old paintings are incredible. Less touristy but equally beautiful.
-                  </p>
-                  <div className="text-xs text-muted-foreground mb-3">
-                    📍 Distance: 45 minutes from Kandy | 🏛️ Built: 1344 CE | 🎫 Entry: Small donation
-                  </div>
-                  <div className="mt-4">
-                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
-                      Read More →
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
 
-            <Link href="/destinations/lankatilaka-temple" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer h-full">
-                <CardHeader>
-                  <CardTitle className="text-lg">Lankatilaka Temple - Sacred Heights</CardTitle>
-                  <CardDescription>Ancient temple on a hilltop with panoramic views</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/placeholder.svg?height=200&width=300"
-                    alt="Lankatilaka Temple perched on hilltop with valley views"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Another 14th-century masterpiece built on a rock outcrop. The climb up is worth it for the views and 
-                    the sense of peace you&apos;ll feel. The architecture is a perfect example of ancient Sinhalese design.
-                  </p>
-                  <div className="text-xs text-muted-foreground mb-3">
-                    📍 Distance: 50 minutes from Kandy | ⛰️ Location: Hilltop | 🚶 Climb: Moderate
-                  </div>
-                  <div className="mt-4">
-                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
-                      Read More →
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
 
-            <Link href="/destinations/embekke-devalaya" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer h-full">
-                <CardHeader>
-                  <CardTitle className="text-lg">Embekke Devalaya - Wood Carving Art</CardTitle>
-                  <CardDescription>Famous for intricate wooden pillars and carvings</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/placeholder.svg?height=200&width=300"
-                    alt="Embekke Devalaya showing detailed wooden pillar carvings"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Famous for having the most beautiful wooden carvings in Sri Lanka. Each pillar is unique with amazing 
-                    details of dancers, musicians, and animals. Art lovers will be amazed by the craftsmanship.
-                  </p>
-                  <div className="text-xs text-muted-foreground mb-3">
-                    📍 Distance: 40 minutes from Kandy | 🎨 Famous for: Wood carvings | 📸 Photography: Allowed
-                  </div>
-                  <div className="mt-4">
-                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
-                      Read More →
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Knuckles Mountain Range - Adventure</CardTitle>
+                <CardDescription>UNESCO World Heritage hiking and camping destination</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Knuckles Mountain Range with hiking trails and misty peaks"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  Named because the peaks look like knuckles of a clenched fist. This UNESCO site offers serious hiking,
+                  camping, and some of the best mountain views in Sri Lanka. Great for adventure seekers!
+                </p>
+                <div className="text-xs text-muted-foreground mb-3">
+                  📍 Distance: 1.5 hours from Kandy | 🏕️ Activity: Hiking & camping | 🥾 Difficulty: Challenging
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
-            <Link href="/destinations/pinnawala-elephant-orphanage" className="block hover:shadow-md transition-shadow duration-200">
-              <Card className="cursor-pointer h-full">
-                <CardHeader>
-                  <CardTitle className="text-lg">Pinnawala Elephant Orphanage</CardTitle>
-                  <CardDescription>See elephants being cared for and bathing in the river</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Pinnawala.jpeg"
-                    alt="Elephants at Pinnawala Elephant Orphanage bathing and being cared for"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3"
-                  />
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Watch baby elephants being bottle-fed and see the whole herd bathing in the river. Started as a home 
-                    for orphaned elephants, now it&apos;s one of the most popular attractions near Kandy.
-                  </p>
-                  <div className="text-xs text-muted-foreground mb-3">
-                    📍 Distance: 1 hour from Kandy | 🐘 Elephants: 80+ | ⏰ Feeding: 9AM, 1PM, 5PM
-                  </div>
-                  <div className="mt-4">
-                    <span className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-md hover:shadow-lg">
-                      Read More →
-                    </span>
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Gadaladeniya Temple - Ancient Art</CardTitle>
+                <CardDescription>14th-century temple with stunning architecture</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Gadaladeniya Temple showing ancient Sinhalese architecture"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  Built in 1344, this temple shows a unique mix of Sinhalese and South Indian architecture.
+                  The stone carvings and old paintings are incredible. Less touristy but equally beautiful.
+                </p>
+                <div className="text-xs text-muted-foreground mb-3">
+                  📍 Distance: 45 minutes from Kandy | 🏛️ Built: 1344 CE | 🎫 Entry: Small donation
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Lankatilaka Temple - Sacred Heights</CardTitle>
+                <CardDescription>Ancient temple on a hilltop with panoramic views</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Lankatilaka Temple perched on hilltop with valley views"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  Another 14th-century masterpiece built on a rock outcrop. The climb up is worth it for the views and
+                  the sense of peace you&apos;ll feel. The architecture is a perfect example of ancient Sinhalese design.
+                </p>
+                <div className="text-xs text-muted-foreground mb-3">
+                  📍 Distance: 50 minutes from Kandy | ⛰️ Location: Hilltop | 🚶 Climb: Moderate
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Embekke Devalaya - Wood Carving Art</CardTitle>
+                <CardDescription>Famous for intricate wooden pillars and carvings</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Embekke Devalaya showing detailed wooden pillar carvings"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  Famous for having the most beautiful wooden carvings in Sri Lanka. Each pillar is unique with amazing
+                  details of dancers, musicians, and animals. Art lovers will be amazed by the craftsmanship.
+                </p>
+                <div className="text-xs text-muted-foreground mb-3">
+                  📍 Distance: 40 minutes from Kandy | 🎨 Famous for: Wood carvings | 📸 Photography: Allowed
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Pinnawala Elephant Orphanage</CardTitle>
+                <CardDescription>See elephants being cared for and bathing in the river</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Pinnawala.jpeg"
+                  alt="Elephants at Pinnawala Elephant Orphanage bathing and being cared for"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  Watch baby elephants being bottle-fed and see the whole herd bathing in the river. Started as a home
+                  for orphaned elephants, now it&apos;s one of the most popular attractions near Kandy.
+                </p>
+                <div className="text-xs text-muted-foreground mb-3">
+                  📍 Distance: 1 hour from Kandy | 🐘 Elephants: 80+ | ⏰ Feeding: 9AM, 1PM, 5PM
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
           </div>
 
           {/* Day Trip Suggestions */}
@@ -964,14 +964,14 @@ export default function KandyTravelGuide() {
               <div>
                 <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">🌿 Nature & Adventure Day</h4>
                 <p className="text-sm text-muted-foreground mb-2">
-                  Start early at Hanthana Mountain Range for hiking (3 hours), then visit Hanthana Birds Park (1 hour), 
+                  Start early at Hanthana Mountain Range for hiking (3 hours), then visit Hanthana Birds Park (1 hour),
                   and end at Ambuluwawa Tower for sunset views. Perfect for active travelers!
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">🏛️ Temple & Culture Day</h4>
                 <p className="text-sm text-muted-foreground mb-2">
-                  Visit Gadaladeniya Temple in the morning, continue to Lankatilaka Temple, then Embekke Devalaya for the 
+                  Visit Gadaladeniya Temple in the morning, continue to Lankatilaka Temple, then Embekke Devalaya for the
                   wood carvings. End with a cultural show in Kandy. Perfect for history lovers!
                 </p>
               </div>

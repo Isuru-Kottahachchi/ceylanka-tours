@@ -68,18 +68,18 @@ export default function AmbuluwawaGuide() {
               visitors feel calm and happy. It&apos;s a perfect place for people who love nature, photography, and learning
               about different cultures and religions.
             </p>
-             <div className="mt-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-lg">
-            <div className="flex items-start gap-2">
-              <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
-              <div>
-                <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
-                <p className="text-sm text-amber-700 mb-2">
-                  <strong>Always be aware about the crowd:</strong> If you are fear of heights, be cautious when visiting the tower as it can get crowded and may cause discomfort and If you a tall person (above 6 feet), the narrow spiral stairs tower may be challenging to navigate and handrail also a bit low.
-                </p>
-             
+            <div className="mt-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-lg">
+              <div className="flex items-start gap-2">
+                <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
+                  <p className="text-sm text-amber-700 mb-2">
+                    <strong>Always be aware about the crowd:</strong> If you are fear of heights, be cautious when visiting the tower as it can get crowded and may cause discomfort and If you a tall person (above 6 feet), the narrow spiral stairs tower may be challenging to navigate and handrail also a bit low.
+                  </p>
+
+                </div>
               </div>
             </div>
-          </div>
           </div>
         </section>
 

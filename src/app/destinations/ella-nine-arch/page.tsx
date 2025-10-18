@@ -1,10 +1,11 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Users, Camera, TreePine, Train } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Users, Camera, TreePine, Train, AlertTriangle } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ImageCarousel } from "@/components/ui/image-carousel";
+import InsuranceBanner from "@/components/insurance-banner"
 
 
 const navigationLinks = [
@@ -103,7 +104,7 @@ export default function NineArchBridgeGuide() {
             </p>
           </div>
         </section>
-
+       
         {/* Enhanced Quick Facts */}
         <section id="quick-facts" className="mb-16 scroll-mt-40">
           <Card className="border-2 border-green-200/50 bg-gradient-to-br from-green-50/10 to-emerald-50/10 dark:from-green-950/50 dark:to-emerald-950/50">
@@ -200,7 +201,22 @@ export default function NineArchBridgeGuide() {
             </CardContent>
           </Card>
         </section>
+        <InsuranceBanner />
 
+          <div className="mt-6 mb-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-lg">
+              <div className="flex items-start gap-2">
+                <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
+                  <p className="text-sm text-amber-700 mb-2">
+                    <strong>Don&apos;t make unnessary noices and beware of hornets:</strong> There are often hornets' nests
+                    around the bridge area. Avoid making loud noises or sudden movements that could disturb them. If you
+                    notice hornets, calmly and slowly move away from the area to prevent provoking them.
+                  </p>
+
+                </div>
+              </div>
+            </div>
         {/* Main Experiences */}
         <section id="train-spotting" className="mb-16 scroll-mt-20">
           <h2 className="text-4xl font-bold mb-10">The Complete Nine Arch Bridge Experience</h2>
@@ -449,7 +465,7 @@ export default function NineArchBridgeGuide() {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/Nine-Arch-Bridge12.jpg"
                     alt="Close-up view of the stone arches and engineering details of Nine Arch Bridge"
                     width={600}
                     height={400}
@@ -520,6 +536,132 @@ export default function NineArchBridgeGuide() {
               </CardContent>
             </Card>
           </div>
+        </section>
+
+        {/* Railway Engineering Marvels */}
+        <section id="railway-engineering" className="mb-16">
+          <Card className="overflow-hidden border-2 border-amber-200/50 bg-gradient-to-br from-amber-50/10 to-orange-50/10 dark:from-amber-950/50 dark:to-orange-950/50">
+            <CardHeader className="space-y-4">
+              <CardTitle className="text-2xl text-foreground">
+                Beyond Nine Arch: Railway Engineering Marvels
+              </CardTitle>
+              <CardDescription className="text-lg">
+                Discover the ingenious railway engineering of Sri Lanka&apos;s hill country
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-8">
+              {/* Demodara Loop */}
+              <div className="grid lg:grid-cols-2 gap-8 items-start">
+                <div>
+                  <h3 className="text-xl font-semibold mb-4 text-foreground">The Famous Demodara Loop</h3>
+                  <div className="prose prose-lg text-muted-foreground">
+                    <p>
+                      Just a few kilometers from the Nine Arch Bridge lies another engineering marvel - the Demodara Loop. This unique spiral railway, also known as the Demodara Spiral, is one of only three spiral railways in the world where a train loops under itself to gain elevation.
+                    </p>
+                    <ul className="mt-4 space-y-2">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                        <span><strong>Height Gain:</strong> Climbs 30 meters through a complete 360-degree spiral</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                        <span><strong>Loop Length:</strong> 441 meters</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                        <span><strong>Built:</strong> 1914</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <Image
+                  src="/Ella-Train-Loop.jpg"
+                  alt="Demodara Loop Railway Spiral"
+                  width={600}
+                  height={400}
+                  className="rounded-xl shadow-lg"
+                />
+              </div>
+
+              {/* Other Interesting Facts */}
+              <div className="mt-8">
+                <h3 className="text-xl font-semibold mb-4 text-amber-700 dark:text-amber-400">Fascinating Railway Facts</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="bg-white/50 dark:bg-black/20">
+                    <CardHeader>
+                      <CardTitle className="text-lg">Tea Country Railway</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>The railway from Kandy to Badulla climbs from 500m to 1,800m above sea level</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Features 46 tunnels and over 250 bridges</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/50 dark:bg-black/20">
+                    <CardHeader>
+                      <CardTitle className="text-lg">Engineering Feats</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>The steepest gradient on the line is 1 in 44</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Construction took over 8 years to complete</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/50 dark:bg-black/20">
+                    <CardHeader>
+                      <CardTitle className="text-lg">Local Innovation</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Local craftsmen developed unique stone-cutting techniques</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Traditional methods were combined with British engineering</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/50 dark:bg-black/20">
+                    <CardHeader>
+                      <CardTitle className="text-lg">Historical Significance</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Opened in 1921 to transport tea and supplies</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
+                          <span>Now considered one of the most scenic railway journeys in the world</span>
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </section>
 
         {/* Practical Visiting Information */}
@@ -680,131 +822,7 @@ export default function NineArchBridgeGuide() {
           </div>
         </section>
 
-        {/* Railway Engineering Marvels */}
-        <section id="railway-engineering" className="mb-16">
-          <Card className="overflow-hidden border-2 border-amber-200/50 bg-gradient-to-br from-amber-50/10 to-orange-50/10 dark:from-amber-950/50 dark:to-orange-950/50">
-            <CardHeader className="space-y-4">
-              <CardTitle className="text-2xl text-foreground">
-                Beyond Nine Arch: Railway Engineering Marvels
-              </CardTitle>
-              <CardDescription className="text-lg">
-                Discover the ingenious railway engineering of Sri Lanka&apos;s hill country
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-8">
-              {/* Demodara Loop */}
-              <div className="grid lg:grid-cols-2 gap-8 items-start">
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-foreground">The Famous Demodara Loop</h3>
-                  <div className="prose prose-lg text-muted-foreground">
-                    <p>
-                      Just a few kilometers from the Nine Arch Bridge lies another engineering marvel - the Demodara Loop. This unique spiral railway, also known as the Demodara Spiral, is one of only three spiral railways in the world where a train loops under itself to gain elevation.
-                    </p>
-                    <ul className="mt-4 space-y-2">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                        <span><strong>Height Gain:</strong> Climbs 30 meters through a complete 360-degree spiral</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                        <span><strong>Loop Length:</strong> 441 meters</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                        <span><strong>Built:</strong> 1914</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <Image
-                  src="/Ella-Train-Loop.jpg"
-                  alt="Demodara Loop Railway Spiral"
-                  width={600}
-                  height={400}
-                  className="rounded-xl shadow-lg"
-                />
-              </div>
 
-              {/* Other Interesting Facts */}
-              <div className="mt-8">
-                <h3 className="text-xl font-semibold mb-4 text-amber-700 dark:text-amber-400">Fascinating Railway Facts</h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <Card className="bg-white/50 dark:bg-black/20">
-                    <CardHeader>
-                      <CardTitle className="text-lg">Tea Country Railway</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2 text-muted-foreground">
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                          <span>The railway from Kandy to Badulla climbs from 500m to 1,800m above sea level</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                          <span>Features 46 tunnels and over 250 bridges</span>
-                        </li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="bg-white/50 dark:bg-black/20">
-                    <CardHeader>
-                      <CardTitle className="text-lg">Engineering Feats</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2 text-muted-foreground">
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                          <span>The steepest gradient on the line is 1 in 44</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                          <span>Construction took over 8 years to complete</span>
-                        </li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="bg-white/50 dark:bg-black/20">
-                    <CardHeader>
-                      <CardTitle className="text-lg">Local Innovation</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2 text-muted-foreground">
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                          <span>Local craftsmen developed unique stone-cutting techniques</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                          <span>Traditional methods were combined with British engineering</span>
-                        </li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-
-                  <Card className="bg-white/50 dark:bg-black/20">
-                    <CardHeader>
-                      <CardTitle className="text-lg">Historical Significance</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2 text-muted-foreground">
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                          <span>Opened in 1921 to transport tea and supplies</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                          <span>Now considered one of the most scenic railway journeys in the world</span>
-                        </li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
 
         {/* Final Inspirational Section */}
         <section className="mb-12">
