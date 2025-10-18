@@ -1075,7 +1075,7 @@ export default function HiriketiyaTravelGuide() {
             <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Dickwella Beach Card */}
-              <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <CardHeader>
                   <CardTitle className="text-lg">Dickwella Beach</CardTitle>
                   <CardDescription>Relaxed beach with calm waters</CardDescription>
@@ -1099,25 +1099,25 @@ export default function HiriketiyaTravelGuide() {
                 </CardContent>
               </Card>
 
-              {/* Tangalle Beach Card */}
-              <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              {/* Blue Beach Card */}
+              <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-lg">Tangalle Beach</CardTitle>
+                  <CardTitle className="text-lg">Blue Beach</CardTitle>
                   <CardDescription>Scenic beach with golden sands</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/tangalle-beach.jpg"
-                    alt="Tangalle Beach"
+                    src="/Blue-beach.jpg"
+                    alt="Blue Beach"
                     width={300}
                     height={200}
                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                   />
                   <p className="text-sm text-muted-foreground">
-                    Tangalle Beach offers stunning views, golden sands, and a peaceful atmosphere for relaxation.
+                    Blue beach is a private island known for its stunning blue waters and serene environment, ideal for relaxation and snorkeling.
                   </p>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/tangalle" passHref legacyBehavior>
+                    <Link href="/destinations/blue-beach" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>
@@ -1125,7 +1125,7 @@ export default function HiriketiyaTravelGuide() {
               </Card>
 
               {/* Kudawella Blowhole Card */}
-              <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+              <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <CardHeader>
                   <CardTitle className="text-lg">Kudawella Blowhole</CardTitle>
                   <CardDescription>Natural wonder by the sea</CardDescription>

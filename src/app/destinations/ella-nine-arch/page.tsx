@@ -1,9 +1,10 @@
+"use client"
 
 import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Users, Camera, TreePine, Train } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle,  } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-
+import { ImageCarousel } from "@/components/ui/image-carousel";
 
 
 const navigationLinks = [
@@ -52,7 +53,7 @@ export default function NineArchBridgeGuide() {
       <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
           {navigationLinks.map((link) => (
-            <a 
+            <a
               key={link.href}
               href={link.href}
               className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition"
@@ -216,7 +217,7 @@ export default function NineArchBridgeGuide() {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/Nine-Arch-Bridge.jpg"
                     alt="Colorful Sri Lankan train crossing the Nine Arch Bridge with passengers waving"
                     width={600}
                     height={400}
@@ -354,12 +355,84 @@ export default function NineArchBridgeGuide() {
                       </ul>
                     </div>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=500&width=600"
-                    alt="Photographer capturing the Nine Arch Bridge from valley viewpoint during golden hour"
-                    width={600}
-                    height={500}
-                    className="rounded-xl shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Nine-Arch-Bridge7.webp",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      },
+                      {
+                        src: "/Nine-Arch4.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge surrounded by lush greenery",
+                        title: "Nine Arch Bridge",
+                      },
+                      {
+                        src: "/Nine-Arch-Bridge6.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      },
+                      {
+                        src: "/Nine-Arch-Bridge13.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      }, {
+                        src: "/Nine-Arch-Bridge8.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      }, {
+                        src: "/Nine-Arch-Bridge9.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      }, {
+                        src: "/Nine-Arch-Bridge10.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      }, {
+                        src: "/Nine-Arch-Bridge11.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      },
+                      {
+                        src: "/Nine-Arch-Bridge12.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      },
+                      {
+                        src: "/Nine-Arch-Bridge14.webp",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      },
+                      {
+                        src: "/Nine-Arch3.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge surrounded by lush greenery",
+                        title: "Nine Arch Bridge",
+                      },
+                      {
+                        src: "/Nine-Arch1.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      },
+                      {
+                        src: "/Nine-Arch2.jpg",
+                        alt: "Nine Arch Bridge in Ella",
+                        caption: "Nine Arch Bridge with a train passing",
+                        title: "Nine Arch Bridge",
+                      },
+
+                    ]}
                   />
                 </div>
               </CardContent>

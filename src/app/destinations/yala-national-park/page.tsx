@@ -645,9 +645,9 @@ export default function YalaNationalParkTravelGuide() {
                     images={[
                       {
                         src: "/Elephant-fam.jpg",
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
+                        alt: "Thunpath Rana",
+                        caption: "Thunpath Rana",
+                        title: "Thunpath Rana",
                       },
                       {
                         src: "/Thunpath-Rana.jpg",
