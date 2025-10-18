@@ -209,7 +209,7 @@ export default function NineArchBridgeGuide() {
                 <div>
                   <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
                   <p className="text-sm text-amber-700 mb-2">
-                    <strong>Don&apos;t make unnessary noices and beware of hornets:</strong> There are often hornets' nests
+                    <strong>Don&apos;t make unnessary noices and beware of hornets:</strong> There are often hornets&apos; nests
                     around the bridge area. Avoid making loud noises or sudden movements that could disturb them. If you
                     notice hornets, calmly and slowly move away from the area to prevent provoking them.
                   </p>

@@ -108,7 +108,7 @@ export default function KandyTravelGuide() {
   ]
 
   const CulturalShowImages = [
-    "/Kandy-Esela-Perahara.jpg",
+    "/Kandy-Esela-Perahara.JPG",
     "/Kandy-Procession.jpg",
     "/perahara.jpeg",
     "/perahara1.jpeg",

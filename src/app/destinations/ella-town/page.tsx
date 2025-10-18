@@ -307,7 +307,7 @@ export default function EllaTownGuide() {
                   <ul className="text-sm text-blue-700 space-y-1">
                     <li>• Tea plantations</li>
                     <li>• Tunnels which are over 100 years old</li>
-                    <li>• Waterfalls cascading down hillsides, Devon falls and St. Clair's Falls</li>
+                    <li>• Waterfalls cascading down hillsides, Devon falls and St. Clair&apos;s Falls</li>
                     <li>• Scenic viewpoints along the route</li>
                     <li>• Misty mountains</li>
                   </ul>
