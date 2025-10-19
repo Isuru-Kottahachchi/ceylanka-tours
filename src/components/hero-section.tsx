@@ -49,7 +49,7 @@ export function HeroSection() {
         {/* Search Bar */}
         <form
           onSubmit={handleSearch}
-          className="flex flex-col sm:flex-row items-stretch justify-center gap-2 sm:gap-0 max-w-2xl mx-auto w-full px-4 sm:px-0"
+          className="flex flex-col sm:flex-row items-stretch justify-center gap-2 sm:gap-0 max-w-2xl mx-auto w-full px-4"
         >
           <div className="relative w-full sm:flex-1 group">
           <Input
