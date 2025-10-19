@@ -1,141 +1,16 @@
 "use client"
 
-import { useState } from "react"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Mountain, ChevronLeft, ChevronRight, Thermometer } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Mountain, Thermometer } from "lucide-react"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import InsuranceBanner from "@/components/insurance-banner"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-
-
-function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-  }
-
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-  }
-
-  const goToImage = (index: number) => {
-    setCurrentIndex(index)
-  }
-
-  return (
-    <div className="relative">
-      <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[500px] sm:h-[350px] flex items-center justify-center">
-        <Image
-          src={images[currentIndex] || "/placeholder.svg"}
-          alt={`${alt} - Image ${currentIndex + 1}`}
-          width={400}
-          height={300}
-          className="rounded-lg transition-all duration-300 object-contain w-full h-full"
-        />
-
-        {/* Navigation buttons */}
-        {images.length > 1 && (
-          <>
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-              onClick={prevImage}
-            >
-              <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-              onClick={nextImage}
-            >
-              <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-            </Button>
-          </>
-        )}
-      </div>
-
-      {/* Dots indicator */}
-      {images.length > 1 && (
-        <div className="flex justify-center mt-3 space-x-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToImage(index)}
-              className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-                }`}
-            />
-          ))}
-        </div>
-      )}
-
-      {/* Image counter */}
-      {images.length > 1 && (
-        <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-          {currentIndex + 1} / {images.length}
-        </div>
-      )}
-    </div>
-  )
-}
 
 export default function NuwaraEliyaTravelGuide() {
-
-  const hortonPlainsImages = [
-    "/Hortonplains16.jpeg",
-    "/Hortonplains2.jpeg",
-    "/Hortonplains3.jpeg",
-  ]
-
-  const moonPlainsImages = [
-    "/Moon-plains.jpg",
-    "/MoonPlains2.jpeg",
-    "/MoonPlains3.jpeg",
-  ]
-
-  const gregoryLakeImages = [
-    "/Gregory_Lake.jpg",
-    "/Gregory_Lake2.jpg",
-  ]
-
-  const victoriaParkImages = [
-    "/Victoria-park2.jpg",
-    "/Victoria-park10.jpg",
-    "/Victoria-park.jpg",
-    "/Victoria-park3.jpg",
-    "/Victoria-park11.jpg",
-    "/Victoria-park1.jpg",
-    "/Flowers-in-vic-park.jpg",
-    "/Victoria-park4.jpg",
-    "/Victoria-park6.jpg",
-    "/Victoria-park7.jpg",
-    "/Vicpark-pond.jpg",
-    "/Vic-flower.jpg",
-    "/Vic-flower1.jpg",
-  ]
-
-  const ambewelaFarmImages = [
-    "/New-Zealand-Farm.jpg",
-    "/New-Zealand-Farm1.jpg",
-    "/New-Zealand-Farm2.jpg",
-  ]
-
-  const haggalaGardenImages = [
-    "/Flowers-in-vic-park.jpg",
-    "/Victoria-park.jpg",
-    "/placeholder.svg?height=400&width=600&text=Haggala+Garden+View"
-  ];
-
-
-  const shanthipuraImages = [
-    "/Shanthipura.jpg",
-    "/Shanthipura1.jpg",
-  ]
 
   return (
     <main className="min-h-screen bg-background">
@@ -385,7 +260,7 @@ export default function NuwaraEliyaTravelGuide() {
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
-              <h3 className="text-2xl font-semibold mb-2">See St. Clair&apos;s Falls on Your Way</h3>
+              <h3 className="text-2xl font-semibold mb-2">See St. Clair&apos;s Falls and Devon falls on Your Way</h3>
               <p>
                 As you travel towards Nuwara Eliya, especially along the Hatton–Talawakelle–Nanu Oya road, make sure to pause near Thalawakale to witness the majestic St. Clair&apos;s Falls. This wide, multi-tiered waterfall tumbles through emerald tea estates, creating a picture-perfect scene that is one of Sri Lanka&apos;s most photographed natural wonders.
               </p>
@@ -413,10 +288,22 @@ export default function NuwaraEliyaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-
                   <ImageCarousel
-                    images={gregoryLakeImages}
-                    alt="Beautiful Gregory Lake in Nuwara Eliya with paddle boats, walking paths, and surrounding hills"
+                    images={[
+                      {
+                        src: "/Gregory_Lake.jpg",
+                        alt: "Beautiful Gregory Lake in Nuwara Eliya with paddle boats, walking paths, and surrounding hills",
+                        caption: "Gregory Lake",
+                        title: "Gregory Lake"
+
+                      },
+                      {
+                        src: "/Gregory_Lake2.jpg",
+                        alt: "Beautiful Gregory Lake in Nuwara Eliya with paddle boats, walking paths, and surrounding hills",
+                        caption: "Gregory Lake",
+                        title: "Gregory Lake"
+                      },
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -455,9 +342,24 @@ export default function NuwaraEliyaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
+
                   <ImageCarousel
-                    images={haggalaGardenImages}
-                    alt="Colorful flowers and lush landscapes at Haggala Botanical Garden, Nuwara Eliya"
+                    images={[
+                      {
+                        src: "/Flowers-in-vic-park.jpg",
+                        alt: "Beautiful flowers in Victoria Park, Nuwara Eliya",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Victoria-park.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -534,9 +436,29 @@ export default function NuwaraEliyaTravelGuide() {
                       </p>
                     </div>
                   </div>
+
                   <ImageCarousel
-                    images={hortonPlainsImages}
-                    alt="Horton Plains National Park showcasing the stunning landscapes, unique flora, and fauna"
+                    images={[
+                      {
+                        src: "/Hortonplains16.jpeg",
+                        alt: "Horton Plains National Park showcasing the unique montane ecosystem and scenic landscapes",
+                        caption: "Horton Plains National Park",
+                        title: "Horton Plains National Park"
+                      },
+                      {
+                        src: "/Hortonplains2.jpeg",
+                        alt: "Horton Plains National Park showcasing the unique montane ecosystem and scenic landscapes",
+                        caption: "Horton Plains National Park",
+                        title: "Horton Plains National Park"
+                      },
+                      {
+                        src: "/Hortonplains3.jpeg",
+                        alt: "Horton Plains National Park showcasing the unique montane ecosystem and scenic landscapes",
+                        caption: "Horton Plains National Park",
+                        title: "Horton Plains National Park"
+                      },
+
+                    ]}
                   />
                 </div>
               </CardContent>
@@ -550,9 +472,83 @@ export default function NuwaraEliyaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
+
                   <ImageCarousel
-                    images={victoriaParkImages}
-                    alt="Victoria Park showcasing the beautiful botanical gardens and diverse flora"
+                    images={[
+                      {
+                        src: "/Victoria-park2.jpg",
+                        alt: "Victoria Park showcasing the beautiful botanical gardens and diverse flora",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Victoria-park10.jpg",
+                        alt: "Victoria Park showcasing the beautiful botanical gardens and diverse flora",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Victoria-park.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Victoria-park3.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Victoria-park11.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Flowers-in-vic-park.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Victoria-park4.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Victoria-park6.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Victoria-park7.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Vicpark-pond.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Vic-flower.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+                      {
+                        src: "/Vic-flower1.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Victoria Park",
+                        title: "Victoria Park"
+                      },
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -592,9 +588,29 @@ export default function NuwaraEliyaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
+
                   <ImageCarousel
-                    images={ambewelaFarmImages}
-                    alt="Ambewela New Zealand Farm showcasing the scenic dairy farm and rolling green pastures"
+                    images={[
+                      {
+                        src: "/New-Zealand-Farm.jpg",
+                        alt: "New Zealand Farm with stunning mountain views",
+                        caption: "New Zealand Farm",
+                        title: "New Zealand Farm"
+                      },
+                      {
+                        src: "/New-Zealand-Farm1.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+                      {
+                        src: "/New-Zealand-Farm2.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -671,11 +687,32 @@ export default function NuwaraEliyaTravelGuide() {
                       </p>
                     </div>
                   </div>
+
                   <ImageCarousel
-                    images={moonPlainsImages}
-                    alt="Moon Plains showcasing the stunning landscapes, unique flora, and fauna"
+                    images={[
+                      {
+                        src: "/Moon-plains.jpg",
+                        alt: "Moon Plains with stunning mountain views",
+                        caption: "Moon Plains",
+                        title: "Moon Plains"
+                      },
+                      {
+                        src: "/MoonPlains2.jpeg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+                      {
+                        src: "/MoonPlains3.jpeg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+                    ]}
                   />
                 </div>
+
               </CardContent>
             </Card>
             <Card>
@@ -713,9 +750,75 @@ export default function NuwaraEliyaTravelGuide() {
                       </p>
                     </div>
                   </div>
+
                   <ImageCarousel
-                    images={shanthipuraImages}
-                    alt="Moon Plains showcasing the stunning landscapes, unique flora, and fauna"
+                    images={[
+                      {
+                        src: "/Shanthipura.jpg",
+                        alt: "Shanthipura Village with stunning mountain views",
+                        caption: "Shanthipura Village",
+                        title: "Shanthipura Village"
+                      },
+                      {
+                        src: "/Shanthipura1.jpg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+                    ]}
+                  />
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>7. Nanu Oya Falls</CardTitle>
+                <CardDescription>Beautiful waterfall near Nuwara Eliya</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Eye Catching waterfall located with a railway bridge passing over it. A peaceful village with stunning views of the surrounding mountains and valleys. A great place to experience local culture and hospitality.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Eye Catching Waterfall with a railway bridge passing over it
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Instagram friendly spot and Excellent for photography
+
+                      </li>
+
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Less crowded alternative to popular viewpoints
+                      </li>
+                    </ul>
+                    <div className="mt-4 p-3 bg-purple-50 rounded-lg">
+                      <p className="text-sm text-purple-800">
+                        <strong>Hidden Gem:</strong> Most of the travellers miss this beautiful waterfall. Make sure to include this in your itinerary.</p>
+                    </div>
+                  </div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Nanu-Oya-Falls.jpg",
+                        alt: "Nanu Oya Falls with stunning rock formations",
+                        caption: "Nanu Oya Falls",
+                        title: "Nanu Oya Falls"
+                      },
+                      {
+                        src: "/Lunugangabawa2.jpeg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+                    ]}
                   />
                 </div>
               </CardContent>
@@ -1168,7 +1271,7 @@ export default function NuwaraEliyaTravelGuide() {
             </CardContent>
           </Card>
         </section>
-      </div>
-    </main>
+      </div >
+    </main >
   )
 }
