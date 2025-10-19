@@ -873,8 +873,8 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Watadageya.jpg", caption: "Polonnaruwa Vatadageya: Circular relic house with stone pillars", alt: "Polonnaruwa Vatadageya: Circular relic house with stone pillars" },
-                                            { src: "/Watadageya1.jpg", caption: "Vatadageya: Intricate stone carvings and moonstone", alt: "Vatadageya: Intricate stone carvings and moonstone" },
+                                            { src: "/Watadageya1.jpg", caption: "Polonnaruwa Vatadageya: Circular relic house with stone pillars", alt: "Polonnaruwa Vatadageya: Circular relic house with stone pillars" },
+                                            { src: "/Watadageya.jpg", caption: "Vatadageya: Intricate stone carvings and moonstone", alt: "Vatadageya: Intricate stone carvings and moonstone" },
                                             { src: "/PolonnaruwaVatadageya3.jpg", caption: "Vatadageya: Buddha statues and central stupa base", alt: "Vatadageya: Buddha statues and central stupa base" },
                                         ]}
 

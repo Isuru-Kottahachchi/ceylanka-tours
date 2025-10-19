@@ -400,10 +400,10 @@ export default function HaputaleGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Adisham-Monastery.jpeg",
-                        alt: "Adisham Monastery showing English Tudor architecture surrounded by mountain gardens",
-                        caption: "Adisham Monastery exterior",
-                        title: "Adisham Monastery"
+                        src: "/Nidangoda-Ella.jpg",
+                        alt: "Nidangoda Falls ",
+                        caption: "Nidangoda Falls ",
+                        title: "Nidangoda Falls "
                       },
                       {
                         src: "/Adisham-bungalow3.jpg",
