@@ -92,7 +92,7 @@ export default function HortonPlainsDetailedGuide() {
           </div>
           <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
             <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Safety Notes</h4>
-            <p className="text-sm text-blue-700 dark:text-gray-200">Sometimes there can be a sudden change in weather conditions, so it's essential to be prepared for rain or fog, especially some fast wind,So Please stick with your group and avoid venturing too close to the cliff edges.</p>
+            <p className="text-sm text-blue-700 dark:text-gray-200">Sometimes there can be a sudden change in weather conditions, so it&apos;s essential to be prepared for rain or fog, especially some fast wind. So please stick with your group and avoid venturing too close to the cliff edges.</p>
           </div>
         </section>
 
@@ -180,106 +180,7 @@ export default function HortonPlainsDetailedGuide() {
           <h2 className="text-4xl font-bold mb-10">The Magnificent Attractions of Horton Plains</h2>
 
           <div className="space-y-12">
-            {/* World&apos;s End - Detailed */}
-            <Card className="overflow-hidden border-2 border-orange-200">
-              <CardHeader className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-orange-950 dark:to-yellow-950">
-                <CardTitle className="text-2xl text-orange-800 dark:text-orange-300">World&apos;s End: The Ultimate Cliff Experience</CardTitle>
-                <CardDescription className="text-lg text-orange-600 dark:text-orange-400">
-                  Sri Lanka&apos;s most dramatic viewpoint - an 870-meter sheer drop into eternity
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-8">
-                <div className="grid lg:grid-cols-2 gap-8 items-start">
-                  <ImageCarousel
-                    images={[
-                      {
-                        src: "/IMG_8209.jpg",
-                        alt: "Aerial view of Snake Island Taprobane",
-                        caption: "Snake Island with its colonial villa",
-                        title: "Snake Island from Above"
-                      },
-                      {
-                        src: "/Waligama-Bay-Beach.jpg",
-                        alt: "Sandy causeway connecting Snake Island to mainland",
-                        caption: "Low tide reveals the magical sand path",
-                        title: "Snake Island Causeway"
-                      },
-                      {
-                        src: "/Snake-Island-Villa.jpg",
-                        alt: "Colonial villa on Snake Island",
-                        caption: "Historic colonial-era villa on the island",
-                        title: "Snake Island Villa"
-                      }
-                    ]}
-                  />
-                  <div className="space-y-6">
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      World&apos;s End is not just a viewpoint - it&apos;s a geological marvel that will leave you speechless.
-                      This massive cliff face drops vertically for 870 meters (2,854 feet) into the valley below,
-                      creating one of the most dramatic landscapes in all of South Asia. The name &quot;World&apos;s End&quot;
-                      perfectly captures the feeling you get when standing at this precipice - it truly feels like
-                      you&apos;re at the edge of the world itself.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      On crystal-clear mornings, the view from World&apos;s End is absolutely breathtaking. You can see
-                      across the entire southern plains of Sri Lanka, with the landscape stretching out like a vast
-                      green carpet dotted with villages, tea plantations, and forests. On the clearest days, you can
-                      even spot the glimmer of the Indian Ocean on the southern horizon, some 80 kilometers away. The
-                      play of light and shadow across the valleys below creates an ever-changing panorama that
-                      photographers and nature lovers find irresistible.
-                    </p>
-
-                    <div className="bg-orange-50 dark:bg-orange-950/30 p-6 rounded-lg border border-orange-200 dark:border-orange-700">
-                      <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-3">What Makes World&apos;s End Special:</h4>
-                      <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
-                            <strong>Sheer Drop:</strong> 870-meter vertical cliff face - one of the highest in Sri Lanka
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
-                            <strong>Panoramic Views:</strong> 180-degree views across southern Sri Lanka on clear days
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
-                            <strong>Ocean Views:</strong> On exceptionally clear days, see the Indian Ocean 80km away
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
-                            <strong>Safety Features:</strong> Protective barriers and warning signs for visitor safety
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
-                            <strong>Best Timing:</strong> Early morning (6-10 AM) before clouds roll in
-                          </span>
-                        </li>
-                      </ul>
-                      <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
-                        <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Safety Notes</h4>
-                        <p className="text-sm text-blue-700 dark:text-gray-200">Sometimes there can be a sudden change in weather conditions, so it's essential to be prepared for rain or fog, especially some fast wind, don't reach to the edge of the end it's 870m  dangerous.Please guide your kids always take care of them.</p>
-                      </div>
-                      <div className="bg-amber-50 p-3 rounded-lg">
-                        <p className="text-sm text-amber-800">
-                          <strong>Did You Know?</strong> When you see down from the world's end in clear weather, you can see the Balangoda town and the famous Non pareil state,
-                          If you like to read about Balangoda click <a href="/blog/balangoda" className="underline font-medium">here</a>. If your eyes are sharp enough you can even see the Indian Ocean at a distance of 80 km!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Baker&apos;s Falls - Detailed */}
+             {/* Baker&apos;s Falls - Detailed */}
             <Card className="overflow-hidden border-2 border-blue-200">
               <CardHeader className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950 dark:to-cyan-950">
                 <CardTitle className="text-2xl text-blue-800 dark:text-blue-300">Baker&apos;s Falls: A Hidden Waterfall Paradise</CardTitle>
@@ -371,6 +272,104 @@ export default function HortonPlainsDetailedGuide() {
                       }
                     ]}
                   />
+                </div>
+              </CardContent>
+            </Card>
+            {/* World&apos;s End - Detailed */}
+            <Card className="overflow-hidden border-2 border-orange-200">
+              <CardHeader className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-orange-950 dark:to-yellow-950">
+                <CardTitle className="text-2xl text-orange-800 dark:text-orange-300">World&apos;s End: The Ultimate Cliff Experience</CardTitle>
+                <CardDescription className="text-lg text-orange-600 dark:text-orange-400">
+                  Sri Lanka&apos;s most dramatic viewpoint - an 870-meter sheer drop into eternity
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-2 gap-8 items-start">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/IMG_8209.jpg",
+                        alt: "Aerial view of Snake Island Taprobane",
+                        caption: "Snake Island with its colonial villa",
+                        title: "Snake Island from Above"
+                      },
+                      {
+                        src: "/Waligama-Bay-Beach.jpg",
+                        alt: "Sandy causeway connecting Snake Island to mainland",
+                        caption: "Low tide reveals the magical sand path",
+                        title: "Snake Island Causeway"
+                      },
+                      {
+                        src: "/Snake-Island-Villa.jpg",
+                        alt: "Colonial villa on Snake Island",
+                        caption: "Historic colonial-era villa on the island",
+                        title: "Snake Island Villa"
+                      }
+                    ]}
+                  />
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      World&apos;s End is not just a viewpoint - it&apos;s a geological marvel that will leave you speechless.
+                      This massive cliff face drops vertically for 870 meters (2,854 feet) into the valley below,
+                      creating one of the most dramatic landscapes in all of South Asia. The name &quot;World&apos;s End&quot;
+                      perfectly captures the feeling you get when standing at this precipice - it truly feels like
+                      you&apos;re at the edge of the world itself.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      On crystal-clear mornings, the view from World&apos;s End is absolutely breathtaking. You can see
+                      across the entire southern plains of Sri Lanka, with the landscape stretching out like a vast
+                      green carpet dotted with villages, tea plantations, and forests. On the clearest days, you can
+                      even spot the glimmer of the Indian Ocean on the southern horizon, some 80 kilometers away. The
+                      play of light and shadow across the valleys below creates an ever-changing panorama that
+                      photographers and nature lovers find irresistible.
+                    </p>
+
+                    <div className="bg-orange-50 dark:bg-orange-950/30 p-6 rounded-lg border border-orange-200 dark:border-orange-700">
+                      <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-3">What Makes World&apos;s End Special:</h4>
+                      <ul className="space-y-3 text-muted-foreground">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Sheer Drop:</strong> 870-meter vertical cliff face - one of the highest in Sri Lanka
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Panoramic Views:</strong> 180-degree views across southern Sri Lanka on clear days
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Ocean Views:</strong> On exceptionally clear days, see the Indian Ocean 80km away
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Safety Features:</strong> Protective barriers and warning signs for visitor safety
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Best Timing:</strong> Early morning (6-10 AM) before clouds roll in
+                          </span>
+                        </li>
+                      </ul>
+                      <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
+                        <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Safety Notes</h4>
+                        <p className="text-sm text-blue-700 dark:text-gray-200">Sometimes there can be a sudden change in weather conditions, so it&apos;s essential to be prepared for rain or fog, especially some fast wind, don&apos;t reach to the edge of the end it&apos;s 870m  dangerous. Please guide your kids always take care of them.</p>
+                      </div>
+                      <div className="bg-amber-50 p-3 rounded-lg">
+                        <p className="text-sm text-amber-800">
+                          <strong>Did You Know?</strong> When you see down from the world&apos;s end in clear weather, you can see the Balangoda town and the famous Non pareil state,
+                          If you like to read about Balangoda click <a href="/blog/balangoda" className="underline font-medium">here</a>. If your eyes are sharp enough you can even see the Indian Ocean at a distance of 80 km!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
