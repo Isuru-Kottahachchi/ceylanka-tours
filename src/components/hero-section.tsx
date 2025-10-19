@@ -18,7 +18,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative h-[700px] flex items-center justify-center overflow-hidden w-full">
+    <section className="relative h-[100vh] flex items-center justify-center overflow-x-hidden max-w-full -mt-[var(--header-height)]">
       {/* Optimized Background Image */}
       <Image
         src="/images/stockvault-sunset-at-sri-lanka-southern-beach280430.jpg"
@@ -34,7 +34,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-black/40 z-0" />
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto w-full overflow-x-hidden">
         <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-6 leading-tight">
           The Island Life
           <br />
@@ -49,15 +49,15 @@ export function HeroSection() {
         {/* Search Bar */}
         <form
           onSubmit={handleSearch}
-          className="flex flex-col sm:flex-row items-stretch justify-center gap-2 sm:gap-0 max-w-2xl mx-auto w-full px-4"
+          className="flex flex-col sm:flex-row items-stretch justify-center gap-2 sm:gap-0 max-w-2xl mx-auto w-full px-4 overflow-x-hidden"
         >
-          <div className="relative w-full sm:flex-1 group">
-          <Input
-            type="search"
-            placeholder="Search your Sri Lankan destinations"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full sm:flex-1 h-12 text-black dark:text-white text-base sm:text-lg pl-12 pr-4 rounded-lg sm:rounded-l-lg sm:rounded-r-none bg-white dark:bg-gray-800 placeholder:text-gray-500 dark:placeholder:text-gray-400 appearance-none max-w-full border-2 border-transparent focus:border-cyan-500 dark:focus:border-cyan-400 transition-all duration-300 shadow-sm"
+          <div className="relative w-full sm:flex-1 group overflow-hidden">
+            <Input
+              type="search"
+              placeholder="Search your Sri Lankan destinations"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full sm:flex-1 h-12 text-black dark:text-white text-base sm:text-lg pl-12 pr-4 rounded-lg sm:rounded-l-lg sm:rounded-r-none bg-white dark:bg-gray-800 placeholder:text-gray-500 dark:placeholder:text-gray-400 appearance-none border-2 border-transparent focus:border-cyan-500 dark:focus:border-cyan-400 transition-all duration-300 shadow-sm box-border"
             style={{ fontSize: '16px' }}
             autoComplete="off"
             autoCorrect="off"
