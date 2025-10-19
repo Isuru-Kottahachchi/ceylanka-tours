@@ -18,7 +18,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative h-[100vh] flex items-center justify-center overflow-x-hidden max-w-full -mt-[var(--header-height)]">
+    <section className="relative h-[90vh] flex items-center justify-center overflow-x-hidden max-w-full -mt-[var(--header-height)]">
       {/* Optimized Background Image */}
       <Image
         src="/images/stockvault-sunset-at-sri-lanka-southern-beach280430.jpg"
