@@ -165,69 +165,7 @@ export default function BalangodaPrehistoricSites() {
         <section className="mb-16">
           <h2 className="text-4xl font-bold mb-10">Major Prehistoric Cave Sites</h2>
           <div className="space-y-12">
-            {/* Fa Hien Cave */}
-            <Card className="overflow-hidden border-2 border-orange-200">
-              <CardHeader className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-orange-950 dark:to-yellow-950">
-                <CardTitle className="text-2xl text-orange-800 dark:text-orange-300">Fa Hien Cave / Pahiyangala</CardTitle>
-                <CardDescription className="text-lg text-orange-600 dark:text-orange-400">
-                  The oldest recorded prehistoric human settlement in Sri Lanka
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-8">
-                <div className="grid lg:grid-cols-2 gap-8 items-start">
-                  <div className="space-y-6">
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      Fa Hien Cave, also known as Pahiyangala, stands as one of South Asia&apos;s most important prehistoric
-                      sites. Carbon dating has revealed human habitation here dating back over 37,000 years, making it
-                      one of the oldest archaeological sites in Sri Lanka. The cave has yielded remarkable discoveries,
-                      including human remains, tools, and evidence of early human culture.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      The cave system is massive, with the main chamber reaching heights of over 175 feet. Archaeological
-                      excavations have uncovered multiple layers of human occupation, each telling its own story of how
-                      our ancestors lived, hunted, and evolved over tens of thousands of years.
-                    </p>
-
-                    <div className="bg-orange-50 dark:bg-orange-950/30 p-6 rounded-lg border border-orange-200 dark:border-orange-700">
-                      <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-3">Key Discoveries:</h4>
-                      <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
-                            <strong>Human Remains:</strong> Skeletal remains dating back 37,000 years
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
-                            <strong>Tools:</strong> Geometric microliths and bone tools
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
-                            <strong>Ornaments:</strong> Beads made from marine shells
-                          </span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                          <span>
-                            <strong>Food Remains:</strong> Evidence of hunting and gathering
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <Image
-                    src="/fahien-cave.jpg"
-                    alt="Fa Hien Cave entrance showing the massive archaeological site"
-                    width={600}
-                    height={400}
-                    className="rounded-xl shadow-lg"
-                  />
-                </div>
-              </CardContent>
-            </Card>
+            
 
             {/* Batadomba Cave */}
             <Card className="overflow-hidden border-2 border-blue-200">
@@ -240,7 +178,7 @@ export default function BalangodaPrehistoricSites() {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <Image
-                    src="/batadomba-cave.jpg"
+                    src="/Batadomba-Lena.jpg"
                     alt="Batadomba Cave showing archaeological excavation site"
                     width={600}
                     height={400}
@@ -421,6 +359,69 @@ export default function BalangodaPrehistoricSites() {
                       </ul>
                     </div>
                   </div>
+                </div>
+              </CardContent>
+            </Card>
+            {/* Fa Hien Cave */}
+            <Card className="overflow-hidden border-2 border-orange-200">
+              <CardHeader className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-orange-950 dark:to-yellow-950">
+                <CardTitle className="text-2xl text-orange-800 dark:text-orange-300">Fa Hien Cave / Pahiyangala</CardTitle>
+                <CardDescription className="text-lg text-orange-600 dark:text-orange-400">
+                  The oldest recorded prehistoric human settlement in Sri Lanka
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-2 gap-8 items-start">
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      Fa Hien Cave, also known as Pahiyangala, stands as one of South Asia&apos;s most important prehistoric
+                      sites. Carbon dating has revealed human habitation here dating back over 37,000 years, making it
+                      one of the oldest archaeological sites in Sri Lanka. The cave has yielded remarkable discoveries,
+                      including human remains, tools, and evidence of early human culture.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      The cave system is massive, with the main chamber reaching heights of over 175 feet. Archaeological
+                      excavations have uncovered multiple layers of human occupation, each telling its own story of how
+                      our ancestors lived, hunted, and evolved over tens of thousands of years.
+                    </p>
+
+                    <div className="bg-orange-50 dark:bg-orange-950/30 p-6 rounded-lg border border-orange-200 dark:border-orange-700">
+                      <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-3">Key Discoveries:</h4>
+                      <ul className="space-y-3 text-muted-foreground">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Human Remains:</strong> Skeletal remains dating back 37,000 years
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Tools:</strong> Geometric microliths and bone tools
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Ornaments:</strong> Beads made from marine shells
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Food Remains:</strong> Evidence of hunting and gathering
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <Image
+                    src="/fahien-cave.jpg"
+                    alt="Fa Hien Cave entrance showing the massive archaeological site"
+                    width={600}
+                    height={400}
+                    className="rounded-xl shadow-lg"
+                  />
                 </div>
               </CardContent>
             </Card>

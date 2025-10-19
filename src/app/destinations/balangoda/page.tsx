@@ -243,7 +243,7 @@ export default function BalangodaGuide() {
                         title: "Beli Lena Cave"
                       },
                       {
-                        src: "/Lunugangabawa2.jpeg",
+                        src: "/Batadomba-Lena.jpg",
                         alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
                         caption: "Ancient Cave Paintings",
                         title: "Cave 1 Murals"
@@ -257,7 +257,7 @@ export default function BalangodaGuide() {
                       These archaeological sites contain evidence of human habitation spanning 37,000 years, making them
                       among the most significant prehistoric discoveries in South Asia.
                     </p>
-                    <br/>
+                    <br />
                     <p>In Balangoda Area You can explore Prehistoric sites such as: Beli Lena, Fa Hien Cave, and Batadomba Cave etc where Balangoda Man lived.</p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -530,28 +530,28 @@ export default function BalangodaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Balangoda is renowned for its traditional pottery industry, where ancient techniques passed down
-                      through generations are still practiced today. Visit working pottery villages to see master
-                      craftsmen create beautiful clay vessels using methods unchanged for centuries.
+                      Eye Catching waterfall only 16 feet height but beautiful scenery around the waterfall. "Pahanthuwada" name is derived from the fact that the waterfall resembles a oil lamp (pahana) being extinguished (thudawa) as the water cascades down the rocks.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Traditional pottery-making demonstrations
+                        Easy Access from the main road
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Hands-on pottery workshops
+                        Picnic spots and resting areas
                       </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Purchase authentic handmade pottery
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Learn about ancient clay preparation methods
-                      </li>
+
                     </ul>
+                     <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg border border-amber-200 dark:border-amber-800">
+                        <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">⚠️ Safety Tips</h4>
+                        <ul className="text-sm text-amber-600 dark:text-amber-400 space-y-1">
+                          <li>• Always follow the instructions of your guide and the locals</li>
+                          <li>• Water level of the above waterfall can be unpredictable always be aware about the rain and the water stream</li>
+                          <li>• Don&apos;t swim near the waterfall</li>
+                          <li>• Road to the waterfall can be slippery be carefull</li>
+                        </ul>
+                      </div>
                     <div className="mt-4 flex justify-start">
                       <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
                         <Button
