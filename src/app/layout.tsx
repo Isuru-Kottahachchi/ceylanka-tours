@@ -77,7 +77,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="h-full">
       <head>
         {/* Preload hero image for Speed Index */}
         <link
@@ -168,11 +168,11 @@ export default function RootLayout({
         <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />
         <meta name="google-site-verification" content="your-verification-code" />
       </head>
-      <body className={`${inter.className} overflow-x-hidden`}>
+      <body className={`${inter.className}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="min-h-screen flex flex-col w-full max-w-[100vw] overflow-x-hidden">
+          <div className="min-h-screen flex flex-col w-full">
             <Header />
-            <main className="flex-1 w-full overflow-x-hidden">{children}</main>
+            <main className="flex-1 w-full pt-[144px]">{children}</main>
             <Footer />
           </div>
           <BackToTop />
