@@ -237,10 +237,10 @@ export default function BalangodaGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Bentotabeach.jpeg",
-                        alt: "Bentota Beach with golden sand and clear waters",
-                        caption: "Bentota Beach",
-                        title: "Bentota Beach"
+                        src: "/Beli-Lena.webp",
+                        alt: "Beli Lena Cave with stunning rock formations",
+                        caption: "Beli Lena Cave",
+                        title: "Beli Lena Cave"
                       },
                       {
                         src: "/Lunugangabawa2.jpeg",
@@ -257,6 +257,8 @@ export default function BalangodaGuide() {
                       These archaeological sites contain evidence of human habitation spanning 37,000 years, making them
                       among the most significant prehistoric discoveries in South Asia.
                     </p>
+                    <br/>
+                    <p>In Balangoda Area You can explore Prehistoric sites such as: Beli Lena, Fa Hien Cave, and Batadomba Cave etc where Balangoda Man lived.</p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
