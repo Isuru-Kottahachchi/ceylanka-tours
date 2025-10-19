@@ -49,14 +49,19 @@ export function HeroSection() {
         {/* Search Bar */}
         <form
           onSubmit={handleSearch}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto"
+          className="flex flex-col sm:flex-row items-stretch justify-center gap-2 sm:gap-0 max-w-2xl mx-auto w-full px-4 sm:px-0"
         >
           <Input
             type="search"
             placeholder="Search your Sri Lankan destinations"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full sm:flex-1 h-12 text-black dark:text-white text-lg px-6 rounded-l-lg bg-white dark:bg-gray-800 placeholder:text-gray-500 dark:placeholder:text-gray-400"
+            className="w-full sm:flex-1 h-12 text-black dark:text-white text-base sm:text-lg px-6 rounded-lg sm:rounded-l-lg sm:rounded-r-none bg-white dark:bg-gray-800 placeholder:text-gray-500 dark:placeholder:text-gray-400 appearance-none max-w-full"
+            style={{ fontSize: '16px' }} // Prevents iOS zoom
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="off"
+            spellCheck="false"
           />
           <Button
             type="submit"
