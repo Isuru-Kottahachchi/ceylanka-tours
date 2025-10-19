@@ -530,7 +530,7 @@ export default function BalangodaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Eye Catching waterfall only 16 feet height but beautiful scenery around the waterfall. "Pahanthuwada" name is derived from the fact that the waterfall resembles a oil lamp (pahana) being extinguished (thudawa) as the water cascades down the rocks.
+                      Eye Catching waterfall only 16 feet height but beautiful scenery around the waterfall. &quot;Pahanthuwada&quot; name is derived from the fact that the waterfall resembles a oil lamp (pahana) being extinguished (thudawa) as the water cascades down the rocks.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
