@@ -10,7 +10,7 @@ import  Explore  from "@/app/destinations/Explore"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen w-full overflow-x-hidden">
       <HeroSection />
       {/* <AdBanner slot="homepage-top" /> */}
       <SriLankaAboutCompact />

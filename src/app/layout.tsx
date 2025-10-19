@@ -168,11 +168,11 @@ export default function RootLayout({
         <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />
         <meta name="google-site-verification" content="your-verification-code" />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} overflow-x-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="min-h-screen flex flex-col">
+          <div className="min-h-screen flex flex-col w-full max-w-[100vw] overflow-x-hidden">
             <Header />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 w-full overflow-x-hidden">{children}</main>
             <Footer />
           </div>
           <BackToTop />
