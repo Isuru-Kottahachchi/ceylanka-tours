@@ -1,29 +1,13 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
-import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Waves, TreePine } from "lucide-react"
+import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Waves, TreePine, Brain, TentTree } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-
-export const metadata: Metadata = {
-  title: "Balangoda Travel Guide 2025: Archaeological Wonder & Prehistoric Heritage | Sri Lanka",
-  description:
-    "Discover Balangoda, home of prehistoric Balangoda Man. Complete guide to archaeological sites, Samanalawewa Reservoir, traditional crafts, and ancient cave complexes.",
-  keywords:
-    "Balangoda Sri Lanka, Balangoda Man, archaeological sites, Samanalawewa Reservoir, prehistoric caves, traditional pottery, ancient heritage",
-  authors: [{ name: "Sri Lanka Travel Expert" }],
-  openGraph: {
-    title: "Balangoda Travel Guide 2025: Archaeological Wonder & Prehistoric Heritage",
-    description: "Your complete guide to Balangoda - prehistoric discoveries, ancient caves, and traditional crafts",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Balangoda Travel Guide 2025: Archaeological Wonder & Prehistoric Heritage",
-    description: "Your complete guide to Balangoda - prehistoric discoveries, ancient caves, and traditional crafts",
-  },
-}
+import { ImageCarousel } from "@/components/ui/image-carousel"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export default function BalangodaGuide() {
   return (
@@ -42,23 +26,23 @@ export default function BalangodaGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Balangoda</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Where Prehistoric History Comes Alive</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              <Mountain className="w-4 h-4 mr-1" />
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30  bg-yellow-600/80 text-white border-yellow-600">
+              <TentTree className="w-4 h-4 mr-1" />
               Prehistoric Heritage Site
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              <Waves className="w-4 h-4 mr-1" />
-              Samanalawewa Reservoir
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30  bg-blue-600/80 text-white border-blue-600">
+              <Mountain className="w-4 h-4 mr-1" />
+              Scenic Beauty
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              <TreePine className="w-4 h-4 mr-1" />
-              Traditional Crafts Center
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-600">
+              <Brain className="w-4 h-4 mr-1" />
+              Relaxing Nature
             </Badge>
           </div>
         </div>
       </section>
 
-  <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">
@@ -79,17 +63,18 @@ export default function BalangodaGuide() {
           </div>
         </section>
 
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Quick Balangoda Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
+        {/* Quick Facts and Travel Info Section */}
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {/* Quick Facts */}
+          <section>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Facts About Balangoda
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Mountain className="w-4 h-4 text-blue-500" />
@@ -109,8 +94,6 @@ export default function BalangodaGuide() {
                       <strong>Population:</strong> ~25,000 residents
                     </span>
                   </div>
-                </div>
-                <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <TreePine className="w-4 h-4 text-red-500" />
                     <span>
@@ -130,9 +113,112 @@ export default function BalangodaGuide() {
                     </span>
                   </div>
                 </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* Getting to Balangoda from Colombo */}
+          <section>
+            <Card className="border-blue-200 dark:border-blue-800 bg-blue-50/30 dark:bg-blue-950/30">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2  text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Travel from Colombo to Balangoda
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 170km (105 miles)</li>
+                      <li>• <strong>Duration:</strong> 3.5-4 hours</li>
+                      <li>• <strong>Cost:</strong> $50-80 USD for day trip</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Balangoda. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo → Balangoda bus stand</li>
+                      <li>• <strong>Duration:</strong> 4-5 hours total</li>
+                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                      <li>• <strong>Note:</strong> Requires bus change in Dambulla or Habarana</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
+                  <p className="text-sm text-blue-800 dark:text-blue-200">
+                    <strong>💡 Pro Tip:</strong> Start early (6-7 AM) from Colombo to avoid traffic and reach Balangoda before the midday heat.
+                    Most visitors stay overnight in nearby Dambulla or Habarana for a more relaxed experience.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
+
+        {/* Prehistoric Heritage */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">The Balangoda Man Discovery</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+            <div>
+              <Image
+                src="/Balangoda-Pre-Historic-Man.jpg"
+                alt="Archaeological reconstruction showing Balangoda Man and prehistoric life in ancient Sri Lankan caves"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-2 italic">
+                Balangoda Man represents one of South Asia&apos;s most significant prehistoric discoveries
+              </p>
+            </div>
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                In 1986, archaeologists made a groundbreaking discovery in Balangoda&apos;s cave systems - human remains
+                dating back 37,000 years. This prehistoric human, dubbed &quot;Balangoda Man,&quot; represents one of the earliest
+                known inhabitants of Sri Lanka and provides crucial insights into human migration patterns in South
+                Asia.
+              </p>
+              <p>
+                The discovery included not only human remains but also stone tools, evidence of fire use, and signs of
+                organized community living. These findings suggest that Balangoda was a significant center of
+                prehistoric human activity, with sophisticated hunter-gatherer societies thriving in the region.
+              </p>
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-blue-800 mb-2">Archaeological Significance:</h4>
+                <ul className="text-sm text-blue-700 space-y-1">
+                  <li>• Oldest human remains found in Sri Lanka</li>
+                  <li>• Evidence of advanced stone tool technology</li>
+                  <li>• Insights into prehistoric migration patterns</li>
+                  <li>• Connection to broader South Asian prehistory</li>
+                </ul>
               </div>
-            </CardContent>
-          </Card>
+              <div className="bg-green-50 p-3 rounded-lg">
+                <p className="text-sm text-green-800">
+                  <strong>Tip:</strong> Private vehicle recommended for visiting archaeological sites
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Top Attractions */}
@@ -148,12 +234,22 @@ export default function BalangodaGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Balangoda archaeological excavation sites showing ancient cave complexes and prehistoric human remains discovery areas"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Bentotabeach.jpeg",
+                        alt: "Bentota Beach with golden sand and clear waters",
+                        caption: "Bentota Beach",
+                        title: "Bentota Beach"
+                      },
+                      {
+                        src: "/Lunugangabawa2.jpeg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -179,24 +275,60 @@ export default function BalangodaGuide() {
                         Guided archaeological tours available
                       </li>
                     </ul>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
+                        <Button
+                          variant="secondary"
+                          className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                        >
+                          Read more
+                          <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
+
                 </div>
               </CardContent>
             </Card>
             {/* Lime Stone Pool Attraction Card */}
             <Card>
               <CardHeader>
-                <CardTitle>4. Lime Stone Pool</CardTitle>
+                <CardTitle>2. Lime Stone Pool/ Hunugal Pokuna</CardTitle>
                 <CardDescription>Natural rock pool with crystal-clear waters</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/public/PasikudaCover.jpeg" // Placeholder, replace with actual lime stone pool image if available
-                    alt="Lime Stone Pool in Balangoda, a natural pool surrounded by limestone formations and lush greenery"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Hunugal-Pokuna.jpg",
+                        alt: "Hunugal Pokuna with crystal-clear waters",
+                        caption: "Hunugal Pokuna",
+                        title: "Hunugal Pokuna"
+                      },
+                      {
+                        src: "/Hunugal-Pokuna3.jpg",
+                        alt: "Hunugal Pokuna with crystal-clear waters",
+                        caption: "Hunugal Pokuna",
+                        title: "Hunugal Pokuna"
+                      },
+                      {
+                        src: "/Hunugal-Pokuna1.webp",
+                        alt: "Hunugal Pokuna with crystal-clear waters",
+                        caption: "Hunugal Pokuna",
+                        title: "Hunugal Pokuna"
+                      },
+
+                      {
+                        src: "/Hunugal-Pokuna2.webp",
+                        alt: "Hunugal Pokuna with crystal-clear waters",
+                        caption: "Hunugal Pokuna",
+                        title: "Hunugal Pokuna"
+                      },
+
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -205,7 +337,7 @@ export default function BalangodaGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Safe for swimming and relaxing
+                        Safe for relaxing
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -220,6 +352,88 @@ export default function BalangodaGuide() {
                         Ideal for picnics and nature photography
                       </li>
                     </ul>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
+                        <Button
+                          variant="secondary"
+                          className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                        >
+                          Read more
+                          <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>3. Bakers Bend</CardTitle>
+                <CardDescription>Though the scenery is unparalleled, Nonpareil state</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Bakers-Bend.jpg",
+                        alt: "Bakers Bend with lush greenery and scenic views",
+                        caption: "Bakers Bend",
+                        title: "Bakers Bend"
+                      },
+                      {
+                        src: "/Bakers-Bend1.jpg",
+                        alt: "Bakers Bend scenic viewpoint showing panoramic mountain and valley views",
+                        caption: "Bakers Bend Scenic Viewpoint",
+                        title: "Bakers Bend Scenic Viewpoint"
+                      },
+                      {
+                        src: "/Balangoda.jpeg",
+                        alt: "Balangoda scenic viewpoint showing panoramic mountain and valley views",
+                        caption: "Balangoda Scenic Viewpoint",
+                        title: "Balangoda Scenic Viewpoint"
+                      },
+
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      BAKERS BEND is a breathtaking viewpoint located in the Balangoda region, offering panoramic views of the surrounding mountains and valleys. This scenic spot is perfect for photography enthusiasts and nature lovers, providing a serene escape into the heart of Sri Lanka&apos;s natural beauty.
+                      <br />
+                      <strong>Important:</strong>
+                      The Nonpareil road is considered one of the challenging and dangerous roads in Sri Lanka. It is highly recommended to use a 4x4 vehicle to access this location. The road is steep and narrow, with sharp turns and steep drops, making it unsuitable for regular cars.
+                      There are several 4by 4 jeep servoces called Ahas gauwwa that can be hired from Balangoda town to reach the Bakers Bend viewpoint. If you are not confident by owns driving, it is advisable to hire a local driver who is familiar with the road conditions.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Traditional pottery-making demonstrations
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Hands-on pottery workshops
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Purchase authentic handmade pottery
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Learn about ancient clay preparation methods
+                      </li>
+                    </ul>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
+                        <Button
+                          variant="secondary"
+                          className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                        >
+                          Read more
+                          <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -227,17 +441,27 @@ export default function BalangodaGuide() {
             {/* Nagrak Village Attraction Card */}
             <Card>
               <CardHeader>
-                <CardTitle>5. Nagrak Village</CardTitle>
+                <CardTitle>4. Nagrak Village</CardTitle>
                 <CardDescription>Remote mountain village with breathtaking views</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/public/Nuwara-Eliya1.jpg" // Placeholder, replace with actual Nagrak Village image if available
-                    alt="Nagrak Village in the hills near Balangoda, surrounded by tea estates and misty mountains"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Bentotabeach.jpeg",
+                        alt: "Bentota Beach with golden sand and clear waters",
+                        caption: "Bentota Beach",
+                        title: "Bentota Beach"
+                      },
+                      {
+                        src: "/Lunugangabawa2.jpeg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -261,15 +485,153 @@ export default function BalangodaGuide() {
                         Surrounded by tea plantations and cloud forests
                       </li>
                     </ul>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
+                        <Button
+                          variant="secondary"
+                          className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                        >
+                          Read more
+                          <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
+
+            <Card>
+              <CardHeader>
+                <CardTitle>5. Pahanthudawa</CardTitle>
+                <CardDescription>Ancient craft traditions preserved for generations</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/pahanthudawa.jpeg",
+                        alt: "Pahanthudawa with its lush greenery and traditional crafts",
+                        caption: "Pahanthudawa",
+                        title: "Pahanthudawa"
+                      },
+                      {
+                        src: "/Lunugangabawa2.jpeg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Balangoda is renowned for its traditional pottery industry, where ancient techniques passed down
+                      through generations are still practiced today. Visit working pottery villages to see master
+                      craftsmen create beautiful clay vessels using methods unchanged for centuries.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Traditional pottery-making demonstrations
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Hands-on pottery workshops
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Purchase authentic handmade pottery
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Learn about ancient clay preparation methods
+                      </li>
+                    </ul>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
+                        <Button
+                          variant="secondary"
+                          className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                        >
+                          Read more
+                          <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>6. Belihuloya</CardTitle>
+                <CardDescription>Ancient craft traditions preserved for generations</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Bentotabeach.jpeg",
+                        alt: "Bentota Beach with golden sand and clear waters",
+                        caption: "Bentota Beach",
+                        title: "Bentota Beach"
+                      },
+                      {
+                        src: "/Lunugangabawa2.jpeg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Balangoda is renowned for its traditional pottery industry, where ancient techniques passed down
+                      through generations are still practiced today. Visit working pottery villages to see master
+                      craftsmen create beautiful clay vessels using methods unchanged for centuries.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Traditional pottery-making demonstrations
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Hands-on pottery workshops
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Purchase authentic handmade pottery
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Learn about ancient clay preparation methods
+                      </li>
+                    </ul>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
+                        <Button
+                          variant="secondary"
+                          className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                        >
+                          Read more
+                          <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
             {/* Samanalawewa Reservoir */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Samanalawewa Reservoir</CardTitle>
+                <CardTitle>7. Samanalawewa Reservoir</CardTitle>
                 <CardDescription>Stunning man-made lake and engineering marvel</CardDescription>
               </CardHeader>
               <CardContent>
@@ -299,149 +661,30 @@ export default function BalangodaGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Samanalawewa Reservoir with crystal clear waters surrounded by lush mountains and dramatic landscapes"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Bentotabeach.jpeg",
+                        alt: "Bentota Beach with golden sand and clear waters",
+                        caption: "Bentota Beach",
+                        title: "Bentota Beach"
+                      },
+                      {
+                        src: "/Lunugangabawa2.jpeg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+                    ]}
                   />
                 </div>
               </CardContent>
             </Card>
-
             {/* Traditional Pottery Villages */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Traditional Pottery Villages</CardTitle>
-                <CardDescription>Ancient craft traditions preserved for generations</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Traditional pottery making in Balangoda villages with artisans creating clay pots using ancient techniques"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
-                  />
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Balangoda is renowned for its traditional pottery industry, where ancient techniques passed down
-                      through generations are still practiced today. Visit working pottery villages to see master
-                      craftsmen create beautiful clay vessels using methods unchanged for centuries.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Traditional pottery-making demonstrations
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Hands-on pottery workshops
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Purchase authentic handmade pottery
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Learn about ancient clay preparation methods
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-              <Card>
-              <CardHeader>
-                <CardTitle>3. Bakers Bend</CardTitle>
-                <CardDescription>Though the scenery is unparalleled, Nonpareil state</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Traditional pottery making in Balangoda villages with artisans creating clay pots using ancient techniques"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
-                  />
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                     BAKERS BEND is a breathtaking viewpoint located in the Balangoda region, offering panoramic views of the surrounding mountains and valleys. This scenic spot is perfect for photography enthusiasts and nature lovers, providing a serene escape into the heart of Sri Lanka&apos;s natural beauty.
-                     <br />
-                     <strong>Important:</strong>
-                     The Nonpareil road is considered one of the challenging and dangerous roads in Sri Lanka. It is highly recommended to use a 4x4 vehicle to access this location. The road is steep and narrow, with sharp turns and steep drops, making it unsuitable for regular cars.
-                     There are several 4by 4 jeep servoces called Ahas gauwwa that can be hired from Balangoda town to reach the Bakers Bend viewpoint. If you are not confident by owns driving, it is advisable to hire a local driver who is familiar with the road conditions.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Traditional pottery-making demonstrations
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Hands-on pottery workshops
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Purchase authentic handmade pottery
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Learn about ancient clay preparation methods
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-              <Card>
-              <CardHeader>
-                <CardTitle>3. Pahanthudawa</CardTitle>
-                <CardDescription>Ancient craft traditions preserved for generations</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/Pahanthudawa.jpeg"
-                    alt="Traditional pottery making in Balangoda villages with artisans creating clay pots using ancient techniques"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
-                  />
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Balangoda is renowned for its traditional pottery industry, where ancient techniques passed down
-                      through generations are still practiced today. Visit working pottery villages to see master
-                      craftsmen create beautiful clay vessels using methods unchanged for centuries.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Traditional pottery-making demonstrations
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Hands-on pottery workshops
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Purchase authentic handmade pottery
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Learn about ancient clay preparation methods
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-              <Card>
-              <CardHeader>
-                <CardTitle>3. Belihuloya</CardTitle>
+                <CardTitle>8. Traditional Pottery Villages</CardTitle>
                 <CardDescription>Ancient craft traditions preserved for generations</CardDescription>
               </CardHeader>
               <CardContent>
@@ -486,46 +729,6 @@ export default function BalangodaGuide() {
 
         <Separator className="my-12" />
 
-        {/* Prehistoric Heritage */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">The Balangoda Man Discovery</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-            <div>
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Archaeological reconstruction showing Balangoda Man and prehistoric life in ancient Sri Lankan caves"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                Balangoda Man represents one of South Asia&apos;s most significant prehistoric discoveries
-              </p>
-            </div>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                In 1986, archaeologists made a groundbreaking discovery in Balangoda&apos;s cave systems - human remains
-                dating back 37,000 years. This prehistoric human, dubbed &quot;Balangoda Man,&quot; represents one of the earliest
-                known inhabitants of Sri Lanka and provides crucial insights into human migration patterns in South
-                Asia.
-              </p>
-              <p>
-                The discovery included not only human remains but also stone tools, evidence of fire use, and signs of
-                organized community living. These findings suggest that Balangoda was a significant center of
-                prehistoric human activity, with sophisticated hunter-gatherer societies thriving in the region.
-              </p>
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-blue-800 mb-2">Archaeological Significance:</h4>
-                <ul className="text-sm text-blue-700 space-y-1">
-                  <li>• Oldest human remains found in Sri Lanka</li>
-                  <li>• Evidence of advanced stone tool technology</li>
-                  <li>• Insights into prehistoric migration patterns</li>
-                  <li>• Connection to broader South Asian prehistory</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Traditional Crafts */}
         <section className="mb-12">
@@ -578,7 +781,7 @@ export default function BalangodaGuide() {
           </div>
         </section>
 
-  
+
         {/* Getting There */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Getting to Balangoda</h2>
@@ -877,90 +1080,98 @@ export default function BalangodaGuide() {
 
         {/* Nearby Attractions */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Ratnapura</CardTitle>
-                <CardDescription>Gem capital - 1.5 hours</CardDescription>
-              </CardHeader>
-              <CardContent>
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Balangoda adventure with these incredible destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Rathnapura */}
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Ratnapura gem mining and traditional gem cutting workshops with precious stones"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
+                  src="/Saman-devalaya.jpeg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Explore Sri Lanka&apos;s gem capital with mine visits, gem museums, and traditional cutting workshops.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Rathnapura</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Known for its scenic beauty and cool climate, Pattipola is home to the highest railway station in Sri Lanka.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  50 km from Balangoda
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/pattipola" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Adam&apos;s Peak</CardTitle>
-                <CardDescription>Sacred mountain - 2 hours</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Adam's Peak sacred mountain with pilgrims climbing the holy summit at sunrise"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
+                  src="/Adamspeaskmain.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Climb the sacred Adam&apos;s Peak for spiritual experiences and spectacular sunrise views.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Adam&apos;s Peak</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Known for its scenic beauty and cool climate, Adam&apos;s Peak is home to the highest railway station in Sri Lanka.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  18 km from Nuwara Eliya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/adams-peak" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Sinharaja Forest</CardTitle>
-                <CardDescription>UNESCO rainforest - 2.5 hours</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Sinharaja Forest Reserve with pristine rainforest, endemic species, and nature trails"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
+                  src="/Adamspeaskmain.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Explore the UNESCO World Heritage Sinharaja Forest with endemic species and pristine nature.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Pattipola</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Known for its scenic beauty and cool climate, Pattipola is home to the highest railway station in Sri Lanka.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  18 km from Nuwara Eliya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/pattipola" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>
-        </section>
-
-        {/* Final Recommendations */}
-        <section className="mb-12">
-          <Card className="bg-gradient-to-r from-blue-50 to-green-50 border-blue-200">
-            <CardHeader>
-              <CardTitle className="text-blue-800">Your Balangoda Heritage Journey</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-4">
-                Balangoda offers a unique opportunity to connect with Sri Lanka&apos;s prehistoric past while experiencing
-                authentic traditional crafts and stunning natural beauty. From the groundbreaking archaeological
-                discoveries to the serene waters of Samanalawewa Reservoir, this destination provides insights into both
-                ancient and modern Sri Lankan life.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                Whether you&apos;re fascinated by prehistoric human history, interested in traditional crafts, or simply
-                seeking peaceful natural settings, Balangoda delivers experiences that few other destinations can match.
-                This is where 37,000 years of human history comes alive.
-              </p>
-              <p className="text-muted-foreground font-medium">
-                Discover the prehistoric wonders and living traditions of Balangoda! 🏛️🏺
-              </p>
-            </CardContent>
-          </Card>
         </section>
 
       </div>
