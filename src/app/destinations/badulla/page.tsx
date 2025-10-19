@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import InsuranceBanner from "@/components/insurance-banner"
 
 export const metadata: Metadata = {
   title: "Badulla Travel Guide 2025 Ancient Capital & Hill Country Gateway | Sri Lanka",
@@ -121,7 +122,7 @@ export default function BadullaGuide() {
                       <strong>Famous for:</strong> Ceylon Tea & Cool Climate
                     </span>
                   </div>
-                   <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-orange-500" />
                     <span>
                       <strong>Best Time:</strong> December to April
@@ -210,7 +211,7 @@ export default function BadullaGuide() {
           </section>
         </div>
 
-
+        <InsuranceBanner />
         {/* Top Attractions */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Top Attractions in Badulla</h2>
@@ -776,7 +777,7 @@ export default function BadullaGuide() {
               </CardContent>
             </Card>
 
-               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Haputale</CardTitle>
                 <CardDescription>Lipton&apos;s Seat viewpoint - 1.5 hours</CardDescription>
@@ -825,7 +826,7 @@ export default function BadullaGuide() {
             </CardContent>
           </Card>
         </section>
-   
+
       </div>
     </main>
   )

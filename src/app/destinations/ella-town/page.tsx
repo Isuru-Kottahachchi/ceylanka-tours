@@ -1033,6 +1033,51 @@ export default function EllaTownGuide() {
                   </div>
                 </CardContent>
               </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Kithal Ella  Falls</CardTitle>
+                  <CardDescription>Sri Lanka&apos;s most famous waterfall with legendary significance</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-2 gap-6 items-center">
+                    <Image
+                      src="/Ravana-Falls.jpg"
+                      alt="Majestic Ravana Falls cascading down rocky cliffs near Ella with pool for swimming"
+                      width={400}
+                      height={300}
+                      className="rounded-lg"
+                    />
+                    <div>
+                      <p className="text-muted-foreground mb-4">
+                      Not famous and less crowded waterfall located near Ella, might be hard to find but worth the visit for tranquility and natural beauty.
+                      </p>
+                      <ul className="space-y-2 text-muted-foreground">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          6km from Ella town center
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          Swimming in natural pools
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          Historical Ravana Cave nearby
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <AlertTriangle className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
+                          Can be crowded during peak season
+                        </li>
+                      </ul>
+                      <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+                        <p className="text-sm text-blue-700">
+                          <strong>Best time to visit:</strong> Early morning (7-9 AM) or late afternoon (4-6 PM) for fewer crowds and better lighting.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
 
 
               <Card>

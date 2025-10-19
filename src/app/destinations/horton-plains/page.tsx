@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+"use client"
 import Image from "next/image"
 import {
   Clock,
@@ -14,22 +14,12 @@ import {
 } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-
-export const metadata: Metadata = {
-  title: "Horton Plains National Park Complete Guide 2025 | World&apos;s End, Baker&apos;s Falls & Cloud Forest Trek",
-  description:
-    "Discover Horton Plains National Park - Sri Lanka&apos;s highest plateau at 2,100m. Complete guide to World&apos;s End cliff, Baker&apos;s Falls, endemic wildlife, hiking trails, and cloud forest ecosystem.",
-  keywords:
-    "Horton Plains, World&apos;s End, Baker&apos;s Falls, Sri Lanka national parks, cloud forest, endemic species, hiking trails, Nuwara Eliya, central highlands, plateau trek",
-  openGraph: {
-    title: "Horton Plains National Park: Ultimate Guide 2025",
-    description: "Your complete guide to Sri Lanka&apos;s most spectacular high-altitude wilderness",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 export default function HortonPlainsDetailedGuide() {
+
+
+
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -48,15 +38,15 @@ export default function HortonPlainsDetailedGuide() {
             Sri Lanka&apos;s Mystical High-Altitude Wilderness
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-2" />
               Central Highlands, 2,100m Above Sea Level
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
               <TreePine className="w-4 h-4 mr-2" />
               UNESCO World Heritage Site
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-blue-600/80 text-white border-blue-500">
               <Mountain className="w-4 h-4 mr-2" />
               870m Cliff Drop at World&apos;s End
             </Badge>
@@ -99,6 +89,10 @@ export default function HortonPlainsDetailedGuide() {
               new wonders, from tiny endemic flowers blooming in the grass to ancient trees that have stood sentinel
               over this landscape for centuries.
             </p>
+          </div>
+          <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
+            <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Safety Notes</h4>
+            <p className="text-sm text-blue-700 dark:text-gray-200">Sometimes there can be a sudden change in weather conditions, so it's essential to be prepared for rain or fog, especially some fast wind,So Please stick with your group and avoid venturing too close to the cliff edges.</p>
           </div>
         </section>
 
@@ -196,12 +190,27 @@ export default function HortonPlainsDetailedGuide() {
               </CardHeader>
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
-                  <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="World&apos;s End cliff showing the dramatic 870-meter drop with misty valleys below"
-                    width={600}
-                    height={400}
-                    className="rounded-xl shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/IMG_8209.jpg",
+                        alt: "Aerial view of Snake Island Taprobane",
+                        caption: "Snake Island with its colonial villa",
+                        title: "Snake Island from Above"
+                      },
+                      {
+                        src: "/Waligama-Bay-Beach.jpg",
+                        alt: "Sandy causeway connecting Snake Island to mainland",
+                        caption: "Low tide reveals the magical sand path",
+                        title: "Snake Island Causeway"
+                      },
+                      {
+                        src: "/Snake-Island-Villa.jpg",
+                        alt: "Colonial villa on Snake Island",
+                        caption: "Historic colonial-era villa on the island",
+                        title: "Snake Island Villa"
+                      }
+                    ]}
                   />
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
@@ -254,6 +263,16 @@ export default function HortonPlainsDetailedGuide() {
                           </span>
                         </li>
                       </ul>
+                      <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
+                        <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Safety Notes</h4>
+                        <p className="text-sm text-blue-700 dark:text-gray-200">Sometimes there can be a sudden change in weather conditions, so it's essential to be prepared for rain or fog, especially some fast wind, don't reach to the edge of the end it's 870m  dangerous.Please guide your kids always take care of them.</p>
+                      </div>
+                      <div className="bg-amber-50 p-3 rounded-lg">
+                        <p className="text-sm text-amber-800">
+                          <strong>Did You Know?</strong> When you see down from the world's end in clear weather, you can see the Balangoda town and the famous Non pareil state,
+                          If you like to read about Balangoda click <a href="/blog/balangoda" className="underline font-medium">here</a>. If your eyes are sharp enough you can even see the Indian Ocean at a distance of 80 km!
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -330,12 +349,27 @@ export default function HortonPlainsDetailedGuide() {
                       </ul>
                     </div>
                   </div>
-                  <Image
-                    src="/Hortonplains9.jpeg"
-                    alt="Baker&apos;s Falls waterfall cascading through lush forest with rocks and native vegetation"
-                    width={600}
-                    height={500}
-                    className="rounded-xl shadow-lg"
+                   <ImageCarousel
+                    images={[
+                      {
+                        src: "/Hortonplains20.jpeg",
+                        alt: "Aerial view of Snake Island Taprobane",
+                        caption: "Snake Island with its colonial villa",
+                        title: "Snake Island from Above"
+                      },
+                      {
+                        src: "/Waligama-Bay-Beach.jpg",
+                        alt: "Sandy causeway connecting Snake Island to mainland",
+                        caption: "Low tide reveals the magical sand path",
+                        title: "Snake Island Causeway"
+                      },
+                      {
+                        src: "/Snake-Island-Villa.jpg",
+                        alt: "Colonial villa on Snake Island",
+                        caption: "Historic colonial-era villa on the island",
+                        title: "Snake Island Villa"
+                      }
+                    ]}
                   />
                 </div>
               </CardContent>
@@ -351,12 +385,27 @@ export default function HortonPlainsDetailedGuide() {
               </CardHeader>
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
-                  <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Little World&apos;s End showing a smaller cliff with mountain views and grasslands"
-                    width={600}
-                    height={400}
-                    className="rounded-xl shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/IMG_8209.jpg",
+                        alt: "Aerial view of Snake Island Taprobane",
+                        caption: "Snake Island with its colonial villa",
+                        title: "Snake Island from Above"
+                      },
+                      {
+                        src: "/Waligama-Bay-Beach.jpg",
+                        alt: "Sandy causeway connecting Snake Island to mainland",
+                        caption: "Low tide reveals the magical sand path",
+                        title: "Snake Island Causeway"
+                      },
+                      {
+                        src: "/Snake-Island-Villa.jpg",
+                        alt: "Colonial villa on Snake Island",
+                        caption: "Historic colonial-era villa on the island",
+                        title: "Snake Island Villa"
+                      }
+                    ]}
                   />
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
@@ -402,6 +451,102 @@ export default function HortonPlainsDetailedGuide() {
                             <strong>Perfect Timing:</strong> Great spot to gauge weather conditions
                           </span>
                         </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Chimney Falls - Detailed */}
+            <Card className="overflow-hidden border-2 border-purple-200">
+              <CardHeader className="bg-gradient-to-r from-purple-50 to-violet-50 dark:from-purple-950 dark:to-violet-950">
+                <CardTitle className="text-2xl text-purple-800 dark:text-purple-300">Chimney Falls (Chimini Ella): A Hidden Wonder</CardTitle>
+                <CardDescription className="text-lg text-purple-600 dark:text-purple-400">
+                  A mystical mountain pool where mist rises like ancient chimneys
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-2 gap-8 items-start">
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      Chimney Falls, locally known as Chimini Ella, is one of Horton Plains&apos; most enigmatic attractions.
+                      This unique natural formation features crystal-clear mountain springs feeding into a serene pool,
+                      surrounded by distinctive chimney like rock formations. During certain times of day, especially early
+                      morning, mist rises from the pool&apos;s surface creating an ethereal effect that gave the falls its name.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      The geological formation dates back millions of years, carved by the persistent flow of mountain
+                      springs. The pool maintains a constant temperature of 15°C throughout the year, creating a unique
+                      microhabitat for endemic aquatic species and attracting various wildlife, especially during dawn
+                      and dusk hours.
+                    </p>
+
+                    <div className="bg-purple-50 dark:bg-purple-950/30 p-6 rounded-lg border border-purple-200 dark:border-purple-700">
+                      <h4 className="font-semibold text-purple-800 dark:text-purple-300 mb-3">Chimney Falls Highlights:</h4>
+                      <ul className="space-y-3 text-muted-foreground">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Natural Springs:</strong> Crystal-clear mountain water at constant 15°C
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Best Timing:</strong> 6:00-8:00 AM for the mystical mist effect
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Wildlife Spotting:</strong> Endemic birds and animals visit at dawn
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Geological Marvel:</strong> Ancient rock formations millions of years old
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Easy Access:</strong> Located 1km from entrance on main trail
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="space-y-6">
+                    <div className="bg-blue-50 dark:bg-blue-950/30 p-6 rounded-lg border border-blue-200 dark:border-blue-700">
+                      <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-3">Wildlife Around Chimney Falls:</h4>
+                      <div className="space-y-4">
+                        <div>
+                          <p className="font-medium text-blue-700 dark:text-blue-300">Morning Visitors (6:00-9:00 AM)</p>
+                          <ul className="mt-2 space-y-2 text-sm text-muted-foreground">
+                            <li>• Sambar Deer coming to drink</li>
+                            <li>• Endemic bird species gathering</li>
+                            <li>• Giant Squirrels in nearby trees</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="font-medium text-orange-700 dark:text-orange-300">Evening Visitors (4:00-6:00 PM)</p>
+                          <ul className="mt-2 space-y-2 text-sm text-muted-foreground">
+                            <li>• Wild Boar families</li>
+                            <li>• Purple-faced Langurs</li>
+                            <li>• Various butterfly species</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-green-50 dark:bg-green-950/30 p-6 rounded-lg border border-green-200 dark:border-green-700">
+                      <h4 className="font-semibold text-green-800 dark:text-green-300 mb-3">Flora Around the Falls:</h4>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li>• Endemic orchid species</li>
+                        <li>• Rare mountain ferns</li>
+                        <li>• Medicinal plants</li>
+                        <li>• Moss-covered ancient trees</li>
                       </ul>
                     </div>
                   </div>

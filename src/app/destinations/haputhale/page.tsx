@@ -240,41 +240,41 @@ export default function HaputaleGuide() {
                 </div>
               </CardContent>
             </Card>
-                 {/* Tea Heritage */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">The Lipton Tea Legacy</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-            <div>
-              <Image
-                src="/Lipton-tea.jpg"
-                alt="Historical photo recreation of Sir Thomas Lipton surveying his tea empire from Lipton's Seat"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                Sir Thomas Lipton&apos;s vision transformed these mountains into tea paradise
-              </p>
-            </div>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                In the late 1800s, Scottish entrepreneur Sir Thomas Lipton purchased vast tracts of land around Haputale to establish his tea empire. Born in Glasgow, Scotland, Lipton would often climb to the highest point – now known as Lipton&apos;s Seat – to survey his plantations and plan expansion.
-              </p>
-              <p>
-                Lipton revolutionized the tea industry by controlling every aspect from plantation to packaging, creating the world&apos;s first vertically integrated tea business. His Dambatenne Tea Factory became the heart of this operation, producing premium Ceylon tea that made the Lipton brand famous worldwide.
-              </p>
-              <div className="bg-amber-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-amber-800 mb-2">Lipton&apos;s Legacy:</h4>
-                <ul className="text-sm text-amber-700 space-y-1">
-                  <li>• Established Ceylon tea as world&apos;s finest</li>
-                  <li>• Created first global tea brand</li>
-                  <li>• Pioneered direct plantation-to-consumer sales</li>
-                  <li>• Left lasting impact on Sri Lankan economy</li>
-                </ul>
+            {/* Tea Heritage */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6">The Lipton Tea Legacy</h2>
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+                <div>
+                  <Image
+                    src="/Lipton-tea.jpg"
+                    alt="Historical photo recreation of Sir Thomas Lipton surveying his tea empire from Lipton's Seat"
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-lg"
+                  />
+                  <p className="text-sm text-muted-foreground mt-2 italic">
+                    Sir Thomas Lipton&apos;s vision transformed these mountains into tea paradise
+                  </p>
+                </div>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    In the late 1800s, Scottish entrepreneur Sir Thomas Lipton purchased vast tracts of land around Haputale to establish his tea empire. Born in Glasgow, Scotland, Lipton would often climb to the highest point – now known as Lipton&apos;s Seat – to survey his plantations and plan expansion.
+                  </p>
+                  <p>
+                    Lipton revolutionized the tea industry by controlling every aspect from plantation to packaging, creating the world&apos;s first vertically integrated tea business. His Dambatenne Tea Factory became the heart of this operation, producing premium Ceylon tea that made the Lipton brand famous worldwide.
+                  </p>
+                  <div className="bg-amber-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-amber-800 mb-2">Lipton&apos;s Legacy:</h4>
+                    <ul className="text-sm text-amber-700 space-y-1">
+                      <li>• Established Ceylon tea as world&apos;s finest</li>
+                      <li>• Created first global tea brand</li>
+                      <li>• Pioneered direct plantation-to-consumer sales</li>
+                      <li>• Left lasting impact on Sri Lankan economy</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
+            </section>
 
 
 
@@ -390,12 +390,123 @@ export default function HaputaleGuide() {
                 </div>
               </CardContent>
             </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>3. Galapitagala Estate</CardTitle>
+                <CardDescription>U</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Adisham-Monastery.jpeg",
+                        alt: "Adisham Monastery showing English Tudor architecture surrounded by mountain gardens",
+                        caption: "Adisham Monastery exterior",
+                        title: "Adisham Monastery"
+                      },
+                      {
+                        src: "/Adisham-bungalow3.jpg",
+                        alt: "Beautiful gardens at Adisham Monastery with mountain backdrop",
+                        caption: "Monastery gardens and views",
+                        title: "Monastery Gardens"
+                      },
+                      {
+                        src: "/Adisham-bungalow2.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                      {
+                        src: "/Adisham-bungalow.jpg",
+                        alt: "Beautiful gardens at Adisham Monastery with mountain backdrop",
+                        caption: "Monastery gardens and views",
+                        title: "Monastery Gardens"
+                      },
+                      {
+                        src: "/Adisham-bungalow10.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                      {
+                        src: "/Adisham-bungalow4.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                      {
+                        src: "/Adisham-bungalow5.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                      {
+                        src: "/Adisham-bungalow6.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                      {
+                        src: "/Adisham-bungalow7.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                      {
+                        src: "/Adisham-bungalow8.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+                      {
+                        src: "/Adisham-bungalow9.jpg",
+                        alt: "Adisham Monastery with English Tudor architecture",
+                        caption: "Tudor-style architecture",
+                        title: "Tudor-Style Architecture"
+                      },
+
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                    Nidangoda Falls (Private and Need a permission to visit)
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Beautiful Tudor-style English architecture
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Peaceful monastery gardens and grounds
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Open weekends and public holidays
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Stunning mountain and valley views
+                      </li>
+                    </ul>
+
+                    {/* See More Button */}
+                    <div className="mt-4">
+                      <Button asChild variant="outline" size="sm">
+                        <a href="/destinations/adisham-monastery">See More</a>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
         {/* <Separator className="my-12" /> */}
 
-   
+
         <section className="mb-12">
           {/* Dambatenne Tea Factory */}
           <Card>

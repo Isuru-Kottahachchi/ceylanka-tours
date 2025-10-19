@@ -512,7 +512,7 @@ export default function BalangodaGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/pahanthudawa.jpeg",
+                        src: "/Pahanthudawa.jpeg",
                         alt: "Pahanthudawa with its lush greenery and traditional crafts",
                         caption: "Pahanthudawa",
                         title: "Pahanthudawa"

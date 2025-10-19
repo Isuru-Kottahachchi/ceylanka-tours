@@ -73,6 +73,11 @@ export default function AdamsPeakTravelGuide() {
               <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Did You Know?</h4>
               <p className="text-sm text-blue-700 dark:text-gray-200">Adams&apos; Peak is the 4th highest mountain in Sri Lanka, standing at 2,243 meters (7,359 feet) above sea level. In the past, climbing Sri Padha was no easy task. Before beginning the sacred journey to the summit, many people even handed over their property to their children unsure if they would ever return. Back then, there were no proper steps, handrails, or safety measures. The path was steep, wild, and dangerous. Some pilgrims never made it back, which shows just how deep their faith and devotion truly were. Today, the climb is much safer, but the spiritual spirit of those early pilgrims still lives on with every step to the top</p>
             </div>
+            <div className="bg-amber-50 p-3 rounded-lg">
+              <p className="text-sm text-amber-800">
+                <strong>Did You Know?</strong> Major rivers such as the Kelani, Kalu, and Walawe originate from the slopes of Adams Peak, making it a crucial watershed for the region.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -211,8 +216,8 @@ export default function AdamsPeakTravelGuide() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground">
-                  God Saman (Saman Deviyo) is the guardian deity of Sri Pada and the Sabaragamuwa region. According to 
-                  Buddhist tradition, he was present when the Buddha visited Sri Lanka and was entrusted with protecting 
+                  God Saman (Saman Deviyo) is the guardian deity of Sri Pada and the Sabaragamuwa region. According to
+                  Buddhist tradition, he was present when the Buddha visited Sri Lanka and was entrusted with protecting
                   the sacred mountain and its surroundings, known as the Saman Adaviya.
                 </p>
                 <div className="space-y-3">
@@ -297,13 +302,13 @@ export default function AdamsPeakTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">The Sacred Footprint</h4>
                     <p className="text-muted-foreground mb-4">
-                      The Sri Pada (Sacred Footprint) at the summit is believed to be protected by God Saman himself. 
+                      The Sri Pada (Sacred Footprint) at the summit is believed to be protected by God Saman himself.
                       The depression measures 1.8 meters in length and has been a sacred site for various religions for centuries.
                     </p>
                     <div className="bg-amber-50 p-3 rounded-lg">
                       <p className="text-sm text-amber-800">
-                        <strong>Did You Know?</strong> Small herds of wild elephants still inhabit the lower slopes of 
-                        the mountain, considered sacred and under God Saman&apos;s protection. These elephants are rarely seen 
+                        <strong>Did You Know?</strong> Small herds of wild elephants still inhabit the lower slopes of
+                        the mountain, considered sacred and under God Saman&apos;s protection. These elephants are rarely seen
                         but are an important part of the mountain&apos;s ecosystem and cultural significance.
                       </p>
                     </div>
@@ -332,8 +337,8 @@ export default function AdamsPeakTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">Seetha Gangula</h4>
                     <p className="text-muted-foreground mb-4">
-                      Known as the &quot;Cold Stream,&quot; this is where the Buddha is said to have paused to refresh himself. 
-                      The water here remains remarkably cool even during the hottest days, and pilgrims often stop 
+                      Known as the &quot;Cold Stream,&quot; this is where the Buddha is said to have paused to refresh himself.
+                      The water here remains remarkably cool even during the hottest days, and pilgrims often stop
                       to wash their faces in its rejuvenating waters.
                     </p>
                     <div className="bg-blue-50 p-3 rounded-lg">
@@ -347,8 +352,8 @@ export default function AdamsPeakTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">Geththapana</h4>
                     <p className="text-muted-foreground mb-4">
-                      This location marks where the Buddha is believed to have tied his robe before beginning the 
-                      final ascent to the peak. The name &quot;Geththapana&quot; refers to the act of tying or knotting, 
+                      This location marks where the Buddha is believed to have tied his robe before beginning the
+                      final ascent to the peak. The name &quot;Geththapana&quot; refers to the act of tying or knotting,
                       and it&apos;s considered a significant point of preparation on the pilgrimage route.
                     </p>
                   </div>
@@ -356,8 +361,8 @@ export default function AdamsPeakTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">Haramithi Pana</h4>
                     <p className="text-muted-foreground mb-4">
-                       this is where the Buddha is said to have rested and practiced 
-                      meditation. The spot is marked by a distinctive rock formation and offers a natural resting 
+                      this is where the Buddha is said to have rested and practiced
+                      meditation. The spot is marked by a distinctive rock formation and offers a natural resting
                       place for weary pilgrims.
                     </p>
                     <ul className="text-sm text-muted-foreground space-y-2">
@@ -375,13 +380,13 @@ export default function AdamsPeakTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">Maha Giri Damba</h4>
                     <p className="text-muted-foreground mb-4">
-                      This massive rock formation is where the Buddha is believed to have given a discourse to the 
-                      deity Maha Saman. The name means &quot;Great Rock Peak&quot; and it offers spectacular views of the 
+                      This massive rock formation is where the Buddha is believed to have given a discourse to the
+                      deity Maha Saman. The name means &quot;Great Rock Peak&quot; and it offers spectacular views of the
                       surrounding landscape.
                     </p>
                     <div className="bg-amber-50 p-3 rounded-lg">
                       <p className="text-sm text-amber-800">
-                        This is also where, according to tradition, the Buddha explained to Saman Deviyo the 
+                        This is also where, according to tradition, the Buddha explained to Saman Deviyo the
                         importance of protecting the sacred mountain and its surroundings.
                       </p>
                     </div>
@@ -391,10 +396,10 @@ export default function AdamsPeakTravelGuide() {
                 <div className="mt-6 bg-purple-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-purple-800 mb-2">Pilgrim&apos;s Note</h4>
                   <p className="text-sm text-purple-700">
-                    Each of these sacred points forms part of the traditional pilgrimage experience. Taking time to 
-                    pause and reflect at these locations helps connect modern-day pilgrims with the ancient spiritual 
+                    Each of these sacred points forms part of the traditional pilgrimage experience. Taking time to
+                    pause and reflect at these locations helps connect modern-day pilgrims with the ancient spiritual
                     history of Sri Pada.
-                    Each and every point is a bit different from the path you selected but Lord Buddha selected the Rathnapura route to climb the mountain. 
+                    Each and every point is a bit different from the path you selected but Lord Buddha selected the Rathnapura route to climb the mountain.
                   </p>
                 </div>
               </CardContent>

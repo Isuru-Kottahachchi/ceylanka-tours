@@ -133,9 +133,8 @@ export default function NuwaraEliyaTravelGuide() {
 
 
   const shanthipuraImages = [
-    "/Shanthipura.jpg", 
-    "/Shanthipura-Estate2.jpg",
-    "/Shanthipura-Estate3.jpg",
+    "/Shanthipura.jpg",
+    "/Shanthipura1.jpg",
   ]
 
   return (
@@ -304,7 +303,7 @@ export default function NuwaraEliyaTravelGuide() {
                       <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Nanu Oya station</span></li>
                       <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li>
                     </ul>
-{/* 
+                    {/* 
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo → Kandy → Nuwara Eliya</li>
