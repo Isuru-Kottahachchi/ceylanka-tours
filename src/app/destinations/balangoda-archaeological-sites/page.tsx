@@ -9,6 +9,7 @@ import {
   Mountain,
   History,
   Skull,
+  Milestone,
 } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -33,7 +34,7 @@ export default function BalangodaPrehistoricSites() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Balangoda-archaeological.jpg"
+          src="/Batadomba-Lena1.jpg"
           alt="Ancient cave settlements in Balangoda where prehistoric humans lived"
           fill
           className="object-cover"
@@ -46,16 +47,16 @@ export default function BalangodaPrehistoricSites() {
             Journey Through 30,000 Years of Human History
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-yellow-600/80 text-white border-yellow-500">
               <History className="w-4 h-4 mr-2" />
               30,000+ Years of History
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
               <Skull className="w-4 h-4 mr-2" />
               Homo sapiens balangodensis
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
-              <Skull className="w-4 h-4 mr-2" />
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-blue-600/80 text-white border-blue-500">
+              <Milestone className="w-4 h-4 mr-2" />
               Stone Age Tools & Artifacts
             </Badge>
           </div>

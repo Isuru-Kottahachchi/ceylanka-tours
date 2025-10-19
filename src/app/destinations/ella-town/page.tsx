@@ -347,12 +347,22 @@ export default function EllaTownGuide() {
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6 items-center">
-                    <Image
-                      src="/Ninearchbridge.jpg"
-                      alt="Iconic Nine Arch Bridge with train crossing through lush jungle and tea plantations"
-                      width={500}
-                      height={500}
-                      className="rounded-lg"
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/Ninearchbridge.jpg",
+                          alt: "Iconic Nine Arch Bridge with train crossing through lush jungle and tea plantations",
+                          caption: "Nine Arch Bridge",
+                          title: "Nine Arch Bridge"
+                        },
+                          {
+                          src: "/Nine-Arch-Bridge12.jpg",
+                          alt: "Iconic Nine Arch Bridge with train crossing through lush jungle and tea plantations",
+                          caption: "Nine Arch Bridge",
+                          title: "Nine Arch Bridge"
+                        },
+
+                      ]}
                     />
                     <div>
                       <p className="text-muted-foreground mb-4">
@@ -407,12 +417,23 @@ export default function EllaTownGuide() {
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6 items-center">
-                    <Image
-                      src="/Littleadamspeak.jpg"
-                      alt="Hikers on Little Adams Peak summit with panoramic views of Ella Gap and surrounding tea plantations"
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
+
+                      <ImageCarousel
+                      images={[
+                        {
+                          src: "/Littleadamspeak.jpg",
+                          alt: "Iconic Nine Arch Bridge with train crossing through lush jungle and tea plantations",
+                          caption: "Nine Arch Bridge",
+                          title: "Nine Arch Bridge"
+                        },
+                          {
+                          src: "/Nine-Arch-Bridge12.jpg",
+                          alt: "Iconic Nine Arch Bridge with train crossing through lush jungle and tea plantations",
+                          caption: "Nine Arch Bridge",
+                          title: "Nine Arch Bridge"
+                        },
+
+                      ]}
                     />
                     <div>
                       <p className="text-muted-foreground mb-4">
@@ -1049,7 +1070,7 @@ export default function EllaTownGuide() {
                     />
                     <div>
                       <p className="text-muted-foreground mb-4">
-                      Not famous and less crowded waterfall located near Ella, might be hard to find but worth the visit for tranquility and natural beauty.
+                        Not famous and less crowded waterfall located near Ella, might be hard to find but worth the visit for tranquility and natural beauty.
                       </p>
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
