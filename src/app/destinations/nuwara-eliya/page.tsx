@@ -131,6 +131,13 @@ export default function NuwaraEliyaTravelGuide() {
     "/placeholder.svg?height=400&width=600&text=Haggala+Garden+View"
   ];
 
+
+  const shanthipuraImages = [
+    "/Shanthipura.jpg", 
+    "/Shanthipura-Estate2.jpg",
+    "/Shanthipura-Estate3.jpg",
+  ]
+
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -708,7 +715,7 @@ export default function NuwaraEliyaTravelGuide() {
                     </div>
                   </div>
                   <ImageCarousel
-                    images={moonPlainsImages}
+                    images={shanthipuraImages}
                     alt="Moon Plains showcasing the stunning landscapes, unique flora, and fauna"
                   />
                 </div>
@@ -849,11 +856,11 @@ export default function NuwaraEliyaTravelGuide() {
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Ella */}
+            {/* Pattipola */}
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Nine-arch-ella.jpg"
+                  src="/Pattipola.webp"
                   alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
                   fill
                   className="object-cover rounded-t-lg"
@@ -863,13 +870,41 @@ export default function NuwaraEliyaTravelGuide() {
                 </div>
               </div>
               <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Pattipola</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Known for its scenic beauty and cool climate, Pattipola is home to the highest railway station in Sri Lanka.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  18 km from Nuwara Eliya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/pattipola" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Nine-arch-ella.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1 hours 50 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Ella</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Famous for the Nine Arch Bridge, Little Adam&apos;s Peak, and stunning train journeys through tea country.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  65 km from Nuwara Eliya
+                  56 km from Nuwara Eliya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/ella-town" passHref legacyBehavior>
@@ -959,7 +994,7 @@ export default function NuwaraEliyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  75 km from Nuwara Eliya
+                  55 km from Nuwara Eliya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/badulla" passHref legacyBehavior>

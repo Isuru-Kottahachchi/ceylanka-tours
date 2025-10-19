@@ -1156,16 +1156,16 @@ export default function BalangodaGuide() {
                 </div>
               </div>
               <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Pattipola</h3>
+                <h3 className="font-bold text-lg mb-2">Hawagala</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Known for its scenic beauty and cool climate, Pattipola is home to the highest railway station in Sri Lanka.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  18 km from Nuwara Eliya
+                  17 km from Balangoda
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/pattipola" passHref legacyBehavior>
+                  <Link href="/destinations/hawagala" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>

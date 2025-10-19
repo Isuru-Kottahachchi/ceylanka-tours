@@ -480,7 +480,7 @@ export default function JungleBeachPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/GalleFort.jpeg"
+                  src="/galle-fort-sarmat-batagov-unsplash.jpg"
                   alt="Galle Fort - UNESCO World Heritage site near Jungle Beach"
                   width={300}
                   height={200}
@@ -509,7 +509,7 @@ export default function JungleBeachPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300&text=Ambalangoda"
+                  src="/Ambalangoda.jpg"
                   alt="Ambalangoda - famous for its traditional mask making"
                   width={300}
                   height={200}
