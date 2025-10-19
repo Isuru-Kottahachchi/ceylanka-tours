@@ -18,7 +18,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="relative h-[700px] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[700px] flex items-center justify-center overflow-hidden w-full">
       {/* Optimized Background Image */}
       <Image
         src="/images/stockvault-sunset-at-sri-lanka-southern-beach280430.jpg"
@@ -51,22 +51,25 @@ export function HeroSection() {
           onSubmit={handleSearch}
           className="flex flex-col sm:flex-row items-stretch justify-center gap-2 sm:gap-0 max-w-2xl mx-auto w-full px-4 sm:px-0"
         >
+          <div className="relative w-full sm:flex-1 group">
           <Input
             type="search"
             placeholder="Search your Sri Lankan destinations"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full sm:flex-1 h-12 text-black dark:text-white text-base sm:text-lg px-6 rounded-lg sm:rounded-l-lg sm:rounded-r-none bg-white dark:bg-gray-800 placeholder:text-gray-500 dark:placeholder:text-gray-400 appearance-none max-w-full"
-            style={{ fontSize: '16px' }} // Prevents iOS zoom
+            className="w-full sm:flex-1 h-12 text-black dark:text-white text-base sm:text-lg pl-12 pr-4 rounded-lg sm:rounded-l-lg sm:rounded-r-none bg-white dark:bg-gray-800 placeholder:text-gray-500 dark:placeholder:text-gray-400 appearance-none max-w-full border-2 border-transparent focus:border-cyan-500 dark:focus:border-cyan-400 transition-all duration-300 shadow-sm"
+            style={{ fontSize: '16px' }}
             autoComplete="off"
             autoCorrect="off"
             autoCapitalize="off"
             spellCheck="false"
           />
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400 pointer-events-none transition-colors group-focus-within:text-cyan-500 dark:group-focus-within:text-cyan-400" />
+          </div>
           <Button
             type="submit"
             variant="default"
-            className="w-full sm:w-auto h-12 px-8 bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white font-semibold rounded-r-lg cursor-pointer transition-colors flex items-center justify-center"
+            className="w-full sm:w-auto h-12 px-8 bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white font-semibold rounded-lg sm:rounded-l-none sm:rounded-r-lg cursor-pointer transition-all duration-300 flex items-center justify-center shadow-sm hover:shadow-md"
           >
             <Search className="h-5 w-5 mr-2" />
             Search
