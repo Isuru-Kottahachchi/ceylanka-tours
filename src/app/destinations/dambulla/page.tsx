@@ -26,7 +26,7 @@ export default function DambullaTownGuide() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=900&width=1400"
+          src="/dambulla-cave-temple.jpg"
           alt="Bustling Dambulla town with local markets, traditional buildings and daily life"
           fill
           className="object-cover"

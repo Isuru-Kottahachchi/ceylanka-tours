@@ -451,16 +451,16 @@ export default function BalangodaGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Bentotabeach.jpeg",
-                        alt: "Bentota Beach with golden sand and clear waters",
-                        caption: "Bentota Beach",
-                        title: "Bentota Beach"
+                        src: "/Nagrak-Village.png",
+                        alt: "Nagrak Village with lush greenery and mountains",
+                        caption: "Nagrak Village",
+                        title: "Nagrak Village"
                       },
                       {
-                        src: "/Lunugangabawa2.jpeg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
+                        src: "/Nagrak-Village1.png",
+                        alt: "Nagrak Village with lush greenery and mountains",
+                        caption: "Nagrak Village",
+                        title: "Nagrak Village"
                       },
 
                     ]}
@@ -666,10 +666,10 @@ export default function BalangodaGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Bentotabeach.jpeg",
-                        alt: "Bentota Beach with golden sand and clear waters",
-                        caption: "Bentota Beach",
-                        title: "Bentota Beach"
+                        src: "/Samanala-Wewa.jpg",
+                        alt: "Samanala Wewa Reservoir with lush greenery and mountains",
+                        caption: "Samanala Wewa Reservoir",
+                        title: "Samanala Wewa Reservoir"
                       },
                       {
                         src: "/Lunugangabawa2.jpeg",
@@ -934,7 +934,7 @@ export default function BalangodaGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Samanala-Wewa.jpg"
                   alt="Recreational activities at Samanalawewa Reservoir including boating, fishing, and scenic viewpoints"
                   width={300}
                   height={200}
