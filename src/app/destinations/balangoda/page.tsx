@@ -1111,7 +1111,7 @@ export default function BalangodaGuide() {
                   50 km from Balangoda
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/pattipola" passHref legacyBehavior>
+                  <Link href="/destinations/rathnapura" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>

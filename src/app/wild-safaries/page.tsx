@@ -17,7 +17,6 @@ import {
     Users,
     CheckCircle,
     ArrowRight,
-    Camera,
     Binoculars,
     ChevronLeft,
     ChevronRight
@@ -833,7 +832,7 @@ export default function WildSafarisPage() {
                         <span className="block text-emerald-300">Sri Lanka</span>
                     </h1>
                     <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">
-                        Explore 14 protected areas from famous leopard territories to pristine coral reefs. Your complete guide to Sri Lanka's incredible biodiversity.
+                        Explore 14 protected areas from famous leopard territories to pristine coral reefs. Your complete guide to Sri Lanka&apos;s incredible biodiversity.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4 text-sm">
                         <Badge className="bg-white/20 text-white border-white/30 px-4 py-2">
@@ -1235,7 +1234,7 @@ export default function WildSafarisPage() {
                                         <li>• Early morning offers best lighting</li>
                                         <li>• Use telephoto lens for safety</li>
                                         <li>• Be patient and quiet</li>
-                                        <li>• Respect animals' natural behavior</li>
+                                        <li>• Respect animals&apos; natural behavior</li>
                                         <li>• Bring extra batteries and memory cards</li>
                                         <li>• Learn animal behavior patterns</li>
                                     </ul>
@@ -1333,7 +1332,7 @@ export default function WildSafarisPage() {
                                 Ready for Your Wildlife Adventure?
                             </h2>
                             <p className="text-xl mb-6 text-green-100">
-                                Explore Sri Lanka's incredible national parks and encounter amazing wildlife in their natural habitat
+                                Explore Sri Lanka&apos;s incredible national parks and encounter amazing wildlife in their natural habitat
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Button asChild size="lg" className="bg-white text-green-600 hover:bg-gray-100">

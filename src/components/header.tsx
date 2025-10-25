@@ -25,7 +25,7 @@ const whatToDoItems = [
   {
     title: "Adventure Activities",
     items: [
-      { name: "Hiking & Trekking", href: "/activities/hiking" },
+      { name: "Hiking & Trekking", href: "/explore/famous-trails" },
       { name: "Water Activities", href: "/water-activities" },
       { name: "Wildlife Safari", href: "/wild-safaries" },
       { name: "Cultural Tours", href: "/cultural-tours" },
