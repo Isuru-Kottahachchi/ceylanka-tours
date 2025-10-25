@@ -23,6 +23,7 @@ import {
 import { useState } from 'react'
 
 const waterActivities = [
+
     {
         id: 1,
         name: "White Water Rafting",
@@ -285,7 +286,65 @@ const waterActivities = [
                 season: "November to April"
             }
         ]
-    }
+    },
+    {
+        id: 7,
+        name: "Leisure World Water Park",
+        locations: ["Kaluaggala, Hanwella"],
+        images: [
+            { src: "/leisure-world-main.jpg", title: "Leisure World Main Pool" },
+            { src: "/leisure-world-slides.jpg", title: "Exciting Water Slides" },
+            { src: "/leisure-world-wavepool.jpg", title: "Wave Pool Fun" }
+        ],
+        bestTime: "Year-round",
+        difficulty: "All Ages",
+        duration: "Full Day",
+        priceRange: "$10 - $20",
+        description: "Sri Lanka's first and most popular water park, Leisure World offers a variety of water slides, wave pools, lazy rivers, and kids' splash zones. Perfect for families and groups seeking a fun-filled day with modern facilities and lifeguard supervision.",
+        highlights: ["Wave Pool", "Lazy River", "Kids' Splash Zone", "Thrill Slides"],
+        safetyTips: [
+            "Follow all posted safety instructions",
+            "Supervise children at all times",
+            "Use appropriate swimwear",
+            "No running on wet surfaces"
+        ],
+        topLocations: [
+            {
+                name: "Leisure World Water Park",
+                details: "Located in Hanwella, just outside Colombo. Features Sri Lanka's largest selection of water rides and pools.",
+                season: "Year-round"
+            }
+        ]
+    },
+    {
+        id: 8,
+        name: "Pearl Bay Water Park",
+        locations: ["Bandaragama"],
+        images: [
+            { src: "/pearl-bay-main.jpg", title: "Pearl Bay Main Entrance" },
+            { src: "/pearl-bay-slides.jpg", title: "Giant Water Slides" },
+            { src: "/pearl-bay-wavepool.jpg", title: "Wave Pool Adventure" }
+        ],
+        bestTime: "Year-round",
+        difficulty: "All Ages",
+        duration: "Full Day",
+        priceRange: "$12 - $25",
+        description: "Pearl Bay is Sri Lanka's newest world-class water park, featuring state-of-the-art slides, a massive wave pool, and unique attractions for all ages. Enjoy international-standard safety, food courts, and a relaxing day out close to Colombo.",
+        highlights: ["Giant Slides", "Wave Pool", "Kids' Play Area", "International Safety"],
+        safetyTips: [
+            "Obey lifeguard instructions",
+            "Stay hydrated and use sunscreen",
+            "Height restrictions apply for some rides",
+            "No diving in shallow areas"
+        ],
+        topLocations: [
+            {
+                name: "Pearl Bay Water Park",
+                details: "Located in Bandaragama, this modern park offers a premium water adventure experience for families and thrill-seekers.",
+                season: "Year-round"
+            }
+        ]
+    },
 ]
 
 const safetyGuidelines = [
@@ -360,7 +419,7 @@ function ImageCarousel({ images, difficulty }: { images: { src: string; title: s
 
     const onTouchEnd = () => {
         if (!touchStart || !touchEnd) return
-        
+
         const distance = touchStart - touchEnd
         const isLeftSwipe = distance > minSwipeDistance
         const isRightSwipe = distance < -minSwipeDistance
@@ -374,7 +433,7 @@ function ImageCarousel({ images, difficulty }: { images: { src: string; title: s
     }
 
     return (
-        <div 
+        <div
             className="relative h-64 md:h-80 lg:h-72 xl:h-80 group"
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
@@ -387,7 +446,7 @@ function ImageCarousel({ images, difficulty }: { images: { src: string; title: s
                 className="object-cover transition-all duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            
+
             {/* Navigation Buttons */}
             {images.length > 1 && (
                 <>
@@ -413,9 +472,8 @@ function ImageCarousel({ images, difficulty }: { images: { src: string; title: s
                         <button
                             key={index}
                             onClick={() => setCurrentIndex(index)}
-                            className={`w-3 h-3 md:w-2 md:h-2 rounded-full transition-all touch-manipulation ${
-                                index === currentIndex ? 'bg-white' : 'bg-white/50'
-                            }`}
+                            className={`w-3 h-3 md:w-2 md:h-2 rounded-full transition-all touch-manipulation ${index === currentIndex ? 'bg-white' : 'bg-white/50'
+                                }`}
                         />
                     ))}
                 </div>

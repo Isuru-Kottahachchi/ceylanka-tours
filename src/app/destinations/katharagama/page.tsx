@@ -386,6 +386,86 @@ export default function KatharagamaGuide() {
                   </div>
                 </CardContent>
               </Card>
+              <Card className="overflow-hidden border-2 border-red-200 dark:border-red-700">
+                <CardHeader className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/40 dark:to-orange-900/40">
+                  <CardTitle className="text-2xl text-red-800 dark:text-red-300">Sella Katharagama</CardTitle>
+                  <CardDescription className="text-lg text-red-600 dark:text-red-300">
+                    Place of divine healing and blessings and connection with Lord Murugan (Skanda/ Kataragama Deviyo/ God of Katharagama and Valli)
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-8">
+                  <div className="grid lg:grid-cols-2 gap-8 items-start">
+                    <div className="rounded-xl shadow-lg overflow-hidden">
+                      <ImageCarousel
+                        images={[
+                          { src: "/Sella-Katharagama.jpeg", caption: "Main Katharagama temple with devotees and oil lamps" },
+                          { src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama temple illuminated at night" }
+                        ]}
+                        alt="Main Katharagama temple with devotees offering prayers and oil lamps during evening ceremony"
+                      />
+                    </div>
+                    <div className="space-y-6">
+                      <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
+                        The main Katharagama temple is the spiritual center of the entire complex, housing the sacred
+                        shrine of Lord Murugan. Unlike typical Hindu temples with elaborate statues, the main deity here
+                        is represented by a simple yantra (sacred geometric symbol) embedded in the wall. This unique
+                        feature makes the temple accessible to people of all faiths, as there are no specific religious
+                        images that might exclude any particular group.
+                      </p>
+                      <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
+                        The temple follows ancient traditions where devotees make offerings of fruits, flowers, and
+                        coconuts, while lighting oil lamps as symbols of their prayers. The most powerful time to visit is
+                        during the evening puja (prayer ceremony) around 6:30 PM, when hundreds of devotees gather to
+                        participate in collective worship. The atmosphere becomes electric with devotional chanting, drum
+                        beats, and the flickering light of thousands of oil lamps.
+                      </p>
+                      <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
+                        Many pilgrims come to Katharagama to fulfill vows made during difficult times in their lives. It&apos;s
+                        common to see devotees who have traveled hundreds of miles on foot, carrying kavadi (decorated
+                        structures) as offerings, or performing various forms of penance as expressions of their devotion
+                        and gratitude. The temple is believed to be especially powerful for granting wishes related to
+                        health, prosperity, and protection from harm.
+                      </p>
+
+                      <div className="bg-red-50 dark:bg-red-900/40 p-6 rounded-lg border border-red-200 dark:border-red-700">
+                        <h4 className="font-semibold text-red-800 dark:text-red-300 mb-3">Temple Experience:</h4>
+                        <ul className="space-y-3 text-muted-foreground dark:text-muted-foreground">
+                          <li className="flex items-start gap-3">
+                            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                            <span>
+                              <strong>Daily Puja Times:</strong> 4:30 AM, 10:30 AM, 6:30 PM (most important)
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                            <span>
+                              <strong>Offerings:</strong> Fruits, flowers, coconuts, oil for lamps
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                            <span>
+                              <strong>Dress Code:</strong> Modest clothing, remove shoes before entering
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                            <span>
+                              <strong>Photography:</strong> Not allowed inside the main shrine
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                            <span>
+                              <strong>Special Feature:</strong> Yantra symbol instead of statue
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
 
               {/* Kiri Vehera Buddhist Temple */}
               <Card className="overflow-hidden border-2 border-yellow-200 dark:border-yellow-700">
@@ -617,7 +697,7 @@ export default function KatharagamaGuide() {
                   </div>
                   <div className="space-y-6">
                     <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                      Kebalitta Dewalaya is a sacred jungle shrine located on the banks of the Menik Ganga river, just outside Katharagama. It is considered the spiritual gateway to Katharagama for Pada Yatra pilgrims, who traditionally stop here to purify themselves in the river and seek blessings before entering the holy city.
+                      Kebalitta Dewalaya is a sacred jungle shrine located on the banks of the Menik Ganga river, and is inside of Yala national park just outside Katharagama. It is considered the place where God of Katharagama/Murugan resides, serving as a spiritual gateway to Katharagama for Pada Yatra pilgrims, who traditionally stop here to purify themselves in the river and seek blessings before entering the holy city.
                     </p>
                     <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
                       The shrine is dedicated to a guardian spirit and is surrounded by dense forest, creating a mystical and tranquil atmosphere. Rituals at Kebalitta Dewalaya are simple and focus on purification, humility, and respect for nature. Many believe that only after paying respects here can one truly receive the blessings of Katharagama Deviyo.
@@ -629,6 +709,12 @@ export default function KatharagamaGuide() {
                       <li>Surrounded by pristine jungle and wildlife</li>
                       <li>Important for both Hindu and Buddhist devotees</li>
                     </ul>
+                    <div className="bg-amber-50 p-3 rounded-lg">
+                      <p className="text-sm text-amber-800">
+                        <strong>Special Notes</strong> Devotees must avoid eating meat and drinking alcohol before visiting this sacred site at least 14 days prior to arrival.
+                      </p>
+                    </div>
+
                     <div className="mt-4">
                       <Button asChild variant="outline" size="sm">
                         <a href="https://www.lanka.com/about/destinations/katharagama/kebilitta-devalaya/" target="_blank" rel="noopener noreferrer">Read More</a>
@@ -1018,8 +1104,8 @@ export default function KatharagamaGuide() {
               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="relative h-48">
                   <Image
-                    src="/Saman-devalaya.jpeg"
-                    alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                    src="/Sithul-Pawwa.jpg"
+                    alt="Sithulpawwa Raja Maha Viharaya with ancient rock carvings"
                     fill
                     className="object-cover rounded-t-lg"
                   />
@@ -1037,7 +1123,7 @@ export default function KatharagamaGuide() {
                     50 km from Katharagama
                   </div>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/pattipola" passHref legacyBehavior>
+                    <Link href="/destinations/sithulpawwa-raja-maha-viharaya" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>
@@ -1046,8 +1132,8 @@ export default function KatharagamaGuide() {
               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="relative h-48">
                   <Image
-                    src="/Adamspeaskmain.jpg"
-                    alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                    src="/Ridiyagama.jpeg"
+                    alt="Ridiyagama Safari Park with diverse wildlife"
                     fill
                     className="object-cover rounded-t-lg"
                   />
@@ -1065,7 +1151,7 @@ export default function KatharagamaGuide() {
                     18 km from Katharagama
                   </div>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/adams-peak" passHref legacyBehavior>
+                    <Link href="/destinations/ridiyagama-safari-park" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>

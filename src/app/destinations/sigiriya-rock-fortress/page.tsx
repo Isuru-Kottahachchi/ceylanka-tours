@@ -1375,6 +1375,30 @@ export default function SigiriyaTravelGuide() {
               </CardContent>
             </Card>
 
+                <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Kurunagala</CardTitle>
+                <CardDescription>National park</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Kurunagala"
+                  alt="View of Kurunagala"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+               Wonderful city with ancient temples and vibrant culture.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kurunagala" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
 
           </div>
         </section>
