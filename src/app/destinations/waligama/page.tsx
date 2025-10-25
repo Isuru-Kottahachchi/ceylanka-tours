@@ -50,7 +50,7 @@ export default function WeligamaTravelGuide() {
           <a href="#getting-there" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Getting There</a>
           <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Attractions</a>
           <a href="#adventure" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Adventure</a>
-          <a href="#nearby" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Nearby Attractions</a>
+          <a href="#nearby-attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Nearby Attractions</a>
           <a href="#tips" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Travel Tips</a>
           <a href="#transport" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Getting Around</a>
         </div>
@@ -982,7 +982,7 @@ export default function WeligamaTravelGuide() {
         </section>
 
         {/* Nearby Attractions & Day Trips */}
-        <section className="mb-12">
+        <section className="mb-12 scroll-mt-24" id="nearby-attractions">
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions & Day Trips</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Mirissa */}

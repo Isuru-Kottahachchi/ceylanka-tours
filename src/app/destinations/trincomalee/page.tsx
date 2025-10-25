@@ -181,7 +181,6 @@ export default function TrincomaleeTravelGuide() {
                         <li>• <strong>Airport:</strong> China Bay Airport (military, limited civilian use)</li>
                         <li>• <strong>Duration:</strong> 45 minutes flight</li>
                         <li>• <strong>Availability:</strong> Charter flights only</li>
-                        <li>• <strong>Alternative:</strong> Fly to Batticaloa, then drive 2 hours</li>
                       </ul>
                     </div>
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
@@ -1497,13 +1496,13 @@ export default function TrincomaleeTravelGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Fort Frederick</CardTitle>
-                <CardDescription>Colonial fort with harbor views</CardDescription>
+                <CardTitle className="text-lg">Sober Island</CardTitle>
+                <CardDescription>Historic naval base with colonial architecture</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
                   src="/placeholder.svg?height=200&width=300"
-                  alt="Historic Fort Frederick showing colonial architecture and panoramic harbor views"
+                  alt="Historic Sober Island showing colonial architecture and panoramic harbor views"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3"
@@ -1514,7 +1513,7 @@ export default function TrincomaleeTravelGuide() {
                 </p>
                 <div className="mt-4">
                   <Button asChild variant="outline" size="sm">
-                    <a href="/destinations/fort-frederick">See More</a>
+                    <a href="/destinations/sober-island">See More</a>
                   </Button>
                 </div>
               </CardContent>
