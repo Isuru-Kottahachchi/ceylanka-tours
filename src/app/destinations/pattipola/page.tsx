@@ -1,64 +1,84 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, TreePine, CloudRain, Droplets, Bird } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Mountain, Train, Cloud, Thermometer } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Kanneliya Forest Reserve Sri Lanka: Complete Guide 2025 | Rainforest Paradise",
+  title: "Pattipola Sri Lanka: Complete Guide 2025 | Highest Railway Station & Mountain Paradise",
   description:
-    "Explore Kanneliya Forest Reserve, a biodiversity hotspot in Sri Lanka. Complete guide to hiking trails, waterfalls, rare species, and eco-tourism experiences.",
+    "Discover Pattipola, home to Sri Lanka's highest railway station at 6,225ft. Experience misty mountains, tea plantations, and breathtaking train journeys through the hills.",
   keywords:
-    "Kanneliya Forest Reserve, Sri Lanka rainforest, biodiversity hotspot, nature trails, waterfalls, endemic species, eco-tourism, wildlife watching, hiking trails",
+    "Pattipola railway station, highest railway station Sri Lanka, upcountry train journey, tea plantations, mountain hiking, cool climate, scenic train rides",
   openGraph: {
-    title: "Kanneliya Forest: Complete Guide 2025",
-    description: "Your ultimate guide to Sri Lanka's pristine rainforest paradise",
+    title: "Pattipola: Sri Lanka's Highest Railway Station | Complete Guide 2025",
+    description: "Experience the charm of Sri Lanka's highest railway station and mountain paradise",
     type: "article",
-    images: ["/kanneliya-forest.jpg"],
+    images: ["/pattipola-station.jpg"],
   },
-};
+}
 
-export default function KanneliyaTravelGuide() {
+export default function PattipolaTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Kanneliya.jpg"
-          alt="Lush canopy and waterfalls of Kanneliya Forest Reserve showcasing its pristine rainforest environment"
+          src="/pattipola-station.jpg"
+          alt="Historic Pattipola Railway Station with misty mountains in the background"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Kanneliya Forest Reserve</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">A Pristine Rainforest Paradise</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Pattipola</h1>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Highest Railway Station & Mountain Haven</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
-              <MapPin className="w-4 h-4 mr-1" />
-              Southern Province
-            </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-emerald-600/80 text-white border-emerald-500">
-              <TreePine className="w-4 h-4 mr-1" />
-              UNESCO Biosphere
-            </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
-              <Bird className="w-4 h-4 mr-1" />
-              Endemic Species
+              <MapPin className="w-4 h-4 mr-1" />
+              Central Province
+            </Badge>
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
+              <Mountain className="w-4 h-4 mr-1" />
+              6,225 ft Elevation
+            </Badge>
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
+              <Train className="w-4 h-4 mr-1" />
+              Scenic Railway
             </Badge>
           </div>
         </div>
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        {/* Quick Overview */}
+        {/* Introduction */}
+        <section className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome to Sri Lanka&apos;s Railway in the Clouds</h2>
+          <div className="prose prose-lg max-w-none text-muted-foreground">
+            <p className="mb-4">
+              Perched at an impressive altitude of 6,225 feet (1,897 meters), Pattipola Railway Station holds the 
+              distinction of being the highest railway station in Sri Lanka. This historic station, established during 
+              the British colonial era, serves as a testament to remarkable engineering achievement and offers visitors 
+              an unforgettable journey through Sri Lanka&apos;s misty highlands.
+            </p>
+            <p className="mb-4">
+              The station, built in 1893, is a crucial stop on the iconic Main Line railway, connecting Colombo with 
+              Badulla. The journey to Pattipola is renowned for its spectacular views of rolling tea plantations, 
+              pine forests, and mountain landscapes shrouded in mist, making it a photographer&apos;s paradise and a 
+              must-visit destination for both railway enthusiasts and nature lovers.
+            </p>
+          </div>
+        </section>
+
+        {/* Quick Information */}
         <section className="mb-16">
           <Card className="bg-card">
             <CardHeader>
               <CardTitle className="text-2xl">Essential Information</CardTitle>
-              <CardDescription>Key details for planning your visit</CardDescription>
+              <CardDescription>Key details to plan your visit</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-3 gap-6">
@@ -67,11 +87,11 @@ export default function KanneliyaTravelGuide() {
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
                       <MapPin className="w-5 h-5 text-blue-500" />
-                      <span>38km from Galle</span>
+                      <span>Central Province, Sri Lanka</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Clock className="w-5 h-5 text-blue-500" />
-                      <span>Open 6:00 AM - 6:00 PM</span>
+                      <Train className="w-5 h-5 text-blue-500" />
+                      <span>Main Line Railway Route</span>
                     </div>
                   </div>
                 </div>
@@ -80,12 +100,12 @@ export default function KanneliyaTravelGuide() {
                   <h3 className="font-semibold text-lg">Climate</h3>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <CloudRain className="w-5 h-5 text-blue-500" />
-                      <span>Annual rainfall: 3750-4250mm</span>
+                      <Thermometer className="w-5 h-5 text-red-500" />
+                      <span>10°C - 20°C year-round</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Droplets className="w-5 h-5 text-blue-500" />
-                      <span>High humidity year-round</span>
+                      <Cloud className="w-5 h-5 text-gray-500" />
+                      <span>Frequent mist and cool weather</span>
                     </div>
                   </div>
                 </div>
@@ -94,12 +114,12 @@ export default function KanneliyaTravelGuide() {
                   <h3 className="font-semibold text-lg">Best Time to Visit</h3>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2">
-                      <Calendar className="w-5 h-5 text-green-500" />
-                      <span>January to March (Dry Season)</span>
+                      <Clock className="w-5 h-5 text-green-500" />
+                      <span>Early morning for clearest views</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Star className="w-5 h-5 text-yellow-500" />
-                      <span>Early morning for wildlife</span>
+                      <span>December to April (Dry season)</span>
                     </div>
                   </div>
                 </div>
@@ -108,97 +128,80 @@ export default function KanneliyaTravelGuide() {
           </Card>
         </section>
 
-        {/* Introduction */}
-        <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Discover Sri Lanka&apos;s Hidden Rainforest Gem</h2>
-          <div className="prose prose-lg max-w-none text-muted-foreground">
-            <p className="mb-4">
-              Kanneliya Forest Reserve, part of the UNESCO-designated biosphere reserve, is one of Sri Lanka&apos;s most 
-              pristine rainforests. This spectacular ecosystem spans 5,306 hectares and hosts an incredible variety 
-              of flora and fauna, including many species found nowhere else on Earth.
-            </p>
-            <p className="mb-4">
-              Home to over 220 bird species, 86 species of mammals, and countless plant species, Kanneliya represents 
-              one of the last remaining rainforest complexes in Sri Lanka. Its network of hiking trails, stunning 
-              waterfalls, and rich biodiversity make it a paradise for nature lovers, researchers, and eco-tourists.
-            </p>
-          </div>
-        </section>
-
         {/* Main Attractions */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Highlights of Kanneliya</h2>
+          <h2 className="text-3xl font-bold mb-8">Highlights of Pattipola</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            {/* Waterfalls */}
+            {/* Historic Railway Station */}
             <Card>
               <CardHeader>
-                <CardTitle>Scenic Waterfalls</CardTitle>
-                <CardDescription>Natural wonders within the forest</CardDescription>
+                <CardTitle>Historic Railway Station</CardTitle>
+                <CardDescription>A testament to colonial engineering</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <Image
-                    src="/kanneliya-falls.jpg"
-                    alt="Beautiful cascading waterfalls in Kanneliya Forest Reserve"
+                    src="/pattipola-station-platform.jpg"
+                    alt="Historic platform and colonial architecture of Pattipola Railway Station"
                     width={600}
                     height={400}
                     className="rounded-lg"
                   />
                   <p className="text-muted-foreground">
-                    Kanneliya features several spectacular waterfalls, including the famous Narangas Falls and 
-                    Anagimale Falls. These pristine cascades, surrounded by lush vegetation, offer perfect spots 
-                    for photography and natural relaxation.
+                    The station building, with its distinctive colonial architecture, features charming wooden details 
+                    and traditional railway elements. The original signal box and vintage railway equipment are still 
+                    in use, offering visitors a glimpse into the golden age of rail travel.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Multiple accessible waterfalls</span>
+                      <span>Original colonial architecture preserved</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Natural swimming pools</span>
+                      <span>Working historical signal equipment</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Photography opportunities</span>
+                      <span>Panoramic platform views</span>
                     </li>
                   </ul>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Wildlife */}
+            {/* Surrounding Nature */}
             <Card>
               <CardHeader>
-                <CardTitle>Rich Biodiversity</CardTitle>
-                <CardDescription>Endemic species and rare sightings</CardDescription>
+                <CardTitle>Mountain Wilderness</CardTitle>
+                <CardDescription>Natural beauty at high altitude</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <Image
-                    src="/kanneliya-wildlife.jpg"
-                    alt="Endemic wildlife and lush vegetation in Kanneliya Forest"
+                    src="/pattipola-landscape.jpg"
+                    alt="Misty mountains and tea plantations surrounding Pattipola"
                     width={600}
                     height={400}
                     className="rounded-lg"
                   />
                   <p className="text-muted-foreground">
-                    The reserve is a haven for wildlife enthusiasts, hosting numerous endemic species. From rare birds 
-                    to elusive mammals and vibrant butterflies, Kanneliya offers unique opportunities for wildlife 
-                    observation and photography.
+                    The area surrounding Pattipola is characterized by pristine mountain wilderness, featuring endemic 
+                    flora, rolling tea estates, and pine forests. The high altitude creates a unique ecosystem that 
+                    supports rare mountain birds and plants.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Endemic bird species</span>
+                      <span>Endemic mountain flora</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Rare mammals and reptiles</span>
+                      <span>Tea plantations and pine forests</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Diverse butterfly population</span>
+                      <span>Bird watching opportunities</span>
                     </li>
                   </ul>
                 </div>
@@ -207,51 +210,51 @@ export default function KanneliyaTravelGuide() {
           </div>
         </section>
 
-        {/* Activities */}
+        {/* Activities and Experiences */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Things to Do</h2>
+          <h2 className="text-3xl font-bold mb-8">Things to Do in Pattipola</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {/* Hiking */}
+            {/* Train Journey Experience */}
             <Card>
               <CardHeader>
-                <CardTitle>Nature Trails</CardTitle>
+                <CardTitle>Scenic Train Rides</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Guided forest walks</span>
+                    <span>Experience one of world&apos;s most scenic rail journeys</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Multiple trail difficulty levels</span>
+                    <span>Photograph stunning mountain vistas</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Scenic viewpoints</span>
+                    <span>Connect to major destinations like Ella and Nuwara Eliya</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
-            {/* Bird Watching */}
+            {/* Hiking and Nature */}
             <Card>
               <CardHeader>
-                <CardTitle>Bird Watching</CardTitle>
+                <CardTitle>Mountain Trails</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>220+ bird species</span>
+                    <span>Explore mountain hiking trails</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Endemic species spotting</span>
+                    <span>Visit nearby tea estates</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Professional guides available</span>
+                    <span>Bird watching in pine forests</span>
                   </li>
                 </ul>
               </CardContent>
@@ -266,15 +269,15 @@ export default function KanneliyaTravelGuide() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Waterfall photography</span>
+                    <span>Capture misty mountain landscapes</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Wildlife photography</span>
+                    <span>Document colonial railway heritage</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Macro photography opportunities</span>
+                    <span>Shoot sunrise over tea plantations</span>
                   </li>
                 </ul>
               </CardContent>
@@ -282,28 +285,24 @@ export default function KanneliyaTravelGuide() {
           </div>
         </section>
 
-        {/* Visitor Information */}
+        {/* Travel Tips */}
         <section className="mb-16">
           <Card className="bg-card">
             <CardHeader>
-              <CardTitle className="text-2xl">Visitor Guidelines</CardTitle>
+              <CardTitle className="text-2xl">Travel Tips & Information</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h3 className="font-semibold text-lg mb-4">Entry Requirements</h3>
+                  <h3 className="font-semibold text-lg mb-4">Getting There</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                      <span>Entrance permit required</span>
+                      <Train className="w-5 h-5 text-blue-500 mt-1" />
+                      <span>Regular trains from Colombo, Kandy, and Badulla</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                      <span>Guide mandatory for trails</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                      <span>Advanced booking recommended</span>
+                      <MapPin className="w-5 h-5 text-blue-500 mt-1" />
+                      <span>Accessible by road from Nuwara Eliya (1 hour)</span>
                     </li>
                   </ul>
                 </div>
@@ -312,15 +311,15 @@ export default function KanneliyaTravelGuide() {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                      <span>Comfortable hiking shoes</span>
+                      <span>Warm clothing (temperatures can be quite low)</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                      <span>Leech socks</span>
+                      <span>Camera for spectacular photo opportunities</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                      <span>Water and snacks</span>
+                      <span>Rain gear as weather can change quickly</span>
                     </li>
                   </ul>
                 </div>
@@ -329,21 +328,26 @@ export default function KanneliyaTravelGuide() {
           </Card>
         </section>
 
-        {/* Conservation Message */}
-        <section className="mb-12">
-          <Card className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 dark:from-green-950 dark:via-emerald-950 dark:to-teal-950">
-            <CardContent className="p-8">
-              <div className="text-center space-y-4">
-                <h2 className="text-3xl font-bold mb-4">Help Preserve Kanneliya</h2>
-                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Kanneliya Forest Reserve is a precious ecosystem that needs our protection. Follow the park rules, 
-                  stay on marked trails, and help maintain this pristine environment for future generations.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
+        {/* Call to Action */}
+        <section className="text-center py-12">
+          <h2 className="text-3xl font-bold mb-6">Plan Your Mountain Railway Adventure</h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Experience the magic of Sri Lanka&apos;s highest railway station and create unforgettable memories.
+          </p>
+          <div className="flex justify-center gap-4">
+            <Button asChild>
+              <Link href="/plan-your-trip/train-journeys">
+                Book Train Journey
+              </Link>
+            </Button>
+            <Button variant="outline" asChild>
+              <Link href="/contact-us">
+                Contact Us
+              </Link>
+            </Button>
+          </div>
         </section>
       </div>
     </main>
-  );
+  )
 }
