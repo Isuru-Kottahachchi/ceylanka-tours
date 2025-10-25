@@ -91,11 +91,11 @@ export default function KurunegalaPage() {
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
               Discover Kurunegala, a city where ancient legends meet natural wonders, dominated by eight majestic rock formations 
-              that have watched over the landscape for millennia. As Sri Lanka's medieval capital during the 13th century, 
+              that have watched over the landscape for millennia. As Sri Lanka&apos;s medieval capital during the 13th century, 
               Kurunegala combines rich historical heritage with modern urban development.
             </p>
             <p className="text-lg">
-              Each of the city's iconic rock formations bears the name of the animal it resembles - from the towering 
+              Each of the city&apos;s iconic rock formations bears the name of the animal it resembles - from the towering 
               Elephant Rock (Ethagala) to the distinctive Tortoise Rock (Ibbanagala). These natural monuments not only 
               provide a stunning backdrop to the city but also offer panoramic views and house ancient temples that continue 
               to draw pilgrims and tourists alike.
@@ -185,14 +185,14 @@ export default function KurunegalaPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">The City of Rock Giants</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground">
             <p className="mb-4">
-              Kurunegala, a historic city in Sri Lanka's North Western Province, served as a royal capital during 
+              Kurunegala, a historic city in Sri Lanka&apos;s North Western Province, served as a royal capital during 
               the 13th century. The city is famous for its distinctive landscape dominated by eight rock formations, 
               each named after the animals they resemble - Elephant Rock (Ethagala), Tortoise Rock (Ibbanagala), 
               and more.
             </p>
             <p className="mb-4">
               Today, Kurunegala combines its rich historical heritage with modern development, serving as a major 
-              commercial hub while preserving its ancient temples, lakes, and cultural landmarks. The city's unique 
+              commercial hub while preserving its ancient temples, lakes, and cultural landmarks. The city&apos;s unique 
               geography and historical significance make it an interesting destination for both history enthusiasts 
               and nature lovers.
             </p>
@@ -219,7 +219,7 @@ export default function KurunegalaPage() {
                     className="rounded-lg"
                   />
                   <p className="text-muted-foreground">
-                    Standing at 316 meters, this is the city's most prominent rock formation. Houses an ancient 
+                    Standing at 316 meters, this is the city&apos;s most prominent rock formation. Houses an ancient 
                     Buddhist temple and offers breathtaking panoramic views.
                   </p>
                   <ul className="space-y-2">

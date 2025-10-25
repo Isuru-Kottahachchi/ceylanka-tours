@@ -331,13 +331,13 @@ export default function HikesSriLankaPage() {
               Hiking Paradise in the Indian Ocean
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              Sri Lanka's compact size belies its incredible hiking diversity. From sacred mountain pilgrimages to
+              Sri Lanka&apos;s compact size belies its incredible hiking diversity. From sacred mountain pilgrimages to
               challenging rock climbs, the island offers trails that traverse ancient kingdoms, pristine forests, and
-              spectacular viewpoints that showcase the country's natural beauty.
+              spectacular viewpoints that showcase the country&apos;s natural beauty.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Whether you're seeking spiritual enlightenment on Adam's Peak, panoramic views from Ella Rock, or the
-              thrill of conquering challenging terrain in the Knuckles Range, Sri Lanka's hiking trails offer
+              Whether you&apos;re seeking spiritual enlightenment on Adam&apos;s Peak, panoramic views from Ella Rock, or the
+              thrill of conquering challenging terrain in the Knuckles Range, Sri Lanka&apos;s hiking trails offer
               unforgettable experiences for every adventurer.
             </p>
           </div>
@@ -542,7 +542,7 @@ export default function HikesSriLankaPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Know Your Limits</h3>
               <p className="text-gray-700 dark:text-gray-300 text-sm">
-                Choose trails appropriate for your fitness level. Don't attempt challenging hikes without proper
+                Choose trails appropriate for your fitness level. Don&apos;t attempt challenging hikes without proper
                 preparation and experience.
               </p>
             </div>

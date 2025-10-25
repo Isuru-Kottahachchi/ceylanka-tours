@@ -419,12 +419,12 @@ export default function FamousTrailsPage() {
         <section className="mb-12">
           <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Sri Lanka's Most Iconic Hiking Trails
+              Sri Lanka&apos;s Most Iconic Hiking Trails
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              Sri Lanka's diverse landscape offers some of the world's most spectacular hiking trails, from sacred
-              mountain peaks to ancient rock fortresses. Whether you're seeking spiritual enlightenment on Adam's Peak,
-              panoramic views from Ella Rock, or challenging adventures in the Knuckles Range, the island's trails cater
+              Sri Lanka&apos;s diverse landscape offers some of the world&apos;s most spectacular hiking trails, from sacred
+              mountain peaks to ancient rock fortresses. Whether you&apos;re seeking spiritual enlightenment on Adam&apos;s Peak,
+              panoramic views from Ella Rock, or challenging adventures in the Knuckles Range, the island&apos;s trails cater
               to every level of hiker.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
