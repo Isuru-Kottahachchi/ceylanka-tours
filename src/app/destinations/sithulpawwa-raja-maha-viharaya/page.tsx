@@ -4,34 +4,34 @@ import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, LandmarkIcon, Mountain, Users } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ImageCarousel } from "@/components/ui/carousel"
+// import { ImageCarousel } from "@/components/ui/carousel"
 
-const carouselImages = [
-  {
-    src: "/sithulpawwa-aerial.jpg",
-    alt: "Aerial view of Sithulpawwa ancient monastery on rocky terrain",
-    title: "Ancient Mountain Monastery",
-    description: "Sithulpawwa monastery sits atop a rock, offering panoramic views of the surrounding wilderness"
-  },
-  {
-    src: "/sithulpawwa-stupa.jpg",
-    alt: "Ancient stupa at Sithulpawwa",
-    title: "Ancient Stupa",
-    description: "The well-preserved stupa stands as a testament to ancient Buddhist architecture"
-  },
-  {
-    src: "/sithulpawwa-paintings.jpg",
-    alt: "Ancient cave paintings at Sithulpawwa",
-    title: "Cave Paintings",
-    description: "Beautiful frescoes dating back to ancient times depicting Buddhist stories"
-  },
-  {
-    src: "/sithulpawwa-caves.jpg",
-    alt: "Meditation caves at Sithulpawwa",
-    title: "Meditation Caves",
-    description: "Ancient caves where Buddhist monks meditated in solitude"
-  }
-];
+// const carouselImages = [
+//   {
+//     src: "/sithulpawwa-aerial.jpg",
+//     alt: "Aerial view of Sithulpawwa ancient monastery on rocky terrain",
+//     title: "Ancient Mountain Monastery",
+//     description: "Sithulpawwa monastery sits atop a rock, offering panoramic views of the surrounding wilderness"
+//   },
+//   {
+//     src: "/sithulpawwa-stupa.jpg",
+//     alt: "Ancient stupa at Sithulpawwa",
+//     title: "Ancient Stupa",
+//     description: "The well-preserved stupa stands as a testament to ancient Buddhist architecture"
+//   },
+//   {
+//     src: "/sithulpawwa-paintings.jpg",
+//     alt: "Ancient cave paintings at Sithulpawwa",
+//     title: "Cave Paintings",
+//     description: "Beautiful frescoes dating back to ancient times depicting Buddhist stories"
+//   },
+//   {
+//     src: "/sithulpawwa-caves.jpg",
+//     alt: "Meditation caves at Sithulpawwa",
+//     title: "Meditation Caves",
+//     description: "Ancient caves where Buddhist monks meditated in solitude"
+//   }
+// ];
 
 export default function SithulpawwaPage() {
   return (
@@ -135,7 +135,7 @@ export default function SithulpawwaPage() {
         </section>
 
         {/* Image Gallery */}
-        <section className="mb-16" id="gallery">
+        {/* <section className="mb-16" id="gallery">
           <Card className="overflow-hidden">
             <CardHeader>
               <CardTitle>Temple Gallery</CardTitle>
@@ -145,7 +145,7 @@ export default function SithulpawwaPage() {
               <ImageCarousel images={carouselImages} />
             </CardContent>
           </Card>
-        </section>
+        </section> */}
 
         {/* Quick Facts & Location */}
         <div className="flex flex-col lg:flex-row gap-8 mb-12">

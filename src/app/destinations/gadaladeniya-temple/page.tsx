@@ -4,34 +4,35 @@ import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Mountain, Palette } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ImageCarousel } from "@/components/ui/carousel"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-const carouselImages = [
-  {
-    src: "/gadaladeniya-main.jpg",
-    alt: "Main view of Gadaladeniya Temple showing South Indian architecture",
-    title: "Temple Overview",
-    description: "The impressive Gadaladeniya Temple showcases unique South Indian architectural style from the 14th century."
-  },
-  {
-    src: "/gadaladeniya-buddha.jpg",
-    alt: "Large seated Buddha statue at Gadaladeniya Temple",
-    title: "Main Buddha Statue",
-    description: "The main shrine features a large seated Buddha statue surrounded by intricate stone carvings."
-  },
-  {
-    src: "/gadaladeniya-paintings.jpg",
-    alt: "Ancient paintings inside Gadaladeniya Temple",
-    title: "Temple Paintings",
-    description: "Beautiful Kandyan-era paintings depicting stories from Buddhist literature and local history."
-  },
-  {
-    src: "/gadaladeniya-architecture.jpg",
-    alt: "Architectural details of Gadaladeniya Temple",
-    title: "Architectural Details",
-    description: "The temple features unique architectural elements blending South Indian and Sinhalese styles."
-  }
-];
+
+// const carouselImages = [
+//   {
+//     src: "/gadaladeniya-main.jpg",
+//     alt: "Main view of Gadaladeniya Temple showing South Indian architecture",
+//     title: "Temple Overview",
+//     description: "The impressive Gadaladeniya Temple showcases unique South Indian architectural style from the 14th century."
+//   },
+//   {
+//     src: "/gadaladeniya-buddha.jpg",
+//     alt: "Large seated Buddha statue at Gadaladeniya Temple",
+//     title: "Main Buddha Statue",
+//     description: "The main shrine features a large seated Buddha statue surrounded by intricate stone carvings."
+//   },
+//   {
+//     src: "/gadaladeniya-paintings.jpg",
+//     alt: "Ancient paintings inside Gadaladeniya Temple",
+//     title: "Temple Paintings",
+//     description: "Beautiful Kandyan-era paintings depicting stories from Buddhist literature and local history."
+//   },
+//   {
+//     src: "/gadaladeniya-architecture.jpg",
+//     alt: "Architectural details of Gadaladeniya Temple",
+//     title: "Architectural Details",
+//     description: "The temple features unique architectural elements blending South Indian and Sinhalese styles."
+//   }
+// ];
 
 export default function GadaladeniyaTemplePage() {
   return (
@@ -98,7 +99,7 @@ export default function GadaladeniyaTemplePage() {
         </section>
 
         {/* Image Gallery */}
-        <section className="mb-16" id="gallery">
+        {/* <section className="mb-16" id="gallery">
           <Card className="overflow-hidden">
             <CardHeader>
               <CardTitle>Temple Gallery</CardTitle>
@@ -108,7 +109,7 @@ export default function GadaladeniyaTemplePage() {
               <ImageCarousel images={carouselImages} />
             </CardContent>
           </Card>
-        </section>
+        </section> */}
 
         {/* Quick Facts & Location */}
         <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
