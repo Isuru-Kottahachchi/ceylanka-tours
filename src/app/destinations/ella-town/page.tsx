@@ -355,7 +355,7 @@ export default function EllaTownGuide() {
                           caption: "Nine Arch Bridge",
                           title: "Nine Arch Bridge"
                         },
-                          {
+                        {
                           src: "/Nine-Arch-Bridge12.jpg",
                           alt: "Iconic Nine Arch Bridge with train crossing through lush jungle and tea plantations",
                           caption: "Nine Arch Bridge",
@@ -418,7 +418,7 @@ export default function EllaTownGuide() {
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6 items-center">
 
-                      <ImageCarousel
+                    <ImageCarousel
                       images={[
                         {
                           src: "/Littleadamspeak.jpg",
@@ -426,7 +426,7 @@ export default function EllaTownGuide() {
                           caption: "Nine Arch Bridge",
                           title: "Nine Arch Bridge"
                         },
-                          {
+                        {
                           src: "/Nine-Arch-Bridge12.jpg",
                           alt: "Iconic Nine Arch Bridge with train crossing through lush jungle and tea plantations",
                           caption: "Nine Arch Bridge",
@@ -511,7 +511,7 @@ export default function EllaTownGuide() {
                       </div>
                     </div>
                     <Image
-                      src="/placeholder.svg?height=300&width=400"
+                      src="/Ella-Rock.jpg"
                       alt="Adventurous hikers on Ella Rock summit with dramatic mountain landscape and tea estates below"
                       width={400}
                       height={300}
@@ -839,7 +839,7 @@ export default function EllaTownGuide() {
                 </CardContent>
               </Card>
 
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle>10. Ella Jungle Resort</CardTitle>
                   <CardDescription>Luxury eco-retreat in the wilderness</CardDescription>
@@ -883,7 +883,7 @@ export default function EllaTownGuide() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
 
             </div>
           </section>
@@ -1132,7 +1132,7 @@ export default function EllaTownGuide() {
                       </ul>
                     </div>
                     <Image
-                      src="/placeholder.svg?height=300&width=400"
+                      src="/Diyaluma-Falls1.jpg"
                       alt="Diyaluma Falls dramatic 220-meter cascade with natural infinity pools and mountain landscape view"
                       width={400}
                       height={300}
@@ -1399,13 +1399,13 @@ export default function EllaTownGuide() {
               {/* Diyaluma Falls Card */}
               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-lg">Ella</CardTitle>
-                  <CardDescription>Spectacular cascading waterfall</CardDescription>
+                  <CardTitle className="text-lg">Haputhale</CardTitle>
+                  <CardDescription>Spectacular views of tea plantations</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/diyaluma-falls.jpg"
-                    alt="Diyaluma Falls"
+                    src="/Haputhale.jpg"
+                    alt="Haputhale"
                     width={300}
                     height={200}
                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
@@ -1414,7 +1414,7 @@ export default function EllaTownGuide() {
                     Diyaluma Falls is one of Sri Lanka&apos;s tallest waterfalls, offering stunning views and natural pools for a refreshing dip.
                   </p>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/ella" passHref legacyBehavior>
+                    <Link href="/destinations/haputhale" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>

@@ -839,7 +839,7 @@ export default function GalleFortTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-start">
                   <div>
                     <Image
-                      src="/charleston-galle-fort.jpg"
+                      src="/The-Charleston-Galle-Fort-Hotel.jpg"
                       alt="The Charleston Galle Fort Hotel's elegant colonial architecture and luxurious interior"
                       width={500}
                       height={300}

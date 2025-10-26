@@ -834,7 +834,7 @@ export default function KandyTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            {/* <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Knuckles Mountain Range - Adventure</CardTitle>
                 <CardDescription>UNESCO World Heritage hiking and camping destination</CardDescription>
@@ -860,7 +860,7 @@ export default function KandyTravelGuide() {
                   </Link>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
 
 
@@ -871,7 +871,7 @@ export default function KandyTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Gadaladeniya-Temple.jpg"
                   alt="Gadaladeniya Temple showing ancient Sinhalese architecture"
                   width={300}
                   height={200}
@@ -885,7 +885,7 @@ export default function KandyTravelGuide() {
                   📍 Distance: 45 minutes from Kandy | 🏛️ Built: 1344 CE | 🎫 Entry: Small donation
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                  <Link href="/destinations/gadaladeniya-temple" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -897,11 +897,11 @@ export default function KandyTravelGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Lankatilaka Temple - Sacred Heights</CardTitle>
-                <CardDescription>Ancient temple on a hilltop with panoramic views</CardDescription>
+                <CardDescription>Ancient temple with stunning architecture</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Lankathilaka-Viharaya.webp"
                   alt="Lankatilaka Temple perched on hilltop with valley views"
                   width={300}
                   height={200}
@@ -915,7 +915,34 @@ export default function KandyTravelGuide() {
                   📍 Distance: 50 minutes from Kandy | ⛰️ Location: Hilltop | 🚶 Climb: Moderate
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                  <Link href="/destinations/lankatilaka-temple" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Kadadora Viharaya</CardTitle>
+                <CardDescription>Ancient temple submerged by Kothmale Reservoir</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Kadadora-Viharaya.jpg"
+                  alt="Kadadora Viharaya"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  Submergered by Kothmale Dam reservoir, this ancient temple has a rich history dating back to the 14th century.
+                </p>
+                <div className="text-xs text-muted-foreground mb-3">
+                  📍 Distance: 50 minutes from Kandy | ⛰️ Location: Visible only during low water levels 
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kadadora-viharaya" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -931,7 +958,7 @@ export default function KandyTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Embekke-Devalaya.jpg"
                   alt="Embekke Devalaya showing detailed wooden pillar carvings"
                   width={300}
                   height={200}
@@ -945,7 +972,7 @@ export default function KandyTravelGuide() {
                   📍 Distance: 40 minutes from Kandy | 🎨 Famous for: Wood carvings | 📸 Photography: Allowed
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                  <Link href="/destinations/embekke-devalaya" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>

@@ -470,7 +470,7 @@ export default function HaputaleGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                    Nidangoda Falls (Private and Need a permission to visit)
+                      Nidangoda Falls (Private and Need a permission to visit)
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -869,7 +869,7 @@ export default function HaputaleGuide() {
           <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Lipton's Seat Card */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Badulla</CardTitle>
                 <CardDescription>Cool climate, scenic tea plantations</CardDescription>
@@ -894,7 +894,7 @@ export default function HaputaleGuide() {
             </Card>
 
             {/* Adisham Bungalow Card */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Bandarawela</CardTitle>
                 <CardDescription>Cool climate ,scenic tea plantations</CardDescription>
@@ -919,14 +919,14 @@ export default function HaputaleGuide() {
             </Card>
 
             {/* Diyaluma Falls Card */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
-                <CardTitle className="text-lg">Ella</CardTitle>
+                <CardTitle className="text-lg">Diyaluma Falls</CardTitle>
                 <CardDescription>Spectacular cascading waterfall</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/diyaluma-falls.jpg"
+                  src="/Diyaluma-Falls1.jpg"
                   alt="Diyaluma Falls"
                   width={300}
                   height={200}
@@ -936,7 +936,7 @@ export default function HaputaleGuide() {
                   Diyaluma Falls is one of Sri Lanka&apos;s tallest waterfalls, offering stunning views and natural pools for a refreshing dip.
                 </p>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/ella" passHref legacyBehavior>
+                  <Link href="/destinations/diyaluma-falls" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
