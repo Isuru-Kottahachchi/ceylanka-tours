@@ -460,6 +460,138 @@ export default function TempleOfToothKandyGuide() {
               </CardContent>
             </Card>
 
+            {/* Paththirippuwa */}
+            <Card className="overflow-hidden border-2 border-indigo-200 dark:border-indigo-700">
+              <CardHeader className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-900/30 dark:to-blue-900/30">
+                <CardTitle className="text-2xl text-indigo-800 dark:text-indigo-300">Paththirippuwa (Octagonal Pavilion)</CardTitle>
+                <CardDescription className="text-lg text-indigo-600 dark:text-indigo-400">
+                  The iconic symbol of Kandyan architecture
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-2 gap-8 items-start">
+                  <Image
+                    src="/Paththirippuwa.jpg"
+                    alt="The iconic Paththirippuwa octagonal pavilion of Temple of the Tooth"
+                    width={600}
+                    height={400}
+                    className="rounded-xl shadow-lg"
+                  />
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      The Paththirippuwa, or the Octagonal Pavilion, is perhaps the most distinctive architectural feature 
+                      of the Temple of the Tooth. Built during the reign of Sri Wickrama Rajasinghe (1798-1815), this 
+                      two-story pavilion represents the pinnacle of Kandyan architecture and served as the king's 
+                      viewing gallery during ceremonies and public appearances.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      This unique structure features intricate wooden architecture with its octagonal shape symbolizing 
+                      the eight cardinal directions. The pavilion is supported by elaborately carved wooden pillars and 
+                      features a two-tiered roof with traditional clay tiles, creating a graceful silhouette that has 
+                      become the iconic symbol of the temple.
+                    </p>
+
+                    <div className="bg-indigo-50 dark:bg-indigo-900/30 p-6 rounded-lg border border-indigo-200 dark:border-indigo-700">
+                      <h4 className="font-semibold text-indigo-800 dark:text-indigo-300 mb-3">Architectural Highlights:</h4>
+                      <ul className="space-y-3 text-muted-foreground">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Design:</strong> Octagonal shape with traditional Kandyan roof
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Craftsmanship:</strong> Hand-carved wooden pillars and railings
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Historical Use:</strong> Royal viewing gallery for ceremonies
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Sacred Chambers and Passages */}
+            <Card className="overflow-hidden border-2 border-emerald-200 dark:border-emerald-700">
+              <CardHeader className="bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30">
+                <CardTitle className="text-2xl text-emerald-800 dark:text-emerald-300">Sacred Chambers and Hidden Passages</CardTitle>
+                <CardDescription className="text-lg text-emerald-600 dark:text-emerald-400">
+                  Ancient corridors and sacred spaces
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <p className="text-muted-foreground text-lg leading-relaxed">
+                    Beyond the main shrine room, the Temple of the Tooth contains a network of sacred chambers and passages, 
+                    each serving specific ceremonial purposes. These spaces, developed over centuries, reflect the complex 
+                    rituals and traditions surrounding the Sacred Tooth Relic.
+                  </p>
+
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-lg text-emerald-700 dark:text-emerald-300">Handun Kunama (Spice Chamber)</h4>
+                      <p className="text-muted-foreground">
+                        A special chamber where ancient aromatic spices and herbs are prepared for temple rituals. These 
+                        sacred ingredients, including sandalwood, camphor, and various native spices, are used in daily 
+                        ceremonies to create traditional incense and offerings.
+                      </p>
+                    </div>
+
+                    <div className="space-y-4">
+                      <h4 className="font-semibold text-lg text-emerald-700 dark:text-emerald-300">Thevava Passage</h4>
+                      <p className="text-muted-foreground">
+                        The ceremonial corridor used by monks and officials during the thrice-daily rituals. Its walls 
+                        feature intricate paintings depicting the history of the tooth relic and important events in 
+                        Sri Lankan Buddhist history.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-emerald-50 dark:bg-emerald-900/30 p-6 rounded-lg border border-emerald-200 dark:border-emerald-700 mt-6">
+                    <h4 className="font-semibold text-emerald-800 dark:text-emerald-300 mb-3">Sacred Spaces:</h4>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <ul className="space-y-3 text-muted-foreground">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Maha Vahalkada:</strong> Main ceremonial entrance with elephant wall
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Dig Ge:</strong> Long hall with historic murals
+                          </span>
+                        </li>
+                      </ul>
+                      <ul className="space-y-3 text-muted-foreground">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Alut Maligawa:</strong> New shrine room with Buddhist statues
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Sankha Malaya:</strong> Conch shell chamber for ceremonies
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Raja Tusker Museum */}
             <Card className="overflow-hidden border-2 border-gray-200 dark:border-gray-600">
               <CardHeader className="bg-gradient-to-r from-gray-50 to-slate-50 dark:from-gray-800/50 dark:to-slate-800/50">
@@ -472,7 +604,7 @@ export default function TempleOfToothKandyGuide() {
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      Within the temple complex stands a unique and deeply moving museum dedicated to the sacred
+                      In Kandy Esala Perahara, Tuskers and Elephants play a vital role. Within the temple complex stands a unique and deeply moving museum dedicated to the sacred
                       elephants that have carried the tooth relic casket during the famous Esala Perahera procession.
                       The Raja Tusker Museum houses the preserved remains of the most revered elephants in Sri Lankan
                       history, including the legendary Raja, who carried the sacred casket for over 50 years and became
@@ -529,7 +661,7 @@ export default function TempleOfToothKandyGuide() {
                     </div>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=500&width=600"
+                    src="/Raja-tusker.jpg"
                     alt="Raja Tusker Museum displaying preserved elephant and ceremonial decorations"
                     width={600}
                     height={500}
@@ -846,11 +978,11 @@ export default function TempleOfToothKandyGuide() {
               {/* More Details Button */}
               <div className="mt-8 text-center">
                 <a 
-                  href="/blog/Kandy-esela-perahara"
+                  href="/blog/kandy-esela-perahara"
                   className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
                   <Crown className="w-5 h-5" />
-                  Explore Complete Esala Perahera Guide
+                  Read Complete Esala Perahera Guide
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>

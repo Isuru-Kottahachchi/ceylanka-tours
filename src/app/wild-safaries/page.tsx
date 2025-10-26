@@ -71,7 +71,7 @@ const wildlifeSafaris = [
         name: "Udawalawe National Park",
         locations: ["Main Park", "Buffer Zone"],
         images: [
-            { src: "/udawalawe-elephants.jpg", title: "Elephant Paradise - Udawalawe" },
+            { src: "/Udawalawa-park.jpeg", title: "Elephant Paradise - Udawalawe" },
             { src: "/udawalawe-reservoir.jpg", title: "Udawalawe Reservoir" },
             { src: "/baby-elephants.jpg", title: "Elephant Orphanage" }
         ],
@@ -938,12 +938,12 @@ export default function WildSafarisPage() {
                 </section>
 
                 {/* Mobile-friendly Ad */}
-                <section className="mb-8 xl:hidden">
+                {/* <section className="mb-8 xl:hidden">
                     <AdBanner 
                         slot="wild-safari-mobile"
                         className="max-w-sm mx-auto"
                     />
-                </section>
+                </section> */}
 
                 {/* Safari Parks */}
                 <section className="mb-12">
@@ -1068,7 +1068,7 @@ export default function WildSafarisPage() {
                             <div
                                 key={safari.id}
                                 id={safari.name.toLowerCase().replace(/\s+/g, '-')}
-                                className="scroll-mt-20"
+                                className="scroll-mt-40"
                             >
                                 <Card className="overflow-hidden hover:shadow-xl transition-shadow">
                                     <div className="flex flex-col md:flex-row md:gap-6 p-6">

@@ -76,7 +76,6 @@ export default function AmbuluwawaGuide() {
                   <p className="text-sm text-amber-700 mb-2">
                     <strong>Always be aware about the crowd:</strong> If you are fear of heights, be cautious when visiting the tower as it can get crowded and may cause discomfort and If you a tall person (above 6 feet), the narrow spiral stairs tower may be challenging to navigate and handrail also a bit low.
                   </p>
-
                 </div>
               </div>
             </div>

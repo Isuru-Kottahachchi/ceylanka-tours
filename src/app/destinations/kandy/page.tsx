@@ -265,28 +265,8 @@ export default function KandyTravelGuide() {
                 <CardDescription>Multiple convenient options to reach Kandy</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-                  <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">🚂 By Train (Most Scenic)</h4>
-                  <ul className="text-sm text-green-700 dark:text-green-400 space-y-1">
-                    <li>• <strong>Duration:</strong> 3 hours from Colombo Fort Station</li>
-                    <li>• <strong>Cost:</strong> 500-1500 LKR depending on class</li>
-                    <li>• <strong>Frequency:</strong> Multiple trains daily (6:00 AM - 8:00 PM)</li>
-                    <li>• <strong>Best seats:</strong> Right side for mountain views</li>
-                    <li>• <strong>Tip:</strong> Book 1st or 2nd class for comfort</li>
-                  </ul>
-                </div>
-                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                  <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">🚌 By Bus (Budget Option)</h4>
-                  <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-1">
-                    <li>• <strong>Duration:</strong> 2.5-3 hours from Colombo</li>
-                    <li>• <strong>Cost:</strong> 200-400 LKR (very affordable)</li>
-                    <li>• <strong>Types:</strong> Government buses & private coaches</li>
-                    <li>• <strong>Departure:</strong> Bastian Mawatha Bus Station</li>
-                    <li>• <strong>Frequency:</strong> Every 30 minutes</li>
-                  </ul>
-                </div>
                 <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg">
-                  <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-2">🚗 By Car/Taxi</h4>
+                  <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-2">🚗 By Car/Taxi (Recommended)</h4>
                   <ul className="text-sm text-orange-700 dark:text-orange-400 space-y-1">
                     <li>• <strong>Duration:</strong> 2.5 hours from Colombo</li>
                     <li>• <strong>Cost:</strong> 8,000-15,000 LKR for taxi</li>
@@ -312,6 +292,27 @@ export default function KandyTravelGuide() {
                     </div>
                   </div>
                 </div>
+                <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+                  <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">🚂 By Train (Most Scenic)</h4>
+                  <ul className="text-sm text-green-700 dark:text-green-400 space-y-1">
+                    <li>• <strong>Duration:</strong> 3 hours from Colombo Fort Station</li>
+                    <li>• <strong>Cost:</strong> 500-1500 LKR depending on class</li>
+                    <li>• <strong>Frequency:</strong> Multiple trains daily (6:00 AM - 8:00 PM)</li>
+                    <li>• <strong>Best seats:</strong> Right side for mountain views</li>
+                    <li>• <strong>Tip:</strong> Book 1st or 2nd class for comfort</li>
+                  </ul>
+                </div>
+                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+                  <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">🚌 By Bus (Budget Option)</h4>
+                  <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-1">
+                    <li>• <strong>Duration:</strong> 2.5-3 hours from Colombo</li>
+                    <li>• <strong>Cost:</strong> 200-400 LKR (very affordable)</li>
+                    <li>• <strong>Types:</strong> Government buses & private coaches</li>
+                    <li>• <strong>Departure:</strong> Bastian Mawatha Bus Station</li>
+                    <li>• <strong>Frequency:</strong> Every 30 minutes</li>
+                  </ul>
+                </div>
+
               </CardContent>
             </Card>
 
@@ -775,12 +776,10 @@ export default function KandyTravelGuide() {
                 </CardContent>
               </Card>
             </Link> */}
-
-
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Nelligala Temple - Peace & Views</CardTitle>
-                <CardDescription>Ancient temple with meditation caves and scenic beauty</CardDescription>
+                <CardDescription>Beautiful temple which is located in a mountain</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
@@ -798,7 +797,7 @@ export default function KandyTravelGuide() {
                   📍 Distance: 40 minutes from Kandy | 🧘 Activity: Meditation & sightseeing | 🎫 Entry: Free
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                  <Link href="/destinations/nelligala-temple" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -806,6 +805,34 @@ export default function KandyTravelGuide() {
             </Card>
 
 
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Victoria Dam</CardTitle>
+                <CardDescription>The Tallest The Largest Hydroelectric Power Station In Sri Lanka.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Victoria-Dam.jpg"
+                  alt="Victoria Dam with stunning views"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground mb-3">
+                  The Victoria Dam is the tallest and largest hydroelectric power station in Sri Lanka, located in the central
+                  highlands. It&apos;s an impressive feat of engineering and offers stunning views of the surrounding mountains
+                  and the reservoir it creates. A great spot for photography and learning about renewable energy.
+                </p>
+                <div className="text-xs text-muted-foreground mb-3">
+                  📍 Distance: 40 minutes from Kandy | 🧘 Activity: Meditation & sightseeing | 🎫 Entry: Free
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/nelligala" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
@@ -948,7 +975,7 @@ export default function KandyTravelGuide() {
                   📍 Distance: 1 hour from Kandy | 🐘 Elephants: 80+ | ⏰ Feeding: 9AM, 1PM, 5PM
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
+                  <Link href="/destinations/pinnawala-elephant-orphanage" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>

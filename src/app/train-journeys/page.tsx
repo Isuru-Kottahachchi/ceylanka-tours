@@ -174,7 +174,7 @@ export default function TrainJourneysGuide() {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="relative h-64">
                 <Image
-                  src="/placeholder.jpg"
+                  src="/Jaffna-Train.jpg"
                   alt="Jaffna railway station and northern Sri Lanka landscape"
                   fill
                   className="object-cover"

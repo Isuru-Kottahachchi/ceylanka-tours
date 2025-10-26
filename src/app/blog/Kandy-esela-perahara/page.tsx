@@ -114,22 +114,22 @@ export default function KandyEsalaPeraheraGuide() {
             sacred elephants, traditional dancers, and centuries-old customs create an unforgettable experience
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-yellow-600/80 text-white border-yellow-500">
               <Crown className="w-4 h-4 mr-2" />
               Sacred Tooth Relic
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
               <Users className="w-4 h-4 mr-2" />
               100+ Elephants
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-blue-600/80 text-white border-blue-500">
               <Star className="w-4 h-4 mr-2" />
               10 Nights Festival
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
+            {/* <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2">
               <Calendar className="w-4 h-4 mr-2" />
               August
-            </Badge>
+            </Badge> */}
           </div>
         </div>
       </section>

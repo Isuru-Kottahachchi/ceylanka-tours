@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Clock, CheckCircle, Star, Heart, TreePine, Waves, Camera, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react"
+import { Clock, CheckCircle, Star, Heart, TreePine, Waves, Camera, ChevronLeft, ChevronRight, ArrowRight, MapPin } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -65,8 +65,8 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-all duration-200 cursor-pointer ${index === currentIndex
-                    ? 'bg-white scale-110'
-                    : 'bg-white/60 hover:bg-white/80'
+                  ? 'bg-white scale-110'
+                  : 'bg-white/60 hover:bg-white/80'
                   }`}
                 onClick={() => goToImage(index)}
               />
@@ -122,7 +122,7 @@ export default function PinnawalaElephantOrphanage() {
         </div>
       </section>
 
-     <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Pinnawala Elephant Orphanage</h2>
@@ -606,7 +606,129 @@ export default function PinnawalaElephantOrphanage() {
             </CardContent>
           </Card>
         </section>
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Pinnawala adventure with these incredible destinations within easy reach
+          </p>
 
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Katharagama.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Pinnawala Open Zoo</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sri Lanka&apos;s largest zoo, home to a wide variety of animals including lions, tigers, and exotic birds.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  50 km from Pinnawala
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/pattipola" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            {/* Kandy */}
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Kandy.jpeg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Kandy</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A cultural and historical city known for the Temple of the Tooth Relic and beautiful lake views.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  50 km from Pinnawala
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kandy" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Ridiyagama.jpeg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Ridiyagama Safari Park</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sri Lanka&apos;s largest safari park, home to diverse wildlife in naturalistic habitats.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  18 km from Yala National Park
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ridiyagama-safari-park" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Adamspeaskmain.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Hawagala</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Known for its scenic beauty and cool climate, Pattipola is home to the highest railway station in Sri Lanka.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  17 km from Katharagama
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hawagala" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
 
 
       </div>

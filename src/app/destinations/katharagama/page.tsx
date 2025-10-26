@@ -77,7 +77,7 @@ function ImageCarousel({ images, alt }: { images: CarouselImage[]; alt: string }
     </div>
   )
 }
-import { Clock, MapPin, CheckCircle, Star, Users, TreePine, Flame, Heart } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Users, TreePine, Flame, Heart, AlertTriangle } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -256,6 +256,17 @@ export default function KatharagamaGuide() {
               </CardContent>
               {/* ...existing code... */}
             </Card>
+          <div className="mt-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-lg">
+              <div className="flex items-start gap-2">
+                <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
+                  <p className="text-sm text-amber-700 mb-2">
+                    <strong>Always be aware about the crocodiles:</strong> When visiting Katharagama, you will see Manik river and some water bodies around the area. Be cautious and avoid getting too close to the water's edge, especially during the rainy season when water levels can rise rapidly. Crocodiles are known to inhabit these waters, so it is essential to stay vigilant and follow any local safety guidelines to ensure a safe visit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* How to Get to Katharagama */}

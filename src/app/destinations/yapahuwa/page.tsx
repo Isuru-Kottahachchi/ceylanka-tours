@@ -24,7 +24,7 @@ export default function YapahuwaravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Yapahuwa.jpeg"
           alt="Magnificent Yapahuwa rock fortress showing the ornate stone stairway and ancient palace ruins against dramatic sky"
           fill
           className="object-cover"
@@ -35,15 +35,15 @@ export default function YapahuwaravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Yapahuwa</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Medieval Rock Fortress</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               North Western Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <Crown className="w-4 h-4 mr-1" />
               Ancient Royal Capital
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Mountain className="w-4 h-4 mr-1" />
               90m High Rock Fortress
             </Badge>
@@ -177,7 +177,7 @@ export default function YapahuwaravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Yapahuwa.jpeg"
                     alt="Intricate stone stairway at Yapahuwa showing elaborate carvings, guardian figures, and architectural details"
                     width={400}
                     height={300}
