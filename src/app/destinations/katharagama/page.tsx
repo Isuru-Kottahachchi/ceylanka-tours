@@ -262,7 +262,7 @@ export default function KatharagamaGuide() {
                 <div>
                   <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
                   <p className="text-sm text-amber-700 mb-2">
-                    <strong>Always be aware about the crocodiles:</strong> When visiting Katharagama, you will see Manik river and some water bodies around the area. Be cautious and avoid getting too close to the water's edge, especially during the rainy season when water levels can rise rapidly. Crocodiles are known to inhabit these waters, so it is essential to stay vigilant and follow any local safety guidelines to ensure a safe visit.
+                    <strong>Always be aware about the crocodiles:</strong> When visiting Katharagama, you will see Manik river and some water bodies around the area. Be cautious and avoid getting too close to the water&apos;s edge, especially during the rainy season when water levels can rise rapidly. Crocodiles are known to inhabit these waters, so it is essential to stay vigilant and follow any local safety guidelines to ensure a safe visit.
                   </p>
                 </div>
               </div>

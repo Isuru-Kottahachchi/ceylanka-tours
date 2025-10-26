@@ -481,7 +481,7 @@ export default function TempleOfToothKandyGuide() {
                     <p className="text-muted-foreground text-lg leading-relaxed">
                       The Paththirippuwa, or the Octagonal Pavilion, is perhaps the most distinctive architectural feature 
                       of the Temple of the Tooth. Built during the reign of Sri Wickrama Rajasinghe (1798-1815), this 
-                      two-story pavilion represents the pinnacle of Kandyan architecture and served as the king's 
+                      two-story pavilion represents the pinnacle of Kandyan architecture and served as the king&apos;s 
                       viewing gallery during ceremonies and public appearances.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">

@@ -1062,7 +1062,7 @@ export default function NuwaraEliyaTravelGuide() {
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Haputhale</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Small town famous for Lipton&apos;s Seat viewpoint and Dambatenne Tea Factory with panoramic views.
+                  Small town famous for Lipton&apos;s Seat viewpoint and Adisham Monastery with panoramic views.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
