@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { AdBanner } from "@/components/ad-banner"
-import { 
-  ArrowLeft, 
-  ArrowRight,  
-  Clock, 
-  Ruler, 
-  Weight, 
+import {
+  ArrowLeft,
+  ArrowRight,
+  Clock,
+  Ruler,
+  Weight,
   Heart,
   TreePine,
   Droplets,
@@ -68,7 +68,7 @@ function ImageCarousel() {
         className="object-cover"
         priority
       />
-      
+
       {/* Navigation buttons */}
       <button
         onClick={prevImage}
@@ -77,7 +77,7 @@ function ImageCarousel() {
       >
         <ArrowLeft className="h-5 w-5" />
       </button>
-      
+
       <button
         onClick={nextImage}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all"
@@ -92,11 +92,10 @@ function ImageCarousel() {
           <button
             key={index}
             onClick={() => setCurrentImage(index)}
-            className={`w-3 h-3 rounded-full transition-all ${
-              index === currentImage 
-                ? "bg-white" 
-                : "bg-white/50 hover:bg-white/75"
-            }`}
+            className={`w-3 h-3 rounded-full transition-all ${index === currentImage
+              ? "bg-white"
+              : "bg-white/50 hover:bg-white/75"
+              }`}
             aria-label={`Go to image ${index + 1}`}
           />
         ))}
@@ -123,7 +122,7 @@ export default function SriLankanElephantsPage() {
           className="object-cover"
           priority
         />
-        <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
+        <div className="relative max-w-6xl mx-auto px-4 h-full flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
               Sri Lankan Elephants
@@ -138,7 +137,7 @@ export default function SriLankanElephantsPage() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Breadcrumb */}
         <nav className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400 mb-8">
           <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
@@ -148,15 +147,9 @@ export default function SriLankanElephantsPage() {
           <span className="text-gray-900 dark:text-gray-100">Sri Lankan Elephants</span>
         </nav>
 
-        {/* Ad Banner */}
-        <div className="mb-8">
-          <AdBanner slot="top-banner" />
-        </div>
-
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            
             {/* Image Carousel */}
             <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
               <CardContent className="p-6">
@@ -164,20 +157,69 @@ export default function SriLankanElephantsPage() {
               </CardContent>
             </Card>
 
-            {/* Introduction */}
+            {/* Quick Facts - Mobile View */}
+            <div className="block lg:hidden">
+              <Card className="bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-blue-900 dark:text-blue-100 mb-4">Quick Facts</h3>
+                  <div className="space-y-3">
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Scientific Name:</span>
+                      <span className="text-blue-900 dark:text-blue-100 font-medium">Elephas maximus maximus</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Population:</span>
+                      <span className="text-blue-900 dark:text-blue-100 font-medium">~7,500</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Status:</span>
+                      <span className="text-red-600 dark:text-red-400 font-medium">Endangered</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Lifespan:</span>
+                      <span className="text-blue-900 dark:text-blue-100 font-medium">60-70 years</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Height:</span>
+                      <span className="text-blue-900 dark:text-blue-100 font-medium">8-10 feet</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Weight:</span>
+                      <span className="text-blue-900 dark:text-blue-100 font-medium">4,000-5,500 kg</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Species Introduction */}
             <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
               <CardContent className="p-6">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+                  Species of Elephants in the World
+                </h2>
+
+                <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                  First of all, let’s take a brief look at the elephant species in the world. If you only know African and Asian elephants as the species of elephants, you are partially correct. Actually, there are three species of elephants: African savanna elephants, African forest elephants, and Asian elephants.</p>
+                <ul>
+                  <li className="mb-2"><Heart className="inline h-5 w-5 text-red-500 mr-2" /><b>African Savanna Elephant (Loxodonta africana):</b> The largest land animal on Earth, known for its large ears and tusks.</li>
+                  <li className="mb-2"><Heart className="inline h-5 w-5 text-red-500 mr-2" /><b>African Forest Elephant (Loxodonta cyclotis):</b> Smaller than the savanna elephant, adapted to life in dense forests.</li>
+                  <li className="mb-2"><Heart className="inline h-5 w-5 text-red-500 mr-2" /><b>Asian Elephant (Elephas maximus):</b> Found in various parts of Asia, including Sri Lanka, known for its smaller ears and domed head.</li>
+                </ul>
+                <p>Asian Elephants have a few subspecies like <b>Sri Lankan elephant (Elephas maximus maximus)</b>, <b>Indian Elephant (Elephas maximus indicus)</b>, and <b>Sumatran Elephant (Elephas maximus sumatranus)</b>.</p><br />
+                <Button> Asian Elephants vs African Elephants</Button>
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
                   About Sri Lankan Elephants
                 </h2>
                 <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                  Sri Lankan elephants are a special type of Asian elephant that live only in Sri Lanka. 
-                  They are the largest animals on the island and are very important to Sri Lankan culture and nature. 
+                  Sri Lankan elephants are a special type of Asian elephant that live only in Sri Lanka.
+                  They are the largest animals on the island and are bigger than any other subspecies of Asian elephants.
+                  They are also very important to Sri Lankan culture and nature.
                   These gentle giants have lived in Sri Lanka for thousands of years and are loved by people all over the world.
                 </p>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Scientists call them &quot;Elephas maximus maximus&quot; which means they are the biggest type of Asian elephant. 
-                  They are different from African elephants because they are smaller and have smaller ears. 
+                  Scientists call them &quot;Elephas maximus maximus&quot; which means they are the biggest type of Asian elephant.
+                  They are different from African elephants because they are smaller and have smaller ears.
                   Only some male Sri Lankan elephants have tusks, while most females do not have them at all.
                 </p>
               </CardContent>
@@ -189,7 +231,7 @@ export default function SriLankanElephantsPage() {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                   Size and Physical Features
                 </h2>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div className="flex items-center space-x-3 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <Ruler className="h-8 w-8 text-blue-600 dark:text-blue-400" />
@@ -198,7 +240,7 @@ export default function SriLankanElephantsPage() {
                       <p className="text-gray-700 dark:text-gray-300">8-10 feet (2.5-3 meters)</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <Weight className="h-8 w-8 text-green-600 dark:text-green-400" />
                     <div>
@@ -239,7 +281,7 @@ export default function SriLankanElephantsPage() {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                   Lifespan and Life Cycle
                 </h2>
-                
+
                 <div className="flex items-center space-x-3 p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg mb-6">
                   <Clock className="h-8 w-8 text-purple-600 dark:text-purple-400" />
                   <div>
@@ -252,31 +294,31 @@ export default function SriLankanElephantsPage() {
                   <div className="border-l-4 border-blue-500 pl-4">
                     <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Baby Elephant (0-2 years)</h3>
                     <p className="text-gray-700 dark:text-gray-300">
-                      Baby elephants are called calves. They weigh about 100 kg when born and stay very close to their mothers. 
+                      Baby elephants are called calves. They weigh about 100 kg when born and stay very close to their mothers.
                       They drink milk for the first 2 years and learn everything from their family.
                     </p>
                   </div>
-                  
+
                   <div className="border-l-4 border-green-500 pl-4">
                     <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Young Elephant (2-15 years)</h3>
                     <p className="text-gray-700 dark:text-gray-300">
-                      Young elephants learn to find food and water. They play with other young elephants and 
+                      Young elephants learn to find food and water. They play with other young elephants and
                       practice important skills they will need when they grow up.
                     </p>
                   </div>
-                  
+
                   <div className="border-l-4 border-orange-500 pl-4">
                     <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Adult Elephant (15-50 years)</h3>
                     <p className="text-gray-700 dark:text-gray-300">
-                      Adult elephants can have babies and are fully grown. Males often live alone or in small groups, 
+                      Adult elephants can have babies and are fully grown. Males often live alone or in small groups,
                       while females stay with their family groups.
                     </p>
                   </div>
-                  
+
                   <div className="border-l-4 border-purple-500 pl-4">
                     <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Old Elephant (50+ years)</h3>
                     <p className="text-gray-700 dark:text-gray-300">
-                      Older elephants are very wise and help lead their families. They know where to find water during dry times 
+                      Older elephants are very wise and help lead their families. They know where to find water during dry times
                       and remember important paths through the forest.
                     </p>
                   </div>
@@ -290,7 +332,7 @@ export default function SriLankanElephantsPage() {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                   Behavior and Family Life
                 </h2>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div className="flex items-center space-x-3 p-4 bg-pink-50 dark:bg-pink-900/20 rounded-lg">
                     <Heart className="h-8 w-8 text-pink-600 dark:text-pink-400" />
@@ -299,7 +341,7 @@ export default function SriLankanElephantsPage() {
                       <p className="text-gray-700 dark:text-gray-300">Led by the oldest female</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3 p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
                     <Users className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
                     <div>
@@ -345,7 +387,7 @@ export default function SriLankanElephantsPage() {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                   Where They Live and What They Eat
                 </h2>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div className="flex items-center space-x-3 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <TreePine className="h-8 w-8 text-green-600 dark:text-green-400" />
@@ -354,7 +396,7 @@ export default function SriLankanElephantsPage() {
                       <p className="text-gray-700 dark:text-gray-300">Forests and grasslands</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <Droplets className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                     <div>
@@ -416,7 +458,7 @@ export default function SriLankanElephantsPage() {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                   Protecting Sri Lankan Elephants
                 </h2>
-                
+
                 <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4 mb-6">
                   <h3 className="font-semibold text-red-800 dark:text-red-200 mb-2">Conservation Status: Endangered</h3>
                   <p className="text-red-700 dark:text-red-300 text-sm">
@@ -476,10 +518,10 @@ export default function SriLankanElephantsPage() {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                   Elephants in Sri Lankan Culture
                 </h2>
-                
+
                 <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                  Elephants are very special in Sri Lankan culture. They appear in religious festivals, 
-                  on money, and in many stories. The most famous elephant festival is the Esala Perahera 
+                  Elephants are very special in Sri Lankan culture. They appear in religious festivals,
+                  on money, and in many stories. The most famous elephant festival is the Esala Perahera
                   in Kandy, where decorated elephants carry sacred items in a beautiful parade.
                 </p>
 
@@ -505,46 +547,44 @@ export default function SriLankanElephantsPage() {
               </CardContent>
             </Card>
 
-            {/* Ad Banner */}
-            <div className="my-8">
-              <AdBanner slot="content-banner" />
-            </div>
           </div>
 
           {/* Sidebar */}
           <div className="space-y-6">
-            {/* Quick Facts */}
-            <Card className="bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-blue-900 dark:text-blue-100 mb-4">Quick Facts</h3>
-                <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-blue-800 dark:text-blue-200">Scientific Name:</span>
-                    <span className="text-blue-900 dark:text-blue-100 font-medium">Elephas maximus maximus</span>
+            {/* Quick Facts - Desktop View */}
+            <div className="hidden lg:block">
+              <Card className="bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-800">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-blue-900 dark:text-blue-100 mb-4">Quick Facts</h3>
+                  <div className="space-y-3">
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Scientific Name:</span>
+                      <span className="text-blue-900 dark:text-blue-100 font-medium">Elephas maximus maximus</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Population:</span>
+                      <span className="text-blue-900 dark:text-blue-100 font-medium">~7,500</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Status:</span>
+                      <span className="text-red-600 dark:text-red-400 font-medium">Endangered</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Lifespan:</span>
+                      <span className="text-blue-900 dark:text-blue-100 font-medium">60-70 years</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Height:</span>
+                      <span className="text-blue-900 dark:text-blue-100 font-medium">8-10 feet</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-blue-800 dark:text-blue-200">Weight:</span>
+                      <span className="text-blue-900 dark:text-blue-100 font-medium">4,000-5,500 kg</span>
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-blue-800 dark:text-blue-200">Population:</span>
-                    <span className="text-blue-900 dark:text-blue-100 font-medium">~7,500</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-blue-800 dark:text-blue-200">Status:</span>
-                    <span className="text-red-600 dark:text-red-400 font-medium">Endangered</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-blue-800 dark:text-blue-200">Lifespan:</span>
-                    <span className="text-blue-900 dark:text-blue-100 font-medium">60-70 years</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-blue-800 dark:text-blue-200">Height:</span>
-                    <span className="text-blue-900 dark:text-blue-100 font-medium">8-10 feet</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-blue-800 dark:text-blue-200">Weight:</span>
-                    <span className="text-blue-900 dark:text-blue-100 font-medium">4,000-5,500 kg</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
 
             {/* Best Places to See Elephants */}
             <Card className="bg-green-50 dark:bg-green-900/20 border-green-200 dark:border-green-800">
@@ -559,21 +599,21 @@ export default function SriLankanElephantsPage() {
                       <p className="text-green-700 dark:text-green-300 text-sm">Most popular safari destination</p>
                     </div>
                   </Link>
-                  
+
                   <Link href="/destinations/udawalawe-national-park" className="block">
                     <div className="p-3 bg-white dark:bg-gray-800 rounded-lg hover:shadow-md transition-shadow">
                       <h4 className="font-semibold text-green-800 dark:text-green-200">Udawalawe National Park</h4>
                       <p className="text-green-700 dark:text-green-300 text-sm">Best for elephant watching</p>
                     </div>
                   </Link>
-                  
+
                   <Link href="/destinations/minneriya-national-park" className="block">
                     <div className="p-3 bg-white dark:bg-gray-800 rounded-lg hover:shadow-md transition-shadow">
                       <h4 className="font-semibold text-green-800 dark:text-green-200">Minneriya National Park</h4>
                       <p className="text-green-700 dark:text-green-300 text-sm">Famous for &quot;The Gathering&quot;</p>
                     </div>
                   </Link>
-                  
+
                   <Link href="/destinations/wilpattu-national-park" className="block">
                     <div className="p-3 bg-white dark:bg-gray-800 rounded-lg hover:shadow-md transition-shadow">
                       <h4 className="font-semibold text-green-800 dark:text-green-200">Wilpattu National Park</h4>
@@ -615,7 +655,7 @@ export default function SriLankanElephantsPage() {
               <span>Back to Blog</span>
             </Button>
           </Link>
-          
+
           <Link href="/destinations/yala-national-park">
             <Button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 h-12 cursor-pointer">
               <span>Visit Yala National Park</span>
