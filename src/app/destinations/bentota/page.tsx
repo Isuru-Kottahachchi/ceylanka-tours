@@ -87,8 +87,6 @@ export default function BentotaGuide() {
     // Beach Safety Modal State
     const [showSafetyModal, setShowSafetyModal] = useState(false)
 
-    // Selected Temple State for detailed view
-    const [selectedTemple, setSelectedTemple] = useState<string | null>(null)
 
     // Show modal after page loads
     useEffect(() => {
@@ -763,7 +761,7 @@ export default function BentotaGuide() {
                                                 <Button
                                                     variant="outline"
                                                     className="w-full mt-4 cursor-pointer"
-                                                    onClick={() => setSelectedTemple("wanawasa")}
+
                                                 >
                                                     Explore Full History & Details
                                                 </Button>
@@ -838,7 +836,7 @@ export default function BentotaGuide() {
                                             <Button
                                                 variant="outline"
                                                 className="w-full mt-4 cursor-pointer"
-                                                onClick={() => setSelectedTemple("galapatha")}
+
                                             >
                                                 Explore Full History & Details
                                             </Button>
@@ -909,7 +907,7 @@ export default function BentotaGuide() {
                                             <Button
                                                 variant="outline"
                                                 className="w-full mt-4 cursor-pointer"
-                                                onClick={() => setSelectedTemple("udakotuwa")}
+
                                             >
                                                 Explore Full History & Details
                                             </Button>
@@ -980,7 +978,7 @@ export default function BentotaGuide() {
                                             <Button
                                                 variant="outline"
                                                 className="w-full mt-4 cursor-pointer"
-                                                onClick={() => setSelectedTemple("ganepansala")}
+
                                             >
                                                 Explore Full History & Details
                                             </Button>
@@ -1051,7 +1049,7 @@ export default function BentotaGuide() {
                                             <Button
                                                 variant="outline"
                                                 className="w-full mt-4 cursor-pointer"
-                                                onClick={() => setSelectedTemple("bodhimaluwa")}
+
                                             >
                                                 Explore Full History & Details
                                             </Button>
