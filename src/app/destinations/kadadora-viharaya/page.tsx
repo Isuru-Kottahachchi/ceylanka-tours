@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, LandmarkIcon, Mountain, Cloud, Droplet } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ImageCarousel } from "@/components/ui/carousel"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 const carouselImages = [
     {
