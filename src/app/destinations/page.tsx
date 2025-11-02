@@ -844,8 +844,6 @@ export default function DestinationsPage() {
           )}
         </div>
 
-        <AdBanner slot="destinations-bottom" />
-
         {/* Load More */}
         <div className="text-center mt-12">
           <Button className="px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold">

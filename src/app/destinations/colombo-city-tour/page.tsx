@@ -1,9 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
-
-
 import Link from "next/link"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Building, ShoppingBag, Camera } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"

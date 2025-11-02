@@ -680,6 +680,58 @@ export default function KandyTravelGuide() {
             </Card>
           </div>
         </section>
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Foods to Try Out in Kandy</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Pani walalu</CardTitle>
+                <CardDescription>A Sweet treat </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Luxury beachfront resort in Pasikuda with infinity pool, elegant architecture, and ocean views"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Direct beachfront locations</li>
+                  <li>• Infinity pools and spa facilities</li>
+                  <li>• Multiple dining options</li>
+                  <li>• Water sports centers</li>
+                  <li>• Premium service and amenities</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-lg">Kandyan Sweets</CardTitle>
+                <CardDescription>A Sweet treat</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/placeholder.svg?height=200&width=300"
+                  alt="Boutique beach hotel in Pasikuda with elegant rooms, private beach access, and personalized service"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3"
+                />
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Smaller, more intimate properties</li>
+                  <li>• Personalized service and attention</li>
+                  <li>• Unique design and architecture</li>
+                  <li>• Private beach areas</li>
+                  <li>• Customized experiences</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            
+          </div>
+        </section>
         {/* More Amazing Places to Visit */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">More Amazing Places to Visit Near Kandy</h2>
@@ -939,7 +991,7 @@ export default function KandyTravelGuide() {
                   Submergered by Kothmale Dam reservoir, this ancient temple has a rich history dating back to the 14th century.
                 </p>
                 <div className="text-xs text-muted-foreground mb-3">
-                  📍 Distance: 50 minutes from Kandy | ⛰️ Location: Visible only during low water levels 
+                  📍 Distance: 50 minutes from Kandy | ⛰️ Location: Visible only during low water levels
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/kadadora-viharaya" passHref legacyBehavior>
