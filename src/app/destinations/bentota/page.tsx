@@ -84,9 +84,11 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
 }
 
 export default function BentotaGuide() {
-
     // Beach Safety Modal State
     const [showSafetyModal, setShowSafetyModal] = useState(false)
+
+    // Selected Temple State for detailed view
+    const [selectedTemple, setSelectedTemple] = useState<string | null>(null)
 
     // Show modal after page loads
     useEffect(() => {
@@ -674,99 +676,386 @@ export default function BentotaGuide() {
                                 <CardDescription>Visit ancient temples with great historical significance</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <Image
-                                        src="/placeholder.svg?height=300&width=400"
-                                        alt="Ancient Buddhist temple in Bentota with traditional architecture and religious statues"
-                                        width={400}
-                                        height={300}
-                                        className="rounded-lg"
-                                    />
-                                    <div>
-                                        <p className="text-muted-foreground mb-4">
-                                            When you visit Bentota, you can explore five ancient temples with rich history and centuries of Buddhist
-                                            heritage and architecture. These raja maha viharas are interconnected by ancient underground tunnels.
-                                        </p>
+                                <div className="mb-6">
+                                    <p className="text-muted-foreground mb-4">
+                                        When you visit Bentota, you can explore five ancient temples with rich history and centuries of Buddhist
+                                        heritage and architecture. These raja maha viharas are interconnected by ancient underground tunnels.
+                                    </p>
 
-                                        <h4 className="font-semibold mb-3 text-foreground">The Five Raja Maha Viharas:</h4>
-                                        <ul className="space-y-2 text-muted-foreground mb-4">
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                <strong>Wanawasa Rajamaha Viharaya</strong> - Main temple with visible tunnel entrance
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                <strong>Galapatha Raja Maha Viharaya</strong> - Historic temple with tunnel beginning
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                <strong>Bentota Udakotuwa Maha Viharaya</strong> - Central temple complex
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                <strong>Gane Pansala Viharaya</strong> - Ancient meditation center
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                <strong>Bodhimaluwa Raja Maha Viharaya</strong> - Traditional Buddhist temple
-                                            </li>
-                                        </ul>
-
-                                        <p className="text-muted-foreground mb-4">
+                                    <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg mb-6">
+                                        <h4 className="font-semibold mb-2 text-amber-800 dark:text-amber-200">Historical Significance</h4>
+                                        <p className="text-sm text-amber-700 dark:text-amber-300">
                                             In ancient times, these five rajamaha viharas were interconnected by underground tunnels.
                                             These tunnels were used by Buddhist monks for safe passage between temples. If you visit
                                             Wanawasa Rajamaha Viharaya, you can still see part of that tunnel, and there is also the
                                             beginning of the tunnel at Galapatha Viharaya.
                                         </p>
+                                    </div>
+                                </div>
 
-                                        {/* Small Image Carousel for Temple Tunnels */}
-                                        <div className="mb-4">
-                                            <ImageCarousel
-                                                images={[
-                                                    {
-                                                        src: "/Bentotabeach.jpeg",
-                                                        alt: "Bentota Beach with golden sand and clear waters",
-                                                        caption: "Bentota Beach",
-                                                        title: "Bentota Beach"
-                                                    },
-                                                    {
-                                                        src: "/Lunugangabawa2.jpeg",
-                                                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                                                        caption: "Ancient Cave Paintings",
-                                                        title: "Cave 1 Murals"
-                                                    },
-                                                    {
-                                                        src: "Lunugangabawa3.jpeg",
-                                                        alt: "Detailed view of Buddha statue in Cave 1",
-                                                        caption: "Buddha Statue Detail",
-                                                        title: "Cave 1 Buddha Statue"
-                                                    }
-                                                ]}
+                                <div className="space-y-6">
+                                    {/* Wanawasa Rajamaha Viharaya */}
+                                    <div className="flex flex-col lg:flex-row p-6 border rounded-lg bg-card shadow-lg hover:shadow-xl transition-shadow gap-6">
+                                        <div className="lg:w-1/3">
+                                            <Image
+                                                src="/wanawasa1.jpg"
+                                                alt="Wanawasa temple exterior with its historic entrance"
+                                                width={400}
+                                                height={300}
+                                                className="rounded-lg object-cover w-full h-full"
                                             />
-                                            <p className="text-xs text-muted-foreground mt-2 italic text-center">
-                                                Ancient tunnel systems connecting the five Raja Maha Temples
-                                            </p>
                                         </div>
 
-                                        <h4 className="font-semibold mb-3 text-foreground">What You Can Experience:</h4>
-                                        <ul className="space-y-2 text-muted-foreground">
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Ancient tunnel systems used by monks
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Meditation sessions and spiritual guidance
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Historical and cultural significance tours
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Traditional Buddhist architecture and art
-                                            </li>
-                                        </ul>
+                                        <div className="lg:w-2/3 space-y-4">
+                                            <h4 className="text-2xl font-bold text-primary">Wanawasa Rajamaha Viharaya</h4>
+
+                                            <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
+                                                <p className="text-amber-800 dark:text-amber-200">
+                                                    One of the most significant ancient temples in Bentota, dating back to the 12th century
+                                                    during the reign of King Parakramabahu the Great. This royal temple is particularly famous
+                                                    for housing one of the best-preserved entrances to the ancient tunnel network.
+                                                </p>
+                                            </div>
+
+                                            <div className="grid md:grid-cols-2 gap-4">
+                                                <div className="space-y-2">
+                                                    <h5 className="font-semibold text-primary">Key Features</h5>
+                                                    <ul className="space-y-1 text-muted-foreground">
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Ancient tunnel entrance
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            12th-century stone inscriptions
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Traditional image house
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Archaeological museum
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div className="space-y-2">
+                                                    <h5 className="font-semibold text-primary">Historical Elements</h5>
+                                                    <ul className="space-y-1 text-muted-foreground">
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Polonnaruwa era architecture
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Ancient Buddhist artifacts
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Royal stone inscriptions
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <Link href="/destinations/wanawasa-rajamaha-viharaya" passHref legacyBehavior>
+                                                <Button
+                                                    variant="outline"
+                                                    className="w-full mt-4 cursor-pointer"
+                                                    onClick={() => setSelectedTemple("wanawasa")}
+                                                >
+                                                    Explore Full History & Details
+                                                </Button>
+                                            </Link>
+
+                                        </div>
+                                    </div>
+
+                                    {/* Galapatha Raja Maha Viharaya */}
+                                    <div className="flex flex-col lg:flex-row p-6 border rounded-lg bg-card shadow-lg hover:shadow-xl transition-shadow gap-6 mt-6">
+                                        <div className="lg:w-1/3">
+                                            <Image
+                                                src="/Galapatha-Rajamaha-Viaharaya1.jpg"
+                                                alt="Galapatha temple main entrance view showing historic architecture"
+                                                width={400}
+                                                height={300}
+                                                className="rounded-lg object-cover w-full h-full"
+                                            />
+                                        </div>
+
+                                        <div className="lg:w-2/3 space-y-4">
+                                            <h4 className="text-2xl font-bold text-primary">Galapatha Raja Maha Viharaya</h4>
+
+                                            <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
+                                                <p className="text-amber-800 dark:text-amber-200">
+                                                    A historic Buddhist temple with great history and rich cultural significance. The temple is renowned for sel lipiya and &quot;Sri Anubudda mahakashyapa&quot; perahara (procession) held annually, attracting devotees from across the region.
+                                                </p>
+                                            </div>
+
+                                            <div className="grid md:grid-cols-2 gap-4">
+                                                <div className="space-y-2">
+                                                    <h5 className="font-semibold text-primary">Temple Features</h5>
+                                                    <ul className="space-y-1 text-muted-foreground">
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Ancient stone inscriptions
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Ancient tunnel system
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Historic moonstone entrance
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Relic of Sariyuth thera
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div className="space-y-2">
+                                                    <h5 className="font-semibold text-primary">Cultural Significance</h5>
+                                                    <ul className="space-y-1 text-muted-foreground">
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Annual procession festival
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Ancient tunnel remnants
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Historical guard stones
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <Button
+                                                variant="outline"
+                                                className="w-full mt-4 cursor-pointer"
+                                                onClick={() => setSelectedTemple("galapatha")}
+                                            >
+                                                Explore Full History & Details
+                                            </Button>
+                                        </div>
+                                    </div>
+
+                                    {/* Bentota Udakotuwa Maha Viharaya */}
+                                    <div className="flex flex-col lg:flex-row p-6 border rounded-lg bg-card shadow-lg hover:shadow-xl transition-shadow gap-6 mt-6">
+                                        <div className="lg:w-1/3">
+                                            <Image
+                                                src="/udakotuwa1.jpg"
+                                                alt="Udakotuwa temple complex showing main shrine and stupa"
+                                                width={400}
+                                                height={300}
+                                                className="rounded-lg object-cover w-full h-full"
+                                            />
+                                        </div>
+
+                                        <div className="lg:w-2/3 space-y-4">
+                                            <h4 className="text-2xl font-bold text-primary">Bentota Udakotuwa Maha Viharaya</h4>
+
+                                            <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
+                                                <p className="text-amber-800 dark:text-amber-200">
+                                                    A central temple in the Bentota temple network, known for its serene atmosphere
+                                                    and traditional Buddhist architecture. The temple serves as a vital spiritual hub,
+                                                    hosting important religious ceremonies throughout the year.
+                                                </p>
+                                            </div>
+
+                                            <div className="grid md:grid-cols-2 gap-4">
+                                                <div className="space-y-2">
+                                                    <h5 className="font-semibold text-primary">Sacred Features</h5>
+                                                    <ul className="space-y-1 text-muted-foreground">
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Traditional image house
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Ancient Buddhist stupa
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Meditation halls
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div className="space-y-2">
+                                                    <h5 className="font-semibold text-primary">Cultural Activities</h5>
+                                                    <ul className="space-y-1 text-muted-foreground">
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Regular ceremonies
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Buddhist education
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Community gatherings
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <Button
+                                                variant="outline"
+                                                className="w-full mt-4 cursor-pointer"
+                                                onClick={() => setSelectedTemple("udakotuwa")}
+                                            >
+                                                Explore Full History & Details
+                                            </Button>
+                                        </div>
+                                    </div>
+
+                                    {/* Gane Pansala Viharaya */}
+                                    <div className="flex flex-col lg:flex-row p-6 border rounded-lg bg-card shadow-lg hover:shadow-xl transition-shadow gap-6 mt-6">
+                                        <div className="lg:w-1/3">
+                                            <Image
+                                                src="/ganepansala1.jpg"
+                                                alt="Gane Pansala temple meditation caves and historic structures"
+                                                width={400}
+                                                height={300}
+                                                className="rounded-lg object-cover w-full h-full"
+                                            />
+                                        </div>
+
+                                        <div className="lg:w-2/3 space-y-4">
+                                            <h4 className="text-2xl font-bold text-primary">Gane Pansala Viharaya</h4>
+
+                                            <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
+                                                <p className="text-amber-800 dark:text-amber-200">
+                                                    A historic meditation center renowned for its ancient cave complexes and simple,
+                                                    yet profound architecture. This temple has served as a spiritual retreat for
+                                                    Buddhist monks for centuries, maintaining its peaceful atmosphere to this day.
+                                                </p>
+                                            </div>
+
+                                            <div className="grid md:grid-cols-2 gap-4">
+                                                <div className="space-y-2">
+                                                    <h5 className="font-semibold text-primary">Meditation Spaces</h5>
+                                                    <ul className="space-y-1 text-muted-foreground">
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Ancient meditation caves
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Quiet reflection areas
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Scenic natural setting
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div className="space-y-2">
+                                                    <h5 className="font-semibold text-primary">Spiritual Activities</h5>
+                                                    <ul className="space-y-1 text-muted-foreground">
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Guided meditation
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Dhamma discussions
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Monastic retreats
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <Button
+                                                variant="outline"
+                                                className="w-full mt-4 cursor-pointer"
+                                                onClick={() => setSelectedTemple("ganepansala")}
+                                            >
+                                                Explore Full History & Details
+                                            </Button>
+                                        </div>
+                                    </div>
+
+                                    {/* Bodhimaluwa Raja Maha Viharaya */}
+                                    <div className="flex flex-col lg:flex-row p-6 border rounded-lg bg-card shadow-lg hover:shadow-xl transition-shadow gap-6 mt-6">
+                                        <div className="lg:w-1/3">
+                                            <Image
+                                                src="/bodhimaluwa1.jpg"
+                                                alt="Bodhimaluwa temple showcasing traditional Buddhist architecture and artwork"
+                                                width={400}
+                                                height={300}
+                                                className="rounded-lg object-cover w-full h-full"
+                                            />
+                                        </div>
+
+                                        <div className="lg:w-2/3 space-y-4">
+                                            <h4 className="text-2xl font-bold text-primary">Bodhimaluwa Raja Maha Viharaya</h4>
+
+                                            <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
+                                                <p className="text-amber-800 dark:text-amber-200">
+                                                    A cherished local temple that holds a special place in the community&apos;s heart.
+                                                    Known for its exquisite traditional Buddhist artwork and as a center for
+                                                    important annual ceremonies that bring together devotees from across the region.
+                                                </p>
+                                            </div>
+
+                                            <div className="grid md:grid-cols-2 gap-4">
+                                                <div className="space-y-2">
+                                                    <h5 className="font-semibold text-primary">Artistic Heritage</h5>
+                                                    <ul className="space-y-1 text-muted-foreground">
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Traditional murals
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Buddhist sculptures
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Decorative craftsmanship
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div className="space-y-2">
+                                                    <h5 className="font-semibold text-primary">Annual Events</h5>
+                                                    <ul className="space-y-1 text-muted-foreground">
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Vesak celebrations
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Poya day ceremonies
+                                                        </li>
+                                                        <li className="flex items-center gap-2">
+                                                            <div className="w-1.5 h-1.5 rounded-full bg-amber-500"></div>
+                                                            Cultural festivals
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <Button
+                                                variant="outline"
+                                                className="w-full mt-4 cursor-pointer"
+                                                onClick={() => setSelectedTemple("bodhimaluwa")}
+                                            >
+                                                Explore Full History & Details
+                                            </Button>
+                                        </div>
                                     </div>
                                 </div>
                             </CardContent>
@@ -1310,7 +1599,7 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-                        
+
                         <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                             <CardHeader>
                                 <CardTitle className="text-lg">Kandeviharaya Temple</CardTitle>
