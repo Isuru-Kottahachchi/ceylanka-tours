@@ -617,13 +617,13 @@ export default function PinnawalaElephantOrphanage() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Katharagama.jpg"
+                  src="/Pinnawala-Zoo.jpeg"
                   alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
                   fill
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  1.5 hours
+                  5 minutes
                 </div>
               </div>
               <CardContent className="p-4">
@@ -633,10 +633,10 @@ export default function PinnawalaElephantOrphanage() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  50 km from Pinnawala
+                  550 m from Pinnawala Elephant Orphanage
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/pattipola" passHref legacyBehavior>
+                  <Link href="/destinations/pinnawala-open-zoo" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -662,7 +662,7 @@ export default function PinnawalaElephantOrphanage() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  50 km from Pinnawala
+                  41 km from Pinnnawala Elephant Orphanage
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/kandy" passHref legacyBehavior>
@@ -699,7 +699,7 @@ export default function PinnawalaElephantOrphanage() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            {/* <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/Adamspeaskmain.jpg"
@@ -726,7 +726,7 @@ export default function PinnawalaElephantOrphanage() {
                   </Link>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </section>
 

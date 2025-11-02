@@ -22,7 +22,7 @@ import { useState } from "react"
 
 const elephantImages = [
   {
-    src: "/Yala-national-park.jpg",
+    src: "/Elephant-fam.jpg",
     alt: "Sri Lankan elephants in Yala National Park",
     caption: "A family of Sri Lankan elephants in Yala National Park"
   },
@@ -116,7 +116,7 @@ export default function SriLankanElephantsPage() {
       <div className="relative h-96 bg-gradient-to-r from-green-600 to-green-800 dark:from-green-800 dark:to-green-900">
         <div className="absolute inset-0 bg-black/30" />
         <Image
-          src="/Yala-national-park.jpg"
+          src="/Thunpath-rana.jpg"
           alt="Sri Lankan elephants in their natural habitat"
           fill
           className="object-cover"
@@ -642,8 +642,6 @@ export default function SriLankanElephantsPage() {
               </CardContent>
             </Card>
 
-            {/* Ad Banner */}
-            <AdBanner slot="sidebar-banner" />
           </div>
         </div>
 
