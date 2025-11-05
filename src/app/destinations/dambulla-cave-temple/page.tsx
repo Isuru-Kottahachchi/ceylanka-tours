@@ -5,6 +5,9 @@ import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Palette } from "luci
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ImageCarousel } from "@/components/ui/image-carousel"
+import Link from "next/link"
+import InsuranceBanner from "@/components/insurance-banner"
+import { Button } from "@/components/ui/button"
 
 export default function DambullaTravelGuide() {
   return (
@@ -58,19 +61,18 @@ export default function DambullaTravelGuide() {
             </p>
           </div>
         </section>
-
-
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Essential Dambulla Cave Temple Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
+        {/* Quick Facts & How to Get There side by side */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
+          {/* Quick Dambulla Facts */}
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Facts of Dambulla Cave Temple Facts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-blue-500" />
@@ -90,8 +92,7 @@ export default function DambullaTravelGuide() {
                       <strong>Buddha Statues:</strong> Over 150
                     </span>
                   </div>
-                </div>
-                <div className="space-y-3">
+
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
                     <span>
@@ -111,10 +112,131 @@ export default function DambullaTravelGuide() {
                     </span>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+                {/* Valuable Fact for Desktop */}
+                <div className="hidden lg:block mt-6 space-y-4">
+                  {/* <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
+                    <Image
+                      src="/Gregory_Lake.jpg"
+                      alt="Ancient reservoir in Anuradhapura, Sri Lanka"
+                      width={120}
+                      height={80}
+                      className="rounded shadow-md object-cover"
+                    />
+                    <div>
+                      <p className="text-base text-blue-900 font-semibold mb-1">Wonderful streets among ancient reservoirs</p>
+                      <p className="text-sm text-blue-800">
+                       Mathale is a historic fortress that showcases stunning Dutch colonial architecture, surrounded by the Indian Ocean waves.
+                      </p>
+                    </div>
+                  </div> */}
+                  <div className="flex gap-8">
+                    <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                      <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
+                      <p className="text-sm text-yellow-800">0.5 day to explore the Cave temple and its surroundings.</p>
+                    </div>
+                    <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
+                      <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
+                      <p className="text-sm text-green-800">Year Around destination with no specific season</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>• Start early morning to beat the heat</li>
+                    <li>• Avoid poya days and public holidays for a less crowded experience</li>
+                    <li>• wear long sleeves and a hat for sun protection</li>
+                    <li>• Plan your itinerary to cover key attractions</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+            <InsuranceBanner />
+          </section>
+          {/* How to Get to Dambulla Cave Temple */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get-there">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Dambulla Cave Temple
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 161km (100 miles) from Colombo</li>
+                      <li>• <strong>Duration:</strong> 3-3.5 hours</li>
+                      <li>• <strong>Cost:</strong> $90-150 USD for day trip</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Dambullla Cave Temple. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train</h4>
+                    <p>Take the railway from Colombo Fort Station to Kalawewa</p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Kalawewa station then transfer to a taxi or tuk-tuk and continue to Dambulla Cave Temple</li>
+                      <li>• <strong>Duration:</strong> 5-7 hours</li>
+                      <li>• <strong>Cost:</strong> (Depending on the class, budget-friendly)</li>
+                      {/* <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li> */}
+                    </ul>
+
+                    <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Dambulla bust stand then transfer to a taxi or tuk-tuk and continue to Dambulla Cave Temple</li>
+                      <li>• <strong>Duration:</strong> 5-7 hours</li>
+                      <li>• <strong>Cost:</strong>(depending on the bus type)</li>
+                      {/* <li>• <strong>Scenic journey:</strong> Through Coastline road</li> */}
+                    </ul>
+                  </div>
+                </div>
+                
+                <CardContent className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-2">From Sigiriya</h4>
+                    <p className="text-sm text-muted-foreground">
+                      19km (30 minutes) - Perfect for combining both attractions in one day
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">From Kandy</h4>
+                    <p className="text-sm text-muted-foreground">
+                      72km (2 hours) - Regular bus services and private transport available
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">From Colombo</h4>
+                    <p className="text-sm text-muted-foreground">
+                      148km (3.5 hours) - Highway route via Kurunegala or scenic route via Kandy
+                    </p>
+                  </div>
+
+                </CardContent>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
+
+
         {/* Historical Engineering */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Ancient Engineering Marvel</h2>
@@ -183,7 +305,7 @@ export default function DambullaTravelGuide() {
                         title: "Cave of the Divine King"
                       },
                       {
-                        src: "/cave1-paintings.jpg",
+                        src: "/Dambulla-Cave-Temple-Arts.jpg",
                         alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
                         caption: "Ancient Cave Paintings",
                         title: "Cave 1 Murals"
@@ -277,7 +399,7 @@ export default function DambullaTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                 <ImageCarousel
+                  <ImageCarousel
                     images={[
                       {
                         src: "/maharaja-lena.jpg",
@@ -741,6 +863,276 @@ export default function DambullaTravelGuide() {
                 </ul>
               </CardContent>
             </Card>
+          </div>
+        </section>
+        {/* Nearby Places to Visit */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Dambulla Cave temple with these incredible destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Pattipola */}
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Sigiriya.jpeg"
+                  alt="Sigiriya Rock Fortress"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  30 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Sigiriya Rock Fortress</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  An ancient rock fortress and UNESCO World Heritage Site known for its stunning frescoes and panoramic views.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  19 km from Dambulla Cave Temple
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/sigiriya-rock-fortress" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Minneriyanationalpark.jpg"
+                  alt="Minneriya National Park"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  45 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Minneriya National Park</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Minneriya National Park is known for its large elephant population and diverse wildlife.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  30 km from Dambulla Cave Temple
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/minneriya-national-park" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Pidurangala.jpeg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1 hours 50 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Pidurangala Rock</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A massive rock formation offering panoramic views of Sigiriya and the surrounding jungle.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  22 km from Dambulla Cave Temple
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/pidurangala-rock" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Bandarawela.jpeg"
+                  alt="Bandarawela town with rolling hills and tea plantations in the background"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Bandarawela</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Charming hill station with cooler climate, beautiful views, and the historic Bandarawela Hotel.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  45 km from Dambulla Cave Temple
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/bandarawela" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Haputhale */}
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Haputhale.jpeg"
+                  alt="Haputhale railway station and surrounding tea plantation landscapes"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-purple-600 text-white text-xs px-2 py-1 rounded">
+                  1 hour
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Haputhale</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Small town famous for Lipton&apos;s Seat viewpoint and Adisham Monastery with panoramic views.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  30 km from Dambulla Cave Temple
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/haputhale" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Badulla */}
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Badulla.jpeg"
+                  alt="Badulla town nestled in mountains with ancient temples and railway heritage"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-orange-600 text-white text-xs px-2 py-1 rounded">
+                  2.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Badulla</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  End point of the famous hill country train journey with ancient temples and beautiful waterfalls.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  55 km from Dambulla Cave Temple
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/badulla" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Kandy */}
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Kandy.jpeg"
+                  alt="Temple of the Tooth in Kandy with traditional Sri Lankan architecture"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded">
+                  3 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Kandy</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Cultural capital with the Temple of the Tooth, beautiful lake, and traditional performances.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  75 km from Dambulla Cave Temple
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kandy" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Adam&apos;s Peak */}
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Adams-peak.jpeg"
+                  alt="Adam&apos;s Peak mountain with pilgrims climbing the sacred summit at sunrise"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-yellow-600 text-white text-xs px-2 py-1 rounded">
+                  4 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Adam&apos;s Peak</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sacred mountain pilgrimage site famous for sunrise views and the sacred footprint at the summit.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  90 km from 
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/adams-peak" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Day Trip Suggestions */}
+          <div className="mt-8 bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-center">Suggested Day Trip Combinations</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">Cultural triangle trip</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Dambulla Cave Temple → Ambewela Farm → Haputhale (Lipton&apos;s Seat) → Return
+                </p>
+                <div className="flex items-center text-xs text-green-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Full day trip (8-10 hours)
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Hill Country Explorer</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Dambulla Cave Temple → Ella (Nine Arch Bridge) → Bandarawela → Return
+                </p>
+                <div className="flex items-center text-xs text-blue-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Full day trip (10-12 hours)
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

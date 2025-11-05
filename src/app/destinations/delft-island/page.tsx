@@ -1,9 +1,11 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Waves, TreePine, Ship, Eye, House } from "lucide-react"
+import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Waves, TreePine, Ship, Eye, House, Binoculars } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import Link from "next/link"
+import InsuranceBanner from "@/components/insurance-banner"
 
 export const metadata: Metadata = {
   title: "Delft Island: Wild Horses & Ancient Baobabs | Complete Travel Guide 2025",
@@ -67,31 +69,31 @@ export default function DelftIslandTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Delft Island: Where Time Stands Still</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Imagine stepping onto an island where wild horses roam freely among thousand-year-old baobab trees, 
-              where coral stone walls tell stories of Dutch colonial ambitions, and where the rhythm of life hasn&apos;t 
-              changed for centuries. Welcome to Delft Island (Neduntheevu in Tamil), Sri Lanka&apos;s most remote 
-              inhabited island and one of its best-kept secrets, floating like a time capsule in the pristine 
+              Imagine stepping onto an island where wild horses roam freely among thousand-year-old baobab trees,
+              where coral stone walls tell stories of Dutch colonial ambitions, and where the rhythm of life hasn&apos;t
+              changed for centuries. Welcome to Delft Island (Neduntheevu in Tamil), Sri Lanka&apos;s most remote
+              inhabited island and one of its best-kept secrets, floating like a time capsule in the pristine
               waters off the Jaffna Peninsula.
             </p>
             <p className="text-lg mb-4">
-              This extraordinary 50-square-kilometer island, located just 8 kilometers from the legendary Adam&apos;s 
-              Bridge, offers visitors an experience unlike anywhere else in Sri Lanka. Home to approximately 700 
-              hardy residents who have preserved their traditional way of life for generations, Delft Island is 
-              a living museum where ancient baobab trees - some over 700 years old - tower over landscapes that 
+              This extraordinary 50-square-kilometer island, located just 8 kilometers from the legendary Adam&apos;s
+              Bridge, offers visitors an experience unlike anywhere else in Sri Lanka. Home to approximately 700
+              hardy residents who have preserved their traditional way of life for generations, Delft Island is
+              a living museum where ancient baobab trees - some over 700 years old - tower over landscapes that
               seem more African than Asian.
             </p>
             <p className="text-lg mb-4">
-              What makes Delft Island truly magical is its population of wild horses, descendants of animals 
-              introduced by Portuguese and Dutch colonizers centuries ago. These magnificent creatures roam freely 
-              across the island&apos;s scrubland and beaches, creating scenes of breathtaking natural beauty. The 
-              island&apos;s unique ecosystem, combined with structures built entirely from coral stone, creates 
+              What makes Delft Island truly magical is its population of wild horses, descendants of animals
+              introduced by Portuguese and Dutch colonizers centuries ago. These magnificent creatures roam freely
+              across the island&apos;s scrubland and beaches, creating scenes of breathtaking natural beauty. The
+              island&apos;s unique ecosystem, combined with structures built entirely from coral stone, creates
               an otherworldly atmosphere that photographers and nature lovers find irresistible.
             </p>
             <p className="text-lg">
-              Reaching Delft Island requires dedication - a boat journey from Kurikadduwan jetty followed by 
-              exploration on foot or bicycle - but this remoteness is precisely what has preserved its authentic 
-              character. Here, you&apos;ll discover coral walls that have stood for centuries, ancient wells that 
-              still provide fresh water, and a community that welcomes visitors with genuine warmth while maintaining 
+              Reaching Delft Island requires dedication - a boat journey from Kurikadduwan jetty followed by
+              exploration on foot or bicycle - but this remoteness is precisely what has preserved its authentic
+              character. Here, you&apos;ll discover coral walls that have stood for centuries, ancient wells that
+              still provide fresh water, and a community that welcomes visitors with genuine warmth while maintaining
               their traditional fishing and farming lifestyle.
             </p>
           </div>
@@ -101,71 +103,169 @@ export default function DelftIslandTravelGuide() {
               <div>
                 <p className="font-semibold text-green-800">Unique Wildlife Experience</p>
                 <p className="text-green-700 text-sm mt-1">
-                  Delft Island is the only place in Sri Lanka where you can observe wild horses in their natural 
+                  Delft Island is the only place in Sri Lanka where you can observe wild horses in their natural
                   habitat, making it a truly unique destination for wildlife enthusiasts and photographers.
                 </p>
               </div>
             </div>
           </div>
         </section>
+        <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
 
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Quick Delft Island Information
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <MapPin className="w-4 h-4 text-red-500" />
-                    <span><strong>Size:</strong> 50 square kilometers</span>
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Delft Island Information
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <MapPin className="w-4 h-4 text-red-500" />
+                      <span><strong>Size:</strong> 50 square kilometers</span>
+                    </div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Users className="w-4 h-4 text-blue-500" />
+                      <span><strong>Population:</strong> ~700 residents</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Waves className="w-4 h-4 text-cyan-500" />
+                      <span><strong>Distance from mainland:</strong> 8 km</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Users className="w-4 h-4 text-blue-500" />
-                    <span><strong>Population:</strong> ~700 residents</span>
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <House className="w-4 h-4 text-brown-500" />
+                      <span><strong>Wild horses:</strong> ~200 animals</span>
+                    </div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <TreePine className="w-4 h-4 text-green-500" />
+                      <span><strong>Ancient baobabs:</strong> 700+ years old</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4 text-purple-500" />
+                      <span><strong>Best season:</strong> November to March</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Waves className="w-4 h-4 text-cyan-500" />
-                    <span><strong>Distance from mainland:</strong> 8 km</span>
+                  <div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Ship className="w-4 h-4 text-indigo-500" />
+                      <span><strong>Boat journey:</strong> 45-60 minutes</span>
+                    </div>
+                    <div className="flex items-center gap-2 mb-2">
+                      <Clock className="w-4 h-4 text-orange-500" />
+                      <span><strong>Recommended stay:</strong> Full day</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Camera className="w-4 h-4 text-pink-500" />
+                      <span><strong>Photography:</strong> Exceptional opportunities</span>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <House className="w-4 h-4 text-brown-500" />
-                    <span><strong>Wild horses:</strong> ~200 animals</span>
-                  </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <TreePine className="w-4 h-4 text-green-500" />
-                    <span><strong>Ancient baobabs:</strong> 700+ years old</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-purple-500" />
-                    <span><strong>Best season:</strong> November to March</span>
+                {/* Valuable Fact for Desktop */}
+                <div className="hidden lg:block mt-6 space-y-4">
+                  {/* <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
+                    <Image
+                      src="/Gregory_Lake.jpg"
+                      alt="Ancient reservoir in Anuradhapura, Sri Lanka"
+                      width={120}
+                      height={80}
+                      className="rounded shadow-md object-cover"
+                    />
+                    <div>
+                      <p className="text-base text-blue-900 font-semibold mb-1">Wonderful streets among ancient reservoirs</p>
+                      <p className="text-sm text-blue-800">
+                       Mathale is a historic fortress that showcases stunning Dutch colonial architecture, surrounded by the Indian Ocean waves.
+                      </p>
+                    </div>
+                  </div> */}
+                  <div className="flex gap-8">
+                    <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                      <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
+                      <p className="text-sm text-yellow-800">1 full day to explore the fort and its surroundings.</p>
+                    </div>
+                    <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
+                      <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
+                      <p className="text-sm text-green-800">May to September (dry season) for pleasant weather and clear skies. Early mornings and late afternoons are best for sightseeing.</p>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Ship className="w-4 h-4 text-indigo-500" />
-                    <span><strong>Boat journey:</strong> 45-60 minutes</span>
+              </CardContent>
+            </Card>
+            <InsuranceBanner />
+          </section>
+          {/* How to Get to Delft Island */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get-there">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Delft Island
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
+                      <li>• <strong>Duration:</strong> 4-4.5 hours</li>
+                      <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Delft Island. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Clock className="w-4 h-4 text-orange-500" />
-                    <span><strong>Recommended stay:</strong> Full day</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Camera className="w-4 h-4 text-pink-500" />
-                    <span><strong>Photography:</strong> Exceptional opportunities</span>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Recommended)</h4>
+                    <p>Take the scenic coastal railway from Colombo Fort Station to Galle Station</p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
+                      <li>• <strong>Duration:</strong> 2.5-3 hours</li>
+                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                      <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                    </ul>
+
+                    {/* <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
+                      <li>• <strong>Duration:</strong> 2.5-3 hours</li>
+                      <li>• <strong>Cost:</strong> $2-8 USD (depending on the bus type)</li>
+                      <li>• <strong>Scenic journey:</strong> Through Coastline road</li>
+                    </ul> */}
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>• Start early morning to beat the heat</li>
+                    <li>• Carry water and use sun protection</li>
+                    <li>• Wear comfortable clothing and footwear</li>
+                    <li>• Plan your itinerary to cover key attractions</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
 
         {/* Top Attractions */}
         <section className="mb-12">
@@ -179,7 +279,7 @@ export default function DelftIslandTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Wild-Horses-In-Delft.jpg"
                     alt="Magnificent wild horses of Delft Island grazing peacefully near ancient baobab trees with crystal blue ocean in background"
                     width={400}
                     height={300}
@@ -187,9 +287,9 @@ export default function DelftIslandTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The wild horses of Delft Island are descendants of animals brought by Portuguese and Dutch 
-                      colonizers between the 16th and 18th centuries. Over generations, these hardy animals have 
-                      adapted perfectly to the island&apos;s semi-arid environment, developing into a unique population 
+                      The wild horses of Delft Island are descendants of animals brought by Portuguese and Dutch
+                      colonizers between the 16th and 18th centuries. Over generations, these hardy animals have
+                      adapted perfectly to the island&apos;s semi-arid environment, developing into a unique population
                       of approximately 200 horses that roam freely across the island&apos;s scrublands, beaches, and grasslands.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -224,10 +324,10 @@ export default function DelftIslandTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Delft Island&apos;s most spectacular residents are its ancient baobab trees, some estimated to be 
-                      over 700 years old. These magnificent African giants, with their distinctive bottle-shaped trunks 
-                      and massive canopies, create surreal landscapes that make visitors feel like they&apos;ve been 
-                      transported to the African savanna. These trees are believed to have been brought by early 
+                      Delft Island&apos;s most spectacular residents are its ancient baobab trees, some estimated to be
+                      over 700 years old. These magnificent African giants, with their distinctive bottle-shaped trunks
+                      and massive canopies, create surreal landscapes that make visitors feel like they&apos;ve been
+                      transported to the African savanna. These trees are believed to have been brought by early
                       Arab traders and have thrived in the island&apos;s unique climate.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -250,7 +350,7 @@ export default function DelftIslandTravelGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Bao-bab.jpeg"
                     alt="Massive ancient baobab tree with distinctive bottle-shaped trunk and wide canopy against blue sky on Delft Island"
                     width={400}
                     height={300}
@@ -276,10 +376,10 @@ export default function DelftIslandTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The Dutch colonizers of the 17th and 18th centuries left behind remarkable architectural 
-                      achievements on Delft Island, constructing buildings, walls, and infrastructure entirely 
-                      from locally quarried coral stone. These structures, including the impressive Dutch Fort 
-                      ruins, administrative buildings, and extensive wall systems, showcase the ingenuity of 
+                      The Dutch colonizers of the 17th and 18th centuries left behind remarkable architectural
+                      achievements on Delft Island, constructing buildings, walls, and infrastructure entirely
+                      from locally quarried coral stone. These structures, including the impressive Dutch Fort
+                      ruins, administrative buildings, and extensive wall systems, showcase the ingenuity of
                       colonial engineering and the abundance of coral resources surrounding the island.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -314,10 +414,10 @@ export default function DelftIslandTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Standing majestically among the coral stone ruins is the mysterious Queen&apos;s Tower, a 
-                      circular structure built from perfectly fitted coral stones. Local legends suggest it was 
-                      constructed as a residence for a Dutch colonial governor&apos;s wife, while others believe it 
-                      served as a watchtower for monitoring ships approaching through the Palk Strait. The tower&apos;s 
+                      Standing majestically among the coral stone ruins is the mysterious Queen&apos;s Tower, a
+                      circular structure built from perfectly fitted coral stones. Local legends suggest it was
+                      constructed as a residence for a Dutch colonial governor&apos;s wife, while others believe it
+                      served as a watchtower for monitoring ships approaching through the Palk Strait. The tower&apos;s
                       precise construction and strategic location make it one of the island&apos;s most intriguing structures.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -340,7 +440,7 @@ export default function DelftIslandTravelGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Queens-Tower.jpg"
                     alt="Historic Queen&apos;s Tower made of coral stone on Delft Island with panoramic views of surrounding landscape"
                     width={400}
                     height={300}
@@ -363,12 +463,12 @@ export default function DelftIslandTravelGuide() {
             <CardContent>
               <div className="space-y-6">
                 <p className="text-muted-foreground">
-                  Delft Island holds a unique position in both geological and mythological history as it sits just 
-                  8 kilometers from the famous Adam&apos;s Bridge (Rama Setu), the chain of limestone shoals, coral, 
-                  and sandstone that extends toward Rameswaram in India. This proximity has shaped the island&apos;s 
+                  Delft Island holds a unique position in both geological and mythological history as it sits just
+                  8 kilometers from the famous Adam&apos;s Bridge (Rama Setu), the chain of limestone shoals, coral,
+                  and sandstone that extends toward Rameswaram in India. This proximity has shaped the island&apos;s
                   cultural heritage, natural formations, and strategic importance throughout history.
                 </p>
-                
+
                 <div className="grid md:grid-cols-2 gap-6">
                   <Card className="bg-blue-50 border-blue-200">
                     <CardHeader>
@@ -531,21 +631,21 @@ export default function DelftIslandTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Walking</h4>
                   <p className="text-sm text-muted-foreground">
-                    The most common way to explore. Island is flat with well-worn paths. 
+                    The most common way to explore. Island is flat with well-worn paths.
                     Allow 4-6 hours for comprehensive exploration.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Bicycle Rental</h4>
                   <p className="text-sm text-muted-foreground">
-                    Available from locals near the jetty. Perfect for covering more ground 
+                    Available from locals near the jetty. Perfect for covering more ground
                     and easier access to remote areas.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Local Guide Service</h4>
                   <p className="text-sm text-muted-foreground">
-                    Highly recommended for historical insights, wildlife spotting, 
+                    Highly recommended for historical insights, wildlife spotting,
                     and finding the best photography locations.
                   </p>
                 </div>
@@ -726,21 +826,21 @@ export default function DelftIslandTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Delft Island offers one of Sri Lanka&apos;s most extraordinary and untouched experiences - a place where 
-                wild horses gallop freely beneath ancient baobab trees, where coral stone walls tell stories of 
-                colonial ambition, and where the rhythm of traditional island life continues unchanged by modern tourism. 
-                This remote paradise, floating in the pristine waters near the legendary Adam&apos;s Bridge, rewards 
+                Delft Island offers one of Sri Lanka&apos;s most extraordinary and untouched experiences - a place where
+                wild horses gallop freely beneath ancient baobab trees, where coral stone walls tell stories of
+                colonial ambition, and where the rhythm of traditional island life continues unchanged by modern tourism.
+                This remote paradise, floating in the pristine waters near the legendary Adam&apos;s Bridge, rewards
                 adventurous travelers with memories that will last a lifetime.
               </p>
               <p className="text-muted-foreground mb-4">
-                The journey to reach Delft Island - crossing choppy seas in small boats, navigating rural transport 
-                networks, and stepping into a world where time seems frozen - is part of the magic. Every element, 
-                from the magnificent wild horses to the towering baobab giants, creates an otherworldly experience 
+                The journey to reach Delft Island - crossing choppy seas in small boats, navigating rural transport
+                networks, and stepping into a world where time seems frozen - is part of the magic. Every element,
+                from the magnificent wild horses to the towering baobab giants, creates an otherworldly experience
                 that photographers, nature lovers, and cultural enthusiasts find absolutely captivating.
               </p>
               <p className="text-muted-foreground font-medium">
-                Come prepared for adventure, leave with profound respect for this remarkable ecosystem, and help 
-                preserve one of Sri Lanka&apos;s last untouched island sanctuaries. Delft Island isn&apos;t just a 
+                Come prepared for adventure, leave with profound respect for this remarkable ecosystem, and help
+                preserve one of Sri Lanka&apos;s last untouched island sanctuaries. Delft Island isn&apos;t just a
                 destination - it&apos;s a portal to a different world! 🐴🌳🏝️
               </p>
             </CardContent>

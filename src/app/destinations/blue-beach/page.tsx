@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { MapPin, Star, Waves, Sun, Camera, Users, CheckCircle } from 'lucide-react'
+import { MapPin, Star, Waves, Sun, Camera, Users, CheckCircle, Clock, Fish } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Blue Beach Sri Lanka: Complete Guide 2025 | Snorkeling, Relaxation & Hidden Gem",
@@ -76,18 +77,18 @@ export default function BlueBeachGuide() {
           </div>
         </section>
 
-        {/* Quick Facts */}
-        <section className="mb-12 scroll-mt-24" id="quick-facts">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-blue-500" />
-                Quick Blue Beach Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-3">
+        <div className="flex flex-col lg:flex-row gap-8 mb-10 scroll-mt-40" id="quick-facts">
+          {/* Quick Facts */}
+          <section>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Facts About Blue Beach
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                  <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-blue-500" />
                     <span>
@@ -106,8 +107,7 @@ export default function BlueBeachGuide() {
                       <strong>Best Season:</strong> December to April
                     </span>
                   </div>
-                </div>
-                <div className="space-y-3">
+           
                   <div className="flex items-center gap-2">
                     <Camera className="w-4 h-4 text-purple-500" />
                     <span>
@@ -127,10 +127,64 @@ export default function BlueBeachGuide() {
                     </span>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+              </CardContent>
+            </Card>
+          </section>
+          {/* How to Get to  */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Blue Beach
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo (Depends on the road Express way or coastal road)</li>
+                      <li>• <strong>Duration:</strong> 4-5 hours</li>
+                      <li>• <strong>Cost:</strong> Around $60 USD</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Blue Beach. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo → Waligama</li>
+                      <li>• <strong>Duration:</strong> 6-7 hours total</li>
+                      <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
+                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Waligama station</span></li>
+                      {/* <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li> */}
+                    </ul>
+
+                    
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
+
 
         {/* Highlights */}
         <section className="mb-12 scroll-mt-24" id="highlights">

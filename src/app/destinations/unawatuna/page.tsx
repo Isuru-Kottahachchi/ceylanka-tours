@@ -85,17 +85,18 @@ export default function UnawatunaTravelGuide() {
                     </div>
                 </section>
 
-                {/* Quick Facts */}
-                <section className="mb-12">
-                    <Card>
-                        <CardHeader>
-                            <CardTitle className="flex items-center gap-2">
-                                <Star className="w-5 h-5 text-yellow-500" />
-                                Quick Unawatuna Facts
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <div className="grid md:grid-cols-2 gap-4">
+
+                <div className="flex flex-col lg:flex-row gap-8 mb-10 scroll-mt-40" id="quick-facts">
+                    {/* Quick Facts */}
+                    <section>
+                        <Card>
+                            <CardHeader>
+                                <CardTitle className="flex items-center gap-2">
+                                    <Star className="w-5 h-5 text-yellow-500" />
+                                    Quick Facts About Unawatuna
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
                                 <div className="space-y-3">
                                     <div className="flex items-center gap-2">
                                         <Waves className="w-4 h-4 text-blue-500" />
@@ -115,8 +116,7 @@ export default function UnawatunaTravelGuide() {
                                             <strong>Ideal Stay:</strong> 2-4 days
                                         </span>
                                     </div>
-                                </div>
-                                <div className="space-y-3">
+
                                     <div className="flex items-center gap-2">
                                         <MapPin className="w-4 h-4 text-red-500" />
                                         <span>
@@ -135,55 +135,7 @@ export default function UnawatunaTravelGuide() {
                                             <strong>Known For:</strong> Safe swimming, snorkeling, diving
                                         </span>
                                     </div>
-                                </div>
-                            </div>
-                        </CardContent>
-                    </Card>
-                </section>
-                <div className="flex flex-col lg:flex-row gap-8 mb-10 scroll-mt-40" id="quick-facts">
-                    {/* Quick Facts */}
-                    <section>
-                        <Card>
-                            <CardHeader>
-                                <CardTitle className="flex items-center gap-2">
-                                    <Star className="w-5 h-5 text-yellow-500" />
-                                    Quick Facts About Unawatuna
-                                </CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <div className="space-y-3">
-                                    <div className="flex items-center gap-2">
-                                        <MapPin className="w-4 h-4 text-blue-500" />
-                                        <span>
-                                            <strong>Location:</strong> Southern Coast, 240km from Colombo
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <Waves className="w-4 h-4 text-green-500" />
-                                        <span>
-                                            <strong>Famous for:</strong> Safe swimming, snorkeling, diving
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <Sun className="w-4 h-4 text-orange-500" />
-                                        <span>
-                                            <strong>Best Weather:</strong> November to April
-                                        </span>
-                                    </div>
 
-
-                                    <div className="flex items-center gap-2">
-                                        <Camera className="w-4 h-4 text-red-500" />
-                                        <span>
-                                            <strong>Must-See:</strong> Coconut Hill Sunset
-                                        </span>
-                                    </div>
-                                    <div className="flex items-center gap-2">
-                                        <Clock className="w-4 h-4 text-teal-500" />
-                                        <span>
-                                            <strong>Ideal Stay:</strong> 1-2 days
-                                        </span>
-                                    </div>
                                     <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
                                         <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">🕒 Tips for Visiting Mirissa</h4>
                                         <ul className="text-sm text-blue-600 dark:text-blue-400 space-y-1">
@@ -214,7 +166,7 @@ export default function UnawatunaTravelGuide() {
                                         <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground">
                                             <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo</li>
-                                            <li>• <strong>Duration:</strong> 2.5-3.5 hours</li>
+                                            <li>• <strong>Duration:</strong> 2.5-3 hours</li>
                                             <li>• <strong>Cost:</strong> $60-85 USD for day trip</li>
                                             <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                                         </ul>
@@ -746,7 +698,7 @@ export default function UnawatunaTravelGuide() {
                             </CardContent>
                         </Card>
 
-                         <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                             <CardHeader>
                                 <CardTitle className="text-lg">Blue Beach</CardTitle>
                                 <CardDescription>Beach that can campfire</CardDescription>

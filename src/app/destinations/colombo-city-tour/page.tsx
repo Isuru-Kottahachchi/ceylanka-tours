@@ -695,8 +695,8 @@ export default function ColomboTourGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Arcade Independence Square</CardTitle>
-                <CardDescription>Historic shopping arcade</CardDescription>
+                <CardTitle className="text-lg">Kalaniya Rajamaha Viharaya</CardTitle>
+                <CardDescription>Historic Buddhist temple</CardDescription>
               </CardHeader>
               <CardContent>
 

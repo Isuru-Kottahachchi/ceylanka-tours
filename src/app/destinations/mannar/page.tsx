@@ -45,7 +45,7 @@ export default function MannarGuide() {
   ]
 
   const talaimannarLighthouseImages = [
-    { src: "/Talaimannar-Lighthouse.jpg", alt: "Talaimannar Lighthouse exterior view", caption: "Historic Talaimannar Lighthouse on Mannar Island" },
+    { src: "/Talaimannar-Pier.jpg", alt: "Talaimannar Lighthouse exterior view", caption: "Historic Talaimannar Lighthouse on Mannar Island" },
   ]
 
   return (
@@ -317,10 +317,10 @@ export default function MannarGuide() {
                     <ImageCarousel
                       images={[
                         {
-                          src: "/Riverston-Peak.jpg",
-                          alt: "Dramatic cliff viewpoint at Riverston Peak",
-                          caption: "Panoramic view of the Knuckles Mountain Range",
-                          title: "Riverston Peak Vista"
+                          src: "/Ram-Setu.jpg",
+                          alt: "Ram Setu or Adam's Bridge aerial view",
+                          caption: "Aerial view of the Ram Setu",
+                          title: "Ram Setu Vista"
                         },
                         {
                           src: "/Riverston-Peak1.jpg",
@@ -478,7 +478,7 @@ export default function MannarGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>4. Talaimannar Lighthouse </CardTitle>
+                <CardTitle>4. Talaimannar Pier and Lighthouse </CardTitle>
                 <CardDescription>Light house which is a famous landmark in Mannar</CardDescription>
               </CardHeader>
               <CardContent>
@@ -812,8 +812,8 @@ export default function MannarGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Sigiriya.jpeg"
-                  alt="Sigiriya Rock Fortress"
+                  src="/Madu-Church.jpg"
+                  alt="Madu Church"
                   fill
                   className="object-cover rounded-t-lg"
                 />
@@ -822,7 +822,7 @@ export default function MannarGuide() {
                 </div>
               </div>
               <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Shrine of Our Lady of Madhu</h3>
+                <h3 className="font-bold text-lg mb-2">Shrine of Our Lady of Madu</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   An important Catholic pilgrimage site located in the Mannar District, known for its historical significance and beautiful architecture.
                 </p>

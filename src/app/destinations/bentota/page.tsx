@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Waves, Sun, Palmtree, Fish, X, AlertTriangle, Shield } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Waves, Sun, Palmtree, Fish, X, AlertTriangle, Shield, ChevronRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
@@ -759,10 +759,9 @@ export default function BentotaGuide() {
 
                                             <Link href="/destinations/wanawasa-rajamaha-viharaya" passHref legacyBehavior>
                                                 <Button
-                                                    variant="outline"
-                                                    className="w-full mt-4 cursor-pointer"
-
+                                                    className="w-full mt-4 cursor-pointer bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center"
                                                 >
+                                                    <ChevronRight className="w-5 h-5 mr-2" />
                                                     Explore Full History & Details
                                                 </Button>
                                             </Link>
@@ -833,13 +832,14 @@ export default function BentotaGuide() {
                                                 </div>
                                             </div>
 
-                                            <Button
-                                                variant="outline"
-                                                className="w-full mt-4 cursor-pointer"
-
-                                            >
-                                                Explore Full History & Details
-                                            </Button>
+                                            <Link href="/destinations/galapatha-rajamaha-viharaya" passHref legacyBehavior>
+                                                <Button
+                                                    className="w-full mt-4 cursor-pointer bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center"
+                                                >
+                                                    <ChevronRight className="w-5 h-5 mr-2" />
+                                                    Explore Full History & Details
+                                                </Button>
+                                            </Link>
                                         </div>
                                     </div>
 
@@ -904,13 +904,14 @@ export default function BentotaGuide() {
                                                 </div>
                                             </div>
 
-                                            <Button
-                                                variant="outline"
-                                                className="w-full mt-4 cursor-pointer"
-
-                                            >
-                                                Explore Full History & Details
-                                            </Button>
+                                            <Link href="/destinations/udakotuwa-rajamaha-viharaya" passHref legacyBehavior>
+                                                <Button
+                                                    className="w-full mt-4 cursor-pointer bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center"
+                                                >
+                                                    <ChevronRight className="w-5 h-5 mr-2" />
+                                                    Explore Full History & Details
+                                                </Button>
+                                            </Link>
                                         </div>
                                     </div>
 
@@ -975,13 +976,14 @@ export default function BentotaGuide() {
                                                 </div>
                                             </div>
 
-                                            <Button
-                                                variant="outline"
-                                                className="w-full mt-4 cursor-pointer"
-
-                                            >
-                                                Explore Full History & Details
-                                            </Button>
+                                            <Link href="/destinations/ganepansala-rajamaha-viharaya" passHref legacyBehavior>
+                                                <Button
+                                                    className="w-full mt-4 cursor-pointer bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center"
+                                                >
+                                                    <ChevronRight className="w-5 h-5 mr-2" />
+                                                    Explore Full History & Details
+                                                </Button>
+                                            </Link>
                                         </div>
                                     </div>
 
@@ -1046,13 +1048,14 @@ export default function BentotaGuide() {
                                                 </div>
                                             </div>
 
-                                            <Button
-                                                variant="outline"
-                                                className="w-full mt-4 cursor-pointer"
-
-                                            >
-                                                Explore Full History & Details
-                                            </Button>
+                                            <Link href="/destinations/bodhimaluwa-rajamaha-viharaya" passHref legacyBehavior>
+                                                <Button
+                                                    className="w-full mt-4 cursor-pointer bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center"
+                                                >
+                                                    <ChevronRight className="w-5 h-5 mr-2" />
+                                                    Explore Full History & Details
+                                                </Button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
