@@ -714,7 +714,7 @@ export default function MirissaTravelGuide() {
                   fill
                   className="object-cover rounded-t-lg"
                 />
-                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
                   20 mins
                 </div>
               </div>
@@ -742,7 +742,7 @@ export default function MirissaTravelGuide() {
                   fill
                   className="object-cover rounded-t-lg"
                 />
-                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
                   1 hours
                 </div>
               </div>
