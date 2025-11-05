@@ -981,110 +981,7 @@ export default function WeligamaTravelGuide() {
           </div>
         </section>
 
-        {/* Nearby Attractions & Day Trips */}
-        <section className="mb-12 scroll-mt-24" id="nearby-attractions">
-          <h2 className="text-3xl font-bold mb-6">Nearby Attractions & Day Trips</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Mirissa */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Hirikatiya</CardTitle>
-                <CardDescription>Surfing paradise</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/Hirikatiya.jpg"
-                  alt="Hirikatiya Beach with golden sands and turquoise waters"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Hiriketiya is a hidden gem known for its excellent surfing conditions and laid-back atmosphere. Perfect for both beginners and experienced surfers.
-                </p>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/hirikatiya" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-            {/* Mirissa */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Mirissa</CardTitle>
-                <CardDescription>Whale watching and pristine beaches</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/Mirissa1.jpg"
-                  alt="Mirissa Beach with golden sands and turquoise waters"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Mirissa is famous for its whale watching tours and stunning beaches. Enjoy a relaxing day by the sea or embark on an exciting marine adventure.
-                </p>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/mirissa" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
 
-            {/* Galle Fort */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Galle Fort</CardTitle>
-                <CardDescription>Historic Dutch colonial fort</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/galle-fort-sarmat-batagov-unsplash.jpg"
-                  alt="Galle Fort with its iconic lighthouse and colonial architecture"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Explore the UNESCO World Heritage Site of Galle Fort, known for its well-preserved colonial architecture, boutique shops, and vibrant history.
-                </p>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/galle-fort" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Unawatuna */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Unawatuna</CardTitle>
-                <CardDescription>Golden beaches and coral reefs</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/Unawatuna1.jpg"
-                  alt="Unawatuna Beach with its golden sands and calm waters"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Unawatuna offers a perfect blend of relaxation and adventure with its golden beaches, coral reefs, and vibrant nightlife.
-                </p>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/unawatuna" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
 
         {/* Nearby Places to Visit */}
         <section className="mb-12">
@@ -1094,7 +991,7 @@ export default function WeligamaTravelGuide() {
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Pattipola */}
+
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
@@ -1104,20 +1001,20 @@ export default function WeligamaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  2 hours
+                  20 mins
                 </div>
               </div>
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Mirissa</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Known for its scenic beauty and cool climate, Mirissa is home to the highest railway station in Sri Lanka.
+                  Mirissa is famous for its whale watching tours and stunning beaches. Enjoy a relaxing day by the sea or embark on an exciting marine adventure.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  18 km from Nuwara Eliya
+                  7.5 km from Waligama
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/waligama" passHref legacyBehavior>
+                  <Link href="/destinations/mirissa" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -1126,68 +1023,68 @@ export default function WeligamaTravelGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Nine-arch-ella.jpg"
+                  src="/Hirikatiya.jpg"
                   alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
                   fill
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  1 hours 50 mins
+                  1 hour
                 </div>
               </div>
               <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Ella</h3>
+                <h3 className="font-bold text-lg mb-2">Hirikatiya</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Famous for the Nine Arch Bridge, Little Adam&apos;s Peak, and stunning train journeys through tea country.
+                  Hiriketiya is a hidden gem known for its excellent surfing conditions and laid-back atmosphere. Perfect for both beginners and experienced surfers.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  56 km from Nuwara Eliya
+                  39 km from Waligama
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/ella-town" passHref legacyBehavior>
+                  <Link href="/destinations/hirikatiya" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Bandarawela */}
+
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Bandarawela.jpeg"
-                  alt="Bandarawela town with rolling hills and tea plantations in the background"
+                  src="/galle-fort-sarmat-batagov-unsplash.jpg"
+                  alt="Galle Fort with its iconic lighthouse and ramparts"
                   fill
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  1.5 hours
+                  45 mins
                 </div>
               </div>
               <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Bandarawela</h3>
+                <h3 className="font-bold text-lg mb-2">Galle Fort</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Charming hill station with cooler climate, beautiful views, and the historic Bandarawela Hotel.
+                  A UNESCO World Heritage Site, Galle Fort is known for its well-preserved colonial architecture and stunning ocean views.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  45 km from Nuwara Eliya
+                  29 km from Waligama
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/bandarawela" passHref legacyBehavior>
+                  <Link href="/destinations/galle-fort" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Haputhale */}
+
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Haputhale.jpeg"
-                  alt="Haputhale railway station and surrounding tea plantation landscapes"
+                  src="/Unawatuna.jpg"
+                  alt="Unawatuna beach and surrounding landscapes"
                   fill
                   className="object-cover rounded-t-lg"
                 />
@@ -1196,111 +1093,23 @@ export default function WeligamaTravelGuide() {
                 </div>
               </div>
               <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Haputhale</h3>
+                <h3 className="font-bold text-lg mb-2">Unawatuna</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Small town famous for Lipton&apos;s Seat viewpoint and Adisham Monastery with panoramic views.
+                  Unawatuna offers a perfect blend of relaxation and adventure with its golden beaches, coral reefs, and vibrant nightlife.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  30 km from Nuwara Eliya
+                  30 km from Waligama
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/haputhale" passHref legacyBehavior>
+                  <Link href="/destinations/unawatuna" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Badulla */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative h-48">
-                <Image
-                  src="/Badulla.jpeg"
-                  alt="Badulla town nestled in mountains with ancient temples and railway heritage"
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-                <div className="absolute top-2 right-2 bg-orange-600 text-white text-xs px-2 py-1 rounded">
-                  2.5 hours
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Badulla</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  End point of the famous hill country train journey with ancient temples and beautiful waterfalls.
-                </p>
-                <div className="flex items-center text-xs text-blue-600 mb-2">
-                  <MapPin className="w-3 h-3 mr-1" />
-                  55 km from Nuwara Eliya
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/badulla" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
 
-            {/* Kandy */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative h-48">
-                <Image
-                  src="/Kandy.jpeg"
-                  alt="Temple of the Tooth in Kandy with traditional Sri Lankan architecture"
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-                <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded">
-                  3 hours
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Kandy</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Cultural capital with the Temple of the Tooth, beautiful lake, and traditional performances.
-                </p>
-                <div className="flex items-center text-xs text-blue-600 mb-2">
-                  <MapPin className="w-3 h-3 mr-1" />
-                  75 km from Nuwara Eliya
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/kandy" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Adam&apos;s Peak */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative h-48">
-                <Image
-                  src="/Adams-peak.jpeg"
-                  alt="Adam&apos;s Peak mountain with pilgrims climbing the sacred summit at sunrise"
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-                <div className="absolute top-2 right-2 bg-yellow-600 text-white text-xs px-2 py-1 rounded">
-                  4 hours
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Adam&apos;s Peak</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Sacred mountain pilgrimage site famous for sunrise views and the sacred footprint at the summit.
-                </p>
-                <div className="flex items-center text-xs text-blue-600 mb-2">
-                  <MapPin className="w-3 h-3 mr-1" />
-                  90 km from Nuwara Eliya
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/adams-peak" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Day Trip Suggestions */}

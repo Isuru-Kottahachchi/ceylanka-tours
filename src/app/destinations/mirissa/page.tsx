@@ -737,7 +737,7 @@ export default function MirissaTravelGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Galle-fort.jpg"
+                  src="/galle-fort-sarmat-batagov-unsplash.jpg"
                   alt="Galle Fort with its iconic lighthouse and colonial architecture"
                   fill
                   className="object-cover rounded-t-lg"
@@ -849,87 +849,6 @@ export default function MirissaTravelGuide() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Nearby Attractions */}
-        <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Weligama Card */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Weligama</CardTitle>
-                <CardDescription>Surfing paradise with sandy beaches</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/IMG_8209.jpg"
-                  alt="Weligama Beach"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Weligama is a popular destination for beginner surfers, offering gentle waves and a laid-back atmosphere.
-                </p>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/waligama" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Galle Fort Card */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Galle Fort</CardTitle>
-                <CardDescription>Historic UNESCO World Heritage Site</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/galle-fort-sarmat-batagov-unsplash.jpg"
-                  alt="Galle Fort"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Galle Fort is a historic colonial-era fortification with charming streets, boutique shops, and ocean views.
-                </p>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/galle-fort" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Unawatuna Card */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Unawatuna</CardTitle>
-                <CardDescription>Vibrant beach town with coral reefs</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/unawatuna.jpg"
-                  alt="Unawatuna Beach"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Unawatuna is known for its vibrant nightlife, coral reefs, and golden sandy beaches perfect for snorkeling.
-                </p>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/unawatuna" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </section>
 
