@@ -27,20 +27,10 @@ export default function MannarGuide() {
       alt: "Aerial view of Mannar Island and Adam's Bridge"
     }]
 
-  const mannarAdamBridgeImages = [
-    { src: "/placeholder.svg?height=300&width=400&text=Adams+Bridge", alt: "Aerial view of Adam's Bridge showing the chain of coral and limestone formations" },
-    { src: "/placeholder.svg?height=300&width=400&text=Rama+Setu+Satellite", alt: "Satellite view of Adam's Bridge (Rama Setu)" }
-  ]
 
   const mannarBeachesImages = [
     { src: "/placeholder.svg?height=300&width=400&text=Mannar+Beaches", alt: "Pristine beaches of Mannar with white sand and clear waters" },
     { src: "/Mannar.jpg", alt: "Sunset over Mannar Island beach" }
-  ]
-
-  const mannarFortImages = [
-    { src: "/Mannar-Fort.jpg", alt: "Historic Mannar Fort with stone walls and ramparts overlooking the sea" },
-    { src: "/Mannar-Fort1.jpg", alt: "Inside Mannar Fort ramparts and walkways" },
-    { src: "/Mannar-Fort2.jpg", alt: "Inside Mannar Fort ramparts and walkways" }
   ]
 
   const mannarReligiousImages = [
@@ -467,7 +457,7 @@ export default function MannarGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        First British Governor of Ceylon, Frederick North's private residence
+                        First British Governor of Ceylon, Frederick North&apos;s private residence
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -498,11 +488,11 @@ export default function MannarGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in the 20th century, Talaimannar Lighthouse is a prominent maritime navigation aid and a symbol of Mannar's coastal heritage. The lighthouse offers stunning views of the Indian Ocean and the surrounding landscape.</p>
+                      Built in the 20th century, Talaimannar Lighthouse is a prominent maritime navigation aid and a symbol of Mannar&apos;s coastal heritage. The lighthouse offers stunning views of the Indian Ocean and the surrounding landscape.</p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        First British Governor of Ceylon, Frederick North's private residence
+                        First British Governor of Ceylon, Frederick North&apos;s private residence
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
