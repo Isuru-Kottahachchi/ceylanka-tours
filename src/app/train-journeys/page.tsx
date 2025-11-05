@@ -101,409 +101,629 @@ export default function TrainJourneysGuide() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">Most Popular Train Routes</h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="space-y-8">
             {/* Ella Odyssey */}
             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <div className="relative h-64">
-                <Image
-                  src="/Nine-arch-ella.jpg"
-                  alt="Train crossing Nine Arch Bridge in Ella with tea plantations"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <Badge className="bg-green-600 text-white">
-                    <Star className="w-4 h-4 mr-1" />
-                    Most Popular
-                  </Badge>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="relative h-64 md:h-80">
+                  <Image
+                    src="/Nine-arch-ella.jpg"
+                    alt="Train crossing Nine Arch Bridge in Ella with tea plantations"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <Badge className="bg-green-600 text-white">
+                      <Star className="w-4 h-4 mr-1" />
+                      Most Popular
+                    </Badge>
+                  </div>
+                </div>
+                
+                <div className="md:col-span-2">
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-green-700">The Ella Odyssey</CardTitle>
+                    <CardDescription className="text-lg">Colombo to Ella via Kandy</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <p className="text-muted-foreground">
+                        This is the crown jewel of Sri Lankan train travel! The journey from Colombo to Ella takes you 
+                        through the heart of Sri Lanka&apos;s hill country, passing misty mountains, tea plantations, 
+                        waterfalls, and the famous Nine Arch Bridge. Experience breathtaking views as you climb from 
+                        sea level to nearly 2,000 meters through some of the world&apos;s most scenic railway landscapes.
+                      </p>
+                      
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div className="flex items-center gap-2">
+                          <Clock className="w-4 h-4 text-blue-500" />
+                          <div>
+                            <p className="font-medium">Duration</p>
+                            <p className="text-xs text-muted-foreground">7-9 hours</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Route className="w-4 h-4 text-green-500" />
+                          <div>
+                            <p className="font-medium">Distance</p>
+                            <p className="text-xs text-muted-foreground">290 km</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Mountain className="w-4 h-4 text-purple-500" />
+                          <div>
+                            <p className="font-medium">Max Elevation</p>
+                            <p className="text-xs text-muted-foreground">1,900m</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Ticket className="w-4 h-4 text-orange-500" />
+                          <div>
+                            <p className="font-medium">Price</p>
+                            <p className="text-xs text-muted-foreground">From $3</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Key Highlights:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Nine Arch Bridge - most photographed railway bridge in Asia</li>
+                            <li>• Tea plantation valleys stretching to the horizon</li>
+                            <li>• Demodara Loop - engineering marvel spiral track</li>
+                            <li>• Misty mountain tunnels and dramatic cliff views</li>
+                            <li>• Little Adam&apos;s Peak visible from train windows</li>
+                            <li>• Traditional tea pickers working the hillsides</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Major Stops:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Colombo Fort - Starting point</li>
+                            <li>• Peradeniya - Royal Botanical Gardens</li>
+                            <li>• Kandy - Cultural capital</li>
+                            <li>• Nuwara Eliya - Little England</li>
+                            <li>• Haputale - Mountain town views</li>
+                            <li>• Ella - Final destination paradise</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border-l-4 border-green-400">
+                        <h5 className="font-semibold text-green-800 dark:text-green-300 mb-2">🌟 Insider Tips</h5>
+                        <div className="text-sm text-green-700 dark:text-green-200 space-y-1">
+                          <p>• <strong>Best Time:</strong> Early morning departure (8:30 AM) for clear mountain views</p>
+                          <p>• <strong>Seating:</strong> Right side of train for best scenery (Kandy to Ella)</p>
+                          <p>• <strong>Photography:</strong> Keep cameras ready for the Nine Arch Bridge approach</p>
+                          <p>• <strong>Weather:</strong> Bring layers - it gets cooler as you climb higher</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
                 </div>
               </div>
-              <CardHeader>
-                <CardTitle className="text-2xl text-green-700">The Ella Odyssey</CardTitle>
-                <CardDescription className="text-lg">Colombo to Ella via Kandy</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground">
-                    This is the crown jewel of Sri Lankan train travel! The journey from Colombo to Ella takes you 
-                    through the heart of Sri Lanka&apos;s hill country, passing misty mountains, tea plantations, 
-                    waterfalls, and the famous Nine Arch Bridge.
-                  </p>
-                  
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-blue-500" />
-                      <span>7-9 hours total</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Route className="w-4 h-4 text-green-500" />
-                      <span>290 kilometers</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Mountain className="w-4 h-4 text-purple-500" />
-                      <span>Up to 1,900m elevation</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Ticket className="w-4 h-4 text-orange-500" />
-                      <span>From $3 USD</span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <h4 className="font-semibold">Key Highlights:</h4>
-                    <ul className="text-sm space-y-1 text-muted-foreground">
-                      <li>• Nine Arch Bridge - most photographed railway bridge in Asia</li>
-                      <li>• Tea plantation valleys stretching to the horizon</li>
-                      <li>• Demodara Loop - engineering marvel spiral track</li>
-                      <li>• Misty mountain tunnels and dramatic cliff views</li>
-                      <li>• Little Adam&apos;s Peak visible from train windows</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-3 bg-green-50 rounded-lg">
-                    <p className="text-sm text-green-800">
-                      <strong>Best Experience:</strong> Take the early morning train (around 8:30 AM) for clear mountain 
-                      views and perfect lighting for photos. Sit on the right side of the train for the best scenery!
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
             </Card>
 
             {/* Jaffna Northern Line */}
             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <div className="relative h-64">
-                <Image
-                  src="/Jaffna-Train.jpg"
-                  alt="Jaffna railway station and northern Sri Lanka landscape"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <Badge className="bg-blue-600 text-white">
-                    <Compass className="w-4 h-4 mr-1" />
-                    Cultural Journey
-                  </Badge>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="relative h-64 md:h-80">
+                  <Image
+                    src="/Jaffna-Train.jpg"
+                    alt="Jaffna railway station and northern Sri Lanka landscape"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <Badge className="bg-blue-600 text-white">
+                      <Compass className="w-4 h-4 mr-1" />
+                      Cultural Journey
+                    </Badge>
+                  </div>
+                </div>
+                
+                <div className="md:col-span-2">
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-blue-700">Jaffna Northern Express</CardTitle>
+                    <CardDescription className="text-lg">Colombo to Jaffna</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <p className="text-muted-foreground">
+                        Journey to the cultural heart of Tamil Sri Lanka! This historic railway line, recently restored after years of conflict, 
+                        takes you through diverse landscapes and ancient cities, offering glimpses into a different side 
+                        of Sri Lankan culture and history. Experience the rich Tamil heritage, unique architecture, and 
+                        distinctive cuisine of the northern peninsula.
+                      </p>
+                      
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div className="flex items-center gap-2">
+                          <Clock className="w-4 h-4 text-blue-500" />
+                          <div>
+                            <p className="font-medium">Duration</p>
+                            <p className="text-xs text-muted-foreground">9-10 hours</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Route className="w-4 h-4 text-green-500" />
+                          <div>
+                            <p className="font-medium">Distance</p>
+                            <p className="text-xs text-muted-foreground">398 km</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <MapPin className="w-4 h-4 text-purple-500" />
+                          <div>
+                            <p className="font-medium">Province</p>
+                            <p className="text-xs text-muted-foreground">Northern</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Ticket className="w-4 h-4 text-orange-500" />
+                          <div>
+                            <p className="font-medium">Price</p>
+                            <p className="text-xs text-muted-foreground">From $4</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Key Highlights:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Ancient Anuradhapura - UNESCO World Heritage city</li>
+                            <li>• Sacred Sri Maha Bodhi tree - 2,300 years old</li>
+                            <li>• Vavuniya - gateway to the northern province</li>
+                            <li>• Kilinochchi - town with recent historical significance</li>
+                            <li>• Jaffna Peninsula - unique Tamil culture and cuisine</li>
+                            <li>• Palmyra palm landscapes and traditional villages</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Cultural Experiences:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Tamil language and customs</li>
+                            <li>• Historic Hindu temples and kovils</li>
+                            <li>• Traditional Tamil breakfast on train</li>
+                            <li>• Jaffna crab curry and local delicacies</li>
+                            <li>• Portuguese and Dutch colonial architecture</li>
+                            <li>• Traditional palmyra palm products</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border-l-4 border-blue-400">
+                        <h5 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">🏛️ Cultural Immersion</h5>
+                        <div className="text-sm text-blue-700 dark:text-blue-200 space-y-1">
+                          <p>• <strong>Language:</strong> Tamil is predominantly spoken - learn basic greetings</p>
+                          <p>• <strong>Food:</strong> Try authentic Tamil cuisine and famous Jaffna mangoes (in season)</p>
+                          <p>• <strong>Temples:</strong> Visit ancient Nallur Kovil and other historic temples</p>
+                          <p>• <strong>History:</strong> Learn about the railway&apos;s restoration and regional significance</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
                 </div>
               </div>
-              <CardHeader>
-                <CardTitle className="text-2xl text-blue-700">Jaffna Northern Express</CardTitle>
-                <CardDescription className="text-lg">Colombo to Jaffna</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Journey to the cultural heart of Tamil Sri Lanka! This historic railway line, recently restored, 
-                    takes you through diverse landscapes and ancient cities, offering glimpses into a different side 
-                    of Sri Lankan culture and history.
-                  </p>
-                  
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-blue-500" />
-                      <span>9-10 hours</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Route className="w-4 h-4 text-green-500" />
-                      <span>398 kilometers</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-purple-500" />
-                      <span>Northern Province</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Ticket className="w-4 h-4 text-orange-500" />
-                      <span>From $4 USD</span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <h4 className="font-semibold">Key Highlights:</h4>
-                    <ul className="text-sm space-y-1 text-muted-foreground">
-                      <li>• Ancient Anuradhapura - UNESCO World Heritage city</li>
-                      <li>• Vavuniya - gateway to the northern province</li>
-                      <li>• Kilinochchi - town with recent historical significance</li>
-                      <li>• Jaffna Peninsula - unique Tamil culture and cuisine</li>
-                      <li>• Palmyra palm landscapes and traditional villages</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-3 bg-blue-50 rounded-lg">
-                    <p className="text-sm text-blue-800">
-                      <strong>Cultural Experience:</strong> This journey offers insight into Tamil culture, with different 
-                      languages, cuisine, and traditions. Try Tamil breakfast on the train and explore Jaffna&apos;s historic temples!
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
             </Card>
 
             {/* Coastal Line Southern Express */}
             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <div className="relative h-64">
-                <Image
-                  src="/galle-fort-sarmat-batagov-unsplash.jpg"
-                  alt="Coastal train running along Sri Lanka's southern coastline near Galle"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <Badge className="bg-cyan-600 text-white">
-                    <Camera className="w-4 h-4 mr-1" />
-                    Scenic Coastline
-                  </Badge>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="relative h-64 md:h-80">
+                  <Image
+                    src="/galle-fort-sarmat-batagov-unsplash.jpg"
+                    alt="Coastal train running along Sri Lanka's southern coastline near Galle"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <Badge className="bg-cyan-600 text-white">
+                      <Camera className="w-4 h-4 mr-1" />
+                      Scenic Coastline
+                    </Badge>
+                  </div>
+                </div>
+                
+                <div className="md:col-span-2">
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-cyan-700">Southern Coastal Express</CardTitle>
+                    <CardDescription className="text-lg">Colombo to Galle & Matara</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <p className="text-muted-foreground">
+                        Experience one of the world&apos;s most beautiful coastal railway journeys! This route literally hugs the Indian 
+                        Ocean coastline for miles, offering stunning beach views, palm-fringed shores, and charming fishing villages. 
+                        Watch waves crash against the tracks while you travel through some of Sri Lanka&apos;s most picturesque 
+                        coastal scenery, including the UNESCO World Heritage Galle Fort.
+                      </p>
+                      
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div className="flex items-center gap-2">
+                          <Clock className="w-4 h-4 text-blue-500" />
+                          <div>
+                            <p className="font-medium">Duration</p>
+                            <p className="text-xs text-muted-foreground">3-4 hours</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Route className="w-4 h-4 text-green-500" />
+                          <div>
+                            <p className="font-medium">Distance</p>
+                            <p className="text-xs text-muted-foreground">160 km</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <MapPin className="w-4 h-4 text-purple-500" />
+                          <div>
+                            <p className="font-medium">Region</p>
+                            <p className="text-xs text-muted-foreground">South Coast</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Ticket className="w-4 h-4 text-orange-500" />
+                          <div>
+                            <p className="font-medium">Price</p>
+                            <p className="text-xs text-muted-foreground">From $2</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Key Highlights:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Train runs directly along the beach for miles</li>
+                            <li>• Historic Galle Fort - UNESCO World Heritage site</li>
+                            <li>• Traditional stilt fishermen at work</li>
+                            <li>• Coconut palm groves and fishing villages</li>
+                            <li>• Beautiful sunset views over the Indian Ocean</li>
+                            <li>• Bentota and Hikkaduwa beach towns</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Photo Opportunities:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Train crossing coastal bridges</li>
+                            <li>• Fishermen casting nets from the shore</li>
+                            <li>• Colonial Dutch architecture in Galle</li>
+                            <li>• Palm trees swaying over turquoise waters</li>
+                            <li>• Colorful fishing boats on the beach</li>
+                            <li>• Dramatic ocean waves during monsoon</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="p-4 bg-cyan-50 dark:bg-cyan-900/20 rounded-lg border-l-4 border-cyan-400">
+                        <h5 className="font-semibold text-cyan-800 dark:text-cyan-300 mb-2">🌅 Perfect Timing</h5>
+                        <div className="text-sm text-cyan-700 dark:text-cyan-200 space-y-1">
+                          <p>• <strong>Best Views:</strong> Sit on the ocean side (left when going south) for beach views</p>
+                          <p>• <strong>Golden Hour:</strong> Afternoon departure for stunning sunset lighting</p>
+                          <p>• <strong>Photography:</strong> Windows stay open for unobstructed coastal shots</p>
+                          <p>• <strong>Weather:</strong> Dry season (Nov-Apr) offers clearest ocean views</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
                 </div>
               </div>
-              <CardHeader>
-                <CardTitle className="text-2xl text-cyan-700">Southern Coastal Express</CardTitle>
-                <CardDescription className="text-lg">Colombo to Galle & Matara</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Experience one of the world&apos;s most beautiful coastal railway journeys! This route hugs the Indian 
-                    Ocean coastline, offering stunning beach views, palm-fringed shores, and charming fishing villages.
-                  </p>
-                  
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-blue-500" />
-                      <span>3-4 hours</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Route className="w-4 h-4 text-green-500" />
-                      <span>160 kilometers</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-purple-500" />
-                      <span>Southern Coast</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Ticket className="w-4 h-4 text-orange-500" />
-                      <span>From $2 USD</span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <h4 className="font-semibold">Key Highlights:</h4>
-                    <ul className="text-sm space-y-1 text-muted-foreground">
-                      <li>• Train runs directly along the beach for miles</li>
-                      <li>• Historic Galle Fort - UNESCO World Heritage site</li>
-                      <li>• Coconut palm groves and fishing villages</li>
-                      <li>• Stilt fishermen in traditional poses</li>
-                      <li>• Beautiful sunset views over the Indian Ocean</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-3 bg-cyan-50 rounded-lg">
-                    <p className="text-sm text-cyan-800">
-                      <strong>Perfect Timing:</strong> Take the afternoon train for golden hour lighting and stunning 
-                      sunset views over the ocean. Sit on the ocean side (left going south) for best beach views!
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
             </Card>
 
             {/* Kandy to Nuwara Eliya */}
             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <div className="relative h-64">
-                <Image
-                  src="/Nuwara-Eliya.jpg"
-                  alt="Train passing through tea plantations in Nuwara Eliya hill country"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <Badge className="bg-emerald-600 text-white">
-                    <TreePine className="w-4 h-4 mr-1" />
-                    Tea Country
-                  </Badge>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="relative h-64 md:h-80">
+                  <Image
+                    src="/Nuwara-Eliya.jpg"
+                    alt="Train passing through tea plantations in Nuwara Eliya hill country"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <Badge className="bg-emerald-600 text-white">
+                      <TreePine className="w-4 h-4 mr-1" />
+                      Tea Country
+                    </Badge>
+                  </div>
+                </div>
+                
+                <div className="md:col-span-2">
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-emerald-700">Tea Country Explorer</CardTitle>
+                    <CardDescription className="text-lg">Kandy to Nuwara Eliya</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <p className="text-muted-foreground">
+                        Journey through the heart of Sri Lanka&apos;s world-famous tea country! This scenic route takes you from the cultural 
+                        capital to &quot;Little England&quot; through rolling hills covered in emerald tea plantations. 
+                        Watch the landscape transform from tropical lowlands to cool mountain highlands as you pass through 
+                        some of the world&apos;s finest tea-growing regions, where Ceylon tea has been cultivated for over 150 years.
+                      </p>
+                      
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div className="flex items-center gap-2">
+                          <Clock className="w-4 h-4 text-blue-500" />
+                          <div>
+                            <p className="font-medium">Duration</p>
+                            <p className="text-xs text-muted-foreground">4-5 hours</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Route className="w-4 h-4 text-green-500" />
+                          <div>
+                            <p className="font-medium">Distance</p>
+                            <p className="text-xs text-muted-foreground">110 km</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Mountain className="w-4 h-4 text-purple-500" />
+                          <div>
+                            <p className="font-medium">Max Elevation</p>
+                            <p className="text-xs text-muted-foreground">1,868m</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Ticket className="w-4 h-4 text-orange-500" />
+                          <div>
+                            <p className="font-medium">Price</p>
+                            <p className="text-xs text-muted-foreground">From $2.50</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Tea Estate Highlights:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Endless tea plantation terraces</li>
+                            <li>• Traditional tea pickers in colorful saris</li>
+                            <li>• Colonial-era tea factories and estates</li>
+                            <li>• Fresh Ceylon tea tasting opportunities</li>
+                            <li>• Misty mountain peaks and waterfalls</li>
+                            <li>• Cool European-style climate</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Notable Stops:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Kandy - Temple of the Tooth</li>
+                            <li>• Peradeniya - Botanical Gardens</li>
+                            <li>• Gampola - Historic railway junction</li>
+                            <li>• Nawalapitiya - Tea factory visits</li>
+                            <li>• Hatton - Heart of tea country</li>
+                            <li>• Nanu Oya - Gateway to Nuwara Eliya</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="p-4 bg-emerald-50 dark:bg-emerald-900/20 rounded-lg border-l-4 border-emerald-400">
+                        <h5 className="font-semibold text-emerald-800 dark:text-emerald-300 mb-2">🍃 Tea Lover&apos;s Experience</h5>
+                        <div className="text-sm text-emerald-700 dark:text-emerald-200 space-y-1">
+                          <p>• <strong>Factory Tours:</strong> Stop at stations near tea factories for guided tours</p>
+                          <p>• <strong>Fresh Tea:</strong> Buy Ceylon tea directly from estate shops</p>
+                          <p>• <strong>Climate Change:</strong> Pack layers - temperature drops 20°C at altitude</p>
+                          <p>• <strong>Best Season:</strong> Clear days (Dec-Mar) for panoramic plantation views</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
                 </div>
               </div>
-              <CardHeader>
-                <CardTitle className="text-2xl text-emerald-700">Tea Country Explorer</CardTitle>
-                <CardDescription className="text-lg">Kandy to Nuwara Eliya</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Journey through the heart of Sri Lanka&apos;s tea country! This scenic route takes you from the cultural 
-                    capital to &quot;Little England&quot; through rolling hills covered in emerald tea plantations.
-                  </p>
-                  
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-blue-500" />
-                      <span>4-5 hours</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Route className="w-4 h-4 text-green-500" />
-                      <span>110 kilometers</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Mountain className="w-4 h-4 text-purple-500" />
-                      <span>Up to 1,868m elevation</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Ticket className="w-4 h-4 text-orange-500" />
-                      <span>From $2.50 USD</span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <h4 className="font-semibold">Key Highlights:</h4>
-                    <ul className="text-sm space-y-1 text-muted-foreground">
-                      <li>• Endless tea plantation vistas</li>
-                      <li>• Colonial-era train stations and architecture</li>
-                      <li>• Tea pickers working in the fields</li>
-                      <li>• Misty mountain peaks and waterfalls</li>
-                      <li>• Cool mountain air and European-style climate</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-3 bg-emerald-50 rounded-lg">
-                    <p className="text-sm text-emerald-800">
-                      <strong>Tea Lover&apos;s Dream:</strong> Stop at tea estate stations to buy fresh Ceylon tea directly 
-                      from the source. The journey gets progressively cooler as you climb higher!
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
             </Card>
 
             {/* Anuradhapura to Polonnaruwa */}
             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <div className="relative h-64">
-                <Image
-                  src="/Anuradhapura.jpg"
-                  alt="Ancient ruins and Buddhist stupas in Anuradhapura from train window"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <Badge className="bg-amber-600 text-white">
-                    <Mountain className="w-4 h-4 mr-1" />
-                    Ancient Cities
-                  </Badge>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="relative h-64 md:h-80">
+                  <Image
+                    src="/Anuradhapura.jpg"
+                    alt="Ancient ruins and Buddhist stupas in Anuradhapura from train window"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <Badge className="bg-amber-600 text-white">
+                      <Mountain className="w-4 h-4 mr-1" />
+                      Ancient Cities
+                    </Badge>
+                  </div>
+                </div>
+                
+                <div className="md:col-span-2">
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-amber-700">Ancient Cities Express</CardTitle>
+                    <CardDescription className="text-lg">Anuradhapura to Polonnaruwa</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <p className="text-muted-foreground">
+                        Travel between Sri Lanka&apos;s two greatest ancient capitals! This historic route connects UNESCO 
+                        World Heritage cities through rural landscapes dotted with ancient ruins and Buddhist temples. 
+                        Journey through the heart of the Cultural Triangle, where kingdoms ruled for over 1,000 years 
+                        and where Buddhism flourished across magnificent stone cities and sacred monasteries.
+                      </p>
+                      
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div className="flex items-center gap-2">
+                          <Clock className="w-4 h-4 text-blue-500" />
+                          <div>
+                            <p className="font-medium">Duration</p>
+                            <p className="text-xs text-muted-foreground">2-3 hours</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Route className="w-4 h-4 text-green-500" />
+                          <div>
+                            <p className="font-medium">Distance</p>
+                            <p className="text-xs text-muted-foreground">85 km</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <MapPin className="w-4 h-4 text-purple-500" />
+                          <div>
+                            <p className="font-medium">Region</p>
+                            <p className="text-xs text-muted-foreground">Cultural Triangle</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Ticket className="w-4 h-4 text-orange-500" />
+                          <div>
+                            <p className="font-medium">Price</p>
+                            <p className="text-xs text-muted-foreground">From $1.50</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Ancient Wonders:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Sacred Sri Maha Bodhi tree (2,300+ years old)</li>
+                            <li>• Ruwanwelisaya stupa - architectural marvel</li>
+                            <li>• Ancient monastic complexes and ruins</li>
+                            <li>• Archaeological sites visible from train</li>
+                            <li>• Traditional village life and farming</li>
+                            <li>• Pilgrims traveling to sacred sites</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Historical Significance:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Anuradhapura - 1st ancient capital (377 BC)</li>
+                            <li>• Polonnaruwa - 2nd ancient capital (11th century)</li>
+                            <li>• Buddhist monasteries and universities</li>
+                            <li>• Ancient irrigation systems (tanks)</li>
+                            <li>• Stone carvings and sculptures</li>
+                            <li>• Living heritage sites still in use</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border-l-4 border-amber-400">
+                        <h5 className="font-semibold text-amber-800 dark:text-amber-300 mb-2">🏛️ Historical Immersion</h5>
+                        <div className="text-sm text-amber-700 dark:text-amber-200 space-y-1">
+                          <p>• <strong>Archaeological Tours:</strong> Combine train travel with guided site visits</p>
+                          <p>• <strong>Buddhist Heritage:</strong> Witness centuries-old religious practices</p>
+                          <p>• <strong>Rural Culture:</strong> Experience traditional village life along the route</p>
+                          <p>• <strong>Best Time:</strong> Early morning for cooler weather and better light</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
                 </div>
               </div>
-              <CardHeader>
-                <CardTitle className="text-2xl text-amber-700">Ancient Cities Express</CardTitle>
-                <CardDescription className="text-lg">Anuradhapura to Polonnaruwa</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Travel between Sri Lanka&apos;s two greatest ancient capitals! This historic route connects UNESCO 
-                    World Heritage cities through rural landscapes dotted with ancient ruins and Buddhist temples.
-                  </p>
-                  
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-blue-500" />
-                      <span>2-3 hours</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Route className="w-4 h-4 text-green-500" />
-                      <span>85 kilometers</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-purple-500" />
-                      <span>Cultural Triangle</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Ticket className="w-4 h-4 text-orange-500" />
-                      <span>From $1.50 USD</span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <h4 className="font-semibold">Key Highlights:</h4>
-                    <ul className="text-sm space-y-1 text-muted-foreground">
-                      <li>• Ancient Buddhist stupas and monasteries</li>
-                      <li>• Traditional rural villages and farming communities</li>
-                      <li>• Archaeological sites visible from train windows</li>
-                      <li>• Sacred Bo tree and Ruwanwelisaya stupa views</li>
-                      <li>• Local pilgrims traveling to holy sites</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-3 bg-amber-50 rounded-lg">
-                    <p className="text-sm text-amber-800">
-                      <strong>Historical Journey:</strong> This route offers a unique perspective on Sri Lanka&apos;s ancient 
-                      Buddhist civilization. Perfect for history enthusiasts and cultural explorers!
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
             </Card>
 
             {/* Batticaloa Eastern Line */}
             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <div className="relative h-64">
-                <Image
-                  src="/placeholder.jpg"
-                  alt="Eastern Sri Lanka landscape with lagoons and palm trees from train"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute top-4 left-4">
-                  <Badge className="bg-teal-600 text-white">
-                    <Compass className="w-4 h-4 mr-1" />
-                    Hidden Gem
-                  </Badge>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="relative h-64 md:h-80">
+                  <Image
+                    src="/placeholder.jpg"
+                    alt="Eastern Sri Lanka landscape with lagoons and palm trees from train"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <Badge className="bg-teal-600 text-white">
+                      <Compass className="w-4 h-4 mr-1" />
+                      Hidden Gem
+                    </Badge>
+                  </div>
+                </div>
+                
+                <div className="md:col-span-2">
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-teal-700">Eastern Explorer</CardTitle>
+                    <CardDescription className="text-lg">Colombo to Batticaloa</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-4">
+                      <p className="text-muted-foreground">
+                        Discover Sri Lanka&apos;s untouched eastern coast! This lesser-known route takes you through diverse 
+                        landscapes, pristine lagoons, and traditional fishing communities along the unspoiled eastern shoreline. 
+                        Experience authentic Sri Lankan life away from tourist crowds, traveling through regions rich in 
+                        Tamil and Muslim heritage, where ancient traditions thrive alongside stunning natural beauty.
+                      </p>
+                      
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div className="flex items-center gap-2">
+                          <Clock className="w-4 h-4 text-blue-500" />
+                          <div>
+                            <p className="font-medium">Duration</p>
+                            <p className="text-xs text-muted-foreground">8-9 hours</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Route className="w-4 h-4 text-green-500" />
+                          <div>
+                            <p className="font-medium">Distance</p>
+                            <p className="text-xs text-muted-foreground">350 km</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <MapPin className="w-4 h-4 text-purple-500" />
+                          <div>
+                            <p className="font-medium">Province</p>
+                            <p className="text-xs text-muted-foreground">Eastern</p>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Ticket className="w-4 h-4 text-orange-500" />
+                          <div>
+                            <p className="font-medium">Price</p>
+                            <p className="text-xs text-muted-foreground">From $3.50</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Natural Wonders:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Pristine Batticaloa Lagoon system</li>
+                            <li>• Mangrove forests and wetlands</li>
+                            <li>• Traditional stilt fishing communities</li>
+                            <li>• Bird watching in nature reserves</li>
+                            <li>• Uncrowded beaches and coral reefs</li>
+                            <li>• Peaceful rural landscapes</li>
+                          </ul>
+                        </div>
+                        
+                        <div className="space-y-2">
+                          <h4 className="font-semibold">Cultural Highlights:</h4>
+                          <ul className="text-sm space-y-1 text-muted-foreground">
+                            <li>• Authentic Tamil fishing villages</li>
+                            <li>• Traditional Muslim communities</li>
+                            <li>• Historic Dutch colonial buildings</li>
+                            <li>• Local markets and spice gardens</li>
+                            <li>• Traditional boat building crafts</li>
+                            <li>• Regional cuisine and cooking styles</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="p-4 bg-teal-50 dark:bg-teal-900/20 rounded-lg border-l-4 border-teal-400">
+                        <h5 className="font-semibold text-teal-800 dark:text-teal-300 mb-2">🌊 Authentic Experience</h5>
+                        <div className="text-sm text-teal-700 dark:text-teal-200 space-y-1">
+                          <p>• <strong>Off the Beaten Path:</strong> Experience real Sri Lanka away from tourist crowds</p>
+                          <p>• <strong>Cultural Immersion:</strong> Interact with local fishing and farming communities</p>
+                          <p>• <strong>Wildlife:</strong> Spot exotic birds and marine life in natural habitats</p>
+                          <p>• <strong>Adventure:</strong> Perfect for travelers seeking authentic cultural experiences</p>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
                 </div>
               </div>
-              <CardHeader>
-                <CardTitle className="text-2xl text-teal-700">Eastern Explorer</CardTitle>
-                <CardDescription className="text-lg">Colombo to Batticaloa</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <p className="text-muted-foreground">
-                    Discover Sri Lanka&apos;s untouched eastern coast! This lesser-known route takes you through diverse 
-                    landscapes, lagoons, and traditional fishing communities along the pristine eastern shoreline.
-                  </p>
-                  
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-blue-500" />
-                      <span>8-9 hours</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Route className="w-4 h-4 text-green-500" />
-                      <span>350 kilometers</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-purple-500" />
-                      <span>Eastern Province</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Ticket className="w-4 h-4 text-orange-500" />
-                      <span>From $3.50 USD</span>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <h4 className="font-semibold">Key Highlights:</h4>
-                    <ul className="text-sm space-y-1 text-muted-foreground">
-                      <li>• Pristine lagoons and mangrove forests</li>
-                      <li>• Traditional fishing villages and stilt houses</li>
-                      <li>• Bird watching opportunities in wetlands</li>
-                      <li>• Authentic Tamil and Muslim communities</li>
-                      <li>• Uncrowded beaches and peaceful atmosphere</li>
-                    </ul>
-                  </div>
-
-                  <div className="p-3 bg-teal-50 rounded-lg">
-                    <p className="text-sm text-teal-800">
-                      <strong>Off the Beaten Path:</strong> Experience the real Sri Lanka away from tourist crowds. 
-                      Perfect for adventurous travelers seeking authentic cultural experiences!
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
             </Card>
           </div>
         </section>
@@ -524,7 +744,7 @@ export default function TrainJourneysGuide() {
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-sm">Price:</span>
-                      <span className="font-medium">$1-3 USD</span>
+                      <span className="font-medium">Ticket prices may vary</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-sm">Comfort:</span>
@@ -556,7 +776,7 @@ export default function TrainJourneysGuide() {
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-sm">Price:</span>
-                      <span className="font-medium">$3-5 USD</span>
+                      <span className="font-medium">Ticket prices may vary</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-sm">Comfort:</span>
@@ -588,7 +808,7 @@ export default function TrainJourneysGuide() {
                   <div className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-sm">Price:</span>
-                      <span className="font-medium">$8-15 USD</span>
+                      <span className="font-medium">Ticket prices may vary</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-sm">Comfort:</span>

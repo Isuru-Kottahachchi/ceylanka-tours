@@ -185,7 +185,7 @@ export default function DelftIslandTravelGuide() {
                   <div className="flex gap-8">
                     <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                       <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
-                      <p className="text-sm text-yellow-800">1 full day to explore the fort and its surroundings.</p>
+                      <p className="text-sm text-yellow-800">1 full day to explore the Island and its surroundings.</p>
                     </div>
                     <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
                       <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
@@ -211,9 +211,9 @@ export default function DelftIslandTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
-                      <li>• <strong>Duration:</strong> 4-4.5 hours</li>
-                      <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                      <li>• <strong>Distance:</strong> 436km (270 miles) from Colombo to Kurikkaduwan Jetty then Ferry or Boat to Delft Island</li>
+                      <li>• <strong>Duration:</strong> 7-8 hours</li>
+                      <li>• <strong>Cost:</strong> $200-250 USD for day trip</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
@@ -236,12 +236,12 @@ export default function DelftIslandTravelGuide() {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Recommended)</h4>
-                    <p>Take the scenic coastal railway from Colombo Fort Station to Galle Station</p>
+                    <p>Take the scenic Jaffna Northern Express from Colombo Fort Station to Jaffna Station then transfer to a bus to Kurikkaduwan Jetty, followed by a ferry or boat to Delft Island.</p>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
-                      <li>• <strong>Duration:</strong> 2.5-3 hours</li>
-                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
-                      <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                      <li>• <strong>Route:</strong> Colombo Fort → Jaffna then Bus to Kurikkaduwan Jetty then Ferry or Boat to Delft Island</li>
+                      <li>• <strong>Duration:</strong> 10-11 hours</li>
+                      {/* <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li> */}
+                      {/* <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li> */}
                     </ul>
 
                     {/* <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>

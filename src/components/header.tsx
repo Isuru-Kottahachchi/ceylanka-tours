@@ -74,7 +74,7 @@ const destinationsItems = [
     ],
   },
   {
-    title: "Sun and Sand",
+    title: "Sun and Waves",
     icon: "🏖️",
     hasSubmenu: true,
     items: [
