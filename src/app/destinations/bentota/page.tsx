@@ -856,7 +856,7 @@ export default function BentotaGuide() {
                                         </div>
 
                                         <div className="lg:w-2/3 space-y-4">
-                                            <h4 className="text-2xl font-bold text-primary">Bentota Udakotuwa Maha Viharaya</h4>
+                                            <h4 className="text-2xl font-bold text-primary">Udakotuwa Bodhi Sameepa Rajamaha Viharaya</h4>
 
                                             <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
                                                 <p className="text-amber-800 dark:text-amber-200">
@@ -928,7 +928,7 @@ export default function BentotaGuide() {
                                         </div>
 
                                         <div className="lg:w-2/3 space-y-4">
-                                            <h4 className="text-2xl font-bold text-primary">Gane Pansala Viharaya</h4>
+                                            <h4 className="text-2xl font-bold text-primary">Bemvehera Gane Rajamaha Viharaya</h4>
 
                                             <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
                                                 <p className="text-amber-800 dark:text-amber-200">
