@@ -152,7 +152,7 @@ export default function GalleFortTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-          <InsuranceBanner />
+            <InsuranceBanner />
           </section>
           {/* How to Get to Galle Fort */}
           <section className="flex-1">

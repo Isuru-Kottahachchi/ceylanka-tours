@@ -987,6 +987,34 @@ export default function NuwaraEliyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Dunsinane-Falls.jpg"
+                  alt="Dunsinane Falls near Nuwara Eliya"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Dunsinane Falls</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Dunsinane Falls is a stunning waterfall located near Nuwara Eliya.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  18 km from Nuwara Eliya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/Dunsinane-Falls" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image

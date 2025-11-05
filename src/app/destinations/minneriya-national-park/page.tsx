@@ -11,11 +11,14 @@ import {
   Users,
   TreePine,
   TelescopeIcon as Binoculars,
+  Droplets,
+  Leaf,
 } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
+import InsuranceBanner from "@/components/insurance-banner"
 
 export const metadata: Metadata = {
   title: "Minneriya National Park: Complete Safari Guide 2025 | The Great Elephant Gathering",
@@ -48,15 +51,15 @@ export default function MinneriyaNationalParkGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Minneriya National Park</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Home to the World&apos;s Greatest Elephant Gathering</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               North Central Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <TreePine className="w-4 h-4 mr-1" />
               8,890 Hectares
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Binoculars className="w-4 h-4 mr-1" />
               300+ Elephants
             </Badge>
@@ -82,18 +85,18 @@ export default function MinneriyaNationalParkGuide() {
             </p>
           </div>
         </section>
-
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Quick Facts About Minneriya National Park
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
+        {/* Quick Facts & How to Get There side by side */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
+          {/* Quick Matale Facts */}
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Facts About Minneriya National Park
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-blue-500" />
@@ -113,8 +116,7 @@ export default function MinneriyaNationalParkGuide() {
                       <strong>Elephants:</strong> 150-300 (seasonal)
                     </span>
                   </div>
-                </div>
-                <div className="space-y-3">
+
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
                     <span>
@@ -134,10 +136,109 @@ export default function MinneriyaNationalParkGuide() {
                     </span>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+                {/* Valuable Fact for Desktop */}
+                <div className="hidden lg:block mt-6 space-y-4">
+                  {/* <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
+                    <Image
+                      src="/Gregory_Lake.jpg"
+                      alt="Ancient reservoir in Anuradhapura, Sri Lanka"
+                      width={120}
+                      height={80}
+                      className="rounded shadow-md object-cover"
+                    />
+                    <div>
+                      <p className="text-base text-blue-900 font-semibold mb-1">Wonderful streets among ancient reservoirs</p>
+                      <p className="text-sm text-blue-800">
+                       Mathale is a historic fortress that showcases stunning Dutch colonial architecture, surrounded by the Indian Ocean waves.
+                      </p>
+                    </div>
+                  </div> */}
+                  <div className="flex gap-8">
+                    <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                      <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
+                      <p className="text-sm text-yellow-800">1 full day to explore the fort and its surroundings.</p>
+                    </div>
+                    <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
+                      <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
+                      <p className="text-sm text-green-800">May to September (dry season) for pleasant weather and clear skies. Early mornings and late afternoons are best for sightseeing.</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <InsuranceBanner />
+          </section>
+          {/* How to Get to Minneriya National Park */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get-there">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Minneriya National Park
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
+                      <li>• <strong>Duration:</strong> 4-4.5 hours</li>
+                      <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Minneriya National Park. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Recommended)</h4>
+                    <p>Take the scenic coastal railway from Colombo Fort Station to Galle Station</p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
+                      <li>• <strong>Duration:</strong> 2.5-3 hours</li>
+                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                      <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                    </ul>
+
+                    {/* <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
+                      <li>• <strong>Duration:</strong> 2.5-3 hours</li>
+                      <li>• <strong>Cost:</strong> $2-8 USD (depending on the bus type)</li>
+                      <li>• <strong>Scenic journey:</strong> Through Coastline road</li>
+                    </ul> */}
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>• Start early morning to beat the heat</li>
+                    <li>• Carry water and use sun protection</li>
+                    <li>• Wear comfortable clothing and footwear</li>
+                    <li>• Plan your itinerary to cover key attractions</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
+
+        
 
         {/* The Gathering */}
         <section className="mb-12">

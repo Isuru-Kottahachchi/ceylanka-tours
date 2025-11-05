@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import { MapPin, Calendar, Star, Camera, CheckCircle, AlertTriangle } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Thalpe Beach Sri Lanka: Complete Travel Guide 2025 | Coral Wells & Natural Beauty",
@@ -68,18 +70,17 @@ export default function ThalpeBeachGuide() {
             </p>
           </div>
         </section>
-
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Essential Thalpe Beach Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
+        <div className="flex flex-col lg:flex-row gap-8 mb-10 scroll-mt-40" id="quick-facts">
+          {/* Quick Facts */}
+          <section>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Facts About Thalpe beach Beach
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-green-500" />
@@ -99,8 +100,7 @@ export default function ThalpeBeachGuide() {
                       <strong>Best Season:</strong> December–April
                     </span>
                   </div>
-                </div>
-                <div className="space-y-3">
+               
                   <div className="flex items-center gap-2">
                     <Camera className="w-4 h-4 text-pink-500" />
                     <span>
@@ -120,10 +120,69 @@ export default function ThalpeBeachGuide() {
                     </span>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+              </CardContent>
+            </Card>
+          </section>
+          {/* How to Get to  */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Thalpe beach
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo (Depends on the road Express way or coastal road)</li>
+                      <li>• <strong>Duration:</strong> 4-5 hours</li>
+                      <li>• <strong>Cost:</strong> Around $60 USD</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to H. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo → Thalpe beach</li>
+                      <li>• <strong>Duration:</strong> 6-7 hours total</li>
+                      <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
+                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Thalpe station</span></li>
+                      {/* <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li> */}
+                    </ul>
+
+                    <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo → Thalpe beach</li>
+                      <li>• <strong>Duration:</strong> 5-6 hours</li>
+                      <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
+                      <li>• <strong>Frequency:</strong> Regular departures from Kandy</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
 
         {/* The Famous Coral Wells */}
         <section className="mb-12">
@@ -138,7 +197,7 @@ export default function ThalpeBeachGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                The unique coral wells of Thalpe—hand-cut pools in the reef, perfect for a dip at low tide
+                The unique coral wells of Thalpe hand cut pools in the reef, perfect for a dip at low tide
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
@@ -214,6 +273,209 @@ export default function ThalpeBeachGuide() {
               </p>
             </CardContent>
           </Card>
+        </section>
+        
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Jungle beach Roomassala</CardTitle>
+                <CardDescription>A beach with a great atmosphere</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Jungle-beach.jpeg"
+                  alt="View of Jungle Beach"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the scenic Jungle Beach with its lush greenery and clear waters. Perfect for a relaxing day trip.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/jungle-beach-roomassala" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Kanneliya</CardTitle>
+                <CardDescription>Part of a Kanneliya Dediyagala Nakiyadeniya Complex</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Kanneliya.jpg"
+                  alt="View of Kanneliya"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Explore the lush Kanneliya rainforest, part of the Sinharaja Forest Reserve. Home to diverse flora and fauna, perfect for nature lovers.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kanneliya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Hummanaya Blowhole</CardTitle>
+                <CardDescription>Sri Lanka&apos;s only natural blowhole</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/HummanayaBlowhole.jpeg"
+                  alt="Hummanaya Blowhole spraying water high above the rocky coast"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Witness the power of the Indian Ocean at Hummanaya, where water shoots up to 25 meters through a coastal rock crevice. A unique natural wonder and a must-see for nature lovers!
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hummanaya-blowhole" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Mirissa</CardTitle>
+                <CardDescription>Best views of the coastline</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Mirissa1.jpg"
+                  alt="View of Mirissa"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Mirissa is a picturesque coastal town known for its stunning beaches and vibrant nightlife. Enjoy whale watching, water sports, and delicious seafood.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mirissa" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Waligama</CardTitle>
+                <CardDescription>Best views of the coastline</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Waligama.jpg"
+                  alt="View of Waligama"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Waligama is a charming coastal town known for its stunning beaches and vibrant fishing community. Enjoy fresh seafood, water sports, and breathtaking sunsets.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/waligama" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Hirikatiya</CardTitle>
+                <CardDescription>Best views of the coastline and Surfing</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Hirikatiya.jpg"
+                  alt="Hirikatiya Beach with surfers riding waves and palm trees lining the shore"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. 30 min drive.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hirikatiya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Blue Beach</CardTitle>
+                <CardDescription>Beach that can campfire</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Blue-beach.jpg"
+                  alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/blue-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Thalpe Beach */}
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-lg">Thalpe Beach</CardTitle>
+                <CardDescription>Coral wells & peaceful sands</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Image
+                  src="/Thalpe-beach.jpg"
+                  alt="Thalpe Beach coral wells and golden sand with turquoise water"
+                  width={300}
+                  height={200}
+                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Discover Thalpe Beach, just south of Galle. Famous for its unique coral wells—natural pools carved into the reef—this quiet beach is perfect for swimming at low tide, relaxing on golden sand, and enjoying local seafood.
+                </p>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
         {/* Final Tips */}

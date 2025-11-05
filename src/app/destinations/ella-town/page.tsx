@@ -1411,7 +1411,7 @@ export default function EllaTownGuide() {
                     className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                   />
                   <p className="text-sm text-muted-foreground">
-                    Diyaluma Falls is one of Sri Lanka&apos;s tallest waterfalls, offering stunning views and natural pools for a refreshing dip.
+                   Haputhale is known for its stunning viewpoints overlooking vast tea plantations and the famous Lipton&apos;s Seat.
                   </p>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/haputhale" passHref legacyBehavior>

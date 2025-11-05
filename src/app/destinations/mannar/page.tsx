@@ -47,6 +47,17 @@ export default function MannarGuide() {
     { src: "/placeholder.svg?height=300&width=400&text=Religious+Sites", alt: "Ancient temple architecture in Mannar showing diverse religious heritage" },
     { src: "/placeholder.svg?height=300&width=400&text=Church+Mosque+Temple", alt: "Various religious sites in Mannar including temples, churches and mosques" }
   ]
+
+  const doricBungalowImages = [
+
+    { src: "/Doric-Bungalow.jpg", alt: "Doric Bungalow interior view", caption: "Elegant interior design of the Doric Bungalow in Mannar" },
+    { src: "/Doric-Bungalow1.jpg", alt: "Doric Bungalow garden view", caption: "Past view of the garden surrounding the Doric Bungalow in Mannar" }
+  ]
+
+  const talaimannarLighthouseImages = [
+    { src: "/Talaimannar-Lighthouse.jpg", alt: "Talaimannar Lighthouse exterior view", caption: "Historic Talaimannar Lighthouse on Mannar Island" },
+  ]
+
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -61,7 +72,7 @@ export default function MannarGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Mannar Island</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Mystical Northern Paradise</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s biggest Island</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
@@ -99,7 +110,7 @@ export default function MannarGuide() {
             </p>
           </div>
         </section>
-         {/* Quick Facts & How to Get There side by side */}
+        {/* Quick Facts & How to Get There side by side */}
         <div className="flex flex-col lg:flex-row gap-8 mb-10 scroll-mt-40" id="quick-facts">
           {/* Quick Facts */}
           <section>
@@ -119,6 +130,12 @@ export default function MannarGuide() {
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
+                    <Star className="w-4 h-4 text-yellow-500" />
+                    <span>
+                      <strong>Speciality:</strong> Biggest Island in Sri Lanka
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
                     <Waves className="w-4 h-4 text-cyan-500" />
                     <span>
                       <strong>Coastline:</strong> 130 km of pristine beaches
@@ -130,7 +147,7 @@ export default function MannarGuide() {
                       <strong>Famous for:</strong> Ancient baobab trees
                     </span>
                   </div>
-             
+
                   <div className="flex items-center gap-2">
                     <Users className="w-4 h-4 text-purple-500" />
                     <span>
@@ -193,19 +210,19 @@ export default function MannarGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo → Kandy → Nanu Oya</li>
+                      <li>• <strong>Route:</strong> Colombo → Mannar railway station</li>
                       <li>• <strong>Duration:</strong> 6-7 hours total</li>
-                      <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
-                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Nanu Oya station</span></li>
-                      <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li>
+                      <li>• <strong>Cost:</strong> (depending on class)</li>
+                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Mannar railway station</span></li>
+                      {/* <li>• <strong>From Mannar:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li> */}
                     </ul>
 
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo → Kandy → Nuwara Eliya</li>
+                      <li>• <strong>Route:</strong> Colombo → Mannar bus stand</li>
                       <li>• <strong>Duration:</strong> 5-6 hours</li>
                       <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
-                      <li>• <strong>Frequency:</strong> Regular departures from Kandy</li>
+                      {/* <li>• <strong>Frequency:</strong> Regular departures from Kandy</li> */}
                     </ul>
                   </div>
                 </div>
@@ -307,7 +324,40 @@ export default function MannarGuide() {
                     </ul>
                   </div>
                   <div className="rounded-lg overflow-hidden">
-                    <ImageCarousel images={mannarAdamBridgeImages} />
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/Riverston-Peak.jpg",
+                          alt: "Dramatic cliff viewpoint at Riverston Peak",
+                          caption: "Panoramic view of the Knuckles Mountain Range",
+                          title: "Riverston Peak Vista"
+                        },
+                        {
+                          src: "/Riverston-Peak1.jpg",
+                          alt: "The famous Riverston Wind Gap",
+                          caption: "Experience the powerful winds at Wind Gap",
+                          title: "Riverston Wind Gap"
+                        },
+                        {
+                          src: "/Riverston-Peak2.jpg",
+                          alt: "The famous Riverston Wind Gap",
+                          caption: "Experience the powerful winds at Wind Gap",
+                          title: "Riverston Wind Gap"
+                        },
+                        {
+                          src: "/Riverston-Peak3.jpg",
+                          alt: "The famous Riverston Wind Gap",
+                          caption: "Experience the powerful winds at Wind Gap",
+                          title: "Riverston Wind Gap"
+                        },
+                        {
+                          src: "/Riverston-Peak4.jpg",
+                          alt: "The famous Riverston Wind Gap",
+                          caption: "Experience the powerful winds at Wind Gap",
+                          title: "Riverston Wind Gap"
+                        },
+                      ]}
+                    />
                   </div>
                 </div>
               </CardContent>
@@ -366,7 +416,13 @@ export default function MannarGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div className="rounded-lg overflow-hidden">
-                    <ImageCarousel images={mannarFortImages} />
+                    <ImageCarousel
+                      images={[
+                        { src: "/Mannar-Fort.jpg", alt: "Historic Mannar Fort with stone walls and ramparts overlooking the sea" },
+                        { src: "/Mannar-Fort1.jpg", alt: "Inside Mannar Fort ramparts and walkways" },
+                        { src: "/Mannar-Fort2.jpg", alt: "Inside Mannar Fort ramparts and walkways" }
+                      ]}
+                    />
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -395,7 +451,76 @@ export default function MannarGuide() {
                 </div>
               </CardContent>
             </Card>
-
+            <Card>
+              <CardHeader>
+                <CardTitle>4. Doric Bungalow </CardTitle>
+                <CardDescription>Portuguese colonial fortress by the sea</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div className="rounded-lg overflow-hidden">
+                    <ImageCarousel images={doricBungalowImages} />
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Built in the 19th century, Doric Bungalow is a fine example of colonial architecture, was the private residence of fisrt British Governor of Ceylon, Frederick North. The bungalow is known for its unique Doric columns and panoramic views of the surrounding landscape.</p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        First British Governor of Ceylon, Frederick North's private residence
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Famous for haunting stories and paranormal activities
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Strategic location overlooking the sea
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Well-preserved ramparts and bastions
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>4. Talaimannar Lighthouse </CardTitle>
+                <CardDescription>Light house which is a famous landmark in Mannar</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div className="rounded-lg overflow-hidden">
+                    <ImageCarousel images={talaimannarLighthouseImages} />
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Built in the 20th century, Talaimannar Lighthouse is a prominent maritime navigation aid and a symbol of Mannar's coastal heritage. The lighthouse offers stunning views of the Indian Ocean and the surrounding landscape.</p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        First British Governor of Ceylon, Frederick North's private residence
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Famous for haunting stories and paranormal activities
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Strategic location overlooking the sea
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Well-preserved ramparts and bastions
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
             <Card>
               <CardHeader>
                 <CardTitle>5. Ancient Temples & Religious Sites</CardTitle>
@@ -629,28 +754,36 @@ export default function MannarGuide() {
             </Card>
           </div>
         </section>
-
-        {/* Nearby Attractions */}
+        {/* Nearby Places to Visit */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-lg">Delft Island</CardTitle>
-                <CardDescription>Rugged island with wild horses and colonial ruins</CardDescription>
-              </CardHeader>
-              <CardContent>
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Mannar with these incredible destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
                   src="/Delft-Island.jpg"
-                  alt="Delft Island rugged landscape with wild ponies and coral rock formations"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  alt="Delft Island"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  A short boat ride from Mannar, Delft Island is known for its wild ponies, ancient baobabs, and
-                  Portuguese-era ruins — an unforgettable offbeat excursion.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  30 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Delft Island</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A remote island known for its wild horses, ancient baobab trees, and Dutch colonial ruins.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  19 km from Mannar
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/delft-island" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -658,49 +791,111 @@ export default function MannarGuide() {
                 </div>
               </CardContent>
             </Card>
-
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-lg">Nainativu</CardTitle>
-                <CardDescription>Ancient Hindu pilgrimage island</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/Nainativu.jpeg"
-                  alt="Nainativu island temple and coastal view with pilgrims and traditional boats"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  src="/Sigiriya.jpeg"
+                  alt="Sigiriya Rock Fortress"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  A sacred island with centuries-old temples and a serene coastal atmosphere; popular with pilgrims
-                  and history buffs alike.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  30 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Thanthirimale</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  An ancient rock fortress and UNESCO World Heritage Site known for its stunning frescoes and panoramic views.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  19 km from Dambulla Cave Temple
+                </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/nainativu" passHref legacyBehavior>
+                  <Link href="/destinations/sigiriya-rock-fortress" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
               </CardContent>
             </Card>
-
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-lg">Jaffna</CardTitle>
-                <CardDescription>Vibrant cultural city — 2-hour drive</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/Nallur-Kovil.jpg"
-                  alt="Jaffna cityscape with Nallur Kandaswamy Kovil and coastal skyline"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  src="/Sigiriya.jpeg"
+                  alt="Sigiriya Rock Fortress"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  The cultural heart of the north, Jaffna offers temples, vibrant markets, and unique Tamil cuisine —
-                  perfect for a day trip from Mannar.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  30 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Shrine of Our Lady of Madhu</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  An important Catholic pilgrimage site located in the Mannar District, known for its historical significance and beautiful architecture.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  50 km from Mannar
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/sigiriya-rock-fortress" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Minneriyanationalpark.jpg"
+                  alt="Minneriya National Park"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  45 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Nainativu Island</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Nainativu Island is known for its beautiful beaches and historical significance.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  30 km from Dambulla Cave Temple
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/minneriya-national-park" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Pidurangala.jpeg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1 hours 50 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Jaffna</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A Northern city rich in Tamil culture, historic sites, and vibrant markets.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  22 km from Mannar
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/jaffna" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -708,6 +903,34 @@ export default function MannarGuide() {
                 </div>
               </CardContent>
             </Card>
+
+          </div>
+
+          {/* Day Trip Suggestions */}
+          <div className="mt-8 bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-center">Suggested Day Trip Combinations</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">Cultural triangle trip</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Dambulla Cave Temple → Ambewela Farm → Haputhale (Lipton&apos;s Seat) → Return
+                </p>
+                <div className="flex items-center text-xs text-green-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Full day trip (8-10 hours)
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Hill Country Explorer</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Dambulla Cave Temple → Ella (Nine Arch Bridge) → Bandarawela → Return
+                </p>
+                <div className="flex items-center text-xs text-blue-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Full day trip (10-12 hours)
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
