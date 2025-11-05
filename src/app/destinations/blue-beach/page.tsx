@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { MapPin, Star, Waves, Sun, Camera, Users, CheckCircle, Clock, Fish } from 'lucide-react'
+import { MapPin, Star, Waves, Sun, Camera, Users, CheckCircle } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"

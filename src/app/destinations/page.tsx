@@ -235,7 +235,7 @@ const destinations = [
     // rating: 4.3,
     // reviews: 890,
     description: "Beach surrounded by jungle with golden sands and clear waters",
-    highlights: ["Jungle", "Beach", "Clear Waters"],
+    highlights: ["Jungle", " Hidden Beach", "Clear Waters"],
     category: "Beach",
   },
   {
@@ -779,43 +779,29 @@ export default function DestinationsPage() {
             </div>
           ) : (
             filteredDestinations.map((destination) => (
-              <Card key={destination.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
-                <div className="relative overflow-hidden">
+              <Card key={destination.id} className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                <div className="relative h-48">
                   <Image
                     src={destination.image || "/placeholder.svg"}
                     alt={destination.name}
-                    width={600}
-                    height={400}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                    placeholder="blur"
-                    blurDataURL="/placeholder.svg"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                    fill
+                    className="object-cover rounded-t-lg"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-
-                  {/* Rating Badge */}
-                  {/* <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1 flex items-center space-x-1">
-                  <Star className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-                  <span className="text-xs font-semibold">{destination.rating}</span>
-                </div> */}
-
-                  {/* Category Badge */}
-                  <Badge className="absolute top-3 left-3 bg-green-500 hover:bg-green-600 text-white border-0">{destination.category}</Badge>
-
-                  {/* Location */}
-                  <div className="absolute bottom-3 left-3 text-white">
-                    <h3 className="font-bold text-lg mb-1">{destination.name}</h3>
-                    <div className="flex items-center space-x-1 text-sm">
-                      <MapPin className="h-3 w-3" />
-                      <span>{destination.location}</span>
-                    </div>
+                  <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                    {destination.category}
                   </div>
                 </div>
-
                 <CardContent className="p-4">
-                  <p className="text-gray-600 dark:text-gray-300 text-sm mb-3 line-clamp-2">{destination.description}</p>
-
-                  <div className="flex flex-wrap gap-1 mb-3">
+                  <h3 className="font-bold text-lg mb-2">{destination.name}</h3>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    {destination.description}
+                  </p>
+                  <div className="flex items-center text-xs text-blue-600 mb-3">
+                    <MapPin className="w-3 h-3 mr-1" />
+                    {destination.location}
+                  </div>
+                  
+                  <div className="flex flex-wrap gap-1 mb-4">
                     {destination.highlights.slice(0, 4).map((highlight, index) => (
                       <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
                         {highlight}
@@ -827,15 +813,14 @@ export default function DestinationsPage() {
                       </Badge>
                     )}
                   </div>
-
-                  <div className="flex items-center justify-between">
-                    {/* <div className="text-xs text-gray-500 dark:text-gray-400">{destination.reviews} reviews</div> */}
-                    <Link
-                      href={`/destinations/${destination.path}`}
-                      className="text-green-600 hover:text-green-700 font-semibold text-sm transition-colors"
-                    >
-                      Explore →
+                  
+                  <div className="mt-4 flex justify-between items-center">
+                    <Link href={`/destinations/${destination.path}`} passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-green-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">
+                        Explore Now →
+                      </Button>
                     </Link>
+                    
                   </div>
                 </CardContent>
               </Card>

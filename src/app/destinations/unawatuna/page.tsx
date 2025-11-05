@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Waves, Car, Sun, Camera } from 'lucide-react'
+import { Clock, MapPin, CheckCircle, Star, Waves, Car, Sun } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ImageCarousel } from "@/components/ui/image-carousel"
@@ -137,7 +137,7 @@ export default function UnawatunaTravelGuide() {
                                     </div>
 
                                     <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
-                                        <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">🕒 Tips for Visiting Mirissa</h4>
+                                        <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">🕒 Tips for Visiting Unawatuna</h4>
                                         <ul className="text-sm text-blue-600 dark:text-blue-400 space-y-1">
                                             <li>• Early Morning (6-8 AM): Perfect for peaceful walks</li>
                                             <li>• Late Afternoon (3-6 PM): Best for swimming</li>
@@ -172,7 +172,7 @@ export default function UnawatunaTravelGuide() {
                                         </ul>
                                         <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                                             <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
-                                                <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Mirissa. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                                                <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Unawatuna. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                                             </p>
                                             <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
                                                 <div className="flex items-center gap-2">
@@ -191,15 +191,15 @@ export default function UnawatunaTravelGuide() {
                                     <div>
                                         <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground">
-                                            <li>• <strong>Route:</strong> Colombo Fort → Mirissa railway station</li>
+                                            <li>• <strong>Route:</strong> Colombo Fort → Unawatuna railway station</li>
                                             <li>• <strong>Duration:</strong> 3-6 hours total</li>
                                             <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
-                                            <li>• <strong>From Mirissa:</strong> hire taxi/tuk-tuk</li>
+                                            <li>• <strong>From Unawatuna:</strong> hire taxi/tuk-tuk</li>
                                         </ul>
 
                                         <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground">
-                                            <li>• <strong>Route:</strong> Colombo Fort → Mirissa bus station  (Coast road)</li>
+                                            <li>• <strong>Route:</strong> Colombo Fort → Unawatuna bus station  (Coast road)</li>
                                             <li>• <strong>Duration:</strong> 4-6 hours</li>
                                             <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
                                             <li>• <strong>Frequency:</strong> Regular departures from Colombo Fort Bus Station</li>
