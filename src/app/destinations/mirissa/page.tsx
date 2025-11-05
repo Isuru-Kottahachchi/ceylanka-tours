@@ -698,6 +698,159 @@ export default function MirissaTravelGuide() {
             </Card>
           </div>
         </section>
+        {/* Nearby Places to Visit */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Mirissa adventure with these incredible destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Waligama.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  20 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Waligama</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Weligama is a popular destination for beginner surfers, offering gentle waves and a laid-back atmosphere.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  7.5 km from Mirissa
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/waligama" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Galle-fort.jpg"
+                  alt="Galle Fort with its iconic lighthouse and colonial architecture"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Galle Fort</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Galle Fort is a historic colonial-era fortification with charming streets, boutique shops, and ocean views.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  36 km from Mirissa
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/galle-fort" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Unawatuna.jpg"
+                  alt="Unawatuna beach with golden sands and palm trees"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  50 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Unawatuna</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Unawatuna is known for its vibrant nightlife, coral reefs, and golden sandy beaches perfect for snorkeling.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  31 km from Mirissa
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/unawatuna" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+        
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Hirikatiya.jpg"
+                  alt="Hirikatiya Beach with its serene environment"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Hirikatiya</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Charming hill station with cooler climate, beautiful views, and the historic Bandarawela Hotel.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  45 km from Nuwara Eliya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hirikatiya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Day Trip Suggestions */}
+          <div className="mt-8 bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-center">Suggested Day Trip Combinations</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">Tea Country Adventure</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Nuwara Eliya → Ambewela Farm → Haputhale (Lipton&apos;s Seat) → Return
+                </p>
+                <div className="flex items-center text-xs text-green-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Full day trip (8-10 hours)
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Hill Country Explorer</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Nuwara Eliya → Ella (Nine Arch Bridge) → Bandarawela → Return
+                </p>
+                <div className="flex items-center text-xs text-blue-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Full day trip (10-12 hours)
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Nearby Attractions */}
         <section className="mb-12">
