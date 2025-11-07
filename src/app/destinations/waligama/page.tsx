@@ -186,48 +186,131 @@ export default function WeligamaTravelGuide() {
               </CardContent>
             </Card>
           </section>
-        </div>
-
-        {/* Stilt Fishermen */}
-        <section className="mb-12 scroll-mt-24" id="stilt-fishermen">
-          <h2 className="text-3xl font-bold mb-6">World-Famous Stilt Fishermen Tradition</h2>
+        </div>{/* Surfing Paradise */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Sri Lanka&apos;s Premier Beginner Surfing Destination</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
-              <Image
-                src="/Stilt-fishing.jpg"
-                alt="Traditional stilt fishermen of Weligama balancing on wooden poles in shallow coral reef waters during golden hour sunset"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                Stilt fishing: A centuries-old tradition unique to this region
+              <p className="text-muted-foreground mb-4">
+                Weligama is globally recognized as one of Sri Lanka&apos;s best destinations for learning to surf. The protected bay
+                offers gentle, consistent waves perfect for beginners, with over 20 professional surf schools providing expert lessons and quality equipment.
+                The sandy bottom and calm conditions make it an ideal and safe environment for first-time surfers of all ages.
               </p>
-            </div>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                Weligama is home to one of the world&apos;s most unique and photogenic fishing traditions. The iconic stilt fishermen perch gracefully on tall wooden stilts
-                driven deep into the coral reef, fishing with simple rods in a technique passed down through generations since World War II. This remarkable method was originally
-                developed to fish in the best spots without disturbing other fishermen or damaging the delicate coral ecosystem.
+              <p className="text-muted-foreground mb-4">
+                Advanced surfers can also find exciting challenges at nearby breaks like Lazy Left and Lazy Right. The surf season
+                runs from November to April, with the best conditions typically found early morning (6-9 AM) when offshore winds create perfect wave formations
+                and the water is glass-like smooth.
               </p>
-              <p>
-                The best time to witness this fascinating tradition is during early morning (6-8 AM) or late afternoon (4-6 PM) when
-                the fishermen are most active and the golden light creates perfect photography conditions. This practice has become one of Sri Lanka&apos;s most photographed cultural experiences,
-                representing the harmony between humans and nature that defines coastal Sri Lankan life.
-              </p>
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-blue-800 mb-2">Photography & Etiquette Tips:</h4>
-                <ul className="text-sm text-blue-700 space-y-1">
-                  <li>• Visit during golden hour (6-8 AM or 4-6 PM) for best lighting</li>
-                  <li>• Always ask permission before photographing - respect is key</li>
-                  <li>• Small tip (500-1000 LKR) is appreciated and expected</li>
-                  <li>• Best viewing spots along Weligama Bay main beach road</li>
-                  <li>• Don&apos;t disturb the fishermen while they&apos;re working</li>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-green-800 mb-2">Surf Information & Prices:</h4>
+                <ul className="text-sm text-green-700 space-y-1">
+                  <li>• Perfect 1-3 foot waves ideal for beginners</li>
+                  <li>• Over 20 certified surf schools with experienced instructors</li>
+                  <li>• Lessons: 2000-4000 LKR, Board rental: 1000-1500 LKR/day</li>
+                  <li>• Best conditions: Early morning, November-April season</li>
+                  <li>• Safe sandy bottom, no dangerous rocks or currents</li>
                 </ul>
               </div>
             </div>
+            <div>
+               <ImageCarousel
+                    images={[
+                      {
+                        src: "/Waligama-Surfing.jpg",
+                        alt: "Surfing lessons at Weligama Bay with beginner surfers learning on gentle waves with instructor guidance",
+                        caption: "Surfing lessons at Weligama Bay, PC @lenzo_",
+                        title: "Weligama Bay Surfing"
+                      },
+                      {
+                        src: "/Snake-Island-Causeway.jpg",
+                        alt: "Sandy causeway connecting Snake Island to mainland",
+                        caption: "Low tide reveals the magical sand path",
+                        title: "Snake Island Causeway"
+                      },
+                      {
+                        src: "/Snake-Island-Villa.jpg",
+                        alt: "Colonial villa on Snake Island",
+                        caption: "Historic colonial-era villa on the island",
+                        title: "Snake Island Villa"
+                      }
+                    ]}
+                  />
+              <p className="text-sm text-muted-foreground mt-2 italic">
+                Weligama Bay: Sri Lanka&apos;s premier beginner-friendly surf destination
+              </p>
+            </div>
+          </div>
+
+          {/* Detailed Surf Schools */}
+          <div className="mt-8">
+            <h3 className="text-2xl font-bold mb-6">Top Surf Schools in Weligama</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card>
+                <CardHeader>
+                  <CardTitle>Recommended Surf Schools</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-blue-500 pl-4">
+                      <h4 className="font-semibold text-blue-800">Weligama Bay Surf School</h4>
+                      <p className="text-sm text-muted-foreground">International instructors, all skill levels</p>
+                      <p className="text-xs text-blue-600">Group lessons: 3000 LKR | Private: 5000 LKR</p>
+                    </div>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <h4 className="font-semibold text-green-800">Coconut Tree Academy</h4>
+                      <p className="text-sm text-muted-foreground">Local instructors, authentic experience</p>
+                      <p className="text-xs text-green-600">Group lessons: 2500 LKR | Private: 4000 LKR</p>
+                    </div>
+                    <div className="border-l-4 border-purple-500 pl-4">
+                      <h4 className="font-semibold text-purple-800">Surf Villa Academy</h4>
+                      <p className="text-sm text-muted-foreground">Professional coaching, video analysis</p>
+                      <p className="text-xs text-purple-600">Group lessons: 3500 LKR | Private: 6000 LKR</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>Surf Conditions & Timing</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <Waves className="w-5 h-5 text-blue-500" />
+                      <div>
+                        <p className="font-semibold">Wave Height</p>
+                        <p className="text-sm text-muted-foreground">1-3 feet (perfect for beginners)</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Sun className="w-5 h-5 text-orange-500" />
+                      <div>
+                        <p className="font-semibold">Best Time</p>
+                        <p className="text-sm text-muted-foreground">6:00 AM - 9:00 AM & 4:00 PM - 6:00 PM</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Calendar className="w-5 h-5 text-green-500" />
+                      <div>
+                        <p className="font-semibold">Peak Season</p>
+                        <p className="text-sm text-muted-foreground">December - March (consistent conditions)</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <AlertTriangle className="w-5 h-5 text-red-500" />
+                      <div>
+                        <p className="font-semibold">Safety</p>
+                        <p className="text-sm text-muted-foreground">Sandy bottom, no rocks, lifeguards on duty</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </section>
+
 
         {/* Top Attractions */}
         <section className="mb-12 scroll-mt-24" id="attractions">
@@ -346,6 +429,46 @@ export default function WeligamaTravelGuide() {
               </CardContent>
             </Card>
 
+        {/* Stilt Fishermen */}
+        <section className="mb-12 scroll-mt-24" id="stilt-fishermen">
+          <h2 className="text-3xl font-bold mb-6">World-Famous Stilt Fishermen Tradition</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+            <div>
+              <Image
+                src="/Stilt-fishing.jpg"
+                alt="Traditional stilt fishermen of Weligama balancing on wooden poles in shallow coral reef waters during golden hour sunset"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg"
+              />
+              <p className="text-sm text-muted-foreground mt-2 italic">
+                Stilt fishing: A centuries-old tradition unique to this region
+              </p>
+            </div>
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                Weligama is home to one of the world&apos;s most unique and photogenic fishing traditions. The iconic stilt fishermen perch gracefully on tall wooden stilts
+                driven deep into the coral reef, fishing with simple rods in a technique passed down through generations since World War II. This remarkable method was originally
+                developed to fish in the best spots without disturbing other fishermen or damaging the delicate coral ecosystem.
+              </p>
+              <p>
+                The best time to witness this fascinating tradition is during early morning (6-8 AM) or late afternoon (4-6 PM) when
+                the fishermen are most active and the golden light creates perfect photography conditions. This practice has become one of Sri Lanka&apos;s most photographed cultural experiences,
+                representing the harmony between humans and nature that defines coastal Sri Lankan life.
+              </p>
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-blue-800 mb-2">Photography & Etiquette Tips:</h4>
+                <ul className="text-sm text-blue-700 space-y-1">
+                  <li>• Visit during golden hour (6-8 AM or 4-6 PM) for best lighting</li>
+                  <li>• Always ask permission before photographing - respect is key</li>
+                  <li>• Small tip (500-1000 LKR) is appreciated and expected</li>
+                  <li>• Best viewing spots along Weligama Bay main beach road</li>
+                  <li>• Don&apos;t disturb the fishermen while they&apos;re working</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
             {/* Local Fish Market */}
             <Card>
               <CardHeader>
@@ -407,115 +530,7 @@ export default function WeligamaTravelGuide() {
           </div>
         </section>
 
-        {/* Surfing Paradise */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Sri Lanka&apos;s Premier Beginner Surfing Destination</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-            <div>
-              <p className="text-muted-foreground mb-4">
-                Weligama is globally recognized as one of Sri Lanka&apos;s best destinations for learning to surf. The protected bay
-                offers gentle, consistent waves perfect for beginners, with over 20 professional surf schools providing expert lessons and quality equipment.
-                The sandy bottom and calm conditions make it an ideal and safe environment for first-time surfers of all ages.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                Advanced surfers can also find exciting challenges at nearby breaks like Lazy Left and Lazy Right. The surf season
-                runs from November to April, with the best conditions typically found early morning (6-9 AM) when offshore winds create perfect wave formations
-                and the water is glass-like smooth.
-              </p>
-              <div className="bg-green-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-green-800 mb-2">Surf Information & Prices:</h4>
-                <ul className="text-sm text-green-700 space-y-1">
-                  <li>• Perfect 1-3 foot waves ideal for beginners</li>
-                  <li>• Over 20 certified surf schools with experienced instructors</li>
-                  <li>• Lessons: 2000-4000 LKR, Board rental: 1000-1500 LKR/day</li>
-                  <li>• Best conditions: Early morning, November-April season</li>
-                  <li>• Safe sandy bottom, no dangerous rocks or currents</li>
-                </ul>
-              </div>
-            </div>
-            <div>
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Surfing lessons at Weligama Bay with beginner surfers learning on gentle waves with instructor guidance"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                Weligama Bay: Sri Lanka&apos;s premier beginner-friendly surf destination
-              </p>
-            </div>
-          </div>
-
-          {/* Detailed Surf Schools */}
-          <div className="mt-8">
-            <h3 className="text-2xl font-bold mb-6">Top Surf Schools in Weligama</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Recommended Surf Schools</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="border-l-4 border-blue-500 pl-4">
-                      <h4 className="font-semibold text-blue-800">Weligama Bay Surf School</h4>
-                      <p className="text-sm text-muted-foreground">International instructors, all skill levels</p>
-                      <p className="text-xs text-blue-600">Group lessons: 3000 LKR | Private: 5000 LKR</p>
-                    </div>
-                    <div className="border-l-4 border-green-500 pl-4">
-                      <h4 className="font-semibold text-green-800">Coconut Tree Academy</h4>
-                      <p className="text-sm text-muted-foreground">Local instructors, authentic experience</p>
-                      <p className="text-xs text-green-600">Group lessons: 2500 LKR | Private: 4000 LKR</p>
-                    </div>
-                    <div className="border-l-4 border-purple-500 pl-4">
-                      <h4 className="font-semibold text-purple-800">Surf Villa Academy</h4>
-                      <p className="text-sm text-muted-foreground">Professional coaching, video analysis</p>
-                      <p className="text-xs text-purple-600">Group lessons: 3500 LKR | Private: 6000 LKR</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>Surf Conditions & Timing</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <Waves className="w-5 h-5 text-blue-500" />
-                      <div>
-                        <p className="font-semibold">Wave Height</p>
-                        <p className="text-sm text-muted-foreground">1-3 feet (perfect for beginners)</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Sun className="w-5 h-5 text-orange-500" />
-                      <div>
-                        <p className="font-semibold">Best Time</p>
-                        <p className="text-sm text-muted-foreground">6:00 AM - 9:00 AM & 4:00 PM - 6:00 PM</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <Calendar className="w-5 h-5 text-green-500" />
-                      <div>
-                        <p className="font-semibold">Peak Season</p>
-                        <p className="text-sm text-muted-foreground">December - March (consistent conditions)</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <AlertTriangle className="w-5 h-5 text-red-500" />
-                      <div>
-                        <p className="font-semibold">Safety</p>
-                        <p className="text-sm text-muted-foreground">Sandy bottom, no rocks, lifeguards on duty</p>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Local Cuisine & Seafood */}
         <section className="mb-12">

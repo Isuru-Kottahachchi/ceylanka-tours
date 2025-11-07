@@ -180,7 +180,7 @@ export default function HortonPlainsDetailedGuide() {
           <h2 className="text-4xl font-bold mb-10">The Magnificent Attractions of Horton Plains</h2>
 
           <div className="space-y-12">
-             {/* Baker&apos;s Falls - Detailed */}
+            {/* Baker&apos;s Falls - Detailed */}
             <Card className="overflow-hidden border-2 border-blue-200">
               <CardHeader className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950 dark:to-cyan-950">
                 <CardTitle className="text-2xl text-blue-800 dark:text-blue-300">Baker&apos;s Falls: A Hidden Waterfall Paradise</CardTitle>
@@ -250,26 +250,15 @@ export default function HortonPlainsDetailedGuide() {
                       </ul>
                     </div>
                   </div>
-                   <ImageCarousel
+                  <ImageCarousel
                     images={[
                       {
                         src: "/Hortonplains20.jpeg",
-                        alt: "Aerial view of Snake Island Taprobane",
-                        caption: "Snake Island with its colonial villa",
-                        title: "Snake Island from Above"
+                        alt: "Aerial view of Horton Plains National Park",
+                        caption: "Baker's Falls cascading through cloud forest",
+                        title: "Baker's Falls"
                       },
-                      {
-                        src: "/Waligama-Bay-Beach.jpg",
-                        alt: "Sandy causeway connecting Snake Island to mainland",
-                        caption: "Low tide reveals the magical sand path",
-                        title: "Snake Island Causeway"
-                      },
-                      {
-                        src: "/Snake-Island-Villa.jpg",
-                        alt: "Colonial villa on Snake Island",
-                        caption: "Historic colonial-era villa on the island",
-                        title: "Snake Island Villa"
-                      }
+                     
                     ]}
                   />
                 </div>
@@ -288,23 +277,12 @@ export default function HortonPlainsDetailedGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/IMG_8209.jpg",
+                        src: "/Worlds-End.jpg",
                         alt: "Aerial view of Snake Island Taprobane",
                         caption: "Snake Island with its colonial villa",
                         title: "Snake Island from Above"
                       },
-                      {
-                        src: "/Waligama-Bay-Beach.jpg",
-                        alt: "Sandy causeway connecting Snake Island to mainland",
-                        caption: "Low tide reveals the magical sand path",
-                        title: "Snake Island Causeway"
-                      },
-                      {
-                        src: "/Snake-Island-Villa.jpg",
-                        alt: "Colonial villa on Snake Island",
-                        caption: "Historic colonial-era villa on the island",
-                        title: "Snake Island Villa"
-                      }
+                      
                     ]}
                   />
                   <div className="space-y-6">
@@ -387,23 +365,18 @@ export default function HortonPlainsDetailedGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/IMG_8209.jpg",
-                        alt: "Aerial view of Snake Island Taprobane",
-                        caption: "Snake Island with its colonial villa",
-                        title: "Snake Island from Above"
+                        src: "/Mini-WorldsEnd.webp",
+                        alt: " Mini World's End",
+                        caption: "Mini World's End PC -dula",
+                        title: "Mini World's End"
                       },
                       {
-                        src: "/Waligama-Bay-Beach.jpg",
-                        alt: "Sandy causeway connecting Snake Island to mainland",
-                        caption: "Low tide reveals the magical sand path",
-                        title: "Snake Island Causeway"
+                        src: "/Mini-WorldsEnd1.webp",
+                        alt: " Mini World's End",
+                        caption: "Mini World's End PC -dula",
+                        title: "Mini World's End"
                       },
-                      {
-                        src: "/Snake-Island-Villa.jpg",
-                        alt: "Colonial villa on Snake Island",
-                        caption: "Historic colonial-era villa on the island",
-                        title: "Snake Island Villa"
-                      }
+                      
                     ]}
                   />
                   <div className="space-y-6">
@@ -615,7 +588,7 @@ export default function HortonPlainsDetailedGuide() {
                       areas, particularly around Baker&apos;s Falls. Their distinctive reddish-brown and black coloration
                       makes them easy to identify when you&apos;re lucky enough to spot one.
                     </p>
-                    <p className="text-xs text-blue-600 font-medium">                      Best Viewing: Forest canopy near Baker&apos;s Falls</p>
+                    <p className="text-xs text-blue-600 font-medium">Best Viewing: Forest canopy near Baker&apos;s Falls</p>
                   </div>
                 </div>
               </CardContent>
