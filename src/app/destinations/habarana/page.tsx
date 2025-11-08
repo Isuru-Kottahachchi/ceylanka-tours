@@ -35,15 +35,15 @@ export default function HabaranaTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Habarana</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Gateway to Sri Lanka’s Wild Heart</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               North Central Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-blue-600/80 text-white border-blue-500">
               <Landmark className="w-4 h-4 mr-1" />
               Cultural Triangle
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-green-600/80 text-white border-green-500">
               <Leaf className="w-4 h-4 mr-1" />
               Wildlife & Nature
             </Badge>

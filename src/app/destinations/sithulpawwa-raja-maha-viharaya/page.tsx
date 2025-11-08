@@ -39,7 +39,7 @@ export default function SithulpawwaPage() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/sithulpawwa-aerial.jpg"
+          src="/Sithul-Pawwa.jpg"
           alt="Panoramic view of Sithulpawwa Raja Maha Viharaya"
           fill
           className="object-cover"

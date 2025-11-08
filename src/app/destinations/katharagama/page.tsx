@@ -1087,7 +1087,7 @@ export default function KatharagamaGuide() {
                 <div className="relative h-48">
                   <Image
                     src="/Yala-national-park.jpg"
-                    alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                    alt="Yala National Park with elephants and natural scenery"
                     fill
                     className="object-cover rounded-t-lg"
                   />
@@ -1105,7 +1105,7 @@ export default function KatharagamaGuide() {
                     50 km from Katharagama
                   </div>
                   <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/pattipola" passHref legacyBehavior>
+                    <Link href="/destinations/yala-national-park" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>
@@ -1163,34 +1163,6 @@ export default function KatharagamaGuide() {
                   </div>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/ridiyagama-safari-park" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                <div className="relative h-48">
-                  <Image
-                    src="/Adamspeaskmain.jpg"
-                    alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
-                    fill
-                    className="object-cover rounded-t-lg"
-                  />
-                  <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                    2 hours
-                  </div>
-                </div>
-                <CardContent className="p-4">
-                  <h3 className="font-bold text-lg mb-2">Hawagala</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Known for its scenic beauty and cool climate, Pattipola is home to the highest railway station in Sri Lanka.
-                  </p>
-                  <div className="flex items-center text-xs text-blue-600 mb-2">
-                    <MapPin className="w-3 h-3 mr-1" />
-                    17 km from Katharagama
-                  </div>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/hawagala" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                     </Link>
                   </div>

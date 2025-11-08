@@ -9,75 +9,75 @@ import { useState, useEffect } from "react"
 
 // Beach Safety Popup Modal Component
 function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
-    if (!isOpen) return null
+  if (!isOpen) return null
 
-    return (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-            <div className="bg-white dark:bg-gray-800 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
-                <div className="relative p-6">
-                    {/* Close button */}
-                    <Button
-                        variant="ghost"
-                        size="icon"
-                        className="absolute right-2 top-2 h-8 w-8 cursor-pointer"
-                        onClick={onClose}
-                    >
-                        <X className="h-4 w-4" />
-                    </Button>
+  return (
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+      <div className="bg-white dark:bg-gray-800 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
+        <div className="relative p-6">
+          {/* Close button */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="absolute right-2 top-2 h-8 w-8 cursor-pointer"
+            onClick={onClose}
+          >
+            <X className="h-4 w-4" />
+          </Button>
 
-                    {/* Modal content */}
-                    <div className="text-center space-y-4">
-                        <div className="flex justify-center">
-                            <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full">
-                                <Waves className="h-8 w-8 text-blue-600" />
-                            </div>
-                        </div>
-                        
-                        <h2 className="text-2xl font-bold text-foreground">Stay Safe at Pasikuda Beach!</h2>
-                        
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                            Before you enjoy Pasikuda&apos;s crystal-clear shallow waters, learn about important beach safety, 
-                            including seasonal conditions, sea creatures, and emergency procedures.
-                        </p>
-
-                        <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
-                            <div className="flex items-center gap-2 mb-2">
-                                <AlertTriangle className="h-5 w-5 text-orange-600" />
-                                <h3 className="font-semibold text-orange-800 dark:text-orange-400">Important Safety Topics:</h3>
-                            </div>
-                            <ul className="text-sm text-orange-700 dark:text-orange-300 space-y-1 text-left">
-                                <li>• Northeast monsoon safety (Oct-Feb)</li>
-                                <li>• Identifying dangerous sea creatures</li>
-                                <li>• Understanding coral reef areas</li>
-                                <li>• Emergency procedures and contacts</li>
-                            </ul>
-                        </div>
-
-                        <div className="space-y-3">
-                            <Link href="/blog/things-you-aware-in-the-beach">
-                                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer transition-colors flex items-center justify-center">
-                                    <Shield className="w-4 h-4 mr-2" />
-                                    Read Complete Beach Safety Guide
-                                </Button>
-                            </Link>
-                            
-                            <Button 
-                                variant="outline" 
-                                className="w-full cursor-pointer"
-                                onClick={onClose}
-                            >
-                                Continue to Pasikuda Page
-                            </Button>
-                        </div>
-
-                        <p className="text-xs text-muted-foreground">
-                            Your safety is our priority. Learn these essential tips for eastern coast beaches!
-                        </p>
-                    </div>
-                </div>
+          {/* Modal content */}
+          <div className="text-center space-y-4">
+            <div className="flex justify-center">
+              <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full">
+                <Waves className="h-8 w-8 text-blue-600" />
+              </div>
             </div>
+
+            <h2 className="text-2xl font-bold text-foreground">Stay Safe at Pasikuda Beach!</h2>
+
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Before you enjoy Pasikuda&apos;s crystal-clear shallow waters, learn about important beach safety,
+              including seasonal conditions, sea creatures, and emergency procedures.
+            </p>
+
+            <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <AlertTriangle className="h-5 w-5 text-orange-600" />
+                <h3 className="font-semibold text-orange-800 dark:text-orange-400">Important Safety Topics:</h3>
+              </div>
+              <ul className="text-sm text-orange-700 dark:text-orange-300 space-y-1 text-left">
+                <li>• Northeast monsoon safety (Oct-Feb)</li>
+                <li>• Identifying dangerous sea creatures</li>
+                <li>• Understanding coral reef areas</li>
+                <li>• Emergency procedures and contacts</li>
+              </ul>
+            </div>
+
+            <div className="space-y-3">
+              <Link href="/blog/things-you-aware-in-the-beach">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer transition-colors flex items-center justify-center">
+                  <Shield className="w-4 h-4 mr-2" />
+                  Read Complete Beach Safety Guide
+                </Button>
+              </Link>
+
+              <Button
+                variant="outline"
+                className="w-full cursor-pointer"
+                onClick={onClose}
+              >
+                Continue to Pasikuda Page
+              </Button>
+            </div>
+
+            <p className="text-xs text-muted-foreground">
+              Your safety is our priority. Learn these essential tips for eastern coast beaches!
+            </p>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  )
 }
 
 export default function PasikudaTravelGuide() {
@@ -86,22 +86,22 @@ export default function PasikudaTravelGuide() {
 
   // Show modal after page loads
   useEffect(() => {
-      const timer = setTimeout(() => {
-          setShowSafetyModal(true)
-      }, 1500) // Show after 1.5 seconds
+    const timer = setTimeout(() => {
+      setShowSafetyModal(true)
+    }, 1500) // Show after 1.5 seconds
 
-      return () => clearTimeout(timer)
+    return () => clearTimeout(timer)
   }, [])
 
   const handleCloseModal = () => {
-      setShowSafetyModal(false)
+    setShowSafetyModal(false)
   }
 
   return (
     <main className="min-h-screen bg-background">
       {/* Beach Safety Modal */}
       <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} />
-      
+
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
@@ -112,7 +112,7 @@ export default function PasikudaTravelGuide() {
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
-  <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
+        <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Pasikuda</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lankas Pristine Eastern Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
@@ -132,7 +132,7 @@ export default function PasikudaTravelGuide() {
         </div>
       </section>
 
-  <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Pasikuda: Where Paradise Meets Perfection</h2>
@@ -150,18 +150,18 @@ export default function PasikudaTravelGuide() {
             </p>
           </div>
         </section>
-
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Quick Pasikuda Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
+        {/* Quick Facts & How to Get There side by side */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
+          {/* Quick Pasikuda Facts */}
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Pasikuda Facts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <Waves className="w-4 h-4 text-blue-500" />
@@ -181,8 +181,7 @@ export default function PasikudaTravelGuide() {
                       <strong>Best Season:</strong> May to September
                     </span>
                   </div>
-                </div>
-                <div className="space-y-3">
+
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
                     <span>
@@ -202,10 +201,107 @@ export default function PasikudaTravelGuide() {
                     </span>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+                {/* Valuable Fact for Desktop */}
+                <div className="hidden lg:block mt-6 space-y-4">
+                  <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
+                    <Image
+                      src="/Gregory_Lake.jpg"
+                      alt="Ancient reservoir in Pasikuda, Sri Lanka"
+                      width={120}
+                      height={80}
+                      className="rounded shadow-md object-cover"
+                    />
+                    <div>
+                      <p className="text-base text-blue-900 font-semibold mb-1">Irrigation Marvels of the Ancient World</p>
+                      <p className="text-sm text-blue-800">
+                        Pasikuda’s ancient engineers built massive reservoirs (tanks) like Nuwara Wewa and Tissa Wewa, some over 2,000 years old and still functioning today. These marvels turned the dry zone into a lush, thriving kingdom—an engineering legacy admired worldwide.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-8">
+                    <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                      <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
+                      <p className="text-sm text-yellow-800">1–2 full days to explore the sacred sites, ancient tanks, and local culture at a relaxed pace.</p>
+                    </div>
+                    <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
+                      <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
+                      <p className="text-sm text-green-800">May to September (dry season) for pleasant weather and clear skies. Early mornings and late afternoons are best for sightseeing.</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+          {/* How to Get to Pasikuda */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get-there">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Pasikuda
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 287km (178 miles) from Colombo</li>
+                      <li>• <strong>Duration:</strong> 4-4.5 hours</li>
+                      <li>• <strong>Cost:</strong> Contact Ceylantours for more details</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Pasikuda. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Valaichchenai
+                        then take a bus to Pasikuda</li>
+                      <li>• <strong>Duration:</strong> 6-6.5 hours</li>
+                      <li>• <strong>Cost:</strong> Depend on class</li>
+                      <li>• <strong>Frequency:</strong> A few trains daily</li>
+                    </ul>
+
+                    {/* <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Train</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Pasikuda</li>
+                      <li>• <strong>Duration:</strong> 5.5-6 hours</li>
+                      <li>• <strong>Cost:</strong> $2-8 USD (depending on class)</li>
+                      <li>• <strong>Scenic journey:</strong> Through countryside</li>
+                    </ul> */}
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>• Start early morning to avoid traffic and heat</li>
+                    <li>• Carry water and snacks for the journey</li>
+                    <li>• Book accommodations in advance during peak season</li>
+                    <li>• Consider staying overnight to explore all sites properly</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
+
 
         {/* Unique Features */}
         <section className="mb-12">

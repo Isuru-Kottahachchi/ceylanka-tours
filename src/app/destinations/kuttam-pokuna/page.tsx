@@ -52,41 +52,41 @@ export default function KuttamPokunaTravelGuide() {
               <Droplets className="w-4 h-4 mr-1" />
               Ancient Bathing Pools
             </Badge>
-            
+
           </div>
         </div>
       </section>
-      
+
 
       <div className="max-w-6xl mx-auto px-4 py-12">
-             {/* Introduction */}
+        {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Kuttam Pokuna: Where Ancient Engineering Meets Spiritual Purification</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into one of the most remarkable achievements of ancient Sri Lankan civilization! Kuttam Pokuna, 
-              meaning &quot;Twin Pools&quot; in Sinhala, represents the pinnacle of 6th-century hydraulic engineering and 
-              spiritual architecture. These magnificent bathing pools, built during the reign of King Aggabodhi I 
+              Step into one of the most remarkable achievements of ancient Sri Lankan civilization! Kuttam Pokuna,
+              meaning &quot;Twin Pools&quot; in Sinhala, represents the pinnacle of 6th-century hydraulic engineering and
+              spiritual architecture. These magnificent bathing pools, built during the reign of King Aggabodhi I
               (571-604 AD), showcase the incredible sophistication of ancient Anuradhapura&apos;s monastic civilization.
             </p>
             <p className="text-lg mb-4">
-              What makes Kuttam Pokuna truly extraordinary is not just its age - over 1,400 years old - but the 
-              ingenious engineering that still functions perfectly today! These pools were designed with such precision 
-              that they maintain crystal-clear water through an intricate underground filtration system that would 
-              impress modern engineers. The larger pool measures 91 feet in length, while the smaller companion pool 
+              What makes Kuttam Pokuna truly extraordinary is not just its age - over 1,400 years old - but the
+              ingenious engineering that still functions perfectly today! These pools were designed with such precision
+              that they maintain crystal-clear water through an intricate underground filtration system that would
+              impress modern engineers. The larger pool measures 91 feet in length, while the smaller companion pool
               stretches 51 feet, both connected by an underground channel that creates a natural circulation system.
             </p>
             <p className="text-lg mb-4">
-              Originally constructed as bathing facilities for Buddhist monks of the great Abhayagiri Monastery, 
-              these pools served a dual purpose - physical cleansing and spiritual purification. The elegant stepped 
-              design, carved from solid granite, features beautifully sculpted makara (dragon) heads that serve as 
-              water spouts, while lotus motifs and geometric patterns adorn the pool edges, creating a harmonious 
+              Originally constructed as bathing facilities for Buddhist monks of the great Abhayagiri Monastery,
+              these pools served a dual purpose - physical cleansing and spiritual purification. The elegant stepped
+              design, carved from solid granite, features beautifully sculpted makara (dragon) heads that serve as
+              water spouts, while lotus motifs and geometric patterns adorn the pool edges, creating a harmonious
               blend of functionality and artistic beauty.
             </p>
             <p className="text-lg">
-              Today, Kuttam Pokuna stands as a testament to the remarkable achievements of ancient Sri Lankan civilization. 
-              As you walk around these pristine pools, you&apos;re not just observing ancient architecture - you&apos;re 
-              witnessing a 1,400-year-old engineering marvel that continues to function exactly as its creators intended, 
+              Today, Kuttam Pokuna stands as a testament to the remarkable achievements of ancient Sri Lankan civilization.
+              As you walk around these pristine pools, you&apos;re not just observing ancient architecture - you&apos;re
+              witnessing a 1,400-year-old engineering marvel that continues to function exactly as its creators intended,
               making it one of the most perfectly preserved examples of ancient hydraulic technology in the world.
             </p>
           </div>
@@ -96,7 +96,7 @@ export default function KuttamPokunaTravelGuide() {
               <div>
                 <p className="font-semibold text-blue-800">Engineering Marvel Still Active</p>
                 <p className="text-blue-700 text-sm mt-1">
-                  The pools&apos; original filtration system continues to work after 1,400 years, automatically maintaining 
+                  The pools&apos; original filtration system continues to work after 1,400 years, automatically maintaining
                   water clarity through underground channels and natural sedimentation chambers.
                 </p>
               </div>
@@ -115,47 +115,47 @@ export default function KuttamPokunaTravelGuide() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4 text-blue-500" />
-                      <span>
-                        <strong>Built:</strong> 6th Century AD
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Building className="w-4 h-4 text-green-500" />
-                      <span>
-                        <strong>Purpose:</strong> Monastic Bathing Facility
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Droplets className="w-4 h-4 text-cyan-500" />
-                      <span>
-                        <strong>Water System:</strong> Ancient Filtration & Circulation
-                      </span>
-                    </div>
+                <div className="grid md:grid-cols-2 gap-2">
+                
+                  <div className="flex items-center gap-2 mb-2">
+                    <Calendar className="w-4 h-4 text-purple-500" />
+                    <span><strong>Built:</strong> 6th Century AD (571-604)</span>
                   </div>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 text-red-500" />
-                      <span>
-                        <strong>Location:</strong> Abhayagiri Complex
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Star className="w-4 h-4 text-yellow-500" />
-                      <span>
-                        <strong>UNESCO Status:</strong> World Heritage Zone
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-orange-500" />
-                      <span>
-                        <strong>Visit Duration:</strong> 30–60 minutes
-                      </span>
-                    </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Crown className="w-4 h-4 text-yellow-500" />
+                    <span><strong>Commissioned by:</strong> King Aggabodhi I</span>
                   </div>
+                  <div className="flex items-center gap-2">
+                    <Building className="w-4 h-4 text-green-500" />
+                    <span><strong>Purpose:</strong> Monastic bathing facility</span>
+                  </div>
+               
+                  <div className="flex items-center gap-2 mb-2">
+                    <Droplets className="w-4 h-4 text-blue-500" />
+                    <span><strong>Large pool:</strong> 91 × 51 feet</span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Droplets className="w-4 h-4 text-cyan-500" />
+                    <span><strong>Small pool:</strong> 51 × 33 feet</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Eye className="w-4 h-4 text-indigo-500" />
+                    <span><strong>Depth:</strong> 9 feet (both pools)</span>
+                  </div>
+             
+                  <div className="flex items-center gap-2 mb-2">
+                    <Clock className="w-4 h-4 text-orange-500" />
+                    <span><strong>Visit duration:</strong> 1-2 hours</span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <MapPin className="w-4 h-4 text-red-500" />
+                    <span><strong>Location:</strong> Abhayagiri Complex</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Camera className="w-4 h-4 text-pink-500" />
+                    <span><strong>Best light:</strong> Early morning/late afternoon</span>
+                  </div>
+            
                 </div>
                 <div className="hidden lg:block mt-6 space-y-4">
                   <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
@@ -391,7 +391,6 @@ export default function KuttamPokunaTravelGuide() {
           </div>
         </section>
 
-   
 
         {/* Quick Facts */}
         <section className="mb-12">
@@ -417,8 +416,7 @@ export default function KuttamPokunaTravelGuide() {
                     <Building className="w-4 h-4 text-green-500" />
                     <span><strong>Purpose:</strong> Monastic bathing facility</span>
                   </div>
-                </div>
-                <div>
+
                   <div className="flex items-center gap-2 mb-2">
                     <Droplets className="w-4 h-4 text-blue-500" />
                     <span><strong>Large pool:</strong> 91 × 51 feet</span>
@@ -431,8 +429,7 @@ export default function KuttamPokunaTravelGuide() {
                     <Eye className="w-4 h-4 text-indigo-500" />
                     <span><strong>Depth:</strong> 9 feet (both pools)</span>
                   </div>
-                </div>
-                <div>
+
                   <div className="flex items-center gap-2 mb-2">
                     <Clock className="w-4 h-4 text-orange-500" />
                     <span><strong>Visit duration:</strong> 1-2 hours</span>
@@ -471,9 +468,9 @@ export default function KuttamPokunaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      King Aggabodhi I ascended to the throne during one of Anuradhapura&apos;s most prosperous periods. 
-                      A devout Buddhist and patron of learning, he understood that the great Abhayagiri Monastery needed 
-                      facilities worthy of its international reputation. The monastery attracted scholars from across 
+                      King Aggabodhi I ascended to the throne during one of Anuradhapura&apos;s most prosperous periods.
+                      A devout Buddhist and patron of learning, he understood that the great Abhayagiri Monastery needed
+                      facilities worthy of its international reputation. The monastery attracted scholars from across
                       Asia, including China, India, and Southeast Asia, making it essential to provide world-class amenities.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -508,16 +505,16 @@ export default function KuttamPokunaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Kuttam Pokuna was built specifically for the monks of Abhayagiri Monastery, one of the most 
-                      important Buddhist institutions in ancient Asia. With over 5,000 resident monks at its peak, 
-                      the monastery required sophisticated infrastructure. These pools weren&apos;t just for bathing - 
+                      Kuttam Pokuna was built specifically for the monks of Abhayagiri Monastery, one of the most
+                      important Buddhist institutions in ancient Asia. With over 5,000 resident monks at its peak,
+                      the monastery required sophisticated infrastructure. These pools weren&apos;t just for bathing -
                       they were an integral part of monastic discipline and spiritual practice.
                     </p>
                     <div className="bg-amber-50 p-4 rounded-lg border border-amber-200">
                       <h4 className="font-semibold text-amber-800 mb-2">Fascinating Fact</h4>
                       <p className="text-sm text-amber-700">
-                        Archaeological evidence suggests that different pools were used at different times of day, 
-                        with specific rituals for dawn and dusk bathing ceremonies. The positioning allows for 
+                        Archaeological evidence suggests that different pools were used at different times of day,
+                        with specific rituals for dawn and dusk bathing ceremonies. The positioning allows for
                         perfect sunrise reflection in the eastern pool!
                       </p>
                     </div>
@@ -547,11 +544,11 @@ export default function KuttamPokunaTravelGuide() {
               <CardContent>
                 <div className="space-y-6">
                   <p className="text-muted-foreground">
-                    The hydraulic engineering of Kuttam Pokuna represents one of humanity&apos;s greatest achievements 
-                    in water management. The system consists of multiple interconnected components that work together 
+                    The hydraulic engineering of Kuttam Pokuna represents one of humanity&apos;s greatest achievements
+                    in water management. The system consists of multiple interconnected components that work together
                     to maintain perfect water quality without any modern filtration equipment.
                   </p>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                     <Card className="bg-blue-50 border-blue-200">
                       <CardHeader>
@@ -646,9 +643,9 @@ export default function KuttamPokunaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Every element of Kuttam Pokuna combines practical function with spiritual symbolism. The stepped 
-                      design isn&apos;t just for easy access - each level represents a stage of spiritual purification. 
-                      The carved makara heads aren&apos;t merely decorative - they&apos;re carefully angled water spouts 
+                      Every element of Kuttam Pokuna combines practical function with spiritual symbolism. The stepped
+                      design isn&apos;t just for easy access - each level represents a stage of spiritual purification.
+                      The carved makara heads aren&apos;t merely decorative - they&apos;re carefully angled water spouts
                       that create gentle currents to keep the water circulating.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -688,11 +685,11 @@ export default function KuttamPokunaTravelGuide() {
               <CardContent>
                 <div className="space-y-6">
                   <p className="text-muted-foreground">
-                    In Buddhist monastic tradition, physical cleanliness is inseparable from spiritual purity. 
-                    Kuttam Pokuna served as more than bathing facilities - they were sacred spaces where monks 
+                    In Buddhist monastic tradition, physical cleanliness is inseparable from spiritual purity.
+                    Kuttam Pokuna served as more than bathing facilities - they were sacred spaces where monks
                     prepared their bodies and minds for meditation, study, and religious ceremonies.
                   </p>
-                  
+
                   <div className="grid md:grid-cols-3 gap-4">
                     <Card className="bg-orange-50 border-orange-200">
                       <CardHeader>
@@ -740,9 +737,9 @@ export default function KuttamPokunaTravelGuide() {
                   <div className="bg-indigo-50 p-4 rounded-lg border border-indigo-200">
                     <h4 className="font-semibold text-indigo-800 mb-2">Sacred Water Symbolism</h4>
                     <p className="text-sm text-indigo-700">
-                      The constantly flowing, crystal-clear water represents the Buddhist concept of impermanence 
-                      and the continuous flow of consciousness. Monks would meditate on the water&apos;s movement 
-                      as a reflection of life&apos;s eternal change, using the pools as both physical and 
+                      The constantly flowing, crystal-clear water represents the Buddhist concept of impermanence
+                      and the continuous flow of consciousness. Monks would meditate on the water&apos;s movement
+                      as a reflection of life&apos;s eternal change, using the pools as both physical and
                       philosophical teaching tools.
                     </p>
                   </div>
@@ -817,7 +814,7 @@ export default function KuttamPokunaTravelGuide() {
                 <div className="bg-green-50 p-3 rounded-lg border border-green-200">
                   <h4 className="font-semibold text-green-800 mb-1">Conservation Note</h4>
                   <p className="text-sm text-green-700">
-                    These pools are actively protected archaeological treasures. Help preserve them 
+                    These pools are actively protected archaeological treasures. Help preserve them
                     for future generations by following all guidelines and reporting any damage.
                   </p>
                 </div>
@@ -831,10 +828,10 @@ export default function KuttamPokunaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">Complete Anuradhapura Experience</h2>
           <div className="space-y-6">
             <p className="text-muted-foreground">
-              Kuttam Pokuna is part of the magnificent Anuradhapura Sacred City, offering visitors the chance 
+              Kuttam Pokuna is part of the magnificent Anuradhapura Sacred City, offering visitors the chance
               to explore one of the world&apos;s oldest continuously inhabited cities and Sri Lanka&apos;s first capital.
             </p>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
@@ -932,11 +929,11 @@ export default function KuttamPokunaTravelGuide() {
             <CardContent>
               <div className="space-y-6">
                 <p className="text-muted-foreground">
-                  Kuttam Pokuna represents not just a tourist attraction, but an active archaeological research site 
-                  that continues to reveal secrets about ancient Sri Lankan engineering and monastic life. Modern 
+                  Kuttam Pokuna represents not just a tourist attraction, but an active archaeological research site
+                  that continues to reveal secrets about ancient Sri Lankan engineering and monastic life. Modern
                   conservation efforts focus on preserving the site&apos;s integrity while allowing continued study.
                 </p>
-                
+
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold mb-3 text-foreground">Recent Discoveries</h4>
@@ -963,8 +960,8 @@ export default function KuttamPokunaTravelGuide() {
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
                   <h4 className="font-semibold text-blue-800 mb-2">Research Significance</h4>
                   <p className="text-sm text-blue-700">
-                    Studies of Kuttam Pokuna&apos;s hydraulic system have influenced modern sustainable water management 
-                    projects across Asia. Engineers from Japan, Singapore, and India regularly visit to study the 
+                    Studies of Kuttam Pokuna&apos;s hydraulic system have influenced modern sustainable water management
+                    projects across Asia. Engineers from Japan, Singapore, and India regularly visit to study the
                     ancient techniques that could inform contemporary green building practices and water conservation efforts.
                   </p>
                 </div>
@@ -981,20 +978,20 @@ export default function KuttamPokunaTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Standing beside Kuttam Pokuna is like holding a conversation with genius across the centuries. 
-                Here, in these perfectly preserved pools, you witness the remarkable achievements of a civilization 
-                that understood both the practical needs of daily life and the spiritual requirements of the human soul. 
-                The crystal-clear water that still flows through these ancient channels carries with it the wisdom 
+                Standing beside Kuttam Pokuna is like holding a conversation with genius across the centuries.
+                Here, in these perfectly preserved pools, you witness the remarkable achievements of a civilization
+                that understood both the practical needs of daily life and the spiritual requirements of the human soul.
+                The crystal-clear water that still flows through these ancient channels carries with it the wisdom
                 of 1,400 years of continuous operation.
               </p>
               <p className="text-muted-foreground mb-4">
-                Every visit to Kuttam Pokuna offers new insights - the play of light on granite steps, the gentle 
-                sound of water flowing through carved spouts, the perfect proportions that create such lasting beauty. 
-                This isn&apos;t just archaeology; it&apos;s a living demonstration of what human ingenuity can achieve 
+                Every visit to Kuttam Pokuna offers new insights - the play of light on granite steps, the gentle
+                sound of water flowing through carved spouts, the perfect proportions that create such lasting beauty.
+                This isn&apos;t just archaeology; it&apos;s a living demonstration of what human ingenuity can achieve
                 when guided by wisdom, patience, and respect for both nature and spirit.
               </p>
               <p className="text-muted-foreground font-medium">
-                Come, walk around these ancient pools, and let yourself be amazed by the genius of your ancestors. 
+                Come, walk around these ancient pools, and let yourself be amazed by the genius of your ancestors.
                 In an age of planned obsolescence, Kuttam Pokuna stands as proof that true craftsmanship is eternal! 🏛️💧✨
               </p>
             </CardContent>

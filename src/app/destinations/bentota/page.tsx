@@ -1319,17 +1319,12 @@ export default function BentotaGuide() {
                                 <ImageCarousel
                                     images={[
                                         {
-                                            src: "/Bentotabeach.jpeg",
-                                            alt: "Bentota Beach with golden sand and clear waters",
-                                            caption: "Bentota Beach",
-                                            title: "Bentota Beach"
+                                            src: "/Para-Motoring.jpg",
+                                            alt: "Para Motoring over Bentota Beach with stunning coastal views",
+                                            caption: "Para Motoring over Bentota Beach",
+                                            title: "Para Motoring"
                                         },
-                                        {
-                                            src: "/Lunugangabawa2.jpeg",
-                                            alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                                            caption: "Ancient Cave Paintings",
-                                            title: "Cave 1 Murals"
-                                        },
+                                        
 
                                     ]}
                                 />

@@ -35,15 +35,15 @@ export default function LovamahapayaGuide() {
 					<h1 className="text-4xl md:text-6xl font-bold mb-4">Lovamahapaya (Brazen Palace)</h1>
 					<p className="text-xl md:text-2xl mb-6 font-light">The Lost Marvel of Ancient Anuradhapura</p>
 					<div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-						<Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+						<Badge variant="secondary" className="bg-yellow-600/80 text-white border-yellow-500">
 							<MapPin className="w-4 h-4 mr-1" />
 							Anuradhapura, North Central Province
 						</Badge>
-						<Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+						<Badge variant="secondary" className="bg-green-600/80 text-white border-green-500">
 							<Landmark className="w-4 h-4 mr-1" />
 							Ancient Monastery
 						</Badge>
-						<Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+						<Badge variant="secondary" className="bg-blue-600/80 text-white border-blue-500">
 							<Calendar className="w-4 h-4 mr-1" />
 							Built 2nd Century BCE
 						</Badge>
@@ -81,7 +81,7 @@ export default function LovamahapayaGuide() {
 							Step into the heart of Anuradhapura and discover Lovamahapaya, the legendary Brazen Palace. Once a nine-story monastery glittering with copper roof tiles, Lovamahapaya was a marvel of ancient engineering and Buddhist devotion. Today, its forest of stone pillars stands as a silent testament to the grandeur and ingenuity of Sri Lanka’s ancient builders.
 						</p>
 						<p className="text-lg">
-							More than just ruins, Lovamahapaya invites you to imagine a time when monks studied, meditated, and lived in a palace that soared above the sacred city. Its story is one of resilience, innovation, and spiritual ambition—an essential stop for any traveler seeking the wonders of Sri Lanka’s past.
+							More than just ruins, Lovamahapaya invites you to imagine a time when monks studied, meditated, and lived in a palace that soared above the sacred city. Its story is one of resilience, innovation, and spiritual ambition an essential stop for any traveler seeking the wonders of Sri Lanka’s past.
 						</p>
 					</div>
 				</section>
@@ -139,7 +139,7 @@ export default function LovamahapayaGuide() {
 								</div>
 							</CardContent>
 							<CardContent>
-				
+
 								{/* Valuable Fact for Desktop */}
 								<div className="hidden lg:block mt-6 space-y-4">
 									<div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
@@ -191,11 +191,11 @@ export default function LovamahapayaGuide() {
 										</ul>
 									</div>
 									<div>
-										<h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bicycle or Tuk-Tuk</h4>
+										<h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train</h4>
 										<ul className="space-y-2 text-sm text-muted-foreground">
-											<li>• <strong>Bicycle rental:</strong> Popular for exploring the ancient city</li>
-											<li>• <strong>Tuk-tuk:</strong> Quick and easy from any hotel</li>
-											<li>• <strong>Walking:</strong> 10–15 minutes from Ruwanwelisaya</li>
+											<li>• <strong>Train service:</strong> Regular trains from Colombo to Anuradhapura</li>
+											<li>• <strong>From Anuradhapura station:</strong> 2km (5 min by tuk-tuk)</li>
+											<li>• <strong>Best option:</strong> Scenic and comfortable</li>
 										</ul>
 									</div>
 								</div>
@@ -204,7 +204,7 @@ export default function LovamahapayaGuide() {
 									<ul className="text-sm text-muted-foreground space-y-1">
 										<li>• Combine your visit with Ruwanwelisaya and Thuparamaya for a full morning of ancient wonders.</li>
 										<li>• Early morning visits offer cooler temperatures and beautiful light for photos.</li>
-										<li>• Bring water and sun protection—there is little shade among the pillars.</li>
+										<li>• Bring water and sun protection there is little shade among the pillars.</li>
 									</ul>
 								</div>
 							</CardContent>
@@ -235,7 +235,7 @@ export default function LovamahapayaGuide() {
 											Built by King Dutugemunu in the 2nd century BCE, Lovamahapaya was once the tallest and most advanced building in ancient Sri Lanka. Its nine stories, supported by 1,600 stone pillars, housed meditation halls, libraries, dining rooms, and living quarters for 1,000 monks. The palace’s copper-tiled roof shimmered in the sun, visible for miles across the sacred city.
 										</p>
 										<p className="text-muted-foreground mb-4">
-											The Brazen Palace was not just a feat of architecture—it was a center of Buddhist learning and daily life. Each floor served a unique purpose, from meditation and study to communal dining and worship. Though destroyed and rebuilt many times, the stone pillars you see today are a powerful reminder of the palace’s enduring legacy.
+											The Brazen Palace was not just a feat of architecture it was a center of Buddhist learning and daily life. Each floor served a unique purpose, from meditation and study to communal dining and worship. Though destroyed and rebuilt many times, the stone pillars you see today are a powerful reminder of the palace’s enduring legacy.
 										</p>
 										<div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
 											<h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Did You Know?</h4>
@@ -361,7 +361,7 @@ export default function LovamahapayaGuide() {
 						</CardHeader>
 						<CardContent>
 							<p className="text-muted-foreground mb-4">
-								As you wander among the ancient pillars of Lovamahapaya, imagine the vibrant life that once filled this palace—monks in meditation, the shimmer of copper tiles, and the hum of daily rituals. Though only ruins remain, the spirit of innovation and devotion endures, inviting every visitor to connect with Sri Lanka’s remarkable past.
+								As you wander among the ancient pillars of Lovamahapaya, imagine the vibrant life that once filled this palace monks in meditation, the shimmer of copper tiles, and the hum of daily rituals. Though only ruins remain, the spirit of innovation and devotion endures, inviting every visitor to connect with Sri Lanka’s remarkable past.
 							</p>
 							<p className="text-muted-foreground font-medium">
 								May your journey through Lovamahapaya inspire awe, curiosity, and a deeper appreciation for the wonders of Anuradhapura!
