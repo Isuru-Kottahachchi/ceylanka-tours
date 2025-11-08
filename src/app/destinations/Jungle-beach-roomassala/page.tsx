@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import InsuranceBanner from "@/components/insurance-banner"
 
 export const metadata = {
   title: "Jungle Beach Unawatuna - Hidden Paradise in Roomassala | Ceylon Ka Tours",
@@ -50,37 +51,7 @@ export default function JungleBeachPage() {
       </section>
 
       <div className="max-w-6xl mx-auto px-4 py-8">
-        {/* Quick Info */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-          <Card>
-            <CardContent className="p-4 text-center">
-              <MapPin className="h-8 w-8 mx-auto mb-2 text-blue-600" />
-              <p className="font-semibold">Location</p>
-              <p className="text-sm text-muted-foreground">Roomassala, Unawatuna</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-4 text-center">
-              <Clock className="h-8 w-8 mx-auto mb-2 text-green-600" />
-              <p className="font-semibold">Best Time</p>
-              <p className="text-sm text-muted-foreground">6 AM - 6 PM</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-4 text-center">
-              <Star className="h-8 w-8 mx-auto mb-2 text-yellow-600" />
-              <p className="font-semibold">Experience</p>
-              <p className="text-sm text-muted-foreground">Swimming & Exploring</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-4 text-center">
-              <Users className="h-8 w-8 mx-auto mb-2 text-purple-600" />
-              <p className="font-semibold">Difficulty</p>
-              <p className="text-sm text-muted-foreground">Easy to Moderate</p>
-            </CardContent>
-          </Card>
-        </div>
+        
 
         {/* Introduction */}
         <section className="mb-12">
@@ -104,6 +75,157 @@ export default function JungleBeachPage() {
             </p>
           </div>
         </section>
+        {/* Quick Facts & How to Get There side by side */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-12 scroll-mt-40" id="quick-facts">
+          {/* Quick Jungle Beach Facts */}
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Quick Jungle Beach Facts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4 text-blue-500" />
+                    <span>
+                      <strong>Built by Dutch:</strong> 1663 AD
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users className="w-4 h-4 text-green-500" />
+                    <span>
+                      <strong>Area:</strong>  52 hectares (130 acres)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users className="w-4 h-4 text-purple-500" />
+                    <span>
+                      <strong>Population:</strong> ~4,000 residents
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 text-red-500" />
+                    <span>
+                      <strong>Area:</strong> 40 square kilometers
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Star className="w-4 h-4 text-yellow-500" />
+                    <span>
+                      <strong>UNESCO Status:</strong> World Heritage (1988)
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-orange-500" />
+                    <span>
+                      <strong>Visit Duration:</strong> Full day (8+ hours)
+                    </span>
+                  </div>
+                </div>
+                {/* Valuable Fact for Desktop */}
+                <div className="hidden lg:block mt-6 space-y-4">
+                  {/* <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
+                    <Image
+                      src="/Gregory_Lake.jpg"
+                      alt="Ancient reservoir in Anuradhapura, Sri Lanka"
+                      width={120}
+                      height={80}
+                      className="rounded shadow-md object-cover"
+                    />
+                    <div>
+                      <p className="text-base text-blue-900 font-semibold mb-1">Wonderful streets among ancient reservoirs</p>
+                      <p className="text-sm text-blue-800">
+                       Galle fort is a historic fortress that showcases stunning Dutch colonial architecture, surrounded by the Indian Ocean waves.
+                      </p>
+                    </div>
+                  </div> */}
+                  <div className="flex gap-8">
+                    <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                      <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
+                      <p className="text-sm text-yellow-800">0.5 full day to explore the beach and its surroundings.</p>
+                    </div>
+                    <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
+                      <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
+                      <p className="text-sm text-green-800">May to September (dry season) for pleasant weather and clear skies. Early mornings and late afternoons are best for sightseeing.</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            <InsuranceBanner />
+          </section>
+          {/* How to Get to Jungle Beach */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get-there">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Jungle Beach
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
+                      <li>• <strong>Duration:</strong> 4-4.5 hours</li>
+                      <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Jungle Beach. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Recommended)</h4>
+                    <p>Take the scenic coastal railway from Colombo Fort Station to Galle Station then transfer to a taxi or tuk-tuk for the final leg to Jungle Beach.</p>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
+                      <li>• <strong>Duration:</strong> 2.5-3 hours</li>
+                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                      <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                    </ul>
+
+                    {/* <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
+                      <li>• <strong>Duration:</strong> 2.5-3 hours</li>
+                      <li>• <strong>Cost:</strong> $2-8 USD (depending on the bus type)</li>
+                      <li>• <strong>Scenic journey:</strong> Through Coastline road</li>
+                    </ul> */}
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>• Start early morning to beat the heat</li>
+                    <li>• Carry water and use sun protection</li>
+                    <li>• Wear comfortable clothing and footwear</li>
+                    <li>• Plan your itinerary to cover key attractions</li>
+                  </ul>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
 
         {/* Hanuman and Roomassala Connection */}
         <section className="mb-12">
