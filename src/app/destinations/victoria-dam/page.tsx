@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Camera, Mountain, Waves, TreePine, Car, Bus, Info, AlertTriangle, Thermometer, Calendar, Users, Binoculars, Fish } from "lucide-react"
+import { MapPin, CheckCircle, Camera, Mountain, Waves, TreePine, Car, Bus, Info, AlertTriangle, Thermometer, Calendar, Users, Binoculars} from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
@@ -22,7 +22,7 @@ export default function VictoriaDamGuide() {
           <div className="text-center text-white max-w-4xl mx-auto px-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Victoria Dam</h1>
             <p className="text-xl md:text-2xl mb-8">
-              Sri Lanka's Tallest Dam in the Heart of the Central Highlands
+              Sri Lanka&apos;s Tallest Dam in the Heart of the Central Highlands
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <Badge variant="secondary" className="bg-white/20 text-white">
@@ -83,24 +83,24 @@ export default function VictoriaDamGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Info className="h-6 w-6 text-blue-600" />
-                Welcome to Victoria Dam - Sri Lanka's Engineering Marvel
+                Welcome to Victoria Dam - Sri Lanka&apos;s Engineering Marvel
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="prose max-w-none">
                 <p className="text-lg leading-relaxed mb-4">
-                  Hey there, fellow traveler! Let me tell you about one of Sri Lanka's most impressive sights - the Victoria Dam. 
-                  If you're looking for a place that combines stunning natural beauty with incredible human engineering, you've hit the jackpot.
+                  Hey there, fellow traveler! Let me tell you about one of Sri Lanka&apos;s most impressive sights - the Victoria Dam. 
+                  If you&apos;re looking for a place that combines stunning natural beauty with incredible human engineering, you&apos;ve hit the jackpot.
                 </p>
                 <p className="mb-4">
-                  Standing tall at 122 meters, Victoria Dam isn't just Sri Lanka's tallest dam - it's a gateway to some of the most 
-                  breathtaking scenery you'll ever see. Picture this: a massive concrete wall holding back crystal-clear waters, 
+                  Standing tall at 122 meters, Victoria Dam isn&apos;t just Sri Lanka&apos;s tallest dam - it&apos;s a gateway to some of the most 
+                  breathtaking scenery you&apos;ll ever see. Picture this: a massive concrete wall holding back crystal-clear waters, 
                   surrounded by rolling green hills covered in tea plantations, all wrapped in a blanket of misty clouds. 
-                  Sounds like a dream, right? Well, it's real, and it's waiting for you!
+                  Sounds like a dream, right? Well, it&apos;s real, and it&apos;s waiting for you!
                 </p>
                 <p>
-                  Located in Teldeniya, about 40 kilometers from Kandy, this isn't your typical tourist trap. It's a hidden gem 
-                  that locals love and visitors discover by happy accident. Whether you're a photography enthusiast, nature lover, 
+                  Located in Teldeniya, about 40 kilometers from Kandy, this isn&apos;t your typical tourist trap. It&apos;s a hidden gem 
+                  that locals love and visitors discover by happy accident. Whether you&apos;re a photography enthusiast, nature lover, 
                   or just someone who appreciates impressive engineering, Victoria Dam has something special for you.
                 </p>
               </div>
@@ -123,14 +123,14 @@ export default function VictoriaDamGuide() {
                   river in Sri Lanka.
                 </p>
                 <p className="mb-4">
-                  Construction began in 1978 as part of the ambitious Mahaweli Development Program - basically Sri Lanka's biggest 
-                  infrastructure project ever. It wasn't easy work. Engineers had to deal with challenging terrain, monsoon rains, 
+                  Construction began in 1978 as part of the ambitious Mahaweli Development Program - basically Sri Lanka&apos;s biggest 
+                  infrastructure project ever. It wasn&apos;t easy work. Engineers had to deal with challenging terrain, monsoon rains, 
                   and the sheer scale of moving millions of tons of earth and concrete.
                 </p>
                 <p className="mb-4">
                   Seven years later, in 1985, Victoria Dam was finally complete. Named after the nearby Victoria Golf Club (which 
                   itself was named after Queen Victoria), this engineering marvel immediately became the tallest dam in Sri Lanka. 
-                  But here's the cool part - it wasn't just about generating electricity. The dam created a huge reservoir that 
+                  But here&apos;s the cool part - it wasn&apos;t just about generating electricity. The dam created a huge reservoir that 
                   transformed the entire landscape.
                 </p>
                 <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mt-6">
@@ -141,9 +141,9 @@ export default function VictoriaDamGuide() {
                   <ul className="space-y-1 text-sm">
                     <li>• It can generate up to 210 megawatts of electricity</li>
                     <li>• The reservoir holds 722 million cubic meters of water</li>
-                    <li>• It's a concrete arch dam - one of the strongest dam designs</li>
+                    <li>• It&apos;s a concrete arch dam - one of the strongest dam designs</li>
                     <li>• The project displaced several small villages, whose residents were relocated</li>
-                    <li>• It plays a crucial role in Sri Lanka's national power grid</li>
+                    <li>• It plays a crucial role in Sri Lanka&apos;s national power grid</li>
                   </ul>
                 </div>
               </div>
@@ -166,14 +166,14 @@ export default function VictoriaDamGuide() {
                     The Engineering Marvel
                   </h3>
                   <p className="mb-4">
-                    Let's talk numbers for a second. This concrete giant is 122 meters high and 520 meters long. 
-                    To put that in perspective, it's taller than a 40-story building! The dam wall curves gracefully 
-                    across the valley, and when you stand at the top looking down, you'll get a real sense of just 
+                    Let&apos;s talk numbers for a second. This concrete giant is 122 meters high and 520 meters long. 
+                    To put that in perspective, it&apos;s taller than a 40-story building! The dam wall curves gracefully 
+                    across the valley, and when you stand at the top looking down, you&apos;ll get a real sense of just 
                     how massive this structure is.
                   </p>
                   <p className="mb-4">
-                    What makes it even more impressive is that it's an arch dam. This design uses the natural strength 
-                    of the arch shape to hold back millions of tons of water. It's like nature and human ingenuity 
+                    What makes it even more impressive is that it&apos;s an arch dam. This design uses the natural strength 
+                    of the arch shape to hold back millions of tons of water. It&apos;s like nature and human ingenuity 
                     working together in perfect harmony.
                   </p>
                 </div>
@@ -201,11 +201,11 @@ export default function VictoriaDamGuide() {
                 <div>
                   <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
                     <Camera className="h-5 w-5 text-blue-600" />
-                    A Photographer's Paradise
+                    A Photographer&apos;s Paradise
                   </h3>
                   <p className="mb-4">
-                    Here's where things get really exciting for photo lovers. The reservoir creates this amazing mirror 
-                    effect, especially in the early morning when the water is perfectly still. The surrounding mountains 
+                    Here&apos;s where things get really exciting for photo lovers. The reservoir creates this amazing mirror
+                    effect, especially in the early morning when the water is perfectly still. The surrounding mountains
                     reflect in the water, creating these incredible double images that look almost surreal.
                   </p>
                   <p className="mb-4">
@@ -222,14 +222,14 @@ export default function VictoriaDamGuide() {
                   Tea Country Surroundings
                 </h3>
                 <p className="mb-4">
-                  One of the coolest things about Victoria Dam is where it's located. You're right in the heart of 
-                  Sri Lanka's tea country. The hills around the reservoir are covered in tea plantations that create 
+                  One of the coolest things about Victoria Dam is where it&apos;s located. You&apos;re right in the heart of
+                  Sri Lanka&apos;s tea country. The hills around the reservoir are covered in tea plantations that create
                   these beautiful green terraces stretching as far as the eye can see.
                 </p>
                 <p className="mb-4">
-                  You'll often see tea pickers working the slopes, their colorful saris adding splashes of bright color 
-                  to the green landscape. It's like watching a living postcard unfold before your eyes. The contrast 
-                  between the blue water, green tea bushes, and the red earth of the plantation roads creates this 
+                  You&apos;ll often see tea pickers working the slopes, their colorful saris adding splashes of bright color
+                  to the green landscape. It&apos;s like watching a living postcard unfold before your eyes. The contrast
+                  between the blue water, green tea bushes, and the red earth of the plantation roads creates this
                   incredible natural color palette.
                 </p>
               </div>
@@ -332,7 +332,7 @@ export default function VictoriaDamGuide() {
                         The roads around Victoria Dam offer some of the most scenic drives in Sri Lanka.
                       </p>
                       <ul className="text-sm space-y-1 text-muted-foreground">
-                        <li>• Drive along the reservoir's edge</li>
+                        <li>• Drive along the reservoir&apos;s edge</li>
                         <li>• Take the winding roads through tea estates</li>
                         <li>• Stop at viewpoints for panoramic photos</li>
                         <li>• Connect to other hill country destinations</li>
@@ -346,8 +346,8 @@ export default function VictoriaDamGuide() {
                       Local Tip
                     </h4>
                     <p className="text-sm">
-                      The best time to visit is early morning (6-8 AM) when the water is calm, creating perfect 
-                      reflections. Plus, you'll avoid the crowds and get the best light for photography!
+                      The best time to visit is early morning (6-8 AM) when the water is calm, creating perfect
+                      reflections. Plus, you&apos;ll avoid the crowds and get the best light for photography!
                     </p>
                   </div>
                 </div>
@@ -607,9 +607,9 @@ export default function VictoriaDamGuide() {
                         Important Safety Notes
                       </h4>
                       <ul className="text-sm space-y-1">
-                        <li>• Don't climb on dam structures - it's dangerous and prohibited</li>
+                        <li>• Don&apos;t climb on dam structures - it&apos;s dangerous and prohibited</li>
                         <li>• Stay away from the spillway area, especially during water releases</li>
-                        <li>• Water levels can change rapidly - don't get too close to the edge</li>
+                        <li>• Water levels can change rapidly - don&apos;t get too close to the edge</li>
                         <li>• Weather can change quickly in the mountains</li>
                       </ul>
                     </div>
@@ -704,25 +704,25 @@ export default function VictoriaDamGuide() {
             <CardContent>
               <div className="prose max-w-none">
                 <p className="text-lg leading-relaxed mb-4">
-                  Victoria Dam isn't just another tourist destination - it's a place where human achievement meets natural beauty 
-                  in the most spectacular way. Whether you're interested in engineering marvels, photography, or just want to 
-                  experience some of Sri Lanka's most stunning scenery, this place delivers.
+                  Victoria Dam isn&apos;t just another tourist destination - it&apos;s a place where human achievement meets natural beauty 
+                  in the most spectacular way. Whether you&apos;re interested in engineering marvels, photography, or just want to 
+                  experience some of Sri Lanka&apos;s most stunning scenery, this place delivers.
                 </p>
                 <p className="mb-4">
-                  The best part? It's not overrun with tourists yet. You can still have those magical moments of standing alone 
-                  on the dam wall, listening to the water and wind, surrounded by nothing but green hills and blue sky. It's 
+                  The best part? It&apos;s not overrun with tourists yet. You can still have those magical moments of standing alone 
+                  on the dam wall, listening to the water and wind, surrounded by nothing but green hills and blue sky. It&apos;s 
                   the kind of place that makes you slow down and appreciate the simple beauty of the world.
                 </p>
                 <p className="mb-4">
-                  Remember, Victoria Dam is more than just a photo opportunity (though you'll definitely get some amazing shots). 
-                  It's a chance to see how human ingenuity can work with nature rather than against it. It's a reminder of Sri Lanka's 
+                  Remember, Victoria Dam is more than just a photo opportunity (though you&apos;ll definitely get some amazing shots). 
+                  It&apos;s a chance to see how human ingenuity can work with nature rather than against it. It&apos;s a reminder of Sri Lanka&apos;s 
                   incredible natural beauty and the warm hospitality of its people.
                 </p>
                 <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
                   <p className="font-semibold mb-2">Ready to Visit?</p>
                   <p className="text-sm">
                     Pack your camera, bring comfortable shoes, and prepare to be amazed. Victoria Dam is waiting to show you 
-                    one of Sri Lanka's best-kept secrets. Trust me, you'll be planning your return visit before you even leave!
+                    one of Sri Lanka&apos;s best-kept secrets. Trust me, you&apos;ll be planning your return visit before you even leave!
                   </p>
                 </div>
               </div>
