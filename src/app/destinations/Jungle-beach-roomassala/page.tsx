@@ -169,7 +169,7 @@ export default function JungleBeachPage() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Vehicle (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
                       <li>• <strong>Duration:</strong> 4-4.5 hours</li>
