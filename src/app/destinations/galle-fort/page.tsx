@@ -197,8 +197,8 @@ export default function GalleFortTravelGuide() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
                       <li>• <strong>Duration:</strong> 2.5-3 hours</li>
-                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
-                      <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                      <li>• <strong>Cost:</strong> Depends on class</li>
+                      {/* <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li> */}
                     </ul>
 
                     {/* <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>

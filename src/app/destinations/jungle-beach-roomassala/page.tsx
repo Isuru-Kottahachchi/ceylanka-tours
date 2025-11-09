@@ -51,7 +51,7 @@ export default function JungleBeachPage() {
       </section>
 
       <div className="max-w-6xl mx-auto px-4 py-8">
-        
+
 
         {/* Introduction */}
         <section className="mb-12">
@@ -171,9 +171,9 @@ export default function JungleBeachPage() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Vehicle (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
-                      <li>• <strong>Duration:</strong> 4-4.5 hours</li>
-                      <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                      <li>• <strong>Distance:</strong> 128km (80 miles) from Colombo</li>
+                      <li>• <strong>Duration:</strong> 1.5-2 hours</li>
+                      <li>• <strong>Cost:</strong> Contact Ceylantours</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
@@ -201,7 +201,7 @@ export default function JungleBeachPage() {
                       <li>• <strong>Route:</strong> Colombo Fort → Galle</li>
                       <li>• <strong>Duration:</strong> 2.5-3 hours</li>
                       <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
-                      <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                      {/* <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li> */}
                     </ul>
 
                     {/* <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
@@ -233,7 +233,7 @@ export default function JungleBeachPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Hanuman+Temple+Roomassala"
+                src="/Hanuman-Roomassala.png"
                 alt="Hanuman Temple on Roomassala Hill overlooking Jungle Beach"
                 width={600}
                 height={400}
@@ -250,13 +250,23 @@ export default function JungleBeachPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-orange-700 dark:text-orange-300 mb-4">
-                    According to the ancient Ramayana epic, Roomassala Hill is where the mighty Hanuman landed when
-                    he carried a piece of the Himalayas to heal Lakshmana, Lord Rama&apos;s brother.
+                    According to the ancient Ramayana epic, there was a war between Rama and Ravana. During the battle, Rama’s younger brother Lakshmana was seriously wounded, and to save his life, a special medicinal herb called Sanjeewani was required. Rama sent Hanuman, the monkey god, to bring the Sanjeewani herb from the Dronagiri mountain range in the Himalayas. Hanuman could not identify the exact herb, so he decided to carry an entire section of the mountain instead. While flying back to Sri Lanka, a piece of the mountain broke off and fell here, creating Roomassala Hill. People still believe there are rare herbs on this hill.
                   </p>
                   <div className="space-y-3">
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/blog/ramayana-story-india-sri-lanka" passHref legacyBehavior>
+                      <Button
+                        variant="secondary"
+                        className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                      >
+                        Read more about Ramayanaya story
+                        <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                      </Button>
+                    </Link>
+                  </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm">Hanuman was tasked to bring the Sanjeevani herb from the Himalayas</p>
+                      <p className="text-sm">Hanuman was tasked to bring the Sanjeewani herb from the Himalayas</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>

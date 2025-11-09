@@ -4,6 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { MapPin, Clock, Users, Book, Heart, Zap, Star, CheckCircle } from "lucide-react"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 
 export default function RamayanaStoryPage() {
@@ -200,6 +202,15 @@ export default function RamayanaStoryPage() {
                   The powerful ten-headed king of Lanka (Sri Lanka). He was very smart and strong, but his pride and
                   selfishness led him to make bad choices.
                 </p>
+                <Link href="/blog/king-ravana" passHref legacyBehavior>
+                  <Button
+                    variant="secondary"
+                    className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                  >
+                    About King Ravana
+                    <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
