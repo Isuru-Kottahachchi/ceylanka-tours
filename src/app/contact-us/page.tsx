@@ -17,7 +17,6 @@ import {
   Globe,
   Users,
   Calendar,
-  Shield,
   Headphones,
   Star,
   Facebook,

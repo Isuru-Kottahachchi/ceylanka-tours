@@ -511,15 +511,15 @@ export default function WaterfallsSriLankaPage() {
         {/* Introduction */}
         <section className="mb-12">
           <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Sri Lanka's Waterfall Wonderland</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Sri Lanka&apos;s Waterfall Wonderland</h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              Sri Lanka's mountainous terrain and abundant rainfall create perfect conditions for spectacular
+              Sri Lanka&apos;s mountainous terrain and abundant rainfall create perfect conditions for spectacular
               waterfalls. From the towering heights of Bambarakanda Falls to the unique leaf-shaped Bopath Ella, the
-              island's cascades offer diverse experiences for every type of traveler.
+              island&apos;s cascades offer diverse experiences for every type of traveler.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Whether you're seeking adventure, photography opportunities, or simply a refreshing swim in natural pools,
-              Sri Lanka's waterfalls provide unforgettable experiences amidst some of the world's most beautiful
+              Whether you&apos;re seeking adventure, photography opportunities, or simply a refreshing swim in natural pools,
+              Sri Lanka&apos;s waterfalls provide unforgettable experiences amidst some of the world&apos;s most beautiful
               landscapes.
             </p>
           </div>
@@ -731,7 +731,7 @@ export default function WaterfallsSriLankaPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Photography Ethics</h3>
               <p className="text-gray-700 dark:text-gray-300 text-sm">
-                Respect the environment and other visitors. Don't damage vegetation for photos. Follow Leave No Trace
+                Respect the environment and other visitors. Don&apos;t damage vegetation for photos. Follow Leave No Trace
                 principles.
               </p>
             </div>
