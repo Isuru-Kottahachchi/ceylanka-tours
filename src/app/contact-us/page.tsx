@@ -6,12 +6,12 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
-  MessageCircle, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  MessageCircle,
   Send,
   CheckCircle,
   Globe,
@@ -60,7 +60,7 @@ export default function ContactUs() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false)
@@ -98,10 +98,10 @@ export default function ContactUs() {
               <Clock className="h-4 w-4 mr-2" />
               24/7 Support Available
             </Badge>
-            <Badge className="bg-white/20 text-white border-white/30 px-4 py-2">
+            {/* <Badge className="bg-white/20 text-white border-white/30 px-4 py-2">
               <Shield className="h-4 w-4 mr-2" />
               Licensed Tour Operator
-            </Badge>
+            </Badge> */}
             <Badge className="bg-white/20 text-white border-white/30 px-4 py-2">
               <Star className="h-4 w-4 mr-2" />
               Expert Local Guides
@@ -110,8 +110,8 @@ export default function ContactUs() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-12">
-        
+      <div className="max-w-6xl mx-auto px-4 py-8">
+
         {/* Quick Contact Info */}
         <section className="mb-12">
           <div className="text-center mb-8">
@@ -185,7 +185,7 @@ export default function ContactUs() {
         </section>
 
         <div className="grid lg:grid-cols-3 gap-12">
-          
+
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <Card className="border-t-4 border-t-cyan-500">
@@ -195,7 +195,7 @@ export default function ContactUs() {
                   Plan Your Sri Lanka Adventure
                 </CardTitle>
                 <p className="text-muted-foreground">
-                  Tell us about your dream Sri Lanka experience, and our travel experts will create a personalized itinerary just for you. 
+                  Tell us about your dream Sri Lanka experience, and our travel experts will create a personalized itinerary just for you.
                   All information is kept confidential and secure.
                 </p>
               </CardHeader>
@@ -351,8 +351,8 @@ export default function ContactUs() {
                     />
                   </div>
 
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     disabled={isSubmitting}
                     className="w-full md:w-auto bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white px-8 py-3"
                   >
@@ -370,7 +370,7 @@ export default function ContactUs() {
                   </Button>
 
                   <p className="text-xs text-muted-foreground mt-4">
-                    By submitting this form, you agree to our privacy policy. We will never share your information with third parties 
+                    By submitting this form, you agree to our privacy policy. We will never share your information with third parties
                     and will only use it to provide you with travel services and updates.
                   </p>
                 </form>
@@ -380,7 +380,7 @@ export default function ContactUs() {
 
           {/* Sidebar Information */}
           <div className="space-y-6">
-            
+
             {/* Office Information */}
             <Card className="border-l-4 border-l-orange-500">
               <CardHeader>
@@ -433,13 +433,13 @@ export default function ContactUs() {
                       <p className="text-xs text-muted-foreground">Born and raised in Sri Lanka with insider knowledge</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
+                  {/* <div className="flex items-start gap-3">
                     <Shield className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-sm">Licensed & Insured</h4>
                       <p className="text-xs text-muted-foreground">Fully licensed tour operator with comprehensive insurance</p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="flex items-start gap-3">
                     <Headphones className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
                     <div>
@@ -527,7 +527,7 @@ export default function ContactUs() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  We guarantee a response within 2 hours during business hours (8 AM - 8 PM Sri Lanka time) and within 24 hours on weekends. 
+                  We guarantee a response within 2 hours during business hours (8 AM - 8 PM Sri Lanka time) and within 24 hours on weekends.
                   For urgent matters, call us directly or use WhatsApp for immediate assistance.
                 </p>
               </CardContent>
@@ -539,7 +539,7 @@ export default function ContactUs() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  All initial consultations and itinerary planning are completely free. We only charge service fees when you decide to book 
+                  All initial consultations and itinerary planning are completely free. We only charge service fees when you decide to book
                   your tour with us. Our goal is to help you plan the perfect Sri Lanka experience regardless of your decision.
                 </p>
               </CardContent>
@@ -551,7 +551,7 @@ export default function ContactUs() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Yes! We provide guidance on visa requirements, assist with ETA applications, and advise on necessary travel documents. 
+                  Yes! We provide guidance on visa requirements, assist with ETA applications, and advise on necessary travel documents.
                   We&apos;ll also provide detailed pre-travel checklists to ensure you&apos;re fully prepared for your Sri Lanka adventure.
                 </p>
               </CardContent>
@@ -563,7 +563,7 @@ export default function ContactUs() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Absolutely! We provide 24/7 support throughout your entire trip. You&apos;ll have direct contact with our emergency line, 
+                  Absolutely! We provide 24/7 support throughout your entire trip. You&apos;ll have direct contact with our emergency line,
                   and our local team is always available to assist with any questions or unexpected situations during your travels.
                 </p>
               </CardContent>

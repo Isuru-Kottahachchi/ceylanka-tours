@@ -183,7 +183,7 @@ export default function PolonnaruwaGuide() {
                                             <p className="text-sm text-purple-600 dark:text-purple-300">Early morning or late afternoon</p>
                                             <p className="text-xs text-muted-foreground">Avoid midday heat</p>
                                         </div>
-                                
+
                                     </div>
                                 </div>
                             </CardContent>
@@ -545,6 +545,17 @@ export default function PolonnaruwaGuide() {
                                             { src: "/placeholder.svg?height=300&width=400&text=Nissanka+Malla+Palace", caption: "Ruins of Nissanka Malla's Palace", alt: "Ruins of Nissanka Malla's Palace showing stone architecture" },
                                             { src: "/placeholder.svg?height=300&width=400&text=Stone+Inscriptions", caption: "Stone inscriptions on palace walls", alt: "Ancient stone inscriptions detailing royal records" },
                                             { src: "/placeholder.svg?height=300&width=400&text=Council+Chamber", caption: "Council Chamber with stone seats", alt: "Stone seats in the royal council chamber" }
+                                        ]}
+                                    />
+                                    <br />
+                                    <p className="text-sm text-muted-foreground italic">
+                                        There are over 20 inscriptions throughout the palace complex, providing invaluable insights into the reign of King Nissanka Malla and medieval Sri Lankan governance.
+                                        Galpotha sellipiya
+                                    </p>
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/Galpotha-Sellipiya.jpeg", caption: "Galpotha Sellipiya inscription", alt: "Ancient Galpotha Sellipiya stone inscription" },
+                                            { src: "/Galpotha-Sellipiya1.jpeg", caption: "Galpotha Sellipiya inscription", alt: "Ancient Galpotha Sellipiya stone inscription" }
                                         ]}
                                     />
                                 </div>
@@ -1223,7 +1234,7 @@ export default function PolonnaruwaGuide() {
                             </CardHeader>
                             <CardContent className="space-y-4">
                                 <Image
-                                    src="/placeholder.svg?height=200&width=350&text=Parakrama+Samudra"
+                                    src="/Prakkrama-Samudrya.jpeg"
                                     alt="Vast Parakrama Samudra reservoir with ancient embankments and water management systems"
                                     width={350}
                                     height={200}

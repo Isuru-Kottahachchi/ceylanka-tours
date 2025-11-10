@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { X, AlertTriangle, Shield } from "lucide-react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   if (!isOpen) return null
 
@@ -351,12 +352,22 @@ export default function ArugamBayTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Surfers at Main Point Arugam Bay with perfect waves breaking over the reef"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Samanala-Wewa.jpg",
+                        alt: "Samanala Wewa Reservoir with lush greenery and mountains",
+                        caption: "Samanala Wewa Reservoir",
+                        title: "Samanala Wewa Reservoir"
+                      },
+                      {
+                        src: "/Lunugangabawa2.jpeg",
+                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        caption: "Ancient Cave Paintings",
+                        title: "Cave 1 Murals"
+                      },
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -420,12 +431,52 @@ export default function ArugamBayTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Elephant Rock in Arugam Bay with wild elephants on the beach and scenic coastal views"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Elephant-Rock-Arugambay.jpg",
+                        alt: "Elephant Rock formation with elephants grazing nearby",
+                        caption: "Elephant Rock",
+                        title: "Elephant Rock"
+                      },
+                      {
+                        src: "/Elephant-Rock-Arugambay1.jpg",
+                        alt: "Elephants near Elephant Rock formation in Arugambay",
+                        caption: "Elephants near Elephant Rock",
+                        title: "Elephants near Elephant Rock"
+                      },
+                      {
+                        src: "/Elephant-Rock-Arugambay2.jpg",
+                        alt: "Elephants near Elephant Rock formation in Arugambay",
+                        caption: "Elephants near Elephant Rock",
+                        title: "Elephants near Elephant Rock"
+                      },
+                       {
+                        src: "/Elephant-Rock-Arugambay6.jpg",
+                        alt: "Elephants near Elephant Rock formation in Arugambay",
+                        caption: "Elephants near Elephant Rock",
+                        title: "Elephants near Elephant Rock"
+                      },
+                      {
+                        src: "/Elephant-Rock-Arugambay3.jpg",
+                        alt: "Elephants near Elephant Rock formation in Arugambay",
+                        caption: "Elephants near Elephant Rock",
+                        title: "Elephants near Elephant Rock"
+                      },
+                      {
+                        src: "/Elephant-Rock-Arugambay4.jpg",
+                        alt: "Elephants near Elephant Rock formation in Arugambay",
+                        caption: "Elephants near Elephant Rock",
+                        title: "Elephants near Elephant Rock"
+                      },
+                      {
+                        src: "/Elephant-Rock-Arugambay5.jpg",
+                        alt: "Elephants near Elephant Rock formation in Arugambay",
+                        caption: "Elephants near Elephant Rock",
+                        title: "Elephants near Elephant Rock"
+                      },
+
+                    ]}
                   />
                 </div>
               </CardContent>

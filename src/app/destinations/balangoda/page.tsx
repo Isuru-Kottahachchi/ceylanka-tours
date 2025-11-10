@@ -684,7 +684,7 @@ export default function BalangodaGuide() {
               </CardContent>
             </Card>
             {/* Traditional Pottery Villages */}
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle>8. Traditional Pottery Villages</CardTitle>
                 <CardDescription>Ancient craft traditions preserved for generations</CardDescription>
@@ -725,7 +725,7 @@ export default function BalangodaGuide() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </section>
 

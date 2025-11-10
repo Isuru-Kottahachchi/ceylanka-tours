@@ -1,4 +1,5 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
 import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Waves, TreePine, Ship, Eye, House } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -6,25 +7,9 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
 import InsuranceBanner from "@/components/insurance-banner"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-export const metadata: Metadata = {
-  title: "Delft Island: Wild Horses & Ancient Baobabs | Complete Travel Guide 2025",
-  description:
-    "Discover Delft Island, Sri Lanka&apos;s hidden gem with wild horses, ancient baobab trees, coral walls, and Dutch colonial ruins. Complete guide to reaching this remote paradise near Adam&apos;s Bridge.",
-  keywords: "Delft Island, wild horses Sri Lanka, baobab trees, Adam&apos;s Bridge, Jaffna Peninsula, Dutch colonial, coral stone, remote island, travel guide",
-  authors: [{ name: "Island Explorer" }],
-  openGraph: {
-    title: "Delft Island: Wild Horses & Ancient Baobabs",
-    description: "Explore Sri Lanka&apos;s most remote inhabited island with wild horses, ancient trees, and Dutch colonial heritage",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Delft Island: Wild Horses & Ancient Baobabs",
-    description: "Explore Sri Lanka&apos;s most remote inhabited island with wild horses, ancient trees, and Dutch colonial heritage",
-  },
-}
+
 
 export default function DelftIslandTravelGuide() {
   return (
@@ -367,12 +352,13 @@ export default function DelftIslandTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Historic Dutch colonial coral stone wall and structures on Delft Island showing intricate masonry work"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      { src: "/Coral-Stone-Architecture.webp", alt: "Coral stone architecture on Delft Island", title: "Coral Stone Architecture", caption: "Coral stone architecture on Delft Island" },
+                      { src: "/Coral-Stone-Architecture1.jpg", alt: "Coral stone architecture on Delft Island", title: "Coral Stone Architecture", caption: "Coral stone architecture on Delft Island" },
+                      { src: "/Coral-Stone-Architecture2.webp", alt: "Coral stone architecture on Delft Island", title: "Coral Stone Architecture", caption: "Coral stone architecture on Delft Island" },
+                      { src: "/Coral-Stone-Architecture3.webp", alt: "Coral stone architecture on Delft Island", title: "Coral Stone Architecture", caption: "Coral stone architecture on Delft Island" },
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
