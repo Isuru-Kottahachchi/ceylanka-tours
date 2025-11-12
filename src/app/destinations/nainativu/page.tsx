@@ -25,7 +25,7 @@ export default function NainativuTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Nagadeepa-Viharaya.jpg"
+          src="/Nagadeepaya.jpg"
           alt="Nagadeepa Viharaya and Nagapooshani Amman Kovil on Nainativu Island, Sri Lanka"
           fill
           className="object-cover"
@@ -36,15 +36,15 @@ export default function NainativuTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Nagadeepa (Nainativu)</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sacred Island of Reconciliation & Faith</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Jaffna District, Northern Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-blue-600/80 text-white border-blue-500">
               <Anchor className="w-4 h-4 mr-1" />
               Island Pilgrimage Site
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-green-600/80 text-white border-green-500">
               <Heart className="w-4 h-4 mr-1" />
               Shared Buddhist & Hindu Heritage
             </Badge>
@@ -135,21 +135,7 @@ export default function NainativuTravelGuide() {
                   </div>
                 </div>
                 <div className="hidden lg:block mt-6 space-y-4">
-                  <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
-                    <Image
-                      src="/Nagapooshani-Amman-Kovil.jpg"
-                      alt="Nagapooshani Amman Kovil temple gopuram in Nainativu, Sri Lanka"
-                      width={120}
-                      height={80}
-                      className="rounded shadow-md object-cover"
-                    />
-                    <div>
-                      <p className="text-base text-blue-900 font-semibold mb-1">A Living Island of Faith</p>
-                      <p className="text-sm text-blue-800">
-                        Nainativu is one of the few places in the world where Buddhist and Hindu shrines stand side by side, drawing pilgrims from across Sri Lanka and South India. The island&apos;s annual temple festivals are a vibrant celebration of devotion and unity.
-                      </p>
-                    </div>
-                  </div>
+                  
                   <div className="flex gap-8">
                     <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                       <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
@@ -184,6 +170,21 @@ export default function NainativuTravelGuide() {
                       <li>• <strong>By Ferry:</strong> From KKD, passenger ferries depart every 20–30 minutes to Nainativu (20 min crossing). Ferries operate 6am–6pm daily.</li>
                       <li>• <strong>Tickets:</strong> Purchase at the jetty (very affordable; separate lines for locals and tourists).</li>
                     </ul>
+                    <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
+                    <Image
+                      src="/Ferry-To-Nagadeepa.jpg"
+                      alt="Ferry boat approaching Nainativu Island, Sri Lanka"
+                      width={120}
+                      height={80}
+                      className="rounded shadow-md object-cover"
+                    />
+                    <div>
+                      <p className="text-base text-blue-900 font-semibold mb-1">A Living Island of Faith</p>
+                      <p className="text-sm text-blue-800">
+                        Nainativu is one of the few places in the world where Buddhist and Hindu shrines stand side by side, drawing pilgrims from across Sri Lanka and South India. The island&apos;s annual temple festivals are a vibrant celebration of devotion and unity.
+                      </p>
+                    </div>
+                  </div>
                   </div>
                   <div className="p-3 bg-blue-50 dark:bg-slate-700 rounded-md border-l-4 border-blue-500 dark:border-blue-400">
                     <p className="text-xs text-blue-800 dark:text-blue-200 mb-2">
@@ -228,7 +229,7 @@ export default function NainativuTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/Nagapooshani-Amman-Kovil.jpg"
+                  src="/Nagadeepaya.jpg"
                   alt="Colorful gopuram of Nagapooshani Amman Kovil, Nainativu"
                   width={400}
                   height={220}

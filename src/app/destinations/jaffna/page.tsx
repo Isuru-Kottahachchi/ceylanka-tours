@@ -1268,7 +1268,7 @@ export default function JaffnaGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/Nainativu.jpg"
+                  src="/Nagadeepaya.jpg"
                   alt="Nainativu"
                   width={300}
                   height={200}
