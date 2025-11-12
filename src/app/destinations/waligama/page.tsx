@@ -222,17 +222,11 @@ export default function WeligamaTravelGuide() {
                         title: "Weligama Bay Surfing"
                       },
                       {
-                        src: "/Snake-Island-Causeway.jpg",
-                        alt: "Sandy causeway connecting Snake Island to mainland",
-                        caption: "Low tide reveals the magical sand path",
-                        title: "Snake Island Causeway"
+                        src: "/Waligama-Surfing1.jpg",
+                        alt: "Surfing lessons at Weligama Bay with beginner surfers learning on gentle waves with instructor guidance",
+                        caption: "Surfing lessons at Weligama Bay",
+                        title: "Weligama Bay Surfing"
                       },
-                      {
-                        src: "/Snake-Island-Villa.jpg",
-                        alt: "Colonial villa on Snake Island",
-                        caption: "Historic colonial-era villa on the island",
-                        title: "Snake Island Villa"
-                      }
                     ]}
                   />
               <p className="text-sm text-muted-foreground mt-2 italic">

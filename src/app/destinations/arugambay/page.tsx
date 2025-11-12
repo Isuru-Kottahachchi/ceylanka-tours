@@ -181,7 +181,10 @@ export default function ArugamBayTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-purple-500" />
                     <span>
-                      <strong>Peak Season:</strong> June to September
+                      <strong>High Season:</strong> April to October
+                    </span>
+                    <span>
+                      <strong>Peak Season:</strong> July and August
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -451,7 +454,7 @@ export default function ArugamBayTravelGuide() {
                         caption: "Elephants near Elephant Rock",
                         title: "Elephants near Elephant Rock"
                       },
-                       {
+                      {
                         src: "/Elephant-Rock-Arugambay6.jpg",
                         alt: "Elephants near Elephant Rock formation in Arugambay",
                         caption: "Elephants near Elephant Rock",
@@ -635,6 +638,101 @@ export default function ArugamBayTravelGuide() {
                   <li>• Peaceful, local atmosphere</li>
                   <li>• Lowest prices available</li>
                 </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Arugam Bay adventure with these incredible destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Panama-Tank.jpg"
+                  alt="Panama Tank with elephants and natural scenery"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  12 mins from Arugam Bay
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Panama Tank</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Panama Tank is also know as &apos;Crocadile point&apos; because of high chance of seeing crocodiles and elephants in the area.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  12 Km from Arugam Bay
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/panama-tank" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Kumana-National-Park.jpg"
+                  alt="Kumana National Park with birds, elephants and diverse wildlife"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  around 2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Kumana National Park</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A great bird watching destination and Sri Lankan leopard habitat in Sri Lanka and a haven for wildlife enthusiasts.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  56 km from Arugam Bay
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kumana-national-park" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Panama-Beach-Camping.jpg"
+                  alt="Panama Beach Camping Awidinno"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  12 mins from Arugam Bay
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Panama Beach</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Beach camping friendly beach with beautiful scenery and tranquil atmosphere.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  12 Km from Arugam Bay
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/panama-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>
