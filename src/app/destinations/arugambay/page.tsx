@@ -358,16 +358,40 @@ export default function ArugamBayTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Samanala-Wewa.jpg",
-                        alt: "Samanala Wewa Reservoir with lush greenery and mountains",
-                        caption: "Samanala Wewa Reservoir",
-                        title: "Samanala Wewa Reservoir"
+                        src: "/Surfing-At-Arugambay-Main-Point.jpg",
+                        alt: "Surfer riding a wave at Arugam Bay Main Point",
+                        caption: "Arugam Bay Main Point",
+                        title: "Arugam Bay Main Point"
                       },
                       {
-                        src: "/Lunugangabawa2.jpeg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
+                        src: "/Surfing-At-Arugambay-Main-Point1.jpg",
+                        alt: "Surfer riding a wave at Arugam Bay Main Point",
+                        caption: "Arugam Bay Main Point @@photosbyprifti",
+                        title: "Arugam Bay Main Point"
+                      },
+                        {
+                        src: "/Surfing-At-Arugambay-Main-Point2.jpg",
+                        alt: "Surfer riding a wave at Arugam Bay Main Point",
+                        caption: "Arugam Bay Main Point @@photosbyprifti",
+                        title: "Arugam Bay Main Point"
+                      },
+                        {
+                        src: "/Surfing-At-Arugambay-Main-Point3.jpg",
+                        alt: "Surfer riding a wave at Arugam Bay Main Point",
+                        caption: "Arugam Bay Main Point @@photosbyprifti",
+                        title: "Arugam Bay Main Point"
+                      },
+                        {
+                        src: "/Surfing-At-Arugambay-Main-Point4.jpg",
+                        alt: "Surfer riding a wave at Arugam Bay Main Point",
+                        caption: "Arugam Bay Main Point @@photosbyprifti",
+                        title: "Arugam Bay Main Point"
+                      },
+                        {
+                        src: "/Surfing-At-Arugambay-Main-Point5.jpg",
+                        alt: "Surfer riding a wave at Arugam Bay Main Point",
+                        caption: "Arugam Bay Main Point @@photosbyprifti",
+                        title: "Arugam Bay Main Point"
                       },
 
                     ]}
