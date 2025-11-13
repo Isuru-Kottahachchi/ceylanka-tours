@@ -317,18 +317,7 @@ export default function TrincomaleeTravelGuide() {
                         caption: "Sunrise at Koneshwaram Temple",
                         title: "Koneshwaram Temple - Sunrise View"
                       },
-                      {
-                        src: "/Lipton-seat1.jpg",
-                        alt: "Wide view of Haputale mountains and tea fields",
-                        caption: "Haputale's rolling tea hills",
-                        title: "Viewpoint Tea Country"
-                      },
-                      {
-                        src: "/placeholder.svg?height=300&width=400",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
-                      }
+                    
                     ]}
                   />
                   <div>
@@ -568,18 +557,7 @@ export default function TrincomaleeTravelGuide() {
                         caption: "Sunrise at Fort Frederick",
                         title: "Fort Frederick - Sunrise View"
                       },
-                      {
-                        src: "/Lipton-seat1.jpg",
-                        alt: "Wide view of Haputale mountains and tea fields",
-                        caption: "Haputale's rolling tea hills",
-                        title: "Viewpoint Tea Country"
-                      },
-                      {
-                        src: "/placeholder.svg?height=300&width=400",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
-                      }
+                     
                     ]}
                   />
                 </div>
@@ -643,27 +621,27 @@ export default function TrincomaleeTravelGuide() {
                     images={[
                       {
                         src: "/Nilaveli-beach.jpg",
-                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
-                        caption: "Sunrise at Fort Frederick",
-                        title: "Fort Frederick - Sunrise View"
+                        alt: "Nilaveli beach showing white sand, turquoise waters, and palm trees with few tourists",
+                        caption: "Nilaveli Beach Paradise",
+                        title: "Nilaveli Beach Paradise"
                       },
                       {
                         src: "/Nilaveli-beach1.jpg",
-                        alt: "Wide view of Haputale mountains and tea fields",
-                        caption: "Haputale's rolling tea hills",
-                        title: "Viewpoint Tea Country"
+                        alt: "Wide view of Nilaveli beach with white sand, turquoise waters, and palm trees",
+                        caption: "Nilaveli Beach Scenic View",
+                        title: "Nilaveli Beach Scenic View"
                       },
                       {
                         src: "/Nilaveli-beach2.jpg",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
+                        alt: "Nilaveli beach showing white sand, turquoise waters, and palm trees with few tourists",
+                        caption: "Nilaveli Beach View",
+                        title: "Nilaveli Beach View"
                       },
                       {
                         src: "/Nilaveli-beach3.jpg",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
+                        alt: "Nilaveli beach showing white sand, turquoise waters, and palm trees with few tourists",
+                        caption: "Nilaveli Beach View",
+                        title: "Nilaveli Beach View"
                       },        
                     ]}
                   />
@@ -728,39 +706,39 @@ export default function TrincomaleeTravelGuide() {
                     images={[
                       {
                         src: "/Pigeon-island.jpg",
-                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
-                        caption: "Sunrise at Fort Frederick",
-                        title: "Fort Frederick - Sunrise View"
+                        alt: "Pigeon Island National Park with coral reefs and turquoise waters",
+                        caption: "Pigeon Island View",
+                        title: "Pigeon Island View"
                       },
                       {
                         src: "/Pigeon-island1.webp",
-                        alt: "Wide view of Haputale mountains and tea fields",
-                        caption: "Haputale's rolling tea hills",
-                        title: "Viewpoint Tea Country"
+                        alt: "Wide view of Pigeon Island National Park with coral reefs and turquoise waters",
+                        caption: "Pigeon Island View",
+                        title: "Pigeon Island View"
                       },
                       {
                         src: "/Pigeon-island2.jpg",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
+                        alt: "Pigeon Island National Park with coral reefs and turquoise waters",
+                        caption: "Pigeon Island View",
+                        title: "Pigeon Island View"
                       },
                         {
                         src: "/Pigeon-island6.jpg",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
+                        alt: "Pigeon Island National Park with coral reefs and turquoise waters",
+                        caption: "Pigeon Island View",
+                        title: "Pigeon Island View"
                       },
                         {
                         src: "/Pigeon-island4.jpg",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
+                        alt: "Pigeon Island National Park with coral reefs and turquoise waters",
+                        caption: "Pigeon Island View",
+                        title: "Pigeon Island View"
                       },
                         {
                         src: "/Pigeon-island5.jpg",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
+                        alt: "Pigeon Island National Park with coral reefs and turquoise waters",
+                        caption: "Pigeon Island View",
+                        title: "Pigeon Island View"
                       }
                     ]}
                   />
@@ -851,15 +829,15 @@ export default function TrincomaleeTravelGuide() {
                     images={[
                       {
                         src: "/Kanniya-Hot-Springs.jpg",
-                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
-                        caption: "Sunrise at Fort Frederick",
-                        title: "Fort Frederick - Sunrise View"
+                        alt: "Kanniya Hot Springs with natural thermal pools",
+                        caption: "Kanniya Hot Springs View",
+                        title: "Kanniya Hot Springs View"
                       },
                       {
                         src: "/Kanniya-Hot-Springs1.jpg",
-                        alt: "Wide view of Haputale mountains and tea fields",
-                        caption: "Haputale's rolling tea hills",
-                        title: "Viewpoint Tea Country"
+                        alt: "Kanniya Hot Springs with natural thermal pools  ",
+                        caption: "Kanniya Hot Springs View",
+                        title: "Kanniya Hot Springs View"
                       },
                     ]}
                   />
@@ -959,42 +937,31 @@ export default function TrincomaleeTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  {/* <div>
-                    {createAttractionCarousel(girihanduImages, girihanduIndex, setGirihanduIndex) || (
-                      <Image
-                        src="/Girihadusaya.jpeg"
-                        alt="Girihandu Seya ancient stupa on hilltop with ocean view in background"
-                        width={400}
-                        height={300}
-                        className="rounded-lg"
-                      />
-                    )}
-                  </div> */}
                   <ImageCarousel
                     images={[
                       {
                         src: "/Girihadusaya.jpeg",
-                        alt: "Panoramic view from Fort Frederick with ocean backdrop",
-                        caption: "Sunrise at Fort Frederick",
-                        title: "Fort Frederick - Sunrise View"
+                        alt: "Girihandu Seya stupa",
+                        caption: "Girihandu Seya stupa",
+                        title: "Girihandu Seya stupa"
                       },
                       {
                         src: "/Girihandu-Seya.jpeg",
-                        alt: "Wide view of Haputale mountains and tea fields",
-                        caption: "Haputale's rolling tea hills",
-                        title: "Viewpoint Tea Country"
+                        alt: "Girihandu Seya stupa ",
+                        caption: "Girihandu Seya stupa ",
+                        title: "Girihandu Seya stupa "
                       },
                         {
                         src: "/Girihandu-Seya1.jpeg",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
+                        alt: "Girihandu Seya stupa",
+                        caption: "Girihandu Seya stupa",
+                        title: "Girihandu Seya stupa"
                       },
                       {
                         src: "/Girihandu-Seya2.jpeg",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
+                        alt: "Girihandu Seya stupa",
+                        caption: "Girihandu Seya stupa",
+                        title: "Girihandu Seya stupa"
                       },
                     ]}
                   />

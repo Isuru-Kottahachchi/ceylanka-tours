@@ -274,7 +274,7 @@ export default function NainativuTravelGuide() {
                   <li>Remove shoes and hats before entering temple buildings.</li>
                   <li>Respect ongoing rituals and avoid loud conversation near shrines.</li>
                   <li>Do not touch sacred objects or enter restricted areas.</li>
-                  <li>During festivals, expect large crowds and vibrant processions—keep valuables secure.</li>
+                  <li>During festivals, expect large crowds and vibrant processions keep valuables secure.</li>
                 </ul>
               </CardContent>
             </Card>

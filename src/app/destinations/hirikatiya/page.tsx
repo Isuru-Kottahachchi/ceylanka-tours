@@ -189,8 +189,8 @@ export default function HiriketiyaTravelGuide() {
                       <strong>Best Season:</strong> November to April
                     </span>
                   </div>
-             
-               
+
+
                   <div className="flex items-center gap-2">
                     <Heart className="w-4 h-4 text-purple-500" />
                     <span>
@@ -1164,90 +1164,215 @@ export default function HiriketiyaTravelGuide() {
             </Card>
           </div>
         </section>
+        {/* Nearby Places to Visit */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Hirikatiya adventure with these incredible destinations within easy reach
+          </p>
 
-        {/* Nearby Attractions */}
-        <div className="max-w-6xl mx-auto px-4 py-12">
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Dickwella Beach Card */}
-              <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-lg">Dickwella Beach</CardTitle>
-                  <CardDescription>Relaxed beach with calm waters</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/dickwella-beach.jpg"
-                    alt="Dickwella Beach"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Dickwella Beach is perfect for families and those seeking a tranquil beach experience with shallow waters.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/dickwella" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Dikwella-Beach.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  20 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Dikwella Beach</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Dikwella Beach is known for its long sandy shores and calm waters, perfect for a relaxing day by the sea.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  7.5 km from Hirikatiya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/dikwella-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Mulkirigala-Rajamaha-Viharaya.jpg"
+                  alt="Mulkirigala Rajamaha Viharaya with its serene environment"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Mulkirigala Rajamaha Viharaya</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Ancient temple which is located at the top of a rock offering panoramic views of the surrounding area.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  23 Km from Hirikatiya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mulkirigala-rajamaha-viharaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/HummanayaBlowhole.jpeg"
+                  alt="Kudawella Blowhole with seawater shooting up through rock formation"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  20 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Kudawella Blowhole</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                 The Kudawella Blowhole is a unique natural attraction where seawater shoots up dramatically through a rock formation.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  7.5 km from Hirikatiya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kudawella-blowhole" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+                       <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Waligama.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  20 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Waligama</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Weligama is a popular destination for beginner surfers, offering gentle waves and a laid-back atmosphere.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  7.5 km from Hirikatiya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/waligama" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Blue-beach.jpg"
+                  alt="Blue Beach with its stunning blue waters and serene environment"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  1 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Blue Beach</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Blue beach is a private island known for its stunning blue waters and serene environment, ideal for relaxation and snorkeling.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  36 km from Hirikatiya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/blue-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/galle-fort-sarmat-batagov-unsplash.jpg"
+                  alt="Galle Fort with its iconic lighthouse and colonial architecture"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  1 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Galle Fort</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Galle Fort is a historic colonial-era fortification with charming streets, boutique shops, and ocean views.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  36 km from Hirikatiya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/galle-fort" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
-              {/* Blue Beach Card */}
-              <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-lg">Blue Beach</CardTitle>
-                  <CardDescription>Scenic beach with golden sands</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/Blue-beach.jpg"
-                    alt="Blue Beach"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    Blue beach is a private island known for its stunning blue waters and serene environment, ideal for relaxation and snorkeling.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/blue-beach" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Unawatuna.jpg"
+                  alt="Unawatuna beach with golden sands and palm trees"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  50 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Unawatuna</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Unawatuna is known for its vibrant nightlife, coral reefs, and golden sandy beaches perfect for snorkeling.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  31 km from Hirikatiya
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/unawatuna" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
 
-              {/* Kudawella Blowhole Card */}
-              <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-lg">Kudawella Blowhole</CardTitle>
-                  <CardDescription>Natural wonder by the sea</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Image
-                    src="/HummanayaBlowhole.jpeg"
-                    alt="Kudawella Blowhole"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                  />
-                  <p className="text-sm text-muted-foreground">
-                    The Kudawella Blowhole is a unique natural attraction where seawater shoots up dramatically through a rock formation.
-                  </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/hummanaya-blowhole" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-        </div>
-
+           
+          </div>
+        </section>
       </div>
     </main>
   )
