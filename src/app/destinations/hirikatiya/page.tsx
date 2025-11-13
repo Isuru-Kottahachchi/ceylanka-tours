@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 
 
@@ -26,15 +27,10 @@ function HiriketiyaImageCarousel() {
       caption: "Perfect surfing waves at sunset"
     },
     {
-      src: "/Hiriketiyabeach.jpg",
+      src: "/Hirikatiyabeach.jpg",
       alt: "Aerial view of Hiriketiya Beach showing the protected bay and surf breaks",
       caption: "Aerial view of the surfing paradise"
     },
-    // {
-    //   src: "/Sea-turtle-bentota.jpeg",
-    //   alt: "Beach yoga session at sunrise on Hiriketiya Beach",
-    //   caption: "Morning yoga sessions on pristine sand"
-    // }
   ]
 
   const nextImage = () => {
@@ -544,12 +540,16 @@ export default function HiriketiyaTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="International travelers enjoying sunset at Hiriketiya Beach with beach volleyball and social activities"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Hirikatiya-Backpackers.jpg",
+                        alt: "International backpackers enjoying Hiriketiya Beach",
+                        caption: "",
+                        title: ""
+
+                      },
+                    ]}
                   />
                 </div>
               </CardContent>
@@ -773,12 +773,34 @@ export default function HiriketiyaTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Beachfront restaurant at Hiriketiya with diners enjoying smoothie bowls and fresh seafood with ocean views"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Hirikatiya-Cafes-Res.jpg",
+                        alt: "Hirikatiya-Cafes-Res",
+                        caption: "",
+                        title: ""
+
+                      },
+                      {
+                        src: "/Hirikatiya-Cafes-Res2.jpg",
+                        alt: "Hirikatiya-Cafes-Res",
+                        caption: "",
+                        title: ""
+                      },
+                       {
+                        src: "/Hirikatiya-Cafes-Res1.jpg",
+                        alt: "Hirikatiya-Cafes-Res",
+                        caption: "",
+                        title: ""
+                      },
+                       {
+                        src: "/Hirikatiya-Cafes-Res3.jpg",
+                        alt: "Hirikatiya-Cafes-Res",
+                        caption: "",
+                        title: ""
+                      },
+                    ]}
                   />
                 </div>
               </CardContent>
@@ -893,7 +915,7 @@ export default function HiriketiyaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Yoga-Hirikatiya.jpg"
                     alt="Sunrise yoga session on Hiriketiya Beach with participants in peaceful meditation poses"
                     width={400}
                     height={300}
@@ -1200,7 +1222,7 @@ export default function HiriketiyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/Mulkirigala-Rajamaha-Viharaya.jpg"
@@ -1228,7 +1250,7 @@ export default function HiriketiyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/HummanayaBlowhole.jpeg"
@@ -1243,7 +1265,7 @@ export default function HiriketiyaTravelGuide() {
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Kudawella Blowhole</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                 The Kudawella Blowhole is a unique natural attraction where seawater shoots up dramatically through a rock formation.
+                  The Kudawella Blowhole is a unique natural attraction where seawater shoots up dramatically through a rock formation.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
@@ -1256,7 +1278,7 @@ export default function HiriketiyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-                       <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/Waligama.jpg"
@@ -1370,7 +1392,7 @@ export default function HiriketiyaTravelGuide() {
               </CardContent>
             </Card>
 
-           
+
           </div>
         </section>
       </div>
