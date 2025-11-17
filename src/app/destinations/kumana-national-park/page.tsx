@@ -413,8 +413,8 @@ export default function KumanaNationalParkGuide() {
                       src="/Painted-Stork.webp"
                       alt="Beautiful painted stork with distinctive black and white plumage at Kumana lagoon"
                       width={300}
-                      height={650}
-                      className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-32"
+                      height={200}
+                      className="rounded-lg mb-3 w-full object-cover aspect-[4/3] h-48"
                     />
                     <div className="flex items-center gap-3 mb-3">
                       <div className="text-2xl">🦢</div>
@@ -508,7 +508,7 @@ export default function KumanaNationalParkGuide() {
                       </div>
                     </div>
                     <p className="text-sm text-muted-foreground mb-2">
-                      Elegant white heron with black bill and distinctive yellow feet ("golden slippers"). Active hunter in shallow waters.
+                      Elegant white heron with black bill and distinctive yellow feet (&quot;golden slippers&quot;). Active hunter in shallow waters.
                     </p>
                     <div className="text-xs space-y-1">
                       <p><strong>Best Time:</strong> Year-round resident</p>
