@@ -151,7 +151,7 @@ export default function HikkaduwaTravelGuide() {
         <div className="flex flex-col lg:flex-row gap-8 mb-10 scroll-mt-40" id="quick-facts">
           {/* Quick Facts */}
           <section>
-            <Card>lue
+            <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500" />

@@ -763,7 +763,6 @@ export default function MirissaTravelGuide() {
               </CardContent>
             </Card>
 
-
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
@@ -793,7 +792,6 @@ export default function MirissaTravelGuide() {
               </CardContent>
             </Card>
 
-        
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image

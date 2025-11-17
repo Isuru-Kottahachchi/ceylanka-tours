@@ -10,7 +10,7 @@ import Link from "next/link"
 
 
 export default function TrincomaleeTravelGuide() {
-  
+
 
   return (
     <main className="min-h-screen bg-background">
@@ -267,14 +267,14 @@ export default function TrincomaleeTravelGuide() {
                       Explore the ramparts, old cannons, and historic buildings within the fort complex. It is a great
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Koneshwaram Kovil is located within this fort complex. Also a one of Irish Colonel Arthur Wellesley&apos;s bungalow also located here. 
+                      Koneshwaram Kovil is located within this fort complex. Also a one of Irish Colonel Arthur Wellesley&apos;s bungalow also located here.
                       spot for photography, especially during sunrise and sunset. The fort is still an active
                       military base, so some areas may be restricted. Entry is free, and it is open to visitors daily.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                       Portuguese colonial architecture
+                        Portuguese colonial architecture
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -284,7 +284,7 @@ export default function TrincomaleeTravelGuide() {
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                         Rich in minerals with believed healing properties
                       </li>
-                     
+
                     </ul>
                   </div>
                 </div>
@@ -317,7 +317,7 @@ export default function TrincomaleeTravelGuide() {
                         caption: "Sunrise at Koneshwaram Temple",
                         title: "Koneshwaram Temple - Sunrise View"
                       },
-                    
+
                     ]}
                   />
                   <div>
@@ -557,7 +557,7 @@ export default function TrincomaleeTravelGuide() {
                         caption: "Sunrise at Fort Frederick",
                         title: "Fort Frederick - Sunrise View"
                       },
-                     
+
                     ]}
                   />
                 </div>
@@ -642,7 +642,7 @@ export default function TrincomaleeTravelGuide() {
                         alt: "Nilaveli beach showing white sand, turquoise waters, and palm trees with few tourists",
                         caption: "Nilaveli Beach View",
                         title: "Nilaveli Beach View"
-                      },        
+                      },
                     ]}
                   />
                   {/* <div>
@@ -722,19 +722,19 @@ export default function TrincomaleeTravelGuide() {
                         caption: "Pigeon Island View",
                         title: "Pigeon Island View"
                       },
-                        {
+                      {
                         src: "/Pigeon-island6.jpg",
                         alt: "Pigeon Island National Park with coral reefs and turquoise waters",
                         caption: "Pigeon Island View",
                         title: "Pigeon Island View"
                       },
-                        {
+                      {
                         src: "/Pigeon-island4.jpg",
                         alt: "Pigeon Island National Park with coral reefs and turquoise waters",
                         caption: "Pigeon Island View",
                         title: "Pigeon Island View"
                       },
-                        {
+                      {
                         src: "/Pigeon-island5.jpg",
                         alt: "Pigeon Island National Park with coral reefs and turquoise waters",
                         caption: "Pigeon Island View",
@@ -951,7 +951,7 @@ export default function TrincomaleeTravelGuide() {
                         caption: "Girihandu Seya stupa ",
                         title: "Girihandu Seya stupa "
                       },
-                        {
+                      {
                         src: "/Girihandu-Seya1.jpeg",
                         alt: "Girihandu Seya stupa",
                         caption: "Girihandu Seya stupa",
@@ -1252,23 +1252,12 @@ export default function TrincomaleeTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Lankapatuna-viharaya.jpg",
+                        src: "/Lankapatuna-Samudragiri-Viharaya.jpg",
                         alt: "Lankapatuna Samudragiri Viharaya stupa by the sea with dramatic sky",
                         caption: "Lankapatuna stupa overlooking the Indian Ocean",
                         title: "Lankapatuna Samudragiri Viharaya"
                       },
-                      {
-                        src: "/Lankapatuna-bridge.jpeg",
-                        alt: "Colorful pedestrian bridge leading to Lankapatuna temple complex",
-                        caption: "Bridge to the temple complex",
-                        title: "Bridge to Lankapatuna"
-                      },
-                      {
-                        src: "/placeholder.svg?height=300&width=400",
-                        alt: "Seaside view of Lankapatuna temple and coastline",
-                        caption: "Temple and coastline at Lankapatuna",
-                        title: "Seaside Temple View"
-                      }
+                     
                     ]}
                   />
                   <div>
@@ -1432,7 +1421,101 @@ export default function TrincomaleeTravelGuide() {
             />
           </div>
         </section>
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Arugam Bay adventure with these incredible destinations within easy reach
+          </p>
 
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Panama-Tank.jpg"
+                  alt="Panama Tank with elephants and natural scenery"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  12 mins from Arugam Bay
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Sober Island</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sober Island is a tranquil getaway known for its pristine beaches, crystal-clear waters, and vibrant marine life.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  12 Km from Arugam Bay
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/panama-tank" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Kumana-National-Park.jpg"
+                  alt="Kumana National Park with birds, elephants and diverse wildlife"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  around 2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Kumana National Park</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A great bird watching destination and Sri Lankan leopard habitat in Sri Lanka and a haven for wildlife enthusiasts.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  56 km from Arugam Bay
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kumana-national-park" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Panama-Beach-Camping.jpg"
+                  alt="Panama Beach Camping Awidinno"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  12 mins from Arugam Bay
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Sober Island</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sober Island is a tranquil getaway known for its pristine beaches, crystal-clear waters, and vibrant marine life.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  12 Km from Arugam Bay
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/panama-beach" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
         {/* More Attractions */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
