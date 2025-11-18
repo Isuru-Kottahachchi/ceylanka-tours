@@ -8,7 +8,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
 import { ImageCarousel } from "@/components/ui/image-carousel"
-import { AdBanner } from "@/components/ad-banner"
 import InsuranceBanner from "@/components/insurance-banner"
 
 // Beach Safety Popup Modal Component
