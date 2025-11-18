@@ -426,7 +426,7 @@ export default function KumanaNationalParkGuide() {
                                             </div>
                                         </div>
                                         <p className="text-sm text-muted-foreground mb-2">
-                                            Spectacular endemic bird with brilliant blue plumage and distinctive long tail. One of Sri Lanka's most beautiful forest birds, found only on this island.
+                                            Spectacular endemic bird with brilliant blue plumage and distinctive long tail. One of Sri Lanka&apos;s most beautiful forest birds, found only on this island.
                                         </p>
                                         <div className="text-xs space-y-1">
                                             <p><strong>Best Time:</strong> Early morning in forest canopy</p>
@@ -457,7 +457,7 @@ export default function KumanaNationalParkGuide() {
                                             </div>
                                         </div>
                                         <p className="text-sm text-muted-foreground mb-2">
-                                            Sri Lanka's national bird with vibrant red and orange plumage. Males have distinctive comb and wattles, making loud territorial calls at dawn and dusk.
+                                            Sri Lanka&apos;s national bird with vibrant red and orange plumage. Males have distinctive comb and wattles, making loud territorial calls at dawn and dusk.
                                         </p>
                                         <div className="text-xs space-y-1">
                                             <p><strong>Best Time:</strong> Dawn and dusk near forest edges</p>
