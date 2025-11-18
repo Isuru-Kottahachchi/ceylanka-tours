@@ -435,6 +435,60 @@ export default function DelftIslandTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>5. The Giant Footprint - Ancient Mystery</CardTitle>
+                <CardDescription>Explore the mysterious large depression believed to be a giant&apos;s footprint</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Among Delft Island&apos;s most intriguing features is a large, naturally formed depression in the coral stone that locals believe to be a giant&apos;s footprint. This remarkable geological formation, measuring approximately 2 meters in length, has captivated visitors for generations with its distinctive shape and mysterious origins. Local folklore speaks of ancient giants who once walked across the land bridge between Sri Lanka and India, leaving their mark on this sacred ground.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The footprint-shaped depression fills with rainwater during monsoon seasons, creating a natural pool that reflects the sky above. Scientists suggest it may be the result of centuries of erosion by wind and water on the softer coral limestone, but the remarkably foot-like shape continues to intrigue both researchers and visitors alike.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Approximately 2 meters in length
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Natural coral stone formation
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Rich folklore and legends
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Eye className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                        Seasonal rainwater pool formation
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Star className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
+                        Connection to Ramayana epic tales
+                      </li>
+                    </ul>
+                    <div className="bg-yellow-50 dark:bg-yellow-900/30 p-4 rounded-lg border-l-4 border-yellow-400 dark:border-yellow-600 mt-4">
+                      <h4 className="font-semibold text-yellow-800 dark:text-yellow-100 mb-2">Local Legend</h4>
+                      <p className="text-sm text-yellow-700 dark:text-gray-200">
+                        According to Tamil folklore, this footprint belongs to Hanuman, the monkey deity from the Ramayana epic, who is said to have leaped across the ocean between Sri Lanka and India. The footprint serves as evidence of this legendary journey, connecting Delft Island to the broader mythological narrative of the region.
+                      </p>
+                    </div>
+                  </div>
+                  <Image
+                    src="/Giant-Footprint-Delft.jpeg"
+                    alt="The mysterious Giant Footprint formation on Delft Island showing the distinctive foot-shaped depression in coral stone"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 

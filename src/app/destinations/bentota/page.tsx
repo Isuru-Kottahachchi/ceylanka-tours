@@ -8,6 +8,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
 import { ImageCarousel } from "@/components/ui/image-carousel"
+import { AdBanner } from "@/components/ad-banner"
+import InsuranceBanner from "@/components/insurance-banner"
 
 // Beach Safety Popup Modal Component
 function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
@@ -235,6 +237,7 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
+                        <InsuranceBanner />
                     </section>
                     {/* How to Get to Bentota (right, condensed) */}
                     <section className="flex-1 scroll-mt-40" id="how-to-get">
@@ -1324,7 +1327,7 @@ export default function BentotaGuide() {
                                             caption: "Para Motoring over Bentota Beach",
                                             title: "Para Motoring"
                                         },
-                                        
+
 
                                     ]}
                                 />
