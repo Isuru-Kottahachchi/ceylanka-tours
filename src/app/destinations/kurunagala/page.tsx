@@ -18,7 +18,6 @@ import {
   Calendar,
   CheckCircle,
   Mountain,
-  Train,
   Bus,
   Utensils,
   Hotel,
@@ -26,7 +25,6 @@ import {
   CloudRain,
   Users,
   Star,
-  Car,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
@@ -340,7 +338,7 @@ export default function KurunegalaPage() {
 
               <div className="space-y-4">
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Rising majestically to 316 meters above sea level, Ethagala (Elephant Rock) is Kurunegala's most 
+                  Rising majestically to 316 meters above sea level, Ethagala (Elephant Rock) is Kurunegala&apos;s most 
                   iconic landmark. This massive rock formation gets its name from its distinctive elephant-like silhouette 
                   and has been a sacred site for over 2,000 years with ancient Buddhist temples at its summit.
                 </p>
