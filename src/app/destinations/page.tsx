@@ -240,6 +240,18 @@ const destinations = [
   },
   {
     id: 14,
+    name: "Kurunagala",
+    location: "North Western Province",
+    path: "kurunagala",
+    image: "/Kurunagala.webp",
+    // rating: 4.3,
+    // reviews: 890,
+    description: "Rock formation surrounded by the city with religious significance",
+    highlights: ["Rock Formation", "Religious Significance"],
+    category: "Nature",
+  },
+  {
+    id: 14,
     name: "Meemure",
     location: "Central Province",
     path: "meemure",

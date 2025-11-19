@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useState, useEffect } from "react"
+import InsuranceBanner from "@/components/insurance-banner"
 
 // Beach Safety Popup Modal Component
 function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
@@ -203,21 +204,6 @@ export default function PasikudaTravelGuide() {
                 </div>
                 {/* Valuable Fact for Desktop */}
                 <div className="hidden lg:block mt-6 space-y-4">
-                  <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
-                    <Image
-                      src="/Gregory_Lake.jpg"
-                      alt="Ancient reservoir in Pasikuda, Sri Lanka"
-                      width={120}
-                      height={80}
-                      className="rounded shadow-md object-cover"
-                    />
-                    <div>
-                      <p className="text-base text-blue-900 font-semibold mb-1">Irrigation Marvels of the Ancient World</p>
-                      <p className="text-sm text-blue-800">
-                        Pasikuda’s ancient engineers built massive reservoirs (tanks) like Nuwara Wewa and Tissa Wewa, some over 2,000 years old and still functioning today. These marvels turned the dry zone into a lush, thriving kingdom—an engineering legacy admired worldwide.
-                      </p>
-                    </div>
-                  </div>
                   <div className="flex gap-8">
                     <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                       <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
@@ -231,6 +217,7 @@ export default function PasikudaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+            <InsuranceBanner/>
           </section>
           {/* How to Get to Pasikuda */}
           <section className="flex-1">
@@ -301,7 +288,6 @@ export default function PasikudaTravelGuide() {
             </Card>
           </section>
         </div>
-
 
         {/* Unique Features */}
         <section className="mb-12">

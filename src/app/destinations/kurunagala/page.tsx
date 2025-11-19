@@ -1,4 +1,5 @@
-import { Metadata } from "next";
+"use client"
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import {
   Clock,
   MapPin,
@@ -25,27 +27,99 @@ import {
   Users,
   Star,
   Car,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Kurunegala Travel Guide 2025 | City of Rock Giants | Complete Guide",
-  description: "Explore Kurunegala, Sri Lanka's medieval royal capital with its iconic rock formations, ancient temples, and rich heritage. Complete guide to attractions, activities, and travel tips.",
-  keywords: "Kurunegala, Sri Lanka tourism, Ethagala rock, Kurunegala lake, Buddhist temples, rock formations, travel guide, historic city, medieval capital",
-  openGraph: {
-    title: "Kurunegala: Complete Guide 2025",
-    description: "Your ultimate guide to Sri Lanka's City of Rock Giants",
-    type: "article",
-    images: ["/kurunegala-hero.jpg"],
-  },
-};
+
+
+function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+  }
+
+  const prevImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+  }
+
+  const goToImage = (index: number) => {
+    setCurrentIndex(index)
+  }
+
+  return (
+    <div className="relative">
+      <div className="relative overflow-hidden rounded-lg aspect-[4/3]">
+        <Image
+          src={images[currentIndex] || "/placeholder.svg"}
+          alt={`${alt} - Image ${currentIndex + 1}`}
+          fill
+          className="rounded-lg transition-all duration-300 object-cover"
+          sizes="(max-width: 768px) 100vw, 400px"
+        />
+
+        {/* Navigation buttons */}
+        {images.length > 1 && (
+          <>
+            <Button
+              variant="outline"
+              size="icon"
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
+              onClick={prevImage}
+            >
+              <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
+            </Button>
+            <Button
+              variant="outline"
+              size="icon"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
+              onClick={nextImage}
+            >
+              <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
+            </Button>
+          </>
+        )}
+      </div>
+
+      {/* Dots indicator */}
+      {images.length > 1 && (
+        <div className="flex justify-center mt-3 space-x-2">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToImage(index)}
+              className={`w-2 h-2 rounded-full transition-colors ${
+                index === currentIndex ? "bg-orange-500" : "bg-gray-300"
+              }`}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* Image counter */}
+      {images.length > 1 && (
+        <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
+          {currentIndex + 1} / {images.length}
+        </div>
+      )}
+    </div>
+  )
+}
 
 export default function KurunegalaPage() {
+  const ethagalaImages = [
+    "/Athgala.jpg",
+    "/ethagala-temple.jpg",
+    "/ethagala-sunrise.jpg",
+    "/ethagala-panorama.jpg"
+  ]
   return (
     <main className="flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/kurunegala-hero.jpg"
+          src="/Kurunagala.webp"
           alt="Panoramic view of Kurunegala city with majestic Ethagala rock formation"
           fill
           className="object-cover"
@@ -115,7 +189,7 @@ export default function KurunegalaPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
+                <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-blue-500" />
                     <span>
@@ -140,6 +214,25 @@ export default function KurunegalaPage() {
                       <strong>Population:</strong> ~120,000
                     </span>
                   </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-teal-500" />
+                    <span>
+                      <strong>Ideal Stay:</strong> 1-2 days
+                    </span>
+                  </div>
+                </div>
+                {/* Additional info for desktop */}
+                <div className="hidden lg:block mt-6 space-y-4">
+                  <div className="flex gap-8">
+                    <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                      <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
+                      <p className="text-sm text-yellow-800">1–2 full days to explore the rock formations, temples, and historic sites at a comfortable pace.</p>
+                    </div>
+                    <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
+                      <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
+                      <p className="text-sm text-green-800">December to April (dry season) for clear views and comfortable climbing weather.</p>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -147,33 +240,42 @@ export default function KurunegalaPage() {
 
           {/* Getting There */}
           <section className="flex-1">
-            <Card>
+            <Card className="border-l-4 border-blue-500">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-blue-500" />
-                  Getting There
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Kurunegala
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2">
-                    <Train className="w-4 h-4 text-blue-500" />
-                    <span>
-                      <strong>By Train:</strong> Regular services from Colombo (4-5 hours)
-                    </span>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">From Colombo</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> 116km (72 miles)</li>
+                      <li>• <strong>By Car:</strong> 3-4 hours via A6 highway</li>
+                      <li>• <strong>By Train:</strong> 4-5 hours regular service</li>
+                      <li>• <strong>By Bus:</strong> Frequent services, 3-4 hours</li>
+                    </ul>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Bus className="w-4 h-4 text-green-500" />
-                    <span>
-                      <strong>By Bus:</strong> Frequent buses from major cities
-                    </span>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Local Transport</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Tuk-tuks:</strong> Available throughout city</li>
+                      <li>• <strong>Local buses:</strong> Connect to rock sites</li>
+                      <li>• <strong>Walking:</strong> City center is walkable</li>
+                      <li>• <strong>Bicycle:</strong> Available for rent</li>
+                    </ul>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Car className="w-4 h-4 text-orange-500" />
-                    <span>
-                      <strong>By Car:</strong> 116km from Colombo (3-4 hours)
-                    </span>
-                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>• Early morning visits to rocks for cooler weather</li>
+                    <li>• Bring water and sunscreen for outdoor activities</li>
+                    <li>• Respect temple dress codes at sacred sites</li>
+                    <li>• Negotiate tuk-tuk prices before starting journey</li>
+                  </ul>
                 </div>
               </CardContent>
             </Card>
@@ -199,47 +301,101 @@ export default function KurunegalaPage() {
           </div>
         </section>
 
-        {/* Rock Formations */}
-        <section className="mb-16" id="rock-formations">
-          <h2 className="text-3xl font-bold mb-8">The Eight Rock Giants</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Ethagala */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Ethagala (Elephant Rock)</CardTitle>
-                <CardDescription>The Majestic Guardian</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <Image
-                    src="/ethagala-rock.jpg"
-                    alt="Ethagala Rock Formation in Kurunegala"
-                    width={600}
-                    height={400}
-                    className="rounded-lg"
-                  />
-                  <p className="text-muted-foreground">
-                    Standing at 316 meters, this is the city&apos;s most prominent rock formation. Houses an ancient 
-                    Buddhist temple and offers breathtaking panoramic views.
-                  </p>
-                  <ul className="space-y-2">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Best sunrise views</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Sacred temple site</span>
-                    </li>
-                  </ul>
-                </div>
-              </CardContent>
-            </Card>
+        {/* Ethagala (Elephant Rock) - Featured Section */}
+        <section className="mb-16" id="ethagala-featured">
+          <div className="bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 dark:from-orange-950 dark:via-amber-950 dark:to-yellow-950 rounded-xl p-6 md:p-8">
+            <div className="text-center mb-6">
+              <h2 className="text-3xl font-bold mb-2 text-orange-800 dark:text-orange-200">
+                Ethagala (Elephant Rock)
+              </h2>
+              <p className="text-lg text-orange-600 dark:text-orange-300">
+                The Majestic Guardian of Kurunegala
+              </p>
+              <div className="flex flex-wrap justify-center gap-2 mt-3">
+                <Badge className="bg-orange-600 text-white text-xs">
+                  <Mountain className="w-3 h-3 mr-1" />
+                  316m tall
+                </Badge>
+                <Badge className="bg-amber-600 text-white text-xs">
+                  <Calendar className="w-3 h-3 mr-1" />
+                  Ancient site
+                </Badge>
+                <Badge className="bg-yellow-600 text-white text-xs">
+                  <Sun className="w-3 h-3 mr-1" />
+                  Best views
+                </Badge>
+              </div>
+            </div>
 
+            <div className="grid lg:grid-cols-2 gap-6 items-center">
+              <div>
+                <ImageCarousel
+                  images={ethagalaImages}
+                  alt="Ethagala (Elephant Rock) and temple complex"
+                />
+                <p className="text-sm text-orange-700 dark:text-orange-300 mt-2 text-center italic">
+                  Majestic Ethagala rising 316 meters above Kurunegala
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Rising majestically to 316 meters above sea level, Ethagala (Elephant Rock) is Kurunegala's most 
+                  iconic landmark. This massive rock formation gets its name from its distinctive elephant-like silhouette 
+                  and has been a sacred site for over 2,000 years with ancient Buddhist temples at its summit.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-3">
+                  <Card className="border-l-4 border-orange-500 bg-white/70 dark:bg-gray-900/70">
+                    <CardContent className="p-3">
+                      <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-2 text-sm">Temple Features</h4>
+                      <ul className="space-y-1 text-xs text-gray-700 dark:text-gray-300">
+                        <li>• Ancient cave temples with murals</li>
+                        <li>• Sacred Buddha statues</li>
+                        <li>• Meditation chambers in rock</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-l-4 border-amber-500 bg-white/70 dark:bg-gray-900/70">
+                    <CardContent className="p-3">
+                      <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2 text-sm">Visit Info</h4>
+                      <ul className="space-y-1 text-xs text-gray-700 dark:text-gray-300">
+                        <li>• 45-minute climb to summit</li>
+                        <li>• 360-degree panoramic views</li>
+                        <li>• Best sunrise/sunset spot</li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <div className="grid grid-cols-3 gap-3 text-center">
+                  <div className="p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                    <div className="text-lg font-bold text-orange-600 dark:text-orange-400">316m</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">Height</div>
+                  </div>
+                  <div className="p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                    <div className="text-lg font-bold text-amber-600 dark:text-amber-400">45min</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">Climb</div>
+                  </div>
+                  <div className="p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                    <div className="text-lg font-bold text-yellow-600 dark:text-yellow-400">2000+</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">Years</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Other Rock Formations */}
+        <section className="mb-16" id="rock-formations">
+          <h2 className="text-3xl font-bold mb-8">The Seven Sacred Rock Giants</h2>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Ibbanagala */}
-            <Card>
+            <Card className="group hover:shadow-lg transition-shadow border-l-4 border-blue-500">
               <CardHeader>
-                <CardTitle>Ibbanagala (Tortoise Rock)</CardTitle>
+                <CardTitle className="text-blue-700 dark:text-blue-300">Ibbanagala (Tortoise Rock)</CardTitle>
                 <CardDescription>The Ancient Guardian</CardDescription>
               </CardHeader>
               <CardContent>
@@ -249,99 +405,223 @@ export default function KurunegalaPage() {
                     alt="Ibbanagala Rock Formation resembling a tortoise"
                     width={600}
                     height={400}
-                    className="rounded-lg"
+                    className="rounded-lg w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
                   />
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm">
                     Named for its distinctive tortoise-like shape, this rock formation holds significant 
-                    archaeological importance with ancient cave inscriptions.
+                    archaeological importance with ancient cave inscriptions and Brahmi script writings.
                   </p>
-                  <ul className="space-y-2">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Archaeological site</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Cave inscriptions</span>
-                    </li>
-                  </ul>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Archaeological site with ancient inscriptions</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Cave temples with historical significance</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Moderate hiking difficulty</span>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Andagala */}
-            <Card>
+            <Card className="group hover:shadow-lg transition-shadow border-l-4 border-green-500">
               <CardHeader>
-                <CardTitle>Andagala (Eel Rock)</CardTitle>
+                <CardTitle className="text-green-700 dark:text-green-300">Andagala (Eel Rock)</CardTitle>
                 <CardDescription>The Serpentine Wonder</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <Image
                     src="/andagala.jpg"
-                    alt="Andagala Rock Formation with its unique shape"
+                    alt="Andagala Rock Formation with its unique elongated shape"
                     width={600}
                     height={400}
-                    className="rounded-lg"
+                    className="rounded-lg w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
                   />
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm">
                     Known for its elongated shape resembling an eel, this formation offers excellent hiking 
-                    opportunities and stunning valley views.
+                    opportunities and stunning valley views from multiple vantage points.
                   </p>
-                  <ul className="space-y-2">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Hiking trails</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Valley viewpoints</span>
-                    </li>
-                  </ul>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Popular hiking destination</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Multiple scenic viewpoints</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Photography opportunities</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Yakdessagala */}
+            <Card className="group hover:shadow-lg transition-shadow border-l-4 border-purple-500">
+              <CardHeader>
+                <CardTitle className="text-purple-700 dark:text-purple-300">Yakdessagala (Devil&apos;s Rock)</CardTitle>
+                <CardDescription>The Mysterious Formation</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <Image
+                    src="/yakdessagala.jpg"
+                    alt="Yakdessagala Devil's Rock with mysterious atmosphere"
+                    width={600}
+                    height={400}
+                    className="rounded-lg w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
+                  />
+                  <p className="text-muted-foreground text-sm">
+                    Shrouded in local legends and folklore, this dramatic rock formation offers adventurous 
+                    climbs and panoramic views, though it requires more challenging hiking skills.
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Rich in local folklore and legends</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Challenging but rewarding climb</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Unique geological features</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Gonagala */}
+            <Card className="group hover:shadow-lg transition-shadow border-l-4 border-orange-500">
+              <CardHeader>
+                <CardTitle className="text-orange-700 dark:text-orange-300">Gonagala (Bull Rock)</CardTitle>
+                <CardDescription>The Powerful Giant</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <Image
+                    src="/gonagala.jpg"
+                    alt="Gonagala Bull Rock showing its powerful silhouette"
+                    width={600}
+                    height={400}
+                    className="rounded-lg w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
+                  />
+                  <p className="text-muted-foreground text-sm">
+                    Resembling a powerful bull, this imposing rock formation stands as a testament to nature&apos;s 
+                    artistry and offers meditation spots and quiet reflection areas.
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Peaceful meditation spots</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Less crowded, tranquil atmosphere</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Easy access from city center</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Kuruminiyagala */}
+            <Card className="group hover:shadow-lg transition-shadow border-l-4 border-teal-500">
+              <CardHeader>
+                <CardTitle className="text-teal-700 dark:text-teal-300">Kuruminiyagala (Beetle Rock)</CardTitle>
+                <CardDescription>The Unique Silhouette</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <Image
+                    src="/kuruminiyagala.jpg"
+                    alt="Kuruminiyagala Beetle Rock with its distinctive shape"
+                    width={600}
+                    height={400}
+                    className="rounded-lg w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
+                  />
+                  <p className="text-muted-foreground text-sm">
+                    The smallest of the main rock formations, resembling a beetle, this site offers intimate 
+                    nature experiences and is perfect for families with children due to easier access.
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Family-friendly hiking</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Unique geological formations</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Great for beginners</span>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Wanduragala */}
+            <Card className="group hover:shadow-lg transition-shadow border-l-4 border-red-500">
+              <CardHeader>
+                <CardTitle className="text-red-700 dark:text-red-300">Wanduragala (Monkey Rock)</CardTitle>
+                <CardDescription>The Playful Guardian</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <Image
+                    src="/wanduragala.jpg"
+                    alt="Wanduragala Monkey Rock with wildlife around"
+                    width={600}
+                    height={400}
+                    className="rounded-lg w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
+                  />
+                  <p className="text-muted-foreground text-sm">
+                    Named for its monkey-like appearance, this rock attracts wildlife and offers nature 
+                    enthusiasts opportunities to observe local fauna in their natural habitat.
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Wildlife observation opportunities</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Nature photography paradise</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500" />
+                      <span className="text-sm">Bird watching opportunities</span>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
           </div>
-
-          {/* Additional Rock Information Card */}
-          <Card className="mt-8 bg-gradient-to-r from-slate-50 to-gray-50 dark:from-slate-900 dark:to-gray-900">
-            <CardHeader>
-              <CardTitle>Other Sacred Rocks</CardTitle>
-              <CardDescription>The remaining guardians of Kurunegala</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Mountain className="w-5 h-5 text-blue-500" />
-                    <span><strong>Yakdessagala</strong> (Devil&apos;s Rock)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mountain className="w-5 h-5 text-green-500" />
-                    <span><strong>Gonagala</strong> (Bull Rock)</span>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Mountain className="w-5 h-5 text-purple-500" />
-                    <span><strong>Kuruminiyagala</strong> (Beetle Rock)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Mountain className="w-5 h-5 text-orange-500" />
-                    <span><strong>Wanduragala</strong> (Monkey Rock)</span>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </section>
 
         {/* Historical Sites */}
         <section className="mb-16" id="historical-sites">
           <h2 className="text-3xl font-bold mb-8">Historical Treasures</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
             {/* Kurunegala Lake */}
-            <Card>
+            <Card className="group hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle>Kurunegala Lake</CardTitle>
                 <CardDescription>Medieval Engineering Marvel</CardDescription>
@@ -353,7 +633,7 @@ export default function KurunegalaPage() {
                     alt="Scenic Kurunegala Lake with surrounding greenery"
                     width={600}
                     height={400}
-                    className="rounded-lg"
+                    className="rounded-lg w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
                   />
                   <p className="text-muted-foreground">
                     This artificial lake, dating back to the 13th century, represents medieval Sri Lankan engineering 
@@ -362,15 +642,19 @@ export default function KurunegalaPage() {
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Historical significance</span>
+                      <span>Historical significance from 13th century</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Evening activities</span>
+                      <span>2km walking track around the lake</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Local gathering spot</span>
+                      <span>Evening recreational activities</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span>Popular local gathering spot</span>
                     </li>
                   </ul>
                 </div>
@@ -378,7 +662,7 @@ export default function KurunegalaPage() {
             </Card>
 
             {/* Royal Palace Complex */}
-            <Card>
+            <Card className="group hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle>Royal Palace Complex</CardTitle>
                 <CardDescription>Medieval Royal Residence</CardDescription>
@@ -390,7 +674,7 @@ export default function KurunegalaPage() {
                     alt="Archaeological remains of Kurunegala Royal Palace"
                     width={600}
                     height={400}
-                    className="rounded-lg"
+                    className="rounded-lg w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
                   />
                   <p className="text-muted-foreground">
                     The remains of the 13th-century royal palace complex offer glimpses into Sri Lanka&apos;s medieval 
@@ -399,15 +683,19 @@ export default function KurunegalaPage() {
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Archaeological site</span>
+                      <span>Important archaeological site</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Historical artifacts</span>
+                      <span>Historical artifacts and exhibits</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
                       <span>Guided tours available</span>
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span>Medieval architecture remnants</span>
                     </li>
                   </ul>
                 </div>
@@ -419,9 +707,9 @@ export default function KurunegalaPage() {
         {/* Activities & Experiences */}
         <section className="mb-16" id="activities">
           <h2 className="text-3xl font-bold mb-8">Things to Do in Kurunegala</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Rock Climbing & Hiking */}
-            <Card>
+            <Card className="group hover:shadow-lg transition-shadow border border-slate-200">
               <CardHeader>
                 <CardTitle>Adventure Activities</CardTitle>
                 <CardDescription>Explore the Rock Giants</CardDescription>
@@ -449,7 +737,7 @@ export default function KurunegalaPage() {
             </Card>
 
             {/* Cultural Activities */}
-            <Card>
+            <Card className="group hover:shadow-lg transition-shadow border border-slate-200">
               <CardHeader>
                 <CardTitle>Cultural Experiences</CardTitle>
                 <CardDescription>Local Heritage</CardDescription>
@@ -477,7 +765,7 @@ export default function KurunegalaPage() {
             </Card>
 
             {/* Nature & Leisure */}
-            <Card>
+            <Card className="group hover:shadow-lg transition-shadow border border-slate-200 sm:col-span-1 md:col-span-2 lg:col-span-1">
               <CardHeader>
                 <CardTitle>Leisure Activities</CardTitle>
                 <CardDescription>Relax & Unwind</CardDescription>
@@ -509,9 +797,9 @@ export default function KurunegalaPage() {
         {/* Nearby Places */}
         <section className="mb-16" id="nearby-places">
           <h2 className="text-3xl font-bold mb-8">Explore Nearby</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Yapahuwa */}
-            <Card className="group hover:shadow-lg transition-shadow">
+            <Card className="group hover:shadow-lg transition-shadow border border-slate-200">
               <CardHeader>
                 <CardTitle>Yapahuwa</CardTitle>
                 <CardDescription>25km from Kurunegala</CardDescription>
@@ -522,7 +810,7 @@ export default function KurunegalaPage() {
                   alt="Ancient Yapahuwa Rock Fortress"
                   width={400}
                   height={300}
-                  className="rounded-lg mb-4 group-hover:opacity-90 transition-opacity"
+                  className="rounded-lg mb-4 w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
                 />
                 <p className="text-muted-foreground mb-4">
                   13th-century rock fortress with remarkable stone carvings and unique architectural features.
@@ -534,7 +822,7 @@ export default function KurunegalaPage() {
             </Card>
 
             {/* Dambulla */}
-            <Card className="group hover:shadow-lg transition-shadow">
+            <Card className="group hover:shadow-lg transition-shadow border border-slate-200">
               <CardHeader>
                 <CardTitle>Dambulla</CardTitle>
                 <CardDescription>67km from Kurunegala</CardDescription>
@@ -545,7 +833,7 @@ export default function KurunegalaPage() {
                   alt="Dambulla Cave Temple Complex"
                   width={400}
                   height={300}
-                  className="rounded-lg mb-4 group-hover:opacity-90 transition-opacity"
+                  className="rounded-lg mb-4 w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
                 />
                 <p className="text-muted-foreground mb-4">
                   UNESCO World Heritage site featuring ancient cave temples with remarkable Buddhist art.
@@ -557,7 +845,7 @@ export default function KurunegalaPage() {
             </Card>
 
             {/* Kandy */}
-            <Card className="group hover:shadow-lg transition-shadow">
+            <Card className="group hover:shadow-lg transition-shadow border border-slate-200 sm:col-span-1 md:col-span-2 lg:col-span-1">
               <CardHeader>
                 <CardTitle>Kandy</CardTitle>
                 <CardDescription>42km from Kurunegala</CardDescription>
@@ -568,7 +856,7 @@ export default function KurunegalaPage() {
                   alt="Sacred Temple of the Tooth in Kandy"
                   width={400}
                   height={300}
-                  className="rounded-lg mb-4 group-hover:opacity-90 transition-opacity"
+                  className="rounded-lg mb-4 w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
                 />
                 <p className="text-muted-foreground mb-4">
                   Last royal capital of Sri Lanka, home to the Temple of the Tooth and stunning botanical gardens.
@@ -584,10 +872,10 @@ export default function KurunegalaPage() {
         {/* Visitor Information */}
         <section className="mb-16" id="visitor-guide">
           <h2 className="text-3xl font-bold mb-8">Essential Visitor Information</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
             {/* Accommodation & Dining */}
             <div className="space-y-6">
-              <Card>
+              <Card className="border border-slate-200">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Hotel className="w-5 h-5 text-blue-500" />
@@ -626,7 +914,7 @@ export default function KurunegalaPage() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border border-slate-200">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Utensils className="w-5 h-5 text-orange-500" />
@@ -668,7 +956,7 @@ export default function KurunegalaPage() {
 
             {/* Transportation & Tips */}
             <div className="space-y-6">
-              <Card>
+              <Card className="border border-slate-200">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Bus className="w-5 h-5 text-green-500" />
@@ -698,7 +986,7 @@ export default function KurunegalaPage() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="border border-slate-200">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Clock className="w-5 h-5 text-blue-500" />
