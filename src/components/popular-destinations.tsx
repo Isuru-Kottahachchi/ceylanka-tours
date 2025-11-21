@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { MapPin} from "lucide-react"
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -147,61 +148,49 @@ export function PopularDestinations() {
           {destinations.map((destination) => (
             <Card
               key={destination.id}
-              className="group hover:shadow-xl transition-all duration-300 overflow-hidden"
+              className="group transform transition-all duration-500 hover:scale-[1.08] hover:shadow-2xl hover:shadow-black/10"
               data-aos="zoom-in-up"
             >
-              <div className="relative overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
                 <Image
                   src={destination.image || "/placeholder.svg"}
                   alt={destination.name}
-                  width={600}
-                  height={400}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  fill
+                  className="object-cover rounded-t-lg transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-
-                {/* Rating Badge */}
-                {/* <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
-                  <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                  <span className="text-sm font-semibold">{destination.rating}</span>
-                </div> */}
-
-                {/* Category Badge */}
-                <Badge className="absolute top-4 left-4 bg-green-500 hover:bg-green-600 text-white border-0">{destination.category}</Badge>
-
-                {/* Location */}
-                <div className="absolute bottom-4 left-4 text-white">
-                  <h3 className="text-xl font-bold mb-1">{destination.name}</h3>
-                  <div className="flex items-center space-x-1 text-sm">
-                    <MapPin className="h-4 w-4" />
-                    <span>{destination.location}</span>
-                  </div>
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded transition-all duration-300 group-hover:bg-blue-700">
+                  {destination.category}
                 </div>
               </div>
 
-              <CardContent className="p-6">
-                <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">{destination.description}</p>
-
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {destination.highlights.slice(0, 3).map((highlight, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2 group-hover:text-blue-600 transition-colors duration-300">{destination.name}</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  {destination.description}
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-3">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  {destination.location}
+                </div>
+                
+                <div className="flex flex-wrap gap-1 mb-4">
+                  {destination.highlights.slice(0, 4).map((highlight, index) => (
+                    <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200">
                       {highlight}
                     </Badge>
                   ))}
-                  {destination.highlights.length > 3 && (
-                    <Badge variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
-                      +{destination.highlights.length - 3} more
+                  {destination.highlights.length > 4 && (
+                    <Badge variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200">
+                      +{destination.highlights.length - 4} more
                     </Badge>
                   )}
                 </div>
-
-                <div className="flex items-center justify-between">
-                  {/* <div className="text-sm text-gray-500 dark:text-gray-400">{destination.reviews} reviews</div> */}
-                  <Link
-                    href={getDestinationHref(destination)}
-                    className="text-green-600 hover:text-green-700 font-semibold text-sm transition-colors"
-                  >
-                    Read More →
+                
+                <div className="mt-4 flex justify-between items-center">
+                  <Link href={getDestinationHref(destination)} passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-green-600 text-white hover:bg-blue-600 hover:scale-105 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer transform">
+                      Explore Now →
+                    </Button>
                   </Link>
                 </div>
               </CardContent>

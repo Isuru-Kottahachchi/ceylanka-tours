@@ -583,7 +583,7 @@ export default function BentotaGuide() {
                                             </li>
                                         </ul>
                                         <p className="mt-4">For more details about this architectural masterpiece:</p>
-                                        <Link href="/blog/lunuganga-geoffrey-bawas-garden" className="text-blue-600 hover:underline">
+                                        <Link href="/destinations/lunuganga-geoffrey-bawas-garden" className="text-blue-600 hover:underline">
                                             Read more about Lunuganga Garden
                                         </Link>
                                         <div className="bg-amber-50 p-3 rounded-lg">
