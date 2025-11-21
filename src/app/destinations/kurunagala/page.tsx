@@ -108,7 +108,7 @@ function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
 export default function KurunegalaPage() {
   const ethagalaImages = [
     "/Athgala.jpg",
-    "/ethagala-temple.jpg",
+    "/Kurunagala.webp",
     "/ethagala-sunrise.jpg",
     "/ethagala-panorama.jpg"
   ]
@@ -117,7 +117,7 @@ export default function KurunegalaPage() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Kurunagala.webp"
+          src="/Kurunegala_City_from_the_Sky.jpg"
           alt="Panoramic view of Kurunegala city with majestic Ethagala rock formation"
           fill
           className="object-cover"
@@ -791,81 +791,130 @@ export default function KurunegalaPage() {
             </Card>
           </div>
         </section>
+        {/* Nearby Attractions */}
+                <section className="mb-12">
+                  <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+                  <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+                    Extend your Arugam Bay adventure with these incredible destinations within easy reach
+                  </p>
+        
+                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                      <div className="relative h-48">
+                        <Image
+                          src="/Yapahuwa.jpeg"
+                          alt="Yapahuwa Ancient Rock Fortress and Temple"
+                          fill
+                          className="object-cover rounded-t-lg"
+                        />
+                        <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                          12 mins from Kurunagala
+                        </div>
+                      </div>
+                      <CardContent className="p-4">
+                        <h3 className="font-bold text-lg mb-2">Yapahuwa</h3>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          Yapahuwa is also known as the 'Rock Fortress' because of its ancient rock fortress and temple complex.
+                        </p>
+                        <div className="flex items-center text-xs text-blue-600 mb-2">
+                          <MapPin className="w-3 h-3 mr-1" />
+                          12 Km from Kurunagala
+                        </div>
+                        <div className="mt-4 flex justify-start">
+                          <Link href="/destinations/yapahuwa" passHref legacyBehavior>
+                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+        
+                    <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                      <div className="relative h-48">
+                        <Image
+                          src="/Dambullacavetemple.jpeg"
+                          alt="Dambulla Cave Temple with ancient Buddhist murals and statues"
+                          fill
+                          className="object-cover rounded-t-lg"
+                        />
+                        <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                          around 2 hours
+                        </div>
+                      </div>
+                      <CardContent className="p-4">
+                        <h3 className="font-bold text-lg mb-2">Dambulla</h3>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          A great bird watching destination and Sri Lankan leopard habitat in Sri Lanka and a haven for wildlife enthusiasts.
+                        </p>
+                        <div className="flex items-center text-xs text-blue-600 mb-2">
+                          <MapPin className="w-3 h-3 mr-1" />
+                          56 km from Kurunagala
+                        </div>
+                        <div className="mt-4 flex justify-start">
+                          <Link href="/destinations/dambulla" passHref legacyBehavior>
+                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                    <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                      <div className="relative h-48">
+                        <Image
+                          src="/Kandy.jpeg"
+                          alt="Kandy cityscape with Temple of the Tooth Relic"
+                          fill
+                          className="object-cover rounded-t-lg"
+                        />
+                        <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                          12 mins from Kurunagala
+                        </div>
+                      </div>
+                      <CardContent className="p-4">
+                        <h3 className="font-bold text-lg mb-2">Kandy</h3>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          Kandy is a vibrant city known for its rich cultural heritage, stunning landscapes, and the sacred Temple of the Tooth Relic.
+                        </p>
+                        <div className="flex items-center text-xs text-blue-600 mb-2">
+                          <MapPin className="w-3 h-3 mr-1" />
+                          12 Km from Kurunagala
+                        </div>
+                        <div className="mt-4 flex justify-start">
+                          <Link href="/destinations/kandy" passHref legacyBehavior>
+                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                    <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                      <div className="relative h-48">
+                        <Image
+                          src="/Dolukanda.jpg"
+                          alt="Dolukanda"
+                          fill
+                          className="object-cover rounded-t-lg"
+                        />
+                        <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                          12 mins from Kurunagala
+                        </div>
+                      </div>
+                      <CardContent className="p-4">
+                        <h3 className="font-bold text-lg mb-2">Dolukanda</h3>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          Dolukanda is known for its ancient rock fortress and scenic views, offering a glimpse into Sri Lanka's rich history and natural beauty.
+                        </p>
+                        <div className="flex items-center text-xs text-blue-600 mb-2">
+                          <MapPin className="w-3 h-3 mr-1" />
+                          12 Km from Kurunagala
+                        </div>
+                        <div className="mt-4 flex justify-start">
+                          <Link href="/destinations/dolukanda" passHref legacyBehavior>
+                            <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </section>
 
-        {/* Nearby Places */}
-        <section className="mb-16" id="nearby-places">
-          <h2 className="text-3xl font-bold mb-8">Explore Nearby</h2>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Yapahuwa */}
-            <Card className="group hover:shadow-lg transition-shadow border border-slate-200">
-              <CardHeader>
-                <CardTitle>Yapahuwa</CardTitle>
-                <CardDescription>25km from Kurunegala</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/yapahuwa-rock.jpg"
-                  alt="Ancient Yapahuwa Rock Fortress"
-                  width={400}
-                  height={300}
-                  className="rounded-lg mb-4 w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
-                />
-                <p className="text-muted-foreground mb-4">
-                  13th-century rock fortress with remarkable stone carvings and unique architectural features.
-                </p>
-                <Button asChild className="w-full">
-                  <Link href="/destinations/yapahuwa">Explore Yapahuwa</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Dambulla */}
-            <Card className="group hover:shadow-lg transition-shadow border border-slate-200">
-              <CardHeader>
-                <CardTitle>Dambulla</CardTitle>
-                <CardDescription>67km from Kurunegala</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/dambulla-cave-temple.jpg"
-                  alt="Dambulla Cave Temple Complex"
-                  width={400}
-                  height={300}
-                  className="rounded-lg mb-4 w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
-                />
-                <p className="text-muted-foreground mb-4">
-                  UNESCO World Heritage site featuring ancient cave temples with remarkable Buddhist art.
-                </p>
-                <Button asChild className="w-full">
-                  <Link href="/destinations/dambulla-cave-temple">Visit Dambulla</Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Kandy */}
-            <Card className="group hover:shadow-lg transition-shadow border border-slate-200 sm:col-span-1 md:col-span-2 lg:col-span-1">
-              <CardHeader>
-                <CardTitle>Kandy</CardTitle>
-                <CardDescription>42km from Kurunegala</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/Kandy.jpeg"
-                  alt="Sacred Temple of the Tooth in Kandy"
-                  width={400}
-                  height={300}
-                  className="rounded-lg mb-4 w-full object-cover h-48 group-hover:opacity-90 transition-opacity"
-                />
-                <p className="text-muted-foreground mb-4">
-                  Last royal capital of Sri Lanka, home to the Temple of the Tooth and stunning botanical gardens.
-                </p>
-                <Button asChild className="w-full">
-                  <Link href="/destinations/kandy">Discover Kandy</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
 
         {/* Visitor Information */}
         <section className="mb-16" id="visitor-guide">
