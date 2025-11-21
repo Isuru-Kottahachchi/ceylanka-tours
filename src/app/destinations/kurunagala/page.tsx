@@ -814,7 +814,7 @@ export default function KurunegalaPage() {
                       <CardContent className="p-4">
                         <h3 className="font-bold text-lg mb-2">Yapahuwa</h3>
                         <p className="text-sm text-muted-foreground mb-3">
-                          Yapahuwa is also known as the 'Rock Fortress' because of its ancient rock fortress and temple complex.
+                          Yapahuwa is also known as the &apos;Rock Fortress&apos; because of its ancient rock fortress and temple complex.
                         </p>
                         <div className="flex items-center text-xs text-blue-600 mb-2">
                           <MapPin className="w-3 h-3 mr-1" />
@@ -899,7 +899,7 @@ export default function KurunegalaPage() {
                       <CardContent className="p-4">
                         <h3 className="font-bold text-lg mb-2">Dolukanda</h3>
                         <p className="text-sm text-muted-foreground mb-3">
-                          Dolukanda is known for its ancient rock fortress and scenic views, offering a glimpse into Sri Lanka's rich history and natural beauty.
+                          Dolukanda is known for its ancient rock fortress and scenic views, offering a glimpse into Sri Lanka&apos;s rich history and natural beauty.
                         </p>
                         <div className="flex items-center text-xs text-blue-600 mb-2">
                           <MapPin className="w-3 h-3 mr-1" />
