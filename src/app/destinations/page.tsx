@@ -499,7 +499,7 @@ const destinations = [
     image: "/Katharagama.jpg",
     // rating: 4.3,
     // reviews: 890,
-    description: "Where Lord Kataragama is worshipped",
+    description: "Where Lord Kataragama/Murugan is worshipped",
     highlights: ["Religious Sites", "God Kataragama", "Katharama Procession"],
     category: "Historical",
   },

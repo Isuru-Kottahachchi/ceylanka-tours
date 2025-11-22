@@ -1,22 +1,11 @@
-import type { Metadata } from "next"
+"use client"
 import Image from "next/image"
 import { MapPin, Landmark, Star, Clock, Users, CheckCircle, Train, Mountain } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-export const metadata: Metadata = {
-  title: "Idalgashinna Sri Lanka: Complete Travel Guide 2025 | Scenic Hikes, Tea Trails & Misty Views",
-  description:
-    "Discover Idalgashinna, a hidden gem in Sri Lanka's hill country. Explore breathtaking hikes, panoramic viewpoints, tea plantations, and the iconic railway station in this detailed travel guide.",
-  keywords:
-    "Idalgashinna Sri Lanka, hill country, scenic hikes, tea plantations, railway station, Sri Lanka travel, Ohiya, Haputale, mountain views, trekking",
-  openGraph: {
-    title: "Idalgashinna Sri Lanka: Complete Travel Guide 2025",
-    description: "Explore Idalgashinna's misty mountains, tea trails, and scenic railway in Sri Lanka's hill country.",
-    type: "article",
-    images: ["/idalgashinna-hero.jpg"],
-  },
-}
+
 
 export default function IdalgashinnaTravelGuide() {
   return (
@@ -188,29 +177,43 @@ export default function IdalgashinnaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/Idalgashinna.jpg"
-                    alt="Idalgashinna railway station with mist and tea fields"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Idalgashinna.jpg",
+                        alt: "Idalgashinna railway station with mist and tea fields",
+                        caption: "",
+                        title: ""
+                      },
+
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in 1893, Idalgashinna’s station is one of the most picturesque on the island. Surrounded by misty hills and tea gardens, it’s a favorite stop for train travelers and photographers. The station’s colonial charm and tranquil setting make it a unique destination in itself.
+                      Built in 1893, Idalgashinna&apos;s station is one of the most picturesque on the island. Surrounded by misty hills and tea gardens, it&apos;s a favorite stop for train travelers and photographers. The station&apos;s colonial charm and tranquil setting make it a unique destination in itself. At 1,615 meters above sea level, this remote station offers some of the most dramatic mountain views in Sri Lanka.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Panoramic views of both southern plains and central hills
+                        <span><strong>360-degree panoramic views</strong> of southern plains and central highlands stretching to the coast on clear days</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Ideal for sunrise and sunset photography
+                        <span><strong>Perfect photography spot</strong> for golden hour shots with dramatic cloud formations and mist rolling through valleys</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Quiet, uncrowded, and atmospheric
+                        <span><strong>Historic colonial architecture</strong> with original Victorian-era features including the signal box and station master&apos;s quarters</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
+                        <span><strong>Peaceful atmosphere</strong> with only 2-3 trains daily, making it one of Sri Lanka&apos;s quietest mountain stations</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
+                        <span><strong>Wildlife spotting opportunities</strong> including mountain birds, monkeys, and occasionally wild boar in surrounding forests</span>
                       </li>
                     </ul>
                   </div>
@@ -225,66 +228,50 @@ export default function IdalgashinnaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/idalgashinna-ohiya-hike.jpg"
-                    alt="Hiking trail between Idalgashinna and Ohiya"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Idalgashinna-Hike.jpg",
+                        alt: "",
+                        caption: "",
+                        title: ""
+                      },
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The trail from Idalgashinna to Ohiya follows the railway line through tunnels, pine forests, and tea estates. It’s a moderate 8 km hike with breathtaking views and cool mountain air—perfect for nature lovers and adventure seekers.
+                      <div className="p-4 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded-lg mb-4">
+                        <h4 className="font-semibold text-red-800 dark:text-red-200 mb-2 flex items-center gap-2">
+                          <Train className="w-4 h-4" />
+                          ⚠️ IMPORTANT TRAIN SAFETY WARNING
+                        </h4>
+                        <p className="text-sm text-red-700 dark:text-red-300">
+                          <strong>Always check train schedules before hiking!</strong> Listen for train horns and immediately move to designated safe areas when trains approach. Tunnels have limited escape points - never enter if you hear a train coming. Carry a flashlight and walk in groups for safety.
+                        </p>
+                      </div>
+                      The trail from Idalgashinna to Ohiya follows the railway line through tunnels, pine forests, and tea estates. This moderate 8 km hike takes 3-4 hours and offers breathtaking views with cool mountain air—perfect for experienced hikers and adventure seekers. The route passes through some of Sri Lanka&apos;s most pristine cloud forest and montane ecosystems.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Walk through 14 railway tunnels
+                        <span><strong>14 historic railway tunnels</strong> dating from 1893, some over 100 meters long with stunning acoustics and cool temperatures</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Spectacular views of valleys and cloud forests
+                        <span><strong>Spectacular valley views</strong> into Uva Province with tea estates cascading down mountainsides and distant glimpses of the Indian Ocean</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Finish at Ohiya, gateway to Horton Plains
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            {/* Tea Estate Walks */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Tea Estate Walks</CardTitle>
-                <CardDescription>Explore lush plantations and meet local tea pluckers</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/idalgashinna-tea.jpg"
-                    alt="Tea estate landscape in Idalgashinna"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Idalgashinna is surrounded by historic tea estates, many dating back to the British era. Guided walks offer insight into tea cultivation, local life, and the region’s unique biodiversity.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Learn about Ceylon tea production
+                        <span><strong>Ohiya destination</strong> - gateway to Horton Plains National Park and World&apos;s End, perfect for extending your mountain adventure</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Spot rare orchids and mountain birds
+                        <span><strong>Cloud forest ecosystem</strong> with rare endemic plants, mountain orchids, and over 50 species of birds including Sri Lanka whistling thrush</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Enjoy fresh mountain air and scenic vistas
+                        <span><strong>Variable weather conditions</strong> from bright sunshine to thick mist, creating magical atmospheric changes throughout the hike</span>
                       </li>
                     </ul>
                   </div>
@@ -294,40 +281,101 @@ export default function IdalgashinnaTravelGuide() {
             {/* Misty Viewpoints */}
             <Card>
               <CardHeader>
-                <CardTitle>Misty Viewpoints</CardTitle>
+                <CardTitle>Camping in Misty Viewpoints</CardTitle>
                 <CardDescription>Unforgettable sunrise and sunset panoramas</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/idalgashinna-view.jpg"
-                    alt="Sunrise view from Idalgashinna hills"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Idalgashinna-Camping.jpg",
+                        alt: "Idalgashinna viewpoint with tents and misty hills",
+                        caption: "",
+                        title: ""
+                      },
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The ridges around Idalgashinna offer some of the best viewpoints in Sri Lanka. On clear days, you can see all the way to the southern coast; on misty mornings, the hills float above a sea of clouds.
+                      The ridges around Idalgashinna offer some of the best viewpoints in Sri Lanka, with camping spots that provide unforgettable experiences. On clear days, you can see all the way to the southern coast near Hambantota; on misty mornings, the hills float above a sea of clouds creating an otherworldly landscape. The area offers both established camping sites and wild camping opportunities for experienced adventurers.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Sunrise and sunset are magical times
+                        <span><strong>Spectacular sunrise views</strong> over Uva Province with the sun emerging through cloud layers and illuminating tea estates below</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Bring a camera and warm jacket
+                        <span><strong>Sunset panoramas</strong> facing west toward Nuwara Eliya and beyond, with colors reflecting off mist and mountain peaks</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
-                        Look for eagles and endemic wildlife
+                        <span><strong>Night sky viewing</strong> with minimal light pollution offering clear views of stars, planets, and the Milky Way on clear nights</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
+                        <span><strong>Wildlife encounters</strong> including mountain hawk eagles, purple-faced langurs, and if lucky, occasional leopard tracks</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
+                        <span><strong>Temperature variations</strong> from 8°C at night to 20°C during day - essential to pack proper camping gear and warm clothing</span>
                       </li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
+            {/* Tea Estate Walks */}
+            {/* <Card>
+              <CardHeader>
+                <CardTitle>Tea Estate Walks</CardTitle>
+                <CardDescription>Explore lush plantations and meet local tea pluckers</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Idalgashinna-Hike.jpg",
+                        alt: "",
+                        caption: "",
+                        title: ""
+                      },
+
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Idalgashinna is surrounded by historic tea estates, many dating back to the 1880s British colonial era. These high-altitude plantations produce some of Sri Lanka&apos;s finest Ceylon tea, grown at elevations above 1,500 meters. Guided walks with local tea pluckers and estate managers offer deep insight into traditional cultivation methods, Tamil estate culture, and the region's remarkable biodiversity.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
+                        <span><strong>Traditional tea processing</strong> from bush to cup - witness plucking, withering, rolling, fermentation, and firing at working estate factories</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
+                        <span><strong>Rare mountain orchids</strong> including endemic species growing wild among tea bushes and in surrounding cloud forest patches</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
+                        <span><strong>Fresh tea tasting</strong> directly from the source with estate managers explaining flavor profiles of different grades and processing methods</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
+                        <span><strong>Tamil estate community culture</strong> with opportunities to visit line houses, temples, and learn about generations of tea worker families</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-1 flex-shrink-0" />
+                        <span><strong>Birdwatching opportunities</strong> for Sri Lanka bush warbler, yellow-eared bulbul, and over 40 highland bird species</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card> */}
           </div>
         </section>
 
