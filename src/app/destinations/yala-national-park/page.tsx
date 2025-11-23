@@ -1,11 +1,12 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TelescopeIcon as Binoculars, AlertTriangle } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Calendar, Users, TelescopeIcon as Binoculars, AlertTriangle, ArrowRight } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { ImageCarousel } from "@/components/ui/image-carousel"
+import { Button } from "@/components/ui/button"
 
 
 
@@ -70,7 +71,7 @@ export default function YalaNationalParkTravelGuide() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Star className="w-5 h-5 text-yellow-500" />
-                    Quick Yala National park Facts
+                    Quick Yala National Park Facts
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -448,8 +449,8 @@ export default function YalaNationalParkTravelGuide() {
                 <div className="mt-4">
                   <div className="bg-amber-50/50 dark:bg-amber-950/30 p-4 rounded-lg">
                     <p className="text-sm text-muted-foreground">
-                      The Sri Lankan leopard (Panthera pardus kotiya) is a majestic subspecies endemic to Sri Lanka. As the island&apos; apex predator, 
-                      it has evolved unique characteristics that set it apart from other leopard subspecies. These powerful cats play a crucial role 
+                      The Sri Lankan leopard (Panthera pardus kotiya) is a majestic subspecies endemic to Sri Lanka. As the island&apos; apex predator,
+                      it has evolved unique characteristics that set it apart from other leopard subspecies. These powerful cats play a crucial role
                       in maintaining the ecological balance of Yala&apos;s diverse ecosystem. They are very good at climbing trees and often rest on tree branches during the heat of the day.
                     </p>
                     <div className="grid md:grid-cols-2 gap-4 mt-4">
@@ -492,7 +493,7 @@ export default function YalaNationalParkTravelGuide() {
                         caption: "Sri Lankan Leopard resting on a tree branch",
                         title: "Sri Lankan Leopard",
                       },
-                        {
+                      {
                         src: "/Leopard-in-Yala.jpg",
                         alt: "Leopard in Yala",
                         caption: "Leopard in Yala",
@@ -530,7 +531,7 @@ export default function YalaNationalParkTravelGuide() {
                         caption: "Leopard in Yala National Park",
                         title: "Leopard in Yala National Park",
                       },
-                      
+
                     ]}
                   />
                   <div>
@@ -717,7 +718,12 @@ export default function YalaNationalParkTravelGuide() {
                         </ul>
                       </div>
                     </div>
-                    <Link className="text-amber-500 underline" href="/blog/sri-lankan-elephants">Learn more about Elephants Park</Link>
+                    <Link href="/blog/sri-lankan-elephants">
+                      <Button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 h-12 cursor-pointer mt-4">
+                        <span>Learn More About Sri Lankan Elephants</span>
+                        <ArrowRight className="h-5 w-5" />
+                      </Button>
+                    </Link>
                   </div>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -765,7 +771,7 @@ export default function YalaNationalParkTravelGuide() {
                 <div className="mt-4">
                   <div className="bg-amber-50/50 dark:bg-amber-950/30 p-4 rounded-lg">
                     <p className="text-sm text-muted-foreground">
-                      The only bear species native to Sri Lanka, the Sloth Bear (Melursus ursinus) is a unique and fascinating creature. 
+                      The only bear species native to Sri Lanka, the Sloth Bear (Melursus ursinus) is a unique and fascinating creature.
                       Despite their name, they are not related to sloths but earned the name due to their long, curved claws and occasional hanging behavior in trees.
                     </p>
                     <div className="grid md:grid-cols-2 gap-4 mt-4">
@@ -812,8 +818,8 @@ export default function YalaNationalParkTravelGuide() {
 
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Yala&apos;s Sloth Bears are fascinating creatures known for their unique feeding habits and behavior. 
-                      These adaptable bears have evolved specialized features for their diverse diet, which includes termites, 
+                      Yala&apos;s Sloth Bears are fascinating creatures known for their unique feeding habits and behavior.
+                      These adaptable bears have evolved specialized features for their diverse diet, which includes termites,
                       ants, fruits, and their favorite - honey, earning them the nickname &quot;Bambaru Walaha&quot; (honey bear) in Sinhala.
                     </p>
                     <div className="space-y-4">
@@ -926,8 +932,8 @@ export default function YalaNationalParkTravelGuide() {
                     <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
                       <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Conservation Status</h4>
                       <p className="text-sm text-muted-foreground mb-4">
-                        Sri Lanka is recognized as one of the world&apos;s 36 biodiversity hotspots, with Yala National Park playing a crucial role in protecting many endemic species. 
-                        These unique animals face various threats including habitat loss, human encroachment, and climate change. Conservation efforts are ongoing to ensure their survival 
+                        Sri Lanka is recognized as one of the world&apos;s 36 biodiversity hotspots, with Yala National Park playing a crucial role in protecting many endemic species.
+                        These unique animals face various threats including habitat loss, human encroachment, and climate change. Conservation efforts are ongoing to ensure their survival
                         for future generations.
                       </p>
                       <div className="grid md:grid-cols-3 gap-4">
@@ -1435,6 +1441,101 @@ export default function YalaNationalParkTravelGuide() {
                   <li>• Basic but clean facilities</li>
                   <li>• Can arrange budget safaris</li>
                 </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+        {/* Nearby Attractions */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Katharagama adventure with these incredible destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Katharagama.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Katharagama</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A sacred pilgrimage town known for its multi-religious temples and vibrant festivals.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  50 km from Yala National Park
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/katharagama" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            {/* Sithulpawwa Raja Maha Viharaya */}
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Sithul-Pawwa.jpg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Sithulpawwa Raja Maha Viharaya</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  An ancient Buddhist cave temple within Yala National Park, known for its serene atmosphere and historical significance.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  50 km from Yala National Park
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/sithulpawwa-raja-maha-viharaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Ridiyagama.jpeg"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Ridiyagama Safari Park</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sri Lanka&apos;s largest safari park, home to diverse wildlife in naturalistic habitats.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  18 km from Yala National Park
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ridiyagama-safari-park" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>
