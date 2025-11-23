@@ -274,7 +274,7 @@ export default function KandeViharayaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                    IIf you are lucky, you can see the Temple&apos;s elephant of Kande Viharaya here, which is used in many Buddhist ceremonies.
+                    If you are lucky, sometimes Temple&apos;s elephant can be seen in the temple grounds. The elephant of Kande Viharaya is used in many Buddhist ceremonies.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
