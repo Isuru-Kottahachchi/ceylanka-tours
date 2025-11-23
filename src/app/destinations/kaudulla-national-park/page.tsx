@@ -42,7 +42,7 @@ export default function KaudullaNationalParkGuide() {
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
                     <h1 className="text-4xl md:text-6xl font-bold mb-4">Kaudulla National Park</h1>
-                    <p className="text-xl md:text-2xl mb-6 font-light">Witness The Gathering - Nature's Greatest Elephant Spectacle</p>
+                    <p className="text-xl md:text-2xl mb-6 font-light">Witness The Gathering - Nature&apos;s Greatest Elephant Spectacle</p>
                     <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
                         <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
                             <MapPin className="w-4 h-4 mr-1" />
@@ -66,13 +66,13 @@ export default function KaudullaNationalParkGuide() {
                     <h2 className="text-3xl font-bold mb-6 text-foreground">Experience Kaudulla: Where Ancient Engineering Meets Wild Majesty</h2>
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                         <p className="text-lg mb-4">
-                            Welcome to Kaudulla National Park, home to one of nature's most spectacular wildlife events - "The Gathering"! This 6,900-hectare sanctuary in the heart of Sri Lanka's Cultural Triangle showcases one of the largest seasonal congregations of Asian elephants on Earth, with herds of 150-200 elephants regularly assembling around the ancient Kaudulla Tank during the dry season months from July to October.
+                            Welcome to Kaudulla National Park, home to one of nature&apos;s most spectacular wildlife events - &quot;The Gathering&quot;! This 6,900-hectare sanctuary in the heart of Sri Lanka&apos;s Cultural Triangle showcases one of the largest seasonal congregations of Asian elephants on Earth, with herds of 150-200 elephants regularly assembling around the ancient Kaudulla Tank during the dry season months from July to October.
                         </p>
                         <p className="text-lg mb-4">
                             What makes Kaudulla truly extraordinary is its perfect blend of ancient human ingenuity and natural wildlife abundance. The magnificent Kaudulla Tank, an engineering marvel constructed by King Mahasena in the 3rd century AD (around 276 AD), continues to serve its original purpose nearly 1,750 years later - sustaining life during the harsh dry season. This historical irrigation reservoir now attracts incredible concentrations of wildlife, creating unparalleled opportunities for intimate elephant encounters and spectacular photography.
                         </p>
                         <p className="text-lg">
-                            As a vital link in the elephant corridor connecting Minneriya, Kaudulla, and Wasgamuwa National Parks, Kaudulla plays a crucial conservation role in protecting Sri Lanka's wild elephant populations. Here you'll experience wild elephants in their most natural behaviors - bathing, feeding, socializing, and nurturing their young against the stunning backdrop of ancient reservoirs and pristine wilderness.
+                            As a vital link in the elephant corridor connecting Minneriya, Kaudulla, and Wasgamuwa National Parks, Kaudulla plays a crucial conservation role in protecting Sri Lanka&apos;s wild elephant populations. Here you&apos;ll experience wild elephants in their most natural behaviors - bathing, feeding, socializing, and nurturing their young against the stunning backdrop of ancient reservoirs and pristine wilderness.
                         </p>
                     </div>
                 </section>
@@ -197,7 +197,7 @@ export default function KaudullaNationalParkGuide() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground">
-                                    Witness "The Gathering" - one of Asia's largest seasonal elephant congregations with 150-200 elephants assembling during dry months (July-October), creating spectacular viewing opportunities you'll find nowhere else in Sri Lanka.
+                                    Witness &quot;The Gathering&quot; - one of Asia&apos;s largest seasonal elephant congregations with 150-200 elephants assembling during dry months (July-October), creating spectacular viewing opportunities you&apos;ll find nowhere else in Sri Lanka.
                                 </p>
                             </CardContent>
                         </Card>
@@ -234,7 +234,7 @@ export default function KaudullaNationalParkGuide() {
                             <CardHeader>
                                 <CardTitle className="flex items-center gap-2 text-lg">
                                     <Bird className="w-5 h-5 text-purple-500" />
-                                    Birdwatcher's Paradise
+                                    Birdwatcher&apos;s Paradise
                                 </CardTitle>
                             </CardHeader>
                             <CardContent>
@@ -305,21 +305,21 @@ export default function KaudullaNationalParkGuide() {
                                     <Users className="w-6 h-6 text-yellow-600" />
                                     The Magnificent Elephant Gathering Experience
                                 </CardTitle>
-                                <CardDescription>Asia's Most Spectacular Seasonal Wildlife Event</CardDescription>
+                                <CardDescription>Asia&apos;s Most Spectacular Seasonal Wildlife Event</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel images={elephantImages} />
                                     <div>
                                         <p className="text-muted-foreground mb-4 leading-relaxed">
-                                            Kaudulla's claim to international fame is "The Gathering" - a phenomenal seasonal event where 150-200 Asian elephants congregate around the ancient reservoir from July through October. As the dry season intensifies and water sources elsewhere diminish, elephants from surrounding forests migrate to Kaudulla where the tank bed's exposed grasslands provide abundant fresh grazing and reliable water supplies.
+                                            Kaudulla&apos;s claim to international fame is &quot;The Gathering&quot; - a phenomenal seasonal event where 150-200 Asian elephants congregate around the ancient reservoir from July through October. As the dry season intensifies and water sources elsewhere diminish, elephants from surrounding forests migrate to Kaudulla where the tank bed&apos;s exposed grasslands provide abundant fresh grazing and reliable water supplies.
                                         </p>
                                         <p className="text-muted-foreground mb-4 leading-relaxed">
-                                            What makes this gathering truly extraordinary is the opportunity to observe complete elephant family dynamics in action. You'll witness protective matriarchs leading their herds, playful baby elephants learning social skills, teenage elephants testing boundaries, and massive bull elephants maintaining order. The shallow tank edges allow elephants to wade, splash, mud-bathe, and socialize while safari vehicles maintain respectful distances for safe observation.
+                                            What makes this gathering truly extraordinary is the opportunity to observe complete elephant family dynamics in action. You&apos;ll witness protective matriarchs leading their herds, playful baby elephants learning social skills, teenage elephants testing boundaries, and massive bull elephants maintaining order. The shallow tank edges allow elephants to wade, splash, mud-bathe, and socialize while safari vehicles maintain respectful distances for safe observation.
                                         </p>
                                         <div className="space-y-4">
                                             <div>
-                                                <h4 className="font-semibold mb-3 text-foreground">Natural Elephant Behaviors You'll Observe:</h4>
+                                                <h4 className="font-semibold mb-3 text-foreground">Natural Elephant Behaviors You&apos;ll Observe:</h4>
                                                 <ul className="space-y-2 text-sm text-muted-foreground">
                                                     <li className="flex items-start gap-2">
                                                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -446,7 +446,7 @@ export default function KaudullaNationalParkGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <div>
                                         <p className="text-muted-foreground mb-4 leading-relaxed">
-                                            Kaudulla's diverse habitats - reservoir, wetlands, grasslands, and dry zone forests - create ideal conditions for over 160 bird species. The ancient tank attracts massive concentrations of water birds while surrounding forests shelter endemic and rare species. Birdwatchers consider Kaudulla exceptional for both resident breeding populations and northern winter migrants arriving October-March.
+                                            Kaudulla&apos;s diverse habitats - reservoir, wetlands, grasslands, and dry zone forests - create ideal conditions for over 160 bird species. The ancient tank attracts massive concentrations of water birds while surrounding forests shelter endemic and rare species. Birdwatchers consider Kaudulla exceptional for both resident breeding populations and northern winter migrants arriving October-March.
                                         </p>
                                         <div className="space-y-4">
                                             <div>
@@ -508,12 +508,12 @@ export default function KaudullaNationalParkGuide() {
                                 <History className="w-6 h-6 text-white" />
                             </div>
                             <div className="flex-1">
-                                <h3 className="text-xl font-bold mb-3 text-amber-900 dark:text-amber-100">Did You Know? King Mahasena's Engineering Marvel</h3>
+                                <h3 className="text-xl font-bold mb-3 text-amber-900 dark:text-amber-100">Did You Know? King Mahasena&apos;s Engineering Marvel</h3>
                                 <p className="text-muted-foreground mb-3 leading-relaxed">
-                                    The magnificent Kaudulla Tank was constructed around 276 AD during the reign of King Mahasena, one of ancient Sri Lanka's greatest builders. This massive reservoir stretches over 6,900 hectares and was designed to capture monsoon rainwater, storing it for agricultural irrigation during dry months. The engineering precision required to build such a structure without modern technology is astounding!
+                                    The magnificent Kaudulla Tank was constructed around 276 AD during the reign of King Mahasena, one of ancient Sri Lanka&apos;s greatest builders. This massive reservoir stretches over 6,900 hectares and was designed to capture monsoon rainwater, storing it for agricultural irrigation during dry months. The engineering precision required to build such a structure without modern technology is astounding!
                                 </p>
                                 <p className="text-muted-foreground leading-relaxed">
-                                    Nearly 1,750 years later, the tank still functions exactly as intended, demonstrating the incredible hydraulic engineering knowledge of ancient Sri Lankan civilization. The reservoir's design includes sophisticated spillways, sluice gates, and canals that continue irrigating thousands of hectares of paddy fields while simultaneously sustaining the park's wildlife ecosystem. It stands as living proof that sustainable water management has been perfected in Sri Lanka for millennia!
+                                    Nearly 1,750 years later, the tank still functions exactly as intended, demonstrating the incredible hydraulic engineering knowledge of ancient Sri Lankan civilization. The reservoir&apos;s design includes sophisticated spillways, sluice gates, and canals that continue irrigating thousands of hectares of paddy fields while simultaneously sustaining the park&apos;s wildlife ecosystem. It stands as living proof that sustainable water management has been perfected in Sri Lanka for millennia!
                                 </p>
                             </div>
                         </div>
@@ -535,10 +535,10 @@ export default function KaudullaNationalParkGuide() {
                                 <ImageCarousel images={landscapeImages} />
                                 <div>
                                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                                        The ancient Kaudulla Tank, an architectural masterpiece from 276 AD built by King Mahasena, forms the park's magnificent centerpiece. This vast reservoir showcases ancient Sri Lankan hydraulic engineering brilliance that continues functioning perfectly after 1,750 years. The tank's seasonal water level fluctuations create dynamic habitats that sustain incredible wildlife concentrations throughout the year.
+                                        The ancient Kaudulla Tank, an architectural masterpiece from 276 AD built by King Mahasena, forms the park&apos;s magnificent centerpiece. This vast reservoir showcases ancient Sri Lankan hydraulic engineering brilliance that continues functioning perfectly after 1,750 years. The tank&apos;s seasonal water level fluctuations create dynamic habitats that sustain incredible wildlife concentrations throughout the year.
                                     </p>
                                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                                        Kaudulla's landscape includes dry zone forests, open grasslands, seasonal wetlands, and the massive reservoir itself - creating habitat diversity that supports remarkable biodiversity. During dry months, the exposed tank bed transforms into lush grasslands that attract massive elephant gatherings, while monsoon seasons flood the reservoir, dispersing wildlife into surrounding forests.
+                                        Kaudulla&apos;s landscape includes dry zone forests, open grasslands, seasonal wetlands, and the massive reservoir itself - creating habitat diversity that supports remarkable biodiversity. During dry months, the exposed tank bed transforms into lush grasslands that attract massive elephant gatherings, while monsoon seasons flood the reservoir, dispersing wildlife into surrounding forests.
                                     </p>
                                     <div className="space-y-4">
                                         <div>
@@ -694,7 +694,7 @@ export default function KaudullaNationalParkGuide() {
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-3 text-green-900 dark:text-green-100">Did You Know? Kaudulla vs Minneriya - Smart Safari Planning!</h3>
                                 <p className="text-muted-foreground mb-3 leading-relaxed">
-                                    Kaudulla and neighboring Minneriya National Parks form a unique interconnected ecosystem where elephants migrate seasonally between the two based on water and food availability. From May to October, as Minneriya's water levels drop significantly, elephants begin concentrating at Kaudulla where grass remains abundant. By July-October (peak dry season), Kaudulla typically hosts larger elephant gatherings than Minneriya!
+                                    Kaudulla and neighboring Minneriya National Parks form a unique interconnected ecosystem where elephants migrate seasonally between the two based on water and food availability. From May to October, as Minneriya&apos;s water levels drop significantly, elephants begin concentrating at Kaudulla where grass remains abundant. By July-October (peak dry season), Kaudulla typically hosts larger elephant gatherings than Minneriya!
                                 </p>
                                 <p className="text-muted-foreground leading-relaxed">
                                     Smart tip for visitors: Check which park currently has better elephant gatherings before booking your safari! Local operators monitor elephant movements daily and can recommend whether Kaudulla or Minneriya offers superior viewing on your visit date. Many experienced safari-goers visit both parks during their Cultural Triangle stay, maximizing chances for spectacular elephant encounters. The parks are only 20 km apart, making it easy to switch between them based on real-time wildlife reports!
@@ -869,7 +869,7 @@ export default function KaudullaNationalParkGuide() {
                                 <Leaf className="w-6 h-6 text-green-600" />
                                 Conservation & Responsible Safari Guidelines
                             </CardTitle>
-                            <CardDescription>Help protect Kaudulla's precious wildlife for future generations</CardDescription>
+                            <CardDescription>Help protect Kaudulla&apos;s precious wildlife for future generations</CardDescription>
                         </CardHeader>
                         <CardContent>
                             <div className="grid md:grid-cols-2 gap-6">
@@ -942,13 +942,13 @@ export default function KaudullaNationalParkGuide() {
                         <CardContent className="pt-6">
                             <h3 className="text-2xl font-bold mb-4 text-foreground">Your Kaudulla Adventure Awaits!</h3>
                             <p className="text-muted-foreground leading-relaxed mb-4">
-                                Kaudulla National Park offers one of Sri Lanka's most spectacular wildlife experiences - witnessing "The Gathering" where hundreds of elephants congregate in a magnificent display of nature's rhythms. Combined with its strategic location in the Cultural Triangle, ancient historical significance, and role as a vital elephant corridor, Kaudulla represents the perfect harmony between wildlife conservation and cultural heritage tourism.
+                                Kaudulla National Park offers one of Sri Lanka&apos;s most spectacular wildlife experiences - witnessing &quot;The Gathering&quot; where hundreds of elephants congregate in a magnificent display of nature's rhythms. Combined with its strategic location in the Cultural Triangle, ancient historical significance, and role as a vital elephant corridor, Kaudulla represents the perfect harmony between wildlife conservation and cultural heritage tourism.
                             </p>
                             <p className="text-muted-foreground leading-relaxed mb-4">
-                                Whether you're photographing elephant families bathing in golden light, observing rare bird species at the ancient reservoir, or simply marveling at 1,750 years of continuous ecosystem functionality, Kaudulla creates memories that last a lifetime. Plan your visit during July-October for peak elephant gatherings, or explore year-round for different wildlife experiences.
+                                Whether you&apos;re photographing elephant families bathing in golden light, observing rare bird species at the ancient reservoir, or simply marveling at 1,750 years of continuous ecosystem functionality, Kaudulla creates memories that last a lifetime. Plan your visit during July-October for peak elephant gatherings, or explore year-round for different wildlife experiences.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                Book your Kaudulla safari today and become part of this incredible conservation success story - where ancient kings' engineering genius continues sustaining wild elephants, and responsible tourism helps protect Sri Lanka's natural heritage for future generations to treasure!
+                                Book your Kaudulla safari today and become part of this incredible conservation success story - where ancient kings&apos; engineering genius continues sustaining wild elephants, and responsible tourism helps protect Sri Lanka&apos;s natural heritage for future generations to treasure!
                             </p>
                         </CardContent>
                     </Card>
