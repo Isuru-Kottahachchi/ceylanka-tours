@@ -598,8 +598,8 @@ export default function BentotaGuide() {
                                             {
                                                 src: "/Lunugangabawa.jpeg",
                                                 alt: "The first cave of Dambulla showing the reclining Buddha statue",
-                                                caption: "Devaraja Lena Interior",
-                                                title: "Cave of the Divine King"
+                                                caption: "",
+                                                title: ""
                                             },
                                             {
                                                 src: "/Lunugangabawa2.jpeg",
@@ -678,7 +678,7 @@ export default function BentotaGuide() {
                             <CardContent>
                                 <div className="mb-6">
                                     <p className="text-muted-foreground mb-4">
-                                        When you visit Bentota, you can explore five ancient temples with rich history and centuries of Buddhist
+                                        When you visit Bentota, you can explore five ancient royal temples (Rajamaha Viharas) with rich history and centuries of Buddhist
                                         heritage and architecture. These raja maha viharas are interconnected by ancient underground tunnels.
                                     </p>
 

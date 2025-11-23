@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+"use client"
 import Image from "next/image"
 import {
   Clock,
@@ -16,19 +16,10 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-export const metadata: Metadata = {
-  title: "Kande Viharaya Aluthgama: Complete Guide 2025 | Sacred Buddhist Temple",
-  description:
-    "Discover Kande Viharaya in Aluthgama, Sri Lanka - home to one of the largest seated Buddha statues in the world. Complete visitor guide with history, attractions, and tips.",
-  keywords: "Kande Viharaya, Aluthgama, Buddhist temple, seated Buddha statue, Sri Lanka Buddhism, meditation",
-  openGraph: {
-    title: "Kande Viharaya Aluthgama: Complete Guide 2025",
-    description: "Explore this sacred Buddhist temple with one of the world's largest seated Buddha statues",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+
+
 
 export default function KandeViharayaGuide() {
   return (
@@ -144,10 +135,10 @@ export default function KandeViharayaGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Temple+History"
+                src="/KandeViharaya-Staircase1.webp"
                 alt="Historic buildings of Kande Viharaya temple complex with traditional Sri Lankan Buddhist architecture"
-                width={600}
-                height={400}
+                width={400}
+                height={200}
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
@@ -249,12 +240,63 @@ export default function KandeViharayaGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400&text=Image+House"
-                    alt="Ancient Image House at Kande Viharaya with traditional Buddhist paintings and statues"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Ancient-Image-House-Kandeviharaya1.webp",
+                        alt: "Ancient Buddha statue inside Kande Viharaya Image House",
+                        caption: "",
+                        title: "",
+                      },
+                      {
+                        src: "/Ancient-Image-House-Kandeviharaya.webp",
+                        alt: "Intricate wall painting depicting Buddha's life inside Kande Viharaya Image House",
+                        caption: "",
+                        title: "",
+                      },
+                      {
+                        src: "/Ancient-Image-House-Kandeviharaya2.webp",
+                        alt: "Intricate wall painting depicting Buddha's life inside Kande Viharaya Image House",
+                        caption: "",
+                        title: "",
+                      },
+                    ]}
+                  />
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle>2. Elephant watch</CardTitle>
+                <CardDescription>See the Elephant of Kande Viharaya</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                    IIf you are lucky, you can see the Temple&apos;s elephant of Kande Viharaya here, which is used in many Buddhist ceremonies.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Walking beneath the temple’s elephant was considered a special experience that many believed brought good health. According to local tradition, passing under an elephant’s body was thought to make children strong and protect them from illness.
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        While preserving religious culture and traditions, it’s important to acknowledge growing concerns about the treatment of temple elephants, as reports have highlighted issues of confinement and neglec
+                      </li> 
+                    </ul>
+                  </div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Elephant-In-Kandevihare.webp",
+                        alt: "Temple elephant at Kande Viharaya",
+                        caption: "",
+                        title: "",
+                      },
+                     
+                    ]}
                   />
                 </div>
               </CardContent>
