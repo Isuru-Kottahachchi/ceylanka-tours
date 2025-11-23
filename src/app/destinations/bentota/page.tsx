@@ -698,7 +698,7 @@ export default function BentotaGuide() {
                                     <div className="flex flex-col lg:flex-row p-6 border rounded-lg bg-card shadow-lg hover:shadow-xl transition-shadow gap-6">
                                         <div className="lg:w-1/3">
                                             <Image
-                                                src="/wanawasa1.jpg"
+                                                src="/Wanawasa-Rajamaha-Viharaya.jpg"
                                                 alt="Wanawasa temple exterior with its historic entrance"
                                                 width={400}
                                                 height={300}

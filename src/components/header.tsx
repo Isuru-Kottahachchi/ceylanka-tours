@@ -97,7 +97,7 @@ const destinationsItems = [
       { name: "Wilpattu National Park", href: "/destinations/wilpattu-national-park" },
       { name: "Udawalawe National Park", href: "/destinations/udawalawa-national-park" },
       { name: "Minneriya National Park", href: "/destinations/minneriya-national-park" },
-      { name: "Kaudulla Park", href: "/destinations/kaudulla-national-park" },
+      { name: "Kaudulla National Park", href: "/destinations/kaudulla-national-park" },
       { name: "Wasgamuwa National Park", href: "/destinations/wasgamuwa-national-park" },
       { name: "Sinharaja Forest", href: "/destinations/sinharaja-forest" },
     ],
