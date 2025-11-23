@@ -350,7 +350,7 @@ export default function KaudullaNationalParkGuide() {
                                             </div>
                                             <Link href="/blog/sri-lankan-elephants">
                                                 <Button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 h-12 cursor-pointer">
-                                                    <span>Learn More About Sri Lankan Elephants</span>
+                                                    <span>Learn About Sri Lankan Elephants</span>
                                                     <ArrowRight className="h-5 w-5" />
                                                 </Button>
                                             </Link>
