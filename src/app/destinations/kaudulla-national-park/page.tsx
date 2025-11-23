@@ -277,12 +277,12 @@ export default function KaudullaNationalParkGuide() {
                 {/* Did You Know Card 1 */}
                 <Card className="mb-12 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-2 border-blue-200 dark:border-blue-800">
                     <CardContent className="pt-6">
-                        <div className="flex items-start gap-4">
-                            <div className="p-3 bg-blue-500 rounded-full">
-                                <Lightbulb className="w-6 h-6 text-white" />
-                            </div>
-                            <div className="flex-1">
-                                <h3 className="text-xl font-bold mb-3 text-blue-900 dark:text-blue-100">Did You Know? The Elephant Corridor Network</h3>
+                        <div className="flex flex-col sm:flex-row items-start gap-4">
+                            <div className="flex-1 w-full">
+                                <h3 className="text-xl font-bold mb-3 text-blue-900 dark:text-blue-100 flex items-center gap-2">
+                                    <Lightbulb className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                                    Did You Know? The Elephant Corridor Network
+                                </h3>
                                 <p className="text-muted-foreground mb-3 leading-relaxed">
                                     Kaudulla is part of a remarkable 150-kilometer elephant corridor connecting three major national parks: Minneriya, Kaudulla, and Wasgamuwa. Elephants migrate seasonally between these parks following ancient pathways passed down through generations. During dry months (May-October), elephants concentrate at Minneriya and Kaudulla where water and grass remain abundant. As conditions change, they move to Kaudulla (July-October peak), then migrate to Wasgamuwa.
                                 </p>
