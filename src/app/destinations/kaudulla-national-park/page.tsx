@@ -12,8 +12,8 @@ import Link from "next/link"
 export default function KaudullaNationalParkGuide() {
     const elephantImages = [
         { src: "/Kaudulla-National-Park1.jpg", caption: "Large herd of elephants at Kaudulla reservoir", alt: "Wild elephants gathering at Kaudulla reservoir during evening" },
-        { src: "/Kaudulla-Elephants-2.jpg", caption: "Baby elephants playing in water", alt: "Baby elephants playing and splashing in Kaudulla reservoir" },
-        { src: "/Kaudulla-Elephants-3.jpg", caption: "Elephant family walking through grasslands", alt: "Family of elephants walking through the grasslands of Kaudulla" },
+        { src: "/Kaudulla-National-Park2.jpg", caption: "Baby elephants playing in water", alt: "Baby elephants playing and splashing in Kaudulla reservoir" },
+        { src: "/Kaudulla-National-Park3.jpg", caption: "Elephant family walking through grasslands", alt: "Family of elephants walking through the grasslands of Kaudulla" },
     ];
 
     const birdLifeImages = [
