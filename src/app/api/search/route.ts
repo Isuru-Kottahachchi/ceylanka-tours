@@ -615,7 +615,7 @@ const destinations: Destination[] = [
     name: "Kithulgala",
     location: "Sabaragamuwa Province",
     path: "kithulgala",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Kithulgala-waterrafting.jpg",
     description: "Adventure destination famous for white water rafting",
     highlights: ["White Water Rafting", "Adventure Sports", "River Activities"],
     category: "Adventure",
