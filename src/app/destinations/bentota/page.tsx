@@ -112,7 +112,7 @@ export default function BentotaGuide() {
             {/* Hero Section */}
             <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
                 <Image
-                    src="/Bentotabeach.jpeg"
+                    src="/Bentota-beach.jpeg"
                     alt="Pristine Bentota beach with golden sand, turquoise waters, palm trees and luxury resorts along the coastline"
                     fill
                     className="object-cover"
