@@ -6,113 +6,40 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { useState } from "react"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 
-
-function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-  }
-
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-  }
-
-  const goToImage = (index: number) => {
-    setCurrentIndex(index)
-  }
-
-  return (
-    <div className="relative">
-      <div className="relative overflow-hidden rounded-lg" style={{ height: '500px', width: '100%' }}>
-        <Image
-          src={images[currentIndex] || "/placeholder.svg"}
-          alt={`${alt} - Image ${currentIndex + 1}`}
-          fill
-          className="rounded-lg transition-all duration-300 object-cover"
-          sizes="(max-width: 768px) 100vw, 400px"
-        />
-
-        {/* Navigation buttons */}
-        {images.length > 1 && (
-          <>
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-              onClick={prevImage}
-            >
-              <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-              onClick={nextImage}
-            >
-              <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-            </Button>
-          </>
-        )}
-      </div>
-
-      {/* Dots indicator */}
-      {images.length > 1 && (
-        <div className="flex justify-center mt-3 space-x-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToImage(index)}
-              className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-                }`}
-            />
-          ))}
-        </div>
-      )}
-
-      {/* Image counter */}
-      {images.length > 1 && (
-        <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-          {currentIndex + 1} / {images.length}
-        </div>
-      )}
-    </div>
-  )
-}
 export default function KandyTravelGuide() {
 
   const TempleOfTheToothImages = [
-    "/Kandy2.jpeg",
-    "/Temple-of-the-tooth.jpeg",
-    "/Temple-of-the-tooth2.jpeg",
-    "/Temple-of-the-tooth3.jpeg",
+    { src: "/Kandy2.jpeg", alt: "Temple of the Tooth Relic exterior view" },
+    { src: "/Temple-of-the-tooth.jpeg", alt: "Temple of the Tooth Relic exterior view" },
+    { src: "/Temple-of-the-tooth2.jpeg", alt: "Temple of the Tooth Relic exterior view" },
+    { src: "/Temple-of-the-tooth3.jpeg", alt: "Temple of the Tooth Relic exterior view" },
   ]
 
   const KandyLakeImages = [
-    "/Kandy3.jpeg",
-    "/Kandy.jpeg",
-    "/Kandy1.jpeg",
+    { src: "/Kandy3.jpeg", alt: "View of Kandy Lake with surrounding hills and cityscape" },
+    { src: "/Kandy.jpeg", alt: "Scenic view of Kandy Lake with boats and lush greenery" },
+    { src: "/Kandy1.jpeg", alt: "Panoramic view of Kandy Lake at sunset" },
   ]
 
   const BotanicalGardensImages = [
-    "/Royal-botanical-garden-kandy.jpg",
-    "/placeholder.svg?height=300&width=400",
+    { src: "/Royal-botanical-garden-kandy.jpg", alt: "Royal Botanical Garden in Kandy with lush greenery and colorful flowers" },
+
   ]
 
   const BahirawakandaImages = [
-    "/Bahirawakanda.jpeg",
-    "/Temple-of-the-tooth3.jpeg",
+    { src: "/Bahirawakanda.jpeg", alt: "Bahirawakanda Buddha Statue towering over Kandy city" },
+    { src: "/Temple-of-the-tooth3.jpeg", alt: "Temple of the Tooth Relic at night with illuminated golden roof" },
   ]
 
   const CulturalShowImages = [
-    "/Kandy-Esela-Perahara.JPG",
-    "/Kandy-Procession.jpg",
-    "/perahara.jpeg",
-    "/perahara1.jpeg",
-    "/perahara2.jpg",
+    { src: "/Kandy-Esela-Perahara.JPG", alt: "Kandy Esela Perahara cultural show" },
+    { src: "/Kandy-Procession.jpg", alt: "Kandy Procession during cultural show" },
+    { src: "/perahara.jpeg", alt: "Perahara cultural show" },
+    { src: "/perahara1.jpeg", alt: "Perahara cultural show" },
+    { src: "/perahara2.jpg", alt: "Perahara cultural show" },
   ]
 
   return (
@@ -371,8 +298,11 @@ export default function KandyTravelGuide() {
             <div>
               <ImageCarousel
                 images={TempleOfTheToothImages}
-                alt="Temple of the Tooth Relic showing various views of the sacred site"
               />
+              {/* <ImageCarousel
+                images={TempleOfTheToothImages}
+                alt="Temple of the Tooth Relic showing various views of the sacred site"
+              /> */}
 
               <p className="text-sm text-muted-foreground mt-2 italic">
                 The sacred Temple of the Tooth Relic - Buddhisms most important shrine
@@ -449,7 +379,6 @@ export default function KandyTravelGuide() {
                   <div>
                     <ImageCarousel
                       images={KandyLakeImages}
-                      alt="Kandy Lake showing peaceful views, walking paths, and surrounding hills"
                     />
                     <p className="text-sm text-muted-foreground mt-2 italic">
                       The beautiful Kandy Lake - perfect for peaceful walks and photography
@@ -563,7 +492,6 @@ export default function KandyTravelGuide() {
                   <div>
                     <ImageCarousel
                       images={BotanicalGardensImages}
-                      alt="Royal Botanical Gardens Peradeniya showing diverse tropical plants and pathways"
                     />
                     <p className="text-sm text-muted-foreground mt-2 italic">
                       Royal Botanical Gardens - 147 acres of botanical paradise
@@ -623,7 +551,6 @@ export default function KandyTravelGuide() {
                   <div>
                     <ImageCarousel
                       images={BahirawakandaImages}
-                      alt="Bahirawakanda Buddha statue with panoramic views of Kandy city"
                     />
                     <p className="text-sm text-muted-foreground mt-2 italic">
                       Bahirawakanda Buddha Statue - Amazing city views from above
@@ -644,7 +571,6 @@ export default function KandyTravelGuide() {
                   <div>
                     <ImageCarousel
                       images={CulturalShowImages}
-                      alt="Traditional Kandyan cultural performances and Esala Perahera festival"
                     />
                     <p className="text-sm text-muted-foreground mt-2 italic">
                       Traditional Kandyan cultural shows and Esala Perahera performances
@@ -751,7 +677,6 @@ export default function KandyTravelGuide() {
               </CardContent>
             </Card>
 
-            
           </div>
         </section>
         {/* More Amazing Places to Visit */}
