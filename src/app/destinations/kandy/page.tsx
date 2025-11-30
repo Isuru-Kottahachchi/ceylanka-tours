@@ -397,6 +397,28 @@ export default function KandyTravelGuide() {
                   <li>• Evening: 6:30 PM - 8:00 PM</li>
                 </ul>
               </div>
+              <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg mt-4">
+                <h4 className="font-semibold text-amber-800 dark:text-amber-300 mb-2">Visitor Information</h4>
+                <p className="text-sm text-amber-700 dark:text-amber-400 mb-2">Essential details for your visit</p>
+                <ul className="text-sm text-amber-700 dark:text-amber-400 space-y-2">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    <span>Dress modestly - cover shoulders & knees</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    <span>Remove shoes before entering</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    <span>Entry fee: 1,500 LKR for foreigners</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    <span>Photography permitted in outer areas</span>
+                  </li>
+                </ul>
+              </div>
               <div className="mt-6">
                 <Link href="/destinations/temple-of-tooth">
                   <Button
@@ -686,22 +708,22 @@ export default function KandyTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Pani walalu</CardTitle>
-                <CardDescription>A Sweet treat </CardDescription>
+                <CardDescription>A Sweet crispy treat, deep fried and soaked in treacle/sweet syrup </CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Luxury beachfront resort in Pasikuda with infinity pool, elegant architecture, and ocean views"
+                  src="/Pani-Walalu.jpg"
+                  alt="Traditional Sri Lankan sweet snack Pani Walalu made from rice flour and treacle"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3"
                 />
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Direct beachfront locations</li>
-                  <li>• Infinity pools and spa facilities</li>
-                  <li>• Multiple dining options</li>
-                  <li>• Water sports centers</li>
-                  <li>• Premium service and amenities</li>
+                  <li>• Made from rice flour/ Urad dal and treacle</li>
+                  <li>• Deep fried to a crispy texture</li>
+                  <li>• Popular traditional sweet snack</li>
+                  <li>• Often enjoyed with tea</li>
+                  <li>• Commonly found at festivals and markets</li>
                 </ul>
               </CardContent>
             </Card>
