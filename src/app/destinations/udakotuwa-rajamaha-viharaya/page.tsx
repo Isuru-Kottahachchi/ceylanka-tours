@@ -742,8 +742,8 @@ export default function UdakotuwaTemple() {
                                 <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg">
                                     <p className="text-sm text-blue-800 dark:text-blue-200">
                                         <strong>Local Tip:</strong> The giant Buddha statues are prominently visible from Bentota Bridge 
-                                        on the main A2 highway. If arriving by public transport, ask the driver for "Udakotuwa Temple" 
-                                        or "Bentota Bridge Buddha statues" - it&apos;s a well-known local landmark. Temple parking available 
+                                        on the main A2 highway. If arriving by public transport, ask the driver for &quot;Udakotuwa Temple&quot; 
+                                        or &quot;Bentota Bridge Buddha statues&quot; - it&apos;s a well-known local landmark. Temple parking available 
                                         for private vehicles.
                                     </p>
                                 </div>
