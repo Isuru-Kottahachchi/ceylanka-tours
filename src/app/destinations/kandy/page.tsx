@@ -411,7 +411,7 @@ export default function KandyTravelGuide() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                    <span>Entry fee: 1,500 LKR for foreigners</span>
+                    <span>Entry fee: 2000 LKR for foreigners, Foreigners fromSAARC countries, Thailand, and Myanmar: LKR 1,500 </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
@@ -730,23 +730,23 @@ export default function KandyTravelGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-lg">Kandyan Sweets</CardTitle>
-                <CardDescription>A Sweet treat</CardDescription>
+                <CardTitle className="text-lg">Rice and Curry</CardTitle>
+                <CardDescription>There is a wide variety of rice and curry dishes to try in Kandy and a bit different from other regions</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
                   src="/placeholder.svg?height=200&width=300"
-                  alt="Boutique beach hotel in Pasikuda with elegant rooms, private beach access, and personalized service"
+                  alt="Traditional Sri Lankan rice and curry dish with various side dishes"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3"
                 />
                 <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Smaller, more intimate properties</li>
-                  <li>• Personalized service and attention</li>
-                  <li>• Unique design and architecture</li>
-                  <li>• Private beach areas</li>
-                  <li>• Customized experiences</li>
+                  <li>• Variety of curries with different vegetables, meats, and spices</li>
+                  <li>• Typically served with rice as the main staple</li>
+                  <li>• Includes side dishes like sambols and chutneys</li>
+                  <li>• Flavors range from mild to very spicy</li>
+                  <li>• A staple meal in Sri Lankan cuisine</li>
                 </ul>
               </CardContent>
             </Card>

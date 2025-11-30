@@ -156,19 +156,102 @@ export default function BentotaGuide() {
                     <h2 className="text-3xl font-bold mb-6 text-foreground">
                         Welcome to Bentota: Where Golden Sands Meet Luxury
                     </h2>
+                    <div className="grid md:grid-cols-[1fr_140px] gap-6 items-start">
+                        <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
+                            <p className="text-lg mb-4">
+                                Bentota is Sri Lanka&apos;s premier beach destination, where pristine golden beaches meet world-class
+                                luxury resorts. Located on the southwest coast at the beginning of the Southern Province, this tropical paradise
+                                sits at the border between the Southern and Western provinces. It offers the perfect blend of
+                                relaxation, adventure, and natural beauty, making it a favorite among honeymooners, families, and water
+                                sports enthusiasts.
+                            </p>
+                            <p className="text-lg">
+                                Bentota is an ideal place to enjoy the beach and river. From thrilling water sports on the Bentota River to peaceful turtle watching at nearby hatcheries, from
+                                luxurious spa treatments to fresh seafood dining, Bentota provides the ultimate tropical beach experience
+                                with Sri Lankan warmth and hospitality.
+                            </p>
+                        </div>
+                        
+                        {/* Small Sri Lanka Map with Bentota Location */}
+                        <div className="flex flex-col items-center flex-shrink-0">
+                            <div className="relative w-[120px] bg-blue-50 dark:bg-blue-950/30 rounded-lg p-2 border border-blue-200 dark:border-blue-800">
+                                <svg viewBox="310 30 130 180" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+                                    {/* Accurate Sri Lanka outline matching the provided image */}
+                                    <path
+                                        d="M 350,40 
+                                           C 355,38 360,37 365,38 
+                                           L 372,42 378,48 383,56 387,65 
+                                           L 390,75 392,86 393,98 393,110 392,122
+                                           L 390,135 387,148 383,161 378,174 372,187
+                                           L 365,199 357,210 348,220 338,229 327,237
+                                           L 320,170 318,155 317,140 318,125 320,110
+                                           L 323,95 327,81 332,68 338,56 345,46 Z
+                                           
+                                           M 365,42
+                                           L 368,50 370,60 371,71 371,82 370,93
+                                           L 368,104 365,115 361,125 356,135 350,144
+                                           L 343,153 335,161 326,168 316,174 305,179
+                                           L 298,165 293,150 290,135 289,120 289,105
+                                           L 291,90 294,76 299,63 305,51 312,41
+                                           L 320,33 328,28 336,26 344,27 352,31 360,37 Z"
+                                        fill="#dbeafe"
+                                        stroke="#2563eb"
+                                        strokeWidth="1"
+                                        className="dark:fill-blue-900/40 dark:stroke-blue-500"
+                                    />
+                                    
+                                    {/* Jaffna Peninsula complex shape at top */}
+                                    <path
+                                        d="M 350,40 L 348,36 347,32 348,29 351,27 355,27 359,29 361,32 361,36 359,39 355,40 Z
+                                           M 342,35 L 340,33 339,30 340,28 343,27 346,28 347,31 346,34 344,36 Z"
+                                        fill="#dbeafe"
+                                        stroke="#2563eb"
+                                        strokeWidth="0.5"
+                                        className="dark:fill-blue-900/40 dark:stroke-blue-500"
+                                    />
+                                    
+                                    {/* Northwestern coastal indentations */}
+                                    <path
+                                        d="M 320,80 L 315,82 312,85 311,88 312,91 315,93 320,94
+                                           M 318,100 L 314,102 311,105 310,109 311,113 314,115 318,116"
+                                        fill="none"
+                                        stroke="#2563eb"
+                                        strokeWidth="0.8"
+                                        className="dark:stroke-blue-500"
+                                    />
+                                    
+                                    {/* Eastern coast detail */}
+                                    <path
+                                        d="M 390,120 L 394,122 396,125 396,129 394,132 390,133
+                                           M 387,145 L 391,147 394,150 395,154 393,158 388,160"
+                                        fill="none"
+                                        stroke="#2563eb"
+                                        strokeWidth="0.8"
+                                        className="dark:stroke-blue-500"
+                                    />
+                                    
+                                    {/* Bentota location marker - southwest coast */}
+                                    <circle cx="322" cy="168" r="3" fill="#dc2626" />
+                                    <circle cx="322" cy="168" r="5" fill="#dc2626" opacity="0.4">
+                                        <animate attributeName="r" values="5;7;5" dur="1.5s" repeatCount="indefinite" />
+                                        <animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.5s" repeatCount="indefinite" />
+                                    </circle>
+                                    
+                                    {/* Colombo reference */}
+                                    <circle cx="325" cy="145" r="1.5" fill="#6b7280" />
+                                </svg>
+                                
+                                <div className="text-center mt-1">
+                                    <div className="flex items-center justify-center gap-1 text-red-600 dark:text-red-400 font-bold text-[10px]">
+                                        <MapPin className="w-3 h-3" />
+                                        <span>You are here</span>
+                                    </div>
+                                    <p className="text-[9px] text-muted-foreground">SW Coast</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
-                        <p className="text-lg mb-4">
-                            Bentota is Sri Lanka&apos;s premier beach destination, where pristine golden beaches meet world-class
-                            luxury resorts. Located on the southwest coast at the beginning of the Southern Province, this tropical paradise
-                            sits at the border between the Southern and Western provinces. It offers the perfect blend of
-                            relaxation, adventure, and natural beauty, making it a favorite among honeymooners, families, and water
-                            sports enthusiasts.
-                        </p>
-                        <p className="text-lg">
-                            Bentota is an ideal place to enjoy the beach and river. From thrilling water sports on the Bentota River to peaceful turtle watching at nearby hatcheries, from
-                            luxurious spa treatments to fresh seafood dining, Bentota provides the ultimate tropical beach experience
-                            with Sri Lankan warmth and hospitality.
-                        </p>
                         <div className="my-8 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900/60 border-l-4 border-yellow-400 dark:border-yellow-500">
                             <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-1">Did you know?</h4>
                             <p className="text-gray-800 dark:text-yellow-100">
@@ -1260,7 +1343,7 @@ export default function BentotaGuide() {
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>8. Sea Turtle Hatchery</CardTitle>
+                                <CardTitle>7. Sea Turtle Hatchery</CardTitle>
                                 <CardDescription>Conservation center protecting endangered sea turtles</CardDescription>
                             </CardHeader>
                             <CardContent>
