@@ -46,17 +46,17 @@ export default function UdakotuwaTemple() {
                     <h2 className="text-3xl font-bold mb-6">Discover Udakotuwa Rajamaha Viharaya</h2>
                     <div className="prose prose-lg max-w-none text-muted-foreground">
                         <p className="mb-4">
-                            Udakotuwa Rajamaha Viharaya stands as one of the most visually striking Buddhist temples in Sri Lanka, 
-                            renowned for its magnificent collection of colossal Buddha statues positioned along the scenic Bentota 
-                            River. As one of the five interconnected Rajamaha Viharayas (Royal Great Temples) in the Bentota region, 
-                            this sacred site combines breathtaking riverside natural beauty with profound spiritual significance and 
+                            Udakotuwa Rajamaha Viharaya stands as one of the most visually striking Buddhist temples in Sri Lanka,
+                            renowned for its magnificent collection of colossal Buddha statues positioned along the scenic Bentota
+                            River. As one of the five interconnected Rajamaha Viharayas (Royal Great Temples) in the Bentota region,
+                            this sacred site combines breathtaking riverside natural beauty with profound spiritual significance and
                             centuries of Buddhist heritage.
                         </p>
                         <p className="mb-4">
-                            Established during the glorious Polonnaruwa period in the 12th century under King Parakramabahu I 
-                            (1153-1186 CE), Udakotuwa has evolved over 800+ years into a unique blend of ancient monastic traditions 
-                            and modern Buddhist artistry. The temple gained international recognition for its spectacular giant Buddha 
-                            statues - some reaching heights of over 50 feet - that greet travelers crossing the Bentota River bridge, 
+                            Established during the glorious Polonnaruwa period in the 12th century under King Parakramabahu I
+                            (1153-1186 CE), Udakotuwa has evolved over 800+ years into a unique blend of ancient monastic traditions
+                            and modern Buddhist artistry. The temple gained international recognition for its spectacular giant Buddha
+                            statues - some reaching heights of over 50 feet - that greet travelers crossing the Bentota River bridge,
                             creating one of Sri Lanka&apos;s most photographed and spiritually moving riverside landscapes.
                         </p>
 
@@ -65,16 +65,16 @@ export default function UdakotuwaTemple() {
                                 Understanding Rajamaha Viharaya Status
                             </h4>
                             <p className="text-amber-800 dark:text-amber-300 mb-3">
-                                A <strong>Rajamaha Viharaya</strong> designation signifies a Buddhist temple of exceptional historical, 
-                                religious, and cultural importance that received royal patronage from ancient Sri Lankan monarchs. These 
-                                temples enjoyed special privileges including extensive land grants, protection from royal armies, tax 
-                                exemptions, and substantial resources to support large monastic communities. They served as principal 
+                                A <strong>Rajamaha Viharaya</strong> designation signifies a Buddhist temple of exceptional historical,
+                                religious, and cultural importance that received royal patronage from ancient Sri Lankan monarchs. These
+                                temples enjoyed special privileges including extensive land grants, protection from royal armies, tax
+                                exemptions, and substantial resources to support large monastic communities. They served as principal
                                 centers for Buddhist education, meditation practice, religious ceremonies, and preservation of sacred texts.
                             </p>
                             <p className="text-amber-800 dark:text-amber-300">
-                                Udakotuwa, together with Wanawasa, Galapatha, Ganepansala, and Bodhimaluwa temples, constitutes the 
-                                historically significant network of five Rajamaha Viharayas in Bentota. This interconnected temple system 
-                                played a vital role in maintaining Buddhist traditions throughout Southern Sri Lanka during medieval times, 
+                                Udakotuwa, together with Wanawasa, Galapatha, Ganepansala, and Bodhimaluwa temples, constitutes the
+                                historically significant network of five Rajamaha Viharayas in Bentota. This interconnected temple system
+                                played a vital role in maintaining Buddhist traditions throughout Southern Sri Lanka during medieval times,
                                 especially during periods of foreign invasion and political instability.
                             </p>
                         </div>
@@ -104,39 +104,22 @@ export default function UdakotuwaTemple() {
                                                 caption: "Giant Riverside Buddhas",
                                                 title: "Monumental Buddha Statues"
                                             },
-                                            {
-                                                src: "/udakotuwa-giant-buddha2.jpg",
-                                                alt: "Close-up of seated Buddha statue in meditation posture",
-                                                caption: "Meditation Buddha",
-                                                title: "Sacred Buddha Image"
-                                            },
-                                            {
-                                                src: "/udakotuwa-giant-buddha3.jpg",
-                                                alt: "Standing Buddha statue with raised hand blessing gesture",
-                                                caption: "Blessing Posture",
-                                                title: "Abhaya Mudra Buddha"
-                                            },
-                                            {
-                                                src: "/udakotuwa-river-view.jpg",
-                                                alt: "Panoramic view of Buddha statues with Bentota River and bridge",
-                                                caption: "River Panorama",
-                                                title: "Bentota River View"
-                                            }
+                                            
                                         ]}
                                     />
                                     <div className="space-y-4">
                                         <p className="text-muted-foreground leading-relaxed">
-                                            The defining feature of Udakotuwa Rajamaha Viharaya is its extraordinary collection of 
-                                            colossal Buddha statues positioned strategically along the Bentota River bank. These 
-                                            monumental sculptures, some soaring over 50 feet (15+ meters) in height, create a 
-                                            powerful spiritual presence visible from the Bentota Bridge and surrounding areas, making 
+                                            The defining feature of Udakotuwa Rajamaha Viharaya is its extraordinary collection of
+                                            colossal Buddha statues positioned strategically along the Bentota River bank. These
+                                            monumental sculptures, some soaring over 50 feet (15+ meters) in height, create a
+                                            powerful spiritual presence visible from the Bentota Bridge and surrounding areas, making
                                             this one of Southern Sri Lanka&apos;s most recognizable religious landmarks.
                                         </p>
                                         <p className="text-muted-foreground leading-relaxed">
-                                            While the temple&apos;s ancient origins date to the 12th century, these impressive modern 
-                                            Buddha statues were constructed in recent decades as expressions of devotion by local 
-                                            Buddhist communities. The statues showcase multiple traditional Buddha postures (mudras) 
-                                            and have become beloved symbols of peace, protection, and Buddhist teachings for both 
+                                            While the temple&apos;s ancient origins date to the 12th century, these impressive modern
+                                            Buddha statues were constructed in recent decades as expressions of devotion by local
+                                            Buddhist communities. The statues showcase multiple traditional Buddha postures (mudras)
+                                            and have become beloved symbols of peace, protection, and Buddhist teachings for both
                                             pilgrims and travelers passing through Bentota.
                                         </p>
                                         <div className="grid md:grid-cols-2 gap-4">
@@ -193,9 +176,9 @@ export default function UdakotuwaTemple() {
                                         </div>
                                         <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg mt-4">
                                             <p className="text-sm text-blue-800 dark:text-blue-200">
-                                                <strong>Visitor Tip:</strong> The Buddha statues are best photographed during early morning 
-                                                (6:00-8:00 AM) or late afternoon (4:00-6:00 PM) when soft natural light enhances their 
-                                                serene beauty. The viewpoint from Bentota Bridge offers spectacular panoramic shots, while 
+                                                <strong>Visitor Tip:</strong> The Buddha statues are best photographed during early morning
+                                                (6:00-8:00 AM) or late afternoon (4:00-6:00 PM) when soft natural light enhances their
+                                                serene beauty. The viewpoint from Bentota Bridge offers spectacular panoramic shots, while
                                                 temple grounds provide close-up access for detailed photography.
                                             </p>
                                         </div>
@@ -245,15 +228,15 @@ export default function UdakotuwaTemple() {
                                     />
                                     <div className="space-y-4">
                                         <p className="text-muted-foreground leading-relaxed">
-                                            Beneath the modern temple developments lie fascinating archaeological remains from 
-                                            Udakotuwa&apos;s original 12th-century monastery complex. These ancient structures provide 
-                                            tangible connections to the temple&apos;s Polonnaruwa period origins and offer insights into 
+                                            Beneath the modern temple developments lie fascinating archaeological remains from
+                                            Udakotuwa&apos;s original 12th-century monastery complex. These ancient structures provide
+                                            tangible connections to the temple&apos;s Polonnaruwa period origins and offer insights into
                                             medieval Buddhist monastic life in Southern Sri Lanka.
                                         </p>
                                         <p className="text-muted-foreground leading-relaxed">
-                                            Archaeological surveys have uncovered stone pillar bases, foundation walls, stupa remains, 
-                                            carved moonstones, and ancient inscription stones documenting land grants from King 
-                                            Parakramabahu&apos;s reign. These discoveries confirm Udakotuwa&apos;s status as an important 
+                                            Archaeological surveys have uncovered stone pillar bases, foundation walls, stupa remains,
+                                            carved moonstones, and ancient inscription stones documenting land grants from King
+                                            Parakramabahu&apos;s reign. These discoveries confirm Udakotuwa&apos;s status as an important
                                             royal temple within the interconnected network of five Bentota Rajamaha Viharayas.
                                         </p>
                                         <div className="grid md:grid-cols-2 gap-4">
@@ -348,16 +331,16 @@ export default function UdakotuwaTemple() {
                                     />
                                     <div className="space-y-4">
                                         <p className="text-muted-foreground leading-relaxed">
-                                            Udakotuwa was historically connected to the remarkable underground tunnel network that 
-                                            linked all five Rajamaha Viharayas in Bentota (Udakotuwa, Wanawasa, Galapatha, Ganepansala, 
-                                            and Bodhimaluwa). This sophisticated subterranean system represented extraordinary medieval 
+                                            Udakotuwa was historically connected to the remarkable underground tunnel network that
+                                            linked all five Rajamaha Viharayas in Bentota (Udakotuwa, Wanawasa, Galapatha, Ganepansala,
+                                            and Bodhimaluwa). This sophisticated subterranean system represented extraordinary medieval
                                             engineering and served crucial functions for the monastic community.
                                         </p>
                                         <p className="text-muted-foreground leading-relaxed">
-                                            The tunnel network enabled monks to travel safely between temples during periods of foreign 
-                                            invasion, provided emergency evacuation routes, facilitated religious ceremonies requiring 
-                                            coordination between temples, and allowed secure transport of sacred relics. While most tunnel 
-                                            sections have collapsed over centuries, remnants of entrance structures can still be observed 
+                                            The tunnel network enabled monks to travel safely between temples during periods of foreign
+                                            invasion, provided emergency evacuation routes, facilitated religious ceremonies requiring
+                                            coordination between temples, and allowed secure transport of sacred relics. While most tunnel
+                                            sections have collapsed over centuries, remnants of entrance structures can still be observed
                                             at temple grounds.
                                         </p>
                                         <div className="space-y-3">
@@ -387,8 +370,8 @@ export default function UdakotuwaTemple() {
                                         </div>
                                         <div className="bg-green-50 dark:bg-green-950/30 p-4 rounded-lg mt-4">
                                             <p className="text-sm text-green-800 dark:text-green-200">
-                                                <strong>Historical Note:</strong> Best-preserved tunnel entrance can be seen at Wanawasa 
-                                                Rajamaha Viharaya. While Udakotuwa&apos;s tunnel sections are no longer accessible, historical 
+                                                <strong>Historical Note:</strong> Best-preserved tunnel entrance can be seen at Wanawasa
+                                                Rajamaha Viharaya. While Udakotuwa&apos;s tunnel sections are no longer accessible, historical
                                                 records and archaeological evidence confirm its connection to this fascinating medieval network.
                                             </p>
                                         </div>
@@ -438,16 +421,16 @@ export default function UdakotuwaTemple() {
                                     />
                                     <div className="space-y-4">
                                         <p className="text-muted-foreground leading-relaxed">
-                                            While honoring its ancient heritage, Udakotuwa functions as a vibrant contemporary Buddhist 
-                                            temple serving local communities and welcoming visitors from around the world. The temple 
-                                            complex includes modern shrine halls, meditation facilities, monk residences, ceremonial 
-                                            spaces, and beautifully maintained gardens that provide peaceful environments for spiritual 
+                                            While honoring its ancient heritage, Udakotuwa functions as a vibrant contemporary Buddhist
+                                            temple serving local communities and welcoming visitors from around the world. The temple
+                                            complex includes modern shrine halls, meditation facilities, monk residences, ceremonial
+                                            spaces, and beautifully maintained gardens that provide peaceful environments for spiritual
                                             practice and contemplation.
                                         </p>
                                         <p className="text-muted-foreground leading-relaxed">
-                                            The temple remains especially active during Buddhist festival days (Poya days) when devotees 
-                                            gather for special ceremonies, Dhamma teachings, meditation sessions, and traditional rituals. 
-                                            Visitors are welcome to participate respectfully in these activities, offering unique 
+                                            The temple remains especially active during Buddhist festival days (Poya days) when devotees
+                                            gather for special ceremonies, Dhamma teachings, meditation sessions, and traditional rituals.
+                                            Visitors are welcome to participate respectfully in these activities, offering unique
                                             opportunities to experience living Buddhist traditions in Sri Lanka.
                                         </p>
                                         <div className="grid md:grid-cols-2 gap-4">
@@ -522,8 +505,8 @@ export default function UdakotuwaTemple() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground text-sm">
-                                    Capture stunning photographs of the giant Buddha statues from Bentota Bridge, riverside viewpoints, 
-                                    and temple grounds. Sunset and sunrise offer spectacular lighting for memorable shots of these 
+                                    Capture stunning photographs of the giant Buddha statues from Bentota Bridge, riverside viewpoints,
+                                    and temple grounds. Sunset and sunrise offer spectacular lighting for memorable shots of these
                                     iconic monuments against natural riverside beauty.
                                 </p>
                             </CardContent>
@@ -538,8 +521,8 @@ export default function UdakotuwaTemple() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground text-sm">
-                                    Discover ancient ruins dating to the 12th century Polonnaruwa period. Observe stone pillar 
-                                    foundations, stupa remains, carved moonstones, and inscription stones that document the temple&apos;s 
+                                    Discover ancient ruins dating to the 12th century Polonnaruwa period. Observe stone pillar
+                                    foundations, stupa remains, carved moonstones, and inscription stones that document the temple&apos;s
                                     800+ year history as a royal Buddhist monastery.
                                 </p>
                             </CardContent>
@@ -554,8 +537,8 @@ export default function UdakotuwaTemple() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground text-sm">
-                                    Experience the peaceful atmosphere of meditation halls, offer prayers at the main shrine, 
-                                    make offerings at the sacred Bodhi tree, and participate in Buddhist ceremonies. The riverside 
+                                    Experience the peaceful atmosphere of meditation halls, offer prayers at the main shrine,
+                                    make offerings at the sacred Bodhi tree, and participate in Buddhist ceremonies. The riverside
                                     setting provides naturally tranquil environments perfect for reflection.
                                 </p>
                             </CardContent>
@@ -570,8 +553,8 @@ export default function UdakotuwaTemple() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground text-sm">
-                                    Learn about the fascinating underground tunnel network connecting five Bentota temples, 
-                                    King Parakramabahu&apos;s Buddhist development projects, and the role Udakotuwa played in 
+                                    Learn about the fascinating underground tunnel network connecting five Bentota temples,
+                                    King Parakramabahu&apos;s Buddhist development projects, and the role Udakotuwa played in
                                     preserving Buddhism through centuries of challenges.
                                 </p>
                             </CardContent>
@@ -586,8 +569,8 @@ export default function UdakotuwaTemple() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground text-sm">
-                                    Join local devotees during Poya day celebrations, observe traditional Buddhist rituals, 
-                                    participate in meditation sessions, listen to Dhamma talks, and experience authentic Sri Lankan 
+                                    Join local devotees during Poya day celebrations, observe traditional Buddhist rituals,
+                                    participate in meditation sessions, listen to Dhamma talks, and experience authentic Sri Lankan
                                     Buddhist temple culture and community life.
                                 </p>
                             </CardContent>
@@ -602,8 +585,8 @@ export default function UdakotuwaTemple() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground text-sm">
-                                    Enjoy the scenic Bentota River views, stroll through beautifully maintained temple gardens 
-                                    with tropical flowering plants, observe river wildlife, and appreciate the harmonious 
+                                    Enjoy the scenic Bentota River views, stroll through beautifully maintained temple gardens
+                                    with tropical flowering plants, observe river wildlife, and appreciate the harmonious
                                     integration of sacred monuments with natural riverside landscapes.
                                 </p>
                             </CardContent>
@@ -741,9 +724,9 @@ export default function UdakotuwaTemple() {
                                 </div>
                                 <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg">
                                     <p className="text-sm text-blue-800 dark:text-blue-200">
-                                        <strong>Local Tip:</strong> The giant Buddha statues are prominently visible from Bentota Bridge 
-                                        on the main A2 highway. If arriving by public transport, ask the driver for &quot;Udakotuwa Temple&quot; 
-                                        or &quot;Bentota Bridge Buddha statues&quot; - it&apos;s a well-known local landmark. Temple parking available 
+                                        <strong>Local Tip:</strong> The giant Buddha statues are prominently visible from Bentota Bridge
+                                        on the main A2 highway. If arriving by public transport, ask the driver for &quot;Udakotuwa Temple&quot;
+                                        or &quot;Bentota Bridge Buddha statues&quot; - it&apos;s a well-known local landmark. Temple parking available
                                         for private vehicles.
                                     </p>
                                 </div>
@@ -765,21 +748,21 @@ export default function UdakotuwaTemple() {
                                     <li className="flex items-start gap-2">
                                         <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 flex-shrink-0"></div>
                                         <div>
-                                            <strong>Wanawasa Rajamaha Viharaya:</strong> Best-preserved underground tunnel entrance, 
+                                            <strong>Wanawasa Rajamaha Viharaya:</strong> Best-preserved underground tunnel entrance,
                                             archaeological museum (5 km away)
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 flex-shrink-0"></div>
                                         <div>
-                                            <strong>Galapatha Rajamaha Viharaya:</strong> Ancient murals, colonial-era image house, 
+                                            <strong>Galapatha Rajamaha Viharaya:</strong> Ancient murals, colonial-era image house,
                                             historical significance (6 km away)
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <div className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 flex-shrink-0"></div>
                                         <div>
-                                            <strong>Ganepansala & Bodhimaluwa:</strong> Meditation caves and forest temples 
+                                            <strong>Ganepansala & Bodhimaluwa:</strong> Meditation caves and forest temples
                                             completing the five-temple network
                                         </div>
                                     </li>
@@ -796,21 +779,21 @@ export default function UdakotuwaTemple() {
                                     <li className="flex items-start gap-2">
                                         <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></div>
                                         <div>
-                                            <strong>Bentota Beach:</strong> Golden sand beach perfect for swimming, water sports, 
+                                            <strong>Bentota Beach:</strong> Golden sand beach perfect for swimming, water sports,
                                             and relaxation (3 km away)
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></div>
                                         <div>
-                                            <strong>Bentota River Safari:</strong> Mangrove boat tours, wildlife watching, 
+                                            <strong>Bentota River Safari:</strong> Mangrove boat tours, wildlife watching,
                                             river cruises (starting point nearby)
                                         </div>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 flex-shrink-0"></div>
                                         <div>
-                                            <strong>Brief Garden:</strong> Bevis Bawa&apos;s stunning landscape garden and art collection 
+                                            <strong>Brief Garden:</strong> Bevis Bawa&apos;s stunning landscape garden and art collection
                                             (15 km away, highly recommended)
                                         </div>
                                     </li>
@@ -826,16 +809,16 @@ export default function UdakotuwaTemple() {
                         <CardContent className="pt-6">
                             <h3 className="text-2xl font-bold mb-4 text-foreground">Experience Udakotuwa&apos;s Unique Blend of Ancient Heritage & Riverside Majesty</h3>
                             <p className="text-muted-foreground mb-4 leading-relaxed">
-                                Udakotuwa Rajamaha Viharaya offers visitors an extraordinary combination of awe-inspiring giant Buddha 
-                                statues, scenic Bentota River views, 12th-century archaeological treasures, and active Buddhist temple 
-                                life. Whether you&apos;re seeking spectacular photography opportunities, spiritual contemplation, historical 
+                                Udakotuwa Rajamaha Viharaya offers visitors an extraordinary combination of awe-inspiring giant Buddha
+                                statues, scenic Bentota River views, 12th-century archaeological treasures, and active Buddhist temple
+                                life. Whether you&apos;re seeking spectacular photography opportunities, spiritual contemplation, historical
                                 exploration, or cultural immersion, this remarkable temple delivers unforgettable experiences.
                             </p>
                             <p className="text-muted-foreground leading-relaxed">
-                                As part of the five interconnected Rajamaha Viharayas in Bentota, Udakotuwa represents an essential piece 
-                                of Southern Sri Lanka&apos;s Buddhist heritage. The temple&apos;s iconic riverside Buddha statues have become 
-                                beloved landmarks recognized throughout the country, welcoming travelers while serving as symbols of peace, 
-                                protection, and timeless Buddhist teachings. Plan your visit to this unique riverside sanctuary and discover 
+                                As part of the five interconnected Rajamaha Viharayas in Bentota, Udakotuwa represents an essential piece
+                                of Southern Sri Lanka&apos;s Buddhist heritage. The temple&apos;s iconic riverside Buddha statues have become
+                                beloved landmarks recognized throughout the country, welcoming travelers while serving as symbols of peace,
+                                protection, and timeless Buddhist teachings. Plan your visit to this unique riverside sanctuary and discover
                                 why Udakotuwa remains one of Bentota&apos;s most cherished spiritual and cultural treasures.
                             </p>
                         </CardContent>

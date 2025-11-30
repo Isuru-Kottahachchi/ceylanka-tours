@@ -1,112 +1,24 @@
 'use client'
 
 import Image from "next/image"
-import { Clock, MapPin, CheckCircle, Star, Users, Crown, Camera, TreePine, ChevronLeft, ChevronRight } from "lucide-react"
+import { Clock, MapPin, CheckCircle, Star, Users, Crown, Camera, TreePine, Images } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { useState } from "react"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 
+const SacredChamberImages = [
+  { src: "/Golden-caskets.jpg", alt: "Sacred Tooth Relic Chamber Interior", title: "Sacred Tooth Relic Chamber Interior" },
+  { src: "/placeholder.svg?height=400&width=600", alt: "Golden Shrine Chamber with Ornate Decorations", title: "Golden Shrine Chamber with Ornate Decorations" }
+]
 
-// Image Carousel Component for Sacred Chamber
-function SacredChamberCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [touchStart, setTouchStart] = useState<number | null>(null)
-  const [touchEnd, setTouchEnd] = useState<number | null>(null)
+const PaththirippuwaImages = [
+  { src: "/Paththirippuwa.jpg", caption: "The iconic octagonal Paththirippuwa structure", alt: "Temple of the Tooth Kandy Paththirippuwa octagonal pavilion with golden roof" },
+]
 
-  const images = [
-    { src: "/Temple-of-the-tooth.jpeg", title: "Temple of the Tooth - Exterior Golden Architecture" },
-    { src: "/Kandy.jpeg", title: "Sacred Tooth Relic Chamber Interior" },
-    { src: "/placeholder.svg?height=400&width=600", title: "Golden Shrine Chamber with Ornate Decorations" },
-    { src: "/placeholder.svg?height=400&width=600", title: "Sacred Caskets and Religious Artifacts" },
-    { src: "/placeholder.svg?height=400&width=600", title: "Devotees in Prayer at Sacred Chamber" }
-  ]
-
-  const minSwipeDistance = 50
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-  }
-
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-  }
-
-  const onTouchStart = (e: React.TouchEvent) => {
-    setTouchEnd(null)
-    setTouchStart(e.targetTouches[0].clientX)
-  }
-
-  const onTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX)
-  }
-
-  const onTouchEnd = () => {
-    if (!touchStart || !touchEnd) return
-    
-    const distance = touchStart - touchEnd
-    const isLeftSwipe = distance > minSwipeDistance
-    const isRightSwipe = distance < -minSwipeDistance
-
-    if (isLeftSwipe && images.length > 1) {
-      nextImage()
-    }
-    if (isRightSwipe && images.length > 1) {
-      prevImage()
-    }
-  }
-
-  return (
-    <div 
-      className="relative w-full h-80 md:h-96 group overflow-hidden rounded-xl shadow-lg"
-      onTouchStart={onTouchStart}
-      onTouchMove={onTouchMove}
-      onTouchEnd={onTouchEnd}
-    >
-      <Image
-        src={images[currentIndex].src}
-        alt={images[currentIndex].title}
-        fill
-        className="object-cover transition-all duration-500"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-      
-      {/* Navigation Buttons */}
-      {images.length > 1 && (
-        <>
-          <button
-            onClick={prevImage}
-            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm rounded-full p-2 transition-all opacity-0 group-hover:opacity-100 shadow-lg"
-          >
-            <ChevronLeft className="w-5 h-5 text-white" />
-          </button>
-          <button
-            onClick={nextImage}
-            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm rounded-full p-2 transition-all opacity-0 group-hover:opacity-100 shadow-lg"
-          >
-            <ChevronRight className="w-5 h-5 text-white" />
-          </button>
-        </>
-      )}
-
-      {/* Image Title Overlay */}
-      <div className="absolute bottom-4 left-4 right-4">
-        <h4 className="text-white font-semibold text-lg mb-2">{images[currentIndex].title}</h4>
-        <div className="flex gap-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all ${
-                index === currentIndex ? 'bg-white' : 'bg-white/50'
-              }`}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
-  )
-}
+const RajaTuskerImages = [
+  { src: "/Raja-tusker.jpg", caption: "Raja Tusker Museum displaying preserved elephant and ceremonial decorations", alt: "Raja Tusker Museum at Temple of the Tooth Kandy" },
+]
 
 export default function TempleOfToothKandyGuide() {
   return (
@@ -164,10 +76,10 @@ export default function TempleOfToothKandyGuide() {
               connection between the relic and royal power shaped Sri Lankan history for centuries, with successive
               kingdoms building increasingly magnificent temples to house this most precious of Buddhist relics.
             </p>
-            
+
             {/* Buddhism in Sri Lanka Button */}
             <div className="mb-6">
-              <a 
+              <a
                 href="/blog/buddisam-in-srilanka"
                 className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
               >
@@ -175,7 +87,7 @@ export default function TempleOfToothKandyGuide() {
                 Learn About Buddhism in Sri Lanka
               </a>
             </div>
-            
+
             <p className="text-lg mb-6">
               The current temple complex, built during the Kandyan Kingdom period (1687-1815), represents the pinnacle
               of traditional Sri Lankan architecture and craftsmanship. Every element of the temple - from the
@@ -295,7 +207,7 @@ export default function TempleOfToothKandyGuide() {
         {/* How to Get There Section */}
         <section className="mb-16">
           <h2 className="text-4xl font-bold mb-10 text-center">How to Get There</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-2 border-green-200 dark:border-green-700 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20">
               <CardHeader>
@@ -368,8 +280,8 @@ export default function TempleOfToothKandyGuide() {
                     </div>
                   </div>
                   <div className="text-center">
-                    <a 
-                      href="/contact" 
+                    <a
+                      href="/contact"
                       className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
                     >
                       <Users className="w-5 h-5" />
@@ -397,7 +309,10 @@ export default function TempleOfToothKandyGuide() {
               </CardHeader>
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
-                  <SacredChamberCarousel />
+
+                  <ImageCarousel
+                    images={SacredChamberImages}
+                  />
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
                       At the heart of the temple complex lies the most sacred space in Sri Lankan Buddhism - the inner
@@ -470,24 +385,20 @@ export default function TempleOfToothKandyGuide() {
               </CardHeader>
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
-                  <Image
-                    src="/Paththirippuwa.jpg"
-                    alt="The iconic Paththirippuwa octagonal pavilion of Temple of the Tooth"
-                    width={600}
-                    height={400}
-                    className="rounded-xl shadow-lg"
+                  <ImageCarousel
+                    images={PaththirippuwaImages}
                   />
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      The Paththirippuwa, or the Octagonal Pavilion, is perhaps the most distinctive architectural feature 
-                      of the Temple of the Tooth. Built during the reign of Sri Wickrama Rajasinghe (1798-1815), this 
-                      two-story pavilion represents the pinnacle of Kandyan architecture and served as the king&apos;s 
+                      The Paththirippuwa, or the Octagonal Pavilion, is perhaps the most distinctive architectural feature
+                      of the Temple of the Tooth. Built during the reign of Sri Wickrama Rajasinghe (1798-1815), this
+                      two-story pavilion represents the pinnacle of Kandyan architecture and served as the king&apos;s
                       viewing gallery during ceremonies and public appearances.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      This unique structure features intricate wooden architecture with its octagonal shape symbolizing 
-                      the eight cardinal directions. The pavilion is supported by elaborately carved wooden pillars and 
-                      features a two-tiered roof with traditional clay tiles, creating a graceful silhouette that has 
+                      This unique structure features intricate wooden architecture with its octagonal shape symbolizing
+                      the eight cardinal directions. The pavilion is supported by elaborately carved wooden pillars and
+                      features a two-tiered roof with traditional clay tiles, creating a graceful silhouette that has
                       become the iconic symbol of the temple.
                     </p>
 
@@ -530,8 +441,8 @@ export default function TempleOfToothKandyGuide() {
               <CardContent className="p-8">
                 <div className="space-y-6">
                   <p className="text-muted-foreground text-lg leading-relaxed">
-                    Beyond the main shrine room, the Temple of the Tooth contains a network of sacred chambers and passages, 
-                    each serving specific ceremonial purposes. These spaces, developed over centuries, reflect the complex 
+                    Beyond the main shrine room, the Temple of the Tooth contains a network of sacred chambers and passages,
+                    each serving specific ceremonial purposes. These spaces, developed over centuries, reflect the complex
                     rituals and traditions surrounding the Sacred Tooth Relic.
                   </p>
 
@@ -539,8 +450,8 @@ export default function TempleOfToothKandyGuide() {
                     <div className="space-y-4">
                       <h4 className="font-semibold text-lg text-emerald-700 dark:text-emerald-300">Handun Kunama (Spice Chamber)</h4>
                       <p className="text-muted-foreground">
-                        A special chamber where ancient aromatic spices and herbs are prepared for temple rituals. These 
-                        sacred ingredients, including sandalwood, camphor, and various native spices, are used in daily 
+                        A special chamber where ancient aromatic spices and herbs are prepared for temple rituals. These
+                        sacred ingredients, including sandalwood, camphor, and various native spices, are used in daily
                         ceremonies to create traditional incense and offerings.
                       </p>
                     </div>
@@ -548,8 +459,8 @@ export default function TempleOfToothKandyGuide() {
                     <div className="space-y-4">
                       <h4 className="font-semibold text-lg text-emerald-700 dark:text-emerald-300">Thevava Passage</h4>
                       <p className="text-muted-foreground">
-                        The ceremonial corridor used by monks and officials during the thrice-daily rituals. Its walls 
-                        feature intricate paintings depicting the history of the tooth relic and important events in 
+                        The ceremonial corridor used by monks and officials during the thrice-daily rituals. Its walls
+                        feature intricate paintings depicting the history of the tooth relic and important events in
                         Sri Lankan Buddhist history.
                       </p>
                     </div>
@@ -660,12 +571,8 @@ export default function TempleOfToothKandyGuide() {
                       </ul>
                     </div>
                   </div>
-                  <Image
-                    src="/Raja-tusker.jpg"
-                    alt="Raja Tusker Museum displaying preserved elephant and ceremonial decorations"
-                    width={600}
-                    height={500}
-                    className="rounded-xl shadow-lg"
+                  <ImageCarousel
+                    images={RajaTuskerImages}
                   />
                 </div>
               </CardContent>
@@ -864,7 +771,7 @@ export default function TempleOfToothKandyGuide() {
               {/* Detailed Festival Components */}
               <div className="mt-8 space-y-6">
                 <h3 className="text-2xl font-bold text-orange-800 dark:text-orange-300">Understanding the Sacred Procession</h3>
-                
+
                 <div className="grid md:grid-cols-3 gap-6">
                   <Card className="border-orange-200 dark:border-orange-700">
                     <CardHeader className="bg-orange-50 dark:bg-orange-900/20">
@@ -945,7 +852,7 @@ export default function TempleOfToothKandyGuide() {
                       <li>• <strong>Kandy Lake:</strong> Final ceremony viewing area</li>
                       <li>• <strong>Side Streets:</strong> Less crowded but still good views</li>
                     </ul>
-                    
+
                     <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Ticket Information</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• <strong>Free Viewing:</strong> Street sides (arrive 3+ hours early)</li>
@@ -963,7 +870,7 @@ export default function TempleOfToothKandyGuide() {
                       <li>• <strong>Respect Sacred Elements:</strong> Stand when casket passes</li>
                       <li>• <strong>Be Patient:</strong> Crowds are large but friendly</li>
                     </ul>
-                    
+
                     <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Accommodation</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• <strong>Book 6+ Months Ahead:</strong> Hotels fill up completely</li>
@@ -977,7 +884,7 @@ export default function TempleOfToothKandyGuide() {
 
               {/* More Details Button */}
               <div className="mt-8 text-center">
-                <a 
+                <a
                   href="/blog/kandy-esela-perahara"
                   className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
