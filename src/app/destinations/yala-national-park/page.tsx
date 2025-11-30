@@ -633,6 +633,71 @@ export default function YalaNationalParkTravelGuide() {
               </CardContent>
             </Card>
 
+            {/* Elephant Rock Section */}
+            <div className="my-8 p-6 bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-950/30 dark:to-amber-950/30 rounded-lg border-l-4 border-orange-500">
+              <h4 className="font-bold text-xl text-orange-800 dark:text-orange-200 mb-3 flex items-center gap-2">
+                <MapPin className="w-5 h-5" />
+                Elephant Rock (Ath Gala) - Yala&apos;s Iconic Landmark
+              </h4>
+
+              <div className="grid md:grid-cols-2 gap-6 items-start mb-4">
+                <div>
+                  <p className="text-orange-800 dark:text-orange-300 mb-3 leading-relaxed">
+                    One of Yala&apos;s most photographed and recognizable features is <strong>Elephant Rock</strong>, locally known as
+                    <strong> &quot;Ath Gala&quot;</strong> (ඇත් ගල) in Sinhala, which translates to &quot;Elephant Stone.&quot; This massive natural rock
+                    formation earned its name due to its striking resemblance to an elephant&apos;s head when viewed from certain angles,
+                    complete with what appears to be a trunk-like protrusion.
+                  </p>
+                  <p className="text-orange-800 dark:text-orange-300 mb-3 leading-relaxed">
+                    <strong>Location & Significance:</strong> Situated near the coastal area of Yala Block 1, Elephant Rock stands
+                    as a prominent geological landmark that serves multiple purposes:
+                  </p>
+                </div>
+
+                <div className="space-y-2">
+                  <Image
+                    src="/Elephant-Rock-Yala.jpg"
+                    alt="Elephant Rock formation in Yala National Park resembling an elephant head"
+                    width={500}
+                    height={400}
+                    className="rounded-lg  w-full h-auto max-h-60 object-contain"
+                  />
+                  <p className="text-xs text-orange-700 dark:text-orange-400 italic text-center">
+                    The iconic Elephant Rock (Ath Gala) - shaped by nature over millions of years
+                  </p>
+                </div>
+              </div>
+
+              <ul className="space-y-2 text-orange-800 dark:text-orange-300 ml-4 mb-3">
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></div>
+                  <span><strong>Wildlife Viewing Platform:</strong> Elephants frequently visit this area, especially during dry
+                    season, creating spectacular photo opportunities where the living elephants are framed against their stone namesake</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></div>
+                  <span><strong>Leopard Territory:</strong> The surrounding rocky outcrops and dense vegetation make this prime
+                    leopard habitat. Many memorable leopard sightings have occurred near Elephant Rock</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></div>
+                  <span><strong>Photography Hotspot:</strong> The dramatic rock formation combined with wildlife creates one of
+                    the most iconic safari photography locations in Sri Lanka</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></div>
+                  <span><strong>Navigation Landmark:</strong> Safari drivers use Elephant Rock as a key reference point when
+                    navigating through Yala&apos;s vast wilderness</span>
+                </li>
+              </ul>
+              <p className="text-orange-800 dark:text-orange-300 leading-relaxed">
+                <strong>Best Time to Visit:</strong> Early morning (6:00-8:00 AM) and late afternoon (4:00-6:00 PM) offer the
+                best lighting for photography and highest chances of elephant encounters. During dry season (June-September),
+                elephant herds regularly congregate near this area to access nearby water sources, providing unforgettable
+                experiences where nature&apos;s living giants meet their ancient stone counterpart!
+              </p>
+            </div>
+
             {/* Asian Elephants */}
             <Card>
               <CardHeader>
@@ -718,48 +783,52 @@ export default function YalaNationalParkTravelGuide() {
                         </ul>
                       </div>
                     </div>
-                    <Link href="/blog/sri-lankan-elephants">
-                      <Button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 h-12 cursor-pointer mt-4">
-                        <span>Learn More About Sri Lankan Elephants</span>
-                        <ArrowRight className="h-5 w-5" />
-                      </Button>
-                    </Link>
+
                   </div>
                 </div>
+
+
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Yala is home to approximately 300-350 elephants, making it one of the best places in Sri Lanka to
-                      observe these magnificent creatures. You’ll often encounter large herds, especially near water
-                      sources during the dry season.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Large herds with babies and juveniles
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Best viewing near water holes
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Fascinating social behaviors to observe
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Occasional tuskers (male elephants with tusks)
-                      </li>
-                    </ul>
-                  </div>
+
+                  <p className="text-muted-foreground mb-4">
+                    Yala is home to approximately 300-350 elephants, making it one of the best places in Sri Lanka to
+                    observe these magnificent creatures. You’ll often encounter large herds, especially near water
+                    sources during the dry season.
+                  </p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Large herds with babies and juveniles
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Best viewing near water holes
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Fascinating social behaviors to observe
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      Occasional tuskers (male elephants with tusks)
+                    </li>
+                  </ul>
+
+                  {/*       
                   <Image
                     src="/placeholder.svg?height=300&width=400"
                     alt="Herd of Asian elephants at a water hole in Yala National Park with babies and adults together"
                     width={400}
                     height={300}
                     className="rounded-lg"
-                  />
+                  /> */}
                 </div>
+                <Link href="/blog/sri-lankan-elephants">
+                  <Button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 h-12 cursor-pointer mt-4">
+                    <span>Learn More About Sri Lankan Elephants</span>
+                    <ArrowRight className="h-5 w-5" />
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 

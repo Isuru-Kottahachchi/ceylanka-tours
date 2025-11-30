@@ -1221,7 +1221,7 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-                        <Card>
+                        {/* <Card>
                             <CardHeader>
                                 <CardTitle>7. Old Bentota Bridge</CardTitle>
                                 <CardDescription>A bridge with more than 100 years of history</CardDescription>
@@ -1237,12 +1237,12 @@ export default function BentotaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            You can take a few photos of the Old Bentota Bridge, which was built by the British in 1894. This is abandoned
+                                            You can take a few photos of the Old Bentota Bridge, which was built by the British in 1902. This is abandoned
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Built by the British in 1894
+                                                Built by the British in 1902
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -1256,7 +1256,7 @@ export default function BentotaGuide() {
                                     </div>
                                 </div>
                             </CardContent>
-                        </Card>
+                        </Card> */}
 
                         <Card>
                             <CardHeader>
