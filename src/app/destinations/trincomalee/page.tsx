@@ -251,12 +251,6 @@ export default function TrincomaleeTravelGuide() {
                         caption: "Inside Fort Frederick",
                         title: "Viewpoint Tea Country"
                       },
-                      {
-                        src: "/placeholder.svg?height=300&width=400",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
-                      }
                     ]}
                   />
 

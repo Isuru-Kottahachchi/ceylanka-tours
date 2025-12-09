@@ -578,6 +578,319 @@ export default function TempleOfToothKandyGuide() {
               </CardContent>
             </Card>
 
+            {/* Temple Museum */}
+            <Card className="overflow-hidden border-2 border-teal-200 dark:border-teal-700">
+              <CardHeader className="bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-900/30 dark:to-cyan-900/30">
+                <CardTitle className="text-2xl text-teal-800 dark:text-teal-300">Temple Museum & Historical Collections</CardTitle>
+                <CardDescription className="text-lg text-teal-600 dark:text-teal-400">
+                  Treasures of Buddhist heritage and royal history
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="grid lg:grid-cols-2 gap-8 items-start">
+                  <Image
+                    src="/placeholder.svg?height=400&width=600"
+                    alt="Temple museum displaying ancient Buddha statues and religious artifacts"
+                    width={600}
+                    height={400}
+                    className="rounded-xl shadow-lg"
+                  />
+                  <div className="space-y-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      The Temple Museum houses an extraordinary collection of religious artifacts, royal gifts, and
+                      historical treasures accumulated over centuries of devotion to the Sacred Tooth Relic. Located
+                      within the temple complex, this fascinating repository offers visitors an intimate glimpse into
+                      the rich cultural and artistic heritage of the Kandyan Kingdom and Sri Lankan Buddhism, with
+                      objects ranging from ancient manuscripts to priceless ceremonial items used by kings and nobles.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Among the most captivating items are the exquisite ceremonial fans (visi valalu) made from
+                      peacock feathers, silver filigree work, and embroidered silk. These ornate fans were used during
+                      temple rituals to honor the Sacred Tooth Relic and cool the shrine chamber. The collection
+                      includes fans gifted by various Kandyan kings, some adorned with precious stones and gold leaf,
+                      representing centuries of royal devotion. You&apos;ll also find beautifully crafted betel leaf
+                      containers (bulath badu), ceremonial umbrellas with intricate embroidery, and royal palanquins
+                      (siviya) that once carried Kandyan royalty.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      The museum displays rare Buddha statues crafted from crystal, jade, bronze, and precious gems -
+                      gifts from Buddhist nations across Asia including Thailand, Myanmar, China, and Japan. Ancient
+                      palm leaf manuscripts (ola leaf books) contain Buddhist scriptures written in Pali and Sinhala,
+                      some dating back 400-500 years. The ivory carving collection is particularly remarkable, featuring
+                      intricate depictions of Jataka tales and the life of Buddha, created by master craftsmen during
+                      the Kandyan period. Historical photographs from the 1880s onward document the evolution of the
+                      Esala Perahera and provide rare glimpses of temple ceremonies from colonial times.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Royal regalia on display includes ceremonial swords (kaduwa), jeweled crowns, traditional Kandyan
+                      jewelry, and royal robes embroidered with gold thread. The collection of antique oil lamps
+                      (pahana), some made from solid gold and silver, illuminates the temple&apos;s history of opulent
+                      offerings. You&apos;ll find traditional drums (dawula and yak beraya) used in temple ceremonies,
+                      conch shells carved with religious motifs, and ancient incense burners. The museum also houses
+                      gifts from foreign dignitaries and Buddhist leaders worldwide, including items from the Dalai
+                      Lama, Thai royal family, and various heads of state who visited the temple.
+                    </p>
+
+                    <div className="bg-teal-50 dark:bg-teal-900/30 p-6 rounded-lg border border-teal-200 dark:border-teal-700">
+                      <h4 className="font-semibold text-teal-800 dark:text-teal-300 mb-3">Museum Treasures:</h4>
+                      <ul className="space-y-3 text-muted-foreground">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Ceremonial Fans:</strong> Peacock feather fans with silver and gold decoration, used in rituals
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Buddha Statues:</strong> Crystal, jade, bronze, and gem-encrusted statues from Asian Buddhist nations
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Royal Regalia:</strong> Ceremonial swords, jeweled crowns, embroidered robes, traditional jewelry
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Palm Leaf Manuscripts:</strong> 400-500 year old Buddhist scriptures in Pali and Sinhala
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Ivory Carvings:</strong> Masterpiece carvings depicting Jataka tales and Buddha&apos;s life
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Antique Oil Lamps:</strong> Gold and silver pahana lamps from royal donations
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Royal Palanquins:</strong> Ornate siviya used to carry Kandyan kings and nobles
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Ceremonial Drums:</strong> Traditional dawula and yak beraya drums for temple rituals
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>Historical Photographs:</strong> Rare 1880s images of Perahera and temple ceremonies
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                          <span>
+                            <strong>International Gifts:</strong> Items from Dalai Lama, Thai royalty, and world leaders
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Madduma Bandara Statue */}
+            <Card className="overflow-hidden border-2 border-red-200 dark:border-red-700">
+              <CardHeader className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/30 dark:to-orange-900/30">
+                <CardTitle className="text-2xl text-red-800 dark:text-red-300">Madduma Bandara Memorial Statue</CardTitle>
+                <CardDescription className="text-lg text-red-600 dark:text-red-400">
+                  Tribute to a child martyr&apos;s courage and sacrifice
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-6">
+                <div className="grid lg:grid-cols-2 gap-6">
+                  {/* Left Column - Image and Quote */}
+                  <div className="space-y-4">
+                    <Image
+                      src="/Madduma-Bandara.jpg"
+                      alt="Memorial statue of Keppetipola Madduma Bandara at Temple of the Tooth"
+                      width={600}
+                      height={400}
+                      className="rounded-xl shadow-lg w-full"
+                    />
+
+                  </div>
+
+                  {/* Right Column - Story and Details */}
+                  <div className="space-y-4">
+                    <p className="text-muted-foreground leading-relaxed">
+                      Within the temple complex stands a poignant memorial to Keppetipola Madduma Bandara, a young
+                      prince who became a symbol of courage during the Kandyan Kingdom&apos;s final years. This
+                      13-year-old nobleman, nephew of rebel leader Keppetipola Disawe, was captured after the 1818
+                      rebellion against British colonial rule.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Despite his youth and innocence, colonial authorities sentenced him to death by beheading as
+                      a warning to potential rebels. Young Madduma Bandara faced his execution with remarkable
+                      composure - he calmly adjusted his royal garments and asked that his body be returned to his
+                      family for proper Buddhist rites. His courage made him a folk hero and symbol of Sri Lankan
+                      resistance to colonialism.
+                    </p>
+                    <div className="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-500">
+                      <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-2 flex items-center gap-2 text-sm">
+                        <span className="text-xl">&quot;</span>
+                        His Final Words to His Brother
+                      </h4>
+                      <p className="text-sm text-muted-foreground italic">
+                        Before his execution, Madduma Bandara said to his elder brother:
+                        <span className="block mt-1 font-medium text-orange-900 dark:text-orange-200">
+                          &quot;Aiya, I am going ahead. You come slowly.&quot;
+                        </span>
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-2">
+                        These profound words demonstrated his Buddhist acceptance of death as merely a transition -
+                        extraordinary courage from a child of just 13 years.
+                      </p>
+                    </div>
+                    <div className="bg-red-50 dark:bg-red-900/30 p-4 rounded-lg border border-red-200 dark:border-red-700">
+                      <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2 text-sm">Historical Significance:</h4>
+                      <div className="grid md:grid-cols-2 gap-x-4 gap-y-2">
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-muted-foreground">
+                            <strong>Age:</strong> 13 years old (1818)
+                          </span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-muted-foreground">
+                            <strong>Symbol:</strong> Resistance icon
+                          </span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-muted-foreground">
+                            <strong>Status:</strong> Folk hero
+                          </span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-muted-foreground">
+                            <strong>Memorial:</strong> Temple complex
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Did You Know Section */}
+            <Card className="overflow-hidden border-2 border-amber-200 dark:border-amber-700 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 dark:from-amber-900/20 dark:via-yellow-900/20 dark:to-orange-900/20">
+              <CardHeader className="bg-gradient-to-r from-amber-100 to-yellow-100 dark:from-amber-900/40 dark:to-yellow-900/40">
+                <CardTitle className="text-2xl text-amber-800 dark:text-amber-300 flex items-center gap-2">
+                  <Star className="w-6 h-6" />
+                  Did You Know? Fascinating Temple Facts
+                </CardTitle>
+                <CardDescription className="text-lg text-amber-600 dark:text-amber-400">
+                  Surprising and intriguing details about Sri Lanka&apos;s most sacred site
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-amber-500">
+                    <h4 className="font-bold text-lg text-amber-700 dark:text-amber-300 mb-3 flex items-center gap-2">
+                      <Crown className="w-5 h-5" />
+                      The Tooth Has Traveled the World
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      In its 1,600+ year history, the Sacred Tooth Relic has survived multiple foreign invasions,
+                      colonial conquests, and even terrorist attacks. During World War II, it was secretly moved to a
+                      secure location to protect it from potential Japanese bombing raids. The tooth has been hidden
+                      in caves, transported across oceans, and smuggled through enemy territory - yet it has never
+                      been destroyed or lost, which devotees consider miraculous proof of its divine protection.
+                    </p>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                    <h4 className="font-bold text-lg text-yellow-700 dark:text-yellow-300 mb-3 flex items-center gap-2">
+                      <Camera className="w-5 h-5" />
+                      No One Has Seen It Recently
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      The actual tooth relic hasn&apos;t been publicly displayed since 1985. What visitors see during
+                      daily pujas is the ornate golden casket containing the tooth - the relic itself remains sealed
+                      within seven nested caskets and is only viewed by the highest-ranking monks during extremely
+                      rare occasions. Even kings were not permitted to see it directly. Scientific examination has
+                      never been allowed, maintaining its mystery and sacred status.
+                    </p>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-orange-500">
+                    <h4 className="font-bold text-lg text-orange-700 dark:text-orange-300 mb-3 flex items-center gap-2">
+                      <TreePine className="w-5 h-5" />
+                      Royal Power Depended on the Tooth
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      For over 1,000 years, possession of the tooth relic was considered essential for legitimizing
+                      rule in Sri Lanka. Kings would go to extraordinary lengths to protect it during wars, sometimes
+                      risking their entire kingdoms. When Portuguese colonizers attempted to destroy what they believed
+                      was the tooth in 1560 (it was actually a replica), it sparked nationwide mourning. The genuine
+                      article had been smuggled to safety, allowing the Kandyan Kingdom to continue claiming divine
+                      right to rule.
+                    </p>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                    <h4 className="font-bold text-lg text-red-700 dark:text-red-300 mb-3 flex items-center gap-2">
+                      <Users className="w-5 h-5" />
+                      Daily Offerings Worth Fortunes
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Every day, devotees offer precious items to the tooth relic including gold, gemstones, and other
+                      valuables. Over centuries, these offerings have accumulated into a treasure that would rival any
+                      royal collection. The temple employs special security and maintains detailed records of all
+                      offerings. During major festivals like Vesak and Esala, the value of daily offerings can reach
+                      millions of rupees, all donated by faithful Buddhists seeking blessings.
+                    </p>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                    <h4 className="font-bold text-lg text-green-700 dark:text-green-300 mb-3 flex items-center gap-2">
+                      <Clock className="w-5 h-5" />
+                      Three Daily Ceremonies for 700 Years
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      The temple has conducted three daily puja ceremonies at exactly the same times - 5:30 AM,
+                      9:30 AM, and 6:30 PM - for over 700 years without interruption. Even during wars, colonial rule,
+                      and modern conflicts, these rituals have continued unbroken. The ceremonies follow precise
+                      protocols established in ancient times, with specific chants, offerings, and procedures that have
+                      been performed identically for generations. This continuity represents one of the world&apos;s
+                      longest uninterrupted religious practices.
+                    </p>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                    <h4 className="font-bold text-lg text-blue-700 dark:text-blue-300 mb-3 flex items-center gap-2">
+                      <MapPin className="w-5 h-5" />
+                      The Temple Survived a Major Bomb Attack
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      In 1998, during Sri Lanka&apos;s civil war, a truck bomb exploded near the temple complex,
+                      damaging the historic structure and killing several people. Remarkably, the inner shrine
+                      containing the tooth relic survived intact without any damage - not even the glass cases
+                      protecting the casket were broken. Buddhists viewed this as divine protection, and the temple
+                      was meticulously restored to its former glory. Security measures were enhanced, but the temple
+                      never closed and daily rituals continued even during repairs.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Temple Architecture & Art */}
             <Card className="overflow-hidden border-2 border-purple-200 dark:border-purple-700">
               <CardHeader className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30">
