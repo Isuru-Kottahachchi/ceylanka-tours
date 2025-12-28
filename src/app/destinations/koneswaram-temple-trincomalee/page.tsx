@@ -1,100 +1,27 @@
 "use client"
 
 import Image from "next/image"
-import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Camera, Heart, ChevronLeft, ChevronRight, Sunrise, Car, Bus, Train, Anchor } from "lucide-react"
+import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Camera, Heart, Sunrise, Car, Bus, Train, Anchor } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { useState } from "react"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-  }
-
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-  }
-
-  const goToImage = (index: number) => {
-    setCurrentIndex(index)
-  }
-
-  return (
-    <div className="relative">
-      <div className="relative overflow-hidden rounded-lg" style={{ height: '500px', width: '100%' }}>
-        <Image
-          src={images[currentIndex] || "/placeholder.svg"}
-          alt={`${alt} - Image ${currentIndex + 1}`}
-          fill
-          className="rounded-lg transition-all duration-300 object-cover"
-          sizes="(max-width: 768px) 100vw, 400px"
-        />
-
-        {/* Navigation buttons */}
-        {images.length > 1 && (
-          <>
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-              onClick={prevImage}
-            >
-              <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-              onClick={nextImage}
-            >
-              <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-            </Button>
-          </>
-        )}
-      </div>
-
-      {/* Dots indicator */}
-      {images.length > 1 && (
-        <div className="flex justify-center mt-3 space-x-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToImage(index)}
-              className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-                }`}
-            />
-          ))}
-        </div>
-      )}
-
-      {/* Image counter */}
-      {images.length > 1 && (
-        <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-          {currentIndex + 1} / {images.length}
-        </div>
-      )}
-    </div>
-  )
-}
 
 export default function KoneswaramTempleGuide() {
   const koneswaramImages = [
-    "/Koneshwaram.jpeg",
-    "/Trinco.jpeg",
-    "/placeholder.jpg",
+    {src:"/Koneshwaram.jpeg",alt:"Koneswaram Temple gopuram with ocean backdrop at sunrise"},
+    {src:"/Trinco.jpeg",alt:"Aerial view of Trincomalee showing pristine beaches, turquoise waters, and the ancient Koneswaram temple on rocky cliffs"},
   ]
 
   const swamirockImages = [
-    "/Swami-Rock.jpeg",
-    "/Koneshwaram.jpeg",
+    {src: "/Swami-Rock.jpeg", alt: "Swami Rock cliff formation with temple"},
+    {src: "/Koneshwaram.jpeg", alt: "Koneswaram Temple on Swami Rock"},
   ]
 
   const loversLeapImages = [
-    "/placeholder.jpg",
+    {src: "/placeholder.jpg", alt: "Lover's Leap cliff with dramatic ocean views"},
   ]
 
   return (
@@ -119,15 +46,15 @@ export default function KoneswaramTempleGuide() {
             offering breathtaking ocean views and 2000 years of sacred history
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Trincomalee, Eastern Province
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Clock className="w-4 h-4 mr-1" />
               4-6 Hours Visit
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Star className="w-4 h-4 mr-1" />
               UNESCO Heritage Site
             </Badge>
@@ -255,7 +182,6 @@ export default function KoneswaramTempleGuide() {
             <div>
               <ImageCarousel 
                 images={koneswaramImages} 
-                alt="Koneswaram Temple with its colorful gopuram and ocean views" 
               />
             </div>
             <div>
@@ -588,7 +514,6 @@ export default function KoneswaramTempleGuide() {
             <div>
               <ImageCarousel 
                 images={swamirockImages} 
-                alt="Dramatic cliffs of Swami Rock with temple and ocean views" 
               />
             </div>
           </div>
@@ -599,12 +524,11 @@ export default function KoneswaramTempleGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Lover&apos;s Leap: A Tale of Tragic Romance</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div>
+            <div>
               <ImageCarousel 
                 images={loversLeapImages} 
-                alt="Lover&apos;s Leap cliff overlooking the ocean with dramatic views" 
               />
             </div>
-            <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">The Dutch Colonial Story</h3>
               <p className="text-muted-foreground mb-4">
                 Adjacent to Koneswaram Temple lies Lover&apos;s Leap, a cliff with a haunting colonial-era story. 
