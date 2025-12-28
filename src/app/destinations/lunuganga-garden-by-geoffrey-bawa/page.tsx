@@ -482,7 +482,7 @@ export default function LunugangaTravelGuide() {
                   />
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Bawa's genius is perhaps most evident in how he integrated water into every aspect of Lunuganga.
+                  Bawa&apos;s genius is perhaps most evident in how he integrated water into every aspect of Lunuganga.
                   From floating pavilions to stepped ghats, these water features create a seamless connection
                   between the built environment and the natural lake.
                 </p>
