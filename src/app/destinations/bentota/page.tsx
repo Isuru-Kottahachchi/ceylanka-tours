@@ -169,12 +169,12 @@ export default function BentotaGuide() {
                                 with Sri Lankan warmth and hospitality.
                             </p>
                         </div>
-                        
+
                         {/* Small Sri Lanka Map with Bentota Location */}
                         <div className="flex flex-col items-center flex-shrink-0">
-                            <div className="relative w-[120px] bg-blue-50 dark:bg-blue-950/30 rounded-lg p-2 border border-blue-200 dark:border-blue-800">
-                    <Image src="/bentota_blink_precise.gif" alt="Map of Sri Lanka showing Bentota location on the southwest coast" width={100} height={100} className="rounded-lg" />
-                                
+                            <div className="relative w-[200px] md:w-[120px] bg-blue-50 dark:bg-blue-950/30 rounded-lg p-2 border border-blue-200 dark:border-blue-800">
+                                <Image src="/bentota_blink_precise.gif" alt="Map of Sri Lanka showing Bentota location on the southwest coast" width={100} height={100} className="rounded-lg w-full h-auto" />
+
                                 <div className="text-center mt-1">
                                     <div className="flex items-center justify-center gap-1 text-red-600 dark:text-red-400 font-bold text-[10px]">
                                         <MapPin className="w-3 h-3" />
