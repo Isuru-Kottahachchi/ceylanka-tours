@@ -55,32 +55,16 @@ export default function LunugangaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Lunuganga: Where Architecture Meets Nature</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into the extraordinary world of Geoffrey Bawa at Lunuganga, where one man&apos;s vision transformed
-              a simple rubber plantation into one of the most beautiful and influential gardens in Asia! Located on
-              the serene banks of the Bentota River, this 25-acre masterpiece represents over 50 years of continuous
-              design evolution by Sri Lanka&apos;s most celebrated architect, creating a seamless harmony between
-              architecture, landscape, and the natural environment.
+              Lunuganga is a beautiful 25-acre garden estate created by Geoffrey Bawa, Sri Lanka&apos;s most famous architect.
+              What started as a rubber plantation in 1948 became one of Asia&apos;s most stunning gardens, located on the
+              peaceful shores of Dedduwa Lake near Bentota. Bawa spent over 50 years designing this special place where
+              nature and buildings blend perfectly together.
             </p>
             <p className="text-lg mb-4">
-              Lunuganga is not just a garden or a house - it&apos;s a living laboratory of tropical design that
-              revolutionized how we think about living in harmony with nature. Every pathway, every view, and every
-              architectural element was carefully planned by Bawa to create what he called &apos;a series of spaces&apos;
-              that flow naturally from indoor to outdoor, from built to natural, creating an experience that feels
-              both intimate and expansive at the same time.
-            </p>
-            <p className="text-lg mb-4">
-              When you visit Lunuganga, you&apos;re walking through the creative mind of the architect who invented
-              &apos;Tropical Modernism&apos; - a design philosophy that influenced architecture across South and
-              Southeast Asia. From the famous terraced lawns that seem to float above the lake, to the hidden
-              courtyards filled with frangipani and temple trees, every corner reveals new surprises that demonstrate
-              Bawa&apos;s genius for creating magical spaces that feel both sophisticated and completely natural.
-            </p>
-            <p className="text-lg">
-              The experience at Lunuganga is deliberately slow and contemplative - plan to spend at least 2-3 hours
-              wandering through the various garden rooms, sitting by the lake, and discovering the architectural
-              details that make this place so special. Whether you&apos;re an architecture enthusiast, a garden lover,
-              or simply someone who appreciates beautiful spaces, Lunuganga offers an unforgettable journey through
-              one of the world&apos;s most important examples of tropical landscape design.
+              The garden features terraced lawns that appear to float above the lake, hidden courtyards with tropical
+              flowers, and peaceful pavilions with lake views. Every path and space was carefully designed to create a
+              calm and inspiring experience. Plan to spend 2-3 hours exploring the different garden areas and enjoying
+              the peaceful atmosphere.
             </p>
           </div>
           <div className="mt-6 p-4 bg-green-50 border-l-4 border-green-400 rounded-r-lg">
@@ -209,8 +193,8 @@ export default function LunugangaTravelGuide() {
               <ImageCarousel
                 images={
                   [
-                    { src: "/placeholder.svg?height=400&width=600", alt: "Geoffrey Bawa working on garden plans at Lunuganga", title: "Bawa at Work", caption: "Geoffrey Bawa designing Lunuganga" },
-                    { src: "/placeholder.svg?height=400&width=600", alt: "Geoffrey Bawa in Lunuganga garden surrounded by tropical plants", title: "Bawa in the Garden", caption: "Bawa immersed in his creation at Lunuganga" },
+                    { src: "/Lunuganga-garden.jpg", alt: "Geoffrey Bawa working on garden plans at Lunuganga", title: "", caption: "" },
+                    { src: "/Lunuganga-garden1.jpg", alt: "Geoffrey Bawa in Lunuganga garden surrounded by tropical plants", title: "", caption: "" },
                   ]
                 }
               />
@@ -246,6 +230,41 @@ export default function LunugangaTravelGuide() {
               </p>
             </div>
           </div>
+          {/* Visitor Information */}
+          <section className="mb-12">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  Essential Visitor Information
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3">Booking and Access</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Advance booking required</strong> - contact estate directly</li>
+                      <li>• <strong>Entry fee:</strong> $15-25 USD per person (varies by season)</li>
+                      <li>• <strong>Group size:</strong> Maximum 15 people per tour</li>
+                      <li>• <strong>Duration:</strong> 2-3 hours recommended</li>
+                      <li>• <strong>Guide service:</strong> Included with entry fee</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3">What to Bring</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Comfortable walking shoes</strong> with good grip</li>
+                      <li>• <strong>Sun protection:</strong> Hat, sunglasses, sunscreen</li>
+                      <li>• <strong>Camera:</strong> With extra batteries for extensive photography</li>
+                      <li>• <strong>Water bottle:</strong> Stay hydrated in tropical climate</li>
+                      <li>• <strong>Light clothing:</strong> Breathable fabrics in neutral colors</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
 
           {/* Additional Design Philosophy */}
           <div className="mt-8 p-6 bg-green-50 rounded-lg border border-green-200">
@@ -280,10 +299,10 @@ export default function LunugangaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">Discovering the Magical Spaces of Lunuganga</h2>
 
           <div className="grid gap-8">
-       
+
             <Card className="border-l-4 border-l-green-500">
               <CardHeader>
-                 <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center gap-2">
                   <Home className="w-5 h-5 text-blue-500" />
                   The Main House and Verandas
                 </CardTitle>
@@ -302,28 +321,28 @@ export default function LunugangaTravelGuide() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-4">
-                     The heart of Lunuganga is Bawa&apos;s residence, a low-rise structure that seems to float above the landscape. The house demonstrates all of Bawa&apos;s key principles: wide verandas that blur the boundary between inside and outside, carefully framed views of the lake and garden, and rooms that open completely to catch every breeze.
+                      The heart of Lunuganga is Bawa&apos;s residence, a low-rise structure that seems to float above the landscape. The house demonstrates all of Bawa&apos;s key principles: wide verandas that blur the boundary between inside and outside, carefully framed views of the lake and garden, and rooms that open completely to catch every breeze.
                     </p>
-                     <div>
-                    <h4 className="font-semibold mb-2">Architectural Features:</h4>
-                    <ul className="space-y-1 text-sm text-muted-foreground">
-                      <li>• Main veranda with panoramic lake views</li>
-                      <li>• Interior courtyards filled with tropical plants</li>
-                      <li>• Dining pavilion extending over the water</li>
-                      <li>• Library with built-in reading nooks</li>
-                      <li>• Guest rooms integrated into garden terraces</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">Design Elements:</h4>
-                    <ul className="space-y-1 text-sm text-muted-foreground">
-                      <li>• Local timber and stone construction</li>
-                      <li>• Clay tile roofs for cooling and character</li>
-                      <li>• Floor-to-ceiling openings for ventilation</li>
-                      <li>• Antique Sri Lankan and Asian furnishings</li>
-                      <li>• Contemporary art integrated throughout</li>
-                    </ul>
-                  </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Architectural Features:</h4>
+                      <ul className="space-y-1 text-sm text-muted-foreground">
+                        <li>• Main veranda with panoramic lake views</li>
+                        <li>• Interior courtyards filled with tropical plants</li>
+                        <li>• Dining pavilion extending over the water</li>
+                        <li>• Library with built-in reading nooks</li>
+                        <li>• Guest rooms integrated into garden terraces</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Design Elements:</h4>
+                      <ul className="space-y-1 text-sm text-muted-foreground">
+                        <li>• Local timber and stone construction</li>
+                        <li>• Clay tile roofs for cooling and character</li>
+                        <li>• Floor-to-ceiling openings for ventilation</li>
+                        <li>• Antique Sri Lankan and Asian furnishings</li>
+                        <li>• Contemporary art integrated throughout</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -376,43 +395,47 @@ export default function LunugangaTravelGuide() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="mb-6">
-                  <ImageCarousel
-                    images={[
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Cinnamon Hill pavilion with panoramic views", title: "Cinnamon Hill", caption: "Pavilion offering panoramic views across the estate" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Water garden with reflecting pools", title: "Water Garden", caption: "Reflecting pools creating cooling microclimates" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Entrance court with geometric patterns", title: "Entrance Court", caption: "Formal arrival space with geometric design" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Hidden pathways through tropical gardens", title: "Hidden Pathways", caption: "Winding paths creating journey and discovery" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Secret courtyards with frangipani trees", title: "Secret Courtyards", caption: "Intimate spaces filled with fragrant trees" }
-                    ]}
-                  />
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Lunuganga is organized as a series of &apos;garden rooms&apos; - distinct spaces with their own
-                  character and purpose, connected by carefully planned pathways that create a sense of journey
-                  and discovery. Each room offers different experiences and reveals new aspects of Bawa&apos;s design vision.
-                </p>
-                <div className="grid md:grid-cols-3 gap-4">
+                <div className="grid md:grid-cols-2 gap-6 items-start">
                   <div>
-                    <h4 className="font-semibold mb-2 text-purple-700">The Cinnamon Hill</h4>
-                    <p className="text-sm text-muted-foreground">
-                      The highest point offering panoramic views across the entire garden and lake.
-                      Features a pavilion perfect for sunset viewing and meditation.
-                    </p>
+                    <ImageCarousel
+                      images={[
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Cinnamon Hill pavilion with panoramic views", title: "Cinnamon Hill", caption: "Pavilion offering panoramic views across the estate" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Water garden with reflecting pools", title: "Water Garden", caption: "Reflecting pools creating cooling microclimates" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Entrance court with geometric patterns", title: "Entrance Court", caption: "Formal arrival space with geometric design" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Hidden pathways through tropical gardens", title: "Hidden Pathways", caption: "Winding paths creating journey and discovery" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Secret courtyards with frangipani trees", title: "Secret Courtyards", caption: "Intimate spaces filled with fragrant trees" }
+                      ]}
+                    />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-purple-700">The Water Garden</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Reflecting pools and water channels that mirror the sky and vegetation,
-                      creating a cooling microclimate in the tropical heat.
+                    <p className="text-muted-foreground mb-4">
+                      Lunuganga is organized as a series of &apos;garden rooms&apos; - distinct spaces with their own
+                      character and purpose, connected by carefully planned pathways that create a sense of journey
+                      and discovery. Each room offers different experiences and reveals new aspects of Bawa&apos;s design vision.
                     </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2 text-purple-700">The Entrance Court</h4>
-                    <p className="text-sm text-muted-foreground">
-                      A formal arrival space featuring geometric patterns and specimen trees
-                      that frame the view toward the main house.
-                    </p>
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <div>
+                        <h4 className="font-semibold mb-2 text-purple-700">The Cinnamon Hill</h4>
+                        <p className="text-sm text-muted-foreground">
+                          The highest point offering panoramic views across the entire garden and lake.
+                          Features a pavilion perfect for sunset viewing and meditation.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-2 text-purple-700">The Water Garden</h4>
+                        <p className="text-sm text-muted-foreground">
+                          Reflecting pools and water channels that mirror the sky and vegetation,
+                          creating a cooling microclimate in the tropical heat.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-2 text-purple-700">The Entrance Court</h4>
+                        <p className="text-sm text-muted-foreground">
+                          A formal arrival space featuring geometric patterns and specimen trees
+                          that frame the view toward the main house.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -427,34 +450,36 @@ export default function LunugangaTravelGuide() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="mb-6">
-                  <ImageCarousel
-                    images={[
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Bamboo grove with filtered sunlight", title: "Bamboo Grove", caption: "Natural cathedral effect with filtered sunlight" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Frangipani courtyard with stone sculptures", title: "Frangipani Courtyard", caption: "Intimate space with fragrant trees and sculptures" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Palm grove leading to lake views", title: "Palm Grove", caption: "Majestic palms creating vertical drama" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Hidden meditation spots among tropical plants", title: "Meditation Spots", caption: "Quiet corners for contemplation and reflection" }
-                    ]}
-                  />
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Beyond the main spaces, Lunuganga reveals intimate secret gardens and groves that Bawa
-                  created for quiet contemplation. These hidden areas showcase his mastery of creating
-                  intimate spaces within the larger landscape composition.
-                </p>
-                <div>
-                  <div className="grid gap-3">
-                    <div>
-                      <h5 className="font-medium text-emerald-700 mb-1">The Bamboo Grove</h5>
-                      <p className="text-xs text-muted-foreground">Filtered light through bamboo creating a natural cathedral effect</p>
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-emerald-700 mb-1">Frangipani Courtyard</h5>
-                      <p className="text-xs text-muted-foreground">Intimate space filled with fragrant trees and stone sculptures</p>
-                    </div>
-                    <div>
-                      <h5 className="font-medium text-emerald-700 mb-1">The Palm Grove</h5>
-                      <p className="text-xs text-muted-foreground">Majestic coconut palms creating vertical drama</p>
+                <div className="grid md:grid-cols-2 gap-6 items-start">
+                  <div>
+                    <ImageCarousel
+                      images={[
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Bamboo grove with filtered sunlight", title: "Bamboo Grove", caption: "Natural cathedral effect with filtered sunlight" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Frangipani courtyard with stone sculptures", title: "Frangipani Courtyard", caption: "Intimate space with fragrant trees and sculptures" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Palm grove leading to lake views", title: "Palm Grove", caption: "Majestic palms creating vertical drama" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Hidden meditation spots among tropical plants", title: "Meditation Spots", caption: "Quiet corners for contemplation and reflection" }
+                      ]}
+                    />
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Beyond the main spaces, Lunuganga reveals intimate secret gardens and groves that Bawa
+                      created for quiet contemplation. These hidden areas showcase his mastery of creating
+                      intimate spaces within the larger landscape composition.
+                    </p>
+                    <div className="grid gap-3">
+                      <div>
+                        <h5 className="font-medium text-emerald-700 mb-1">The Bamboo Grove</h5>
+                        <p className="text-xs text-muted-foreground">Filtered light through bamboo creating a natural cathedral effect</p>
+                      </div>
+                      <div>
+                        <h5 className="font-medium text-emerald-700 mb-1">Frangipani Courtyard</h5>
+                        <p className="text-xs text-muted-foreground">Intimate space filled with fragrant trees and stone sculptures</p>
+                      </div>
+                      <div>
+                        <h5 className="font-medium text-emerald-700 mb-1">The Palm Grove</h5>
+                        <p className="text-xs text-muted-foreground">Majestic coconut palms creating vertical drama</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -470,42 +495,46 @@ export default function LunugangaTravelGuide() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="mb-6">
-                  <ImageCarousel
-                    images={[
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Floating pavilion over Dedduwa Lake", title: "Floating Pavilion", caption: "Architectural structure extending over calm waters" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Stone steps leading into the water", title: "Stone Ghats", caption: "Traditional steps connecting land to water" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Reflection pool connecting to main lake", title: "Reflection Pool", caption: "Water feature extending lake views into garden" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Wooden jetty extending into calm waters", title: "Wooden Jetty", caption: "Peaceful platform for lake contemplation" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Lotus pond with architectural backdrop", title: "Lotus Pond", caption: "Aquatic garden with architectural framing" }
-                    ]}
-                  />
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Bawa&apos;s genius is perhaps most evident in how he integrated water into every aspect of Lunuganga.
-                  From floating pavilions to stepped ghats, these water features create a seamless connection
-                  between the built environment and the natural lake.
-                </p>
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid md:grid-cols-2 gap-6 items-start">
                   <div>
-                    <h4 className="font-semibold mb-2">Water Elements:</h4>
-                    <ul className="space-y-1 text-sm text-muted-foreground">
-                      <li>• Floating dining pavilion over lake</li>
-                      <li>• Stone ghats leading into water</li>
-                      <li>• Reflection pools extending lake views</li>
-                      <li>• Wooden jetties for lake access</li>
-                      <li>• Lotus ponds with architectural features</li>
-                    </ul>
+                    <ImageCarousel
+                      images={[
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Floating pavilion over Dedduwa Lake", title: "Floating Pavilion", caption: "Architectural structure extending over calm waters" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Stone steps leading into the water", title: "Stone Ghats", caption: "Traditional steps connecting land to water" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Reflection pool connecting to main lake", title: "Reflection Pool", caption: "Water feature extending lake views into garden" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Wooden jetty extending into calm waters", title: "Wooden Jetty", caption: "Peaceful platform for lake contemplation" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Lotus pond with architectural backdrop", title: "Lotus Pond", caption: "Aquatic garden with architectural framing" }
+                      ]}
+                    />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2">Design Philosophy:</h4>
-                    <ul className="space-y-1 text-sm text-muted-foreground">
-                      <li>• Water as extension of living space</li>
-                      <li>• Natural cooling through water features</li>
-                      <li>• Reflection to double garden views</li>
-                      <li>• Seasonal water level integration</li>
-                      <li>• Sound of water enhancing tranquility</li>
-                    </ul>
+                    <p className="text-muted-foreground mb-4">
+                      Bawa&apos;s genius is perhaps most evident in how he integrated water into every aspect of Lunuganga.
+                      From floating pavilions to stepped ghats, these water features create a seamless connection
+                      between the built environment and the natural lake.
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <h4 className="font-semibold mb-2">Water Elements:</h4>
+                        <ul className="space-y-1 text-sm text-muted-foreground">
+                          <li>• Floating dining pavilion over lake</li>
+                          <li>• Stone ghats leading into water</li>
+                          <li>• Reflection pools extending lake views</li>
+                          <li>• Wooden jetties for lake access</li>
+                          <li>• Lotus ponds with architectural features</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-2">Design Philosophy:</h4>
+                        <ul className="space-y-1 text-sm text-muted-foreground">
+                          <li>• Water as extension of living space</li>
+                          <li>• Natural cooling through water features</li>
+                          <li>• Reflection to double garden views</li>
+                          <li>• Seasonal water level integration</li>
+                          <li>• Sound of water enhancing tranquility</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -520,33 +549,37 @@ export default function LunugangaTravelGuide() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="mb-6">
-                  <ImageCarousel
-                    images={[
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Ancient stone Buddha among tropical plants", title: "Ancient Sculptures", caption: "Historic Sri Lankan stone carvings in garden settings" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Contemporary sculpture in garden setting", title: "Contemporary Art", caption: "Modern pieces by local and international artists" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Decorative architectural elements", title: "Architectural Elements", caption: "Features that blur the line between art and architecture" },
-                      { src: "/placeholder.svg?height=300&width=500", alt: "Art pieces integrated with water features", title: "Water Integration", caption: "Sculptures enhanced by water reflections" }
-                    ]}
-                  />
-                </div>
-                <p className="text-muted-foreground mb-4">
-                  Throughout Lunuganga, Bawa integrated sculptures and art pieces that complement the natural
-                  landscape. This careful curation of art objects creates surprising moments of discovery
-                  and adds layers of cultural meaning to the garden experience.
-                </p>
-                <div className="grid gap-3">
+                <div className="grid md:grid-cols-2 gap-6 items-start">
                   <div>
-                    <h5 className="font-medium text-rose-700 mb-1">Ancient Sculptures</h5>
-                    <p className="text-xs text-muted-foreground">Historic Sri Lankan stone carvings placed in garden settings</p>
+                    <ImageCarousel
+                      images={[
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Ancient stone Buddha among tropical plants", title: "Ancient Sculptures", caption: "Historic Sri Lankan stone carvings in garden settings" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Contemporary sculpture in garden setting", title: "Contemporary Art", caption: "Modern pieces by local and international artists" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Decorative architectural elements", title: "Architectural Elements", caption: "Features that blur the line between art and architecture" },
+                        { src: "/placeholder.svg?height=300&width=400", alt: "Art pieces integrated with water features", title: "Water Integration", caption: "Sculptures enhanced by water reflections" }
+                      ]}
+                    />
                   </div>
                   <div>
-                    <h5 className="font-medium text-rose-700 mb-1">Contemporary Art</h5>
-                    <p className="text-xs text-muted-foreground">Modern pieces by local and international artists</p>
-                  </div>
-                  <div>
-                    <h5 className="font-medium text-rose-700 mb-1">Architectural Elements</h5>
-                    <p className="text-xs text-muted-foreground">Decorative features that blur art and architecture</p>
+                    <p className="text-muted-foreground mb-4">
+                      Throughout Lunuganga, Bawa integrated sculptures and art pieces that complement the natural
+                      landscape. This careful curation of art objects creates surprising moments of discovery
+                      and adds layers of cultural meaning to the garden experience.
+                    </p>
+                    <div className="grid gap-3">
+                      <div>
+                        <h5 className="font-medium text-rose-700 mb-1">Ancient Sculptures</h5>
+                        <p className="text-xs text-muted-foreground">Historic Sri Lankan stone carvings placed in garden settings</p>
+                      </div>
+                      <div>
+                        <h5 className="font-medium text-rose-700 mb-1">Contemporary Art</h5>
+                        <p className="text-xs text-muted-foreground">Modern pieces by local and international artists</p>
+                      </div>
+                      <div>
+                        <h5 className="font-medium text-rose-700 mb-1">Architectural Elements</h5>
+                        <p className="text-xs text-muted-foreground">Decorative features that blur art and architecture</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -633,42 +666,6 @@ export default function LunugangaTravelGuide() {
                   <strong>📸 Photography Etiquette:</strong> While photography is encouraged, please be respectful of other
                   visitors and the peaceful atmosphere. Some interior spaces may have restrictions, so always ask permission.
                 </p>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
-        {/* Visitor Information */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <CheckCircle className="w-5 h-5 text-green-500" />
-                Essential Visitor Information
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold mb-3">Booking and Access</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Advance booking required</strong> - contact estate directly</li>
-                    <li>• <strong>Entry fee:</strong> $15-25 USD per person (varies by season)</li>
-                    <li>• <strong>Group size:</strong> Maximum 15 people per tour</li>
-                    <li>• <strong>Duration:</strong> 2-3 hours recommended</li>
-                    <li>• <strong>Guide service:</strong> Included with entry fee</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-3">What to Bring</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Comfortable walking shoes</strong> with good grip</li>
-                    <li>• <strong>Sun protection:</strong> Hat, sunglasses, sunscreen</li>
-                    <li>• <strong>Camera:</strong> With extra batteries for extensive photography</li>
-                    <li>• <strong>Water bottle:</strong> Stay hydrated in tropical climate</li>
-                    <li>• <strong>Light clothing:</strong> Breathable fabrics in neutral colors</li>
-                  </ul>
-                </div>
               </div>
             </CardContent>
           </Card>
