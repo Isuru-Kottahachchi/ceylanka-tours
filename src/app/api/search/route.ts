@@ -679,6 +679,16 @@ const destinations: Destination[] = [
     description: "The world's oldest recorded tree, a sacred Bo tree grown from a cutting brought from India in 288 BC, one of the holiest sites in Buddhism",
     highlights: ["World's Oldest Recorded Tree", "Sacred Bo Tree", "2300+ Years Old", "Buddhist Pilgrimage Site", "Golden Railings"],
     category: "Religious",
+  },
+  {
+    id: 46,
+    name:"Pidurangala Rock",
+    location: "Central Province",
+    path: "pidurangala-rock",
+    image: "/Pidurangala.jpeg",
+    description: "Scenic rock formation with panoramic views of Sigiriya and surrounding jungle",
+    highlights: ["Panoramic Views", "Hiking", "Sunrise Spot"],
+    category: "Nature",
   }
 ]
 

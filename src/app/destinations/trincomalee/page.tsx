@@ -61,15 +61,21 @@ export default function TrincomaleeTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Trincomalee: Where History Meets Paradise</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Discover Trincomalee, Sri Lankas best-kept secret on the stunning eastern coast. This ancient port city
-              boasts one of the worlds finest natural harbors, pristine white sand beaches, crystal-clear turquoise
-              waters, and a rich tapestry of Tamil, Sinhalese, and colonial history spanning over 2,000 years.
+              Looking for beaches without the crowds? Trincomalee is what you need! This eastern coast gem has everything:
+              one of the world&apos;s finest natural harbors, white sand beaches, clear blue waters, and 2,000 years of
+              history mixing Tamil, Sinhalese, Portuguese, Dutch, and British cultures.
+            </p>
+            <p className="text-lg mb-4">
+              Visit Koneswaram Temple on Swami Rock for amazing views, relax on quiet Nilaveli and Uppuveli beaches, watch
+              whales, dive among coral reefs, and explore colonial landmarks like Fort Frederick (Portuguese built it,
+              Dutch rebuilt it). You&apos;ll find British-era buildings, old churches, and the War Cemetery too. Unlike
+              the busy south and west coasts, Trincomalee feels authentic and peaceful.
             </p>
             <p className="text-lg">
-              From the sacred Koneswaram Temple perched dramatically on Swami Rock to the untouched beaches of Nilaveli
-              and Uppuveli, from incredible whale watching opportunities to world-class diving and snorkeling,
-              Trincomalee offers an authentic Sri Lankan coastal experience away from the crowds of the south and west
-              coasts.
+              Love temples? Check. Adventure sports? Got it. History? Plenty. Beach relaxation? Of course! Walk through
+              old colonial buildings, try food influenced by different cultures, and enjoy what makes this port city special.
+              Bonus: Trincomalee faces east, so you get sunrise over the ocean (south coast only gets sunset), warm weather
+              all year, and that relaxed coastal vibe Sri Lanka is famous for.
             </p>
           </div>
         </section>
@@ -242,55 +248,65 @@ export default function TrincomaleeTravelGuide() {
                       {
                         src: "/Fort-Frederick.jpg",
                         alt: "Panoramic view from Fort Frederick with ocean backdrop",
-                        caption: "Sunrise at Fort Frederick",
-                        title: "Fort Frederick - Sunrise View"
+                        caption: "",
+                        title: ""
                       },
                       {
                         src: "/Fort-Frederick1.jpg",
                         alt: "View from Fort Frederick",
-                        caption: "Inside Fort Frederick",
-                        title: "Viewpoint Tea Country"
+                        caption: "",
+                        title: ""
                       },
                     ]}
                   />
 
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This was built during the Portuguese ruled season in 1600s and later expanded by the Dutch
-                      in the 17th century. The fort offers panoramic views of the Trincomalee harbor and coastline.
-                      Explore the ramparts, old cannons, and historic buildings within the fort complex. It is a great
+                      Built in 1622-1623 by the Portuguese and later rebuilt in 1665 by the Dutch,and then the British (1795 – 1948),
+                      Fort Frederick offers panoramic views of the Trincomalee harbor and coastline.
+                      Explore the ramparts, old cannons, and historic buildings within the fort complex.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Koneshwaram Kovil is located within this fort complex. Also a one of Irish Colonel Arthur Wellesley&apos;s bungalow also located here.
-                      spot for photography, especially during sunrise and sunset. The fort is still an active
+                      Koneswaram Temple is located within this fort complex. Also the famous British officer Arthur Wellesley&apos;s (later Duke of Wellington) bungalow is located here.
+                      The fort is a great spot for photography, especially during sunrise and sunset. It is still an active
                       military base, so some areas may be restricted. Entry is free, and it is open to visitors daily.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Portuguese colonial architecture
+                        Portuguese and Dutch colonial architecture (1622-1665)
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Water temperatures around 40°C (104°F)
+                        Stunning panoramic views of harbour and ocean
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Rich in minerals with believed healing properties
+                        Home to historic Koneswaram Temple
                       </li>
-
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Duke of Wellington&apos;s historic bungalow
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Old cannons and military artifacts
+                      </li>
                     </ul>
                   </div>
                 </div>
                 <div className="mt-6 p-4 bg-purple-50 dark:bg-purple-950/50 rounded-lg border-l-4 border-purple-400">
                   <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">Visitor Information:</h4>
-                  <p className="text-sm text-purple-700 dark:text-purple-300 mb-2">
+                  {/* <p className="text-sm text-purple-700 dark:text-purple-300 mb-2">
                     <strong>Entry Fee:</strong> Small nominal charge for maintenance.
+
+                  </p> */}
+                   <p className="text-sm text-purple-700 dark:text-purple-300 mb-2">
                     <strong>Best Time:</strong> Early morning or late afternoon to avoid crowds.
-                  </p>
+                   </p>
+                  
                   <p className="text-sm text-purple-700 dark:text-purple-300">
-                    <strong>Note:</strong> Bring a towel and change of clothes. Photography is allowed but be respectful
-                    of pilgrims and religious activities. The water is safe for bathing.
+                    <strong>Note:</strong> Part of an active military base; some areas may be restricted.
                   </p>
                 </div>
               </CardContent>
@@ -422,8 +438,8 @@ export default function TrincomaleeTravelGuide() {
                     <h4 className="font-semibold text-red-800 dark:text-red-200 mb-3">Colonial Period & Reconstruction</h4>
                     <div className="text-sm text-red-700 dark:text-red-300 space-y-2">
                       <p>
-                        <strong>Portuguese Destruction (1624):</strong> The original temple complex was systematically
-                        destroyed by Portuguese colonizers who built Fort Frederick using the temple stones. Many
+                        <strong>Portuguese Destruction (1622):</strong> The original temple complex was systematically
+                        destroyed on April 14, 1622 by Portuguese colonizers who built Fort Frederick using the temple stones. Many
                         precious artifacts and sculptures were thrown into the ocean.
                       </p>
                       <p>
@@ -503,14 +519,14 @@ export default function TrincomaleeTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>3. Trincomalee Natural Harbour</CardTitle>
-                <CardDescription>World&apos;s 5th largest natural deep-water harbour</CardDescription>
+                <CardDescription>One of the world&apos;s finest natural deep-water harbours</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Trincomalee boasts one of the world&apos;s most magnificent natural harbours, ranked as the 5th largest
-                      globally. This deep-water harbour stretches over 30 square kilometers and can accommodate the
+                      Trincomalee boasts one of the world&apos;s most magnificent natural harbours, historically praised as
+                      the &quot;finest harbour in the world.&quot; This deep-water harbour stretches over 30 square kilometers and can accommodate the
                       largest naval vessels. Its strategic importance has made it a coveted prize for colonial powers
                       throughout history.
                     </p>
@@ -523,7 +539,7 @@ export default function TrincomaleeTravelGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        5th largest natural harbour in the world
+                        Renowned as one of the world&apos;s finest natural harbours
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -1035,9 +1051,157 @@ export default function TrincomaleeTravelGuide() {
                   <h4 className="font-semibold text-yellow-800 mb-2">Safety & Access Information:</h4>
                   <p className="text-sm text-yellow-700">
                     <strong>Access:</strong> Requires local transportation or guided tour as it&apos;s off the main tourist path.
+                    <br />
                     <strong>Safety:</strong> Stay away from water&apos;s edge due to unpredictable waves and currents.
                     Best visited during dry season for easier access.
                   </p>
+                </div>
+              </CardContent>
+            </Card>
+
+
+            {/* Trincomalee War Cemetery */}
+            <Card>
+              <CardHeader>
+                <CardTitle>10. Trincomalee War Cemetery</CardTitle>
+                <CardDescription>Commonwealth War Graves - A place of remembrance and reflection</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/war-cemetery-trinco.jpg",
+                        alt: "Trincomalee War Cemetery with well-maintained graves and memorial",
+                        caption: "Trincomalee War Cemetery",
+                        title: "War Cemetery Memorial"
+                      },
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      The Trincomalee War Cemetery is one of six Commonwealth War Graves in Sri Lanka, maintained by the
+                      Commonwealth War Graves Commission on behalf of the Sri Lankan Ministry of Defence. This peaceful and
+                      beautifully maintained cemetery honors the memory of service personnel who died during World War II,
+                      particularly during the Japanese attacks on Trincomalee in 1942.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The cemetery contains the graves of servicemen from the British Royal Navy, Royal Air Force, and other
+                      Commonwealth forces who were stationed in Trincomalee when it served as an important Allied naval base.
+                      The immaculately kept grounds provide a serene place for reflection on the sacrifices made during the war,
+                      with well-maintained headstones and memorial plaques surrounded by tropical gardens.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        One of six Commonwealth War Cemeteries in Sri Lanka
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Honors World War II service personnel who died in 1942
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Beautifully maintained grounds and memorial gardens
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Peaceful location for reflection and remembrance
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Historical connection to Trincomalee&apos;s WWII strategic importance
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Free entry and open to respectful visitors
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-slate-50 dark:bg-slate-950/50 rounded-lg border-l-4 border-slate-400">
+                  <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Visitor Information:</h4>
+                  <div className="text-sm text-slate-700 dark:text-slate-300 space-y-2">
+                    <p><strong>Historical Context:</strong> Trincomalee served as a major Allied naval base during WWII. The Japanese
+                    Indian Ocean Raid in April 1942 targeted the harbor and airfield, resulting in casualties among defending forces.</p>
+                    <p><strong>Etiquette:</strong> Please maintain respectful behavior, speak quietly, and dress modestly. This is an active
+                    place of remembrance where people come to pay their respects.</p>
+                    <p><strong>Opening Hours:</strong> Generally open during daylight hours. Best visited in the morning or late afternoon
+                    to avoid midday heat.</p>
+                    <p><strong>Maintenance:</strong> The cemetery is maintained to the high standards of the Commonwealth War Graves Commission,
+                    ensuring all graves are honored with dignity.</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            {/* Kinniya Bridge */}
+            <Card>
+              <CardHeader>
+                <CardTitle>9. Kinniya Bridge</CardTitle>
+                <CardDescription>Sri Lanka&apos;s longest bridge - A scenic engineering marvel</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/kinniya-bridge.jpg",
+                        alt: "Kinniya Bridge spanning across the water",
+                        caption: "Kinniya Bridge View",
+                        title: "Kinniya Bridge"
+                      },
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      The Kinniya Bridge holds the distinction of being the longest bridge in Sri Lanka, spanning an impressive
+                      distance across the Trincomalee lagoon. This important infrastructure connects Trincomalee town with the
+                      mainland, serving as a vital transportation link for the eastern province while offering spectacular
+                      views of the water, fishing boats, and surrounding landscape.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      Beyond its practical importance, the bridge has become a popular landmark and photography spot. The
+                      panoramic views are especially stunning during sunrise and sunset when the water reflects the changing
+                      colors of the sky. It&apos;s an excellent location to observe local life, fishing activities, and the
+                      natural beauty of Trincomalee&apos;s coastal ecosystem.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Sri Lanka&apos;s longest bridge - impressive engineering achievement
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Panoramic views of Trincomalee lagoon and surrounding areas
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect spot for sunrise and sunset photography
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Observe local fishing boats and traditional activities
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Vital transport link connecting eastern communities
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Free access and easily accessible
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950/50 rounded-lg border-l-4 border-blue-400">
+                  <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Visitor Tips:</h4>
+                  <div className="text-sm text-blue-700 dark:text-blue-300 space-y-1">
+                    <p><strong>Best Time:</strong> Early morning (6:00-8:00 AM) or late afternoon (4:30-6:30 PM) for best lighting and cooler temperatures</p>
+                    <p><strong>Photography:</strong> Wide-angle lens recommended to capture the full span of the bridge and surrounding water</p>
+                    <p><strong>Safety:</strong> Be cautious of traffic when taking photos from the bridge</p>
+                    <p><strong>Location:</strong> On the main road connecting Trincomalee to Kinniya town</p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -1283,6 +1447,65 @@ export default function TrincomaleeTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+                  
+            {/* Portuguese Village */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Portuguese Village - Orr&apos;s Hill</CardTitle>
+                <CardDescription>Historic Portuguese Burgher community on a scenic hilltop</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Perched on Orr&apos;s Hill near Trincomalee is a unique Portuguese Burgher village where descendants 
+                      of Portuguese settlers have preserved their distinct culture and traditions for centuries. This small 
+                      community maintains Portuguese-influenced customs, Catholic faith, and speaks a unique creole mixing 
+                      Portuguese, Sinhala, and Tamil words.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The village sits atop Orr&apos;s Hill offering panoramic views of Trincomalee harbor and the surrounding 
+                      landscape. Visitors can experience authentic Portuguese-Sri Lankan fusion culture, visit the historic 
+                      church, and interact with friendly locals who are proud to share their unique heritage. The community 
+                      celebrates traditional festivals and maintains old colonial-era houses with distinctive architecture.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Portuguese Burgher community with centuries-old heritage
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Unique Portuguese-influenced creole language
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Stunning hilltop location with harbor views
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Historic Catholic church and colonial architecture
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Authentic cultural immersion experience
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Star className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
+                        Friendly locals welcoming visitors to share their heritage
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/OrrsHill-Trincomalee.jpg"
+                    alt="Portuguese village on Orr's Hill in Trincomalee showing hilltop houses and church with harbor backdrop"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
@@ -1419,7 +1642,7 @@ export default function TrincomaleeTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
           <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
-            Extend your Arugam Bay adventure with these incredible destinations within easy reach
+            Extend your Trincomalee adventure with these incredible destinations within easy reach
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1432,20 +1655,20 @@ export default function TrincomaleeTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  12 mins from Arugam Bay
+                  12 mins from Trincomalee
                 </div>
               </div>
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Sober Island</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Sober Island is a tranquil getaway known for its pristine beaches, crystal-clear waters, and vibrant marine life.
+                 Sober island initially Frech navel base then used by Dutch and British navy. Now a peaceful island known for its pristine beaches, crystal-clear waters, and vibrant marine life.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  12 Km from Arugam Bay
+                  12 Km from Trincomalee
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/panama-tank" passHref legacyBehavior>
+                  <Link href="/destinations/sober-island" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -1471,7 +1694,7 @@ export default function TrincomaleeTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  56 km from Arugam Bay
+                  56 km from Trincomalee
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/kumana-national-park" passHref legacyBehavior>
@@ -1489,7 +1712,7 @@ export default function TrincomaleeTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  12 mins from Arugam Bay
+                  12 mins from Trincomalee
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1499,10 +1722,10 @@ export default function TrincomaleeTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  12 Km from Arugam Bay
+                  12 Km from Trincomalee
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/panama-beach" passHref legacyBehavior>
+                  <Link href="/destinations/sober-island" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
