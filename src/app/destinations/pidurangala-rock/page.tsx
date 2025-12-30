@@ -1,9 +1,11 @@
+"use client"
 
 import Image from "next/image"
 import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Users, Mountain, Sunrise } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 export default function PidurangalaRockGuide() {
   return (
@@ -78,7 +80,7 @@ export default function PidurangalaRockGuide() {
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-blue-500" />
                     <span>
-                      <strong>Climb Time:</strong> 45-60 minutes up
+                      <strong>Climb Time:</strong> 30 to 45 minutes one-way (Depends on fitness level)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -92,7 +94,7 @@ export default function PidurangalaRockGuide() {
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
                     <span>
-                      <strong>Distance from Sigiriya:</strong> 1km
+                      <strong>Distance from Sigiriya:</strong>  2.5 km north
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -116,153 +118,222 @@ export default function PidurangalaRockGuide() {
         {/* The Story */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">The Ancient Buddhist Heritage</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+          
+          {/* Historical Overview */}
+          <div className="mb-8">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Pidurangala Rock has been a sacred Buddhist site for over 2,000 years. When King Kashyapa built his
+              palace on Sigiriya in the 5th century CE, he relocated the monks who were living there to Pidurangala,
+              transforming it into an important monastery complex that would serve as a spiritual sanctuary for centuries.
+            </p>
+          </div>
+
+          {/* Three Main Features in Cards */}
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            {/* Ancient Monastery Complex */}
+            <Card className="border-l-4 border-l-amber-500">
+              <CardHeader>
+                <CardTitle className="text-lg flex items-center gap-2">
+                  <Mountain className="w-5 h-5 text-amber-500" />
+                  Ancient Monastery Complex
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Your journey begins at the ancient monastery complex at the base of the rock, where Buddhist monks
+                  lived and practiced for centuries.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Ruins of ancient meditation halls where monks practiced mindfulness</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Living quarters and prayer halls carved into rock</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Peaceful atmosphere perfect for reflection and photography</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Stone Inscriptions */}
+            <Card className="border-l-4 border-l-blue-500">
+              <CardHeader>
+                <CardTitle className="text-lg flex items-center gap-2">
+                  <Star className="w-5 h-5 text-blue-500" />
+                  Ancient Stone Inscriptions
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-3">
+                  The monastery features stone inscriptions in ancient Brahmi script, offering a glimpse into
+                  Sri Lanka&apos;s early Buddhist history.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Ancient Brahmi script dating back over 2,000 years</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Historical records of monastery donations and royal patronage</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Evidence of the site&apos;s importance in ancient times</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Reclining Buddha */}
+            <Card className="border-l-4 border-l-purple-500">
+              <CardHeader>
+                <CardTitle className="text-lg flex items-center gap-2">
+                  <Users className="w-5 h-5 text-purple-500" />
+                  The Reclining Buddha
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Halfway up the climb, you&apos;ll encounter a massive reclining Buddha statue carved directly
+                  into the rock face - a masterpiece of ancient craftsmanship.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Over 15 meters long, representing Buddha&apos;s Parinirvana</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Uniquely positioned halfway up the rock</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                    <span>Perfect rest stop and pilgrimage site during your climb</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Image Section */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Ancient+Buddhist+Ruins"
+                src="/Pidurangala-Reclining-Buddha.jpg"
                 alt="Ancient Buddhist monastery ruins at Pidurangala Rock with stone structures and meditation areas"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                Ancient Buddhist monastery ruins at the base of Pidurangala Rock
+                The magnificent 15-meter reclining Buddha at Pidurangala Rock
               </p>
             </div>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                Pidurangala Rock has been a sacred Buddhist site for over 2,000 years. When King Kashyapa built his
-                palace on Sigiriya, he relocated the monks who were living there to Pidurangala, making it an important
-                monastery complex.
-              </p>
-              <p>
-                The rock served as a meditation retreat for Buddhist monks, and you can still see the remains of ancient
-                structures, caves, and a massive reclining Buddha statue carved into the rock face.
-              </p>
-              <p>
-                Today, it&apos;s not just a historical site but also the best vantage point to appreciate the
-                engineering marvel that is Sigiriya Rock Fortress.
-              </p>
+            <div className="space-y-4">
+              <div className="bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/30 p-6 rounded-lg border border-amber-200 dark:border-amber-800">
+                <h4 className="font-semibold mb-3 text-amber-800 dark:text-amber-200 flex items-center gap-2">
+                  <Star className="w-5 h-5" />
+                  Why Pidurangala is Special
+                </h4>
+                <p className="text-sm text-amber-700 dark:text-amber-300 mb-3">
+                  Today, Pidurangala is not just a historical Buddhist site but also offers the best vantage point
+                  to appreciate the engineering marvel that is Sigiriya Rock Fortress from a distance.
+                </p>
+                <p className="text-sm text-amber-700 dark:text-amber-300">
+                  The combination of ancient Buddhist heritage, stunning natural beauty, and spectacular views
+                  of Sigiriya makes this one of Sri Lanka&apos;s most rewarding destinations for both spiritual
+                  seekers and adventure enthusiasts.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* What to See */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">What You&apos;ll Experience</h2>
           <div className="space-y-8">
+    
             <Card>
               <CardHeader>
-                <CardTitle>1. The Ancient Monastery Ruins</CardTitle>
-                <CardDescription>Buddhist heritage at the base</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400&text=Monastery+Ruins"
-                    alt="Ancient Buddhist monastery ruins with stone foundations and meditation areas"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Your journey begins at the ancient monastery complex at the base of the rock. Here you&apos;ll
-                      find:
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Ruins of ancient meditation halls and living quarters
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Stone inscriptions in ancient Brahmi script
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Peaceful atmosphere perfect for reflection
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>2. The Reclining Buddha</CardTitle>
-                <CardDescription>Massive ancient statue carved in rock</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Halfway up the climb, you&apos;ll encounter a magnificent reclining Buddha statue carved directly
-                      into the rock face. This ancient sculpture is:
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Over 15 meters long and beautifully preserved
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />A perfect rest stop during
-                        your climb
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        An important pilgrimage site for Buddhists
-                      </li>
-                    </ul>
-                  </div>
-                  <Image
-                    src="/Pidurangala-Reclining-Buddha.jpg"
-                    alt="Large reclining Buddha statue carved into Pidurangala Rock face"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>3. The Summit Views</CardTitle>
+                <CardTitle>The Summit Views</CardTitle>
                 <CardDescription>Breathtaking 360-degree panoramas</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/Pidurangala-Summit-View.jpg"
-                    alt="Spectacular sunrise view of Sigiriya Rock from Pidurangala summit with golden light"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      { 
+                        src: "/Pidurangala-View.jpg", 
+                        alt: "Breathtaking view of Sigiriya Rock Fortress from Pidurangala summit with lush greenery"
+                      },
+                      { 
+                        src: "/Pidurangala-View1.jpg", 
+                        alt: "Panoramic view of dense jungle and ancient irrigation systems from Pidurangala summit"
+                      },
+                    ]}
                   />
+                  
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The summit offers the most spectacular views in Sri Lanka&apos;s Cultural Triangle:
+                      The summit offers the most spectacular views in Sri Lanka&apos;s Cultural Triangle. After your
+                      climb, you&apos;ll be rewarded with breathtaking panoramas that make every step worthwhile:
                     </p>
-                    <ul className="space-y-2 text-muted-foreground">
+                    <ul className="space-y-3 text-muted-foreground mb-6">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Perfect frontal view of Sigiriya Rock Fortress
+                        <div>
+                          <strong>Perfect Frontal View of Sigiriya Rock Fortress</strong>
+                          <p className="text-sm mt-1">The iconic Lion Rock rises majestically before you, offering the best photographic angle of this UNESCO World Heritage Site. You can see the entire fortress structure, including the gardens, terraces, and summit palace ruins.</p>
+                        </div>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        360-degree views of the surrounding jungle
+                        <div>
+                          <strong>360-Degree Panoramic Views</strong>
+                          <p className="text-sm mt-1">Endless green jungle canopy stretches in every direction, dotted with ancient rock formations and distant mountain ranges. On clear days, you can see for miles across the Central Province.</p>
+                        </div>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Spectacular sunrise and sunset photography
+                        <div>
+                          <strong>Spectacular Sunrise and Sunset Photography</strong>
+                          <p className="text-sm mt-1">Watch the sky transform into brilliant oranges, pinks, and purples as the sun rises or sets behind Sigiriya. The golden hour light creates magical silhouettes and dramatic shadows perfect for photography.</p>
+                        </div>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Views of ancient irrigation systems and villages
+                        <div>
+                          <strong>Ancient Irrigation Systems and Traditional Villages</strong>
+                          <p className="text-sm mt-1">Spot the ancient man-made reservoirs (tanks) that still irrigate rice fields below. You&apos;ll see traditional Sri Lankan villages with their terracotta-roofed houses nestled among coconut groves and paddy fields.</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <div>
+                          <strong>Distant Mountain Ranges</strong>
+                          <p className="text-sm mt-1">On clear mornings, you can see the Knuckles Mountain Range and the Central Highlands in the distance, creating stunning layered silhouettes against the horizon.</p>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <div>
+                          <strong>Wildlife Spotting from Above</strong>
+                          <p className="text-sm mt-1">Keep your eyes open for birds of prey soaring below you, and if you&apos;re lucky, you might spot wild elephants moving through the forest canopy in the early morning hours.</p>
+                        </div>
                       </li>
                     </ul>
+                    
+                    <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
+                      <p className="text-sm text-blue-800 dark:text-blue-200">
+                        <strong>Pro Tip:</strong> The summit gets crowded after sunrise, so aim to arrive by 6:00 AM to secure the best spot for photos. Bring a wide-angle lens to capture the full panorama of Sigiriya and the surrounding landscape.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -288,12 +359,6 @@ export default function PidurangalaRockGuide() {
                   <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                   <span className="text-sm">
                     <strong>Start very early:</strong> Begin at 5:00 AM for sunrise views
-                  </span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                  <span className="text-sm">
-                    <strong>Bring a headlamp:</strong> Essential for pre-dawn climbing
                   </span>
                 </div>
                 <div className="flex items-start gap-2">

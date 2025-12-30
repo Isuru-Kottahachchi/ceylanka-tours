@@ -455,7 +455,6 @@ export default function SigiriyaTravelGuide() {
                     destroyed by natural weathering over the centuries.
                   </p>
                   <br />
-                  <br />
                   <div className="bg-amber-50 dark:bg-slate-800 border-l-4 border-amber-400 dark:border-amber-500 p-4 rounded-r-lg">
                     <h4 className="font-semibold text-amber-800 dark:text-amber-100 mb-2">🔒 The Mystery of the Closed Interior Passages</h4>
                     <p className="text-sm text-amber-700 dark:text-slate-200 mb-3">
