@@ -1212,7 +1212,7 @@ export default function PolonnaruwaGuide() {
                                         </ul>
 
                                         <div className="mt-4 flex justify-start">
-                                            <Link href="/destinations/lankatilaka-temple" passHref legacyBehavior>
+                                            <Link href="/destinations/lankatilaka-image-house-polonnaruwa" passHref legacyBehavior>
                                                 <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                                             </Link>
                                         </div>
@@ -1225,7 +1225,7 @@ export default function PolonnaruwaGuide() {
 
                 {/* Engineering Marvels */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold mb-6">Ancient Engineering Marvels</h2>
+                    <h2 className="text-3xl font-bold mb-6">Other important places to visit</h2>
                     <div className="grid md:grid-cols-2 gap-8">
                         <Card>
                             <CardHeader>
