@@ -252,7 +252,7 @@ export default function SigiriyaTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/SigiriyaView.jpg"
+                src="/Sigiriya-View.jpg"
                 alt="Ancient frescoes of Sigiriya showing beautiful celestial maidens painted on rock walls"
                 width={600}
                 height={400}
