@@ -78,7 +78,7 @@ export function HeroSection() {
 
         {/* Quick Links */}
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer">
+          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer" onClick={() => window.location.href='/destinations'}>
             Popular Destinations
           </Button>
           <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer">

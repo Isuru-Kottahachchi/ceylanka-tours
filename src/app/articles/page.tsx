@@ -610,10 +610,6 @@ export default function ArticlesPage() {
           )}
         </section>
 
-        {/* Ad Banner */}
-        <div className="mt-16">
-          <AdBanner slot="articles-bottom" />
-        </div>
       </div>
     </div>
   )

@@ -38,7 +38,7 @@ export default function VenomousSnakesGuide() {
                 </div>
             </section>
 
-            <div className="max-w-4xl mx-auto px-4 py-8">
+            <div className="max-w-6xl mx-auto px-4 py-12">
                 {/* Emergency Alert */}
                 <Alert className="mb-8 border-red-300 bg-red-50">
                     <AlertTriangle className="h-4 w-4 text-red-600" />
@@ -57,15 +57,15 @@ export default function VenomousSnakesGuide() {
                     </h2>
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                         <p className="text-lg mb-4">
-                            Sri Lanka is home to over 100 snake species. While most snakes are harmless, some are very dangerous. 
+                            Sri Lanka is home to over 100 snake species. While most snakes are harmless, some are very dangerous.
                             This guide will help you stay safe during your travels in Sri Lanka.
                         </p>
                         <p className="text-lg mb-4">
-                            About 20 snake species in Sri Lanka are venomous. Snake bites cause around 400 deaths each year in 
+                            About 20 snake species in Sri Lanka are venomous. Snake bites cause around 400 deaths each year in
                             Sri Lanka. But don&apos;t worry - with the right knowledge, you can stay safe and enjoy your trip.
                         </p>
                         <p className="text-lg">
-                            Remember: Most snakes are afraid of humans and will run away if they see you. Snake bites usually 
+                            Remember: Most snakes are afraid of humans and will run away if they see you. Snake bites usually
                             happen when people accidentally step on snakes or try to catch them.
                         </p>
                     </div>
@@ -111,7 +111,7 @@ export default function VenomousSnakesGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100">
                                             <AlertDescription className="text-red-800 text-sm">
-                                                <strong>Danger:</strong> This snake doesn&apos;t move away when humans come near. 
+                                                <strong>Danger:</strong> This snake doesn&apos;t move away when humans come near.
                                                 Most snake bites in Sri Lanka are from Russell&apos;s Viper.
                                             </AlertDescription>
                                         </Alert>
@@ -156,7 +156,7 @@ export default function VenomousSnakesGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100">
                                             <AlertDescription className="text-red-800 text-sm">
-                                                <strong>Warning:</strong> Cobras can spit venom up to 2 meters! 
+                                                <strong>Warning:</strong> Cobras can spit venom up to 2 meters!
                                                 If venom gets in your eyes, wash immediately with water.
                                             </AlertDescription>
                                         </Alert>
@@ -201,7 +201,7 @@ export default function VenomousSnakesGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100">
                                             <AlertDescription className="text-red-800 text-sm">
-                                                <strong>Very Dangerous:</strong> Kraits hunt at night and can enter houses. 
+                                                <strong>Very Dangerous:</strong> Kraits hunt at night and can enter houses.
                                                 Their bite has no pain, so people don&apos;t know they were bitten!
                                             </AlertDescription>
                                         </Alert>
@@ -246,7 +246,7 @@ export default function VenomousSnakesGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100">
                                             <AlertDescription className="text-red-800 text-sm">
-                                                <strong>Endemic Danger:</strong> Found only in Sri Lanka. Bite causes no immediate pain, 
+                                                <strong>Endemic Danger:</strong> Found only in Sri Lanka. Bite causes no immediate pain,
                                                 but venom attacks nervous system causing paralysis.
                                             </AlertDescription>
                                         </Alert>
@@ -291,7 +291,7 @@ export default function VenomousSnakesGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100">
                                             <AlertDescription className="text-red-800 text-sm">
-                                                <strong>Mountain Threat:</strong> Highland variant with powerful neurotoxic venom. 
+                                                <strong>Mountain Threat:</strong> Highland variant with powerful neurotoxic venom.
                                                 Silent bite with delayed symptoms makes it extremely dangerous.
                                             </AlertDescription>
                                         </Alert>
@@ -336,7 +336,7 @@ export default function VenomousSnakesGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100">
                                             <AlertDescription className="text-red-800 text-sm">
-                                                <strong>Warning:</strong> Very aggressive and will attack quickly. 
+                                                <strong>Warning:</strong> Very aggressive and will attack quickly.
                                                 Small size makes it hard to see in grass and rocks.
                                             </AlertDescription>
                                         </Alert>
@@ -691,7 +691,7 @@ export default function VenomousSnakesGuide() {
                                 </div>
                                 <Alert className="border-blue-400 bg-blue-100">
                                     <AlertDescription className="text-blue-800 text-sm">
-                                        <strong>Important:</strong> All government hospitals in Sri Lanka have anti-venom. 
+                                        <strong>Important:</strong> All government hospitals in Sri Lanka have anti-venom.
                                         Private hospitals may be faster but more expensive.
                                     </AlertDescription>
                                 </Alert>
@@ -748,12 +748,12 @@ export default function VenomousSnakesGuide() {
                         <CardContent>
                             <div className="space-y-4">
                                 <p className="text-muted-foreground">
-                                    Remember, snake bites are rare for tourists who follow safety rules. Millions of people visit 
-                                    Sri Lanka safely every year. By being careful and knowing what to do, you can have a wonderful 
+                                    Remember, snake bites are rare for tourists who follow safety rules. Millions of people visit
+                                    Sri Lanka safely every year. By being careful and knowing what to do, you can have a wonderful
                                     and safe trip.
                                 </p>
                                 <p className="text-muted-foreground">
-                                    Most snakes are actually helpful - they eat rats and other pests. Snakes are more afraid of you 
+                                    Most snakes are actually helpful - they eat rats and other pests. Snakes are more afraid of you
                                     than you are of them. With simple precautions, you can explore Sri Lanka&apos;s beautiful nature safely.
                                 </p>
                                 <div className="bg-green-100 p-4 rounded-lg">

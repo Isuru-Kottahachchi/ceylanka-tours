@@ -62,7 +62,7 @@ export default function KandeViharayaGuide() {
             <p className="text-lg mb-4">
               Perched on a hilltop overlooking the coastal town of Aluthgama, Kande Viharaya is one of Sri Lanka&apos;s most
               revered Buddhist temples. This sacred site is home to one of the largest seated Buddha statues in the
-              world, standing at an impressive 48 meters (160 feet) tall and visible from miles around.
+              world, standing at an impressive 48.8 meters (160 feet) tall and visible from miles around.
             </p>
             <p className="text-lg">
               With a history dating back to 1734, this temple complex offers visitors a peaceful sanctuary for
@@ -94,7 +94,7 @@ export default function KandeViharayaGuide() {
                   <div className="flex items-center gap-2">
                     <PrayingIcon className="w-4 h-4 text-purple-500" />
                     <span>
-                      <strong>Buddha Statue Height:</strong> 48 meters (160 feet)
+                      <strong>Buddha Statue Height:</strong> 48.8 meters (160 feet)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -147,9 +147,9 @@ export default function KandeViharayaGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                Kande Viharaya was established in 1734 during the Kandyan era by Venerable Deundara Dhammananda Thero.
-                The name &quot;Kande Viharaya&quot; translates to &quot;Mountain Temple,&quot; reflecting its hilltop location that has made
-                it a landmark for centuries.
+                Kande Viharaya was established in 1734 by Karapagala Dewamitta Thero, under the guidance of Udugama
+                Chandrasara Thero. The name &quot;Kande Viharaya&quot; translates to &quot;Mountain Temple,&quot; reflecting its hilltop
+                location that has made it a landmark for centuries.
               </p>
               <p>
                 Throughout its history, the temple has been expanded and enhanced by successive chief monks. The most
@@ -190,7 +190,7 @@ export default function KandeViharayaGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Standing 48 meters (160 feet) tall
+                        Standing 48.8 meters (160 feet) tall
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -198,11 +198,11 @@ export default function KandeViharayaGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Depicts Buddha in the Dhyana Mudra meditation pose
+                        Depicts Buddha in the Bhoomisparsha Mudra (earth-touching gesture)
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Completed in the early 2000s
+                        Completed and opened to the public in 2007
                       </li>
                     </ul>
                   </div>
@@ -265,9 +265,78 @@ export default function KandeViharayaGuide() {
                 </div>
               </CardContent>
             </Card>
+
             <Card>
               <CardHeader>
-                <CardTitle>2. Elephant watch</CardTitle>
+                <CardTitle>3. Hindu Devalas (Shrines)</CardTitle>
+                <CardDescription>Sacred shrines where devotees seek blessings and fulfill vows</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Kande Viharaya has several Hindu shrines (devalas) on the temple grounds. Many people visit
+                      these shrines to make offerings, fulfill vows (bara), and ask for blessings. The main devalas
+                      include:
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>Upulvan Devala</strong> - dedicated to God Upulvan (Vishnu), the guardian deity of Sri Lanka who protects the island and its people</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>Kataragama Devala</strong> - shrine for God Kataragama (Skanda), the war god who helps devotees overcome obstacles and enemies</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>Pattini Devala</strong> - dedicated to Goddess Pattini, who is prayed to for health, protection from diseases, and rainfall</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>Kali Devala</strong> - shrine for Goddess Kali, the powerful deity worshipped for protection from evil and negative forces</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>Ganesha Shrine</strong> - dedicated to Lord Ganesha, the elephant-headed god of wisdom and new beginnings, often worshipped before starting important tasks</span>
+                      </li>
+                    </ul>
+                    <p className="text-muted-foreground mt-4 text-sm">
+                      Devotees often light oil lamps, offer flowers and coconuts, and perform rituals to fulfill
+                      promises they made when seeking help. This shows how Buddhism and Hindu traditions exist
+                      together peacefully in Sri Lankan culture.
+                    </p>
+                  </div>
+                  <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-6 rounded-lg border border-orange-200">
+                    <h4 className="font-semibold text-orange-800 mb-3 flex items-center gap-2">
+                      <Star className="w-5 h-5" />
+                      Did You Know?
+                    </h4>
+                    <div className="space-y-3 text-sm text-orange-900">
+                      <p>
+                        <strong>Bara (Vows):</strong> When people face problems or want something special, they make
+                        a promise (bara) to the gods. If their wish comes true, they return to the temple to fulfill
+                        their promise by offering coconuts, flowers, or performing special rituals.
+                      </p>
+                      <p>
+                        <strong>Cultural Harmony:</strong> Even though Kande Viharaya is a Buddhist temple, having
+                        Hindu shrines here shows how different religions respect each other in Sri Lanka. Both
+                        Buddhists and Hindus visit these shrines.
+                      </p>
+                      <p>
+                        <strong>Special Days:</strong> On full moon days (Poya) and Hindu festival days, you&apos;ll see
+                        many devotees making offerings at these shrines. The atmosphere becomes very spiritual with
+                        the smell of incense and sound of prayers.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>4. Elephant watch</CardTitle>
                 <CardDescription>See the Elephant of Kande Viharaya</CardDescription>
               </CardHeader>
               <CardContent>
@@ -304,7 +373,7 @@ export default function KandeViharayaGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle>3. Stupa (Dagoba)</CardTitle>
+                <CardTitle>5. Stupa (Dagoba)</CardTitle>
                 <CardDescription>Sacred Buddhist reliquary monument</CardDescription>
               </CardHeader>
               <CardContent>
@@ -343,7 +412,7 @@ export default function KandeViharayaGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle>4. Panoramic Hilltop Views</CardTitle>
+                <CardTitle>6. Panoramic Hilltop Views</CardTitle>
                 <CardDescription>Breathtaking vistas of the surrounding landscape</CardDescription>
               </CardHeader>
               <CardContent>

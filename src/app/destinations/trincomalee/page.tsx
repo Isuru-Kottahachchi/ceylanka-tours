@@ -1071,7 +1071,7 @@ export default function TrincomaleeTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/war-cemetery-trinco.jpg",
+                        src: "/Trinco-War-Cemetery.jpg",
                         alt: "Trincomalee War Cemetery with well-maintained graves and memorial",
                         caption: "Trincomalee War Cemetery",
                         title: "War Cemetery Memorial"
@@ -1146,7 +1146,7 @@ export default function TrincomaleeTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/kinniya-bridge.jpg",
+                        src: "/Kinniya-Bridge.jpg",
                         alt: "Kinniya Bridge spanning across the water",
                         caption: "Kinniya Bridge View",
                         title: "Kinniya Bridge"
@@ -1649,8 +1649,8 @@ export default function TrincomaleeTravelGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Panama-Tank.jpg"
-                  alt="Panama Tank with elephants and natural scenery"
+                  src="/Sober-Island.jpg"
+                  alt="Sober Island with pristine beaches and crystal-clear waters"
                   fill
                   className="object-cover rounded-t-lg"
                 />
@@ -1841,7 +1841,7 @@ export default function TrincomaleeTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Trinco-War-Cemetery.jpg"
                   alt="Well-maintained war cemetery with rows of white headstones and tropical vegetation"
                   width={300}
                   height={200}

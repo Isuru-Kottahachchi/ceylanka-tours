@@ -130,8 +130,6 @@ export default function BlogPage() {
           ))}
         </div>
 
-        <AdBanner slot="blog-top" />
-
         {/* Featured Posts */}
         {featuredPosts.length > 0 && (
           <section className="mb-12">
@@ -193,8 +191,6 @@ export default function BlogPage() {
           </section>
         )}
 
-        <AdBanner slot="blog-middle" />
-
         {/* Regular Posts */}
         <section>
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Latest Articles</h2>
@@ -252,8 +248,6 @@ export default function BlogPage() {
             ))}
           </div>
         </section>
-
-        <AdBanner slot="blog-bottom" />
 
         {/* Load More Button */}
         <div className="text-center mt-12">
