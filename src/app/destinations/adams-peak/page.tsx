@@ -3,6 +3,8 @@ import Image from "next/image"
 import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Mountain, Sunrise, Landmark } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Adams Peak Sri Lanka: Complete Climbing Guide 2025 | Sacred Mountain Pilgrimage",
@@ -116,7 +118,7 @@ export default function AdamsPeakTravelGuide() {
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
                     <span>
-                      <strong>Starting Points:</strong> Nallathanniya, Rathnapura or Kuruwita (There are a few more routes but recommned to use thease main routes for your safety)
+                      <strong>Starting Points:</strong> Nallathanniya, Rathnapura or Kuruwita (There are a few more routes but recommended to use thease main routes for your safety)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -215,6 +217,7 @@ export default function AdamsPeakTravelGuide() {
                 <CardDescription>The divine protector of Sri Pada</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
+                <Image src="/God-Saman.jpeg" alt={"God Saman"} width={300} height={200} />
                 <p className="text-muted-foreground">
                   God Saman (Saman Deviyo) is the guardian deity of Sri Pada and the Sabaragamuwa region. According to
                   Buddhist tradition, he was present when the Buddha visited Sri Lanka and was entrusted with protecting
@@ -250,6 +253,7 @@ export default function AdamsPeakTravelGuide() {
                 <CardDescription>Ancient temple and rituals</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
+                <Image src="/Saman-devalaya.jpeg" alt={"Saman Devalaya"} width={300} height={200} />
                 <p className="text-muted-foreground">
                   The Saman Devalaya in Ratnapura is the main temple dedicated to God Saman. Pilgrims traditionally
                   seek his blessings before beginning their ascent to Sri Pada. The annual Esala perahera of the
@@ -264,6 +268,16 @@ export default function AdamsPeakTravelGuide() {
                     <li>• Ancient rituals and ceremonies</li>
                   </ul>
                 </div>
+                <div className="mt-6">
+                <Link href="/destinations/saman-devalaya-rathnapura">
+                  <Button
+                    className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                    variant="default"
+                  >
+                    Discover More about Saman Devalaya
+                  </Button>
+                </Link>
+              </div>
               </CardContent>
             </Card>
           </div>
@@ -279,6 +293,7 @@ export default function AdamsPeakTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold mb-3">Kunudiya Pawwa</h4>
+                    <Image src="/Athgala.jpg" alt={"Kunudiya pawwa"} width={400} height={300} />
                     <p className="text-muted-foreground mb-4">
                       A significant rock formation along the pilgrimage path where, according to tradition, pilgrims would
                       stop to dry their wet clothes. The name &quot;Kunudiya&quot; refers to the warmth of the rock even during cold weather.
@@ -336,6 +351,7 @@ export default function AdamsPeakTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold mb-3">Seetha Gangula</h4>
+                    <Image src="/Athgala.jpg" alt={"Seetha Gangula"} width={400} height={300} />
                     <p className="text-muted-foreground mb-4">
                       Known as the &quot;Cold Stream,&quot; this is where the Buddha is said to have paused to refresh himself.
                       The water here remains remarkably cool even during the hottest days, and pilgrims often stop
