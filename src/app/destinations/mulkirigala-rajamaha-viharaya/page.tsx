@@ -547,7 +547,7 @@ export default function MulkirigalaTravelGuide() {
                                     7.5 km from Waligama
                                 </div>
                                 <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/wewurukannala-viharaya" passHref legacyBehavior>
+                                    <Link href="/destinations/wewurukannala-viharaya">
                                         <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                                     </Link>
                                 </div>
@@ -575,7 +575,7 @@ export default function MulkirigalaTravelGuide() {
                                     39 km from Waligama
                                 </div>
                                 <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/hummanaya-blow-hole" passHref legacyBehavior>
+                                    <Link href="/destinations/hummanaya-blow-hole">
                                         <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                                     </Link>
                                 </div>
@@ -603,7 +603,7 @@ export default function MulkirigalaTravelGuide() {
                                     39 km from Waligama
                                 </div>
                                 <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/hirikatiya" passHref legacyBehavior>
+                                    <Link href="/destinations/hirikatiya">
                                         <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                                     </Link>
                                 </div>
@@ -633,7 +633,7 @@ export default function MulkirigalaTravelGuide() {
                                     29 km from Waligama
                                 </div>
                                 <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/galle-fort" passHref legacyBehavior>
+                                    <Link href="/destinations/galle-fort">
                                         <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                                     </Link>
                                 </div>
@@ -663,7 +663,7 @@ export default function MulkirigalaTravelGuide() {
                                     30 km from Waligama
                                 </div>
                                 <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/unawatuna" passHref legacyBehavior>
+                                    <Link href="/destinations/unawatuna">
                                         <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                                     </Link>
                                 </div>
@@ -907,12 +907,12 @@ export default function MulkirigalaTravelGuide() {
                         Let us help you plan your perfect southern Sri Lanka adventure including Mulkirigala Raja Maha Viharaya and the beautiful beaches of Tangalle.
                     </p>
                     <div className="flex flex-wrap gap-4 justify-center">
-                        <Link href="/contact-us" passHref legacyBehavior>
+                        <Link href="/contact-us">
                             <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
                                 Plan Your Trip
                             </Button>
                         </Link>
-                        <Link href="/destinations" passHref legacyBehavior>
+                        <Link href="/destinations">
                             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                                 Explore More Destinations
                             </Button>

@@ -655,7 +655,7 @@ const destinations: Destination[] = [
     name: "Hirikatiya Beach",
     location: "Southern Province",
     path: "hirikatiya",
-    image: "/",
+    image: "/Hirikatiyabeach.jpg",
     description: "Sri Lanka's ultimate surfing paradise with perfect horseshoe bay, world-class waves, and vibrant backpacker culture",
     highlights: ["Perfect Surfing Waves", "Horseshoe Bay", "Backpacker Paradise", "Beach Yoga", "Coconut Grove"],
     category: "Beach",
