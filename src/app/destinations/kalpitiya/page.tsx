@@ -310,7 +310,7 @@ export default function KalpitiyaGuide() {
                   </div>
                   <div>
                     <Image
-                      src="/placeholder.jpg"
+                      src="/Kalpitiya-Dolpins.jpg"
                       alt="Pod of spinner dolphins jumping out of the water near Kalpitiya with tourists watching from a boat"
                       width={500}
                       height={300}

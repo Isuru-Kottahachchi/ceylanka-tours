@@ -11,7 +11,6 @@ import Link from "next/link"
 
 export default function TrincomaleeTravelGuide() {
 
-
   return (
     <main className="min-h-screen bg-background">
 

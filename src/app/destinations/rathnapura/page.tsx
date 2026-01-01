@@ -4,6 +4,7 @@ import { MapPin, Gem, Mountain, AlertTriangle, Star, Calendar, Users, Sparkles, 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
   title: "Rathnapura: The Gem City of Sri Lanka - Complete Travel Guide 2025",
@@ -54,7 +55,7 @@ export default function RathnapuraGuide() {
               <Mountain className="w-4 h-4 mr-1" />
               Hill Country
             </Badge>
-           
+
           </div>
         </div>
       </section>
@@ -400,6 +401,16 @@ export default function RathnapuraGuide() {
                             Peaceful atmosphere for meditation
                           </li>
                         </ul>
+                      <div className="mt-6">
+                        <Link href="/destinations/saman-devalaya-rathnapura">
+                          <Button
+                            className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                            variant="default"
+                          >
+                            Discover More about Saman Devalaya
+                          </Button>
+                        </Link>
+                      </div>
                       </div>
                     </div>
                   </CardContent>
