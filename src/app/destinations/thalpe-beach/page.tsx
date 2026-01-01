@@ -287,7 +287,7 @@ export default function ThalpeBeachGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/Jungle-beach.jpeg"
+                  src="/jungle-beach.jpeg"
                   alt="View of Jungle Beach"
                   width={300}
                   height={200}
