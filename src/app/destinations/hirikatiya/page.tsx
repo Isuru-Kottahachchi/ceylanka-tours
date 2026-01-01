@@ -1319,7 +1319,7 @@ export default function HiriketiyaTravelGuide() {
                 </div>
               </div>
               <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Blue Beach</h3>
+                <h3 className="font-bold text-lg mb-2">Nilwella Blue Beach</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Blue beach is a private island known for its stunning blue waters and serene environment, ideal for relaxation and snorkeling.
                 </p>

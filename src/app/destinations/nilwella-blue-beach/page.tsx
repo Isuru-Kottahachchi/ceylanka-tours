@@ -271,7 +271,7 @@ export default function BlueBeachGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Nilwella-Beach-Camping.jpg"
-                    alt="Tents set up on Blue Beach with a campfire and starry sky"
+                    alt="Tents set up on Nilwella Blue Beach with a campfire and starry sky"
                     width={400}
                     height={300}
                     className="rounded-lg"

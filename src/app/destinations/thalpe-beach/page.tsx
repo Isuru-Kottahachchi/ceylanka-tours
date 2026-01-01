@@ -429,7 +429,7 @@ export default function ThalpeBeachGuide() {
 
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
-                <CardTitle className="text-lg">Blue Beach</CardTitle>
+                <CardTitle className="text-lg">Nilwella Blue Beach</CardTitle>
                 <CardDescription>Beach that can campfire</CardDescription>
               </CardHeader>
               <CardContent>

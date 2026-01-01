@@ -352,7 +352,7 @@ const destinations: Destination[] = [
   },
       {
     id: 20,
-    name: "Blue Beach",
+    name: "Nilwella Blue Beach",
     location: "Southern Province",
     path: "nilwella-blue-beach",
     image: "/Blue-beach.jpg",
