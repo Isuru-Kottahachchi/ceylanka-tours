@@ -354,7 +354,7 @@ const destinations: Destination[] = [
     id: 20,
     name: "Blue Beach",
     location: "Southern Province",
-    path: "blue-beach",
+    path: "nilwella-blue-beach",
     image: "/Blue-beach.jpg",
     description: "Private Island Beach destination in Southern Sri Lanka",
     highlights: ["Crystal Clear Water", "Public Island", "Beach Camping"],

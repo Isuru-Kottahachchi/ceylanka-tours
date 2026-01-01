@@ -1058,7 +1058,7 @@ export default function GalleFortTravelGuide() {
                   Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
                 </p>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/blue-beach" passHref legacyBehavior>
+                  <Link href="/destinations/nilwella-blue-beach" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>

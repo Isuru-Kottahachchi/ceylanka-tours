@@ -1328,7 +1328,7 @@ export default function HiriketiyaTravelGuide() {
                   36 km from Hirikatiya
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/blue-beach" passHref legacyBehavior>
+                  <Link href="/destinations/nilwella-blue-beach" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>

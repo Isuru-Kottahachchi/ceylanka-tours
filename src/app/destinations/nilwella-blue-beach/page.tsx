@@ -33,7 +33,7 @@ export default function BlueBeachGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Blue Beach</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Nilwella Blue Beach</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka’s Hidden Blue-Water Escape</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
@@ -270,7 +270,7 @@ export default function BlueBeachGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/blue-beach-camping.jpg"
+                    src="/Nilwella-Beach-Camping.jpg"
                     alt="Tents set up on Blue Beach with a campfire and starry sky"
                     width={400}
                     height={300}
