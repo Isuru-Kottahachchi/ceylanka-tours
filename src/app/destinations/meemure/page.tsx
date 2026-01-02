@@ -293,13 +293,13 @@ export default function MeemureTravelGuide() {
                         src: "/Lakegala-Hike1.jpg",
                         alt: "Hikers ascending the steep trail to Lakegala summit",
                         caption: "Hiking Trail",
-                        title: "Lakegala Hike"
+                        title: "PC - Chathu_lk"
                       },
                       {
                         src: "/Lakegala-Hike.jpg",
                         alt: "Hikers ascending the steep trail to Lakegala summit",
                         caption: "Hiking Trail",
-                        title: "Lakegala Hike"
+                        title: "PC - Chathu_lk"
                       }
                     ]}
                   />
