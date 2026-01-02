@@ -56,7 +56,7 @@ export default function MeemureTravelGuide() {
               Getting here is part of the adventure - you&apos;ll drive through stunning mountain scenery for about 3 hours from Kandy. The road&apos;s gotten better lately (regular cars can make it in dry weather!), but a 4WD is more comfortable. While basic electricity and limited mobile coverage recently arrived, don&apos;t expect WiFi or your usual modern comforts. That&apos;s the beauty of it - you&apos;ll actually unplug and connect with nature and real people!
             </p>
             <p className="text-lg">
-              What can you do here? Join villagers in their daily routines, learn to cook traditional meals over wood fires, help harvest rice, or just relax by crystal-clear mountain streams. Also don't forget about water activities in Meemure. Sleep in cozy homestays where your hosts treat you like family, and fall asleep under a sky absolutely packed with stars. This isn&apos;t just tourism - it&apos;s an authentic cultural exchange you&apos;ll remember forever. 
+              What can you do here? Join villagers in their daily routines, learn to cook traditional meals over wood fires, help harvest rice, or just relax by crystal-clear mountain streams. Also don't forget about water activities in Meemure. Sleep in cozy homestays where your hosts treat you like family, and fall asleep under a sky absolutely packed with stars. This isn&apos;t just tourism - it&apos;s an authentic cultural exchange you&apos;ll remember forever.
             </p>
           </div>
           <div className="mt-6 p-4 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg">
@@ -221,11 +221,59 @@ export default function MeemureTravelGuide() {
           </Card>
         </section>
 
-        
+
         {/* Things to Do in Meemure */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Things to Do in Meemure</h2>
           <div className="space-y-8">
+            
+            <Card>
+              <CardHeader>
+                <CardTitle>Traditional Village Experience</CardTitle>
+                <CardDescription>Experience authentic Sinhalese mountain culture</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Stay with local families in traditional mud-and-wattle homes and participate in daily village activities. Experience authentic farming, crafts, cooking, and mountain exploration that showcase centuries-old traditions.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Buffalo plowing and traditional rice cultivation
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Bamboo basket weaving and wooden tool making
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Clay pot cooking and traditional meals
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Waterfall hikes and meditation cave visits
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Homestay with village families
+                      </li>
+                    </ul>
+                  </div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/meemure-village.jpg",
+                        alt: "Traditional mud houses in Meemure village",
+                        caption: "Village Life",
+                        title: "Meemure Village"
+                      }
+                    ]}
+                  />
+                </div>
+              </CardContent>
+            </Card>
             <Card>
               <CardHeader>
                 <CardTitle>Lakegala Rock Hiking</CardTitle>
@@ -240,6 +288,18 @@ export default function MeemureTravelGuide() {
                         alt: "Lakegala Rock rising 1,310 meters above Meemure village",
                         caption: "Lakegala Rock",
                         title: "Lakegala Mountain"
+                      },
+                      {
+                        src: "/Lakegala-Hike1.jpg",
+                        alt: "Hikers ascending the steep trail to Lakegala summit",
+                        caption: "Hiking Trail",
+                        title: "Lakegala Hike"
+                      },
+                      {
+                        src: "/Lakegala-Hike.jpg",
+                        alt: "Hikers ascending the steep trail to Lakegala summit",
+                        caption: "Hiking Trail",
+                        title: "Lakegala Hike"
                       }
                     ]}
                   />
@@ -262,46 +322,6 @@ export default function MeemureTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Traditional Village Experience</CardTitle>
-                <CardDescription>Experience authentic Sinhalese mountain culture</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Stay with local families in traditional mud-and-wattle homes and participate in daily village activities. Learn about ancient farming techniques, help with rice cultivation using buffalo, and experience a lifestyle largely unchanged for centuries.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Homestay with village families
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Traditional cooking demonstrations
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Learn about paddy cultivation
-                      </li>
-                    </ul>
-                  </div>
-                  <ImageCarousel
-                    images={[
-                      {
-                        src: "/meemure-village.jpg",
-                        alt: "Traditional mud houses in Meemure village",
-                        caption: "Village Life",
-                        title: "Meemure Village"
-                      }
-                    ]}
-                  />
                 </div>
               </CardContent>
             </Card>
