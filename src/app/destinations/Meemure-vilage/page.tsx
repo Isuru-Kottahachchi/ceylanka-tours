@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Car, TreePine, Home, Utensils, Bed, Compass, Cloud, XCircle, Sun, CloudRain, Battery, Flashlight, Shirt, Footprints } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 
 
@@ -49,10 +50,10 @@ export default function MeemureTravelGuide() {
               Step back in time and discover Meemure, a hidden mountain village where life has remained unchanged for over a thousand years! Nestled deep in the pristine Knuckles Mountain Range, this extraordinary village offers you a rare glimpse into authentic Sinhalese culture that has been preserved in its purest form, untouched by the rapid modernization of the outside world.
             </p>
             <p className="text-lg mb-4">
-              Imagine a place where there&apos;s no electricity, no mobile phone coverage, and no modern conveniences - yet the people live in complete harmony with nature, following traditions passed down through countless generations. Meemure is home to about 60 families who are descendants of King Rajasinghe II&apos;s soldiers, who were stationed here in the 17th century to guard against Portuguese invasions.
+              Imagine a place where modern conveniences are minimal - basic electricity and limited mobile coverage have recently arrived, but life here remains largely unchanged, with people living in complete harmony with nature and following traditions passed down through countless generations. Meemure is home to about 60 families who are descendants of King Rajasinghe II&apos;s soldiers, who were stationed here in the 17th century to guard against Portuguese invasions.
             </p>
             <p className="text-lg mb-4">
-              The journey to Meemure is an adventure in itself, requiring a challenging 4WD ride through mountain terrain that will test your endurance but reward you with breathtaking views. Once you arrive, you&apos;ll find yourself in a world where time stands still - where buffalo still plow the fields, traditional wooden houses dot the landscape, and villagers weave baskets and craft tools using techniques unchanged for centuries.
+              The journey to Meemure is an adventure in itself, with a scenic drive through mountain terrain that will reward you with breathtaking views. While 4WD vehicles are recommended for comfort during certain seasons, the road has improved and regular vehicles can access the village during dry weather. Once you arrive, you&apos;ll find yourself in a world where time stands still - where buffalo still plow the fields, traditional wooden houses dot the landscape, and villagers weave baskets and craft tools using techniques unchanged for centuries.
             </p>
             <p className="text-lg">
               This isn&apos;t just a tourist destination - it&apos;s a living, breathing community that welcomes visitors to experience their way of life. You can participate in traditional farming, learn ancient crafts, enjoy authentic village cuisine cooked over wood fires, and sleep in traditional homes under a canopy of stars unmarred by light pollution.
@@ -64,10 +65,10 @@ export default function MeemureTravelGuide() {
               <div>
                 <h4 className="font-semibold text-amber-800 mb-2">Important Travel Notice</h4>
                 <p className="text-sm text-amber-700 mb-2">
-                  <strong>Experienced Drivers Required:</strong> The final 20km to Meemure requires a 4WD vehicle with experienced mountain drivers.
+                  <strong>Road Conditions:</strong> 4WD vehicles recommended during rainy season or for added comfort. Regular vehicles can access during dry weather with careful driving.
                 </p>
                 <p className="text-sm text-amber-700 mb-2">
-                  <strong>No Modern Amenities:</strong> You cannot find good electricity, internet, or mobile coverage in the village. Come prepared for a digital detox and authentic rural experience.
+                  <strong>Limited Modern Amenities:</strong> Basic electricity and limited mobile coverage available, but internet and other modern facilities remain minimal. Come prepared for a mostly digital-free, authentic rural experience.
                 </p>
                 <p className="text-sm text-amber-700">
                   Book accommodation in advance through local guides in Hunnasgiriya village, as options are limited and fill up quickly during peak season.
@@ -124,7 +125,7 @@ export default function MeemureTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Car className="w-4 h-4 text-orange-500" />
                     <span>
-                      <strong>Access:</strong> 4WD vehicle only
+                      <strong>Access:</strong> 4WD recommended
                     </span>
                   </div>
                 </div>
@@ -145,27 +146,27 @@ export default function MeemureTravelGuide() {
             <CardContent>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold mb-3 text-blue-700">By 4WD Vehicle (Only Option)</h4>
+                  <h4 className="font-semibold mb-3 text-blue-700">By Private Vehicle</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• <strong>Distance:</strong> 45km from Kandy</li>
                     <li>• <strong>Duration:</strong> 2.5-3 hours</li>
-                    <li>• <strong>Cost:</strong> $40-60 USD return trip</li>
+                    <li>• <strong>Vehicle:</strong> 4WD recommended for comfort</li>
                     <li>• <strong>Route:</strong> Kandy → Hunnasgiriya → Meemure</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-3 text-blue-700">Via Public Transport + 4WD</h4>
+                  <h4 className="font-semibold mb-3 text-blue-700">Via Public Transport</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• Bus/van to Hunnasgiriya from Kandy</li>
-                    <li>• Hire 4WD vehicle and driver in Hunnasgiriya</li>
+                    <li>• Hire local vehicle and driver in Hunnasgiriya</li>
                     <li>• Total journey: 4-5 hours</li>
-                    <li>• More economical but less convenient</li>
+                    <li>• More economical option</li>
                   </ul>
                 </div>
               </div>
               <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
                 <p className="text-sm text-yellow-800">
-                  <strong>Important:</strong> Book 4WD vehicles through registered operators in Hunnasgiriya village. Local drivers know the challenging mountain roads and weather conditions best.
+                  <strong>Important:</strong> While the road has improved, hiring local drivers from Hunnasgiriya village is recommended as they know the mountain roads and weather conditions best. 4WD vehicles offer more comfort, especially during or after rainy periods.
                 </p>
               </div>
             </CardContent>
@@ -469,67 +470,252 @@ export default function MeemureTravelGuide() {
           </div>
         </section>
 
-        {/* Practical Information */}
+
+
+        {/* Things to Do in Meemure */}
         <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Compass className="w-5 h-5 text-blue-500" />
-                Practical Information
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold mb-3">Accommodation & Meals</h4>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Home className="w-4 h-4 text-blue-500" />
-                      <span><strong>Homestays:</strong> Rs. 2,500-4,000 per person</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Utensils className="w-4 h-4 text-green-500" />
-                      <span><strong>Meals:</strong> Traditional village cuisine included</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Bed className="w-4 h-4 text-purple-500" />
-                      <span><strong>Facilities:</strong> Basic, shared bathrooms</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4 text-orange-500" />
-                      <span><strong>Booking:</strong> Advance reservation required</span>
-                    </div>
+          <h2 className="text-3xl font-bold mb-6">Things to Do in Meemure</h2>
+          <div className="space-y-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Lakegala Rock Hiking</CardTitle>
+                <CardDescription>Challenge yourself with this iconic mountain trek</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/lakegala.jpg",
+                        alt: "Lakegala Rock rising 1,310 meters above Meemure village",
+                        caption: "Lakegala Rock",
+                        title: "Lakegala Mountain"
+                      }
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      The prominent 1,310-meter Lakegala rock formation dominates the skyline above Meemure. This challenging hike requires a local guide and takes 3-4 hours to reach the summit, rewarding hikers with panoramic views of the Knuckles Range and surrounding valleys.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Local guide required for safety
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Best attempted during dry season
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Stunning 360-degree summit views
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold mb-3">What to Bring</h4>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex items-center gap-2">
-                      <Flashlight className="w-4 h-4 text-yellow-500" />
-                      <span>Flashlight and extra batteries</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Battery className="w-4 h-4 text-red-500" />
-                      <span>Power bank for devices</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Shirt className="w-4 h-4 text-blue-500" />
-                      <span>Warm clothing for cool evenings</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Footprints className="w-4 h-4 text-green-500" />
-                      <span>Good hiking shoes</span>
-                    </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Traditional Village Experience</CardTitle>
+                <CardDescription>Experience authentic Sinhalese mountain culture</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Stay with local families in traditional mud-and-wattle homes and participate in daily village activities. Learn about ancient farming techniques, help with rice cultivation using buffalo, and experience a lifestyle largely unchanged for centuries.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Homestay with village families
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Traditional cooking demonstrations
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Learn about paddy cultivation
+                      </li>
+                    </ul>
+                  </div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/meemure-village.jpg",
+                        alt: "Traditional mud houses in Meemure village",
+                        caption: "Village Life",
+                        title: "Meemure Village"
+                      }
+                    ]}
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Water Activities</CardTitle>
+                <CardDescription>Explore pristine mountain streams and waterfalls</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/meemure-river.jpg",
+                        alt: "Crystal-clear river flowing through Meemure",
+                        caption: "Meemure River",
+                        title: "Mountain Streams"
+                      }
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      The area features several waterfalls and streams with crystal-clear mountain water. Take refreshing dips in natural pools, enjoy picnics by the riverside, or simply relax to the sound of flowing water in this pristine environment.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Multiple waterfalls within walking distance
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Natural swimming pools
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Guided nature walks along streams
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </div>
-              <div className="mt-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
-                <p className="text-sm text-blue-800">
-                  <strong>Important:</strong> No ATMs, shops, or mobile coverage available. Bring cash, snacks, and any medications you might need.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Nature & Wildlife Exploration</CardTitle>
+                <CardDescription>Discover the rich biodiversity of the Knuckles Range</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      The surrounding forests are home to diverse flora and fauna, including endemic birds and butterflies. Guided nature walks reveal medicinal plants, observe wildlife in their natural habitat, and learn about the region&apos;s unique ecosystem.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Endemic bird species watching
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Medicinal plant identification
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Forest trail exploration
+                      </li>
+                    </ul>
+                  </div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/knuckles-forest.jpg",
+                        alt: "Dense forest of the Knuckles Mountain Range",
+                        caption: "Knuckles Forest",
+                        title: "Mountain Biodiversity"
+                      }
+                    ]}
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Photography Tours</CardTitle>
+                <CardDescription>Capture stunning mountain landscapes and village scenes</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/meemure-landscape.jpg",
+                        alt: "Panoramic view of Meemure valley and mountains",
+                        caption: "Meemure Landscape",
+                        title: "Mountain Photography"
+                      }
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Meemure offers exceptional photography opportunities year-round. From misty mountain mornings and terraced rice fields to traditional village life and dramatic rock formations, every corner presents a new composition for photography enthusiasts.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Sunrise/sunset over Lakegala
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Traditional village documentation
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Landscape and nature photography
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Wild Honey Harvesting</CardTitle>
+                <CardDescription>Witness traditional honey collection from cliff faces</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Local villagers practice the ancient art of collecting wild honey from giant honeybee hives on cliff faces. During the season, you may observe (from a safe distance) this fascinating and dangerous traditional practice that has been passed down through generations.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Seasonal activity (March-April)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Pure wild honey available
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Learn traditional techniques
+                      </li>
+                    </ul>
+                  </div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/honey-harvesting.jpg",
+                        alt: "Traditional honey harvesting in Meemure",
+                        caption: "Honey Harvesting",
+                        title: "Wild Honey Collection"
+                      }
+                    ]}
+                  />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
         {/* What Else to See Nearby */}
@@ -543,11 +729,11 @@ export default function MeemureTravelGuide() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-3">
-                  The last village with basic amenities before reaching Meemure. 4WD vehicle rentals and local guides available.
+                  The last village with basic amenities before reaching Meemure. Vehicle rentals and local guides available.
                 </p>
                 <div className="flex justify-between text-xs text-blue-600">
                   <span><strong>Distance:</strong> 15km</span>
-                  <span><strong>Time:</strong> 1 hour by 4WD</span>
+                  <span><strong>Time:</strong> 1 hour drive</span>
                 </div>
               </CardContent>
             </Card>
