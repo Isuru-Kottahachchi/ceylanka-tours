@@ -1,26 +1,11 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
 import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, Car, TreePine, Home, Utensils, Bed, Compass, Cloud, XCircle, Sun, CloudRain, Battery, Flashlight, Shirt, Footprints } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
-export const metadata: Metadata = {
-  title: "Meemure Village: Complete Travel Guide 2025 | Hidden Mountain Paradise Sri Lanka",
-  description: "Discover Meemure, Sri Lanka's last traditional village nestled in the Knuckles Mountains. Complete travel guide with authentic culture, mountain trekking, and village experiences.",
-  keywords: "Meemure village, Knuckles Mountains, traditional Sri Lankan village, authentic culture, mountain trekking, village tourism, Kandy attractions, off-the-beaten-path Sri Lanka, rural tourism",
-  authors: [{ name: "Travel Explorer" }],
-  openGraph: {
-    title: "Meemure Village: Complete Travel Guide 2025",
-    description: "Your ultimate guide to visiting Meemure village, Sri Lanka's hidden mountain paradise",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Meemure Village: Complete Travel Guide 2025",
-    description: "Your ultimate guide to visiting Meemure village, Sri Lanka's hidden mountain paradise",
-  },
-}
+
 
 export default function MeemureTravelGuide() {
   return (
@@ -28,7 +13,7 @@ export default function MeemureTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Meemure.jpeg"
           alt="Scenic view of Meemure village nestled in the lush Knuckles Mountains of Sri Lanka"
           fill
           className="object-cover"
@@ -79,10 +64,10 @@ export default function MeemureTravelGuide() {
               <div>
                 <h4 className="font-semibold text-amber-800 mb-2">Important Travel Notice</h4>
                 <p className="text-sm text-amber-700 mb-2">
-                  <strong>4WD Vehicle Required:</strong> The final 20km to Meemure requires a 4WD vehicle with experienced mountain drivers. Regular cars cannot make this journey safely.
+                  <strong>Experienced Drivers Required:</strong> The final 20km to Meemure requires a 4WD vehicle with experienced mountain drivers.
                 </p>
                 <p className="text-sm text-amber-700 mb-2">
-                  <strong>No Modern Amenities:</strong> The village has no electricity, internet, or mobile coverage. Come prepared for a digital detox and authentic rural experience.
+                  <strong>No Modern Amenities:</strong> You cannot find good electricity, internet, or mobile coverage in the village. Come prepared for a digital detox and authentic rural experience.
                 </p>
                 <p className="text-sm text-amber-700">
                   Book accommodation in advance through local guides in Hunnasgiriya village, as options are limited and fill up quickly during peak season.
