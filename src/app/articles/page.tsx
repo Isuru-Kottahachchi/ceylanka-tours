@@ -285,7 +285,7 @@ export default function ArticlesPage() {
       const localResults = originalArticles.filter((article: Article) =>
         article.title.toLowerCase().includes(searchValue.toLowerCase()) ||
         article.description.toLowerCase().includes(searchValue.toLowerCase()) ||
-        article.category.toLowerCase().includes(searchValue.toLowerCase()) ||
+        article.category.toLowerCase().includes(searchValue.toLowerCase())
       );
       
       setSearchResults(localResults);
