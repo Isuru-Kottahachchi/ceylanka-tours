@@ -44,38 +44,86 @@ export default function MeemureTravelGuide() {
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Meemure: Sri Lanka&apos;s Last Traditional Village</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Discover Meemure Village</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step back in time and discover Meemure, a hidden mountain village where life has remained unchanged for over a thousand years! Nestled deep in the pristine Knuckles Mountain Range, this extraordinary village offers you a rare glimpse into authentic Sinhalese culture that has been preserved in its purest form, untouched by the rapid modernization of the outside world.
+              Welcome to Meemure, a magical mountain village tucked away in the Knuckles Range where time seems to have stood still! Picture this: buffalo still plow the rice fields, villagers weave bamboo baskets just like their great-great-grandparents did, and traditional wooden houses nestle among misty mountain peaks. It&apos;s like stepping into a living museum, except this is real life for the friendly folks who call Meemure home.
             </p>
             <p className="text-lg mb-4">
-              Imagine a place where modern conveniences are minimal - basic electricity and limited mobile coverage have recently arrived, but life here remains largely unchanged, with people living in complete harmony with nature and following traditions passed down through countless generations. Meemure is home to about 60 families who are descendants of King Rajasinghe II&apos;s soldiers, who were stationed here in the 17th century to guard against Portuguese invasions.
+              Here&apos;s what makes this place special - the village has been around for over 1,000 years! The current residents are descendants of King Rajasinghe II&apos;s soldiers who were sent here in the 1600s to watch for Portuguese invaders from the coast. When those soldiers settled down in this remote valley, they created something amazing: a community that kept ancient Sri Lankan traditions alive while the rest of the world changed around them.
             </p>
             <p className="text-lg mb-4">
-              The journey to Meemure is an adventure in itself, with a scenic drive through mountain terrain that will reward you with breathtaking views. While 4WD vehicles are recommended for comfort during certain seasons, the road has improved and regular vehicles can access the village during dry weather. Once you arrive, you&apos;ll find yourself in a world where time stands still - where buffalo still plow the fields, traditional wooden houses dot the landscape, and villagers weave baskets and craft tools using techniques unchanged for centuries.
+              Getting here is part of the adventure - you&apos;ll drive through stunning mountain scenery for about 3 hours from Kandy. The road&apos;s gotten better lately (regular cars can make it in dry weather!), but a 4WD is more comfortable. While basic electricity and limited mobile coverage recently arrived, don&apos;t expect WiFi or your usual modern comforts. That&apos;s the beauty of it - you&apos;ll actually unplug and connect with nature and real people!
             </p>
             <p className="text-lg">
-              This isn&apos;t just a tourist destination - it&apos;s a living, breathing community that welcomes visitors to experience their way of life. You can participate in traditional farming, learn ancient crafts, enjoy authentic village cuisine cooked over wood fires, and sleep in traditional homes under a canopy of stars unmarred by light pollution.
+              What can you do here? Join villagers in their daily routines, learn to cook traditional meals over wood fires, help harvest rice, or just relax by crystal-clear mountain streams. Also don't forget about water activities in Meemure. Sleep in cozy homestays where your hosts treat you like family, and fall asleep under a sky absolutely packed with stars. This isn&apos;t just tourism - it&apos;s an authentic cultural exchange you&apos;ll remember forever. 
             </p>
           </div>
           <div className="mt-6 p-4 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg">
             <div className="flex items-start gap-2">
               <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-amber-800 mb-2">Important Travel Notice</h4>
+                <h4 className="font-semibold text-amber-800 mb-2">Quick Heads-Up!</h4>
                 <p className="text-sm text-amber-700 mb-2">
-                  <strong>Road Conditions:</strong> 4WD vehicles recommended during rainy season or for added comfort. Regular vehicles can access during dry weather with careful driving.
+                  <strong>Road Conditions:</strong> A 4WD makes the journey comfier, especially after rain. Regular cars work fine in dry weather though!
                 </p>
                 <p className="text-sm text-amber-700 mb-2">
-                  <strong>Limited Modern Amenities:</strong> Basic electricity and limited mobile coverage available, but internet and other modern facilities remain minimal. Come prepared for a mostly digital-free, authentic rural experience.
+                  <strong>Modern Stuff:</strong> Basic electricity and patchy mobile coverage exist, but forget about WiFi. Perfect digital detox time!
                 </p>
                 <p className="text-sm text-amber-700">
-                  Book accommodation in advance through local guides in Hunnasgiriya village, as options are limited and fill up quickly during peak season.
+                  Book your homestay early through guides in Hunnasgiriya village - spots fill up fast during peak season.
                 </p>
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Did You Know */}
+        <section className="mb-12">
+          <Card className="border-purple-200 bg-gradient-to-r from-purple-50 to-pink-50">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-purple-800">
+                <Star className="w-5 h-5 text-purple-600" />
+                Did You Know?
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-purple-900">The "Honey Village"</p>
+                      <p className="text-sm text-muted-foreground">Meemure means "place of honey" in old Sinhalese! Villagers still collect wild honey from cliff faces using traditional rope techniques.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-purple-900">Unique Dialect</p>
+                      <p className="text-sm text-muted-foreground">The locals speak a special dialect of Sinhala that&apos;s different from the rest of Sri Lanka - preserved from centuries of isolation!</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-purple-900">No Shops Here</p>
+                      <p className="text-sm text-muted-foreground">There are no stores in the village! Bring your own snacks and cash - this is as off-the-grid as it gets in Sri Lanka.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <p className="font-semibold text-purple-900">Living Heritage</p>
+                      <p className="text-sm text-muted-foreground">About 400 people live here, maintaining traditions that vanished elsewhere in Sri Lanka hundreds of years ago!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </section>
 
         {/* Quick Facts */}
@@ -84,16 +132,16 @@ export default function MeemureTravelGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Star className="w-5 h-5 text-yellow-500" />
-                Quick Facts About Meemure Village
+                Quick Facts
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-blue-500" />
+                    <MapPin className="w-4 h-4 text-red-500" />
                     <span>
-                      <strong>Established:</strong> 1000+ years ago
+                      <strong>Location:</strong> Knuckles Mountains, Kandy District
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -111,12 +159,6 @@ export default function MeemureTravelGuide() {
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-red-500" />
-                    <span>
-                      <strong>Location:</strong> Knuckles Mountains, Kandy District
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
                     <TreePine className="w-4 h-4 text-yellow-500" />
                     <span>
                       <strong>Status:</strong> Protected Conservation Area
@@ -126,6 +168,12 @@ export default function MeemureTravelGuide() {
                     <Car className="w-4 h-4 text-orange-500" />
                     <span>
                       <strong>Access:</strong> 4WD recommended
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-blue-500" />
+                    <span>
+                      <strong>From Kandy:</strong> 78km, 2.5-3 hours
                     </span>
                   </div>
                 </div>
@@ -140,7 +188,7 @@ export default function MeemureTravelGuide() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-blue-800">
                 <MapPin className="w-5 h-5" />
-                How to Travel from Kandy to Meemure
+                How to Get There
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -166,312 +214,14 @@ export default function MeemureTravelGuide() {
               </div>
               <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
                 <p className="text-sm text-yellow-800">
-                  <strong>Important:</strong> While the road has improved, hiring local drivers from Hunnasgiriya village is recommended as they know the mountain roads and weather conditions best. 4WD vehicles offer more comfort, especially during or after rainy periods.
+                  <strong>Pro Tip:</strong> Local drivers from Hunnasgiriya know these mountain roads like the back of their hand. They&apos;re worth hiring, especially if it&apos;s been raining!
                 </p>
               </div>
             </CardContent>
           </Card>
         </section>
 
-        {/* The Ancient Story of Meemure */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">The Ancient Story of Meemure</h2>
-          <div className="prose prose-lg max-w-none text-muted-foreground">
-            <p className="text-lg mb-4">
-              The story of Meemure begins over a thousand years ago, when this remote mountain valley served as a refuge for people fleeing various invasions of the lowlands. The most significant chapter in its history came during the reign of King Rajasinghe II in the 17th century, when he stationed soldiers here to guard against Portuguese colonial forces advancing from the coast.
-            </p>
-            <p className="text-lg mb-4">
-              These soldiers, cut off from the outside world by treacherous mountain terrain, gradually established permanent settlements. Over generations, they developed a unique culture that blended ancient Sinhalese traditions with mountain adaptations necessary for survival in this challenging environment. Their isolation became their protection, preserving ways of life that disappeared elsewhere in Sri Lanka.
-            </p>
-            <p className="text-lg mb-4">
-              The village&apos;s name &quot;Meemure&quot; is believed to derive from ancient Sinhalese words meaning &quot;place of honey&quot; - a reference to the wild honey that has been harvested from cliff faces for centuries. The villagers developed intricate knowledge of the mountain ecosystem, learning to live sustainably within the boundaries of what would later become part of the Knuckles Conservation Forest.
-            </p>
-            <p className="text-lg">
-              Today, the descendants of these original settlers maintain many of the same practices their ancestors followed centuries ago. They continue to speak in a unique dialect, practice traditional agriculture, and follow social customs that have remained largely unchanged. This remarkable continuity makes Meemure one of the few places on Earth where you can truly experience how rural communities lived in pre-modern times.
-            </p>
-          </div>
-        </section>
-
-        {/* Village Experiences */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Authentic Village Experiences</h2>
-          <div className="grid lg:grid-cols-2 gap-6">
-            <Card className="border-green-200 bg-green-50/30">
-              <CardHeader>
-                <CardTitle className="text-green-800">Traditional Agriculture</CardTitle>
-                <CardDescription>Experience ancient farming methods</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Participate in traditional rice cultivation using buffalo-drawn plows and ancient irrigation techniques. Learn how villagers grow their food using methods passed down through generations without any modern machinery.
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span>Buffalo plowing demonstrations</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span>Traditional seed sowing methods</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span>Ancient irrigation systems tour</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-purple-200 bg-purple-50/30">
-              <CardHeader>
-                <CardTitle className="text-purple-800">Traditional Crafts</CardTitle>
-                <CardDescription>Learn ancient artisan skills</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Master traditional crafts like basket weaving, wooden tool making, and mat creation using natural materials. Village artisans will teach you techniques used for centuries.
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-purple-600" />
-                    <span>Bamboo basket weaving</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-purple-600" />
-                    <span>Traditional wooden tool carving</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-purple-600" />
-                    <span>Mat making with natural fibers</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-orange-200 bg-orange-50/30">
-              <CardHeader>
-                <CardTitle className="text-orange-800">Village Cuisine</CardTitle>
-                <CardDescription>Authentic traditional cooking</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Experience authentic village cooking using clay pots, wood fires, and ingredients grown locally. Learn to prepare traditional dishes that have nourished mountain communities for generations.
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-orange-600" />
-                    <span>Clay pot cooking lessons</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-orange-600" />
-                    <span>Wild honey and herbal teas</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-orange-600" />
-                    <span>Traditional rice and curry preparation</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-blue-200 bg-blue-50/30">
-              <CardHeader>
-                <CardTitle className="text-blue-800">Mountain Trekking</CardTitle>
-                <CardDescription>Explore pristine wilderness</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Discover hidden waterfalls, ancient meditation caves, and wildlife viewing spots with knowledgeable village guides who know every trail in the surrounding Knuckles Mountains.
-                </p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-blue-600" />
-                    <span>Waterfall discovery hikes</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-blue-600" />
-                    <span>Ancient monk meditation caves</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-blue-600" />
-                    <span>Endemic bird and wildlife spotting</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Do's and Don'ts */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Essential Guidelines for Visiting</h2>
-          <div className="grid lg:grid-cols-2 gap-6">
-            <Card className="border-green-200 bg-green-50/30">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-green-800">
-                  <CheckCircle className="w-5 h-5" />
-                  Do&apos;s - Respectful Visiting
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Respect local customs and dress modestly when visiting the village temple</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Ask permission before photographing people or entering their homes</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Participate in village activities and learn from local traditions</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Support the local economy by purchasing handmade crafts</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Follow leave-no-trace principles to preserve the pristine environment</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-red-200 bg-red-50/30">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-red-800">
-                  <XCircle className="w-5 h-5" />
-                  Don&apos;ts - What to Avoid
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-2">
-                    <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Don&apos;t bring plastic items - the village has no waste management system</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Don&apos;t expect modern amenities like electricity, internet, or hot water</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Don&apos;t disturb wildlife or pick plants in the protected conservation area</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Don&apos;t rush - village life moves at a peaceful, natural pace</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">Don&apos;t ignore safety advice from local guides on mountain trails</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Best Time to Visit */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Best Time to Visit Meemure</h2>
-          <div className="grid lg:grid-cols-3 gap-6">
-            <Card className="border-green-200 bg-green-50/30">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-green-800">
-                  <Sun className="w-5 h-5" />
-                  Dry Season (Dec-Mar)
-                </CardTitle>
-                <Badge className="bg-green-100 text-green-700">Best Time</Badge>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span>Clear roads and easy access</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span>Perfect weather for trekking</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span>Comfortable temperatures (18-25°C)</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span>Harvest season activities</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-yellow-200 bg-yellow-50/30">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-yellow-800">
-                  <Cloud className="w-5 h-5" />
-                  Shoulder Season (Apr-May, Oct-Nov)
-                </CardTitle>
-                <Badge className="bg-yellow-100 text-yellow-700">Good Time</Badge>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-yellow-600" />
-                    <span>Lush green landscapes</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <CheckCircle className="w-4 h-4 text-yellow-600" />
-                    <span>Fewer tourists</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <AlertTriangle className="w-4 h-4 text-yellow-600" />
-                    <span>Some road challenges</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <AlertTriangle className="w-4 h-4 text-yellow-600" />
-                    <span>Occasional rainfall</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-red-200 bg-red-50/30">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-red-800">
-                  <CloudRain className="w-5 h-5" />
-                  Monsoon (Jun-Sep)
-                </CardTitle>
-                <Badge className="bg-red-100 text-red-700">Avoid</Badge>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm">
-                    <XCircle className="w-4 h-4 text-red-600" />
-                    <span>Roads often impassable</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <XCircle className="w-4 h-4 text-red-600" />
-                    <span>Heavy rainfall and landslides</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <XCircle className="w-4 h-4 text-red-600" />
-                    <span>Village may be cut off</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm">
-                    <XCircle className="w-4 h-4 text-red-600" />
-                    <span>Limited outdoor activities</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-
-
+        
         {/* Things to Do in Meemure */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Things to Do in Meemure</h2>
@@ -486,7 +236,7 @@ export default function MeemureTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/lakegala.jpg",
+                        src: "/Meemure.jpeg",
                         alt: "Lakegala Rock rising 1,310 meters above Meemure village",
                         caption: "Lakegala Rock",
                         title: "Lakegala Mountain"
@@ -712,6 +462,173 @@ export default function MeemureTravelGuide() {
                       }
                     ]}
                   />
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+        {/* Do's and Don'ts */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Essential Guidelines for Visiting</h2>
+          <div className="grid lg:grid-cols-2 gap-6">
+            <Card className="border-green-200 bg-green-50/30">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-green-800">
+                  <CheckCircle className="w-5 h-5" />
+                  Do&apos;s - Respectful Visiting
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Respect local customs and dress modestly when visiting the village temple</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Ask permission before photographing people or entering their homes</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Participate in village activities and learn from local traditions</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Support the local economy by purchasing handmade crafts</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Follow leave-no-trace principles to preserve the pristine environment</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-red-200 bg-red-50/30">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-red-800">
+                  <XCircle className="w-5 h-5" />
+                  Don&apos;ts - What to Avoid
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Don&apos;t bring plastic items - the village has no waste management system</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Don&apos;t expect consistent electricity, internet, or hot water</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Don&apos;t disturb wildlife or pick plants in the protected conservation area</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Don&apos;t rush - village life moves at a peaceful, natural pace</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <XCircle className="w-4 h-4 text-red-600 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm">Don&apos;t ignore safety advice from local guides on mountain trails</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Best Time to Visit */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Best Time to Visit Meemure</h2>
+          <div className="grid lg:grid-cols-3 gap-6">
+            <Card className="border-green-200 bg-green-50/30">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-green-800">
+                  <Sun className="w-5 h-5" />
+                  Dry Season (Dec-Mar)
+                </CardTitle>
+                <Badge className="bg-green-100 text-green-700">Best Time</Badge>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    <span>Clear roads and easy access</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    <span>Perfect weather for trekking</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    <span>Comfortable temperatures (18-25°C)</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <CheckCircle className="w-4 h-4 text-green-600" />
+                    <span>Harvest season activities</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-yellow-200 bg-yellow-50/30">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-yellow-800">
+                  <Cloud className="w-5 h-5" />
+                  Shoulder Season (Apr-May, Oct-Nov)
+                </CardTitle>
+                <Badge className="bg-yellow-100 text-yellow-700">Good Time</Badge>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-sm">
+                    <CheckCircle className="w-4 h-4 text-yellow-600" />
+                    <span>Lush green landscapes</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <CheckCircle className="w-4 h-4 text-yellow-600" />
+                    <span>Fewer tourists</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <AlertTriangle className="w-4 h-4 text-yellow-600" />
+                    <span>Some road challenges</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <AlertTriangle className="w-4 h-4 text-yellow-600" />
+                    <span>Occasional rainfall</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-red-200 bg-red-50/30">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-red-800">
+                  <CloudRain className="w-5 h-5" />
+                  Monsoon (Jun-Sep)
+                </CardTitle>
+                <Badge className="bg-red-100 text-red-700">Avoid</Badge>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-sm">
+                    <XCircle className="w-4 h-4 text-red-600" />
+                    <span>Roads often impassable</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <XCircle className="w-4 h-4 text-red-600" />
+                    <span>Heavy rainfall and landslides</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <XCircle className="w-4 h-4 text-red-600" />
+                    <span>Village may be cut off</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <XCircle className="w-4 h-4 text-red-600" />
+                    <span>Limited outdoor activities</span>
+                  </div>
                 </div>
               </CardContent>
             </Card>
