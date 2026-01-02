@@ -7,7 +7,6 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
-import { AdBanner } from "@/components/ad-banner"
 import React from "react"
 
 type Article = typeof originalArticles[number];
@@ -27,23 +26,9 @@ const originalArticles = [
     featured: true,
   },
   {
-    id: 2,
-    title: "Lunuganga Geoffrey Bawa's Garden Paradise",
-    path: "lunuganga-geoffrey-bawas-garden",
-    category: "Culture",
-    author: "Michael Chen",
-    date: "2024-01-12",
-    views: "1.8K",
-    readTime: "12 min read",
-    image: "/JayaSrimahaBodhi.jpeg",
-    description: "Explore the architectural masterpiece and garden paradise created by Sri Lanka's most celebrated architect Geoffrey Bawa.",
-    highlights: ["Garden Design", "Architecture", "Art Gallery"],
-    featured: true,
-  },
-  {
     id: 3,
     title: "Wild Safari Parks in Sri Lanka",
-    path: "wild-safari-parks-in-srilanka",
+    path: "wild-safaries",
     category: "Wildlife",
     author: "Emma Wilson",
     date: "2024-01-10",
@@ -168,8 +153,8 @@ const originalArticles = [
   },
   {
     id: 12,
-    title: "Beware of These Waves",
-    path: "beware-of-this-waves",
+    title: "Things to Watch Out for at the Beach",
+    path: "things-to-beware-of-at-the-beach",
     category: "Safety",
     author: "Captain Samantha Silva",
     date: "2023-12-18",
@@ -211,7 +196,7 @@ const originalArticles = [
   {
     id: 15,
     title: "Ten Giants of Dutugamunu",
-    path: "tengiantsofdutugamunu",
+    path: "ten-giants-of-dutugamunu",
     category: "History",
     author: "Prof. History Lanka",
     date: "2023-12-10",
@@ -597,7 +582,7 @@ export default function ArticlesPage() {
 
                     <div className="mt-4">
                       <Link
-                        href={`/blog/${article.path}`}
+                        href={`/articles/${article.path}`}
                         className="inline-flex items-center justify-center w-full px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-medium rounded-md transition-colors duration-200"
                       >
                         Read Article

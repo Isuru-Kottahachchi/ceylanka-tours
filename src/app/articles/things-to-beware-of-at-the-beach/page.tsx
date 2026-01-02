@@ -85,7 +85,7 @@ export default function BeachSafetyGuide() {
     // Define images for dangerous sea creatures
     const lionFishImages = [
         "/Lionfish.jpeg",
-        "/Lionfish.jpg", 
+        "/Lionfish.jpg",
         "/Lionfish1.jpeg",
     ]
 
@@ -147,7 +147,7 @@ export default function BeachSafetyGuide() {
                 </div>
             </section>
 
-            <div className="max-w-4xl mx-auto px-4 py-8">
+            <div className="max-w-6xl mx-auto px-4 py-12">
                 {/* Emergency Alert */}
                 <Alert className="mb-8 border-red-300 bg-red-50 dark:border-red-600 dark:bg-red-950/30">
                     <AlertTriangle className="h-4 w-4 text-red-600 dark:text-red-400" />
@@ -166,11 +166,11 @@ export default function BeachSafetyGuide() {
                     </h2>
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                         <p className="text-lg mb-4">
-                            Sri Lanka has beautiful beaches, but the ocean can be very dangerous. Every year, many people 
+                            Sri Lanka has beautiful beaches, but the ocean can be very dangerous. Every year, many people
                             get hurt or drown because they don&apos;t know about sea dangers. This guide will help you stay safe.
                         </p>
                         <p className="text-lg mb-4">
-                            The sea around Sri Lanka has strong currents, big waves, and dangerous areas. Even good swimmers 
+                            The sea around Sri Lanka has strong currents, big waves, and dangerous areas. Even good swimmers
                             can get into trouble if they don&apos;t know what to watch for.
                         </p>
                         <p className="text-lg">
@@ -183,7 +183,7 @@ export default function BeachSafetyGuide() {
                 <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6 text-red-800 dark:text-red-400">Most Dangerous Sea Conditions</h2>
                     <div className="space-y-6">
-                        
+
                         {/* Rip Currents */}
                         <Card className="border-red-300 bg-red-50/30 dark:bg-red-950/30 dark:border-red-700">
                             <CardHeader>
@@ -221,7 +221,7 @@ export default function BeachSafetyGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100 dark:bg-red-950/40 dark:border-red-600">
                                             <AlertDescription className="text-red-800 dark:text-red-300 text-sm">
-                                                <strong>If caught in rip current:</strong> Don&apos;t panic! Don&apos;t try to swim straight back. 
+                                                <strong>If caught in rip current:</strong> Don&apos;t panic! Don&apos;t try to swim straight back.
                                                 Swim parallel to shore until you escape, then swim back at an angle.
                                             </AlertDescription>
                                         </Alert>
@@ -267,7 +267,7 @@ export default function BeachSafetyGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100 dark:bg-red-950/40 dark:border-red-600">
                                             <AlertDescription className="text-red-800 dark:text-red-300 text-sm">
-                                                <strong>Cross Sea Warning:</strong> If you see square wave patterns, 
+                                                <strong>Cross Sea Warning:</strong> If you see square wave patterns,
                                                 stay out of the water completely. These conditions are extremely dangerous.
                                             </AlertDescription>
                                         </Alert>
@@ -313,7 +313,7 @@ export default function BeachSafetyGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100 dark:bg-red-950/40 dark:border-red-600">
                                             <AlertDescription className="text-red-800 dark:text-red-300 text-sm">
-                                                <strong>Wave Safety:</strong> If waves are breaking at knee height or higher, 
+                                                <strong>Wave Safety:</strong> If waves are breaking at knee height or higher,
                                                 be very careful. Large waves can easily knock you down and drag you out.
                                             </AlertDescription>
                                         </Alert>
@@ -359,7 +359,7 @@ export default function BeachSafetyGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100 dark:bg-red-950/40 dark:border-red-600">
                                             <AlertDescription className="text-red-800 dark:text-red-300 text-sm">
-                                                <strong>Monsoon Rule:</strong> Always check local conditions and ask lifeguards. 
+                                                <strong>Monsoon Rule:</strong> Always check local conditions and ask lifeguards.
                                                 Monsoon seasons make normal beaches deadly.
                                             </AlertDescription>
                                         </Alert>
@@ -448,14 +448,14 @@ export default function BeachSafetyGuide() {
                             </CardContent>
                         </Card>
                     </div>
-                    
+
                     {/* Dangerous Sea Creatures Section */}
                     <div className="mt-8">
                         <h3 className="text-2xl font-bold mb-6 text-orange-800 dark:text-orange-400">Dangerous Sea Creatures in Shallow Water</h3>
                         <p className="text-muted-foreground mb-6">
                             These dangerous creatures can be found in shallow waters around Sri Lanka. Learn to identify them to stay safe while swimming and snorkeling.
                         </p>
-                        
+
                         {/* Individual Creature Cards with Carousels */}
                         <div className="space-y-8">
                             {/* Lion Fish */}
@@ -486,7 +486,7 @@ export default function BeachSafetyGuide() {
                                             </ul>
                                             <Alert className="border-orange-400 bg-orange-100 dark:border-orange-600 dark:bg-orange-950/30">
                                                 <AlertDescription className="text-orange-800 dark:text-orange-300 text-sm">
-                                                    <strong>Danger:</strong> Sting causes extreme pain, swelling, and can lead to infection. 
+                                                    <strong>Danger:</strong> Sting causes extreme pain, swelling, and can lead to infection.
                                                     Never approach or touch these beautiful but deadly fish!
                                                 </AlertDescription>
                                             </Alert>
@@ -523,7 +523,7 @@ export default function BeachSafetyGuide() {
                                             </ul>
                                             <Alert className="border-red-400 bg-red-100 dark:border-red-600 dark:bg-red-950/30">
                                                 <AlertDescription className="text-red-800 dark:text-red-300 text-sm">
-                                                    <strong>Extreme Danger:</strong> Stepping on a stone fish can be fatal! 
+                                                    <strong>Extreme Danger:</strong> Stepping on a stone fish can be fatal!
                                                     Always wear water shoes and never step on rocks or coral.
                                                 </AlertDescription>
                                             </Alert>
@@ -560,7 +560,7 @@ export default function BeachSafetyGuide() {
                                             </ul>
                                             <Alert className="border-purple-400 bg-purple-100 dark:border-purple-600 dark:bg-purple-950/30">
                                                 <AlertDescription className="text-purple-800 dark:text-purple-300 text-sm">
-                                                    <strong>Warning:</strong> Can sting even when dead on the beach. 
+                                                    <strong>Warning:</strong> Can sting even when dead on the beach.
                                                     Some species cause severe burns and systemic reactions.
                                                 </AlertDescription>
                                             </Alert>
@@ -597,7 +597,7 @@ export default function BeachSafetyGuide() {
                                             </ul>
                                             <Alert className="border-blue-400 bg-blue-100 dark:border-blue-600 dark:bg-blue-950/30">
                                                 <AlertDescription className="text-blue-800 dark:text-blue-300 text-sm">
-                                                    <strong>Important:</strong> Very venomous but rarely aggressive. 
+                                                    <strong>Important:</strong> Very venomous but rarely aggressive.
                                                     Don&apos;t try to handle or catch them - just swim away calmly.
                                                 </AlertDescription>
                                             </Alert>
@@ -634,7 +634,7 @@ export default function BeachSafetyGuide() {
                                             </ul>
                                             <Alert className="border-gray-400 bg-gray-100 dark:border-gray-600 dark:bg-gray-950/30">
                                                 <AlertDescription className="text-gray-800 dark:text-gray-300 text-sm">
-                                                    <strong>Painful Injury:</strong> Spines break off in skin and are very hard to remove. 
+                                                    <strong>Painful Injury:</strong> Spines break off in skin and are very hard to remove.
                                                     Can cause infection and intense pain for days or weeks.
                                                 </AlertDescription>
                                             </Alert>
@@ -643,7 +643,7 @@ export default function BeachSafetyGuide() {
                                 </CardContent>
                             </Card>
                         </div>
-                        
+
                         {/* Protection Tips */}
                         <Card className="mt-6 border-blue-300 bg-blue-50/30 dark:border-blue-600 dark:bg-blue-900/20">
                             <CardHeader>

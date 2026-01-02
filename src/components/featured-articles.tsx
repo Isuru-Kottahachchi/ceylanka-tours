@@ -12,33 +12,25 @@ const featuredArticles = [
       "From the golden sands of Unawatuna to the pristine shores of Mirissa, discover the most beautiful beaches...",
     image: "/Bentotabeach.jpeg",
     category: "Beaches",
-    // author: "Isuru Kottahachchi",
-    // date: "2024-01-15",
-    // views: "2.5K",
     readTime: "8 min read",
   },
+
   {
     id: 2,
-    title: "Lunuganga Geoffrey Bawa's Garden Paradise",
-    path: "lunuganga-geoffrey-bawas-garden",
-    excerpt: "Explore the rich Buddhist heritage of Sri Lanka through its magnificent temples and sacred sites...",
-    image: "/Lunugangabawa2.jpeg",
-    category: "Culture",
-    author: "Michael Chen",
-    date: "2024-01-12",
-    views: "1.8K",
-    readTime: "12 min read",
-  },
-  {
-    id: 3,
     title: "Wild Safari Parks in Sri Lanka",
-    path: "wild-safari-parks-in-srilanka",
+    path: "wild-safaries",
     excerpt: "Your complete guide to experiencing the incredible wildlife of Sri Lanka's most famous national park...",
     image: "/Yala-national-park.jpg",
     category: "Wildlife",
-    author: "Emma Wilson",
-    date: "2024-01-10",
-    views: "3.2K",
+    readTime: "10 min read",
+  },
+  {
+    id: 3,
+    title: "Things to Watch Out for at the Beach",
+    path: "things-to-beware-of-at-the-beach",
+    category: "Safety",
+    image: "/Yala-national-park.jpg",
+    excerpt: "Important safety guide about dangerous waves, sea creatures and coastal conditions around Sri Lanka that every beach visitor should know",
     readTime: "10 min read",
   },
   {
@@ -48,9 +40,6 @@ const featuredArticles = [
     excerpt: "Journey through the ancient legends and discover the sacred sites connected to the Ramayana epic...",
     image: "/Ramayanaya-Sites.png",
     category: "History",
-    author: "David Kumar",
-    date: "2024-01-08",
-    views: "2.1K",
     readTime: "15 min read",
   },
 ]
@@ -83,7 +72,7 @@ export function FeaturedArticles() {
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg font-semibold line-clamp-2 group-hover:text-cyan-600 transition-colors">
                   {/* <Link href={`/blog/${article.id}`}>{article.title}</Link> */}
-                  <Link href={`/blog/${article.path}`}>{article.title}</Link>
+                  <Link href={`/articles/${article.path}`}>{article.title}</Link>
                 </CardTitle>
               </CardHeader>
 
@@ -110,11 +99,11 @@ export function FeaturedArticles() {
                 */}
 
                 <div className="mt-2 text-xs text-cyan-600 font-medium">{article.readTime}</div>
-                
+
                 {/* View Article Button */}
                 <div className="mt-4">
                   <Link
-                    href={`/blog/${article.path}`}
+                    href={`/articles/${article.path}`}
                     className="inline-flex items-center justify-center w-full px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-medium rounded-md transition-colors duration-200"
                   >
                     Read Article
