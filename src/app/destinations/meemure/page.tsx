@@ -105,7 +105,7 @@ export default function MeemureTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Users className="w-4 h-4 text-purple-500" />
                     <span>
-                      <strong>Population:</strong> About 60 families (200 people)
+                      <strong>Population:</strong> About 400-420 people
                     </span>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export default function MeemureTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-3 text-blue-700">By Private Vehicle</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Distance:</strong> 45km from Kandy</li>
+                    <li>• <strong>Distance:</strong> 78km from Kandy</li>
                     <li>• <strong>Duration:</strong> 2.5-3 hours</li>
                     <li>• <strong>Vehicle:</strong> 4WD recommended for comfort</li>
                     <li>• <strong>Route:</strong> Kandy → Hunnasgiriya → Meemure</li>
