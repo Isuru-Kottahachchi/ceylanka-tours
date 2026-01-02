@@ -61,8 +61,8 @@ export default function VenomousSnakesGuide() {
                             This guide will help you stay safe during your travels in Sri Lanka.
                         </p>
                         <p className="text-lg mb-4">
-                            About 20 snake species in Sri Lanka are venomous. Snake bites cause around 400 deaths each year in
-                            Sri Lanka. But don&apos;t worry - with the right knowledge, you can stay safe and enjoy your trip.
+                            About 20 snake species in Sri Lanka are venomous. Snake bites are a serious health concern in rural areas,
+                            but tourist encounters are very rare. But don&apos;t worry - with the right knowledge, you can stay safe and enjoy your trip.
                         </p>
                         <p className="text-lg">
                             Remember: Most snakes are afraid of humans and will run away if they see you. Snake bites usually
@@ -98,7 +98,7 @@ export default function VenomousSnakesGuide() {
                                         <h4 className="font-semibold mb-3 text-red-800">What it looks like:</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                                             <li>• Brown color with dark spots</li>
-                                            <li>• Short and thick body (1-1.5 meters)</li>
+                                            <li>• Short and thick body (up to 1.6 meters)</li>
                                             <li>• Big head, thin neck</li>
                                             <li>• Very slow moving</li>
                                         </ul>
@@ -156,8 +156,8 @@ export default function VenomousSnakesGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100">
                                             <AlertDescription className="text-red-800 text-sm">
-                                                <strong>Warning:</strong> Cobras can spit venom up to 2 meters!
-                                                If venom gets in your eyes, wash immediately with water.
+                                                <strong>Warning:</strong> When threatened, cobras spread their hood and may strike.
+                                                Give them space and back away slowly if you see one.In fact, cobras are shy and prefer to avoid humans.
                                             </AlertDescription>
                                         </Alert>
                                     </div>
@@ -214,16 +214,16 @@ export default function VenomousSnakesGuide() {
                             <CardHeader>
                                 <CardTitle className="text-red-800 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
-                                    4. Ceylon Karwala (Bungarus ceylonicus ceylonicus)
+                                    4. Sri Lankan Krait (Mudu Karawala)
                                 </CardTitle>
-                                <CardDescription className="text-red-600">Endemic nocturnal serpent with potent neurotoxin</CardDescription>
+                                <CardDescription className="text-red-600">Endemic krait found only in Sri Lanka</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <Image
-                                            src="/placeholder.svg?height=300&width=400&text=Ceylon+Karwala"
-                                            alt="Ceylon Karwala - endemic venomous snake of Sri Lanka"
+                                            src="/placeholder.svg?height=300&width=400&text=Sri+Lankan+Krait"
+                                            alt="Sri Lankan Krait - endemic deadly venomous snake of Sri Lanka"
                                             width={400}
                                             height={300}
                                             className="rounded-lg"
@@ -232,22 +232,22 @@ export default function VenomousSnakesGuide() {
                                     <div>
                                         <h4 className="font-semibold mb-3 text-red-800">What it looks like:</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground mb-4">
-                                            <li>• Black with narrow white crossbands</li>
-                                            <li>• Glossy, smooth scales</li>
-                                            <li>• 0.9-1.2 meters long</li>
-                                            <li>• Triangular cross-section body</li>
+                                            <li>• Black with white or pale crossbands</li>
+                                            <li>• Glossy smooth scales</li>
+                                            <li>• 90-120 cm long</li>
+                                            <li>• Triangular body shape</li>
                                         </ul>
                                         <h4 className="font-semibold mb-3 text-red-800">Where you find them:</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground mb-4">
                                             <li>• Wet zone forests and plantations</li>
-                                            <li>• Traditional houses and buildings</li>
-                                            <li>• Active only at night</li>
-                                            <li>• Hides during day under objects</li>
+                                            <li>• Houses and buildings at night</li>
+                                            <li>• Only active after dark</li>
+                                            <li>• Hides under objects during day</li>
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100">
                                             <AlertDescription className="text-red-800 text-sm">
-                                                <strong>Endemic Danger:</strong> Found only in Sri Lanka. Bite causes no immediate pain,
-                                                but venom attacks nervous system causing paralysis.
+                                                <strong>Endemic Danger:</strong> Found only in Sri Lanka. Bite causes no pain,
+                                                but venom attacks nervous system. Seek help immediately even if you feel fine!
                                             </AlertDescription>
                                         </Alert>
                                     </div>
@@ -259,52 +259,7 @@ export default function VenomousSnakesGuide() {
                             <CardHeader>
                                 <CardTitle className="text-red-800 flex items-center gap-2">
                                     <AlertTriangle className="w-5 h-5" />
-                                    5. Mudu Karwala (Bungarus ceylonicus karavala)
-                                </CardTitle>
-                                <CardDescription className="text-red-600">Highland subspecies with distinctive banding</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <div className="grid md:grid-cols-2 gap-6">
-                                    <div>
-                                        <Image
-                                            src="/placeholder.svg?height=300&width=400&text=Mudu+Karwala"
-                                            alt="Mudu Karwala - highland subspecies venomous snake in Sri Lanka"
-                                            width={400}
-                                            height={300}
-                                            className="rounded-lg"
-                                        />
-                                    </div>
-                                    <div>
-                                        <h4 className="font-semibold mb-3 text-red-800">What it looks like:</h4>
-                                        <ul className="space-y-2 text-sm text-muted-foreground mb-4">
-                                            <li>• Black with broader white bands</li>
-                                            <li>• More distinct banding pattern</li>
-                                            <li>• 0.8-1.1 meters long</li>
-                                            <li>• Slightly more robust build</li>
-                                        </ul>
-                                        <h4 className="font-semibold mb-3 text-red-800">Where you find them:</h4>
-                                        <ul className="space-y-2 text-sm text-muted-foreground mb-4">
-                                            <li>• Hill country and mountains</li>
-                                            <li>• Tea estates and forest edges</li>
-                                            <li>• Strictly nocturnal hunter</li>
-                                            <li>• Cool, humid environments</li>
-                                        </ul>
-                                        <Alert className="border-red-400 bg-red-100">
-                                            <AlertDescription className="text-red-800 text-sm">
-                                                <strong>Mountain Threat:</strong> Highland variant with powerful neurotoxic venom.
-                                                Silent bite with delayed symptoms makes it extremely dangerous.
-                                            </AlertDescription>
-                                        </Alert>
-                                    </div>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="border-red-300 bg-red-50/30">
-                            <CardHeader>
-                                <CardTitle className="text-red-800 flex items-center gap-2">
-                                    <AlertTriangle className="w-5 h-5" />
-                                    6. Saw-scaled Viper (Weli Polanga)
+                                    5. Saw-scaled Viper (Weli Polanga)
                                 </CardTitle>
                                 <CardDescription className="text-red-600">Small but very aggressive</CardDescription>
                             </CardHeader>
@@ -425,8 +380,8 @@ export default function VenomousSnakesGuide() {
 
                         <Card className="border-orange-300 bg-orange-50/30">
                             <CardHeader>
-                                <CardTitle className="text-orange-800">Sea Snake (Mudu Sarpa)</CardTitle>
-                                <CardDescription className="text-orange-600">Ocean and coastal snake</CardDescription>
+                                <CardTitle className="text-orange-800">Sea Snakes (Multiple Species)</CardTitle>
+                                <CardDescription className="text-orange-600">Ocean and coastal snakes</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6">
@@ -440,19 +395,19 @@ export default function VenomousSnakesGuide() {
                                         />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold mb-3 text-orange-800">What it looks like:</h4>
+                                        <h4 className="font-semibold mb-3 text-orange-800">What they look like:</h4>
                                         <ul className="space-y-1 text-sm text-muted-foreground mb-4">
-                                            <li>• Black and white bands</li>
-                                            <li>• Flat tail for swimming</li>
-                                            <li>• 1-1.5 meters long</li>
-                                            <li>• Lives in water</li>
+                                            <li>• Usually banded patterns (black/white or blue/white)</li>
+                                            <li>• Paddle-shaped flat tail for swimming</li>
+                                            <li>• 0.8-2 meters long depending on species</li>
+                                            <li>• Cannot survive on land</li>
                                         </ul>
                                         <h4 className="font-semibold mb-3 text-orange-800">Where you find them:</h4>
                                         <ul className="space-y-1 text-sm text-muted-foreground">
-                                            <li>• Ocean and sea water</li>
-                                            <li>• Sometimes on beaches</li>
-                                            <li>• Fishing nets</li>
-                                            <li>• Usually gentle unless handled</li>
+                                            <li>• Open ocean waters</li>
+                                            <li>• Rarely wash up on beaches</li>
+                                            <li>• Sometimes caught in fishing nets</li>
+                                            <li>• Generally docile but venomous if handled</li>
                                         </ul>
                                     </div>
                                 </div>
