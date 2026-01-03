@@ -432,6 +432,16 @@ const destinations: Destination[] = [
   },
   {
     id: 25,
+    name:"Mihinthalaya",
+    location: "North Central Province",
+    path: "mihinthalaya",
+    image: "/Mihinthale.jpg",
+    description: "Ancient city with historical and religious significance",
+    highlights: ["Ancient Temples", "Historical Sites", "Religious Significance"],
+    category: "Historical",
+  },
+  {
+    id: 25,
     name: "Rathnapura",
     location: "Sabaragamuwa Province",
     path: "rathnapura",

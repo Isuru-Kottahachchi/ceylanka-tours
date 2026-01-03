@@ -270,7 +270,7 @@ export default function MirissaTravelGuide() {
                 </ul>
               </div>
               <div className="mt-8">
-                <Link href="/blog/marine-life-experience">
+                <Link href="/articles/marine-life-experience">
                   <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 cursor-pointer">
                     Read More About Sri Lankan Marine Life
                   </Button>

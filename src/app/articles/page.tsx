@@ -80,7 +80,7 @@ const originalArticles = [
   {
     id: 8,
     title: "Kandy Esala Perahera Festival",
-    path: "Kandy-esela-perahara",
+    path: "kandy-esela-perahara",
     category: "Culture",
     readTime: "13 min read",
     image: "/Kandy.jpeg",
@@ -146,7 +146,7 @@ const originalArticles = [
   {
     id: 14,
     title: "Shapes of Stupa",
-    path: "shapesofstupa",
+    path: "shapes-of-stupa",
     category: "Religion",
     readTime: "8 min read",
     image: "/Ruwanwalisaya.jpeg",

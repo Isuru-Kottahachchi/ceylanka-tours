@@ -600,8 +600,9 @@ export default function TenGiantsArticle() {
                 <CardDescription>The great king who unified Sri Lanka</CardDescription>
               </CardHeader>
               <CardContent>
+              <Image src="/images/king-dutugamunu.jpg" alt="King Dutugamunu" width={400} height={250} />
                 <Link href="/articles/king-dutugamunu" passHref legacyBehavior>
-                  <Button variant="link" className="p-0 h-auto text-orange-600">
+                  <Button variant="link" className="p-0 h-auto text-orange-600 cursor-pointer">
                     Read More →
                   </Button>
                 </Link>
