@@ -24,7 +24,7 @@ export default function TempleOfToothKandyGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Temple-of-the-tooth.jpeg"
           alt="Temple of the Tooth Kandy with golden roof and traditional architecture beside Kandy Lake"
@@ -1198,7 +1198,7 @@ export default function TempleOfToothKandyGuide() {
               {/* More Details Button */}
               <div className="mt-8 text-center">
                 <a
-                  href="/blog/kandy-esela-perahara"
+                  href="/articles/kandy-esela-perahara"
                   className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
                   <Crown className="w-5 h-5" />
