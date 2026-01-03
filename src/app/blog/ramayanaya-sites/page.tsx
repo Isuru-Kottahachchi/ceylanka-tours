@@ -5,7 +5,9 @@ import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"             
 import { Badge } from "@/components/ui/badge"
-import { Calendar, User, Eye, Clock, ArrowLeft } from "lucide-react"
+import { Calendar, User, Eye, Clock, ArrowLeft, MapPin, Info, CheckCircle } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Separator } from "@/components/ui/separator"
 
 
 
@@ -125,11 +127,17 @@ export default function RamayanaySitesPage() {
               {/* Seetha Amman Temple */}
               <Card className="group hover:shadow-xl transition-all duration-300">
                 <div className="relative overflow-hidden">
-                  <ImageCarousel images={[
-                    { src: "/Seetha-Amman-Temple.jpg", alt: "Seetha Amman Temple exterior", caption: "Seetha Amman Temple, Nuwara Eliya" },
-                    { src: "/Seetha-Amman-Temple-interior.jpg", alt: "Seetha Amman Temple interior", caption: "Colorful statues and shrines inside the temple" },
-                    { src: "/Seetha-Amman-Temple-stream.jpg", alt: "Stream by Seetha Amman Temple", caption: "The stream where Sita is believed to have bathed" }
-                  ]} />
+                  <div className="relative w-full overflow-hidden rounded-t-lg mb-4">
+                    <div className="aspect-[4/3] w-full">
+                      <ImageCarousel 
+                        images={[
+                          { src: "/Seetha-Amman-Temple.jpg", alt: "Seetha Amman Temple exterior", title: "Seetha Amman Temple", caption: "Seetha Amman Temple, Nuwara Eliya" },
+                          { src: "/Seetha-Amman-Temple-interior.jpg", alt: "Seetha Amman Temple interior", title: "Temple Interior", caption: "Colorful statues and shrines inside the temple" },
+                          { src: "/Seetha-Amman-Temple-stream.jpg", alt: "Stream by Seetha Amman Temple", title: "Sacred Stream", caption: "The stream where Sita is believed to have bathed" }
+                        ]} 
+                      />
+                    </div>
+                  </div>
                   <div className="absolute top-3 left-3"><Badge className="bg-orange-600 text-white">Sacred Site</Badge></div>
                 </div>
                 <CardHeader>
@@ -149,11 +157,17 @@ export default function RamayanaySitesPage() {
               {/* Ravana Ella & Ravana Cave */}
               <Card className="group hover:shadow-xl transition-all duration-300">
                 <div className="relative overflow-hidden">
-                  <ImageCarousel images={[
-                    { src: "/Ravana-Ella.jpg", alt: "Ravana Ella Falls", caption: "Ravana Ella Falls, Ella" },
-                    { src: "/Ravana-Ella1.jpg", alt: "Ravana Cave entrance", caption: "Entrance to the legendary Ravana Cave" },
-                    { src: "/Ravana-Ella-view.jpg", alt: "View from Ravana Ella", caption: "Panoramic view from the top of the falls" }
-                  ]} />
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-t-lg mb-4">
+                    <div className="h-[400px]">
+                      <ImageCarousel 
+                        images={[
+                          { src: "/Ravana-Ella.jpg", alt: "Ravana Ella Falls", title: "Ravana Falls", caption: "Ravana Ella Falls, Ella" },
+                          { src: "/Ravana-Ella1.jpg", alt: "Ravana Cave entrance", title: "Cave Entrance", caption: "Entrance to the legendary Ravana Cave" },
+                          { src: "/Ravana-Ella-view.jpg", alt: "View from Ravana Ella", title: "Panoramic View", caption: "Panoramic view from the top of the falls" }
+                        ]} 
+                      />
+                    </div>
+                  </div>
                   <div className="absolute top-3 left-3"><Badge className="bg-orange-600 text-white">Legendary Falls</Badge></div>
                 </div>
                 <CardHeader>
@@ -173,10 +187,16 @@ export default function RamayanaySitesPage() {
               {/* Divurumpola */}
               <Card className="group hover:shadow-xl transition-all duration-300">
                 <div className="relative overflow-hidden">
-                  <ImageCarousel images={[
-                    { src: "/Divurumpola.jpg", alt: "Divurumpola Temple exterior", caption: "Divurumpola Temple, Nuwara Eliya" },
-                    { src: "/Divurumpola-grounds.jpg", alt: "Divurumpola temple grounds", caption: "Sacred grounds of Divurumpola" }
-                  ]} />
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-t-lg mb-4">
+                    <div className="h-[400px]">
+                      <ImageCarousel 
+                        images={[
+                          { src: "/Divurumpola.jpg", alt: "Divurumpola Temple exterior", title: "Divurumpola Temple", caption: "Divurumpola Temple, Nuwara Eliya" },
+                          { src: "/Divurumpola-grounds.jpg", alt: "Divurumpola temple grounds", title: "Sacred Grounds", caption: "Sacred grounds of Divurumpola" }
+                        ]} 
+                      />
+                    </div>
+                  </div>
                   <div className="absolute top-3 left-3"><Badge className="bg-orange-600 text-white">Historic Site</Badge></div>
                 </div>
                 <CardHeader>
@@ -196,10 +216,16 @@ export default function RamayanaySitesPage() {
               {/* Rumassala Hill */}
               <Card className="group hover:shadow-xl transition-all duration-300">
                 <div className="relative overflow-hidden">
-                  <ImageCarousel images={[
-                    { src: "/Rumassala.jpg", alt: "Rumassala Hill view", caption: "Rumassala Hill, Galle" },
-                    { src: "/Rumassala-flora.jpg", alt: "Unique flora at Rumassala", caption: "Rare plants on Rumassala Hill" }
-                  ]} />
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-t-lg mb-4">
+                    <div className="h-[400px]">
+                      <ImageCarousel 
+                        images={[
+                          { src: "/Rumassala.jpg", alt: "Rumassala Hill view", title: "Rumassala Hill", caption: "Rumassala Hill, Galle" },
+                          { src: "/Rumassala-flora.jpg", alt: "Unique flora at Rumassala", title: "Unique Flora", caption: "Rare plants on Rumassala Hill" }
+                        ]} 
+                      />
+                    </div>
+                  </div>
                   <div className="absolute top-3 left-3"><Badge className="bg-orange-600 text-white">Mythic Hill</Badge></div>
                 </div>
                 <CardHeader>
@@ -219,10 +245,16 @@ export default function RamayanaySitesPage() {
               {/* Ashok Vatika (Hakgala Garden) */}
               <Card className="group hover:shadow-xl transition-all duration-300">
                 <div className="relative overflow-hidden">
-                  <ImageCarousel images={[
-                    { src: "/Hakgala-Garden.jpg", alt: "Hakgala Botanical Garden", caption: "Hakgala Botanical Garden, Nuwara Eliya" },
-                    { src: "/Hakgala-flowers.jpg", alt: "Orchids at Hakgala", caption: "Rare orchids in Hakgala Garden" }
-                  ]} />
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-t-lg mb-4">
+                    <div className="h-[400px]">
+                      <ImageCarousel 
+                        images={[
+                          { src: "/Hakgala-Garden.jpg", alt: "Hakgala Botanical Garden", title: "Hakgala Garden", caption: "Hakgala Botanical Garden, Nuwara Eliya" },
+                          { src: "/Hakgala-flowers.jpg", alt: "Orchids at Hakgala", title: "Rare Orchids", caption: "Rare orchids in Hakgala Garden" }
+                        ]} 
+                      />
+                    </div>
+                  </div>
                   <div className="absolute top-3 left-3"><Badge className="bg-orange-600 text-white">Botanical Garden</Badge></div>
                 </div>
                 <CardHeader>
