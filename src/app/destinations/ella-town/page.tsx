@@ -17,7 +17,7 @@ export default function EllaTownGuide() {
     <div className="min-h-screen">
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
           <Image
             src="/Ella.jpg"
             alt="Panoramic view of Ella town nestled in misty mountains with tea plantations and the famous Ella Gap"

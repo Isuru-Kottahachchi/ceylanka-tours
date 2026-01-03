@@ -23,7 +23,7 @@ export default function HortonPlainsDetailedGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Hortonplains15.jpeg"
           alt="Dramatic cliff edge at World&apos;s End in Horton Plains with misty mountains and valleys below"

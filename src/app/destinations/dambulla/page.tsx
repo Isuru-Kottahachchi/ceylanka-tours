@@ -24,7 +24,7 @@ export default function DambullaTownGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/dambulla-cave-temple.jpg"
           alt="Bustling Dambulla town with local markets, traditional buildings and daily life"
