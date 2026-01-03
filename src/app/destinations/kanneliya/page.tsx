@@ -55,24 +55,24 @@ export default function KanneliyaTravelGuide() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-  
+
         {/* Introduction */}
         <section className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Discover Sri Lanka&apos;s Hidden Rainforest Gem</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground">
             <p className="mb-4">
-              Kanneliya Forest Reserve, part of the UNESCO-designated biosphere reserve, is one of Sri Lanka&apos;s most 
-              pristine rainforests. This spectacular ecosystem spans 5,306 hectares and hosts an incredible variety 
+              Kanneliya Forest Reserve, part of the UNESCO-designated biosphere reserve, is one of Sri Lanka&apos;s most
+              pristine rainforests. This spectacular ecosystem spans 5,306 hectares and hosts an incredible variety
               of flora and fauna, including many species found nowhere else on Earth.
             </p>
             <p className="mb-4">
-              Home to over 220 bird species, 86 species of mammals, and countless plant species, Kanneliya represents 
-              one of the last remaining rainforest complexes in Sri Lanka. Its network of hiking trails, stunning 
+              Home to over 220 bird species, 86 species of mammals, and countless plant species, Kanneliya represents
+              one of the last remaining rainforest complexes in Sri Lanka. Its network of hiking trails, stunning
               waterfalls, and rich biodiversity make it a paradise for nature lovers, researchers, and eco-tourists.
             </p>
           </div>
         </section>
-             {/* Quick Overview */}
+        {/* Quick Overview */}
         <section className="mb-16">
           <Card className="bg-card">
             <CardHeader>
@@ -147,8 +147,8 @@ export default function KanneliyaTravelGuide() {
                     className="rounded-lg"
                   />
                   <p className="text-muted-foreground">
-                    Kanneliya features several spectacular waterfalls, including the famous Narangas Falls and 
-                    Anagimale Falls. These pristine cascades, surrounded by lush vegetation, offer perfect spots 
+                    Kanneliya features several spectacular waterfalls, including the famous Narangas Falls and
+                    Anagimale Falls. These pristine cascades, surrounded by lush vegetation, offer perfect spots
                     for photography and natural relaxation.
                   </p>
                   <ul className="space-y-2">
@@ -185,8 +185,8 @@ export default function KanneliyaTravelGuide() {
                     className="rounded-lg"
                   />
                   <p className="text-muted-foreground">
-                    The reserve is a haven for wildlife enthusiasts, hosting numerous endemic species. From rare birds 
-                    to elusive mammals and vibrant butterflies, Kanneliya offers unique opportunities for wildlife 
+                    The reserve is a haven for wildlife enthusiasts, hosting numerous endemic species. From rare birds
+                    to elusive mammals and vibrant butterflies, Kanneliya offers unique opportunities for wildlife
                     observation and photography.
                   </p>
                   <ul className="space-y-2">
@@ -330,7 +330,7 @@ export default function KanneliyaTravelGuide() {
             </CardContent>
           </Card>
         </section>
-        
+
         {/* Nearby Attractions */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
@@ -541,7 +541,7 @@ export default function KanneliyaTravelGuide() {
               <div className="text-center space-y-4">
                 <h2 className="text-3xl font-bold mb-4">Help Preserve Kanneliya</h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Kanneliya Forest Reserve is a precious ecosystem that needs our protection. Follow the park rules, 
+                  Kanneliya Forest Reserve is a precious ecosystem that needs our protection. Follow the park rules,
                   stay on marked trails, and help maintain this pristine environment for future generations.
                 </p>
               </div>

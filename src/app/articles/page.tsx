@@ -94,7 +94,7 @@ const originalArticles = [
     path: "top-cultral-events",
     category: "Culture",
     readTime: "10 min read",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Kandy-Esela-Perahara-1.JPG",
     description: "Discover the vibrant cultural festivals and events that showcase Sri Lanka's rich heritage and traditions throughout the year.",
     highlights: ["Vesak Festival", "Poson", "New Year Celebrations"],
     featured: false,
