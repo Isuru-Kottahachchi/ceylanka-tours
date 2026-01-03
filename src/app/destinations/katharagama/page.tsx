@@ -1,86 +1,11 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
-// Kandy-style local image carousel
-type CarouselImage = { src: string; caption: string }
-function ImageCarousel({ images, alt }: { images: CarouselImage[]; alt: string }) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-  }
-
-  const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-  }
-
-  const goToImage = (index: number) => {
-    setCurrentIndex(index)
-  }
-
-  return (
-    <div className="relative">
-      <div className="relative overflow-hidden rounded-xl" style={{ height: '400px', width: '100%' }}>
-        <Image
-          src={images[currentIndex]?.src || "/placeholder.svg"}
-          alt={`${alt} - Image ${currentIndex + 1}`}
-          fill
-          className="rounded-xl transition-all duration-300 object-cover"
-          sizes="(max-width: 768px) 100vw, 400px"
-        />
-        {/* Caption */}
-        {images[currentIndex]?.caption && (
-          <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-sm px-4 py-2 rounded-b-xl">
-            {images[currentIndex].caption}
-          </div>
-        )}
-        {images.length > 1 && (
-          <>
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-              onClick={prevImage}
-            >
-              <span className="sr-only">Previous</span>
-              &#8592;
-            </Button>
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-              onClick={nextImage}
-            >
-              <span className="sr-only">Next</span>
-              &#8594;
-            </Button>
-          </>
-        )}
-      </div>
-      {images.length > 1 && (
-        <div className="flex justify-center mt-3 space-x-2">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToImage(index)}
-              className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"}`}
-            />
-          ))}
-        </div>
-      )}
-      {images.length > 1 && (
-        <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-          {currentIndex + 1} / {images.length}
-        </div>
-      )}
-    </div>
-  )
-}
 import { Clock, MapPin, CheckCircle, Star, Users, TreePine, Flame, Heart, AlertTriangle } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link";
 
 
@@ -90,7 +15,7 @@ export default function KatharagamaGuide() {
     <>
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
           <Image
             src="/Katharagama.jpg"
             alt="Sacred Katharagama temple complex with devotees offering prayers during evening ceremony"
@@ -329,10 +254,15 @@ export default function KatharagamaGuide() {
                     <div className="rounded-xl shadow-lg overflow-hidden">
                       <ImageCarousel
                         images={[
-                          { src: "/Katharagama-dewalaya.jpg", caption: "Main Katharagama temple with devotees and oil lamps" },
-                          { src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama temple illuminated at night" }
+                          {
+                            src: "/Katharagama-dewalaya.jpg", caption: "Main Katharagama temple with devotees and oil lamps",
+                            alt: "Main Katharagama temple with devotees and oil lamps"
+                          },
+                          {
+                            src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama temple illuminated at night",
+                            alt: "Katharagama temple illuminated at night"
+                          }
                         ]}
-                        alt="Main Katharagama temple with devotees offering prayers and oil lamps during evening ceremony"
                       />
                     </div>
                     <div className="space-y-6">
@@ -409,10 +339,15 @@ export default function KatharagamaGuide() {
                     <div className="rounded-xl shadow-lg overflow-hidden">
                       <ImageCarousel
                         images={[
-                          { src: "/Sella-Katharagama.jpeg", caption: "Main Katharagama temple with devotees and oil lamps" },
-                          { src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama temple illuminated at night" }
+                          {
+                            src: "/Sella-Katharagama.jpeg", caption: "Main Katharagama temple with devotees and oil lamps",
+                            alt: "Main Katharagama temple with devotees and oil lamps"
+                          },
+                          {
+                            src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama temple illuminated at night",
+                            alt: "Katharagama temple illuminated at night"
+                          }
                         ]}
-                        alt="Main Katharagama temple with devotees offering prayers and oil lamps during evening ceremony"
                       />
                     </div>
                     <div className="space-y-6">
@@ -555,10 +490,15 @@ export default function KatharagamaGuide() {
                     <div className="rounded-xl shadow-lg overflow-hidden">
                       <ImageCarousel
                         images={[
-                          { src: "/Kiri-vehera.jpeg", caption: "Kiri Vehera stupa with devotees circumambulating" },
-                          { src: "/placeholder.svg?height=500&width=600&text=Kiri+Vehera+Full+Moon", caption: "Kiri Vehera illuminated on full moon night" }
+                          {
+                            src: "/Kiri-vehera.jpeg", caption: "Kiri Vehera stupa with devotees circumambulating",
+                            alt: ""
+                          },
+                          {
+                            src: "/placeholder.svg?height=500&width=600&text=Kiri+Vehera+Full+Moon", caption: "Kiri Vehera illuminated on full moon night",
+                            alt: ""
+                          }
                         ]}
-                        alt="White Buddhist stupa Kiri Vehera with devotees circumambulating during evening prayers"
                       />
                     </div>
                   </div>
@@ -578,10 +518,15 @@ export default function KatharagamaGuide() {
                     <div className="rounded-xl shadow-lg overflow-hidden">
                       <ImageCarousel
                         images={[
-                          { src: "/placeholder.svg?height=400&width=600&text=Katharagama+Mosque", caption: "Mosque in Katharagama sacred complex" },
-                          { src: "/placeholder.svg?height=400&width=600&text=Mosque+Festival+Night", caption: "Mosque during festival night" }
+                          {
+                            src: "/placeholder.svg?height=400&width=600&text=Katharagama+Mosque", caption: "Mosque in Katharagama sacred complex",
+                            alt: ""
+                          },
+                          {
+                            src: "/placeholder.svg?height=400&width=600&text=Mosque+Festival+Night", caption: "Mosque during festival night",
+                            alt: ""
+                          }
                         ]}
-                        alt="Small mosque in Katharagama complex showing religious diversity and harmony"
                       />
                     </div>
                     <div className="space-y-6">
@@ -659,10 +604,15 @@ export default function KatharagamaGuide() {
                   <div className="rounded-xl shadow-lg overflow-hidden">
                     <ImageCarousel
                       images={[
-                        { src: "/Katharagama-dewalaya.jpg", caption: "Okanda Dewalaya shrine on the eastern coast" },
-                        { src: "/placeholder.svg?height=400&width=600&text=Okanda+Beach+View", caption: "Pilgrims at Okanda beach near the shrine" }
+                        {
+                          src: "/Katharagama-dewalaya.jpg", caption: "Okanda Dewalaya shrine on the eastern coast",
+                          alt: ""
+                        },
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=Okanda+Beach+View", caption: "Pilgrims at Okanda beach near the shrine",
+                          alt: ""
+                        }
                       ]}
-                      alt="Okanda Dewalaya shrine on the eastern coast with pilgrims and ocean backdrop"
                     />
                   </div>
                   <div className="space-y-6">
@@ -700,10 +650,15 @@ export default function KatharagamaGuide() {
                   <div className="rounded-xl shadow-lg overflow-hidden">
                     <ImageCarousel
                       images={[
-                        { src: "/placeholder.svg?height=400&width=600&text=Kebalitta+Dewalaya", caption: "Kebalitta Dewalaya jungle shrine" },
-                        { src: "/placeholder.svg?height=400&width=600&text=Kebalitta+River+View", caption: "Menik Ganga river near Kebalitta Dewalaya" }
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=Kebalitta+Dewalaya", caption: "Kebalitta Dewalaya jungle shrine",
+                          alt: ""
+                        },
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=Kebalitta+River+View", caption: "Menik Ganga river near Kebalitta Dewalaya",
+                          alt: ""
+                        }
                       ]}
-                      alt="Kebalitta Dewalaya jungle shrine, sacred gateway for pilgrims"
                     />
                   </div>
                   <div className="space-y-6">
@@ -747,11 +702,19 @@ export default function KatharagamaGuide() {
                   <div className="rounded-xl shadow-lg overflow-hidden">
                     <ImageCarousel
                       images={[
-                        { src: "/Wada-siti-kanda.jpeg", caption: "Wadasiti Kanda mountain with pilgrims climbing" },
-                        { src: "/Wada-siti-kanda1.jpeg", caption: "Summit view from Wadasiti Kanda" },
-                        { src: "/Wada-siti-kanda2.jpeg", caption: "Summit view from Wadasiti Kanda" }
+                        {
+                          src: "/Wada-siti-kanda.jpeg", caption: "Wadasiti Kanda mountain with pilgrims climbing",
+                          alt: ""
+                        },
+                        {
+                          src: "/Wada-siti-kanda1.jpeg", caption: "Summit view from Wadasiti Kanda",
+                          alt: ""
+                        },
+                        {
+                          src: "/Wada-siti-kanda2.jpeg", caption: "Summit view from Wadasiti Kanda",
+                          alt: ""
+                        }
                       ]}
-                      alt="Wadasiti Kanda mountain with pilgrims climbing and panoramic jungle views"
                     />
                   </div>
                   <div className="space-y-6">
