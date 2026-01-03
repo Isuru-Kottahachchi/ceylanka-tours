@@ -38,7 +38,7 @@ export default function KanneliyaTravelGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Kanneliya Forest Reserve</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">A Pristine Rainforest Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Southern Province
             </Badge>
@@ -55,7 +55,24 @@ export default function KanneliyaTravelGuide() {
       </section>
 
       <div className="max-w-7xl mx-auto px-4 py-12">
-        {/* Quick Overview */}
+  
+        {/* Introduction */}
+        <section className="mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Discover Sri Lanka&apos;s Hidden Rainforest Gem</h2>
+          <div className="prose prose-lg max-w-none text-muted-foreground">
+            <p className="mb-4">
+              Kanneliya Forest Reserve, part of the UNESCO-designated biosphere reserve, is one of Sri Lanka&apos;s most 
+              pristine rainforests. This spectacular ecosystem spans 5,306 hectares and hosts an incredible variety 
+              of flora and fauna, including many species found nowhere else on Earth.
+            </p>
+            <p className="mb-4">
+              Home to over 220 bird species, 86 species of mammals, and countless plant species, Kanneliya represents 
+              one of the last remaining rainforest complexes in Sri Lanka. Its network of hiking trails, stunning 
+              waterfalls, and rich biodiversity make it a paradise for nature lovers, researchers, and eco-tourists.
+            </p>
+          </div>
+        </section>
+             {/* Quick Overview */}
         <section className="mb-16">
           <Card className="bg-card">
             <CardHeader>
@@ -108,23 +125,6 @@ export default function KanneliyaTravelGuide() {
               </div>
             </CardContent>
           </Card>
-        </section>
-
-        {/* Introduction */}
-        <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Discover Sri Lanka&apos;s Hidden Rainforest Gem</h2>
-          <div className="prose prose-lg max-w-none text-muted-foreground">
-            <p className="mb-4">
-              Kanneliya Forest Reserve, part of the UNESCO-designated biosphere reserve, is one of Sri Lanka&apos;s most 
-              pristine rainforests. This spectacular ecosystem spans 5,306 hectares and hosts an incredible variety 
-              of flora and fauna, including many species found nowhere else on Earth.
-            </p>
-            <p className="mb-4">
-              Home to over 220 bird species, 86 species of mammals, and countless plant species, Kanneliya represents 
-              one of the last remaining rainforest complexes in Sri Lanka. Its network of hiking trails, stunning 
-              waterfalls, and rich biodiversity make it a paradise for nature lovers, researchers, and eco-tourists.
-            </p>
-          </div>
         </section>
 
         {/* Main Attractions */}

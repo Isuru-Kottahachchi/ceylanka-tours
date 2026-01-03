@@ -32,7 +32,7 @@ export default function BalangodaPrehistoricSites() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Batadomba-Lena1.jpg"
           alt="Ancient cave settlements in Balangoda where prehistoric humans lived"
