@@ -201,7 +201,7 @@ export default function TenGiantsArticle() {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1600"
+          src="/Ten-giants-of-dutugamunu.png"
           alt="Ancient warriors of King Dutugamunu preparing for battle"
           fill
           className="object-cover"

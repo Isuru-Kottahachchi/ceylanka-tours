@@ -823,7 +823,7 @@ export default function YalaNationalParkTravelGuide() {
                     className="rounded-lg"
                   /> */}
                 </div>
-                <Link href="/blog/sri-lankan-elephants">
+                <Link href="/articles/sri-lankan-elephants">
                   <Button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 h-12 cursor-pointer mt-4">
                     <span>Learn More About Sri Lankan Elephants</span>
                     <ArrowRight className="h-5 w-5" />
