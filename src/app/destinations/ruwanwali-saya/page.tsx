@@ -22,7 +22,7 @@ export default function RuwanwelisayaDetailedGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Ruwanwalisaya.jpeg"
           alt="Magnificent white Ruwanwelisaya stupa with its distinctive dome and pilgrims offering prayers"

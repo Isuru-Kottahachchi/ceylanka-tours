@@ -98,7 +98,7 @@ export default function HikkaduwaTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Hikkaduwabeach.jpeg"
           alt="Hikkaduwa beach with golden sand, palm trees, surfing waves and coral reef waters"

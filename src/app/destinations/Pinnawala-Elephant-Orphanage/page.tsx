@@ -93,7 +93,7 @@ export default function PinnawalaElephantOrphanage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Pinnawala.jpeg"
           alt="Pinnawala Elephant Orphanage showing elephants in their natural habitat"
@@ -138,7 +138,7 @@ export default function PinnawalaElephantOrphanage() {
               visitors a unique chance to see elephants up close in a safe environment. From tiny baby elephants
               to massive adults, you can observe their natural behaviors and learn about elephant conservation efforts.
             </p>
-            <Link href="/blog/sri-lankan-elephants">
+            <Link href="/articles/sri-lankan-elephants">
               <Button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 h-12 cursor-pointer">
                 <span>Learn About Sri Lankan Elephants</span>
                 <ArrowRight className="h-5 w-5" />
