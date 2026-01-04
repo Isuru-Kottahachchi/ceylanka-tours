@@ -1338,6 +1338,12 @@ export default function BentotaGuide() {
                                 <ImageCarousel
                                     images={[
                                         {
+                                            src: "/Para-Motoring1.jpeg",
+                                            alt: "Para Motoring over Bentota Beach with stunning coastal views",
+                                            caption: "Para Motoring over Bentota Beach",
+                                            title: "Para Motoring"
+                                        },
+                                        {
                                             src: "/Para-Motoring.jpg",
                                             alt: "Para Motoring over Bentota Beach with stunning coastal views",
                                             caption: "Para Motoring over Bentota Beach",

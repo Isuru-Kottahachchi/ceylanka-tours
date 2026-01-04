@@ -269,15 +269,15 @@ export default function AdamsPeakTravelGuide() {
                   </ul>
                 </div>
                 <div className="mt-6">
-                <Link href="/destinations/saman-devalaya-rathnapura">
-                  <Button
-                    className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
-                    variant="default"
-                  >
-                    Discover More about Saman Devalaya
-                  </Button>
-                </Link>
-              </div>
+                  <Link href="/destinations/saman-devalaya-rathnapura">
+                    <Button
+                      className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                      variant="default"
+                    >
+                      Discover More about Saman Devalaya
+                    </Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>
