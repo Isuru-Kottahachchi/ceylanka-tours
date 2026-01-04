@@ -128,74 +128,72 @@ export default function ContactUs() {
       <div className="max-w-6xl mx-auto px-4 py-8">
 
         {/* Quick Contact Info */}
-        <section className="mb-12">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Multiple Ways to Reach Us</h2>
+        <section className="mb-16">
+          <div className="text-center mb-12">
+            <Badge variant="outline" className="mb-4 text-cyan-700 border-cyan-300">
+              <Clock className="h-3 w-3 mr-1" />
+              Fast Response Guaranteed
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">How Can We Help You Today?</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Choose the most convenient way to contact our travel specialists. We&apos;re committed to responding within 2 hours during business hours.
+              Choose your preferred method of contact. Our travel specialists are ready to assist you with personalized service.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
             {/* Phone Contact */}
-            <Card className="text-center hover:shadow-lg transition-shadow border-l-4 border-l-green-500">
+            <Card className="group text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-t-green-500">
               <CardContent className="p-6">
-                <div className="bg-green-100 dark:bg-green-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Phone className="h-8 w-8 text-green-600 dark:text-green-400" />
+                <div className="bg-gradient-to-br from-green-500 to-emerald-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <Phone className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="font-semibold mb-2">Call Us Direct</h3>
-                <p className="text-sm text-muted-foreground mb-3">Speak with our travel experts</p>
-                <div className="space-y-1 text-sm">
-                  <p className="font-medium text-green-600">+94 11 234 5678</p>
-                  <p className="text-muted-foreground">Mon-Sun: 8:00 AM - 10:00 PM</p>
-                </div>
+                <h3 className="font-bold text-lg mb-2">Call Us</h3>
+                <p className="text-sm text-muted-foreground mb-4">Speak directly with our experts</p>
+                <a href="tel:+94112345678" className="font-semibold text-green-600 hover:text-green-700 block mb-2 text-lg">+94 11 234 5678</a>
+                <p className="text-xs text-muted-foreground">Daily: 8:00 AM - 10:00 PM</p>
               </CardContent>
             </Card>
 
             {/* Email Contact */}
-            <Card className="text-center hover:shadow-lg transition-shadow border-l-4 border-l-blue-500">
+            <Card className="group text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-t-blue-500">
               <CardContent className="p-6">
-                <div className="bg-blue-100 dark:bg-blue-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                <div className="bg-gradient-to-br from-blue-500 to-indigo-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <Mail className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="font-semibold mb-2">Email Inquiry</h3>
-                <p className="text-sm text-muted-foreground mb-3">Detailed travel planning</p>
-                <div className="space-y-1 text-sm">
-                  <p className="font-medium text-blue-600">info@ceylonlankatours.com</p>
-                  <p className="text-muted-foreground">Response within 2 hours</p>
-                </div>
+                <h3 className="font-bold text-lg mb-2">Email Us</h3>
+                <p className="text-sm text-muted-foreground mb-4">Detailed travel inquiries</p>
+                <a href="mailto:ceylankatoursinfo@gmail.com" className="font-semibold text-blue-600 hover:text-blue-700 block mb-2 text-sm break-all">ceylankatoursinfo@gmail.com</a>
+                <p className="text-xs text-muted-foreground">Quick replies guaranteed</p>
               </CardContent>
             </Card>
 
             {/* WhatsApp Contact */}
-            <Card className="text-center hover:shadow-lg transition-shadow border-l-4 border-l-emerald-500">
+            <Card className="group text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-t-emerald-500">
               <CardContent className="p-6">
-                <div className="bg-emerald-100 dark:bg-emerald-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageCircle className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />
+                <div className="bg-gradient-to-br from-emerald-500 to-green-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <MessageCircle className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="font-semibold mb-2">WhatsApp Chat</h3>
-                <p className="text-sm text-muted-foreground mb-3">Instant messaging support</p>
-                <div className="space-y-1 text-sm">
-                  <p className="font-medium text-emerald-600">+94 77 123 4567</p>
-                  <p className="text-muted-foreground">Quick responses guaranteed</p>
-                </div>
+                <h3 className="font-bold text-lg mb-2">WhatsApp</h3>
+                <p className="text-sm text-muted-foreground mb-4">Instant messaging support</p>
+                <a href="https://wa.me/94771234567" className="font-semibold text-emerald-600 hover:text-emerald-700 block mb-2 text-lg">+94 77 123 4567</a>
+                <p className="text-xs text-muted-foreground">Chat now for quick help</p>
               </CardContent>
             </Card>
 
             {/* Office Visit */}
-            <Card className="text-center hover:shadow-lg transition-shadow border-l-4 border-l-purple-500">
+            {/* <Card className="group text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border-t-4 border-t-purple-500">
               <CardContent className="p-6">
-                <div className="bg-purple-100 dark:bg-purple-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="h-8 w-8 text-purple-600 dark:text-purple-400" />
+                <div className="bg-gradient-to-br from-purple-500 to-violet-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <MapPin className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="font-semibold mb-2">Visit Our Office</h3>
-                <p className="text-sm text-muted-foreground mb-3">Face-to-face consultation</p>
-                <div className="space-y-1 text-sm">
-                  <p className="font-medium text-purple-600">Colombo 03, Sri Lanka</p>
-                  <p className="text-muted-foreground">By appointment only</p>
-                </div>
+                <h3 className="font-bold text-lg mb-2">Visit Office</h3>
+                <p className="text-sm text-muted-foreground mb-4">In-person consultation</p>
+                <p className="font-semibold text-purple-600 block mb-2">Colombo 03</p>
+                <p className="text-xs text-muted-foreground">By appointment</p>
               </CardContent>
-            </Card>
+            </Card> */}
+            </div>
           </div>
         </section>
 
@@ -285,8 +283,13 @@ export default function ContactUs() {
                         value={formData.phone}
                         onChange={handleInputChange}
                         placeholder="+1 234 567 8900"
+                        pattern="[+]?[0-9\s-()]{10,20}"
+                        title="Please enter a valid phone number (10-20 digits, can include +, spaces, dashes, or parentheses)"
                         className="w-full"
                       />
+                      <p className="text-xs text-muted-foreground mt-1">
+                        Include country code (e.g., +1, +44, +94)
+                      </p>
                     </div>
                     <div>
                       <label htmlFor="country" className="text-sm font-medium mb-2 block">
@@ -298,7 +301,7 @@ export default function ContactUs() {
                         type="text"
                         value={formData.country}
                         onChange={handleInputChange}
-                        placeholder="United States"
+                        placeholder="Enter your country"
                         className="w-full"
                       />
                     </div>
@@ -319,12 +322,15 @@ export default function ContactUs() {
                       <Input
                         id="travelDates"
                         name="travelDates"
-                        type="text"
+                        type="date"
                         value={formData.travelDates}
                         onChange={handleInputChange}
-                        placeholder="e.g., March 15-25, 2024"
+                        min={new Date().toISOString().split('T')[0]}
                         className="w-full"
                       />
+                      <p className="text-xs text-muted-foreground mt-1">
+                        Click calendar icon or type manually (YYYY-MM-DD)
+                      </p>
                     </div>
                     <div>
                       <label htmlFor="groupSize" className="text-sm font-medium mb-2 block">
@@ -380,7 +386,7 @@ export default function ContactUs() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full md:w-auto bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white px-8 py-3"
+                    className="w-full md:w-auto bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white px-8 py-3 cursor-pointer"
                   >
                     {isSubmitting ? (
                       <>
@@ -409,22 +415,22 @@ export default function ContactUs() {
 
             {/* Office Information */}
             <Card className="border-l-4 border-l-orange-500">
-              <CardHeader>
+              {/* <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <MapPin className="h-5 w-5 text-orange-600" />
                   Office Location
                 </CardTitle>
-              </CardHeader>
+              </CardHeader> */}
               <CardContent>
                 <div className="space-y-3">
-                  <div>
+                  {/* <div>
                     <h4 className="font-semibold mb-1">Ceylon Lanka Tours</h4>
                     <p className="text-sm text-muted-foreground">
                       123 Galle Road<br />
                       Colombo 03<br />
                       Sri Lanka 00300
                     </p>
-                  </div>
+                  </div> */}
                   <Separator />
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm">
@@ -503,33 +509,75 @@ export default function ContactUs() {
 
             {/* Social Media */}
             <Card className="border-l-4 border-l-pink-500">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Globe className="h-5 w-5 text-pink-600" />
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-center gap-2 text-base">
+                  <div className="bg-gradient-to-br from-pink-500 to-purple-600 p-1.5 rounded">
+                    <Globe className="h-4 w-4 text-white" />
+                  </div>
                   Follow Our Journey
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Stay connected and get inspired by real Sri Lanka experiences from our travelers.
+              <CardContent className="pt-0">
+                <p className="text-xs text-muted-foreground mb-3">
+                  Get inspired by real Sri Lanka experiences
                 </p>
-                <div className="grid grid-cols-2 gap-3">
-                  <Button variant="outline" size="sm" className="justify-start">
-                    <Facebook className="h-4 w-4 mr-2 text-blue-600" />
-                    Facebook
-                  </Button>
-                  <Button variant="outline" size="sm" className="justify-start">
-                    <Instagram className="h-4 w-4 mr-2 text-pink-600" />
-                    Instagram
-                  </Button>
-                  <Button variant="outline" size="sm" className="justify-start">
-                    <Twitter className="h-4 w-4 mr-2 text-blue-400" />
-                    Twitter
-                  </Button>
-                  <Button variant="outline" size="sm" className="justify-start">
-                    <Youtube className="h-4 w-4 mr-2 text-red-600" />
-                    YouTube
-                  </Button>
+                <div className="grid grid-cols-2 gap-2">
+                  <a 
+                    href="https://www.facebook.com/share/1ATdD1ebAM/?mibextid=wwXIfr" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="w-full justify-start h-8 px-2 hover:bg-blue-500 hover:text-white hover:border-blue-500 dark:hover:bg-blue-600 dark:hover:border-blue-600 transition-all group cursor-pointer"
+                    >
+                      <Facebook className="h-3.5 w-3.5 mr-1.5 text-blue-600 group-hover:text-white transition-colors flex-shrink-0" />
+                      <span className="text-xs truncate">Facebook</span>
+                    </Button>
+                  </a>
+                  <a 
+                    href="https://instagram.com/ceylonlankatours" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="w-full justify-start h-8 px-2 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white hover:border-pink-500 dark:hover:from-purple-600 dark:hover:to-pink-600 transition-all group cursor-pointer"
+                    >
+                      <Instagram className="h-3.5 w-3.5 mr-1.5 text-pink-600 group-hover:text-white transition-colors flex-shrink-0" />
+                      <span className="text-xs truncate">Instagram</span>
+                    </Button>
+                  </a>
+                  <a 
+                    href="https://twitter.com/ceylonlankatours" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="w-full justify-start h-8 px-2 hover:bg-blue-400 hover:text-white hover:border-blue-400 dark:hover:bg-blue-500 dark:hover:border-blue-500 transition-all group"
+                    >
+                      <Twitter className="h-3.5 w-3.5 mr-1.5 text-blue-400 group-hover:text-white transition-colors flex-shrink-0" />
+                      <span className="text-xs truncate">Twitter</span>
+                    </Button>
+                  </a>
+                  <a 
+                    href="https://youtube.com/@ceylonlankatours" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="w-full justify-start h-8 px-2 hover:bg-red-600 hover:text-white hover:border-red-600 dark:hover:bg-red-700 dark:hover:border-red-700 transition-all group"
+                    >
+                      <Youtube className="h-3.5 w-3.5 mr-1.5 text-red-600 group-hover:text-white transition-colors flex-shrink-0" />
+                      <span className="text-xs truncate">YouTube</span>
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -553,7 +601,7 @@ export default function ContactUs() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  We guarantee a response within 2 hours during business hours (8 AM - 8 PM Sri Lanka time) and within 24 hours on weekends.
+                  We guarantee a quick replies during business hours (8 AM - 8 PM Sri Lanka time) and within 24 hours on weekends.
                   For urgent matters, call us directly or use WhatsApp for immediate assistance.
                 </p>
               </CardContent>
