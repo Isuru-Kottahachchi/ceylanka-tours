@@ -326,12 +326,7 @@ export default function ContactUs() {
                         onChange={handleInputChange}
                         min={new Date().toISOString().split('T')[0]}
                         className="w-full"
-                        style={{ 
-                          fontSize: '16px',
-                          WebkitAppearance: 'none',
-                          MozAppearance: 'none',
-                          appearance: 'none'
-                        }}
+                        style={{ fontSize: '16px' }}
                       />
                     </div>
                     <div>
