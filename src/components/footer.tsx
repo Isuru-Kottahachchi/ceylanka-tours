@@ -68,7 +68,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@ceylankatours.com</span>
+                <span>ceylankatoursinfo@gmail.com</span>
               </div>
             </div>
 

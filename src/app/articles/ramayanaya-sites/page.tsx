@@ -85,7 +85,7 @@ const ramayanaSites: RamayanaSite[] = [
       "Site of the Japanese Peace Pagoda",
       "Panoramic views of the southern coast",
     ],
-    image: "/Rumassala.jpg",
+    image: "/Roomassala.jpg",
   },
   {
     name: "Ashok Vatika (Hakgala Garden)",

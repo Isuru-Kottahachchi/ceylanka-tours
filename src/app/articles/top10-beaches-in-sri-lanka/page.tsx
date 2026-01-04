@@ -285,20 +285,6 @@ export default function TopBeachesPage() {
                   </div>
                 </div>
               </div>
-
-              {/* Ad block after every 2 items */}
-              {(index + 1) % 2 === 0 && (
-                <div className="flex justify-center">
-                  <ins
-                    className="adsbygoogle"
-                    style={{ display: 'block', width: '100%', height: '90px' }}
-                    data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-                    data-ad-slot="1234567890"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"
-                  ></ins>
-                </div>
-              )}
             </Fragment>
           ))}
         </section>
