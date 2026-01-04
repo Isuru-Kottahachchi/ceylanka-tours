@@ -87,7 +87,7 @@ export default function VenomousSnakesGuide() {
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <Image
-                                            src="/placeholder.svg?height=300&width=400&text=Russell's+Viper"
+                                            src="/RussellsViper.jpeg"
                                             alt="Russell's Viper - most dangerous venomous snake in Sri Lanka"
                                             width={400}
                                             height={300}
@@ -132,7 +132,7 @@ export default function VenomousSnakesGuide() {
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <Image
-                                            src="/placeholder.svg?height=300&width=400&text=Common+Cobra"
+                                            src="/Common-Cobra.jpeg"
                                             alt="Common Cobra with hood spread - venomous snake in Sri Lanka"
                                             width={400}
                                             height={300}
@@ -177,7 +177,7 @@ export default function VenomousSnakesGuide() {
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <Image
-                                            src="/placeholder.svg?height=300&width=400&text=Common+Krait"
+                                            src="/Common-Krait.jpeg"
                                             alt="Common Krait - deadly nocturnal venomous snake in Sri Lanka"
                                             width={400}
                                             height={300}
@@ -222,7 +222,7 @@ export default function VenomousSnakesGuide() {
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <Image
-                                            src="/placeholder.svg?height=300&width=400&text=Sri+Lankan+Krait"
+                                            src="/Sri-Lankan-Krait.jpeg"
                                             alt="Sri Lankan Krait - endemic deadly venomous snake of Sri Lanka"
                                             width={400}
                                             height={300}
@@ -267,7 +267,7 @@ export default function VenomousSnakesGuide() {
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <Image
-                                            src="/placeholder.svg?height=300&width=400&text=Saw-scaled+Viper"
+                                            src="/Saw-scaled-Viper.jpeg"
                                             alt="Saw-scaled Viper - small aggressive venomous snake in Sri Lanka"
                                             width={400}
                                             height={300}
@@ -315,10 +315,10 @@ export default function VenomousSnakesGuide() {
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <Image
-                                            src="/placeholder.svg?height=250&width=350&text=Green+Pit+Viper"
+                                            src="/Green-Pit-Viper.jpeg"
                                             alt="Green Pit Viper in tree - moderately venomous snake in Sri Lanka"
                                             width={350}
-                                            height={250}
+                                            height={200}
                                             className="rounded-lg"
                                         />
                                     </div>
@@ -351,7 +351,7 @@ export default function VenomousSnakesGuide() {
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <Image
-                                            src="/placeholder.svg?height=250&width=350&text=Hump-nosed+Viper"
+                                            src="/Hump-nosed-Viper.jpeg"
                                             alt="Hump-nosed Viper - moderately venomous mountain snake in Sri Lanka"
                                             width={350}
                                             height={250}
@@ -387,7 +387,7 @@ export default function VenomousSnakesGuide() {
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <Image
-                                            src="/placeholder.svg?height=250&width=350&text=Sea+Snake"
+                                            src="/Sea-Snakes.jpeg"
                                             alt="Sea Snake - venomous marine snake found in Sri Lankan waters"
                                             width={350}
                                             height={250}

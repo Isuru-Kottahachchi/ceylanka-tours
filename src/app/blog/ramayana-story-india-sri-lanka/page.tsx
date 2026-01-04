@@ -203,7 +203,7 @@ export default function RamayanaStoryPage() {
                   selfishness led him to make bad choices.
                 </p>
                 <div className="mt-4 flex justify-center">
-                  <Link href="/blog/king-ravana" passHref legacyBehavior>
+                  <Link href="/articles/king-ravana" passHref legacyBehavior>
                     <Button
                       variant="secondary"
                       className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
