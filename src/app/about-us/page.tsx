@@ -7,26 +7,26 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-    title: "About Us - Sri Lanka Travel Guide",
+    title: "About Us - Ceylanka Tours",
     description:
-        "Learn about our passionate team of travel experts dedicated to showcasing the beauty and culture of Sri Lanka. Discover our mission, values, and commitment to sustainable tourism.",
+        "Discover authentic Sri Lanka with passionate local guides. We're dedicated to showcasing the beauty, culture, and hidden gems of our island paradise through sustainable tourism.",
     keywords: [
-        "about sri lanka travel guide",
-        "travel blog team",
-        "sri lanka tourism experts",
-        "sustainable travel",
-        "local travel guides",
+        "ceylanka tours",
+        "sri lanka travel guide",
+        "sustainable tourism sri lanka",
+        "local travel experts",
+        "authentic sri lanka experiences",
     ],
     openGraph: {
-        title: "About Us - Sri Lanka Travel Guide",
+        title: "About Us - Ceylanka Tours",
         description:
-            "Meet the passionate team behind Sri Lanka's most comprehensive travel guide. Learn about our mission to promote sustainable tourism.",
+            "Your trusted partners for authentic Sri Lankan adventures. Local expertise, sustainable practices, unforgettable experiences.",
         images: [
             {
                 url: "/about-hero.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Sri Lanka Travel Guide Team",
+                alt: "Ceylanka Tours - Explore Sri Lanka",
             },
         ],
     },
@@ -65,58 +65,53 @@ export const metadata: Metadata = {
 
 const achievements = [
     {
-        icon: Users,
-        title: "500K+ Travelers Helped",
-        description: "We've assisted over half a million travelers in planning their Sri Lankan adventures.",
+        icon: Heart,
+        title: "Local Expertise",
+        description: "Born and raised in Sri Lanka, we share insider knowledge and authentic experiences.",
     },
-    // {
-    //     icon: Award,
-    //     title: "Travel Blog Awards",
-    //     description: "Winner of Best Destination Blog 2023 and Top Travel Resource 2022.",
-    // },
     {
         icon: Globe,
-        title: "Sustainable Tourism Advocate",
-        description: "Certified by the Global Sustainable Tourism Council for promoting responsible travel.",
+        title: "Sustainable Tourism",
+        description: "Committed to eco-friendly practices that protect our island's natural beauty.",
     },
     {
-        icon: Heart,
-        title: "Local Community Support",
-        description: "10% of our revenue goes directly to local community development projects.",
+        icon: Users,
+        title: "Community Focused",
+        description: "Supporting local businesses and communities to create meaningful travel impact.",
+    },
+    {
+        icon: Camera,
+        title: "Personalized Service",
+        description: "Tailored itineraries and recommendations designed around your travel style.",
     },
 ]
 
 export default function AboutPage() {
     return (
         <div className="min-h-screen bg-white dark:bg-slate-900">
-            <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 z-0">
-                    <Image
-                        src="/placeholder.svg?height=800&width=1600"
-                        alt="Sri Lanka landscape with team"
-                        fill
-                        className="object-cover"
-                        priority
-                    />
-                    <div className="absolute inset-0 bg-black/40 dark:bg-black/60" />
-                </div>
-
-                <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">About Sri Lanka Travel Guide</h1>
-                    <p className="text-xl md:text-2xl mb-8 opacity-90 animate-fade-in-delay">
-                        Passionate locals sharing the authentic beauty of our island paradise
+            {/* Hero Section */}
+            <section className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white py-16 lg:py-24">
+                <div className="container mx-auto px-4 text-center">
+                    <div className="flex justify-center mb-6">
+                        <Users className="h-16 w-16 text-cyan-100" />
+                    </div>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                        About Ceylanka Tours
+                    </h1>
+                    <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto font-light text-cyan-100">
+                        Passionate locals dedicated to sharing the beauty and culture of our island paradise
                     </p>
-                    <div className="flex flex-wrap justify-center gap-4 animate-fade-in-delay-2">
-                        <Badge variant="secondary" className="text-lg px-4 py-2">
-                            <MapPin className="w-4 h-4 mr-2" />
+                    <div className="flex flex-wrap justify-center gap-4 text-sm">
+                        <Badge className="bg-white/20 text-white border-white/30 px-4 py-2">
+                            <MapPin className="h-4 w-4 mr-2" />
                             Local Experts
                         </Badge>
-                        <Badge variant="secondary" className="text-lg px-4 py-2">
-                            <Heart className="w-4 h-4 mr-2" />
-                            Sustainable Tourism
+                        <Badge className="bg-white/20 text-white border-white/30 px-4 py-2">
+                            <Heart className="h-4 w-4 mr-2" />
+                            Sustainable Travel
                         </Badge>
-                        <Badge variant="secondary" className="text-lg px-4 py-2">
-                            <Camera className="w-4 h-4 mr-2" />
+                        <Badge className="bg-white/20 text-white border-white/30 px-4 py-2">
+                            <Camera className="h-4 w-4 mr-2" />
                             Authentic Experiences
                         </Badge>
                     </div>
@@ -128,37 +123,34 @@ export default function AboutPage() {
                 <div className="max-w-6xl mx-auto">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Our Mission</h2>
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Our Story</h2>
                             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                                We believe Sri Lanka is one of the world&apos;s most incredible destinations, and our mission is to help
-                                travelers discover its authentic beauty while supporting local communities and preserving our natural
-                                heritage.
-
+                                Sri Lanka is more than just a destination it&apos;s our home. Born and raised on this beautiful island, 
+                                we created Ceylanka Tours to share the authentic experiences, hidden gems, and local insights 
+                                that make Sri Lanka truly special.
                             </p>
                             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                                As locals who have explored every corner of our island, we provide insider knowledge, hidden gems, and
-                                practical advice that you won&apos;t find in typical guidebooks.
-
+                                Our mission is simple: help you discover the real Sri Lanka while supporting local communities 
+                                and preserving the natural beauty we cherish.
                             </p>
-                            <div className="space-y-4">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
-                                    <span className="text-gray-700 dark:text-gray-300">Promote sustainable and responsible tourism</span>
+                            <div className="space-y-3">
+                                <div className="flex items-start gap-3">
+                                    <div className="w-6 h-6 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <Heart className="w-3 h-3 text-white" />
+                                    </div>
+                                    <span className="text-gray-700 dark:text-gray-300">Share authentic cultural experiences and local traditions</span>
                                 </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
-                                    <span className="text-gray-700 dark:text-gray-300">Support local communities and businesses</span>
+                                <div className="flex items-start gap-3">
+                                    <div className="w-6 h-6 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <Globe className="w-3 h-3 text-white" />
+                                    </div>
+                                    <span className="text-gray-700 dark:text-gray-300">Promote sustainable and responsible tourism practices</span>
                                 </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
-                                    <span className="text-gray-700 dark:text-gray-300">Share authentic cultural experiences</span>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
-                                    <span className="text-gray-700 dark:text-gray-300">
-                                        Preserve Sri Lanka&apos;s natural beauty for future generations
-
-                                    </span>
+                                <div className="flex items-start gap-3">
+                                    <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <Users className="w-3 h-3 text-white" />
+                                    </div>
+                                    <span className="text-gray-700 dark:text-gray-300">Support local communities and small businesses</span>
                                 </div>
                             </div>
                         </div>
@@ -183,10 +175,9 @@ export default function AboutPage() {
             <section className="py-16 px-4 bg-gray-50 dark:bg-slate-800">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Impact</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Why Choose Us</h2>
                         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                            We&apos;re proud of the positive impact we&apos;ve made on Sri Lankan tourism and local communities.
-
+                            What makes Ceylanka Tours your perfect partner for exploring Sri Lanka
                         </p>
                     </div>
 
@@ -252,38 +243,43 @@ export default function AboutPage() {
             </section> */}
 
             {/* Values Section */}
-            <section className="py-16 px-4 bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-slate-800 dark:to-slate-900">
-                <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900 dark:text-white">Our Values</h2>
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <div className="space-y-4">
-                            <div className="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mx-auto">
-                                <Heart className="w-8 h-8 text-white" />
-                            </div>
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Authenticity</h3>
-                            <p className="text-gray-600 dark:text-gray-300">
-                                We share genuine experiences and honest recommendations based on our personal knowledge and local
-                                insights.
-                            </p>
-                        </div>
-                        <div className="space-y-4">
-                            <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto">
-                                <Globe className="w-8 h-8 text-white" />
-                            </div>
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Sustainability</h3>
-                            <p className="text-gray-600 dark:text-gray-300">
-                                We promote responsible tourism that protects our environment and benefits local communities.
-                            </p>
-                        </div>
-                        <div className="space-y-4">
-                            <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto">
-                                <Users className="w-8 h-8 text-white" />
-                            </div>
-                            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Community</h3>
-                            <p className="text-gray-600 dark:text-gray-300">
-                                We believe in building connections between travelers and local communities for mutual benefit.
-                            </p>
-                        </div>
+            <section className="py-16 px-4 bg-gradient-to-br from-cyan-50 via-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-900">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900 dark:text-white">What Drives Us</h2>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        <Card className="border-none shadow-lg hover:shadow-xl transition-all bg-gradient-to-br from-cyan-500 to-blue-500 text-white">
+                            <CardContent className="p-8 text-center space-y-4">
+                                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto">
+                                    <Heart className="w-8 h-8 text-white" />
+                                </div>
+                                <h3 className="text-2xl font-bold">Authenticity</h3>
+                                <p className="opacity-90">
+                                    Genuine experiences and honest recommendations rooted in local knowledge
+                                </p>
+                            </CardContent>
+                        </Card>
+                        <Card className="border-none shadow-lg hover:shadow-xl transition-all bg-gradient-to-br from-green-500 to-emerald-500 text-white">
+                            <CardContent className="p-8 text-center space-y-4">
+                                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto">
+                                    <Globe className="w-8 h-8 text-white" />
+                                </div>
+                                <h3 className="text-2xl font-bold">Sustainability</h3>
+                                <p className="opacity-90">
+                                    Protecting our environment while creating positive impact for communities
+                                </p>
+                            </CardContent>
+                        </Card>
+                        <Card className="border-none shadow-lg hover:shadow-xl transition-all bg-gradient-to-br from-purple-500 to-pink-500 text-white">
+                            <CardContent className="p-8 text-center space-y-4">
+                                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto">
+                                    <Users className="w-8 h-8 text-white" />
+                                </div>
+                                <h3 className="text-2xl font-bold">Connection</h3>
+                                <p className="opacity-90">
+                                    Building meaningful bonds between travelers and local culture
+                                </p>
+                            </CardContent>
+                        </Card>
                     </div>
                 </div>
             </section>
@@ -292,39 +288,25 @@ export default function AboutPage() {
             <section className="py-16 px-4">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
-                        Let&apos;s Plan Your Sri Lankan Adventure
-
+                        Ready to Explore Sri Lanka?
                     </h2>
                     <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-                        Have questions about traveling to Sri Lanka? Need personalized recommendations? Our team is here to help you
-                        create unforgettable memories.
+                        Whether you need personalized recommendations, have questions, or want to plan your perfect itinerary, 
+                        we&apos;re here to help create unforgettable memories.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Button asChild size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white">
-                            <Link href="/contact">
+                            <Link href="/contact-us">
                                 <Mail className="w-5 h-5 mr-2" />
                                 Contact Us
                             </Link>
                         </Button>
                         <Button asChild variant="outline" size="lg" className="border-gray-300 dark:border-gray-600">
-                            <Link href="/travel-tips">
+                            <Link href="/destinations">
                                 <MapPin className="w-5 h-5 mr-2" />
-                                Browse Travel Tips
+                                Explore Destinations
                             </Link>
                         </Button>
-                    </div>
-
-                    <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-                        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-gray-600 dark:text-gray-300">
-                            <div className="flex items-center gap-2">
-                                <Mail className="w-5 h-5" />
-                                <span>ceylanaktoursinfo.com</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <Phone className="w-5 h-5" />
-                                <span>+94 11 234 5678</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
