@@ -182,7 +182,7 @@ const originalArticles = [
     path: "how-to-save-from-bees-hornets-attack",
     category: "Travel Tips",
     readTime: "13 min read",
-    image: "/GalleFort.jpeg",
+    image: "/Tips-For-Bee-attack.png",
     description: "Essential safety guide: what to do before, during, and after a hornet or bee attack.",
     highlights: ["Hornet Safety", "Guide", "Survival Tips"],
     featured: false,
