@@ -11,13 +11,35 @@ import { Mail, CheckCircle } from "lucide-react"
 export function Newsletter() {
   const [email, setEmail] = useState("")
   const [isSubscribed, setIsSubscribed] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (email) {
-      // Here you would integrate with your newsletter service
-      setIsSubscribed(true)
-      setEmail("")
+    setIsSubmitting(true)
+    setError("")
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setIsSubscribed(true)
+        setEmail("")
+      } else {
+        setError(data.error || 'Failed to subscribe. Please try again.')
+      }
+    } catch (err) {
+      setError('Network error. Please check your connection and try again.')
+    } finally {
+      setIsSubmitting(false)
     }
   }
 
@@ -45,12 +67,23 @@ export function Newsletter() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                    className="flex-1 h-12 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600"
+                    disabled={isSubmitting}
+                    className="flex-1 h-12 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 disabled:opacity-50"
                   />
-                  <Button type="submit" className="h-12 px-8 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold dark:bg-cyan-700 dark:hover:bg-cyan-800">
-                    Subscribe Now
+                  <Button 
+                    type="submit" 
+                    disabled={isSubmitting}
+                    className="h-12 px-8 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold dark:bg-cyan-700 dark:hover:bg-cyan-800 disabled:opacity-50"
+                  >
+                    {isSubmitting ? 'Subscribing...' : 'Subscribe Now'}
                   </Button>
                 </form>
+
+                {error && (
+                  <p className="text-sm text-red-600 dark:text-red-400 mt-3 bg-red-50 dark:bg-red-900/20 p-2 rounded">
+                    {error}
+                  </p>
+                )}
 
                 <p className="text-xs text-gray-500 dark:text-gray-400 mt-4">We respect your privacy. Unsubscribe at any time.</p>
               </>
