@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Shield, Mail, Cookie, Eye, Lock, Globe, CheckCircle, XCircle, AlertTriangle, ExternalLink } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Ceylon Lanka Tours",
+  title: "Privacy Policy - Ceylanka Tours",
   description: "Our privacy policy explains how we collect, use, and protect your personal information.",
 }
 
@@ -49,7 +49,7 @@ export default function PrivacyPolicy() {
               </div>
               <div>
                 <p className="text-muted-foreground leading-relaxed">
-                  Ceylon Lanka Tours ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy 
+                  Ceylanka Tours ("we", "us", "our") is committed to protecting your privacy. This Privacy Policy 
                   explains how we collect, use, and safeguard your personal information when you visit our website 
                   or use our services.
                 </p>
@@ -267,7 +267,7 @@ export default function PrivacyPolicy() {
                 <div>
                   <p className="font-bold text-lg text-red-700 dark:text-red-400 mb-2">We DO NOT Sell Your Data</p>
                   <p className="text-sm text-red-800 dark:text-red-300">
-                    Ceylon Lanka Tours never sells, rents, or trades your personal information to third parties 
+                    Ceylanka Tours never sells, rents, or trades your personal information to third parties 
                     for commercial purposes.
                   </p>
                 </div>
@@ -411,7 +411,7 @@ export default function PrivacyPolicy() {
             This Privacy Policy is effective as of {lastUpdated}
           </p>
           <p className="text-sm text-muted-foreground">
-            Ceylon Lanka Tours - Committed to your privacy and security
+            Ceylanka Tours - Committed to your privacy and security
           </p>
           <div className="flex justify-center gap-2 mt-4">
             <Badge variant="outline" className="text-xs">

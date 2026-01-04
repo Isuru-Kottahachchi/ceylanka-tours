@@ -449,7 +449,7 @@ export default function ContactUs() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Star className="h-5 w-5 text-green-600" />
-                  Why Choose Ceylon Lanka Tours?
+                  Why Choose Ceylanka Tours?
                 </CardTitle>
               </CardHeader>
               <CardContent>

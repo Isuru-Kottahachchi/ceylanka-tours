@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
 
     // Email content
     const emailContent = `
-New Contact Form Submission from Ceylon Lanka Tours Website
+New Contact Form Submission from Ceylanka Tours Website
 
 Personal Information:
 - Name: ${name}
@@ -42,7 +42,7 @@ Message:
 ${message}
 
 ---
-This email was sent from the Ceylon Lanka Tours contact form.
+This email was sent from the Ceylanka Tours contact form.
 Reply to: ${email}
 `
 
