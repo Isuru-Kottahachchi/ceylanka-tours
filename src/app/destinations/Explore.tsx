@@ -133,7 +133,7 @@ export default function ExplorePage() {
               </Badge>
               <Badge variant="secondary" className="text-sm px-4 py-2">
                 <Clock className="w-4 h-4 mr-2" />
-                Updated 2025
+                Updated 2026
               </Badge>
             </div>
           </div>

@@ -36,9 +36,9 @@ const footerLinks = {
     { name: "Food & Cuisine", href: "/food" },
   ],
   company: [
-    { name: "About Us", href: "/about" },
-    { name: "Contact Us", href: "/contact" },
-    { name: "Privacy Policy", href: "/privacy" },
+    { name: "About Us", href: "/about-us" },
+    { name: "Contact Us", href: "/contact-us" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
     { name: "Terms of Service", href: "/terms" },
     { name: "Advertise With Us", href: "/advertise" },
   ],
