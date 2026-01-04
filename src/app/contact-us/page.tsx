@@ -281,7 +281,7 @@ export default function ContactUs() {
                           const value = e.target.value.replace(/[^0-9+\s()-]/g, '')
                           setFormData(prev => ({ ...prev, phone: value }))
                         }}
-                        placeholder="+1 234 567 8900"
+                        placeholder="Please enter a valid phone number"
                         pattern="[+]?[0-9\s-()]{10,20}"
                         title="Please enter a valid phone number (10-20 digits, can include +, spaces, dashes, or parentheses)"
                         className="w-full"
@@ -326,10 +326,13 @@ export default function ContactUs() {
                         onChange={handleInputChange}
                         min={new Date().toISOString().split('T')[0]}
                         className="w-full"
+                        style={{ 
+                          fontSize: '16px',
+                          WebkitAppearance: 'none',
+                          MozAppearance: 'none',
+                          appearance: 'none'
+                        }}
                       />
-                      <p className="text-xs text-muted-foreground mt-1">
-                        Select or enter date
-                      </p>
                     </div>
                     <div>
                       <label htmlFor="groupSize" className="text-sm font-medium mb-2 block">
