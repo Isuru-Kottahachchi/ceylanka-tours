@@ -277,7 +277,10 @@ export default function ContactUs() {
                         name="phone"
                         type="tel"
                         value={formData.phone}
-                        onChange={handleInputChange}
+                        onChange={(e) => {
+                          const value = e.target.value.replace(/[^0-9+\s()-]/g, '')
+                          setFormData(prev => ({ ...prev, phone: value }))
+                        }}
                         placeholder="+1 234 567 8900"
                         pattern="[+]?[0-9\s-()]{10,20}"
                         title="Please enter a valid phone number (10-20 digits, can include +, spaces, dashes, or parentheses)"
@@ -313,7 +316,7 @@ export default function ContactUs() {
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="travelDates" className="text-sm font-medium mb-2 block">
-                        Preferred Travel Dates
+                        Travel Dates
                       </label>
                       <Input
                         id="travelDates"
@@ -325,7 +328,7 @@ export default function ContactUs() {
                         className="w-full"
                       />
                       <p className="text-xs text-muted-foreground mt-1">
-                        Click calendar icon or type manually (YYYY-MM-DD)
+                        Select or enter date
                       </p>
                     </div>
                     <div>
