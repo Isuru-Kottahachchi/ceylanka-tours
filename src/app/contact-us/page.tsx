@@ -130,10 +130,6 @@ export default function ContactUs() {
         {/* Quick Contact Info */}
         <section className="mb-16">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4 text-cyan-700 border-cyan-300">
-              <Clock className="h-3 w-3 mr-1" />
-              Fast Response Guaranteed
-            </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">How Can We Help You Today?</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Choose your preferred method of contact. Our travel specialists are ready to assist you with personalized service.
