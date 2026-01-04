@@ -59,23 +59,39 @@ export default function ContactUs() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitStatus("idle")
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setSubmitStatus("success")
-      // Reset form after successful submission
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        country: "",
-        travelDates: "",
-        groupSize: "",
-        interests: "",
-        message: ""
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
-    }, 2000)
+
+      if (response.ok) {
+        setSubmitStatus("success")
+        // Reset form after successful submission
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          country: "",
+          travelDates: "",
+          groupSize: "",
+          interests: "",
+          message: ""
+        })
+      } else {
+        setSubmitStatus("error")
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -207,6 +223,17 @@ export default function ContactUs() {
                     </div>
                     <p className="text-sm text-green-700 dark:text-green-400 mt-1">
                       Thank you for your inquiry. Our travel consultant will contact you within 2 hours during business hours.
+                    </p>
+                  </div>
+                )}
+
+                {submitStatus === "error" && (
+                  <div className="mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+                    <div className="flex items-center gap-2 text-red-800 dark:text-red-300">
+                      <span className="font-semibold">Failed to Send Message</span>
+                    </div>
+                    <p className="text-sm text-red-700 dark:text-red-400 mt-1">
+                      Something went wrong. Please try again or contact us directly via phone or WhatsApp.
                     </p>
                   </div>
                 )}

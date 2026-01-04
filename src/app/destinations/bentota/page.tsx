@@ -1349,8 +1349,6 @@ export default function BentotaGuide() {
                                             caption: "Para Motoring over Bentota Beach",
                                             title: "Para Motoring"
                                         },
-
-
                                     ]}
                                 />
                                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-2 italic text-center">
