@@ -325,6 +325,7 @@ export default function ContactUs() {
                         value={formData.travelDates}
                         onChange={handleInputChange}
                         min={new Date().toISOString().split('T')[0]}
+                        placeholder="dd/mm/yyyy"
                         className="w-full"
                         style={{ fontSize: '16px' }}
                       />
