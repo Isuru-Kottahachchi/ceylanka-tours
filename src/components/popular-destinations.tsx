@@ -136,7 +136,7 @@ export function PopularDestinations() {
 
   return (
     <section className="py-16 bg-white dark:bg-gray-800">
-      <div className="container mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Popular Destinations</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -148,23 +148,22 @@ export function PopularDestinations() {
           {destinations.map((destination) => (
             <Card
               key={destination.id}
-              className="group transform transition-all duration-500 hover:scale-[1.08] hover:shadow-2xl hover:shadow-black/10"
-              data-aos="zoom-in-up"
+              className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48">
                 <Image
                   src={destination.image || "/placeholder.svg"}
                   alt={destination.name}
                   fill
-                  className="object-cover rounded-t-lg transition-transform duration-700 group-hover:scale-110"
+                  className="object-cover rounded-t-lg"
                 />
-                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded transition-all duration-300 group-hover:bg-blue-700">
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
                   {destination.category}
                 </div>
               </div>
 
               <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2 group-hover:text-blue-600 transition-colors duration-300">{destination.name}</h3>
+                <h3 className="font-bold text-lg mb-2">{destination.name}</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   {destination.description}
                 </p>
@@ -175,12 +174,12 @@ export function PopularDestinations() {
                 
                 <div className="flex flex-wrap gap-1 mb-4">
                   {destination.highlights.slice(0, 4).map((highlight, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200">
+                    <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
                       {highlight}
                     </Badge>
                   ))}
                   {destination.highlights.length > 4 && (
-                    <Badge variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-200">
+                    <Badge variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
                       +{destination.highlights.length - 4} more
                     </Badge>
                   )}
@@ -188,7 +187,7 @@ export function PopularDestinations() {
                 
                 <div className="mt-4 flex justify-between items-center">
                   <Link href={getDestinationHref(destination)} passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-green-600 text-white hover:bg-blue-600 hover:scale-105 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer transform">
+                    <Button variant="secondary" className="bg-green-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">
                       Explore Now →
                     </Button>
                   </Link>
