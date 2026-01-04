@@ -65,52 +65,54 @@ export default function PrivacyPolicy() {
             Information We Collect
           </h2>
           
-          <Card className="mb-4 border-l-4 border-l-green-500 hover:shadow-md transition-shadow">
-            <CardHeader className="bg-green-50 dark:bg-green-900/20">
-              <CardTitle className="text-lg flex items-center gap-2">
-                <CheckCircle className="h-5 w-5 text-green-600" />
-                1. Personal Information You Provide
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground mb-3">
-                When you contact us or subscribe to our newsletter, we collect:
-              </p>
-              <ul className="space-y-1 text-sm text-muted-foreground ml-4">
-                <li>• Full name</li>
-                <li>• Email address</li>
-                <li>• Phone number (including country code)</li>
-                <li>• Country of residence</li>
-                <li>• Travel dates and preferences</li>
-                <li>• Number of travelers</li>
-                <li>• Special requests or inquiries</li>
-                <li>• Marketing consent (for newsletter subscriptions)</li>
-              </ul>
-            </CardContent>
-          </Card>
+          <div className="grid md:grid-cols-2 gap-4">
+            <Card className="border-l-4 border-l-green-500 hover:shadow-md transition-shadow">
+              <CardHeader className="bg-green-50 dark:bg-green-900/20">
+                <CardTitle className="text-lg flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+                  1. Personal Information You Provide
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-3">
+                  When you contact us or subscribe to our newsletter, we collect:
+                </p>
+                <ul className="space-y-1 text-sm text-muted-foreground ml-4">
+                  <li>• Full name</li>
+                  <li>• Email address</li>
+                  <li>• Phone number (including country code)</li>
+                  <li>• Country of residence</li>
+                  <li>• Travel dates and preferences</li>
+                  <li>• Number of travelers</li>
+                  <li>• Special requests or inquiries</li>
+                  <li>• Marketing consent (for newsletter subscriptions)</li>
+                </ul>
+              </CardContent>
+            </Card>
 
-          <Card className="border-l-4 border-l-purple-500 hover:shadow-md transition-shadow">
-            <CardHeader className="bg-purple-50 dark:bg-purple-900/20">
-              <CardTitle className="text-lg flex items-center gap-2">
-                <Cookie className="h-5 w-5 text-purple-600" />
-                2. Automatically Collected Information
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-muted-foreground mb-3">
-                We automatically collect technical information when you visit our website:
-              </p>
-              <ul className="space-y-1 text-sm text-muted-foreground ml-4">
-                <li>• IP address (anonymized)</li>
-                <li>• Browser type and version</li>
-                <li>• Device type and operating system</li>
-                <li>• Pages visited and time spent</li>
-                <li>• Referring website</li>
-                <li>• Geographic location (country/region level)</li>
-                <li>• Cookies and similar technologies</li>
-              </ul>
-            </CardContent>
-          </Card>
+            <Card className="border-l-4 border-l-purple-500 hover:shadow-md transition-shadow">
+              <CardHeader className="bg-purple-50 dark:bg-purple-900/20">
+                <CardTitle className="text-lg flex items-center gap-2">
+                  <Cookie className="h-5 w-5 text-purple-600" />
+                  2. Automatically Collected Information
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground mb-3">
+                  We automatically collect technical information when you visit our website:
+                </p>
+                <ul className="space-y-1 text-sm text-muted-foreground ml-4">
+                  <li>• IP address (anonymized)</li>
+                  <li>• Browser type and version</li>
+                  <li>• Device type and operating system</li>
+                  <li>• Pages visited and time spent</li>
+                  <li>• Referring website</li>
+                  <li>• Geographic location (country/region level)</li>
+                  <li>• Cookies and similar technologies</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
         {/* How We Use Your Information */}
@@ -200,7 +202,7 @@ export default function PrivacyPolicy() {
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4">Third-Party Services</h2>
           
-          <div className="space-y-4">
+          <div className="grid md:grid-cols-2 gap-4">
             <Card className="border-l-4 border-l-blue-500 hover:shadow-md transition-shadow">
               <CardHeader className="bg-blue-50 dark:bg-blue-900/20">
                 <CardTitle className="text-lg flex items-center gap-2">
@@ -210,17 +212,17 @@ export default function PrivacyPolicy() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-3">
-                  We use Google Analytics to analyze website traffic and user behavior. This service collects:
+                  We use Google Analytics to analyze website traffic and user behavior.
                 </p>
                 <ul className="space-y-1 text-sm text-muted-foreground ml-4 mb-3">
-                  <li>• Page views and navigation patterns</li>
+                  <li>• Page views & navigation</li>
                   <li>• Time spent on pages</li>
-                  <li>• Geographic location (country/city level)</li>
-                  <li>• Device and browser information</li>
+                  <li>• Geographic location</li>
+                  <li>• Device & browser info</li>
                   <li>• Traffic sources</li>
                 </ul>
                 <p className="text-xs text-muted-foreground">
-                  Data is retained for 26 months. Opt out: <a href="https://tools.google.com/dlpage/gaoptout" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out</a>
+                  Retained for 26 months. <a href="https://tools.google.com/dlpage/gaoptout" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Opt out</a>
                 </p>
               </CardContent>
             </Card>
@@ -234,28 +236,15 @@ export default function PrivacyPolicy() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground mb-3">
-                  We use Google AdSense to display advertisements. Google may use cookies to show personalized ads 
-                  based on your browsing history.
+                  We display advertisements using Google AdSense, which may use cookies for personalized ads.
                 </p>
-                <div className="bg-yellow-50 dark:bg-yellow-900/20 p-3 rounded-lg mb-3">
-                  <p className="text-xs text-yellow-800 dark:text-yellow-300 mb-2">
-                    <strong>Data Collected by Google AdSense:</strong>
-                  </p>
-                  <ul className="space-y-1 text-xs text-yellow-700 dark:text-yellow-400 ml-4">
-                    <li>• Cookie IDs and advertising identifiers</li>
-                    <li>• IP address (for location targeting)</li>
-                    <li>• Pages visited on our website</li>
-                    <li>• Browser and device information</li>
-                    <li>• Ad clicks and interactions</li>
-                  </ul>
-                </div>
                 <p className="text-xs text-muted-foreground mb-2">
                   <strong>Control Your Ads:</strong>
                 </p>
                 <ul className="space-y-1 text-xs text-muted-foreground ml-4">
-                  <li>• <a href="https://www.google.com/settings/ads" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Google Ad Settings</a> - Manage personalized ads</li>
-                  <li>• <a href="https://optout.aboutads.info/" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Digital Advertising Alliance</a> - Opt out of interest-based ads</li>
-                  <li>• Browser Settings - Block third-party cookies</li>
+                  <li>• <a href="https://www.google.com/settings/ads" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Google Ad Settings</a></li>
+                  <li>• <a href="https://optout.aboutads.info/" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Digital Advertising Alliance</a></li>
+                  <li>• Browser cookie settings</li>
                 </ul>
               </CardContent>
             </Card>
@@ -303,43 +292,48 @@ export default function PrivacyPolicy() {
           </Card>
         </section>
 
-        {/* Your Rights */}
+        {/* Your Rights and Data Retention */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Your Privacy Rights</h2>
+          <h2 className="text-2xl font-bold mb-4">Your Privacy Rights & Data Retention</h2>
           
-          <Card className="border-l-4 border-l-indigo-500 bg-gradient-to-br from-indigo-50/50 to-purple-50/50 dark:from-indigo-900/10 dark:to-purple-900/10 hover:shadow-md transition-shadow">
-            <CardContent className="pt-6">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center">
+          <div className="grid md:grid-cols-2 gap-4">
+            <Card className="border-l-4 border-l-indigo-500 bg-gradient-to-br from-indigo-50/50 to-purple-50/50 dark:from-indigo-900/10 dark:to-purple-900/10 hover:shadow-md transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg flex items-center gap-2">
                   <Shield className="h-5 w-5 text-indigo-600" />
-                </div>
-                <p className="text-sm font-semibold text-indigo-900 dark:text-indigo-300">You have the right to:</p>
-              </div>
-              <ul className="space-y-1 text-sm text-muted-foreground ml-4">
-                <li>• Access your personal information</li>
-                <li>• Correct inaccurate data</li>
-                <li>• Request deletion of your data</li>
-                <li>• Withdraw marketing consent</li>
-                <li>• Opt out of cookies and tracking</li>
-                <li>• Export your data</li>
-              </ul>
-            </CardContent>
-          </Card>
-        </section>
+                  Your Rights
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-xs text-muted-foreground mb-3">You have the right to:</p>
+                <ul className="space-y-1 text-sm text-muted-foreground ml-4">
+                  <li>• Access your information</li>
+                  <li>• Correct inaccurate data</li>
+                  <li>• Request data deletion</li>
+                  <li>• Withdraw marketing consent</li>
+                  <li>• Opt out of tracking</li>
+                  <li>• Export your data</li>
+                </ul>
+              </CardContent>
+            </Card>
 
-        {/* Data Retention */}
-        <section className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Data Retention</h2>
-          
-          <Card>
-            <CardContent className="pt-6">
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• <strong>Contact Information:</strong> 3 years after last contact or until deletion requested</li>
-                <li>• <strong>Analytics Data:</strong> 26 months (Google Analytics standard)</li>
-                <li>• <strong>Legal Records:</strong> As required by law</li>
-              </ul>
-            </CardContent>
-          </Card>
+            <Card className="border-l-4 border-l-cyan-500 hover:shadow-md transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-lg flex items-center gap-2">
+                  <Lock className="h-5 w-5 text-cyan-600" />
+                  Data Retention
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li>• <strong>Contact Info:</strong> 3 years after last contact</li>
+                  <li>• <strong>Analytics:</strong> 26 months (GA standard)</li>
+                  <li>• <strong>Legal Records:</strong> As required by law</li>
+                  <li>• <strong>Deletion:</strong> Available upon request</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
         {/* Children's Privacy */}
@@ -409,7 +403,7 @@ export default function PrivacyPolicy() {
         </section>
 
         {/* Footer */}
-        <div className="text-center py-8 border-t mt-8">
+        <div className="text-center py-8">
           <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mb-4">
             <Shield className="h-6 w-6 text-white" />
           </div>
