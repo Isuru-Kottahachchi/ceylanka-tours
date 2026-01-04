@@ -440,7 +440,7 @@ export default function JayaSriMahaBodhiGuide() {
                     </p>
                   </div>
                   <Link
-                    href="/blog/buddisam-in-srilanka"
+                    href="/articles/buddisam-in-srilanka"
                     className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200 whitespace-nowrap"
                   >
                     <Book className="w-4 h-4" />

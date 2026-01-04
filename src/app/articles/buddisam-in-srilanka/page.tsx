@@ -25,7 +25,7 @@ import {
 // Mahindagamanaya Image Carousel Component
 function MahindagamanaCarousel() {
     const [currentIndex, setCurrentIndex] = useState(0)
-    
+
     const images = [
         {
             src: "/Mahindagamaya.jpg",
@@ -33,7 +33,7 @@ function MahindagamanaCarousel() {
             title: "Mahindagamanaya - The Arrival"
         },
         {
-            src: "/Mihintale.jpg", 
+            src: "/Mihintale.jpg",
             alt: "Mihintale - Where Arahant Mahinda met King Devanampiya Tissa",
             title: "Sacred Mihintale Hill"
         },
@@ -71,7 +71,7 @@ function MahindagamanaCarousel() {
                     height={400}
                     className="w-full h-64 md:h-96 lg:h-80 xl:h-96 object-cover transition-all duration-500"
                 />
-                
+
                 {/* Navigation Arrows */}
                 <button
                     onClick={prevImage}
@@ -80,7 +80,7 @@ function MahindagamanaCarousel() {
                 >
                     <ChevronLeft className="w-5 h-5" />
                 </button>
-                
+
                 <button
                     onClick={nextImage}
                     className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -101,11 +101,10 @@ function MahindagamanaCarousel() {
                     <button
                         key={index}
                         onClick={() => goToImage(index)}
-                        className={`w-3 h-3 rounded-full transition-colors duration-200 ${
-                            index === currentIndex 
-                                ? 'bg-orange-600' 
-                                : 'bg-gray-300 hover:bg-gray-400'
-                        }`}
+                        className={`w-3 h-3 rounded-full transition-colors duration-200 ${index === currentIndex
+                            ? 'bg-orange-600'
+                            : 'bg-gray-300 hover:bg-gray-400'
+                            }`}
                         aria-label={`Go to image ${index + 1}`}
                     />
                 ))}
@@ -182,14 +181,14 @@ export default function BuddhismInSriLanka() {
                             <div className="prose max-w-none">
                                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
                                     First get to know a bit about buddisim in the world , There are two main branches of Buddhism: Theravada and Mahayana.
-                                    Sri Lanka, known as the &quot;Pearl of the Indian Ocean&quot;, holds a special place in Buddhist history. 
-                                    For over 2,300 years, Theravada Buddhism has been the heart and soul of Sri Lankan culture, shaping its 
-                                    art, architecture, and way of life. This ancient island nation is home to some of the world&apos;s 
+                                    Sri Lanka, known as the &quot;Pearl of the Indian Ocean&quot;, holds a special place in Buddhist history.
+                                    For over 2,300 years, Theravada Buddhism has been the heart and soul of Sri Lankan culture, shaping its
+                                    art, architecture, and way of life. This ancient island nation is home to some of the world&apos;s
                                     most sacred Buddhist sites and preserves the oldest continuous Theravada Buddhist tradition.
                                 </p>
                                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                                    Buddhism is not just a religion - it is a philosophy of Buddha&apos;s teachings about how to avoid 
-                                    suffering and find peace in life. These teachings show people the path to wisdom, compassion, 
+                                    Buddhism is not just a religion - it is a philosophy of Buddha&apos;s teachings about how to avoid
+                                    suffering and find peace in life. These teachings show people the path to wisdom, compassion,
                                     and inner happiness through understanding the true nature of existence.
                                 </p>
                                 <div className="grid md:grid-cols-3 gap-6 mt-8">
@@ -243,24 +242,24 @@ export default function BuddhismInSriLanka() {
                                     <CardContent className="p-0">
                                         <div className="space-y-4">
                                             <p className="text-gray-700 dark:text-gray-300">
-                                                In 247 BCE, Arahant Mahinda Thero, son of Emperor Ashoka of India, arrived in Sri Lanka 
-                                                with a mission that would change the island forever. On the sacred day of Poson Poya 
-                                                (June full moon), King Devanampiya Tissa of Anuradhapura was hunting deer on Mihintale 
+                                                In 247 BCE, Arahant Mahinda Thero, son of Emperor Ashoka of India, arrived in Sri Lanka
+                                                with a mission that would change the island forever. On the sacred day of Poson Poya
+                                                (June full moon), King Devanampiya Tissa of Anuradhapura was hunting deer on Mihintale
                                                 hill when he encountered this remarkable Buddhist monk standing serenely among the trees.
                                             </p>
                                             <p className="text-gray-700 dark:text-gray-300">
-                                                The king, surprised to see the monk, called out &quot;Samanera!&quot; (which means monk). Mahinda 
-                                                Thero spoke calmly with the king and asked him clever questions to test how smart he was. 
-                                                The famous &quot;mango dialogue&quot; was a simple test to see if the king was intelligent enough 
-                                                to understand Buddha&apos;s teachings. When Mahinda saw that the king was very smart, he gave 
+                                                The king, surprised to see the monk, called out &quot;Samanera!&quot; (which means monk). Mahinda
+                                                Thero spoke calmly with the king and asked him clever questions to test how smart he was.
+                                                The famous &quot;mango dialogue&quot; was a simple test to see if the king was intelligent enough
+                                                to understand Buddha&apos;s teachings. When Mahinda saw that the king was very smart, he gave
                                                 his first sermon and brought Buddhism to Sri Lanka.
                                             </p>
                                             <p className="text-gray-700 dark:text-gray-300">
-                                                This divine encounter on Poson Poya day transformed not only the king but the entire nation. 
-                                                This historic event is reverently called &quot;Mahindagamanaya&quot;, meaning 
-                                                &quot;The Arrival of Mahinda&quot;, and is considered the most significant moment in Sri Lankan Buddhist history. 
-                                                Today, Poson Poya is celebrated as one of Sri Lanka&apos;s most important Buddhist festivals, 
-                                                commemorating the arrival of the Dhamma (Buddhist teachings) to the island and marking 
+                                                This divine encounter on Poson Poya day transformed not only the king but the entire nation.
+                                                This historic event is reverently called &quot;Mahindagamanaya&quot;, meaning
+                                                &quot;The Arrival of Mahinda&quot;, and is considered the most significant moment in Sri Lankan Buddhist history.
+                                                Today, Poson Poya is celebrated as one of Sri Lanka&apos;s most important Buddhist festivals,
+                                                commemorating the arrival of the Dhamma (Buddhist teachings) to the island and marking
                                                 the beginning of over 2,300 years of continuous Buddhist heritage.
                                             </p>
                                             <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg mb-4">
@@ -269,9 +268,9 @@ export default function BuddhismInSriLanka() {
                                                     Poson Poya Significance
                                                 </h4>
                                                 <p className="text-sm text-gray-700 dark:text-gray-300">
-                                                    Poson Poya (June full moon) is the second most important Buddhist festival in Sri Lanka after Vesak. 
-                                                    Millions of pilgrims climb Mihintale during this time to honor the sacred spot where Buddhism 
-                                                    first took root in Sri Lankan soil. The festival includes all-night pirith chanting, 
+                                                    Poson Poya (June full moon) is the second most important Buddhist festival in Sri Lanka after Vesak.
+                                                    Millions of pilgrims climb Mihintale during this time to honor the sacred spot where Buddhism
+                                                    first took root in Sri Lankan soil. The festival includes all-night pirith chanting,
                                                     lantern decorations, and special dana offerings.
                                                 </p>
                                             </div>
@@ -304,16 +303,16 @@ export default function BuddhismInSriLanka() {
                                             King Devanampiya Tissa&apos;s Conversion
                                         </h4>
                                         <p className="text-gray-700 dark:text-gray-300 mb-4">
-                                            After meeting Arahant Mahinda, King Devanampiya Tissa became the first royal patron 
-                                            of Buddhism in Sri Lanka. He established the Mahavihara monastery in Anuradhapura, 
+                                            After meeting Arahant Mahinda, King Devanampiya Tissa became the first royal patron
+                                            of Buddhism in Sri Lanka. He established the Mahavihara monastery in Anuradhapura,
                                             which became the center of Buddhist learning.
                                         </p>
                                         <h4 className="font-semibold mb-3 text-gray-900 dark:text-white">
                                             Sanghamitta Theri&apos;s Arrival
                                         </h4>
                                         <p className="text-gray-700 dark:text-gray-300">
-                                            Later, Sanghamitta Theri, daughter of Emperor Ashoka and sister of Mahinda, 
-                                            brought a branch of the sacred Bodhi tree from Bodh Gaya. This branch was 
+                                            Later, Sanghamitta Theri, daughter of Emperor Ashoka and sister of Mahinda,
+                                            brought a branch of the sacred Bodhi tree from Bodh Gaya. This branch was
                                             planted in Anuradhapura and grows there today as the Jaya Sri Maha Bodhi.
                                         </p>
                                     </div>
@@ -322,16 +321,16 @@ export default function BuddhismInSriLanka() {
                                             Establishment of Monasteries
                                         </h4>
                                         <p className="text-gray-700 dark:text-gray-300 mb-4">
-                                            The early period saw the establishment of numerous monasteries and stupas. 
-                                            The Thuparamaya, built to house Buddha&apos;s collarbone relic, was the first 
+                                            The early period saw the establishment of numerous monasteries and stupas.
+                                            The Thuparamaya, built to house Buddha&apos;s collarbone relic, was the first
                                             stupa constructed in Sri Lanka.
                                         </p>
                                         <h4 className="font-semibold mb-3 text-gray-900 dark:text-white">
                                             Pali Canon Preservation
                                         </h4>
                                         <p className="text-gray-700 dark:text-gray-300">
-                                            Sri Lankan monks played a crucial role in preserving Buddhist scriptures. 
-                                            The Pali Canon was first written down in Sri Lanka during the 1st century BCE, 
+                                            Sri Lankan monks played a crucial role in preserving Buddhist scriptures.
+                                            The Pali Canon was first written down in Sri Lanka during the 1st century BCE,
                                             ensuring its survival for future generations.
                                         </p>
                                     </div>
@@ -346,7 +345,7 @@ export default function BuddhismInSriLanka() {
                     <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
                         The Sacred Tooth Relic: Sri Lanka&apos;s Most Precious Treasure
                     </h2>
-                    
+
                     <Card className="overflow-hidden">
                         <div className="flex flex-col md:flex-row md:gap-6 p-6">
                             <div className="md:w-2/5 lg:w-1/3">
@@ -371,13 +370,13 @@ export default function BuddhismInSriLanka() {
                                 <CardContent className="p-0">
                                     <div className="space-y-4">
                                         <p className="text-gray-700 dark:text-gray-300">
-                                            The Sacred Tooth Relic of Lord Buddha arrived in Sri Lanka in 371 CE, hidden in 
-                                            the hair of Princess Hemamala and Prince Dantha from the Kalinga kingdom in India. 
+                                            The Sacred Tooth Relic of Lord Buddha arrived in Sri Lanka in 371 CE, hidden in
+                                            the hair of Princess Hemamala and Prince Dantha from the Kalinga kingdom in India.
                                             They brought this precious relic to escape persecution and preserve it for future generations.
                                         </p>
                                         <p className="text-gray-700 dark:text-gray-300">
-                                            King Kirthi Sri Meghavarna received the sacred relic and built the first temple 
-                                            to house it. Since then, the tooth relic has been considered the symbol of sovereignty 
+                                            King Kirthi Sri Meghavarna received the sacred relic and built the first temple
+                                            to house it. Since then, the tooth relic has been considered the symbol of sovereignty
                                             in Sri Lanka, and its possession legitimized royal authority.
                                         </p>
                                         <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg">
@@ -385,8 +384,8 @@ export default function BuddhismInSriLanka() {
                                                 Did You Know?
                                             </h4>
                                             <p className="text-sm text-gray-700 dark:text-gray-300">
-                                                The tooth relic has been moved several times throughout history for protection 
-                                                during invasions. It finally found its permanent home in Kandy&apos;s Temple of the 
+                                                The tooth relic has been moved several times throughout history for protection
+                                                during invasions. It finally found its permanent home in Kandy&apos;s Temple of the
                                                 Tooth (Sri Dalada Maligawa) in the 16th century.
                                             </p>
                                         </div>
@@ -402,7 +401,7 @@ export default function BuddhismInSriLanka() {
                     <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
                         Sacred Buddhist Sites in Sri Lanka
                     </h2>
-                    
+
                     <div className="grid md:grid-cols-2 gap-6">
                         <Card className="hover:shadow-lg transition-shadow">
                             <CardHeader>
@@ -421,12 +420,23 @@ export default function BuddhismInSriLanka() {
                                     className="w-full h-48 object-cover rounded-lg mb-4"
                                 />
                                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                    The ancient capital and birthplace of Buddhism in Sri Lanka. Home to the sacred 
+                                    The ancient capital and birthplace of Buddhism in Sri Lanka. Home to the sacred
                                     Jaya Sri Maha Bodhi tree and magnificent stupas like Ruwanwelisaya and Jetavanaramaya.
                                 </p>
                                 <div className="flex items-center gap-2 text-sm text-orange-600">
                                     <MapPin className="w-4 h-4" />
                                     <span>North Central Province</span>
+                                </div>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/anuradhapura" passHref legacyBehavior>
+                                        <Button
+                                            variant="secondary"
+                                            className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                                        >
+                                            Read more about Anuradhapura
+                                            <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                                        </Button>
+                                    </Link>
                                 </div>
                             </CardContent>
                         </Card>
@@ -448,12 +458,23 @@ export default function BuddhismInSriLanka() {
                                     className="w-full h-48 object-cover rounded-lg mb-4"
                                 />
                                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                    The most sacred Buddhist temple in Sri Lanka, housing the Sacred Tooth Relic. 
+                                    The most sacred Buddhist temple in Sri Lanka, housing the Sacred Tooth Relic.
                                     The annual Esala Perahera festival celebrates this precious relic.
                                 </p>
                                 <div className="flex items-center gap-2 text-sm text-yellow-600">
                                     <MapPin className="w-4 h-4" />
                                     <span>Central Province</span>
+                                </div>
+                                <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/kandy" passHref legacyBehavior>
+                                        <Button
+                                            variant="secondary"
+                                            className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                                        >
+                                            Read more about Kandy
+                                            <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                                        </Button>
+                                    </Link>
                                 </div>
                             </CardContent>
                         </Card>
@@ -468,19 +489,30 @@ export default function BuddhismInSriLanka() {
                             </CardHeader>
                             <CardContent>
                                 <Image
-                                    src="/Mihintale.jpg"
+                                    src="/Mihinthale.jpg"
                                     alt="Mihintale - Cradle of Buddhism in Sri Lanka"
                                     width={300}
                                     height={200}
                                     className="w-full h-48 object-cover rounded-lg mb-4"
                                 />
                                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                    Known as the &quot;Cradle of Buddhism in Sri Lanka&quot;, this is where Arahant Mahinda 
+                                    Known as the &quot;Cradle of Buddhism in Sri Lanka&quot;, this is where Arahant Mahinda
                                     first introduced Buddhism to King Devanampiya Tissa.
                                 </p>
                                 <div className="flex items-center gap-2 text-sm text-green-600">
                                     <MapPin className="w-4 h-4" />
                                     <span>Anuradhapura District</span>
+                                </div>
+                                 <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/mihinthale" passHref legacyBehavior>
+                                        <Button
+                                            variant="secondary"
+                                            className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                                        >
+                                            Read more about Mihinthale
+                                            <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                                        </Button>
+                                    </Link>
                                 </div>
                             </CardContent>
                         </Card>
@@ -502,12 +534,23 @@ export default function BuddhismInSriLanka() {
                                     className="w-full h-48 object-cover rounded-lg mb-4"
                                 />
                                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                    A magnificent cave temple complex with over 2,000 years of history, featuring 
+                                    A magnificent cave temple complex with over 2,000 years of history, featuring
                                     ancient Buddhist paintings and 150 Buddha statues.
                                 </p>
                                 <div className="flex items-center gap-2 text-sm text-blue-600">
                                     <MapPin className="w-4 h-4" />
                                     <span>Central Province</span>
+                                </div>
+                                 <div className="mt-4 flex justify-start">
+                                    <Link href="/destinations/dambullla-cave-temple" passHref legacyBehavior>
+                                        <Button
+                                            variant="secondary"
+                                            className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
+                                        >
+                                            Read more about Dambulla Cave Temple
+                                            <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                                        </Button>
+                                    </Link>
                                 </div>
                             </CardContent>
                         </Card>
@@ -519,7 +562,7 @@ export default function BuddhismInSriLanka() {
                     <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
                         Living Buddhist Traditions
                     </h2>
-                    
+
                     <Card>
                         <CardContent className="p-8">
                             <div className="grid md:grid-cols-2 gap-8">
@@ -597,7 +640,7 @@ export default function BuddhismInSriLanka() {
                     <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
                         Buddhism in Modern Sri Lanka
                     </h2>
-                    
+
                     <div className="grid md:grid-cols-2 gap-6">
                         <Card>
                             <CardHeader>
@@ -608,8 +651,8 @@ export default function BuddhismInSriLanka() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                    Sri Lanka has numerous Buddhist universities and institutes that preserve and teach 
-                                    Buddhist philosophy, meditation, and Pali language. Many international students 
+                                    Sri Lanka has numerous Buddhist universities and institutes that preserve and teach
+                                    Buddhist philosophy, meditation, and Pali language. Many international students
                                     come to study Theravada Buddhism in its original homeland.
                                 </p>
                                 <ul className="text-sm space-y-2">
@@ -630,8 +673,8 @@ export default function BuddhismInSriLanka() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                    Sri Lankan Buddhist monks and teachers have spread Theravada Buddhism worldwide. 
-                                    The island continues to be a pilgrimage destination for Buddhists from around 
+                                    Sri Lankan Buddhist monks and teachers have spread Theravada Buddhism worldwide.
+                                    The island continues to be a pilgrimage destination for Buddhists from around
                                     the globe seeking authentic Buddhist teachings.
                                 </p>
                                 <ul className="text-sm space-y-2">
@@ -650,7 +693,7 @@ export default function BuddhismInSriLanka() {
                     <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
                         Visiting Buddhist Sites: A Pilgrim&apos;s Guide
                     </h2>
-                    
+
                     <Card>
                         <CardContent className="p-8">
                             <div className="grid md:grid-cols-3 gap-8">
@@ -703,14 +746,14 @@ export default function BuddhismInSriLanka() {
                                 Experience the Living Heritage of Buddhism
                             </h2>
                             <p className="text-lg text-gray-700 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-                                Sri Lanka offers a unique opportunity to experience Buddhism not just as a religion, 
-                                but as a living, breathing culture that has shaped an entire civilization for over 
-                                two millennia. From the sacred Bodhi tree to the golden Temple of the Tooth, 
+                                Sri Lanka offers a unique opportunity to experience Buddhism not just as a religion,
+                                but as a living, breathing culture that has shaped an entire civilization for over
+                                two millennia. From the sacred Bodhi tree to the golden Temple of the Tooth,
                                 every corner of this island tells the story of faith, devotion, and spiritual wisdom.
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center">
-                                <Button 
-                                    size="lg" 
+                                <Button
+                                    size="lg"
                                     className="bg-orange-600 hover:bg-orange-700 text-white"
                                     asChild
                                 >
@@ -719,8 +762,8 @@ export default function BuddhismInSriLanka() {
                                         Explore Sacred Sites
                                     </Link>
                                 </Button>
-                                <Button 
-                                    size="lg" 
+                                <Button
+                                    size="lg"
                                     variant="outline"
                                     asChild
                                 >

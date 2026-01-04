@@ -80,7 +80,7 @@ export default function TempleOfToothKandyGuide() {
             {/* Buddhism in Sri Lanka Button */}
             <div className="mb-6">
               <a
-                href="/blog/buddisam-in-srilanka"
+                href="/articles/buddisam-in-srilanka"
                 className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
               >
                 <Crown className="w-5 h-5" />

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from "@/components/ui/card";
@@ -21,15 +23,15 @@ export default function KingDutugemunuArticle() {
 					<h1 className="text-4xl md:text-5xl font-bold mb-4">King Dutugemunu</h1>
 					<p className="text-xl md:text-2xl mb-6 font-light">The Legendary Unifier of Sri Lanka</p>
 					<div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-						<Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+						<Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-yellow-600/80 text-white border-yellow-500">
 							<MapPin className="w-4 h-4 mr-1" />
 							Ruhuna & Anuradhapura
 						</Badge>
-						<Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+						<Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-blue-600/80 text-white border-blue-500">
 							<Star className="w-4 h-4 mr-1" />
 							National Hero
 						</Badge>
-						<Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+						<Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-red-600/80 text-white border-red-500">
 							<Calendar className="w-4 h-4 mr-1" />
 							2nd Century BC
 						</Badge>

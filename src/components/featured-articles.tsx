@@ -10,7 +10,7 @@ const featuredArticles = [
     path: "top10-beaches-in-sri-lanka",
     excerpt:
       "From the golden sands of Unawatuna to the pristine shores of Mirissa, discover the most beautiful beaches...",
-    image: "/Bentotabeach.jpeg",
+    image: "/Blue-beach.jpg",
     category: "Beaches",
     readTime: "8 min read",
   },
@@ -29,7 +29,7 @@ const featuredArticles = [
     title: "Things to Watch Out for at the Beach",
     path: "things-to-beware-of-at-the-beach",
     category: "Safety",
-    image: "/Yala-national-park.jpg",
+    image: "/Things-to-Watch-Out-for-at-the-Beach.png",
     excerpt: "Important safety guide about dangerous waves, sea creatures and coastal conditions around Sri Lanka that every beach visitor should know",
     readTime: "10 min read",
   },

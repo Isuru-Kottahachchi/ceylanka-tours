@@ -218,15 +218,15 @@ export default function TenGiantsArticle() {
             Legendary Warriors Who United Ancient Sri Lanka
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-yellow-600/80 text-white border-yellow-500">
               <Calendar className="w-4 h-4 mr-1" />
               161-137 BCE
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-blue-600/80 text-white border-blue-500">
               <MapPin className="w-4 h-4 mr-1" />
               Anuradhapura Kingdom
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-red-600/80 text-white border-red-500">
               <Users className="w-4 h-4 mr-1" />
               10 Legendary Heroes
             </Badge>
