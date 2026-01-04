@@ -209,8 +209,9 @@ function DesktopHierarchicalDropdown({
   if (!isOpen) return null
 
   return (
-    <div ref={dropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border border-gray-200 dark:border-gray-700 z-50">
-      <div className="p-4 max-h-96 overflow-y-auto">
+    <div ref={dropdownRef} className="absolute top-full left-0 pt-2 z-50">
+      <div className="bg-white dark:bg-gray-900 shadow-xl rounded-lg border border-gray-200 dark:border-gray-700 w-80">
+        <div className="p-4 max-h-96 overflow-y-auto">
         {destinationsItems.map((section) => (
           <div key={section.title} className="mb-2">
             <button
@@ -243,6 +244,7 @@ function DesktopHierarchicalDropdown({
             )}
           </div>
         ))}
+      </div>
       </div>
     </div>
   )
@@ -422,9 +424,12 @@ export function Header() {
               </Link> */}
 
               {/* What To Do Dropdown */}
-              <div className="relative">
+              <div className="relative"
+                onMouseEnter={() => setActiveDropdown("what-to-do")}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
                 <Button ref={whatToDoButtonRef}
-                  onClick={() => setActiveDropdown(activeDropdown === "what-to-do" ? null : "what-to-do")} className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer">
+                  className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer">
                   WHAT TO DO
                   <ChevronDown
                     className={`h-4 w-4 ml-1 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === "what-to-do" ? "rotate-180" : ""
@@ -432,8 +437,9 @@ export function Header() {
                   />
                 </Button>
                 {activeDropdown === "what-to-do" && (
-                  <div ref={whatToDoDropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 z-50">
-                    <div className="p-4">
+                  <div ref={whatToDoDropdownRef} className="absolute top-full left-0 pt-2 z-50">
+                    <div className="bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 w-80">
+                      <div className="p-4">
                       <div className="grid grid-cols-2 gap-4">
                         {whatToDoItems.map((section) => (
                           <div key={section.title}>
@@ -455,15 +461,18 @@ export function Header() {
                         ))}
                       </div>
                     </div>
+                    </div>
                   </div>
                 )}
               </div>
 
               {/* Enhanced Hierarchical Destinations Dropdown - Replaces WHERE TO GO */}
-              <div className="relative">
+              <div className="relative"
+                onMouseEnter={() => setActiveDropdown("destinations")}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
                 <Button
                   ref={destinationsButtonRef}
-                  onClick={toggleDestinationsDropdown}
                   className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer"
                 >
                   DESTINATIONS
@@ -480,10 +489,12 @@ export function Header() {
               </div>
 
               {/* Plan Your Trip Dropdown */}
-              <div className="relative">
+              <div className="relative"
+                onMouseEnter={() => setActiveDropdown("plan-trip")}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
                 <Button 
                   ref={planTripButtonRef}
-                  onClick={() => setActiveDropdown(activeDropdown === "plan-trip" ? null : "plan-trip")}
                   className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer"
                 >
                   PLAN YOUR TRIP
@@ -494,8 +505,9 @@ export function Header() {
                   />
                 </Button>
                 {activeDropdown === "plan-trip" && (
-                  <div ref={planTripDropdownRef} className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 z-50">
-                    <div className="p-4">
+                  <div ref={planTripDropdownRef} className="absolute top-full left-0 pt-2 z-50">
+                    <div className="bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 w-80">
+                      <div className="p-4">
                       <div className="grid grid-cols-2 gap-4">
                         {planYourTripItems.map((section) => (
                           <div key={section.title}>
@@ -516,6 +528,7 @@ export function Header() {
                           </div>
                         ))}
                       </div>
+                    </div>
                     </div>
                   </div>
                 )}
