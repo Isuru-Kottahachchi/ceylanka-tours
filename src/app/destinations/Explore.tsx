@@ -218,16 +218,16 @@ export default function ExplorePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link 
-                href="/about-srilanka" 
+                href="/more-about-sri-lanka" 
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
               >
                 Learn About Sri Lanka
               </Link>
               <Link 
-                href="/activities" 
+                href="/destinations" 
                 className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
               >
-                View All Activities
+                View Destinations
               </Link>
             </div>
           </section>
