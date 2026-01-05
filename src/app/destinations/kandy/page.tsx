@@ -203,12 +203,24 @@ export default function KandyTravelGuide() {
                   </ul>
                   <div className="mt-3 p-3 bg-orange-100 dark:bg-orange-800/30 rounded-md border-l-4 border-orange-400">
                     <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
-                      <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Kandy. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                      <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Kandy. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                     </p>
                     <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
                       <div className="flex items-center gap-2">
                         <span>📞</span>
                         <span><strong>Contact:</strong> +94 77 123 4567</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span>✈️</span>
+                        <Link href="/tours/kandy" className="underline hover:text-orange-600 dark:hover:text-orange-300">
+                          <strong>One day tour to Kandy</strong> - Click for details & booking
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span>✈️</span>
+                        <Link href="/tours/kandy" className="underline hover:text-orange-600 dark:hover:text-orange-300">
+                          <strong>One day tour to Kandy</strong> - Click for details & booking
+                        </Link>
                       </div>
                       <div className="flex items-center gap-2">
                         <span>✈️</span>

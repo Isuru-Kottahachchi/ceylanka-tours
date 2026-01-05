@@ -343,24 +343,6 @@ export default function BlueBeachGuide() {
           </div>
         </section>
 
-        {/* Snorkeling Section */}
-        <section className="mb-12 scroll-mt-24" id="snorkeling">
-          <h2 className="text-3xl font-bold mb-6">Snorkeling at Blue Beach</h2>
-          <Card>
-            <CardContent>
-              <p className="text-muted-foreground mb-4">
-                Blue Beach is one of the best spots on the south coast for easy, safe snorkeling. The reef is close to shore, and the water is usually calm and clear. Early morning offers the best visibility and the chance to spot more marine life.
-              </p>
-              <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-                <li>Bring your own mask and fins, or rent from a local guesthouse</li>
-                <li>Watch for sea urchins and avoid stepping on coral</li>
-                <li>Respect marine life look, don’t touch</li>
-                <li>Best months: December to April</li>
-              </ul>
-            </CardContent>
-          </Card>
-        </section>
-
         {/* Travel Tips */}
         <section className="mb-12 scroll-mt-24" id="tips">
           <h2 className="text-3xl font-bold mb-6">Travel Tips for Blue Beach</h2>
