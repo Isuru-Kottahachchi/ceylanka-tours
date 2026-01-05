@@ -24,8 +24,7 @@ const footerLinks = {
   travel: [
     { name: "Travel Guide", href: "/travel-guide" },
     // { name: "Hotels & Accommodation", href: "/hotels" },
-    { name: "Transportation", href: "/transportation" },
-    { name: "Travel Packages", href: "/packages" },
+    { name: "Travel packages", href: "/tours" },
     { name: "Visa Information", href: "/visa" },
   ],
   experience: [
