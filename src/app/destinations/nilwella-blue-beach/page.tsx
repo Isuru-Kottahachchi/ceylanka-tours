@@ -1,23 +1,12 @@
-import type { Metadata } from "next"
+"use client";
+
 import Image from "next/image"
 import { MapPin, Star, Waves, Sun, Camera, Users, CheckCircle } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-export const metadata: Metadata = {
-  title: "Blue Beach Sri Lanka: Complete Guide 2025 | Snorkeling, Relaxation & Hidden Gem",
-  description:
-    "Discover Blue Beach, Sri Lanka's hidden coastal paradise. Explore crystal-clear waters, snorkeling, family-friendly sands, and local culture in this detailed travel guide.",
-  keywords:
-    "Blue Beach Sri Lanka, snorkeling, hidden beach, Sri Lanka beaches, southern coast, family beach, crystal water, travel guide",
-  openGraph: {
-    title: "Blue Beach Sri Lanka: Complete Guide 2025",
-    description: "Your essential guide to Blue Beach, Sri Lanka's hidden gem for snorkeling and relaxation.",
-    type: "article",
-    images: ["/blue-beach-hero.jpg"],
-  },
-}
 
 export default function BlueBeachGuide() {
   return (
@@ -151,7 +140,7 @@ export default function BlueBeachGuide() {
                     </ul>
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                       <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
-                        <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylantours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Blue Beach. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold"> Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Blue Beach. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                       </p>
                       <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
                         <div className="flex items-center gap-2">
@@ -192,23 +181,68 @@ export default function BlueBeachGuide() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>Blue Lagoon</CardTitle>
-                <CardDescription>Natural swimming pool with gentle waves (Private Island)</CardDescription>
+                <CardTitle>Blue Beach Island</CardTitle>
+                <CardDescription>Photogenic island with beautiful views and natural surroundings</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/blue-beach-lagoon.jpg"
-                    alt="Blue Beach lagoon with calm blue water and children swimming"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: '/Blue-Beach-Island.jpg',
+                        alt: 'Calm blue lagoon at Blue Beach, Sri Lanka with palm trees and clear skies',
+                      },
+                      {
+                        src: '/Blue-Beach-Island3.jpg',
+                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',    
+                      },
+                      {
+                        src: '/Blue-Beach-Island1.jpg',
+                        alt: 'Families enjoying the shallow blue lagoon at Blue Beach, Sri Lanka',    
+                      },
+                      {
+                        src: '/Blue-Beach-Island2.jpg',
+                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',    
+                      },
+                       {
+                        src: '/Blue-Beach-Island4.jpg',
+                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',    
+                      },
+                       {
+                        src: '/Blue-Beach-Island5.jpg',
+                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',    
+                      },
+                    ]}
+
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
                       The lagoon at Blue Beach is protected by a natural reef, creating a safe, shallow pool perfect for swimming, floating, and relaxing. The water is so clear you can see colorful fish darting between the rocks. <strong>Blue Beach is a private island</strong>, so please respect the tranquility and privacy of the area.
                     </p>
-                    <ul className="space-y-2 text-muted-foreground">
+                    <p className="text-muted-foreground mb-4">
+                      <strong>🌊 Special Natural Feature:</strong> During certain times of the year, there is a narrow sandy path where you can see ocean waves coming from both sides - left and right. This creates a beautiful view and is perfect for taking amazing photos. The waves meet in the middle making it a very special sight!
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      <strong>🏝️ Explore the Island:</strong> Blue Beach island has walking paths inside the island where you can explore and discover different areas. You can walk through the island, enjoy the natural surroundings, and take beautiful photos of the beach, palm trees, and blue water from various viewpoints.
+                    </p>
+                    <div className="mt-4 p-4 bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-400 rounded-r-lg">
+                      <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">⚠️ Important Safety Warning</h4>
+                      <ul className="space-y-2 text-sm text-amber-700 dark:text-amber-300">
+                        <li className="flex items-start gap-2">
+                          <span className="font-bold">🦔</span>
+                          <span><strong>Watch for Sea Urchins:</strong> The rocks and reef areas have sea urchins with sharp spines. Always wear water shoes or sandals when walking in shallow water or near rocks. Do not touch or step on rocks without looking first.</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="font-bold">🏊</span>
+                          <span><strong>Swimming Safety:</strong> While the lagoon is generally calm, always check current conditions before swimming. Stay within the protected lagoon area. Strong swimmers should still be careful near the outer reef where currents can be stronger.</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="font-bold">👨‍👩‍👧</span>
+                          <span><strong>Children:</strong> Always watch children closely, especially near rocks and deeper water. Even calm water can have unexpected waves.</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <ul className="space-y-2 text-muted-foreground mt-4">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
                         Ideal for families and beginner swimmers
@@ -221,12 +255,20 @@ export default function BlueBeachGuide() {
                         <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
                         Great for floating and sunbathing
                       </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                        Walking path around the island for photos
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                        Special wave path during certain seasons
+                      </li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle>Coral Reef & Snorkeling</CardTitle>
                 <CardDescription>Discover vibrant marine life just offshore</CardDescription>
@@ -261,7 +303,7 @@ export default function BlueBeachGuide() {
                   />
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
             <Card>
               <CardHeader>
                 <CardTitle>Camping Experience</CardTitle>
@@ -312,7 +354,7 @@ export default function BlueBeachGuide() {
               <ul className="list-disc pl-6 text-muted-foreground space-y-2">
                 <li>Bring your own mask and fins, or rent from a local guesthouse</li>
                 <li>Watch for sea urchins and avoid stepping on coral</li>
-                <li>Respect marine life—look, don’t touch</li>
+                <li>Respect marine life look, don’t touch</li>
                 <li>Best months: December to April</li>
               </ul>
             </CardContent>
@@ -327,10 +369,10 @@ export default function BlueBeachGuide() {
               <ul className="list-disc pl-6 text-muted-foreground space-y-2">
                 <li>Arrive early to enjoy the quietest hours</li>
                 <li>There are a few small cafes and guesthouses nearby for snacks and shade</li>
-                <li>Bring sun protection—shade is limited on the sand</li>
+                <li>Bring sun protection shade is limited on the sand</li>
                 <li>Weekdays are less crowded than weekends</li>
                 <li>Support local businesses by renting gear or buying refreshments</li>
-                <li><strong>Blue Beach is a private island</strong>—always respect the privacy of owners and other guests</li>
+                <li><strong>Blue Beach is a private island</strong> always respect the privacy of owners and other guests</li>
                 <li>If camping, obtain permission and leave no trace</li>
               </ul>
             </CardContent>
