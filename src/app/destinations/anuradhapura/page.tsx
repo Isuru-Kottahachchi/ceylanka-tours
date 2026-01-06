@@ -25,9 +25,9 @@ export default function AnuradhapuraTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Ruwanwalisaya.jpeg"
+          src="/Anuradhapura.jpg"
           alt="Ancient Ruwanwelisaya dagoba in Anuradhapura with white dome against blue sky and pilgrims visiting"
           fill
           className="object-cover"
