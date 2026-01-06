@@ -28,7 +28,7 @@ export default function ThalpeBeachGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Thalpe-beach.jpg"
           alt="Golden sands and turquoise water at Thalpe Beach, Sri Lanka, with coral wells in the foreground"

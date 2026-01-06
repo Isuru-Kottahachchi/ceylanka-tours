@@ -27,7 +27,7 @@ export default function DanigalaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/danigala-mountain.jpg"
           alt="The mysterious flat-topped Danigala Mountain rising above the surrounding landscape, showcasing its unique UFO-like appearance"

@@ -21,7 +21,7 @@ export default function SoberIslandPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/sober-island-aerial.jpg"
           alt="Aerial view of Sober Island in Trincomalee Harbor with historic fortifications"

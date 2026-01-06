@@ -22,7 +22,7 @@ export default function KalabokkaTravelGuide() {
   return (
     <main className="min-h-screen bg-background max-w-6xl mx-auto px-4">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Kalabokka.jpg"
           alt="Panoramic view of Kalabokka with lush tea plantations and misty mountains"

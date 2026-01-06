@@ -13,7 +13,7 @@ export default function SamanDevalayaGuide() {
 	return (
 		<main className="min-h-screen bg-background">
 			{/* Hero Section */}
-			<section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+			<section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
 				<Image
 					src="/Saman-devalaya.jpeg"
 					alt="Saman Devalaya temple in Ratnapura with colorful architecture, sacred shrine dedicated to God Saman, guardian deity of Adam's Peak"

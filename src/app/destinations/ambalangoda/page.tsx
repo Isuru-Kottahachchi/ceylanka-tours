@@ -10,7 +10,7 @@ export default function AmbalangodaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/ambalangoda-masks.jpg"
           alt="Traditional Sri Lankan masks displayed in Ambalangoda, showcasing intricate craftsmanship and vibrant colors"

@@ -115,7 +115,7 @@ export default function KurunegalaPage() {
   return (
     <main className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Kurunegala_City_from_the_Sky.jpg"
           alt="Panoramic view of Kurunegala city with majestic Ethagala rock formation"

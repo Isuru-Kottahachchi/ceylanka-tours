@@ -21,7 +21,7 @@ export default function NelligalaTemplePage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Nelligala.png"
           alt="Aerial view of Nelligala International Buddhist Center perched on mountain top"

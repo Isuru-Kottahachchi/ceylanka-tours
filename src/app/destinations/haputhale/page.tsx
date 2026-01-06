@@ -13,7 +13,7 @@ export default function HaputaleGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Haputhale.jpeg"
           alt="Spectacular panoramic view from Lipton's Seat in Haputale showing endless tea plantations and mountain ranges"

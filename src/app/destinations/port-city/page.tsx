@@ -27,7 +27,7 @@ export default function PortCityTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/placeholder.jpg"
           alt="Port City Colombo skyline showing modern buildings and waterfront development"

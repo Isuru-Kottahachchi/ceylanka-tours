@@ -15,7 +15,7 @@ export default function KatharagamaGuide() {
     <>
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="relative h-[65vh] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
           <Image
             src="/Katharagama.jpg"
             alt="Sacred Katharagama temple complex with devotees offering prayers during evening ceremony"
@@ -23,23 +23,23 @@ export default function KatharagamaGuide() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70" />
-          <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Katharagama</h1>
-            <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed text-primary">
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/60" />
+          <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Katharagama</h1>
+            <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">
               Sri Lanka&apos;s Most Sacred Pilgrimage Site
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-              <Badge variant="secondary" className="bg-background/80 text-foreground border-border px-4 py-2">
-                <Flame className="w-4 h-4 mr-2 text-orange-500" />
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-yellow-600/80 text-white border-yellow-500">
+                <Flame className="w-4 h-4 mr-2" />
                 Sacred Temples
               </Badge>
-              <Badge variant="secondary" className="bg-background/80 text-foreground border-border px-4 py-2">
-                <Users className="w-4 h-4 mr-2 text-purple-500" />
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
+                <Users className="w-4 h-4 mr-2" />
                 Multi-Religious Site
               </Badge>
-              <Badge variant="secondary" className="bg-background/80 text-foreground border-border px-4 py-2">
-                <Heart className="w-4 h-4 mr-2 text-pink-500" />
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-blue-600/80 text-white border-blue-500">
+                <Heart className="w-4 h-4 mr-2" />
                 Spiritual Journey
               </Badge>
             </div>

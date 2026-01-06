@@ -27,7 +27,7 @@ export default function BandarawelaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Bandarawela.jpeg"
           alt="Bandarawela town nestled in rolling hills with tea plantations and colonial buildings under perfect blue sky"

@@ -11,7 +11,7 @@ export default function PidurangalaRockGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Pidurangala.jpeg"
           alt="Stunning sunrise view of Sigiriya Rock from Pidurangala Rock summit with golden sky"

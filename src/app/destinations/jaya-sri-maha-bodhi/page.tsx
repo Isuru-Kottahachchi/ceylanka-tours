@@ -28,7 +28,7 @@ export default function JayaSriMahaBodhiGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/JayaSrimahaBodhi.jpeg"
           alt="Jaya Sri Maha Bodhi sacred Bo tree in Anuradhapura showing pilgrims and golden railings"

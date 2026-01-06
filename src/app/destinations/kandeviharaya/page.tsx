@@ -25,7 +25,7 @@ export default function KandeViharayaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Kandeviharaya.jpeg"
           alt="Majestic white seated Buddha statue at Kande Viharaya temple with surrounding temple buildings"

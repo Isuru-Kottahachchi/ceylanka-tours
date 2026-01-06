@@ -25,7 +25,7 @@ export default function RanmusuUyanaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Ranmusuuyana.jpeg"
           alt="Ancient stone structures and rock formations at Ranmusu Uyana park with lush greenery"

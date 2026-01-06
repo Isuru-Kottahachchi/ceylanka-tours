@@ -25,7 +25,7 @@ export default function KithulgalaTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Water-Rafting-Kithulgala.jpg"
           alt="White water rafting on Kelani River in Kithulgala with lush rainforest and rapids"

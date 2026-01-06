@@ -30,7 +30,7 @@ export default function RathnapuraGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Saman-devalaya.jpeg"
           alt="Rathnapura gem mining landscape with traditional buildings and lush mountains"

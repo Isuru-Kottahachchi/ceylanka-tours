@@ -24,7 +24,7 @@ export default function AdamsPeakTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Adamspeaskmain.jpg"
           alt="Spectacular sunrise view from Adam&apos;s Peak summit showing the sacred mountains shadow and pilgrims watching the dawn"

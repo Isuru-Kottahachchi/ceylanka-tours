@@ -9,7 +9,7 @@ export default function VictoriaDamGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] overflow-hidden">
+      <section className="relative h-[50vh] overflow-hidden">
         <Image
           src="/Victoria-dam.jpg"
           alt="Victoria Dam surrounded by lush green mountains and misty clouds"

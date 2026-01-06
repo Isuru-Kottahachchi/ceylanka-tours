@@ -15,7 +15,7 @@ export default function MataleGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Walpolmulla1.jpg"
           alt="Lush spice gardens in Matale with cinnamon, cardamom, and pepper plants growing in terraced hillsides"

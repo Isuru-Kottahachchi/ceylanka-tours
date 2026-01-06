@@ -22,7 +22,7 @@ export default function MandaramNuwaraGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Mandaram-Nuwara.jpg"
           alt="Misty Mandaram Nuwara valley with lush green hills and waterfalls"

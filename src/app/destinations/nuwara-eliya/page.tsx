@@ -15,7 +15,7 @@ export default function NuwaraEliyaTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section id="hero" className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section id="hero" className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Nuwara-Eliya.jpg"
           alt="Stunning panoramic view of Nuwara Eliya showing lush green tea plantations, colonial buildings, and misty mountains"

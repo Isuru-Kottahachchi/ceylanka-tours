@@ -27,7 +27,7 @@ export default function KalutaraTempleGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/kalutara-temple-main.jpg"
           alt="The magnificent white Kalutara Stupa and sacred Bodhiya temple complex against the blue sky"
