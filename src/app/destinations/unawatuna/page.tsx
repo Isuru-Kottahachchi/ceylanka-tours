@@ -29,7 +29,7 @@ export default function UnawatunaTravelGuide() {
     return (
         <main className="min-h-screen bg-background">
             {/* Hero Section */}
-            <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
                 <Image
                     src="/Unawatuna1.jpg"
                     alt="Aerial view of Unawatuna Beach with its crescent shape and turquoise waters"

@@ -15,7 +15,7 @@ export default function TrincomaleeTravelGuide() {
     <main className="min-h-screen bg-background">
 
       {/* Hero Section */}
-      <section id="introduction" className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section id="introduction" className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Trinco.jpeg"
           alt="Stunning aerial view of Trincomalee showing pristine beaches, turquoise waters, and the ancient Koneswaram temple on rocky cliffs"

@@ -26,7 +26,7 @@ export default function KalpitiyaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Kalpitiya.jpeg"
           alt="Kalpitiya Peninsula showing pristine lagoon waters with dolphins jumping and kitesurfers in the background"

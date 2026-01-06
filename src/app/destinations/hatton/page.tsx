@@ -24,7 +24,7 @@ export default function HattonTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Hatton1.jpg"
           alt="Lush tea plantations and misty hills around Hatton, Sri Lanka"

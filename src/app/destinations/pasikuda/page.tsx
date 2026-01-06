@@ -104,7 +104,7 @@ export default function PasikudaTravelGuide() {
       <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} />
 
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/PasikudaCover.jpeg"
           alt="Stunning aerial view of Pasikuda beach showing pristine white sand, crystal clear shallow waters, and coral reefs"

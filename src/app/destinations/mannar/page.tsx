@@ -51,7 +51,7 @@ export default function MannarGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Mannar.jpg"
           alt="Ancient baobab trees silhouetted against sunset sky in Mannar Island with pristine landscape"
