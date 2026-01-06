@@ -96,7 +96,7 @@ export function WhatsAppWidget() {
 
         {/* Help Caption - Speech Bubble */}
         {showCaption && !isExpanded && (
-          <div className="absolute bottom-16 left-0 mb-2 animate-bounce">
+          <div className="absolute bottom-16 left-0 mb-2 animate-bounce hidden md:block">
             <div className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 px-4 py-2 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 max-w-xs relative">
               <p className="text-sm font-medium">Need help? 🤔</p>
               <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
