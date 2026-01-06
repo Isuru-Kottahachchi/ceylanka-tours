@@ -24,7 +24,7 @@ export default function GalleFortTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/galle-fort-sarmat-batagov-unsplash.jpg"
           alt="Stunning aerial view of Galle Fort showing Dutch colonial architecture surrounded by Indian Ocean waves"

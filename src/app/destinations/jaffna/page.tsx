@@ -122,7 +122,7 @@ export default function JaffnaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Nallur-Kovil.jpg"
           alt="Beautiful view of Jaffna with Dutch Fort, Nallur Temple and northern peninsula landscape"
