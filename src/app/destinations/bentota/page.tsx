@@ -108,7 +108,7 @@ export default function BentotaGuide() {
             <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} />
 
             {/* Hero Section */}
-            <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
                 <Image
                     src="/Bentota-beach.jpeg"
                     alt="Pristine Bentota beach with golden sand, turquoise waters, palm trees and luxury resorts along the coastline"
