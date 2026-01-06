@@ -402,7 +402,7 @@ export default function BuddhismInSriLanka() {
                         Sacred Buddhist Sites in Sri Lanka
                     </h2>
 
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <Card className="hover:shadow-lg transition-shadow">
                             <CardHeader>
                                 <div className="flex items-center gap-2 mb-2">
@@ -433,7 +433,7 @@ export default function BuddhismInSriLanka() {
                                             variant="secondary"
                                             className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
                                         >
-                                            Read more about Anuradhapura
+                                            Read more
                                             <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
                                         </Button>
                                     </Link>
@@ -471,7 +471,7 @@ export default function BuddhismInSriLanka() {
                                             variant="secondary"
                                             className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
                                         >
-                                            Read more about Kandy
+                                            Read more
                                             <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
                                         </Button>
                                     </Link>
@@ -504,12 +504,12 @@ export default function BuddhismInSriLanka() {
                                     <span>Anuradhapura District</span>
                                 </div>
                                  <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/mihinthale" passHref legacyBehavior>
+                                    <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
                                         <Button
                                             variant="secondary"
                                             className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
                                         >
-                                            Read more about Mihinthale
+                                            Read more
                                             <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
                                         </Button>
                                     </Link>
@@ -547,7 +547,7 @@ export default function BuddhismInSriLanka() {
                                             variant="secondary"
                                             className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
                                         >
-                                            Read more about Dambulla Cave Temple
+                                            Read more
                                             <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
                                         </Button>
                                     </Link>
