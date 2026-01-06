@@ -13,7 +13,7 @@ export default function BalangodaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Balangoda.jpeg"
           alt="Balangoda's ancient cave complexes and archaeological sites with Samanalawewa Reservoir in the background"

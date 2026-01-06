@@ -97,7 +97,7 @@ export default function ArugamBayTravelGuide() {
       {/* Beach Safety Modal */}
       <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} />
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Arugam-bay2.jpg"
           alt="Perfect surf break at Arugam Bay with surfers riding waves, palm trees, and golden beach"
