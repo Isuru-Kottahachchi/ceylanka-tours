@@ -32,7 +32,7 @@ export default function BadullaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Badulla.jpeg"
           alt="Panoramic view of Badulla city nestled in lush green mountains with ancient temples and modern buildings"
