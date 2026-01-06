@@ -10,7 +10,7 @@ export default function GadaladeniyaTemplePage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Gadaladeniya-Temple.jpg"
           alt="Panoramic view of Gadaladeniya Temple showcasing its ancient architecture"
