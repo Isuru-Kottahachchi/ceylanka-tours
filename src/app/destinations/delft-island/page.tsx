@@ -15,7 +15,7 @@ export default function DelftIslandTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Delft-Island.jpg"
           alt="Stunning panoramic view of Delft Island showing wild horses grazing near ancient baobab trees with crystal blue waters and coral stone walls"

@@ -81,6 +81,7 @@ const destinationsItems = [
     items: [
       { name: "Mirissa", href: "/destinations/mirissa" },
       { name: "Unawatuna", href: "/destinations/unawatuna" },
+      { name: "Hiriketiya", href: "/destinations/hirikatiya" },
       { name: "Hikkaduwa", href: "/destinations/hikkaduwa" },
       { name: "Waligama", href: "/destinations/waligama" },
       { name: "Bentota", href: "/destinations/bentota" },
