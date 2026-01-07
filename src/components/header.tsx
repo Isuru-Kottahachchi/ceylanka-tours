@@ -66,7 +66,7 @@ const destinationsItems = [
     hasSubmenu: true,
     items: [
       { name: "Nuwara Eliya", href: "/destinations/nuwara-eliya" },
-      { name: "Ella", href: "/destinations/ella-town" },
+      { name: "Ella", href: "/destinations/ella" },
       { name: "Hatton", href: "/destinations/hatton" },
       { name: "Badulla", href: "/destinations/badulla" },
       { name: "Balangoda", href: "/destinations/balangoda" },
