@@ -1228,7 +1228,7 @@ export default function MataleGuide() {
                   56 km from Nuwara Eliya
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/ella-town" passHref legacyBehavior>
+                  <Link href="/destinations/ella" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>

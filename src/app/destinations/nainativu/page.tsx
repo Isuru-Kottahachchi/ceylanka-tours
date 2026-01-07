@@ -23,7 +23,7 @@ export default function NainativuTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Nagadeepaya.jpg"
           alt="Nagadeepa Viharaya and Nagapooshani Amman Kovil on Nainativu Island, Sri Lanka"
@@ -69,13 +69,13 @@ export default function NainativuTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Nagadeepa (Nainativu): Island of Legends & Harmony</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Nainativu, also known as Nagadeepa, is a tiny island off the Jaffna Peninsula, revered by both Buddhists and Hindus for centuries. This sacred land is home to the Nagadeepa Purana Viharaya—one of the holiest Buddhist sites in Sri Lanka—and the vibrant Nagapooshani Amman Kovil, a major Hindu temple dedicated to the goddess Parvati. The island&apos;s unique spiritual atmosphere, where two faiths coexist peacefully, makes it a symbol of reconciliation and religious harmony in Sri Lanka.
+              Nainativu, also known as Nagadeepa, is a tiny island off the Jaffna Peninsula, revered by both Buddhists and Hindus for centuries. This sacred land is home to the Nagadeepa Purana Viharaya one of the holiest Buddhist sites in Sri Lanka and the vibrant Nagapooshani Amman Kovil, a major Hindu temple dedicated to the goddess Parvati. The island&apos;s unique spiritual atmosphere, where two faiths coexist peacefully, makes it a symbol of reconciliation and religious harmony in Sri Lanka.
             </p>
             <p className="text-lg mb-4">
               According to Buddhist chronicles, the Buddha himself visited Nagadeepa in the 6th century BCE to resolve a dispute between two Naga kings, bringing peace to the land. Today, pilgrims and travelers alike are drawn to the island&apos;s tranquil shores, ancient legends, and colorful rituals. Whether you seek spiritual solace, cultural discovery, or a glimpse into Sri Lanka&apos;s multi-faith heritage, Nainativu offers a truly unforgettable experience.
             </p>
             <p className="text-lg">
-              The journey to Nagadeepa is as memorable as the destination—crossing scenic causeways and taking a short boat ride across the Palk Strait, you&apos;ll witness the beauty of the northern lagoons and the resilience of island communities. Plan your visit to coincide with temple festivals for a vibrant display of devotion, music, and tradition.
+              The journey to Nagadeepa is as memorable as the destination crossing scenic causeways and taking a short boat ride across the Palk Strait, you&apos;ll witness the beauty of the northern lagoons and the resilience of island communities. Plan your visit to coincide with temple festivals for a vibrant display of devotion, music, and tradition.
             </p>
           </div>
         </section>
@@ -257,7 +257,7 @@ export default function NainativuTravelGuide() {
               <CardContent>
                 <ul className="list-disc pl-5 text-muted-foreground space-y-2">
                   <li>Nainativu is generally very safe for travelers, including solo visitors and families.</li>
-                  <li>Carry water, sunscreen, and a hat—shade is limited and the sun can be intense.</li>
+                  <li>Carry water, sunscreen, and a hat shade is limited and the sun can be intense.</li>
                   <li>Ferries are basic but reliable; follow crew instructions and avoid overcrowded boats.</li>
                   <li>There are a few small shops and eateries on the island, but bring snacks if you have dietary restrictions.</li>
                   <li>Photography is allowed in most areas, but always ask before photographing people or rituals.</li>
@@ -289,7 +289,7 @@ export default function NainativuTravelGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Nainativu is more than a destination—it&apos;s a living testament to Sri Lanka&apos;s spiritual diversity and resilience. Whether you come as a pilgrim or a curious traveler, the island&apos;s sacred sites, warm community, and peaceful shores will leave a lasting impression.
+                Nainativu is more than a destination it&apos;s a living testament to Sri Lanka&apos;s spiritual diversity and resilience. Whether you come as a pilgrim or a curious traveler, the island&apos;s sacred sites, warm community, and peaceful shores will leave a lasting impression.
               </p>
               <p className="text-muted-foreground font-medium">
                 Plan your journey to Nagadeepa and discover the harmony of faiths at the heart of the northern seas.

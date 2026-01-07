@@ -22,7 +22,7 @@ export default function LovamahapayaGuide() {
 	return (
 		<main className="min-h-screen bg-background">
 			{/* Hero Section */}
-			<section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+			<section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
 				<Image
 					src="/Lovamahapaya.jpeg"
 					alt="Lovamahapaya stone pillars at Anuradhapura, Sri Lanka, under blue sky"

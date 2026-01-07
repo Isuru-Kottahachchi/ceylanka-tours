@@ -26,7 +26,7 @@ export default function PattipolaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/pattipola-station.jpg"
+          src="/Pattipola.jpg"
           alt="Historic Pattipola Railway Station with misty mountains in the background"
           fill
           className="object-cover"

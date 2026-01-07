@@ -375,7 +375,7 @@ const destinations = [
     id: 24,
     name: "Ella",
     location: "Uva Province",
-    path: "/ella-town",
+    path: "/ella",
     image: "/Ella.jpg",
     // rating: 4.3,
     // reviews: 890,
