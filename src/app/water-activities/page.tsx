@@ -65,10 +65,10 @@ const waterActivities = [
         name: "Surfing",
         locations: ["Arugam Bay", "Mirissa", "Hikkaduwa", "Weligama"],
         images: [
-            { src: "/surfing-arugam-bay.jpg", title: "Perfect Waves at Arugam Bay" },
-            { src: "/Mirissa.jpg", title: "Mirissa Beach Surfing" },
-            { src: "/surfing-hikkaduwa.jpg", title: "Hikkaduwa Surf Break" },
-            { src: "/weligama-surf.jpg", title: "Weligama Bay Surfing" }
+            { src: "/Surfing-At-Arugambay-Main-Point.jpg", title: "Perfect Waves at Arugam Bay" },
+            { src: "/Waligama-Surfing1.jpg", title: "Hikkaduwa Surf Break" },
+            { src: "/Surfing-At-Arugambay-Main-Point4.jpg", title: "Arugam Bay Surfing" },
+            { src: "/Waligama-Surfing.jpg", title: "Waligama Beach Surfing" },
         ],
         bestTime: "April to October (East), November to March (South/West)",
         difficulty: "Beginner to Expert",
@@ -129,7 +129,6 @@ const waterActivities = [
             { src: "/Scruba-diving.jpeg", title: "Scuba diving in Sri Lanka" },
             { src: "/Scruba-diving2.jpeg", title: "" },
             { src: "/Scruba-diving3.jpeg", title: "Vibrant Marine Life" },
-            { src: "/Scruba-diving.jpeg", title: "Bar Reef Diving" }
         ],
         bestTime: "November to April (South/West), April to September (East)",
         difficulty: "Beginner to Advanced",
@@ -175,10 +174,10 @@ const waterActivities = [
         name: "Snorkeling",
         locations: ["Hikkaduwa", "Unawatuna", "Pigeon Island", "Kalpitiya"],
         images: [
-            { src: "/snorkeling-pigeon-island.jpg", title: "Pigeon Island Marine Park" },
-            { src: "/snorkeling-hikkaduwa.jpg", title: "Coral Sanctuary Hikkaduwa" },
-            { src: "/tropical-fish.jpg", title: "Colorful Tropical Fish" },
-            { src: "/coral-garden.jpg", title: "Pristine Coral Gardens" }
+            { src: "/Snorkling-in-sri-lanka.jpg", title: "Snorkling in Sri Lanka @b_adventures1" },
+            { src: "/Snorkling-in-sri-lanka3.jpg", title: "Snorkling in Sri Lanka" },
+            { src: "/Snorkling-in-sri-lanka2.jpg", title: "Snorkling in Sri Lanka" },
+            { src: "/Snorkling-in-sri-lanka1.jpg", title: "Snorkling in Sri Lanka" },
         ],
         bestTime: "November to April (South/West), May to September (East)",
         difficulty: "Beginner to Intermediate",
@@ -218,10 +217,12 @@ const waterActivities = [
         name: "Windsurfing & Kitesurfing",
         locations: ["Bentota", "Kalpitiya", "Negombo"],
         images: [
-            { src: "/windsurfing-bentota.jpg", title: "Windsurfing at Bentota Lagoon" },
-            { src: "/kitesurfing-kalpitiya.jpg", title: "Kitesurfing Paradise Kalpitiya" },
-            { src: "/wind-sports.jpg", title: "Perfect Wind Conditions" },
-            { src: "/lagoon-windsurfing.jpg", title: "Shallow Lagoon Training" }
+            { src: "/Wind-kite-surfing3.jpg", title: "Shallow Lagoon Training" },
+            { src: "/Wind-kite-surfing.jpg", title: "Windsurfing at Bentota Lagoon" },
+            { src: "/Wind-kite-surfing1.jpg", title: "Kitesurfing Paradise Kalpitiya" },
+            { src: "/Wind-kite-surfing2.jpg", title: "Perfect Wind Conditions" },
+            { src: "/Wind-kite-surfing4.jpg", title: "Kitesurfing Adventure" },
+
         ],
         bestTime: "November to March (West), May to September (East)",
         difficulty: "Intermediate to Advanced",
@@ -500,7 +501,7 @@ export default function WaterActivitiesPage() {
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
             {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-blue-900 via-cyan-800 to-teal-700 text-white py-20">
+            <section className="relative h-[50vh] flex items-center justify-center bg-gradient-to-br from-blue-900 via-cyan-800 to-teal-700 text-white">
                 <div className="absolute inset-0 bg-black/30"></div>
                 <div className="relative container mx-auto px-4 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">

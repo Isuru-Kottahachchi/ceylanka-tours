@@ -366,31 +366,31 @@ export default function ArugamBayTravelGuide() {
                       {
                         src: "/Surfing-At-Arugambay-Main-Point1.jpg",
                         alt: "Surfer riding a wave at Arugam Bay Main Point",
-                        caption: "Arugam Bay Main Point @@photosbyprifti",
+                        caption: "Arugam Bay Main Point @photosbyprifti",
                         title: "Arugam Bay Main Point"
                       },
                       {
                         src: "/Surfing-At-Arugambay-Main-Point2.jpg",
                         alt: "Surfer riding a wave at Arugam Bay Main Point",
-                        caption: "Arugam Bay Main Point @@photosbyprifti",
+                        caption: "Arugam Bay Main Point @photosbyprifti",
                         title: "Arugam Bay Main Point"
                       },
                       {
                         src: "/Surfing-At-Arugambay-Main-Point3.jpg",
                         alt: "Surfer riding a wave at Arugam Bay Main Point",
-                        caption: "Arugam Bay Main Point @@photosbyprifti",
+                        caption: "Arugam Bay Main Point @photosbyprifti",
                         title: "Arugam Bay Main Point"
                       },
                       {
                         src: "/Surfing-At-Arugambay-Main-Point4.jpg",
                         alt: "Surfer riding a wave at Arugam Bay Main Point",
-                        caption: "Arugam Bay Main Point @@photosbyprifti",
+                        caption: "Arugam Bay Main Point @photosbyprifti",
                         title: "Arugam Bay Main Point"
                       },
                       {
                         src: "/Surfing-At-Arugambay-Main-Point5.jpg",
                         alt: "Surfer riding a wave at Arugam Bay Main Point",
-                        caption: "Arugam Bay Main Point @@photosbyprifti",
+                        caption: "Arugam Bay Main Point @photosbyprifti",
                         title: "Arugam Bay Main Point"
                       },
 
