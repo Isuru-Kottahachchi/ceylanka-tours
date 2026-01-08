@@ -256,10 +256,8 @@ const waterActivities = [
         name: "Jet Skiing",
         locations: ["Bentota", "Negombo", "Mount Lavinia"],
         images: [
-            { src: "/jet-skiing-bentota.jpg", title: "High-Speed Adventure Bentota" },
-            { src: "/jet-ski-negombo.jpg", title: "Ocean Riding at Negombo" },
-            { src: "/mangrove-jet-ski.jpg", title: "Mangrove Channel Exploration" },
-            { src: "/jet-ski-sunset.jpg", title: "Sunset Jet Skiing" }
+            { src: "/Jetski-srilanka.jpg", title: "High-Speed Adventure Bentota" },
+            { src: "/Jetski-srilanka1.jpg", title: "Ocean Riding at Negombo" },
         ],
         bestTime: "November to April",
         difficulty: "Beginner to Intermediate",
@@ -293,9 +291,8 @@ const waterActivities = [
         name: "Leisure World Water Park",
         locations: ["Kaluaggala, Hanwella"],
         images: [
-            { src: "/leisure-world-main.jpg", title: "Leisure World Main Pool" },
-            { src: "/leisure-world-slides.jpg", title: "Exciting Water Slides" },
-            { src: "/leisure-world-wavepool.jpg", title: "Wave Pool Fun" }
+            { src: "/Leisure-world-sl.jpeg", title: "Leisure World" },
+            { src: "/Leisure-world-sl1.jpeg", title: "" },
         ],
         bestTime: "Year-round",
         difficulty: "All Ages",
@@ -322,9 +319,8 @@ const waterActivities = [
         name: "Pearl Bay Water Park",
         locations: ["Bandaragama"],
         images: [
-            { src: "/pearl-bay-main.jpg", title: "Pearl Bay Main Entrance" },
-            { src: "/pearl-bay-slides.jpg", title: "Giant Water Slides" },
-            { src: "/pearl-bay-wavepool.jpg", title: "Wave Pool Adventure" }
+            { src: "/Pearl-bay-srilanka.jpg", title: "Pearl Bay" },
+            { src: "/Pearl-bay-srilanka1.jpg", title: "Pearl Bay" },
         ],
         bestTime: "Year-round",
         difficulty: "All Ages",
