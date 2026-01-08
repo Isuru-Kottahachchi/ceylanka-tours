@@ -27,7 +27,7 @@ export default function NissankaLathaMandapayaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Nishshankalatha-mandapaya.jpg"
           alt="The ancient stone pillars of Nissanka Latha Mandapaya showing intricate lotus carvings in Anuradhapura"

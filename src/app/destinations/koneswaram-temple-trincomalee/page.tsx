@@ -27,7 +27,7 @@ export default function KoneswaramTempleGuide() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center">
+      <section className="relative h-[50vh] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
             src="/Koneshwaram.jpeg"

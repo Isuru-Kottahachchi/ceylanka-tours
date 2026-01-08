@@ -138,21 +138,6 @@ export default function EllaTownGuide() {
                   </div>
                   {/* Valuable Fact for Desktop */}
                   <div className="hidden lg:block mt-6 space-y-4">
-                    <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
-                      <Image
-                        src="/Gregory_Lake.jpg"
-                        alt="Ancient reservoir in Ella town, Sri Lanka"
-                        width={120}
-                        height={80}
-                        className="rounded shadow-md object-cover"
-                      />
-                      <div>
-                        <p className="text-base text-blue-900 font-semibold mb-1">Cold climate with scenic views</p>
-                        <p className="text-sm text-blue-800">
-                          Ella
-                        </p>
-                      </div>
-                    </div>
                     <div className="flex gap-8">
                       <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                         <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
