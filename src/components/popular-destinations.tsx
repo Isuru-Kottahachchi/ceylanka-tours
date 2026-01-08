@@ -47,7 +47,7 @@ const destinations = [
   {
     id: 4,
     name: "Ella Town",
-    path: "ella-town",
+    path: "ella",
     location: "Uva Province",
     image: "/Nine-arch-ella.jpg",
     rating: 4.6,

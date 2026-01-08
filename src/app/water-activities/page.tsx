@@ -218,10 +218,10 @@ const waterActivities = [
         locations: ["Bentota", "Kalpitiya", "Negombo"],
         images: [
             { src: "/Wind-kite-surfing3.jpg", title: "Shallow Lagoon Training" },
+            { src: "/Wind-kite-surfing4.jpg", title: "Kitesurfing Adventure" },
             { src: "/Wind-kite-surfing.jpg", title: "Windsurfing at Bentota Lagoon" },
             { src: "/Wind-kite-surfing1.jpg", title: "Kitesurfing Paradise Kalpitiya" },
             { src: "/Wind-kite-surfing2.jpg", title: "Perfect Wind Conditions" },
-            { src: "/Wind-kite-surfing4.jpg", title: "Kitesurfing Adventure" },
 
         ],
         bestTime: "November to March (West), May to September (East)",
