@@ -318,7 +318,7 @@ export default function MawanellaTravelGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Saradiyel-Village.jpg"
                     alt="Saradiyel Gammanaya historic site showing jungle caves and pathways where the bandit hid"
                     width={400}
                     height={300}

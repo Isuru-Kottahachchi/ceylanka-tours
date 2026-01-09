@@ -28,7 +28,7 @@ export default function TrainJourneysGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Nine-arch-ella.jpg"
           alt="Scenic train crossing the famous Nine Arch Bridge in Ella, Sri Lanka surrounded by lush green tea plantations"
@@ -1097,7 +1097,7 @@ export default function TrainJourneysGuide() {
                 <p className="text-sm text-muted-foreground mb-3">
                   Mountain town famous for Little Adam&apos;s Peak, Nine Arch Bridge, and stunning tea plantation views.
                 </p>
-                <Link href="/destinations/ella-town" className="text-blue-600 hover:underline text-sm">
+                <Link href="/destinations/ella" className="text-blue-600 hover:underline text-sm">
                   Explore Ella →
                 </Link>
               </CardContent>
