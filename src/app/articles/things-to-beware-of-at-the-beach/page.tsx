@@ -6,113 +6,41 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { useState } from "react"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-// Image carousel component
-function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
-    const [currentIndex, setCurrentIndex] = useState(0)
-
-    const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }
-
-    const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-    }
-
-    const goToImage = (index: number) => {
-        setCurrentIndex(index)
-    }
-
-    return (
-        <div className="relative">
-            <div className="relative overflow-hidden rounded-lg h-[250px] md:h-[300px] sm:h-[200px] flex items-center justify-center">
-                <Image
-                    src={images[currentIndex] || "/placeholder.svg"}
-                    alt={`${alt} - Image ${currentIndex + 1}`}
-                    width={400}
-                    height={300}
-                    className="rounded-lg transition-all duration-300 object-cover w-full h-full"
-                />
-
-                {/* Navigation buttons */}
-                {images.length > 1 && (
-                    <>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-                            onClick={prevImage}
-                        >
-                            <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-                        </Button>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-                            onClick={nextImage}
-                        >
-                            <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-                        </Button>
-                    </>
-                )}
-            </div>
-
-            {/* Dots indicator */}
-            {images.length > 1 && (
-                <div className="flex justify-center mt-3 space-x-2">
-                    {images.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => goToImage(index)}
-                            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-                                }`}
-                        />
-                    ))}
-                </div>
-            )}
-
-            {/* Image counter */}
-            {images.length > 1 && (
-                <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-                    {currentIndex + 1} / {images.length}
-                </div>
-            )}
-        </div>
-    )
-}
 
 export default function BeachSafetyGuide() {
     // Define images for dangerous sea creatures
     const lionFishImages = [
-        "/Lionfish.jpeg",
-        "/Lionfish.jpg",
-        "/Lionfish1.jpeg",
+        { src: "/Lionfish.jpeg", alt: "Lion Fish with distinctive striped pattern" },
+        { src: "/Lionfish.jpg", alt: "Lion Fish showing venomous spines" },
+        { src: "/Lionfish1.jpeg", alt: "Lion Fish in natural habitat" },
     ]
 
     const stoneFishImages = [
-        "/Stonefish.jpg",
-        "/Stonefish1.jpg",
+        { src: "/Stonefish.jpg", alt: "Stone Fish camouflaged on reef" },
+        { src: "/Stonefish1.jpg", alt: "Stone Fish showing rocky texture" },
     ]
 
     const jellyfishImages = [
-        "/placeholder.svg?height=300&width=400&text=Box+Jellyfish",
-        "/placeholder.svg?height=300&width=400&text=Moon+Jellyfish",
-        "/placeholder.svg?height=300&width=400&text=Jellyfish+Tentacles",
-        "/placeholder.svg?height=300&width=400&text=Jellyfish+Beach+Warning"
+        { src: "/placeholder.svg?height=300&width=400&text=Box+Jellyfish", alt: "Box Jellyfish" },
+        { src: "/placeholder.svg?height=300&width=400&text=Moon+Jellyfish", alt: "Moon Jellyfish" },
+        { src: "/placeholder.svg?height=300&width=400&text=Jellyfish+Tentacles", alt: "Jellyfish Tentacles" },
+        { src: "/placeholder.svg?height=300&width=400&text=Jellyfish+Beach+Warning", alt: "Jellyfish Beach Warning" }
     ]
 
     const seaSnakeImages = [
-        "/placeholder.svg?height=300&width=400&text=Sea+Snake+Swimming",
-        "/placeholder.svg?height=300&width=400&text=Sea+Snake+Banded+Pattern",
-        "/placeholder.svg?height=300&width=400&text=Sea+Snake+Surface+Breathing",
-        "/placeholder.svg?height=300&width=400&text=Sea+Snake+Size+Comparison"
+        { src: "/placeholder.svg?height=300&width=400&text=Sea+Snake+Swimming", alt: "Sea Snake Swimming" },
+        { src: "/placeholder.svg?height=300&width=400&text=Sea+Snake+Banded+Pattern", alt: "Sea Snake Banded Pattern" },
+        { src: "/placeholder.svg?height=300&width=400&text=Sea+Snake+Surface+Breathing", alt: "Sea Snake Surface Breathing" },
+        { src: "/placeholder.svg?height=300&width=400&text=Sea+Snake+Size+Comparison", alt: "Sea Snake Size Comparison" }
     ]
 
     const seaUrchinImages = [
-        "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Spines",
-        "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Rock+Pool",
-        "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Black+Spines",
-        "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Foot+Injury"
+        { src: "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Spines", alt: "Sea Urchin Spines" },
+        { src: "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Rock+Pool", alt: "Sea Urchin in Rock Pool" },
+        { src: "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Black+Spines", alt: "Sea Urchin Black Spines" },
+        { src: "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Foot+Injury", alt: "Sea Urchin Foot Injury" }
     ]
 
     return (
@@ -196,12 +124,12 @@ export default function BeachSafetyGuide() {
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <Image
-                                            src="/placeholder.svg?height=300&width=400&text=Rip+Current+Diagram"
-                                            alt="Diagram showing how rip currents pull swimmers away from beach"
-                                            width={400}
-                                            height={300}
-                                            className="rounded-lg"
+                                        <ImageCarousel  
+                                            images={[
+                                                { src: "/RIP-current.jpg", alt: "Rip Current Diagram" },
+                                                { src: "/RIP-current1.jpg", alt: "Rip Current Foam Line" },
+                                                { src: "/RIP-current2.jpg", alt: "Rip Current Wave Gap" },
+                                            ]}
                                         />
                                     </div>
                                     <div>
@@ -243,7 +171,7 @@ export default function BeachSafetyGuide() {
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <Image
-                                            src="/placeholder.svg?height=300&width=400&text=Cross+Sea+Waves"
+                                            src="/Cross-sea.jpg"
                                             alt="Cross sea wave pattern showing waves from multiple directions"
                                             width={400}
                                             height={300}
@@ -473,7 +401,6 @@ export default function BeachSafetyGuide() {
                                     <div className="grid md:grid-cols-2 gap-6">
                                         <ImageCarousel
                                             images={lionFishImages}
-                                            alt="Lion Fish identification showing different views and characteristics"
                                         />
                                         <div>
                                             <h4 className="font-semibold mb-3 text-orange-800 dark:text-orange-300">How to Identify Lion Fish:</h4>
@@ -509,8 +436,7 @@ export default function BeachSafetyGuide() {
                                 <CardContent>
                                     <div className="grid md:grid-cols-2 gap-6">
                                         <ImageCarousel
-                                            images={stoneFishImages}
-                                            alt="Stone Fish camouflaged on reef showing how they hide among rocks and coral"
+                                            images={stoneFishImages}                                         
                                         />
                                         <div>
                                             <h4 className="font-semibold mb-3 text-red-800 dark:text-red-300">How to Identify Stone Fish:</h4>
@@ -546,8 +472,7 @@ export default function BeachSafetyGuide() {
                                 <CardContent>
                                     <div className="grid md:grid-cols-2 gap-6">
                                         <ImageCarousel
-                                            images={jellyfishImages}
-                                            alt="Different types of jellyfish found in Sri Lankan waters"
+                                            images={jellyfishImages}                                         
                                         />
                                         <div>
                                             <h4 className="font-semibold mb-3 text-purple-800 dark:text-purple-300">How to Identify Jellyfish:</h4>
@@ -584,7 +509,6 @@ export default function BeachSafetyGuide() {
                                     <div className="grid md:grid-cols-2 gap-6">
                                         <ImageCarousel
                                             images={seaSnakeImages}
-                                            alt="Sea snakes showing banded patterns and swimming behavior"
                                         />
                                         <div>
                                             <h4 className="font-semibold mb-3 text-blue-800 dark:text-blue-300">How to Identify Sea Snakes:</h4>
@@ -621,7 +545,6 @@ export default function BeachSafetyGuide() {
                                     <div className="grid md:grid-cols-2 gap-6">
                                         <ImageCarousel
                                             images={seaUrchinImages}
-                                            alt="Sea urchins showing dangerous spines and typical hiding spots"
                                         />
                                         <div>
                                             <h4 className="font-semibold mb-3 text-gray-800 dark:text-gray-300">How to Identify Sea Urchins:</h4>
