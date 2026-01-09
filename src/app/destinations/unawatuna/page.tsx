@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/badge"
 import { ImageCarousel } from "@/components/ui/image-carousel"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { BeachSafetyModal } from "@/components/beach-safety-modal"
+import { useEffect, useState } from "react"
 
 export default function UnawatunaTravelGuide() {
     const beachImages = [
@@ -26,8 +28,24 @@ export default function UnawatunaTravelGuide() {
         { src: "/Unawatuna1.jpg", caption: "Japanese Peace Pagoda", alt: "Japanese Peace Pagoda overlooking Unawatuna" },
     ];
 
+    const [showSafetyModal, setShowSafetyModal] = useState(false)
+
+    // Show modal after page loads
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowSafetyModal(true)
+        }, 1500) // Show after 1.5 seconds
+
+        return () => clearTimeout(timer)
+    }, [])
+
+    const handleCloseModal = () => {
+        setShowSafetyModal(false)
+    }
+
     return (
         <main className="min-h-screen bg-background">
+            <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} beachName={"Unawatuna"} />
             {/* Hero Section */}
             <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
                 <Image

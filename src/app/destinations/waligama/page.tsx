@@ -7,11 +7,29 @@ import { Badge } from "@/components/ui/badge"
 import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { BeachSafetyModal } from "@/components/beach-safety-modal"
+import { useEffect, useState } from "react"
 
 
 export default function WeligamaTravelGuide() {
+  const [showSafetyModal, setShowSafetyModal] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSafetyModal(true)
+    }, 1500) // Show after 1.5 seconds
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  const handleCloseModal = () => {
+    setShowSafetyModal(false)
+  }
+
+
   return (
     <main className="min-h-screen bg-background">
+      <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} beachName={"Weligama"} />
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
@@ -213,22 +231,22 @@ export default function WeligamaTravelGuide() {
               </div>
             </div>
             <div>
-               <ImageCarousel
-                    images={[
-                      {
-                        src: "/Waligama-Surfing.jpg",
-                        alt: "Surfing lessons at Weligama Bay with beginner surfers learning on gentle waves with instructor guidance",
-                        caption: "Surfing lessons at Weligama Bay, PC @lenzo_",
-                        title: "Weligama Bay Surfing"
-                      },
-                      {
-                        src: "/Waligama-Surfing1.jpg",
-                        alt: "Surfing lessons at Weligama Bay with beginner surfers learning on gentle waves with instructor guidance",
-                        caption: "Surfing lessons at Weligama Bay",
-                        title: "Weligama Bay Surfing"
-                      },
-                    ]}
-                  />
+              <ImageCarousel
+                images={[
+                  {
+                    src: "/Waligama-Surfing.jpg",
+                    alt: "Surfing lessons at Weligama Bay with beginner surfers learning on gentle waves with instructor guidance",
+                    caption: "Surfing lessons at Weligama Bay, PC @lenzo_",
+                    title: "Weligama Bay Surfing"
+                  },
+                  {
+                    src: "/Waligama-Surfing1.jpg",
+                    alt: "Surfing lessons at Weligama Bay with beginner surfers learning on gentle waves with instructor guidance",
+                    caption: "Surfing lessons at Weligama Bay",
+                    title: "Weligama Bay Surfing"
+                  },
+                ]}
+              />
               <p className="text-sm text-muted-foreground mt-2 italic">
                 Weligama Bay: Sri Lanka&apos;s premier beginner-friendly surf destination
               </p>
@@ -423,46 +441,46 @@ export default function WeligamaTravelGuide() {
               </CardContent>
             </Card>
 
-        {/* Stilt Fishermen */}
-        <section className="mb-12 scroll-mt-24" id="stilt-fishermen">
-          <h2 className="text-3xl font-bold mb-6">World-Famous Stilt Fishermen Tradition</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-            <div>
-              <Image
-                src="/Stilt-fishing.jpg"
-                alt="Traditional stilt fishermen of Weligama balancing on wooden poles in shallow coral reef waters during golden hour sunset"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                Stilt fishing: A centuries-old tradition unique to this region
-              </p>
-            </div>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                Weligama is home to one of the world&apos;s most unique and photogenic fishing traditions. The iconic stilt fishermen perch gracefully on tall wooden stilts
-                driven deep into the coral reef, fishing with simple rods in a technique passed down through generations since World War II. This remarkable method was originally
-                developed to fish in the best spots without disturbing other fishermen or damaging the delicate coral ecosystem.
-              </p>
-              <p>
-                The best time to witness this fascinating tradition is during early morning (6-8 AM) or late afternoon (4-6 PM) when
-                the fishermen are most active and the golden light creates perfect photography conditions. This practice has become one of Sri Lanka&apos;s most photographed cultural experiences,
-                representing the harmony between humans and nature that defines coastal Sri Lankan life.
-              </p>
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-blue-800 mb-2">Photography & Etiquette Tips:</h4>
-                <ul className="text-sm text-blue-700 space-y-1">
-                  <li>• Visit during golden hour (6-8 AM or 4-6 PM) for best lighting</li>
-                  <li>• Always ask permission before photographing - respect is key</li>
-                  <li>• Small tip (500-1000 LKR) is appreciated and expected</li>
-                  <li>• Best viewing spots along Weligama Bay main beach road</li>
-                  <li>• Don&apos;t disturb the fishermen while they&apos;re working</li>
-                </ul>
+            {/* Stilt Fishermen */}
+            <section className="mb-12 scroll-mt-24" id="stilt-fishermen">
+              <h2 className="text-3xl font-bold mb-6">World-Famous Stilt Fishermen Tradition</h2>
+              <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+                <div>
+                  <Image
+                    src="/Stilt-fishing.jpg"
+                    alt="Traditional stilt fishermen of Weligama balancing on wooden poles in shallow coral reef waters during golden hour sunset"
+                    width={600}
+                    height={400}
+                    className="rounded-lg shadow-lg"
+                  />
+                  <p className="text-sm text-muted-foreground mt-2 italic">
+                    Stilt fishing: A centuries-old tradition unique to this region
+                  </p>
+                </div>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Weligama is home to one of the world&apos;s most unique and photogenic fishing traditions. The iconic stilt fishermen perch gracefully on tall wooden stilts
+                    driven deep into the coral reef, fishing with simple rods in a technique passed down through generations since World War II. This remarkable method was originally
+                    developed to fish in the best spots without disturbing other fishermen or damaging the delicate coral ecosystem.
+                  </p>
+                  <p>
+                    The best time to witness this fascinating tradition is during early morning (6-8 AM) or late afternoon (4-6 PM) when
+                    the fishermen are most active and the golden light creates perfect photography conditions. This practice has become one of Sri Lanka&apos;s most photographed cultural experiences,
+                    representing the harmony between humans and nature that defines coastal Sri Lankan life.
+                  </p>
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-800 mb-2">Photography & Etiquette Tips:</h4>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Visit during golden hour (6-8 AM or 4-6 PM) for best lighting</li>
+                      <li>• Always ask permission before photographing - respect is key</li>
+                      <li>• Small tip (500-1000 LKR) is appreciated and expected</li>
+                      <li>• Best viewing spots along Weligama Bay main beach road</li>
+                      <li>• Don&apos;t disturb the fishermen while they&apos;re working</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
+            </section>
             {/* Local Fish Market */}
             <Card>
               <CardHeader>
@@ -524,7 +542,7 @@ export default function WeligamaTravelGuide() {
           </div>
         </section>
 
-        
+
 
         {/* Local Cuisine & Seafood */}
         <section className="mb-12">
