@@ -28,7 +28,7 @@ export function BeachSafetyModal({
             // Start exit animation
             setIsAnimating(false)
             // Remove from DOM after animation
-            const timeout = setTimeout(() => setShouldRender(false), 300)
+            const timeout = setTimeout(() => setShouldRender(false), 500)
             return () => clearTimeout(timeout)
         }
     }, [isOpen])
@@ -42,11 +42,10 @@ export function BeachSafetyModal({
             className={`fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 transition-opacity duration-300 ${
                 isAnimating ? 'opacity-100' : 'opacity-0'
             }`}
-            onClick={onClose}
         >
             <div 
-                className={`bg-white dark:bg-gray-800 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto transition-all duration-300 ${
-                    isAnimating ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-4'
+                className={`bg-white dark:bg-gray-800 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto transition-all duration-500 ${
+                    isAnimating ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 -translate-y-12'
                 }`}
                 onClick={(e) => e.stopPropagation()}
             >

@@ -10,71 +10,8 @@ import { X, AlertTriangle, Shield } from "lucide-react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { ImageCarousel } from "@/components/ui/image-carousel"
-function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
-  if (!isOpen) return null
+import { BeachSafetyModal } from "@/components/beach-safety-modal"
 
-  return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white dark:bg-gray-800 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
-        <div className="relative p-6">
-          {/* Close button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-2 top-2 h-8 w-8 cursor-pointer"
-            onClick={onClose}
-          >
-            <X className="h-4 w-4" />
-          </Button>
-
-          {/* Modal content */}
-          <div className="text-center space-y-4">
-            <div className="flex justify-center">
-              <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full">
-                <Waves className="h-8 w-8 text-blue-600" />
-              </div>
-            </div>
-            <h2 className="text-2xl font-bold text-foreground">Stay Safe at Arugam Bay!</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Before you enjoy Arugam Bay&apos;&s world-famous surf and beaches, please review these important safety tips for the east coast, including seasonal currents, wildlife, and emergency contacts.
-            </p>
-            <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg p-4">
-              <div className="flex items-center gap-2 mb-2">
-                <AlertTriangle className="h-5 w-5 text-orange-600" />
-                <h3 className="font-semibold text-orange-800 dark:text-orange-400">Key Safety Topics:</h3>
-              </div>
-              <ul className="text-sm text-orange-700 dark:text-orange-300 space-y-1 text-left">
-                <li>• Strong rip currents, especially during surf season (Apr-Oct)</li>
-                <li>• Monsoon and storm safety (Nov-Mar)</li>
-                <li>• Surf etiquette and board safety</li>
-                <li>• Jellyfish, sea urchins, and wildlife awareness</li>
-                <li>• Emergency procedures and local contacts</li>
-              </ul>
-            </div>
-            <div className="space-y-3">
-              <a href="/articles/things-to-beware-of-at-the-beach">
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer transition-colors flex items-center justify-center">
-                  <Shield className="w-4 h-4 mr-2" />
-                  Read Complete Beach Safety Guide
-                </Button>
-              </a>
-              <Button
-                variant="outline"
-                className="w-full cursor-pointer"
-                onClick={onClose}
-              >
-                Continue to Arugam Bay Page
-              </Button>
-            </div>
-            <p className="text-xs text-muted-foreground">
-              Your safety is our priority. Please review these tips for a safe and enjoyable visit!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 export default function ArugamBayTravelGuide() {
   // Beach Safety Modal State
@@ -95,7 +32,7 @@ export default function ArugamBayTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Beach Safety Modal */}
-      <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} />
+      <BeachSafetyModal isOpen={showSafetyModal} onClose={handleCloseModal} beachName={"Arugam Bay"} />
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image

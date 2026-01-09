@@ -280,7 +280,7 @@ const [showSafetyModal, setShowSafetyModal] = useState(false)
          <BeachSafetyModal 
                 isOpen={showSafetyModal} 
                 onClose={handleCloseModal}
-                beachName=" Beach"
+                beachName="Sri Lankan Beach"
             />
       {/* Hero Header */}
       <section className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white py-16 lg:py-24">

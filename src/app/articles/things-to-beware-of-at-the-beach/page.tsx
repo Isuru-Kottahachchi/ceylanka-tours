@@ -221,7 +221,7 @@ export default function BeachSafetyGuide() {
                                         </ul>
                                         <Alert className="border-red-400 bg-red-100 dark:bg-red-950/40 dark:border-red-600">
                                             <AlertDescription className="text-red-800 dark:text-red-300 text-sm">
-                                                <strong>If caught in rip current:</strong> Don&apos;t panic! Don&apos;t try to swim straight back.
+                                                <strong>If caught in rip current:</strong> Don&apos;t panic! Don&apos;t try to swim straight back.You will be exhausted within minutes.Current is too strong.
                                                 Swim parallel to shore until you escape, then swim back at an angle.
                                             </AlertDescription>
                                         </Alert>
