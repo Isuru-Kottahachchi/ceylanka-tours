@@ -337,8 +337,41 @@ export default function AdamsPeakTravelGuide() {
         {/* Climbing Routes */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Climbing Routes to the Summit</h2>
-          Don&apos;t worry there are a few rest houses whuch is called ambalamas along the way where you can take a break and have some tea and snacks. Thease Ambalsm are run by local villagers and they will be very happy to help you out and you will find diffrenet Ambalams accorddingto the route you take.
-          You can see some Special points Like SeethaGangula, Idikatu paana, Haramiti paana, like special points along the way. Each and every points related a some story from Buddhas hike to the summit.
+          
+          <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+            <h3 className="text-xl font-semibold mb-4 text-blue-900 dark:text-blue-100">Three Main Routes to Sri Pada</h3>
+            <p className="text-muted-foreground mb-4">
+              There are three primary routes to reach the sacred summit, each offering unique experiences and challenges:
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 mb-4">
+              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+                <h4 className="font-semibold text-green-700 dark:text-green-400 mb-2">1. Hatton Nallathanniya Route</h4>
+                <p className="text-sm text-muted-foreground mb-1"><strong>Distance:</strong> 5-6 km (Shortest)</p>
+                <p className="text-sm text-muted-foreground">Most popular and well-developed path with facilities</p>
+              </div>
+              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+                <h4 className="font-semibold text-blue-700 dark:text-blue-400 mb-2">2. Ratnapura Palabaddala (Raja Mawatha)</h4>
+                <p className="text-sm text-muted-foreground mb-1"><strong>Distance:</strong> Around 8.5 km</p>
+                <p className="text-sm text-muted-foreground">The route believed to be taken by Lord Buddha</p>
+              </div>
+              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+                <h4 className="font-semibold text-orange-700 dark:text-orange-400 mb-2">3. Kuruwita Erantha Route</h4>
+                <p className="text-sm text-muted-foreground mb-1"><strong>Distance:</strong> 12-13 km (Longest)</p>
+                <p className="text-sm text-muted-foreground">Challenging wilderness route through dense forest</p>
+              </div>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              <strong>Note:</strong> In addition to these main routes, there are several sub-routes such as Sadagala Thanna and others, though they are less commonly used and may require experienced guides.
+            </p>
+          </div>
+
+          <p className="text-muted-foreground mb-6">
+            Don&apos;t worry - there are rest houses called ambalamas along the way where you can take a break and have some tea and snacks. These ambalamas are run by local villagers who will be very happy to help you out, and you will find different ambalamas according to the route you take.
+          </p>
+          
+          <p className="text-muted-foreground mb-6">
+            You can see special points like Seetha Gangula, Idikatu Paana, Haramithi Paana, and other landmarks along the way. Each and every point is related to a story from Buddha&apos;s hike to the summit.
+          </p>
 
           {/* Sacred Points Along Buddha's Journey */}
           <div className="my-8">
