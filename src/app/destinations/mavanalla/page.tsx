@@ -27,7 +27,7 @@ export default function MawanellaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1600"
+          src="/Mawanalla.jpg"
           alt="Scenic view of Mawanella town nestled in lush green hills with railway line and Kadugannawa pass"
           fill
           className="object-cover"
@@ -73,7 +73,7 @@ export default function MawanellaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Mawanella: The Scenic Stopover Town</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Nestled in the verdant hills of Sri Lanka&apos;s Central Province, Mawanella is a charming town that serves as a perfect stopover between the bustling capital of Colombo and the cultural heart of Kandy. Located approximately 90 kilometers from Colombo along the historic Colombo-Kandy road, this picturesque town offers travelers a delightful blend of natural beauty, local industry, and authentic Sri Lankan culture.
+              Nestled in the verdant hills of Sri Lanka&apos;s Sabaragamuwa Province, Mawanella is a charming town that serves as a perfect stopover between the bustling capital of Colombo and the cultural heart of Kandy. Located approximately 90 kilometers from Colombo along the historic Colombo-Kandy road, this picturesque town offers travelers a delightful blend of natural beauty, local industry, and authentic Sri Lankan culture.
             </p>
             <p className="text-lg mb-4">
               Mawanella is best known for its sacred hilltop temples like Uthuwankanda, the legendary history of Saradiel the bandit, impressive natural landmarks like Bible Rock (Bathalegala), and pristine forest reserves perfect for hiking and nature exploration. The town sits at an elevation where the plains meet the hills, creating a unique landscape of rolling green hills, rubber plantations, and tropical forests that captivate visitors throughout the year.
@@ -139,7 +139,7 @@ export default function MawanellaTravelGuide() {
                 <div className="hidden lg:block mt-6 space-y-4">
                   <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
                     <Image
-                      src="/placeholder.svg?height=80&width=120"
+                      src="/Uthuwankanda.jpg"
                       alt="Uthuwankanda temple on hilltop near Mawanella"
                       width={120}
                       height={80}
@@ -239,7 +239,7 @@ export default function MawanellaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Uthuwankanda.jpg"
                     alt="Uthuwankanda temple complex on hilltop with white dagoba and stunning valley views"
                     width={400}
                     height={300}
@@ -250,7 +250,7 @@ export default function MawanellaTravelGuide() {
                       Rising majestically above Mawanella, Uthuwankanda is a sacred Buddhist temple perched on a scenic hilltop that has been a place of worship for over 2,000 years. The temple complex features a beautiful white dagoba (stupa), ancient cave shrines, and meditation areas with breathtaking 360-degree views of the surrounding countryside, including distant mountain ranges and the valley below.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      The climb to the top involves around 500 steps through lush forest, but the peaceful atmosphere and spectacular views make it worthwhile. According to legend, this site was visited by ancient kings and has been a meditation retreat for monks throughout history. The temple is especially beautiful at sunrise and sunset when the golden light bathes the dagoba and the views extend for miles across the Central Province.
+                      The climb to the top involves around 500 steps through lush forest, but the peaceful atmosphere and spectacular views make it worthwhile. According to legend, this site was visited by ancient kings and has been a meditation retreat for monks throughout history. The temple is especially beautiful at sunrise and sunset when the golden light bathes the dagoba and the views extend for miles across the Sabaragamuwa Province.
                     </p>
                     <div className="bg-green-50 dark:bg-green-900/30 p-4 rounded-lg border-l-4 border-green-400 dark:border-green-600 mt-4">
                       <h4 className="font-semibold text-green-800 dark:text-green-100 mb-2">Visitor Tip</h4>
@@ -438,7 +438,7 @@ export default function MawanellaTravelGuide() {
                       Devanagala is a pristine forest reserve located near Mawanella, centered around a scenic mountain that rises to about 1,135 meters. This protected area is a paradise for nature lovers, hikers, and wildlife enthusiasts. The reserve is covered in dense tropical forest and is home to diverse flora and fauna including endemic bird species, butterflies, and occasional sightings of wild elephants and leopards.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      Several hiking trails wind through the forest, ranging from easy nature walks to more challenging mountain treks. The trails take you past streams, waterfalls, and through different forest zones. At the summit, you&apos;ll find a small Buddhist temple and stunning views across the Central Province. The forest is particularly beautiful during early morning when mist clings to the trees and bird calls fill the air.
+                      Several hiking trails wind through the forest, ranging from easy nature walks to more challenging mountain treks. The trails take you past streams, waterfalls, and through different forest zones. At the summit, you&apos;ll find a small Buddhist temple and stunning views across the Sabaragamuwa Province. The forest is particularly beautiful during early morning when mist clings to the trees and bird calls fill the air.
                     </p>
                     <div className="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-400 dark:border-orange-600 mt-4">
                       <h4 className="font-semibold text-orange-800 dark:text-orange-100 mb-2">Nature Tip</h4>

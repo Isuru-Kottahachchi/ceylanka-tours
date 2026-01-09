@@ -2,6 +2,7 @@
 import type React from "react"
 import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
@@ -301,9 +302,37 @@ function MobileHierarchicalMenu({ onItemClick }: { onItemClick?: () => void }) {
 
 export function Header() {
   const { theme, setTheme } = useTheme()
+  const pathname = usePathname()
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   // const [mounted, setMounted] = useState(false)
   const [isSheetOpen, setIsSheetOpen] = useState(false)
+
+  // Helper function to check if current page is active
+  const isActivePage = (href: string) => {
+    if (href === "/") return pathname === "/"
+    return pathname?.startsWith(href)
+  }
+
+  // Helper function to check if any destination is active
+  const isDestinationsActive = () => {
+    return destinationsItems.some(section =>
+      section.items.some(item => pathname?.startsWith(item.href))
+    )
+  }
+
+  // Helper function to check if any "what to do" item is active
+  const isWhatToDoActive = () => {
+    return whatToDoItems.some(section =>
+      section.items.some(item => pathname?.startsWith(item.href))
+    )
+  }
+
+  // Helper function to check if any plan trip item is active
+  const isPlanTripActive = () => {
+    return planYourTripItems.some(section =>
+      section.items.some(item => pathname?.startsWith(item.href))
+    )
+  }
 
   // Handle initial theme
   useEffect(() => {
@@ -377,7 +406,7 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:text-cyan-400 transition-colors duration-200"
+                  className={`text-white hover:text-cyan-400 transition-colors duration-200 relative pb-1 ${isActivePage(item.href) ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}
                 >
                   {item.name}
                 </Link>
@@ -418,7 +447,7 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <Link href="/" className="text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
+              <Link href="/" className={`text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium relative pb-1 ${isActivePage("/") ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
                 HOME
               </Link>
               {/* <Link href="/news" className="text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
@@ -431,7 +460,7 @@ export function Header() {
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Button ref={whatToDoButtonRef}
-                  className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer">
+                  className={`flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer relative pb-1 ${isWhatToDoActive() ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
                   WHAT TO DO
                   <ChevronDown
                     className={`h-4 w-4 ml-1 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === "what-to-do" ? "rotate-180" : ""
@@ -475,7 +504,7 @@ export function Header() {
               >
                 <Button
                   ref={destinationsButtonRef}
-                  className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer"
+                  className={`flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer relative pb-1 ${isDestinationsActive() ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}
                 >
                   DESTINATIONS
                   <ChevronDown
@@ -497,7 +526,7 @@ export function Header() {
               >
                 <Button
                   ref={planTripButtonRef}
-                  className="flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer"
+                  className={`flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer relative pb-1 ${isPlanTripActive() ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}
                 >
                   PLAN YOUR TRIP
                   <ChevronDown
@@ -535,7 +564,7 @@ export function Header() {
                 )}
               </div>
 
-              <Link href="/upcoming-events" className="text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
+              <Link href="/upcoming-events" className={`text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium relative pb-1 ${isActivePage("/upcoming-events") ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
                 UPCOMING EVENTS
               </Link>
             </nav>

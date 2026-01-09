@@ -6,7 +6,7 @@ export default function ParakkramabahuRoyalPalaceGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Polonnaruwa2.jpeg"
           alt="Ruins of Parakkramabahu Royal Palace in Polonnaruwa"
