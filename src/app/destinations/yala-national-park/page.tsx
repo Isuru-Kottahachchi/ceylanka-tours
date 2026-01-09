@@ -644,7 +644,7 @@ export default function YalaNationalParkTravelGuide() {
                     </ul>
                   </div>
                   <Link
-                    href="/blog/sri-lankan-leopard"
+                    href="/articles/sri-lankan-leopard"
                     className="mt-4 inline-block text-sm text-blue-600 dark:text-blue-400 hover:underline focus:underline"
                   >
                     Cant you identyfy  leopards and jaguars? Read our detailed blog post to learn more about the differences between leopards and jaguars.
@@ -1538,7 +1538,7 @@ export default function YalaNationalParkTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
           <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
-            Extend your Katharagama adventure with these incredible destinations within easy reach
+            Extend your Yala adventure with these incredible destinations within easy reach
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

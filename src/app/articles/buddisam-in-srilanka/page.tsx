@@ -169,7 +169,7 @@ export default function BuddhismInSriLanka() {
                     <Button variant="ghost" asChild className="text-orange-600 hover:text-orange-700">
                         <Link href="/articles">
                             <ArrowLeft className="w-4 h-4 mr-2" />
-                            Back to Blog
+                            Back to Articles
                         </Link>
                     </Button>
                 </div>
@@ -767,7 +767,7 @@ export default function BuddhismInSriLanka() {
                                     variant="outline"
                                     asChild
                                 >
-                                    <Link href="/blog">
+                                    <Link href="/articles">
                                         <BookOpen className="w-5 h-5 mr-2" />
                                         Read More Articles
                                     </Link>

@@ -60,7 +60,7 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
                         </p>
 
                         <div className="space-y-3">
-                            <Link href="/blog/things-you-aware-in-the-beach">
+                            <Link href="/articles/things-to-beware-of-at-the-beach">
                                 <Button className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white cursor-pointer" >
                                     <Shield className="w-4 h-4 mr-2" />
                                     Read Complete Beach Safety Guide
@@ -354,7 +354,7 @@ export default function BentotaGuide() {
                                         Learn about rip currents, cross seas, monsoon safety, and emergency procedures
                                         to stay safe at all Sri Lankan beaches.
                                     </p>
-                                    <Link href="/blog/things-you-aware-in-the-beach">
+                                    <Link href="/articles/things-to-beware-of-at-the-beach">
                                         <Button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white cursor-pointer">
                                             <Waves className="w-4 h-4 mr-2" />
                                             Read Complete Beach Safety Guide

@@ -71,7 +71,6 @@ export function FeaturedArticles() {
 
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg font-semibold line-clamp-2 group-hover:text-cyan-600 transition-colors">
-                  {/* <Link href={`/blog/${article.id}`}>{article.title}</Link> */}
                   <Link href={`/articles/${article.path}`}>{article.title}</Link>
                 </CardTitle>
               </CardHeader>
