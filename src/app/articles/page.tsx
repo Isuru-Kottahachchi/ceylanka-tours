@@ -50,7 +50,7 @@ const originalArticles = [
     path: "top10-waterfalls-in-srilanka",
     category: "Nature",
     readTime: "11 min read",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Gerandi-Ella.jpeg",
     description: "Discover the most spectacular waterfalls across Sri Lanka, from towering cascades in the hill country to hidden gems in remote areas.",
     highlights: ["Bambarakanda Falls", "Sekumpura Falls", "Diyaluma Falls"],
     featured: false,
@@ -522,7 +522,7 @@ export default function ArticlesPage() {
 
                   <CardHeader className="pb-2">
                     <CardTitle className="text-lg font-semibold line-clamp-2 group-hover:text-cyan-600 transition-colors">
-                      <Link href={`/blog/${article.path}`}>{article.title}</Link>
+                      <Link href={`/articles/${article.path}`}>{article.title}</Link>
                     </CardTitle>
                   </CardHeader>
 

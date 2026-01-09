@@ -22,7 +22,7 @@ export default function WilpattuNationalParkTravelGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Wilpattuwa1.jpeg"
           alt="Majestic Sri Lankan leopard drinking at a villu lake in Wilpattu National Park with lush forest background"
