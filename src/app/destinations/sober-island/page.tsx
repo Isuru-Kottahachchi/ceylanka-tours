@@ -23,7 +23,7 @@ export default function SoberIslandPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/sober-island-aerial.jpg"
+          src="/Sober-Island.jpg"
           alt="Aerial view of Sober Island in Trincomalee Harbor with historic fortifications"
           fill
           className="object-cover"

@@ -200,7 +200,7 @@ const ramayanaSites: RamayanaSite[] = [
       "Visible from satellite imagery",
       "Significant pilgrimage site",
     ],
-    image: "/Ram-setu.jpg",
+    image: "/Ram-Setu.jpg",
   },
 ]
 
