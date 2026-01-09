@@ -22,7 +22,7 @@ export default function SinharajaForestGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Sinharaja-forest.jpg"
           alt="Dense canopy of Sinharaja rainforest with misty atmosphere and lush green vegetation"
