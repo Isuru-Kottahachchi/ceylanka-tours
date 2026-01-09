@@ -107,6 +107,15 @@ const oneDayPackages = [
     description: "Explore Galle Dutch Fort and enjoy beautiful southern beaches.",
     highlights: ["Galle Fort Walk", "Sea Turtle Hatchery", "Beach Visit"]
   },
+    {
+    id: "bentota",
+    title: "Around Bentota",
+    duration: "1 Day",
+    price: "From $65",
+    image: "/Bentota-beach.jpeg",
+    description: "Explore Bentota's beautiful beaches, river, and nearby attractions.",
+    highlights: ["Bentota Beach", "River Safari", "Turtle Hatchery"]
+  },
   {
     id: "kandy",
     title: "Kandy City Tour",
