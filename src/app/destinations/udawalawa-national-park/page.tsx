@@ -26,7 +26,7 @@ export default function UdawalaweNationalParkGuide() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Udawalawa-park.jpeg"
           alt="Spectacular panoramic view of elephant herds roaming across vast grasslands of Udawalawe National Park with reservoir backdrop"

@@ -141,7 +141,7 @@ export default function SriLankanElephantsPage() {
         <nav className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400 mb-8">
           <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400">Home</Link>
           <span>/</span>
-          <Link href="/blog" className="hover:text-blue-600 dark:hover:text-blue-400">Blog</Link>
+          <Link href="/articles" className="hover:text-blue-600 dark:hover:text-blue-400">Articles</Link>
           <span>/</span>
           <span className="text-gray-900 dark:text-gray-100">Sri Lankan Elephants</span>
         </nav>

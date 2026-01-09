@@ -52,7 +52,7 @@ function BeachSafetyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =>
               </ul>
             </div>
             <div className="space-y-3">
-              <a href="/blog/things-you-aware-in-the-beach">
+              <a href="/articles/things-to-beware-of-at-the-beach">
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer transition-colors flex items-center justify-center">
                   <Shield className="w-4 h-4 mr-2" />
                   Read Complete Beach Safety Guide

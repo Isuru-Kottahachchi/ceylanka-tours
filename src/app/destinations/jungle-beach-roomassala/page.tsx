@@ -254,7 +254,7 @@ export default function JungleBeachPage() {
                   </p>
                   <div className="space-y-3">
                   <div className="mt-4 flex justify-start">
-                    <Link href="/blog/ramayana-story-india-sri-lanka" passHref legacyBehavior>
+                    <Link href="/articles/ramayana-story-india-sri-lanka" passHref legacyBehavior>
                       <Button
                         variant="secondary"
                         className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
