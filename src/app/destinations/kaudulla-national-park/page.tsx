@@ -31,7 +31,7 @@ export default function KaudullaNationalParkGuide() {
     return (
         <div className="min-h-screen bg-background">
             {/* Hero Section */}
-            <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
                 <Image
                     src="/Kaudulla-National-Park.jpg"
                     alt="Panoramic view of Kaudulla National Park with massive elephant herd at reservoir during golden hour sunset"
@@ -348,7 +348,7 @@ export default function KaudullaNationalParkGuide() {
                                                 </ul>
 
                                             </div>
-                                            <Link href="/blog/sri-lankan-elephants">
+                                            <Link href="/articles/sri-lankan-elephants">
                                                 <Button className="flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 h-12 cursor-pointer">
                                                     <span>Learn About Sri Lankan Elephants</span>
                                                     <ArrowRight className="h-5 w-5" />

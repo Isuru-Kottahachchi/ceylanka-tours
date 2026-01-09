@@ -646,10 +646,10 @@ export default function SriLankanElephantsPage() {
 
         {/* Navigation Buttons */}
         <div className="flex justify-between items-center mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-          <Link href="/blog">
+          <Link href="/articles">
             <Button className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 h-12 cursor-pointer">
               <ArrowLeft className="h-5 w-5" />
-              <span>Back to Blog</span>
+              <span>Back to Articles</span>
             </Button>
           </Link>
 

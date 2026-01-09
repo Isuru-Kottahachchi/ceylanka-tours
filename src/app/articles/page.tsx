@@ -88,6 +88,17 @@ const originalArticles = [
     highlights: ["Temple of Tooth", "Traditional Dancing", "Elephant Parade"],
     featured: false,
   },
+    {
+    id: 8,
+    title: "Sri Lankan Elephants",
+    path: "sri-lankan-elephants",
+    category: "Wildlife",
+    readTime: "13 min read",
+    image: "/Minneriya-Park.jpg",
+    description: "Discover the majestic elephants of Sri Lanka, their role in culture, conservation efforts, and where to see them in the wild and sanctuaries.",
+    highlights: ["Temple of Tooth", "Traditional Dancing", "Elephant Parade"],
+    featured: false,
+  },
   {
     id: 9,
     title: "Top Cultural Events in Sri Lanka",

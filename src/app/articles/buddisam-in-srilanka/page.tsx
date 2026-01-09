@@ -167,7 +167,7 @@ export default function BuddhismInSriLanka() {
                 {/* Back Navigation */}
                 <div className="mb-8">
                     <Button variant="ghost" asChild className="text-orange-600 hover:text-orange-700">
-                        <Link href="/blog">
+                        <Link href="/articles">
                             <ArrowLeft className="w-4 h-4 mr-2" />
                             Back to Blog
                         </Link>
