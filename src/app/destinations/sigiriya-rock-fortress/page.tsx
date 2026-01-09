@@ -248,7 +248,7 @@ export default function SigiriyaTravelGuide() {
                     <div className="flex items-center gap-2 py-1.5 px-2 bg-white/50 dark:bg-slate-600/50 rounded hover:bg-white/70 dark:hover:bg-slate-600/70 transition-colors">
                       <span>🗓️</span>
                       <Link href="/tours/sigiriya" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
-                        <strong>Tour that also includes Kandy</strong> - Click for details & booking
+                        <strong>Tour that also includes Sigiriya</strong> - Click for details & booking
                       </Link>
                     </div>
                     <div className="flex items-center gap-2 py-1.5 px-2 bg-white/50 dark:bg-slate-600/50 rounded hover:bg-white/70 dark:hover:bg-slate-600/70 transition-colors">

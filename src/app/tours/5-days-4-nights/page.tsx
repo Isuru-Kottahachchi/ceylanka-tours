@@ -52,8 +52,8 @@ export default function FiveDaysPackage() {
         { name: "Sigiriya Rock Fortress", image: "/Sigiriya.jpeg" },
         { name: "Ancient Frescoes", image: "/images/sigiriya/ancient-frescoes.jpg" },
         { name: "Mirror Wall", image: "/images/sigiriya/mirror-wall.jpg" },
-        { name: "Dambulla Cave Temple", image: "/Dambulla-cave-temple.jpg" },
-        { name: "Golden Buddha", image: "/images/dambulla/golden-buddha.jpg" },
+        { name: "Dambulla Cave Temple", image: "/dambulla-cave-temple.jpg" },
+        { name: "Golden Buddha", image: "/Rangiri-Dambulu.jpg" },
         { name: "Scenic Gardens", image: "/images/sigiriya/gardens.jpg" }
       ]
     },
