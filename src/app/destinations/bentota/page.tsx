@@ -212,9 +212,10 @@ export default function BentotaGuide() {
                                         <div className="flex flex-col gap-1.5 text-xs text-orange-800 dark:text-orange-200">
                                             <div className="flex items-center gap-2 py-1.5 px-2 bg-white/50 dark:bg-slate-600/50 rounded">
                                                 <span>📞</span>
-                                                <span><strong>Contact:</strong></span>
-                                                <a href="tel:+94771234567" className="underline hover:text-orange-700 dark:hover:text-orange-300 whitespace-nowrap">
-                                                    Call +94 77 123 4567
+                                                <span><strong>Call:</strong></span>
+                                                <a href="tel:+94771234567" className="underline hover:text-orange-700 dark:hover:text-orange-300">
+                                                    <span className="hidden sm:inline">Call +94 77 123 4567</span>
+                                                    <span className="sm:hidden">+944771234567</span>
                                                 </a>
                                                 <span>|</span>
                                                 <a href="https://wa.me/94771234567" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-700 dark:hover:text-orange-300 flex items-center gap-1">
