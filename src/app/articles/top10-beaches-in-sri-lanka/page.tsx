@@ -1,11 +1,15 @@
-// app/top-beaches/page.tsx
-import Image from 'next/image';
+"use client";
 import { Fragment } from 'react';
+import { ImageCarousel } from "@/components/ui/image-carousel";
 
 const beaches = [
   {
     name: 'Unawatuna Beach',
-    image: '/images/unawatuna.jpg',
+    images: [
+      { src: '/Unawatuna.jpg', alt: 'Unawatuna Beach', caption: 'Crystal clear waters', title: 'Unawatuna Beach' },
+      { src: '/images/unawatuna-2.jpg', alt: 'Unawatuna Bay', caption: 'Crescent-shaped bay', title: 'Bay View' },
+      { src: '/images/unawatuna-3.jpg', alt: 'Beach Life', caption: 'Vibrant atmosphere', title: 'Beach Life' }
+    ],
     location: 'Southern Province, near Galle',
     bestTime: 'December to April',
     description:
@@ -24,11 +28,15 @@ const beaches = [
   },
   {
     name: 'Mirissa Beach',
-    image: '/images/mirissa.jpg',
+    images: [
+      { src: '/Mirissa.jpg', alt: 'Mirissa Beach', caption: 'Paradise for whale watching', title: 'Mirissa Beach' },
+      { src: '/images/mirissa-2.jpg', alt: 'Mirissa Bay', caption: 'Palm-fringed shores', title: 'Bay View' },
+      { src: '/images/mirissa-3.jpg', alt: 'Mirissa Sunset', caption: 'Stunning sunset', title: 'Sunset View' }
+    ],
     location: 'Matara District, Southern Province',
     bestTime: 'November to March',
     description:
-      'Mirissa is a crescent-shaped bay famous for whale watching and palm tree photography. It’s quieter than Unawatuna and known for its natural beauty and cozy vibe.',
+      "Mirissa is a crescent-shaped bay famous for whale watching and palm tree photography. It's quieter than Unawatuna and known for its natural beauty and cozy vibe.",
     thingsToDo: [
       'Whale watching tours (Blue & Sperm whales)',
       'Climb Parrot Rock for sunset views',
@@ -43,11 +51,15 @@ const beaches = [
   },
   {
     name: 'Arugam Bay',
-    image: '/images/arugam.jpg',
+    images: [
+      { src: '/Arugam-bay.jpeg', alt: 'Arugam Bay', caption: 'World-class surfing destination', title: 'Arugam Bay' },
+      { src: '/images/arugambay-2.jpg', alt: 'Surfing', caption: 'Perfect waves', title: 'Surfing Paradise' },
+      { src: '/images/arugambay-3.jpg', alt: 'Beach', caption: 'Beautiful coastline', title: 'Coastal View' }
+    ],
     location: 'Ampara District, Eastern Province',
     bestTime: 'May to September',
     description:
-      'Arugam Bay is a world-class surfing destination with consistent right-hand breaks. It’s a hotspot for backpackers and surfers alike, with a chilled atmosphere and low-budget hostels.',
+      "Arugam Bay is a world-class surfing destination with consistent right-hand breaks. It's a hotspot for backpackers and surfers alike, with a chilled atmosphere and low-budget hostels.",
     thingsToDo: [
       'Surf at Main Point and Whiskey Point',
       'Yoga sessions and beachfront cafes',
@@ -62,11 +74,15 @@ const beaches = [
   },
   {
     name: 'Nilaveli Beach',
-    image: '/images/nilaveli.jpg',
+    images: [
+      { src: '/Nilaveli-beach.jpg', alt: 'Nilaveli Beach', caption: 'Pristine white sand beach', title: 'Nilaveli Beach' },
+      { src: '/images/nilaveli-2.jpg', alt: 'Turquoise Waters', caption: 'Crystal clear waters', title: 'Crystal Waters' },
+      { src: '/images/nilaveli-3.jpg', alt: 'Pigeon Island', caption: 'Nearby Pigeon Island', title: 'Pigeon Island' }
+    ],
     location: 'Near Trincomalee, Eastern Province',
     bestTime: 'May to October',
     description:
-      'Nilaveli is a tranquil, uncrowded beach with powdery white sand and calm turquoise water. It’s ideal for snorkeling and boat rides to Pigeon Island.',
+      "Nilaveli is a tranquil, uncrowded beach with powdery white sand and calm turquoise water. It's ideal for snorkeling and boat rides to Pigeon Island.",
     thingsToDo: [
       'Snorkeling and diving at Pigeon Island',
       'Boat rides and kayaking',
@@ -81,11 +97,15 @@ const beaches = [
   },
   {
     name: 'Hikkaduwa Beach',
-    image: '/images/hikkaduwa.jpg',
+    images: [
+      { src: '/Hikkaduwabeach.jpg', alt: 'Hikkaduwa Beach', caption: 'Vibrant beach town', title: 'Hikkaduwa Beach' },
+      { src: '/images/hikkaduwa-2.jpg', alt: 'Coral Sanctuary', caption: 'Coral reefs and turtles', title: 'Coral Sanctuary' },
+      { src: '/images/hikkaduwa-3.jpg', alt: 'Beach Nightlife', caption: 'Beachside bars', title: 'Beach Nightlife' }
+    ],
     location: 'Galle District, Southern Province',
     bestTime: 'November to March',
     description:
-      'Hikkaduwa is a vibrant beach town known for coral reefs, turtles, and nightlife. It’s one of the best places for snorkeling and offers plenty of dining and lodging options.',
+      "Hikkaduwa is a vibrant beach town known for coral reefs, turtles, and nightlife. It's one of the best places for snorkeling and offers plenty of dining and lodging options.",
     thingsToDo: [
       'Snorkeling with sea turtles',
       'Visit the Coral Sanctuary',
@@ -100,11 +120,15 @@ const beaches = [
   },
   {
     name: 'Bentota Beach',
-    image: '/Bentotabeach.jpeg',
+    images: [
+      { src: '/Bentotabeach.jpeg', alt: 'Bentota Beach', caption: 'Luxury beach resort area', title: 'Bentota Beach' },
+      { src: '/images/bentota-2.jpg', alt: 'Water Sports', caption: 'Exciting water sports', title: 'Water Activities' },
+      { src: '/images/bentota-3.jpg', alt: 'Bentota River', caption: 'River safari adventures', title: 'River Safari' }
+    ],
     location: 'Galle District, Western Province',
     bestTime: 'October to April',
     description:
-      'If you are in Sri Lanka, dont visit this paradise beach, Bentota is known for its wide sandy beaches, water sports, and luxury resorts. It’s perfect for honeymooners and travelers seeking comfort and adventure.',
+      "If you are in Sri Lanka, dont visit this paradise beach, Bentota is known for its wide sandy beaches, water sports, and luxury resorts. It's perfect for honeymooners and travelers seeking comfort and adventure.",
     thingsToDo: [
       'Jet skiing and banana boat rides',
       'River safaris along the Bentota River',
@@ -119,11 +143,15 @@ const beaches = [
   },
   {
     name: 'Hirikatiya Beach',
-    image: '/images/hirikatiya.jpg',
+    images: [
+      { src: '/Hirikatiya.jpg', alt: 'Hirikatiya Beach', caption: 'Hidden gem beach', title: 'Hirikatiya Beach' },
+      { src: '/hirikatiya-2.jpg', alt: 'Tangalle Area', caption: 'Peaceful surroundings', title: 'Peaceful Paradise' },
+      { src: '/images/hirikatiya-3.jpg', alt: 'Palm Trees', caption: 'Tropical setting', title: 'Tropical Beach' }
+    ],
     location: 'Hambantota District, Southern Province',
     bestTime: 'November to April',
     description:
-      'Tangalle offers a peaceful, less commercial experience with long stretches of golden sand. It’s perfect for those who want to escape the crowds.',
+      "Tangalle offers a peaceful, less commercial experience with long stretches of golden sand. It's perfect for those who want to escape the crowds.",
     thingsToDo: [
       'Relax under palm trees with minimal crowds',
       'Explore rock temples like Mulkirigala Raja Maha Vihara',
@@ -138,11 +166,15 @@ const beaches = [
   },
   {
     name: 'Uppuveli Beach',
-    image: '/images/uppuveli.jpg',
+    images: [
+      { src: '/images/uppuveli.jpg', alt: 'Uppuveli Beach', caption: 'Tranquil beach escape', title: 'Uppuveli Beach' },
+      { src: '/images/uppuveli-2.jpg', alt: 'Calm Waters', caption: 'Calm blue waters', title: 'Calm Waters' },
+      { src: '/images/uppuveli-3.jpg', alt: 'Beach Sunrise', caption: 'Beautiful sunrise', title: 'Sunrise View' }
+    ],
     location: 'Near Trincomalee, Eastern Province',
     bestTime: 'May to October',
     description:
-      'Uppuveli is a quiet beach north of Trincomalee with calm water and a relaxed vibe. It’s ideal for solo travelers and those seeking serenity.',
+      "Uppuveli is a quiet beach north of Trincomalee with calm water and a relaxed vibe. It's ideal for solo travelers and those seeking serenity.",
     thingsToDo: [
       'Snorkeling and diving tours',
       'Visit Fort Frederick and Koneswaram Temple',
@@ -157,11 +189,15 @@ const beaches = [
   },
   {
     name: 'Weligama Beach',
-    image: '/images/weligama.jpg',
+    images: [
+      { src: '/Waligama-Bay-Beach.jpg', alt: 'Weligama Beach', caption: 'Perfect for surf lessons', title: 'Weligama Beach' },
+      { src: '/images/weligama-2.jpg', alt: 'Surfing School', caption: 'Learn to surf', title: 'Surf School' },
+      { src: '/images/weligama-3.jpg', alt: 'Taprobane Island', caption: 'Iconic island view', title: 'Taprobane Island' }
+    ],
     location: 'Matara District, Southern Province',
     bestTime: 'November to April',
     description:
-      'Weligama is a long sandy bay famous for its surfing schools and fish markets. It’s a budget-friendly beach with a mix of local and tourist culture.',
+      "Weligama is a long sandy bay famous for its surfing schools and fish markets. It's a budget-friendly beach with a mix of local and tourist culture.",
     thingsToDo: [
       'Learn to surf with local instructors',
       'Walk to Taprobane Island during low tide',
@@ -176,11 +212,15 @@ const beaches = [
   },
   {
     name: 'Kalpitiya Beach',
-    image: '/images/kalpitiya.jpg',
+    images: [
+      { src: '/images/kalpitiya.jpg', alt: 'Kalpitiya Beach', caption: 'Kite surfing paradise', title: 'Kalpitiya Beach' },
+      { src: '/images/kalpitiya-2.jpg', alt: 'Kite Surfing', caption: 'Perfect wind conditions', title: 'Kite Surfing' },
+      { src: '/images/kalpitiya-3.jpg', alt: 'Dolphin Watching', caption: 'Dolphin tours', title: 'Dolphin Watching' }
+    ],
     location: 'Puttalam District, North-Western Province',
     bestTime: 'May to September',
     description:
-      'Kalpitiya is ideal for kite surfing, dolphin watching, and off-the-beaten-path adventures. It’s still developing as a tourist destination, making it peaceful and eco-friendly.',
+      "Kalpitiya is ideal for kite surfing, dolphin watching, and off-the-beaten-path adventures. It's still developing as a tourist destination, making it peaceful and eco-friendly.",
     thingsToDo: [
       'Kite surfing in the Kalpitiya lagoon',
       'Boat tours to see dolphins and whales',
@@ -195,15 +235,19 @@ const beaches = [
   },
   {
     name: 'Jungle beach, Unawatuna,Sri Lanka',
-    image: '/jungle-beach.jpeg',
+    images: [
+      { src: '/jungle-beach.jpeg', alt: 'Jungle Beach', caption: 'Hidden jungle paradise', title: 'Jungle Beach' },
+      { src: '/images/jungle-beach-2.jpg', alt: 'Secluded Cove', caption: 'Secluded natural cove', title: 'Secluded Paradise' },
+      { src: '/images/jungle-beach-3.jpg', alt: 'Jungle Surroundings', caption: 'Surrounded by nature', title: 'Nature Escape' }
+    ],
     location: 'Galle District, Southern Province',
     bestTime: 'May to September',
     description:
-      'Jungle Beach is a hidden gem near Unawatuna, surrounded by lush greenery and offering a tranquil escape. It’s perfect for nature lovers and those seeking solitude.',
+      "Jungle Beach is a hidden gem near Unawatuna, surrounded by lush greenery and offering a tranquil escape. It's perfect for nature lovers and those seeking solitude.",
     thingsToDo: [
-      'Kite surfing in the Kalpitiya lagoon',
-      'Boat tours to see dolphins and whales',
-      'Explore mangroves and Wilpattu National Park nearby',
+      'Snorkeling in calm waters',
+      'Hiking through jungle trails',
+      'Relaxing away from crowds',
     ],
     tips: 'Windy and wild — perfect for adventure seekers. Limited nightlife.',
     placesToStay: [
@@ -220,9 +264,9 @@ export default function TopBeachesPage() {
       {/* Hero Header */}
       <section className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white py-16 lg:py-24">
         <div className="container mx-auto px-4 text-center">
-          <div className="flex justify-center mb-6">
+          {/* <div className="flex justify-center mb-6">
             <div className="h-16 w-16 text-cyan-100">🏖️</div>
-          </div>
+          </div> */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Top 10 Beaches in Sri Lanka
           </h1>
@@ -238,22 +282,15 @@ export default function TopBeachesPage() {
         </div>
       </section>
 
-      {/* Fact Check Banner */}
+      {/* Beach Cards */}
       <div className="max-w-6xl mx-auto px-4 py-8">
-     
         <section className="flex flex-col gap-6">
           {beaches.map((beach, index) => (
             <Fragment key={index}>
               {/* Beach Card */}
               <div className="flex flex-col sm:flex-row rounded-2xl overflow-hidden shadow-md bg-white transition-transform hover:scale-[1.01] duration-300 border border-gray-100">
-                <div className="relative w-full sm:w-1/3 h-60 sm:h-auto">
-                  <Image
-                    src={beach.image}
-                    alt={beach.name}
-                    layout="fill"
-                    objectFit="cover"
-                    className="sm:rounded-l-2xl"
-                  />
+                <div className="w-full sm:w-1/3 h-60 sm:h-auto">
+                  <ImageCarousel images={beach.images} />
                 </div>
                 <div className="p-4 flex-1 space-y-2">
                   <h2 className="text-2xl font-semibold">{beach.name}</h2>
