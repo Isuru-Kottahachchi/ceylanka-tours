@@ -1,6 +1,7 @@
 "use client";
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { ImageCarousel } from "@/components/ui/image-carousel";
+import { BeachSafetyModal } from "@/components/beach-safety-modal"
 
 const beaches = [
   {
@@ -165,16 +166,16 @@ const beaches = [
     ],
   },
   {
-    name: 'Uppuveli Beach',
+    name: 'Pasikuda Beach',
     images: [
-      { src: '/images/uppuveli.jpg', alt: 'Uppuveli Beach', caption: 'Tranquil beach escape', title: 'Uppuveli Beach' },
-      { src: '/images/uppuveli-2.jpg', alt: 'Calm Waters', caption: 'Calm blue waters', title: 'Calm Waters' },
-      { src: '/images/uppuveli-3.jpg', alt: 'Beach Sunrise', caption: 'Beautiful sunrise', title: 'Sunrise View' }
+      { src: '/Pasikuda.jpeg', alt: 'Pasikuda Beach', caption: 'Tranquil beach escape', title: 'Pasikuda Beach' },
+      { src: '/images/pasikuda-2.jpg', alt: 'Calm Waters', caption: 'Calm blue waters', title: 'Calm Waters' },
+      { src: '/images/pasikuda-3.jpg', alt: 'Beach Sunrise', caption: 'Beautiful sunrise', title: 'Sunrise View' }
     ],
     location: 'Near Trincomalee, Eastern Province',
     bestTime: 'May to October',
     description:
-      "Uppuveli is a quiet beach north of Trincomalee with calm water and a relaxed vibe. It's ideal for solo travelers and those seeking serenity.",
+      "Pasikuda is known for its shallow, calm waters and long sandy beaches. It's ideal for families and those looking for a relaxing beach holiday away from the crowds.",
     thingsToDo: [
       'Snorkeling and diving tours',
       'Visit Fort Frederick and Koneswaram Temple',
@@ -259,8 +260,28 @@ const beaches = [
 ];
 
 export default function TopBeachesPage() {
+
+const [showSafetyModal, setShowSafetyModal] = useState(false)
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowSafetyModal(true)
+        }, 500) // Show after 0.5 seconds
+
+        return () => clearTimeout(timer)
+    }, [])
+
+    const handleCloseModal = () => {
+        setShowSafetyModal(false)
+    }
+
   return (
     <main className="bg-white text-gray-800">
+         <BeachSafetyModal 
+                isOpen={showSafetyModal} 
+                onClose={handleCloseModal}
+                beachName=" Beach"
+            />
       {/* Hero Header */}
       <section className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white py-16 lg:py-24">
         <div className="container mx-auto px-4 text-center">
