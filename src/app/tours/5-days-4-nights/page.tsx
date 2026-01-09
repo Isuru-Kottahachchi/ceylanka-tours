@@ -1,4 +1,5 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
@@ -13,45 +14,90 @@ import {
   Utensils,
   Clock,
   CheckCircle,
-  ArrowLeft
+  ArrowLeft,
+  ChevronDown
 } from "lucide-react"
+import { useState } from "react"
 
-export const metadata: Metadata = {
-  title: "5 Days 4 Nights Sri Lanka Tour | Quick Escape Package",
-  description: "Perfect short tour of Sri Lanka. Visit Colombo, Sigiriya, Kandy, and beaches in just 5 days. Ideal for quick getaways and limited time travelers.",
-}
+
 
 export default function FiveDaysPackage() {
+  const [expandedDay, setExpandedDay] = useState<number | null>(null)
+
+  const toggleDay = (day: number) => {
+    setExpandedDay(expandedDay === day ? null : day)
+  }
+
   const itinerary = [
     {
       day: 1,
       title: "Colombo City Tour",
       description: "Pick up from airport. Quick city tour of Colombo - see Independence Square, Galle Face Green, and Pettah market. Lunch at local restaurant. Evening drive to Sigiriya area.",
-      overnight: "Sigiriya/Dambulla"
+      overnight: "Sigiriya/Dambulla",
+      highlights: [
+        { name: "Independence Square", image: "/images/colombo/independence-square.jpg" },
+        { name: "Galle Face Green", image: "/Galle-face.jpg" },
+        { name: "Pettah Market", image: "/images/colombo/pettah-market.jpg" },
+        { name: "Gangaramaya Temple", image: "/Gangaramaya1.jpg" },
+        { name: "Colombo Fort", image: "/images/colombo/colombo-fort.jpg" },
+        { name: "Local Cuisine", image: "/images/cuisine/local-cuisine.jpg" }
+      ]
     },
     {
       day: 2,
       title: "Sigiriya Rock & Dambulla",
       description: "Early morning climb up Sigiriya Rock Fortress. Amazing views from the top. Visit Dambulla Cave Temple with golden Buddha statues. Free evening to relax.",
-      overnight: "Sigiriya/Dambulla"
+      overnight: "Sigiriya/Dambulla",
+      highlights: [
+        { name: "Sigiriya Rock Fortress", image: "/Sigiriya.jpeg" },
+        { name: "Ancient Frescoes", image: "/images/sigiriya/ancient-frescoes.jpg" },
+        { name: "Mirror Wall", image: "/images/sigiriya/mirror-wall.jpg" },
+        { name: "Dambulla Cave Temple", image: "/Dambulla-cave-temple.jpg" },
+        { name: "Golden Buddha", image: "/images/dambulla/golden-buddha.jpg" },
+        { name: "Scenic Gardens", image: "/images/sigiriya/gardens.jpg" }
+      ]
     },
     {
       day: 3,
       title: "Kandy Temple City",
       description: "Drive to Kandy through scenic roads. Visit Temple of the Tooth, the most sacred Buddhist site. Walk around Kandy Lake. Visit Royal Botanical Gardens. Watch traditional dance show in the evening.",
-      overnight: "Kandy"
+      overnight: "Kandy",
+      highlights: [
+        { name: "Temple of the Tooth", image: "/Temple-of-the-tooth.jpeg" },
+        { name: "Kandy Lake", image: "/images/kandy/kandy-lake.jpg" },
+        { name: "Royal Botanical Gardens", image: "/images/kandy/botanical-gardens.jpg" },
+        { name: "Cultural Dance Show", image: "/images/kandy/cultural-dance.jpg" },
+        { name: "Spice Gardens", image: "/images/kandy/spice-gardens.jpg" },
+        { name: "Tea Plantations", image: "/images/tea/tea-plantations.jpg" }
+      ]
     },
     {
       day: 4,
       title: "Beach Time",
       description: "Morning drive to west coast beaches (Bentota or Negombo). Relax on the beach, swim in the ocean. Optional water sports available. Enjoy fresh seafood dinner.",
-      overnight: "Beach Hotel"
+      overnight: "Beach Hotel",
+      highlights: [
+        { name: "Beach Relaxation", image: "/images/beach/beach-relaxation.jpg" },
+        { name: "Water Sports", image: "/images/beach/water-sports.jpg" },
+        { name: "Sunset Views", image: "/images/beach/sunset.jpg" },
+        { name: "Fresh Seafood", image: "/images/cuisine/seafood.jpg" },
+        { name: "Boat Rides", image: "/images/beach/boat-rides.jpg" },
+        { name: "Beach Activities", image: "/images/beach/beach-activities.jpg" }
+      ]
     },
     {
       day: 5,
       title: "Beach & Departure",
       description: "Free morning on the beach. Last chance for swimming or beach walk. Check out and transfer to airport. Drop off for your flight home.",
-      overnight: "Departure"
+      overnight: "Departure",
+      highlights: [
+        { name: "Morning Beach Walk", image: "/images/beach/beach-walk.jpg" },
+        { name: "Last Swim", image: "/images/beach/swimming.jpg" },
+        { name: "Souvenir Shopping", image: "/images/shopping/souvenirs.jpg" },
+        { name: "Beach Breakfast", image: "/images/beach/beach-breakfast.jpg" },
+        { name: "Tropical Paradise", image: "/images/beach/tropical-beach.jpg" },
+        { name: "Memories", image: "/images/sri-lanka-memories.jpg" }
+      ]
     }
   ]
 
@@ -139,7 +185,7 @@ export default function FiveDaysPackage() {
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Great for couples on vacation, business travelers with extra days, or anyone who wants a quick tropical 
-                getaway. The tour is easy with not too much walking. You get a private car and driver, so it's comfortable 
+                getaway. The tour is easy with not too much walking. You get a private car / Van and driver, so it's comfortable 
                 and flexible.
               </p>
             </section>
@@ -147,27 +193,68 @@ export default function FiveDaysPackage() {
             {/* Itinerary */}
             <section>
               <h2 className="text-2xl font-bold mb-6">Day by Day Plan</h2>
-              <div className="space-y-4">
+              <div className="space-y-8">
                 {itinerary.map((item) => (
-                  <Card key={item.day} className="overflow-hidden">
-                    <CardContent className="p-6">
-                      <div className="flex gap-4">
-                        <div className="flex-shrink-0">
-                          <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
-                            <span className="font-bold text-green-600">Day {item.day}</span>
+                  <div key={item.day}>
+                    <Card className="overflow-hidden">
+                      <CardContent className="p-6">
+                        <div className="flex gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+                              <span className="font-bold text-green-600">Day {item.day}</span>
+                            </div>
+                          </div>
+                          <div className="flex-grow">
+                            <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+                            <p className="text-muted-foreground text-sm mb-3">{item.description}</p>
+                            <div className="flex items-center gap-2 text-sm">
+                              <Hotel className="w-4 h-4 text-green-600" />
+                              <span className="text-muted-foreground">Overnight: {item.overnight}</span>
+                            </div>
                           </div>
                         </div>
-                        <div className="flex-grow">
-                          <h3 className="font-bold text-lg mb-2">{item.title}</h3>
-                          <p className="text-muted-foreground text-sm mb-3">{item.description}</p>
-                          <div className="flex items-center gap-2 text-sm">
-                            <Hotel className="w-4 h-4 text-green-600" />
-                            <span className="text-muted-foreground">Overnight: {item.overnight}</span>
+                      </CardContent>
+                    </Card>
+                    
+                    {/* Day Highlights - All Devices */}
+                    <div className="mt-4">
+                      <button
+                        onClick={() => toggleDay(item.day)}
+                        className="flex items-center gap-2 text-lg font-semibold mb-3 hover:text-green-600 transition-colors w-full cursor-pointer"
+                      >
+                        <ChevronDown 
+                          className={`w-5 h-5 transition-transform duration-300 ${
+                            expandedDay === item.day ? '' : 'rotate-180'
+                          }`}
+                        />
+                        <span>Day {item.day} Highlights</span>
+                      </button>
+                      
+                      <div 
+                        className={`grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 overflow-hidden transition-all duration-300 ${
+                          expandedDay === item.day 
+                            ? 'max-h-0 opacity-0' 
+                            : 'max-h-[1000px] opacity-100'
+                        }`}
+                      >
+                        {item.highlights.map((highlight, idx) => (
+                          <div key={idx} className="group cursor-pointer">
+                            <div className="relative h-28 md:h-40 rounded-lg overflow-hidden mb-2">
+                              <Image
+                                src={highlight.image}
+                                alt={highlight.name}
+                                fill
+                                className="object-cover group-hover:scale-110 transition-transform duration-300"
+                              />
+                            </div>
+                            <p className="text-center text-xs md:text-sm font-medium text-muted-foreground">
+                              {highlight.name}
+                            </p>
                           </div>
-                        </div>
+                        ))}
                       </div>
-                    </CardContent>
-                  </Card>
+                    </div>
+                  </div>
                 ))}
               </div>
             </section>
@@ -247,7 +334,7 @@ export default function FiveDaysPackage() {
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Car className="w-4 h-4 text-green-600" />
-                      <span>Private Car</span>
+                      <span>Private Car / Van</span>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
                       <Hotel className="w-4 h-4 text-green-600" />
