@@ -5,89 +5,21 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 
+const peraharaImages = [
+  { src: "/Kandy-Procession.jpg", alt: "Kandy Esala Perahera procession with decorated elephants" },
+  { src: "/perahara.jpeg", alt: "Kandy Esala Perahera festival celebration" },
+  { src: "/perahara1.jpeg", alt: "Traditional dancers at Kandy Esala Perahera" },
+  { src: "/perahara2.jpg", alt: "Night procession at Kandy Esala Perahera" },
+  { src: "/perahara.jpg", alt: "Kandy Esala Perahara cultural celebration" },
+]
 
-function ImageCarousel({ images, alt }: { images: string[]; alt: string }) {
-    const [currentIndex, setCurrentIndex] = useState(0)
-
-    const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }
-
-    const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-    }
-
-    const goToImage = (index: number) => {
-        setCurrentIndex(index)
-    }
-
-    return (
-        <div className="relative">
-            <div className="relative overflow-hidden rounded-lg h-[500px] md:h-[500px] sm:h-[350px] flex items-center justify-center">
-                <Image
-                    src={images[currentIndex] || "/placeholder.svg"}
-                    alt={`${alt} - Image ${currentIndex + 1}`}
-                    width={400}
-                    height={300}
-                    className="rounded-lg transition-all duration-300 object-contain w-full h-full"
-                />
-
-                {/* Navigation buttons */}
-                {images.length > 1 && (
-                    <>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-                            onClick={prevImage}
-                        >
-                            <ChevronLeft className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-                        </Button>
-                        <Button
-                            variant="outline"
-                            size="icon"
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white hover:bg-white/90 dark:bg-gray-800 dark:hover:bg-gray-700 cursor-pointer border-gray-200 dark:border-gray-600"
-                            onClick={nextImage}
-                        >
-                            <ChevronRight className="h-4 w-4 text-gray-800 dark:text-gray-200" />
-                        </Button>
-                    </>
-                )}
-            </div>
-
-            {/* Dots indicator */}
-            {images.length > 1 && (
-                <div className="flex justify-center mt-3 space-x-2">
-                    {images.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => goToImage(index)}
-                            className={`w-2 h-2 rounded-full transition-colors ${index === currentIndex ? "bg-blue-500" : "bg-gray-300"
-                                }`}
-                        />
-                    ))}
-                </div>
-            )}
-
-            {/* Image counter */}
-            {images.length > 1 && (
-                <div className="absolute top-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">
-                    {currentIndex + 1} / {images.length}
-                </div>
-            )}
-        </div>
-    )
-}
-
-    const peraharaImages = [
-        "/Kandy-Procession.jpg",
-        "/perahara.jpeg",
-        "/perahara1.jpeg",
-        "/perahara2.jpg",
-        "/perahara.jpg",
-    ]
+const kandyPeraharaPastImages = [
+  { src: "/Kandy-Perahara-past.jpeg", alt: "Historical image of Kandy Esala Perahera procession" },
+  { src: "/Kandy-Perahara-past1.jpeg", alt: "Historical image of Kandy Esala Perahera procession" }
+];
 
 export default function KandyEsalaPeraheraGuide() {
   return (
@@ -344,104 +276,99 @@ export default function KandyEsalaPeraheraGuide() {
                       </ul>
                     </div>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=500&width=600"
-                    alt="Historical illustration showing ancient Sri Lankan king receiving the sacred tooth relic and early Buddhist procession"
-                    width={600}
-                    height={500}
-                    className="rounded-xl shadow-lg"
+                  <ImageCarousel
+                    images={kandyPeraharaPastImages}
                   />
                 </div>
               </CardContent>
             </Card>
 
-            
-        {/* Festival Schedule */}
-        <section className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-10">Complete Festival Schedule</h2>
 
-          <Card className="border-2 border-indigo-200 dark:border-indigo-700">
-            <CardHeader className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30">
-              <CardTitle className="text-2xl text-indigo-700 dark:text-indigo-300">10 Nights of Magic - What Happens When</CardTitle>
-              <CardDescription>Your day-by-day guide to the festival</CardDescription>
-            </CardHeader>
-            <CardContent className="p-8 space-y-6">
-              <div className="grid lg:grid-cols-2 gap-8">
-                <div className="space-y-6">
-                  <div className="border-l-4 border-indigo-500 pl-4">
-                    <h4 className="font-semibold text-lg mb-2">Kap Situveema (Flag Hoisting)</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      The festival officially begins with the hoisting of special flags at all five temples. This
-                      ceremony announces to the city that the Perahera season has started. Local people begin preparing
-                      their homes and shops with decorations and lights.
-                    </p>
-                    <p className="text-xs text-indigo-600 font-medium">Duration: 1 day before processions begin</p>
+            {/* Festival Schedule */}
+            <section className="mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-10">Complete Festival Schedule</h2>
+
+              <Card className="border-2 border-indigo-200 dark:border-indigo-700">
+                <CardHeader className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30">
+                  <CardTitle className="text-2xl text-indigo-700 dark:text-indigo-300">10 Nights of Magic - What Happens When</CardTitle>
+                  <CardDescription>Your day-by-day guide to the festival</CardDescription>
+                </CardHeader>
+                <CardContent className="p-8 space-y-6">
+                  <div className="grid lg:grid-cols-2 gap-8">
+                    <div className="space-y-6">
+                      <div className="border-l-4 border-indigo-500 pl-4">
+                        <h4 className="font-semibold text-lg mb-2">Kap Situveema (Flag Hoisting)</h4>
+                        <p className="text-sm text-muted-foreground mb-2">
+                          The festival officially begins with the hoisting of special flags at all five temples. This
+                          ceremony announces to the city that the Perahera season has started. Local people begin preparing
+                          their homes and shops with decorations and lights.
+                        </p>
+                        <p className="text-xs text-indigo-600 font-medium">Duration: 1 day before processions begin</p>
+                      </div>
+
+                      <div className="border-l-4 border-purple-500 pl-4">
+                        <h4 className="font-semibold text-lg mb-2">Kumbal Perahera (First 5 Nights)</h4>
+                        <p className="text-sm text-muted-foreground mb-2">
+                          The first five nights feature smaller processions from each temple. These are practice runs that
+                          help everyone prepare for the grand finale. You can see all the main elements - elephants,
+                          dancers, musicians - but in smaller numbers. These nights are perfect for first-time visitors to
+                          get familiar with the festival.
+                        </p>
+                        <p className="text-xs text-purple-600 font-medium">
+                          Best for: First-time visitors, less crowded experience
+                        </p>
+                      </div>
+
+                      <div className="border-l-4 border-red-500 pl-4">
+                        <h4 className="font-semibold text-lg mb-2">Randoli Perahera (Final 5 Nights)</h4>
+                        <p className="text-sm text-muted-foreground mb-2">
+                          The grand finale! These five nights feature the full procession with all 100+ elephants, thousands
+                          of performers, and the most spectacular displays. The sacred casket containing Buddha&apos;s tooth
+                          relic joins the procession, making these the most important and crowded nights. The final night is
+                          the most magnificent of all.
+                        </p>
+                        <p className="text-xs text-red-600 font-medium">
+                          Best for: Main event experience, book seats in advance
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4">
+                      <ImageCarousel
+                        images={peraharaImages}
+                      />
+
+                      <div className="bg-indigo-50 dark:bg-indigo-900/30 p-4 rounded-lg border border-indigo-200 dark:border-indigo-700">
+                        <h4 className="font-semibold text-indigo-800 dark:text-indigo-300 mb-3">Daily Schedule:</h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          <li>
+                            • <strong>6:00 PM:</strong> Temples prepare for procession
+                          </li>
+                          <li>
+                            • <strong>7:30 PM:</strong> Elephants gather at starting points
+                          </li>
+                          <li>
+                            • <strong>8:00 PM:</strong> Processions begin from temples
+                          </li>
+                          <li>
+                            • <strong>8:30 PM:</strong> All processions merge into main parade
+                          </li>
+                          <li>
+                            • <strong>9:00-11:00 PM:</strong> Main procession through city
+                          </li>
+                          <li>
+                            • <strong>11:30 PM:</strong> Processions return to temples
+                          </li>
+                          <li>
+                            • <strong>Next Morning:</strong> Water cutting ceremony (final day only)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-
-                  <div className="border-l-4 border-purple-500 pl-4">
-                    <h4 className="font-semibold text-lg mb-2">Kumbal Perahera (First 5 Nights)</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      The first five nights feature smaller processions from each temple. These are practice runs that
-                      help everyone prepare for the grand finale. You can see all the main elements - elephants,
-                      dancers, musicians - but in smaller numbers. These nights are perfect for first-time visitors to
-                      get familiar with the festival.
-                    </p>
-                    <p className="text-xs text-purple-600 font-medium">
-                      Best for: First-time visitors, less crowded experience
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-red-500 pl-4">
-                    <h4 className="font-semibold text-lg mb-2">Randoli Perahera (Final 5 Nights)</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      The grand finale! These five nights feature the full procession with all 100+ elephants, thousands
-                      of performers, and the most spectacular displays. The sacred casket containing Buddha&apos;s tooth
-                      relic joins the procession, making these the most important and crowded nights. The final night is
-                      the most magnificent of all.
-                    </p>
-                    <p className="text-xs text-red-600 font-medium">
-                      Best for: Main event experience, book seats in advance
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <ImageCarousel
-                                        images={peraharaImages}
-                                        alt="Panchakapaduwa Island showing various views of the mystical island, temples, and meditation areas"
-                                    />
-
-                  <div className="bg-indigo-50 dark:bg-indigo-900/30 p-4 rounded-lg border border-indigo-200 dark:border-indigo-700">
-                    <h4 className="font-semibold text-indigo-800 dark:text-indigo-300 mb-3">Daily Schedule:</h4>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>
-                        • <strong>6:00 PM:</strong> Temples prepare for procession
-                      </li>
-                      <li>
-                        • <strong>7:30 PM:</strong> Elephants gather at starting points
-                      </li>
-                      <li>
-                        • <strong>8:00 PM:</strong> Processions begin from temples
-                      </li>
-                      <li>
-                        • <strong>8:30 PM:</strong> All processions merge into main parade
-                      </li>
-                      <li>
-                        • <strong>9:00-11:00 PM:</strong> Main procession through city
-                      </li>
-                      <li>
-                        • <strong>11:30 PM:</strong> Processions return to temples
-                      </li>
-                      <li>
-                        • <strong>Next Morning:</strong> Water cutting ceremony (final day only)
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+                </CardContent>
+              </Card>
+            </section>
 
             {/* Kandyan Period */}
             <Card className="overflow-hidden border-2 border-purple-200 dark:border-purple-700">
