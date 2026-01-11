@@ -10,9 +10,9 @@ export default function LankathilakaGuide() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Lankatilaka-Image-House.jpeg"
+          src="/Lankathilaka-Viharaya.webp"
           alt="The majestic Lankathilaka Temple standing tall on Panhalgala rock, showcasing its impressive Kandyan architecture"
           fill
           className="object-cover"
@@ -20,8 +20,8 @@ export default function LankathilakaGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Lankathilaka Temple</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">A Masterpiece of Gampola Era Architecture</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Lankathilaka Viharaya</h1>
+          <p className="text-xl md:text-2xl mb-6 font-light">Gampola Era Masterpiece in Udunuwara, Kandy</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
@@ -29,7 +29,7 @@ export default function LankathilakaGuide() {
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Landmark className="w-4 h-4 mr-1" />
-              Built in 1344 CE
+              Built 1341-1351 CE (Gampola Era)
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <Palette className="w-4 h-4 mr-1" />
@@ -42,18 +42,27 @@ export default function LankathilakaGuide() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Lankathilaka: A Medieval Architectural Marvel</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Lankathilaka Viharaya: Udunuwara's Medieval Architectural Marvel</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Standing proudly on the Panhalgala rock near Kandy, Lankathilaka Temple is one of Sri Lanka&apos;s most impressive
-              medieval Buddhist temples. Built during the Gampola Era in 1344 CE by King Bhuvanekabahu IV, this architectural 
-              masterpiece combines Sinhalese, Dravidian, and Hindu building styles.
+              Standing proudly on the Panhalgala rock in Udunuwara (Hiyarapitiya village, near Pilimathalawa, Kandy District), 
+              Lankathilaka Viharaya is one of Sri Lanka&apos;s most impressive medieval Buddhist temples. Not to be confused with 
+              the ancient Lankatilaka Image House in Polonnaruwa, this Gampola Era temple was built between 1341-1351 CE by 
+              King Bhuvanekabahu IV. Designed by renowned South Indian architect Sathapati Rayar, it masterfully combines 
+              Sinhalese, Dravidian, and Hindu architectural styles.
             </p>
-            <p className="text-lg">
-              The temple rises majestically from its rocky foundation, reaching four stories high and showcasing the 
-              remarkable engineering skills of ancient Sri Lankan builders. Its unique design and cultural importance make 
-              it a must-visit destination for anyone interested in Sri Lankan history and architecture.
+            <p className="text-lg mb-4">
+              The temple rises majestically from its rocky foundation on the massive Panhalgala rock outcrop. This remarkable Gampola-era 
+              structure showcases the extraordinary engineering skills of medieval Sri Lankan and South Indian craftsmen who constructed it 
+              using a unique blend of architectural styles. Declared an archaeological protected monument in 1949, its unique design and 
+              cultural importance make it a must-visit destination for anyone interested in Sri Lankan history and architecture.
             </p>
+            <div className="p-4 bg-amber-100 border-l-4 border-amber-500 rounded">
+              <p className="text-sm text-amber-900">
+                <strong>Important Note:</strong> This is Lankathilaka Viharaya in Udunuwara, Kandy District (Gampola Era, 14th century). 
+                It is different from the Lankatilaka Image House in Polonnaruwa (12th century, built by King Parakramabahu the Great).
+              </p>
+            </div>
           </div>
         </section>
 
@@ -72,7 +81,7 @@ export default function LankathilakaGuide() {
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-blue-500" />
                     <span>
-                      <strong>Built in:</strong> 1344 CE
+                      <strong>Built:</strong> 1341-1351 CE
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -92,13 +101,13 @@ export default function LankathilakaGuide() {
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
                     <span>
-                      <strong>Location:</strong> 12km from Kandy
+                      <strong>Location:</strong> Udunuwara, Kandy (Hiyarapitiya village)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Landmark className="w-4 h-4 text-yellow-500" />
                     <span>
-                      <strong>Height:</strong> Four Stories
+                      <strong>Style:</strong> Multi-level rock temple
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -111,6 +120,70 @@ export default function LankathilakaGuide() {
               </div>
             </CardContent>
           </Card>
+        </section>
+        {/* Visitor Information */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Visitor Information</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Planning Your Visit</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2">Opening Hours</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Daily: 6:00 AM - 6:00 PM</li>
+                    <li>• Best time: Early morning or late afternoon</li>
+                    <li>• Special ceremonies on full moon days</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Entrance Fees</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Local visitors: Free (small donation appreciated)</li>
+                    <li>• Foreign visitors: 500 LKR</li>
+                    <li>• Camera fee: 250 LKR</li>
+                  </ul>
+                </div>
+                <div className="p-3 bg-blue-50 rounded-lg">
+                  <p className="text-sm text-blue-800">
+                    <strong>Dress Code:</strong> Modest dress required. Cover shoulders and knees. Remove shoes before entering.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Getting There</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2">From Kandy</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• By Tuk-tuk: 30-40 minutes</li>
+                    <li>• By Bus: Take Udunuwara bus</li>
+                    <li>• By Car: 25 minutes drive</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Local Transport</h4>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Tuk-tuks available at temple</li>
+                    <li>• Local buses pass nearby</li>
+                    <li>• Parking available for vehicles</li>
+                  </ul>
+                </div>
+                <div className="p-3 bg-yellow-50 rounded-lg">
+                  <p className="text-sm text-yellow-800">
+                    <strong>Tip:</strong> Combine your visit with nearby Gadaladeniya and Embekke temples for a complete 
+                    cultural experience.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
         {/* Architectural Features */}
@@ -126,10 +199,10 @@ export default function LankathilakaGuide() {
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Exterior Features</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Built on a natural rock formation</li>
-                    <li>• Four-story high brick structure</li>
-                    <li>• Distinctive entrance with dragon arch</li>
-                    <li>• Intricate stone carvings</li>
+                    <li>• Built on Panhalgala natural rock formation</li>
+                    <li>• Multi-level structure rising from the rock</li>
+                    <li>• Distinctive makara torana (dragon arch) entrance</li>
+                    <li>• Gajasinha korawakgala (elephant-lion balustrades)</li>
                     <li>• Traditional Kandyan roof design</li>
                   </ul>
                 </div>
@@ -146,8 +219,9 @@ export default function LankathilakaGuide() {
 
                 <div className="p-4 bg-blue-50 rounded-lg">
                   <p className="text-sm text-blue-800">
-                    <strong>Did you know?</strong> The temple&apos;s walls were originally plastered with white lime mortar
-                    mixed with crushed seashells, creating a brilliant white appearance that could be seen from miles away.
+                    <strong>Did you know?</strong> The temple was designed by South Indian architect Sathapati Rayar using Tamil 
+                    Pandya sculptors from Tamil Nadu. The temple features the longest Tamil inscription found in Sri Lanka, alongside 
+                    Sinhala inscriptions, showing the bilingual nature of pre-colonial kingdoms.
                   </p>
                 </div>
               </CardContent>
@@ -157,23 +231,18 @@ export default function LankathilakaGuide() {
               <ImageCarousel
                 images={[
                   {
-                    src: "/lankathilaka-exterior.jpg",
-                    alt: "Exterior view of Lankathilaka Temple showing its impressive height and architecture",
-                    caption: "Temple Exterior",
-                    title: "Lankathilaka Temple"
+                    src: "/lankathilaka-Viharaya.webp",
+                    alt: "Exterior view of Lankathilaka Viharaya in Udunuwara, Kandy, showing its impressive Gampola-era architecture",
+                    caption: "Temple Exterior - Udunuwara, Kandy",
+                    title: "Lankathilaka Viharaya"
                   },
                   {
-                    src: "/lankathilaka-entrance.jpg",
-                    alt: "The ornate entrance gateway with dragon arch",
-                    caption: "Main Entrance",
+                    src: "/Lankathilake-Temple.webp",
+                    alt: "The ornate entrance gateway with makara torana (dragon arch) at Lankathilaka Viharaya",
+                    caption: "Main Entrance with Dragon Arch",
                     title: "Temple Entrance"
                   },
-                  {
-                    src: "/lankathilaka-paintings.jpg",
-                    alt: "Ancient wall paintings inside the temple showing Buddhist stories",
-                    caption: "Wall Paintings",
-                    title: "Interior Art"
-                  }
+                  
                 ]}
               />
             </div>
@@ -189,17 +258,19 @@ export default function LankathilakaGuide() {
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold mb-4">Temple History</h3>
                   <p className="text-muted-foreground mb-4">
-                    Built during a time when both Buddhism and Hinduism were practiced together, Lankathilaka Temple 
-                    represents the harmony between these two religions in medieval Sri Lanka. The temple originally had 
-                    separate shrines for both Buddhist and Hindu worship.
+                    Built during the Gampola Kingdom period (capital was in nearby Gampola) when both Buddhism and Hinduism were 
+                    practiced harmoniously, Lankathilaka Viharaya in Udunuwara represents this religious harmony in medieval Sri Lanka. 
+                    The temple complex features six devales (Hindu shrines) dedicated to Upulvan, Ganapathi, Saman, Vibhishana, 
+                    Kataragama deviyo, and Kumara Bandara, who is believed to be the guardian deity of the temple.
                   </p>
                   <div className="space-y-3">
                     <h4 className="font-medium">Historical Timeline:</h4>
                     <ul className="text-sm text-muted-foreground space-y-2">
-                      <li>• 1344: Construction began under King Bhuvanekabahu IV</li>
-                      <li>• 1347: Main shrine room completed</li>
-                      <li>• 14th-15th centuries: Addition of paintings</li>
-                      <li>• 18th century: Renovations during Kandyan period</li>
+                      <li>• 1341-1351: Construction during reign of King Bhuvanekabahu IV</li>
+                      <li>• Built by Chief Minister Senalankadhikara</li>
+                      <li>• Designed by South Indian architect Sathapati Rayar</li>
+                      <li>• 14th-18th centuries: Addition of paintings and renovations</li>
+                      <li>• 1949: Declared archaeological protected monument (Dec 16)</li>
                     </ul>
                   </div>
                 </div>
@@ -286,70 +357,7 @@ export default function LankathilakaGuide() {
           </div>
         </section>
 
-        {/* Visitor Information */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Visitor Information</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Planning Your Visit</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">Opening Hours</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Daily: 6:00 AM - 6:00 PM</li>
-                    <li>• Best time: Early morning or late afternoon</li>
-                    <li>• Special ceremonies on full moon days</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Entrance Fees</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Local visitors: Free (small donation appreciated)</li>
-                    <li>• Foreign visitors: 500 LKR</li>
-                    <li>• Camera fee: 250 LKR</li>
-                  </ul>
-                </div>
-                <div className="p-3 bg-blue-50 rounded-lg">
-                  <p className="text-sm text-blue-800">
-                    <strong>Dress Code:</strong> Modest dress required. Cover shoulders and knees. Remove shoes before entering.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Getting There</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">From Kandy</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• By Tuk-tuk: 30-40 minutes</li>
-                    <li>• By Bus: Take Udunuwara bus</li>
-                    <li>• By Car: 25 minutes drive</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Local Transport</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Tuk-tuks available at temple</li>
-                    <li>• Local buses pass nearby</li>
-                    <li>• Parking available for vehicles</li>
-                  </ul>
-                </div>
-                <div className="p-3 bg-yellow-50 rounded-lg">
-                  <p className="text-sm text-yellow-800">
-                    <strong>Tip:</strong> Combine your visit with nearby Gadaladeniya and Embekke temples for a complete 
-                    cultural experience.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+        
 
         {/* Best Time to Visit */}
         <section className="mb-12">
