@@ -83,7 +83,7 @@ const originalArticles = [
     path: "kandy-esela-perahara",
     category: "Culture",
     readTime: "13 min read",
-    image: "/Kandy.jpeg",
+    image: "/Kandy-Esela-Perahara-1.JPG",
     description: "Experience the grandest Buddhist festival in Sri Lanka with elephants, dancers, and drummers in the cultural capital of Kandy.",
     highlights: ["Temple of Tooth", "Traditional Dancing", "Elephant Parade"],
     featured: false,

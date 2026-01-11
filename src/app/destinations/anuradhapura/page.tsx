@@ -920,25 +920,33 @@ export default function AnuradhapuraTravelGuide() {
 
         {/* Archaeological Wonders */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 scroll-mt-40" id="nearby-archaeological-wonders">Near by Archaeological Wonders</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold mb-6 scroll-mt-40" id="nearby-archaeological-wonders">Nearby Archaeological Wonders</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Discover more ancient treasures within the sacred city of Anuradhapura
+          </p>
 
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Isurumuniya Temple</CardTitle>
-                <CardDescription>Ancient temple</CardDescription>
-              </CardHeader>
-              <CardContent>
+              <div className="relative h-48">
                 <Image
                   src="/Isurumuniya.jpeg"
                   alt="Isurumuniya rock temple showing ancient stone carvings and cave architecture"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  15 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Isurumuniya Temple</h3>
+                <p className="text-sm text-muted-foreground mb-3">
                   Famous for the &quot;Isurumuniya Lovers&quot; carving and beautiful rock-cut architecture from the 3rd century BC.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  Within Anuradhapura
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/isurumuniya" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -947,24 +955,27 @@ export default function AnuradhapuraTravelGuide() {
               </CardContent>
             </Card>
 
-
-
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Ranmusu uyana with universal stargate</CardTitle>
-                <CardDescription>Royal park with ancient ruins</CardDescription>
-              </CardHeader>
-              <CardContent>
+              <div className="relative h-48">
                 <Image
                   src="/Ranmusuuyana.jpeg"
-                  alt="View of Sigiriya Rock from Pidurangala Rock"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  alt="Ranmusu Uyana showing mysterious ancient stone carvings and stargate"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  10 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Ranmusu Uyana with Universal Stargate</h3>
+                <p className="text-sm text-muted-foreground mb-3">
                   Explore the mysterious Ranmusu uyana, an ancient site with unique stone carvings and a universal stargate.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  Within Anuradhapura
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/ranmusu-uyana" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -973,23 +984,27 @@ export default function AnuradhapuraTravelGuide() {
               </CardContent>
             </Card>
 
-
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Mihinthalaya</CardTitle>
-                <CardDescription>Sacred site</CardDescription>
-              </CardHeader>
-              <CardContent>
+              <div className="relative h-48">
                 <Image
                   src="/Mihinthale.jpg"
-                  alt="View of Sigiriya Rock from Pidurangala Rock"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  alt="Mihinthalaya sacred mountain where Buddhism was first introduced to Sri Lanka"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Just a few kilometers from Anuradhapura, Mihinthalaya is a sacred site where Buddhism was first introduced to Sri Lanka.
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  20 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Mihinthalaya</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sacred site where Buddhism was first introduced to Sri Lanka. A pilgrimage mountain with stunning views.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  13 km from Anuradhapura
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -998,53 +1013,27 @@ export default function AnuradhapuraTravelGuide() {
               </CardContent>
             </Card>
 
-
-
-            {/* <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Moonstone & Guard Stones</CardTitle>
-                <CardDescription>Exquisite stone craftsmanship</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Intricate moonstone carving showing concentric circles with animals and lotus designs"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Masterpieces of ancient stone carving found at temple entrances, depicting Buddhist philosophy in art.
-                </p>
-                <div className="mt-4">
-                  <Link href="/destinations/moonstone-guard-stones">
-                    <Button
-                      className="mt-2 h-9 px-4 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer text-sm"
-                      variant="default"
-                    >
-                      See More →
-                    </Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card> */}
-
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Twin Ponds (Kuttam Pokuna)</CardTitle>
-                <CardDescription>Ancient hydraulic engineering</CardDescription>
-              </CardHeader>
-              <CardContent>
+              <div className="relative h-48">
                 <Image
                   src="/Kuttampokuna.jpeg"
                   alt="Twin Ponds showing sophisticated ancient water management system with stone steps"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  10 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Twin Ponds (Kuttam Pokuna)</h3>
+                <p className="text-sm text-muted-foreground mb-3">
                   Sophisticated bathing pools for monks, showcasing advanced hydraulic engineering from ancient times.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  Within Anuradhapura
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/kuttam-pokuna" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -1052,6 +1041,33 @@ export default function AnuradhapuraTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+
+          {/* Day Trip Suggestions */}
+          <div className="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-center">Suggested Day Trip Combinations</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-purple-700 dark:text-purple-300 mb-2">Sacred Sites Explorer</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Anuradhapura (Atamasthana) → Mihinthalaya → Ritigala Forest Monastery → Return
+                </p>
+                <div className="flex items-center text-xs text-purple-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Full day trip (8-10 hours)
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Ancient Cities Circuit</h4>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Anuradhapura → Polonnaruwa → Sigiriya → Return
+                </p>
+                <div className="flex items-center text-xs text-blue-600">
+                  <Clock className="w-3 h-3 mr-1" />
+                  Full day trip (12-14 hours)
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

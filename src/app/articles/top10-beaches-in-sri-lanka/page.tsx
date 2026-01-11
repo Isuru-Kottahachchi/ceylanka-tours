@@ -1,11 +1,13 @@
 "use client";
 import { Fragment, useEffect, useState } from 'react';
+import Link from 'next/link';
 import { ImageCarousel } from "@/components/ui/image-carousel";
 import { BeachSafetyModal } from "@/components/beach-safety-modal"
 
 const beaches = [
   {
     name: 'Unawatuna Beach',
+    slug: 'unawatuna',
     images: [
       { src: '/Unawatuna.jpg', alt: 'Unawatuna Beach', caption: 'Crystal clear waters', title: 'Unawatuna Beach' },
       { src: '/images/unawatuna-2.jpg', alt: 'Unawatuna Bay', caption: 'Crescent-shaped bay', title: 'Bay View' },
@@ -17,6 +19,7 @@ const beaches = [
       'Unawatuna is one of the most popular and accessible beaches in Sri Lanka, offering a crescent-shaped bay with calm, swimmable waters and golden sands. The vibrant town atmosphere is filled with beach cafés and laid-back nightlife.',
     thingsToDo: [
       'Snorkeling at Jungle Beach',
+      'Enjoy the time with sea turtles ',
       'Hiking to the Japanese Peace Pagoda',
       'Sampling seafood at beach restaurants',
     ],
@@ -29,6 +32,7 @@ const beaches = [
   },
   {
     name: 'Mirissa Beach',
+    slug: 'mirissa',
     images: [
       { src: '/Mirissa.jpg', alt: 'Mirissa Beach', caption: 'Paradise for whale watching', title: 'Mirissa Beach' },
       { src: '/images/mirissa-2.jpg', alt: 'Mirissa Bay', caption: 'Palm-fringed shores', title: 'Bay View' },
@@ -52,6 +56,7 @@ const beaches = [
   },
   {
     name: 'Arugam Bay',
+    slug: 'arugambay',
     images: [
       { src: '/Arugam-bay.jpeg', alt: 'Arugam Bay', caption: 'World-class surfing destination', title: 'Arugam Bay' },
       { src: '/images/arugambay-2.jpg', alt: 'Surfing', caption: 'Perfect waves', title: 'Surfing Paradise' },
@@ -75,6 +80,7 @@ const beaches = [
   },
   {
     name: 'Nilaveli Beach',
+    slug: 'nilaveli',
     images: [
       { src: '/Nilaveli-beach.jpg', alt: 'Nilaveli Beach', caption: 'Pristine white sand beach', title: 'Nilaveli Beach' },
       { src: '/images/nilaveli-2.jpg', alt: 'Turquoise Waters', caption: 'Crystal clear waters', title: 'Crystal Waters' },
@@ -98,6 +104,7 @@ const beaches = [
   },
   {
     name: 'Hikkaduwa Beach',
+    slug: 'hikkaduwa',
     images: [
       { src: '/Hikkaduwabeach.jpg', alt: 'Hikkaduwa Beach', caption: 'Vibrant beach town', title: 'Hikkaduwa Beach' },
       { src: '/images/hikkaduwa-2.jpg', alt: 'Coral Sanctuary', caption: 'Coral reefs and turtles', title: 'Coral Sanctuary' },
@@ -121,6 +128,7 @@ const beaches = [
   },
   {
     name: 'Bentota Beach',
+    slug: 'bentota',
     images: [
       { src: '/Bentotabeach.jpeg', alt: 'Bentota Beach', caption: 'Luxury beach resort area', title: 'Bentota Beach' },
       { src: '/images/bentota-2.jpg', alt: 'Water Sports', caption: 'Exciting water sports', title: 'Water Activities' },
@@ -144,6 +152,7 @@ const beaches = [
   },
   {
     name: 'Hirikatiya Beach',
+    slug: 'hirikatiya',
     images: [
       { src: '/Hirikatiya.jpg', alt: 'Hirikatiya Beach', caption: 'Hidden gem beach', title: 'Hirikatiya Beach' },
       { src: '/hirikatiya-2.jpg', alt: 'Tangalle Area', caption: 'Peaceful surroundings', title: 'Peaceful Paradise' },
@@ -167,6 +176,7 @@ const beaches = [
   },
   {
     name: 'Pasikuda Beach',
+    slug: 'pasikuda',
     images: [
       { src: '/Pasikuda.jpeg', alt: 'Pasikuda Beach', caption: 'Tranquil beach escape', title: 'Pasikuda Beach' },
       { src: '/images/pasikuda-2.jpg', alt: 'Calm Waters', caption: 'Calm blue waters', title: 'Calm Waters' },
@@ -190,6 +200,7 @@ const beaches = [
   },
   {
     name: 'Weligama Beach',
+    slug: 'waligama',
     images: [
       { src: '/Waligama-Bay-Beach.jpg', alt: 'Weligama Beach', caption: 'Perfect for surf lessons', title: 'Weligama Beach' },
       { src: '/images/weligama-2.jpg', alt: 'Surfing School', caption: 'Learn to surf', title: 'Surf School' },
@@ -213,8 +224,9 @@ const beaches = [
   },
   {
     name: 'Kalpitiya Beach',
+    slug: 'kalpitiya',
     images: [
-      { src: '/images/kalpitiya.jpg', alt: 'Kalpitiya Beach', caption: 'Kite surfing paradise', title: 'Kalpitiya Beach' },
+      { src: '/Kalpitiya-beach.jpg', alt: 'Kalpitiya Beach', caption: 'Kite surfing paradise', title: 'Kalpitiya Beach' },
       { src: '/images/kalpitiya-2.jpg', alt: 'Kite Surfing', caption: 'Perfect wind conditions', title: 'Kite Surfing' },
       { src: '/images/kalpitiya-3.jpg', alt: 'Dolphin Watching', caption: 'Dolphin tours', title: 'Dolphin Watching' }
     ],
@@ -236,6 +248,7 @@ const beaches = [
   },
   {
     name: 'Jungle beach, Unawatuna,Sri Lanka',
+    slug: 'jungle-beach',
     images: [
       { src: '/jungle-beach.jpeg', alt: 'Jungle Beach', caption: 'Hidden jungle paradise', title: 'Jungle Beach' },
       { src: '/images/jungle-beach-2.jpg', alt: 'Secluded Cove', caption: 'Secluded natural cove', title: 'Secluded Paradise' },
@@ -344,9 +357,11 @@ export default function TopBeachesPage() {
                     </div>
                   </div>
 
-                  <button className="mt-4 w-full sm:w-auto bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-cyan-700 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                    Explore {beach.name.split(' ')[0]}
-                  </button>
+                  <Link href={`/destinations/${beach.slug}`}>
+                    <button className="mt-4 w-full sm:w-auto bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-cyan-700 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer">
+                      Explore {beach.name.split(' ')[0]}
+                    </button>
+                  </Link>
                 </div>
               </div>
             </Fragment>

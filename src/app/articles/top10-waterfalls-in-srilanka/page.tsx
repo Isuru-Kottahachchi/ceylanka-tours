@@ -257,7 +257,7 @@ const waterfalls = [
   },
   {
     name: "Laxapana Falls",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Laxapana-falls.jpg",
     location: "Nuwara Eliya District",
     height: "126 meters (413 feet)",
     difficulty: "Moderate",
