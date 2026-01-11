@@ -48,7 +48,7 @@ export default function KingRavanaPage() {
             <div className="flex flex-col md:flex-row gap-6 mb-6">
               <div className="relative w-full md:w-2/5 h-80">
                 <Image
-                  src="/images/ravana-statue.jpg"
+                  src="/King-Ravana.png"
                   alt="King Ravana Statue"
                   fill
                   className="object-cover rounded-lg"

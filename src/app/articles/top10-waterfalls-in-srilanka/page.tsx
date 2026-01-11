@@ -105,7 +105,7 @@ const waterfalls = [
   },
   {
     name: "Ravana Falls",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Ravana-Ella.jpg",
     location: "Ella, Badulla District",
     height: "25 meters (82 feet)",
     difficulty: "Easy",

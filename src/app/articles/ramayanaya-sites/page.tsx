@@ -208,20 +208,14 @@ export default function RamayanaSitesArticle() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-        <Image
-          src="/placeholder.svg?height=600&width=1200"
-          alt="Ancient Ramayana sites in Sri Lanka with misty mountains and sacred temples"
-          fill
-          className="object-cover"
-          priority
-        />
+      <section className="bg-gradient-to-r from-orange-600 to-red-600  relative h-[60vh] flex items-center justify-center overflow-hidden">
+
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <Badge className="mb-4 bg-orange-600 text-white border-orange-500">
+          {/* <Badge className="mb-4 bg-orange-600 text-white border-orange-500">
             <BookOpen className="w-4 h-4 mr-1" />
             Ancient Legends & Sacred Sites
-          </Badge>
+          </Badge> */}
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Ramayana Sites in Sri Lanka</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">
             Journey through the legendary locations of the ancient epic

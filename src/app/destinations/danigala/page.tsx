@@ -29,7 +29,7 @@ export default function DanigalaGuide() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/danigala-mountain.jpg"
+          src="/Danigala.jpg"
           alt="The mysterious flat-topped Danigala Mountain rising above the surrounding landscape, showcasing its unique UFO-like appearance"
           fill
           className="object-cover"
@@ -40,15 +40,15 @@ export default function DanigalaGuide() {
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Danigala Mountain</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">The Mysterious UFO Mountain of Sri Lanka</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-yellow/20 text-white border-yellow/30">
               <MapPin className="w-4 h-4 mr-1" />
               Aralaganwila, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-green/20 text-white border-green/30">
               <Mountain className="w-4 h-4 mr-1" />
               1,165 ft Elevation
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-blue/20 text-white border-blue/30">
               <History className="w-4 h-4 mr-1" />
               Ancient Mystery Site
             </Badge>
