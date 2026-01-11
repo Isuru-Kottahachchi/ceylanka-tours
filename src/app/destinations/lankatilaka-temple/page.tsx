@@ -231,7 +231,7 @@ export default function LankathilakaGuide() {
               <ImageCarousel
                 images={[
                   {
-                    src: "/lankathilaka-Viharaya.webp",
+                    src: "/Lankathilaka-Viharaya.webp",
                     alt: "Exterior view of Lankathilaka Viharaya in Udunuwara, Kandy, showing its impressive Gampola-era architecture",
                     caption: "Temple Exterior - Udunuwara, Kandy",
                     title: "Lankathilaka Viharaya"
