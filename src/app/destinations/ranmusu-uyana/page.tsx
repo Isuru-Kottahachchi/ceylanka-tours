@@ -58,20 +58,27 @@ export default function RanmusuUyanaGuide() {
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">
-            Welcome to Ranmusu Uyana: Where Ancient Mystery Meets Nature
+            Ranmusu Uyana: Ancient Royal Garden of Mysteries
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Hidden between the Tissa Wewa reservoir and the Isurumuniya Rock Temple in Anuradhapura lies Ranmusu
-              Uyana, an ancient park shrouded in mystery and intrigue. This 40-acre archaeological site, dating back to
-              the 3rd century BC, was once a royal pleasure garden for the kings of Anuradhapura.
+              Nestled between the historic Tissa Wewa reservoir and the sacred Isurumuniya Rock Temple in Anuradhapura, 
+              Ranmusu Uyana (meaning &quot;Golden Fish Park&quot;) is a 40-acre archaeological wonder dating back to the 3rd century BC. 
+              This ancient royal pleasure garden served as a private retreat for the kings of Anuradhapura and their families, 
+              offering a serene escape from the demands of ruling one of Asia&apos;s most powerful ancient kingdoms.
+            </p>
+            <p className="text-lg mb-4">
+              The park features remarkable engineering achievements including rock-cut swimming pools, sophisticated water 
+              management systems, and meditation caves carved into massive boulders. Ancient inscriptions found throughout 
+              the site provide glimpses into royal life, religious practices, and the advanced civilization that flourished here 
+              over 2,000 years ago.
             </p>
             <p className="text-lg">
-              What makes Ranmusu Uyana truly fascinating is the enigmatic &quot;Stargate&quot; or &quot;Universal Gate&quot; - a mysterious
-              carved stone panel featuring an intricate diagram of circles and symbols that has sparked countless
-              theories about its purpose and origin. Whether you&apos;re an archaeology enthusiast, history buff, or simply
-              curious about ancient mysteries, Ranmusu Uyana offers a unique glimpse into Sri Lanka&apos;s rich and enigmatic
-              past.
+              The crown jewel of Ranmusu Uyana is the mysterious &quot;Sakwala Chakraya&quot; (Universal Gate or Stargate) - an 
+              enigmatic carved stone panel with intricate circular patterns and symbols that continues to puzzle archaeologists, 
+              astronomers, and researchers worldwide. This fascinating artifact has sparked theories ranging from ancient star 
+              maps and cosmological diagrams to meditation guides and astronomical teaching tools, making Ranmusu Uyana a must-visit 
+              destination for anyone captivated by ancient mysteries and lost civilizations.
             </p>
           </div>
         </section>
@@ -132,42 +139,6 @@ export default function RanmusuUyanaGuide() {
           </Card>
         </section>
 
-        {/* The Mystery */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">The Universal Gate: Ancient Mystery</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-            <div>
-              <Image
-                src="/Universal-Gate.jpeg"
-                alt="Mysterious Universal Gate carving at Ranmusu Uyana showing intricate circular patterns and symbols"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                The enigmatic Universal Gate carving that has puzzled researchers for generations
-              </p>
-            </div>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                The most intriguing feature of Ranmusu Uyana is undoubtedly the mysterious carved stone panel known as
-                the &quot;Stargate&quot; or &quot;Universal Gate&quot;. This fascinating artifact features an intricate diagram of
-                concentric circles, rectangular compartments, and various symbols carved into the rock face.
-              </p>
-              <p>
-                Some researchers suggest it could be an ancient star map, a cosmological diagram, or even a key to
-                understanding interdimensional travel. Others propose more practical explanations, such as a map for
-                meditation practices or an ancient teaching tool for astronomy or mathematics.
-              </p>
-              <p>
-                What makes this carving particularly interesting is that similar patterns have been found in other
-                ancient sites around the world, leading to speculation about possible connections between ancient
-                civilizations or shared knowledge systems that have been lost to time.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* What to See */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Key Attractions at Ranmusu Uyana</h2>
@@ -175,40 +146,68 @@ export default function RanmusuUyanaGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>1. The Universal/Star Gate (Sakwala Chakraya)</CardTitle>
-                <CardDescription>Mysterious ancient carving with unknown purpose</CardDescription>
+                <CardDescription>Mysterious ancient carving with unknown purpose - The enigmatic centerpiece of Ranmusu Uyana</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400&text=Universal+Gate+Detail"
-                    alt="Close-up detail of the Universal Gate carving showing intricate symbols and circular patterns"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                <div className="grid md:grid-cols-2 gap-6 items-start">
                   <div>
-                    <p className="text-muted-foreground mb-4">
-                      The centerpiece of Ranmusu Uyana that draws researchers and mystery enthusiasts:
-                      There is a conspiracy theory that there are aliens behind this gate and similar gates around the world. Ex Peru and Egypt
+                    <Image
+                      src="/Universal-Gate.jpeg"
+                      alt="Mysterious Universal Gate carving at Ranmusu Uyana showing intricate circular patterns and symbols"
+                      width={400}
+                      height={300}
+                      className="rounded-lg shadow-lg object-cover w-full"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground mb-3 text-sm">
+                      The most intriguing feature of Ranmusu Uyana is this mysterious carved stone panel known as
+                      the &quot;Stargate&quot; or &quot;Universal Gate&quot; (Sakwala Chakraya). This enigmatic artifact features an intricate 
+                      diagram of concentric circles, geometric patterns, and various symbols carved into a rock surface.
                     </p>
-                    <ul className="space-y-2 text-muted-foreground">
+                    <p className="text-muted-foreground mb-3 text-sm">
+                      While its true purpose remains unknown, various theories have been proposed: an ancient astronomical chart 
+                      for tracking celestial bodies, a cosmological diagram representing the Buddhist universe, a meditation map, 
+                      or even an ancient teaching tool for mathematics and geometry.
+                    </p>
+                    <h4 className="font-semibold mb-2 text-foreground text-sm">Key Features:</h4>
+                    <ul className="space-y-1.5 text-muted-foreground text-sm mb-4">
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Intricate carving featuring concentric circles and symbols
+                        <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                        Intricate carving featuring concentric circles and geometric symbols
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Contains over 30 distinct symbols and patterns
+                        <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                        Contains multiple distinct symbols and patterns
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Purpose remains debated among archaeologists and researchers
+                        <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                        Purpose remains debated among archaeologists
                       </li>
                       <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Also known as &quot;Sakwala Chakraya&quot; (Universe Cycle)
+                        <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                        Known as &quot;Sakwala Chakraya&quot; (Universe Wheel/Cycle)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                        Carved during the Anuradhapura period
                       </li>
                     </ul>
+
+                    {/* Did You Know - Universal Gate Mystery */}
+                    <div className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 p-3 rounded-lg border-l-4 border-purple-500">
+                      <h4 className="font-bold text-purple-800 dark:text-purple-200 mb-2 flex items-center gap-2 text-xs">
+                        <Star className="w-3.5 h-3.5" />
+                        Did You Know?
+                      </h4>
+                      <p className="text-muted-foreground text-xs leading-relaxed">
+                        This carving has sparked numerous theories, from ancient astronomical charts to alien connections! While some 
+                        enthusiasts suggest similarities with mysterious carvings in Peru and Egypt point to lost ancient knowledge or 
+                        extraterrestrial influence, most archaeologists believe it represents Buddhist cosmology or served as an 
+                        educational tool. The mystery continues to draw researchers and curious visitors from around the world, each 
+                        seeking to unlock the secrets of this ancient diagram.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -243,6 +242,14 @@ export default function RanmusuUyanaGuide() {
                         Demonstrates advanced hydraulic knowledge
                       </li>
                     </ul>
+                    <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg border-l-4 border-blue-400">
+                      <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Archaeological Discovery</h4>
+                      <p className="text-sm text-blue-700 dark:text-blue-100">
+                        Archaeologists believe these pools featured ingenious water curtain systems. When water flowed like a 
+                        waterfall, it created natural privacy screens behind which the king&apos;s wives could change their dress - 
+                        an ancient form of sophisticated bathing privacy that demonstrates remarkable engineering innovation.
+                      </p>
+                    </div>
                   </div>
                   <Image
                     src="/Ranmusu-Uyana-Pool.jpeg"
@@ -628,7 +635,7 @@ export default function RanmusuUyanaGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/JayaSriMahaBodhi.jpeg"
+                  src="/JayaSrimahaBodhi.jpeg"
                   alt="Ancient Sri Maha Bodhi tree with prayer flags and worshippers"
                   width={300}
                   height={200}
