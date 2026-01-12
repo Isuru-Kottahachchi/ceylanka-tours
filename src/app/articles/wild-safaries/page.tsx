@@ -54,7 +54,7 @@ const wildlifeSafaris = [
             {
                 name: "Block 2",
                 details: "Less crowded with excellent birdwatching opportunities",
-                area: "99 sq km", 
+                area: "99 sq km",
                 season: "February to July"
             },
             {
@@ -94,7 +94,7 @@ const wildlifeSafaris = [
                 season: "Year-round"
             },
             {
-                name: "Buffer Zone", 
+                name: "Buffer Zone",
                 details: "Extended area with diverse habitats and bird species",
                 area: "58 sq km",
                 season: "Year-round"
@@ -148,7 +148,7 @@ const wildlifeSafaris = [
         name: "Minneriya National Park",
         locations: ["Minneriya Tank", "Giritale", "Kaudulla Connection"],
         images: [
-            { src: "/minneriya-gathering.jpg", title: "The Great Elephant Gathering" },
+            { src: "/Minneriya-Park.jpg", title: "The Great Elephant Gathering" },
             { src: "/minneriya-tank.jpg", title: "Ancient Minneriya Tank" },
             { src: "/elephant-herd.jpg", title: "Massive Elephant Herds" }
         ],
@@ -190,7 +190,7 @@ const wildlifeSafaris = [
         name: "Kumana National Park",
         locations: ["Kumana Villu", "Kumbukkan Oya", "Okanda"],
         images: [
-            { src: "/kumana-birds.jpg", title: "Bird Paradise - Kumana" },
+            { src: "/Kumana-National-Park.jpg", title: "Bird Paradise - Kumana" },
             { src: "/kumana-lagoon.jpg", title: "Kumana Lagoon" },
             { src: "/water-birds.jpg", title: "Migratory Water Birds" }
         ],
@@ -232,7 +232,7 @@ const wildlifeSafaris = [
         name: "Wasgamuwa National Park",
         locations: ["Sudu Kanda", "Wasgamuwa Tank", "Mahaweli Buffer"],
         images: [
-            { src: "/wasgamuwa-elephants.jpg", title: "Wild Elephants - Wasgamuwa" },
+            { src: "/Wasgamuwa-National-Park.jpg", title: "Wild Elephants - Wasgamuwa" },
             { src: "/wasgamuwa-landscape.jpg", title: "Pristine Wilderness" },
             { src: "/mahaweli-river.jpg", title: "Mahaweli River System" }
         ],
@@ -274,9 +274,9 @@ const wildlifeSafaris = [
         name: "Kaudulla National Park",
         locations: ["Kaudulla Tank", "Habarana", "Minneriya Connection"],
         images: [
-            { src: "/kaudulla-elephants.jpg", title: "Elephant Herds - Kaudulla" },
-            { src: "/kaudulla-tank.jpg", title: "Ancient Kaudulla Tank" },
-            { src: "/kaudulla-landscape.jpg", title: "Dry Zone Landscape" }
+            { src: "/Kaudulla-National-Park.jpg", title: "Elephant Herds - Kaudulla" },
+            { src: "/Kaudulla-National-Park1.jpg", title: "Elephant Herds - Kaudulla" },
+            { src: "/Kaudulla-National-Park2.jpg", title: "Elephant Herds - Kaudulla" },
         ],
         bestTime: "August to December",
         difficulty: "Easy",
@@ -701,7 +701,7 @@ const seasonalGuide = {
         parks: ["Yala", "Udawalawe", "Wilpattu", "Wasgamuwa"]
     },
     "April to July": {
-        region: "Eastern & Northern Parks", 
+        region: "Eastern & Northern Parks",
         conditions: "Migration season, excellent for birds",
         advantages: ["Bird migration peak", "Elephant gathering starts", "Less crowded"],
         parks: ["Kumana", "Minneriya", "Yala Block 2"]
@@ -741,7 +741,7 @@ function CompactImageCarousel({ images, difficulty }: { images: { src: string; t
 
     const onTouchEnd = () => {
         if (!touchStart || !touchEnd) return
-        
+
         const distance = touchStart - touchEnd
         const isLeftSwipe = distance > minSwipeDistance
         const isRightSwipe = distance < -minSwipeDistance
@@ -755,7 +755,7 @@ function CompactImageCarousel({ images, difficulty }: { images: { src: string; t
     }
 
     return (
-        <div 
+        <div
             className="relative h-48 md:h-80 lg:h-72 xl:h-80 group overflow-hidden rounded-lg"
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
@@ -768,7 +768,7 @@ function CompactImageCarousel({ images, difficulty }: { images: { src: string; t
                 className="object-cover transition-all duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            
+
             {/* Navigation Buttons */}
             {images.length > 1 && (
                 <>
@@ -794,9 +794,8 @@ function CompactImageCarousel({ images, difficulty }: { images: { src: string; t
                         <button
                             key={index}
                             onClick={() => setCurrentIndex(index)}
-                            className={`w-2 h-2 rounded-full transition-all touch-manipulation ${
-                                index === currentIndex ? 'bg-white' : 'bg-white/50'
-                            }`}
+                            className={`w-2 h-2 rounded-full transition-all touch-manipulation ${index === currentIndex ? 'bg-white' : 'bg-white/50'
+                                }`}
                         />
                     ))}
                 </div>
@@ -960,18 +959,18 @@ export default function WildSafarisPage() {
                                     <div className="flex flex-col md:flex-row md:gap-6 p-6">
                                         {/* Compact Image Carousel */}
                                         <div className="md:w-2/5 lg:w-1/3">
-                                            <CompactImageCarousel 
-                                                images={safari.images} 
-                                                difficulty={safari.difficulty} 
+                                            <CompactImageCarousel
+                                                images={safari.images}
+                                                difficulty={safari.difficulty}
                                             />
                                         </div>
-                                        
+
                                         {/* Content */}
                                         <div className="flex-1 mt-4 md:mt-0">
                                             <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                                                 {safari.name}
                                             </h3>
-                                            
+
                                             <p className="text-gray-600 dark:text-gray-400 mb-4">
                                                 {safari.description}
                                             </p>
@@ -1061,7 +1060,7 @@ export default function WildSafarisPage() {
                             </div>
                         ))}
 
-                     
+
 
                         {wildlifeSafaris.slice(3).map((safari) => (
                             <div
@@ -1073,18 +1072,18 @@ export default function WildSafarisPage() {
                                     <div className="flex flex-col md:flex-row md:gap-6 p-6">
                                         {/* Compact Image Carousel */}
                                         <div className="md:w-2/5 lg:w-1/3">
-                                            <CompactImageCarousel 
-                                                images={safari.images} 
-                                                difficulty={safari.difficulty} 
+                                            <CompactImageCarousel
+                                                images={safari.images}
+                                                difficulty={safari.difficulty}
                                             />
                                         </div>
-                                        
+
                                         {/* Content */}
                                         <div className="flex-1 mt-4 md:mt-0">
                                             <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                                                 {safari.name}
                                             </h3>
-                                            
+
                                             <p className="text-gray-600 dark:text-gray-400 mb-4">
                                                 {safari.description}
                                             </p>
@@ -1198,7 +1197,7 @@ export default function WildSafarisPage() {
                             </Card>
                         ))}
                     </div>
-                </section> 
+                </section>
 
                 {/* Planning Tips */}
                 <section className="mb-12">

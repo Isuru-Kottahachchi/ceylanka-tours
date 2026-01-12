@@ -226,9 +226,9 @@ const beaches = [
     name: 'Kalpitiya Beach',
     slug: 'kalpitiya',
     images: [
-      { src: '/Kalpitiya-beach.jpg', alt: 'Kalpitiya Beach', caption: 'Kite surfing paradise', title: 'Kalpitiya Beach' },
-      { src: '/images/kalpitiya-2.jpg', alt: 'Kite Surfing', caption: 'Perfect wind conditions', title: 'Kite Surfing' },
-      { src: '/images/kalpitiya-3.jpg', alt: 'Dolphin Watching', caption: 'Dolphin tours', title: 'Dolphin Watching' }
+      { src: '/Kalpitiya-beach.jpg', alt: 'Kalpitiya Beach', caption: '', title: '' },
+      { src: '/Kalpitiya1.jpg', alt: 'Kalpitiya beach', caption: '', title: '' },
+      { src: '/Kalpitiya.jpeg', alt: 'Kalpitiya Beach', caption: '', title: '' }
     ],
     location: 'Puttalam District, North-Western Province',
     bestTime: 'May to September',

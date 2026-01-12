@@ -1433,7 +1433,7 @@ export default function SigiriyaTravelGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Kurunagala"
+                  src="/Kurunagala.webp"
                   alt="Kurunagala city with Elephant Rock in background"
                   fill
                   className="object-cover rounded-t-lg"
