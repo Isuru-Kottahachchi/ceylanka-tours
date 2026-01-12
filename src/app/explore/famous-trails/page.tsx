@@ -530,7 +530,7 @@ export default function FamousTrailsPage() {
                 <div className="flex flex-col lg:flex-row">
                   {/* Image Carousel */}
                   <div className="relative w-full lg:w-2/5">
-                    <ImageCarousel images={trail.images} difficulty={trail.difficulty} />
+                    <ImageCarousel images={trail.images} />
                   </div>
 
                   {/* Content */}
