@@ -25,7 +25,7 @@ const famousTrails = [
   {
     name: "Adam's Peak (Sri Pada)",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Adam's Peak Sacred Mountain", title: "Adam's Peak Sacred Mountain" },
+      { src: "/Sripadaya-rathnapura.jpeg", alt: "Adam's Peak Sacred Mountain", title: "Adam's Peak Sacred Mountain" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Pilgrimage Trail at Night", title: "Pilgrimage Trail at Night" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Sunrise from Summit", title: "Sunrise from Summit" },
     ],
@@ -71,7 +71,7 @@ const famousTrails = [
   {
     name: "Knuckles Mountain Range",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Knuckles Mountain Range", title: "Knuckles Mountain Range" },
+      { src: "/Knuckles-trail.jpg", alt: "Knuckles Mountain Range", title: "Knuckles Mountain Range" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Cloud Forest Trail", title: "Cloud Forest Trail" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Mountain Peaks View", title: "Mountain Peaks View" },
     ],
@@ -297,7 +297,7 @@ const famousTrails = [
   {
     name: "Idalgashinna to Haputale Railway Trail",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Idalgashinna Railway Trail", title: "Idalgashinna Railway Trail" },
+      { src: "/Idalgashinna-trail.jpg", alt: "Idalgashinna Railway Trail", title: "Idalgashinna Railway Trail" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Misty Mountain Path", title: "Misty Mountain Path" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Hill Country Scenery", title: "Hill Country Scenery" },
     ],
@@ -340,7 +340,7 @@ const famousTrails = [
   {
     name: "Pekoe Trail",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Tea Plantation Trail", title: "Tea Plantation Trail" },
+      { src: "/Pekoe-Trail.jpg", alt: "Tea Plantation Trail", title: "Tea Plantation Trail" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Hill Country Villages", title: "Hill Country Villages" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Mountain Tea Estates", title: "Mountain Tea Estates" },
     ],
