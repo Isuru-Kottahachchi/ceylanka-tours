@@ -124,7 +124,7 @@ const originalArticles = [
   {
     id: 11,
     title: "Basic Language Words for Sri Lanka Travel",
-    path: "basic-language-words",
+    path: "basic-sinhala-tamil-words-usefull-when-traveling",
     category: "Travel Tips",
     readTime: "7 min read",
     image: "/Language-basics.png",

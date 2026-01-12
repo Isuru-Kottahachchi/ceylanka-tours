@@ -798,8 +798,8 @@ export default function MinneriyaNationalParkGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Nine-arch-ella.jpg"
-                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  src="/dambulla-cave-temple.jpg"
+                  alt="Dambulla Cave Temple with ancient Buddhist mural paintings and statues"
                   fill
                   className="object-cover rounded-t-lg"
                 />
