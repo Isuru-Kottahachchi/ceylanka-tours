@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const waterfalls = [
   {
     name: "Diyaluma Falls",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Diyaluma-Falls1.jpg",
     location: "Koslanda, Badulla District",
     height: "220 meters (722 feet)",
     difficulty: "Moderate",
@@ -52,26 +52,35 @@ const waterfalls = [
       "Best light in early morning or late afternoon. Use polarizing filter to reduce water glare. Capture both wide shots and detail shots of the pools.",
   },
   {
-    name: "Kurundu Oya Falls",
-    image: "/placeholder.svg?height=400&width=600",
-    location: "Walapane, Nuwara Eliya District",
-    height: "189 meters (620 feet)",
-    difficulty: "Moderate to Challenging",
-    accessibility: "1-2 hour hike from road",
+    name: "Bomburu Ella",
+    image: "/Bomuru-ella.jpg",
+    location: "Nuwara Eliya District",
+    height: "50 meters (164 feet)",
+    difficulty: "Moderate",
+    accessibility: "30-minute hike through tea estates",
     bestTime: "April to September, December to February",
-    swimmable: "No - too powerful",
+    swimmable: "Yes - natural pools available",
     description:
-      "Also known as Maturata Ella, Kurundu Oya Falls is Sri Lanka's third highest waterfall. Located in the scenic central highlands, this impressive cascade flows through a gorge surrounded by dense forest and tea plantations, creating a spectacular sight especially during the rainy season.",
+      "Nestled among lush tea plantations in the Nuwara Eliya district, Bomburu Ella is a hidden gem that offers a peaceful escape. The waterfall cascades down rocky cliffs into natural pools perfect for swimming. The scenic hike through tea estates provides stunning views of the surrounding highlands.",
     highlights: [
-      "Third highest waterfall in Sri Lanka",
-      "Stunning central highlands location",
-      "Surrounded by tea plantations",
-      "Powerful cascade through gorge",
+      "Beautiful tea plantation setting",
+      "Natural swimming pools",
+      "Less crowded than major falls",
+      "Scenic highland views",
+      "Great for photography",
     ],
     howToReach:
-      "From Walapane town, take the route towards the waterfall. Local guides available in Walapane can assist with the trek.",
+      "From Nuwara Eliya, head towards the tea estates. Local guides can be hired from nearby villages to navigate through the tea plantations.",
+    tips: "Wear good hiking shoes as the trail can be slippery. Best visited during dry season. Bring swimwear for the natural pools.",
+    safetyNotes: [
+      "Trail through tea estates can be confusing",
+      "Hire a local guide recommended",
+      "Check weather before visiting",
+      "Inform someone of your plans",
+    ],
+    nearbyAttractions: ["Nuwara Eliya town", "Hakgala Botanical Gardens", "Gregory Lake"],
     photographyTips:
-      "Best views from multiple viewpoints along the trail. Early morning light recommended for capturing the full height.",
+      "Capture the waterfall with tea plantations in the background. Morning light provides the best illumination. Include the surrounding highland scenery.",
   },
   {
     name: "Bambarakanda Falls",
@@ -197,7 +206,7 @@ const waterfalls = [
   },
   {
     name: "Bopath Ella Falls",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Bopath-Ella.jpeg",
     location: "Ratnapura District",
     height: "30 meters (98 feet)",
     difficulty: "Easy",
@@ -227,7 +236,7 @@ const waterfalls = [
   },
   {
     name: "Ramboda Falls",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Ramboda-falls.jpg",
     location: "Nuwara Eliya District",
     height: "109 meters (358 feet)",
     difficulty: "Easy",
@@ -287,35 +296,35 @@ const waterfalls = [
       "Include reservoir and mountains in wide shots. Use neutral density filter for long exposures. Respect photography restrictions near facilities.",
   },
   {
-    name: "Ella Spice Garden Falls",
-    image: "/placeholder.svg?height=400&width=600",
-    location: "Ella, Badulla District",
-    height: "15 meters (49 feet)",
+    name: "St. Clair's Falls",
+    image: "/St.Clair-falls.jpg",
+    location: "Talawakelle, Nuwara Eliya District",
+    height: "80 meters (265 feet)",
     difficulty: "Easy",
-    accessibility: "Within spice garden premises",
-    bestTime: "Year-round",
-    swimmable: "Yes - small pools",
+    accessibility: "Roadside viewing",
+    bestTime: "October to March",
+    swimmable: "No - viewing only",
     description:
-      "A hidden gem within a spice garden near Ella, this small but beautiful waterfall offers a peaceful retreat surrounded by aromatic spice plants. The combination of natural beauty and educational spice tour makes it unique.",
+      "Known as the 'Little Niagara of Sri Lanka', St. Clair's Falls is one of the widest waterfalls in the country. The waterfall cascades in two sections - the 'Maha Ella' (main fall) and the 'Kuda Ella' (little fall). Located along the main road from Hatton to Nuwara Eliya, it offers spectacular roadside viewing surrounded by tea estates.",
     highlights: [
-      "Spice garden setting",
-      "Educational experience",
-      "Peaceful atmosphere",
-      "Swimming pools",
-      "Aromatic surroundings",
+      "Widest waterfall in Sri Lanka",
+      "Twin cascade formation",
+      "Easy roadside access",
+      "Tea plantation setting",
+      "Popular photography spot",
     ],
     howToReach:
-      "Located within a private spice garden near Ella. Entry fee includes spice garden tour and waterfall access.",
-    tips: "Combine with spice garden tour for full experience. Good for families with children. Less crowded than other Ella waterfalls.",
+      "Located on the Hatton-Nuwara Eliya road (A7). Multiple viewing points available along the roadside. Well-signposted and easy to find.",
+    tips: "Best viewed after rainy periods for maximum water flow. Several tea factories nearby offer tours. Great spot for a scenic break during hill country drives.",
     safetyNotes: [
-      "Follow garden rules and guidelines",
-      "Supervise children near water",
-      "Respect private property",
-      "Ask permission before swimming",
+      "Be careful of traffic when viewing from roadside",
+      "Limited parking areas available",
+      "Stay on designated viewing platforms",
+      "Weather can change quickly in hills",
     ],
-    nearbyAttractions: ["Ella town center", "Little Adam's Peak", "Ella Rock"],
+    nearbyAttractions: ["Talawakelle Tea Factory", "Castlereagh Reservoir", "Devon Falls"],
     photographyTips:
-      "Include spice plants in compositions. Macro photography opportunities with plants and flowers. Soft natural lighting in garden setting.",
+      "Best light in early morning or late afternoon. Use wide-angle lens to capture both cascades. Include tea plantations for context. Polarizing filter helps with water clarity.",
   },
   {
     name: "Gerandi Ella Falls",
@@ -349,67 +358,37 @@ const waterfalls = [
       "Forest provides natural diffused lighting. Capture both waterfall and forest journey. Include local guide in some shots for human element.",
   },
   {
-    name: "Hunas Falls",
-    image: "/placeholder.svg?height=400&width=600",
-    location: "Kandy District",
-    height: "51 meters (167 feet)",
-    difficulty: "Easy to Moderate",
-    accessibility: "Short walk from hotel",
-    bestTime: "November to April",
-    swimmable: "Yes - base pool",
+    name: "Aberdeen Falls",
+    image: "/Aberdeen-Falls.jpg",
+    location: "Ginigathena, Nuwara Eliya District",
+    height: "98 meters (322 feet)",
+    difficulty: "Moderate",
+    accessibility: "1.5-hour hike through estate",
+    bestTime: "October to March",
+    swimmable: "Yes - base pool available",
     description:
-      "Located near the luxury Hunas Falls Hotel, this waterfall offers easy access with hotel amenities nearby. The falls cascade into a natural pool perfect for swimming, making it ideal for a comfortable waterfall experience.",
+      "Aberdeen Falls is a stunning waterfall located within the Aberdeen Estate. The waterfall plunges into a large natural pool surrounded by dense forest. The scenic hike through the tea estate and forest offers great opportunities to spot wildlife and enjoy the natural beauty of the central highlands.",
     highlights: [
-      "Luxury hotel nearby",
-      "Easy access with amenities",
-      "Natural swimming pool",
-      "Comfortable facilities",
-      "Good for relaxation",
+      "Impressive height and volume",
+      "Large natural swimming pool",
+      "Scenic estate and forest hike",
+      "Wildlife spotting opportunities",
+      "Less commercialized",
     ],
     howToReach:
-      "From Kandy, drive towards Elkaduwa. Falls are accessible through Hunas Falls Hotel or via public path.",
-    tips: "Hotel guests have easier access. Public access available but check with locals. Good option for those wanting comfort with nature.",
+      "From Ginigathena town, obtain permission and directions to enter the estate. The hike takes approximately 1.5 hours through tea plantations and forest.",
+    tips: "Permission from estate management may be required. Hire a local guide for easier navigation. Wear sturdy hiking shoes and bring insect repellent. Best to visit in groups.",
     safetyNotes: [
-      "Respect hotel property boundaries",
-      "Pool depth varies seasonally",
-      "Rocks can be slippery",
-      "Follow hotel guidelines if staying",
+      "Obtain proper permissions before entering estate",
+      "Trail can be challenging and slippery",
+      "Strong currents in pool after heavy rains",
+      "Inform someone about your hiking plans",
     ],
-    nearbyAttractions: ["Kandy city", "Temple of the Tooth", "Royal Botanical Gardens"],
+    nearbyAttractions: ["Ginigathena town", "Tea plantations", "Laxapana Falls"],
     photographyTips:
-      "Include hotel architecture for luxury travel shots. Pool reflections create interesting compositions. Evening light provides warm tones.",
+      "Capture the full height from various angles. Use long exposure for silky water effect. Include forest surroundings for context. Morning light filters beautifully through the forest canopy.",
   },
-  {
-    name: "Kithulgala Falls",
-    image: "/placeholder.svg?height=400&width=600",
-    location: "Kithulgala, Kegalle District",
-    height: "25 meters (82 feet)",
-    difficulty: "Easy",
-    accessibility: "Short walk from adventure center",
-    bestTime: "December to April",
-    swimmable: "Yes - part of rafting route",
-    description:
-      "Famous as a filming location for 'The Bridge on the River Kwai', Kithulgala Falls is now a popular adventure sports destination. The falls are often combined with white water rafting and other adventure activities.",
-    highlights: [
-      "Movie filming location",
-      "Adventure sports hub",
-      "White water rafting",
-      "Historical significance",
-      "Multiple activities available",
-    ],
-    howToReach:
-      "From Colombo, drive to Kithulgala town. Adventure centers provide access to falls as part of activity packages.",
-    tips: "Combine with rafting or other adventure activities. Several adventure operators in town. Good for active travelers seeking multiple experiences.",
-    safetyNotes: [
-      "Strong currents during rainy season",
-      "Use certified adventure operators",
-      "Wear provided safety equipment",
-      "Follow guide instructions",
-    ],
-    nearbyAttractions: ["Kelani River rafting", "Adventure sports centers", "Historical bridge site"],
-    photographyTips:
-      "Action shots during adventure activities. Include historical bridge in compositions. Capture both adventure and natural beauty aspects.",
-  },
+
   {
     name: "Duwili Ella Falls",
     image: "/placeholder.svg?height=400&width=600",
@@ -442,7 +421,7 @@ const waterfalls = [
   },
   {
     name: "Sera Ella Falls",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Sera-Ella.jpg",
     location: "Haputale, Badulla District",
     height: "30 meters (98 feet)",
     difficulty: "Easy",
@@ -687,7 +666,7 @@ export default function WaterfallsSriLankaPage() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Water Safety</h3>
               <p className="text-gray-700 dark:text-gray-300 text-sm">
-                Always check water conditions before swimming. Rocks can be extremely slippery when wet. Never swim
+                Always listen to the local advice and warnings.Water levels can be increase within a few seconds. Always check water conditions before swimming. Rocks can be extremely slippery when wet.Water levels can be increase within a few seconds. Never swim
                 alone.
               </p>
             </div>
