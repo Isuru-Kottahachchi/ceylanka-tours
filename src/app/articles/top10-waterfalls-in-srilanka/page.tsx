@@ -84,7 +84,7 @@ const waterfalls = [
   },
   {
     name: "Bambarakanda Falls",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Bambarakanda-falls.jpeg",
     location: "Kalupahana, Badulla District",
     height: "263 meters (863 feet)",
     difficulty: "Easy to Moderate",

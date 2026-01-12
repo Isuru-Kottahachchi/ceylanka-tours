@@ -447,7 +447,7 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <Link href="/" className={`text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium relative pb-1 ${isActivePage("/") ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
+              <Link href="/" className={`inline-flex items-center px-4 py-2 text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium relative pb-1 ${isActivePage("/") ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
                 HOME
               </Link>
               {/* <Link href="/news" className="text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
@@ -564,7 +564,7 @@ export function Header() {
                 )}
               </div>
 
-              <Link href="/upcoming-events" className={`text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium relative pb-1 ${isActivePage("/upcoming-events") ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
+              <Link href="/upcoming-events" className={`inline-flex items-center px-4 py-2 text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium relative pb-1 ${isActivePage("/upcoming-events") ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
                 UPCOMING EVENTS
               </Link>
             </nav>
