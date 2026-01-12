@@ -1,6 +1,8 @@
-import type { Metadata } from "next"
+'use client'
+
 import Image from "next/image"
-import { Fragment } from "react"
+import { Fragment, useState } from "react"
+import { Badge } from '@/components/ui/badge'
 import {
   Mountain,
   Clock,
@@ -14,27 +16,18 @@ import {
   TreePine,
   Compass,
   Users,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Famous Trails in Sri Lanka 2025: Best Hiking & Trekking Routes | Complete Guide",
-  description:
-    "Discover Sri Lanka's most famous hiking trails including Adam's Peak, Ella Rock, Knuckles Range, and World's End. Complete guide with difficulty levels, best times, and safety tips.",
-  keywords:
-    "Sri Lanka hiking trails, Adam's Peak trail, Ella Rock trek, Knuckles Range hiking, World's End walk, famous trails Sri Lanka, trekking guide, mountain hiking",
-  openGraph: {
-    title: "Famous Trails in Sri Lanka: Ultimate Hiking Guide 2025",
-    description:
-      "Complete guide to Sri Lanka's best hiking trails with detailed information, difficulty levels, and insider tips",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
 
 const famousTrails = [
   {
     name: "Adam's Peak (Sri Pada)",
-    image: "/placeholder.svg?height=400&width=600",
+    images: [
+      { src: "/placeholder.svg?height=400&width=600", title: "Adam's Peak Sacred Mountain" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Pilgrimage Trail at Night" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Sunrise from Summit" },
+    ],
     location: "Ratnapura District, Sabaragamuwa Province",
     difficulty: "Challenging",
     duration: "4-6 hours ascent",
@@ -76,7 +69,11 @@ const famousTrails = [
   },
   {
     name: "Knuckles Mountain Range",
-    image: "/placeholder.svg?height=400&width=600",
+    images: [
+      { src: "/placeholder.svg?height=400&width=600", title: "Knuckles Mountain Range" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Cloud Forest Trail" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Mountain Peaks View" },
+    ],
     location: "Matale & Kandy Districts, Central Province",
     difficulty: "Very Challenging",
     duration: "Full day to multi-day treks",
@@ -119,7 +116,11 @@ const famousTrails = [
   },
   {
     name: "Ella Rock",
-    image: "/placeholder.svg?height=400&width=600",
+    images: [
+      { src: "/placeholder.svg?height=400&width=600", title: "Ella Rock Summit View" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Tea Plantation Trail" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Ella Gap Panorama" },
+    ],
     location: "Ella, Badulla District, Uva Province",
     difficulty: "Moderate",
     duration: "3-4 hours round trip",
@@ -157,7 +158,11 @@ const famousTrails = [
   },
   {
     name: "Little Adam's Peak",
-    image: "/placeholder.svg?height=400&width=600",
+    images: [
+      { src: "/placeholder.svg?height=400&width=600", title: "Little Adam's Peak Trail" },
+      { src: "/placeholder.svg?height=400&width=600", title: "360° Mountain Views" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Sunset from Summit" },
+    ],
     location: "Ella, Badulla District, Uva Province",
     difficulty: "Easy",
     duration: "1-2 hours round trip",
@@ -196,7 +201,11 @@ const famousTrails = [
   
   {
     name: "World's End - Horton Plains",
-    image: "/placeholder.svg?height=400&width=600",
+    images: [
+      { src: "/placeholder.svg?height=400&width=600", title: "World's End Cliff" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Horton Plains Grasslands" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Baker's Falls" },
+    ],
     location: "Nuwara Eliya District, Central Province",
     difficulty: "Easy to Moderate",
     duration: "3-4 hours circular trail",
@@ -238,7 +247,11 @@ const famousTrails = [
   },
   {
     name: "Devil Stair case Ohiya to Wangedigala",
-    image: "/placeholder.svg?height=400&width=600",
+    images: [
+      { src: "/DevilsStaircase.jpeg", title: "Devil's Staircase Trail" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Rocky Mountain Path" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Wilderness Views" },
+    ],
     location: "Matale District, Central Province",
     difficulty: "Moderate",
     duration: "2-3 hours including exploration",
@@ -280,7 +293,11 @@ const famousTrails = [
   },
   {
     name: "Idalgashinna trail to Ohiya",
-    image: "/placeholder.svg?height=400&width=600",
+    images: [
+      { src: "/placeholder.svg?height=400&width=600", title: "Idalgashinna Railway Trail" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Misty Mountain Path" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Hill Country Scenery" },
+    ],
     location: "Matale District, Central Province",
     difficulty: "Moderate to Challenging",
     duration: "1.5-2 hours ascent",
@@ -318,7 +335,11 @@ const famousTrails = [
   },
   {
     name: "Pekoe Trail",
-    image: "/placeholder.svg?height=400&width=600",
+    images: [
+      { src: "/placeholder.svg?height=400&width=600", title: "Ambuluwawa Tower" },
+      { src: "/placeholder.svg?height=400&width=600", title: "Biodiversity Complex" },
+      { src: "/placeholder.svg?height=400&width=600", title: "360° Views" },
+    ],
     location: "Gampola, Kandy District, Central Province",
     difficulty: "Highly Challenging",
     duration: "2-3 hours including tower climb",
@@ -359,6 +380,111 @@ const famousTrails = [
     ],
   },
 ]
+
+// Image Carousel Component
+function ImageCarousel({ images, difficulty }: { images: { src: string; title: string }[]; difficulty?: string }) {
+    const [currentIndex, setCurrentIndex] = useState(0)
+    const [touchStart, setTouchStart] = useState<number | null>(null)
+    const [touchEnd, setTouchEnd] = useState<number | null>(null)
+
+    // Minimum swipe distance (in px)
+    const minSwipeDistance = 50
+
+    const nextImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+    }
+
+    const prevImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+    }
+
+    const onTouchStart = (e: React.TouchEvent) => {
+        setTouchEnd(null) // Reset touchEnd
+        setTouchStart(e.targetTouches[0].clientX)
+    }
+
+    const onTouchMove = (e: React.TouchEvent) => {
+        setTouchEnd(e.targetTouches[0].clientX)
+    }
+
+    const onTouchEnd = () => {
+        if (!touchStart || !touchEnd) return
+
+        const distance = touchStart - touchEnd
+        const isLeftSwipe = distance > minSwipeDistance
+        const isRightSwipe = distance < -minSwipeDistance
+
+        if (isLeftSwipe && images.length > 1) {
+            nextImage()
+        }
+        if (isRightSwipe && images.length > 1) {
+            prevImage()
+        }
+    }
+
+    return (
+        <div
+            className="relative h-64 md:h-80 lg:h-72 xl:h-80 group"
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+        >
+            <Image
+                src={images[currentIndex].src}
+                alt={images[currentIndex].title}
+                fill
+                className="object-cover transition-all duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+            {/* Navigation Buttons */}
+            {images.length > 1 && (
+                <>
+                    <button
+                        onClick={prevImage}
+                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm rounded-full p-2 md:p-3 transition-all opacity-100 shadow-lg"
+                    >
+                        <ChevronLeft className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                    </button>
+                    <button
+                        onClick={nextImage}
+                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm rounded-full p-2 md:p-3 transition-all opacity-100 shadow-lg"
+                    >
+                        <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                    </button>
+                </>
+            )}
+
+            {/* Dots Indicator */}
+            {images.length > 1 && (
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    {images.map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => setCurrentIndex(index)}
+                            className={`w-3 h-3 md:w-2 md:h-2 rounded-full transition-all touch-manipulation ${index === currentIndex ? 'bg-white' : 'bg-white/50'
+                                }`}
+                        />
+                    ))}
+                </div>
+            )}
+
+            {/* Image Title */}
+            <div className="absolute bottom-8 left-4 right-4 text-center">
+                <p className="text-white text-sm font-medium bg-black/30 backdrop-blur-sm rounded-lg px-3 py-1 inline-block">
+                    {images[currentIndex].title}
+                </p>
+            </div>
+
+            {/* Activity Difficulty Badge */}
+            {difficulty && (
+                <Badge className="absolute top-4 left-4 bg-blue-600 text-white">
+                    {difficulty}
+                </Badge>
+            )}
+        </div>
+    )
+}
 
 const trailTips = [
   {
@@ -501,41 +627,9 @@ export default function FamousTrailsPage() {
               {/* Trail Card */}
               <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
                 <div className="flex flex-col lg:flex-row">
-                  {/* Image */}
-                  <div className="relative w-full lg:w-2/5 h-64 lg:h-auto">
-                    <Image
-                      src={trail.image || "/placeholder.svg"}
-                      alt={`${trail.name} - Famous hiking trail in Sri Lanka`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 40vw"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span
-                        className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                          trail.difficulty_level <= 2
-                            ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
-                            : trail.difficulty_level <= 3
-                              ? "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200"
-                              : trail.difficulty_level <= 4
-                                ? "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200"
-                                : "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
-                        }`}
-                      >
-                        {trail.difficulty}
-                      </span>
-                    </div>
-                    <div className="absolute top-4 right-4">
-                      <span className="bg-white dark:bg-gray-800 px-2 py-1 rounded-full text-xs font-semibold text-gray-700 dark:text-gray-300">
-                        {trail.elevation}
-                      </span>
-                    </div>
-                    <div className="absolute bottom-4 left-4">
-                      <span className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-2 py-1 rounded-full text-xs font-semibold">
-                        <Clock className="w-3 h-3 inline mr-1" />
-                        {trail.duration}
-                      </span>
-                    </div>
+                  {/* Image Carousel */}
+                  <div className="relative w-full lg:w-2/5">
+                    <ImageCarousel images={trail.images} difficulty={trail.difficulty} />
                   </div>
 
                   {/* Content */}
@@ -554,8 +648,16 @@ export default function FamousTrailsPage() {
                           <span>{trail.trailLength}</span>
                         </div>
                         <div className="flex items-center gap-1">
+                          <Clock className="w-4 h-4" />
+                          <span>{trail.duration}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
                           <Thermometer className="w-4 h-4" />
                           <span>{trail.bestTime}</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Compass className="w-4 h-4" />
+                          <span>{trail.elevation}</span>
                         </div>
                       </div>
                     </div>
