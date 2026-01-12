@@ -19,14 +19,15 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 const famousTrails = [
   {
     name: "Adam's Peak (Sri Pada)",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", title: "Adam's Peak Sacred Mountain" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Pilgrimage Trail at Night" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Sunrise from Summit" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Adam's Peak Sacred Mountain", title: "Adam's Peak Sacred Mountain" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Pilgrimage Trail at Night", title: "Pilgrimage Trail at Night" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Sunrise from Summit", title: "Sunrise from Summit" },
     ],
     location: "Ratnapura District, Sabaragamuwa Province",
     difficulty: "Challenging",
@@ -70,14 +71,14 @@ const famousTrails = [
   {
     name: "Knuckles Mountain Range",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", title: "Knuckles Mountain Range" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Cloud Forest Trail" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Mountain Peaks View" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Knuckles Mountain Range", title: "Knuckles Mountain Range" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Cloud Forest Trail", title: "Cloud Forest Trail" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Mountain Peaks View", title: "Mountain Peaks View" },
     ],
     location: "Matale & Kandy Districts, Central Province",
     difficulty: "Very Challenging",
     duration: "Full day to multi-day treks",
-    elevation: "1,863 meters (6,112 feet) highest point",
+    elevation: "1,906 meters (6,253 feet) highest point",
     bestTime: "January-March, July-September",
     trailLength: "Various trails from 5-25 kilometers",
     startPoint: "Multiple entry points (Corbett's Gap most popular)",
@@ -117,16 +118,16 @@ const famousTrails = [
   {
     name: "Ella Rock",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", title: "Ella Rock Summit View" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Tea Plantation Trail" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Ella Gap Panorama" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Ella Rock Summit View", title: "Ella Rock Summit View" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Tea Plantation Trail", title: "Tea Plantation Trail" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Ella Gap Panorama", title: "Ella Gap Panorama" },
     ],
     location: "Ella, Badulla District, Uva Province",
     difficulty: "Moderate",
     duration: "3-4 hours round trip",
     elevation: "1,041 meters (3,415 feet)",
     bestTime: "Year-round (avoid heavy monsoons)",
-    trailLength: "4 kilometers",
+    trailLength: "8 kilometers round trip",
     startPoint: "Ella Railway Station area",
     description:
       "One of Sri Lanka's most Instagram-famous hikes, Ella Rock offers stunning panoramic views of the hill country's tea plantations, valleys, and the famous Ella Gap. The trail combines railway track walking with forest paths, making it an adventurous yet accessible experience for most fitness levels.",
@@ -159,16 +160,16 @@ const famousTrails = [
   {
     name: "Little Adam's Peak",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", title: "Little Adam's Peak Trail" },
-      { src: "/placeholder.svg?height=400&width=600", title: "360° Mountain Views" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Sunset from Summit" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Little Adam's Peak Trail", title: "Little Adam's Peak Trail" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "360° Mountain Views", title: "360° Mountain Views" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Sunset from Summit", title: "Sunset from Summit" },
     ],
     location: "Ella, Badulla District, Uva Province",
     difficulty: "Easy",
     duration: "1-2 hours round trip",
     elevation: "1,141 meters (3,743 feet)",
     bestTime: "Year-round",
-    trailLength: "2.5 kilometers",
+    trailLength: "3.2 kilometers round trip",
     startPoint: "Ella town center",
     description:
       "Perfect for beginners and families, Little Adam's Peak offers spectacular 360-degree views with minimal effort. The well-maintained trail winds through tea plantations and provides an excellent introduction to Sri Lankan hill country hiking without the physical demands of more challenging peaks.",
@@ -202,16 +203,16 @@ const famousTrails = [
   {
     name: "World's End - Horton Plains",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", title: "World's End Cliff" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Horton Plains Grasslands" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Baker's Falls" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "World's End Cliff", title: "World's End Cliff" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Horton Plains Grasslands", title: "Horton Plains Grasslands" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Baker's Falls", title: "Baker's Falls" },
     ],
     location: "Nuwara Eliya District, Central Province",
     difficulty: "Easy to Moderate",
     duration: "3-4 hours circular trail",
-    elevation: "2,100+ meters (6,890+ feet)",
+    elevation: "2,100-2,300 meters (6,890-7,545 feet)",
     bestTime: "January-March, August-September",
-    trailLength: "9 kilometers circular trail",
+    trailLength: "9.5 kilometers circular trail",
     startPoint: "Horton Plains National Park entrance",
     description:
       "Part of a UNESCO World Heritage site, the World's End trail offers one of Sri Lanka's most dramatic cliff-top experiences. The circular trail through unique montane grasslands leads to a sheer 870-meter drop with breathtaking views across the southern plains and coast on clear days.",
@@ -246,245 +247,145 @@ const famousTrails = [
     ],
   },
   {
-    name: "Devil Stair case Ohiya to Wangedigala",
+    name: "Devil's Staircase (Ohiya to Bambarakanda)",
     images: [
-      { src: "/DevilsStaircase.jpeg", title: "Devil's Staircase Trail" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Rocky Mountain Path" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Wilderness Views" },
+      { src: "/DevilsStaircase.jpeg", alt: "Devil's Staircase Trail", title: "Devil's Staircase Trail" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Railway Track Hiking", title: "Railway Track Hiking" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Mountain Wilderness", title: "Mountain Wilderness" },
     ],
-    location: "Matale District, Central Province",
-    difficulty: "Moderate",
-    duration: "2-3 hours including exploration",
-    elevation: "370 meters (1,214 feet)",
-    bestTime: "Year-round (early morning recommended)",
-    trailLength: "1.5 kilometers ascent",
-    startPoint: "Sigiriya Archaeological Site entrance",
+    location: "Ohiya, Badulla District, Uva Province",
+    difficulty: "Challenging",
+    duration: "5-7 hours one way",
+    elevation: "Descends from 1,900m to 1,200m",
+    bestTime: "December to March (dry season)",
+    trailLength: "12 kilometers",
+    startPoint: "Ohiya Railway Station",
     description:
-      "An ancient rock fortress and UNESCO World Heritage site, Sigiriya combines historical exploration with physical challenge. The climb features ancient frescoes, mirror walls, and ruins of a 5th-century palace, culminating in spectacular panoramic views of the surrounding jungle and ancient irrigation systems.",
+      "An adventurous railway track trek through Sri Lanka's highest mountain wilderness. The trail follows abandoned and active railway sections through tunnels, across bridges, and past waterfalls including Sri Lanka's tallest - Bambarakanda Falls. This challenging route offers authentic backcountry hiking experience.",
     highlights: [
-      "UNESCO World Heritage archaeological site",
-      "Ancient frescoes and mirror wall inscriptions",
-      "5th-century palace ruins at summit",
-      "Panoramic views of ancient irrigation systems",
-      "Lion's Gate and paws carved in rock",
-      "Combination of history, culture, and adventure",
+      "Passes Bambarakanda Falls (263m tallest in Sri Lanka)",
+      "Railway tunnels and colonial-era bridges",
+      "Remote mountain wilderness scenery",
+      "Descends through cloud forest zones",
+      "Train track hiking adventure",
+      "Relatively untouched by tourism",
     ],
-    difficulty_level: 3,
-    tips: "Start early to avoid heat and crowds. Wear comfortable shoes with good grip for metal staircases. Bring water and take breaks at designated rest areas. Photography allowed but flash prohibited near frescoes.",
+    difficulty_level: 4,
+    tips: "Hire a local guide as the trail is poorly marked. Check train schedules before hiking on active tracks. Start early as the hike is long and challenging. Bring headlamp for tunnel sections. Best done as one-way trek with transport arranged at Bambarakanda.",
     safetyNotes: [
-      "Metal staircases can be slippery when wet",
-      "Vertigo sufferers may find upper sections challenging",
-      "Stay on designated paths for safety and preservation",
-      "Respect archaeological site rules and regulations",
-      "Weather can make surfaces slippery",
+      "Active railway track - trains still pass through certain sections",
+      "Remote area with no mobile coverage",
+      "Weather can change rapidly in mountains",
+      "Tunnels are dark and can be wet",
+      "Emergency evacuation extremely difficult",
+      "Mandatory to hire experienced local guide",
     ],
     whatToBring: [
-      "Comfortable shoes with good grip",
-      "Sun protection and plenty of water",
-      "Camera for historical and scenic photography",
-      "Light backpack for essentials",
-      "Archaeological site entry fee",
+      "Sturdy hiking boots for rough terrain",
+      "Headlamp with backup batteries for tunnels",
+      "Rain gear and warm layers",
+      "Plenty of water and high-energy food",
+      "First aid kit and emergency supplies",
+      "GPS device or offline maps",
     ],
     nearbyAccommodation: [
-      "Sigiriya village hotels and guesthouses",
-      "Jetwing Vil Uyana luxury resort",
-      "Dambulla area accommodations",
+      "Ohiya Railway Station rest houses",
+      "Haputale guesthouses (20km away)",
+      "Bandarawela hotels (30km away)",
     ],
   },
   {
-    name: "Idalgashinna trail to Ohiya",
+    name: "Idalgashinna to Haputale Railway Trail",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", title: "Idalgashinna Railway Trail" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Misty Mountain Path" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Hill Country Scenery" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Idalgashinna Railway Trail", title: "Idalgashinna Railway Trail" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Misty Mountain Path", title: "Misty Mountain Path" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Hill Country Scenery", title: "Hill Country Scenery" },
     ],
-    location: "Matale District, Central Province",
-    difficulty: "Moderate to Challenging",
-    duration: "1.5-2 hours ascent",
-    elevation: "200 meters (656 feet)",
-    bestTime: "Year-round (sunrise highly recommended)",
-    trailLength: "1 kilometer steep ascent",
-    startPoint: "Pidurangala Temple base",
+    location: "Haputale, Badulla District, Uva Province",
+    difficulty: "Moderate",
+    duration: "3-4 hours one way",
+    elevation: "Varies between 1,300-1,500m",
+    bestTime: "December to March, July to August",
+    trailLength: "10 kilometers",
+    startPoint: "Idalgashinna Railway Station",
     description:
-      "Often called the best viewpoint for photographing Sigiriya Rock, Pidurangala offers a more adventurous and less crowded alternative. The climb involves scrambling over large boulders and provides spectacular sunrise views with Sigiriya Rock as the perfect foreground subject.",
+      "A scenic railway track walk through Sri Lanka's stunning hill country, offering breathtaking views of tea estates, mountain ranges, and the famous Idalgashinna railway loop. This moderate hike follows one of the most picturesque sections of the Badulla-Colombo railway line.",
     highlights: [
-      "Best viewpoint for photographing Sigiriya Rock",
-      "Spectacular sunrise viewing location",
-      "Ancient temple ruins at base and summit",
-      "Boulder scrambling adventure experience",
-      "Less crowded than Sigiriya itself",
-      "360-degree views of surrounding landscape",
+      "Spectacular Idalgashinna railway loop views",
+      "Panoramic tea estate landscapes",
+      "Historic colonial railway architecture",
+      "Views of Uva valley and Diyaluma Falls",
+      "Railway tunnels and viaducts",
+      "Less crowded alternative hill country trek",
     ],
-    difficulty_level: 4,
-    tips: "Start climb in darkness for sunrise (around 5 AM). Bring headlamp for early morning climb. The final section requires scrambling over large boulders - wear shoes with excellent grip.",
+    difficulty_level: 3,
+    tips: "Check train schedules before starting - trains still use these tracks. Start early morning for best weather and light. The trail follows railway tracks so navigation is straightforward. Can be done as one-way with train return journey.",
     safetyNotes: [
-      "Final boulder section requires careful navigation",
-      "No safety railings or assistance available",
-      "Rocks can be slippery, especially when damp",
-      "Inform someone about your climbing plans",
-      "Emergency help may be difficult to access",
+      "Active railway - be alert for approaching trains",
+      "Step off tracks immediately when train approaches",
+      "Weather can turn misty quickly reducing visibility",
+      "Track ballast can be unstable - watch your footing",
+      "Inform someone about your hiking plans",
     ],
     whatToBring: [
-      "Headlamp with extra batteries for pre-dawn climb",
-      "Shoes with excellent grip for boulder scrambling",
-      "Camera with tripod for sunrise photography",
-      "Water and light snacks",
-      "Small temple donation for entry",
+      "Good walking shoes with ankle support",
+      "Light rain jacket (mist and rain common)",
+      "Water and energy snacks",
+      "Camera for spectacular railway scenery",
+      "Train schedule information",
+      "Small first aid kit",
     ],
-    nearbyAccommodation: ["Sigiriya area hotels and guesthouses", "Dambulla accommodations", "Habarana resort options"],
+    nearbyAccommodation: ["Haputale guesthouses and hotels", "Dambatenne tea estate bungalows", "Bandarawela accommodations"],
   },
   {
     name: "Pekoe Trail",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", title: "Ambuluwawa Tower" },
-      { src: "/placeholder.svg?height=400&width=600", title: "Biodiversity Complex" },
-      { src: "/placeholder.svg?height=400&width=600", title: "360° Views" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Tea Plantation Trail", title: "Tea Plantation Trail" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Hill Country Villages", title: "Hill Country Villages" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Mountain Tea Estates", title: "Mountain Tea Estates" },
     ],
-    location: "Gampola, Kandy District, Central Province",
-    difficulty: "Highly Challenging",
-    duration: "2-3 hours including tower climb",
-    elevation: "1,087 meters (3,566 feet)",
-    bestTime: "Year-round (clear weather preferred)",
-    trailLength: "Short walk to tower base",
-    startPoint: "Ambuluwawa Biodiversity Complex entrance",
+    location: "Central Highlands (Kandy to Nuwara Eliya region)",
+    difficulty: "Varies by stage (Easy to Challenging)",
+    duration: "Multi-day trek (22 stages total)",
+    elevation: "Varies 600m-2,000m depending on stage",
+    bestTime: "January to March, July to September",
+    trailLength: "300+ kilometers total (divided into stages)",
+    startPoint: "Multiple entry points across Central Province",
     description:
-      "A unique multi-religious site featuring a distinctive spiral tower offering 360-degree views of the hill country. The biodiversity complex showcases various ecosystems, and the tower climb provides an unusual architectural adventure with spectacular panoramic views from the top.",
+      "Sri Lanka's first long-distance hiking trail, the Pekoe Trail traverses 300+ kilometers through the heart of tea country. Divided into 22 stages, it connects historic tea estates, traditional villages, and scenic viewpoints, offering authentic cultural immersion and spectacular highland landscapes.",
     highlights: [
-      "Unique spiral tower architecture",
-      "360-degree panoramic hill country views",
-      "Multi-religious harmony site",
-      "Biodiversity complex with various ecosystems",
-      "Relatively easy accessibility",
-      "Architectural photography opportunities",
+      "Sri Lanka's premier long-distance hiking trail",
+      "Walk through historic tea estates and factories",
+      "Authentic village homestay experiences",
+      "Stunning Central Highlands scenery",
+      "22 stages from easy to challenging",
+      "Cultural immersion with tea plantation workers",
     ],
-    difficulty_level: 2,
-    tips: "Tower climb can be challenging for those with vertigo. Visit on clear days for best views. Combine with exploration of biodiversity complex. Entry fee required for complex access.",
+    difficulty_level: 3,
+    tips: "Can be hiked in individual stages or as multi-day trek. Book homestays in advance through Pekoe Trail Foundation. Best to start with easier stages to gauge fitness. Hire local guides for better cultural insights. Each stage takes 4-8 hours.",
     safetyNotes: [
-      "Tower stairs are narrow and steep",
-      "Not suitable for those with severe vertigo",
-      "Weather can change quickly affecting visibility",
-      "Follow safety guidelines inside tower",
-      "Respect religious significance of site",
+      "Some stages require good fitness levels",
+      "Weather in highlands can change rapidly",
+      "Book accommodation in advance in remote areas",
+      "Carry sufficient water between villages",
+      "Inform hosts about your trekking schedule",
     ],
     whatToBring: [
-      "Comfortable walking shoes",
-      "Camera for unique architectural shots",
-      "Water and light refreshments",
-      "Modest clothing respecting religious site",
-      "Entry fee for biodiversity complex",
+      "Comfortable multi-day hiking boots",
+      "Layered clothing for varying altitudes",
+      "Rain gear and warm jacket",
+      "Daypack with water and snacks for each stage",
+      "Camera for tea estate photography",
+      "Basic first aid supplies",
     ],
     nearbyAccommodation: [
-      "Kandy city hotels (30 minutes drive)",
-      "Gampola area guesthouses",
-      "Peradeniya area accommodations",
+      "Village homestays along the trail",
+      "Tea estate bungalows",
+      "Nuwara Eliya and Hatton hotels",
     ],
   },
 ]
 
-// Image Carousel Component
-function ImageCarousel({ images, difficulty }: { images: { src: string; title: string }[]; difficulty?: string }) {
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const [touchStart, setTouchStart] = useState<number | null>(null)
-    const [touchEnd, setTouchEnd] = useState<number | null>(null)
-
-    // Minimum swipe distance (in px)
-    const minSwipeDistance = 50
-
-    const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }
-
-    const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-    }
-
-    const onTouchStart = (e: React.TouchEvent) => {
-        setTouchEnd(null) // Reset touchEnd
-        setTouchStart(e.targetTouches[0].clientX)
-    }
-
-    const onTouchMove = (e: React.TouchEvent) => {
-        setTouchEnd(e.targetTouches[0].clientX)
-    }
-
-    const onTouchEnd = () => {
-        if (!touchStart || !touchEnd) return
-
-        const distance = touchStart - touchEnd
-        const isLeftSwipe = distance > minSwipeDistance
-        const isRightSwipe = distance < -minSwipeDistance
-
-        if (isLeftSwipe && images.length > 1) {
-            nextImage()
-        }
-        if (isRightSwipe && images.length > 1) {
-            prevImage()
-        }
-    }
-
-    return (
-        <div
-            className="relative h-64 md:h-80 lg:h-72 xl:h-80 group"
-            onTouchStart={onTouchStart}
-            onTouchMove={onTouchMove}
-            onTouchEnd={onTouchEnd}
-        >
-            <Image
-                src={images[currentIndex].src}
-                alt={images[currentIndex].title}
-                fill
-                className="object-cover transition-all duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-
-            {/* Navigation Buttons */}
-            {images.length > 1 && (
-                <>
-                    <button
-                        onClick={prevImage}
-                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm rounded-full p-2 md:p-3 transition-all opacity-100 shadow-lg"
-                    >
-                        <ChevronLeft className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                    </button>
-                    <button
-                        onClick={nextImage}
-                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm rounded-full p-2 md:p-3 transition-all opacity-100 shadow-lg"
-                    >
-                        <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                    </button>
-                </>
-            )}
-
-            {/* Dots Indicator */}
-            {images.length > 1 && (
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                    {images.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setCurrentIndex(index)}
-                            className={`w-3 h-3 md:w-2 md:h-2 rounded-full transition-all touch-manipulation ${index === currentIndex ? 'bg-white' : 'bg-white/50'
-                                }`}
-                        />
-                    ))}
-                </div>
-            )}
-
-            {/* Image Title */}
-            <div className="absolute bottom-8 left-4 right-4 text-center">
-                <p className="text-white text-sm font-medium bg-black/30 backdrop-blur-sm rounded-lg px-3 py-1 inline-block">
-                    {images[currentIndex].title}
-                </p>
-            </div>
-
-            {/* Activity Difficulty Badge */}
-            {difficulty && (
-                <Badge className="absolute top-4 left-4 bg-blue-600 text-white">
-                    {difficulty}
-                </Badge>
-            )}
-        </div>
-    )
-}
 
 const trailTips = [
   {
