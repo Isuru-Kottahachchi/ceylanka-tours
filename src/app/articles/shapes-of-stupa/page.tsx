@@ -13,9 +13,6 @@ export default function ShapesOfStupaPage() {
             {/* Hero Header */}
             <section className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white py-16 lg:py-24">
                 <div className="container mx-auto px-4 text-center">
-                    <div className="flex justify-center mb-6">
-                        <div className="h-16 w-16 text-cyan-100">🕉️</div>
-                    </div>
                     <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                         Shapes of Stupas in Sri Lanka
                     </h1>
@@ -32,7 +29,7 @@ export default function ShapesOfStupaPage() {
 
             {/* Fact Check Banner */}
             <div className="max-w-6xl mx-auto px-4 py-8">
-                <div className="mb-8 border-l-4 border-l-cyan-500 bg-cyan-50 p-4 rounded-r-lg">
+                {/* <div className="mb-8 border-l-4 border-l-cyan-500 bg-cyan-50 p-4 rounded-r-lg">
                     <div className="flex items-center gap-3">
                         <div className="text-cyan-600 text-xl font-bold">✓</div>
                         <div>
@@ -40,7 +37,7 @@ export default function ShapesOfStupaPage() {
                             <p className="text-xs text-gray-600">Last updated: January 2025 • Information verified with archaeological records and temple authorities</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Introduction */}
                 <section className="mb-12">
@@ -180,7 +177,7 @@ export default function ShapesOfStupaPage() {
                             {/* Image Section */}
                             <div className="relative w-full md:w-2/5 h-64 md:h-auto">
                                 <Image
-                                    src="/images/abhayagiri.jpg"
+                                    src="/Abhayagiriya.jpeg"
                                     alt="Padmakara Stupa - Abhayagiri Dagoba"
                                     fill
                                     className="object-cover"
@@ -231,7 +228,7 @@ export default function ShapesOfStupaPage() {
                             {/* Image Section */}
                             <div className="relative w-full md:w-2/5 h-64 md:h-auto">
                                 <Image
-                                    src="/images/thuparamaya.jpg"
+                                    src="/Thooparamaya.jpeg"
                                     alt="Ghandakara Stupa - Thuparamaya"
                                     fill
                                     className="object-cover"

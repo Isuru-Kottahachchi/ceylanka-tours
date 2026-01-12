@@ -15,9 +15,9 @@ export default function RamayanaStoryPage() {
       <section className="bg-gradient-to-r from-orange-600 to-red-600 text-white py-16 lg:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex justify-center mb-6">
+            {/* <div className="flex justify-center mb-6">
               <Book className="h-16 w-16 text-orange-100" />
-            </div>
+            </div> */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               The Ramayana: Epic Story Between India and Sri Lanka
             </h1>
