@@ -97,7 +97,7 @@ export default function WaterActivitiesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-cyan-50 dark:from-slate-900 dark:to-slate-800">
       {/* Hero Section */}
-      <section className="relative h-[70vh] overflow-hidden">
+      <section className="relative h-[50vh] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/jungle-beach.jpeg"
