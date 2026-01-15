@@ -1,13 +1,16 @@
 'use client'
 
 import Image from "next/image"
+import Link from "next/link"
 import { Fragment } from "react"
-import { MapPin, Calendar, Clock, Star, Users, Camera, Info, Mountain } from "lucide-react"
+import { MapPin, Calendar, Clock, Star, Users, Camera, Info, Mountain, ArrowRight } from "lucide-react"
 import { ImageCarousel } from "@/components/ui/image-carousel"
+import path from "path"
 
 const unescoSites = [
   {
     name: "Sigiriya Rock Fortress",
+    path: "sigiriya-rock-fortress", 
     images: [
       { src: "/SigiriyaDrone.jpg", alt: "Sigiriya Rock Fortress", title: "Sigiriya Rock Fortress" },
       { src: "/Sigiriya-View.jpg", alt: "Ancient Frescoes", title: "Ancient Frescoes" },
@@ -37,6 +40,7 @@ const unescoSites = [
   },
   {
     name: "Ancient City of Anuradhapura",
+    path: "anuradhapura",
     images: [
       { src: "/Anuradhapura.jpg", alt: "Ruwanwelisaya Stupa", title: "Ruwanwelisaya Stupa" },
       { src: "/SriMahaBodhi.jpg", alt: "Sri Maha Bodhi Sacred Tree", title: "Sri Maha Bodhi Sacred Tree" },
@@ -68,8 +72,9 @@ const unescoSites = [
   },
   {
     name: "Ancient City of Polonnaruwa",
+    path: "polonnaruwa",
     images: [
-      { src: "/GalViharaya.jpeg", alt: "Gal Vihara Buddha Statues", title: "Gal Vihara Buddha Statues" },
+      { src: "/Galviharaya.jpeg", alt: "Gal Vihara Buddha Statues", title: "Gal Vihara Buddha Statues" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Parakrama Samudra Reservoir", title: "Parakrama Samudra Reservoir" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Royal Palace Complex", title: "Royal Palace Complex" },
     ],
@@ -95,9 +100,10 @@ const unescoSites = [
   },
   {
     name: "Golden Temple of Dambulla",
+    path: "dambulla-cave-temple",
     images: [
       { src: "/Dambullacavetemple.jpeg", alt: "Dambulla Cave Temple", title: "Dambulla Cave Temple" },
-      
+
       { src: "/Dambulla-Cave-Temple-Arts.jpg", alt: "Golden Temple Exterior", title: "Golden Temple Exterior" },
       { src: "/Rangiri-Dambulu.jpg", alt: "Cave Murals and Buddha Statues", title: "Cave Murals and Buddha Statues" },
     ],
@@ -123,10 +129,12 @@ const unescoSites = [
   },
   {
     name: "Sacred City of Kandy",
+    path: "kandy",
     images: [
       { src: "/Kandy-View.jpg", alt: "Temple of the Sacred Tooth Relic", title: "Temple of the Sacred Tooth Relic" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Kandy Lake and City", title: "Kandy Lake and City" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Esala Perahera Festival", title: "Esala Perahera Festival" },
+      { src: "/Kandy3.jpeg", alt: "Kandy Lake and City", title: "Kandy Lake and City" },
+      { src: "/Kandy2.jpeg", alt: "Esala Perahera Festival", title: "Esala Perahera Festival" },
+      { src: "/Kandy1.jpeg", alt: "Esala Perahera Festival", title: "Esala Perahera Festival" },
     ],
     location: "Kandy District, Central Province",
     yearInscribed: "1988",
@@ -154,6 +162,7 @@ const unescoSites = [
   },
   {
     name: "Old Town of Galle and its Fortifications",
+    path: "galle-fort",
     images: [
       { src: "/galle-fort-sarmat-batagov-unsplash.jpg", alt: "Galle Fort Lighthouse", title: "Galle Fort Lighthouse" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Colonial Architecture", title: "Colonial Architecture" },
@@ -181,6 +190,7 @@ const unescoSites = [
   },
   {
     name: "Sinharaja Forest Reserve",
+    path: "sinharaja-forest",
     images: [
       { src: "/Sinharaja-forest.jpg", alt: "Sinharaja Rainforest", title: "Sinharaja Rainforest" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Endemic Bird Species", title: "Endemic Bird Species" },
@@ -208,6 +218,7 @@ const unescoSites = [
   },
   {
     name: "Central Highlands of Sri Lanka",
+    path: "horton-plains",
     images: [
       { src: "/Hortonplains7.jpeg", alt: "World's End Horton Plains", title: "World's End Horton Plains" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Knuckles Mountain Range", title: "Knuckles Mountain Range" },
@@ -399,6 +410,17 @@ export default function UNESCOSitesPage() {
                           </ul>
                         </div>
                       </div>
+
+                      {/* Explore Now Button */}
+                      <div className="mt-6">
+                        <Link 
+                          href={`/destinations/${(site.path || site.name).toLowerCase().replace(/\s+/g, '-')}`}
+                          className="inline-flex items-center justify-center w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg group"
+                        >
+                          Explore Now
+                          <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </article>
@@ -506,7 +528,7 @@ export default function UNESCOSitesPage() {
                       </div>
 
                       {/* Tips and Nearby Attractions */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div>
                           <h4 className="font-semibold text-gray-900 dark:text-white mb-2">💡 Insider Tips</h4>
                           <p className="text-sm text-gray-700 dark:text-gray-300">{site.tips}</p>
@@ -522,6 +544,17 @@ export default function UNESCOSitesPage() {
                             ))}
                           </ul>
                         </div>
+                      </div>
+
+                      {/* Explore Now Button */}
+                      <div className="mt-6">
+                        <Link 
+                          href={`/destinations/${(site.path || site.name).toLowerCase().replace(/\s+/g, '-')}`}
+                          className="inline-flex items-center justify-center w-full bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg group"
+                        >
+                          Explore Now
+                          <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Link>
                       </div>
                     </div>
                   </div>
