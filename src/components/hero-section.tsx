@@ -84,8 +84,8 @@ export function HeroSection() {
           <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer" onClick={() => window.location.href='/tours'}>
             Travel Packages
           </Button>
-          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer" onClick={() => window.location.href='/cultural-sites'}>
-            Cultural Sites
+          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer" onClick={() => window.location.href='/explore/unesco-sites'}>
+            UNESCO Heritages
           </Button>
         </div>
       </div>
