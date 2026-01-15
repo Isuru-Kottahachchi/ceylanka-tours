@@ -234,6 +234,10 @@ const unescoSites = [
   },
 ]
 
+// Separate cultural and natural sites
+const culturalSites = unescoSites.filter(site => site.category === "Cultural")
+const naturalSites = unescoSites.filter(site => site.category === "Natural")
+
 export default function UNESCOSitesPage() {
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
@@ -279,8 +283,256 @@ export default function UNESCOSitesPage() {
           </div>
         </section>
 
-        {/* Sites Grid */}
-        <section className="space-y-8">
+        {/* Cultural Heritage Sites Section */}
+        <section className="mb-16">
+          <div className="mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+              <span className="text-blue-600 dark:text-blue-400">🏛️</span>
+              Cultural Heritage Sites
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed max-w-4xl">
+              Sri Lanka's six cultural UNESCO sites showcase over 2,500 years of continuous civilization, from ancient kingdoms and sacred Buddhist temples to colonial fortifications. These sites represent outstanding achievements in architecture, urban planning, religious art, and cultural traditions that have shaped South Asian history.
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {culturalSites.map((site, index) => (
+              <Fragment key={index}>
+                {/* Site Card */}
+                <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+                  <div className="flex flex-col lg:flex-row">
+                    {/* Image Carousel */}
+                    <div className="relative w-full lg:w-2/5">
+                      <ImageCarousel images={site.images} />
+                      <div className="absolute top-4 left-4 z-10">
+                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-blue-600 text-white shadow-lg">
+                          Cultural Heritage
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1 p-6 lg:p-8">
+                      <div className="mb-4">
+                        <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">{site.name}</h3>
+                        <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400 mb-4">
+                          <div className="flex items-center gap-1">
+                            <MapPin className="w-4 h-4" />
+                            <span>{site.location}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Calendar className="w-4 h-4" />
+                            <span>UNESCO: {site.yearInscribed}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Clock className="w-4 h-4" />
+                            <span>{site.duration}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Mountain className="w-4 h-4" />
+                            <span>{site.difficulty}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">{site.description}</p>
+
+                      {/* Highlights */}
+                      <div className="mb-6">
+                        <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                          <Star className="w-4 h-4 text-yellow-500" />
+                          Key Highlights
+                        </h4>
+                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                          {site.highlights.map((highlight, i) => (
+                            <li key={i} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+                              <span className="text-green-500 mt-1">•</span>
+                              <span>{highlight}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Practical Info */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                            <Info className="w-4 h-4 text-blue-500" />
+                            Visitor Information
+                          </h4>
+                          <div className="space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                            <p>
+                              <strong>Entry Fee:</strong> {site.entryFee}
+                            </p>
+                            <p>
+                              <strong>Duration:</strong> {site.duration}
+                            </p>
+                            <p>
+                              <strong>Difficulty:</strong> {site.difficulty}
+                            </p>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                            <Camera className="w-4 h-4 text-purple-500" />
+                            Photography Tips
+                          </h4>
+                          <p className="text-sm text-gray-700 dark:text-gray-300">{site.bestPhotography}</p>
+                        </div>
+                      </div>
+
+                      {/* Tips and Nearby Attractions */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2">💡 Insider Tips</h4>
+                          <p className="text-sm text-gray-700 dark:text-gray-300">{site.tips}</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2">🗺️ Nearby Attractions</h4>
+                          <ul className="text-sm text-gray-700 dark:text-gray-300">
+                            {site.nearbyAttractions.map((attraction, i) => (
+                              <li key={i} className="flex items-center gap-2">
+                                <span className="text-blue-500">•</span>
+                                {attraction}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </Fragment>
+            ))}
+          </div>
+        </section>
+
+        {/* Natural Heritage Sites Section */}
+        <section className="mb-16">
+          <div className="mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-3">
+              <span className="text-green-600 dark:text-green-400">🌿</span>
+              Natural Heritage Sites
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed max-w-4xl">
+              Sri Lanka's two natural UNESCO sites protect some of the world's most biodiverse ecosystems. Sinharaja represents the island's lowland tropical rainforest with exceptional endemic species, while the Central Highlands preserve unique montane ecosystems above 2,000 meters, showcasing cloud forests, grasslands, and spectacular mountain landscapes.
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {naturalSites.map((site, index) => (
+              <Fragment key={index}>
+                {/* Site Card */}
+                <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+                  <div className="flex flex-col lg:flex-row">
+                    {/* Image Carousel */}
+                    <div className="relative w-full lg:w-2/5">
+                      <ImageCarousel images={site.images} />
+                      <div className="absolute top-4 left-4 z-10">
+                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-green-600 text-white shadow-lg">
+                          Natural Heritage
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="flex-1 p-6 lg:p-8">
+                      <div className="mb-4">
+                        <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">{site.name}</h3>
+                        <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400 mb-4">
+                          <div className="flex items-center gap-1">
+                            <MapPin className="w-4 h-4" />
+                            <span>{site.location}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Calendar className="w-4 h-4" />
+                            <span>UNESCO: {site.yearInscribed}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Clock className="w-4 h-4" />
+                            <span>{site.duration}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <Mountain className="w-4 h-4" />
+                            <span>{site.difficulty}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">{site.description}</p>
+
+                      {/* Highlights */}
+                      <div className="mb-6">
+                        <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                          <Star className="w-4 h-4 text-yellow-500" />
+                          Key Highlights
+                        </h4>
+                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                          {site.highlights.map((highlight, i) => (
+                            <li key={i} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+                              <span className="text-green-500 mt-1">•</span>
+                              <span>{highlight}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Practical Info */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                            <Info className="w-4 h-4 text-blue-500" />
+                            Visitor Information
+                          </h4>
+                          <div className="space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                            <p>
+                              <strong>Entry Fee:</strong> {site.entryFee}
+                            </p>
+                            <p>
+                              <strong>Duration:</strong> {site.duration}
+                            </p>
+                            <p>
+                              <strong>Difficulty:</strong> {site.difficulty}
+                            </p>
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                            <Camera className="w-4 h-4 text-purple-500" />
+                            Photography Tips
+                          </h4>
+                          <p className="text-sm text-gray-700 dark:text-gray-300">{site.bestPhotography}</p>
+                        </div>
+                      </div>
+
+                      {/* Tips and Nearby Attractions */}
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2">💡 Insider Tips</h4>
+                          <p className="text-sm text-gray-700 dark:text-gray-300">{site.tips}</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 dark:text-white mb-2">🗺️ Nearby Attractions</h4>
+                          <ul className="text-sm text-gray-700 dark:text-gray-300">
+                            {site.nearbyAttractions.map((attraction, i) => (
+                              <li key={i} className="flex items-center gap-2">
+                                <span className="text-blue-500">•</span>
+                                {attraction}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </Fragment>
+            ))}
+          </div>
+        </section>
+
+        {/* Sites Grid - OLD VERSION - REMOVE THIS */}
+        <section className="space-y-8 hidden">
           {unescoSites.map((site, index) => (
             <Fragment key={index}>
               {/* Site Card */}
