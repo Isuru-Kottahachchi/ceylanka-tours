@@ -8,16 +8,16 @@ const tips = [
     content:
       "December to March for west/south coasts, April to September for east coast. Avoid monsoon seasons for your preferred regions.",
   },
-  {
-    icon: CreditCard,
-    title: "Budget Planning",
-    content: "Budget travelers: $25-40/day, Mid-range: $50-80/day, Luxury: $100+/day. Local food is very affordable.",
-  },
+  // {
+  //   icon: CreditCard,
+  //   title: "Budget Planning",
+  //   content: "Budget travelers: $25-40/day, Mid-range: $50-80/day, Luxury: $100+/day. Local food is very affordable.",
+  // },
   {
     icon: Plane,
     title: "Getting Around",
     content:
-      "Trains for scenic routes, buses for budget travel, tuk-tuks for short distances, private drivers for comfort.",
+      "Trains for scenic routes, buses for budget travel, tuk-tuks (Use Uber or PickMe) for short distances, private drivers for comfort.",
   },
   {
     icon: Shield,
@@ -25,12 +25,12 @@ const tips = [
     content:
       "No special vaccinations required. Drink bottled water, use mosquito repellent, and respect local customs.",
   },
-  {
-    icon: MapPin,
-    title: "Must-Have Apps",
-    content:
-      "Uber ,PickMe apps will be helpful for rides, Google Translate with Sinhala/Tamil, Maps.me for offline navigation, XE Currency converter.",
-  },
+  // {
+  //   icon: MapPin,
+  //   title: "Must-Have Apps",
+  //   content:
+  //     "Uber ,PickMe apps will be helpful for rides, Google Translate with Sinhala/Tamil, Maps.me for offline navigation, XE Currency converter.",
+  // },
   {
     icon: Lightbulb,
     title: "Cultural Etiquette",

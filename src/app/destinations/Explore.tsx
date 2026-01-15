@@ -141,7 +141,7 @@ export default function ExplorePage() {
           {/* Explore Categories Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {exploreCategories.map((category) => (
-              <Link key={category.id} href={category.href} className="group">
+              <div key={category.id} className="group">
                 <Card className="h-full overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-0 bg-white dark:bg-gray-800">
                   <div className="relative">
                     {/* Background Image */}
@@ -168,12 +168,6 @@ export default function ExplorePage() {
                         </Badge>
                       </div>
 
-                      {/* Arrow Icon */}
-                      <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div className="bg-white/20 backdrop-blur-sm rounded-full p-2">
-                          <ArrowRight className="w-5 h-5 text-white" />
-                        </div>
-                      </div>
                     </div>
 
                     {/* Content */}
@@ -186,7 +180,7 @@ export default function ExplorePage() {
                       </p>
                       
                       {/* Highlights */}
-                      <div className="space-y-2">
+                      <div className="space-y-2 mb-4">
                         <h4 className="text-sm font-semibold text-gray-900 dark:text-white">Featured:</h4>
                         <div className="flex flex-wrap gap-1">
                           {category.highlights.map((highlight, idx) => (
@@ -200,10 +194,19 @@ export default function ExplorePage() {
                           ))}
                         </div>
                       </div>
+
+                      {/* Explore Button */}
+                      <Link 
+                        href={category.href}
+                        className="inline-flex items-center justify-center w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 group-hover:shadow-lg"
+                      >
+                        Explore Now
+                        <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Link>
                     </CardContent>
                   </div>
                 </Card>
-              </Link>
+              </div>
             ))}
           </div>
 
