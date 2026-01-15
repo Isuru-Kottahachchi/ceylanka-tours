@@ -273,8 +273,7 @@ export default function UNESCOSitesPage() {
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
               Sri Lanka, despite its compact size, is home to eight UNESCO World Heritage Sites that represent both
-              outstanding cultural achievements and exceptional natural beauty. These sites span over 2,500 years of
-              human civilization and showcase some of the world's most biodiverse ecosystems.
+              outstanding cultural achievements and exceptional natural beauty.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               From ancient rock fortresses and sacred cities to pristine rainforests and montane ecosystems, Sri Lanka's
