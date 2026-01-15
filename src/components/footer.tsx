@@ -32,7 +32,7 @@ const footerLinks = {
     { name: "Wildlife Safari", href: "/wildlife" },
     { name: "Beach Activities", href: "/beaches" },
     { name: "Adventure Sports", href: "/adventure" },
-    { name: "Food & Cuisine", href: "/food" },
+    { name: "Food & Cuisine", href: "/famous-cuisine" },
   ],
   company: [
     { name: "About Us", href: "/about-us" },

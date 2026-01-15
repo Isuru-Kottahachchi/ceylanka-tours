@@ -73,7 +73,7 @@ export function Newsletter() {
                   <Button 
                     type="submit" 
                     disabled={isSubmitting}
-                    className="h-12 px-8 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold dark:bg-cyan-700 dark:hover:bg-cyan-800 disabled:opacity-50"
+                    className="h-12 px-8 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold dark:bg-cyan-700 dark:hover:bg-cyan-800 disabled:opacity-50 cursor-pointer"
                   >
                     {isSubmitting ? 'Subscribing...' : 'Subscribe Now'}
                   </Button>

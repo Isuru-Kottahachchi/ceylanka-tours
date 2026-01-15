@@ -20,7 +20,7 @@ const topNavItems = [
   { name: "Privacy Policy", href: "/privacy-policy", hasDropdown: true },
   { name: "Tours", href: "/tours", hasDropdown: true },
   // { name: "Advertise", href: "/advertise", hasDropdown: true },
-  { name: "Store", href: "/store", hasDropdown: true }
+  // { name: "Store", href: "/store", hasDropdown: true }
 ]
 
 const whatToDoItems = [
