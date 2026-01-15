@@ -9,9 +9,9 @@ const unescoSites = [
   {
     name: "Sigiriya Rock Fortress",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Sigiriya Rock Fortress", title: "Sigiriya Rock Fortress" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Ancient Frescoes", title: "Ancient Frescoes" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Summit Palace Ruins", title: "Summit Palace Ruins" },
+      { src: "/SigiriyaDrone.jpg", alt: "Sigiriya Rock Fortress", title: "Sigiriya Rock Fortress" },
+      { src: "/Sigiriya-View.jpg", alt: "Ancient Frescoes", title: "Ancient Frescoes" },
+      { src: "/Sigiriya.jpeg", alt: "Summit Palace Ruins", title: "Summit Palace Ruins" },
     ],
     location: "Matale District, Central Province",
     yearInscribed: "1982",
@@ -38,9 +38,9 @@ const unescoSites = [
   {
     name: "Ancient City of Anuradhapura",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Ruwanwelisaya Stupa", title: "Ruwanwelisaya Stupa" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Sri Maha Bodhi Sacred Tree", title: "Sri Maha Bodhi Sacred Tree" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Ancient Monastery Ruins", title: "Ancient Monastery Ruins" },
+      { src: "/Anuradhapura.jpg", alt: "Ruwanwelisaya Stupa", title: "Ruwanwelisaya Stupa" },
+      { src: "/SriMahaBodhi.jpg", alt: "Sri Maha Bodhi Sacred Tree", title: "Sri Maha Bodhi Sacred Tree" },
+      { src: "/", alt: "Ancient Monastery Ruins", title: "Ancient Monastery Ruins" },
     ],
     location: "Anuradhapura District, North Central Province",
     yearInscribed: "1982",
@@ -69,7 +69,7 @@ const unescoSites = [
   {
     name: "Ancient City of Polonnaruwa",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Gal Vihara Buddha Statues", title: "Gal Vihara Buddha Statues" },
+      { src: "/GalViharaya.jpeg", alt: "Gal Vihara Buddha Statues", title: "Gal Vihara Buddha Statues" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Parakrama Samudra Reservoir", title: "Parakrama Samudra Reservoir" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Royal Palace Complex", title: "Royal Palace Complex" },
     ],
@@ -96,9 +96,10 @@ const unescoSites = [
   {
     name: "Golden Temple of Dambulla",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Dambulla Cave Temple", title: "Dambulla Cave Temple" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Cave Murals and Buddha Statues", title: "Cave Murals and Buddha Statues" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Golden Temple Exterior", title: "Golden Temple Exterior" },
+      { src: "/Dambullacavetemple.jpeg", alt: "Dambulla Cave Temple", title: "Dambulla Cave Temple" },
+      
+      { src: "/Dambulla-Cave-Temple-Arts.jpg", alt: "Golden Temple Exterior", title: "Golden Temple Exterior" },
+      { src: "/Rangiri-Dambulu.jpg", alt: "Cave Murals and Buddha Statues", title: "Cave Murals and Buddha Statues" },
     ],
     location: "Matale District, Central Province",
     yearInscribed: "1991",
@@ -123,7 +124,7 @@ const unescoSites = [
   {
     name: "Sacred City of Kandy",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Temple of the Sacred Tooth Relic", title: "Temple of the Sacred Tooth Relic" },
+      { src: "/Kandy-View.jpg", alt: "Temple of the Sacred Tooth Relic", title: "Temple of the Sacred Tooth Relic" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Kandy Lake and City", title: "Kandy Lake and City" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Esala Perahera Festival", title: "Esala Perahera Festival" },
     ],
@@ -154,7 +155,7 @@ const unescoSites = [
   {
     name: "Old Town of Galle and its Fortifications",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Galle Fort Lighthouse", title: "Galle Fort Lighthouse" },
+      { src: "/galle-fort-sarmat-batagov-unsplash.jpg", alt: "Galle Fort Lighthouse", title: "Galle Fort Lighthouse" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Colonial Architecture", title: "Colonial Architecture" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Fort Ramparts", title: "Fort Ramparts" },
     ],
@@ -181,7 +182,7 @@ const unescoSites = [
   {
     name: "Sinharaja Forest Reserve",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Sinharaja Rainforest", title: "Sinharaja Rainforest" },
+      { src: "/Sinharaja-forest.jpg", alt: "Sinharaja Rainforest", title: "Sinharaja Rainforest" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Endemic Bird Species", title: "Endemic Bird Species" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Forest Streams", title: "Forest Streams" },
     ],
@@ -208,7 +209,7 @@ const unescoSites = [
   {
     name: "Central Highlands of Sri Lanka",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "World's End Horton Plains", title: "World's End Horton Plains" },
+      { src: "/Hortonplains7.jpeg", alt: "World's End Horton Plains", title: "World's End Horton Plains" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Knuckles Mountain Range", title: "Knuckles Mountain Range" },
       { src: "/placeholder.svg?height=400&width=600", alt: "Peak Wilderness", title: "Peak Wilderness" },
     ],
