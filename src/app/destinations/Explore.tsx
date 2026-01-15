@@ -51,39 +51,39 @@ const exploreCategories = [
     href: "/famous-cuisine",
     // gradient: "from-yellow-500 to-orange-600"
   },
-  {
-    id: "waterfalls",
-    title: "Waterfalls",
-    description: "Spectacular cascades and hidden falls throughout the tropical paradise",
-    icon: Waves,
-    image: "/Bomburuella.jpg",
-    highlights: ["Sigiriya Falls", "Diyaluma Falls", "Sekumpura Falls", "Bambarakanda Falls"],
-    count: "100+ Waterfalls",
-    href: "/explore/waterfalls",
-    // gradient: "from-blue-500 to-cyan-600"
-  },
-  {
-    id: "mountains",
-    title: "Mountains",
-    description: "Majestic peaks, scenic viewpoints, and mountain adventures across the island",
-    icon: Mountain,
-    image: "/Mountain.jpeg",
-    highlights: ["Pidurutalagala", "Kirigalpotta", "Totapolakanda", "Hakgala"],
-    count: "25+ Peaks",
-    href: "/explore/famous-hikes",
-    // gradient: "from-purple-500 to-indigo-600"
-  },
-  {
-    id: "rivers",
-    title: "Rivers",
-    description: "Scenic waterways, river safaris, and aquatic adventures through lush landscapes",
-    icon: Waves,
-    image: "/River.jpg",
-    highlights: ["Mahaweli River", "Kelani River", "Bentota River", "Madu River"],
-    count: "103 Rivers",
-    href: "/explore/rivers",
-    // gradient: "from-teal-500 to-blue-600"
-  },
+  // {
+  //   id: "waterfalls",
+  //   title: "Waterfalls",
+  //   description: "Spectacular cascades and hidden falls throughout the tropical paradise",
+  //   icon: Waves,
+  //   image: "/Bomburuella.jpg",
+  //   highlights: ["Sigiriya Falls", "Diyaluma Falls", "Sekumpura Falls", "Bambarakanda Falls"],
+  //   count: "100+ Waterfalls",
+  //   href: "/explore/waterfalls",
+  //   // gradient: "from-blue-500 to-cyan-600"
+  // },
+  // {
+  //   id: "mountains",
+  //   title: "Mountains",
+  //   description: "Majestic peaks, scenic viewpoints, and mountain adventures across the island",
+  //   icon: Mountain,
+  //   image: "/Mountain.jpeg",
+  //   highlights: ["Pidurutalagala", "Kirigalpotta", "Totapolakanda", "Hakgala"],
+  //   count: "25+ Peaks",
+  //   href: "/explore/famous-hikes",
+  //   // gradient: "from-purple-500 to-indigo-600"
+  // },
+  // {
+  //   id: "rivers",
+  //   title: "Rivers",
+  //   description: "Scenic waterways, river safaris, and aquatic adventures through lush landscapes",
+  //   icon: Waves,
+  //   image: "/River.jpg",
+  //   highlights: ["Mahaweli River", "Kelani River", "Bentota River", "Madu River"],
+  //   count: "103 Rivers",
+  //   href: "/explore/rivers",
+  //   // gradient: "from-teal-500 to-blue-600"
+  // },
   {
     id: "unesco-heritage",
     title: "UNESCO Heritage",
@@ -95,17 +95,17 @@ const exploreCategories = [
     href: "/explore/unesco-sites",
     gradient: "from-pink-500 to-rose-600"
   },
-  {
-    id: "gallery",
-    title: "Image Gallery",
-    description: "Stunning photography showcasing Sri Lanka's natural beauty and cultural heritage",
-    icon: Camera,
-    image: "/placeholder.svg?height=300&width=400",
-    highlights: ["Landscapes", "Wildlife", "Culture", "Architecture"],
-    count: "500+ Photos",
-    href: "/explore/gallery",
-    gradient: "from-pink-500 to-rose-600"
-  }
+  // {
+  //   id: "gallery",
+  //   title: "Image Gallery",
+  //   description: "Stunning photography showcasing Sri Lanka's natural beauty and cultural heritage",
+  //   icon: Camera,
+  //   image: "/placeholder.svg?height=300&width=400",
+  //   highlights: ["Landscapes", "Wildlife", "Culture", "Architecture"],
+  //   count: "500+ Photos",
+  //   href: "/explore/gallery",
+  //   gradient: "from-pink-500 to-rose-600"
+  // }
 ]
 
 export default function ExplorePage() {
@@ -123,10 +123,10 @@ export default function ExplorePage() {
               authentic cuisine, and breathtaking natural wonders
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Badge variant="secondary" className="text-sm px-4 py-2">
+              {/* <Badge variant="secondary" className="text-sm px-4 py-2">
                 <Star className="w-4 h-4 mr-2" />
                 7 Categories
-              </Badge>
+              </Badge> */}
               <Badge variant="secondary" className="text-sm px-4 py-2">
                 <MapPin className="w-4 h-4 mr-2" />
                 Island-wide Coverage
