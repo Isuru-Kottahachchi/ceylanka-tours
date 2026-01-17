@@ -193,8 +193,6 @@ const unescoSites = [
     path: "sinharaja-forest",
     images: [
       { src: "/Sinharaja-forest.jpg", alt: "Sinharaja Rainforest", title: "Sinharaja Rainforest" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Endemic Bird Species", title: "Endemic Bird Species" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Forest Streams", title: "Forest Streams" },
     ],
     location: "Sabaragamuwa and Southern Provinces",
     yearInscribed: "1988",

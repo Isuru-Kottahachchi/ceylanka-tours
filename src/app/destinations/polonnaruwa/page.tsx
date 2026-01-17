@@ -1286,109 +1286,146 @@ export default function PolonnaruwaGuide() {
                     </div>
                 </section>
 
-                {/* Nearby Attractions */}
+                {/* Nearby Archaeological Wonders */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold mb-6">Nearby Places to Explore</h2>
-                    <div className="grid md:grid-cols-3 gap-6">
+                    <h2 className="text-3xl font-bold mb-6 scroll-mt-40" id="nearby-archaeological-wonders">Nearby Archaeological Wonders</h2>
+                    <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+                      Discover more ancient treasures within Sri Lanka's Cultural Triangle
+                    </p>
 
-                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                            <CardHeader>
-                                <CardTitle className="text-lg">Sigiriya Rock Fortress</CardTitle>
-                                <CardDescription>Ancient wonder nearby</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <Image
-                                    src="/SigiriyaDrone.jpg"
-                                    alt="Sigiriya Rock Fortress rising majestically from the jungle landscape"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                                />
-                                <p className="text-sm text-muted-foreground">
-                                    The famous Lion Rock fortress, just 1.5 hours from Polonnaruwa, showcasing 5th-century royal architecture.
-                                </p>
-                                <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/sigiriya-rock-fortress" passHref legacyBehavior>
-                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                                    </Link>
-                                </div>
-                            </CardContent>
-                        </Card>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <div className="relative h-48">
+                          <Image
+                            src="/SigiriyaDrone.jpg"
+                            alt="Sigiriya Rock Fortress rising majestically from the jungle landscape"
+                            fill
+                            className="object-cover rounded-t-lg"
+                          />
+                          <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                            55 km
+                          </div>
+                        </div>
+                        <CardContent className="p-4">
+                          <h3 className="font-bold text-lg mb-2">Sigiriya Rock Fortress</h3>
+                          <p className="text-sm text-muted-foreground mb-3">
+                            The iconic Lion Rock fortress showcasing 5th-century royal architecture and ancient frescoes nestled in jungle wilderness.
+                          </p>
+                          <div className="flex items-center text-xs text-blue-600 mb-2">
+                            <MapPin className="w-3 h-3 mr-1" />
+                            55 km from Polonnaruwa
+                          </div>
+                          <div className="mt-4 flex justify-start">
+                            <Link href="/destinations/sigiriya-rock-fortress" passHref legacyBehavior>
+                              <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                            </Link>
+                          </div>
+                        </CardContent>
+                      </Card>
 
+                      <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <div className="relative h-48">
+                          <Image
+                            src="/Anuradhapura.jpg"
+                            alt="Ancient capital Anuradhapura showing sacred Buddhist monuments and historical ruins"
+                            fill
+                            className="object-cover rounded-t-lg"
+                          />
+                          <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                            50 km
+                          </div>
+                        </div>
+                        <CardContent className="p-4">
+                          <h3 className="font-bold text-lg mb-2">Anuradhapura</h3>
+                          <p className="text-sm text-muted-foreground mb-3">
+                            Sri Lanka's first capital featuring sacred Buddhist dagobas, monasteries, and one of the world's oldest continuously worshipped trees.
+                          </p>
+                          <div className="flex items-center text-xs text-blue-600 mb-2">
+                            <MapPin className="w-3 h-3 mr-1" />
+                            50 km from Polonnaruwa
+                          </div>
+                          <div className="mt-4 flex justify-start">
+                            <Link href="/destinations/anuradhapura" passHref legacyBehavior>
+                              <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                            </Link>
+                          </div>
+                        </CardContent>
+                      </Card>
 
+                      <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <div className="relative h-48">
+                          <Image
+                            src="/dambulla-cave-temple.jpg"
+                            alt="Dambulla Cave Temple showing golden Buddha statue and ancient rock-cut monastery"
+                            fill
+                            className="object-cover rounded-t-lg"
+                          />
+                          <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                            35 km
+                          </div>
+                        </div>
+                        <CardContent className="p-4">
+                          <h3 className="font-bold text-lg mb-2">Dambulla Cave Temple</h3>
+                          <p className="text-sm text-muted-foreground mb-3">
+                            A UNESCO World Heritage site featuring five rock-cut Buddhist caves with over 150 Buddha statues and ancient murals.
+                          </p>
+                          <div className="flex items-center text-xs text-blue-600 mb-2">
+                            <MapPin className="w-3 h-3 mr-1" />
+                            35 km from Polonnaruwa
+                          </div>
+                          <div className="mt-4 flex justify-start">
+                            <Link href="/destinations/dambulla-cave-temple" passHref legacyBehavior>
+                              <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                            </Link>
+                          </div>
+                        </CardContent>
+                      </Card>
 
-                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                            <CardHeader>
-                                <CardTitle className="text-lg">Anuradhapura</CardTitle>
-                                <CardDescription>First Capital of Sri Lanka</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <Image
-                                    src="/Anuradhapura.jpg"
-                                    alt="Ancient capital Anuradhapura"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                                />
-                                <p className="text-sm text-muted-foreground">
-                                    Witness one of the world&apos;s largest elephant gathering, just 30 minutes from Polonnaruwa.
-                                </p>
-                                <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/anuradhapura" passHref legacyBehavior>
-                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                                    </Link>
-                                </div>
-                            </CardContent>
-                        </Card>
+                      <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                        <div className="relative h-48">
+                          <Image
+                            src="/Minneriyanationalpark.jpeg"
+                            alt="Large herd of elephants gathering at Minneriya reservoir"
+                            fill
+                            className="object-cover rounded-t-lg"
+                          />
+                          <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                            15 km
+                          </div>
+                        </div>
+                        <CardContent className="p-4">
+                          <h3 className="font-bold text-lg mb-2">Minneriya National Park</h3>
+                          <p className="text-sm text-muted-foreground mb-3">
+                            Witness one of the world's largest elephant gatherings in a natural wetland sanctuary teeming with wildlife.
+                          </p>
+                          <div className="flex items-center text-xs text-blue-600 mb-2">
+                            <MapPin className="w-3 h-3 mr-1" />
+                            15 km from Polonnaruwa
+                          </div>
+                          <div className="mt-4 flex justify-start">
+                            <Link href="/destinations/minneriya-national-park" passHref legacyBehavior>
+                              <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                            </Link>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
 
-                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                            <CardHeader>
-                                <CardTitle className="text-lg">Minneriya National Park</CardTitle>
-                                <CardDescription>Elephant gathering</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <Image
-                                    src="/Minneriyanationalpark.jpeg"
-                                    alt="Large herd of elephants gathering at Minneriya reservoir"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                                />
-                                <p className="text-sm text-muted-foreground">
-                                    Witness one of the world&apos;s largest elephant gathering, just 30 minutes from Polonnaruwa.
-                                </p>
-                                <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/minneriya-national-park" passHref legacyBehavior>
-                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                                    </Link>
-                                </div>
-                            </CardContent>
-                        </Card>
-
-
-                        <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                            <CardHeader>
-                                <CardTitle className="text-lg">Wasgamuwa National Park</CardTitle>
-                                <CardDescription>Elephant habitat</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <Image
-                                    src="/placeholder.svg?height=200&width=300&text=Wasgamuwa+National+Park"
-                                    alt="Wasgamuwa National Park"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                                />
-                                <p className="text-sm text-muted-foreground">
-                                    A lesser-known gem, Wasgamuwa offers pristine wilderness and rich biodiversity, just over an hour from Polonnaruwa.
-                                </p>
-                                <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/wasgamuwa-national-park" passHref legacyBehavior>
-                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                                    </Link>
-                                </div>
-                            </CardContent>
-                        </Card>
+                    {/* Day Trip Suggestions */}
+                    <div className="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-6 rounded-lg">
+                      <h3 className="text-xl font-bold mb-4 text-center">Suggested Day Trip Combinations</h3>
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div>
+                          <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">🏛️ Cultural Triangle Classic</h4>
+                          <p className="text-sm text-muted-foreground">Polonnaruwa → Sigiriya → Dambulla (Full day)</p>
+                          <p className="text-xs text-muted-foreground mt-1">Experience the three pillars of Sri Lankan cultural heritage in one epic journey.</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-2 text-purple-700 dark:text-purple-300">🐘 Ancient Capitals & Wildlife</h4>
+                          <p className="text-sm text-muted-foreground">Polonnaruwa → Anuradhapura → Minneriya (2 days)</p>
+                          <p className="text-xs text-muted-foreground mt-1">Combine ancient archaeology with wildlife spotting for a complete Central Sri Lanka experience.</p>
+                        </div>
+                      </div>
                     </div>
                 </section>
 

@@ -442,9 +442,7 @@ const wildlifeSafaris = [
         name: "Sinharaja Forest Reserve",
         locations: ["Kudawa", "Deniyaya", "Pitadeniya"],
         images: [
-            { src: "/sinharaja-canopy.jpg", title: "Rainforest Canopy" },
-            { src: "/sinharaja-endemic.jpg", title: "Endemic Bird Species" },
-            { src: "/sinharaja-trail.jpg", title: "Forest Hiking Trail" }
+            { src: "/Sinharaja-forest.jpg", title: "Rainforest Canopy" },
         ],
         bestTime: "December to April, August to September",
         difficulty: "Moderate to Challenging",
@@ -568,7 +566,7 @@ const wildlifeSafaris = [
         name: "Pigeon Island National Park",
         locations: ["Large Pigeon Island", "Small Pigeon Island", "Coral Gardens"],
         images: [
-            { src: "/pigeon-island-coral.jpg", title: "Pristine Coral Reefs" },
+            { src: "/Pigeon-island6.jpg", title: "Pristine Coral Reefs" },
             { src: "/pigeon-island-beach.jpg", title: "Crystal Clear Waters" },
             { src: "/reef-sharks.jpg", title: "Reef Sharks" }
         ],

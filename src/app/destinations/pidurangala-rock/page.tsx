@@ -1,11 +1,13 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Users, Mountain, Sunrise } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { ImageCarousel } from "@/components/ui/image-carousel"
+import { Button } from "@/components/ui/button"
 
 export default function PidurangalaRockGuide() {
   return (
@@ -451,6 +453,120 @@ export default function PidurangalaRockGuide() {
               </div>
             </CardContent>
           </Card>
+        </section>
+
+        {/* Nearby Archaeological Wonders */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6 scroll-mt-40" id="nearby-archaeological-wonders">Nearby Archaeological Wonders</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Discover more ancient treasures within Sri Lanka's Cultural Triangle
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/SigiriyaDrone.jpg"
+                  alt="Sigiriya Rock Fortress rising majestically from the jungle landscape"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  2 km
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Sigiriya Rock Fortress</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  The iconic Lion Rock fortress showcasing 5th-century royal architecture and ancient frescoes.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  2 km from Pidurangala
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/sigiriya-rock-fortress" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/dambulla-cave-temple.jpg"
+                  alt="Dambulla Cave Temple showing golden Buddha statue and ancient rock-cut monastery"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  30 km
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Dambulla Cave Temple</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A UNESCO World Heritage site featuring five rock-cut Buddhist caves with over 150 Buddha statues.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  30 km from Pidurangala
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/dambulla-cave-temple" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Polonnaruwa.jpeg"
+                  alt="Ancient capital Polonnaruwa showing Buddhist monuments and medieval architecture"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+                  60 km
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Polonnaruwa</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sri Lanka's second ancient capital featuring magnificent Gal Vihara rock sculptures and medieval palaces.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  60 km from Pidurangala
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/polonnaruwa" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Day Trip Suggestions */}
+          <div className="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-center">Suggested Day Trip Combinations</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">🏛️ Cultural Triangle Classic</h4>
+                <p className="text-sm text-muted-foreground">Pidurangala sunrise → Sigiriya → Dambulla (Full day)</p>
+                <p className="text-xs text-muted-foreground mt-1">Start with an unforgettable sunrise, then explore the cultural wonders.</p>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-2 text-purple-700 dark:text-purple-300">⛩️ Ancient Capitals Tour</h4>
+                <p className="text-sm text-muted-foreground">Pidurangala → Polonnaruwa → Dambulla (2 days)</p>
+                <p className="text-xs text-muted-foreground mt-1">Combine multiple ancient cities for a comprehensive historical journey.</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Final Tips */}
