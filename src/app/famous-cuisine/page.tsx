@@ -96,16 +96,16 @@ const famousFoods: FoodItem[] = [
     spiceLevel: 'Spicy',
     images: ['/Fish-Ambul-Thiyal.jpg']
   },
-  {
-    id: 8,
-    name: 'Parippu (Dhal Curry)',
-    category: 'Curry',
-    description: 'A comforting, creamy lentil curry that\'s part of every rice and curry meal. Made with red lentils, coconut milk, and a tempering of curry leaves and spices. It\'s mild and delicious!',
-    taste: 'Creamy, mildly spiced, and comforting.',
-    servingTip: 'Mix it with rice to add moisture and flavor. Great for those who prefer mild food!',
-    spiceLevel: 'Mild',
-    images: ['/Cuisineinsl.jpg']
-  },
+  // {
+  //   id: 8,
+  //   name: 'Parippu (Dhal Curry)',
+  //   category: 'Curry',
+  //   description: 'A comforting, creamy lentil curry that\'s part of every rice and curry meal. Made with red lentils, coconut milk, and a tempering of curry leaves and spices. It\'s mild and delicious!',
+  //   taste: 'Creamy, mildly spiced, and comforting.',
+  //   servingTip: 'Mix it with rice to add moisture and flavor. Great for those who prefer mild food!',
+  //   spiceLevel: 'Mild',
+  //   images: ['/Cuisineinsl.jpg']
+  // },
   {
     id: 9,
     name: 'Watalappan',
@@ -114,7 +114,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Sweet, creamy, and aromatic with hints of cardamom and nutmeg.',
     servingTip: 'Served chilled or at room temperature. Perfect after a spicy meal!',
     spiceLevel: 'Mild',
-    images: ['/Cuisineinsl.jpg']
+    images: ['/Watalappan.jpg']
   },
   // {
   //   id: 10,
@@ -134,7 +134,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Crispy, slightly sweet, and coconutty.',
     servingTip: 'Great with tea! Look for them during April (New Year season).',
     spiceLevel: 'Mild',
-    images: ['/Cuisineinsl.jpg']
+    images: ['/Kaokis.jpg']
   },
   {
     id: 12,
@@ -144,7 +144,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Sweet with a unique treacle flavor and crispy texture.',
     servingTip: 'Best fresh and warm! Common during New Year celebrations.',
     spiceLevel: 'Mild',
-    images: ['/Pani-Walalu.jpg']
+    images: ['/Kavum.jpg']
   },
   {
     id: 13,
@@ -164,7 +164,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Mild, slightly sweet from coconut, with a unique texture.',
     servingTip: 'Eat with coconut milk curry, banana, or jaggery. Great for breakfast!',
     spiceLevel: 'Mild',
-    images: ['/Cuisineinsl.jpg']
+    images: ['/Pittu.jpg']
   },
   // {
   //   id: 15,
@@ -194,7 +194,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Rich, spicy, and aromatic with coconut undertones.',
     servingTip: 'Best with rice. Ask for it at any local restaurant!',
     spiceLevel: 'Spicy',
-    images: ['/Pani-Walalu.jpg']
+    images: ['/Chicken-curry.jpg']
   },
   {
     id: 18,
@@ -204,7 +204,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Tangy, sweet, spicy, and crunchy all at once!',
     servingTip: 'Eat as a side with rice or as a snack. Very popular!',
     spiceLevel: 'Medium',
-    images: ['/Cuisineinsl.jpg']
+    images: ['/Achcharu.jpg']
   },
   {
     id: 19,
@@ -216,16 +216,16 @@ const famousFoods: FoodItem[] = [
     spiceLevel: 'Mild',
     images: ['/Kola-kanda.jpg']
   },
-  {
-    id: 20,
-    name: 'Wood Apple Juice',
-    category: 'Beverage',
-    description: 'A unique, refreshing drink made from wood apple fruit. The fruit has a hard shell but inside is sweet-sour pulp. Mixed with water, jaggery, and sometimes a hint of salt - it\'s very refreshing!',
-    taste: 'Sweet, tangy, and incredibly refreshing.',
-    servingTip: 'Perfect for hot days! Try it chilled.',
-    spiceLevel: 'Mild',
-    images: ['/Cuisineinsl.jpg']
-  },
+  // {
+  //   id: 20,
+  //   name: 'Wood Apple Juice',
+  //   category: 'Beverage',
+  //   description: 'A unique, refreshing drink made from wood apple fruit. The fruit has a hard shell but inside is sweet-sour pulp. Mixed with water, jaggery, and sometimes a hint of salt - it\'s very refreshing!',
+  //   taste: 'Sweet, tangy, and incredibly refreshing.',
+  //   servingTip: 'Perfect for hot days! Try it chilled.',
+  //   spiceLevel: 'Mild',
+  //   images: ['/Cuisineinsl.jpg']
+  // },
   {
     id: 21,
     name: 'Kiribath (Milk Rice)',
@@ -254,7 +254,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Strong, bold, slightly citrusy with a clean finish.',
     servingTip: 'Try it plain or with milk and sugar. Visit a tea plantation to taste fresh tea!',
     spiceLevel: 'Mild',
-    images: ['/Pani-Walalu.jpg']
+    images: ['/Ceylon-tea.jpg']
   }
 ];
 
