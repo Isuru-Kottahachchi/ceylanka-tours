@@ -38,8 +38,8 @@ const footerLinks = {
     { name: "About Us", href: "/about-us" },
     { name: "Contact Us", href: "/contact-us" },
     { name: "Privacy Policy", href: "/privacy-policy" },
-    { name: "Terms of Service", href: "/terms" },
-    { name: "Advertise With Us", href: "/advertise" },
+    // { name: "Terms of Service", href: "/terms" },
+    // { name: "Advertise With Us", href: "/advertise" },
   ],
 }
 

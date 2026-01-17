@@ -34,7 +34,7 @@ const famousFoods: FoodItem[] = [
     taste: 'A perfect balance of spicy, tangy, and savory flavors. Each curry has its own unique taste.',
     servingTip: 'Mix everything together on your plate - that\'s how locals eat it! Best enjoyed for lunch.',
     spiceLevel: 'Medium',
-    images: ['/images/rice-curry.jpg', '/images/rice-curry-2.jpg']
+    images: ['/Cuisineinsl.jpg']
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Slightly sweet and coconutty with crispy edges.',
     servingTip: 'Eat with lunu miris (spicy onion sambol) or curry. Perfect for breakfast or dinner!',
     spiceLevel: 'Mild',
-    images: ['/images/hoppers.jpg', '/images/egg-hopper.jpg']
+    images: ['/Hoppers.webp']
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Savory, spicy, and incredibly satisfying. Each bite is packed with flavor!',
     servingTip: 'Order it at night from street vendors. Choose chicken, beef, or vegetable kottu based on your preference.',
     spiceLevel: 'Spicy',
-    images: ['/images/kottu.jpg', '/images/kottu-making.jpg']
+    images: ['/Kottu.jpg']
   },
   {
     id: 4,
@@ -64,7 +64,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Mild and slightly nutty flavor from rice.',
     servingTip: 'Eat with coconut milk curry, dhal, or sambol. Great for breakfast!',
     spiceLevel: 'Mild',
-    images: ['/images/string-hoppers.jpg']
+    images: ['/String-Hoppers.jpg']
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Rich, aromatic, and bursting with layered flavors.',
     servingTip: 'Usually served on special occasions. Best enjoyed slowly to savor all the flavors!',
     spiceLevel: 'Medium',
-    images: ['/images/lamprais.jpg']
+    images: ['/Lamprais.jpg']
   },
   {
     id: 6,
@@ -84,7 +84,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Spicy, tangy, and coconutty - a flavor explosion!',
     servingTip: 'Use it as a side with rice, hoppers, or bread. Start with a small amount if you\'re not used to spice!',
     spiceLevel: 'Very Spicy',
-    images: ['/images/pol-sambol.jpg']
+    images: ['/Pol-Sambol.jpg']
   },
   {
     id: 7,
@@ -94,7 +94,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Tangy, slightly sour, and deeply spiced.',
     servingTip: 'Eat with rice and curry. The sour taste is refreshing!',
     spiceLevel: 'Spicy',
-    images: ['/images/ambul-thiyal.jpg']
+    images: ['/Fish-Ambul-Thiyal.jpg']
   },
   {
     id: 8,
@@ -104,7 +104,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Creamy, mildly spiced, and comforting.',
     servingTip: 'Mix it with rice to add moisture and flavor. Great for those who prefer mild food!',
     spiceLevel: 'Mild',
-    images: ['/images/dhal.jpg']
+    images: ['/Cuisineinsl.jpg']
   },
   {
     id: 9,
@@ -114,18 +114,18 @@ const famousFoods: FoodItem[] = [
     taste: 'Sweet, creamy, and aromatic with hints of cardamom and nutmeg.',
     servingTip: 'Served chilled or at room temperature. Perfect after a spicy meal!',
     spiceLevel: 'Mild',
-    images: ['/images/watalappan.jpg']
+    images: ['/Cuisineinsl.jpg']
   },
-  {
-    id: 10,
-    name: 'Kiri Pani (Milk Toffee)',
-    category: 'Sweet',
-    description: 'A sweet, fudge-like treat made from condensed milk and sugar. These little squares of happiness are chewy, creamy, and absolutely addictive! Often flavored with cashew nuts or cardamom.',
-    taste: 'Very sweet, creamy, and melt-in-your-mouth delicious.',
-    servingTip: 'Perfect with tea! Buy some to take home - they make great gifts.',
-    spiceLevel: 'Mild',
-    images: ['/images/kiri-pani.jpg']
-  },
+  // {
+  //   id: 10,
+  //   name: 'Kiri Pani (Milk Toffee)',
+  //   category: 'Sweet',
+  //   description: 'A sweet, fudge-like treat made from condensed milk and sugar. These little squares of happiness are chewy, creamy, and absolutely addictive! Often flavored with cashew nuts or cardamom.',
+  //   taste: 'Very sweet, creamy, and melt-in-your-mouth delicious.',
+  //   servingTip: 'Perfect with tea! Buy some to take home - they make great gifts.',
+  //   spiceLevel: 'Mild',
+  //   images: ['/Pani-Walalu.jpg']
+  // },
   {
     id: 11,
     name: 'Kokis',
@@ -134,7 +134,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Crispy, slightly sweet, and coconutty.',
     servingTip: 'Great with tea! Look for them during April (New Year season).',
     spiceLevel: 'Mild',
-    images: ['/images/kokis.jpg']
+    images: ['/Cuisineinsl.jpg']
   },
   {
     id: 12,
@@ -144,7 +144,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Sweet with a unique treacle flavor and crispy texture.',
     servingTip: 'Best fresh and warm! Common during New Year celebrations.',
     spiceLevel: 'Mild',
-    images: ['/images/kavum.jpg']
+    images: ['/Pani-Walalu.jpg']
   },
   {
     id: 13,
@@ -154,7 +154,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Crispy, savory, with a nice prawn flavor and mild spice.',
     servingTip: 'Best eaten hot with chili sauce. Perfect for evening snack time!',
     spiceLevel: 'Medium',
-    images: ['/images/isso-wade.jpg']
+    images: ['/Isso-wadey.jpg']
   },
   {
     id: 14,
@@ -164,18 +164,18 @@ const famousFoods: FoodItem[] = [
     taste: 'Mild, slightly sweet from coconut, with a unique texture.',
     servingTip: 'Eat with coconut milk curry, banana, or jaggery. Great for breakfast!',
     spiceLevel: 'Mild',
-    images: ['/images/pittu.jpg']
+    images: ['/Cuisineinsl.jpg']
   },
-  {
-    id: 15,
-    name: 'Gotu Kola Sambol',
-    category: 'Salad',
-    description: 'A healthy, refreshing salad made with gotu kola leaves (a nutritious herb), fresh coconut, onions, lime, and chilies. It\'s considered very healthy and is believed to boost memory!',
-    taste: 'Fresh, tangy, and slightly spicy.',
-    servingTip: 'Eat as a side dish with rice and curry. Very nutritious!',
-    spiceLevel: 'Medium',
-    images: ['/images/gotu-kola.jpg']
-  },
+  // {
+  //   id: 15,
+  //   name: 'Gotu Kola Sambol',
+  //   category: 'Salad',
+  //   description: 'A healthy, refreshing salad made with gotu kola leaves (a nutritious herb), fresh coconut, onions, lime, and chilies. It\'s considered very healthy and is believed to boost memory!',
+  //   taste: 'Fresh, tangy, and slightly spicy.',
+  //   servingTip: 'Eat as a side dish with rice and curry. Very nutritious!',
+  //   spiceLevel: 'Medium',
+  //   images: ['/Pani-Walalu.jpg']
+  // },
   {
     id: 16,
     name: 'Curd and Honey (Kiri Piti)',
@@ -184,7 +184,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Tangy curd balanced with sweet, caramel-like treacle.',
     servingTip: 'Best served chilled. A light, refreshing dessert!',
     spiceLevel: 'Mild',
-    images: ['/images/curd-honey.jpg']
+    images: ['/Kiri-pani.jpg']
   },
   {
     id: 17,
@@ -194,7 +194,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Rich, spicy, and aromatic with coconut undertones.',
     servingTip: 'Best with rice. Ask for it at any local restaurant!',
     spiceLevel: 'Spicy',
-    images: ['/images/chicken-curry.jpg']
+    images: ['/Pani-Walalu.jpg']
   },
   {
     id: 18,
@@ -204,7 +204,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Tangy, sweet, spicy, and crunchy all at once!',
     servingTip: 'Eat as a side with rice or as a snack. Very popular!',
     spiceLevel: 'Medium',
-    images: ['/images/achcharu.jpg']
+    images: ['/Cuisineinsl.jpg']
   },
   {
     id: 19,
@@ -214,7 +214,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Earthy, mild, and nutritious.',
     servingTip: 'Best for breakfast. Considered very healthy and energizing!',
     spiceLevel: 'Mild',
-    images: ['/images/kola-kanda.jpg']
+    images: ['/Kola-kanda.jpg']
   },
   {
     id: 20,
@@ -224,7 +224,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Sweet, tangy, and incredibly refreshing.',
     servingTip: 'Perfect for hot days! Try it chilled.',
     spiceLevel: 'Mild',
-    images: ['/images/wood-apple-juice.jpg']
+    images: ['/Cuisineinsl.jpg']
   },
   {
     id: 21,
@@ -234,7 +234,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Creamy, mildly sweet from coconut, soft and comforting.',
     servingTip: 'Cut into diamond shapes and eat with lunu miris or jaggery. Perfect for breakfast on special days!',
     spiceLevel: 'Mild',
-    images: ['/images/kiribath.jpg']
+    images: ['/Kiribath.jpg']
   },
   {
     id: 22,
@@ -244,7 +244,7 @@ const famousFoods: FoodItem[] = [
     taste: 'Soft, slightly sweet from coconut, filling and delicious.',
     servingTip: 'Eat with curry or make it into a wrap with vegetables. Great for breakfast or dinner!',
     spiceLevel: 'Mild',
-    images: ['/images/roti.jpg']
+    images: ['/Pol-Roti.jpg']
   },
   {
     id: 23,
@@ -254,22 +254,27 @@ const famousFoods: FoodItem[] = [
     taste: 'Strong, bold, slightly citrusy with a clean finish.',
     servingTip: 'Try it plain or with milk and sugar. Visit a tea plantation to taste fresh tea!',
     spiceLevel: 'Mild',
-    images: ['/images/ceylon-tea.jpg']
+    images: ['/Pani-Walalu.jpg']
   }
 ];
 
 function ImageCarousel({ images, title }: { images: string[], title: string }) {
   return (
-    <div className="relative w-full h-48 rounded-lg overflow-hidden group">
-      <div className="flex transition-transform duration-500 ease-in-out h-full">
-        {images.map((image, index) => (
-          <div key={index} className="min-w-full h-full relative">
-            <div className="w-full h-full bg-gradient-to-br from-orange-100 to-orange-50 flex items-center justify-center">
-              <span className="text-orange-400 text-sm">Image: {title}</span>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="relative w-full h-48 rounded-lg overflow-hidden group bg-orange-100">
+      {images.length > 0 ? (
+        <img
+          src={images[0]}
+          alt={title}
+          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = '/placeholder.jpg';
+          }}
+        />
+      ) : (
+        <div className="w-full h-full bg-gradient-to-br from-orange-100 to-orange-50 flex items-center justify-center">
+          <span className="text-orange-400 text-sm">No image available</span>
+        </div>
+      )}
     </div>
   );
 }
@@ -463,7 +468,14 @@ export default function FamousCuisinePage() {
                 key={food.id} 
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
-                <ImageCarousel images={food.images} title={food.name} />
+                <div className="relative w-full h-48">
+                  <Image 
+                    src={food.images[0]} 
+                    alt={food.name} 
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
                 
                 <div className="p-4">
                   <div className="flex justify-between items-start mb-2">
