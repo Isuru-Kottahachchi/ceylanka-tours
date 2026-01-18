@@ -152,7 +152,7 @@ export default function ExplorePage() {
                         fill
                         className="object-cover transition-transform duration-300 group-hover:scale-110"
                       />
-                      <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-80`} />
+                      {/* <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-80`} /> */}
                       
                       {/* Icon */}
                       <div className="absolute top-4 left-4">
