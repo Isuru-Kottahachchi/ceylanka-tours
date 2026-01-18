@@ -257,10 +257,10 @@ export default function LankatilakaPollonnaruwaGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-start">
                   <div>
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/Headless-Buddha-Statue.jpeg"
                       alt="Headless Buddha statue inside Lankatilaka Image House Polonnaruwa"
-                      width={600}
-                      height={400}
+                      width={300}
+                      height={200}
                       className="rounded-lg"
                     />
                   </div>
