@@ -795,7 +795,7 @@ export default function KurunegalaPage() {
                 <section className="mb-12">
                   <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
                   <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
-                    Extend your Arugam Bay adventure with these incredible destinations within easy reach
+                    Extend your Kurunagala adventure with these incredible destinations within easy reach
                   </p>
         
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -831,7 +831,7 @@ export default function KurunegalaPage() {
                     <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                       <div className="relative h-48">
                         <Image
-                          src="/Dambullacavetemple.jpeg"
+                          src="/dambullacavetemple.jpeg"
                           alt="Dambulla Cave Temple with ancient Buddhist murals and statues"
                           fill
                           className="object-cover rounded-t-lg"

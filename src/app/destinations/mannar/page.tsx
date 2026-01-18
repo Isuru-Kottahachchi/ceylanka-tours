@@ -831,7 +831,7 @@ export default function MannarGuide() {
                   50 km from Mannar
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/sigiriya-rock-fortress" passHref legacyBehavior>
+                  <Link href="/destinations/shrine-of-our-lady-of-madu" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -868,7 +868,7 @@ export default function MannarGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Pidurangala.jpeg"
+                  src="/Nallur-Kovil.jpg"
                   alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
                   fill
                   className="object-cover rounded-t-lg"
