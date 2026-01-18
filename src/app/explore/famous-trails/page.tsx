@@ -26,8 +26,8 @@ const famousTrails = [
     name: "Adam's Peak (Sri Pada)",
     images: [
       { src: "/Sripadaya-rathnapura.jpeg", alt: "Adam's Peak Sacred Mountain", title: "Adam's Peak Sacred Mountain" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Pilgrimage Trail at Night", title: "Pilgrimage Trail at Night" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Sunrise from Summit", title: "Sunrise from Summit" },
+      { src: "/Erantha.jpeg", alt: "Erantha Trail", title: "Pilgrimage Trail Erantha" },
+      { src: "/Hatton-road.jpeg", alt: "Back from Summit", title: "Hatton Route" },
     ],
     location: "Ratnapura District, Sabaragamuwa Province",
     difficulty: "Challenging",
@@ -298,8 +298,7 @@ const famousTrails = [
     name: "Idalgashinna to Haputale Railway Trail",
     images: [
       { src: "/Idalgashinna-trail.jpg", alt: "Idalgashinna Railway Trail", title: "Idalgashinna Railway Trail" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Misty Mountain Path", title: "Misty Mountain Path" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Hill Country Scenery", title: "Hill Country Scenery" },
+      { src: "/Idalgashinna-Hike.jpg", alt: "Misty rail Path", title: "Misty Rail Path" },
     ],
     location: "Haputale, Badulla District, Uva Province",
     difficulty: "Moderate",

@@ -271,14 +271,26 @@ export default function OhiyaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <ImageCarousel
                     images={[
-                      {
-                        src: "/horton-plains1.jpg",
+                       {
+                        src: "/Hortonplains16.jpeg",
                         alt: "Horton Plains view 1",
                         caption: "World&apos;s End viewpoint",
                         title: "Horton Plains - Majestic Views",
                       },
                       {
-                        src: "/horton-plains2.jpg",
+                       src: "/Hortonplains15.jpeg",
+                        alt: "Horton Plains view 2",
+                        caption: "Baker&apos;s Falls in full flow",
+                        title: "Horton Plains - Nature&apos;s Wonder",
+                      },
+                      {
+                        src: "/Hortonplains12.jpeg",
+                        alt: "Horton Plains view 1",
+                        caption: "World&apos;s End viewpoint",
+                        title: "Horton Plains - Majestic Views",
+                      },
+                      {
+                       src: "/Hortonplains1.jpeg",
                         alt: "Horton Plains view 2",
                         caption: "Baker&apos;s Falls in full flow",
                         title: "Horton Plains - Nature&apos;s Wonder",
