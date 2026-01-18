@@ -320,25 +320,34 @@ export default function OhiyaTravelGuide() {
 
         {/* Nearby Places */}
         <section id="nearby-places" className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Nearby Places to Explore</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Explore</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Ohiya adventure with these incredible destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Haputale Card */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-lg">Haputale</CardTitle>
-                <CardDescription>Charming hill town with stunning views</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
                   src="/Haputhale.jpeg"
-                  alt="Haputale"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  alt="Haputale charming hill town with panoramic views and tea estates"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Haputale is known for its panoramic views, tea estates, and the famous Lipton&apos;s Seat viewpoint.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  15 km from Ohiya
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Haputale</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Charming hill town known for panoramic views, tea estates, and the famous Lipton's Seat viewpoint.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  15 km from Ohiya
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/haputhale" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -348,22 +357,27 @@ export default function OhiyaTravelGuide() {
             </Card>
 
             {/* Pattipola Card */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-lg">Pattipola</CardTitle>
-                <CardDescription>Highest railway station in Sri Lanka</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/pattipola.jpg"
-                  alt="Pattipola"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  src="/Pattipola.jpg"
+                  alt="Pattipola highest railway station in Sri Lanka with scenic mountain views"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Pattipola is a quaint village and home to Sri Lanka&apos;s highest railway station, offering scenic train journeys.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  8 km from Ohiya
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Pattipola</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Home to Sri Lanka's highest railway station, offering scenic train journeys and quaint mountain village charm.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  8 km from Ohiya
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/pattipola" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -373,22 +387,27 @@ export default function OhiyaTravelGuide() {
             </Card>
 
             {/* Ambewela Card */}
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-lg">Ambewela</CardTitle>
-                <CardDescription>Famous for dairy farms and lush greenery</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/ambewela.jpg"
-                  alt="Ambewela"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  src="/New-Zealand-Farm.jpg"
+                  alt="Ambewela Little New Zealand with dairy farms and lush green landscapes"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Ambewela, often called &quot;Little New Zealand,&quot; is known for its picturesque landscapes and dairy farms.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  10 km from Ohiya
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Ambewela</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Often called "Little New Zealand," this picturesque area is famous for dairy farms and lush greenery.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  10 km from Ohiya
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/ambewela" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
