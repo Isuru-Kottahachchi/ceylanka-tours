@@ -1556,26 +1556,33 @@ export default function BentotaGuide() {
                 {/* Nearby Attractions */}
                 <section className="mb-12 scroll-mt-40" id="nearby">
                     <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
-                    <div className="grid md:grid-cols-3 gap-6">
+                    <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+                      Extend your Bentota adventure with these incredible destinations within easy reach
+                    </p>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
                         <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                            <CardHeader>
-                                <CardTitle className="text-lg">Lunuganga Garden by Geoffrey Bawa</CardTitle>
-                                <CardDescription>Architectural masterpiece with stunning views</CardDescription>
-                            </CardHeader>
-                            <CardContent>
+                            <div className="relative h-48">
                                 <Image
                                     src="/Lunugangabawa2.jpeg"
                                     alt="Lunuganga Geoffrey Bawa Garden with lush greenery and artistic landscape design"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                    fill
+                                    className="object-cover rounded-t-lg"
                                 />
-                                <p className="text-sm text-muted-foreground">
-                                    Explore the stunning Lunuganga Geoffrey Bawa Garden, a masterpiece of landscape architecture. This
-                                    garden offers breathtaking views of the surrounding hills and the Indian Ocean. It is a perfect spot
-                                    for photography and relaxation, just 30 minutes from Bentota.
+                                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                                  30 mins from Bentota
+                                </div>
+                            </div>
+                            <CardContent className="p-4">
+                                <h3 className="font-bold text-lg mb-2">Lunuganga Garden by Geoffrey Bawa</h3>
+                                <p className="text-sm text-muted-foreground mb-3">
+                                    A masterpiece of landscape architecture offering breathtaking views of hills and the Indian Ocean with stunning artistic design.
                                 </p>
+                                <div className="flex items-center text-xs text-blue-600 mb-2">
+                                    <MapPin className="w-3 h-3 mr-1" />
+                                    30 km from Bentota
+                                </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
                                         <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -1585,21 +1592,26 @@ export default function BentotaGuide() {
                         </Card>
 
                         <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                            <CardHeader>
-                                <CardTitle className="text-lg">Kandeviharaya Temple</CardTitle>
-                                <CardDescription>Historic Buddhist temple</CardDescription>
-                            </CardHeader>
-                            <CardContent>
+                            <div className="relative h-48">
                                 <Image
                                     src="/Kandeviharaya.jpeg"
-                                    alt="Kande Viharaya Buddhist temple with ancient architecture and religious significance"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                    alt="Kande Viharaya Buddhist temple with ancient architecture and towering Buddha statue"
+                                    fill
+                                    className="object-cover rounded-t-lg"
                                 />
-                                <p className="text-sm text-muted-foreground">
-                                    Located in Aluthgama, this temple is famous for its towering 160 foot seated Buddha statue, one of the tallest in the world. It also features an ancient Bodhi tree, a sacred stupa, and colorful murals that attract thousands of devotees and visitors each year.
+                                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                                  8 mins from Bentota
+                                </div>
+                            </div>
+                            <CardContent className="p-4">
+                                <h3 className="font-bold text-lg mb-2">Kandeviharaya Temple</h3>
+                                <p className="text-sm text-muted-foreground mb-3">
+                                    Historic Buddhist temple famous for its towering 160-foot seated Buddha statue, ancient Bodhi tree, and colorful murals.
                                 </p>
+                                <div className="flex items-center text-xs text-blue-600 mb-2">
+                                    <MapPin className="w-3 h-3 mr-1" />
+                                    8 km from Bentota
+                                </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/kandeviharaya" passHref legacyBehavior>
                                         <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -1609,22 +1621,26 @@ export default function BentotaGuide() {
                         </Card>
 
                         <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                            <CardHeader>
-                                <CardTitle className="text-lg">Brief Garden by Bevis Bawa Kalawila</CardTitle>
-                                <CardDescription>Beautiful garden with diverse flora</CardDescription>
-                            </CardHeader>
-                            <CardContent>
+                            <div className="relative h-48">
                                 <Image
                                     src="/Brief-Garden-by-Bawa.jpg"
-                                    alt="Bawa Garden Kalawila with tropical plants and landscape design"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                    alt="Brief Garden by Bevis Bawa Kalawila with tropical plants and landscape design"
+                                    fill
+                                    className="object-cover rounded-t-lg"
                                 />
-                                <p className="text-sm text-muted-foreground">
-                                    Another beautiful garden showcasing tropical landscape design with diverse flora and peaceful walking
-                                    paths. Perfect for nature lovers and photography enthusiasts.
+                                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                                  20 mins from Bentota
+                                </div>
+                            </div>
+                            <CardContent className="p-4">
+                                <h3 className="font-bold text-lg mb-2">Brief Garden by Bevis Bawa</h3>
+                                <p className="text-sm text-muted-foreground mb-3">
+                                    Beautiful tropical garden showcasing diverse flora and peaceful walking paths, perfect for nature lovers and photographers.
                                 </p>
+                                <div className="flex items-center text-xs text-blue-600 mb-2">
+                                    <MapPin className="w-3 h-3 mr-1" />
+                                    20 km from Bentota
+                                </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/brief-garden-by-bevis-bawa" passHref legacyBehavior>
                                         <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -1632,46 +1648,57 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
+
                         <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                            <CardHeader>
-                                <CardTitle className="text-lg">Kalutara Temple</CardTitle>
-                                <CardDescription>Historic Buddhist temple</CardDescription>
-                            </CardHeader>
-                            <CardContent>
+                            <div className="relative h-48">
                                 <Image
                                     src="/Kaluthara-bodiya.jpg"
-                                    alt="Kande Viharaya Buddhist temple with ancient architecture and religious significance"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                    alt="Kalutara Temple with historic Bodhi tree and dome-shaped stupa"
+                                    fill
+                                    className="object-cover rounded-t-lg"
                                 />
-                                <p className="text-sm text-muted-foreground">
-                                    A historic Bodhi tree with a large stupa (dome-shaped shrine) that devotees can enter and worship inside
+                                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                                  15 mins from Bentota
+                                </div>
+                            </div>
+                            <CardContent className="p-4">
+                                <h3 className="font-bold text-lg mb-2">Kalutara Temple</h3>
+                                <p className="text-sm text-muted-foreground mb-3">
+                                    Historic Buddhist temple featuring an ancient Bodhi tree with a large stupa where devotees can enter and worship inside.
                                 </p>
+                                <div className="flex items-center text-xs text-blue-600 mb-2">
+                                    <MapPin className="w-3 h-3 mr-1" />
+                                    15 km from Bentota
+                                </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/kalutara-temple" passHref legacyBehavior>
-                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer
-                                        ">See More →</Button>
+                                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                                     </Link>
                                 </div>
                             </CardContent>
                         </Card>
+
                         <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                            <CardHeader>
-                                <CardTitle className="text-lg">Richmond Castle</CardTitle>
-                                <CardDescription>Historic mansion with colonial architecture</CardDescription>
-                            </CardHeader>
-                            <CardContent>
+                            <div className="relative h-48">
                                 <Image
                                     src="/Richmond-Castle.jpg"
                                     alt="Richmond Castle with colonial architecture and lush gardens"
-                                    width={300}
-                                    height={200}
-                                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                                    fill
+                                    className="object-cover rounded-t-lg"
                                 />
-                                <p className="text-sm text-muted-foreground">
-                                    Richmond Castle is a grand colonial mansion built in the early 20th century by Mudaliyar Don Arthur de Silva. Blending Indian and British architectural styles, the castle features intricate wooden carvings, stained glass windows, and sprawling gardens
+                                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                                  25 mins from Bentota
+                                </div>
+                            </div>
+                            <CardContent className="p-4">
+                                <h3 className="font-bold text-lg mb-2">Richmond Castle</h3>
+                                <p className="text-sm text-muted-foreground mb-3">
+                                    Grand colonial mansion blending Indian and British architectural styles with intricate wooden carvings and stained glass windows.
                                 </p>
+                                <div className="flex items-center text-xs text-blue-600 mb-2">
+                                    <MapPin className="w-3 h-3 mr-1" />
+                                    25 km from Bentota
+                                </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/richmond-castle" passHref legacyBehavior>
                                         <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -1679,7 +1706,6 @@ export default function BentotaGuide() {
                                 </div>
                             </CardContent>
                         </Card>
-
 
                     </div>
                 </section>

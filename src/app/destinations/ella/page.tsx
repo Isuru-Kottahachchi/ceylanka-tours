@@ -1329,25 +1329,33 @@ export default function EllaTownGuide() {
           </section>
           {/* Nearby Attractions */}
           <section className="mb-12">
-            <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Lipton's Seat Card */}
+            <h2 className="text-3xl font-bold mb-6">Explore More Nearby Attractions</h2>
+            <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+              Extend your Ella adventure with these incredible destinations within easy reach
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-lg">Badulla</CardTitle>
-                  <CardDescription>Panoramic views of tea plantations</CardDescription>
-                </CardHeader>
-                <CardContent>
+                <div className="relative h-48">
                   <Image
                     src="/Badulla.jpeg"
-                    alt="Badull"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                    alt="Badulla city with scenic views and cultural landmarks"
+                    fill
+                    className="object-cover rounded-t-lg"
                   />
-                  <p className="text-sm text-muted-foreground">
-                    Lipton&apos;s Seat offers breathtaking views of the surrounding tea estates and is a must-visit for nature lovers.
+                  <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                    15 km from Ella
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-bold text-lg mb-2">Badulla</h3>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    The capital of Uva Province offering cultural heritage, historic temples, and stunning tea plantation views.
                   </p>
+                  <div className="flex items-center text-xs text-blue-600 mb-2">
+                    <MapPin className="w-3 h-3 mr-1" />
+                    15 km from Ella
+                  </div>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/badulla" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -1356,23 +1364,27 @@ export default function EllaTownGuide() {
                 </CardContent>
               </Card>
 
-              {/* Adisham Bungalow Card */}
               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-lg">Bandarawela</CardTitle>
-                  <CardDescription>Historic colonial mansion</CardDescription>
-                </CardHeader>
-                <CardContent>
+                <div className="relative h-48">
                   <Image
-                    src="/adisham-bungalow.jpg"
-                    alt="Adisham Bungalow"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                    src="/Adisham-bungalow.jpg"
+                    alt="Adisham Bungalow historic colonial mansion surrounded by gardens"
+                    fill
+                    className="object-cover rounded-t-lg"
                   />
-                  <p className="text-sm text-muted-foreground">
-                    Adisham Bungalow is a charming colonial-era mansion surrounded by lush gardens and serene landscapes.
+                  <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                    12 km from Ella
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-bold text-lg mb-2">Bandarawela</h3>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Charming colonial-era town famous for Adisham Bungalow and panoramic views of tea plantations and valleys.
                   </p>
+                  <div className="flex items-center text-xs text-blue-600 mb-2">
+                    <MapPin className="w-3 h-3 mr-1" />
+                    12 km from Ella
+                  </div>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/bandarawela" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -1381,23 +1393,27 @@ export default function EllaTownGuide() {
                 </CardContent>
               </Card>
 
-              {/* Diyaluma Falls Card */}
               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-                <CardHeader>
-                  <CardTitle className="text-lg">Haputhale</CardTitle>
-                  <CardDescription>Spectacular views of tea plantations</CardDescription>
-                </CardHeader>
-                <CardContent>
+                <div className="relative h-48">
                   <Image
-                    src="/Haputhale.jpg"
-                    alt="Haputhale"
-                    width={300}
-                    height={200}
-                    className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                    src="/Haputhale.jpeg"
+                    alt="Haputhale viewpoint with Lipton's Seat overlooking tea plantations"
+                    fill
+                    className="object-cover rounded-t-lg"
                   />
-                  <p className="text-sm text-muted-foreground">
-                   Haputhale is known for its stunning viewpoints overlooking vast tea plantations and the famous Lipton&apos;s Seat.
+                  <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                    8 km from Ella
+                  </div>
+                </div>
+                <CardContent className="p-4">
+                  <h3 className="font-bold text-lg mb-2">Haputhale</h3>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Popular viewpoint destination known for the famous Lipton's Seat with breathtaking views of tea gardens and valleys.
                   </p>
+                  <div className="flex items-center text-xs text-blue-600 mb-2">
+                    <MapPin className="w-3 h-3 mr-1" />
+                    8 km from Ella
+                  </div>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/haputhale" passHref legacyBehavior>
                       <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>

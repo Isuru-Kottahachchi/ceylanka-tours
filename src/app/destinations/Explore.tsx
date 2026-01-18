@@ -89,11 +89,11 @@ const exploreCategories = [
     title: "UNESCO Heritage",
     description: "Stunning photography showcasing Sri Lanka's natural beauty and cultural heritage",
     icon: Camera,
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/UNESCO.png",
     highlights: ["Landscapes", "Wildlife", "Culture", "Architecture"],
     count: "500+ Photos",
     href: "/explore/unesco-sites",
-    gradient: "from-pink-500 to-rose-600"
+    // gradient: "from-pink-500 to-rose-600"
   },
   // {
   //   id: "gallery",
