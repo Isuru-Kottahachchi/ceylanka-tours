@@ -556,7 +556,7 @@ export default function ContactUs() {
                     <Button 
                       variant="outline" 
                       size="sm" 
-                      className="w-full justify-start h-8 px-2 hover:bg-blue-400 hover:text-white hover:border-blue-400 dark:hover:bg-blue-500 dark:hover:border-blue-500 transition-all group"
+                      className="w-full justify-start h-8 px-2 hover:bg-blue-400 hover:text-white hover:border-blue-400 dark:hover:bg-blue-500 dark:hover:border-blue-500 transition-all group cursor-pointer"
                     >
                       <Twitter className="h-3.5 w-3.5 mr-1.5 text-blue-400 group-hover:text-white transition-colors flex-shrink-0" />
                       <span className="text-xs truncate">Twitter</span>
@@ -570,7 +570,7 @@ export default function ContactUs() {
                     <Button 
                       variant="outline" 
                       size="sm" 
-                      className="w-full justify-start h-8 px-2 hover:bg-red-600 hover:text-white hover:border-red-600 dark:hover:bg-red-700 dark:hover:border-red-700 transition-all group"
+                      className="w-full justify-start h-8 px-2 hover:bg-red-600 hover:text-white hover:border-red-600 dark:hover:bg-red-700 dark:hover:border-red-700 transition-all group cursor-pointer"
                     >
                       <Youtube className="h-3.5 w-3.5 mr-1.5 text-red-600 group-hover:text-white transition-colors flex-shrink-0" />
                       <span className="text-xs truncate">YouTube</span>
@@ -652,14 +652,18 @@ export default function ContactUs() {
                 Don&apos;t wait! The best time to plan your perfect Sri Lanka experience is now.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-                  <Phone className="h-5 w-5 mr-2" />
-                  Call Now: +94 70 764 6765
-                </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-cyan-600">
-                  <MessageCircle className="h-5 w-5 mr-2" />
-                  WhatsApp Chat
-                </Button>
+                <a href="tel:+94707646765">
+                  <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100 cursor-pointer">
+                    <Phone className="h-5 w-5 mr-2" />
+                    Call Now: +94 70 764 6765
+                  </Button>
+                </a>
+                <a href="https://wa.me/94707646765" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-cyan-600 cursor-pointer">
+                    <MessageCircle className="h-5 w-5 mr-2" />
+                    WhatsApp Chat
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>

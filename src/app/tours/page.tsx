@@ -491,12 +491,12 @@ export default function ToursPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact-us">
-              <Button size="lg" variant="secondary" className="font-semibold">
+              <Button size="lg" variant="secondary" className="font-semibold cursor-pointer">
                 Contact Us
               </Button>
             </Link>
             <Link href="#multi-day">
-              <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white/20">
+              <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white/20 cursor-pointer">
                 Customize Your Tour
               </Button>
             </Link>
