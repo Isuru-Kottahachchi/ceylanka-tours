@@ -21,6 +21,7 @@ import {
     ChevronRight
 } from 'lucide-react'
 import { useState } from 'react'
+import { ImageCarousel } from '@/components/ui/image-carousel'
 
 const waterActivities = [
 
@@ -29,9 +30,8 @@ const waterActivities = [
         name: "White Water Rafting",
         locations: ["Kithulgala", "Kalutara"],
         images: [
-            { src: "/Kithulgala-waterrafting.jpg", title: "Rapids at Kithulgala" },
-            { src: "/Kithulgala-waterrafting1.jpg", title: "KithulgalaAdventure" },
-            { src: "/white-water-team.jpg", title: "Team Rafting Experience" }
+            { src: "/Kithulgala-waterrafting.jpg", alt: "Rapids at Kithulgala", title: "Rapids at Kithulgala" },
+            { src: "/Kithulgala-waterrafting1.jpg", alt: "KithulgalaAdventure", title: "KithulgalaAdventure" },
         ],
         bestTime: "May to January",
         difficulty: "Moderate to Advanced",
@@ -65,10 +65,10 @@ const waterActivities = [
         name: "Surfing",
         locations: ["Arugam Bay", "Mirissa", "Hikkaduwa", "Weligama"],
         images: [
-            { src: "/Surfing-At-Arugambay-Main-Point.jpg", title: "Perfect Waves at Arugam Bay" },
-            { src: "/Waligama-Surfing1.jpg", title: "Hikkaduwa Surf Break" },
-            { src: "/Surfing-At-Arugambay-Main-Point4.jpg", title: "Arugam Bay Surfing" },
-            { src: "/Waligama-Surfing.jpg", title: "Waligama Beach Surfing" },
+            { src: "/Surfing-At-Arugambay-Main-Point.jpg", alt: "Perfect Waves at Arugam Bay", title: "Perfect Waves at Arugam Bay" },
+            { src: "/Waligama-Surfing1.jpg", alt: "Hikkaduwa Surf Break", title: "Hikkaduwa Surf Break" },
+            { src: "/Surfing-At-Arugambay-Main-Point4.jpg", alt: "Arugam Bay Surfing", title: "Arugam Bay Surfing" },
+            { src: "/Waligama-Surfing.jpg", alt: "Waligama Beach Surfing", title: "Waligama Beach Surfing" },
         ],
         bestTime: "April to October (East), November to March (South/West)",
         difficulty: "Beginner to Expert",
@@ -126,9 +126,9 @@ const waterActivities = [
         name: "Scuba Diving (Swimming skills not required)",
         locations: ["Hikkaduwa", "Unawatuna", "Trincomalee", "Kalpitiya"],
         images: [
-            { src: "/Scruba-diving.jpeg", title: "Scuba diving in Sri Lanka" },
-            { src: "/Scruba-diving2.jpeg", title: "" },
-            { src: "/Scruba-diving3.jpeg", title: "Vibrant Marine Life" },
+            { src: "/Scruba-diving.jpeg", alt: "Scuba diving in Sri Lanka", title: "Scuba diving in Sri Lanka" },
+            { src: "/Scruba-diving2.jpeg", alt: "Scuba diving", title: "" },
+            { src: "/Scruba-diving3.jpeg", alt: "Vibrant Marine Life", title: "Vibrant Marine Life" },
         ],
         bestTime: "November to April (South/West), April to September (East)",
         difficulty: "Beginner to Advanced",
@@ -174,10 +174,10 @@ const waterActivities = [
         name: "Snorkeling",
         locations: ["Hikkaduwa", "Unawatuna", "Pigeon Island", "Kalpitiya"],
         images: [
-            { src: "/Snorkling-in-sri-lanka.jpg", title: "Snorkling in Sri Lanka @b_adventures1" },
-            { src: "/Snorkling-in-sri-lanka3.jpg", title: "Snorkling in Sri Lanka" },
-            { src: "/Snorkling-in-sri-lanka2.jpg", title: "Snorkling in Sri Lanka" },
-            { src: "/Snorkling-in-sri-lanka1.jpg", title: "Snorkling in Sri Lanka" },
+            { src: "/Snorkling-in-sri-lanka.jpg", alt: "Snorkling in Sri Lanka @b_adventures1", title: "Snorkling in Sri Lanka @b_adventures1" },
+            { src: "/Snorkling-in-sri-lanka3.jpg", alt: "Snorkling in Sri Lanka", title: "Snorkling in Sri Lanka" },
+            { src: "/Snorkling-in-sri-lanka2.jpg", alt: "Snorkling in Sri Lanka", title: "Snorkling in Sri Lanka" },
+            { src: "/Snorkling-in-sri-lanka1.jpg", alt: "Snorkling in Sri Lanka", title: "Snorkling in Sri Lanka" },
         ],
         bestTime: "November to April (South/West), May to September (East)",
         difficulty: "Beginner to Intermediate",
@@ -217,11 +217,11 @@ const waterActivities = [
         name: "Windsurfing & Kitesurfing",
         locations: ["Bentota", "Kalpitiya", "Negombo"],
         images: [
-            { src: "/Wind-kite-surfing3.jpg", title: "Shallow Lagoon Training" },
-            { src: "/Wind-kite-surfing4.jpg", title: "Kitesurfing Adventure" },
-            { src: "/Wind-kite-surfing.jpg", title: "Windsurfing at Bentota Lagoon" },
-            { src: "/Wind-kite-surfing1.jpg", title: "Kitesurfing Paradise Kalpitiya" },
-            { src: "/Wind-kite-surfing2.jpg", title: "Perfect Wind Conditions" },
+            { src: "/Wind-kite-surfing3.jpg", alt: "Shallow Lagoon Training", title: "Shallow Lagoon Training" },
+            { src: "/Wind-kite-surfing4.jpg", alt: "Kitesurfing Adventure", title: "Kitesurfing Adventure" },
+            { src: "/Wind-kite-surfing.jpg", alt: "Windsurfing at Bentota Lagoon", title: "Windsurfing at Bentota Lagoon" },
+            { src: "/Wind-kite-surfing1.jpg", alt: "Kitesurfing Paradise Kalpitiya", title: "Kitesurfing Paradise Kalpitiya" },
+            { src: "/Wind-kite-surfing2.jpg", alt: "Perfect Wind Conditions", title: "Perfect Wind Conditions" },
 
         ],
         bestTime: "November to March (West), May to September (East)",
@@ -256,8 +256,8 @@ const waterActivities = [
         name: "Jet Skiing",
         locations: ["Bentota", "Negombo", "Mount Lavinia"],
         images: [
-            { src: "/Jetski-srilanka.jpg", title: "High-Speed Adventure Bentota" },
-            { src: "/Jetski-srilanka1.jpg", title: "Ocean Riding at Negombo" },
+            { src: "/Jetski-srilanka.jpg", alt: "High-Speed Adventure Bentota", title: "High-Speed Adventure Bentota" },
+            { src: "/Jetski-srilanka1.jpg", alt: "Ocean Riding at Negombo", title: "Ocean Riding at Negombo" },
         ],
         bestTime: "November to April",
         difficulty: "Beginner to Intermediate",
@@ -291,8 +291,8 @@ const waterActivities = [
         name: "Leisure World Water Park",
         locations: ["Kaluaggala, Hanwella"],
         images: [
-            { src: "/Leisure-world-sl.jpeg", title: "Leisure World" },
-            { src: "/Leisure-world-sl1.jpeg", title: "" },
+            { src: "/Leisure-world-sl.jpeg", alt: "Leisure World", title: "Leisure World" },
+            { src: "/Leisure-world-sl1.jpeg", alt: "Leisure World", title: "" },
         ],
         bestTime: "Year-round",
         difficulty: "All Ages",
@@ -319,8 +319,8 @@ const waterActivities = [
         name: "Pearl Bay Water Park",
         locations: ["Bandaragama"],
         images: [
-            { src: "/Pearl-bay-srilanka.jpg", title: "Pearl Bay" },
-            { src: "/Pearl-bay-srilanka1.jpg", title: "Pearl Bay" },
+            { src: "/Pearl-bay-srilanka.jpg", alt: "Pearl Bay", title: "Pearl Bay" },
+            { src: "/Pearl-bay-srilanka1.jpg", alt: "Pearl Bay", title: "Pearl Bay" },
         ],
         bestTime: "Year-round",
         difficulty: "All Ages",
@@ -388,110 +388,6 @@ const seasonalGuide = {
     }
 }
 
-// Image Carousel Component
-function ImageCarousel({ images, difficulty }: { images: { src: string; title: string }[]; difficulty?: string }) {
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const [touchStart, setTouchStart] = useState<number | null>(null)
-    const [touchEnd, setTouchEnd] = useState<number | null>(null)
-
-    // Minimum swipe distance (in px)
-    const minSwipeDistance = 50
-
-    const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-    }
-
-    const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
-    }
-
-    const onTouchStart = (e: React.TouchEvent) => {
-        setTouchEnd(null) // Reset touchEnd
-        setTouchStart(e.targetTouches[0].clientX)
-    }
-
-    const onTouchMove = (e: React.TouchEvent) => {
-        setTouchEnd(e.targetTouches[0].clientX)
-    }
-
-    const onTouchEnd = () => {
-        if (!touchStart || !touchEnd) return
-
-        const distance = touchStart - touchEnd
-        const isLeftSwipe = distance > minSwipeDistance
-        const isRightSwipe = distance < -minSwipeDistance
-
-        if (isLeftSwipe && images.length > 1) {
-            nextImage()
-        }
-        if (isRightSwipe && images.length > 1) {
-            prevImage()
-        }
-    }
-
-    return (
-        <div
-            className="relative h-64 md:h-80 lg:h-72 xl:h-80 group"
-            onTouchStart={onTouchStart}
-            onTouchMove={onTouchMove}
-            onTouchEnd={onTouchEnd}
-        >
-            <Image
-                src={images[currentIndex].src}
-                alt={images[currentIndex].title}
-                fill
-                className="object-cover transition-all duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-
-            {/* Navigation Buttons */}
-            {images.length > 1 && (
-                <>
-                    <button
-                        onClick={prevImage}
-                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm rounded-full p-2 md:p-3 transition-all opacity-100 shadow-lg"
-                    >
-                        <ChevronLeft className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                    </button>
-                    <button
-                        onClick={nextImage}
-                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm rounded-full p-2 md:p-3 transition-all opacity-100 shadow-lg"
-                    >
-                        <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                    </button>
-                </>
-            )}
-
-            {/* Dots Indicator */}
-            {images.length > 1 && (
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                    {images.map((_, index) => (
-                        <button
-                            key={index}
-                            onClick={() => setCurrentIndex(index)}
-                            className={`w-3 h-3 md:w-2 md:h-2 rounded-full transition-all touch-manipulation ${index === currentIndex ? 'bg-white' : 'bg-white/50'
-                                }`}
-                        />
-                    ))}
-                </div>
-            )}
-
-            {/* Image Title */}
-            <div className="absolute bottom-8 left-4 right-4 text-center">
-                <p className="text-white text-sm font-medium bg-black/30 backdrop-blur-sm rounded-lg px-3 py-1 inline-block">
-                    {images[currentIndex].title}
-                </p>
-            </div>
-
-            {/* Activity Difficulty Badge */}
-            {difficulty && (
-                <Badge className="absolute top-4 left-4 bg-blue-600 text-white">
-                    {difficulty}
-                </Badge>
-            )}
-        </div>
-    )
-}
 
 export default function WaterActivitiesPage() {
     return (
@@ -615,7 +511,7 @@ export default function WaterActivitiesPage() {
                                 <Card className="overflow-hidden hover:shadow-xl transition-shadow">
                                     <div className="md:flex md:gap-6">
                                         <div className="md:w-2/5 lg:w-1/3">
-                                            <ImageCarousel images={activity.images} difficulty={activity.difficulty} />
+                                            <ImageCarousel images={activity.images}  />
                                         </div>
 
                                         <div className="md:w-3/5 lg:w-2/3 p-6">
