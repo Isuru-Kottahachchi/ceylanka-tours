@@ -831,7 +831,7 @@ export default function KurunegalaPage() {
                     <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                       <div className="relative h-48">
                         <Image
-                          src="/dambullacavetemple.jpeg"
+                          src="/Dambullacavetemple.jpeg"
                           alt="Dambulla Cave Temple with ancient Buddhist murals and statues"
                           fill
                           className="object-cover rounded-t-lg"

@@ -1,24 +1,14 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { MapPin, Landmark, Star, Clock, Users, CheckCircle, Train, Coffee } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-export const metadata: Metadata = {
-  title: "Hatton Sri Lanka: Complete Travel Guide 2025 | Tea Country, Waterfalls & Adventure",
-  description:
-    "Discover Hatton, the gateway to Sri Lanka's tea country. Explore lush plantations, scenic hikes, waterfalls, and colonial heritage with this detailed travel guide.",
-  keywords:
-    "Hatton Sri Lanka, tea country, Adam's Peak, Castlereagh, St Clair's Falls, Sri Lanka travel, hill country, waterfalls, scenic train, tea plantations",
-  openGraph: {
-    title: "Hatton Sri Lanka: Complete Travel Guide 2025",
-    description: "Explore Hatton's tea estates, waterfalls, and adventure in Sri Lanka's hill country.",
-    type: "article",
-    images: ["/hatton-hero.jpg"],
-  },
-}
+
 
 export default function HattonTravelGuide() {
   return (
@@ -198,7 +188,7 @@ export default function HattonTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Adam’s Peak, or Sri Pada, is one of Sri Lanka’s most revered sites. Pilgrims and travelers alike climb its 5,500 steps—often at night—to witness a breathtaking sunrise and the mysterious shadow cast by the summit. The climb from Hatton (Nallathanniya) is the most popular and scenic route.
+                      Adam’s Peak, or Sri Pada, is one of Sri Lanka’s most revered sites. Pilgrims and travelers alike climb its 5,500 steps often at night to witness a breathtaking sunrise and the mysterious shadow cast by the summit. The climb from Hatton (Nallathanniya) is the most popular and scenic route.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -226,13 +216,38 @@ export default function HattonTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
+                  {/* <Image
                     src="/castlereagh-hatton.jpg"
                     alt="Castlereagh Reservoir with tea bungalows and misty hills"
                     width={400}
                     height={300}
                     className="rounded-lg"
-                  />
+                  /> */}
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: '/castlereagh-hatton.jpg',
+                        alt: 'Colonial tea bungalow by Castlereagh Reservoir',
+                        caption: ' @agirlwhoblooms',
+                      },
+                      {
+                        src: '/castlereagh-hatton1.jpg',
+                        alt: 'Kayaking on Castlereagh Reservoir',
+                        caption: ' @agirlwhoblooms',
+                      },
+                       
+                      {
+                        src: '/castlereagh-hatton2.jpg',
+                        alt: 'Kayaking on Castlereagh Reservoir',
+                        caption: '@agirlwhoblooms',
+                      },
+                      {
+                        src: '/castlereagh-hatton3.jpg',
+                        alt: 'Kayaking on Castlereagh Reservoir',
+                        caption: '@agirlwhoblooms',
+                      }
+                    ]}
+                      />
                   <div>
                     <p className="text-muted-foreground mb-4">
                       The Castlereagh Reservoir is a tranquil lake surrounded by lush tea estates and colonial-era bungalows. Enjoy kayaking, lakeside walks, or simply relax with a cup of Ceylon tea overlooking the water.
@@ -438,51 +453,64 @@ export default function HattonTravelGuide() {
           </Card>
         </section>
 
-        {/* Nearby Attractions */}
+        {/* Nearby Places to Visit */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-lg">Nuwara Eliya</CardTitle>
-                <CardDescription>Scenic hill station & colonial charm</CardDescription>
-              </CardHeader>
-              <CardContent>
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Hatton adventure with these incredible hill country destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/Nuwara-Eliya.jpg"
-                  alt="Nuwara Eliya lake with colonial buildings and rolling hills"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  src="/Adams-Peak.jpg"
+                  alt="Adam's Peak mountain with its distinctive peak and sunrise views from Hatton"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Known as &apos;Little England&apos;, Nuwara Eliya offers cool climates, colonial architecture, and beautiful
-                  tea gardens — a delightful extension to a Hatton itinerary.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Adam's Peak (Sri Pada)</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sri Lanka's most sacred mountain pilgrimage site featuring the legendary Sacred Footprint and stunning sunrise views
                 </p>
-                  <div className="mt-4 flex justify-start">
-                    <Link href="/destinations/nuwara-eliya" passHref legacyBehavior>
-                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                    </Link>
-                  </div>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  37 km from Hatton
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/adams-peak" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-lg">Ella</CardTitle>
-                <CardDescription>Scenic village with the Nine Arch Bridge</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
                   src="/Nine-arch-ella.jpg"
-                  alt="Nine Arch Bridge in Ella surrounded by lush tea plantations"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  A short scenic drive from Hatton, Ella is famous for hiking, panoramic views and relaxed cafes.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1 hour
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Ella</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Charming hill country village famous for the iconic Nine Arch Bridge, hiking trails, and panoramic valley views
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  35 km from Hatton
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/ella" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -491,24 +519,116 @@ export default function HattonTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card className="cursor-pointer hover:shadow-md transition-shadow duration-200 min-h-[430px] flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-lg">Baker&apos;s Falls</CardTitle>
-                <CardDescription>Forest waterfall near Hakgala tea estates</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Nuwara-Eliya-Lake.jpg"
+                  alt="Nuwara Eliya lake with colonial buildings and rolling tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  1.5 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Nuwara Eliya</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sri Lanka's quintessential hill station known for its cool climate, colonial architecture, and beautiful lake
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  42 km from Hatton
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/nuwara-eliya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
                   src="/Bakers-Falls.jpg"
-                  alt="Baker&apos;s Falls cascading through montane forest near Hakgala"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  alt="Baker's Falls cascading through montane forest near Hakgala tea estates"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  A beautiful cascade set in the Horton Plains foothills — perfect for nature lovers and photographers.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  45 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Baker's Falls</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Scenic waterfall set within Hakgala Botanical Gardens and Horton Plains foothills, ideal for nature walks
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  18 km from Hatton
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/bakers-falls" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Horton-Plains.jpg"
+                  alt="Horton Plains misty landscape with its famous World's End cliff viewpoint"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Horton Plains National Park</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  UNESCO World Heritage site featuring the famous World's End cliff viewpoint and montane grassland ecosystems
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  45 km from Hatton
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/horton-plains" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Kandy.jpg"
+                  alt="Temple of the Tooth in Kandy with its iconic golden roof and sacred temple architecture"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  2 hours
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Kandy</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sri Lanka's cultural capital home to the Temple of the Tooth, lakeside beauty, and traditional arts heritage
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  48 km from Hatton
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kandy" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
