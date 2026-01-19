@@ -673,7 +673,7 @@ export default function KandyTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Cuisineinsl.jpg"
                   alt="Traditional Sri Lankan rice and curry dish with various side dishes"
                   width={300}
                   height={200}

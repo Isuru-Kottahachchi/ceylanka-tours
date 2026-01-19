@@ -30,9 +30,7 @@ export default function PolonnaruwaGuide() {
         { src: "/Rankothvehera.jpeg", caption: "Rankoth Vehera: The largest dagoba in Polonnaruwa", alt: "Rankoth Vehera: The largest dagoba in Polonnaruwa" },
         { src: "/Rankothvehera1.jpeg", caption: "Stupa and surrounding ruins at Rankoth Vehera", alt: "Stupa and surrounding ruins at Rankoth Vehera" },
         { src: "/Rankothvehera2.jpeg", caption: "Ancient stairway leading to Rankoth Vehera", alt: "Ancient stairway leading to Rankoth Vehera" },
-        { src: "/Rankothvehera3.jpeg", caption: "View of Rankoth Vehera from the base", alt: "View of Rankoth Vehera from the base" },
         { src: "/Rankothvehera4.jpeg", caption: "Devotees at Rankoth Vehera stupa", alt: "Devotees at Rankoth Vehera stupa" },
-        // { src: "/Rankothvehera5.jpeg", caption: "Rankoth Vehera: Architectural details of the stupa" },
     ];
 
 
@@ -573,8 +571,7 @@ export default function PolonnaruwaGuide() {
                                     <ImageCarousel
                                         images={[{
                                             src: "/placeholder.svg?height=300&width=400",
-                                            alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                                            caption: "Viewpoint across 7 provinces",
+                                            alt: "Shiva Devale No. 2",
                                             title: "Panoramic Viewpoint"
                                         }]}
                                     />
@@ -646,8 +643,20 @@ export default function PolonnaruwaGuide() {
                                     <ImageCarousel
                                         images={[
                                             {
-                                                src: "/placeholder.svg?height=300&width=400",
-                                                alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
+                                                src: "/Pabalu-Vehera.jpg",
+                                                alt: "Pabalu Vehera stupa surrounded by smaller stupas and shrines",
+                                                caption: "Viewpoint across 7 provinces",
+                                                title: "Panoramic Viewpoint"
+                                            },
+                                             {
+                                                src: "/Pabalu-Vehera1.jpg",
+                                                alt: "Pabalu Vehera stupa surrounded by smaller stupas and shrines",
+                                                caption: "Viewpoint across 7 provinces",
+                                                title: "Panoramic Viewpoint"
+                                            },
+                                             {
+                                                src: "/Pabalu-Vehera2.jpg",
+                                                alt: "Pabalu Vehera stupa surrounded by smaller stupas and shrines",
                                                 caption: "Viewpoint across 7 provinces",
                                                 title: "Panoramic Viewpoint"
                                             }
@@ -949,9 +958,9 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Hatadage.jpg", caption: "Hatadage: Ancient royal relic shrine with stone columns", alt: "Hatadage: Ancient royal relic shrine with stone columns" },
-                                            { src: "/Hatadage1.jpg", caption: "Hatadage: Intricate stone carvings and entrance", alt: "Hatadage: Intricate stone carvings and entrance" },
-                                            { src: "/Hatadage2.jpg", caption: "Hatadage: Interior view showing Buddha statues", alt: "Hatadage: Interior view showing Buddha statues" }
+                                            { src: "/Hatadageya.jpg", caption: "Hatadage: Ancient royal relic shrine with stone columns", alt: "Hatadage: Ancient royal relic shrine with stone columns" },
+                                            { src: "/Hatadageya1.jpg", caption: "Hatadage: Intricate stone carvings and entrance", alt: "Hatadage: Intricate stone carvings and entrance" },
+                                            { src: "/Hatadageya2.jpg", caption: "Hatadage: Interior view showing Buddha statues", alt: "Hatadage: Interior view showing Buddha statues" }
                                         ]}
 
                                     />
@@ -1121,7 +1130,6 @@ export default function PolonnaruwaGuide() {
                                         images={[
                                             { src: "/Sathmahal-prasadaya1.jpg", caption: "Seven-story pyramid structure of Sathmahal Prasada", alt: "Seven-story pyramid structure of Sathmahal Prasada" },
                                             { src: "/Sathmahal-prasadaya.jpg", caption: "Detailed view of the architectural features", alt: "Detailed view of the architectural features" },
-                                            { src: "/Sathmahal-Prasada3.jpg", caption: "Evening view showing the unique stepped design", alt: "Evening view showing the unique stepped design" }
                                         ]}
 
                                     />
