@@ -144,8 +144,7 @@ export default function YalaNationalParkTravelGuide() {
                       <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
-                        <li>• <strong>Duration:</strong> 4-4.5 hours</li>
-                        <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                        <li>• <strong>Duration:</strong> 4-4.5 hours</li>                       
                         <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                       </ul>
                     </div>

@@ -170,7 +170,6 @@ export default function GalleFortTravelGuide() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
                       <li>• <strong>Duration:</strong> 4-4.5 hours</li>
-                      {/* <li>• <strong>Cost:</strong> $60-90 USD for day trip</li> */}
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
                   </div>

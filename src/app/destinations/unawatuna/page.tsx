@@ -185,7 +185,6 @@ export default function UnawatunaTravelGuide() {
                                         <ul className="space-y-2 text-sm text-muted-foreground">
                                             <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo</li>
                                             <li>• <strong>Duration:</strong> 2.5-3 hours</li>
-                                            <li>• <strong>Cost:</strong> $60-85 USD for day trip</li>
                                             <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                                         </ul>
                                         <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
