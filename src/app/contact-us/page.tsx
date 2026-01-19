@@ -146,7 +146,7 @@ export default function ContactUs() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">Call Us</h3>
                 <p className="text-sm text-muted-foreground mb-4">Speak directly with our experts</p>
-                <a href="tel:+94112345678" className="font-semibold text-green-600 hover:text-green-700 block mb-2 text-lg">+94 11 234 5678</a>
+                <a href="tel:+94707646765" className="font-semibold text-green-600 hover:text-green-700 block mb-2 text-lg">+94 70 764 6765</a>
                 <p className="text-xs text-muted-foreground">Daily: 8:00 AM - 10:00 PM</p>
               </CardContent>
             </Card>
@@ -172,7 +172,7 @@ export default function ContactUs() {
                 </div>
                 <h3 className="font-bold text-lg mb-2">WhatsApp</h3>
                 <p className="text-sm text-muted-foreground mb-4">Instant messaging support</p>
-                <a href="https://wa.me/94771234567" className="font-semibold text-emerald-600 hover:text-emerald-700 block mb-2 text-lg">+94 77 123 4567</a>
+                <a href="https://wa.me/94707646765" className="font-semibold text-emerald-600 hover:text-emerald-700 block mb-2 text-lg">+94 70 764 6765</a>
                 <p className="text-xs text-muted-foreground">Chat now for quick help</p>
               </CardContent>
             </Card>
@@ -654,7 +654,7 @@ export default function ContactUs() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
                   <Phone className="h-5 w-5 mr-2" />
-                  Call Now: +94 11 234 5678
+                  Call Now: +94 70 764 6765
                 </Button>
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-cyan-600">
                   <MessageCircle className="h-5 w-5 mr-2" />

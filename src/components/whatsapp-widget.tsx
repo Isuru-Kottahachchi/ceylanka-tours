@@ -28,8 +28,7 @@ export function WhatsAppWidget() {
     }
   }, [])
 
-  // WhatsApp contact details - replace with your actual number
-  const whatsappNumber = "+94771234567" // Replace with your WhatsApp number
+  const whatsappNumber = "+94707646765"
   const defaultMessage = "Hi! I'm interested in Sri Lanka travel information from CeyLanka Tours."
 
   // Handle WhatsApp click

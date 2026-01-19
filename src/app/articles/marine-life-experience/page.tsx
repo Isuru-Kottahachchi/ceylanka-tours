@@ -622,8 +622,8 @@ export default function WhaleWatchingGuide() {
                         Contact us for bookings and inquiries:
                       </p>
                       <div className="mt-2 space-y-1 text-sm">
-                        <p>📞 +94 77 123 4567</p>
-                        <p>✉️ info@ceylonkatours.com</p>
+                        <p>📞 +94 70 764 6765</p>
+                        <p>✉️ ceylonkatoursinfor@gmail.com</p>
                       </div>
                     </div>
                   </div>

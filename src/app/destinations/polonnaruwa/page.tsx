@@ -211,7 +211,7 @@ export default function PolonnaruwaGuide() {
                                             <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
                                                 <div className="flex items-center gap-2">
                                                     <span>📞</span>
-                                                    <span><strong>Contact:</strong> +94 77 123 4567</span>
+                                                    <span><strong>Contact:</strong> +94 70 764 6765</span>
                                                 </div>
                                                 <div className="flex items-center gap-2">
                                                     <span>🏛️</span>
@@ -409,12 +409,12 @@ export default function PolonnaruwaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            The centerpiece of Polonnaruwa, this magnificent palace complex once stood seven stories tall and housed over 1,000 rooms. Built by King Parakramabahu I in the 12th century, it represents the pinnacle of medieval Sinhalese architecture.
+                                            The centerpiece of Polonnaruwa, this magnificent palace complex once stood six to seven stories tall with hundreds of rooms. Built by King Parakramabahu I in the 12th century, it represents the pinnacle of medieval Sinhalese architecture.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Originally seven stories with over 1,000 rooms
+                                                Six to seven stories with hundreds of rooms
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -481,7 +481,7 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            The palace complex of King Nissanka Malla (1187-1196 AD) is a remarkable example of late
+                                            Located inside the Deepa uyana.The palace complex of King Nissanka Malla (1187-1196 AD) is a remarkable example of late
                                             Polonnaruwa period architecture. Known for its extensive stone inscriptions and unique
                                             architectural features, this complex provides invaluable insights into royal life and
                                             governance during medieval Sri Lanka.
@@ -783,24 +783,24 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-
+                                            Built by King Nissanka Malla as a royal reception hall, the Audience Hall represents one of the finest examples of Polonnaruwa period architecture. This magnificent structure served as the venue for royal audiences, state functions, and important ceremonies. The intricate lotus-shaped pillars symbolize purity and nobility, demonstrating the king's sophisticated artistic vision and advanced architectural knowledge.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                48 unique lotus-shaped stone pillars
+                                                Royal reception and audience hall for state functions
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Each pillar has different decorative motifs
+                                                Built during the reign of King Nissanka Malla (1187-1196 AD)
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Royal throne platform in the center
+                                                Open-air pavilion design for ceremonial purposes
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Excellent example of Polonnaruwa architecture
+                                                Testimony to advanced medieval Sinhalese engineering
                                             </li>
                                         </ul>
 
@@ -853,12 +853,12 @@ export default function PolonnaruwaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Considered the pinnacle of ancient Sinhalese sculpture, Gal Vihara features four magnificent Buddha statues carved from a single granite rock face. These 12th-century masterpieces represent the finest Buddhist art in Sri Lanka.
+                                            Considered the pinnacle of ancient Sinhalese sculpture, Gal Vihara features three magnificent Buddha statues carved from a single granite rock face. These 12th-century masterpieces represent the finest Buddhist art in Sri Lanka.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Four Buddha statues in different poses,(a seated Buddha in meditation, a standing Buddha with arms crossed, and a reclining Buddha representing his final nirvana)
+                                                Three Buddha statues in different poses (a seated Buddha in meditation, a standing Buddha with arms crossed, and a reclining Buddha representing his final nirvana)
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />

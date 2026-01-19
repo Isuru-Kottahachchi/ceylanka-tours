@@ -584,7 +584,7 @@ export default function RathnapuraGuide() {
                       </li>
                     </ul>
                     <div className="mt-2 p-2 bg-blue-100 dark:bg-blue-800 rounded border border-blue-200 dark:border-blue-600">
-                      <span className="font-semibold">Ceylanka Tours Contact:</span> <a href="tel:+94771234567" className="underline text-blue-700 dark:text-blue-200">+94 77 123 4567</a><br />
+                      <span className="font-semibold">Ceylanka Tours Contact:</span> <a href="tel:+94707646765" className="underline text-blue-700 dark:text-blue-200">+94 70 764 6765</a><br />
                       <span className="font-semibold">Website:</span> <a href="https://ceylankatours.com" target="_blank" rel="noopener noreferrer" className="underline text-blue-700 dark:text-blue-200">ceylankatours.com</a>
                     </div>
                     <p className="text-xs text-blue-600 dark:text-blue-300 mt-2">For the easiest and most comfortable trip, book a private vehicle with Ceylanka Tours.</p>

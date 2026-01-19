@@ -185,7 +185,7 @@ export default function GalViharayaGuide() {
                       <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
                         <div className="flex items-center gap-2">
                           <span>📞</span>
-                          <span><strong>Contact:</strong> +94 77 123 4567</span>
+                          <span><strong>Contact:</strong> +94 70 764 6765</span>
                         </div>
                         <div className="flex items-center gap-2">
                           <span>🏛️</span>

@@ -229,7 +229,7 @@ export default function SigiriyaTravelGuide() {
                       <span>📞</span>
                       <span><strong>Contact:</strong></span>
                       <a href="tel:+940707646765" className="underline hover:text-orange-700 dark:hover:text-orange-300">
-                        Call +94 070 764 6765
+                        Call +94 70 764 6765
                       </a>
                       <span>|</span>
                       <a href="https://wa.me/94707646765" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-700 dark:hover:text-orange-300 flex items-center gap-1">
