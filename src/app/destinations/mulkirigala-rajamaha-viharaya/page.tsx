@@ -219,7 +219,6 @@ export default function MulkirigalaTravelGuide() {
                                         <ul className="space-y-2 text-sm text-muted-foreground">
                                             <li>• <strong>Distance:</strong> 230 km (143 miles)</li>
                                             <li>• <strong>Duration:</strong> 4-4.5 hours via Southern Expressway</li>
-                                            <li>• <strong>Cost:</strong> $70-90 USD for day trip</li>
                                             <li>• <strong>Route:</strong> Southern Expressway to Matara, then inland</li>
                                         </ul>
 

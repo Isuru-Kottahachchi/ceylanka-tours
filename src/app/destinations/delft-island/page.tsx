@@ -198,7 +198,6 @@ export default function DelftIslandTravelGuide() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Distance:</strong> 436km (270 miles) from Colombo to Kurikkaduwan Jetty then Ferry or Boat to Delft Island</li>
                       <li>• <strong>Duration:</strong> 7-8 hours</li>
-                      <li>• <strong>Cost:</strong> $200-250 USD for day trip</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">

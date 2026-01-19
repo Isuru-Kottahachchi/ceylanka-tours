@@ -133,7 +133,6 @@ export default function BalangodaGuide() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Distance:</strong> 170km (105 miles)</li>
                       <li>• <strong>Duration:</strong> 3.5-4 hours</li>
-                      <li>• <strong>Cost:</strong> $50-80 USD for day trip</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
