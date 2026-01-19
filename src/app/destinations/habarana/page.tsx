@@ -24,7 +24,7 @@ export default function HabaranaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/habarana-hero.jpg"
+          src="/Habarana-Lake.jpg"
           alt="Aerial view of Habarana's lush forests and lakes"
           fill
           className="object-cover"
@@ -262,7 +262,7 @@ export default function HabaranaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/habarana-lake.jpg"
+                    src="/Habarana.jpg"
                     alt="Habarana Lake at sunset"
                     width={400}
                     height={300}
