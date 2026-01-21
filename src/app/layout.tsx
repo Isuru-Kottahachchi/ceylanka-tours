@@ -134,7 +134,7 @@ export default function RootLayout({
               logo: "https://ceylankatours.com/logo.png",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+94-11-1912",
+                telephone: "+94-70-764-6765",
                 contactType: "customer service",
               },
               sameAs: [
