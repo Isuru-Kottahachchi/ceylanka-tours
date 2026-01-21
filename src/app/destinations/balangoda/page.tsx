@@ -1147,7 +1147,7 @@ export default function BalangodaGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Adamspeaskmain.jpg"
+                  src="/Hawagala1.jpg"
                   alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
                   fill
                   className="object-cover rounded-t-lg"
@@ -1159,7 +1159,7 @@ export default function BalangodaGuide() {
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Hawagala</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Known for its scenic beauty and cool climate, Pattipola is home to the highest railway station in Sri Lanka.
+                  Known for its scenic beauty and cool climate, Hawagala has a beautiful view with clouds.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
