@@ -44,7 +44,7 @@ const searchVariations: { [key: string]: string[] } = {
   "badulla": ["badula", "badula"],
   "mathale": ["matale", "mathale"],
   "yapahuwa": ["yapahuwa", "yapahuva"],
-  "waligama": ["waligama", "waligaama", "waligana","weligama"],
+  "waligama": ["waligama", "waligaama", "waligana", "weligama"],
   "katharagama": ["kataragama", "katharigama"],
   "mahiyanganaya": ["mahiyangana", "mahiyanganaya"],
   "sinharaja": ["sinharaja", "sinharaja forest"],
@@ -60,9 +60,10 @@ const searchVariations: { [key: string]: string[] } = {
   "isurumuniya": ["isurumuniya", "isurumuni", "isuru muniya", "isuramuniya", "isurumuniya temple", "isuru"],
   "jaya sri maha bodhi": ["jayasrimaha bodhi", "jaya sri maha bodhi", "jayasri maha bodhi", "jaya srimaha bodhi", "sri maha bodhi", "maha bodhi", "bodhi tree", "sacred bodhi tree", "jaya sri maha bodhiya"],
   "rathnapura": ["rathnapura", "rathnapure", "ratnapuraya", "ratnapure"],
+  "ambalangoda": ["ambalangoda", "ambalangoda puppets", "ambalangoda rukada", "ambalangoda puppet show"],
   "balangoda": ["balangoda", "balangoda"],
   "kurunagala": ["kurunagala", "kurunagla", "kurunagala", "kurunegala"],
-  "hummanaya": ["hummanaya","hummane", "hummanaya blow hole", "hummanaya blowhole"],
+  "hummanaya": ["hummanaya", "hummane", "hummanaya blow hole", "hummanaya blowhole"],
 }
 
 // Function to normalize search terms
@@ -148,7 +149,7 @@ const destinations: Destination[] = [
     path: "kandy",
     image: "/Kandy.jpeg",
     description: "Sacred city with the Temple of the Tooth, a UNESCO World Heritage site",
-    highlights: ["UNESCO World Heritage","Sacred Tooth Relic", "Cultural Shows" ],
+    highlights: ["UNESCO World Heritage", "Sacred Tooth Relic", "Cultural Shows"],
     category: "Religious",
   },
   {
@@ -281,7 +282,7 @@ const destinations: Destination[] = [
     highlights: ["Waterfalls", "Village", "Nature Trails"],
     category: "Nature",
   },
-   {
+  {
     id: 14,
     name: "Kurunagala",
     location: "North Western Province",
@@ -351,7 +352,7 @@ const destinations: Destination[] = [
     highlights: ["Crystal Clear Water", "Coral Reefs", "Coral pools"],
     category: "Beach",
   },
-      {
+  {
     id: 20,
     name: "Nilwella Blue Beach",
     location: "Southern Province",
@@ -361,7 +362,17 @@ const destinations: Destination[] = [
     highlights: ["Crystal Clear Water", "Public Island", "Beach Camping"],
     category: "Beach",
   },
-      {
+  {
+    id: 20,
+    name: "Ambalangoda",
+    location: "Southern Province",
+    path: "ambalangoda",
+    image: "/Ambalangoda.jpg",
+    description: "Traditional mask making capital of Sri Lanka",
+    highlights: ["Traditional Masks", "Craftsmanship", "Cultural Heritage"],
+    category: "Traditional",
+  },
+   {
     id: 20,
     name: "Hummanaya Blow Hole",
     location: "Southern Province",
@@ -433,7 +444,7 @@ const destinations: Destination[] = [
   },
   {
     id: 25,
-    name:"Mihinthalaya",
+    name: "Mihinthalaya",
     location: "North Central Province",
     path: "mihinthalaya",
     image: "/Mihinthale.jpg",
@@ -461,7 +472,7 @@ const destinations: Destination[] = [
     highlights: ["Tea Plantations", "Waterfalls", "Hiking"],
     category: "Nature",
   },
-    {
+  {
     id: 25,
     name: "Ohiya",
     location: "Central Province",
@@ -471,7 +482,7 @@ const destinations: Destination[] = [
     highlights: ["Tea Plantations", "Waterfalls", "Hiking"],
     category: "Nature",
   },
-    {
+  {
     id: 25,
     name: "Idalgashinna",
     location: "Central Province",
@@ -481,7 +492,7 @@ const destinations: Destination[] = [
     highlights: ["Tea Plantations", "Waterfalls", "Hiking"],
     category: "Nature",
   },
-    {
+  {
     id: 25,
     name: "Mandaram Nuwara",
     location: "Central Province",
@@ -651,7 +662,7 @@ const destinations: Destination[] = [
     highlights: ["Panoramic Views", "Unique Tower", "Biodiversity"],
     category: "Nature",
   },
-    {
+  {
     id: 41,
     name: "Kanneliya",
     location: "Southern Province",
@@ -703,7 +714,7 @@ const destinations: Destination[] = [
   },
   {
     id: 46,
-    name:"Pidurangala Rock",
+    name: "Pidurangala Rock",
     location: "Central Province",
     path: "pidurangala-rock",
     image: "/Pidurangala.jpeg",

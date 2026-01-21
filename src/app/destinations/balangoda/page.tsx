@@ -159,16 +159,15 @@ export default function BalangodaGuide() {
                       <li>• <strong>Route:</strong> Colombo → Balangoda bus stand</li>
                       <li>• <strong>Duration:</strong> 4-5 hours total</li>
                       <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
-                      <li>• <strong>Note:</strong> Requires bus change in Dambulla or Habarana</li>
                     </ul>
                   </div>
                 </div>
-                <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
+                {/* <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
                   <p className="text-sm text-blue-800 dark:text-blue-200">
                     <strong>💡 Pro Tip:</strong> Start early (6-7 AM) from Colombo to avoid traffic and reach Balangoda before the midday heat.
                     Most visitors stay overnight in nearby Dambulla or Habarana for a more relaxed experience.
                   </p>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           </section>
@@ -667,14 +666,7 @@ export default function BalangodaGuide() {
                       {
                         src: "/Samanala-Wewa.jpg",
                         alt: "Samanala Wewa Reservoir with lush greenery and mountains",
-                        caption: "Samanala Wewa Reservoir",
                         title: "Samanala Wewa Reservoir"
-                      },
-                      {
-                        src: "/Lunugangabawa2.jpeg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
                       },
 
                     ]}
@@ -1135,7 +1127,7 @@ export default function BalangodaGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  18 km from Nuwara Eliya
+                  18 km from Balangoda
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/adams-peak" passHref legacyBehavior>

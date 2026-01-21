@@ -12,7 +12,7 @@ export default function AmbalangodaGuide() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/ambalangoda-masks.jpg"
+          src="/Ambalangoda.jpg"
           alt="Traditional Sri Lankan masks displayed in Ambalangoda, showcasing intricate craftsmanship and vibrant colors"
           fill
           className="object-cover"
@@ -171,22 +171,19 @@ export default function AmbalangodaGuide() {
               <ImageCarousel
                 images={[
                   {
-                    src: "/kolam-masks.jpg",
-                    alt: "Collection of traditional Kolam masks showing various character expressions",
-                    caption: "Traditional Kolam Masks",
-                    title: "Kolam Character Masks"
+                    src: "/Raksha-Masks.jpg",
+                    alt: "Collection of traditional Raksha masks showing various protective expressions",
+                    caption: "Traditional Raksha Masks",
                   },
                   {
-                    src: "/sanni-masks.jpg",
+                    src: "/Sanni-Masks.jpg",
                     alt: "Set of Sanni masks used in traditional healing rituals",
                     caption: "Sanni Healing Masks",
-                    title: "Traditional Sanni Masks"
                   },
                   {
-                    src: "/raksha-masks.jpg",
+                    src: "/Kolam-Masks.jpg",
                     alt: "Colorful Raksha masks displayed on building facades",
-                    caption: "Protective Raksha Masks",
-                    title: "Decorative Raksha Masks"
+                    caption: "Kolam Masks",
                   }
                 ]}
               />
@@ -212,7 +209,7 @@ export default function AmbalangodaGuide() {
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold mb-4">The Art of Puppet Making</h3>
                   <p className="text-muted-foreground">
-                    Ambalangoda is also famous for its traditional puppet making, known as Rukada Sandarshana. These 
+                    Ambalangoda is also famous for its traditional puppet making, known as Rukada Sandarshana.Puppetry has been practiced in Sri Lanka since the 1830s. These 
                     puppets are used to tell ancient stories, folklore, and Buddhist tales through captivating performances.
                   </p>
                   <div className="space-y-3">
@@ -237,22 +234,18 @@ export default function AmbalangodaGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/traditional-puppets.jpg",
+                        src: "/Traditional-puppets2.jpg",
                         alt: "Collection of traditional Sri Lankan puppets showing detailed craftsmanship",
                         caption: "Traditional String Puppets",
-                        title: "Rukada Puppets"
                       },
                       {
-                        src: "/puppet-performance.jpg",
+                        src: "/Traditional-puppets1.jpg",
                         alt: "Live puppet performance showing puppeteers and musicians",
                         caption: "Traditional Performance",
-                        title: "Puppet Show"
                       },
                       {
-                        src: "/puppet-making.jpg",
+                        src: "/Traditional-puppets.jpg",
                         alt: "Craftsman working on creating traditional puppets",
-                        caption: "Puppet Making Process",
-                        title: "Puppet Craftsmanship"
                       }
                     ]}
                   />

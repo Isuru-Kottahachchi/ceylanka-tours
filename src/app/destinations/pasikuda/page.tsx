@@ -223,7 +223,7 @@ export default function PasikudaTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
               <Image
-                src="/PasikudainEve.jpeg"
+                src="/Snorkeling-Pasikuda.jpg"
                 alt="Crystal clear shallow waters of Pasikuda bay showing coral formations and tropical fish underwater"
                 width={600}
                 height={400}
@@ -273,7 +273,7 @@ export default function PasikudaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Snorkeling-Pasikuda.jpg"
                     alt="Snorkelers exploring colorful coral reefs in Pasikuda with tropical fish and clear blue water"
                     width={400}
                     height={300}

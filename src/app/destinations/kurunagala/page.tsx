@@ -109,8 +109,6 @@ export default function KurunegalaPage() {
   const ethagalaImages = [
     "/Athgala.jpg",
     "/Kurunagala.webp",
-    "/ethagala-sunrise.jpg",
-    "/ethagala-panorama.jpg"
   ]
   return (
     <main className="flex flex-col min-h-screen">

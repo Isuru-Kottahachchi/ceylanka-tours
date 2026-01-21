@@ -360,32 +360,6 @@ export default function KanneliyaTravelGuide() {
               </CardContent>
             </Card>
 
-
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Kanneliya</CardTitle>
-                <CardDescription>Part of a Kanneliya Dediyagala Nakiyadeniya Complex</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/Kanneliya.jpg"
-                  alt="View of Kanneliya"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Explore the lush Kanneliya rainforest, part of the Sinharaja Forest Reserve. Home to diverse flora and fauna, perfect for nature lovers.
-                </p>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/kanneliya" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
                 <CardTitle className="text-lg">Hummanaya Blowhole</CardTitle>
@@ -500,7 +474,7 @@ export default function KanneliyaTravelGuide() {
                   Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
                 </p>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/blue-beach" passHref legacyBehavior>
+                  <Link href="/destinations/nilwella-blue-beach" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
