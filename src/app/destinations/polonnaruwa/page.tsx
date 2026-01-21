@@ -20,10 +20,10 @@ export default function PolonnaruwaGuide() {
 
     const galviharayaImages = [
         { src: "/Galviharaya.jpeg", caption: "Gal Vihara: Seated Buddha statue carved from granite", alt: "Gal Vihara: Seated Buddha statue carved from granite" },
-        { src: "/Galviharaya2.jpeg", caption: "Standing Buddha statue at Gal Vihara", alt: "Standing Buddha statue at Gal Vihara" },
-        { src: "/Galviharaya3.jpeg", caption: "Reclining Buddha representing Parinirvana at Gal Vihara", alt: "Reclining Buddha representing Parinirvana at Gal Vihara" },
-        { src: "/Galviharaya4.jpeg", caption: "Close-up of Gal Vihara Buddha face details", alt: "Close-up of Gal Vihara Buddha face details" },
-        { src: "/Galviharaya5.jpeg", caption: "Worshippers at Gal Vihara rock temple", alt: "Worshippers at Gal Vihara rock temple" },
+        { src: "/GalViharaya2.jpeg", caption: "Standing Buddha statue at Gal Vihara", alt: "Standing Buddha statue at Gal Vihara" },
+        { src: "/GalViharaya3.jpeg", caption: "Reclining Buddha representing Parinirvana at Gal Vihara", alt: "Reclining Buddha representing Parinirvana at Gal Vihara" },
+        { src: "/GalViharaya4.jpeg", caption: "Close-up of Gal Vihara Buddha face details", alt: "Close-up of Gal Vihara Buddha face details" },
+        { src: "/GalViharaya5.jpeg", caption: "Worshippers at Gal Vihara rock temple", alt: "Worshippers at Gal Vihara rock temple" },
     ];
 
     const rankothveheraImages = [
@@ -275,7 +275,7 @@ export default function PolonnaruwaGuide() {
                                         <h4 className="font-semibold mb-3 text-green-700 dark:text-green-300">🚗 Private Car/Taxi (Recommended)</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground">
                                             <li>• <strong>Duration:</strong> 4-5 hours from Colombo</li>
-                                            <li>• <strong>Cost:</strong> $60-90 USD for day trip</li>
+                                            
                                             <li>• <strong>Advantages:</strong> Flexible timing, door-to-door service</li>
                                             <li>• <strong>Best for:</strong> Comfort and convenience</li>
                                         </ul>
