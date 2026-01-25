@@ -175,7 +175,7 @@ export default function MannarGuide() {
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo</li>
-                      <li>• <strong>Duration:</strong> 4-5 hours</li>                     
+                      <li>• <strong>Duration:</strong> 4-5 hours</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
@@ -839,8 +839,8 @@ export default function MannarGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Minneriyanationalpark.jpg"
-                  alt="Minneriya National Park"
+                  src="/Nagadeepaya.jpg"
+                  alt="Nainativu Island"
                   fill
                   className="object-cover rounded-t-lg"
                 />
