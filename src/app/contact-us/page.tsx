@@ -327,7 +327,6 @@ export default function ContactUs() {
                         min={new Date().toISOString().split('T')[0]}
                         placeholder="dd/mm/yyyy"
                         className="w-full"
-                        style={{ fontSize: '16px' }}
                       />
                     </div>
                     <div>
