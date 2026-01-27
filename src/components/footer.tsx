@@ -102,7 +102,7 @@ export function Footer() {
                 <Link href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <TikTokIcon className="h-5 w-5" />
                 </Link>
-                <Link href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+                <Link href="https://www.instagram.com/ceylanka_tours?igsh=ZHV6Ymh1ZGxpdmdh" className="text-gray-400 hover:text-cyan-400 transition-colors">
                   <Instagram className="h-5 w-5" />
                 </Link>
                 <Link href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">

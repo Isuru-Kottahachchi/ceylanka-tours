@@ -717,7 +717,7 @@ export default function EllaTownGuide() {
                 </CardContent>
               </Card>
 
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle>8. Ella Railway Station</CardTitle>
                   <CardDescription>One of Sri Lanka&apos;s most scenic railway stops</CardDescription>
@@ -761,7 +761,7 @@ export default function EllaTownGuide() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               <Card>
                 <CardHeader>

@@ -688,7 +688,7 @@ export default function WilpattuNationalParkTravelGuide() {
                 <li>Easy online booking and transparent pricing</li>
               </ul>
               <a
-                href="/contact"
+                href="/contact-us"
                 className="inline-block mt-2 px-4 py-2 rounded bg-orange-600 text-white font-semibold hover:bg-orange-700 transition"
               >
                 Book Your Wilpattu Safari with Ceylanka Tours

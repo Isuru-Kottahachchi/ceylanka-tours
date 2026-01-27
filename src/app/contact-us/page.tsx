@@ -534,7 +534,7 @@ export default function ContactUs() {
                     </Button>
                   </a>
                   <a 
-                    href="https://instagram.com/ceylonlankatours" 
+                    href="https://www.instagram.com/ceylanka_tours?igsh=ZHV6Ymh1ZGxpdmdh" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
