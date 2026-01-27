@@ -167,7 +167,7 @@ export default function EllaTownGuide() {
                       <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
-                        <li>• <strong>Duration:</strong> 4-4.5 hours</li>                       
+                        <li>• <strong>Duration:</strong> 4-4.5 hours</li>
                         <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                       </ul>
                       <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
@@ -231,50 +231,43 @@ export default function EllaTownGuide() {
                     {
                       src: "/Ella-Train-Ride.jpg",
                       alt: "Ella Train Ride",
-                      caption: "Experience the scenic beauty of Sri Lanka",
+                      caption: "Train Ride to Ella",
                       title: "Ella Train Ride",
                     },
                     {
                       src: "/Ella-Train-Ride1.jpg",
                       alt: "Ella Train Ride",
-                      caption: "Experience the scenic beauty of Sri Lanka",
-                      title: "Ella Train Ride",
+                      caption: "Train Ride to Ella",
                     },
                     {
                       src: "/Ella-Train-Ride2.webp",
                       alt: "Ella Train Ride",
-                      caption: "Experience the scenic beauty of Sri Lanka",
-                      title: "Ella Train Ride",
+                      caption: "Train Ride to Ella",
                     },
                     {
                       src: "/Ella-Train-Ride3.webp",
                       alt: "Ella Train Ride",
-                      caption: "Experience the scenic beauty of Sri Lanka",
-                      title: "Ella Train Ride",
+                      caption: "Train Ride to Ella",
                     },
                     {
                       src: "/Ella-Train-Ride4.jpg",
                       alt: "Ella Train Ride",
-                      caption: "Ella Train Ride",
-                      title: "Ella Train Ride",
+                      caption: "Train Ride to Ella",
                     },
                     {
                       src: "/Ella-Train-Ride5.webp",
                       alt: "Ella Train Ride",
-                      caption: "Ella Train Ride",
-                      title: "Ella Train Ride",
+                      caption: "Train Ride to Ella",
                     },
                     {
                       src: "/Ella-Train-Ride6.jpg",
                       alt: "Ella Train Ride",
-                      caption: "Ella Train Ride",
-                      title: "Ella Train Ride",
+                      caption: "Train Ride to Ella",
                     },
                     {
                       src: "/Ella-Train-Ride7.webp",
                       alt: "Ella Train Ride",
-                      caption: "Ella Train Ride",
-                      title: "Ella Train Ride",
+                      caption: "Train Ride to Ella",
                     },
                   ]}
                 />
@@ -406,16 +399,9 @@ export default function EllaTownGuide() {
                       images={[
                         {
                           src: "/Littleadamspeak.jpg",
-                          alt: "Iconic Nine Arch Bridge with train crossing through lush jungle and tea plantations",
-                          caption: "Nine Arch Bridge",
-                          title: "Nine Arch Bridge"
-                        },
-                        {
-                          src: "/Nine-Arch-Bridge12.jpg",
-                          alt: "Iconic Nine Arch Bridge with train crossing through lush jungle and tea plantations",
-                          caption: "Nine Arch Bridge",
-                          title: "Nine Arch Bridge"
-                        },
+                          alt: "Little Adam's Peak with lush tea plantations and panoramic views",
+                          caption: "Little Adam's Peak",
+                        }
 
                       ]}
                     />
@@ -888,7 +874,7 @@ export default function EllaTownGuide() {
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6 items-center">
                     <Image
-                      src="/placeholder.svg?height=300&width=400"
+                      src="/Tea-Picking-Sessions.webp"
                       alt="Tea pickers in traditional dress harvesting tea leaves in Ella&apos;s mountain plantations at sunrise"
                       width={400}
                       height={300}

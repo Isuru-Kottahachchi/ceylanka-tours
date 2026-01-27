@@ -66,9 +66,9 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
         {/* Caption/Title Overlay */}
         {(images[current].caption || images[current].title) && (
           <div className="absolute bottom-4 left-4 right-4 z-20">
-            <div className="text-white text-base md:text-lg font-semibold mb-1 drop-shadow-lg bg-black/20 backdrop-blur-sm rounded px-3 py-1 inline-block">
+            {/* <div className="text-white text-base md:text-lg font-semibold mb-1 drop-shadow-lg bg-black/20 backdrop-blur-sm rounded px-3 py-1 inline-block">
               {images[current].title}
-            </div>
+            </div> */}
             {images[current].caption && (
               <div className="text-white text-xs md:text-sm font-light drop-shadow-lg bg-black/20 backdrop-blur-sm rounded px-3 py-1 inline-block mt-1">
                 {images[current].caption}
