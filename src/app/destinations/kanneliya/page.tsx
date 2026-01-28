@@ -129,7 +129,7 @@ export default function KanneliyaTravelGuide() {
 
         {/* Main Attractions */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Highlights of Kanneliya</h2>
+          <h2 className="text-2xl font-bold mb-6">Highlights of Kanneliya</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Waterfalls */}
             <Card>
@@ -138,34 +138,21 @@ export default function KanneliyaTravelGuide() {
                 <CardDescription>Natural wonders within the forest</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  <Image
-                    src="/kanneliya-falls.jpg"
-                    alt="Beautiful cascading waterfalls in Kanneliya Forest Reserve"
-                    width={600}
-                    height={400}
-                    className="rounded-lg"
-                  />
-                  <p className="text-muted-foreground">
-                    Kanneliya features several spectacular waterfalls, including the famous Narangas Falls and
-                    Anagimale Falls. These pristine cascades, surrounded by lush vegetation, offer perfect spots
-                    for photography and natural relaxation.
-                  </p>
-                  <ul className="space-y-2">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Multiple accessible waterfalls</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Natural swimming pools</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Photography opportunities</span>
-                    </li>
-                  </ul>
-                </div>
+                <Image
+                  src="/Kanneliya-waterfall.jpg"
+                  alt="Beautiful cascading waterfalls in Kanneliya Forest Reserve"
+                  width={400}
+                  height={220}
+                  className="rounded-lg mb-4 w-full object-cover aspect-[4/3]"
+                />
+                <p className="text-muted-foreground mb-2">
+                  Kanneliya features several spectacular waterfalls, including the famous Narangas Falls and
+                  Anagimale Falls. These pristine cascades, surrounded by lush vegetation, offer perfect spots
+                  for photography and natural relaxation. The crystal-clear waters create natural swimming pools where visitors can cool off after a forest hike.
+                </p>
+                <p className="text-muted-foreground">
+                  Multiple accessible waterfalls are scattered throughout the reserve, each offering unique views and experiences. The sound of cascading water combined with the forest ambiance creates a truly magical atmosphere.
+                </p>
               </CardContent>
             </Card>
 
@@ -176,34 +163,21 @@ export default function KanneliyaTravelGuide() {
                 <CardDescription>Endemic species and rare sightings</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  <Image
-                    src="/kanneliya-wildlife.jpg"
-                    alt="Endemic wildlife and lush vegetation in Kanneliya Forest"
-                    width={600}
-                    height={400}
-                    className="rounded-lg"
-                  />
-                  <p className="text-muted-foreground">
-                    The reserve is a haven for wildlife enthusiasts, hosting numerous endemic species. From rare birds
-                    to elusive mammals and vibrant butterflies, Kanneliya offers unique opportunities for wildlife
-                    observation and photography.
-                  </p>
-                  <ul className="space-y-2">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Endemic bird species</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Rare mammals and reptiles</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Diverse butterfly population</span>
-                    </li>
-                  </ul>
-                </div>
+                <Image
+                  src="/kanneliya-wildlife.jpg"
+                  alt="Endemic wildlife and lush vegetation in Kanneliya Forest"
+                  width={400}
+                  height={220}
+                  className="rounded-lg mb-4 w-full object-cover aspect-[4/3]"
+                />
+                <p className="text-muted-foreground mb-2">
+                  The reserve is a haven for wildlife enthusiasts, hosting numerous endemic species. From rare birds
+                  to elusive mammals and vibrant butterflies, Kanneliya offers unique opportunities for wildlife
+                  observation and photography. Over 220 bird species, including many endemic to Sri Lanka, can be spotted throughout the forest.
+                </p>
+                <p className="text-muted-foreground">
+                  The diverse ecosystem supports rare mammals, reptiles, and an incredible variety of butterflies. Early morning visits offer the best chances for wildlife sightings as the forest comes alive with activity.
+                </p>
               </CardContent>
             </Card>
           </div>

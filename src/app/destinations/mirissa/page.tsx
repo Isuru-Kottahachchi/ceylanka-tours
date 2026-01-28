@@ -155,7 +155,7 @@ export default function MirissaTravelGuide() {
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo</li>
-                      <li>• <strong>Duration:</strong> 2.5-3.5 hours</li>                     
+                      <li>• <strong>Duration:</strong> 2.5-3.5 hours</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
@@ -449,14 +449,7 @@ export default function MirissaTravelGuide() {
                       {
                         src: "/Parrot-Rock.jpg",
                         alt: "Mirissa Beach with golden sand",
-                        caption: "Relaxing at Mirissa Beach",
-                        title: "Mirissa Beach",
-                      },
-                      {
-                        src: "/mirissa-beach-2.jpg",
-                        alt: "Mirissa Beach with palm trees",
-                        caption: "Palm trees at Mirissa Beach",
-                        title: "Mirissa Beach",
+                        caption: "Parrot Rock at Mirissa Beach",
                       },
                     ]}
                   />
@@ -545,12 +538,6 @@ export default function MirissaTravelGuide() {
                         src: "/Secret-beach.jpeg",
                         alt: "Secret Beach with pristine sand",
                         caption: "Secluded Secret Beach",
-                        title: "Secret Beach",
-                      },
-                      {
-                        src: "/secret-beach-2.jpg",
-                        alt: "Secret Beach with tide pools",
-                        caption: "Tide pools at Secret Beach",
                         title: "Secret Beach",
                       },
                     ]}
@@ -810,7 +797,7 @@ export default function MirissaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  45 km from Nuwara Eliya
+                  34 km from Mirissa
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/hirikatiya" passHref legacyBehavior>

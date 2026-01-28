@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { ImageCarousel } from "@/components/ui/image-carousel"
+import { Button } from "@/components/ui/button";
 
 
 export default function BlueBeachGuide() {
@@ -359,6 +360,130 @@ export default function BlueBeachGuide() {
             </CardContent>
           </Card>
         </section>
+        {/* Nearby Places to Visit */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Blue Beach visit with these incredible southern coast destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/HummanayaBlowhole.jpeg"
+                  alt="Hummanaya Blowhole spraying water high above the rocky coast"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  10 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Hummanaya Blowhole</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sri Lanka's only blowhole and the second largest in Asia, shooting water up to 25 meters high with a thunderous roar.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  5 km from Nilwella Blue Beach
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hummanaya-blowhole" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Hirikatiya-Horseshoe.jpg"
+                  alt="Hiriketiya Beach perfect horseshoe bay with surfers"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  15 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Hiriketiya Beach</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A perfect horseshoe-shaped bay known for surfing, cafes, and a vibrant backpacker scene with consistent waves.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  10 km from Nilwella Blue Beach
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/hirikatiya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/Mirissa-Coco-Hill.jpeg"
+                  alt="Mirissa Beach with iconic coconut hill and turquoise waters"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  25 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Mirissa Beach</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sri Lanka's premier whale watching destination with beautiful beaches, coconut hill, and vibrant nightlife scene.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  18 km from Nilwella Blue Beach
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mirissa" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/galle-fort-sarmat-batagov-unsplash.jpg"
+                  alt="Galle Fort colonial architecture with ocean waves"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  45 mins
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Galle Fort</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  UNESCO World Heritage Site featuring well-preserved Dutch colonial architecture, museums, lighthouse, and charming cafes.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  35 km from Nilwella Blue Beach
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/galle-fort" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+          </div>
+          </section>  
 
         {/* Final Inspiration */}
         <section className="mb-12">
