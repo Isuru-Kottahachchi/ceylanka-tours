@@ -780,7 +780,7 @@ export default function MannarGuide() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+            {/* <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
                   src="/Sigiriya.jpeg"
@@ -807,7 +807,7 @@ export default function MannarGuide() {
                   </Link>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
@@ -855,7 +855,7 @@ export default function MannarGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  30 km from Dambulla Cave Temple
+                  30 km from Mannar
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/minneriya-national-park" passHref legacyBehavior>

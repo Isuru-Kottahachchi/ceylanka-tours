@@ -250,8 +250,8 @@ const famousTrails = [
     name: "Devil's Staircase (Ohiya to Bambarakanda)",
     images: [
       { src: "/DevilsStaircase.jpeg", alt: "Devil's Staircase Trail", title: "Devil's Staircase Trail" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Railway Track Hiking", title: "Railway Track Hiking" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Mountain Wilderness", title: "Mountain Wilderness" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Devil's Staircase Trail", title: "Railway Track Hiking" },
+      { src: "/placeholder.svg?height=400&width=600", alt: "Devil's Staircase Trail", title: "Mountain Wilderness" },
     ],
     location: "Ohiya, Badulla District, Uva Province",
     difficulty: "Challenging",
