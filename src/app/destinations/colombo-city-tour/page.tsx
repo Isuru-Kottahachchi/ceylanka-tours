@@ -622,15 +622,19 @@ export default function ColomboTourGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/placeholder.svg", caption: "Independence Memorial Hall exterior",
+                        src: "/Independence-Memorial-Hall.jpg", caption: "Independence Memorial Hall illuminated at night",
                         alt: ""
                       },
                       {
-                        src: "/placeholder.svg", caption: "Independence Square illuminated at night",
+                        src: "/Independence-Memorial-Hall1.jpg", caption: "",
                         alt: ""
                       },
                       {
-                        src: "/placeholder.svg", caption: "Park area around Independence Memorial Hall",
+                        src: "/Independence-Memorial-Hall2.jpg", caption: "",
+                        alt: ""
+                      },
+                       {
+                        src: "/Independence-Memorial-Hall3.jpg", caption: "",
                         alt: ""
                       }
                     ]}
@@ -745,7 +749,7 @@ export default function ColomboTourGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg"
+                  src="/Kalaniya-temple.jpg"
                   alt="Kelaniya Raja Maha Vihara Buddhist temple with sacred stupa and ancient architecture"
                   fill
                   className="object-cover rounded-t-lg"
