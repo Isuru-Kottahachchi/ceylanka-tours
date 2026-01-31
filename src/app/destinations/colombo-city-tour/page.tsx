@@ -560,15 +560,15 @@ export default function ColomboTourGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Portcitycolombo.jpg", caption: "Port City Colombo with modern skyscrapers",
+                        src: "/Portcitycolombo.jpg", caption: "",
                         alt: ""
                       },
                       {
-                        src: "/Portcitycolombo1.jpg", caption: "Port City Colombo with modern skyscrapers",
+                        src: "/Portcitycolombo1.jpg", caption: "",
                         alt: ""
                       },
                       {
-                        src: "/Portcitycolombo2.jpg", caption: "Marina and waterfront at Port City Colombo",
+                        src: "/Portcitycolombo2.jpg", caption: "",
                         alt: ""
                       }
                     ]}
