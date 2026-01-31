@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ImageCarousel } from "@/components/ui/image-carousel"
+import InsuranceBanner from "@/components/insurance-banner"
 
 
 
@@ -65,85 +66,157 @@ export default function ColomboTourGuide() {
           </div>
         </section>
 
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Quick Colombo Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-blue-500" />
-                    <span>
-                      <strong>Population:</strong> 5.6 million (Greater Colombo)
-                    </span>
+        {/* Quick Facts & How to Get There side by side */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-12">
+          {/* Colombo Quick Facts (left) */}
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Colombo Quick Facts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4 text-blue-500" />
+                      <span>
+                        <strong>Population:</strong> 5.6 million (Greater Colombo)
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Building className="w-4 h-4 text-green-500" />
+                      <span>
+                        <strong>Founded:</strong> Ancient trading port, colonial era
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4 text-orange-500" />
+                      <span>
+                        <strong>Best Time:</strong> December to March
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Building className="w-4 h-4 text-green-500" />
-                    <span>
-                      <strong>Founded:</strong> Ancient trading port, colonial era
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-orange-500" />
-                    <span>
-                      <strong>Best Time:</strong> December to March
-                    </span>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <ShoppingBag className="w-4 h-4 text-purple-500" />
+                      <span>
+                        <strong>Famous for:</strong> Shopping, Dining, Culture
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Camera className="w-4 h-4 text-red-500" />
+                      <span>
+                        <strong>Must-See:</strong> Galle Face Green, Fort District
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-teal-500" />
+                      <span>
+                        <strong>Ideal Duration:</strong> 2-3 days
+                      </span>
+                    </div>
                   </div>
                 </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <ShoppingBag className="w-4 h-4 text-purple-500" />
-                    <span>
-                      <strong>Famous for:</strong> Shopping, Dining, Culture
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Camera className="w-4 h-4 text-red-500" />
-                    <span>
-                      <strong>Must-See:</strong> Galle Face Green, Fort District
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-teal-500" />
-                    <span>
-                      <strong>Ideal Duration:</strong> 2-3 days
-                    </span>
+              </CardContent>
+            </Card>
+            <InsuranceBanner />
+          </section>
+
+          {/* How to Get to Colombo (right) */}
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5 text-blue-500" />
+                  How to Get Around Colombo
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <div>
+                  <h4 className="font-semibold mb-1 text-foreground">From Airport (Recommended)</h4>
+                  <ul className="text-sm text-muted-foreground space-y-0.5">
+                    <li>• Private transfer: 45-60 mins, $25-40 USD</li>
+                    <li>• Airport Express Highway route</li>
+                    <li>• Most comfortable option</li>
+                  </ul>
+
+                  {/* Ceylanka Tours Recommendation */}
+                  <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
+                    <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                      <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> offers reliable airport transfers and city tours with experienced drivers who know Colombo inside out.
+                    </p>
+                    <div className="flex flex-col gap-1.5 text-xs text-orange-800 dark:text-orange-200">
+                      <div className="flex items-center gap-2 py-1.5 px-2 bg-white/50 dark:bg-slate-600/50 rounded">
+                        <span>📞</span>
+                        <span><strong>Call:</strong></span>
+                        <a href="tel:+94707646765" className="underline hover:text-orange-700 dark:hover:text-orange-300">
+                          <span className="hidden sm:inline">+94 70 764 6765</span>
+                          <span className="sm:hidden">+94707646765</span>
+                        </a>
+                        <span>|</span>
+                        <a href="https://wa.me/94707646765" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-700 dark:hover:text-orange-300 flex items-center gap-1">
+                          <svg className="w-4 h-4" fill="#25D366" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                          </svg>
+                          WhatsApp
+                        </a>
+                      </div>
+                      <div className="flex items-center gap-2 py-1.5 px-2 bg-white/50 dark:bg-slate-600/50 rounded hover:bg-white/70 dark:hover:bg-slate-600/70 transition-colors">
+                        <span>🗓️</span>
+                        <Link href="/tours/colombo-city-tour" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                          <strong>Colombo City Tour</strong> - Click for details & booking
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+                <div>
+                  <h4 className="font-semibold mb-1 text-foreground">Three-Wheeler (Tuk-Tuk)</h4>
+                  <ul className="text-sm text-muted-foreground space-y-0.5">
+                    <li>• Quick and affordable city transport</li>
+                    <li>• Negotiate fare before riding</li>
+                    <li>• Typical ride: $2-5 USD</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1 text-foreground">Ride-Hailing Apps</h4>
+                  <ul className="text-sm text-muted-foreground space-y-0.5">
+                    <li>• PickMe, Uber available</li>
+                    <li>• Fixed prices, cashless payment</li>
+                  </ul>
+                </div>
+                <div className="mt-3 p-2 bg-orange-100 dark:bg-slate-700 rounded border-l-4 border-orange-500 dark:border-orange-400">
+                  <p className="text-xs text-orange-800 dark:text-orange-200">
+                    <strong>🌟 Tip:</strong> Traffic is heavy 7-9 AM and 5-7 PM. Plan accordingly and allow extra time.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
 
         {/* Historic Districts */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Historic Districts & Colonial Heritage</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
-            
-                <ImageCarousel
-                  images={[
-                    {
-                      src: "/placeholder.svg", caption: "Independence Memorial Hall exterior",
-                      alt: ""
-                    },
-                    {
-                      src: "/placeholder.svg", caption: "Independence Square illuminated at night",
-                      alt: ""
-                    }
-                  ]}
 
-                />
-            
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                The Fort district showcases Colombo&apos;s rich colonial architectural heritage
-              </p>
+              <ImageCarousel
+                images={[
+                  {
+                    src: "/Cargills-York-Street.jpg", caption: "Independence Memorial Hall exterior",
+                    alt: ""
+                  },
+                  {
+                    src: "/placeholder.svg", caption: "Independence Square illuminated at night",
+                    alt: ""
+                  }
+                ]}
+
+              />
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
@@ -234,10 +307,87 @@ export default function ColomboTourGuide() {
               </CardContent>
             </Card>
 
+            {/* Lotus Tower */}
+            <Card>
+              <CardHeader>
+                <CardTitle>2. Nelum Kuluna (Lotus Tower)</CardTitle>
+                <CardDescription>South Asia&apos;s tallest tower with amazing city views</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Standing at 356 meters tall, Lotus Tower is the tallest building in Sri Lanka and all of South Asia.
+                      This massive structure opened in 2019 and gets its name from its lotus flower design. You can see it
+                      from almost anywhere in Colombo because it towers over everything else in the city.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      The tower has several observation decks where you can go up and see the entire city spread out below you.
+                      On a clear day, you can see the ocean, Port City, and all the way across Colombo. There&apos;s also a
+                      revolving restaurant at the top where you can eat while the floor slowly turns, giving you views in all
+                      directions. The tower lights up at night in different colors, making it a beautiful landmark to see from
+                      anywhere in the city.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Tallest tower in South Asia at 356 meters
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Multiple observation decks with 360-degree views
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Revolving restaurant serving food with a view
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Beautiful night lighting visible across the city
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Gift shop and exhibition areas inside
+                      </li>
+                    </ul>
+                    <div className="mt-6">
+                      <Link href="/destinations/lotus-tower">
+                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                          Explore More →
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Lotus-Tower.jpg", caption: "Lotus Tower at night with colorful illumination",
+                        alt: ""
+                      },
+                      {
+                        src: "/Lotus-Tower1.webp", caption: "Lotus Tower",
+                        alt: ""
+                      },
+                      {
+                        src: "/Lotus-Tower2.jpg", caption: "Lotus Tower illuminated at night",
+                        alt: ""
+                      },
+                      {
+                        src: "/Lotus-Tower3.jpeg", caption: "View from the observation deck of Lotus Tower",
+                        alt: ""
+                      },
+                    ]}
+                  />
+
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Gangarama Temple */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Gangarama Temple</CardTitle>
+                <CardTitle>3. Gangarama Temple</CardTitle>
                 <CardDescription>Iconic Buddhist temple and cultural center</CardDescription>
               </CardHeader>
               <CardContent>
@@ -324,132 +474,10 @@ export default function ColomboTourGuide() {
               </CardContent>
             </Card>
 
-            {/* Pettah Market */}
-            <Card>
-              <CardHeader>
-                <CardTitle>3. Pettah Floating Market & Bazaar</CardTitle>
-                <CardDescription>Vibrant traditional market experience</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Pettah is Colombo&apos;s bustling commercial heart, a maze of narrow streets filled with shops,
-                      markets, and vendors selling everything from spices and textiles to electronics and jewelry. The
-                      floating market on Beira Lake adds a unique dimension to this traditional shopping experience.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Authentic Sri Lankan spices and tea
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Traditional textiles and handicrafts
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Floating market on Beira Lake
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Bargaining culture and local interaction
-                      </li>
-                    </ul>
-                    <div className="mt-6">
-                      <Link href="/destinations/pettah">
-                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
-                          Explore More →
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-
-                  <ImageCarousel
-                    images={[
-                      {
-                        src: "/placeholder.svg", caption: "Pettah market with vendors and spices",
-                        alt: ""
-                      },
-                      {
-                        src: "/placeholder.svg", caption: "Floating market on Beira Lake, Pettah",
-                        alt: ""
-                      }
-                    ]}
-
-                  />
-
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Independence Square */}
-            <Card>
-              <CardHeader>
-                <CardTitle>4. Independence Memorial Hall</CardTitle>
-                <CardDescription>National monument and architectural masterpiece</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-
-                  <ImageCarousel
-                    images={[
-                      {
-                        src: "/placeholder.svg", caption: "Independence Memorial Hall exterior",
-                        alt: ""
-                      },
-                      {
-                        src: "/placeholder.svg", caption: "Independence Square illuminated at night",
-                        alt: ""
-                      },
-                      {
-                        src: "/placeholder.svg", caption: "Park area around Independence Memorial Hall",
-                        alt: ""
-                      }
-                    ]}
-
-                  />
-
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Built to commemorate Sri Lanka&apos;s independence from British rule in 1948, this magnificent monument
-                      combines traditional Kandyan architecture with modern design. The surrounding Independence Square
-                      is a popular spot for locals and tourists alike.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Beautiful Kandyan-style architecture
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Museum showcasing independence history
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Peaceful park for walking and relaxation
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Popular jogging and exercise area
-                      </li>
-                    </ul>
-                    <div className="mt-6">
-                      <Link href="/destinations/independence-square">
-                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
-                          Explore More →
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
             {/* Red Mosque */}
             <Card>
               <CardHeader>
-                <CardTitle>5. Red Mosque (Jami Ul-Alfar Mosque)</CardTitle>
+                <CardTitle>4. Red Mosque (Jami Ul-Alfar Mosque)</CardTitle>
                 <CardDescription>Stunning Indo-Saracenic architecture</CardDescription>
               </CardHeader>
               <CardContent>
@@ -520,11 +548,10 @@ export default function ColomboTourGuide() {
                 </div>
               </CardContent>
             </Card>
-
             {/* Port City Colombo */}
             <Card>
               <CardHeader>
-                <CardTitle>6. Port City Colombo</CardTitle>
+                <CardTitle>5. Port City Colombo</CardTitle>
                 <CardDescription>Sri Lanka&apos;s newest urban development marvel</CardDescription>
               </CardHeader>
               <CardContent>
@@ -532,7 +559,7 @@ export default function ColomboTourGuide() {
 
                   <ImageCarousel
                     images={[
-                       {
+                      {
                         src: "/Portcitycolombo.jpg", caption: "Port City Colombo with modern skyscrapers",
                         alt: ""
                       },
@@ -583,146 +610,312 @@ export default function ColomboTourGuide() {
                 </div>
               </CardContent>
             </Card>
+                      {/* Independence Square */}
+            <Card>
+              <CardHeader>
+                <CardTitle>6. Independence Memorial Hall</CardTitle>
+                <CardDescription>National monument and architectural masterpiece</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/placeholder.svg", caption: "Independence Memorial Hall exterior",
+                        alt: ""
+                      },
+                      {
+                        src: "/placeholder.svg", caption: "Independence Square illuminated at night",
+                        alt: ""
+                      },
+                      {
+                        src: "/placeholder.svg", caption: "Park area around Independence Memorial Hall",
+                        alt: ""
+                      }
+                    ]}
+
+                  />
+
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Built to commemorate Sri Lanka&apos;s independence from British rule in 1948, this magnificent monument
+                      combines traditional Kandyan architecture with modern design. The surrounding Independence Square
+                      is a popular spot for locals and tourists alike.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Beautiful Kandyan-style architecture
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Museum showcasing independence history
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Peaceful park for walking and relaxation
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Popular jogging and exercise area
+                      </li>
+                    </ul>
+                    <div className="mt-6">
+                      <Link href="/destinations/independence-square">
+                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                          Explore More →
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            {/* Pettah Market */}
+            <Card>
+              <CardHeader>
+                <CardTitle>7. Pettah Floating Market & Bazaar</CardTitle>
+                <CardDescription>Vibrant traditional market experience</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Pettah is Colombo&apos;s bustling commercial heart, a maze of narrow streets filled with shops,
+                      markets, and vendors selling everything from spices and textiles to electronics and jewelry. The
+                      floating market on Beira Lake adds a unique dimension to this traditional shopping experience.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Authentic Sri Lankan spices and tea
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Traditional textiles and handicrafts
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Floating market on Beira Lake
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Bargaining culture and local interaction
+                      </li>
+                    </ul>
+                    <div className="mt-6">
+                      <Link href="/destinations/pettah">
+                        <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
+                          Explore More →
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/placeholder.svg", caption: "Pettah market with vendors and spices",
+                        alt: ""
+                      },
+                      {
+                        src: "/placeholder.svg", caption: "Floating market on Beira Lake, Pettah",
+                        alt: ""
+                      }
+                    ]}
+
+                  />
+
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
-        {/* Modern Colombo */}
+        {/* What Else to See Nearby */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Modern Colombo: Shopping & Entertainment</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Port City Colombo</CardTitle>
-                <CardDescription>Ultra-modern waterfront development</CardDescription>
-              </CardHeader>
-              <CardContent>
+          <h2 className="text-3xl font-bold mb-6">What Else to See Nearby</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Colombo adventure with these incredible destinations within easy reach
+          </p>
 
-                <ImageCarousel
-                  images={[
-                    {
-                      src: "/placeholder.svg", caption: "Port City Colombo futuristic skyline",
-                      alt: ""
-                    },
-                    {
-                      src: "/placeholder.svg", caption: "Port City Colombo at night",
-                      alt: ""
-                    }
-                  ]}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg"
+                  alt="Kelaniya Raja Maha Vihara Buddhist temple with sacred stupa and ancient architecture"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-
-                <p className="text-sm text-muted-foreground">
-                  Sri Lanka&apos;s newest and most ambitious development featuring luxury residences, shopping, business districts, and world-class marina facilities.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  25 mins from Colombo
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Kelaniya Raja Maha Vihara</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sacred Buddhist temple where Buddha visited over 2,500 years ago, featuring stunning wall paintings and the spectacular Duruthu Perahera festival.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  11 km from Colombo
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/kalaniya-rajamaha-viharaya" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">One Galle Face Mall</CardTitle>
-                <CardDescription>Luxury shopping destination</CardDescription>
-              </CardHeader>
-              <CardContent>
-
-                <ImageCarousel
-                  images={[
-                    {
-                      src: "/placeholder.svg", caption: "One Galle Face Mall exterior",
-                      alt: ""
-                    },
-                    {
-                      src: "/placeholder.svg", caption: "Interior of One Galle Face Mall",
-                      alt: ""
-                    }
-                  ]}
-
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg"
+                  alt="One Galle Face Mall luxury shopping center with modern architecture"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-
-                <p className="text-sm text-muted-foreground">
-                  Premium shopping mall with international brands, fine dining, and entertainment options.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  10 mins from Fort
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">One Galle Face Mall</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Premium shopping mall with international brands, fine dining restaurants, and entertainment options overlooking the ocean.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  3 km from Colombo Fort
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/one-galle-face" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Colombo City Centre</CardTitle>
-                <CardDescription>Modern mixed-use development</CardDescription>
-              </CardHeader>
-              <CardContent>
-
-                <ImageCarousel
-                  images={[
-                    {
-                      src: "/placeholder.svg", caption: "Colombo City Centre exterior",
-                      alt: ""
-                    },
-                    {
-                      src: "/placeholder.svg", caption: "Shops inside Colombo City Centre",
-                      alt: ""
-                    }
-                  ]}
-
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg"
+                  alt="Colombo City Centre modern shopping complex with contemporary design"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-
-                <p className="text-sm text-muted-foreground">
-                  Contemporary shopping, dining, and residential complex in the heart of the city.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  15 mins from Fort
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Colombo City Centre</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Contemporary mixed-use development with shopping, dining, residential spaces and rooftop attractions in the heart of the city.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  5 km from Colombo Fort
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/colombo-city-centre" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Arcade Independence Square</CardTitle>
-                <CardDescription>Historic shopping arcade</CardDescription>
-              </CardHeader>
-              <CardContent>
-
-                <ImageCarousel
-                  images={[
-                    {
-                      src: "/placeholder.svg", caption: "Arcade Independence Square exterior",
-                      alt: ""
-                    },
-                    {
-                      src: "/placeholder.svg", caption: "Shops at Arcade Independence Square",
-                      alt: ""
-                    }
-                  ]}
-
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg"
+                  alt="Arcade Independence Square historic colonial building with boutique shops"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-
-                <p className="text-sm text-muted-foreground">
-                  Beautifully restored colonial building housing boutique shops and restaurants.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  15 mins from Fort
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Race Course</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Race Course is a beautifully restored colonial-era building that now houses boutique shops, cafes, and art galleries, offering a charming shopping experience.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  6 km from Colombo Fort
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/arcade-independence-square" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Kalaniya Rajamaha Viharaya</CardTitle>
-                <CardDescription>Historic Buddhist temple</CardDescription>
-              </CardHeader>
-              <CardContent>
 
-                <ImageCarousel
-                  images={[
-                    {
-                      src: "/placeholder.svg", caption: "Arcade Independence Square exterior",
-                      alt: ""
-                    },
-                    {
-                      src: "/placeholder.svg", caption: "Shops at Arcade Independence Square",
-                      alt: ""
-                    }
-                  ]}
-
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg"
+                  alt="Mount Lavinia Beach with golden sand and colonial hotel"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-
-                <p className="text-sm text-muted-foreground">
-                  Beautifully restored colonial building housing boutique shops and restaurants.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  30 mins from Colombo
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Mount Lavinia Beach</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Popular beach destination with golden sand, historic Mount Lavinia Hotel, and stunning sunset views over the Indian Ocean.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  12 km from Colombo
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/mount-lavinia" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
+                <Image
+                  src="/placeholder.svg"
+                  alt="National Museum Colombo displaying Sri Lankan cultural artifacts"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  15 mins from Fort
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">National Museum of Colombo</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Sri Lanka&apos;s largest museum showcasing ancient royal artifacts, traditional masks, colonial-era exhibits and cultural treasures.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  7 km from Colombo Fort
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/national-museum" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
           </div>
         </section>
 
