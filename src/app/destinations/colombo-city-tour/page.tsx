@@ -262,7 +262,7 @@ export default function ColomboTourGuide() {
                       {
                         src: "/Galle-face.jpg", caption: "Galle Face Green with families and city skyline",
                         alt: ""
-                      },                   
+                      },
                       {
                         src: "/Galle-Face-Hotel.webp", caption: "Galle Face Hotel",
                         alt: ""
@@ -631,10 +631,182 @@ export default function ColomboTourGuide() {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Race Course */}
+            <Card>
+              <CardHeader>
+                <CardTitle>5. Colombo Race Course</CardTitle>
+                <CardDescription>Historic racing venue and open green space in the city heart</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Colombo Race Course has been the center of horse racing in Sri Lanka since 1893. This large open ground sits right in the middle of the city, offering a peaceful green space where people gather for races, sporting events, and celebrations. The racing track is still active today, hosting exciting horse races that attract locals and visitors.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      On race days, you will see elegant horses galloping around the track while spectators cheer from the grandstands. Even when there are no races, the area is a popular spot for morning walks and evening strolls. The Race Course area also includes beautiful colonial buildings and is close to Independence Square.
+                    </p>
+
+                    <div className="my-4 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900/60 border-l-4 border-yellow-400 dark:border-yellow-500">
+                      <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-1">Did you know?</h4>
+                      <p className="text-sm text-gray-800 dark:text-yellow-100">
+                        The Colombo Race Course was originally a golf course before it became a racing venue in 1893. During World War II, the British military used this area as a temporary camp. Today, the Race Course also serves as a venue for major public celebrations including Independence Day parades and religious festivals, making it an important gathering place for the nation.
+                      </p>
+                    </div>
+
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Large open green space in the city center
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Colonial-era grandstands and buildings
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Popular for morning walks and jogging
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Venue for national celebrations and events
+                      </li>
+                    </ul>
+                  </div>
+
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Colombo-Race-Course-Ground.jpg",
+                        caption: "Colombo Race Course with horses and track",
+                        alt: ""
+                      },
+                       {
+                        src: "/Colombo-Race-Course-Ground1.jpg",
+                        caption: "Race day at Colombo Race Course",
+                        alt: ""
+                      },
+                      {
+                        src: "/Colombo-Race-Course-Ground2.jpg",
+                        caption: "Race day at Colombo Race Course",
+                        alt: ""
+                      },
+                      {
+                        src: "/Colombo-Race-Course-Ground3.jpg",
+                        caption: "Race day at Colombo Race Course",
+                        alt: ""
+                      },
+                      {
+                        src: "/Colombo-Race-Course-Ground4.jpg",
+                        caption: "Race day at Colombo Race Course",
+                        alt: ""
+                      },
+                      {
+                        src: "/Colombo-Race-Course-Ground5.jpg",
+                        caption: "Race day at Colombo Race Course",
+                        alt: ""
+                      },
+                    ]}
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* National Museum */}
+            <Card>
+              <CardHeader>
+                <CardTitle>6. National Museum of Colombo</CardTitle>
+                <CardDescription>Sri Lanka&apos;s treasure house of history and culture</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Colombo-National-Museum.webp",
+                        caption: "National Museum building exterior",
+                        alt: ""
+                      },
+                      {
+                        src: "/Colombo-National-Museum1.webp",
+                        caption: "National Museum building exterior",
+                        alt: ""
+                      },
+                      {
+                        src: "/Colombo-National-Museum2.jpg",
+                        caption: "National Museum building exterior",
+                        alt: ""
+                      },
+                      {
+                        src: "/Colombo-National-Museum3.webp",
+                        caption: "National Museum building exterior",
+                        alt: ""
+                      },
+                      {
+                        src: "/Colombo-National-Museum4.jpg",
+                        caption: "National Museum building exterior",
+                        alt: ""
+                      },
+                      {
+                        src: "/Colombo-National-Museum5.jpg",
+                        caption: "National Museum building exterior",
+                        alt: ""
+                      },
+                      {
+                        src: "/Colombo-National-Museum6.jpg",
+                        caption: "National Museum building exterior",
+                        alt: ""
+                      },
+                    ]}
+                  />
+
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      The National Museum opened in 1877 and is the largest museum in Sri Lanka. This beautiful white colonial building houses thousands of objects that tell the story of Sri Lanka from ancient times to today. You will see the crown jewels of Kandyan kings, ancient stone carvings, traditional masks, old weapons, and beautiful paintings.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      Walking through the museum is like traveling back in time. Each room shows a different period of Sri Lankan history. You can see how people lived hundreds of years ago, what they wore, what tools they used, and how they created art. The museum also has a natural history section with stuffed animals and information about Sri Lanka&apos;s wildlife.
+                    </p>
+
+                    <div className="my-4 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900/60 border-l-4 border-yellow-400 dark:border-yellow-500">
+                      <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-1">Did you know?</h4>
+                      <p className="text-sm text-gray-800 dark:text-yellow-100">
+                        The National Museum building itself is a work of art designed by a British architect during colonial times. One of the most precious items inside is the throne and crown of the last King of Kandy, which the British captured in 1815. The museum also contains ancient palm leaf manuscripts that are over 1,000 years old, written in Sinhala and Pali languages, containing Buddhist teachings and historical records.
+                      </p>
+                    </div>
+
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Royal regalia of Kandyan kings
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Ancient stone sculptures and carvings
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Traditional masks and folk art
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Colonial-era artifacts and documents
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Natural history section with wildlife displays
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Independence Square */}
             <Card>
               <CardHeader>
-                <CardTitle>6. Independence Memorial Hall</CardTitle>
+                <CardTitle>7. Independence Memorial Hall</CardTitle>
                 <CardDescription>National monument and architectural masterpiece</CardDescription>
               </CardHeader>
               <CardContent>
@@ -700,7 +872,7 @@ export default function ColomboTourGuide() {
             {/* Pettah Market */}
             <Card>
               <CardHeader>
-                <CardTitle>7. Pettah Floating Market & Bazaar</CardTitle>
+                <CardTitle>8. Pettah Floating Market & Bazaar</CardTitle>
                 <CardDescription>Vibrant traditional market experience</CardDescription>
               </CardHeader>
               <CardContent>
@@ -818,9 +990,9 @@ export default function ColomboTourGuide() {
                   3 km from Colombo Fort
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/https://onegalleface.com/" passHref legacyBehavior>
+                  <a href="https://onegalleface.com/" target="_blank" rel="noopener noreferrer">
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -828,7 +1000,7 @@ export default function ColomboTourGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg"
+                  src="/Colombo-City-Center.webp"
                   alt="Colombo City Centre modern shopping complex with contemporary design"
                   fill
                   className="object-cover rounded-t-lg"
@@ -847,41 +1019,13 @@ export default function ColomboTourGuide() {
                   5 km from Colombo Fort
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/https://www.colombocitycentre.lk/" passHref legacyBehavior>
+                  <a href="https://www.colombocitycentre.lk/" target="_blank" rel="noopener noreferrer">
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
+                  </a>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative h-48">
-                <Image
-                  src="/placeholder.svg"
-                  alt="Arcade Independence Square historic colonial building with boutique shops"
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  15 mins from Fort
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Race Course</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Race Course is a beautifully restored colonial-era building that now houses boutique shops, cafes, and art galleries, offering a charming shopping experience.
-                </p>
-                <div className="flex items-center text-xs text-blue-600 mb-2">
-                  <MapPin className="w-3 h-3 mr-1" />
-                  6 km from Colombo Fort
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/arcade-independence-square" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
 
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
@@ -906,35 +1050,6 @@ export default function ColomboTourGuide() {
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/mount-lavinia" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative h-48">
-                <Image
-                  src="/placeholder.svg"
-                  alt="National Museum Colombo displaying Sri Lankan cultural artifacts"
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  15 mins from Fort
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">National Museum of Colombo</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Sri Lanka&apos;s largest museum showcasing ancient royal artifacts, traditional masks, colonial-era exhibits and cultural treasures.
-                </p>
-                <div className="flex items-center text-xs text-blue-600 mb-2">
-                  <MapPin className="w-3 h-3 mr-1" />
-                  7 km from Colombo Fort
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/national-museum" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
