@@ -115,7 +115,7 @@ export default function ColomboTourGuide() {
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-teal-500" />
                       <span>
-                        <strong>Ideal Duration:</strong> 2-3 days
+                        <strong>Ideal Duration:</strong> 1-2 days
                       </span>
                     </div>
                   </div>
@@ -262,11 +262,19 @@ export default function ColomboTourGuide() {
                       {
                         src: "/Galle-face.jpg", caption: "Galle Face Green with families and city skyline",
                         alt: ""
+                      },                   
+                      {
+                        src: "/Galle-Face-Hotel.webp", caption: "Galle Face Hotel",
+                        alt: ""
                       },
                       {
-                        src: "/placeholder.svg", caption: "Sunset at Galle Face Green promenade",
+                        src: "/Galle-Face-Hotel1.jpg", caption: "",
                         alt: ""
-                      }
+                      },
+                      {
+                        src: "/Galle-Face-Hotel2.jpg", caption: "",
+                        alt: ""
+                      },
                     ]}
 
                   />
@@ -277,6 +285,15 @@ export default function ColomboTourGuide() {
                       created by the British in 1859, Galle Face Green serves as the city&apos;s social hub where families
                       gather, children play, and visitors enjoy spectacular sunsets over the Indian Ocean.
                     </p>
+
+                    <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">Galle Face Hotel (Since 1864) - A Colonial Gem</h4>
+                      <p className="text-sm text-amber-700 dark:text-amber-300">
+                        Standing proudly at the southern end of Galle Face Green since 1864, the Galle Face Hotel is one of the oldest hotels in Asia. This grand colonial building has hosted royalty, celebrities, and world leaders for over 160 years. Built during British colonial rule, the hotel preserves its Victorian charm with elegant verandas where guests can enjoy afternoon tea while watching the sunset. <br />
+                        The hotel&apos;s rich history includes visits from Queen Elizabeth II, Che Guevara, Yuri Gagarin and many other famous personalities, making it a living monument to Sri Lanka&apos;s colonial past and modern hospitality.
+                      </p>
+                    </div>
+
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -284,7 +301,7 @@ export default function ColomboTourGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Street food vendors selling local snacks
+                        Street food vendors selling local snacks, you can try kottu, isso vade but please eat at your own risk
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -292,16 +309,20 @@ export default function ColomboTourGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Historic Galle Face Hotel nearby
+                        Historic Galle Face Hotel - oldest hotel in Asia (since 1864)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Popular spot for photography and family gatherings
                       </li>
                     </ul>
-                    <div className="mt-6">
+                    {/* <div className="mt-6">
                       <Link href="/destinations/galle-face-green">
                         <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
                           Explore More →
                         </Button>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </CardContent>
@@ -432,15 +453,15 @@ export default function ColomboTourGuide() {
                         alt: ""
                       },
                       {
-                        src: "/Gangaramaya4.jpg", caption: "Gangarama Temple illuminated at night",
+                        src: "/Gangaramaya4.jpg", caption: "",
                         alt: ""
                       },
                       {
-                        src: "/Gangaramaya-temple3.jpg", caption: "Gangarama Temple illuminated at night",
+                        src: "/Gangaramaya-temple3.jpg", caption: "",
                         alt: ""
                       },
                       {
-                        src: "/Gangaramaya-temple4.jpg", caption: "Gangarama Temple illuminated at night",
+                        src: "/Gangaramaya-temple4.jpg", caption: "",
                         alt: ""
                       },
                       {
@@ -448,23 +469,23 @@ export default function ColomboTourGuide() {
                         alt: ""
                       },
                       {
-                        src: "/Gangaramaya1.jpg", caption: "Gangarama Temple illuminated at night",
+                        src: "/Gangaramaya1.jpg", caption: "",
                         alt: ""
                       },
                       {
-                        src: "/Gangaramaya8.jpg", caption: "Gangarama Temple illuminated at night",
+                        src: "/Gangaramaya8.jpg", caption: "",
                         alt: ""
                       },
                       {
-                        src: "/Gangaramaya7.jpg", caption: "Gangarama Temple illuminated at night",
+                        src: "/Gangaramaya7.jpg", caption: "",
                         alt: ""
                       },
                       {
-                        src: "/Gangaramaya2.jpg", caption: "Gangarama Temple illuminated at night",
+                        src: "/Gangaramaya2.jpg", caption: "t",
                         alt: ""
                       },
                       {
-                        src: "/Gangaramaya6.jpg", caption: "Gangarama Temple illuminated at night",
+                        src: "/Gangaramaya6.jpg", caption: "",
                         alt: ""
                       },
                     ]}
@@ -610,7 +631,7 @@ export default function ColomboTourGuide() {
                 </div>
               </CardContent>
             </Card>
-                      {/* Independence Square */}
+            {/* Independence Square */}
             <Card>
               <CardHeader>
                 <CardTitle>6. Independence Memorial Hall</CardTitle>
@@ -633,7 +654,7 @@ export default function ColomboTourGuide() {
                         src: "/Independence-Memorial-Hall2.jpg", caption: "",
                         alt: ""
                       },
-                       {
+                      {
                         src: "/Independence-Memorial-Hall3.jpg", caption: "",
                         alt: ""
                       }
@@ -665,13 +686,13 @@ export default function ColomboTourGuide() {
                         Popular jogging and exercise area
                       </li>
                     </ul>
-                    <div className="mt-6">
+                    {/* <div className="mt-6">
                       <Link href="/destinations/independence-square">
                         <Button className="bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
                           Explore More →
                         </Button>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </CardContent>
@@ -778,7 +799,7 @@ export default function ColomboTourGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg"
+                  src="/One-Galle-Face-Mall.jpg"
                   alt="One Galle Face Mall luxury shopping center with modern architecture"
                   fill
                   className="object-cover rounded-t-lg"
@@ -797,7 +818,7 @@ export default function ColomboTourGuide() {
                   3 km from Colombo Fort
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/one-galle-face" passHref legacyBehavior>
+                  <Link href="/https://onegalleface.com/" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -826,7 +847,7 @@ export default function ColomboTourGuide() {
                   5 km from Colombo Fort
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/colombo-city-centre" passHref legacyBehavior>
+                  <Link href="/https://www.colombocitycentre.lk/" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
