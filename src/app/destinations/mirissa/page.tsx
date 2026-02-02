@@ -263,6 +263,7 @@ export default function MirissaTravelGuide() {
                 <ul className="text-sm text-blue-700 space-y-1">
                   <li>• Blue Whales (largest animals on Earth)</li>
                   <li>• Whale Sharks (Largest Fish in the world)</li>
+                  <li>• Killer Whales-Orcas (Largest members of the dolphin family)</li>
                   <li>• Sperm Whales and Pilot Whales</li>
                   <li>• Spinner and Bottlenose Dolphins</li>
                   <li>• Flying Fish and Sea Turtles</li>

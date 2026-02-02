@@ -174,7 +174,7 @@ const destinations: Destination[] = [
   },
   {
     id: 6,
-    name: "Mirissa Beach",
+    name: "Mirissa",
     location: "Southern Province",
     path: "mirissa",
     image: "/Mirissa.jpg",

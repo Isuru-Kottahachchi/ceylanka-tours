@@ -636,22 +636,22 @@ export default function ColomboTourGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>5. Colombo Race Course</CardTitle>
-                <CardDescription>Historic racing venue and open green space in the city heart</CardDescription>
+                <CardDescription>Historic horse racing venue in the city heart</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Colombo Race Course has been the center of horse racing in Sri Lanka since 1893. This large open ground sits right in the middle of the city, offering a peaceful green space where people gather for races, sporting events, and celebrations. The racing track is still active today, hosting exciting horse races that attract locals and visitors.
+                      Colombo Race Course has been an important landmark since 1893, when it officially opened for horse racing after being moved from Galle Face Green. This large open ground sits right in the middle of the city, offering a peaceful green space in the heart of the capital. The racecourse hosted exciting horse races for over 60 years until gambling was banned in 1956.
                     </p>
                     <p className="text-muted-foreground mb-4">
-                      On race days, you will see elegant horses galloping around the track while spectators cheer from the grandstands. Even when there are no races, the area is a popular spot for morning walks and evening strolls. The Race Course area also includes beautiful colonial buildings and is close to Independence Square.
+                      Today, the historic grounds serve as a major sports venue, hosting rugby and football matches. The area is also popular for morning walks, evening strolls, and public gatherings. The Race Course includes beautiful colonial buildings and is close to Independence Square and national museum.
                     </p>
 
                     <div className="my-4 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900/60 border-l-4 border-yellow-400 dark:border-yellow-500">
                       <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-1">Did you know?</h4>
                       <p className="text-sm text-gray-800 dark:text-yellow-100">
-                        The Colombo Race Course was originally a golf course before it became a racing venue in 1893. During World War II, the British military used this area as a temporary camp. Today, the Race Course also serves as a venue for major public celebrations including Independence Day parades and religious festivals, making it an important gathering place for the nation.
+                        During World War II, the Race Course was transformed into a military airfield. The Royal Air Force and Royal Navy operated squadrons here, and during the Easter Sunday Raid by Japanese bombers in 1942, the aircraft based here successfully defended Colombo. After the war, it returned to horse racing until 1956. In 2011, the grounds were redeveloped into Sri Lanka's first international-grade rugby stadium, which also hosts football matches and national celebrations.
                       </p>
                     </div>
 
@@ -662,15 +662,11 @@ export default function ColomboTourGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Colonial-era grandstands and buildings
+                        Colonial era architecture and historic buildings
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                         Popular for morning walks and jogging
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Venue for national celebrations and events
                       </li>
                     </ul>
                   </div>
@@ -679,32 +675,32 @@ export default function ColomboTourGuide() {
                     images={[
                       {
                         src: "/Colombo-Race-Course-Ground.jpg",
-                        caption: "Colombo Race Course with horses and track",
+                        caption: "Colombo Race Course open grounds",
                         alt: ""
                       },
                        {
                         src: "/Colombo-Race-Course-Ground1.jpg",
-                        caption: "Race day at Colombo Race Course",
+                        caption: "Historic Colombo Race Course grounds",
                         alt: ""
                       },
                       {
                         src: "/Colombo-Race-Course-Ground2.jpg",
-                        caption: "Race day at Colombo Race Course",
+                        caption: "Colombo Race Course green space",
                         alt: ""
                       },
                       {
                         src: "/Colombo-Race-Course-Ground3.jpg",
-                        caption: "Race day at Colombo Race Course",
+                        caption: "Colombo Race Course area",
                         alt: ""
                       },
                       {
                         src: "/Colombo-Race-Course-Ground4.jpg",
-                        caption: "Race day at Colombo Race Course",
+                        caption: "Colombo Race Course grounds",
                         alt: ""
                       },
                       {
                         src: "/Colombo-Race-Course-Ground5.jpg",
-                        caption: "Race day at Colombo Race Course",
+                        caption: "Colombo Race Course public space",
                         alt: ""
                       },
                     ]}
