@@ -12,7 +12,7 @@ export default function WhaleWatchingGuide() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/whale-watching-mirissa.jpg"
+          src="/Whale-in-Mirissa.jpg"
           alt="A magnificent blue whale breaching in the waters of Mirissa, Sri Lanka"
           fill
           className="object-cover"
@@ -67,6 +67,272 @@ export default function WhaleWatchingGuide() {
               is closest to the shore, creates perfect conditions for observing these majestic creatures.
             </p>
           </div>
+        </section>
+
+        {/* Marine Species in Sri Lanka */}
+        <section id="species" className="mb-12 scroll-mt-24">
+          <h2 className="text-3xl font-bold mb-6">Marine Creatures You Can See in Sri Lanka</h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Sri Lanka's coastal waters are home to an amazing variety of marine life. Here are the magnificent creatures you might encounter during your ocean adventure.
+          </p>
+
+          {/* Whales Section */}
+          <div className="mb-10">
+            <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+              <Waves className="w-6 h-6 text-blue-600" />
+              Whales
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Blue Whale */}
+            <Card className="border-l-4 border-blue-600">
+              <CardContent className="p-4">
+                <div className="mb-3 h-40 overflow-hidden rounded-lg">
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Blue Whale in Sri Lankan waters"
+                    width={300}
+                    height={200}
+                    className="rounded-lg w-full object-cover bg-gray-50 h-40"
+                  />
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="text-2xl">🐋</div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-blue-700">Blue Whale</h4>
+                    <p className="text-xs text-muted-foreground">Balaenoptera musculus</p>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">
+                  The largest animal ever to exist on Earth. These gentle giants can grow up to 30 meters long and weigh as much as 200 tons. Blue whales visit Sri Lankan waters to feed on the abundant krill populations.
+                </p>
+                <div className="text-xs space-y-1">
+                  <p><strong>Best Time:</strong> Nov-Apr (South), Mar-Aug (East)</p>
+                  <p><strong>Locations:</strong> Mirissa, Trincomalee, Kalpitiya</p>
+                  <p><strong>Size:</strong> Up to 30 meters long</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Sperm Whale */}
+            <Card className="border-l-4 border-indigo-600">
+              <CardContent className="p-4">
+                <div className="mb-3 h-40 overflow-hidden rounded-lg">
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Sperm Whale diving"
+                    width={300}
+                    height={200}
+                    className="rounded-lg w-full object-cover bg-gray-50 h-40"
+                  />
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="text-2xl">🐋</div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-indigo-700">Sperm Whale</h4>
+                    <p className="text-xs text-muted-foreground">Physeter macrocephalus</p>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">
+                  The largest toothed whale and deepest diving mammal on Earth. Sperm whales can dive up to 2,000 meters deep and hold their breath for up to 90 minutes while hunting giant squid.
+                </p>
+                <div className="text-xs space-y-1">
+                  <p><strong>Best Time:</strong> Year-round, peak Nov-Apr</p>
+                  <p><strong>Locations:</strong> Mirissa, Trincomalee</p>
+                  <p><strong>Diving:</strong> Up to 2,000 meters deep</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Bryde's Whale */}
+            <Card className="border-l-4 border-purple-600">
+              <CardContent className="p-4">
+                <div className="mb-3 h-40 overflow-hidden rounded-lg">
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Bryde's whale surfacing"
+                    width={300}
+                    height={200}
+                    className="rounded-lg w-full object-cover bg-gray-50 h-40"
+                  />
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="text-2xl">🐋</div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-purple-700">Bryde's Whale</h4>
+                    <p className="text-xs text-muted-foreground">Balaenoptera edeni</p>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">
+                  A medium-sized baleen whale that stays in tropical waters year-round. They are about 12-15 meters long and have three ridges on their head. These whales are curious and sometimes approach boats closely.
+                </p>
+                <div className="text-xs space-y-1">
+                  <p><strong>Best Time:</strong> Year-round</p>
+                  <p><strong>Locations:</strong> Mirissa, Trincomalee</p>
+                  <p><strong>Size:</strong> 12-15 meters long</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Pilot Whales */}
+            <Card className="border-l-4 border-slate-600">
+              <CardContent className="p-4">
+                <div className="mb-3 h-40 overflow-hidden rounded-lg">
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Pilot whale pod"
+                    width={300}
+                    height={200}
+                    className="rounded-lg w-full object-cover bg-gray-50 h-40"
+                  />
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="text-2xl">🐋</div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-slate-700">Pilot Whales</h4>
+                    <p className="text-xs text-muted-foreground">Globicephala spp.</p>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Actually large dolphins with distinctive bulbous heads. They travel in tight family groups and are very social. Pilot whales are dark gray or black and can grow up to 6 meters long.
+                </p>
+                <div className="text-xs space-y-1">
+                  <p><strong>Best Time:</strong> November to April</p>
+                  <p><strong>Locations:</strong> Kalpitiya, Mirissa</p>
+                  <p><strong>Behavior:</strong> Travel in family groups</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+          {/* Dolphins Section */}
+          <div className="mb-10">
+            <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+              <Waves className="w-6 h-6 text-blue-600" />
+              Dolphins
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Spinner Dolphins */}
+            <Card className="border-l-4 border-cyan-600">
+              <CardContent className="p-4">
+                <div className="mb-3 h-40 overflow-hidden rounded-lg">
+                  <Image
+                    src="/Orca.jpg"
+                    alt="Spinner dolphins jumping"
+                    width={300}
+                    height={200}
+                    className="rounded-lg w-full object-cover bg-gray-50 h-40"
+                  />
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="text-2xl">🐬</div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-cyan-700">Spinner Dolphins</h4>
+                    <p className="text-xs text-muted-foreground">Stenella longirostris</p>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Named for their amazing spinning jumps out of the water. These playful dolphins travel in large groups, sometimes over 1,000 individuals. They are incredibly acrobatic and love to put on a show.
+                </p>
+                <div className="text-xs space-y-1">
+                  <p><strong>Best Time:</strong> Nov-Mar (Kalpitiya), Year-round</p>
+                  <p><strong>Locations:</strong> Kalpitiya, Mirissa, Trincomalee</p>
+                  <p><strong>Behavior:</strong> Acrobatic spins and jumps</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Bottlenose Dolphins */}
+            <Card className="border-l-4 border-teal-600">
+              <CardContent className="p-4">
+                <div className="mb-3 h-40 overflow-hidden rounded-lg">
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Bottlenose dolphins swimming"
+                    width={300}
+                    height={200}
+                    className="rounded-lg w-full object-cover bg-gray-50 h-40"
+                  />
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="text-2xl">🐬</div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-teal-700">Bottlenose Dolphins</h4>
+                    <p className="text-xs text-muted-foreground">Tursiops truncatus</p>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">
+                  The most well-known dolphin species with their friendly nature and characteristic smile. These intelligent creatures often approach boats to surf in the bow waves.
+                </p>
+                <div className="text-xs space-y-1">
+                  <p><strong>Best Time:</strong> Year-round</p>
+                  <p><strong>Locations:</strong> Mirissa, Trincomalee, Kalpitiya</p>
+                  <p><strong>Behavior:</strong> Bow riding, highly social</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Risso's Dolphins */}
+            <Card className="border-l-4 border-emerald-600">
+              <CardContent className="p-4">
+                <div className="mb-3 h-40 overflow-hidden rounded-lg">
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Risso's dolphin with scars"
+                    width={300}
+                    height={200}
+                    className="rounded-lg w-full object-cover bg-gray-50 h-40"
+                  />
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="text-2xl">🐬</div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-emerald-700">Risso's Dolphins</h4>
+                    <p className="text-xs text-muted-foreground">Grampus griseus</p>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">
+                  These unique dolphins have no beak and their bodies are covered in white scars from social interactions and squid battles. They start dark gray but become whiter with age due to scarring.
+                </p>
+                <div className="text-xs space-y-1">
+                  <p><strong>Best Time:</strong> November to April</p>
+                  <p><strong>Locations:</strong> Mirissa, Trincomalee</p>
+                  <p><strong>Habitat:</strong> Deep offshore waters</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Striped Dolphins */}
+            <Card className="border-l-4 border-sky-600">
+              <CardContent className="p-4">
+                <div className="mb-3 h-40 overflow-hidden rounded-lg">
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Striped dolphins jumping"
+                    width={300}
+                    height={200}
+                    className="rounded-lg w-full object-cover bg-gray-50 h-40"
+                  />
+                </div>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="text-2xl">🐬</div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-sky-700">Striped Dolphins</h4>
+                    <p className="text-xs text-muted-foreground">Stenella coeruleoalba</p>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Beautiful dolphins with distinctive blue and white stripes running along their sides. They are energetic and acrobatic, often leaping high out of the water. They travel in groups of 10-500 individuals.
+                </p>
+                <div className="text-xs space-y-1">
+                  <p><strong>Best Time:</strong> November to April</p>
+                  <p><strong>Locations:</strong> Mirissa, Trincomalee</p>
+                  <p><strong>Behavior:</strong> Fast swimmers, acrobatic leaps</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
         </section>
 
         {/* Best Locations */}
