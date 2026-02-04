@@ -64,6 +64,7 @@ const searchVariations: { [key: string]: string[] } = {
   "balangoda": ["balangoda", "balangoda"],
   "kurunagala": ["kurunagala", "kurunagla", "kurunagala", "kurunegala"],
   "hummanaya": ["hummanaya", "hummane", "hummanaya blow hole", "hummanaya blowhole"],
+  "madu ganga": ["madu ganga", "madu river", "madu river safari", "madu ganga safari","madhu ganga"],
 }
 
 // Function to normalize search terms
@@ -181,6 +182,16 @@ const destinations: Destination[] = [
     description: "Pristine beach perfect for whale watching and surfing",
     highlights: ["Whale Watching", "Surfing", "Beach Parties"],
     category: "Beach",
+  },
+  {
+    id: 7,
+    name: "Madu Ganga",
+    location: "Southern Province",
+    path: "madu-river-safari",
+    image: "/Madu-river-safari.jpg",
+    description: "River safari through a beautiful mangrove ecosystem",
+    highlights: ["Mangrove Forest", "River Safari", "Biodiversity"],
+    category: "Nature",
   },
   {
     id: 7,
