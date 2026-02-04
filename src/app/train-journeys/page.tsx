@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   keywords: "Sri Lanka trains, Ella train, Jaffna railway, hill country train, scenic train journeys, railway travel Sri Lanka, train tickets, Ceylon railways",
   authors: [{ name: "Ceylon Railway Explorer" }],
   openGraph: {
-    title: "Sri Lanka Train Journeys: Scenic Railway Adventures Guide 2025",
+    title: "Sri Lanka Train Journeys: Scenic Railway Adventures Guide 2026",
     description: "Your complete guide to Sri Lanka's most beautiful train journeys and railway adventures",
     type: "article",
     images: ["/Nine-arch-ella.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sri Lanka Train Journeys: Scenic Railway Adventures Guide 2025",
+    title: "Sri Lanka Train Journeys: Scenic Railway Adventures Guide 2026",
     description: "Your complete guide to Sri Lanka's most beautiful train journeys and railway adventures",
   },
 }

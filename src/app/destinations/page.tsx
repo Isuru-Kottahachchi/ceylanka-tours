@@ -484,11 +484,11 @@ const destinations = [
     name: "Mahiyanganaya",
     location: "Uva Province",
     path: "/mahiyanganaya",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Mahiyanganaya.jpg",
     // rating: 4.3,
     // reviews: 890,
     description: "Ancinent people and their culture",
-    highlights: ["Ancient people", "", ""],
+    highlights: ["Vedda Culture", "Buddhist Heritage", "Ancient Temples"],
     category: "Historical",
   },
   {
