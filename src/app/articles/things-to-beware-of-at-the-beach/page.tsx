@@ -37,10 +37,8 @@ export default function BeachSafetyGuide() {
     ]
 
     const seaUrchinImages = [
-        { src: "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Spines", alt: "Sea Urchin Spines" },
-        { src: "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Rock+Pool", alt: "Sea Urchin in Rock Pool" },
-        { src: "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Black+Spines", alt: "Sea Urchin Black Spines" },
-        { src: "/placeholder.svg?height=300&width=400&text=Sea+Urchin+Foot+Injury", alt: "Sea Urchin Foot Injury" }
+        { src: "/Sea-Urchins.jpg", alt: "Sea Urchin Spines" },
+        { src: "/Sea-Urchins1.jpg", alt: "Sea Urchin in Rock Pool" },
     ]
 
     return (
@@ -521,7 +519,7 @@ export default function BeachSafetyGuide() {
                                             </ul>
                                             <Alert className="border-blue-400 bg-blue-100 dark:border-blue-600 dark:bg-blue-950/30">
                                                 <AlertDescription className="text-blue-800 dark:text-blue-300 text-sm">
-                                                    <strong>Important:</strong> Very venomous but rarely aggressive.
+                                                    <strong>Important:</strong> If you see a snake at beach its most probably sea snake.Its better to avoid them. Very venomous but rarely aggressive.
                                                     Don&apos;t try to handle or catch them - just swim away calmly.
                                                 </AlertDescription>
                                             </Alert>

@@ -137,13 +137,6 @@ export default function KumanaNationalParkGuide() {
                                 {/* Valuable Fact for Desktop */}
                                 <div className="hidden lg:block mt-6 space-y-4">
                                     <div className="flex gap-4 items-center bg-blue-50 border-l-4 border-blue-400 rounded p-4">
-                                        <Image
-                                            src="/kumana-lagoon.jpg"
-                                            alt="Kumana lagoon with diverse water birds and mangrove ecosystem"
-                                            width={120}
-                                            height={80}
-                                            className="rounded shadow-md object-cover"
-                                        />
                                         <div>
                                             <p className="text-base text-blue-900 font-semibold mb-1">UNESCO Ramsar Wetland Site</p>
                                             <p className="text-sm text-blue-800">
@@ -152,10 +145,10 @@ export default function KumanaNationalParkGuide() {
                                         </div>
                                     </div>
                                     <div className="flex gap-8">
-                                        <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
+                                        {/* <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                                             <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
-                                            <p className="text-sm text-yellow-800">2-3 days with early morning and evening safaris for the best wildlife viewing experience.</p>
-                                        </div>
+                                            <p className="text-sm text-yellow-800">Early morning and evening safaris for the best wildlife viewing experience.</p>
+                                        </div> */}
                                         <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
                                             <p className="text-sm text-green-900 font-semibold mb-1">Best Photography Time</p>
                                             <p className="text-sm text-green-800">Golden hour (6-8 AM and 5-7 PM) for stunning bird photography with perfect lighting.</p>

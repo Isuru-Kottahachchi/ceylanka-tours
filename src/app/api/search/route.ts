@@ -193,6 +193,16 @@ const destinations: Destination[] = [
     highlights: ["Mangrove Forest", "River Safari", "Biodiversity"],
     category: "Nature",
   },
+    {
+    id: 7,
+    name: "Kumana National Park",
+    location: "Southern Province",
+    path: "kumana-national-park",
+    image: "/Kumana-National-Park.jpg",
+    description: "Birds watching paradise with diverse avian species and wetland habitats",
+    highlights: ["Bird Watching", "Wildlife", "Diverse Avian Species"],
+    category: "Nature",
+  },
   {
     id: 7,
     name: "Anuradhapura",

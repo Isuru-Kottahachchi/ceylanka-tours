@@ -149,7 +149,7 @@ export default function TrincomaleeTravelGuide() {
                   <div className="flex gap-8">
                     <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                       <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
-                      <p className="text-sm text-yellow-800">1–2 full days to explore the sacred sites, and local culture at a relaxed pace.</p>
+                      <p className="text-sm text-yellow-800">1–3 full days to enjoys the beaches and explore other attractions.</p>
                     </div>
                     <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
                       <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>

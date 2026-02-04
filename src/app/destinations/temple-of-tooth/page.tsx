@@ -281,7 +281,7 @@ export default function TempleOfToothKandyGuide() {
                   </div>
                   <div className="text-center">
                     <a
-                      href="/contact"
+                      href="/contact-us"
                       className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
                     >
                       <Users className="w-5 h-5" />
