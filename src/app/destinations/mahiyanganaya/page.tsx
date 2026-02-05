@@ -1,22 +1,9 @@
-import type { Metadata } from "next"
+"use client"
 import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Mountain, TreePine, Camera } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-
-export const metadata: Metadata = {
-  title: "Mahiyanganaya Sri Lanka: Hidden Gem Guide 2025 | Ancient Buddhist Heritage",
-  description:
-    "Discover Mahiyanganaya, Sri Lanka's ancient Buddhist heritage site. Complete guide to sacred temples, natural beauty, cultural significance, and authentic rural experiences.",
-  keywords:
-    "Mahiyanganaya Sri Lanka, Buddhist heritage, Mahiyangana Raja Maha Vihara, ancient temples, Uva Province, rural tourism, cultural sites",
-  openGraph: {
-    title: "Mahiyanganaya: Ancient Buddhist Heritage Guide 2025",
-    description: "Your complete guide to Sri Lanka's sacred ancient town",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 export default function MahiyanganaayaTravelGuide() {
   return (
@@ -24,7 +11,7 @@ export default function MahiyanganaayaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/placeholder.svg?height=800&width=1200"
+          src="/Mahiyanganaya.jpg"
           alt="Ancient Mahiyangana Raja Maha Vihara temple with golden stupa surrounded by lush mountains"
           fill
           className="object-cover"
@@ -51,7 +38,7 @@ export default function MahiyanganaayaTravelGuide() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto px-4 py-8">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">
@@ -134,16 +121,22 @@ export default function MahiyanganaayaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">Sacred Buddhist Heritage & Ancient History</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Golden stupa of Mahiyangana Raja Maha Vihara with devotees offering prayers"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
+            <ImageCarousel
+                images={[
+                  {
+                    src: "/Mahiyanganaya-Rajamaha-Viharaya.jpeg",
+                    alt: "Mahiyangana Raja Maha Vihara golden stupa with pilgrims and ancient architecture",
+                  },
+                  {
+                    src: "/Mahiyanganaya-Rajamaha-Viharaya1.webp",
+                    alt: "Ancient Bo tree at Mahiyangana Raja Maha Vihara with devotees offering prayers",
+                  },
+                  {
+                    src: "/Mahiyanganaya-Rajamaha-Viharaya2.jpg",
+                    alt: "Interior of Mahiyangana Raja Maha Vihara showing ancient murals and Buddha statues",
+                  },
+                ]}
               />
-              <p className="text-sm text-muted-foreground mt-2 italic">
-                The sacred stupa where Lord Buddha&apos;s hair relic is enshrined
-              </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
@@ -271,12 +264,19 @@ export default function MahiyanganaayaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Dambana Vedda village showing traditional huts, indigenous people, and forest setting"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                 <ImageCarousel
+                    images={[
+                      {
+                        src: "/Mahiyanganaya-Vaddos.jpg",
+                        caption: "PC @azizfamilyofficial",
+                        alt: "Dambana Vedda village showing traditional huts, indigenous people, and cultural activities",
+                      },
+                      {
+                        src: "/Mahiyanganaya-Vaddos1.jpg",
+                      caption: "PC @azizfamilyofficial",
+                        alt: "Vedda people demonstrating traditional hunting techniques in Dambana village",  
+                      },
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
