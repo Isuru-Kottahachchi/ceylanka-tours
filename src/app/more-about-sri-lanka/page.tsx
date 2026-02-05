@@ -48,12 +48,12 @@ const MoreAboutSriLanka = () => {
                         <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">🌏 Sri Lanka at a Glance</h2>
                         
                         <div className="flex flex-col md:flex-row gap-6 mb-6">
-                            <div className="relative w-full md:w-2/5 h-80">
+                            <div className="relative w-full md:w-2/5 h-[300px] md:h-[400px]">
                                 <Image
-                                    src="/Nuwara-Eliya.jpg"
+                                    src="/Sri-Lanka-Map.jpg"
                                     alt="Beautiful landscape of Sri Lanka showing tea plantations in Nuwara Eliya"
                                     fill
-                                    className="object-cover rounded-lg"
+                                    className="object-contain rounded-lg"
                                 />
                             </div>
                             
