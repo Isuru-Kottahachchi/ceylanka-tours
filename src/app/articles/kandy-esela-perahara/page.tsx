@@ -136,7 +136,7 @@ export default function KandyEsalaPeraheraGuide() {
                   <div className="flex items-center gap-3">
                     <Users className="w-5 h-5 text-green-500" />
                     <span>
-                      <strong>Visitors:</strong> Over 1 million people
+                      <strong>Visitors:</strong> Over 1 million people throughout the festival
                     </span>
                   </div>
                 </div>
@@ -282,7 +282,6 @@ export default function KandyEsalaPeraheraGuide() {
                 </div>
               </CardContent>
             </Card>
-
 
             {/* Festival Schedule */}
             <section className="mb-16">

@@ -20,17 +20,17 @@ export default function MahiyanganaayaTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Mahiyanganaya</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Ancient Buddhist Heritage & Sacred Pilgrimage Site</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Sacred Site of Lord Buddha's First Visit to Sri Lanka</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Uva Province, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <Mountain className="w-4 h-4 mr-1" />
-              Ancient Buddhist Site
+              Indigenous Vedda Culture
             </Badge>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <TreePine className="w-4 h-4 mr-1" />
               Pristine Natural Beauty
             </Badge>
@@ -42,7 +42,7 @@ export default function MahiyanganaayaTravelGuide() {
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">
-            Welcome to Mahiyanganaya: Where Buddhism First Touched Sri Lanka
+            Welcome to Mahiyanganaya: Sacred Site of Lord Buddha's First Visit
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
@@ -116,12 +116,14 @@ export default function MahiyanganaayaTravelGuide() {
           </Card>
         </section>
 
-        {/* Buddhist Heritage */}
+        {/* Mahiyangana Raja Maha Vihara - Main Temple Section */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Sacred Buddhist Heritage & Ancient History</h2>
+          <h2 className="text-3xl font-bold mb-6">Mahiyangana Raja Maha Vihara: Sacred Site of Lord Buddha's First Visit</h2>
+          
+          {/* Image and Historical Account Grid */}
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
             <div>
-            <ImageCarousel
+              <ImageCarousel
                 images={[
                   {
                     src: "/Mahiyanganaya-Rajamaha-Viharaya.jpeg",
@@ -140,71 +142,213 @@ export default function MahiyanganaayaTravelGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                According to Buddhist chronicles, Lord Buddha visited Mahiyanganaya during his first year of
-                enlightenment, making it the first place in Sri Lanka blessed by his presence. The Mahiyangana Raja Maha
-                Vihara was built to enshrine a hair relic of the Buddha, given to the local Yaksha king Mahasumana.
+                According to the Mahavamsa (the Great Chronicle of Sri Lanka) and Dipavamsa, Lord Buddha visited Mahiyanganaya 
+                during the ninth month after his enlightenment, making it the <strong>first place in Sri Lanka blessed by his presence</strong>. 
+                This momentous visit occurred approximately 2,544 years ago, predating even the arrival of Buddhism to many other parts of Asia.
               </p>
               <p>
-                This ancient temple complex represents over 2,500 years of continuous Buddhist worship and is considered
-                one of the 16 most sacred Buddhist sites in Sri Lanka. The golden stupa, ancient bo tree, and
-                surrounding structures create a deeply spiritual atmosphere that draws pilgrims from across the Buddhist
-                world.
+                The Buddhist chronicles describe how Buddha traveled through the air to this location to settle a dispute between 
+                two Yaksha (pre-Buddhist indigenous deity) clans - the Mahodara and the Chulodara. At that time, the area was inhabited 
+                by Yakshas led by King Mahasumana. After witnessing the Buddha&apos;s power and wisdom in resolving their conflict peacefully, 
+                King Mahasumana became a devoted follower.
               </p>
-              <div className="bg-amber-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-amber-800 mb-2">Sacred Significance:</h4>
-                <ul className="text-sm text-amber-700 space-y-1">
-                  <li>• First place visited by Lord Buddha in Sri Lanka</li>
-                  <li>• Houses a sacred hair relic of the Buddha</li>
-                  <li>• One of 16 most sacred Buddhist sites</li>
-                  <li>• Continuous worship for over 2,500 years</li>
-                </ul>
-              </div>
+              <p>
+                Before departing, Lord Buddha gave a lock of his hair to King Mahasumana as a sacred relic. The king enshrined 
+                this precious relic in a golden casket and built the original dagoba (stupa) on this very spot, marking the 
+                beginning of Buddhist architecture in Sri Lanka. This makes Mahiyangana Raja Maha Vihara one of the 
+                <strong> 16 holiest Buddhist pilgrimage sites (Solosmasthana)</strong> in the country.
+              </p>
             </div>
           </div>
+
+          {/* Temple Architecture & Features */}
+          <Card className="mb-8">
+            <CardHeader>
+              <CardTitle>Temple Complex & Sacred Features</CardTitle>
+              <CardDescription>Architectural marvels and spiritual significance</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-2 flex items-center gap-2">
+                      <span className="text-amber-600">🔸</span> The Sacred Dagoba (Stupa)
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      The magnificent golden stupa stands as the centerpiece, housing Lord Buddha&apos;s hair relic. 
+                      The current structure has been renovated multiple times, with major reconstructions by King Dutugemunu 
+                      (161-137 BCE) and King Bhatikabhaya (20 BCE - 9 CE). The stupa follows the traditional &quot;heap of paddy&quot; 
+                      design (Garbha style) and gleams brilliantly in the tropical sun.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2 flex items-center gap-2">
+                      <span className="text-green-600">🔸</span> The Sacred Bo Tree
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      A descendant of the Jaya Sri Maha Bodhi tree in Anuradhapura (itself descended from the original 
+                      Bodhi tree in Bodh Gaya, India), this ancient Bo tree is a focal point for meditation and worship.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2 flex items-center gap-2">
+                      <span className="text-blue-600">🔸</span> Image House & Museum
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      The temple houses beautiful Buddha statues, ancient murals depicting Jataka tales, and a small museum 
+                      displaying archaeological artifacts discovered in the area, including pottery and coins from various historical periods.
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold mb-2 flex items-center gap-2">
+                      <span className="text-purple-600">🔸</span> Daily Ceremonies
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      The temple conducts three daily puja ceremonies (morning, noon, and evening) where devotees offer 
+                      flowers, incense, and oil lamps. The evening ceremony is particularly atmospheric with chanting monks.
+                    </p>
+                  </div>
+                  <div className="bg-amber-50 p-4 rounded-lg dark:bg-amber-950">
+                    <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">Visitor Information:</h4>
+                    <ul className="text-sm text-amber-700 dark:text-amber-300 space-y-1">
+                      <li>• <strong>Entry:</strong> Free (donations welcome)</li>
+                      <li>• <strong>Dress Code:</strong> Modest attire, covered shoulders and knees</li>
+                      <li>• <strong>Photography:</strong> Allowed in courtyard, restricted inside shrine rooms</li>
+                      <li>• <strong>Best Time:</strong> Early morning or evening for ceremonies</li>
+                      <li>• <strong>Duration:</strong> 1-2 hours for respectful visit</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Did You Know Section */}
+          <Card className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-950 dark:to-blue-950 border-purple-200 dark:border-purple-800">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-purple-800 dark:text-purple-200">
+                <span className="text-2xl">💡</span> Did You Know?
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-4">
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>First of Three Visits:</strong> Lord Buddha visited Sri Lanka three times according to the Mahavamsa. 
+                      Mahiyanganaya was the first, followed by Nagadeepa (to settle a dispute) and Kelaniya (by invitation).
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Royal Patronage:</strong> The temple received patronage from nearly all ancient Sinhalese kings, 
+                      including Devanampiya Tissa, Dutugemunu, and Parakramabahu I, who each made significant contributions.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Esala Perahera:</strong> The temple holds an annual Esala procession (July/August) featuring 
+                      traditional dancers, drummers, and decorated elephants, though smaller in scale than Kandy&apos;s famous perahera.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Archaeological Discoveries:</strong> Excavations around the temple have unearthed artifacts 
+                      dating back to 3rd century BCE, including ancient coins, pottery, and stone inscriptions in early Brahmi script.
+                    </span>
+                  </li>
+                </ul>
+                <ul className="space-y-3 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Yaksha Connection:</strong> The name &quot;Mahiyangana&quot; is believed to derive from &quot;Maha Yakshangana,&quot; 
+                      meaning &quot;the great Yaksha assembly,&quot; referring to the gathering where Buddha preached to the Yaksha tribes.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Vedda Sacred Site:</strong> Even before Buddhism, this location was considered sacred by the 
+                      indigenous Vedda people, and they continue to regard it with reverence to this day.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Natural Spring:</strong> A natural spring near the temple is believed to have emerged during 
+                      Buddha&apos;s visit and is considered to have healing properties by devotees.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
+                    <span>
+                      <strong>Poya Day Significance:</strong> On full moon (Poya) days, especially during Duruthu Poya (January), 
+                      thousands of pilgrims visit to commemorate Buddha&apos;s first visit to the island.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
         </section>
 
-        {/* Top Attractions */}
+        {/* Other Attractions */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Sacred Sites & Attractions</h2>
+          <h2 className="text-3xl font-bold mb-6">Other Sacred Sites & Attractions</h2>
 
           <div className="space-y-8">
-            {/* Mahiyangana Raja Maha Vihara */}
+
+            {/* Dambana Indigenous Village */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Mahiyangana Raja Maha Vihara</CardTitle>
-                <CardDescription>The most sacred Buddhist temple in the region</CardDescription>
+                <CardTitle>1. Dambana Indigenous Village</CardTitle>
+                <CardDescription>Authentic Vedda community cultural experience</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Mahiyangana Raja Maha Vihara showing the golden stupa, ancient architecture, and pilgrims"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                 <ImageCarousel
+                    images={[
+                      {
+                        src: "/Mahiyanganaya-Vaddos1.jpg",
+                      caption: "PC @azizfamilyofficial",
+                        alt: "Vedda people demonstrating traditional hunting techniques in Dambana village",  
+                      },
+                      {
+                        src: "/Mahiyanganaya-Vaddos.jpg",
+                        caption: "PC @azizfamilyofficial",
+                        alt: "Dambana Vedda village showing traditional huts, indigenous people, and cultural activities",
+                      },
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The centerpiece of Mahiyanganaya, this ancient temple complex houses the sacred hair relic of Lord
-                      Buddha in its golden stupa. The temple showcases beautiful traditional Sinhalese architecture and
-                      provides a deeply spiritual experience for visitors and pilgrims alike.
+                      Located near Mahiyanganaya, Dambana is home to the Vedda people, Sri Lanka&apos;s indigenous community.
+                      This authentic village experience offers insights into ancient traditions, hunting practices, and
+                      a way of life that has remained unchanged for thousands of years.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Sacred hair relic of Lord Buddha
+                        Authentic indigenous Vedda culture
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Beautiful golden stupa and ancient bo tree
+                        Traditional hunting and gathering demonstrations
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Traditional Sinhalese temple architecture
+                        Ancient language and customs preservation
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Active pilgrimage site with daily ceremonies
+                        Unique cultural exchange opportunity
                       </li>
                     </ul>
                   </div>
@@ -212,10 +356,67 @@ export default function MahiyanganaayaTravelGuide() {
               </CardContent>
             </Card>
 
+            {/* Nagadeepa Purana Viharaya */}
+            <Card>
+              <CardHeader>
+                <CardTitle>2. Nagadeepa Purana Rajamaha Viharaya</CardTitle>
+                <CardDescription>Ancient temple believed to be the original Nagadeepa Buddha visited</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Nagadeepa Purana Rajamaha Viharaya (also known as Nagadeepa Purana Viharaya) is an ancient temple in 
+                      Mahiyanganaya with a fascinating historical claim. According to legends, this temple dates back to the 
+                      reign of King Dutugemunu (161-137 BCE). Many scholars and devotees believe this is the actual Nagadeepa 
+                      Viharaya that Lord Buddha visited during his second visit to Sri Lanka to settle a dispute over a 
+                      gem-studded throne, not the famous temple in Jaffna that shares the same name.
+                    </p>
+                    <div className="bg-blue-50 dark:bg-blue-950 p-3 rounded-lg mb-4">
+                      <p className="text-sm text-blue-800 dark:text-blue-200">
+                        <strong>Historical Debate:</strong> While the Nagadeepa temple in Jaffna is more widely known, this 
+                        Mahiyanganaya temple&apos;s claim as the original Nagadeepa visited by Buddha is supported by some historical 
+                        evidence and local traditions.
+                      </p>
+                    </div>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Dates back to King Dutugemunu&apos;s reign (161-137 BCE)
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Claimed to be the original Nagadeepa Buddha visited
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Well-preserved ancient architecture and inscriptions
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Peaceful meditation grounds and ancient Bo tree
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Less crowded, authentic spiritual experience
+                      </li>
+                    </ul>
+                  </div>
+                  <Image
+                    src="/placeholder.svg?height=300&width=400"
+                    alt="Nagadeepa Purana Rajamaha Viharaya ancient temple in Mahiyanganaya"
+                    width={400}
+                    height={300}
+                    className="rounded-lg"
+                  />
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Sorabora Wewa */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Sorabora Wewa (Ancient Reservoir)</CardTitle>
+                <CardTitle>3. Sorabora Wewa (Ancient Reservoir)</CardTitle>
                 <CardDescription>Historic irrigation marvel and scenic lake</CardDescription>
               </CardHeader>
               <CardContent>
@@ -246,63 +447,12 @@ export default function MahiyanganaayaTravelGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Sorabora-Wewa.jpg"
                     alt="Sorabora Wewa ancient reservoir showing calm waters surrounded by green hills and wildlife"
                     width={400}
                     height={300}
                     className="rounded-lg"
                   />
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Dambana Indigenous Village */}
-            <Card>
-              <CardHeader>
-                <CardTitle>3. Dambana Indigenous Village</CardTitle>
-                <CardDescription>Authentic Vedda community cultural experience</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                 <ImageCarousel
-                    images={[
-                      {
-                        src: "/Mahiyanganaya-Vaddos.jpg",
-                        caption: "PC @azizfamilyofficial",
-                        alt: "Dambana Vedda village showing traditional huts, indigenous people, and cultural activities",
-                      },
-                      {
-                        src: "/Mahiyanganaya-Vaddos1.jpg",
-                      caption: "PC @azizfamilyofficial",
-                        alt: "Vedda people demonstrating traditional hunting techniques in Dambana village",  
-                      },
-                    ]}
-                  />
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Located near Mahiyanganaya, Dambana is home to the Vedda people, Sri Lanka&apos;s indigenous community.
-                      This authentic village experience offers insights into ancient traditions, hunting practices, and
-                      a way of life that has remained unchanged for thousands of years.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Authentic indigenous Vedda culture
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Traditional hunting and gathering demonstrations
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Ancient language and customs preservation
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Unique cultural exchange opportunity
-                      </li>
-                    </ul>
-                  </div>
                 </div>
               </CardContent>
             </Card>

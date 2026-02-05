@@ -548,7 +548,7 @@ const destinations: Destination[] = [
     name: "Mahiyanganaya",
     location: "Central Province",
     path: "mahiyanganaya",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Mahiyanganaya.jpg",
     description: "Ancient settlement with rich cultural heritage",
     highlights: ["Ancient people", "Cultural Heritage", "Historical Sites"],
     category: "Historical",
