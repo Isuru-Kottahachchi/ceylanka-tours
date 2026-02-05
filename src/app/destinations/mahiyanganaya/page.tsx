@@ -147,13 +147,13 @@ export default function MahiyanganaayaTravelGuide() {
                 This momentous visit occurred approximately 2,544 years ago, predating even the arrival of Buddhism to many other parts of Asia.
               </p>
               <p>
-                The Buddhist chronicles describe how Buddha traveled through the air to this location to settle a dispute between 
-                two Yaksha (pre-Buddhist indigenous deity) clans - the Mahodara and the Chulodara. At that time, the area was inhabited 
-                by Yakshas led by King Mahasumana. After witnessing the Buddha&apos;s power and wisdom in resolving their conflict peacefully, 
-                King Mahasumana became a devoted follower.
+                The Buddhist chronicles describe how Buddha came to this location to settle a conflict between the local tribes the 
+                Yakkhas (Yakshas) and the Nagas who inhabited the area. At that time, the region was ruled by the Yaksha chief 
+                Mahasumana. Through his divine presence and teachings, Buddha brought peace between the warring tribes and established 
+                harmony in the land. Witnessing the Buddha&apos;s power and wisdom, Chief Mahasumana became a devoted follower.
               </p>
               <p>
-                Before departing, Lord Buddha gave a lock of his hair to King Mahasumana as a sacred relic. The king enshrined 
+                Before departing, Lord Buddha gave a lock of his hair to Chief Mahasumana as a sacred relic. The chief enshrined 
                 this precious relic in a golden casket and built the original dagoba (stupa) on this very spot, marking the 
                 beginning of Buddhist architecture in Sri Lanka. This makes Mahiyangana Raja Maha Vihara one of the 
                 <strong> 16 holiest Buddhist pilgrimage sites (Solosmasthana)</strong> in the country.
@@ -239,7 +239,8 @@ export default function MahiyanganaayaTravelGuide() {
                     <CheckCircle className="w-4 h-4 text-purple-500 mt-0.5 flex-shrink-0" />
                     <span>
                       <strong>First of Three Visits:</strong> Lord Buddha visited Sri Lanka three times according to the Mahavamsa. 
-                      Mahiyanganaya was the first, followed by Nagadeepa (to settle a dispute) and Kelaniya (by invitation).
+                      Mahiyanganaya was the first (to settle a conflict between Yakkhas and Nagas), followed by Nagadeepa (to settle a dispute between 
+                      two Naga kings over a gem-studded throne), and Kelaniya (by invitation of King Maniakkika).
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
@@ -360,51 +361,53 @@ export default function MahiyanganaayaTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>2. Nagadeepa Purana Rajamaha Viharaya</CardTitle>
-                <CardDescription>Ancient temple believed to be the original Nagadeepa Buddha visited</CardDescription>
+                <CardDescription>Ancient temple with local historical significance</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Nagadeepa Purana Rajamaha Viharaya (also known as Nagadeepa Purana Viharaya) is an ancient temple in 
-                      Mahiyanganaya with a fascinating historical claim. According to legends, this temple dates back to the 
-                      reign of King Dutugemunu (161-137 BCE). Many scholars and devotees believe this is the actual Nagadeepa 
-                      Viharaya that Lord Buddha visited during his second visit to Sri Lanka to settle a dispute over a 
-                      gem-studded throne, not the famous temple in Jaffna that shares the same name.
+                      Nagadeepa Purana Rajamaha Viharaya is an ancient Buddhist temple in the Mahiyanganaya area. According 
+                      to local legends and traditions, this temple is believed by some to date back to the time of King 
+                      Dutugemunu (161-137 BCE). The temple holds a unique place in local Buddhist heritage, with some 
+                      devotees believing it may be connected to Lord Buddha&apos;s second visit to settle the dispute between the Naga 
+                      kings Chulodara and Mahodara, though the temple in Jaffna is the officially recognized Nagadeepa site.
                     </p>
                     <div className="bg-blue-50 dark:bg-blue-950 p-3 rounded-lg mb-4">
                       <p className="text-sm text-blue-800 dark:text-blue-200">
-                        <strong>Historical Debate:</strong> While the Nagadeepa temple in Jaffna is more widely known, this 
-                        Mahiyanganaya temple&apos;s claim as the original Nagadeepa visited by Buddha is supported by some historical 
-                        evidence and local traditions.
+                        <strong>Note:</strong> The <a className="underline" href="/destinations/nainativu">Nagadeepa Rajamaha Viharaya (Nainativ) in Jaffna (Northern Province)</a> is the officially 
+                        recognized site among the 16 sacred Buddhist pilgrimage sites (Solosmasthana) where Lord Buddha visited 
+                        on his second visit to settle the dispute between the two Naga kings, Chulodara and Mahodara, over a gem-studded throne. 
+                        This Mahiyanganaya temple, while ancient and significant in its own right, represents a local tradition 
+                        and alternative belief.
                       </p>
                     </div>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Dates back to King Dutugemunu&apos;s reign (161-137 BCE)
+                        Ancient temple with local historical significance
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Claimed to be the original Nagadeepa Buddha visited
+                        Part of Mahiyanganaya&apos;s Buddhist heritage
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Well-preserved ancient architecture and inscriptions
+                        Traditional architecture and religious artifacts
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Peaceful meditation grounds and ancient Bo tree
+                        Peaceful meditation grounds and Bo tree
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Less crowded, authentic spiritual experience
+                        Quiet, authentic spiritual atmosphere
                       </li>
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Nagadeepa Purana Rajamaha Viharaya ancient temple in Mahiyanganaya"
+                    src="/Nagadeepa-purana-rajamaha-viharaya.jpg"
+                    alt="Nagadeepa Purana Rajamaha Viharaya ancient temple in Mahiyanganaya eshan_saseth"
                     width={400}
                     height={300}
                     className="rounded-lg"
