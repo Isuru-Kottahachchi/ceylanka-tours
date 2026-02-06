@@ -218,12 +218,6 @@ export default function KandyTravelGuide() {
                       </div>
                       <div className="flex items-center gap-2">
                         <span>✈️</span>
-                        <Link href="/tours/kandy" className="underline hover:text-orange-600 dark:hover:text-orange-300">
-                          <strong>One day tour to Kandy</strong> - Click for details & booking
-                        </Link>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span>✈️</span>
                         <Link href="/airport-transfers" className="underline hover:text-orange-600 dark:hover:text-orange-300">
                           <strong>Airport Transfer Services</strong> - Click for details & booking
                         </Link>

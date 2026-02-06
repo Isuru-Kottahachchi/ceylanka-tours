@@ -25,7 +25,13 @@ const maligawaTuskerImages = [
   { src: "/Maligawa-Tusker-1.jpg", alt: "The sacred Maligawa Tusker magnificently decorated with golden cloth and lights, carrying the sacred casket containing Buddha's tooth relic" },
   { src: "/Maligawa-Tusker-2.jpeg", alt: "The sacred Maligawa Tusker magnificently decorated with golden cloth and lights, carrying the sacred casket containing Buddha's tooth relic" },
   { src: "/Maligawa-Tusker-3.jpeg", alt: "The sacred Maligawa Tusker magnificently decorated with golden cloth and lights, carrying the sacred casket containing Buddha's tooth relic" },
-]
+];
+
+const kandyanDancingImages = [
+  { src: "/Kandyan-Dancers-1.webp", alt: "Kandyan dancers in elaborate traditional costumes with silver decorations and colorful silk cloths performing graceful movements" },
+  { src: "/Kandyan-Dancers-2.jpeg", alt: "Kandyan dancers in elaborate traditional costumes with silver decorations and colorful silk cloths performing graceful movements" },
+  { src: "/Kandyan-Dancers-3.jpeg", alt: "Kandyan dancers in elaborate traditional costumes with silver decorations and colorful silk cloths performing graceful movements" },
+];
 
 export default function KandyEsalaPeraheraGuide() {
   return (
@@ -899,12 +905,8 @@ export default function KandyEsalaPeraheraGuide() {
                       </ul>
                     </div>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=500&width=600"
-                    alt="Kandyan dancers in elaborate traditional costumes with silver decorations and colorful silk cloths performing graceful movements"
-                    width={600}
-                    height={500}
-                    className="rounded-xl shadow-lg"
+                 <ImageCarousel
+                    images={kandyanDancingImages}
                   />
                 </div>
               </CardContent>
