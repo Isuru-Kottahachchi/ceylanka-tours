@@ -20,6 +20,11 @@ const RajaTuskerImages = [
   { src: "/Raja-tusker.jpg", caption: "Raja Tusker Museum displaying preserved elephant and ceremonial decorations", alt: "Raja Tusker Museum at Temple of the Tooth Kandy" },
 ]
 
+const TempleMuseumImages = [
+  { src: "/Temple-museum-1.jpg", caption: "Interior view of the temple museum", alt: "Temple museum displaying ancient Buddha statues and religious artifacts" },
+  { src: "/Temple-museum-2.webp", caption: "Old Fan", alt: "Old Fan displayed in the temple museum" }
+]
+
 export default function TempleOfToothKandyGuide() {
   return (
     <main className="min-h-screen bg-background">
@@ -587,116 +592,99 @@ export default function TempleOfToothKandyGuide() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-8">
-                <div className="grid lg:grid-cols-2 gap-8 items-start">
-                  <Image
-                    src="/placeholder.svg?height=400&width=600"
-                    alt="Temple museum displaying ancient Buddha statues and religious artifacts"
-                    width={600}
-                    height={400}
-                    className="rounded-xl shadow-lg"
-                  />
-                  <div className="space-y-6">
-                    <p className="text-muted-foreground text-lg leading-relaxed">
-                      The Temple Museum houses an extraordinary collection of religious artifacts, royal gifts, and
-                      historical treasures accumulated over centuries of devotion to the Sacred Tooth Relic. Located
-                      within the temple complex, this fascinating repository offers visitors an intimate glimpse into
-                      the rich cultural and artistic heritage of the Kandyan Kingdom and Sri Lankan Buddhism, with
-                      objects ranging from ancient manuscripts to priceless ceremonial items used by kings and nobles.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Among the most captivating items are the exquisite ceremonial fans (visi valalu) made from
-                      peacock feathers, silver filigree work, and embroidered silk. These ornate fans were used during
-                      temple rituals to honor the Sacred Tooth Relic and cool the shrine chamber. The collection
-                      includes fans gifted by various Kandyan kings, some adorned with precious stones and gold leaf,
-                      representing centuries of royal devotion. You&apos;ll also find beautifully crafted betel leaf
-                      containers (bulath badu), ceremonial umbrellas with intricate embroidery, and royal palanquins
-                      (siviya) that once carried Kandyan royalty.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      The museum displays rare Buddha statues crafted from crystal, jade, bronze, and precious gems -
-                      gifts from Buddhist nations across Asia including Thailand, Myanmar, China, and Japan. Ancient
-                      palm leaf manuscripts (ola leaf books) contain Buddhist scriptures written in Pali and Sinhala,
-                      some dating back 400-500 years. The ivory carving collection is particularly remarkable, featuring
-                      intricate depictions of Jataka tales and the life of Buddha, created by master craftsmen during
-                      the Kandyan period. Historical photographs from the 1880s onward document the evolution of the
-                      Esala Perahera and provide rare glimpses of temple ceremonies from colonial times.
-                    </p>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Royal regalia on display includes ceremonial swords (kaduwa), jeweled crowns, traditional Kandyan
-                      jewelry, and royal robes embroidered with gold thread. The collection of antique oil lamps
-                      (pahana), some made from solid gold and silver, illuminates the temple&apos;s history of opulent
-                      offerings. You&apos;ll find traditional drums (dawula and yak beraya) used in temple ceremonies,
-                      conch shells carved with religious motifs, and ancient incense burners. The museum also houses
-                      gifts from foreign dignitaries and Buddhist leaders worldwide, including items from the Dalai
-                      Lama, Thai royal family, and various heads of state who visited the temple.
-                    </p>
-
-                    <div className="bg-teal-50 dark:bg-teal-900/30 p-6 rounded-lg border border-teal-200 dark:border-teal-700">
-                      <h4 className="font-semibold text-teal-800 dark:text-teal-300 mb-3">Museum Treasures:</h4>
-                      <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                <div className="space-y-6">
+                  <div className="grid md:grid-cols-3 gap-6 items-start">
+                    <ImageCarousel
+                      images={TempleMuseumImages}
+                    />
+                    <div className="md:col-span-2 space-y-4">
+                      <p className="text-muted-foreground leading-relaxed">
+                        The Temple Museum houses an extraordinary collection of religious artifacts, royal gifts, and
+                        historical treasures accumulated over centuries of devotion to the Sacred Tooth Relic. This
+                        fascinating repository offers visitors an intimate glimpse into the rich cultural and artistic
+                        heritage of the Kandyan Kingdom and Sri Lankan Buddhism.
+                      </p>
+                      <p className="text-muted-foreground leading-relaxed">
+                        Among the most captivating items are exquisite ceremonial fans made from peacock feathers,
+                        silver filigree work, and embroidered silk. The collection includes rare Buddha statues crafted
+                        from crystal, jade, bronze, and precious gems - gifts from Buddhist nations across Asia. Ancient
+                        palm leaf manuscripts contain Buddhist scriptures written in Pali and Sinhala, some dating back
+                        400-500 years.
+                      </p>
+                      <div className="bg-teal-50 dark:bg-teal-900/30 p-6 rounded-lg border border-teal-200 dark:border-teal-700">
+                    <h4 className="font-semibold text-teal-800 dark:text-teal-300 mb-3">Museum Treasures:</h4>
+                    <div className="grid md:grid-cols-2 gap-x-6 gap-y-3">
+                      <ul className="space-y-2 text-muted-foreground text-sm">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
-                            <strong>Ceremonial Fans:</strong> Peacock feather fans with silver and gold decoration, used in rituals
+                            <strong>Ceremonial Fans:</strong> Peacock feather fans with silver and gold decoration
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
-                            <strong>Buddha Statues:</strong> Crystal, jade, bronze, and gem-encrusted statues from Asian Buddhist nations
+                            <strong>Buddha Statues:</strong> Crystal, jade, bronze, and gem-encrusted statues
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
-                            <strong>Royal Regalia:</strong> Ceremonial swords, jeweled crowns, embroidered robes, traditional jewelry
+                            <strong>Royal Regalia:</strong> Ceremonial swords, jeweled crowns, embroidered robes
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
-                            <strong>Palm Leaf Manuscripts:</strong> 400-500 year old Buddhist scriptures in Pali and Sinhala
+                            <strong>Palm Leaf Manuscripts:</strong> 400-500 year old Buddhist scriptures
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
-                            <strong>Ivory Carvings:</strong> Masterpiece carvings depicting Jataka tales and Buddha&apos;s life
+                            <strong>Ivory Carvings:</strong> Masterpiece carvings depicting Jataka tales
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                      </ul>
+                      <ul className="space-y-2 text-muted-foreground text-sm">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
                             <strong>Antique Oil Lamps:</strong> Gold and silver pahana lamps from royal donations
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
-                            <strong>Royal Palanquins:</strong> Ornate siviya used to carry Kandyan kings and nobles
+                            <strong>Royal Palanquins:</strong> Ornate siviya used to carry Kandyan kings
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
-                            <strong>Ceremonial Drums:</strong> Traditional dawula and yak beraya drums for temple rituals
+                            <strong>Ceremonial Drums:</strong> Traditional dawula and yak beraya drums
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
-                            <strong>Historical Photographs:</strong> Rare 1880s images of Perahera and temple ceremonies
+                            <strong>Historical Photographs:</strong> Rare 1880s images of Perahera ceremonies
                           </span>
                         </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
                           <span>
-                            <strong>International Gifts:</strong> Items from Dalai Lama, Thai royalty, and world leaders
+                            <strong>International Gifts:</strong> Items from Dalai Lama, Thai royalty, world leaders
                           </span>
                         </li>
                       </ul>
                     </div>
                   </div>
+                    </div>
+                    
+                  </div>
+
+                  
                 </div>
               </CardContent>
             </Card>
