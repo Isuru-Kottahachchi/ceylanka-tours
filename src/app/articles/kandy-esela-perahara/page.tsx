@@ -21,6 +21,12 @@ const kandyPeraharaPastImages = [
   { src: "/Kandy-Perahara-past1.jpeg", alt: "Historical image of Kandy Esala Perahera procession" }
 ];
 
+const maligawaTuskerImages = [
+  { src: "/Maligawa-Tusker-1.jpg", alt: "The sacred Maligawa Tusker magnificently decorated with golden cloth and lights, carrying the sacred casket containing Buddha's tooth relic" },
+  { src: "/Maligawa-Tusker-2.jpeg", alt: "The sacred Maligawa Tusker magnificently decorated with golden cloth and lights, carrying the sacred casket containing Buddha's tooth relic" },
+  { src: "/Maligawa-Tusker-3.jpeg", alt: "The sacred Maligawa Tusker magnificently decorated with golden cloth and lights, carrying the sacred casket containing Buddha's tooth relic" },
+]
+
 export default function KandyEsalaPeraheraGuide() {
   return (
     <main className="min-h-screen bg-background">
@@ -532,12 +538,8 @@ export default function KandyEsalaPeraheraGuide() {
                       </ul>
                     </div>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=500&width=600"
-                    alt="The sacred Maligawa Tusker magnificently decorated with golden cloth and lights, carrying the sacred casket containing Buddha's tooth relic"
-                    width={600}
-                    height={500}
-                    className="rounded-xl shadow-lg"
+                 <ImageCarousel
+                    images={maligawaTuskerImages}
                   />
                 </div>
               </CardContent>
@@ -715,7 +717,7 @@ export default function KandyEsalaPeraheraGuide() {
                   </div>
                 </div>
                 <Image
-                  src="/placeholder.svg?height=600&width=500"
+                  src="/Knady-Nilame.jpg"
                   alt="Nilame dressed in magnificent traditional Kandyan costume with tall golden hat, white silk jacket, colorful waist cloth, and golden jewelry"
                   width={500}
                   height={600}
