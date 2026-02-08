@@ -162,11 +162,11 @@ export default function ExplorePage() {
                       </div>
 
                       {/* Count Badge */}
-                      <div className="absolute top-4 right-4">
+                      {/* <div className="absolute top-4 right-4">
                         <Badge className="bg-white/20 backdrop-blur-sm text-white border-white/30">
                           {category.count}
                         </Badge>
-                      </div>
+                      </div> */}
 
                     </div>
 
