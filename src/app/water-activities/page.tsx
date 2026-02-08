@@ -695,7 +695,7 @@ export default function WaterActivitiesPage() {
                                     </Link>
                                 </Button>
                                 <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-cyan-600">
-                                    <Link href="/about-srilanka">
+                                    <Link href="/contact-us">
                                         Plan Your Trip
                                         <MapPin className="w-4 h-4 ml-2" />
                                     </Link>

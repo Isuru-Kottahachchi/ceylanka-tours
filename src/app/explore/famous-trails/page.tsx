@@ -160,9 +160,7 @@ const famousTrails = [
   {
     name: "Little Adam's Peak",
     images: [
-      { src: "/placeholder.svg?height=400&width=600", alt: "Little Adam's Peak Trail", title: "Little Adam's Peak Trail" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "360° Mountain Views", title: "360° Mountain Views" },
-      { src: "/placeholder.svg?height=400&width=600", alt: "Sunset from Summit", title: "Sunset from Summit" },
+      { src: "/Little-Adams-Peak.jpg", alt: "Little Adam's Peak Trail", title: "Little Adam's Peak Trail" },
     ],
     location: "Ella, Badulla District, Uva Province",
     difficulty: "Easy",

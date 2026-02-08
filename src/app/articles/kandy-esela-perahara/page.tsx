@@ -13,7 +13,6 @@ const peraharaImages = [
   { src: "/perahara.jpeg", alt: "Kandy Esala Perahera festival celebration" },
   { src: "/perahara1.jpeg", alt: "Traditional dancers at Kandy Esala Perahera" },
   { src: "/perahara2.jpg", alt: "Night procession at Kandy Esala Perahera" },
-  { src: "/perahara.jpg", alt: "Kandy Esala Perahara cultural celebration" },
 ]
 
 const kandyPeraharaPastImages = [
@@ -485,7 +484,7 @@ export default function KandyEsalaPeraheraGuide() {
                     <p className="text-muted-foreground text-lg leading-relaxed">
                       In the entire Perahera, there is one elephant who is more special than all the others. This is the
                       Maligawa Tusker - the sacred elephant who has the incredible honor of carrying the golden casket
-                      that contains the tooth relic of Lord Buddha. This elephant is not just an animal; he is
+                      that contains the tooth relic of Lord Buddha. This elephant is not just an animal, he is
                       considered almost like a holy being, treated with the same respect as a high-ranking monk.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
@@ -923,7 +922,7 @@ export default function KandyEsalaPeraheraGuide() {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/perahara2.jpg"
                     alt="Fire dancers creating spectacular displays with flames while traditional drummers play ancient rhythms during the night procession"
                     width={600}
                     height={400}

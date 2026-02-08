@@ -1160,7 +1160,7 @@ export default function TrainJourneysGuide() {
               Explore Destinations
             </Link>
             <Link 
-              href="/plan-your-trip" 
+              href="/contact-us" 
               className="inline-flex items-center gap-2 bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-900 transition-colors"
             >
               <Calendar className="w-5 h-5" />
