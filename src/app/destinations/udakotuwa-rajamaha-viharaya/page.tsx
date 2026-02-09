@@ -12,7 +12,7 @@ export default function UdakotuwaTemple() {
             {/* Hero Section */}
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 <Image
-                    src="/udakotuwa-temple.jpg"
+                    src="/Udakotuwa-Rajamaha-Viharaya-Statue.jpeg"
                     alt="Udakotuwa Rajamaha Viharaya with giant Buddha statues overlooking Bentota River"
                     fill
                     className="object-cover"
@@ -99,7 +99,7 @@ export default function UdakotuwaTemple() {
                                     <ImageCarousel
                                         images={[
                                             {
-                                                src: "/Udakotuwa-Rajamaha-Viharaya-Statue.jpeg",
+                                                src: "/Udakotuwa-Rajamaha-Viharaya-Statue-Copy.jpeg",
                                                 alt: "Towering Buddha statues at Udakotuwa overlooking Bentota River",
                                                 caption: "Giant Riverside Buddhas",
                                                 title: "Monumental Buddha Statues"
