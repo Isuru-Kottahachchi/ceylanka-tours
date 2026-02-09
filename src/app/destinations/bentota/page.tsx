@@ -831,7 +831,7 @@ export default function BentotaGuide() {
                                     <div className="flex flex-col lg:flex-row p-6 border rounded-lg bg-card shadow-lg hover:shadow-xl transition-shadow gap-6 mt-6">
                                         <div className="lg:w-1/3">
                                             <Image
-                                                src="/Udakotuwa-Rajamaha-Viharaya-Statue-Copy.jpeg"
+                                                src="/Udakotuwa-Rajamaha-Viharaya-Statue.jpeg"
                                                 alt="Udakotuwa temple complex showing main shrine and stupa"
                                                 width={400}
                                                 height={300}
