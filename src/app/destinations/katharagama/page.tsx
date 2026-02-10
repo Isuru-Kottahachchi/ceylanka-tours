@@ -5,8 +5,8 @@ import { Clock, MapPin, CheckCircle, Star, Users, TreePine, Flame, Heart, AlertT
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link";
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 
 
@@ -181,7 +181,7 @@ export default function KatharagamaGuide() {
               </CardContent>
               {/* ...existing code... */}
             </Card>
-          <div className="mt-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-lg">
+            <div className="mt-6 p-4 bg-red-50 border-l-4 border-red-400 rounded-r-lg">
               <div className="flex items-start gap-2">
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
@@ -251,20 +251,22 @@ export default function KatharagamaGuide() {
                 </CardHeader>
                 <CardContent className="p-8">
                   <div className="grid lg:grid-cols-2 gap-8 items-start">
-                    <div className="rounded-xl shadow-lg overflow-hidden">
-                      <ImageCarousel
-                        images={[
-                          {
-                            src: "/Katharagama-dewalaya.jpg", caption: "Main Katharagama temple with devotees and oil lamps",
-                            alt: "Main Katharagama temple with devotees and oil lamps"
-                          },
-                          {
-                            src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama temple illuminated at night",
-                            alt: "Katharagama temple illuminated at night"
-                          }
-                        ]}
-                      />
-                    </div>
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/Katharagama-dewalaya1.jpg", caption: "Katharagama temple illuminated at night",
+                          alt: "Katharagama temple illuminated at night"
+                        },
+                         {
+                          src: "/Katharagama-dewalaya2.jpg", caption: "Katharagama temple illuminated at night",
+                          alt: "Katharagama temple illuminated at night"
+                        },
+                         {
+                          src: "/Katharagama-dewalaya.jpg", caption: "Main Katharagama temple with devotees and oil lamps",
+                          alt: "Main Katharagama temple with devotees and oil lamps"
+                        },
+                      ]}
+                    />
                     <div className="space-y-6">
                       <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
                         The main Katharagama temple is the spiritual center of the entire complex, housing the sacred
@@ -336,20 +338,18 @@ export default function KatharagamaGuide() {
                 </CardHeader>
                 <CardContent className="p-8">
                   <div className="grid lg:grid-cols-2 gap-8 items-start">
-                    <div className="rounded-xl shadow-lg overflow-hidden">
-                      <ImageCarousel
-                        images={[
-                          {
-                            src: "/Sella-Katharagama.jpeg", caption: "Main Katharagama temple with devotees and oil lamps",
-                            alt: "Main Katharagama temple with devotees and oil lamps"
-                          },
-                          {
-                            src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama temple illuminated at night",
-                            alt: "Katharagama temple illuminated at night"
-                          }
-                        ]}
-                      />
-                    </div>
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/Sella-Katharagama.jpeg", caption: "Main Katharagama temple with devotees and oil lamps",
+                          alt: "Main Katharagama temple with devotees and oil lamps"
+                        },
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama temple illuminated at night",
+                          alt: "Katharagama temple illuminated at night"
+                        }
+                      ]}
+                    />
                     <div className="space-y-6">
                       <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
                         The main Katharagama temple is the spiritual center of the entire complex, housing the sacred
@@ -487,20 +487,18 @@ export default function KatharagamaGuide() {
                         </div>
                       </div>
                     </div>
-                    <div className="rounded-xl shadow-lg overflow-hidden">
-                      <ImageCarousel
-                        images={[
-                          {
-                            src: "/Kiri-vehera.jpeg", caption: "Kiri Vehera stupa with devotees circumambulating",
-                            alt: ""
-                          },
-                          {
-                            src: "/placeholder.svg?height=500&width=600&text=Kiri+Vehera+Full+Moon", caption: "Kiri Vehera illuminated on full moon night",
-                            alt: ""
-                          }
-                        ]}
-                      />
-                    </div>
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/Kiri-vehera.jpeg", caption: "Kiri Vehera stupa with devotees circumambulating",
+                          alt: ""
+                        },
+                        {
+                          src: "/placeholder.svg?height=500&width=600&text=Kiri+Vehera+Full+Moon", caption: "Kiri Vehera illuminated on full moon night",
+                          alt: ""
+                        }
+                      ]}
+                    />
                   </div>
                 </CardContent>
               </Card>
@@ -515,20 +513,18 @@ export default function KatharagamaGuide() {
                 </CardHeader>
                 <CardContent className="p-8">
                   <div className="grid lg:grid-cols-2 gap-8 items-start">
-                    <div className="rounded-xl shadow-lg overflow-hidden">
-                      <ImageCarousel
-                        images={[
-                          {
-                            src: "/placeholder.svg?height=400&width=600&text=Katharagama+Mosque", caption: "Mosque in Katharagama sacred complex",
-                            alt: ""
-                          },
-                          {
-                            src: "/placeholder.svg?height=400&width=600&text=Mosque+Festival+Night", caption: "Mosque during festival night",
-                            alt: ""
-                          }
-                        ]}
-                      />
-                    </div>
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=Katharagama+Mosque", caption: "Mosque in Katharagama sacred complex",
+                          alt: ""
+                        },
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=Mosque+Festival+Night", caption: "Mosque during festival night",
+                          alt: ""
+                        }
+                      ]}
+                    />
                     <div className="space-y-6">
                       <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
                         Within the Katharagama sacred complex, you&apos;ll find a small but significant mosque that serves the
@@ -601,20 +597,22 @@ export default function KatharagamaGuide() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-8 grid md:grid-cols-2 gap-8 items-center">
-                  <div className="rounded-xl shadow-lg overflow-hidden">
-                    <ImageCarousel
-                      images={[
-                        {
-                          src: "/Katharagama-dewalaya.jpg", caption: "Okanda Dewalaya shrine on the eastern coast",
-                          alt: ""
-                        },
-                        {
-                          src: "/placeholder.svg?height=400&width=600&text=Okanda+Beach+View", caption: "Pilgrims at Okanda beach near the shrine",
-                          alt: ""
-                        }
-                      ]}
-                    />
-                  </div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Okanda-Devalaya.jpg", caption: "Okanda Dewalaya shrine on the eastern coast",
+                        alt: ""
+                      },
+                      {
+                        src: "/Okanda-Devalaya1.jpg", caption: "Pilgrims at Okanda beach near the shrine",
+                        alt: ""
+                      },
+                      {
+                        src: "/Okanda-Devalaya2.jpg", caption: "Pilgrims at Okanda beach near the shrine",
+                        alt: ""
+                      }
+                    ]}
+                  />
                   <div className="space-y-6">
                     <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
                       Okanda Dewalaya is a revered Hindu shrine on Sri Lanka&apos;s wild eastern coast, dedicated to Lord Murugan (Kataragama Deviyo). According to legend, Lord Murugan landed here from India on his peacock mount, splitting the great Okanda rock with his divine spear (vel) to mark the start of his journey to Katharagama. The name &quot;Okanda&quot; is believed to derive from the Tamil &quot;Ukantai&quot; meaning &quot;to sit&quot;, as the deity is said to have rested here before continuing his pilgrimage.
@@ -647,7 +645,6 @@ export default function KatharagamaGuide() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-8 grid md:grid-cols-2 gap-8 items-center">
-                  <div className="rounded-xl shadow-lg overflow-hidden">
                     <ImageCarousel
                       images={[
                         {
@@ -660,7 +657,6 @@ export default function KatharagamaGuide() {
                         }
                       ]}
                     />
-                  </div>
                   <div className="space-y-6">
                     <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
                       Kebalitta Dewalaya is a sacred jungle shrine located on the banks of the Menik Ganga river, and is inside of Yala national park just outside Katharagama. It is considered the place where God of Katharagama/Murugan resides, serving as a spiritual gateway to Katharagama for Pada Yatra pilgrims, who traditionally stop here to purify themselves in the river and seek blessings before entering the holy city.
@@ -699,7 +695,6 @@ export default function KatharagamaGuide() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-8 grid md:grid-cols-2 gap-8 items-center">
-                  <div className="rounded-xl shadow-lg overflow-hidden">
                     <ImageCarousel
                       images={[
                         {
@@ -716,7 +711,6 @@ export default function KatharagamaGuide() {
                         }
                       ]}
                     />
-                  </div>
                   <div className="space-y-6">
                     <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
                       Wadasiti Kanda is a forested hill rising near Katharagama, considered the legendary meditation site of King Dutugemunu and a place of penance for devotees. Pilgrims climb the mountain, often barefoot, as an act of devotion and to seek blessings for health, success, and spiritual growth.
