@@ -50,8 +50,8 @@ export default function FiveDaysPackage() {
       overnight: "Sigiriya/Dambulla",
       highlights: [
         { name: "Sigiriya Rock Fortress", image: "/Sigiriya.jpeg" },
-        { name: "Ancient Frescoes", image: "/images/sigiriya/ancient-frescoes.jpg" },
-        { name: "Mirror Wall", image: "/images/sigiriya/mirror-wall.jpg" },
+        { name: "Ancient Frescoes", image: "/Sigiriyapaintings.jpeg" },
+        { name: "Mirror Wall", image: "/Lions-paw.jpeg" },
         { name: "Dambulla Cave Temple", image: "/dambulla-cave-temple.jpg" },
         { name: "Golden Buddha", image: "/Rangiri-Dambulu.jpg" },
         { name: "Scenic Gardens", image: "/images/sigiriya/gardens.jpg" }
@@ -316,7 +316,7 @@ export default function FiveDaysPackage() {
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
-            <div className="sticky top-24 space-y-6">
+            <div className="sticky top-48 space-y-6">
               
               {/* Booking Card */}
               <Card className="border-2 border-green-200 dark:border-green-900">

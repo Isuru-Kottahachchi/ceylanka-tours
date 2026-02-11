@@ -118,7 +118,7 @@ export default function KandyDayTour() {
           </div>
 
           <div className="lg:col-span-1">
-            <Card className="sticky top-24 border-2 border-purple-200">
+            <Card className="sticky top-48 border-2 border-purple-200">
               <CardContent className="p-6">
                 <div className="text-center mb-6">
                   <p className="text-sm text-muted-foreground mb-1">Price per person</p>
@@ -130,8 +130,8 @@ export default function KandyDayTour() {
                   <div className="flex gap-2"><Users className="w-4 h-4 text-purple-600" /><span>Private tour available</span></div>
                   <div className="flex gap-2"><Car className="w-4 h-4 text-purple-600" /><span>Hotel pick up included</span></div>
                 </div>
-                <Link href="/contact-us"><Button className="w-full bg-purple-600 hover:bg-purple-700 mb-3">Book Now</Button></Link>
-                <Link href="/contact-us"><Button variant="outline" className="w-full">Contact Us</Button></Link>
+                <Link href="/contact-us"><Button className="w-full bg-purple-600 hover:bg-purple-700 mb-3 cursor-pointer">Book Now</Button></Link>
+                <Link href="/contact-us"><Button variant="outline" className="w-full cursor-pointer">Contact Us</Button></Link>
                 <div className="mt-6 pt-6 border-t">
                   <p className="text-xs text-muted-foreground text-center">Available every day • All religions welcome</p>
                 </div>

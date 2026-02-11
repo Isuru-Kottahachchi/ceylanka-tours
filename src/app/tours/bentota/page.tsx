@@ -56,8 +56,8 @@ export default function BentotaDayTour() {
                   <div className="flex gap-2"><Users className="w-4 h-4 text-blue-600" /><span>Private tour</span></div>
                   <div className="flex gap-2"><Car className="w-4 h-4 text-blue-600" /><span>Hotel pick up & drop (Around Bentota area)</span></div>
                 </div>
-                <Link href="/contact-us"><Button className="w-full bg-blue-600 hover:bg-blue-700 mb-3">Book Tour</Button></Link>
-                <Link href="/contact-us"><Button variant="outline" className="w-full">Inquire</Button></Link>
+                <Link href="/contact-us"><Button className="w-full bg-blue-600 hover:bg-blue-700 mb-3 cursor-pointer">Book Tour</Button></Link>
+                <Link href="/contact-us"><Button variant="outline" className="w-full cursor-pointer">Inquire</Button></Link>
 
                 <div className="mt-6 pt-6 border-t">
                   <h4 className="font-semibold mb-3 text-sm">Popular Add-ons</h4>

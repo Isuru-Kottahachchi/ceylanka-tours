@@ -96,7 +96,7 @@ export default function SigiriyaDayTour() {
           </div>
 
           <div className="lg:col-span-1">
-            <Card className="sticky top-24 border-2 border-amber-200">
+            <Card className="sticky top-48 border-2 border-amber-200">
               <CardContent className="p-6">
                 <div className="text-center mb-6">
                   <p className="text-sm text-muted-foreground mb-1">Price per person</p>
