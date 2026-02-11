@@ -1,17 +1,27 @@
+"use client"
+
+import { useState } from "react"
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Clock, MapPin, Users, Car, Utensils, CheckCircle, ArrowLeft, Camera } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Galle Day Tour | Dutch Fort & South Coast Beaches",
-  description: "Explore historic Galle Fort and beautiful south coast. Visit colonial buildings, sea turtle hatchery, and pristine beaches in one day.",
-}
+import { Clock, MapPin, Users, Car, Utensils, CheckCircle, ArrowLeft, Camera, ChevronDown } from "lucide-react"
 
 export default function GalleDayTour() {
+  const [showHighlights, setShowHighlights] = useState(true)
+
+  const tourHighlights = [
+    { name: "Galle Fort", image: "/galle-fort.jpeg" },
+    { name: "Dutch Reformed Church", image: "/dutch-church-galle.jpeg" },
+    { name: "Sea Turtle Hatchery", image: "/turtle-hatchery.jpeg" },
+    { name: "Unawatuna Beach", image: "/unawatuna-beach.jpeg" },
+    { name: "Fort Lighthouse", image: "/galle-lighthouse.jpeg" },
+    { name: "Fort Ramparts", image: "/galle-ramparts.jpeg" },
+    { name: "Flag Rock", image: "/flag-rock-galle.jpeg" },
+    { name: "Fresh Seafood", image: "/seafood-galle.jpeg" },
+  ]
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-800">
       <section className="relative h-[40vh] overflow-hidden">
@@ -75,6 +85,33 @@ export default function GalleDayTour() {
             </section>
 
             <section>
+              <button
+                onClick={() => setShowHighlights(!showHighlights)}
+                className="flex items-center gap-2 text-2xl font-bold mb-4 hover:text-blue-600 transition-colors"
+              >
+                <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${showHighlights ? '' : 'rotate-180'}`} />
+                Tour Highlights
+              </button>
+              <div className={`grid grid-cols-2 md:grid-cols-4 gap-3 transition-all duration-300 overflow-hidden ${
+                showHighlights ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'
+              }`}>
+                {tourHighlights.map((highlight, idx) => (
+                  <div key={idx} className="relative h-40 rounded-lg overflow-hidden group">
+                    <Image
+                      src={highlight.image}
+                      alt={highlight.name}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+                      <p className="text-white text-sm font-semibold">{highlight.name}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-lg font-bold mb-3">Included</h3>
@@ -111,7 +148,7 @@ export default function GalleDayTour() {
           </div>
 
           <div className="lg:col-span-1">
-            <Card className="sticky top-24 border-2 border-blue-200">
+            <Card className="sticky top-48 border-2 border-blue-200">
               <CardContent className="p-6">
                 <div className="text-center mb-6">
                   <p className="text-sm text-muted-foreground mb-1">Price per person</p>

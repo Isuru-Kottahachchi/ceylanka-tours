@@ -161,15 +161,15 @@ const oneDayPackages = [
     description: "Full-day jeep safari in Yala - highest leopard density in the world. See elephants, bears, and exotic birds.",
     highlights: ["Leopard Spotting", "Elephant Herds", "Bird Watching"]
   },
-  {
-    id: "temple-circuit",
-    title: "Golden Temple Circuit",
-    duration: "1 Day",
-    price: "From $75",
-    image: "/Anuradhapura.jpg",
-    description: "Visit ancient Buddhist temples and sacred sites. Perfect for spiritual travelers.",
-    highlights: ["Kelaniya Temple", "Gangaramaya", "Seema Malaka"]
-  },
+  // {
+  //   id: "temple-circuit",
+  //   title: "Golden Temple Circuit",
+  //   duration: "1 Day",
+  //   price: "From $75",
+  //   image: "/Anuradhapura.jpg",
+  //   description: "Visit ancient Buddhist temples and sacred sites. Perfect for spiritual travelers.",
+  //   highlights: ["Kelaniya Temple", "Gangaramaya", "Seema Malaka"]
+  // },
   {
     id: "shopping-colombo",
     title: "Colombo Shopping & Gems",

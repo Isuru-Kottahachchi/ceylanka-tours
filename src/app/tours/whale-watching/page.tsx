@@ -11,7 +11,7 @@ export default function WhaleWatchingTour() {
       {/* Hero Section */}
       <section className="relative h-[60vh] overflow-hidden">
         <Image
-          src="/jungle-beach.jpeg"
+          src="/Whale-in-Mirissa.jpg"
           alt="Mirissa Whale Watching"
           fill
           className="object-cover brightness-[0.7]"

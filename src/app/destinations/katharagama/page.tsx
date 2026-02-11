@@ -254,16 +254,16 @@ export default function KatharagamaGuide() {
                     <ImageCarousel
                       images={[
                         {
-                          src: "/Katharagama-dewalaya1.jpg", caption: "Katharagama temple illuminated at night",
-                          alt: "Katharagama temple illuminated at night"
+                          src: "/Katharagama-dewalaya1.jpg", caption: "Katharagama dewalaya illuminated at night",
+                          alt: "Katharagama dewalaya illuminated at night"
                         },
                          {
-                          src: "/Katharagama-dewalaya2.jpg", caption: "Katharagama temple illuminated at night",
-                          alt: "Katharagama temple illuminated at night"
+                          src: "/Katharagama-dewalaya2.jpg", caption: "Katharagama dewalaya illuminated at night",
+                          alt: "Katharagama dewalaya illuminated at night"
                         },
                          {
-                          src: "/Katharagama-dewalaya.jpg", caption: "Main Katharagama temple with devotees and oil lamps",
-                          alt: "Main Katharagama temple with devotees and oil lamps"
+                          src: "/Katharagama-dewalaya.jpg", caption: "Main Katharagama dewalaya with devotees and oil lamps",
+                          alt: "Main Katharagama dewalaya with devotees and oil lamps"
                         },
                       ]}
                     />
@@ -341,12 +341,12 @@ export default function KatharagamaGuide() {
                     <ImageCarousel
                       images={[
                         {
-                          src: "/Sella-Katharagama.jpeg", caption: "Main Katharagama temple with devotees and oil lamps",
-                          alt: "Main Katharagama temple with devotees and oil lamps"
+                          src: "/Sella-Katharagama.jpeg", caption: "Sella Katharagama",
+                          alt: "Sella Katharagama"
                         },
                         {
-                          src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama temple illuminated at night",
-                          alt: "Katharagama temple illuminated at night"
+                          src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama dewalaya illuminated at night",
+                          alt: "Katharagama dewalaya illuminated at night"
                         }
                       ]}
                     />
@@ -682,6 +682,142 @@ export default function KatharagamaGuide() {
                         <a href="https://www.lanka.com/about/destinations/katharagama/kebilitta-devalaya/" target="_blank" rel="noopener noreferrer">Read More</a>
                       </Button>
                     </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Valli Amma Kovil */}
+              <Card className="border-2 border-purple-200 dark:border-purple-700">
+                <CardHeader className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/40 dark:to-pink-900/40">
+                  <CardTitle className="text-2xl text-purple-700 dark:text-purple-300">Valli Amma Kovil (Valli Shrine)</CardTitle>
+                  <CardDescription className="text-lg text-purple-600 dark:text-purple-300">
+                    Shrine dedicated to Valli, the beloved consort of Lord Murugan
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-8">
+                  <div className="grid lg:grid-cols-2 gap-8 items-start">
+                    <div className="space-y-6">
+                      <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
+                        The Valli Amma Kovil is dedicated to Valli, the local tribal princess who became the beloved consort of Lord Murugan according to Hindu mythology. Legend says that Murugan fell in love with Valli, a Vedda maiden, during his stay in Katharagama. This shrine honors their divine union and is an important part of the pilgrimage circuit.
+                      </p>
+                      <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
+                        Pilgrims traditionally visit Valli Amma Kovil after offering prayers at the main Katharagama temple, as it is believed that Valli can intercede on behalf of devotees to Lord Murugan. The temple has a peaceful atmosphere compared to the main shrine and is particularly popular among women devotees seeking blessings for marriage, family harmony, and children.
+                      </p>
+                      <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
+                        The story of Valli also represents the beautiful integration of indigenous Vedda culture with Hindu traditions, making this shrine a symbol of cultural harmony and the local roots of Katharagama worship.
+                      </p>
+                      <ul className="list-disc pl-5 text-muted-foreground dark:text-muted-foreground">
+                        <li>Essential part of traditional pilgrimage circuit</li>
+                        <li>Represents cultural fusion of Vedda and Hindu traditions</li>
+                        <li>Popular for family and marriage blessings</li>
+                        <li>Quieter, more peaceful atmosphere than main temple</li>
+                        <li>Beautiful traditional architecture</li>
+                      </ul>
+                    </div>
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=Valli+Amma+Kovil", caption: "Valli Amma Kovil shrine",
+                          alt: ""
+                        },
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=Valli+Shrine+Interior", caption: "Interior of Valli shrine with devotees",
+                          alt: ""
+                        }
+                      ]}
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Menik Ganga River */}
+              <Card className="border-2 border-teal-200 dark:border-teal-700">
+                <CardHeader className="bg-gradient-to-r from-teal-50 to-blue-50 dark:from-teal-900/40 dark:to-blue-900/40">
+                  <CardTitle className="text-2xl text-teal-700 dark:text-teal-300">Menik Ganga River (Holy Bathing)</CardTitle>
+                  <CardDescription className="text-lg text-teal-600 dark:text-teal-300">
+                    Sacred river for ritual purification before temple worship
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-8">
+                  <div className="grid lg:grid-cols-2 gap-8 items-start">
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=Menik+Ganga+Bathing", caption: "Pilgrims bathing in Menik Ganga",
+                          alt: ""
+                        },
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=River+Ghats", caption: "Bathing ghats on Menik Ganga river",
+                          alt: ""
+                        }
+                      ]}
+                    />
+                    <div className="space-y-6">
+                      <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
+                        The Menik Ganga (Gem River) is considered sacred and an essential part of the Katharagama pilgrimage. Traditional practice requires pilgrims to bathe in the river before entering the temple complex as an act of physical and spiritual purification. The river flows through the sacred area and is believed to wash away sins and negative energies.
+                      </p>
+                      <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
+                        Early morning is the most popular time for ritual bathing, when hundreds of devotees gather at the designated bathing ghats (steps) to perform their ablutions. Many pilgrims also use this opportunity to perform prayers, offer flowers to the river, and mentally prepare themselves for temple worship.
+                      </p>
+                      <div className="bg-red-50 dark:bg-red-900/40 p-4 rounded-lg border border-red-200 dark:border-red-700">
+                        <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2 flex items-center gap-2">
+                          <AlertTriangle className="w-5 h-5" />
+                          Important Safety Warning:
+                        </h4>
+                        <ul className="space-y-2 text-sm text-muted-foreground dark:text-muted-foreground">
+                          <li>• <strong>Crocodiles inhabit this river</strong> - exercise extreme caution</li>
+                          <li>• Only bathe at designated ghats with proper steps</li>
+                          <li>• Do not venture into deep water</li>
+                          <li>• Supervise children closely at all times</li>
+                          <li>• Early morning bathing is safest (more people present)</li>
+                          <li>• Follow local guidance and posted warnings</li>
+                        </ul>
+                      </div>
+                      <ul className="list-disc pl-5 text-muted-foreground dark:text-muted-foreground">
+                        <li>Traditional purification ritual before temple entry</li>
+                        <li>Sacred water believed to have healing properties</li>
+                        <li>Designated safe bathing areas with steps</li>
+                        <li>Best time: Early morning (5-7 AM)</li>
+                        <li>Part of authentic pilgrimage experience</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Sella Kataragama */}
+              <Card className="border-2 border-amber-200 dark:border-amber-700">
+                <CardHeader className="bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/40 dark:to-yellow-900/40">
+                  <CardTitle className="text-2xl text-amber-700 dark:text-amber-300">Sella Kataragama</CardTitle>
+                  <CardDescription className="text-lg text-amber-600 dark:text-amber-300">
+                    Legendary birthplace site of Lord Murugan's divine child
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="p-8">
+                  <div className="grid lg:grid-cols-2 gap-8 items-start">
+                    <div className="space-y-6">
+                      <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
+                        Sella Kataragama is a small but significant shrine located a short distance from the main temple complex. According to local legend, this is where Valli gave birth to Lord Murugan's child, making it an important site for devotees seeking blessings for childbirth, fertility, and children's wellbeing.
+                      </p>
+                      <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
+                        The shrine is peaceful and less crowded than the main temple, offering a serene environment for prayer and meditation. Many couples facing fertility challenges make special offerings here, and parents bring newborn children for blessings.
+                      </p>
+                      <ul className="list-disc pl-5 text-muted-foreground dark:text-muted-foreground">
+                        <li>Associated with childbirth and fertility blessings</li>
+                        <li>Popular among couples and families with young children</li>
+                        <li>Peaceful atmosphere ideal for personal prayers</li>
+                        <li>Short walk from main temple complex</li>
+                        <li>Part of extended pilgrimage circuit</li>
+                      </ul>
+                    </div>
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/placeholder.svg?height=400&width=600&text=Sella+Kataragama", caption: "Sella Kataragama shrine",
+                          alt: ""
+                        }
+                      ]}
+                    />
                   </div>
                 </CardContent>
               </Card>

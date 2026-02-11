@@ -13,11 +13,11 @@ export default function BentotaDayTour() {
   const [showHighlights, setShowHighlights] = useState(true)
 
   const tourHighlights = [
-    { name: "Bentota Beach", image: "/Bentota-beach2.jpeg" },
-    { name: "Turtle Hatchery", image: "/turtle-hatchery.jpeg" },
-    { name: "Bentota River Safari", image: "/Bentota-river.jpeg" },
-    { name: "Brief Garden", image: "/Breif-garden-bevis-bawa.jpeg" },
-    { name: "Lunuganga Estate", image: "/Lunuganga-geoffrey-bawa.jpeg" },
+    { name: "Bentota Beach", image: "/Bentota-beach.jpeg" },
+    { name: "Turtle Hatchery", image: "/Sea-turtle-bentota.jpeg" },
+    { name: "Bentota River Safari", image: "/Bentota-River8.jpeg" },
+    { name: "Brief Garden", image: "/Brief-Garden-by-Bawa.jpg" },
+    { name: "Lunuganga Estate", image: "/Lunugangabawa2.jpeg" },
     { name: "Water Sports", image: "/placeholder.svg?height=300&width=400" },
     { name: "Fish Spa", image: "/Fish-spa.jpg" },
     { name: "Local Seafood", image: "/placeholder.svg?height=300&width=400" }
@@ -136,6 +136,21 @@ export default function BentotaDayTour() {
                   <div><p className="font-semibold">Fish Spa & Beach Relaxation</p><p className="text-sm text-muted-foreground">Natural fish spa and sunset on the beach</p></div>
                 </CardContent></Card>
               </div>
+            </section>
+
+            {/* Alternative Tour Option Note */}
+            <section>
+              <Card className="bg-blue-50 dark:bg-blue-900/20 border-blue-200">
+                <CardContent className="p-4">
+                  <h4 className="font-semibold mb-2 text-sm flex items-center gap-2">
+                    <span>🚴</span>
+                    <span>Alternative Tour Option</span>
+                  </h4>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    If you select Lunuganga Garden instead of Kalavila Garden, we can arrange a foot bike ride around Bentota area for a more active experience. Otherwise, you will travel by private vehicle. The bike ride option may result in slightly lower tour prices.
+                  </p>
+                </CardContent>
+              </Card>
             </section>
 
             {/* Tour Highlights with Images */}
