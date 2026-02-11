@@ -15,7 +15,7 @@ export default function SigiriyaDayTour() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white dark:from-slate-900 dark:to-slate-800">
       <section className="relative h-[40vh] overflow-hidden">
-        <Image src="/Adams-peak.jpeg" alt="Sigiriya Rock" fill className="object-cover brightness-[0.6]" priority />
+        <Image src="/Sigiriya.jpeg" alt="Sigiriya Rock" fill className="object-cover brightness-[0.6]" priority />
         <div className="relative z-10 flex items-center justify-center h-full text-white px-4">
           <div className="max-w-3xl text-center">
             <Badge className="mb-3 bg-amber-600">One Day Tour</Badge>
@@ -108,8 +108,8 @@ export default function SigiriyaDayTour() {
                   <div className="flex gap-2"><Users className="w-4 h-4 text-amber-600" /><span>Small groups</span></div>
                   <div className="flex gap-2"><Car className="w-4 h-4 text-amber-600" /><span>Hotel pick up/drop off</span></div>
                 </div>
-                <Link href="/contact-us"><Button className="w-full bg-amber-600 hover:bg-amber-700 mb-3">Book This Tour</Button></Link>
-                <Link href="/contact-us"><Button variant="outline" className="w-full">Send Inquiry</Button></Link>
+                <Link href="/contact-us"><Button className="w-full bg-amber-600 hover:bg-amber-700 mb-3 cursor-pointer">Book This Tour</Button></Link>
+                <Link href="/contact-us"><Button variant="outline" className="w-full cursor-pointer">Send Inquiry</Button></Link>
                 <div className="mt-6 pt-6 border-t">
                   <p className="text-xs text-muted-foreground text-center">Free cancellation up to 24 hours before tour</p>
                 </div>
