@@ -175,7 +175,7 @@ export default function WilpattuNationalParkTravelGuide() {
 
         {/* Wildlife Highlights */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Incredible Wildlife of Wilpattu</h2>
+          <h2 className="text-3xl font-bold mb-6">Incredible Wildlife of Wilpattu and Places to Explore</h2>
 
           <div className="space-y-8">
             {/* Sri Lankan Leopards */}
@@ -232,14 +232,14 @@ export default function WilpattuNationalParkTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Large herds of Asian elephants roam freely throughout Wilpattu, particularly during the dry
+                      Compared to Yala, Udawalawa and Minneriya, fewer Asian elephants roam freely throughout Wilpattu, particularly during the dry
                       season when they gather around permanent water sources. These intelligent giants play a crucial
                       role in maintaining the parks ecosystem through seed dispersal and habitat modification.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Large herds with babies and juveniles
+                        Smaller herds with babies and juveniles
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -251,12 +251,12 @@ export default function WilpattuNationalParkTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Often seen bathing in villus
+                        Can be seen bathing in villus
                       </li>
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Elephants-In-Wilpattu.jpg"
                     alt="Herd of Asian elephants including babies drinking and bathing at a villu in Wilpattu"
                     width={400}
                     height={300}
@@ -275,7 +275,7 @@ export default function WilpattuNationalParkTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Sloth-bear-wilpattu.jpg"
                     alt="Rare sloth bear foraging in Wilpattu forest showing distinctive shaggy black coat and long claws"
                     width={400}
                     height={300}
@@ -311,7 +311,7 @@ export default function WilpattuNationalParkTravelGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>3. Thambapanni: The Legendary Landing</CardTitle>
+                <CardTitle>4. Thambapanni: The Legendary Landing</CardTitle>
                 <CardDescription>Where Sri Lanka’s story began</CardDescription>
               </CardHeader>
               <CardContent>
@@ -351,7 +351,7 @@ export default function WilpattuNationalParkTravelGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle>4. Kuweni’s Palace: The Queen of Wilpattu</CardTitle>
+                <CardTitle>5. Kuweni’s Palace: The Queen of Wilpattu</CardTitle>
                 <CardDescription>Legend, love, and betrayal in the jungle</CardDescription>
               </CardHeader>
               <CardContent>
