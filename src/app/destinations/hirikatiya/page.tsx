@@ -226,7 +226,7 @@ export default function HiriketiyaTravelGuide() {
                   <div className="flex gap-8">
                     <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                       <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
-                      <p className="text-sm text-yellow-800">1–2 full days to explore the sacred sites, ancient tanks, and local culture at a relaxed pace.</p>
+                      <p className="text-sm text-yellow-800">1–2 full days to enjoy the beach, local culture and surfing.</p>
                     </div>
                     <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
                       <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
@@ -278,7 +278,7 @@ export default function HiriketiyaTravelGuide() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo Fort → Hiriketiya</li>
                       <li>• <strong>Duration:</strong> 3 - 4 hours</li>
-                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                      {/* <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li> */}
                       <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
                     </ul>
 
@@ -286,7 +286,7 @@ export default function HiriketiyaTravelGuide() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo Fort → Hirikatiya</li>
                       <li>• <strong>Duration:</strong> 5.5-6 hours</li>
-                      <li>• <strong>Cost:</strong> $2-8 USD (depending on class)</li>
+                      {/* <li>• <strong>Cost:</strong> $2-8 USD (depending on class)</li> */}
                       <li>• <strong>Scenic journey:</strong> Through countryside</li>
                     </ul>
                   </div>

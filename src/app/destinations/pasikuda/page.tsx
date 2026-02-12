@@ -135,7 +135,7 @@ export default function PasikudaTravelGuide() {
                   <div className="flex gap-8">
                     <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                       <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
-                      <p className="text-sm text-yellow-800">1–2 full days to explore the sacred sites, ancient tanks, and local culture at a relaxed pace.</p>
+                      <p className="text-sm text-yellow-800">1–2 full days to enjoy the beach and local culture at a relaxed pace.</p>
                     </div>
                     <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
                       <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
