@@ -35,7 +35,7 @@ export default function FiveDaysPackage() {
       description: "Pick up from airport. Quick city tour of Colombo - see Independence Square, Galle Face Green, and Pettah market. Lunch at local restaurant. Evening drive to Sigiriya area.",
       overnight: "Sigiriya/Dambulla",
       highlights: [
-        { name: "Independence Square", image: "/images/colombo/independence-square.jpg" },
+        { name: "Independence Square", image: "/Independence-Memorial-Hall1.jpg" },
         { name: "Galle Face Green", image: "/Galle-face.jpg" },
         { name: "Pettah Market", image: "/images/colombo/pettah-market.jpg" },
         { name: "Gangaramaya Temple", image: "/Gangaramaya1.jpg" },
@@ -347,12 +347,12 @@ export default function FiveDaysPackage() {
                   </div>
 
                   <Link href="/contact-us">
-                    <Button className="w-full bg-green-600 hover:bg-green-700 mb-3">
+                    <Button className="w-full bg-green-600 hover:bg-green-700 mb-3 cursor-pointer">
                       Book Now
                     </Button>
                   </Link>
                   <Link href="/contact-us">
-                    <Button variant="outline" className="w-full">
+                    <Button variant="outline" className="w-full cursor-pointer">
                       Ask Questions
                     </Button>
                   </Link>

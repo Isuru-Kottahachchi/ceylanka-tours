@@ -63,7 +63,7 @@ export default function WilpattuNationalParkTravelGuide() {
               of Asia&apos;s most biodiverse landscapes.
             </p>
             <p className="text-lg">
-              From the elusive Sri Lankan leopard to massive elephant herds, from rare sloth bears to over 200 bird
+              From the elusive Sri Lankan leopard to significant elephant herds, from rare sloth bears to over 200 bird
               species, Wilpattu&apos;s diverse habitats support an incredible array of wildlife. The parks network of
               natural lakes creates a unique ecosystem that attracts animals year-round, making every safari drive an
               adventure filled with potential discoveries.
@@ -325,7 +325,7 @@ export default function WilpattuNationalParkTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The northwestern coast of Wilpattu is believed to be the legendary Thambapanni, where Prince Vijaya—the first recorded king of Sri Lanka—landed with his followers over 2,500 years ago. The name “Thambapanni” means “copper-colored sands,” inspired by the reddish hue of the beaches here.
+                      The northwestern coast of Wilpattu is believed to be the legendary Thambapanni, where Prince Vijaya the first recorded king of Sri Lanka landed with his followers over 2,500 years ago. The name “Thambapanni” means “copper-colored sands,” inspired by the reddish hue of the beaches here.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -472,7 +472,7 @@ export default function WilpattuNationalParkTravelGuide() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
+                  src="/Jungle-fowl.jpg"
                   alt="Colorful Sri Lankan junglefowl, the national bird, in Wilpattu forest habitat"
                   width={300}
                   height={200}

@@ -265,7 +265,7 @@ export default function ElevenDaysPackage() {
 
           {/* Sidebar */}
           <div className="lg:col-span-1">
-            <div className="sticky top-24 space-y-6">
+            <div className="sticky top-48 space-y-6">
               
               {/* Booking Card */}
               <Card className="border-2 border-blue-200 dark:border-blue-900">
