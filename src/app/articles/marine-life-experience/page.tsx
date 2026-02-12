@@ -76,6 +76,13 @@ export default function WhaleWatchingGuide() {
             Sri Lanka's coastal waters are home to an amazing variety of marine life. Here are the magnificent creatures you might encounter during your ocean adventure.
           </p>
 
+          {/* Important Note about Marine Wildlife Sightings */}
+          <div className="mb-8 p-4 bg-amber-50 dark:bg-amber-950/30 border-l-4 border-amber-500 rounded-lg">
+            <p className="text-sm text-amber-900 dark:text-amber-200">
+              <strong>⚠️ Important Note:</strong> Remember that our planet is mostly covered by water, and these magnificent marine creatures spend most of their time deep beneath the surface. Their appearances at the water's surface depend on various factors including time of day, weather conditions, mating seasons, feeding patterns, and migration cycles. While we do our best to maximize your chances of sightings, please understand that wildlife encounters are never guaranteed. Don't be disappointed if you don't see all these creatures during your tour each ocean adventure is unique and special in its own way!
+            </p>
+          </div>
+
           {/* Whales Section */}
           <div className="mb-10">
             <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
@@ -307,7 +314,7 @@ export default function WhaleWatchingGuide() {
               <CardContent className="p-4">
                 <div className="mb-3 h-40 overflow-hidden rounded-lg">
                   <Image
-                    src="/placeholder.svg"
+                    src="/Striped-Dolphin.jpg"
                     alt="Striped dolphins jumping"
                     width={300}
                     height={200}
