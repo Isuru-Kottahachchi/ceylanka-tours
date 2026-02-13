@@ -91,7 +91,12 @@ export function Footer() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4" />
-                  <span>ceylankatoursinfo@gmail.com</span>
+                  <a 
+                    href="mailto:ceylankatoursinfo@gmail.com"
+                    className="hover:text-cyan-400 transition-colors cursor-pointer"
+                  >
+                    ceylankatoursinfo@gmail.com
+                  </a>
                 </div>
               </div>
 

@@ -729,9 +729,7 @@ export default function PolonnaruwaGuide() {
                             <div className="grid md:grid-cols-2 gap-6 items-center">
                                 <ImageCarousel
                                     images={[
-                                        { src: "/Lotus-Pond.jpeg", caption: "Aerial view of the Lotus Pond", alt: "Aerial view of the Lotus Pond" },
-                                        { src: "/LotusPond2.jpg", caption: "Detailed stone craftsmanship", alt: "Detailed stone craftsmanship" },
-                                        { src: "/LotusPond3.jpg", caption: "Architectural details", alt: "Architectural details" }
+                                        { src: "/Lotus-Pond.jpeg", caption: "View of the Lotus Pond", alt: "Aerial view of the Lotus Pond" },
                                     ]} />
                                 <div>
                                     <p className="text-muted-foreground mb-4">
@@ -1035,7 +1033,6 @@ export default function PolonnaruwaGuide() {
                                         images={[
                                             { src: "/Thivanka-Image-House.jpeg", caption: "Thivanka Image House exterior view", alt: "Thivanka Image House exterior view" },
                                             { src: "/Thivanka-Image-House1.jpeg", caption: "Ancient frescoes inside Thivanka Image House", alt: "Ancient frescoes inside Thivanka Image House" },
-                                            { src: "/Thivanka-Image-House3.jpg", caption: "Unique bent-posture Buddha statue", alt: "Unique bent-posture Buddha statue" }
                                         ]}
 
                                     />

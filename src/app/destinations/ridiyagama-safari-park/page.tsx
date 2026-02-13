@@ -71,7 +71,7 @@ export default function RidiyagamaSafariPark() {
                         </div>
 
                         {/* Small Sri Lanka Map with Location */}
-                        <div className="flex flex-col items-center flex-shrink-0">
+                        {/* <div className="flex flex-col items-center flex-shrink-0">
                             <div className="relative w-[200px] md:w-[180px] lg:w-[200px] bg-green-50 dark:bg-green-950/30 rounded-lg p-2 border border-green-200 dark:border-green-800">
                                 <Image 
                                     src="/images/sri-lanka-map-hambantota.png" 
@@ -88,7 +88,7 @@ export default function RidiyagamaSafariPark() {
                                     <p className="text-[9px] text-muted-foreground">Southern Coast</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                         <div className="my-8 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900/60 border-l-4 border-yellow-400 dark:border-yellow-500">
