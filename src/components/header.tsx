@@ -188,7 +188,7 @@ const planYourTripItems = [
       { name: "Hotels", href: "/accommodation/hotels" },
       { name: "Guesthouses", href: "/accommodation/guesthouses" },
       { name: "Resorts", href: "/accommodation/resorts" },
-      { name: "Homestays", href: "/accommodation/homestays" },
+      // { name: "Homestays", href: "/accommodation/homestays" },
     ],
   },
 ]

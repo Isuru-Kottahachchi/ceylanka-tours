@@ -276,7 +276,7 @@ export default function BalangodaGuide() {
                       </li>
                     </ul>
                     <div className="mt-4 flex justify-start">
-                      <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
+                      <Link href="/destinations/archaeological-sites-around-balangoda" passHref legacyBehavior>
                         <Button
                           variant="secondary"
                           className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
@@ -516,12 +516,6 @@ export default function BalangodaGuide() {
                         alt: "Pahanthudawa with its lush greenery and traditional crafts",
                         caption: "Pahanthudawa",
                         title: "Pahanthudawa"
-                      },
-                      {
-                        src: "/Lunugangabawa2.jpeg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
                       },
 
                     ]}

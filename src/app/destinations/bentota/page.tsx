@@ -586,25 +586,21 @@ export default function BentotaGuide() {
                                             {
                                                 src: "/Lunugangabawa2.jpeg",
                                                 alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                                                caption: "Lunuganga Garden",
                                                 title: "Cave 1 Murals"
                                             },
                                             {
                                                 src: "/Lunugangabawa3.jpeg",
                                                 alt: "Detailed view of Buddha statue in Cave 1",
-                                                caption: "Buddha Statue Detail",
                                                 title: "Cave 1 Buddha Statue"
                                             },
                                             {
                                                 src: "/Lunugangabawa4.jpeg",
-                                                alt: "Detailed view of Buddha statue in Cave 1",
-                                                caption: "Buddha Statue Detail",
+                                                alt: "Detailed view of Buddha statue in Cave 1",                        
                                                 title: "Cave 1 Buddha Statue"
                                             },
                                             {
                                                 src: "/Lunugangabawa5.jpeg",
                                                 alt: "Detailed view of Buddha statue in Cave 1",
-                                                caption: "Buddha Statue Detail",
                                                 title: "Cave 1 Buddha Statue"
                                             }
                                         ]}

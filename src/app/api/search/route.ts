@@ -325,10 +325,10 @@ const destinations: Destination[] = [
   },
   {
     id: 15,
-    name: "Balangoda Pre Historic Caves",
+    name: "Pre Historic Caves around Balangoda",
     location: "Sabaragamuwa Province",
-    path: "balangoda",
-    image: "/placeholder.svg?height=400&width=600",
+    path: "/archaeological-sites-around-balangoda",
+    image: "/Batadomba-Lena1.jpg",
     description: "Pre historic caves where ancient people lived",
     highlights: ["Pre historic caves", "Ancient Artifacts", "Pre historic people"],
     category: "Historical",
