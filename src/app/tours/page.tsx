@@ -180,7 +180,7 @@ const oneDayPackages = [
     highlights: ["Blue Whale Spotting", "Dolphin Pods", "Beach Relaxation"]
   },
   {
-    id: "adams-peak",
+    id: "adams-peak-hike",
     title: "Adam's Peak Sunrise Trek",
     duration: "1 Day",
     price: "From $70",
