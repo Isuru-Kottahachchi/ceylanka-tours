@@ -66,6 +66,10 @@ export default function BentotaDayTour() {
                       <span>Water sports package</span>
                       <span className="font-semibold">$30-50</span>
                     </div>
+                     <div className="flex justify-between">
+                      <span>Para Motoring</span>
+                      <span className="font-semibold">$65</span>
+                    </div>
                     <div className="flex justify-between">
                       <span>Beachside lunch</span>
                       <span className="font-semibold">$15-25</span>
@@ -101,19 +105,15 @@ export default function BentotaDayTour() {
             <section>
               <h2 className="text-2xl font-bold mb-4">Tour Itinerary</h2>
               <div className="space-y-3">
-                <Card><CardContent className="p-4 flex gap-3">
-                  <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
-                  <div><p className="font-semibold">Bentota Beach</p><p className="text-sm text-muted-foreground">Morning swim and beach walk on golden sand</p></div>
-                </CardContent></Card>
-                
-                <Card><CardContent className="p-4 flex gap-3">
-                  <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
-                  <div><p className="font-semibold">Turtle Hatchery</p><p className="text-sm text-muted-foreground">See baby turtles and learn about conservation</p></div>
-                </CardContent></Card>
                 
                 <Card><CardContent className="p-4 flex gap-3">
                   <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                   <div><p className="font-semibold">Bentota River Safari</p><p className="text-sm text-muted-foreground">Boat ride through mangroves and small islands</p></div>
+                </CardContent></Card>
+                
+                <Card><CardContent className="p-4 flex gap-3">
+                  <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
+                  <div><p className="font-semibold">Bentota Beach</p><p className="text-sm text-muted-foreground">Morning swim and beach walk on golden sand</p></div>
                 </CardContent></Card>
                 
                 <Card><CardContent className="p-4 flex gap-3">
@@ -123,7 +123,7 @@ export default function BentotaDayTour() {
                 
                 <Card><CardContent className="p-4 flex gap-3">
                   <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
-                  <div><p className="font-semibold">Brief Garden or Lunuganga Estate</p><p className="text-sm text-muted-foreground">Beautiful garden estate by Bevis Bawa</p></div>
+                  <div><p className="font-semibold">Lunuganga Estate</p><p className="text-sm text-muted-foreground">Beautiful garden estate by Bevis Bawa</p></div>
                 </CardContent></Card>
 
                 <Card><CardContent className="p-4 flex gap-3">
@@ -131,9 +131,14 @@ export default function BentotaDayTour() {
                   <div><p className="font-semibold">Water Sports (Optional)</p><p className="text-sm text-muted-foreground">Jet ski, banana boat, or windsurfing</p></div>
                 </CardContent></Card>
 
-                <Card><CardContent className="p-4 flex gap-3">
+                {/* <Card><CardContent className="p-4 flex gap-3">
                   <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
                   <div><p className="font-semibold">Fish Spa & Beach Relaxation</p><p className="text-sm text-muted-foreground">Natural fish spa and sunset on the beach</p></div>
+                </CardContent></Card> */}
+
+                 <Card><CardContent className="p-4 flex gap-3">
+                  <MapPin className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
+                  <div><p className="font-semibold">Turtle Hatchery</p><p className="text-sm text-muted-foreground">See baby turtles and learn about conservation, If you visit during the nesting season, you might witness baby turtles being released into the sea.</p></div>
                 </CardContent></Card>
               </div>
             </section>
