@@ -13,12 +13,12 @@ export default function KithulgalaRaftingTour() {
 
   const galleryImages = [
     {
-      src: "/kithulgala-waterrafting.jpg",
+      src: "/Kithulgala-waterrafting.jpg",
       alt: "White water rafting in Kelani River Kithulgala",
       caption: "Thrilling Rapids"
     },
     {
-      src: "/kithulgala-waterrafting1.jpg",
+      src: "/Kithulgala-waterrafting1.jpg",
       alt: "Rafting team navigating rapids",
       caption: "Team Adventure"
     },
@@ -123,7 +123,7 @@ export default function KithulgalaRaftingTour() {
               </button>
               <button
                 onClick={() => setActiveTab("help")}
-                className={`pb-3 px-1 font-semibold text-lg border-b-2 transition-colors ${
+                className={`pb-3 px-1 font-semibold cursor-pointer text-lg border-b-2 transition-colors ${
                   activeTab === "help"
                     ? "border-emerald-600 text-emerald-600"
                     : "border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
