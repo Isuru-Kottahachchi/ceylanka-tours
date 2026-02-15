@@ -93,7 +93,7 @@ export default function AdamsPeakTour() {
             <div className="flex gap-6 border-b border-gray-200 dark:border-gray-700 mb-6">
               <button
                 onClick={() => setActiveTab("overview")}
-                className={`pb-3 px-1 font-semibold text-lg border-b-2 transition-colors ${
+                className={`pb-3 px-1 font-semibold cursor-pointer text-lg border-b-2 transition-colors ${
                   activeTab === "overview"
                     ? "border-orange-600 text-orange-600"
                     : "border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
@@ -103,7 +103,7 @@ export default function AdamsPeakTour() {
               </button>
               <button
                 onClick={() => setActiveTab("details")}
-                className={`pb-3 px-1 font-semibold text-lg border-b-2 transition-colors ${
+                className={`pb-3 px-1 font-semibold cursor-pointer text-lg border-b-2 transition-colors ${
                   activeTab === "details"
                     ? "border-orange-600 text-orange-600"
                     : "border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
@@ -113,7 +113,7 @@ export default function AdamsPeakTour() {
               </button>
               <button
                 onClick={() => setActiveTab("itinerary")}
-                className={`pb-3 px-1 font-semibold text-lg border-b-2 transition-colors ${
+                className={`pb-3 px-1 font-semibold cursor-pointer text-lg border-b-2 transition-colors ${
                   activeTab === "itinerary"
                     ? "border-orange-600 text-orange-600"
                     : "border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
@@ -123,7 +123,7 @@ export default function AdamsPeakTour() {
               </button>
               <button
                 onClick={() => setActiveTab("help")}
-                className={`pb-3 px-1 font-semibold text-lg border-b-2 transition-colors ${
+                className={`pb-3 px-1 font-semibold cursor-pointer text-lg border-b-2 transition-colors ${
                   activeTab === "help"
                     ? "border-orange-600 text-orange-600"
                     : "border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
