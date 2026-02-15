@@ -126,15 +126,6 @@ const oneDayPackages = [
     highlights: ["Temple of Tooth", "Botanical Gardens", "Cultural Show"]
   },
   {
-    id: "ella",
-    title: "Ella Adventure",
-    duration: "1 Day",
-    price: "From $70",
-    image: "/jungle-beach.jpeg",
-    description: "Hike to Ella Rock, visit Nine Arch Bridge, and enjoy the mountain scenery.",
-    highlights: ["Ella Rock Hike", "Nine Arch Bridge", "Tea Factory"]
-  },
-  {
     id: "colombo",
     title: "Colombo City Tour",
     duration: "1 Day",
@@ -144,20 +135,20 @@ const oneDayPackages = [
     highlights: ["Independence Square", "Galle Face", "Pettah Market"]
   },
   {
-    id: "nuwara-eliya",
-    title: "Nuwara Eliya Tour",
+    id: "kithulgala-rafting",
+    title: "Kitulgala Rafting Adventure",
     duration: "1 Day",
     price: "From $65",
-    image: "/jungle-beach.jpeg",
-    description: "Visit the hill station known as Little England with tea plantations and cool climate.",
-    highlights: ["Tea Plantations", "Gregory Lake", "Victoria Park"]
+    image: "/Kithulgala-waterrafting.jpg",
+    description: "Experience thrilling white-water rafting in Kitulgala, surrounded by lush rainforest.",
+    highlights: ["White-Water Rafting"]
   },
   {
     id: "yala-safari",
     title: "Yala National Park Safari",
     duration: "1 Day",
     price: "From $95",
-    image: "/Minneriyanationalpark.jpeg",
+    image: "/Yala-national-park.jpg",
     description: "Full-day jeep safari in Yala - highest leopard density in the world. See elephants, bears, and exotic birds.",
     highlights: ["Leopard Spotting", "Elephant Herds", "Bird Watching"]
   },
@@ -184,7 +175,7 @@ const oneDayPackages = [
     title: "Mirissa Whale Watching",
     duration: "1 Day",
     price: "From $80",
-    image: "/Mirissa1.jpg",
+    image: "/Whale-in-Mirissa.jpg",
     description: "Spot blue whales and dolphins in the Indian Ocean. Includes beach time and seafood lunch.",
     highlights: ["Blue Whale Spotting", "Dolphin Pods", "Beach Relaxation"]
   },
