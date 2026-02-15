@@ -18,14 +18,14 @@ export default function AdamsPeakTour() {
       caption: "Summit Sunrise"
     },
     {
-      src: "/Adamspeak.jpg",
-      alt: "Pilgrims climbing Adam's Peak at night",
-      caption: "Night Ascent"
-    },
-    {
-      src: "/adams-peak-trail.jpg",
+      src: "/Hatton-road.jpeg",
       alt: "Adam's Peak hiking trail with prayer flags",
       caption: "Sacred Trail"
+    },
+    {
+      src: "/Adamspeaskmain.jpg",
+      alt: "Pilgrims climbing Adam's Peak at night",
+      caption: "Night Ascent"
     },
     {
       src: "/adams-peak-footprint.jpg",
