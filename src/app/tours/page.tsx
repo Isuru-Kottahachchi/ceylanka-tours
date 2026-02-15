@@ -236,7 +236,7 @@ export default function ToursPage() {
       <section className="relative h-[60vh] overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/Adams-peak.jpeg"
+            src="/Tour-Cover.png"
             alt="Sri Lanka tour packages"
             fill
             className="object-cover brightness-[0.6]"
