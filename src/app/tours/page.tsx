@@ -162,16 +162,16 @@ const oneDayPackages = [
   //   highlights: ["Kelaniya Temple", "Gangaramaya", "Seema Malaka"]
   // },
   {
-    id: "shopping-colombo",
-    title: "Colombo Shopping & Gems",
+    id: "udawalawa-safari",
+    title: "Udawalawa Safari",
     duration: "1 Day",
     price: "From $50",
-    image: "/Colombo-City.jpeg",
-    description: "Shop for authentic Sri Lankan gems, handicrafts, tea, and spices. Visit gem museums and markets.",
-    highlights: ["Gem Museum", "Pettah Bazaar", "Tea Shops", "Handicraft Stores"]
+    image: "/Udawalawa-park.jpeg",
+    description: "Experience a thrilling safari in Udawalawa National Park, home to elephants and diverse wildlife.",
+    highlights: ["Elephant Spotting", "Bird Watching", "Nature Trails"]
   },
   {
-    id: "whale-watching",
+    id: "mirissa-whale-watching",
     title: "Mirissa Whale Watching",
     duration: "1 Day",
     price: "From $80",
