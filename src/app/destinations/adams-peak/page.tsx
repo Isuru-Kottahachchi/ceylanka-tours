@@ -1,24 +1,14 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
 import { Clock, MapPin, AlertTriangle, CheckCircle, Star, Calendar, Mountain, Sunrise, Landmark } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-export const metadata: Metadata = {
-  title: "Adams Peak Sri Lanka: Complete Climbing Guide 2026 | Sacred Mountain Pilgrimage",
-  description:
-    "Conquer Adams Peak (Sri Pada), Sri Lankas sacred mountain. Complete climbing guide with sunrise tips, best routes, and everything you need for this spiritual journey.",
-  keywords:
-    "Adams Peak, Sri Pada, sacred mountain Sri Lanka, sunrise climb, pilgrimage, hiking Sri Lanka, sacred footprint, mountain climbing",
-  openGraph: {
-    title: "Adams Peak: Complete Climbing Guide 2026",
-    description: "Your ultimate guide to climbing Sri Lankas most sacred mountain",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-}
+
 
 export default function AdamsPeakTravelGuide() {
   return (
@@ -293,7 +283,7 @@ export default function AdamsPeakTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold mb-3">Kunudiya Pawwa</h4>
-                    <Image src="/Athgala.jpg" alt={"Kunudiya pawwa"} width={400} height={300} />
+                    <Image src="/Kunu-Diya-Pawwa.webp" alt={"Kunudiya pawwa"} width={400} height={300} />
                     <p className="text-muted-foreground mb-4">
                       A significant rock formation along the pilgrimage path where, according to tradition, pilgrims would
                       stop to dry their wet clothes. The name &quot;Kunudiya&quot; refers to the warmth of the rock even during cold weather.
@@ -384,7 +374,18 @@ export default function AdamsPeakTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-semibold mb-3">Seetha Gangula</h4>
-                    <Image src="/Athgala.jpg" alt={"Seetha Gangula"} width={400} height={300} />
+                  <ImageCarousel 
+                    images={[
+                      {
+                        src: "/Seetha-Gangula-Rathnapura.jpeg",
+                        alt: "Seetha Gangula, the cold stream where Buddha is said to have refreshed himself during his ascent of Adams Peak"
+                      },
+                       {
+                        src: "/Seetha-Gangula.jpeg",
+                        alt: "Seetha Gangula, the cold stream where Buddha is said to have refreshed himself during his ascent of Adams Peak"
+                      }
+                    ]}  
+                  />
                     <p className="text-muted-foreground mb-4">
                       Known as the &quot;Cold Stream,&quot; this is where the Buddha is said to have paused to refresh himself.
                       The water here remains remarkably cool even during the hottest days, and pilgrims often stop
