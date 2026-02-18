@@ -4,9 +4,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 interface ImageCarouselProps {
   images: { src: string; alt: string; caption?: string; title?: string }[];
+  heightClassName?: string;
 }
 
-export const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
+export const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, heightClassName }) => {
   const [current, setCurrent] = React.useState(0)
   const [isTransitioning, setIsTransitioning] = React.useState(false)
   const total = images.length
@@ -20,7 +21,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
 
   return (
     <div className="relative w-full max-w-full">
-      <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800">
+      <div className={`relative ${heightClassName ?? "h-[400px] md:h-[500px]"} rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800`}>
         {images.map((image, idx) => (
           <div
             key={idx}
