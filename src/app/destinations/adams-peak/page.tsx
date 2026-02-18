@@ -375,6 +375,7 @@ export default function AdamsPeakTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">Seetha Gangula</h4>
                   <ImageCarousel 
+                    heightClassName="h-[220px] md:h-[300px]"
                     images={[
                       {
                         src: "/Seetha-Gangula-Rathnapura.jpeg",
@@ -401,6 +402,19 @@ export default function AdamsPeakTravelGuide() {
 
                   <div>
                     <h4 className="font-semibold mb-3">Geththapana</h4>
+                    <ImageCarousel 
+                    heightClassName="h-[220px] md:h-[300px]"
+                    images={[
+                      {
+                        src: "/Seetha-Gangula-Rathnapura.jpeg",
+                        alt: "Seetha Gangula, the cold stream where Buddha is said to have refreshed himself during his ascent of Adams Peak"
+                      },
+                       {
+                        src: "/Seetha-Gangula.jpeg",
+                        alt: "Seetha Gangula, the cold stream where Buddha is said to have refreshed himself during his ascent of Adams Peak"
+                      }
+                    ]}  
+                  />
                     <p className="text-muted-foreground mb-4">
                       This location marks where the Buddha is believed to have tied his robe before beginning the
                       final ascent to the peak. The name &quot;Geththapana&quot; refers to the act of tying or knotting,
