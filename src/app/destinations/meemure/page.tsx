@@ -264,7 +264,7 @@ export default function MeemureTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/meemure-village.jpg",
+                        src: "/Meemure.jpeg",
                         alt: "Traditional mud houses in Meemure village",
                         caption: "Village Life",
                         title: "Meemure Village"
@@ -284,22 +284,14 @@ export default function MeemureTravelGuide() {
                   <ImageCarousel
                     images={[
                       {
-                        src: "/Meemure.jpeg",
-                        alt: "Lakegala Rock rising 1,310 meters above Meemure village",
-                        caption: "Lakegala Rock",
-                        title: "Lakegala Mountain"
-                      },
-                      {
                         src: "/Lakegala-Hike1.jpg",
                         alt: "Hikers ascending the steep trail to Lakegala summit",
-                        caption: "Hiking Trail",
-                        title: "PC - Chathu_lk"
+                        caption: "Lakegala Hike PC - Chathu_lk",
                       },
                       {
                         src: "/Lakegala-Hike.jpg",
                         alt: "Hikers ascending the steep trail to Lakegala summit",
-                        caption: "Hiking Trail",
-                        title: "PC - Chathu_lk"
+                        caption: "Lakegala Hike PC - Chathu_lk",
                       }
                     ]}
                   />
