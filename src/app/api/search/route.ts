@@ -32,8 +32,8 @@ const searchVariations: { [key: string]: string[] } = {
   "pinnawala": ["pinawala", "pinnawela", "pinawela", "pinanwala"],
   "wilpattu": ["wilpatu", "wilpathu", "willpattu", "vilpattu", "wilpaththu"],
   "horton plains": ["horton", "hortons", "horten plains", "hortan plains", "horton plain", "horten plain"],
-  "adams peak": ["adam peak", "adams", "adam's peak", "sri pada", "sripada", "siri pada", "siripada", "butterfly mountain", "samanala kanda"],
-  "sri pada": ["adams peak", "adam peak", "sripada", "siripada", "samanala", "butterfly mountain", "sacred footprint"],
+  "adams peak": ["adam peak", "adams", "adam's peak", "adamspeak", "adam speak", "adampeak", "adams peaks", "adams peak sri lanka", "sri pada", "sripada", "sri phada", "siri pada", "siripada", "siri phada", "sri paada", "sripadha", "sripadaya", "butterfly mountain", "samanala kanda", "samanala", "sacred footprint mountain"],
+  "sri pada": ["adams peak", "adam peak", "sri phada", "sripada", "siripada", "siri pada", "sripadha", "sripadaya", "samanala", "samanala kanda", "butterfly mountain", "sacred footprint"],
   "temple of the tooth": ["tooth temple", "dalada maligawa", "sri dalada maligawa", "sacred tooth relic", "tooth relic temple", "dalada maligava", "temple-of-tooth", "temple of tooth"],
   "dalada maligawa": ["temple of the tooth", "tooth temple", "sri dalada maligawa", "temple of tooth"],
   "yala": ["yalla", "yale"],
@@ -69,7 +69,13 @@ const searchVariations: { [key: string]: string[] } = {
 
 // Function to normalize search terms
 function normalizeSearchTerm(term: string): string {
-  return term.toLowerCase().trim().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ')
+  return term
+    .toLowerCase()
+    .trim()
+    .replace(/['\u2018\u2019\u02bc]/g, '') // remove apostrophes (adam's → adams)
+    .replace(/[^\w\s]/g, ' ')              // replace other punctuation with space
+    .replace(/\s+/g, ' ')                  // collapse multiple spaces
+    .trim()
 }
 
 // Function to find the best match for a search term
@@ -775,9 +781,15 @@ export async function GET(request: NextRequest) {
     let bestMatchType = ''
 
     searchTerms.forEach(searchTerm => {
+      // Normalize destination fields the same way search terms are normalized
+      const normalizedName = normalizeSearchTerm(destination.name)
+      const normalizedLocation = normalizeSearchTerm(destination.location)
+      const normalizedDescription = normalizeSearchTerm(destination.description)
+      const normalizedCategory = normalizeSearchTerm(destination.category)
+
       // Exact matches
-      const nameExact = destination.name.toLowerCase() === searchTerm
-      const locationExact = destination.location.toLowerCase() === searchTerm
+      const nameExact = normalizedName === searchTerm
+      const locationExact = normalizedLocation === searchTerm
 
       if (nameExact) {
         bestScore = Math.max(bestScore, 1.0)
@@ -788,12 +800,12 @@ export async function GET(request: NextRequest) {
       }
 
       // Partial matches
-      const nameMatch = destination.name.toLowerCase().includes(searchTerm)
-      const locationMatch = destination.location.toLowerCase().includes(searchTerm)
-      const descriptionMatch = destination.description.toLowerCase().includes(searchTerm)
-      const categoryMatch = destination.category.toLowerCase().includes(searchTerm)
+      const nameMatch = normalizedName.includes(searchTerm)
+      const locationMatch = normalizedLocation.includes(searchTerm)
+      const descriptionMatch = normalizedDescription.includes(searchTerm)
+      const categoryMatch = normalizedCategory.includes(searchTerm)
       const highlightsMatch = destination.highlights.some(highlight =>
-        highlight.toLowerCase().includes(searchTerm)
+        normalizeSearchTerm(highlight).includes(searchTerm)
       )
 
       if (nameMatch && !nameExact) {
@@ -813,9 +825,9 @@ export async function GET(request: NextRequest) {
         bestMatchType = bestMatchType || 'description'
       }
 
-      // Fuzzy matching for names (typo tolerance)
+      // Fuzzy matching for names (typo tolerance) — compare against normalized name
       if (!nameMatch && !nameExact) {
-        const nameSimilarity = getSimilarityScore(searchTerm, destination.name)
+        const nameSimilarity = getSimilarityScore(searchTerm, normalizedName)
         if (nameSimilarity > 0.6) { // 60% similarity threshold
           bestScore = Math.max(bestScore, nameSimilarity * 0.8)
           bestMatchType = bestMatchType || 'fuzzy_name'
@@ -824,8 +836,9 @@ export async function GET(request: NextRequest) {
 
       // Fuzzy matching for highlights
       destination.highlights.forEach(highlight => {
-        if (!highlight.toLowerCase().includes(searchTerm)) {
-          const highlightSimilarity = getSimilarityScore(searchTerm, highlight)
+        const normalizedHighlight = normalizeSearchTerm(highlight)
+        if (!normalizedHighlight.includes(searchTerm)) {
+          const highlightSimilarity = getSimilarityScore(searchTerm, normalizedHighlight)
           if (highlightSimilarity > 0.7) { // 70% similarity for highlights
             bestScore = Math.max(bestScore, highlightSimilarity * 0.6)
             bestMatchType = bestMatchType || 'fuzzy_highlights'
