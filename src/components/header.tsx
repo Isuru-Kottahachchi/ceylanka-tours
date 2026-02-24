@@ -205,48 +205,74 @@ function DesktopHierarchicalDropdown({
 }) {
   const [expandedSection, setExpandedSection] = useState<string | null>(null)
 
-  const toggleSection = (title: string) => {
-    setExpandedSection(expandedSection === title ? null : title)
-  }
-
   if (!isOpen) return null
+
+  const activeItems = expandedSection
+    ? destinationsItems.find((s) => s.title === expandedSection)?.items ?? []
+    : []
 
   return (
     <div ref={dropdownRef} className="absolute top-full left-0 pt-2 z-50">
-      <div className="bg-white dark:bg-gray-900 shadow-xl rounded-lg border border-gray-200 dark:border-gray-700 w-80">
-        <div className="p-4 max-h-96 overflow-y-auto">
-          {destinationsItems.map((section) => (
-            <div key={section.title} className="mb-2">
-              <button
-                onClick={() => toggleSection(section.title)}
-                className="w-full flex items-center justify-between p-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors cursor-pointer"
+      <div
+        className="flex flex-col bg-white dark:bg-gray-900 shadow-xl rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden"
+        onMouseLeave={() => setExpandedSection(null)}
+      >
+        {/* Main panels row */}
+        <div className="flex">
+          {/* Left panel — section headers, fixed height, no shifting */}
+          <div className="w-52 p-2 border-r border-gray-200 dark:border-gray-700">
+            {destinationsItems.map((section) => (
+              <div
+                key={section.title}
+                className={`flex items-center justify-between px-3 py-2.5 rounded-md cursor-default transition-all ${
+                  expandedSection === section.title
+                    ? "bg-cyan-600 text-white shadow-sm"
+                    : "hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-200"
+                }`}
+                onMouseEnter={() => setExpandedSection(section.title)}
               >
                 <div className="flex items-center space-x-2">
-                  <span className="text-lg">{section.icon}</span>
-                  <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
+                  <span className="text-base">{section.icon}</span>
+                  <span className={`text-sm ${expandedSection === section.title ? "font-semibold" : "font-medium"}`}>
+                    {section.title}
+                  </span>
                 </div>
-                <ChevronRight
-                  className={`h-4 w-4 text-gray-600 dark:text-gray-300 transition-transform ${expandedSection === section.title ? "rotate-90" : ""
-                    }`}
-                />
-              </button>
+                {expandedSection === section.title ? (
+                  <ChevronRight className="h-4 w-4 flex-shrink-0 text-white" />
+                ) : (
+                  <ChevronDown className="h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-300" />
+                )}
+              </div>
+            ))}
+          </div>
 
-              {expandedSection === section.title && (
-                <div className="ml-8 mt-1 space-y-1">
-                  {section.items.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
-                      onClick={onClose}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
+          {/* Right panel — sub-items, only visible when a section is hovered */}
+          {expandedSection && (
+            <div className="w-48 p-2">
+              {activeItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="block px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
+                  onClick={onClose}
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
-          ))}
+          )}
+        </div>
+
+        {/* All Destinations button — inside the same onMouseLeave container */}
+        <div className="border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 px-3 py-2">
+          <Link
+            href="/destinations"
+            className="flex items-center justify-center w-full px-3 py-1.5 text-sm font-medium text-cyan-600 dark:text-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 rounded-md transition-colors"
+            onClick={onClose}
+          >
+            All Destinations
+            <ChevronRight className="h-3.5 w-3.5 ml-1" />
+          </Link>
         </div>
       </div>
     </div>
