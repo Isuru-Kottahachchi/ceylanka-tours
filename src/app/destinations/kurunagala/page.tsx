@@ -625,7 +625,7 @@ export default function KurunegalaPage() {
               <CardContent>
                 <div className="space-y-4">
                   <Image
-                    src="/kurunegala-lake.jpg"
+                    src="/Kurunagala-Lake.jpg"
                     alt="Scenic Kurunegala Lake with surrounding greenery"
                     width={600}
                     height={400}
@@ -841,7 +841,7 @@ export default function KurunegalaPage() {
                       <CardContent className="p-4">
                         <h3 className="font-bold text-lg mb-2">Dambulla</h3>
                         <p className="text-sm text-muted-foreground mb-3">
-                          A great bird watching destination and Sri Lankan leopard habitat in Sri Lanka and a haven for wildlife enthusiasts.
+                         A UNESCO World Heritage Site, Dambulla is renowned for its ancient cave temple complex adorned with stunning Buddhist murals and statues.
                         </p>
                         <div className="flex items-center text-xs text-blue-600 mb-2">
                           <MapPin className="w-3 h-3 mr-1" />
