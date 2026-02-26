@@ -610,13 +610,25 @@ export default function AnuradhapuraClient({ defaultLang = "en" }: { defaultLang
       {/* ── Language Toggle Banner ── */}
       <div className="fixed bottom-6 right-6 z-50 bg-white dark:bg-gray-800 shadow-xl rounded-xl px-4 py-3 border border-gray-200 dark:border-gray-700 flex items-center gap-3">
         <span className="text-sm text-gray-600 dark:text-gray-300">
-          {de ? "🇬🇧 Read in English?" : "🇩🇪 Auf Deutsch lesen?"}
+          {de ? "Read in English?" : "Auf Deutsch lesen?"}
         </span>
         <button
           onClick={() => setLang(de ? "en" : "de")}
-          className="text-sm font-semibold bg-blue-600 text-white px-3 py-1.5 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer"
+          className="text-sm font-semibold bg-blue-600 text-white px-3 py-1.5 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer flex items-center gap-2"
         >
-          {de ? "English" : "Deutsch"}
+          {de ? (
+            <>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://flagcdn.com/w20/gb.png" alt="English" width={20} height={14} className="rounded-sm" />
+              English
+            </>
+          ) : (
+            <>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width={20} height={14} className="rounded-sm" />
+              Deutsch
+            </>
+          )}
         </button>
       </div>
 
