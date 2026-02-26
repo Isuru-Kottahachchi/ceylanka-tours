@@ -9,22 +9,22 @@ function SriLankaAboutCompact() {
                     <h2
                         className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2"
                         data-aos="fade-up"
-                        data-aos-duration="800"
+                        data-aos-duration="500"
                     >
                         Welcome to Sri Lanka
                     </h2>
                     <p
                         className="text-lg text-gray-600 dark:text-gray-300"
                         data-aos="fade-up"
-                        data-aos-duration="800"
-                        data-aos-delay="200"
+                        data-aos-duration="500"
+                        data-aos-delay="100"
                     >
                         The Pearl of the Indian Ocean - A tropical paradise with ancient heritage
                     </p>
                 </div>
 
                 {/* Quick Facts - Horizontal Icons */}
-                <div className="grid grid-cols-3 gap-4 mb-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div className="grid grid-cols-3 gap-4 mb-8" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div className="flex flex-col items-center bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg">
                         <MapPin className="h-6 w-6 text-blue-600 dark:text-blue-400 mb-2" />
                         <h3 className="font-medium text-gray-900 dark:text-white text-sm text-center">65,610 km² Island</h3>
@@ -42,7 +42,7 @@ function SriLankaAboutCompact() {
                 </div>
 
                 {/* Description - Compact */}
-                <div className="mb-8" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">
+                <div className="mb-8" data-aos="fade-right" data-aos-duration="500" data-aos-delay="150">
                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm mb-3">
                         Sri Lanka, formerly known as Ceylon, is a stunning island nation in the Indian Ocean, just southeast of
                         India. Despite its compact size, this tropical paradise offers incredible diversity - from pristine beaches
@@ -59,14 +59,14 @@ function SriLankaAboutCompact() {
                     <h3
                         className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center"
                         data-aos="fade-left"
-                        data-aos-duration="800"
-                        data-aos-delay="800"
+                        data-aos-duration="500"
+                        data-aos-delay="200"
                     >
                         <Leaf className="h-5 w-5 mr-2 text-green-600 dark:text-green-400" />
                         What Makes Sri Lanka Special
                     </h3>
 
-                    <div className="grid grid-cols-2 gap-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
+                    <div className="grid grid-cols-2 gap-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250">
                         <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
                             <div className="flex items-center space-x-3 mb-2">
                                 <div className="bg-blue-100 dark:bg-blue-900 p-2 rounded-full">
@@ -147,8 +147,8 @@ function SriLankaAboutCompact() {
                 <div
                     className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4"
                     data-aos="fade-up"
-                    data-aos-duration="300"
-                    data-aos-delay="200"
+                    data-aos-duration="500"
+                    data-aos-delay="100"
                 >
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center">
                         <Calendar className="h-5 w-5 mr-2 text-blue-600 dark:text-blue-400" />
@@ -191,7 +191,7 @@ function SriLankaAboutCompact() {
                 </div>
 
                 {/* More About Sri Lanka Button */}
-                <div className="text-center mt-8" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+                <div className="text-center mt-8" data-aos="fade-up" data-aos-duration="400" data-aos-delay="100">
                     <a 
                         href="/more-about-sri-lanka"
                         className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 inline-flex items-center justify-center mx-auto cursor-pointer"
