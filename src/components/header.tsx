@@ -214,20 +214,20 @@ function DesktopHierarchicalDropdown({
   return (
     <div ref={dropdownRef} className="absolute top-full left-0 pt-2 z-50">
       <div
-        className="flex flex-col bg-white dark:bg-gray-900 shadow-xl rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden"
+        className="flex flex-col theme-bg shadow-xl rounded-lg border theme-border overflow-hidden"
         onMouseLeave={() => setExpandedSection(null)}
       >
         {/* Main panels row */}
         <div className="flex">
           {/* Left panel — section headers, fixed height, no shifting */}
-          <div className="w-52 p-2 border-r border-gray-200 dark:border-gray-700">
+          <div className="w-52 p-2 border-r theme-border">
             {destinationsItems.map((section) => (
               <div
                 key={section.title}
                 className={`flex items-center justify-between px-3 py-2.5 rounded-md cursor-default transition-all ${
                   expandedSection === section.title
                     ? "bg-cyan-600 text-white shadow-sm"
-                    : "hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-200"
+                    : "nav-link nav-hover-row"
                 }`}
                 onMouseEnter={() => setExpandedSection(section.title)}
               >
@@ -240,7 +240,7 @@ function DesktopHierarchicalDropdown({
                 {expandedSection === section.title ? (
                   <ChevronRight className="h-4 w-4 flex-shrink-0 text-white" />
                 ) : (
-                  <ChevronDown className="h-4 w-4 flex-shrink-0 text-gray-500 dark:text-gray-300" />
+                  <ChevronDown className="h-4 w-4 flex-shrink-0 nav-chevron" />
                 )}
               </div>
             ))}
@@ -253,7 +253,7 @@ function DesktopHierarchicalDropdown({
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
+                  className="block px-3 py-2 text-sm nav-sub-link rounded-md transition-colors"
                   onClick={onClose}
                 >
                   {item.name}
@@ -264,7 +264,7 @@ function DesktopHierarchicalDropdown({
         </div>
 
         {/* All Destinations button — inside the same onMouseLeave container */}
-        <div className="border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 px-3 py-2">
+        <div className="border-t theme-border theme-surface px-3 py-2">
           <Link
             href="/destinations"
             className="flex items-center justify-center w-full px-3 py-1.5 text-sm font-medium text-cyan-600 dark:text-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 rounded-md transition-colors"
@@ -289,19 +289,19 @@ function MobileHierarchicalMenu({ onItemClick }: { onItemClick?: () => void }) {
 
   return (
     <div className="space-y-1">
-      <div className="font-semibold text-gray-900 dark:text-gray-100 py-2 text-base">Destinations</div>
+      <div className="font-semibold nav-heading py-2 text-base">Destinations</div>
       {destinationsItems.map((section) => (
         <div key={section.title}>
           <button
             onClick={() => toggleSection(section.title)}
-            className="w-full flex items-center justify-between p-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
+            className="w-full flex items-center justify-between p-3 text-left nav-hover-row rounded-md transition-colors"
           >
             <div className="flex items-center space-x-3">
               <span className="text-lg">{section.icon}</span>
-              <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
+              <span className="font-medium nav-heading">{section.title}</span>
             </div>
             <ChevronRight
-              className={`h-4 w-4 text-gray-600 dark:text-gray-300 transition-transform ${expandedSection === section.title ? "rotate-90" : ""
+              className={`h-4 w-4 nav-chevron transition-transform ${expandedSection === section.title ? "rotate-90" : ""
                 }`}
             />
           </button>
@@ -312,7 +312,7 @@ function MobileHierarchicalMenu({ onItemClick }: { onItemClick?: () => void }) {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                  className="block p-2 text-sm nav-sub-link rounded-md transition-colors"
                   onClick={onItemClick}
                 >
                   {item.name}
@@ -462,7 +462,7 @@ export function Header() {
       </div>
 
       {/* Main Navigation */}
-      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      <div className="theme-bg theme-text">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-around gap-8">
             {/* Logo */}
@@ -473,7 +473,7 @@ export function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <Link href="/" className={`inline-flex items-center px-4 py-2 text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium relative pb-1 ${isActivePage("/") ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
+              <Link href="/" className={`inline-flex items-center px-4 py-2 nav-link transition-colors font-medium relative pb-1 ${isActivePage("/") ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
                 HOME
               </Link>
               {/* <Link href="/news" className="text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium">
@@ -486,27 +486,27 @@ export function Header() {
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Button ref={whatToDoButtonRef}
-                  className={`flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer relative pb-1 ${isWhatToDoActive() ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
+                  className={`flex items-center nav-link transition-colors font-medium cursor-pointer relative pb-1 ${isWhatToDoActive() ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
                   WHAT TO DO
                   <ChevronDown
-                    className={`h-4 w-4 ml-1 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === "what-to-do" ? "rotate-180" : ""
+                    className={`h-4 w-4 ml-1 nav-chevron transition-transform ${activeDropdown === "what-to-do" ? "rotate-180" : ""
                       }`}
                   />
                 </Button>
                 {activeDropdown === "what-to-do" && (
                   <div ref={whatToDoDropdownRef} className="absolute top-full left-0 pt-2 z-50">
-                    <div className="bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 w-80">
+                    <div className="theme-bg shadow-xl rounded-lg border theme-border w-80">
                       <div className="p-4">
                         <div className="grid grid-cols-2 gap-4">
                           {whatToDoItems.map((section) => (
                             <div key={section.title}>
-                              <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2 text-sm">{section.title}</h3>
+                              <h3 className="font-semibold nav-heading mb-2 text-sm">{section.title}</h3>
                               <ul className="space-y-1">
                                 {section.items.map((item) => (
                                   <li key={item.name}>
                                     <Link
                                       href={item.href}
-                                      className="text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 text-xs"
+                                      className="nav-sub-link text-xs"
                                       onClick={() => setActiveDropdown(null)}
                                     >
                                       {item.name}
@@ -530,11 +530,11 @@ export function Header() {
               >
                 <Button
                   ref={destinationsButtonRef}
-                  className={`flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer relative pb-1 ${isDestinationsActive() ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}
+                  className={`flex items-center nav-link transition-colors font-medium cursor-pointer relative pb-1 ${isDestinationsActive() ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}
                 >
                   DESTINATIONS
                   <ChevronDown
-                    className={`h-4 w-4 ml-1 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === "destinations" ? "rotate-180" : ""
+                    className={`h-4 w-4 ml-1 nav-chevron transition-transform ${activeDropdown === "destinations" ? "rotate-180" : ""
                       }`}
                   />
                 </Button>
@@ -552,28 +552,28 @@ export function Header() {
               >
                 <Button
                   ref={planTripButtonRef}
-                  className={`flex items-center text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium cursor-pointer relative pb-1 ${isPlanTripActive() ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}
+                  className={`flex items-center nav-link transition-colors font-medium cursor-pointer relative pb-1 ${isPlanTripActive() ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}
                 >
                   PLAN YOUR TRIP
                   <ChevronDown
-                    className={`h-4 w-4 ml-1 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === "plan-trip" ? "rotate-180" : ""
+                    className={`h-4 w-4 ml-1 nav-chevron transition-transform ${activeDropdown === "plan-trip" ? "rotate-180" : ""
                       }`}
                   />
                 </Button>
                 {activeDropdown === "plan-trip" && (
                   <div ref={planTripDropdownRef} className="absolute top-full left-0 pt-2 z-50">
-                    <div className="bg-white dark:bg-gray-900 shadow-xl rounded-lg border dark:border-gray-700 w-80">
+                    <div className="theme-bg shadow-xl rounded-lg border theme-border w-80">
                       <div className="p-4">
                         <div className="grid grid-cols-2 gap-4">
                           {planYourTripItems.map((section) => (
                             <div key={section.title}>
-                              <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2 text-sm">{section.title}</h3>
+                              <h3 className="font-semibold nav-heading mb-2 text-sm">{section.title}</h3>
                               <ul className="space-y-1">
                                 {section.items.map((item) => (
                                   <li key={item.name}>
                                     <Link
                                       href={item.href}
-                                      className="text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 text-xs"
+                                      className="nav-sub-link text-xs"
                                       onClick={() => setActiveDropdown(null)}
                                     >
                                       {item.name}
@@ -590,7 +590,7 @@ export function Header() {
                 )}
               </div>
 
-              <Link href="/upcoming-events" className={`inline-flex items-center px-4 py-2 text-gray-700 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors font-medium relative pb-1 ${isActivePage("/upcoming-events") ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
+              <Link href="/upcoming-events" className={`inline-flex items-center px-4 py-2 nav-link transition-colors font-medium relative pb-1 ${isActivePage("/upcoming-events") ? "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-red-500" : ""}`}>
                 UPCOMING EVENTS
               </Link>
             </nav>
@@ -598,11 +598,11 @@ export function Header() {
             {/* Mobile Menu */}
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" className="lg:hidden text-gray-700 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800" onClick={() => setIsSheetOpen(true)}>
+                <Button variant="ghost" size="sm" className="lg:hidden nav-link hover:bg-gray-100" onClick={() => setIsSheetOpen(true)}>
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-80 overflow-y-auto dark:bg-gray-900">
+              <SheetContent side="right" className="w-80 overflow-y-auto theme-bg">
                 <div className="flex flex-col space-y-4 mt-8 h-full">
                   {/* Mobile Search - Commented Out */}
                   {/* <form onSubmit={(e) => { handleSearch(e); setIsSheetOpen(false); }} className="flex items-center space-x-2 sticky top-0 bg-white dark:bg-gray-900 pt-2 pb-4 z-10">
