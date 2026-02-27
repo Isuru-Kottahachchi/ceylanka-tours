@@ -57,19 +57,19 @@ export function HeroSection() {
               placeholder="Search your Sri Lankan destinations"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full sm:flex-1 h-12 text-black dark:text-white text-base sm:text-lg pl-12 pr-4 rounded-lg sm:rounded-l-lg sm:rounded-r-none bg-white dark:bg-gray-800 placeholder:text-gray-500 dark:placeholder:text-gray-400 appearance-none border-2 border-transparent focus:border-cyan-500 dark:focus:border-cyan-400 transition-all duration-300 shadow-sm box-border"
+              className="w-full sm:flex-1 h-12 search-input text-base sm:text-lg pl-12 pr-4 rounded-lg sm:rounded-l-lg sm:rounded-r-none appearance-none border-2 border-transparent focus:border-cyan-500 transition-all duration-300 shadow-sm box-border"
             style={{ fontSize: '16px' }}
             autoComplete="off"
             autoCorrect="off"
             autoCapitalize="off"
             spellCheck="false"
           />
-          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400 pointer-events-none transition-colors group-focus-within:text-cyan-500 dark:group-focus-within:text-cyan-400" />
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400 pointer-events-none transition-colors group-focus-within:text-cyan-500" />
           </div>
           <Button
             type="submit"
             variant="default"
-            className="w-full sm:w-auto h-12 px-8 bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-600 dark:hover:bg-cyan-700 text-white font-semibold rounded-lg sm:rounded-l-none sm:rounded-r-lg cursor-pointer transition-all duration-300 flex items-center justify-center shadow-sm hover:shadow-md"
+            className="w-full sm:w-auto h-12 px-8 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg sm:rounded-l-none sm:rounded-r-lg cursor-pointer transition-all duration-300 flex items-center justify-center shadow-sm hover:shadow-md"
           >
             <Search className="h-5 w-5 mr-2" />
             Search

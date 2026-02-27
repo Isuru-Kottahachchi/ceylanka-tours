@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 const MoreAboutSriLanka = () => {
     return (
-        <main className="min-h-screen bg-gray-50 dark:bg-gray-900">
+        <main className="min-h-screen theme-bg">
             {/* Hero Section */}
             <section className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-16">
                 <div className="max-w-6xl mx-auto px-4">
@@ -33,8 +33,8 @@ const MoreAboutSriLanka = () => {
 
             {/* Introduction Disclaimer */}
             <div className="max-w-6xl mx-auto px-4 py-6">
-                <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-l-blue-500 p-4 rounded">
-                    <p className="text-sm text-gray-700 dark:text-gray-300">
+                <div className="panel-blue border-l-4 border-l-blue-500 p-4 rounded">
+                    <p className="text-sm theme-text-muted">
                         <strong>📌 About This Guide:</strong> This comprehensive guide presents verified facts, historical timelines, and cultural insights about Sri Lanka. Information is sourced from official records, UNESCO documentation, and reputable historical sources. We present multiple perspectives where relevant for educational purposes.
                     </p>
                 </div>
@@ -44,8 +44,8 @@ const MoreAboutSriLanka = () => {
                 
                 {/* Quick Facts Overview */}
                 <section className="mb-12">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-                        <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">🌏 Sri Lanka at a Glance</h2>
+                    <div className="panel-white rounded-lg shadow-lg p-8">
+                        <h2 className="text-3xl font-bold mb-6 theme-text">🌏 Sri Lanka at a Glance</h2>
                         
                         <div className="flex flex-col md:flex-row gap-6 mb-6">
                             <div className="relative w-full md:w-2/5 h-[300px] md:h-[400px]">
@@ -58,21 +58,21 @@ const MoreAboutSriLanka = () => {
                             </div>
                             
                             <div className="flex-1">
-                                <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                                <p className="theme-text-muted mb-4 leading-relaxed">
                                     Sri Lanka, officially the <strong>Democratic Socialist Republic of Sri Lanka</strong>, is a tropical island nation located in South Asia. Known historically as <strong>Ceylon</strong> until 1972, this teardrop-shaped island off India's southern coast has captured the imagination of travelers, traders, and explorers for thousands of years.
                                 </p>
                                 
-                                <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                                <p className="theme-text-muted mb-4 leading-relaxed">
                                     With a recorded history spanning over <strong>3,000 years</strong>, Sri Lanka boasts one of the world's oldest continuously documented civilizations. The island's strategic location on ancient maritime trade routes made it a crossroads of cultures, religions, and ideas.
                                 </p>
                                 
-                                <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                                <p className="theme-text-muted mb-4 leading-relaxed">
                                     Today, Sri Lanka is home to <strong>over 22 million people</strong> across <strong>65,610 square kilometers</strong> (25,330 square miles), making it roughly the size of Ireland or West Virginia. Despite its small size, the island contains remarkable geographic diversity - from pristine beaches and dense rainforests to misty mountains and arid plains.
                                 </p>
                                 
-                                <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-                                    <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">Quick Statistics:</h3>
-                                    <ul className="space-y-1 text-gray-700 dark:text-gray-300 text-sm">
+                                <div className="panel-green p-4 rounded-lg">
+                                    <h3 className="font-bold text-lg theme-text mb-2">Quick Statistics:</h3>
+                                    <ul className="space-y-1 theme-text-muted text-sm">
                                         <li><strong>Capital:</strong> Sri Jayawardenepura Kotte (Legislative), Colombo (Commercial)</li>
                                         <li><strong>Largest City:</strong> Colombo (~750,000 people)</li>
                                         <li><strong>Official Languages:</strong> Sinhala, Tamil, English</li>
@@ -94,16 +94,16 @@ const MoreAboutSriLanka = () => {
 
                 {/* Fascinating Facts Grid */}
                 <section className="mb-12">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-                        <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white" id="facts">🌟 Fascinating Facts About Sri Lanka</h2>
+                    <div className="panel-white rounded-lg shadow-lg p-8">
+                        <h2 className="text-3xl font-bold mb-6 theme-text" id="facts">🌟 Fascinating Facts About Sri Lanka</h2>
                         
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <div className="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-lg">
+                            <div className="panel-amber p-6 rounded-lg">
                                 <div className="flex items-center gap-3 mb-3">
                                     <Coffee className="h-8 w-8 text-amber-600" />
-                                    <h3 className="font-bold text-xl text-gray-900 dark:text-white">Ceylon Tea Capital</h3>
+                                    <h3 className="font-bold text-xl theme-text">Ceylon Tea Capital</h3>
                                 </div>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                                <ul className="space-y-2 theme-text-muted text-sm">
                                     <li className="flex items-start gap-2">
                                         <span className="text-amber-600 mt-1">•</span>
                                         <span><strong>4th largest tea producer</strong> globally</span>
@@ -127,12 +127,12 @@ const MoreAboutSriLanka = () => {
                                 </ul>
                             </div>
 
-                            <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
+                            <div className="panel-blue p-6 rounded-lg">
                                 <div className="flex items-center gap-3 mb-3">
                                     <Gem className="h-8 w-8 text-blue-600" />
-                                    <h3 className="font-bold text-xl text-gray-900 dark:text-white">Island of Gems</h3>
+                                    <h3 className="font-bold text-xl theme-text">Island of Gems</h3>
                                 </div>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                                <ul className="space-y-2 theme-text-muted text-sm">
                                     <li className="flex items-start gap-2">
                                         <span className="text-blue-600 mt-1">•</span>
                                         <span>Known as <strong>"Ratna-Dweepa"</strong> (Island of Gems)</span>
@@ -156,12 +156,12 @@ const MoreAboutSriLanka = () => {
                                 </ul>
                             </div>
 
-                            <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-lg">
+                            <div className="panel-green p-6 rounded-lg">
                                 <div className="flex items-center gap-3 mb-3">
                                     <Leaf className="h-8 w-8 text-green-600" />
-                                    <h3 className="font-bold text-xl text-gray-900 dark:text-white">Biodiversity Hotspot</h3>
+                                    <h3 className="font-bold text-xl theme-text">Biodiversity Hotspot</h3>
                                 </div>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                                <ul className="space-y-2 theme-text-muted text-sm">
                                     <li className="flex items-start gap-2">
                                         <span className="text-green-600 mt-1">•</span>
                                         <span>One of <strong>36 global biodiversity hotspots</strong></span>
@@ -185,12 +185,12 @@ const MoreAboutSriLanka = () => {
                                 </ul>
                             </div>
 
-                            <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg">
+                            <div className="panel-purple p-6 rounded-lg">
                                 <div className="flex items-center gap-3 mb-3">
                                     <Crown className="h-8 w-8 text-purple-600" />
-                                    <h3 className="font-bold text-xl text-gray-900 dark:text-white">Ancient Civilization</h3>
+                                    <h3 className="font-bold text-xl theme-text">Ancient Civilization</h3>
                                 </div>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                                <ul className="space-y-2 theme-text-muted text-sm">
                                     <li className="flex items-start gap-2">
                                         <span className="text-purple-600 mt-1">•</span>
                                         <span><strong>Anuradhapura</strong> founded in 377 BC, one of world's oldest cities</span>
@@ -214,12 +214,12 @@ const MoreAboutSriLanka = () => {
                                 </ul>
                             </div>
 
-                            <div className="bg-yellow-50 dark:bg-yellow-900/20 p-6 rounded-lg">
+                            <div className="panel-yellow p-6 rounded-lg">
                                 <div className="flex items-center gap-3 mb-3">
                                     <Trophy className="h-8 w-8 text-yellow-600" />
-                                    <h3 className="font-bold text-xl text-gray-900 dark:text-white">Cricket Legacy</h3>
+                                    <h3 className="font-bold text-xl theme-text">Cricket Legacy</h3>
                                 </div>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                                <ul className="space-y-2 theme-text-muted text-sm">
                                     <li className="flex items-start gap-2">
                                         <span className="text-yellow-600 mt-1">•</span>
                                         <span><strong>1996 Cricket World Cup Champions</strong></span>
@@ -243,12 +243,12 @@ const MoreAboutSriLanka = () => {
                                 </ul>
                             </div>
 
-                            <div className="bg-red-50 dark:bg-red-900/20 p-6 rounded-lg">
+                            <div className="panel-red p-6 rounded-lg">
                                 <div className="flex items-center gap-3 mb-3">
                                     <Award className="h-8 w-8 text-red-600" />
-                                    <h3 className="font-bold text-xl text-gray-900 dark:text-white">World Records</h3>
+                                    <h3 className="font-bold text-xl theme-text">World Records</h3>
                                 </div>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                                <ul className="space-y-2 theme-text-muted text-sm">
                                     <li className="flex items-start gap-2">
                                         <span className="text-red-600 mt-1">•</span>
                                         <span>First country with female Prime Minister (1960)</span>
@@ -277,17 +277,17 @@ const MoreAboutSriLanka = () => {
 
                 {/* Colonial History */}
                 <section className="mb-12">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-                        <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">🏛️ Colonial Legacy: 450 Years of European Influence</h2>
+                    <div className="panel-white rounded-lg shadow-lg p-8">
+                        <h2 className="text-3xl font-bold mb-6 theme-text">🏛️ Colonial Legacy: 450 Years of European Influence</h2>
                         
-                        <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                        <p className="theme-text-muted mb-6 leading-relaxed">
                             Three European powers ruled Sri Lanka for 450 years, leaving behind beautiful forts, delicious food traditions, and unique architecture you can still enjoy today!
                         </p>
                         
                         <div className="space-y-6">
-                            <div className="bg-orange-50 dark:bg-orange-900/20 p-6 rounded-lg border-l-4 border-l-orange-500">
-                                <h3 className="font-bold text-xl text-gray-900 dark:text-white mb-3">🇵🇹 Portuguese Era (1505-1658) - 153 Years</h3>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                            <div className="panel-orange p-6 rounded-lg border-l-4 border-l-orange-500">
+                                <h3 className="font-bold text-xl theme-text mb-3">🇵🇹 Portuguese Era (1505-1658) - 153 Years</h3>
+                                <ul className="space-y-2 theme-text-muted">
                                     <li className="flex items-start gap-2">
                                         <span className="text-orange-600 mt-1">•</span>
                                         <span><strong>1505:</strong> Portuguese explorer Lourenço de Almeida accidentally arrived in Sri Lanka (then Ceylon)</span>
@@ -315,9 +315,9 @@ const MoreAboutSriLanka = () => {
                                 </ul>
                             </div>
 
-                            <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg border-l-4 border-l-blue-500">
-                                <h3 className="font-bold text-xl text-gray-900 dark:text-white mb-3">🇳🇱 Dutch Era (1658-1796) - 138 Years</h3>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                            <div className="panel-blue p-6 rounded-lg border-l-4 border-l-blue-500">
+                                <h3 className="font-bold text-xl theme-text mb-3">🇳🇱 Dutch Era (1658-1796) - 138 Years</h3>
+                                <ul className="space-y-2 theme-text-muted">
                                     <li className="flex items-start gap-2">
                                         <span className="text-blue-600 mt-1">•</span>
                                         <span><strong>1658:</strong> Dutch East India Company (VOC) defeated Portuguese and took control</span>
@@ -349,9 +349,9 @@ const MoreAboutSriLanka = () => {
                                 </ul>
                             </div>
 
-                            <div className="bg-red-50 dark:bg-red-900/20 p-6 rounded-lg border-l-4 border-l-red-500">
-                                <h3 className="font-bold text-xl text-gray-900 dark:text-white mb-3">🇬🇧 British Era (1796-1948) - 152 Years</h3>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                            <div className="panel-red p-6 rounded-lg border-l-4 border-l-red-500">
+                                <h3 className="font-bold text-xl theme-text mb-3">🇬🇧 British Era (1796-1948) - 152 Years</h3>
+                                <ul className="space-y-2 theme-text-muted">
                                     <li className="flex items-start gap-2">
                                         <span className="text-red-600 mt-1">•</span>
                                         <span><strong>1796:</strong> British took coastal areas from Dutch during Napoleonic Wars</span>
@@ -387,9 +387,9 @@ const MoreAboutSriLanka = () => {
                                 </ul>
                             </div>
 
-                            <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-                                <h4 className="font-bold text-gray-900 dark:text-white mb-2">🎯 What You'll See Today:</h4>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <div className="panel-green p-4 rounded-lg">
+                                <h4 className="font-bold theme-text mb-2">🎯 What You'll See Today:</h4>
+                                <p className="text-sm theme-text-muted">
                                     Beautiful Dutch forts, British-built train rides through tea country, Portuguese-influenced food, and cricket-crazy locals! You'll find English widely spoken, making your trip super easy and fun.
                                 </p>
                             </div>
@@ -407,84 +407,84 @@ const MoreAboutSriLanka = () => {
 
                 {/* Culture & Festivals */}
                 <section className="mb-12">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-                        <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">🎭 Sri Lankan Culture: A Vibrant Mosaic</h2>
+                    <div className="panel-white rounded-lg shadow-lg p-8">
+                        <h2 className="text-3xl font-bold mb-6 theme-text">🎭 Sri Lankan Culture: A Vibrant Mosaic</h2>
                         
-                        <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                        <p className="theme-text-muted mb-6 leading-relaxed">
                             Sri Lankans are famous for their <strong>warm smiles and friendly hospitality!</strong> The island is a happy mix of different cultures - Sinhalese, Tamils, Muslims, and Christians all living together peacefully. You'll love how welcoming everyone is!
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-6 mb-6">
-                            <div className="bg-orange-50 dark:bg-orange-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-xl text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                            <div className="panel-orange p-6 rounded-lg">
+                                <h3 className="font-bold text-xl theme-text mb-3 flex items-center gap-2">
                                     <span className="text-2xl">🙏</span> Major Religions
                                 </h3>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                                <ul className="space-y-2 theme-text-muted">
                                     <li><strong>Buddhism:</strong> 70.2% (mainly Sinhalese)</li>
                                     <li><strong>Hinduism:</strong> 12.6% (mainly Tamils)</li>
                                     <li><strong>Islam:</strong> 9.7% (Moors and Malays)</li>
                                     <li><strong>Christianity:</strong> 7.4% (all ethnicities)</li>
                                 </ul>
-                                <p className="text-sm mt-3 text-gray-600 dark:text-gray-400">
+                                <p className="text-sm mt-3 theme-text-muted">
                                     Best part? Everyone celebrates together! You'll experience colorful festivals year-round.
                                 </p>
                             </div>
 
-                            <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-xl text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                            <div className="panel-purple p-6 rounded-lg">
+                                <h3 className="font-bold text-xl theme-text mb-3 flex items-center gap-2">
                                     <span className="text-2xl">🗣️</span> Languages
                                 </h3>
-                                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                                <ul className="space-y-2 theme-text-muted">
                                     <li><strong>Sinhala:</strong> Official language, spoken by 74%</li>
                                     <li><strong>Tamil:</strong> Official language, spoken by 18%</li>
                                     <li><strong>English:</strong> Link language, widely spoken in cities</li>
                                 </ul>
-                                <p className="text-sm mt-3 text-gray-600 dark:text-gray-400">
+                                <p className="text-sm mt-3 theme-text-muted">
                                     Don't worry about language barriers - most people speak English, especially in tourist areas!
                                 </p>
                             </div>
                         </div>
 
-                        <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">🎊 Major Festivals & Celebrations</h3>
+                        <h3 className="text-2xl font-bold theme-text mb-4">🎊 Major Festivals & Celebrations</h3>
                         <div className="space-y-4">
-                            <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg border-l-4 border-l-yellow-500">
-                                <h4 className="font-bold text-gray-900 dark:text-white">🪔 Vesak (April/May)</h4>
-                                <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">
+                            <div className="panel-yellow p-4 rounded-lg border-l-4 border-l-yellow-500">
+                                <h4 className="font-bold theme-text">🪔 Vesak (April/May)</h4>
+                                <p className="text-sm theme-text-muted mt-1">
                                     The whole country lights up with <strong>thousands of colorful lanterns!</strong> Free food everywhere you go. Pure magic!
                                 </p>
                             </div>
 
-                            <div className="bg-pink-50 dark:bg-pink-900/20 p-4 rounded-lg border-l-4 border-l-pink-500">
-                                <h4 className="font-bold text-gray-900 dark:text-white">🐘 Kandy Esala Perahera (July/August)</h4>
-                                <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">
+                            <div className="panel-pink p-4 rounded-lg border-l-4 border-l-pink-500">
+                                <h4 className="font-bold theme-text">🐘 Kandy Esala Perahera (July/August)</h4>
+                                <p className="text-sm theme-text-muted mt-1">
                                     Asia's most spectacular parade! <strong>100+ beautifully decorated elephants</strong>, dancers, drummers, and fire shows for 10 magical nights!
                                 </p>
                             </div>
 
-                            <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg border-l-4 border-l-orange-500">
-                                <h4 className="font-bold text-gray-900 dark:text-white">☀️ Sinhala & Tamil New Year (April 13-14)</h4>
-                                <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">
+                            <div className="panel-orange p-4 rounded-lg border-l-4 border-l-orange-500">
+                                <h4 className="font-bold theme-text">☀️ Sinhala & Tamil New Year (April 13-14)</h4>
+                                <p className="text-sm theme-text-muted mt-1">
                                     Biggest celebration of the year! Families play traditional games, share delicious food, and welcome the new year together. The whole country takes a holiday!
                                 </p>
                             </div>
 
-                            <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border-l-4 border-l-blue-500">
-                                <h4 className="font-bold text-gray-900 dark:text-white">🌾 Thai Pongal (January)</h4>
-                                <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">
+                            <div className="panel-blue p-4 rounded-lg border-l-4 border-l-blue-500">
+                                <h4 className="font-bold theme-text">🌾 Thai Pongal (January)</h4>
+                                <p className="text-sm theme-text-muted mt-1">
                                     Harvest celebration with sweet <strong>milk rice</strong> and beautifully decorated cows! So colorful and fun to watch.
                                 </p>
                             </div>
 
-                            <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border-l-4 border-l-green-500">
-                                <h4 className="font-bold text-gray-900 dark:text-white">🌙 Ramadan & Eid (Dates Vary)</h4>
-                                <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">
+                            <div className="panel-green p-4 rounded-lg border-l-4 border-l-green-500">
+                                <h4 className="font-bold theme-text">🌙 Ramadan & Eid (Dates Vary)</h4>
+                                <p className="text-sm theme-text-muted mt-1">
                                     Month of prayer followed by joyful <strong>Eid celebration</strong> with amazing food, new clothes, and gift-giving!
                                 </p>
                             </div>
 
-                            <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg border-l-4 border-l-red-500">
-                                <h4 className="font-bold text-gray-900 dark:text-white">🎄 Christmas (December 25)</h4>
-                                <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">
+                            <div className="panel-red p-4 rounded-lg border-l-4 border-l-red-500">
+                                <h4 className="font-bold theme-text">🎄 Christmas (December 25)</h4>
+                                <p className="text-sm theme-text-muted mt-1">
                                     Everyone celebrates together with carols, lights, and festive decorations. National holiday for all!
                                 </p>
                             </div>
@@ -494,82 +494,82 @@ const MoreAboutSriLanka = () => {
 
                 {/* Provinces & Districts */}
                 <section className="mb-12">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-                        <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">🗺️ Provinces & Districts: Explore Every Corner</h2>
+                    <div className="panel-white rounded-lg shadow-lg p-8">
+                        <h2 className="text-3xl font-bold mb-6 theme-text">🗺️ Provinces & Districts: Explore Every Corner</h2>
                         
-                        <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                        <p className="theme-text-muted mb-6 leading-relaxed">
                             Sri Lanka has <strong>9 provinces</strong>, each with its own special charm! From bustling cities to peaceful tea country, misty mountains to sunny beaches - there's something for everyone!
                         </p>
 
                         <div className="grid md:grid-cols-3 gap-6">
-                            <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">🏙️ Western Province</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Districts: Colombo, Gampaha, Kalutara</p>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <div className="panel-blue p-6 rounded-lg">
+                                <h3 className="font-bold text-lg theme-text mb-2">🏙️ Western Province</h3>
+                                <p className="text-sm theme-text-muted mb-2">Districts: Colombo, Gampaha, Kalutara</p>
+                                <p className="text-sm theme-text-muted">
                                     The busy heart of Sri Lanka! Shopping, beaches, restaurants, and exciting city vibes.
                                 </p>
                             </div>
 
-                            <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">🏔️ Central Province</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Districts: Kandy, Matale, Nuwara Eliya</p>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <div className="panel-green p-6 rounded-lg">
+                                <h3 className="font-bold text-lg theme-text mb-2">🏔️ Central Province</h3>
+                                <p className="text-sm theme-text-muted mb-2">Districts: Kandy, Matale, Nuwara Eliya</p>
+                                <p className="text-sm theme-text-muted">
                                     Beautiful tea country! Cool weather, stunning train rides, and the famous Temple of the Tooth.
                                 </p>
                             </div>
 
-                            <div className="bg-orange-50 dark:bg-orange-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">🏖️ Southern Province</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Districts: Galle, Matara, Hambantota</p>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <div className="panel-orange p-6 rounded-lg">
+                                <h3 className="font-bold text-lg theme-text mb-2">🏖️ Southern Province</h3>
+                                <p className="text-sm theme-text-muted mb-2">Districts: Galle, Matara, Hambantota</p>
+                                <p className="text-sm theme-text-muted">
                                     Paradise beaches, Galle Fort, whale watching, and amazing surf spots. Pure relaxation!
                                 </p>
                             </div>
 
-                            <div className="bg-yellow-50 dark:bg-yellow-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">🐘 North Central Province</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Districts: Anuradhapura, Polonnaruwa</p>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <div className="panel-yellow p-6 rounded-lg">
+                                <h3 className="font-bold text-lg theme-text mb-2">🐘 North Central Province</h3>
+                                <p className="text-sm theme-text-muted mb-2">Districts: Anuradhapura, Polonnaruwa</p>
+                                <p className="text-sm theme-text-muted">
                                     Ancient kingdoms with giant stupas and the world's oldest tree! History lovers' dream.
                                 </p>
                             </div>
 
-                            <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">🦁 North Western Province</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Districts: Kurunegala, Puttalam</p>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <div className="panel-purple p-6 rounded-lg">
+                                <h3 className="font-bold text-lg theme-text mb-2">🦁 North Western Province</h3>
+                                <p className="text-sm theme-text-muted mb-2">Districts: Kurunegala, Puttalam</p>
+                                <p className="text-sm theme-text-muted">
                                     Coconut plantations, saltpans, Wilpattu National Park (oldest in Sri Lanka), and historic sites.
                                 </p>
                             </div>
 
-                            <div className="bg-red-50 dark:bg-red-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">🏛️ North Province</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Districts: Jaffna, Kilinochchi, Mullaitivu, Mannar, Vavuniya</p>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <div className="panel-red p-6 rounded-lg">
+                                <h3 className="font-bold text-lg theme-text mb-2">🏛️ North Province</h3>
+                                <p className="text-sm theme-text-muted mb-2">Districts: Jaffna, Kilinochchi, Mullaitivu, Mannar, Vavuniya</p>
+                                <p className="text-sm theme-text-muted">
                                     Rich Tamil culture, spicy delicious food, colorful Hindu temples, and untouched islands.
                                 </p>
                             </div>
 
-                            <div className="bg-teal-50 dark:bg-teal-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">🌊 Eastern Province</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Districts: Trincomalee, Batticaloa, Ampara</p>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <div className="panel-teal p-6 rounded-lg">
+                                <h3 className="font-bold text-lg theme-text mb-2">🌊 Eastern Province</h3>
+                                <p className="text-sm theme-text-muted mb-2">Districts: Trincomalee, Batticaloa, Ampara</p>
+                                <p className="text-sm theme-text-muted">
                                     Quiet beaches, natural hot springs, great surfing, and amazing snorkeling spots!
                                 </p>
                             </div>
 
-                            <div className="bg-pink-50 dark:bg-pink-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">🦚 Uva Province</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Districts: Badulla, Monaragala</p>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <div className="panel-pink p-6 rounded-lg">
+                                <h3 className="font-bold text-lg theme-text mb-2">🦚 Uva Province</h3>
+                                <p className="text-sm theme-text-muted mb-2">Districts: Badulla, Monaragala</p>
+                                <p className="text-sm theme-text-muted">
                                     Instagram heaven! Ella town, Nine Arch Bridge, waterfalls, and easy hiking trails.
                                 </p>
                             </div>
 
-                            <div className="bg-indigo-50 dark:bg-indigo-900/20 p-6 rounded-lg">
-                                <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">🐆 Sabaragamuwa Province</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Districts: Ratnapura, Kegalle</p>
-                                <p className="text-sm text-gray-700 dark:text-gray-300">
+                            <div className="panel-indigo p-6 rounded-lg">
+                                <h3 className="font-bold text-lg theme-text mb-2">🐆 Sabaragamuwa Province</h3>
+                                <p className="text-sm theme-text-muted mb-2">Districts: Ratnapura, Kegalle</p>
+                                <p className="text-sm theme-text-muted">
                                     Gem capital! Visit real gem mines, climb Adam's Peak, explore rainforests.
                                 </p>
                             </div>
@@ -578,15 +578,15 @@ const MoreAboutSriLanka = () => {
                 </section>
 
                 {/* Travel Tips Section */}
-                <div className="mb-16 bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-4 sm:p-8">
-                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Essential Travel Tips</h2>
+                <div className="mb-16 theme-surface rounded-2xl p-4 sm:p-8">
+                    <h2 className="text-3xl font-bold theme-text mb-6">Essential Travel Tips</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm">
+                        <div className="panel-white p-6 rounded-xl shadow-sm">
                             <h3 className="text-xl font-bold mb-3 flex items-center">
                                 <Sunrise className="h-5 w-5 mr-2 text-orange-500" />
                                 Best Time to Visit
                             </h3>
-                            <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                            <ul className="space-y-2 theme-text-muted">
                                 <li className="flex items-start">
                                     <span className="mr-2">•</span>
                                     <span>Dec-Mar: Perfect for West & South coast</span>
@@ -606,12 +606,12 @@ const MoreAboutSriLanka = () => {
                             </ul>
                         </div>
 
-                        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm">
+                        <div className="panel-white p-6 rounded-xl shadow-sm">
                             <h3 className="text-xl font-bold mb-3 flex items-center">
                                 <Globe className="h-5 w-5 mr-2 text-blue-500" />
                                 Travel Essentials
                             </h3>
-                            <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                            <ul className="space-y-2 theme-text-muted">
                                 <li className="flex items-start">
                                     <span className="mr-2">•</span>
                                     <span>ETA Visa required for most visitors</span>
@@ -631,12 +631,12 @@ const MoreAboutSriLanka = () => {
                             </ul>
                         </div>
 
-                        <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm">
+                        <div className="panel-white p-6 rounded-xl shadow-sm">
                             <h3 className="text-xl font-bold mb-3 flex items-center">
                                 <Heart className="h-5 w-5 mr-2 text-red-500" />
                                 Local Customs
                             </h3>
-                            <ul className="space-y-2 text-gray-600 dark:text-gray-300">
+                            <ul className="space-y-2 theme-text-muted">
                                 <li className="flex items-start">
                                     <span className="mr-2">•</span>
                                     <span>Remove shoes at temples</span>
