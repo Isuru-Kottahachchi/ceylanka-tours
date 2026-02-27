@@ -10,6 +10,221 @@
   --foreground: #ededed;
 }
 
+/* Theme-aware utility classes (works without Tailwind dark: prefix) */
+.theme-bg {
+  background-color: #ffffff;
+}
+.dark .theme-bg {
+  background-color: #111827;
+}
+.theme-text {
+  color: #111827;
+}
+.dark .theme-text {
+  color: #f9fafb;
+}
+.theme-text-muted {
+  color: #4b5563;
+}
+.dark .theme-text-muted {
+  color: #d1d5db;
+}
+.theme-border {
+  border-color: #e5e7eb;
+}
+.dark .theme-border {
+  border-color: #374151;
+}
+
+.theme-card-blue {
+  background-color: #dbeafe !important;
+  border: 1.5px solid rgba(59, 130, 246, 0.6) !important;
+}
+.dark .theme-card-blue {
+  background-color: rgba(30, 58, 138, 0.3) !important;
+  border-color: rgba(59, 130, 246, 0.5) !important;
+}
+.theme-card-green {
+  background-color: #dcfce7;
+  border: 1.5px solid rgba(34, 197, 94, 0.6);
+}
+.dark .theme-card-green {
+  background-color: rgba(20, 83, 45, 0.3);
+  border-color: rgba(34, 197, 94, 0.5);
+}
+.theme-card-orange {
+  background-color: #ffedd5;
+  border: 1.5px solid rgba(249, 115, 22, 0.6);
+}
+.dark .theme-card-orange {
+  background-color: rgba(124, 45, 18, 0.3);
+  border-color: rgba(249, 115, 22, 0.5);
+}
+.theme-surface {
+  background-color: #f3f4f6;
+  border: 1.5px solid rgba(0, 0, 0, 0.15);
+}
+.dark .theme-surface {
+  background-color: #1f2937;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.theme-divider {
+  border: 0;
+  border-top: 2px solid #e5e7eb;
+}
+.dark .theme-divider {
+  border-top-color: transparent;
+}
+.theme-hero-gradient {
+  background: linear-gradient(to bottom right, #eff6ff, #f0fdf4, #fefce8);
+}
+.dark .theme-hero-gradient {
+  background: linear-gradient(to bottom right, #111827, #1f2937, #111827);
+}
+.theme-cyan-gradient {
+  background: linear-gradient(to bottom right, #ecfeff, #eff6ff);
+}
+.dark .theme-cyan-gradient {
+  background: linear-gradient(to bottom right, #111827, #1f2937);
+}
+.theme-icon-cyan {
+  background-color: #cffafe;
+}
+.dark .theme-icon-cyan {
+  background-color: rgba(22, 78, 99, 0.6);
+}
+/* Two-tone callout system — blue for info, amber for legends/warnings */
+.theme-info-box {
+  background-color: #eff6ff;
+  border-left: 4px solid #3b82f6;
+}
+.dark .theme-info-box {
+  background-color: #0c1a2e;
+  border-left-color: #3b82f6;
+}
+.theme-info-heading {
+  color: #1e40af;
+}
+.dark .theme-info-heading {
+  color: #93c5fd;
+}
+.theme-info-text {
+  color: #1d4ed8;
+}
+.dark .theme-info-text {
+  color: #bfdbfe;
+}
+.theme-notice-box {
+  background-color: #fffbeb;
+  border-left: 4px solid #f59e0b;
+}
+.dark .theme-notice-box {
+  background-color: #1c1507;
+  border-left-color: #d97706;
+}
+.theme-notice-heading {
+  color: #92400e;
+}
+.dark .theme-notice-heading {
+  color: #fcd34d;
+}
+.theme-notice-text {
+  color: #b45309;
+}
+.dark .theme-notice-text {
+  color: #fde68a;
+}
+/* DOs / DON'Ts semantic cards */
+.theme-dos-card {
+  background-color: #f0fdf4;
+  border: 1.5px solid rgba(134, 239, 172, 0.5);
+}
+.dark .theme-dos-card {
+  background-color: rgba(20, 83, 45, 0.2);
+  border-color: rgba(134, 239, 172, 0.3);
+}
+.theme-dos-heading {
+  color: #15803d;
+}
+.dark .theme-dos-heading {
+  color: #86efac;
+}
+.theme-donts-card {
+  background-color: #fff1f2;
+  border: 1.5px solid rgba(253, 164, 175, 0.5);
+}
+.dark .theme-donts-card {
+  background-color: rgba(136, 19, 55, 0.2);
+  border-color: rgba(253, 164, 175, 0.3);
+}
+.theme-donts-heading {
+  color: #be123c;
+}
+.dark .theme-donts-heading {
+  color: #fda4af;
+}
+.theme-text-blue {
+  color: #1d4ed8;
+}
+.dark .theme-text-blue {
+  color: #93c5fd;
+}
+.theme-card {
+  background-color: #ffffff;
+  border: 1.5px solid rgba(0,0,0,0.12) !important;
+}
+.dark .theme-card {
+  background-color: #1f2937;
+  border-color: rgba(255,255,255,0.25) !important;
+}
+
+/* ── Header text / interactive classes ── */
+.nav-link {
+  color: #374151;
+}
+.dark .nav-link {
+  color: #f3f4f6;
+}
+.nav-link:hover {
+  color: #0891b2;
+}
+.dark .nav-link:hover {
+  color: #22d3ee;
+}
+.nav-sub-link {
+  color: #4b5563;
+}
+.dark .nav-sub-link {
+  color: #d1d5db;
+}
+.nav-sub-link:hover {
+  color: #0891b2;
+  background-color: #f3f4f6;
+}
+.dark .nav-sub-link:hover {
+  color: #22d3ee;
+  background-color: #374151;
+}
+.nav-heading {
+  color: #111827;
+}
+.dark .nav-heading {
+  color: #f3f4f6;
+}
+.nav-chevron {
+  color: #4b5563;
+}
+.dark .nav-chevron {
+  color: #d1d5db;
+}
+.nav-hover-row:hover {
+  background-color: #f3f4f6;
+}
+.dark .nav-hover-row:hover {
+  background-color: #374151;
+}
+
 html {
   overflow-y: auto;
   overflow-x: hidden;
