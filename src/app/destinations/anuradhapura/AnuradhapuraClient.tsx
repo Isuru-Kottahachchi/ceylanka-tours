@@ -608,7 +608,7 @@ export default function AnuradhapuraClient({ defaultLang = "en" }: { defaultLang
   return (
     <>
       {/* ── Language Toggle Banner ── */}
-      <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 bg-white dark:bg-gray-800 shadow-xl rounded-xl px-4 py-3 border border-gray-200 dark:border-gray-700 flex items-center gap-3">
+      <div className="fixed bottom-24 right-6 z-50 bg-white dark:bg-gray-800 shadow-xl rounded-xl px-4 py-3 border border-gray-200 dark:border-gray-700 flex items-center gap-3">
         <span className="text-sm text-gray-600 dark:text-gray-300">
           {de ? "Read in English?" : "Auf Deutsch lesen?"}
         </span>
