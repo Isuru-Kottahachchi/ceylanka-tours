@@ -327,10 +327,10 @@ function MobileHierarchicalMenu({ onItemClick }: { onItemClick?: () => void }) {
 }
 
 export function Header() {
-  const { theme, resolvedTheme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
   const pathname = usePathname()
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
-  // const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const [isSheetOpen, setIsSheetOpen] = useState(false)
 
   // Helper function to check if current page is active
@@ -363,7 +363,7 @@ export function Header() {
   // Handle initial theme — next-themes reads localStorage automatically,
   // so no manual DOM manipulation needed here
   useEffect(() => {
-    // intentionally empty — next-themes handles theme persistence
+    setMounted(true)
   }, [])
 
   // Add refs for destinations dropdown
@@ -448,8 +448,8 @@ export function Header() {
                 className="text-white hover:bg-slate-700 transition-colors relative cursor-pointer"
                 aria-label={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode`}
               >
-                <Sun className={`h-4 w-4 absolute transition-all ${resolvedTheme === "dark" ? "opacity-100 scale-100" : "opacity-0 scale-0"}`} />
-                <Moon className={`h-4 w-4 absolute transition-all ${resolvedTheme === "dark" ? "opacity-0 scale-0" : "opacity-100 scale-100"}`} />
+                <Sun className={`h-4 w-4 absolute transition-all ${mounted && resolvedTheme === "dark" ? "opacity-100 scale-100" : "opacity-0 scale-0"}`} />
+                <Moon className={`h-4 w-4 absolute transition-all ${mounted && resolvedTheme === "dark" ? "opacity-0 scale-0" : "opacity-100 scale-100"}`} />
               </Button>
             </div>
           </div>
