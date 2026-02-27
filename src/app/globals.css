@@ -225,6 +225,90 @@
   background-color: #374151;
 }
 
+/* ── Colored panel backgrounds (light pastel / subtle dark) ── */
+.panel-white {
+  background-color: #ffffff;
+}
+.dark .panel-white {
+  background-color: #1f2937;
+}
+.panel-amber {
+  background-color: #fffbeb;
+}
+.dark .panel-amber {
+  background-color: rgba(120, 53, 15, 0.2);
+}
+.panel-blue {
+  background-color: #eff6ff;
+}
+.dark .panel-blue {
+  background-color: rgba(30, 58, 138, 0.2);
+}
+.panel-green {
+  background-color: #f0fdf4;
+}
+.dark .panel-green {
+  background-color: rgba(20, 83, 45, 0.2);
+}
+.panel-purple {
+  background-color: #faf5ff;
+}
+.dark .panel-purple {
+  background-color: rgba(76, 29, 149, 0.2);
+}
+.panel-yellow {
+  background-color: #fefce8;
+}
+.dark .panel-yellow {
+  background-color: rgba(113, 63, 18, 0.2);
+}
+.panel-red {
+  background-color: #fff1f2;
+}
+.dark .panel-red {
+  background-color: rgba(127, 29, 29, 0.2);
+}
+.panel-orange {
+  background-color: #fff7ed;
+}
+.dark .panel-orange {
+  background-color: rgba(124, 45, 18, 0.2);
+}
+.panel-pink {
+  background-color: #fdf2f8;
+}
+.dark .panel-pink {
+  background-color: rgba(131, 24, 67, 0.2);
+}
+.panel-teal {
+  background-color: #f0fdfa;
+}
+.dark .panel-teal {
+  background-color: rgba(19, 78, 74, 0.2);
+}
+.panel-indigo {
+  background-color: #eef2ff;
+}
+.dark .panel-indigo {
+  background-color: rgba(49, 46, 129, 0.2);
+}
+
+/* ── Search input ── */
+.search-input {
+  background-color: #ffffff;
+  color: #000000;
+}
+.dark .search-input {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+.search-input::placeholder {
+  color: #6b7280;
+}
+.dark .search-input::placeholder {
+  color: #9ca3af;
+}
+
 html {
   overflow-y: auto;
   overflow-x: hidden;
