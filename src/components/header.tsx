@@ -327,7 +327,7 @@ function MobileHierarchicalMenu({ onItemClick }: { onItemClick?: () => void }) {
 }
 
 export function Header() {
-  const { theme, setTheme } = useTheme()
+  const { theme, resolvedTheme, setTheme } = useTheme()
   const pathname = usePathname()
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   // const [mounted, setMounted] = useState(false)
@@ -360,16 +360,11 @@ export function Header() {
     )
   }
 
-  // Handle initial theme
+  // Handle initial theme — next-themes reads localStorage automatically,
+  // so no manual DOM manipulation needed here
   useEffect(() => {
-    // setMounted(true)
-    const savedTheme = localStorage.getItem("theme")
-    if (savedTheme) {
-      setTheme(savedTheme)
-      document.documentElement.classList.remove("light", "dark")
-      document.documentElement.classList.add(savedTheme)
-    }
-  }, [setTheme])
+    // intentionally empty — next-themes handles theme persistence
+  }, [])
 
   // Add refs for destinations dropdown
   const destinationsDropdownRef = useRef<HTMLDivElement>(null)
@@ -447,14 +442,14 @@ export function Header() {
               <Button
                 size="sm"
                 onClick={() => {
-                  const nextTheme = theme === "dark" ? "light" : "dark";
+                  const nextTheme = resolvedTheme === "dark" ? "light" : "dark";
                   setTheme(nextTheme);
                 }}
                 className="text-white hover:bg-slate-700 transition-colors relative cursor-pointer"
-                aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+                aria-label={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode`}
               >
-                <Sun className={`h-4 w-4 absolute transition-all ${theme === "dark" ? "opacity-100 scale-100" : "opacity-0 scale-0"}`} />
-                <Moon className={`h-4 w-4 absolute transition-all ${theme === "dark" ? "opacity-0 scale-0" : "opacity-100 scale-100"}`} />
+                <Sun className={`h-4 w-4 absolute transition-all ${resolvedTheme === "dark" ? "opacity-100 scale-100" : "opacity-0 scale-0"}`} />
+                <Moon className={`h-4 w-4 absolute transition-all ${resolvedTheme === "dark" ? "opacity-0 scale-0" : "opacity-100 scale-100"}`} />
               </Button>
             </div>
           </div>
