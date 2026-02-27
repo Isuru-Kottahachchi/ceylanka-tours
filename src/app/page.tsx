@@ -14,6 +14,9 @@ export default function HomePage() {
       <HeroSection />
       {/* <AdBanner slot="homepage-top" /> */}
       <SriLankaAboutCompact />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <hr className="theme-divider" />
+      </div>
       <PopularDestinations />
       <FeaturedArticles />
       <Explore/>
