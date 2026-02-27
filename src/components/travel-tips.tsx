@@ -41,11 +41,11 @@ const tips = [
 
 export function TravelTips() {
   return (
-    <section className="py-16 bg-gradient-to-br from-cyan-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
+    <section className="py-16 theme-cyan-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Essential Travel Tips</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold theme-text mb-4">Essential Travel Tips</h2>
+          <p className="text-lg theme-text-muted max-w-2xl mx-auto">
             Everything you need to know for a perfect Sri Lankan adventure
           </p>
         </div>
@@ -58,14 +58,14 @@ export function TravelTips() {
             >
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-3 text-lg">
-                  <div className="p-2 bg-cyan-100 dark:bg-cyan-900 rounded-lg group-hover:bg-cyan-200 dark:group-hover:bg-cyan-800 transition-colors">
-                    <tip.icon className="h-5 w-5 text-cyan-600 dark:text-cyan-400" />
+                  <div className="p-2 theme-icon-cyan rounded-lg transition-colors">
+                    <tip.icon className="h-5 w-5 text-cyan-600" />
                   </div>
-                  <span className="text-gray-900 dark:text-white">{tip.title}</span>
+                  <span className="theme-text">{tip.title}</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{tip.content}</p>
+                <p className="theme-text-muted leading-relaxed">{tip.content}</p>
               </CardContent>
             </Card>
           ))}

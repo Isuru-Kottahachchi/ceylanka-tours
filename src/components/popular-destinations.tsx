@@ -135,11 +135,11 @@ export function PopularDestinations() {
   }
 
   return (
-    <section className="py-16 bg-white dark:bg-gray-800">
+    <section className="py-16 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Popular Destinations</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold theme-text mb-4">Popular Destinations</h2>
+          <p className="text-lg theme-text-muted max-w-2xl mx-auto">
             Explore the most visited and beloved destinations across the beautiful island of Sri Lanka
           </p>
         </div>
@@ -174,12 +174,12 @@ export function PopularDestinations() {
                 
                 <div className="flex flex-wrap gap-1 mb-4">
                   {destination.highlights.slice(0, 4).map((highlight, index) => (
-                    <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
+                    <Badge key={index} variant="secondary" className="text-xs theme-surface theme-text">
                       {highlight}
                     </Badge>
                   ))}
                   {destination.highlights.length > 4 && (
-                    <Badge variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
+                    <Badge variant="secondary" className="text-xs theme-surface theme-text">
                       +{destination.highlights.length - 4} more
                     </Badge>
                   )}

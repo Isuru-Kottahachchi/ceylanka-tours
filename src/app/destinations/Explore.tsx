@@ -112,13 +112,13 @@ export default function ExplorePage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-50 via-green-50 to-yellow-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      <section className="relative py-20 theme-hero-gradient">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold theme-text mb-6">
               Explore Sri Lanka
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl theme-text-muted mb-8 max-w-3xl mx-auto">
               Discover the Pearl of the Indian Ocean through thrilling adventures, famous trails, 
               authentic cuisine, and breathtaking natural wonders
             </p>
@@ -142,7 +142,7 @@ export default function ExplorePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {exploreCategories.map((category) => (
               <div key={category.id} className="group">
-                <Card className="h-full overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-0 bg-white dark:bg-gray-800">
+                <Card className="h-full overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 theme-card">
                   <div className="relative">
                     {/* Background Image */}
                     <div className="relative h-48 overflow-hidden">
@@ -172,22 +172,22 @@ export default function ExplorePage() {
 
                     {/* Content */}
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                      <h3 className="text-xl font-bold theme-text mb-3 group-hover:text-blue-600 transition-colors">
                         {category.title}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">
+                      <p className="theme-text-muted text-sm mb-4 line-clamp-2">
                         {category.description}
                       </p>
                       
                       {/* Highlights */}
                       <div className="space-y-2 mb-4">
-                        <h4 className="text-sm font-semibold text-gray-900 dark:text-white">Featured:</h4>
+                        <h4 className="text-sm font-semibold theme-text">Featured:</h4>
                         <div className="flex flex-wrap gap-1">
                           {category.highlights.map((highlight, idx) => (
                             <Badge 
                               key={idx} 
                               variant="outline" 
-                              className="text-xs px-2 py-1 bg-gray-50 dark:bg-gray-700"
+                              className="text-xs px-2 py-1 theme-surface"
                             >
                               {highlight}
                             </Badge>
@@ -212,10 +212,10 @@ export default function ExplorePage() {
 
           {/* Call to Action */}
           <section className="mt-16 text-center">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-2xl font-bold theme-text mb-4">
               Ready to Start Your Sri Lankan Adventure?
             </h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="theme-text-muted mb-8 max-w-2xl mx-auto">
               Click on any category above to discover detailed guides, insider tips, and everything you need 
               to make the most of your Sri Lankan exploration.
             </p>
