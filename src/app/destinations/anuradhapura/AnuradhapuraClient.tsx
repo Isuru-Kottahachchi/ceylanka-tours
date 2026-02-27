@@ -608,25 +608,25 @@ export default function AnuradhapuraClient({ defaultLang = "en" }: { defaultLang
   return (
     <>
       {/* ── Language Toggle Banner ── */}
-      <div className="fixed bottom-24 right-6 z-50 bg-white dark:bg-gray-800 shadow-xl rounded-xl px-4 py-3 border border-gray-200 dark:border-gray-700 flex items-center gap-3">
-        <span className="text-sm text-gray-600 dark:text-gray-300">
+      <div className="fixed bottom-24 right-4 z-50 bg-white dark:bg-gray-800 shadow-xl rounded-xl px-2 py-2 sm:px-4 sm:py-3 border border-gray-200 dark:border-gray-700 flex items-center gap-2">
+        <span className="hidden sm:inline text-sm text-gray-600 dark:text-gray-300">
           {de ? "Read in English?" : "Auf Deutsch lesen?"}
         </span>
         <button
           onClick={() => setLang(de ? "en" : "de")}
-          className="text-sm font-semibold bg-blue-600 text-white px-3 py-1.5 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer flex items-center gap-2"
+          className="text-xs sm:text-sm font-semibold bg-blue-600 text-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-lg hover:bg-blue-700 transition-colors cursor-pointer flex items-center gap-1.5"
         >
           {de ? (
             <>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://flagcdn.com/w20/gb.png" alt="English" width={20} height={14} className="rounded-sm" />
-              English
+              <img src="https://flagcdn.com/w20/gb.png" alt="English" width={16} height={12} className="rounded-sm" />
+              <span>EN</span>
             </>
           ) : (
             <>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width={20} height={14} className="rounded-sm" />
-              Deutsch
+              <img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width={16} height={12} className="rounded-sm" />
+              <span>DE</span>
             </>
           )}
         </button>
