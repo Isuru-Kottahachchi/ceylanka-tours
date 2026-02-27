@@ -267,7 +267,7 @@ function DesktopHierarchicalDropdown({
         <div className="border-t theme-border theme-surface px-3 py-2">
           <Link
             href="/destinations"
-            className="flex items-center justify-center w-full px-3 py-1.5 text-sm font-medium text-cyan-600 dark:text-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-900/30 rounded-md transition-colors"
+            className="flex items-center justify-center w-full px-3 py-1.5 text-sm font-medium text-cyan-600 hover:bg-cyan-50 rounded-md transition-colors"
             onClick={onClose}
           >
             All Destinations
@@ -619,7 +619,7 @@ export function Header() {
 
                   {/* Mobile Navigation */}
                   <nav className="flex flex-col space-y-3 pb-20">
-                    <Link href="/" className="py-2 border-b border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 font-medium" onClick={() => setIsSheetOpen(false)}>
+                    <Link href="/" className="py-2 border-b theme-border nav-link font-medium" onClick={() => setIsSheetOpen(false)}>
                       HOME
                     </Link>
 
@@ -628,7 +628,7 @@ export function Header() {
                       <Link
                         key={item.name}
                         href={item.href}
-                        className="py-2 border-b border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 hover:text-cyan-600 dark:hover:text-cyan-400 font-medium"
+                        className="py-2 border-b theme-border nav-link font-medium"
                         onClick={() => setIsSheetOpen(false)}
                       >
                         {item.name.toUpperCase()}
@@ -639,23 +639,23 @@ export function Header() {
                       WHATS NEW
                     </Link> */}
                     {/* Mobile What To Do Menu */}
-                    <div className="py-2 border-b border-gray-200 dark:border-gray-700">
-                      <div className="font-semibold text-gray-900 mb-3 dark:text-gray-100 text-base">What To Do</div>
+                    <div className="py-2 border-b theme-border">
+                      <div className="font-semibold nav-heading mb-3 text-base">What To Do</div>
                       <div className="space-y-1">
                         {whatToDoItems.map((section) => (
                           <div key={section.title}>
                             <button
                               onClick={() => setActiveDropdown(activeDropdown === section.title ? null : section.title)}
-                              className="w-full flex items-center justify-between p-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
+                              className="w-full flex items-center justify-between p-3 text-left nav-hover-row rounded-md transition-colors"
                             >
                               <div className="flex items-center space-x-3">
                                 <span className="text-lg">
                                   {section.title === 'Adventure Activities' ? '⛰️' : '🌟'}
                                 </span>
-                                <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
+                                <span className="font-medium nav-heading">{section.title}</span>
                               </div>
                               <ChevronRight
-                                className={`h-4 w-4 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === section.title ? "rotate-90" : ""
+                                className={`h-4 w-4 nav-chevron transition-transform ${activeDropdown === section.title ? "rotate-90" : ""
                                   }`}
                               />
                             </button>
@@ -666,7 +666,7 @@ export function Header() {
                                   <Link
                                     key={item.name}
                                     href={item.href}
-                                    className="block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                                    className="block p-2 text-sm nav-sub-link rounded-md transition-colors"
                                     onClick={() => setIsSheetOpen(false)}
                                   >
                                     {item.name}
@@ -680,28 +680,28 @@ export function Header() {
                     </div>
 
                     {/* Mobile Hierarchical Destinations Menu */}
-                    <div className="py-2 border-b">
+                    <div className="py-2 border-b theme-border">
                       <MobileHierarchicalMenu onItemClick={() => setIsSheetOpen(false)} />
                     </div>
 
                     {/* Mobile Plan Your Trip Menu */}
-                    <div className="py-2 border-b border-gray-200 dark:border-gray-700">
-                      <div className="font-semibold text-gray-900 mb-3 dark:text-gray-100 text-base">Plan Your Trip</div>
+                    <div className="py-2 border-b theme-border">
+                      <div className="font-semibold nav-heading mb-3 text-base">Plan Your Trip</div>
                       <div className="space-y-1">
                         {planYourTripItems.map((section) => (
                           <div key={section.title}>
                             <button
                               onClick={() => setActiveDropdown(activeDropdown === section.title ? null : section.title)}
-                              className="w-full flex items-center justify-between p-3 text-left hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md transition-colors"
+                              className="w-full flex items-center justify-between p-3 text-left nav-hover-row rounded-md transition-colors"
                             >
                               <div className="flex items-center space-x-3">
                                 <span className="text-lg">
                                   {section.title === 'Planning Tools' ? '🛠️' : '🏨'}
                                 </span>
-                                <span className="font-medium text-gray-900 dark:text-gray-100">{section.title}</span>
+                                <span className="font-medium nav-heading">{section.title}</span>
                               </div>
                               <ChevronRight
-                                className={`h-4 w-4 text-gray-600 dark:text-gray-300 transition-transform ${activeDropdown === section.title ? "rotate-90" : ""
+                                className={`h-4 w-4 nav-chevron transition-transform ${activeDropdown === section.title ? "rotate-90" : ""
                                   }`}
                               />
                             </button>
@@ -712,7 +712,7 @@ export function Header() {
                                   <Link
                                     key={item.name}
                                     href={item.href}
-                                    className="block p-2 text-sm text-gray-600 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors"
+                                    className="block p-2 text-sm nav-sub-link rounded-md transition-colors"
                                     onClick={() => setIsSheetOpen(false)}
                                   >
                                     {item.name}
@@ -728,7 +728,7 @@ export function Header() {
                     <div className="py-3">
                       <Link
                         href="/events"
-                        className="block font-semibold text-gray-900 dark:text-gray-100 text-base"
+                        className="block font-semibold nav-heading text-base"
                         onClick={() => setIsSheetOpen(false)}
                       >
                         UPCOMING EVENTS
