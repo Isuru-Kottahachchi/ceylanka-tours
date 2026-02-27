@@ -328,7 +328,7 @@ export default function ContactUs() {
                         onChange={handleInputChange}
                         min={new Date().toISOString().split('T')[0]}
                         placeholder="dd/mm/yyyy"
-                        className="w-full"
+                        className="w-full h-10 appearance-none"
                       />
                     </div>
                     <div>
