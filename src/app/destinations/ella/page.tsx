@@ -1266,13 +1266,13 @@ export default function EllaTownGuide() {
           <section className="mb-12">
             <h2 className="text-3xl font-bold mb-6">Best Time to Visit Ella</h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="border-green-200 bg-green-50/50">
+              <Card className="ella-season-peak">
                 <CardHeader>
-                  <CardTitle className="text-green-700">Peak Season</CardTitle>
+                  <CardTitle className="ella-season-peak-title">Peak Season</CardTitle>
                   <CardDescription>December - March</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-sm text-green-700">
+                  <ul className="space-y-2 text-sm ella-season-peak-text">
                     <li>• Dry weather, clear skies</li>
                     <li>• Perfect for hiking</li>
                     <li>• Best mountain views</li>
@@ -1281,13 +1281,13 @@ export default function EllaTownGuide() {
                 </CardContent>
               </Card>
 
-              <Card className="border-yellow-200 bg-yellow-50/50">
+              <Card className="ella-season-shoulder">
                 <CardHeader>
-                  <CardTitle className="text-yellow-700">Shoulder Season</CardTitle>
+                  <CardTitle className="ella-season-shoulder-title">Shoulder Season</CardTitle>
                   <CardDescription>April - June, September - November</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-sm text-yellow-700">
+                  <ul className="space-y-2 text-sm ella-season-shoulder-text">
                     <li>• Occasional rain showers</li>
                     <li>• Fewer tourists</li>
                     <li>• Better accommodation rates</li>
@@ -1296,13 +1296,13 @@ export default function EllaTownGuide() {
                 </CardContent>
               </Card>
 
-              <Card className="border-blue-200 bg-blue-50/50">
+              <Card className="ella-season-monsoon">
                 <CardHeader>
-                  <CardTitle className="text-blue-700">Monsoon Season</CardTitle>
+                  <CardTitle className="ella-season-monsoon-title">Monsoon Season</CardTitle>
                   <CardDescription>July - August</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 text-sm text-blue-700">
+                  <ul className="space-y-2 text-sm ella-season-monsoon-text">
                     <li>• Heavy rainfall</li>
                     <li>• Misty, atmospheric views</li>
                     <li>• Lowest prices</li>
@@ -1411,9 +1411,9 @@ export default function EllaTownGuide() {
 
           {/* Final Tips */}
           <section className="mb-12">
-            <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
+            <Card className="ella-adventure-card border">
               <CardHeader>
-                <CardTitle className="text-green-800">Your Ella Adventure Awaits</CardTitle>
+                <CardTitle className="ella-adventure-title">Your Ella Adventure Awaits</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">

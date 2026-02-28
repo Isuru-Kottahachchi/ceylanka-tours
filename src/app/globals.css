@@ -338,6 +338,34 @@
   transform: translateY(-1px);
 }
 
+/* Ella Adventure Card */
+.ella-adventure-card { background: linear-gradient(to right, #f0fdf4, #eff6ff); border-color: #bbf7d0; }
+.dark .ella-adventure-card { background: linear-gradient(to right, #052e16, #172554); border-color: #166534; }
+.ella-adventure-title { color: #166534; }
+.dark .ella-adventure-title { color: #86efac; }
+
+/* Ella Season Cards */
+.ella-season-peak { border-color: #bbf7d0; background-color: rgba(240,253,244,0.5); }
+.dark .ella-season-peak { border-color: #166534; background-color: rgba(5,46,22,0.3); }
+.ella-season-peak-title { color: #15803d; }
+.dark .ella-season-peak-title { color: #86efac; }
+.ella-season-peak-text { color: #166534; }
+.dark .ella-season-peak-text { color: #4ade80; }
+
+.ella-season-shoulder { border-color: #fde68a; background-color: rgba(254,252,232,0.5); }
+.dark .ella-season-shoulder { border-color: #92400e; background-color: rgba(66,32,6,0.3); }
+.ella-season-shoulder-title { color: #a16207; }
+.dark .ella-season-shoulder-title { color: #fde047; }
+.ella-season-shoulder-text { color: #a16207; }
+.dark .ella-season-shoulder-text { color: #fbbf24; }
+
+.ella-season-monsoon { border-color: #bfdbfe; background-color: rgba(239,246,255,0.5); }
+.dark .ella-season-monsoon { border-color: #1e40af; background-color: rgba(23,37,84,0.3); }
+.ella-season-monsoon-title { color: #1d4ed8; }
+.dark .ella-season-monsoon-title { color: #93c5fd; }
+.ella-season-monsoon-text { color: #1d4ed8; }
+.dark .ella-season-monsoon-text { color: #60a5fa; }
+
 /* Destinations Page */
 .dest-page-bg { background-color: #f9fafb; }
 .dark .dest-page-bg { background-color: #111827; }
