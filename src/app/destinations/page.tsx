@@ -578,7 +578,7 @@ const destinations = [
 
 ]
 
-const categories = ["All", "Historical", "Religious", "Nature", "Wildlife", "Beach", "Adventure"]
+const categories = ["All", "Historical", "Religious", "Nature", "Wildlife", "Beach", "Adventure", "Animals", "City"]
 
 export default function DestinationsPage() {
   const [showSearchReminder, setShowSearchReminder] = React.useState(true);
@@ -665,7 +665,7 @@ export default function DestinationsPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen dest-page-bg">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-600 to-teal-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
@@ -727,17 +727,17 @@ export default function DestinationsPage() {
       <div className="container mx-auto px-4 py-12">
         {/* Category Filter */}
         <div className="flex flex-wrap gap-2 mb-8 justify-center">
-          {categories.map((category) => (
+          {categories.map((cat) => (
             <Button
-              key={category}
-              variant={category === "All" ? "default" : "outline"}
-              className={category === "All"
+              key={cat}
+              variant={cat === category ? "default" : "outline"}
+              className={cat === category
                 ? "bg-green-500 hover:bg-green-600 text-white cursor-pointer"
-                : "border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-900 dark:text-gray-100  cursor-pointer"
+                : "dest-filter-btn hover:opacity-80 cursor-pointer"
               }
-              onClick={() => { setCategory(category) }}
+              onClick={() => { setCategory(cat) }}
             >
-              {category}
+              {cat}
             </Button>
           ))}
         </div>
@@ -747,7 +747,7 @@ export default function DestinationsPage() {
         {/* Search Results Info */}
         {activeSearch.trim() && (
           <div className="mb-6 text-center">
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="dest-muted-text">
               {filteredDestinations.length === 0
                 ? `No destinations found for "${activeSearch}"`
                 : `Found ${filteredDestinations.length} destination${filteredDestinations.length === 1 ? '' : 's'} for "${activeSearch}"`
@@ -759,7 +759,7 @@ export default function DestinationsPage() {
         {/* Category Results Info */}
         {category !== "All" && !activeSearch.trim() && (
           <div className="mb-6 text-center">
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="dest-muted-text">
               Showing {filteredDestinations.length} {category.toLowerCase()} destination{filteredDestinations.length === 1 ? '' : 's'}
             </p>
           </div>
@@ -769,10 +769,10 @@ export default function DestinationsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredDestinations.length === 0 ? (
             <div className="col-span-full text-center py-12">
-              <div className="text-gray-400 dark:text-gray-500 mb-4">
+              <div className="dest-empty-icon mb-4">
                 <Search className="h-16 w-16 mx-auto mb-4 opacity-50" />
                 <h3 className="text-xl font-semibold mb-2">No destinations found</h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="dest-empty-text">
                   {activeSearch.trim()
                     ? `Try searching with different keywords or browse by category.`
                     : `No destinations available in the ${category} category.`
@@ -790,8 +790,8 @@ export default function DestinationsPage() {
               )}
             </div>
           ) : (
-            filteredDestinations.map((destination) => (
-              <Card key={destination.id} className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+          filteredDestinations.map((destination, index) => (
+              <Card key={`${destination.path}-${index}`} className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="relative h-48">
                   <Image
                     src={destination.image || "/placeholder.svg"}
@@ -815,12 +815,12 @@ export default function DestinationsPage() {
                   
                   <div className="flex flex-wrap gap-1 mb-4">
                     {destination.highlights.slice(0, 4).map((highlight, index) => (
-                      <Badge key={index} variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
+                      <Badge key={index} variant="secondary" className="text-xs dest-badge">
                         {highlight}
                       </Badge>
                     ))}
                     {destination.highlights.length > 4 && (
-                      <Badge variant="secondary" className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">
+                      <Badge variant="secondary" className="text-xs dest-badge">
                         +{destination.highlights.length - 4} more
                       </Badge>
                     )}

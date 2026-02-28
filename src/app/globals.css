@@ -309,6 +309,20 @@
   color: #9ca3af;
 }
 
+/* Destinations Page */
+.dest-page-bg { background-color: #f9fafb; }
+.dark .dest-page-bg { background-color: #111827; }
+.dest-filter-btn { border-color: #e5e7eb; color: #111827; background-color: #ffffff; }
+.dark .dest-filter-btn { border-color: #374151; color: #f3f4f6; background-color: #1f2937; }
+.dest-muted-text { color: #4b5563; }
+.dark .dest-muted-text { color: #9ca3af; }
+.dest-empty-icon { color: #9ca3af; }
+.dark .dest-empty-icon { color: #6b7280; }
+.dest-empty-text { color: #6b7280; }
+.dark .dest-empty-text { color: #9ca3af; }
+.dest-badge { background-color: #f3f4f6; color: #1f2937; }
+.dark .dest-badge { background-color: #374151; color: #e5e7eb; }
+
 /* Insurance Banner */
 .insurance-banner {
   background: linear-gradient(to right, #ffffff, #ffffff, #eff6ff);
@@ -342,6 +356,22 @@
 .dark .insurance-sub {
   color: #93c5fd;
 }
+
+/* Polonnaruwa Transport Card */
+.transport-card { border-color: #bfdbfe; background-color: rgba(239,246,255,0.3); }
+.dark .transport-card { border-color: #1e40af; background-color: rgba(23,37,84,0.2); }
+.transport-title { color: #1e40af; }
+.dark .transport-title { color: #bfdbfe; }
+.transport-heading { color: #1d4ed8; }
+.dark .transport-heading { color: #93c5fd; }
+.transport-orange-box { background-color: #ffedd5; }
+.dark .transport-orange-box { background-color: #334155; }
+.transport-orange-text { color: #9a3412; }
+.dark .transport-orange-text { color: #fed7aa; }
+.transport-tip-box { background-color: #dbeafe; }
+.dark .transport-tip-box { background-color: rgba(30,58,138,0.4); }
+.transport-tip-text { color: #1e40af; }
+.dark .transport-tip-text { color: #bfdbfe; }
 
 html {
   overflow-y: auto;
