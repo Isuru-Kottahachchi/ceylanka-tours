@@ -101,30 +101,30 @@ export default function SigiriyaTravelGuide() {
           {/* UK Travel Insurance Ad Banner */}
           <InsuranceBanner />
 
-          <div className="mt-6 p-4 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg">
+          <div className="mt-6 p-4 theme-notice-box rounded-r-lg">
             <div className="flex items-start gap-2">
               <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
-                <p className="text-sm text-amber-700 mb-2">
+                <h4 className="font-semibold theme-notice-heading mb-2">Important Safety Notice</h4>
+                <p className="text-sm theme-notice-text mb-2">
                   <strong>Stay quiet during your climb:</strong> Hornets and bees live in the rock cracks and can become
                   aggressive if disturbed by loud noises. Speak softly and avoid sudden movements near the rock face.
                 </p>
 
                 <Link
                   href="/articles/how-to-save-from-bees-hornets-attack"
-                  className="inline-block px-3 py-1 text-xs font-medium text-amber-700 bg-amber-300 rounded-full hover:bg-amber-200 transition-colors"
+                  className="inline-block px-3 py-1 text-xs font-medium theme-notice-text bg-amber-300 rounded-full hover:bg-amber-200 transition-colors"
                 >
                   🐝 Safety Tips: Hornet & Bee Attacks
                 </Link>
-                <p className="text-sm text-amber-700 mb-2">
+                <p className="text-sm theme-notice-text mb-2">
                   <strong>There can be strong winds:</strong> Be prepared for sudden gusts, especially near the summit.
                   Secure loose items and watch your step.
                 </p>
-                <p className="text-sm text-amber-700 mb-2">
+                <p className="text-sm theme-notice-text mb-2">
                   <strong>Stay hydrated:</strong> Bring enough water for the climb, especially on hot days.
                 </p>
-                <p className="text-sm text-amber-700">
+                <p className="text-sm theme-notice-text">
                   Local guides will show you safe areas to rest and take photos. Follow their instructions for a safe and
                   enjoyable experience.
                 </p>
@@ -190,9 +190,9 @@ export default function SigiriyaTravelGuide() {
 
           {/* Getting to Sigiriya from Colombo */}
           <section>
-            <Card className="border-blue-200 dark:border-blue-800 bg-blue-50/30 dark:bg-blue-950/30">
+            <Card className="theme-card-blue">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2  text-blue-700 dark:text-blue-300">
+                <CardTitle className="flex items-center gap-2">
                   <MapPin className="w-5 h-5" />
                   How to Travel from Colombo to Sigiriya
                 </CardTitle>
@@ -200,7 +200,7 @@ export default function SigiriyaTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <h4 className="font-semibold mb-3">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Distance:</strong> 170km (105 miles)</li>
                       <li>• <strong>Duration:</strong> 3.5-4 hours</li>                     
@@ -208,7 +208,7 @@ export default function SigiriyaTravelGuide() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <h4 className="font-semibold mb-3">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo → Dambulla/Habarana → Sigiriya</li>
                       <li>• <strong>Duration:</strong> 4-5 hours total</li>
@@ -219,11 +219,11 @@ export default function SigiriyaTravelGuide() {
                 </div>
 
                 {/* Full Width Ceylanka Tours Recommendation */}
-                <div className="p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
-                  <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                <div className="p-3 theme-notice-box rounded-lg shadow-md">
+                  <p className="text-xs theme-notice-text mb-2">
                     <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Sigiriya. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                   </p>
-                  <div className="flex flex-col gap-1.5 text-xs text-orange-800 dark:text-orange-200">
+                  <div className="flex flex-col gap-1.5 text-xs theme-notice-text">
                     <div className="flex items-center gap-2 py-1.5 px-2 bg-white/50 dark:bg-slate-600/50 rounded">
                       <span>📞</span>
                       <span><strong>Contact:</strong></span>
@@ -258,8 +258,8 @@ export default function SigiriyaTravelGuide() {
                     </div>
                   </div>
                 </div>
-                <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
-                  <p className="text-sm text-blue-800 dark:text-blue-200">
+                <div className="mt-4 p-3 theme-info-box rounded-lg">
+                  <p className="text-sm theme-info-text">
                     <strong>💡 Pro Tip:</strong> Start early (6-7 AM) from Colombo to avoid traffic and reach Sigiriya before the midday heat.
                     Most visitors stay overnight in nearby Dambulla or Habarana for a more relaxed experience.
                   </p>
@@ -323,12 +323,12 @@ export default function SigiriyaTravelGuide() {
           </div>
 
           {/* Additional Historical Context */}
-          <div className="mt-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
-            <h3 className="text-xl font-bold mb-4 text-blue-800">Amazing Historical Facts</h3>
+          <div className="mt-8 p-6 theme-info-box rounded-lg">
+            <h3 className="text-xl font-bold mb-4 theme-info-heading">Amazing Historical Facts</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold mb-2 text-blue-700">Engineering Marvels</h4>
-                <ul className="space-y-2 text-sm text-blue-600">
+                <h4 className="font-semibold mb-2 theme-info-heading">Engineering Marvels</h4>
+                <ul className="space-y-2 text-sm theme-info-text">
                   <li>• The water gardens still work after 1,500 years</li>
                   <li>• Rock carvings include a complex drainage system</li>
                   <li>• The spiral staircase was built without modern tools</li>
@@ -337,8 +337,8 @@ export default function SigiriyaTravelGuide() {
                 </ul>
               </div>
               <div>
-                <h4 className="font-semibold mb-2 text-blue-700">Cultural Significance</h4>
-                <ul className="space-y-2 text-sm text-blue-600">
+                <h4 className="font-semibold mb-2 theme-info-heading">Cultural Significance</h4>
+                <ul className="space-y-2 text-sm theme-info-text">
                   <li>• UNESCO World Heritage Site since 1982</li>
                   <li>• Called the &quot;8th Wonder of the World&quot; by many</li>
                   <li>• Influenced by both Indian and local Sri Lankan art</li>
@@ -402,9 +402,9 @@ export default function SigiriyaTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
-                  <h4 className="font-semibold text-blue-800 mb-2">Fun Water Garden Facts:</h4>
-                  <p className="text-sm text-blue-700">
+                <div className="mt-6 p-4 theme-info-box rounded-lg">
+                  <h4 className="font-semibold theme-info-heading mb-2">Fun Water Garden Facts:</h4>
+                  <p className="text-sm theme-info-text">
                     The fountains work using water pressure - no pumps needed! During heavy rains, underground channels
                     fill with water and create enough pressure to make the fountains spray water several feet high.
                     This shows that ancient Sri Lankan engineers understood physics concepts that we use today.
@@ -469,46 +469,46 @@ export default function SigiriyaTravelGuide() {
                     className="rounded-lg"
                   />
                 </div>
-                <div className="mt-6 p-4 bg-orange-50 rounded-lg border-l-4 border-orange-400">
-                  <h4 className="font-semibold text-orange-800 mb-2">Local Legend:</h4>
-                  <p className="text-sm text-orange-700">
+                <div className="mt-6 p-4 theme-notice-box rounded-lg">
+                  <h4 className="font-semibold theme-notice-heading mb-2">Local Legend:</h4>
+                  <p className="text-sm theme-notice-text">
                     According to local stories, the complete lion sculpture was so realistic and fierce-looking that
                     enemy soldiers would be too scared to enter the palace! The lion was meant to show King Kashyapa&apos;s
                     power and protect the royal family. Some archaeologists think the head and body of the lion were
                     destroyed by natural weathering over the centuries.
                   </p>
                   <br />
-                  <div className="bg-amber-50 dark:bg-slate-800 border-l-4 border-amber-400 dark:border-amber-500 p-4 rounded-r-lg">
-                    <h4 className="font-semibold text-amber-800 dark:text-amber-100 mb-2">🔒 The Mystery of the Closed Interior Passages</h4>
-                    <p className="text-sm text-amber-700 dark:text-slate-200 mb-3">
+                  <div className="theme-notice-box border-l-4 p-4 rounded-r-lg">
+                    <h4 className="font-semibold theme-notice-heading mb-2">🔒 The Mystery of the Closed Interior Passages</h4>
+                    <p className="text-sm theme-notice-text mb-3">
                       According to local folklore and some archaeological evidence, Sigiriya Rock once had secret interior passages and chambers that allowed access deep inside the rock fortress. These hidden tunnels were reportedly used by King Kashyapa and his court for:
                     </p>
-                    <ul className="text-sm text-amber-700 dark:text-slate-200 mb-3 ml-4 space-y-1">
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Secret escape routes</strong> in case of enemy attacks</li>
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Hidden treasure chambers</strong> where royal valuables were stored</li>
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Underground water systems</strong> connecting to natural springs</li>
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Private meditation caves</strong> for the king&apos;s spiritual practices</li>
+                    <ul className="text-sm theme-notice-text mb-3 ml-4 space-y-1">
+                      <li>• <strong className="theme-notice-heading">Secret escape routes</strong> in case of enemy attacks</li>
+                      <li>• <strong className="theme-notice-heading">Hidden treasure chambers</strong> where royal valuables were stored</li>
+                      <li>• <strong className="theme-notice-heading">Underground water systems</strong> connecting to natural springs</li>
+                      <li>• <strong className="theme-notice-heading">Private meditation caves</strong> for the king&apos;s spiritual practices</li>
                     </ul>
-                    <p className="text-sm text-amber-700 dark:text-slate-200 mb-3">
-                      <strong className="text-amber-800 dark:text-amber-200">Why were they closed?</strong> Several factors led to sealing these interior passages:
+                    <p className="text-sm theme-notice-text mb-3">
+                      <strong className="theme-notice-heading">Why were they closed?</strong> Several factors led to sealing these interior passages:
                     </p>
-                    <ul className="text-sm text-amber-700 dark:text-slate-200 mb-3 ml-4 space-y-1">
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Safety concerns:</strong> Structural instability and risk of rockfalls</li>
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Preservation efforts:</strong> Protecting ancient artifacts and inscriptions inside</li>
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Wildlife protection:</strong> Bats and other creatures use these caves as habitat</li>
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Archaeological research:</strong> Ongoing studies require controlled access</li>
+                    <ul className="text-sm theme-notice-text mb-3 ml-4 space-y-1">
+                      <li>• <strong className="theme-notice-heading">Safety concerns:</strong> Structural instability and risk of rockfalls</li>
+                      <li>• <strong className="theme-notice-heading">Preservation efforts:</strong> Protecting ancient artifacts and inscriptions inside</li>
+                      <li>• <strong className="theme-notice-heading">Wildlife protection:</strong> Bats and other creatures use these caves as habitat</li>
+                      <li>• <strong className="theme-notice-heading">Archaeological research:</strong> Ongoing studies require controlled access</li>
                     </ul>
-                    <p className="text-sm text-amber-700 dark:text-slate-200 mb-3">
-                      <strong className="text-amber-800 dark:text-amber-200">H.C.P. Bell&apos;s Archaeological Work:</strong> The renowned British archaeologist H.C.P. Bell (Harry Charles Purvis Bell) conducted extensive research at Sigiriya in the early 1900s. According to local accounts and some historical references, Bell may have documented several interior passages and chambers within the rock fortress that were accessible at the time. However, these details are not 100% confirmed and should be considered as part of local folklore mixed with historical research. The reported features include:
+                    <p className="text-sm theme-notice-text mb-3">
+                      <strong className="theme-notice-heading">H.C.P. Bell&apos;s Archaeological Work:</strong> The renowned British archaeologist H.C.P. Bell (Harry Charles Purvis Bell) conducted extensive research at Sigiriya in the early 1900s. According to local accounts and some historical references, Bell may have documented several interior passages and chambers within the rock fortress that were accessible at the time. However, these details are not 100% confirmed and should be considered as part of local folklore mixed with historical research. The reported features include:
                     </p>
-                    <ul className="text-sm text-amber-700 dark:text-slate-200 mb-3 ml-4 space-y-1">
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Possible hidden chambers</strong> (unconfirmed accounts)</li>
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Alleged water cisterns</strong> carved into the rock</li>
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Rumored secret passages</strong> between different levels</li>
-                      <li>• <strong className="text-amber-800 dark:text-amber-200">Undocumented drainage systems</strong> (speculative)</li>
+                    <ul className="text-sm theme-notice-text mb-3 ml-4 space-y-1">
+                      <li>• <strong className="theme-notice-heading">Possible hidden chambers</strong> (unconfirmed accounts)</li>
+                      <li>• <strong className="theme-notice-heading">Alleged water cisterns</strong> carved into the rock</li>
+                      <li>• <strong className="theme-notice-heading">Rumored secret passages</strong> between different levels</li>
+                      <li>• <strong className="theme-notice-heading">Undocumented drainage systems</strong> (speculative)</li>
                     </ul>
-                    <p className="text-sm text-amber-700 dark:text-slate-200">
-                      <strong className="text-amber-800 dark:text-amber-200">Important note:</strong> While H.C.P. Bell did conduct archaeological work at Sigiriya, the specific details about interior passages remain largely unverified and are based on local legends and incomplete historical records. Modern archaeologists continue to study the rock using advanced technology, but these mysterious interior spaces remain off-limits to visitors for safety and conservation reasons.
+                    <p className="text-sm theme-notice-text">
+                      <strong className="theme-notice-heading">Important note:</strong> While H.C.P. Bell did conduct archaeological work at Sigiriya, the specific details about interior passages remain largely unverified and are based on local legends and incomplete historical records. Modern archaeologists continue to study the rock using advanced technology, but these mysterious interior spaces remain off-limits to visitors for safety and conservation reasons.
                     </p>
                   </div>
                 </div>
@@ -574,14 +574,14 @@ export default function SigiriyaTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-purple-50 rounded-lg border-l-4 border-purple-400">
-                  <h4 className="font-semibold text-purple-800 mb-2">Amazing Art Facts:</h4>
-                  <p className="text-sm text-purple-700 mb-2">
+                <div className="mt-6 p-4 theme-info-box rounded-lg">
+                  <h4 className="font-semibold theme-info-heading mb-2">Amazing Art Facts:</h4>
+                  <p className="text-sm theme-info-text mb-2">
                     The Mirror Wall was made by mixing honey, egg whites, and lime to create an incredibly smooth surface.
                     The ancient writings on it include love poems, religious prayers, and comments about the beauty of
                     the frescoes. Some of these writings are over 1,000 years old!
                   </p>
-                  <p className="text-sm text-purple-700">
+                  <p className="text-sm theme-info-text">
                     The frescoes show women holding flowers and making hand gestures that have religious meaning in
                     Buddhism and Hinduism. The artists paid incredible attention to details like jewelry, hairstyles,
                     and facial expressions that tell us a lot about ancient Sri Lankan culture and fashion.
@@ -654,14 +654,14 @@ export default function SigiriyaTravelGuide() {
                     className="rounded-lg"
                   />
                 </div>
-                <div className="mt-6 p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
-                  <h4 className="font-semibold text-green-800 mb-2">Summit Experience Tips:</h4>
-                  <p className="text-sm text-green-700 mb-2">
+                <div className="mt-6 p-4 theme-info-box rounded-lg">
+                  <h4 className="font-semibold theme-info-heading mb-2">Summit Experience Tips:</h4>
+                  <p className="text-sm theme-info-text mb-2">
                     Take your time at the summit! Many visitors rush to take photos and leave quickly, but this is a
                     special place that deserves at least 30-45 minutes of exploration. Sit quietly and imagine what
                     life was like here 1,500 years ago when this was one of the most important places in Asia.
                   </p>
-                  <p className="text-sm text-green-700">
+                  <p className="text-sm theme-info-text">
                     The best photos are taken from the throne area looking out over the landscape. Early morning and
                     late afternoon provide the most beautiful golden lighting. Remember to stay hydrated and wear
                     sun protection - there&apos;s no shade at the summit!
@@ -724,15 +724,15 @@ export default function SigiriyaTravelGuide() {
                     className="rounded-lg"
                   />
                 </div>
-                <div className="mt-6 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
-                  <h4 className="font-semibold text-yellow-800 mb-2">Royal Ceremonies:</h4>
-                  <p className="text-sm text-yellow-700 mb-2">
+                <div className="mt-6 p-4 theme-notice-box rounded-lg">
+                  <h4 className="font-semibold theme-notice-heading mb-2">Royal Ceremonies:</h4>
+                  <p className="text-sm theme-notice-text mb-2">
                     Historical records suggest that King Kashyapa would hold elaborate court ceremonies at sunrise,
                     when the first rays of the morning sun would illuminate his golden throne pavilion. This created
                     a dazzling effect that made the king appear to be sitting in divine light - a powerful symbol
                     of his authority as both political and religious leader.
                   </p>
-                  <p className="text-sm text-yellow-700">
+                  <p className="text-sm theme-notice-text">
                     The throne&apos;s position at the highest point of Sigiriya wasn&apos;t just for show - it was carefully
                     planned to create perfect acoustics. The king&apos;s voice would carry clearly to everyone in the
                     audience hall, while the surrounding rock walls created natural amplification effects.
@@ -805,14 +805,14 @@ export default function SigiriyaTravelGuide() {
                     className="rounded-lg"
                   />
                 </div>
-                <div className="mt-6 p-4 bg-amber-50 rounded-lg border-l-4 border-amber-400">
-                  <h4 className="font-semibold text-amber-800 mb-2">Ancient Visitor Voices:</h4>
-                  <p className="text-sm text-amber-700 mb-2">
+                <div className="mt-6 p-4 theme-notice-box rounded-lg">
+                  <h4 className="font-semibold theme-notice-heading mb-2">Ancient Visitor Voices:</h4>
+                  <p className="text-sm theme-notice-text mb-2">
                     One famous 8th-century poem on the wall says: &quot;The ladies who wear golden chains on their breasts
                     laugh and speak with sweet voices... my mind was captured by their beauty.&quot; Another visitor wrote:
                     &quot;I am Budal. The sight of these women makes me want to stay here forever.&quot;
                   </p>
-                  <p className="text-sm text-amber-700">
+                  <p className="text-sm theme-notice-text">
                     These personal messages show that people 1,200 years ago had the same feelings of wonder and amazement
                     that visitors have today when they see the incredible frescoes and experience the magic of Sigiriya!
                   </p>
@@ -827,14 +827,14 @@ export default function SigiriyaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">Your Complete Climbing Experience Guide</h2>
           <div className="space-y-8">
             {/* Path Selection Note */}
-            <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-4 rounded-r-lg">
+            <div className="theme-info-box p-4 rounded-r-lg">
               <div className="flex items-start gap-3">
-                <div className="bg-blue-100 dark:bg-blue-800 p-2 rounded-full">
-                  <MapPin className="w-5 h-5 text-blue-600 dark:text-blue-300" />
+                <div className="theme-surface p-2 rounded-full">
+                  <MapPin className="w-5 h-5 theme-text-blue" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Important Path Information</h4>
-                  <p className="text-blue-700 dark:text-blue-300 text-sm leading-relaxed">
+                  <h4 className="font-semibold theme-info-heading mb-2">Important Path Information</h4>
+                  <p className="theme-info-text text-sm leading-relaxed">
                     <strong>Note:</strong> The sequence of attractions described below will be found according to the path you select.
                     There are multiple routes to reach the summit, and some areas may be visited in different orders depending
                     on your chosen climbing route and current site conditions. Your guide or the site map will show you the
@@ -852,48 +852,48 @@ export default function SigiriyaTravelGuide() {
               <CardContent>
                 <div className="space-y-6">
                   <div className="grid md:grid-cols-3 gap-6">
-                    <div className="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
-                      <h4 className="font-bold text-blue-800 mb-2">Stage 1: Water Gardens (30 minutes)</h4>
-                      <p className="text-sm text-blue-700 mb-2">
+                    <div className="p-4 theme-info-box rounded-lg">
+                      <h4 className="font-bold theme-info-heading mb-2">Stage 1: Water Gardens (30 minutes)</h4>
+                      <p className="text-sm theme-info-text mb-2">
                         Easy flat walking through ancient gardens and pools. Perfect for photos and getting excited about
                         the adventure ahead. Take time to read the information boards about the engineering marvels.
                       </p>
-                      <p className="text-xs text-blue-600 font-medium">Difficulty: Very Easy 🟢</p>
+                      <p className="text-xs theme-info-heading font-medium">Difficulty: Very Easy 🟢</p>
                     </div>
-                    <div className="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
-                      <h4 className="font-bold text-yellow-800 mb-2">Stage 2: Boulder Gardens (45 minutes)</h4>
-                      <p className="text-sm text-yellow-700 mb-2">
+                    <div className="p-4 theme-notice-box rounded-lg">
+                      <h4 className="font-bold theme-notice-heading mb-2">Stage 2: Boulder Gardens (45 minutes)</h4>
+                      <p className="text-sm theme-notice-text mb-2">
                         Moderate climbing with some steep paths and stairs. You&apos;ll pass ancient meditation caves and
                         see how monks lived here for centuries. Great views start appearing here.
                       </p>
-                      <p className="text-xs text-yellow-600 font-medium">Difficulty: Moderate 🟡</p>
+                      <p className="text-xs theme-notice-heading font-medium">Difficulty: Moderate 🟡</p>
                     </div>
-                    <div className="p-4 bg-orange-50 rounded-lg border-l-4 border-orange-400">
-                      <h4 className="font-bold text-orange-800 mb-2">Stage 3: Frescoes &amp; Mirror Wall (30 minutes)</h4>
-                      <p className="text-sm text-orange-700 mb-2">
+                    <div className="p-4 theme-notice-box rounded-lg">
+                      <h4 className="font-bold theme-notice-heading mb-2">Stage 3: Frescoes &amp; Mirror Wall (30 minutes)</h4>
+                      <p className="text-sm theme-notice-text mb-2">
                         Steeper climbing with metal staircases. This is where you see the famous paintings and ancient
                         writings. Take breaks and don&apos;t rush - this is the most culturally important part.
                       </p>
-                      <p className="text-xs text-orange-600 font-medium">Difficulty: Moderate-Hard 🟠</p>
+                      <p className="text-xs theme-notice-heading font-medium">Difficulty: Moderate-Hard 🟠</p>
                     </div>
                   </div>
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-400">
-                      <h4 className="font-bold text-red-800 mb-2">Stage 4: Lion&apos;s Paws to Summit (45 minutes)</h4>
-                      <p className="text-sm text-red-700 mb-2">
+                    <div className="p-4 bg-red-50 dark:bg-red-950/20 rounded-lg border-l-4 border-red-400">
+                      <h4 className="font-bold text-red-800 dark:text-red-300 mb-2">Stage 4: Lion&apos;s Paws to Summit (45 minutes)</h4>
+                      <p className="text-sm text-red-700 dark:text-red-300 mb-2">
                         The most challenging part with steep metal stairs attached to the rock face. Not recommended for
                         people afraid of heights. Take it slow, rest when needed, and focus on the amazing achievement
                         you&apos;re about to complete!
                       </p>
-                      <p className="text-xs text-red-600 font-medium">Difficulty: Hard 🔴</p>
+                      <p className="text-xs text-red-600 dark:text-red-400 font-medium">Difficulty: Hard 🔴</p>
                     </div>
-                    <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-400">
-                      <h4 className="font-bold text-green-800 mb-2">Stage 5: Summit Exploration (45 minutes)</h4>
-                      <p className="text-sm text-green-700 mb-2">
+                    <div className="p-4 theme-info-box rounded-lg">
+                      <h4 className="font-bold theme-info-heading mb-2">Stage 5: Summit Exploration (45 minutes)</h4>
+                      <p className="text-sm theme-info-text mb-2">
                         Flat walking around the palace ruins with incredible 360° views. This is your reward time!
                         Explore the royal pools, throne area, and take lots of photos. The descent takes about 1 hour.
                       </p>
-                      <p className="text-xs text-green-600 font-medium">Difficulty: Easy 🟢</p>
+                      <p className="text-xs theme-info-heading font-medium">Difficulty: Easy 🟢</p>
                     </div>
                   </div>
                 </div>
@@ -928,9 +928,9 @@ export default function SigiriyaTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
-                  <h4 className="font-semibold text-blue-800 mb-2">Preparation Tips:</h4>
-                  <div className="grid md:grid-cols-2 gap-4 text-sm text-blue-700">
+                <div className="mt-6 p-4 theme-info-box rounded-lg">
+                  <h4 className="font-semibold theme-info-heading mb-2">Preparation Tips:</h4>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm theme-info-text">
                     <div>
                       <p className="mb-2"><strong>Week Before:</strong></p>
                       <ul className="space-y-1">
@@ -963,9 +963,9 @@ export default function SigiriyaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts</h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Dos */}
-            <Card className="border-green-200 dark:border-green-800 bg-green-50/50 dark:bg-green-950/30">
+            <Card className="theme-dos-card">
               <CardHeader>
-                <CardTitle className="text-green-700 dark:text-green-300 flex items-center gap-2">
+                <CardTitle className="theme-dos-heading flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
                   DOs - For the Best Experience
                 </CardTitle>
@@ -1017,9 +1017,9 @@ export default function SigiriyaTravelGuide() {
             </Card>
 
             {/* Donts */}
-            <Card className="border-red-200 dark:border-red-800 bg-red-50/50 dark:bg-red-950/30">
+            <Card className="theme-donts-card">
               <CardHeader>
-                <CardTitle className="text-red-700 dark:text-red-300 flex items-center gap-2">
+                <CardTitle className="theme-donts-heading flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5" />
                   DONTs - Avoid These Mistakes
                 </CardTitle>
@@ -1084,7 +1084,7 @@ export default function SigiriyaTravelGuide() {
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-green-600">Best Season</CardTitle>
+                <CardTitle className="text-foreground">Best Season</CardTitle>
                 <CardDescription>December to April</CardDescription>
               </CardHeader>
               <CardContent>
@@ -1099,7 +1099,7 @@ export default function SigiriyaTravelGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-yellow-600">Shoulder Season</CardTitle>
+                <CardTitle className="text-foreground">Shoulder Season</CardTitle>
                 <CardDescription>May & November</CardDescription>
               </CardHeader>
               <CardContent>
@@ -1114,7 +1114,7 @@ export default function SigiriyaTravelGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle className="text-blue-600">Monsoon Season</CardTitle>
+                <CardTitle className="text-foreground">Monsoon Season</CardTitle>
                 <CardDescription>June to October</CardDescription>
               </CardHeader>
               <CardContent>
@@ -1464,15 +1464,15 @@ export default function SigiriyaTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Complete Visitor Guide &amp; Final Tips</h2>
           <div className="space-y-8">
-            <Card className="bg-gradient-to-r from-blue-50 to-purple-50 border-blue-200">
+            <Card className="theme-gradient-blue-purple">
               <CardHeader>
-                <CardTitle className="text-blue-800">Essential Tips for an Amazing Sigiriya Experience</CardTitle>
+                <CardTitle className="theme-text-blue">Essential Tips for an Amazing Sigiriya Experience</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-blue-700">Before You Go</h4>
-                    <ul className="space-y-2 text-sm text-blue-600">
+                    <h4 className="font-semibold mb-3 theme-text-blue">Before You Go</h4>
+                    <ul className="space-y-2 text-sm theme-text-blue">
                       <li>• Book accommodations in Sigiriya village or Dambulla for easy early morning access</li>
                       <li>• Check weather forecast - avoid climbing during heavy rain or storms</li>
                       <li>• Inform someone about your climbing plans and expected return time</li>
@@ -1482,8 +1482,8 @@ export default function SigiriyaTravelGuide() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3 text-purple-700">During Your Climb</h4>
-                    <ul className="space-y-2 text-sm text-purple-600">
+                    <h4 className="font-semibold mb-3 theme-text-purple">During Your Climb</h4>
+                    <ul className="space-y-2 text-sm theme-text-purple">
                       <li>• Start early (6:30-7:00 AM) to avoid crowds and heat</li>
                       <li>• Take breaks every 15-20 minutes to rest and enjoy the views</li>
                       <li>• Follow the designated paths and respect all barriers and signs</li>
@@ -1493,14 +1493,14 @@ export default function SigiriyaTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg border-l-4 border-yellow-400">
-                  <h4 className="font-semibold text-yellow-800 mb-2">Cultural Respect &amp; Environmental Care</h4>
-                  <p className="text-sm text-yellow-700 mb-2">
+                <div className="mt-6 p-4 theme-box-yellow-orange rounded-lg">
+                  <h4 className="font-semibold theme-text-yellow mb-2">Cultural Respect &amp; Environmental Care</h4>
+                  <p className="text-sm theme-text-yellow mb-2">
                     Remember that Sigiriya is not just a tourist attraction - it&apos;s a sacred place with incredible historical
                     and cultural importance. Show respect by following all rules, not touching ancient walls or artifacts,
                     and keeping your voice down near the frescoes and religious areas.
                   </p>
-                  <p className="text-sm text-yellow-700">
+                  <p className="text-sm theme-text-yellow">
                     Help preserve this amazing place for future generations by not littering, staying on marked paths,
                     and following photography restrictions. Every visitor has a responsibility to protect this UNESCO
                     World Heritage Site for people to enjoy for many more centuries to come.
@@ -1509,34 +1509,34 @@ export default function SigiriyaTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
+            <Card className="theme-gradient-green-blue">
               <CardHeader>
-                <CardTitle className="text-green-800">Making Your Visit Extra Special</CardTitle>
+                <CardTitle className="theme-heading-green">Making Your Visit Extra Special</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <div className="grid md:grid-cols-3 gap-4">
-                    <div className="p-4 bg-white rounded-lg border border-green-200">
-                      <h4 className="font-semibold text-green-700 mb-2">Photography Tips</h4>
-                      <ul className="text-sm text-green-600 space-y-1">
+                    <div className="p-4 theme-inner-card-green rounded-lg">
+                      <h4 className="font-semibold theme-heading-green mb-2">Photography Tips</h4>
+                      <ul className="text-sm theme-heading-green space-y-1">
                         <li>• Best light: 6:30-8:30 AM and 4:30-6:00 PM</li>
                         <li>• Bring wide-angle lens for landscape shots</li>
                         <li>• Use people in photos to show the massive scale</li>
                         <li>• Capture details: carvings, pools, ancient stairs</li>
                       </ul>
                     </div>
-                    <div className="p-4 bg-white rounded-lg border border-blue-200">
-                      <h4 className="font-semibold text-blue-700 mb-2">Cultural Learning</h4>
-                      <ul className="text-sm text-blue-600 space-y-1">
+                    <div className="p-4 theme-inner-card-blue-sm rounded-lg">
+                      <h4 className="font-semibold theme-text-blue mb-2">Cultural Learning</h4>
+                      <ul className="text-sm theme-text-blue space-y-1">
                         <li>• Read about King Kashyapa before your visit</li>
                         <li>• Learn basic Sinhala greetings for local interactions</li>
                         <li>• Ask guides about Buddhist traditions and symbols</li>
                         <li>• Understand the connection to other Cultural Triangle sites</li>
                       </ul>
                     </div>
-                    <div className="p-4 bg-white rounded-lg border border-purple-200">
-                      <h4 className="font-semibold text-purple-700 mb-2">Personal Reflection</h4>
-                      <ul className="text-sm text-purple-600 space-y-1">
+                    <div className="p-4 theme-inner-card-purple rounded-lg">
+                      <h4 className="font-semibold theme-text-purple mb-2">Personal Reflection</h4>
+                      <ul className="text-sm theme-text-purple space-y-1">
                         <li>• Spend quiet time at the summit thinking about history</li>
                         <li>• Imagine what life was like 1,500 years ago</li>
                         <li>• Appreciate the incredible human achievement</li>
@@ -1545,8 +1545,8 @@ export default function SigiriyaTravelGuide() {
                     </div>
                   </div>
 
-                  <div className="p-6 bg-gradient-to-r from-amber-50 to-orange-50 rounded-lg border border-amber-200">
-                    <h4 className="font-semibold text-amber-800 mb-3">Why Sigiriya Will Change You</h4>
+                  <div className="p-6 theme-box-amber rounded-lg">
+                    <h4 className="font-semibold theme-text-amber mb-3">Why Sigiriya Will Change You</h4>
                     <p className="text-muted-foreground mb-4">
                       Visiting Sigiriya is more than just seeing an ancient building or climbing a big rock. It&apos;s a journey
                       that connects you with the incredible achievements of human civilization. When you stand at the summit,
@@ -1570,9 +1570,9 @@ export default function SigiriyaTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-r from-rose-50 to-pink-50 border-rose-200">
+            <Card className="theme-gradient-rose-pink">
               <CardHeader>
-                <CardTitle className="text-rose-800">Your Sigiriya Adventure Awaits!</CardTitle>
+                <CardTitle className="theme-heading-rose">Your Sigiriya Adventure Awaits!</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">

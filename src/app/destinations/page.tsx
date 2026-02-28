@@ -704,7 +704,7 @@ export default function DestinationsPage() {
             </div>
             <Button type="submit" disabled={isSearching} className="bg-white text-green-600 hover:bg-gray-100 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
               <Filter className="h-4 w-4 mr-2" />
-              {isSearching ? "Searching..." : "Filter"}
+              {isSearching ? "Searching..." : "Search Destinations"}
             </Button>
             {/* Mobile: popup below search input */}
             {showSearchReminder && (
@@ -839,13 +839,12 @@ export default function DestinationsPage() {
             ))
           )}
         </div>
-
         {/* Load More */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Button className="px-8 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold">
             Load More Destinations
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   )
