@@ -1500,13 +1500,13 @@ export default function BentotaGuide() {
                 <section className="mb-12 scroll-mt-40" id="best-time">
                     <h2 className="text-3xl font-bold mb-6">Best Time to Visit Bentota</h2>
                     <div className="grid md:grid-cols-3 gap-6">
-                        <Card className="border-green-200 bg-green-50/50">
+                        <Card className="ella-season-peak">
                             <CardHeader>
-                                <CardTitle className="text-green-700">Peak Season</CardTitle>
+                                <CardTitle className="ella-season-peak-title">Peak Season</CardTitle>
                                 <CardDescription>December - March</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <ul className="space-y-2 text-sm text-green-700">
+                                <ul className="space-y-2 text-sm ella-season-peak-text">
                                     <li>• Dry weather, minimal rain</li>
                                     <li>• Perfect beach conditions</li>
                                     <li>• Calm seas for water sports</li>
@@ -1514,13 +1514,13 @@ export default function BentotaGuide() {
                                 </ul>
                             </CardContent>
                         </Card>
-                        <Card className="border-yellow-200 bg-yellow-50/50">
+                        <Card className="ella-season-shoulder">
                             <CardHeader>
-                                <CardTitle className="text-yellow-700">Good Season</CardTitle>
+                                <CardTitle className="ella-season-shoulder-title">Good Season</CardTitle>
                                 <CardDescription>April - June, October - November</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <ul className="space-y-2 text-sm text-yellow-700">
+                                <ul className="space-y-2 text-sm ella-season-shoulder-text">
                                     <li>• Occasional afternoon showers</li>
                                     <li>• Good beach weather</li>
                                     <li>• Better hotel rates</li>
@@ -1528,13 +1528,13 @@ export default function BentotaGuide() {
                                 </ul>
                             </CardContent>
                         </Card>
-                        <Card className="border-blue-200 bg-blue-50/50">
+                        <Card className="ella-season-monsoon">
                             <CardHeader>
-                                <CardTitle className="text-blue-700">Monsoon Season</CardTitle>
+                                <CardTitle className="ella-season-monsoon-title">Monsoon Season</CardTitle>
                                 <CardDescription>July - September</CardDescription>
                             </CardHeader>
                             <CardContent>
-                                <ul className="space-y-2 text-sm text-blue-700">
+                                <ul className="space-y-2 text-sm ella-season-monsoon-text">
                                     <li>• Heavy rainfall</li>
                                     <li>• Rough seas</li>
                                     <li>• Limited water sports</li>
@@ -1704,9 +1704,9 @@ export default function BentotaGuide() {
 
                 {/* Final Tips */}
                 <section className="mb-12">
-                    <Card className="bg-gradient-to-r from-blue-50 to-cyan-50 border-blue-200 dark:from-slate-800 dark:to-slate-700 dark:border-slate-600">
+                    <Card className="bentota-paradise-card">
                         <CardHeader>
-                            <CardTitle className="text-blue-800 dark:text-blue-200">Your Bentota Beach Paradise</CardTitle>
+                            <CardTitle className="bentota-paradise-title">Your Bentota Beach Paradise</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-muted-foreground mb-4">
