@@ -187,9 +187,9 @@ export default function PolonnaruwaGuide() {
                             </CardContent>
                         </Card>
                         {/* How to Get In */}
-                        <Card className="border-blue-200 dark:border-blue-800 bg-blue-50/30 dark:bg-blue-950/30">
+                        <Card className="transport-card">
                             <CardHeader>
-                                <CardTitle className="flex items-center gap-2 text-blue-800 dark:text-blue-200">
+                                <CardTitle className="flex items-center gap-2 transport-title">
                                     <MapPin className="w-5 h-5" />
                                     How to Get to Polonnaruwa
                                 </CardTitle>
@@ -197,18 +197,18 @@ export default function PolonnaruwaGuide() {
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Cultural Triangle Tours (Recommended)</h4>
+                                        <h4 className="font-semibold mb-3 transport-heading">Cultural Triangle Tours (Recommended)</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground">
                                             <li>• <strong>Package Tours:</strong> 2-3 day Cultural Triangle packages</li>
                                             <li>• <strong>Includes:</strong> Polonnaruwa, Sigiriya, and Dambulla</li>
                                             <li>• <strong>Transport:</strong> Air-conditioned vehicles with guide</li>
                                             <li>• <strong>Best option:</strong> Most comprehensive and educational</li>
                                         </ul>
-                                        <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
-                                            <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                                        <div className="mt-3 p-3 theme-notice-box rounded-md shadow-sm">
+                                            <p className="text-xs theme-notice-text mb-2">
                                                 <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> specializes in Cultural Triangle expeditions with expert archaeological guides who bring ancient Polonnaruwa to life with fascinating historical insights and professional service.
                                             </p>
-                                            <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                                            <div className="flex flex-col gap-1 text-xs theme-notice-text">
                                                 <div className="flex items-center gap-2">
                                                     <span>📞</span>
                                                     <span><strong>Contact:</strong> +94 70 764 6765</span>
@@ -221,7 +221,7 @@ export default function PolonnaruwaGuide() {
                                         </div>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Transportation Options</h4>
+                                        <h4 className="font-semibold mb-3 transport-heading">Transportation Options</h4>
                                         <div className="space-y-3">
                                             <div>
                                                 <h5 className="font-medium text-sm">From Colombo</h5>
@@ -250,8 +250,8 @@ export default function PolonnaruwaGuide() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
-                                    <p className="text-sm text-blue-800 dark:text-blue-200">
+                                <div className="mt-4 p-3 transport-tip-box rounded-lg border-l-4 border-blue-500">
+                                    <p className="text-sm transport-tip-text">
                                         <strong>💡 Pro Tip:</strong> Start early morning visits to avoid crowds and heat. Most visitors combine Polonnaruwa with Sigiriya and Dambulla as part of a Cultural Triangle tour for the best historical experience.
                                     </p>
                                 </div>

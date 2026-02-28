@@ -702,10 +702,10 @@ export default function DestinationsPage() {
                 </>
               )}
             </div>
-            <Button type="submit" disabled={isSearching} className="bg-white text-green-600 hover:bg-gray-100 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
-              <Filter className="h-4 w-4 mr-2" />
+            <button type="submit" disabled={isSearching} className="dest-search-btn flex items-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed px-6 py-2 rounded-lg font-semibold text-sm whitespace-nowrap">
+              <Search className="h-4 w-4" />
               {isSearching ? "Searching..." : "Search Destinations"}
-            </Button>
+            </button>
             {/* Mobile: popup below search input */}
             {showSearchReminder && (
               <div className="relative w-full flex flex-col items-center sm:hidden">
