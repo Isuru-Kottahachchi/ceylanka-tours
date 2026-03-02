@@ -36,15 +36,16 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto w-full overflow-x-hidden">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight drop-shadow-lg">
+        <h1 className="hero-text-shadow text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">
           The Island Life
           <br />
           <span className="text-cyan-300">You&apos;ve Been Dreaming Of</span>
         </h1>
 
-        <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto font-light leading-relaxed tracking-wide drop-shadow-lg">
-          Discover the pearl of the Indian Ocean with pristine beaches, ancient temples, lush tea plantations, and
-          incredible wildlife adventures.
+        <p className="hero-sub-shadow text-xl md:text-2xl mb-8 text-white max-w-2xl mx-auto font-medium leading-relaxed tracking-normal">
+          Pristine beaches. Ancient temples. Misty tea hills. Wild safaris.
+          <br className="hidden sm:block" />
+          Sri Lanka, one island, a thousand experiences.
         </p>
 
         {/* Search Bar */}

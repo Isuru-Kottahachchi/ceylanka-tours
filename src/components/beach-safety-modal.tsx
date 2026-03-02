@@ -44,7 +44,7 @@ export function BeachSafetyModal({
             }`}
         >
             <div 
-                className={`bg-white dark:bg-gray-800 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto transition-all duration-500 ${
+                className={`panel-white rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto transition-all duration-500 ${
                     isAnimating ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 -translate-y-12'
                 }`}
                 onClick={(e) => e.stopPropagation()}
@@ -63,12 +63,12 @@ export function BeachSafetyModal({
                     {/* Modal content */}
                     <div className="text-center space-y-4">
                         <div className="flex justify-center">
-                            <div className="bg-blue-100 dark:bg-blue-900/30 p-3 rounded-full">
+                            <div className="panel-blue p-3 rounded-full">
                                 <Waves className="h-8 w-8 text-blue-600" />
                             </div>
                         </div>
 
-                        <h2 className="text-2xl font-bold text-foreground">
+                        <h2 className="text-2xl font-bold theme-text">
                             Stay Safe at {beachName}!
                         </h2>
 
@@ -76,25 +76,25 @@ export function BeachSafetyModal({
                             {description || defaultDescription}
                         </p>
 
-                        <div className="bg-orange-100 dark:bg-slate-700 border border-orange-300 dark:border-gray-600 rounded-lg p-4">
+                        <div className="beach-modal-warning border rounded-lg p-4">
                             <div className="flex items-center gap-2 mb-2">
-                                <AlertTriangle className="h-5 w-5 text-orange-600 dark:text-orange-400" />
-                                <h3 className="font-semibold text-orange-800 dark:text-orange-200">Important Safety Topics:</h3>
+                                <AlertTriangle className="h-5 w-5 text-orange-600" />
+                                <h3 className="font-semibold beach-modal-warning-title">Important Safety Topics:</h3>
                             </div>
-                            <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 text-left">
+                            <ul className="text-sm theme-text-muted space-y-1 text-left">
                                 <li>• How to escape rip currents</li>
                                 <li>• Identifying dangerous sea creatures</li>
                                 <li>• Monsoon season safety</li>
                                 <li>• Emergency procedures</li>
                             </ul>
                         </div>
-                        <p className="text-xs text-gray-600 dark:text-gray-400">
+                        <p className="text-xs theme-text-muted">
                             Your safety is our priority. Take 2 minutes to learn these life-saving tips!
                         </p>
 
                         <div className="space-y-3">
                             <Link href="/articles/things-to-beware-of-at-the-beach">
-                                <Button className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white cursor-pointer">
+                                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white cursor-pointer">
                                     <Shield className="w-4 h-4 mr-2" />
                                     Read Complete Beach Safety Guide
                                 </Button>
@@ -102,7 +102,7 @@ export function BeachSafetyModal({
 
                             <Button
                                 variant="outline"
-                                className="w-full cursor-pointer border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700"
+                                className="w-full cursor-pointer beach-modal-dismiss"
                                 onClick={onClose}
                             >
                                 Continue to {beachName} Page
