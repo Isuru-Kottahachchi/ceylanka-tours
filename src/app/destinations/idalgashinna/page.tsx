@@ -152,8 +152,8 @@ export default function IdalgashinnaTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-emerald-50 dark:bg-slate-800 rounded-lg">
-                  <h4 className="font-semibold mb-2 text-emerald-700 dark:text-emerald-300">💡 Travel Tips</h4>
+                <div className="mt-6 p-4 idalgashinna-tips-box rounded-lg">
+                  <h4 className="font-semibold mb-2 idalgashinna-tips-title">💡 Travel Tips</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Book train tickets in advance, especially for observation car</li>
                     <li>• Bring warm clothing—nights can be chilly</li>
@@ -453,9 +453,9 @@ export default function IdalgashinnaTravelGuide() {
 
         {/* Final Inspiration */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-emerald-50 to-blue-50 border-emerald-200">
+          <Card className="idalgashinna-final-card">
             <CardHeader>
-              <CardTitle className="text-emerald-800">Discover the Tranquility of Idalgashinna</CardTitle>
+              <CardTitle className="idalgashinna-final-title">Discover the Tranquility of Idalgashinna</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">

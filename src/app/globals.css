@@ -366,6 +366,12 @@
 .ella-season-monsoon-text { color: #1d4ed8; }
 .dark .ella-season-monsoon-text { color: #60a5fa; }
 
+/* Bentota Paradise Card */
+.bentota-paradise-card { background: linear-gradient(to right, #eff6ff, #ecfeff); border-color: #bfdbfe; }
+.dark .bentota-paradise-card { background: linear-gradient(to right, #172554, #083344); border-color: #1e40af; }
+.bentota-paradise-title { color: #1e40af; }
+.dark .bentota-paradise-title { color: #93c5fd; }
+
 /* Destinations Page */
 .dest-page-bg { background-color: #f9fafb; }
 .dark .dest-page-bg { background-color: #111827; }
@@ -452,4 +458,71 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* ── Hero text shadow ── */
+.hero-text-shadow {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.4);
+}
+.hero-sub-shadow {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* ── Beach Safety Modal ── */ 
+.beach-modal-warning {
+  background-color: #ffedd5;
+  border-color: #fdba74;
+}
+.dark .beach-modal-warning {
+  background-color: rgba(30, 41, 59, 0.8);
+  border-color: #475569;
+}
+.beach-modal-warning-title {
+  color: #9a3412;
+}
+.dark .beach-modal-warning-title {
+  color: #fed7aa;
+}
+.beach-modal-dismiss {
+  border-color: #d1d5db;
+  color: #374151;
+}
+.beach-modal-dismiss:hover {
+  background-color: #f9fafb;
+}
+.dark .beach-modal-dismiss {
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+.dark .beach-modal-dismiss:hover {
+  background-color: #374151;
+}
+
+/* ── Idalgashinna page ── */
+.idalgashinna-tips-box {
+  background-color: #ecfdf5;
+}
+.dark .idalgashinna-tips-box {
+  background-color: rgba(15, 23, 42, 0.6);
+  border: 1px solid #1e3a2f;
+}
+.idalgashinna-tips-title {
+  color: #065f46;
+}
+.dark .idalgashinna-tips-title {
+  color: #6ee7b7;
+}
+.idalgashinna-final-card {
+  background: linear-gradient(to right, #ecfdf5, #eff6ff);
+  border-color: #a7f3d0;
+}
+.dark .idalgashinna-final-card {
+  background: linear-gradient(to right, rgba(6,78,59,0.25), rgba(30,58,138,0.2));
+  border-color: #065f46;
+}
+.idalgashinna-final-title {
+  color: #065f46;
+}
+.dark .idalgashinna-final-title {
+  color: #6ee7b7;
 }
