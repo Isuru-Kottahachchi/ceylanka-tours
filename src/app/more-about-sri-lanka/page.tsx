@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { MapPin, Users, Globe, Coffee, Crown, Gem, Trophy, Heart, Sunrise, Palmtree, Fish, Mountain, Camera, Trees, Leaf, Award, BookOpen, Waves } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -663,12 +664,12 @@ const MoreAboutSriLanka = () => {
                     <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Explore Paradise?</h2>
                     <p className="text-lg sm:text-xl mb-8">Join us for an unforgettable journey through this magical island</p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
-                        <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors w-full sm:w-auto">
+                        <Link href="/contact-us" className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors w-full sm:w-auto text-center">
                             Start Planning Your Trip
-                        </button>
-                        <button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors w-full sm:w-auto">
+                        </Link>
+                        <Link href="/destinations" className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors w-full sm:w-auto text-center">
                             View Popular Destinations
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

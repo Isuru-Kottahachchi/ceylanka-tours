@@ -3,6 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -35,10 +36,10 @@ export function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto w-full overflow-x-hidden">
-        <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold mb-6 leading-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight drop-shadow-lg">
           The Island Life
           <br />
-          You&apos;ve Been Dreaming Of
+          <span className="text-cyan-300">You&apos;ve Been Dreaming Of</span>
         </h1>
 
         <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto font-light leading-relaxed tracking-wide drop-shadow-lg">
@@ -78,15 +79,21 @@ export function HeroSection() {
 
         {/* Quick Links */}
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer" onClick={() => window.location.href='/destinations'}>
-            Popular Destinations
-          </Button>
-          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer" onClick={() => window.location.href='/tours'}>
-            Travel Packages
-          </Button>
-          <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer" onClick={() => window.location.href='/explore/unesco-sites'}>
-            UNESCO Heritages
-          </Button>
+          <Link href="/destinations">
+            <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer">
+              Popular Destinations
+            </Button>
+          </Link>
+          <Link href="/tours">
+            <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer">
+              Travel Packages
+            </Button>
+          </Link>
+          <Link href="/explore/unesco-sites">
+            <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20 cursor-pointer">
+              UNESCO Heritages
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
