@@ -391,7 +391,7 @@ const seasonalGuide = {
 
 export default function WaterActivitiesPage() {
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+        <div className="min-h-screen dest-page-bg">
             {/* Hero Section */}
             <section className="relative h-[50vh] flex items-center justify-center bg-gradient-to-br from-blue-900 via-cyan-800 to-teal-700 text-white">
                 <div className="absolute inset-0 bg-black/30"></div>
@@ -423,7 +423,7 @@ export default function WaterActivitiesPage() {
             <div className="max-w-6xl mx-auto px-4 py-4">
                 {/* Quick Navigation */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-8 theme-text">
                         Choose Your Adventure
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -431,7 +431,7 @@ export default function WaterActivitiesPage() {
                             <a
                                 key={activity.id}
                                 href={`#${activity.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                className="group bg-white dark:bg-gray-800 rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700"
+                                className="group panel-white rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300 border"
                             >
                                 <div className="text-2xl mb-2 group-hover:scale-110 transition-transform">
                                     {activity.id === 1 && "🚣"}
@@ -441,7 +441,7 @@ export default function WaterActivitiesPage() {
                                     {activity.id === 5 && "🪁"}
                                     {activity.id === 6 && "🏍️"}
                                 </div>
-                                <h3 className="font-semibold text-sm text-gray-900 dark:text-white">
+                                <h3 className="font-semibold text-sm theme-text">
                                     {activity.name}
                                 </h3>
                             </a>
@@ -451,7 +451,7 @@ export default function WaterActivitiesPage() {
 
                 {/* Seasonal Guide */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-8 theme-text">
                         When to Visit
                     </h2>
                     <div className="grid md:grid-cols-3 gap-6">
@@ -486,7 +486,7 @@ export default function WaterActivitiesPage() {
                                                 ))}
                                             </div>
                                         </div>
-                                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                                        <p className="text-sm theme-text-muted">
                                             {info.conditions}
                                         </p>
                                     </div>
@@ -498,7 +498,7 @@ export default function WaterActivitiesPage() {
 
                 {/* Water Activities */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-8 theme-text">
                         Water Activities Guide
                     </h2>
                     <div className="space-y-8 lg:space-y-12">
@@ -515,11 +515,11 @@ export default function WaterActivitiesPage() {
                                         </div>
 
                                         <div className="md:w-3/5 lg:w-2/3 p-6">
-                                            <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                                            <h3 className="text-2xl font-bold mb-4 theme-text">
                                                 {activity.name}
                                             </h3>
 
-                                            <p className="text-gray-600 dark:text-gray-400 mb-4">
+                                            <p className="theme-text-muted mb-4">
                                                 {activity.description}
                                             </p>
 
@@ -560,17 +560,17 @@ export default function WaterActivitiesPage() {
                                                 <h4 className="font-semibold mb-3">Top Locations:</h4>
                                                 <div className="space-y-3">
                                                     {activity.topLocations.map((location) => (
-                                                        <div key={location.name} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
+                                                        <div key={location.name} className="panel-white rounded-lg p-3">
                                                             <div className="flex justify-between items-start mb-2">
                                                                 <h5 className="font-semibold text-blue-600">{location.name}</h5>
                                                                 <Badge variant="outline" className="text-xs">
                                                                     {location.season}
                                                                 </Badge>
                                                             </div>
-                                                            <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                                                            <p className="text-sm theme-text-muted mb-2">
                                                                 {location.details}
                                                             </p>
-                                                            <div className="text-xs text-gray-500 dark:text-gray-500">
+                                                            <div className="text-xs theme-text-muted">
                                                                 {Object.entries(location).map(([key, value]) => {
                                                                     if (key !== 'name' && key !== 'details' && key !== 'season') {
                                                                         return (
@@ -597,7 +597,7 @@ export default function WaterActivitiesPage() {
                                                     {activity.safetyTips.map((tip, index) => (
                                                         <li key={index} className="flex items-start gap-2 text-sm">
                                                             <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                                                            <span className="text-gray-600 dark:text-gray-400">{tip}</span>
+                                                            <span className="theme-text-muted">{tip}</span>
                                                         </li>
                                                     ))}
                                                 </ul>
@@ -612,7 +612,7 @@ export default function WaterActivitiesPage() {
 
                 {/* Safety Guidelines */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-8 theme-text">
                         Essential Safety Guidelines
                     </h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -625,7 +625,7 @@ export default function WaterActivitiesPage() {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <p className="text-gray-600 dark:text-gray-400">
+                                    <p className="theme-text-muted">
                                         {guideline.description}
                                     </p>
                                 </CardContent>
@@ -636,7 +636,7 @@ export default function WaterActivitiesPage() {
 
                 {/* Planning Tips */}
                 <section className="mb-12">
-                    <Card className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 border-blue-200 dark:border-blue-800">
+                    <Card className="water-planning-card">
                         <CardHeader>
                             <CardTitle className="text-2xl text-center">
                                 Planning Your Water Adventure

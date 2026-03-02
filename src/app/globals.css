@@ -498,6 +498,92 @@ body {
   background-color: #374151;
 }
 
+/* ── Water Activities page ── */
+.water-planning-card {
+  background: linear-gradient(to right, #eff6ff, #ecfeff);
+  border-color: #bfdbfe;
+}
+.dark .water-planning-card {
+  background: linear-gradient(to right, rgba(30,58,138,0.2), rgba(22,78,99,0.2));
+  border-color: #1e40af;
+}
+
+/* ── Richmond Castle page ── */
+.richmond-amber-box {
+  background-color: #fffbeb;
+  border-color: #d97706;
+}
+.dark .richmond-amber-box {
+  background-color: rgba(120, 53, 15, 0.25);
+  border-color: #b45309;
+}
+.richmond-amber-title {
+  color: #78350f;
+}
+.dark .richmond-amber-title {
+  color: #fcd34d;
+}
+.richmond-amber-text {
+  color: #92400e;
+}
+.dark .richmond-amber-text {
+  color: #fde68a;
+}
+.richmond-green-card {
+  border-color: #bbf7d0;
+  background-color: rgba(240, 253, 244, 0.3);
+}
+.dark .richmond-green-card {
+  border-color: #14532d;
+  background-color: rgba(5, 46, 22, 0.2);
+}
+.richmond-green-title {
+  color: #14532d;
+}
+.dark .richmond-green-title {
+  color: #86efac;
+}
+.richmond-blue-card {
+  border-color: #bfdbfe;
+  background-color: rgba(239, 246, 255, 0.3);
+}
+.dark .richmond-blue-card {
+  border-color: #1e40af;
+  background-color: rgba(23, 37, 84, 0.3);
+}
+.richmond-blue-title {
+  color: #1e3a8a;
+}
+.dark .richmond-blue-title {
+  color: #93c5fd;
+}
+.richmond-blue-tip {
+  background-color: #dbeafe;
+}
+.dark .richmond-blue-tip {
+  background-color: rgba(23, 37, 84, 0.4);
+}
+.richmond-blue-tip-text {
+  color: #1e3a8a;
+}
+.dark .richmond-blue-tip-text {
+  color: #bfdbfe;
+}
+.richmond-pink-card {
+  border-color: #fbcfe8;
+  background-color: rgba(253, 242, 248, 0.3);
+}
+.dark .richmond-pink-card {
+  border-color: #831843;
+  background-color: rgba(80, 7, 36, 0.2);
+}
+.richmond-pink-title {
+  color: #831843;
+}
+.dark .richmond-pink-title {
+  color: #f9a8d4;
+}
+
 /* ── Idalgashinna page ── */
 .idalgashinna-tips-box {
   background-color: #ecfdf5;
