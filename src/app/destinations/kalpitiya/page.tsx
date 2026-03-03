@@ -36,7 +36,7 @@ export default function KalpitiyaGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="hero-text-shadow text-5xl md:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">
             Kalpitiya Peninsula
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90">

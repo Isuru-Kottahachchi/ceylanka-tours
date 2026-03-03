@@ -103,7 +103,7 @@ export default function PinnawalaElephantOrphanage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/60" />
         <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
-          <h1 className="text-5xl md:text-8xl font-bold mb-6 tracking-tight">Pinnawala Elephant Orphanage</h1>
+          <h1 className="hero-text-shadow text-5xl md:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight">Pinnawala Elephant Orphanage</h1>
           <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">Home to 80+ Rescued Elephants</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
