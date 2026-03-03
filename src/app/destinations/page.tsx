@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { MapPin, Search, Filter } from "lucide-react"
+import { MapPin, Search, Compass, Landmark, Star, TreePine, Binoculars, Waves, Mountain, PawPrint, Building2 } from "lucide-react"
 import React from "react"
 
 const destinations = [
@@ -580,6 +580,18 @@ const destinations = [
 
 const categories = ["All", "Historical", "Religious", "Nature", "Wildlife", "Beach", "Adventure", "Animals", "City"]
 
+const categoryIcons: Record<string, React.ReactNode> = {
+  "All":        <Compass className="w-4 h-4" />,
+  "Historical": <Landmark className="w-4 h-4" />,
+  "Religious":  <Star className="w-4 h-4" />,
+  "Nature":     <TreePine className="w-4 h-4" />,
+  "Wildlife":   <Binoculars className="w-4 h-4" />,
+  "Beach":      <Waves className="w-4 h-4" />,
+  "Adventure":  <Mountain className="w-4 h-4" />,
+  "Animals":    <PawPrint className="w-4 h-4" />,
+  "City":       <Building2 className="w-4 h-4" />,
+}
+
 export default function DestinationsPage() {
   const [showSearchReminder, setShowSearchReminder] = React.useState(true);
   const [searchValue, setSearchValue] = React.useState("");
@@ -731,12 +743,14 @@ export default function DestinationsPage() {
             <Button
               key={cat}
               variant={cat === category ? "default" : "outline"}
-              className={cat === category
-                ? "bg-green-500 hover:bg-green-600 text-white cursor-pointer"
-                : "dest-filter-btn hover:opacity-80 cursor-pointer"
-              }
-              onClick={() => { setCategory(cat) }}
+              className={`flex items-center gap-1.5 ${
+                cat === category
+                  ? "bg-green-500 hover:bg-green-600 text-white cursor-pointer"
+                  : "dest-filter-btn hover:opacity-80 cursor-pointer"
+              }`}
+              onClick={() => setCategory(cat)}
             >
+              {categoryIcons[cat]}
               {cat}
             </Button>
           ))}

@@ -55,18 +55,18 @@ export default function KandyTravelGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-neutral-100 dark:text-neutral-100">Kandy</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light text-neutral-100 dark:text-neutral-200">Sri Lanka&apos;s Sacred Cultural Capital</p>
+          <h1 className="hero-text-shadow text-4xl md:text-6xl font-bold mb-4 text-neutral-100 kandy-text-n1">Kandy</h1>
+          <p className="text-xl md:text-2xl mb-6 font-light text-neutral-100 kandy-text-n2">Sri Lanka&apos;s Sacred Cultural Capital</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-yellow-600/80 text-white border-yellow-500">
+            <Badge variant="secondary" className="bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
               Central Province, Sri Lanka
             </Badge>
-            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-green-600/80 text-white border-green-500">
+            <Badge variant="secondary" className="bg-green-600/80 text-white border-green-500">
               <Heart className="w-4 h-4 mr-1" />
               UNESCO World Heritage Site
             </Badge>
-            <Badge variant="secondary" className="bg-white/80 dark:bg-neutral-800/80 text-neutral-900 dark:text-neutral-100 bg-blue-600/80 text-white border-blue-500">
+            <Badge variant="secondary" className="bg-blue-600/80 text-white border-blue-500">
               <Mountain className="w-4 h-4 mr-1" />
               500m Above Sea Level
             </Badge>
@@ -78,7 +78,7 @@ export default function KandyTravelGuide() {
         {/* Introduction */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Kandy: The Heart of Sri Lankan Culture</h2>
-          <div className="prose prose-lg max-w-none text-neutral-800 dark:text-neutral-200 leading-relaxed">
+          <div className="prose prose-lg max-w-none text-neutral-800 kandy-text-n2 leading-relaxed">
             <p className="text-lg mb-4">
               Nestled in the misty hills of central Sri Lanka, Kandy is a magical city that will steal your heart the moment you step foot here.
               This beautiful city sits 500 meters above sea level, surrounded by green mountains and filled with cool, fresh air.
@@ -108,68 +108,68 @@ export default function KandyTravelGuide() {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-700 dark:text-yellow-400" />
-                <span className="text-neutral-900 dark:text-neutral-100">Quick Kandy Facts - Everything You Need to Know</span>
+                <Star className="w-5 h-5 text-yellow-700 kandy-text-yellow" />
+                <span className="text-neutral-900 kandy-text-n1">Quick Kandy Facts - Everything You Need to Know</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-blue-800 dark:text-blue-300" />
-                    <span className="text-neutral-900 dark:text-neutral-100">
+                    <Calendar className="w-4 h-4 text-blue-800 kandy-text-blue" />
+                    <span className="text-neutral-900 kandy-text-n1">
                       <strong>Founded:</strong> 14th Century (Over 700 years old!)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Mountain className="w-4 h-4 text-green-700 dark:text-green-400" />
-                    <span className="text-neutral-900 dark:text-neutral-100">
+                    <Mountain className="w-4 h-4 text-green-700 kandy-text-green-dk" />
+                    <span className="text-neutral-900 kandy-text-n1">
                       <strong>Elevation:</strong> 500m (1,640 feet) - Perfect cool climate
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Users className="w-4 h-4 text-purple-800 dark:text-purple-300" />
-                    <span className="text-neutral-900 dark:text-neutral-100">
+                    <Users className="w-4 h-4 text-purple-800 kandy-text-purple" />
+                    <span className="text-neutral-900 kandy-text-n1">
                       <strong>Population:</strong> ~125,000 friendly locals
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Heart className="w-4 h-4 text-pink-700 dark:text-pink-400" />
-                    <span className="text-neutral-900 dark:text-neutral-100">
+                    <Heart className="w-4 h-4 text-pink-700 kandy-text-pink" />
+                    <span className="text-neutral-900 kandy-text-n1">
                       <strong>Local Name:</strong> &quot;Maha Nuwara&quot; (The Great City)
                     </span>
                   </div>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-blue-800 dark:text-blue-300" />
-                    <span className="text-neutral-900 dark:text-neutral-100">
+                    <MapPin className="w-4 h-4 text-blue-800 kandy-text-blue" />
+                    <span className="text-neutral-900 kandy-text-n1">
                       <strong>Distance from Colombo:</strong> 116km (2.5 hour drive)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Star className="w-4 h-4 text-yellow-700 dark:text-yellow-400" />
-                    <span className="text-neutral-900 dark:text-neutral-100">
+                    <Star className="w-4 h-4 text-yellow-700 kandy-text-yellow" />
+                    <span className="text-neutral-900 kandy-text-n1">
                       <strong>UNESCO Status:</strong> World Heritage Site since 1988
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-orange-800 dark:text-orange-400" />
-                    <span className="text-neutral-900 dark:text-neutral-100">
+                    <Clock className="w-4 h-4 text-orange-800 kandy-text-orange-dk" />
+                    <span className="text-neutral-900 kandy-text-n1">
                       <strong>Best Visit Duration:</strong> 2-3 days minimum
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Mountain className="w-4 h-4 text-green-700 dark:text-green-400" />
-                    <span className="text-neutral-900 dark:text-neutral-100">
+                    <Mountain className="w-4 h-4 text-green-700 kandy-text-green-dk" />
+                    <span className="text-neutral-900 kandy-text-n1">
                       <strong>Best Weather:</strong> December to April (dry season)
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-2">Why Kandy is Special:</h4>
-                <p className="text-sm text-blue-900 dark:text-blue-200">
+              <div className="mt-6 p-4 bg-blue-50 kandy-bg-blue rounded-lg">
+                <h4 className="font-semibold text-blue-900 kandy-text-blue-lt mb-2">Why Kandy is Special:</h4>
+                <p className="text-sm text-blue-900 kandy-text-blue-lt">
                   Kandy was the last independent kingdom of Sri Lanka, never fully conquered by Portuguese or Dutch colonizers.
                   This is why you&apos;ll find the purest forms of Sri Lankan culture, traditions, and architecture here. The city
                   is also the birthplace of the famous Kandy dance and is home to some of the most skilled traditional craftsmen in the country.
@@ -192,42 +192,42 @@ export default function KandyTravelGuide() {
                 <CardDescription>Multiple convenient options to reach Kandy</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg">
-                  <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-2">🚗 By Car/Taxi (Recommended)</h4>
-                  <ul className="text-sm text-orange-700 dark:text-orange-400 space-y-1">
+                <div className="bg-orange-50 kandy-bg-orange p-4 rounded-lg">
+                  <h4 className="font-semibold text-orange-800 kandy-text-orange mb-2">🚗 By Car/Taxi (Recommended)</h4>
+                  <ul className="text-sm text-orange-700 kandy-text-orange-dk space-y-1">
                     <li>• <strong>Duration:</strong> 2.5 hours from Colombo</li>
                     <li>• <strong>Cost:</strong> 8,000-15,000 LKR for taxi</li>
                     <li>• <strong>Route:</strong> A1 Highway (well-maintained)</li>
                     <li>• <strong>From Airport:</strong> 3.5 hours, 12,000-20,000 LKR</li>
                     <li>• <strong>Best for:</strong> Families, groups, luggage convenience</li>
                   </ul>
-                  <div className="mt-3 p-3 bg-orange-100 dark:bg-orange-800/30 rounded-md border-l-4 border-orange-400">
-                    <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                  <div className="mt-3 p-3 bg-orange-100 kandy-bg-orange-dk rounded-md border-l-4 border-orange-400">
+                    <p className="text-xs text-orange-800 kandy-text-orange-lt mb-2">
                       <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Kandy. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                     </p>
-                    <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                    <div className="flex flex-col gap-1 text-xs text-orange-800 kandy-text-orange-lt">
                       <div className="flex items-center gap-2">
                         <span>📞</span>
                         <span><strong>Contact:</strong> +94 70 764 6765</span>
                       </div>
                       <div className="flex items-center gap-2">
                         <span>✈️</span>
-                        <Link href="/tours/kandy" className="underline hover:text-orange-600 dark:hover:text-orange-300">
+                        <Link href="/tours/kandy" className="underline hover:text-orange-600 kandy-hover-orange">
                           <strong>One day tour to Kandy</strong> - Click for details & booking
                         </Link>
                       </div>
                       <div className="flex items-center gap-2">
                         <span>✈️</span>
-                        <Link href="/airport-transfers" className="underline hover:text-orange-600 dark:hover:text-orange-300">
+                        <Link href="/airport-transfers" className="underline hover:text-orange-600 kandy-hover-orange">
                           <strong>Airport Transfer Services</strong> - Click for details & booking
                         </Link>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-                  <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">🚂 By Train (Most Scenic)</h4>
-                  <ul className="text-sm text-green-700 dark:text-green-400 space-y-1">
+                <div className="bg-green-50 kandy-bg-green p-4 rounded-lg">
+                  <h4 className="font-semibold text-green-800 kandy-text-green mb-2">🚂 By Train (Most Scenic)</h4>
+                  <ul className="text-sm text-green-700 kandy-text-green-dk space-y-1">
                     <li>• <strong>Duration:</strong> 3 hours from Colombo Fort Station</li>
                     <li>• <strong>Cost:</strong> 500-1500 LKR depending on class</li>
                     <li>• <strong>Frequency:</strong> Multiple trains daily (6:00 AM - 8:00 PM)</li>
@@ -235,9 +235,9 @@ export default function KandyTravelGuide() {
                     <li>• <strong>Tip:</strong> Book 1st or 2nd class for comfort</li>
                   </ul>
                 </div>
-                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                  <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">🚌 By Bus (Budget Option)</h4>
-                  <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-1">
+                <div className="bg-blue-50 kandy-bg-blue p-4 rounded-lg">
+                  <h4 className="font-semibold text-blue-800 kandy-text-blue mb-2">🚌 By Bus (Budget Option)</h4>
+                  <ul className="text-sm text-blue-700 kandy-text-blue-dk space-y-1">
                     <li>• <strong>Duration:</strong> 2.5-3 hours from Colombo</li>
                     <li>• <strong>Cost:</strong> 200-400 LKR (very affordable)</li>
                     <li>• <strong>Types:</strong> Government buses & private coaches</li>
@@ -259,7 +259,7 @@ export default function KandyTravelGuide() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h4 className="font-semibold text-purple-800 dark:text-purple-300 mb-2">🏖️ From Galle (South Coast)</h4>
+                  <h4 className="font-semibold text-purple-800 kandy-text-purple mb-2">🏖️ From Galle (South Coast)</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• <strong>Train:</strong> 4-5 hours via Colombo (scenic coastal route)</li>
                     <li>• <strong>Bus:</strong> 3.5 hours direct or via Colombo</li>
@@ -267,7 +267,7 @@ export default function KandyTravelGuide() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">🌿 From Nuwara Eliya (Hill Country)</h4>
+                  <h4 className="font-semibold text-blue-800 kandy-text-blue mb-2">🌿 From Nuwara Eliya (Hill Country)</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• <strong>Train:</strong> 3 hours (famous scenic route)</li>
                     <li>• <strong>Bus:</strong> 2.5 hours through tea plantations</li>
@@ -275,16 +275,16 @@ export default function KandyTravelGuide() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-2">🦁 From Sigiriya (Cultural Triangle)</h4>
+                  <h4 className="font-semibold text-orange-800 kandy-text-orange mb-2">🦁 From Sigiriya (Cultural Triangle)</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• <strong>Bus:</strong> 2 hours direct buses available</li>
                     <li>• <strong>Car:</strong> 1.5 hours via A6 and A9</li>
                     <li>• <strong>Tour:</strong> Many combine both in day trips</li>
                   </ul>
                 </div>
-                <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg mt-4">
-                  <h4 className="font-semibold text-purple-800 dark:text-purple-300 mb-2">💡 Pro Travel Tips</h4>
-                  <ul className="text-sm text-purple-700 dark:text-purple-400 space-y-1">
+                <div className="bg-purple-50 kandy-bg-purple p-4 rounded-lg mt-4">
+                  <h4 className="font-semibold text-purple-800 kandy-text-purple mb-2">💡 Pro Travel Tips</h4>
+                  <ul className="text-sm text-purple-700 kandy-text-purple-dk space-y-1">
                     <li>• <strong>Train booking:</strong> Reserve seats online at railway.gov.lk</li>
                     <li>• <strong>Best travel time:</strong> Early morning for less traffic</li>
                     <li>• <strong>Weather check:</strong> Hill roads can be foggy in evenings</li>
@@ -333,10 +333,10 @@ export default function KandyTravelGuide() {
                   <li>• Evening: 6:30 PM - 8:00 PM</li>
                 </ul>
               </div>
-              <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg mt-4">
-                <h4 className="font-semibold text-amber-800 dark:text-amber-300 mb-2">Visitor Information</h4>
-                <p className="text-sm text-amber-700 dark:text-amber-400 mb-2">Essential details for your visit</p>
-                <ul className="text-sm text-amber-700 dark:text-amber-400 space-y-2">
+              <div className="bg-amber-50 kandy-bg-amber p-4 rounded-lg mt-4">
+                <h4 className="font-semibold text-amber-800 kandy-text-amber mb-2">Visitor Information</h4>
+                <p className="text-sm text-amber-700 kandy-text-amber-dk mb-2">Essential details for your visit</p>
+                <ul className="text-sm text-amber-700 kandy-text-amber-dk space-y-2">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" />
                     <span>Dress modestly - cover shoulders & knees</span>
@@ -358,7 +358,7 @@ export default function KandyTravelGuide() {
               <div className="mt-6">
                 <Link href="/destinations/temple-of-tooth">
                   <Button
-                    className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                    className="mt-2 h-12 bg-blue-600 text-white hover:bg-blue-700 kandy-bg-blue-solid kandy-hover-bg-blue kandy-text-white border-none cursor-pointer"
                     variant="default"
                   >
                     Discover More about Temple of the Tooth
@@ -401,8 +401,8 @@ export default function KandyTravelGuide() {
                       they thought it was too expensive. But the king built it anyway, and today everyone agrees it was one of the best
                       decisions ever made! The lake helps keep the city cool and provides a peaceful escape from busy streets.
                     </p>
-                    <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Perfect Activities Here:</h4>
+                    <div className="bg-green-50 kandy-bg-green p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-green-800 kandy-text-green mb-2">Perfect Activities Here:</h4>
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -455,8 +455,8 @@ export default function KandyTravelGuide() {
                       You can easily spend a whole day here, and there are plenty of shady spots to rest. The best part?
                       It&apos;s not just pretty to look at - you&apos;ll learn so much about plants, trees, and flowers.
                     </p>
-                    <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-purple-800 dark:text-purple-300 mb-2">Must-See Highlights:</h4>
+                    <div className="bg-purple-50 kandy-bg-purple p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-purple-800 kandy-text-purple mb-2">Must-See Highlights:</h4>
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -484,9 +484,9 @@ export default function KandyTravelGuide() {
                         </li>
                       </ul>
                     </div>
-                    <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                      <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">Practical Information:</h4>
-                      <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-1">
+                    <div className="bg-blue-50 kandy-bg-blue p-4 rounded-lg">
+                      <h4 className="font-semibold text-blue-800 kandy-text-blue mb-2">Practical Information:</h4>
+                      <ul className="text-sm text-blue-700 kandy-text-blue-dk space-y-1">
                         <li>• <strong>Entry Fee:</strong> Very affordable - around 500 LKR for foreigners</li>
                         <li>• <strong>Best Time:</strong> Early morning (8:00 AM) or late afternoon (4:00 PM)</li>
                         <li>• <strong>Duration:</strong> 2-4 hours depending on your interest</li>
@@ -524,8 +524,8 @@ export default function KandyTravelGuide() {
                       Many locals come here early in the morning or evening to meditate and pray. The white statue looks especially
                       beautiful during sunset when it glows against the colorful sky.
                     </p>
-                    <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-orange-900 dark:text-orange-200 mb-2">What Makes This Special:</h4>
+                    <div className="bg-orange-50 kandy-bg-orange p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-orange-900 kandy-text-orange-lt mb-2">What Makes This Special:</h4>
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -593,8 +593,8 @@ export default function KandyTravelGuide() {
                       make your heart beat faster, and the famous fire walking ceremony where performers walk on burning coals!
                       Don&apos;t worry - it&apos;s completely safe to watch, and the performers are highly skilled.
                     </p>
-                    <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-purple-900 dark:text-purple-200 mb-2">What You&apos;ll See:</h4>
+                    <div className="bg-purple-50 kandy-bg-purple p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-purple-900 kandy-text-purple-lt mb-2">What You&apos;ll See:</h4>
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -618,9 +618,9 @@ export default function KandyTravelGuide() {
                         </li>
                       </ul>
                     </div>
-                    <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                      <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-2">Popular Venues & Times:</h4>
-                      <ul className="text-sm text-blue-700 dark:text-blue-400 space-y-1">
+                    <div className="bg-blue-50 kandy-bg-blue p-4 rounded-lg">
+                      <h4 className="font-semibold text-blue-900 kandy-text-blue-lt mb-2">Popular Venues & Times:</h4>
+                      <ul className="text-sm text-blue-700 kandy-text-blue-dk space-y-1">
                         <li>• <strong>Kandy Cultural Centre:</strong> 7:00 PM daily (most popular)</li>
                         <li>• <strong>Red Cross Society:</strong> 6:30 PM daily (intimate setting)</li>
                         <li>• <strong>YMBA Cultural Hall:</strong> 7:00 PM daily (traditional venue)</li>
@@ -1017,18 +1017,18 @@ export default function KandyTravelGuide() {
           </div>
 
           {/* Day Trip Suggestions */}
-          <div className="mt-12 p-6 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4 text-neutral-900 dark:text-neutral-100">Perfect Day Trip Ideas from Kandy</h3>
+          <div className="mt-12 p-6 bg-gradient-to-r from-green-50 to-blue-50 kandy-from-green kandy-to-blue rounded-lg">
+            <h3 className="text-2xl font-bold mb-4 text-neutral-900 kandy-text-n1">Perfect Day Trip Ideas from Kandy</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">🌿 Nature & Adventure Day</h4>
+                <h4 className="font-semibold text-green-700 kandy-text-green mb-2">🌿 Nature & Adventure Day</h4>
                 <p className="text-sm text-muted-foreground mb-2">
                   Start early at Hanthana Mountain Range for hiking (3 hours), then visit Hanthana Birds Park (1 hour),
                   and end at Ambuluwawa Tower for sunset views. Perfect for active travelers!
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">🏛️ Temple & Culture Day</h4>
+                <h4 className="font-semibold text-blue-700 kandy-text-blue mb-2">🏛️ Temple & Culture Day</h4>
                 <p className="text-sm text-muted-foreground mb-2">
                   Visit Gadaladeniya Temple in the morning, continue to Lankatilaka Temple, then Embekke Devalaya for the
                   wood carvings. End with a cultural show in Kandy. Perfect for history lovers!
@@ -1042,41 +1042,41 @@ export default function KandyTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Essential Dos and Donts for Kandy</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-green-200 dark:border-green-700 bg-green-50/50 dark:bg-green-900/20">
+            <Card className="border-green-200 kandy-border-green bg-green-50/50 kandy-bg-green">
               <CardHeader>
-                <CardTitle className="text-green-700 dark:text-green-300 flex items-center gap-2">
+                <CardTitle className="text-green-700 kandy-text-green flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
                   DOs - Respect the Sacred City
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <CheckCircle className="w-4 h-4 text-green-500 kandy-text-green-dk mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 kandy-text-gray">
                     <strong>Dress modestly:</strong> Cover shoulders and knees, especially at temples
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <CheckCircle className="w-4 h-4 text-green-500 kandy-text-green-dk mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 kandy-text-gray">
                     <strong>Remove shoes:</strong> Always remove footwear before entering temples
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <CheckCircle className="w-4 h-4 text-green-500 kandy-text-green-dk mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 kandy-text-gray">
                     <strong>Attend a puja:</strong> Experience the spiritual atmosphere during prayer times
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <CheckCircle className="w-4 h-4 text-green-500 kandy-text-green-dk mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 kandy-text-gray">
                     <strong>Try local food:</strong> Sample authentic Kandyan cuisine
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-500 dark:text-green-400 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <CheckCircle className="w-4 h-4 text-green-500 kandy-text-green-dk mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 kandy-text-gray">
                     <strong>Learn basic Sinhala:</strong> &quot;Ayubowan&quot; (hello) goes a long way
 
                   </span>
@@ -1084,41 +1084,41 @@ export default function KandyTravelGuide() {
               </CardContent>
             </Card>
 
-            <Card className="border-red-200 dark:border-red-700 bg-red-50/50 dark:bg-red-900/20">
+            <Card className="border-red-200 kandy-border-red bg-red-50/50 kandy-bg-red">
               <CardHeader>
-                <CardTitle className="text-red-700 dark:text-red-300 flex items-center gap-2">
+                <CardTitle className="text-red-700 kandy-text-red flex items-center gap-2">
                   <AlertTriangle className="w-5 h-5" />
                   DONTs - Avoid Cultural Mistakes
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <AlertTriangle className="w-4 h-4 text-red-500 kandy-text-red-dk mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 kandy-text-gray">
                     <strong>Dont point feet:</strong> Never point your feet toward Buddha statues
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <AlertTriangle className="w-4 h-4 text-red-500 kandy-text-red-dk mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 kandy-text-gray">
                     <strong>Dont turn your back:</strong> Avoid turning your back to Buddha statues
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <AlertTriangle className="w-4 h-4 text-red-500 kandy-text-red-dk mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 kandy-text-gray">
                     <strong>Dont wear hats:</strong> Remove hats and caps inside temples
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <AlertTriangle className="w-4 h-4 text-red-500 kandy-text-red-dk mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 kandy-text-gray">
                     <strong>Dont be loud:</strong> Maintain respectful silence in sacred areas
                   </span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <AlertTriangle className="w-4 h-4 text-red-500 dark:text-red-400 mt-1 flex-shrink-0" />
-                  <span className="text-sm text-gray-700 dark:text-gray-300">
+                  <AlertTriangle className="w-4 h-4 text-red-500 kandy-text-red-dk mt-1 flex-shrink-0" />
+                  <span className="text-sm text-gray-700 kandy-text-gray">
                     <strong>Dont rush:</strong> Take time to appreciate the spiritual atmosphere
                   </span>
                 </div>
@@ -1134,7 +1134,7 @@ export default function KandyTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-green-600">Budget Options</CardTitle>
-                <CardDescription className="text-neutral-800 dark:text-neutral-200">$10-30 per night</CardDescription>
+                <CardDescription className="text-neutral-800 kandy-text-n2">$10-30 per night</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
@@ -1149,7 +1149,7 @@ export default function KandyTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-blue-600">Mid-Range Hotels</CardTitle>
-                <CardDescription className="text-neutral-800 dark:text-neutral-200">$30-80 per night</CardDescription>
+                <CardDescription className="text-neutral-800 kandy-text-n2">$30-80 per night</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
@@ -1164,7 +1164,7 @@ export default function KandyTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-purple-600">Luxury Resorts</CardTitle>
-                <CardDescription className="text-neutral-800 dark:text-neutral-200">$80+ per night</CardDescription>
+                <CardDescription className="text-neutral-800 kandy-text-n2">$80+ per night</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
@@ -1301,22 +1301,22 @@ export default function KandyTravelGuide() {
 
         {/* Final Tips */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 border-purple-200 dark:border-purple-700">
+          <Card className="bg-gradient-to-r from-purple-50 to-pink-50 kandy-from-purple kandy-to-pink border-purple-200 kandy-border-purple">
             <CardHeader>
-              <CardTitle className="text-purple-800 dark:text-purple-300">Your Kandy Adventure Awaits</CardTitle>
+              <CardTitle className="text-purple-800 kandy-text-purple">Your Kandy Adventure Awaits</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4 text-neutral-800 dark:text-neutral-200">
+              <p className="mb-4 text-neutral-800 kandy-text-n2">
                 Kandy is more than just a destination – its a spiritual journey that connects you with the soul of Sri
                 Lanka. From the sacred Temple of the Tooth to the serene lake walks, every moment in this cultural
                 capital offers something magical.
               </p>
-              <p className="mb-4 text-neutral-800 dark:text-neutral-200">
+              <p className="mb-4 text-neutral-800 kandy-text-n2">
                 Take time to immerse yourself in the local culture, attend a traditional dance performance, and dont
                 rush through the temples. The beauty of Kandy lies not just in its sights, but in the peaceful
                 atmosphere that has made it a pilgrimage destination for centuries.
               </p>
-              <p className="font-medium text-neutral-900 dark:text-neutral-100">
+              <p className="font-medium text-neutral-900 kandy-text-n1">
                 May your journey to Kandy bring you peace, wonder, and unforgettable memories! 🙏✨
               </p>
             </CardContent>
