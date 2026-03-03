@@ -878,3 +878,35 @@ body {
 /* Hover */
 .dark .kandy-hover-orange:hover  { color: #fdba74; }
 .dark .kandy-hover-bg-blue:hover { background-color: #2563eb; }
+/* ==============================================
+   Kalutara Temple Page - Dark Mode Classes
+   ============================================== */
+
+/* Text */
+.dark .kalut-text-white     { color: #ffffff; }
+.dark .kalut-text-muted     { color: #f3f4f6; }
+.dark .kalut-text-amber-lt  { color: #fef3c7; }
+.dark .kalut-text-amber     { color: #fbbf24; }
+.dark .kalut-text-blue-lt   { color: #eff6ff; }
+.dark .kalut-text-blue      { color: #60a5fa; }
+.dark .kalut-text-pink-lt   { color: #fdf2f8; }
+.dark .kalut-text-pink      { color: #f472b6; }
+.dark .kalut-text-green     { color: #4ade80; }
+.dark .kalut-text-orange    { color: #fb923c; }
+.dark .kalut-text-purple    { color: #c084fc; }
+.dark .kalut-text-red       { color: #f87171; }
+
+/* Backgrounds */
+.dark .kalut-bg-amber-dk  { background-color: rgb(120 53 15 / 0.4); }
+.dark .kalut-bg-amber     { background-color: rgb(120 53 15 / 0.2); }
+.dark .kalut-bg-blue-dk   { background-color: rgb(30 58 138 / 0.3); }
+.dark .kalut-bg-blue      { background-color: rgb(30 58 138 / 0.2); }
+.dark .kalut-bg-pink      { background-color: rgb(131 24 67 / 0.2); }
+
+/* Borders */
+.dark .kalut-border-amber    { border-color: #fbbf24; }
+.dark .kalut-border-amber-dk { border-color: #92400e; }
+.dark .kalut-border-blue     { border-color: #1e40af; }
+.dark .kalut-border-pink     { border-color: #9d174d; }
+.dark .kalut-border-l-blue   { border-left-color: #3b82f6; }
+.dark .kalut-border-l-green  { border-left-color: #22c55e; }
