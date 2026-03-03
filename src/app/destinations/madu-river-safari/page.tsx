@@ -13,7 +13,7 @@ export default function MaduRiverSafariGuide() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Madu-River-Safari.jpg"
+          src="/Madu-river-safari.jpg"
           alt="Serene view of the Madu River with mangroves and a boat"
           fill
           className="object-cover"
