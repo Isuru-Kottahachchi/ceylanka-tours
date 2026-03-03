@@ -42,7 +42,7 @@ export default function ArugamBayTravelGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Arugam Bay</h1>
+          <h1 className="hero-text-shadow text-4xl md:text-6xl font-extrabold mb-6 leading-[1.1] tracking-tight">Arugam Bay</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">World-Class Surfing Paradise on Sri Lanka&apos;s East Coast</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
@@ -170,7 +170,7 @@ export default function ArugamBayTravelGuide() {
           <section className="flex-1">
             <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get-there">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-orange-200">
                   <MapPin className="w-5 h-5" />
                   How to Get to Arugam bay
                 </CardTitle>
@@ -178,7 +178,7 @@ export default function ArugamBayTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-orange-200">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Distance:</strong> 287km (178 miles) from Colombo</li>
                       <li>• <strong>Duration:</strong> 4-4.5 hours</li>
@@ -187,7 +187,7 @@ export default function ArugamBayTravelGuide() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train</h4>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-orange-200">By Train</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo Fort → Valaichchenai
                         then take a bus to Arugam bay</li>
@@ -241,7 +241,7 @@ export default function ArugamBayTravelGuide() {
                 </div>
 
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
-                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
+                  <h4 className="font-semibold mb-2 text-blue-700 dark:text-orange-200">💡 Travel Tips</h4>
                   <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
                     <li>• Start early morning to avoid traffic and heat</li>
                     <li>• Carry water and snacks for the journey</li>
@@ -717,9 +717,9 @@ export default function ArugamBayTravelGuide() {
 
         {/* Final Section */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-blue-50 to-orange-50 border-blue-200">
+          <Card className="bg-gradient-to-r from-blue-50 to-orange-50 arugam-final-card border-blue-200">
             <CardHeader>
-              <CardTitle className="text-blue-800">Your Arugam Bay Surf Adventure</CardTitle>
+              <CardTitle className="text-blue-800 arugam-title-blue">Your Arugam Bay Surf Adventure</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
