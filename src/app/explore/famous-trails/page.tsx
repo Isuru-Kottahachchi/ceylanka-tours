@@ -413,26 +413,26 @@ const trailTips = [
 
 export default function FamousTrailsPage() {
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
+    <main className="min-h-screen dest-page-bg transition-colors">
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-br from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-700">
+      <section className="relative py-16 trails-hero">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold theme-text mb-4">
             Famous Trails of Sri Lanka
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">
+          <p className="text-xl theme-text-muted mb-6">
             Discover iconic hiking routes through mountains, forests, and ancient sites across the Pearl of the Indian
             Ocean
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <div className="bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-md">
-              <span className="font-semibold text-green-600 dark:text-green-400">8 Epic Trails</span>
+            <div className="trails-badge px-4 py-2 rounded-full shadow-md">
+              <span className="font-semibold trails-badge-green">8 Epic Trails</span>
             </div>
-            <div className="bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-md">
-              <span className="font-semibold text-blue-600 dark:text-blue-400">All Skill Levels</span>
+            <div className="trails-badge px-4 py-2 rounded-full shadow-md">
+              <span className="font-semibold trails-badge-blue">All Skill Levels</span>
             </div>
-            <div className="bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-md">
-              <span className="font-semibold text-purple-600 dark:text-purple-400">UNESCO Sites</span>
+            <div className="trails-badge px-4 py-2 rounded-full shadow-md">
+              <span className="font-semibold trails-badge-purple">UNESCO Sites</span>
             </div>
           </div>
         </div>
@@ -441,17 +441,17 @@ export default function FamousTrailsPage() {
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
-          <div className="bg-gradient-to-r from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          <div className="trails-intro-card rounded-2xl p-8">
+            <h2 className="text-3xl font-bold theme-text mb-4">
               Sri Lanka&apos;s Most Iconic Hiking Trails
             </h2>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+            <p className="theme-text-muted leading-relaxed mb-4">
               Sri Lanka&apos;s diverse landscape offers some of the world&apos;s most spectacular hiking trails, from sacred
               mountain peaks to ancient rock fortresses. Whether you&apos;re seeking spiritual enlightenment on Adam&apos;s Peak,
               panoramic views from Ella Rock, or challenging adventures in the Knuckles Range, the island&apos;s trails cater
               to every level of hiker.
             </p>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="theme-text-muted leading-relaxed">
               Each trail tells a unique story - from ancient pilgrimage routes to colonial-era paths through tea
               plantations. Our comprehensive guide covers the most famous trails with detailed information on difficulty
               levels, best times to visit, and essential safety tips for an unforgettable hiking experience.
@@ -461,51 +461,51 @@ export default function FamousTrailsPage() {
 
         {/* Trail Difficulty Guide */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Trail Difficulty Guide</h2>
+          <h2 className="text-3xl font-bold theme-text mb-8">Trail Difficulty Guide</h2>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             {[
               {
                 level: 1,
                 name: "Very Easy",
-                color: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
+                color: "trails-diff-easy",
                 description: "Flat paths, under 1 hour",
               },
               {
                 level: 2,
                 name: "Easy",
-                color: "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200",
+                color: "trails-diff-easy",
                 description: "Gentle slopes, 1-2 hours",
               },
               {
                 level: 3,
                 name: "Moderate",
-                color: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200",
+                color: "trails-diff-moderate",
                 description: "Some steep sections, 2-4 hours",
               },
               {
                 level: 4,
                 name: "Challenging",
-                color: "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200",
+                color: "trails-diff-challenging",
                 description: "Steep climbs, 4-6 hours",
               },
               {
                 level: 5,
                 name: "Very Challenging",
-                color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200",
+                color: "trails-diff-hard",
                 description: "Technical terrain, full day+",
               },
             ].map((difficulty) => (
               <div
                 key={difficulty.level}
-                className="bg-white dark:bg-gray-800 rounded-xl p-4 text-center shadow-lg border border-gray-100 dark:border-gray-700"
+                className="panel-white rounded-xl p-4 text-center shadow-lg border border-gray-200/50"
               >
                 <div
                   className={`w-12 h-12 rounded-full ${difficulty.color} flex items-center justify-center mx-auto mb-2 font-bold text-lg`}
                 >
                   {difficulty.level}
                 </div>
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">{difficulty.name}</h3>
-                <p className="text-xs text-gray-600 dark:text-gray-400">{difficulty.description}</p>
+                <h3 className="font-semibold theme-text mb-1">{difficulty.name}</h3>
+                <p className="text-xs theme-text-muted">{difficulty.description}</p>
               </div>
             ))}
           </div>
@@ -523,7 +523,7 @@ export default function FamousTrailsPage() {
           {famousTrails.map((trail, index) => (
             <Fragment key={index}>
               {/* Trail Card */}
-              <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
+              <article className="panel-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-200/50">
                 <div className="flex flex-col lg:flex-row">
                   {/* Image Carousel */}
                   <div className="relative w-full lg:w-2/5">
@@ -533,10 +533,10 @@ export default function FamousTrailsPage() {
                   {/* Content */}
                   <div className="flex-1 p-6 lg:p-8">
                     <div className="mb-4">
-                      <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                      <h3 className="text-2xl lg:text-3xl font-bold theme-text mb-2">
                         {trail.name}
                       </h3>
-                      <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400 mb-4">
+                      <div className="flex flex-wrap gap-4 text-sm theme-text-muted mb-4">
                         <div className="flex items-center gap-1">
                           <MapPin className="w-4 h-4" />
                           <span>{trail.location}</span>
@@ -560,17 +560,17 @@ export default function FamousTrailsPage() {
                       </div>
                     </div>
 
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">{trail.description}</p>
+                    <p className="theme-text-muted leading-relaxed mb-6">{trail.description}</p>
 
                     {/* Highlights */}
                     <div className="mb-6">
-                      <h4 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                      <h4 className="font-semibold theme-text mb-3 flex items-center gap-2">
                         <Star className="w-4 h-4 text-yellow-500" />
                         Trail Highlights
                       </h4>
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         {trail.highlights.map((highlight, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+                          <li key={i} className="flex items-start gap-2 text-sm theme-text-muted">
                             <span className="text-green-500 mt-1">•</span>
                             <span>{highlight}</span>
                           </li>
@@ -581,18 +581,18 @@ export default function FamousTrailsPage() {
                     {/* Tips and Safety */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                       <div>
-                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                        <h4 className="font-semibold theme-text mb-2 flex items-center gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500" />
                           Hiking Tips
                         </h4>
-                        <p className="text-sm text-gray-700 dark:text-gray-300">{trail.tips}</p>
+                        <p className="text-sm theme-text-muted">{trail.tips}</p>
                       </div>
                       <div>
-                        <h4 className="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                        <h4 className="font-semibold theme-text mb-2 flex items-center gap-2">
                           <AlertTriangle className="w-4 h-4 text-red-500" />
                           Safety Notes
                         </h4>
-                        <ul className="text-sm text-gray-700 dark:text-gray-300">
+                        <ul className="text-sm theme-text-muted">
                           {trail.safetyNotes.slice(0, 3).map((note, i) => (
                             <li key={i} className="flex items-start gap-2 mb-1">
                               <span className="text-red-500 mt-1">•</span>
@@ -605,7 +605,7 @@ export default function FamousTrailsPage() {
 
                     {/* What to Bring */}
                     <div className="mb-6">
-                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                      <h4 className="font-semibold theme-text mb-2 flex items-center gap-2">
                         <Camera className="w-4 h-4 text-purple-500" />
                         What to Bring
                       </h4>
@@ -613,7 +613,7 @@ export default function FamousTrailsPage() {
                         {trail.whatToBring.map((item, i) => (
                           <span
                             key={i}
-                            className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full text-sm"
+                            className="trails-tag px-3 py-1 rounded-full text-sm"
                           >
                             {item}
                           </span>
@@ -622,8 +622,8 @@ export default function FamousTrailsPage() {
                     </div>
 
                     {/* Nearby Accommodation */}
-                    <div className="pt-6 border-t border-gray-200 dark:border-gray-700">
-                      <h4 className="font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                    <div className="pt-6 border-t border-gray-200/60">
+                      <h4 className="font-semibold theme-text mb-2 flex items-center gap-2">
                         <Users className="w-4 h-4 text-blue-500" />
                         Nearby Accommodation
                       </h4>
@@ -631,7 +631,7 @@ export default function FamousTrailsPage() {
                         {trail.nearbyAccommodation.map((accommodation, i) => (
                           <span
                             key={i}
-                            className="bg-blue-50 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-3 py-1 rounded-full text-sm"
+                            className="trails-acc-tag px-3 py-1 rounded-full text-sm"
                           >
                             {accommodation}
                           </span>
@@ -656,18 +656,18 @@ export default function FamousTrailsPage() {
 
         {/* Essential Trail Tips */}
         <section className="mt-16 mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Essential Trail Tips</h2>
+          <h2 className="text-3xl font-bold theme-text mb-8 text-center">Essential Trail Tips</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {trailTips.map((tip, index) => (
               <div
                 key={index}
-                className="bg-white dark:bg-gray-800 rounded-xl p-6 text-center shadow-lg border border-gray-100 dark:border-gray-700"
+                className="panel-white rounded-xl p-6 text-center shadow-lg border border-gray-200/50"
               >
-                <div className="bg-blue-100 dark:bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <tip.icon className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+                <div className="trails-tip-icon-bg rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <tip.icon className="w-8 h-8 trails-tip-icon" />
                 </div>
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">{tip.title}</h3>
-                <p className="text-sm text-gray-700 dark:text-gray-300">{tip.description}</p>
+                <h3 className="font-semibold theme-text mb-2">{tip.title}</h3>
+                <p className="text-sm theme-text-muted">{tip.description}</p>
               </div>
             ))}
           </div>

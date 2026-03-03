@@ -42,7 +42,9 @@ export default function SigiriyaTravelGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Sigiriya Rock Fortress</h1>
+          <h1 className="hero-text-shadow text-4xl md:text-6xl font-extrabold mb-4 leading-[1.1] tracking-tight">
+            Sigiriya Rock Fortress
+          </h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Discover Sri Lanka&apos;s Ancient Wonder in the Sky</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">

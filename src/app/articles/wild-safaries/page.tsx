@@ -818,7 +818,7 @@ function CompactImageCarousel({ images, difficulty }: { images: { src: string; t
 
 export default function WildSafarisPage() {
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+        <div className="min-h-screen dest-page-bg">
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-green-900 via-emerald-800 to-teal-700 text-white py-16">
                 <div className="absolute inset-0 bg-black/30"></div>
@@ -851,7 +851,7 @@ export default function WildSafarisPage() {
             <div className="max-w-6xl mx-auto px-4 py-4">
                 {/* Quick Navigation */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-8 theme-text">
                         Choose Your Safari Destination
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
@@ -859,7 +859,7 @@ export default function WildSafarisPage() {
                             <a
                                 key={safari.id}
                                 href={`#${safari.name.toLowerCase().replace(/\s+/g, '-')}`}
-                                className="group bg-white dark:bg-gray-800 rounded-xl p-3 text-center hover:shadow-lg transition-all duration-300 border border-gray-200 dark:border-gray-700"
+                                className="group panel-white rounded-xl p-3 text-center hover:shadow-lg transition-all duration-300 border border-gray-200/60"
                             >
                                 <div className="text-xl mb-2 group-hover:scale-110 transition-transform">
                                     {safari.id === 1 && "🐆"}
@@ -877,7 +877,7 @@ export default function WildSafarisPage() {
                                     {safari.id === 13 && "🐠"}
                                     {safari.id === 14 && "🏝️"}
                                 </div>
-                                <h3 className="font-semibold text-xs text-gray-900 dark:text-white">
+                                <h3 className="font-semibold text-xs theme-text">
                                     {safari.name.replace(' National Park', '').replace(' Forest Reserve', '')}
                                 </h3>
                             </a>
@@ -887,7 +887,7 @@ export default function WildSafarisPage() {
 
                 {/* Seasonal Guide */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-8 theme-text">
                         Best Times to Visit
                     </h2>
                     <div className="grid md:grid-cols-3 gap-6">
@@ -902,7 +902,7 @@ export default function WildSafarisPage() {
                                 </CardHeader>
                                 <CardContent>
                                     <div className="space-y-3">
-                                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                                        <p className="text-sm theme-text-muted">
                                             {info.conditions}
                                         </p>
                                         <div>
@@ -911,7 +911,7 @@ export default function WildSafarisPage() {
                                                 {info.advantages.map((advantage, index) => (
                                                     <li key={index} className="flex items-start gap-1">
                                                         <CheckCircle className="w-3 h-3 text-green-500 mt-0.5 flex-shrink-0" />
-                                                        <span className="text-gray-600 dark:text-gray-400">{advantage}</span>
+                                                        <span className="theme-text-muted">{advantage}</span>
                                                     </li>
                                                 ))}
                                             </ul>
@@ -943,7 +943,7 @@ export default function WildSafarisPage() {
 
                 {/* Safari Parks */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-8 theme-text">
                         National Parks & Wildlife Reserves
                     </h2>
                     <div className="space-y-8 lg:space-y-12">
@@ -965,11 +965,11 @@ export default function WildSafarisPage() {
 
                                         {/* Content */}
                                         <div className="flex-1 mt-4 md:mt-0">
-                                            <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                                            <h3 className="text-2xl font-bold mb-4 theme-text">
                                                 {safari.name}
                                             </h3>
 
-                                            <p className="text-gray-600 dark:text-gray-400 mb-4">
+                                            <p className="theme-text-muted mb-4">
                                                 {safari.description}
                                             </p>
 
@@ -1010,17 +1010,17 @@ export default function WildSafarisPage() {
                                                 <h4 className="font-semibold mb-3">Safari Zones:</h4>
                                                 <div className="grid gap-3">
                                                     {safari.topZones.map((zone) => (
-                                                        <div key={zone.name} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
+                                                        <div key={zone.name} className="safari-zone-card rounded-lg p-3">
                                                             <div className="flex justify-between items-start mb-2">
                                                                 <h5 className="font-semibold text-green-600">{zone.name}</h5>
                                                                 <Badge variant="outline" className="text-xs">
                                                                     {zone.season}
                                                                 </Badge>
                                                             </div>
-                                                            <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                                                            <p className="text-sm theme-text-muted mb-2">
                                                                 {zone.details}
                                                             </p>
-                                                            <div className="text-xs text-gray-500 dark:text-gray-500">
+                                                            <div className="text-xs text-gray-500">
                                                                 {Object.entries(zone).map(([key, value]) => {
                                                                     if (key !== 'name' && key !== 'details' && key !== 'season') {
                                                                         return (
@@ -1047,7 +1047,7 @@ export default function WildSafarisPage() {
                                                     {safari.safetyTips.map((tip, index) => (
                                                         <li key={index} className="flex items-start gap-2 text-sm">
                                                             <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                                                            <span className="text-gray-600 dark:text-gray-400">{tip}</span>
+                                                            <span className="theme-text-muted">{tip}</span>
                                                         </li>
                                                     ))}
                                                 </ul>
@@ -1078,11 +1078,11 @@ export default function WildSafarisPage() {
 
                                         {/* Content */}
                                         <div className="flex-1 mt-4 md:mt-0">
-                                            <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                                            <h3 className="text-2xl font-bold mb-4 theme-text">
                                                 {safari.name}
                                             </h3>
 
-                                            <p className="text-gray-600 dark:text-gray-400 mb-4">
+                                            <p className="theme-text-muted mb-4">
                                                 {safari.description}
                                             </p>
 
@@ -1123,17 +1123,17 @@ export default function WildSafarisPage() {
                                                 <h4 className="font-semibold mb-3">Safari Zones:</h4>
                                                 <div className="grid gap-3">
                                                     {safari.topZones.map((zone) => (
-                                                        <div key={zone.name} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
+                                                        <div key={zone.name} className="safari-zone-card rounded-lg p-3">
                                                             <div className="flex justify-between items-start mb-2">
                                                                 <h5 className="font-semibold text-green-600">{zone.name}</h5>
                                                                 <Badge variant="outline" className="text-xs">
                                                                     {zone.season}
                                                                 </Badge>
                                                             </div>
-                                                            <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                                                            <p className="text-sm theme-text-muted mb-2">
                                                                 {zone.details}
                                                             </p>
-                                                            <div className="text-xs text-gray-500 dark:text-gray-500">
+                                                            <div className="text-xs text-gray-500">
                                                                 {Object.entries(zone).map(([key, value]) => {
                                                                     if (key !== 'name' && key !== 'details' && key !== 'season') {
                                                                         return (
@@ -1160,7 +1160,7 @@ export default function WildSafarisPage() {
                                                     {safari.safetyTips.map((tip, index) => (
                                                         <li key={index} className="flex items-start gap-2 text-sm">
                                                             <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                                                            <span className="text-gray-600 dark:text-gray-400">{tip}</span>
+                                                            <span className="theme-text-muted">{tip}</span>
                                                         </li>
                                                     ))}
                                                 </ul>
@@ -1175,7 +1175,7 @@ export default function WildSafarisPage() {
 
                 {/* Safety Guidelines */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-8 theme-text">
                         Essential Safari Guidelines
                     </h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1188,7 +1188,7 @@ export default function WildSafarisPage() {
                                     </CardTitle>
                                 </CardHeader>
                                 <CardContent>
-                                    <p className="text-gray-600 dark:text-gray-400">
+                                    <p className="theme-text-muted">
                                         {guideline.description}
                                     </p>
                                 </CardContent>
@@ -1199,7 +1199,7 @@ export default function WildSafarisPage() {
 
                 {/* Planning Tips */}
                 <section className="mb-12">
-                    <Card className="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border-green-200 dark:border-green-800">
+                    <Card className="safari-planning-card">
                         <CardHeader>
                             <CardTitle className="text-2xl text-center">
                                 Planning Your Wildlife Safari
@@ -1242,7 +1242,7 @@ export default function WildSafarisPage() {
 
                 {/* Expert Tips Section */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-8 theme-text">
                         Expert Safari Tips
                     </h2>
                     <div className="grid md:grid-cols-2 gap-6">
@@ -1259,7 +1259,7 @@ export default function WildSafarisPage() {
                                         {tipCategory.tips.map((tip, tipIndex) => (
                                             <li key={tipIndex} className="flex items-start gap-2 text-sm">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                                                <span className="text-gray-600 dark:text-gray-400">{tip}</span>
+                                                <span className="theme-text-muted">{tip}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -1271,7 +1271,7 @@ export default function WildSafarisPage() {
 
                 {/* Seasonal Planning Guide */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                    <h2 className="text-3xl font-bold text-center mb-8 theme-text">
                         Seasonal Planning Guide
                     </h2>
                     <div className="grid md:grid-cols-3 gap-6">
@@ -1287,7 +1287,7 @@ export default function WildSafarisPage() {
                                             {advice.advantages.map((advantage, index) => (
                                                 <li key={index} className="text-sm flex items-start gap-1">
                                                     <span className="text-green-500">+</span>
-                                                    <span className="text-gray-600 dark:text-gray-400">{advantage}</span>
+                                                    <span className="theme-text-muted">{advantage}</span>
                                                 </li>
                                             ))}
                                         </ul>
@@ -1298,7 +1298,7 @@ export default function WildSafarisPage() {
                                             {advice.disadvantages.map((disadvantage, index) => (
                                                 <li key={index} className="text-sm flex items-start gap-1">
                                                     <span className="text-orange-500">-</span>
-                                                    <span className="text-gray-600 dark:text-gray-400">{disadvantage}</span>
+                                                    <span className="theme-text-muted">{disadvantage}</span>
                                                 </li>
                                             ))}
                                         </ul>
@@ -1309,7 +1309,7 @@ export default function WildSafarisPage() {
                                             {advice.tips.map((tip, index) => (
                                                 <li key={index} className="text-sm flex items-start gap-1">
                                                     <span className="text-blue-500">💡</span>
-                                                    <span className="text-gray-600 dark:text-gray-400">{tip}</span>
+                                                    <span className="theme-text-muted">{tip}</span>
                                                 </li>
                                             ))}
                                         </ul>
