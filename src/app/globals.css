@@ -612,3 +612,269 @@ body {
 .dark .idalgashinna-final-title {
   color: #6ee7b7;
 }
+
+/* ── Famous Trails page ── */
+.trails-hero {
+  background: linear-gradient(to bottom right, #f0fdf4, #eff6ff);
+}
+.dark .trails-hero {
+  background: linear-gradient(to bottom right, #1f2937, #374151);
+}
+.trails-intro-card {
+  background: linear-gradient(to right, #f0fdf4, #eff6ff);
+}
+.dark .trails-intro-card {
+  background: linear-gradient(to right, rgba(31,41,55,0.9), rgba(55,65,81,0.9));
+}
+.trails-badge {
+  background-color: #ffffff;
+}
+.dark .trails-badge {
+  background-color: #1f2937;
+}
+.trails-badge-green { color: #16a34a; }
+.dark .trails-badge-green { color: #4ade80; }
+.trails-badge-blue { color: #2563eb; }
+.dark .trails-badge-blue { color: #60a5fa; }
+.trails-badge-purple { color: #9333ea; }
+.dark .trails-badge-purple { color: #c084fc; }
+.trails-diff-easy { background-color: #dcfce7; color: #166534; }
+.dark .trails-diff-easy { background-color: #14532d; color: #bbf7d0; }
+.trails-diff-moderate { background-color: #fef9c3; color: #854d0e; }
+.dark .trails-diff-moderate { background-color: #713f12; color: #fef08a; }
+.trails-diff-challenging { background-color: #ffedd5; color: #9a3412; }
+.dark .trails-diff-challenging { background-color: #7c2d12; color: #fed7aa; }
+.trails-diff-hard { background-color: #fee2e2; color: #991b1b; }
+.dark .trails-diff-hard { background-color: #7f1d1d; color: #fecaca; }
+.trails-tag { background-color: #f3f4f6; color: #374151; }
+.dark .trails-tag { background-color: #374151; color: #d1d5db; }
+.trails-acc-tag { background-color: #eff6ff; color: #1d4ed8; }
+.dark .trails-acc-tag { background-color: #1e3a8a; color: #93c5fd; }
+.trails-tip-icon-bg { background-color: #dbeafe; }
+.dark .trails-tip-icon-bg { background-color: #1e3a8a; }
+.trails-tip-icon { color: #2563eb; }
+.dark .trails-tip-icon { color: #60a5fa; }
+
+/* ── Wild Safaris page ── */
+.safari-zone-card { background-color: #f9fafb; }
+.dark .safari-zone-card { background-color: #1f2937; }
+.safari-planning-card { background: linear-gradient(to right, #f0fdf4, #ecfdf5); border-color: #bbf7d0; }
+.dark .safari-planning-card { background: linear-gradient(to right, rgba(20,83,45,0.2), rgba(6,78,59,0.2)); border-color: #14532d; }
+
+/* ── Trincomalee page ── */
+.trinco-nav-link { color: #0e7490; }
+.dark .trinco-nav-link { color: #a5f3fc; }
+.trinco-nav-link:hover { background-color: #cffafe; }
+.dark .trinco-nav-link:hover { background-color: #164e63; }
+
+.trinco-final-card { background: linear-gradient(to right, #eff6ff, #f0fdfa); border-color: #bfdbfe; }
+.dark .trinco-final-card { background: linear-gradient(to right, rgba(23,37,84,0.35), rgba(19,78,74,0.35)); border-color: #1e40af; }
+.trinco-final-title { color: #1e40af; }
+.dark .trinco-final-title { color: #bfdbfe; }
+
+.trinco-box-blue { background-color: #eff6ff; }
+.dark .trinco-box-blue { background-color: rgba(23,37,84,0.35); }
+.trinco-title-blue { color: #1e40af; }
+.dark .trinco-title-blue { color: #bfdbfe; }
+.trinco-text-blue { color: #1d4ed8; }
+.dark .trinco-text-blue { color: #93c5fd; }
+
+.trinco-box-blue-alt { background-color: #eff6ff; }
+.dark .trinco-box-blue-alt { background-color: #1e3a5f; }
+.trinco-text-blue-alt { color: #1d4ed8; }
+.dark .trinco-text-blue-alt { color: #93c5fd; }
+
+.trinco-box-purple { background-color: #faf5ff; }
+.dark .trinco-box-purple { background-color: rgba(59,7,100,0.35); }
+.trinco-title-purple { color: #6b21a8; }
+.dark .trinco-title-purple { color: #e9d5ff; }
+.trinco-text-purple { color: #7c3aed; }
+.dark .trinco-text-purple { color: #c4b5fd; }
+
+.trinco-box-green { background-color: #f0fdf4; }
+.dark .trinco-box-green { background-color: rgba(5,46,22,0.35); }
+.trinco-title-green { color: #166534; }
+.dark .trinco-title-green { color: #bbf7d0; }
+.trinco-text-green { color: #15803d; }
+.dark .trinco-text-green { color: #86efac; }
+
+.trinco-box-orange { background-color: #fff7ed; }
+.dark .trinco-box-orange { background-color: rgba(67,20,7,0.35); }
+.trinco-title-orange { color: #9a3412; }
+.dark .trinco-title-orange { color: #fed7aa; }
+.trinco-text-orange { color: #c2410c; }
+.dark .trinco-text-orange { color: #fdba74; }
+
+.trinco-box-orange-tip { background-color: #ffedd5; }
+.dark .trinco-box-orange-tip { background-color: #374151; }
+.trinco-box-orange-inner { background-color: rgba(255,255,255,0.5); }
+.dark .trinco-box-orange-inner { background-color: rgba(75,85,99,0.5); }
+.trinco-box-orange-inner:hover { background-color: rgba(255,255,255,0.7); }
+.dark .trinco-box-orange-inner:hover { background-color: rgba(75,85,99,0.7); }
+
+.trinco-box-amber { background-color: #fffbeb; }
+.dark .trinco-box-amber { background-color: rgba(69,26,3,0.35); }
+.trinco-title-amber { color: #92400e; }
+.dark .trinco-title-amber { color: #fde68a; }
+.trinco-text-amber { color: #b45309; }
+.dark .trinco-text-amber { color: #fcd34d; }
+
+.trinco-box-indigo { background-color: #eef2ff; }
+.dark .trinco-box-indigo { background-color: rgba(30,27,75,0.35); }
+.trinco-title-indigo { color: #3730a3; }
+.dark .trinco-title-indigo { color: #c7d2fe; }
+.trinco-text-indigo { color: #4338ca; }
+.dark .trinco-text-indigo { color: #a5b4fc; }
+
+.trinco-box-red { background-color: #fef2f2; }
+.dark .trinco-box-red { background-color: rgba(69,10,10,0.35); }
+.trinco-title-red { color: #991b1b; }
+.dark .trinco-title-red { color: #fecaca; }
+.trinco-text-red { color: #b91c1c; }
+.dark .trinco-text-red { color: #fca5a5; }
+
+.trinco-box-slate { background-color: #f8fafc; }
+.dark .trinco-box-slate { background-color: rgba(15,23,42,0.4); }
+.trinco-title-slate { color: #1e293b; }
+.dark .trinco-title-slate { color: #e2e8f0; }
+.trinco-text-slate { color: #334155; }
+.dark .trinco-text-slate { color: #cbd5e1; }
+
+/* Koneswaram Temple page — box containers */
+.kones-box-blue { background-color: #eff6ff; border-color: #bfdbfe; }
+.dark .kones-box-blue { background-color: #1e3a5f; border-color: #475569; }
+.kones-box-green { background-color: #f0fdf4; border-color: #bbf7d0; }
+.dark .kones-box-green { background-color: rgba(5,46,22,0.4); border-color: #475569; }
+.kones-box-purple { background-color: #faf5ff; border-color: #e9d5ff; }
+.dark .kones-box-purple { background-color: rgba(59,7,100,0.35); border-color: #475569; }
+.kones-box-orange { background-color: #fff7ed; border-color: #fed7aa; }
+.dark .kones-box-orange { background-color: rgba(67,20,7,0.35); border-color: #475569; }
+.kones-box-orange-deep { background-color: #fff7ed; border-color: #fed7aa; }
+.dark .kones-box-orange-deep { background-color: #431407; border-color: #9a3412; }
+.kones-box-yellow { background-color: #fefce8; border-color: #fef08a; }
+.dark .kones-box-yellow { background-color: #1f2937; border-color: #475569; }
+.kones-box-yellow-deep { background-color: #fefce8; border-color: #fef08a; }
+.dark .kones-box-yellow-deep { background-color: #713f12; border-color: #92400e; }
+.kones-box-red { background-color: #fef2f2; border-color: #fecaca; }
+.dark .kones-box-red { background-color: #450a0a; border-color: #991b1b; }
+.kones-bg-amber { background-color: #fef3c7; }
+.dark .kones-bg-amber { background-color: #78350f; }
+.kones-bg-slate { background-color: #f1f5f9; }
+.dark .kones-bg-slate { background-color: #0f172a; }
+
+/* Koneswaram Temple page — gradient cards */
+.kones-card-amber-orange { background: linear-gradient(to right, #fffbeb, #fff7ed); border-color: #fde68a; }
+.dark .kones-card-amber-orange { background: linear-gradient(to right, #451a03, #431407); border-color: #92400e; }
+.kones-card-slate-gray { background: linear-gradient(to right, #f8fafc, #f9fafb); border-color: #e2e8f0; }
+.dark .kones-card-slate-gray { background: linear-gradient(to right, #020617, #030712); border-color: #1e293b; }
+.kones-card-orange-red { background: linear-gradient(to right, #fff7ed, #fef2f2); border-color: #fed7aa; }
+.dark .kones-card-orange-red { background: linear-gradient(to right, #431407, #450a0a); border-color: #9a3412; }
+.kones-card-blue { background: linear-gradient(to bottom right, #eff6ff, #dbeafe); border-color: #bfdbfe; }
+.dark .kones-card-blue { background: linear-gradient(to bottom right, #172554, #1e3a8a); border-color: #475569; }
+.kones-card-green { background: linear-gradient(to bottom right, #f0fdf4, #dcfce7); border-color: #bbf7d0; }
+.dark .kones-card-green { background: linear-gradient(to bottom right, #052e16, #14532d); border-color: #475569; }
+.kones-card-purple { background: linear-gradient(to bottom right, #faf5ff, #f3e8ff); border-color: #e9d5ff; }
+.dark .kones-card-purple { background: linear-gradient(to bottom right, #3b0764, #581c87); border-color: #475569; }
+.kones-final-card { background: linear-gradient(to right, #eff6ff, #faf5ff, #fff7ed); border-color: #e5e7eb; }
+.dark .kones-final-card { background: linear-gradient(to right, #172554, #3b0764, #431407); border-color: #1f2937; }
+
+/* Koneswaram Temple page — icon colors */
+.kones-icon-blue { color: #2563eb; } .dark .kones-icon-blue { color: #bfdbfe; }
+.kones-icon-green { color: #16a34a; } .dark .kones-icon-green { color: #bbf7d0; }
+.kones-icon-purple { color: #9333ea; } .dark .kones-icon-purple { color: #e9d5ff; }
+.kones-icon-orange { color: #ea580c; } .dark .kones-icon-orange { color: #fdba74; }
+.kones-icon-orange-dk { color: #ea580c; } .dark .kones-icon-orange-dk { color: #fb923c; }
+.kones-icon-yellow { color: #ca8a04; } .dark .kones-icon-yellow { color: #fbbf24; }
+.kones-icon-red { color: #dc2626; } .dark .kones-icon-red { color: #f87171; }
+
+/* Koneswaram Temple page — title colors */
+.kones-title-blue { color: #1e40af; } .dark .kones-title-blue { color: #bfdbfe; }
+.kones-title-green { color: #166534; } .dark .kones-title-green { color: #bbf7d0; }
+.kones-title-purple { color: #6b21a8; } .dark .kones-title-purple { color: #e9d5ff; }
+.kones-title-orange { color: #9a3412; } .dark .kones-title-orange { color: #fdba74; }
+.kones-title-orange-light { color: #9a3412; } .dark .kones-title-orange-light { color: #fed7aa; }
+.kones-title-yellow { color: #854d0e; } .dark .kones-title-yellow { color: #fde68a; }
+.kones-title-amber { color: #92400e; } .dark .kones-title-amber { color: #fcd34d; }
+.kones-title-red { color: #991b1b; } .dark .kones-title-red { color: #fca5a5; }
+.kones-title-slate { color: #1e293b; } .dark .kones-title-slate { color: #cbd5e1; }
+
+/* Koneswaram Temple page — body text colors */
+.kones-text-blue { color: #1d4ed8; } .dark .kones-text-blue { color: #bfdbfe; }
+.kones-text-blue-slate { color: #1d4ed8; } .dark .kones-text-blue-slate { color: #cbd5e1; }
+.kones-text-green { color: #15803d; } .dark .kones-text-green { color: #bbf7d0; }
+.kones-text-green-slate { color: #15803d; } .dark .kones-text-green-slate { color: #cbd5e1; }
+.kones-text-purple { color: #7c3aed; } .dark .kones-text-purple { color: #e9d5ff; }
+.kones-text-purple-slate { color: #7c3aed; } .dark .kones-text-purple-slate { color: #cbd5e1; }
+.kones-text-orange { color: #c2410c; } .dark .kones-text-orange { color: #fb923c; }
+.kones-text-orange-slate { color: #c2410c; } .dark .kones-text-orange-slate { color: #cbd5e1; }
+.kones-text-yellow { color: #a16207; } .dark .kones-text-yellow { color: #fbbf24; }
+.kones-text-yellow-slate { color: #a16207; } .dark .kones-text-yellow-slate { color: #cbd5e1; }
+.kones-text-red { color: #b91c1c; } .dark .kones-text-red { color: #f87171; }
+.kones-text-slate { color: #334155; } .dark .kones-text-slate { color: #cbd5e1; }
+
+/* Koneswaram Temple page — link */
+.kones-link-orange { color: #ea580c; } .dark .kones-link-orange { color: #fdba74; }
+.kones-link-orange:hover { color: #9a3412; } .dark .kones-link-orange:hover { color: #fed7aa; }
+
+/* ==============================================
+   Kandy Page — Dark Mode Classes
+   ============================================== */
+
+/* Text — neutral */
+.dark .kandy-text-n1 { color: #f5f5f5; }
+.dark .kandy-text-n2 { color: #e5e5e5; }
+.dark .kandy-text-white { color: #ffffff; }
+.dark .kandy-text-gray { color: #d1d5db; }
+
+/* Text — blue */
+.dark .kandy-text-blue-lt { color: #bfdbfe; }
+.dark .kandy-text-blue    { color: #93c5fd; }
+.dark .kandy-text-blue-dk { color: #60a5fa; }
+
+/* Text — green */
+.dark .kandy-text-green    { color: #86efac; }
+.dark .kandy-text-green-dk { color: #4ade80; }
+
+/* Text — purple */
+.dark .kandy-text-purple-lt { color: #e9d5ff; }
+.dark .kandy-text-purple    { color: #d8b4fe; }
+.dark .kandy-text-purple-dk { color: #c084fc; }
+
+/* Text — orange / amber */
+.dark .kandy-text-orange-lt { color: #fed7aa; }
+.dark .kandy-text-orange    { color: #fdba74; }
+.dark .kandy-text-orange-dk { color: #fb923c; }
+.dark .kandy-text-amber     { color: #fcd34d; }
+.dark .kandy-text-amber-dk  { color: #fbbf24; }
+
+/* Text — red / pink / yellow */
+.dark .kandy-text-red    { color: #fca5a5; }
+.dark .kandy-text-red-dk { color: #f87171; }
+.dark .kandy-text-pink   { color: #f472b6; }
+.dark .kandy-text-yellow { color: #facc15; }
+
+/* Backgrounds */
+.dark .kandy-bg-n8          { background-color: rgb(38 38 38 / 0.8); }
+.dark .kandy-bg-blue        { background-color: rgb(30 58 138 / 0.2); }
+.dark .kandy-bg-green       { background-color: rgb(20 83 45 / 0.2); }
+.dark .kandy-bg-orange      { background-color: rgb(124 45 18 / 0.2); }
+.dark .kandy-bg-purple      { background-color: rgb(88 28 135 / 0.2); }
+.dark .kandy-bg-amber       { background-color: rgb(120 53 15 / 0.2); }
+.dark .kandy-bg-red         { background-color: rgb(127 29 29 / 0.2); }
+.dark .kandy-bg-orange-dk   { background-color: rgb(154 52 18 / 0.3); }
+.dark .kandy-bg-blue-solid  { background-color: #3b82f6; }
+
+/* Borders */
+.dark .kandy-border-green  { border-color: #15803d; }
+.dark .kandy-border-red    { border-color: #b91c1c; }
+.dark .kandy-border-purple { border-color: #7e22ce; }
+
+/* Gradient stops */
+.dark .kandy-from-green  { --tw-gradient-from: rgb(20 83 45 / 0.2); }
+.dark .kandy-to-blue     { --tw-gradient-to:   rgb(30 58 138 / 0.2); }
+.dark .kandy-from-purple { --tw-gradient-from: rgb(88 28 135 / 0.2); }
+.dark .kandy-to-pink     { --tw-gradient-to:   rgb(131 24 67 / 0.2); }
+
+/* Hover */
+.dark .kandy-hover-orange:hover  { color: #fdba74; }
+.dark .kandy-hover-bg-blue:hover { background-color: #2563eb; }
