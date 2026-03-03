@@ -15,13 +15,10 @@ export default function KoneswaramTempleGuide() {
     {src:"/Trinco.jpeg",alt:"Aerial view of Trincomalee showing pristine beaches, turquoise waters, and the ancient Koneswaram temple on rocky cliffs"},
   ]
 
-  const swamirockImages = [
-    {src: "/Swami-Rock.jpeg", alt: "Swami Rock cliff formation with temple"},
-    {src: "/Koneshwaram.jpeg", alt: "Koneswaram Temple on Swami Rock"},
-  ]
-
-  const loversLeapImages = [
-    {src: "/placeholder.jpg", alt: "Lover's Leap cliff with dramatic ocean views"},
+  const swamiRockLoversLeapImages = [
+    {src: "/Swami-Rock.jpeg", alt: "Swami Rock cliff  Koneswaram Temple promontory"},
+    {src: "/Koneshwaram.jpeg", alt: "Koneswaram Temple on Swami Rock overlooking the Indian Ocean"},
+    {src: "/placeholder.jpg", alt: "Lover's Leap viewpoint at Swami Rock, Trincomalee"},
   ]
 
   return (
@@ -38,8 +35,10 @@ export default function KoneswaramTempleGuide() {
           />
         </div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Koneswaram Temple: Sri Lanka&apos;s Sacred Cliff Temple
+          <h1 className="hero-text-shadow text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 leading-[1.1] tracking-tight">
+            Koneswaram Temple
+            <br />
+            Sri Lanka&apos;s Sacred Cliff Temple
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200">
             Discover the ancient Hindu temple perched dramatically on Swami Rock, 
@@ -88,51 +87,51 @@ export default function KoneswaramTempleGuide() {
           <h2 className="text-2xl font-bold mb-6 text-foreground">How to Get There</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             
-            <Card className="p-4 bg-blue-50 dark:bg-slate-800 border-blue-200 dark:border-slate-600">
+            <Card className="p-4 kones-box-blue">
               <div className="flex items-center space-x-3">
-                <Car className="h-6 w-6 text-blue-600 dark:text-blue-200" />
+                <Car className="h-6 w-6 kones-icon-blue" />
                 <div>
-                  <h3 className="font-semibold text-blue-800 dark:text-blue-200">By Car</h3>
-                  <p className="text-sm text-blue-700 dark:text-slate-300">4 hrs from Colombo</p>
-                  <p className="text-sm text-blue-700 dark:text-slate-300">2.5 hrs from Kandy</p>
+                  <h3 className="font-semibold kones-title-blue">By Car</h3>
+                  <p className="text-sm kones-text-blue-slate">4 hrs from Colombo</p>
+                  <p className="text-sm kones-text-blue-slate">2.5 hrs from Kandy</p>
                 </div>
               </div>
             </Card>
 
-            <Card className="p-4 bg-green-50 dark:bg-slate-800 border-green-200 dark:border-slate-600">
+            <Card className="p-4 kones-box-green">
               <div className="flex items-center space-x-3">
-                <Bus className="h-6 w-6 text-green-600 dark:text-green-200" />
+                <Bus className="h-6 w-6 kones-icon-green" />
                 <div>
-                  <h3 className="font-semibold text-green-800 dark:text-green-200">By Bus</h3>
-                  <p className="text-sm text-green-700 dark:text-slate-300">Direct from Colombo</p>
-                  <p className="text-sm text-green-700 dark:text-slate-300">6-7 hours journey</p>
+                  <h3 className="font-semibold kones-title-green">By Bus</h3>
+                  <p className="text-sm kones-text-green-slate">Direct from Colombo</p>
+                  <p className="text-sm kones-text-green-slate">6-7 hours journey</p>
                 </div>
               </div>
             </Card>
 
-            <Card className="p-4 bg-purple-50 dark:bg-slate-800 border-purple-200 dark:border-slate-600">
+            <Card className="p-4 kones-box-purple">
               <div className="flex items-center space-x-3">
-                <Train className="h-6 w-6 text-purple-600 dark:text-purple-200" />
+                <Train className="h-6 w-6 kones-icon-purple" />
                 <div>
-                  <h3 className="font-semibold text-purple-800 dark:text-purple-200">By Train</h3>
-                  <p className="text-sm text-purple-700 dark:text-slate-300">Scenic route</p>
-                  <p className="text-sm text-purple-700 dark:text-slate-300">8-9 hours from Colombo</p>
+                  <h3 className="font-semibold kones-title-purple">By Train</h3>
+                  <p className="text-sm kones-text-purple-slate">Scenic route</p>
+                  <p className="text-sm kones-text-purple-slate">8-9 hours from Colombo</p>
                 </div>
               </div>
             </Card>
 
-            <Card className="p-4 bg-orange-50 dark:bg-slate-800 border-orange-200 dark:border-slate-600">
+            <Card className="p-4 kones-box-orange">
               <div className="flex items-center space-x-3">
-                <MapPin className="h-6 w-6 text-orange-600 dark:text-orange-300" />
+                <MapPin className="h-6 w-6 kones-icon-orange" />
                 <div>
-                  <h3 className="font-semibold text-orange-800 dark:text-orange-200">Location</h3>
-                  <p className="text-sm text-orange-700 dark:text-slate-300">Swami Rock</p>
-                  <p className="text-sm text-orange-700 dark:text-slate-300">Trincomalee</p>
+                  <h3 className="font-semibold kones-title-orange-light">Location</h3>
+                  <p className="text-sm kones-text-orange-slate">Swami Rock</p>
+                  <p className="text-sm kones-text-orange-slate">Trincomalee</p>
                   <a 
                     href="https://www.google.com/maps/dir//H6JW%2BX4H,+Trincomalee/@8.5824349,81.1629537,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3afbbca209ddef57:0x2e9e4b68861922df!2m2!1d81.2453556!2d8.5824436?entry=ttu&g_ep=EgoyMDI1MDgxNy4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-orange-600 dark:text-orange-300 hover:text-orange-800 dark:hover:text-orange-200 underline"
+                    className="text-xs kones-link-orange underline"
                   >
                     View on Google Maps
                   </a>
@@ -153,22 +152,22 @@ export default function KoneswaramTempleGuide() {
         {/* Quick Facts */}
         <section className="mb-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-blue-50 dark:bg-slate-800 border-blue-200 dark:border-slate-600 p-6">
+            <Card className="kones-box-blue p-6">
               <div className="flex items-center space-x-4">
-                <Calendar className="h-10 w-10 text-blue-600 dark:text-blue-200" />
+                <Calendar className="h-10 w-10 kones-icon-blue" />
                 <div>
-                  <h3 className="text-xl font-bold text-blue-800 dark:text-blue-200">Ancient Heritage</h3>
-                  <p className="text-blue-700 dark:text-slate-300">Over 2,000 years of continuous worship</p>
+                  <h3 className="text-xl font-bold kones-title-blue">Ancient Heritage</h3>
+                  <p className="kones-text-blue-slate">Over 2,000 years of continuous worship</p>
                 </div>
               </div>
             </Card>
 
-            <Card className="bg-orange-50 dark:bg-slate-800 border-orange-200 dark:border-slate-600 p-6">
+            <Card className="kones-box-orange p-6">
               <div className="flex items-center space-x-4">
-                <Star className="h-10 w-10 text-orange-600 dark:text-orange-300" />
+                <Star className="h-10 w-10 kones-icon-orange" />
                 <div>
-                  <h3 className="text-xl font-bold text-orange-800 dark:text-orange-200">Sacred Significance</h3>
-                  <p className="text-orange-700 dark:text-slate-300">One of five Pancha Ishwarams in Sri Lanka</p>
+                  <h3 className="text-xl font-bold kones-title-orange-light">Sacred Significance</h3>
+                  <p className="kones-text-orange-slate">One of five Pancha Ishwarams in Sri Lanka</p>
                 </div>
               </div>
             </Card>
@@ -216,12 +215,12 @@ export default function KoneswaramTempleGuide() {
                 </div>
               </div>
 
-              <div className="bg-yellow-50 dark:bg-slate-800 p-4 rounded-lg border border-yellow-200 dark:border-slate-600">
+              <div className="kones-box-yellow p-4 rounded-lg border">
                 <div className="flex items-start space-x-2">
-                  <AlertTriangle className="h-5 w-5 text-yellow-600 dark:text-yellow-400 mt-0.5 flex-shrink-0" />
+                  <AlertTriangle className="h-5 w-5 kones-icon-yellow mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-yellow-800 dark:text-yellow-300 mb-1">Temple Etiquette</h4>
-                    <p className="text-sm text-yellow-700 dark:text-slate-300">
+                    <h4 className="font-semibold kones-title-yellow mb-1">Temple Etiquette</h4>
+                    <p className="text-sm kones-text-yellow-slate">
                       Remove shoes before entering, dress modestly covering shoulders and knees, 
                       maintain silence during prayers, and photography may be restricted in certain areas.
                     </p>
@@ -251,12 +250,12 @@ export default function KoneswaramTempleGuide() {
                 compassionate deity, earning him the name &quot;Dashagriva&quot; (ten-necked one).
               </p>
               
-              <div className="bg-purple-50 dark:bg-slate-800 p-4 rounded-lg border border-purple-200 dark:border-slate-600 mb-4">
+              <div className="kones-box-purple p-4 rounded-lg border mb-4">
                 <div className="flex items-start space-x-2">
-                  <Star className="h-5 w-5 text-purple-600 dark:text-purple-200 mt-0.5 flex-shrink-0" />
+                  <Star className="h-5 w-5 kones-icon-purple mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-1">The Shiva Lingam Legend</h4>
-                    <p className="text-sm text-purple-700 dark:text-slate-300">
+                    <h4 className="font-semibold kones-title-purple mb-1">The Shiva Lingam Legend</h4>
+                    <p className="text-sm kones-text-purple-slate">
                       According to tradition, the original Shiva Lingam at Koneswaram was one of the 
                       naturally formed lingams that Ravana discovered and consecrated. This made the 
                       temple one of the most powerful Shiva shrines in ancient Lanka.
@@ -294,16 +293,16 @@ export default function KoneswaramTempleGuide() {
                 </div>
               </div>
 
-              <div className="bg-orange-50 dark:bg-slate-800 p-4 rounded-lg border border-orange-200 dark:border-slate-600">
+              <div className="kones-box-orange p-4 rounded-lg border">
                 <div className="flex items-start space-x-2">
-                  <Calendar className="h-5 w-5 text-orange-600 dark:text-orange-400 mt-0.5 flex-shrink-0" />
+                  <Calendar className="h-5 w-5 kones-icon-orange-dk mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-1">Epic Timeline</h4>
-                    <p className="text-sm text-orange-700 dark:text-slate-300 mb-2">
+                    <h4 className="font-semibold kones-title-orange mb-1">Epic Timeline</h4>
+                    <p className="text-sm kones-text-orange-slate mb-2">
                       The Ramayana events are believed to have occurred in the Treta Yuga, making 
                       this temple&apos;s mythological history span thousands of years.
                     </p>
-                    <ul className="text-sm text-orange-700 dark:text-slate-300 space-y-1">
+                    <ul className="text-sm kones-text-orange-slate space-y-1">
                       <li>• Ravana&apos;s reign and devotion to Shiva</li>
                       <li>• Abduction of Sita and war with Rama</li>
                       <li>• Temple&apos;s continued significance post-Ramayana</li>
@@ -317,14 +316,14 @@ export default function KoneswaramTempleGuide() {
 
           {/* Additional Ramayana Details */}
           <div className="mt-8">
-            <Card className="p-6 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-950 dark:to-orange-950 border border-amber-200 dark:border-amber-800">
+            <Card className="p-6 kones-card-amber-orange border">
               <CardHeader className="pb-4">
-                <CardTitle className="text-2xl text-amber-800 dark:text-amber-300">The Scholarly King&apos;s Devotion</CardTitle>
+                <CardTitle className="text-2xl kones-title-amber">The Scholarly King&apos;s Devotion</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-amber-800 dark:text-amber-300">Ravana&apos;s Achievements at Koneswaram:</h4>
+                    <h4 className="font-semibold mb-3 kones-title-amber">Ravana&apos;s Achievements at Koneswaram:</h4>
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li>• Composed the powerful &quot;Shiva Tandava Stotram&quot; hymn</li>
                       <li>• Performed severe penances for thousands of years</li>
@@ -334,7 +333,7 @@ export default function KoneswaramTempleGuide() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3 text-amber-800 dark:text-amber-300">Cultural Legacy:</h4>
+                    <h4 className="font-semibold mb-3 kones-title-amber">Cultural Legacy:</h4>
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li>• Temple festivals honor this ancient connection</li>
                       <li>• Local folklore preserves Ramayana stories</li>
@@ -344,8 +343,8 @@ export default function KoneswaramTempleGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-4 p-3 bg-amber-100 dark:bg-amber-900 rounded-lg">
-                  <p className="text-sm text-amber-800 dark:text-amber-300 italic">
+                <div className="mt-4 p-3 kones-bg-amber rounded-lg">
+                  <p className="text-sm kones-title-amber italic">
                     &quot;Even today, devotees believe that worshipping at Koneswaram with the same devotion 
                     as Ravana can bring divine blessings and spiritual enlightenment, making this temple 
                     a powerful connection to the epic Ramayana tradition.&quot;
@@ -375,12 +374,12 @@ export default function KoneswaramTempleGuide() {
                 and could cut through any material in creation.
               </p>
               
-              <div className="bg-blue-50 dark:bg-slate-800 p-4 rounded-lg border border-blue-200 dark:border-slate-600 mb-4">
+              <div className="kones-box-blue p-4 rounded-lg border mb-4">
                 <div className="flex items-start space-x-2">
-                  <Star className="h-5 w-5 text-blue-600 dark:text-blue-200 mt-0.5 flex-shrink-0" />
+                  <Star className="h-5 w-5 kones-icon-blue mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-1">Chandrahasa - The Moon Blade</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-200">
+                    <h4 className="font-semibold kones-title-blue mb-1">Chandrahasa - The Moon Blade</h4>
+                    <p className="text-sm kones-text-blue">
                       The name &quot;Chandrahasa&quot; means &quot;laughter of the moon&quot; in Sanskrit, reflecting both 
                       its curved, crescent-like shape and its divine radiance that could illuminate 
                       the darkest nights during battle.
@@ -418,16 +417,16 @@ export default function KoneswaramTempleGuide() {
                 </div>
               </div>
 
-              <div className="bg-red-50 dark:bg-red-950 p-4 rounded-lg border border-red-200 dark:border-red-800">
+              <div className="kones-box-red p-4 rounded-lg border">
                 <div className="flex items-start space-x-2">
-                  <AlertTriangle className="h-5 w-5 text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0" />
+                  <AlertTriangle className="h-5 w-5 kones-icon-red mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-red-800 dark:text-red-300 mb-1">The Sword&apos;s Fate</h4>
-                    <p className="text-sm text-red-700 dark:text-red-400 mb-2">
+                    <h4 className="font-semibold kones-title-red mb-1">The Sword&apos;s Fate</h4>
+                    <p className="text-sm kones-text-red mb-2">
                       According to Ramayana tradition, the Chandrahasa sword was eventually lost 
                       during Ravana&apos;s final battle with Lord Rama, marking the end of his reign.
                     </p>
-                    <ul className="text-sm text-red-700 dark:text-red-400 space-y-1">
+                    <ul className="text-sm kones-text-red space-y-1">
                       <li>• Granted by Shiva at Koneswaram Temple</li>
                       <li>• Used throughout Ravana&apos;s conquests</li>
                       <li>• Left its mark on the sacred rock</li>
@@ -441,14 +440,14 @@ export default function KoneswaramTempleGuide() {
 
           {/* Modern Connection */}
           <div className="mt-8">
-            <Card className="p-6 bg-gradient-to-r from-slate-50 to-gray-50 dark:from-slate-950 dark:to-gray-950 border border-slate-200 dark:border-slate-800">
+            <Card className="p-6 kones-card-slate-gray border">
               <CardHeader className="pb-4">
-                <CardTitle className="text-2xl text-slate-800 dark:text-slate-300">The Living Legend Today</CardTitle>
+                <CardTitle className="text-2xl kones-title-slate">The Living Legend Today</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-slate-800 dark:text-slate-300">Pilgrims and the Rock Cut:</h4>
+                    <h4 className="font-semibold mb-3 kones-title-slate">Pilgrims and the Rock Cut:</h4>
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li>• Visitors seek out the legendary fissure in the rock</li>
                       <li>• Local guides point out the &quot;sword cut&quot; to tourists</li>
@@ -458,7 +457,7 @@ export default function KoneswaramTempleGuide() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3 text-slate-800 dark:text-slate-300">Cultural Significance:</h4>
+                    <h4 className="font-semibold mb-3 kones-title-slate">Cultural Significance:</h4>
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li>• Represents the power of divine blessings</li>
                       <li>• Symbol of Ravana&apos;s devotion to Lord Shiva</li>
@@ -468,8 +467,8 @@ export default function KoneswaramTempleGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-4 p-3 bg-slate-100 dark:bg-slate-900 rounded-lg">
-                  <p className="text-sm text-slate-800 dark:text-slate-300 italic">
+                <div className="mt-4 p-3 kones-bg-slate rounded-lg">
+                  <p className="text-sm kones-title-slate italic">
                     &quot;The mark of Ravana&apos;s sword in the sacred rock serves as a tangible reminder that 
                     the divine and earthly realms once intersected at this holy site, making Koneswaram 
                     Temple not just a place of worship, but a witness to epic history.&quot;
@@ -480,89 +479,58 @@ export default function KoneswaramTempleGuide() {
           </div>
         </section>
 
-        {/* Swami Rock Section */}
+        {/* Swami Rock / Lover's Leap */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Swami Rock: The Sacred Cliff</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <h2 className="text-3xl font-bold mb-2 text-foreground">Swami Rock Also Known as Lover&apos;s Leap</h2>
+          <p className="text-muted-foreground mb-6">One cliff, two identities. This sacred 130-foot promontory is called <strong>Swami Rock</strong> (Konesar Malai) by Hindus, and <strong>Lover&apos;s Leap</strong> by history two names for the same awe-inspiring place.</p>
+
+          <ImageCarousel images={swamiRockLoversLeapImages} />
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+
+            {/* Hindu sacred identity */}
             <div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">The Legend of Swami Rock</h3>
-              <p className="text-muted-foreground mb-4">
-                Swami Rock, the dramatic clifftop on which Koneswaram Temple stands, is steeped in both 
-                mythology and history. According to Hindu legend, this is where King Ravana of Lanka 
-                worshipped Lord Shiva. The rock formation itself is considered sacred, believed to be 
-                a piece of Mount Kailash that fell to earth.
+              <h3 className="text-xl font-semibold mb-3 text-foreground">The Sacred Hindu Cliff</h3>
+              <p className="text-muted-foreground mb-3 text-sm leading-relaxed">
+                Known as Swami Rock, this is the clifftop on which Koneswaram Temple stands. 
+                According to Hindu legend, King Ravana worshipped Lord Shiva here, and the rock 
+                is believed to be a fragment of Mount Kailash that fell to earth making it as 
+                sacred as Shiva&apos;s own abode. The 130-foot drop into the Indian Ocean below adds 
+                to its dramatic, otherworldly character.
               </p>
-              <p className="text-muted-foreground mb-4">
-                The 130-foot high cliff offers breathtaking views of the Indian Ocean and Trincomalee&apos;s 
-                natural harbor. Early morning and late evening visits provide the most spectacular lighting, 
-                with the temple&apos;s golden spire gleaming against the blue ocean backdrop.
-              </p>
-              
-              <div className="bg-blue-50 dark:bg-slate-800 p-4 rounded-lg border border-blue-200 dark:border-slate-600">
+              <div className="kones-box-blue p-4 rounded-lg border">
                 <div className="flex items-start space-x-2">
-                  <Sunrise className="h-5 w-5 text-blue-600 dark:text-blue-200 mt-0.5 flex-shrink-0" />
+                  <Sunrise className="h-5 w-5 kones-icon-blue mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-1">Best Photography Times</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-200">
-                      Golden hour (6:30-7:30 AM and 5:30-6:30 PM) offers the most stunning lighting for photography. 
-                      The temple gopuram is beautifully illuminated against the ocean backdrop.
+                    <h4 className="font-semibold kones-title-blue mb-1">Best Photography Times</h4>
+                    <p className="text-sm kones-text-blue">
+                      Golden hour (6:30–7:30 AM and 5:30–6:30 PM) offers spectacular lighting. 
+                      The temple gopuram glows beautifully against the ocean backdrop.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div>
-              <ImageCarousel 
-                images={swamirockImages} 
-              />
-            </div>
-          </div>
-        </section>
 
-        {/* Lover's Leap Section */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Lover&apos;s Leap: A Tale of Tragic Romance</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            {/* Colonial legend */}
             <div>
-            <div>
-              <ImageCarousel 
-                images={loversLeapImages} 
-              />
-            </div>
-              <h3 className="text-2xl font-semibold mb-4 text-foreground">The Dutch Colonial Story</h3>
-              <p className="text-muted-foreground mb-4">
-                Adjacent to Koneswaram Temple lies Lover&apos;s Leap, a cliff with a haunting colonial-era story. 
-                During Dutch rule in the 17th century, a Dutch officer&apos;s daughter and her local lover, 
-                unable to be together due to colonial restrictions, are said to have jumped from this cliff 
-                in a tragic act of eternal love.
+              <h3 className="text-xl font-semibold mb-3 text-foreground">The Dutch Colonial Legend</h3>
+              <p className="text-muted-foreground mb-3 text-sm leading-relaxed">
+                The same cliff is also called Lover&apos;s Leap after a haunting 17th-century story. 
+                A Dutch officer&apos;s daughter and her local lover, forbidden from being together under 
+                colonial rule, are said to have leapt from this edge in a final act of eternal love. 
+                The name stuck adding a layer of romantic tragedy to this already mythic place.
               </p>
-              <p className="text-muted-foreground mb-4">
-                Today, Lover&apos;s Leap offers some of the most dramatic coastal views in Sri Lanka. The cliff 
-                provides a different perspective of Trincomalee&apos;s coastline and is a popular spot for 
-                photography and quiet contemplation.
-              </p>
-              
-              <div className="space-y-3 mb-4">
-                <div className="flex items-center space-x-2">
-                  <Heart className="h-5 w-5 text-red-600" />
-                  <span className="text-sm">Romantic legend from Dutch colonial period</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Camera className="h-5 w-5 text-purple-600" />
-                  <span className="text-sm">Spectacular photography opportunities</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <MapPin className="h-5 w-5 text-blue-600" />
-                  <span className="text-sm">5-minute walk from main temple</span>
-                </div>
+              <div className="flex flex-wrap items-center gap-4 mb-3 text-sm text-muted-foreground">
+                <span className="flex items-center gap-1"><Heart className="h-4 w-4 text-red-500" /> Dutch colonial legend</span>
+                <span className="flex items-center gap-1"><Camera className="h-4 w-4 text-purple-500" /> Stunning coastal views</span>
               </div>
-
-              <div className="bg-red-50 dark:bg-red-950 p-4 rounded-lg border border-red-200 dark:border-red-800">
+              <div className="kones-box-red p-4 rounded-lg border">
                 <div className="flex items-start space-x-2">
-                  <AlertTriangle className="h-5 w-5 text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0" />
+                  <AlertTriangle className="h-5 w-5 kones-icon-red mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-red-800 dark:text-red-300 mb-1">Safety Warning</h4>
-                    <p className="text-sm text-red-700 dark:text-red-400">
+                    <h4 className="font-semibold kones-title-red mb-1">Safety Warning</h4>
+                    <p className="text-sm kones-text-red">
                       Stay well back from cliff edges. Strong ocean winds and loose rocks can be dangerous. 
                       Always supervise children and avoid visiting during heavy rain or storms.
                     </p>
@@ -570,6 +538,7 @@ export default function KoneswaramTempleGuide() {
                 </div>
               </div>
             </div>
+
           </div>
         </section>
 
@@ -650,10 +619,10 @@ export default function KoneswaramTempleGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-foreground">Sacred Festivals and Ceremonies</h2>
           <div className="space-y-6">
-            <Card className="p-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-950 dark:to-red-950 border border-orange-200 dark:border-orange-800">
+            <Card className="p-6 kones-card-orange-red border">
               <CardHeader className="pb-4">
-                <CardTitle className="text-2xl text-orange-800 dark:text-orange-300">Maha Shivarathri Festival</CardTitle>
-                <CardDescription className="text-orange-700 dark:text-orange-400">Usually in February/March</CardDescription>
+                <CardTitle className="text-2xl kones-title-orange">Maha Shivarathri Festival</CardTitle>
+                <CardDescription className="kones-text-orange">Usually in February/March</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
@@ -663,7 +632,7 @@ export default function KoneswaramTempleGuide() {
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <h4 className="font-semibold mb-2 text-orange-800 dark:text-orange-300">Festival Highlights:</h4>
+                    <h4 className="font-semibold mb-2 kones-title-orange">Festival Highlights:</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• All-night prayers and meditation</li>
                       <li>• Traditional music and dance performances</li>
@@ -672,7 +641,7 @@ export default function KoneswaramTempleGuide() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-2 text-orange-800 dark:text-orange-300">Visitor Information:</h4>
+                    <h4 className="font-semibold mb-2 kones-title-orange">Visitor Information:</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• Arrive early for parking and viewing spots</li>
                       <li>• Dress in traditional or conservative clothing</li>
@@ -757,12 +726,12 @@ export default function KoneswaramTempleGuide() {
                 priests, witnessed massive naval vessels anchored in the bay below the sacred cliff.
               </p>
               
-              <div className="bg-red-50 dark:bg-red-950 p-4 rounded-lg border border-red-200 dark:border-red-800 mb-4">
+              <div className="kones-box-red p-4 rounded-lg border mb-4">
                 <div className="flex items-start space-x-2">
-                  <AlertTriangle className="h-5 w-5 text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0" />
+                  <AlertTriangle className="h-5 w-5 kones-icon-red mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-red-800 dark:text-red-300 mb-1">The Easter Raid - April 9, 1942</h4>
-                    <p className="text-sm text-red-700 dark:text-red-400">
+                    <h4 className="font-semibold kones-title-red mb-1">The Easter Raid - April 9, 1942</h4>
+                    <p className="text-sm kones-text-red">
                       Japanese aircraft launched a surprise attack on Trincomalee harbor. Bombs fell near 
                       the temple area, and locals took shelter in the ancient caves and bunkers around 
                       Swami Rock. The temple survived the raid intact.
@@ -800,12 +769,12 @@ export default function KoneswaramTempleGuide() {
                 </div>
               </div>
 
-              <div className="bg-blue-50 dark:bg-slate-800 p-4 rounded-lg border border-blue-200 dark:border-slate-600">
+              <div className="kones-box-blue p-4 rounded-lg border">
                 <div className="flex items-start space-x-2">
-                  <Calendar className="h-5 w-5 text-blue-600 dark:text-blue-200 mt-0.5 flex-shrink-0" />
+                  <Calendar className="h-5 w-5 kones-icon-blue mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-1">Historical Timeline</h4>
-                    <ul className="text-sm text-blue-700 dark:text-blue-200 space-y-1">
+                    <h4 className="font-semibold kones-title-blue mb-1">Historical Timeline</h4>
+                    <ul className="text-sm kones-text-blue space-y-1">
                       <li>• 1941: British Eastern Fleet establishes Trincomalee base</li>
                       <li>• April 1942: Japanese air raids on harbor and surrounding areas</li>
                       <li>• 1942-1945: Continuous Allied naval operations</li>
@@ -813,7 +782,7 @@ export default function KoneswaramTempleGuide() {
                     </ul>
                   </div>
                 </div>
-              </div>123
+              </div>
             </div>
           </div>
         </section>
@@ -823,19 +792,19 @@ export default function KoneswaramTempleGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">How to Reach Koneswaram Temple</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            <Card className="p-6 bg-blue-50 dark:bg-slate-800 border-blue-200 dark:border-slate-600">
+            <Card className="p-6 kones-box-blue">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl flex items-center text-blue-800 dark:text-blue-200">
+                <CardTitle className="text-xl flex items-center kones-title-blue">
                   <Car className="w-6 h-6 mr-2" />
                   By Private Vehicle
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-blue-700 dark:text-blue-200 mb-3">
+                <p className="kones-text-blue mb-3">
                   The most convenient way to reach the temple. Drive to Trincomalee town and follow signs to 
                   Koneswaram Temple. Limited parking available near the temple.
                 </p>
-                <ul className="text-sm text-blue-700 dark:text-blue-200 space-y-1">
+                <ul className="text-sm kones-text-blue space-y-1">
                   <li>• 4 hours from Colombo (258 km)</li>
                   <li>• 2.5 hours from Kandy (110 km)</li>
                   <li>• 1 hour from Batticaloa (58 km)</li>
@@ -844,19 +813,19 @@ export default function KoneswaramTempleGuide() {
               </CardContent>
             </Card>
 
-            <Card className="p-6 bg-green-50 dark:bg-slate-800 border-green-200 dark:border-slate-600">
+            <Card className="p-6 kones-box-green">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl flex items-center text-green-800 dark:text-green-200">
+                <CardTitle className="text-xl flex items-center kones-title-green">
                   <Bus className="w-6 h-6 mr-2" />
                   By Public Bus
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-green-700 dark:text-green-200 mb-3">
+                <p className="kones-text-green mb-3">
                   Regular bus services connect Trincomalee with major cities. From Trincomalee bus station, 
                   take a local bus or three-wheeler to the temple.
                 </p>
-                <ul className="text-sm text-green-700 dark:text-green-200 space-y-1">
+                <ul className="text-sm kones-text-green space-y-1">
                   <li>• Direct buses from Colombo (6-7 hours)</li>
                   <li>• Buses from Kandy via Dambulla (4 hours)</li>
                   <li>• Local bus fare to temple: Rs. 20-30</li>
@@ -865,19 +834,19 @@ export default function KoneswaramTempleGuide() {
               </CardContent>
             </Card>
 
-            <Card className="p-6 bg-purple-50 dark:bg-slate-800 border-purple-200 dark:border-slate-600">
+            <Card className="p-6 kones-box-purple">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl flex items-center text-purple-800 dark:text-purple-200">
+                <CardTitle className="text-xl flex items-center kones-title-purple">
                   <Train className="w-6 h-6 mr-2" />
                   By Train
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-purple-700 dark:text-purple-200 mb-3">
+                <p className="kones-text-purple mb-3">
                   The scenic train journey to Trincomalee is popular among tourists. The railway station is 
                   about 2 km from the temple.
                 </p>
-                <ul className="text-sm text-purple-700 dark:text-purple-200 space-y-1">
+                <ul className="text-sm kones-text-purple space-y-1">
                   <li>• Daily trains from Colombo Fort</li>
                   <li>• Journey time: 8-9 hours</li>
                   <li>• Beautiful coastal and rural scenery</li>
@@ -886,19 +855,19 @@ export default function KoneswaramTempleGuide() {
               </CardContent>
             </Card>
 
-            <Card className="p-6 bg-orange-50 dark:bg-orange-950 border-orange-200 dark:border-orange-800">
+            <Card className="p-6 kones-box-orange-deep">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl flex items-center text-orange-800 dark:text-orange-300">
+                <CardTitle className="text-xl flex items-center kones-title-orange">
                   <Plane className="w-6 h-6 mr-2" />
                   By Air
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-orange-700 dark:text-orange-400 mb-3">
+                <p className="kones-text-orange mb-3">
                   Trincomalee has a domestic airport with occasional flights. Most visitors fly into Colombo 
                   and take ground transportation.
                 </p>
-                <ul className="text-sm text-orange-700 dark:text-orange-400 space-y-1">
+                <ul className="text-sm kones-text-orange space-y-1">
                   <li>• China Bay Airport (domestic flights only)</li>
                   <li>• Mainly charter and private flights</li>
                   <li>• Airport to temple: 15 minutes by car</li>
@@ -1049,17 +1018,17 @@ export default function KoneswaramTempleGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Best Time to Visit Koneswaram Temple</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            <Card className="p-6 bg-green-50 dark:bg-slate-800 border-green-200 dark:border-slate-600">
+            <Card className="p-6 kones-box-green">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl text-green-800 dark:text-green-200">Dry Season</CardTitle>
-                <CardDescription className="text-green-700 dark:text-green-200">April - September</CardDescription>
+                <CardTitle className="text-xl kones-title-green">Dry Season</CardTitle>
+                <CardDescription className="kones-text-green">April - September</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-green-700 dark:text-green-200 mb-3">
+                <p className="kones-text-green mb-3">
                   The best time to visit with clear skies, calm seas, and excellent visibility for ocean views 
                   and photography. Ideal weather for temple exploration and nearby beach activities.
                 </p>
-                <ul className="text-sm text-green-700 dark:text-green-200 space-y-1">
+                <ul className="text-sm kones-text-green space-y-1">
                   <li>• Perfect weather for sightseeing</li>
                   <li>• Clear ocean views from temple</li>
                   <li>• Best for photography</li>
@@ -1068,17 +1037,17 @@ export default function KoneswaramTempleGuide() {
               </CardContent>
             </Card>
 
-            <Card className="p-6 bg-yellow-50 dark:bg-yellow-950 border-yellow-200 dark:border-yellow-800">
+            <Card className="p-6 kones-box-yellow-deep">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl text-yellow-800 dark:text-yellow-300">Festival Season</CardTitle>
-                <CardDescription className="text-yellow-700 dark:text-yellow-400">February - March</CardDescription>
+                <CardTitle className="text-xl kones-title-yellow">Festival Season</CardTitle>
+                <CardDescription className="kones-text-yellow">February - March</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-yellow-700 dark:text-yellow-400 mb-3">
+                <p className="kones-text-yellow mb-3">
                   Experience the temple during Maha Shivarathri for authentic cultural immersion, 
                   though expect larger crowds and book accommodation well in advance.
                 </p>
-                <ul className="text-sm text-yellow-700 dark:text-yellow-400 space-y-1">
+                <ul className="text-sm kones-text-yellow space-y-1">
                   <li>• Maha Shivarathri celebrations</li>
                   <li>• Cultural performances and processions</li>
                   <li>• Spiritual atmosphere at its peak</li>
@@ -1087,17 +1056,17 @@ export default function KoneswaramTempleGuide() {
               </CardContent>
             </Card>
 
-            <Card className="p-6 bg-blue-50 dark:bg-slate-800 border-blue-200 dark:border-slate-600">
+            <Card className="p-6 kones-box-blue">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl text-blue-800 dark:text-blue-200">Monsoon Season</CardTitle>
-                <CardDescription className="text-blue-700 dark:text-blue-200">October - January</CardDescription>
+                <CardTitle className="text-xl kones-title-blue">Monsoon Season</CardTitle>
+                <CardDescription className="kones-text-blue">October - January</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-blue-700 dark:text-blue-200 mb-3">
+                <p className="kones-text-blue mb-3">
                   Visit during this time for fewer crowds and dramatic cloudy skies, though rain may 
                   limit outdoor activities and ocean views may be restricted.
                 </p>
-                <ul className="text-sm text-blue-700 dark:text-blue-200 space-y-1">
+                <ul className="text-sm kones-text-blue space-y-1">
                   <li>• Fewer tourist crowds</li>
                   <li>• Dramatic cloudy skies</li>
                   <li>• Occasional heavy rainfall</li>
@@ -1113,61 +1082,61 @@ export default function KoneswaramTempleGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Cultural Guidelines and Tips</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <Card className="p-6 bg-purple-50 dark:bg-slate-800 border-purple-200 dark:border-slate-600">
+            <Card className="p-6 kones-box-purple">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl text-purple-800 dark:text-purple-200">Temple Etiquette</CardTitle>
+                <CardTitle className="text-xl kones-title-purple">Temple Etiquette</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-2">
-                    <CheckCircle className="h-5 w-5 text-purple-600 dark:text-purple-200 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-purple-700 dark:text-purple-200">Remove shoes before entering temple premises</span>
+                    <CheckCircle className="h-5 w-5 kones-icon-purple mt-0.5 flex-shrink-0" />
+                    <span className="text-sm kones-text-purple">Remove shoes before entering temple premises</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle className="h-5 w-5 text-purple-600 dark:text-purple-200 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-purple-700 dark:text-purple-200">Dress modestly - cover shoulders, arms, and legs</span>
+                    <CheckCircle className="h-5 w-5 kones-icon-purple mt-0.5 flex-shrink-0" />
+                    <span className="text-sm kones-text-purple">Dress modestly - cover shoulders, arms, and legs</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle className="h-5 w-5 text-purple-600 dark:text-purple-200 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-purple-700 dark:text-purple-200">Maintain respectful silence during prayer times</span>
+                    <CheckCircle className="h-5 w-5 kones-icon-purple mt-0.5 flex-shrink-0" />
+                    <span className="text-sm kones-text-purple">Maintain respectful silence during prayer times</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle className="h-5 w-5 text-purple-600 dark:text-purple-200 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-purple-700 dark:text-purple-200">Ask permission before photographing people</span>
+                    <CheckCircle className="h-5 w-5 kones-icon-purple mt-0.5 flex-shrink-0" />
+                    <span className="text-sm kones-text-purple">Ask permission before photographing people</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <CheckCircle className="h-5 w-5 text-purple-600 dark:text-purple-200 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-purple-700 dark:text-purple-200">Turn off mobile phones or keep on silent mode</span>
+                    <CheckCircle className="h-5 w-5 kones-icon-purple mt-0.5 flex-shrink-0" />
+                    <span className="text-sm kones-text-purple">Turn off mobile phones or keep on silent mode</span>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="p-6 bg-orange-50 dark:bg-orange-950 border-orange-200 dark:border-orange-800">
+            <Card className="p-6 kones-box-orange-deep">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl text-orange-800 dark:text-orange-300">Local Customs</CardTitle>
+                <CardTitle className="text-xl kones-title-orange">Local Customs</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-2">
-                    <Heart className="h-5 w-5 text-orange-600 dark:text-orange-400 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-orange-700 dark:text-orange-400">Greet with &quot;Vanakkam&quot; (traditional Tamil greeting)</span>
+                    <Heart className="h-5 w-5 kones-icon-orange-dk mt-0.5 flex-shrink-0" />
+                    <span className="text-sm kones-text-orange">Greet with &quot;Vanakkam&quot; (traditional Tamil greeting)</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <Heart className="h-5 w-5 text-orange-600 dark:text-orange-400 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-orange-700 dark:text-orange-400">Join hands in prayer position when greeting priests</span>
+                    <Heart className="h-5 w-5 kones-icon-orange-dk mt-0.5 flex-shrink-0" />
+                    <span className="text-sm kones-text-orange">Join hands in prayer position when greeting priests</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <Heart className="h-5 w-5 text-orange-600 dark:text-orange-400 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-orange-700 dark:text-orange-400">Accept prasadam (blessed food) with both hands</span>
+                    <Heart className="h-5 w-5 kones-icon-orange-dk mt-0.5 flex-shrink-0" />
+                    <span className="text-sm kones-text-orange">Accept prasadam (blessed food) with both hands</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <Heart className="h-5 w-5 text-orange-600 dark:text-orange-400 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-orange-700 dark:text-orange-400">Clockwise circumambulation around the main shrine</span>
+                    <Heart className="h-5 w-5 kones-icon-orange-dk mt-0.5 flex-shrink-0" />
+                    <span className="text-sm kones-text-orange">Clockwise circumambulation around the main shrine</span>
                   </div>
                   <div className="flex items-start space-x-2">
-                    <Heart className="h-5 w-5 text-orange-600 dark:text-orange-400 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-orange-700 dark:text-orange-400">Small donations are appreciated but not required</span>
+                    <Heart className="h-5 w-5 kones-icon-orange-dk mt-0.5 flex-shrink-0" />
+                    <span className="text-sm kones-text-orange">Small donations are appreciated but not required</span>
                   </div>
                 </div>
               </CardContent>
@@ -1180,15 +1149,15 @@ export default function KoneswaramTempleGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Where to Stay in Trincomalee</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            <Card className="p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 border-blue-200 dark:border-slate-600">
+            <Card className="p-6 kones-card-blue">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl text-blue-800 dark:text-blue-200">Luxury Hotels</CardTitle>
+                <CardTitle className="text-xl kones-title-blue">Luxury Hotels</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-blue-700 dark:text-blue-200 mb-4">
+                <p className="kones-text-blue mb-4">
                   High-end beach resorts and boutique hotels offering premium comfort and services.
                 </p>
-                <ul className="text-sm text-blue-700 dark:text-blue-200 space-y-2">
+                <ul className="text-sm kones-text-blue space-y-2">
                   <li>• <strong>Anantamaa Resort:</strong> Luxury beachfront resort with spa</li>
                   <li>• <strong>Trinco Blu by Cinnamon:</strong> Premium beach hotel</li>
                   <li>• <strong>Uga Jungle Beach:</strong> Eco-luxury resort experience</li>
@@ -1197,15 +1166,15 @@ export default function KoneswaramTempleGuide() {
               </CardContent>
             </Card>
 
-            <Card className="p-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900 border-green-200 dark:border-slate-600">
+            <Card className="p-6 kones-card-green">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl text-green-800 dark:text-green-200">Mid-Range Options</CardTitle>
+                <CardTitle className="text-xl kones-title-green">Mid-Range Options</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-green-700 dark:text-green-200 mb-4">
+                <p className="kones-text-green mb-4">
                   Comfortable hotels and guesthouses offering good value for money and quality service.
                 </p>
-                <ul className="text-sm text-green-700 dark:text-green-200 space-y-2">
+                <ul className="text-sm kones-text-green space-y-2">
                   <li>• <strong>The Chaaya Blu:</strong> Beachfront hotel with modern amenities</li>
                   <li>• <strong>Hotel Club Oceanic:</strong> Popular choice near temple</li>
                   <li>• <strong>Nilaveli Beach Hotel:</strong> Traditional beachside location</li>
@@ -1214,15 +1183,15 @@ export default function KoneswaramTempleGuide() {
               </CardContent>
             </Card>
 
-            <Card className="p-6 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950 dark:to-purple-900 border-purple-200 dark:border-slate-600">
+            <Card className="p-6 kones-card-purple">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl text-purple-800 dark:text-purple-200">Budget Friendly</CardTitle>
+                <CardTitle className="text-xl kones-title-purple">Budget Friendly</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-purple-700 dark:text-purple-200 mb-4">
+                <p className="kones-text-purple mb-4">
                   Affordable guesthouses and hostels perfect for budget travelers and backpackers.
                 </p>
-                <ul className="text-sm text-purple-700 dark:text-purple-200 space-y-2">
+                <ul className="text-sm kones-text-purple space-y-2">
                   <li>• <strong>Trincomalee Rest House:</strong> Government rest house option</li>
                   <li>• <strong>Sea View Hotel:</strong> Basic accommodation near harbor</li>
                   <li>• <strong>Local guesthouses:</strong> Family-run establishments</li>
@@ -1235,84 +1204,92 @@ export default function KoneswaramTempleGuide() {
 
         {/* FAQ Section */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Frequently Asked Questions</h2>
-          <div className="space-y-6">
-            
-            <Card className="p-6">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg">Is Koneswaram Temple suitable for non-Hindu visitors?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Yes, absolutely! Koneswaram Temple welcomes visitors of all faiths and backgrounds. Non-Hindu 
-                  visitors are encouraged to explore the temple, enjoy the stunning ocean views, and learn about 
-                  Tamil culture and Hindu traditions. Simply follow basic respect guidelines like modest dress and 
-                  removing shoes before entering.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-foreground mb-3">Frequently Asked Questions</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Everything you need to know before visiting Koneswaram Temple</p>
+          </div>
 
-            <Card className="p-6">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg">How long should I plan for a temple visit?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Allow 2-3 hours for a comprehensive visit. This includes exploring the main temple (30-45 minutes), 
-                  visiting Lover&apos;s Leap (30 minutes), taking photographs and enjoying ocean views (45 minutes), 
-                  and exploring Fort Frederick if desired (30-45 minutes). Add extra time during festival periods 
-                  or if you want to participate in prayer ceremonies.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-            <Card className="p-6">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg">Are there guided tours available?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Local guides are usually available at the temple entrance, especially during peak tourist seasons. 
-                  Many speak English and can provide detailed information about the temple&apos;s history, architecture, 
-                  and religious significance. Tour guide fees typically range from Rs. 1,000-2,500 depending on 
-                  group size and tour length. Hotels can also arrange professional guided tours.
+            {/* Q1 */}
+            <div className="flex gap-4 p-6 rounded-xl border bg-card shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center font-bold text-sm">
+                01
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground mb-2 leading-snug">Is Koneswaram Temple suitable for non-Hindu visitors?</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Yes, absolutely. The temple welcomes visitors of all faiths. Simply follow basic respect guidelines 
+                  modest dress, removing shoes before entering, and respectful silence during prayer times.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="p-6">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg">What facilities are available at the temple?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Basic facilities include restrooms, drinking water, shoe storage areas, and small shops selling 
-                  religious items and refreshments. However, facilities are limited, so it&apos;s advisable to bring 
-                  water, snacks, and any necessary items. The nearest restaurants and hotels are in Trincomalee town, 
-                  about 2-3 km away.
+            {/* Q2 */}
+            <div className="flex gap-4 p-6 rounded-xl border bg-card shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-sm">
+                02
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground mb-2 leading-snug">How long should I plan for a temple visit?</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Allow <strong>2–3 hours</strong> for a comprehensive visit main temple (30–45 min), Lover&apos;s Leap (30 min), 
+                  ocean views &amp; photography (45 min), and Fort Frederick if desired (30–45 min). Add extra time during festivals.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="p-6">
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg">Is the temple accessible for people with mobility challenges?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  The temple has some challenges for visitors with mobility issues due to its clifftop location and 
-                  stone steps. However, the main temple area is relatively accessible, and the stunning ocean views 
-                  can be enjoyed from several vantage points. It&apos;s recommended to contact the temple authorities in 
-                  advance to discuss specific accessibility needs and possible assistance.
+            {/* Q3 */}
+            <div className="flex gap-4 p-6 rounded-xl border bg-card shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center font-bold text-sm">
+                03
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground mb-2 leading-snug">Are there guided tours available?</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Local English-speaking guides are available at the temple entrance during peak seasons. Guide fees 
+                  typically range from <strong>Rs. 1,000–2,500</strong> depending on group size. Hotels in Trincomalee can also 
+                  arrange professional guided tours.
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
+
+            {/* Q4 */}
+            <div className="flex gap-4 p-6 rounded-xl border bg-card shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-100 text-green-700 flex items-center justify-center font-bold text-sm">
+                04
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground mb-2 leading-snug">What facilities are available at the temple?</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Basic facilities include restrooms, drinking water, shoe storage, and small shops for religious items 
+                  and refreshments. It&apos;s advisable to bring water and snacks. The nearest restaurants are in 
+                  Trincomalee town, approximately <strong>2–3 km</strong> away.
+                </p>
+              </div>
+            </div>
+
+            {/* Q5 */}
+            <div className="flex gap-4 p-6 rounded-xl border bg-card shadow-sm hover:shadow-md transition-shadow lg:col-span-2">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-sm">
+                05
+              </div>
+              <div>
+                <h3 className="font-semibold text-foreground mb-2 leading-snug">Is the temple accessible for people with mobility challenges?</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  The clifftop location and stone steps present some challenges. However, the main temple area is 
+                  relatively accessible and the ocean views can be enjoyed from several vantage points. Contact 
+                  temple authorities in advance to discuss specific accessibility needs and available assistance.
+                </p>
+              </div>
+            </div>
+
           </div>
         </section>
 
         {/* Call to Action */}
         <section className="text-center mb-12">
-          <Card className="p-8 bg-gradient-to-r from-blue-50 via-purple-50 to-orange-50 dark:from-blue-950 dark:via-purple-950 dark:to-orange-950 border border-gray-200 dark:border-gray-800">
+          <Card className="p-8 kones-final-card border">
             <CardHeader>
               <CardTitle className="text-3xl font-bold text-center mb-4">Plan Your Sacred Journey to Koneswaram Temple</CardTitle>
               <CardDescription className="text-lg text-center max-w-3xl mx-auto">
