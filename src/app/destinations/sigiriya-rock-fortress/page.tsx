@@ -115,7 +115,7 @@ export default function SigiriyaTravelGuide() {
 
                 <Link
                   href="/articles/how-to-save-from-bees-hornets-attack"
-                  className="inline-block px-3 py-1 text-xs font-medium theme-notice-text bg-amber-300 rounded-full hover:bg-amber-200 transition-colors"
+                  className="inline-block px-3 py-1 text-xs font-medium bg-amber-300 text-amber-900 dark:bg-amber-600 dark:text-amber-50 rounded-full hover:bg-amber-200 dark:hover:bg-amber-500 transition-colors"
                 >
                   🐝 Safety Tips: Hornet & Bee Attacks
                 </Link>
