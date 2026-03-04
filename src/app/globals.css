@@ -852,6 +852,7 @@ body {
 .dark .kandy-text-red-dk { color: #f87171; }
 .dark .kandy-text-pink   { color: #f472b6; }
 .dark .kandy-text-yellow { color: #facc15; }
+.dark .kandy-text-teal   { color: #5eead4; }
 
 /* Backgrounds */
 .dark .kandy-bg-n8          { background-color: rgb(38 38 38 / 0.8); }
@@ -860,7 +861,10 @@ body {
 .dark .kandy-bg-orange      { background-color: rgb(124 45 18 / 0.2); }
 .dark .kandy-bg-purple      { background-color: rgb(88 28 135 / 0.2); }
 .dark .kandy-bg-amber       { background-color: rgb(120 53 15 / 0.2); }
+.dark .kandy-bg-yellow      { background-color: rgb(113 63 18 / 0.2); }
 .dark .kandy-bg-red         { background-color: rgb(127 29 29 / 0.2); }
+.dark .kandy-bg-gray        { background-color: rgb(55 65 81 / 0.2); }
+.dark .kandy-bg-teal        { background-color: rgb(19 78 74 / 0.2); }
 .dark .kandy-bg-orange-dk   { background-color: rgb(154 52 18 / 0.3); }
 .dark .kandy-bg-blue-solid  { background-color: #3b82f6; }
 
