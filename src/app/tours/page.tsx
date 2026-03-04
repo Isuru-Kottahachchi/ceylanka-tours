@@ -231,7 +231,7 @@ function ImageSlideshow({ images, alt }: { images: string[], alt: string }) {
 
 export default function ToursPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+    <div className="min-h-screen dest-page-bg">
       {/* Hero Section */}
       <section className="relative h-[60vh] overflow-hidden">
         <div className="absolute inset-0">
@@ -428,11 +428,11 @@ export default function ToursPage() {
 
         {/* What's Included Section */}
         <section className="mb-16">
-          <div className="bg-white dark:bg-slate-800 rounded-lg p-8 max-w-4xl mx-auto">
+          <div className="bg-background rounded-lg p-8 max-w-4xl mx-auto border">
             <h2 className="text-2xl font-bold mb-6 text-center">What's Included in Our Tours</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start gap-3">
-                <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded-lg">
+                <div className="bg-green-100 p-2 rounded-lg">
                   <Car className="w-5 h-5 text-green-600" />
                 </div>
                 <div>
@@ -442,7 +442,7 @@ export default function ToursPage() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="bg-blue-100 dark:bg-blue-900/30 p-2 rounded-lg">
+                <div className="bg-blue-100 p-2 rounded-lg">
                   <Users className="w-5 h-5 text-blue-600" />
                 </div>
                 <div>
@@ -452,7 +452,7 @@ export default function ToursPage() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="bg-orange-100 dark:bg-orange-900/30 p-2 rounded-lg">
+                <div className="bg-orange-100 p-2 rounded-lg">
                   <Utensils className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>
@@ -462,7 +462,7 @@ export default function ToursPage() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="bg-purple-100 dark:bg-purple-900/30 p-2 rounded-lg">
+                <div className="bg-purple-100 p-2 rounded-lg">
                   <Hotel className="w-5 h-5 text-purple-600" />
                 </div>
                 <div>
