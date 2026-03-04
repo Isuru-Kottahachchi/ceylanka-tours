@@ -25,7 +25,7 @@ export default function TrincomaleeTravelGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Trincomalee</h1>
+          <h1 className="hero-text-shadow text-4xl md:text-6xl font-extrabold mb-4 leading-[1.1] tracking-tight">Trincomalee</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Eastern Coastal Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
@@ -44,13 +44,13 @@ export default function TrincomaleeTravelGuide() {
         </div>
       </section>
       {/* Section Navigation */}
-      <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
+      <nav className="sticky top-0 z-20 bg-background/80 backdrop-blur border-b border-gray-200/50">
         <div className="max-w-6xl mx-auto flex flex-wrap gap-2 px-4 py-2 justify-center">
-          <a href="#introduction" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Introduction</a>
-          <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Quick Facts</a>
-          <a href="#how-to-get" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">How to Get There</a>
-          <a href="#attractions" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">Top Attractions</a>
-          <a href="#more-places" className="px-3 py-1 rounded-full font-medium text-cyan-700 dark:text-cyan-200 hover:bg-cyan-100 dark:hover:bg-cyan-900 transition">More Places</a>
+          <a href="#introduction" className="px-3 py-1 rounded-full font-medium trinco-nav-link transition">Introduction</a>
+          <a href="#quick-facts" className="px-3 py-1 rounded-full font-medium trinco-nav-link transition">Quick Facts</a>
+          <a href="#how-to-get" className="px-3 py-1 rounded-full font-medium trinco-nav-link transition">How to Get There</a>
+          <a href="#attractions" className="px-3 py-1 rounded-full font-medium trinco-nav-link transition">Top Attractions</a>
+          <a href="#more-places" className="px-3 py-1 rounded-full font-medium trinco-nav-link transition">More Places</a>
         </div>
       </nav>
 
@@ -137,9 +137,9 @@ export default function TrincomaleeTravelGuide() {
                 </div>
                 {/* Valuable Fact for Desktop */}
                 <div className="hidden lg:block mt-6 space-y-4">
-                  <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
-                    <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">💡 Travel Tips</h4>
-                    <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                  <div className="mt-6 p-4 trinco-box-blue-alt rounded-lg">
+                    <h4 className="font-semibold mb-2 trinco-title-blue">💡 Travel Tips</h4>
+                    <ul className="text-sm theme-text-muted space-y-1">
                       <li>• Trincomalee is typically hot and humid, so dress accordingly</li>
                       <li>• Carry water and snacks for the journey</li>
                       <li>• Book accommodations in advance during peak season</li>
@@ -164,7 +164,7 @@ export default function TrincomaleeTravelGuide() {
           <section className="flex-1">
             <Card className="border-l-4 border-blue-500 scroll-mt-40" id="how-to-get">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                <CardTitle className="flex items-center gap-2 trinco-title-blue">
                   <MapPin className="w-5 h-5" />
                   How to Get to Trincomalee
                 </CardTitle>
@@ -172,7 +172,7 @@ export default function TrincomaleeTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <h4 className="font-semibold mb-3 trinco-title-blue">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Distance:</strong> 257km (127 miles) from Colombo</li>
                       <li>• <strong>Route:</strong>Colombo → Kurunegala → Dambulla → Habarana → Trincomalee</li>
@@ -180,7 +180,7 @@ export default function TrincomaleeTravelGuide() {
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul><div>
                       <br></br>
-                      <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Air (Fastest)</h4>
+                      <h4 className="font-semibold mb-3 trinco-title-blue">By Air (Fastest)</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• <strong>Airport:</strong> China Bay Airport (military, limited civilian use)</li>
                         <li>• <strong>Duration:</strong> 45 minutes flight</li>
@@ -190,14 +190,14 @@ export default function TrincomaleeTravelGuide() {
 
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <h4 className="font-semibold mb-3 trinco-title-blue">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong>Colombo → Kurunegala → Dambulla → Habarana → Trincomalee</li>
                       <li>• <strong>Duration:</strong> 6-7 hours</li>
                       <li>• <strong>Frequency:</strong> Multiple departures daily</li>
                     </ul>
 
-                    <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Train</h4>
+                    <h4 className="font-semibold mb-3 mt-6 trinco-title-blue">By Train</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo Fort → Trincomalee</li>
                       <li>• <strong>Duration:</strong> 6-7 hours</li>
@@ -207,34 +207,34 @@ export default function TrincomaleeTravelGuide() {
                 </div>
 
                 {/* Full Width Ceylanka Tours Recommendation */}
-                <div className="mt-6 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
-                  <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                <div className="mt-6 p-3 trinco-box-orange-tip rounded-lg border-l-4 border-orange-500 shadow-md">
+                  <p className="text-xs trinco-title-orange mb-2">
                     <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Trincomalee. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                   </p>
-                  <div className="flex flex-col gap-1.5 text-xs text-orange-800 dark:text-orange-200">
-                    <div className="flex items-center gap-2 py-1.5 px-2 bg-white/50 dark:bg-slate-600/50 rounded">
+                  <div className="flex flex-col gap-1.5 text-xs trinco-title-orange">
+                    <div className="flex items-center gap-2 py-1.5 px-2 trinco-box-orange-inner rounded">
                       <span>📞</span>
                       <span><strong>Contact:</strong></span>
-                      <a href="tel:+94707646765" className="underline hover:text-orange-700 dark:hover:text-orange-300">
+                      <a href="tel:+94707646765" className="underline hover:text-orange-700">
                         Call +94 70 764 6765
                       </a>
                       <span>|</span>
-                      <a href="https://wa.me/94707646765" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-700 dark:hover:text-orange-300 flex items-center gap-1">
+                      <a href="https://wa.me/94707646765" target="_blank" rel="noopener noreferrer" className="underline hover:text-orange-700 flex items-center gap-1">
                         <svg className="w-4 h-4" fill="#25D366" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                         </svg>
                         WhatsApp
                       </a>
                     </div>
-                    <div className="flex items-center gap-2 py-1.5 px-2 bg-white/50 dark:bg-slate-600/50 rounded hover:bg-white/70 dark:hover:bg-slate-600/70 transition-colors">
+                    <div className="flex items-center gap-2 py-1.5 px-2 trinco-box-orange-inner rounded transition-colors">
                       <span>🗓️</span>
-                      <Link href="/tours/east-coast" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                      <Link href="/tours/east-coast" className="underline hover:text-orange-700 focus:text-orange-700">
                         <strong>Trincomalee Exploration Tour</strong> - Click for details & booking
                       </Link>
                     </div>
-                    <div className="flex items-center gap-2 py-1.5 px-2 bg-white/50 dark:bg-slate-600/50 rounded hover:bg-white/70 dark:hover:bg-slate-600/70 transition-colors">
+                    <div className="flex items-center gap-2 py-1.5 px-2 trinco-box-orange-inner rounded transition-colors">
                       <span>✈️</span>
-                      <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                      <Link href="/airport-transfers" className="underline hover:text-orange-700 focus:text-orange-700">
                         <strong>Airport Transfer Services</strong> - Click for details & booking
                       </Link>
                     </div>
@@ -310,17 +310,17 @@ export default function TrincomaleeTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-purple-50 dark:bg-purple-950/50 rounded-lg border-l-4 border-purple-400">
-                  <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">Visitor Information:</h4>
-                  {/* <p className="text-sm text-purple-700 dark:text-purple-300 mb-2">
+                <div className="mt-6 p-4 trinco-box-purple rounded-lg border-l-4 border-purple-400">
+                  <h4 className="font-semibold trinco-title-purple mb-2">Visitor Information:</h4>
+                  {/* <p className="text-sm trinco-text-purple mb-2">
                     <strong>Entry Fee:</strong> Small nominal charge for maintenance.
 
                   </p> */}
-                  <p className="text-sm text-purple-700 dark:text-purple-300 mb-2">
+                  <p className="text-sm trinco-text-purple mb-2">
                     <strong>Best Time:</strong> Early morning or late afternoon to avoid crowds.
                   </p>
 
-                  <p className="text-sm text-purple-700 dark:text-purple-300">
+                  <p className="text-sm trinco-text-purple">
                     <strong>Note:</strong> Part of an active military base; some areas may be restricted.
                   </p>
                 </div>
@@ -388,9 +388,9 @@ export default function TrincomaleeTravelGuide() {
                 {/* Extended Historical & Cultural Details */}
                 <div className="mt-8 space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="p-4 bg-purple-50 dark:bg-purple-950/50 rounded-lg border-l-4 border-purple-400">
-                      <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-3">Ancient History & Legends</h4>
-                      <div className="text-sm text-purple-700 dark:text-purple-300 space-y-2">
+                    <div className="p-4 trinco-box-purple rounded-lg border-l-4 border-purple-400">
+                      <h4 className="font-semibold trinco-title-purple mb-3">Ancient History & Legends</h4>
+                      <div className="text-sm trinco-text-purple space-y-2">
                         <p>
                           <strong>Ramayana Connection:</strong> According to legend, King Ravana&apos;s mother Kaikasi
                           worshipped Lord Shiva at this very spot, making it one of the most ancient religious sites in Asia.
@@ -406,9 +406,9 @@ export default function TrincomaleeTravelGuide() {
                       </div>
                     </div>
 
-                    <div className="p-4 bg-blue-50 dark:bg-blue-950/50 rounded-lg border-l-4 border-blue-400">
-                      <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">Architectural Marvels</h4>
-                      <div className="text-sm text-blue-700 dark:text-blue-300 space-y-2">
+                    <div className="p-4 trinco-box-blue rounded-lg border-l-4 border-blue-400">
+                      <h4 className="font-semibold trinco-title-blue mb-3">Architectural Marvels</h4>
+                      <div className="text-sm trinco-text-blue space-y-2">
                         <p>
                           <strong>Gopuram Design:</strong> The 7-tiered tower follows traditional South Indian
                           Dravidian architecture with over 1,000 individual sculptural elements.
@@ -425,9 +425,9 @@ export default function TrincomaleeTravelGuide() {
                     </div>
                   </div>
 
-                  <div className="p-4 bg-green-50 dark:bg-green-950/50 rounded-lg border-l-4 border-green-400">
-                    <h4 className="font-semibold text-green-800 dark:text-green-200 mb-3">Religious Significance & Festivals</h4>
-                    <div className="grid md:grid-cols-2 gap-4 text-sm text-green-700 dark:text-green-300">
+                  <div className="p-4 trinco-box-green rounded-lg border-l-4 border-green-400">
+                    <h4 className="font-semibold trinco-title-green mb-3">Religious Significance & Festivals</h4>
+                    <div className="grid md:grid-cols-2 gap-4 text-sm trinco-text-green">
                       <div>
                         <p className="mb-2"><strong>Major Festivals:</strong></p>
                         <ul className="space-y-1">
@@ -449,9 +449,9 @@ export default function TrincomaleeTravelGuide() {
                     </div>
                   </div>
 
-                  <div className="p-4 bg-red-50 dark:bg-red-950/50 rounded-lg border-l-4 border-red-400">
-                    <h4 className="font-semibold text-red-800 dark:text-red-200 mb-3">Colonial Period & Reconstruction</h4>
-                    <div className="text-sm text-red-700 dark:text-red-300 space-y-2">
+                  <div className="p-4 trinco-box-red rounded-lg border-l-4 border-red-400">
+                    <h4 className="font-semibold trinco-title-red mb-3">Colonial Period & Reconstruction</h4>
+                    <div className="text-sm trinco-text-red space-y-2">
                       <p>
                         <strong>Portuguese Destruction (1622):</strong> The original temple complex was systematically
                         destroyed on April 14, 1622 by Portuguese colonizers who built Fort Frederick using the temple stones. Many
@@ -470,9 +470,9 @@ export default function TrincomaleeTravelGuide() {
                   </div>
                 </div>
 
-                <div className="mt-6 p-4 bg-orange-50 dark:bg-orange-950/50 rounded-lg border-l-4 border-orange-400">
-                  <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-2">Visitor Experience & Practical Information</h4>
-                  <div className="grid md:grid-cols-2 gap-4 text-sm text-orange-700 dark:text-orange-300">
+                <div className="mt-6 p-4 trinco-box-orange rounded-lg border-l-4 border-orange-400">
+                  <h4 className="font-semibold trinco-title-orange mb-2">Visitor Experience & Practical Information</h4>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm trinco-text-orange">
                     <div>
                       <p className="mb-2"><strong>Best Times to Visit:</strong></p>
                       <ul className="space-y-1">
@@ -495,9 +495,9 @@ export default function TrincomaleeTravelGuide() {
                 </div>
 
                 {/* Lover's Leap Information */}
-                <div className="mt-6 p-4 bg-indigo-50 dark:bg-indigo-950/50 rounded-lg border-l-4 border-indigo-400">
-                  <h4 className="font-semibold text-indigo-800 dark:text-indigo-200 mb-3">🌊 Lover&apos;s Leap - The Dramatic Cliff</h4>
-                  <div className="text-sm text-indigo-700 dark:text-indigo-300 space-y-2">
+                <div className="mt-6 p-4 trinco-box-indigo rounded-lg border-l-4 border-indigo-400">
+                  <h4 className="font-semibold trinco-title-indigo mb-3">🌊 Lover&apos;s Leap - The Dramatic Cliff</h4>
+                  <div className="text-sm trinco-text-indigo space-y-2">
                     <p>
                       <strong>Historic Tragedy:</strong> Just beside Koneswaram Temple lies the famous Lover&apos;s Leap,
                       a dramatic cliff where according to legend, a Dutch officer&apos;s daughter and her native lover
@@ -509,7 +509,7 @@ export default function TrincomaleeTravelGuide() {
                       and witnessing the raw power of waves crashing against the rocks below.
                     </p>
                     <p className="flex items-center gap-2">
-                      <span className="text-amber-600 dark:text-amber-400">⚠️</span>
+                      <span className="text-amber-600">⚠️</span>
                       <strong>Safety Note:</strong> Exercise extreme caution near the cliff edge. Strong winds and
                       unstable footing make this area potentially dangerous.
                     </p>
@@ -520,7 +520,7 @@ export default function TrincomaleeTravelGuide() {
                 <div className="mt-6 text-center">
                   <Link href="/destinations/koneswaram-temple-trincomalee">
                     <Button
-                      className="mt-2 bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white border-none cursor-pointer"
+                      className="mt-2 bg-blue-600 text-white hover:bg-blue-700  border-none cursor-pointer"
                       variant="default"
                     >
                       See More Details About Koneswaram Temple
@@ -586,9 +586,9 @@ export default function TrincomaleeTravelGuide() {
                     ]}
                   />
                 </div>
-                <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950/50 rounded-lg border-l-4 border-blue-400">
-                  <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Harbour Activities:</h4>
-                  <ul className="text-sm text-blue-700 dark:text-blue-300 space-y-1">
+                <div className="mt-6 p-4 trinco-box-blue rounded-lg border-l-4 border-blue-400">
+                  <h4 className="font-semibold trinco-title-blue mb-2">Harbour Activities:</h4>
+                  <ul className="text-sm trinco-text-blue space-y-1">
                     <li>• Boat tours to explore the harbour&apos;s hidden coves and bays</li>
                     <li>• Sport fishing for marlin, tuna, and other deep-sea species</li>
                     <li>• Sunset cruises with spectacular views of the coastline</li>
@@ -805,9 +805,9 @@ export default function TrincomaleeTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-green-50 dark:bg-green-950/50 rounded-lg border-l-4 border-green-400">
-                  <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">Marine Life Highlights:</h4>
-                  <div className="grid md:grid-cols-2 gap-4 text-sm text-green-700 dark:text-green-300">
+                <div className="mt-6 p-4 trinco-box-green rounded-lg border-l-4 border-green-400">
+                  <h4 className="font-semibold trinco-title-green mb-2">Marine Life Highlights:</h4>
+                  <div className="grid md:grid-cols-2 gap-4 text-sm trinco-text-green">
                     <div>
                       <p className="mb-2"><strong>Fish Species:</strong></p>
                       <ul className="space-y-1">
@@ -903,13 +903,13 @@ export default function TrincomaleeTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-purple-50 dark:bg-purple-950/50 rounded-lg border-l-4 border-purple-400">
-                  <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">Visitor Information:</h4>
-                  <p className="text-sm text-purple-700 dark:text-purple-300 mb-2">
+                <div className="mt-6 p-4 trinco-box-purple rounded-lg border-l-4 border-purple-400">
+                  <h4 className="font-semibold trinco-title-purple mb-2">Visitor Information:</h4>
+                  <p className="text-sm trinco-text-purple mb-2">
                     <strong>Entry Fee:</strong> Small nominal charge for maintenance.
                     <strong>Best Time:</strong> Early morning or late afternoon to avoid crowds.
                   </p>
-                  <p className="text-sm text-purple-700 dark:text-purple-300">
+                  <p className="text-sm trinco-text-purple">
                     <strong>Note:</strong> Bring a towel and change of clothes. Photography is allowed but be respectful
                     of pilgrims and religious activities. The water is safe for bathing.
                   </p>
@@ -991,9 +991,9 @@ export default function TrincomaleeTravelGuide() {
                     ]}
                   />
                 </div>
-                <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-950/50 rounded-lg border-l-4 border-amber-400">
-                  <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">Cultural Significance:</h4>
-                  <p className="text-sm text-amber-700 dark:text-amber-300">
+                <div className="mt-6 p-4 trinco-box-amber rounded-lg border-l-4 border-amber-400">
+                  <h4 className="font-semibold trinco-title-amber mb-2">Cultural Significance:</h4>
+                  <p className="text-sm trinco-text-amber">
                     This stupa marks the beginning of Buddhism in Sri Lanka and represents over 2,300 years of continuous
                     religious tradition. Visitors often combine their visit with nearby Koneswaram Temple to experience
                     both Buddhist and Hindu heritage in one trip.
@@ -1127,9 +1127,9 @@ export default function TrincomaleeTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-slate-50 dark:bg-slate-950/50 rounded-lg border-l-4 border-slate-400">
-                  <h4 className="font-semibold text-slate-800 dark:text-slate-200 mb-2">Visitor Information:</h4>
-                  <div className="text-sm text-slate-700 dark:text-slate-300 space-y-2">
+                <div className="mt-6 p-4 trinco-box-slate rounded-lg border-l-4 border-slate-400">
+                  <h4 className="font-semibold trinco-title-slate mb-2">Visitor Information:</h4>
+                  <div className="text-sm trinco-text-slate space-y-2">
                     <p><strong>Historical Context:</strong> Trincomalee served as a major Allied naval base during WWII. The Japanese
                       Indian Ocean Raid in April 1942 targeted the harbor and airfield, resulting in casualties among defending forces.</p>
                     <p><strong>Etiquette:</strong> Please maintain respectful behavior, speak quietly, and dress modestly. This is an active
@@ -1202,9 +1202,9 @@ export default function TrincomaleeTravelGuide() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950/50 rounded-lg border-l-4 border-blue-400">
-                  <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Visitor Tips:</h4>
-                  <div className="text-sm text-blue-700 dark:text-blue-300 space-y-1">
+                <div className="mt-6 p-4 trinco-box-blue rounded-lg border-l-4 border-blue-400">
+                  <h4 className="font-semibold trinco-title-blue mb-2">Visitor Tips:</h4>
+                  <div className="text-sm trinco-text-blue space-y-1">
                     <p><strong>Best Time:</strong> Early morning (6:00-8:00 AM) or late afternoon (4:30-6:30 PM) for best lighting and cooler temperatures</p>
                     <p><strong>Photography:</strong> Wide-angle lens recommended to capture the full span of the bridge and surrounding water</p>
                     <p><strong>Safety:</strong> Be cautious of traffic when taking photos from the bridge</p>
@@ -1542,7 +1542,7 @@ export default function TrincomaleeTravelGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Marble-Beach.jpg"
                     alt="Marble Beach showing smooth rocks and clear turquoise waters"
                     width={400}
                     height={300}
@@ -1613,9 +1613,9 @@ export default function TrincomaleeTravelGuide() {
                 typically last 3-4 hours and have high success rates for sightings, especially of blue whales - the
                 largest animals on Earth.
               </p>
-              <div className="bg-blue-50 dark:bg-blue-950/50 p-4 rounded-lg">
-                <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">What You Might See:</h4>
-                <ul className="text-sm text-blue-700 dark:text-blue-300 space-y-1">
+              <div className="trinco-box-blue p-4 rounded-lg">
+                <h4 className="font-semibold trinco-title-blue mb-2">What You Might See:</h4>
+                <ul className="text-sm trinco-text-blue space-y-1">
                   <li>• Blue whales (largest animals on Earth)</li>
                   <li>• Sperm whales and pilot whales</li>
                   <li>• Spinner and bottlenose dolphins</li>
@@ -1993,9 +1993,9 @@ export default function TrincomaleeTravelGuide() {
 
         {/* Final Tips */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-blue-50 to-teal-50 dark:from-blue-950/50 dark:to-teal-950/50 border-blue-200 dark:border-blue-800">
+          <Card className="trinco-final-card">
             <CardHeader>
-              <CardTitle className="text-blue-800 dark:text-blue-200">Your Trincomalee Adventure</CardTitle>
+              <CardTitle className="trinco-final-title">Your Trincomalee Adventure</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
