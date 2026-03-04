@@ -114,95 +114,78 @@ export default function TempleOfToothKandyGuide() {
 
         {/* Enhanced Quick Facts */}
         <section className="mb-16">
-          <Card className="border-2 border-yellow-200 dark:border-yellow-700 bg-gradient-to-br from-yellow-50 to-amber-50 dark:from-yellow-900/20 dark:to-amber-900/20">
+          <Card>
             <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-3xl">
-                <Crown className="w-8 h-8 text-yellow-500" />
-                Essential Temple Information
-              </CardTitle>
+              <CardTitle>Essential Temple Information</CardTitle>
+              <CardDescription>Key facts about Sri Lanka&apos;s most sacred Buddhist site</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="space-y-4">
-                  <h4 className="font-semibold text-xl text-yellow-700 dark:text-yellow-300 mb-4">Sacred Heritage</h4>
-                  <div className="flex items-center gap-3">
-                    <Crown className="w-5 h-5 text-yellow-500" />
-                    <span>
-                      <strong>Relic:</strong> Buddha&apos;s Sacred Tooth (313 CE)
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Star className="w-5 h-5 text-yellow-500" />
-                    <span>
-                      <strong>Status:</strong> UNESCO World Heritage Site
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Users className="w-5 h-5 text-orange-500" />
-                    <span>
-                      <strong>Significance:</strong> Most sacred Buddhist site
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5 text-red-500" />
-                    <span>
-                      <strong>Location:</strong> Central Kandy, beside lake
-                    </span>
-                  </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* Sacred Heritage */}
+                <div className="bg-yellow-50 kandy-bg-yellow p-4 rounded-lg">
+                  <h4 className="font-semibold text-yellow-800 kandy-text-yellow mb-3">Sacred Heritage</h4>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                     
+                      <span><strong>Relic:</strong> Buddha&apos;s Sacred Tooth (313 CE)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                    
+                      <span><strong>Status:</strong> UNESCO World Heritage Site</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                   
+                      <span><strong>Significance:</strong> Most sacred Buddhist site</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                   
+                      <span><strong>Location:</strong> Central Kandy, beside lake</span>
+                    </li>
+                  </ul>
                 </div>
-                <div className="space-y-4">
-                  <h4 className="font-semibold text-xl text-blue-700 dark:text-blue-300 mb-4">Architecture & Art</h4>
-                  <div className="flex items-center gap-3">
-                    <TreePine className="w-5 h-5 text-green-500" />
-                    <span>
-                      <strong>Style:</strong> Traditional Kandyan architecture
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Star className="w-5 h-5 text-purple-500" />
-                    <span>
-                      <strong>Features:</strong> Golden roof, carved pillars
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Camera className="w-5 h-5 text-blue-500" />
-                    <span>
-                      <strong>Artwork:</strong> Ancient frescoes and carvings
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Crown className="w-5 h-5 text-gold-500" />
-                    <span>
-                      <strong>Period:</strong> 1687-1815 (Kandyan era)
-                    </span>
-                  </div>
+                {/* Architecture & Art */}
+                <div className="bg-blue-50 kandy-bg-blue p-4 rounded-lg">
+                  <h4 className="font-semibold text-blue-800 kandy-text-blue mb-3">Architecture &amp; Art</h4>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                    
+                      <span><strong>Style:</strong> Traditional Kandyan architecture</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                    
+                      <span><strong>Features:</strong> Golden roof, carved pillars</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                    
+                      <span><strong>Artwork:</strong> Ancient frescoes and carvings</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                   
+                      <span><strong>Period:</strong> 1687–1815 (Kandyan era)</span>
+                    </li>
+                  </ul>
                 </div>
-                <div className="space-y-4">
-                  <h4 className="font-semibold text-xl text-purple-700 dark:text-purple-300 mb-4">Visitor Information</h4>
-                  <div className="flex items-center gap-3">
-                    <Clock className="w-5 h-5 text-green-500" />
-                    <span>
-                      <strong>Hours:</strong> 5:30 AM - 8:00 PM daily
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Users className="w-5 h-5 text-blue-500" />
-                    <span>
-                      <strong>Dress Code:</strong> Conservative, white preferred
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Camera className="w-5 h-5 text-red-500" />
-                    <span>
-                      <strong>Photography:</strong> Restricted in inner chambers
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Star className="w-5 h-5 text-yellow-500" />
-                    <span>
-                      <strong>Best Time:</strong> Early morning or evening
-                    </span>
-                  </div>
+                {/* Visitor Information */}
+                <div className="bg-purple-50 kandy-bg-purple p-4 rounded-lg">
+                  <h4 className="font-semibold text-purple-800 kandy-text-purple mb-3">Visitor Information</h4>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      <span><strong>Hours:</strong> 5:30 AM – 8:00 PM daily</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      <span><strong>Dress Code:</strong> Conservative, white preferred</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      <span><strong>Photography:</strong> Restricted in inner chambers</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                      <span><strong>Best Time:</strong> Early morning or evening</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </CardContent>
@@ -214,75 +197,88 @@ export default function TempleOfToothKandyGuide() {
           <h2 className="text-4xl font-bold mb-10 text-center">How to Get There</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 border-green-200 dark:border-green-700 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20">
+            <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-3 text-2xl text-green-700 dark:text-green-300">
-                  <MapPin className="w-6 h-6" />
-                  Transportation Options
-                </CardTitle>
+                <CardTitle>Transportation Options</CardTitle>
+                <CardDescription>Getting to the Temple of the Tooth from anywhere on the island</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">From Colombo (115 km)</h4>
-                    <ul className="space-y-2 text-sm">
-                      <li>• <strong>By Car:</strong> 2.5-3 hours via A1 highway</li>
-                      <li>• <strong>By Train:</strong> 3-4 hours scenic journey</li>
-                      <li>• <strong>By Bus:</strong> 3-4 hours frequent services</li>
+                  <div className="bg-green-50 kandy-bg-green p-4 rounded-lg">
+                    <h4 className="font-semibold text-green-800 kandy-text-green mb-3">From Colombo (115 km)</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>By Car:</strong> 2.5–3 hours via A1 highway</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>By Train:</strong> 3–4 hours scenic journey</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>By Bus:</strong> 3–4 hours, frequent services</span>
+                      </li>
                     </ul>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Within Kandy</h4>
-                    <ul className="space-y-2 text-sm">
-                      <li>• <strong>Walking:</strong> 10 minutes from city center</li>
-                      <li>• <strong>Tuk-tuk:</strong> 5 minutes from anywhere in Kandy</li>
-                      <li>• <strong>Bus:</strong> Local buses stop near the temple</li>
+                  <div className="bg-green-50 kandy-bg-green p-4 rounded-lg">
+                    <h4 className="font-semibold text-green-800 kandy-text-green mb-3">Within Kandy</h4>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>Walking:</strong> 10 minutes from city center</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>Tuk-tuk:</strong> 5 minutes from anywhere in Kandy</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        <span><strong>Bus:</strong> Local buses stop near the temple</span>
+                      </li>
                     </ul>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Parking</h4>
-                    <p className="text-sm">Limited street parking available. Best to arrive early or use public transport.</p>
+                  <div className="text-sm text-muted-foreground italic">
+                    🅿️ <strong>Parking:</strong> Limited street parking available. Best to arrive early or use public transport.
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-blue-200 dark:border-blue-700 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20">
+            <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-3 text-2xl text-blue-700 dark:text-blue-300">
-                  <Star className="w-6 h-6" />
-                  Recommended Tour Service
-                </CardTitle>
+                <CardTitle>Recommended Tour Service</CardTitle>
+                <CardDescription>Let a local expert guide your spiritual journey</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <div className="bg-blue-100 dark:bg-blue-900/30 p-4 rounded-lg border border-blue-200 dark:border-blue-700">
-                    <h4 className="font-bold text-blue-800 dark:text-blue-300 mb-2">Ceylanka Tours - Your Trusted Partner</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-400 mb-3">
+                  <div className="bg-blue-50 kandy-bg-blue p-4 rounded-lg">
+                    <h4 className="font-bold text-blue-800 kandy-text-blue mb-2">Ceylanka Tours — Your Trusted Partner</h4>
+                    <p className="text-sm text-muted-foreground mb-3">
                       Experience the Temple of the Tooth with expert local guides who understand the cultural significance and can enhance your spiritual journey.
                     </p>
-                    <div className="space-y-2 text-sm">
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600" />
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                         <span>Expert Buddhist heritage guides</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600" />
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                         <span>Convenient pickup from your hotel</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600" />
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                         <span>Combined tours with Kandy attractions</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600" />
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                         <span>Respectful cultural guidance</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-600" />
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                         <span>Skip-the-line arrangements</span>
-                      </div>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
                   <div className="text-center">
                     <a
@@ -340,8 +336,8 @@ export default function TempleOfToothKandyGuide() {
                       profound reverence that has remained unchanged for over 1,300 years.
                     </p>
 
-                    <div className="bg-yellow-50 dark:bg-yellow-900/30 p-6 rounded-lg border border-yellow-200 dark:border-yellow-700">
-                      <h4 className="font-semibold text-yellow-800 dark:text-yellow-300 mb-3">Sacred Chamber Experience:</h4>
+                    <div className="bg-yellow-50 kandy-bg-yellow p-4 rounded-lg">
+                      <h4 className="font-semibold text-yellow-800 kandy-text-yellow mb-3">Sacred Chamber Experience:</h4>
                       <ul className="space-y-3 text-muted-foreground">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
@@ -407,8 +403,8 @@ export default function TempleOfToothKandyGuide() {
                       become the iconic symbol of the temple.
                     </p>
 
-                    <div className="bg-indigo-50 dark:bg-indigo-900/30 p-6 rounded-lg border border-indigo-200 dark:border-indigo-700">
-                      <h4 className="font-semibold text-indigo-800 dark:text-indigo-300 mb-3">Architectural Highlights:</h4>
+                    <div className="bg-indigo-50 kandy-bg-blue p-4 rounded-lg">
+                      <h4 className="font-semibold text-indigo-800 kandy-text-blue mb-3">Architectural Highlights:</h4>
                       <ul className="space-y-3 text-muted-foreground">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
@@ -453,7 +449,7 @@ export default function TempleOfToothKandyGuide() {
 
                   <div className="grid md:grid-cols-2 gap-8">
                     <div className="space-y-4">
-                      <h4 className="font-semibold text-lg text-emerald-700 dark:text-emerald-300">Handun Kunama (Spice Chamber)</h4>
+                      <h4 className="font-semibold text-lg text-emerald-700 kandy-text-green">Handun Kunama (Spice Chamber)</h4>
                       <p className="text-muted-foreground">
                         A special chamber where ancient aromatic spices and herbs are prepared for temple rituals. These
                         sacred ingredients, including sandalwood, camphor, and various native spices, are used in daily
@@ -462,7 +458,7 @@ export default function TempleOfToothKandyGuide() {
                     </div>
 
                     <div className="space-y-4">
-                      <h4 className="font-semibold text-lg text-emerald-700 dark:text-emerald-300">Thevava Passage</h4>
+                      <h4 className="font-semibold text-lg text-emerald-700 kandy-text-green">Thevava Passage</h4>
                       <p className="text-muted-foreground">
                         The ceremonial corridor used by monks and officials during the thrice-daily rituals. Its walls
                         feature intricate paintings depicting the history of the tooth relic and important events in
@@ -471,8 +467,8 @@ export default function TempleOfToothKandyGuide() {
                     </div>
                   </div>
 
-                  <div className="bg-emerald-50 dark:bg-emerald-900/30 p-6 rounded-lg border border-emerald-200 dark:border-emerald-700 mt-6">
-                    <h4 className="font-semibold text-emerald-800 dark:text-emerald-300 mb-3">Sacred Spaces:</h4>
+                  <div className="bg-emerald-50 kandy-bg-green p-4 rounded-lg mt-6">
+                    <h4 className="font-semibold text-emerald-800 kandy-text-green mb-3">Sacred Spaces:</h4>
                     <div className="grid md:grid-cols-2 gap-6">
                       <ul className="space-y-3 text-muted-foreground">
                         <li className="flex items-start gap-3">
@@ -509,10 +505,10 @@ export default function TempleOfToothKandyGuide() {
             </Card>
 
             {/* Raja Tusker Museum */}
-            <Card className="overflow-hidden border-2 border-gray-200 dark:border-gray-600">
-              <CardHeader className="bg-gradient-to-r from-gray-50 to-slate-50 dark:from-gray-800/50 dark:to-slate-800/50">
-                <CardTitle className="text-2xl text-gray-800 dark:text-gray-200">Raja Tusker Museum - Honoring Sacred Elephants</CardTitle>
-                <CardDescription className="text-lg text-gray-600 dark:text-gray-400">
+            <Card className="overflow-hidden border-2 border-gray-200">
+              <CardHeader className="bg-gray-100 kandy-bg-gray">
+                <CardTitle className="text-2xl text-gray-800 kandy-text-n1">Raja Tusker Museum - Honoring Sacred Elephants</CardTitle>
+                <CardDescription className="text-lg text-gray-600 kandy-text-gray">
                   Tribute to the majestic elephants of Esala Perahera
                 </CardDescription>
               </CardHeader>
@@ -540,8 +536,8 @@ export default function TempleOfToothKandyGuide() {
                       participation in religious ceremonies dating back over 2,000 years.
                     </p>
 
-                    <div className="bg-gray-50 dark:bg-gray-800/50 p-6 rounded-lg border border-gray-200 dark:border-gray-600">
-                      <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-3">Museum Highlights:</h4>
+                    <div className="bg-gray-50 kandy-bg-gray p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-800 kandy-text-gray mb-3">Museum Highlights:</h4>
                       <ul className="space-y-3 text-muted-foreground">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
@@ -584,10 +580,10 @@ export default function TempleOfToothKandyGuide() {
             </Card>
 
             {/* Temple Museum */}
-            <Card className="overflow-hidden border-2 border-teal-200 dark:border-teal-700">
-              <CardHeader className="bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-900/30 dark:to-cyan-900/30">
-                <CardTitle className="text-2xl text-teal-800 dark:text-teal-300">Temple Museum & Historical Collections</CardTitle>
-                <CardDescription className="text-lg text-teal-600 dark:text-teal-400">
+            <Card className="overflow-hidden border-2 border-teal-200">
+              <CardHeader className="bg-teal-50 kandy-bg-teal">
+                <CardTitle className="text-2xl text-teal-800 kandy-text-teal">Temple Museum & Historical Collections</CardTitle>
+                <CardDescription className="text-lg text-teal-600 kandy-text-teal">
                   Treasures of Buddhist heritage and royal history
                 </CardDescription>
               </CardHeader>
@@ -611,8 +607,8 @@ export default function TempleOfToothKandyGuide() {
                         palm leaf manuscripts contain Buddhist scriptures written in Pali and Sinhala, some dating back
                         400-500 years.
                       </p>
-                      <div className="bg-teal-50 dark:bg-teal-900/30 p-6 rounded-lg border border-teal-200 dark:border-teal-700">
-                    <h4 className="font-semibold text-teal-800 dark:text-teal-300 mb-3">Museum Treasures:</h4>
+                      <div className="bg-teal-50 kandy-bg-green p-4 rounded-lg">
+                    <h4 className="font-semibold text-teal-800 kandy-text-green mb-3">Museum Treasures:</h4>
                     <div className="grid md:grid-cols-2 gap-x-6 gap-y-3">
                       <ul className="space-y-2 text-muted-foreground text-sm">
                         <li className="flex items-start gap-2">
@@ -726,14 +722,14 @@ export default function TempleOfToothKandyGuide() {
                       family for proper Buddhist rites. His courage made him a folk hero and symbol of Sri Lankan
                       resistance to colonialism.
                     </p>
-                    <div className="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-500">
-                      <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-2 flex items-center gap-2 text-sm">
+                    <div className="bg-orange-50 kandy-bg-orange p-4 rounded-lg border-l-4 border-orange-500">
+                      <h4 className="font-semibold text-orange-800 kandy-text-orange mb-2 flex items-center gap-2 text-sm">
                         <span className="text-xl">&quot;</span>
                         His Final Words to His Brother
                       </h4>
                       <p className="text-sm text-muted-foreground italic">
                         Before his execution, Madduma Bandara said to his elder brother:
-                        <span className="block mt-1 font-medium text-orange-900 dark:text-orange-200">
+                        <span className="block mt-1 font-medium text-orange-900 kandy-text-orange">
                           &quot;Aiya, I am going ahead. You come slowly.&quot;
                         </span>
                       </p>
@@ -742,8 +738,8 @@ export default function TempleOfToothKandyGuide() {
                         extraordinary courage from a child of just 13 years.
                       </p>
                     </div>
-                    <div className="bg-red-50 dark:bg-red-900/30 p-4 rounded-lg border border-red-200 dark:border-red-700">
-                      <h4 className="font-semibold text-red-800 dark:text-red-300 mb-2 text-sm">Historical Significance:</h4>
+                    <div className="bg-red-50 kandy-bg-red p-4 rounded-lg">
+                      <h4 className="font-semibold text-red-800 kandy-text-red mb-2 text-sm">Historical Significance:</h4>
                       <div className="grid md:grid-cols-2 gap-x-4 gap-y-2">
                         <div className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
@@ -777,20 +773,20 @@ export default function TempleOfToothKandyGuide() {
             </Card>
 
             {/* Did You Know Section */}
-            <Card className="overflow-hidden border-2 border-amber-200 dark:border-amber-700 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 dark:from-amber-900/20 dark:via-yellow-900/20 dark:to-orange-900/20">
-              <CardHeader className="bg-gradient-to-r from-amber-100 to-yellow-100 dark:from-amber-900/40 dark:to-yellow-900/40">
-                <CardTitle className="text-2xl text-amber-800 dark:text-amber-300 flex items-center gap-2">
+            <Card className="overflow-hidden border-2 border-amber-200 bg-amber-50 kandy-bg-amber">
+              <CardHeader className="bg-amber-100 kandy-bg-amber">
+                <CardTitle className="text-2xl text-amber-800 kandy-text-amber flex items-center gap-2">
                   <Star className="w-6 h-6" />
                   Did You Know? Fascinating Temple Facts
                 </CardTitle>
-                <CardDescription className="text-lg text-amber-600 dark:text-amber-400">
+                <CardDescription className="text-lg text-amber-600 kandy-text-amber">
                   Surprising and intriguing details about Sri Lanka&apos;s most sacred site
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-8">
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-amber-500">
-                    <h4 className="font-bold text-lg text-amber-700 dark:text-amber-300 mb-3 flex items-center gap-2">
+                  <div className="bg-amber-50 kandy-bg-amber p-6 rounded-lg shadow-md border-l-4 border-amber-500">
+                    <h4 className="font-bold text-lg text-amber-700 kandy-text-amber mb-3 flex items-center gap-2">
                       <Crown className="w-5 h-5" />
                       The Tooth Has Traveled the World
                     </h4>
@@ -803,8 +799,8 @@ export default function TempleOfToothKandyGuide() {
                     </p>
                   </div>
 
-                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
-                    <h4 className="font-bold text-lg text-yellow-700 dark:text-yellow-300 mb-3 flex items-center gap-2">
+                  <div className="bg-yellow-50 kandy-bg-yellow p-6 rounded-lg shadow-md border-l-4 border-yellow-500">
+                    <h4 className="font-bold text-lg text-yellow-700 kandy-text-yellow mb-3 flex items-center gap-2">
                       <Camera className="w-5 h-5" />
                       No One Has Seen It Recently
                     </h4>
@@ -817,8 +813,8 @@ export default function TempleOfToothKandyGuide() {
                     </p>
                   </div>
 
-                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-orange-500">
-                    <h4 className="font-bold text-lg text-orange-700 dark:text-orange-300 mb-3 flex items-center gap-2">
+                  <div className="bg-orange-50 kandy-bg-orange p-6 rounded-lg shadow-md border-l-4 border-orange-500">
+                    <h4 className="font-bold text-lg text-orange-700 kandy-text-orange mb-3 flex items-center gap-2">
                       <TreePine className="w-5 h-5" />
                       Royal Power Depended on the Tooth
                     </h4>
@@ -832,8 +828,8 @@ export default function TempleOfToothKandyGuide() {
                     </p>
                   </div>
 
-                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-red-500">
-                    <h4 className="font-bold text-lg text-red-700 dark:text-red-300 mb-3 flex items-center gap-2">
+                  <div className="bg-red-50 kandy-bg-red p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                    <h4 className="font-bold text-lg text-red-700 kandy-text-red mb-3 flex items-center gap-2">
                       <Users className="w-5 h-5" />
                       Daily Offerings Worth Fortunes
                     </h4>
@@ -846,8 +842,8 @@ export default function TempleOfToothKandyGuide() {
                     </p>
                   </div>
 
-                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-green-500">
-                    <h4 className="font-bold text-lg text-green-700 dark:text-green-300 mb-3 flex items-center gap-2">
+                  <div className="bg-green-50 kandy-bg-green p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                    <h4 className="font-bold text-lg text-green-700 kandy-text-green mb-3 flex items-center gap-2">
                       <Clock className="w-5 h-5" />
                       Three Daily Ceremonies for 700 Years
                     </h4>
@@ -861,8 +857,8 @@ export default function TempleOfToothKandyGuide() {
                     </p>
                   </div>
 
-                  <div className="bg-white dark:bg-gray-900/50 p-6 rounded-lg shadow-md border-l-4 border-blue-500">
-                    <h4 className="font-bold text-lg text-blue-700 dark:text-blue-300 mb-3 flex items-center gap-2">
+                  <div className="bg-blue-50 kandy-bg-blue p-6 rounded-lg shadow-md border-l-4 border-blue-500">
+                    <h4 className="font-bold text-lg text-blue-700 kandy-text-blue mb-3 flex items-center gap-2">
                       <MapPin className="w-5 h-5" />
                       The Temple Survived a Major Bomb Attack
                     </h4>
@@ -920,8 +916,8 @@ export default function TempleOfToothKandyGuide() {
                       to the skill of ancient artists.
                     </p>
 
-                    <div className="bg-purple-50 dark:bg-purple-900/30 p-6 rounded-lg border border-purple-200 dark:border-purple-700">
-                      <h4 className="font-semibold text-purple-800 dark:text-purple-300 mb-3">Architectural Features:</h4>
+                    <div className="bg-purple-50 kandy-bg-purple p-4 rounded-lg">
+                      <h4 className="font-semibold text-purple-800 kandy-text-purple mb-3">Architectural Features:</h4>
                       <ul className="space-y-3 text-muted-foreground">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
@@ -988,7 +984,7 @@ export default function TempleOfToothKandyGuide() {
                       into a living museum of Sri Lankan heritage, as performers wearing costumes passed down through generations recreate ceremonies
                       that have remained virtually unchanged since medieval times.
                     </p>
-                    <p className="text-xs text-orange-600 dark:text-orange-400 font-medium">
+                    <p className="text-xs text-orange-600 kandy-text-orange font-medium">
                       Duration: 10 nights in August (Esala month) • UNESCO Recognized Cultural Heritage
                     </p>
                   </div>
@@ -1041,8 +1037,8 @@ export default function TempleOfToothKandyGuide() {
                     className="rounded-xl shadow-lg"
                   />
 
-                  <div className="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg border border-orange-200 dark:border-orange-700">
-                    <h4 className="font-semibold text-orange-800 dark:text-orange-300 mb-3">Festival Highlights:</h4>
+                  <div className="bg-orange-50 kandy-bg-orange p-4 rounded-lg">
+                    <h4 className="font-semibold text-orange-800 kandy-text-orange mb-3">Festival Highlights:</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• Over 100 magnificently decorated elephants from across Sri Lanka</li>
                       <li>• 1,000+ traditional dancers in authentic costumes</li>
@@ -1055,8 +1051,8 @@ export default function TempleOfToothKandyGuide() {
                     </ul>
                   </div>
 
-                  <div className="bg-red-50 dark:bg-red-900/30 p-4 rounded-lg border border-red-200 dark:border-red-700">
-                    <h4 className="font-semibold text-red-800 dark:text-red-300 mb-3">Ten Days of Celebration:</h4>
+                  <div className="bg-red-50 kandy-bg-red p-4 rounded-lg">
+                    <h4 className="font-semibold text-red-800 kandy-text-red mb-3">Ten Days of Celebration:</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Days 1-5 (Kumbal Perahera):</strong> Smaller processions building anticipation</li>
                       <li>• <strong>Days 6-10 (Randoli Perahera):</strong> Grand processions with full splendor</li>
@@ -1071,7 +1067,7 @@ export default function TempleOfToothKandyGuide() {
 
               {/* Detailed Festival Components */}
               <div className="mt-8 space-y-6">
-                <h3 className="text-2xl font-bold text-orange-800 dark:text-orange-300">Understanding the Sacred Procession</h3>
+                <h3 className="text-2xl font-bold text-orange-800 kandy-text-orange">Understanding the Sacred Procession</h3>
 
                 <div className="grid md:grid-cols-3 gap-6">
                   <Card className="border-orange-200 dark:border-orange-700">
@@ -1141,11 +1137,11 @@ export default function TempleOfToothKandyGuide() {
               </div>
 
               {/* Visitor Information */}
-              <div className="mt-8 p-6 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-lg border border-amber-200 dark:border-amber-700">
-                <h3 className="text-xl font-bold text-amber-800 dark:text-amber-300 mb-4">Planning Your Perahera Experience</h3>
+              <div className="mt-8 p-6 bg-amber-50 kandy-bg-amber rounded-lg">
+                <h3 className="text-xl font-bold text-amber-800 kandy-text-amber mb-4">Planning Your Perahera Experience</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Best Viewing Locations</h4>
+                    <h4 className="font-semibold text-amber-700 kandy-text-amber mb-2">Best Viewing Locations</h4>
                     <ul className="text-sm text-muted-foreground space-y-1 mb-4">
                       <li>• <strong>Temple of the Tooth:</strong> Starting point, most sacred atmosphere</li>
                       <li>• <strong>Dalada Veediya:</strong> Main street with excellent visibility</li>
@@ -1154,7 +1150,7 @@ export default function TempleOfToothKandyGuide() {
                       <li>• <strong>Side Streets:</strong> Less crowded but still good views</li>
                     </ul>
 
-                    <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Ticket Information</h4>
+                    <h4 className="font-semibold text-amber-700 kandy-text-amber mb-2">Ticket Information</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• <strong>Free Viewing:</strong> Street sides (arrive 3+ hours early)</li>
                       <li>• <strong>Paid Seating:</strong> Hotel balconies and stands ($50-200)</li>
@@ -1163,7 +1159,7 @@ export default function TempleOfToothKandyGuide() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Essential Tips</h4>
+                    <h4 className="font-semibold text-amber-700 kandy-text-amber mb-2">Essential Tips</h4>
                     <ul className="text-sm text-muted-foreground space-y-1 mb-4">
                       <li>• <strong>Arrive Early:</strong> 2-3 hours before procession starts</li>
                       <li>• <strong>Bring Water & Snacks:</strong> Long wait times expected</li>
@@ -1172,7 +1168,7 @@ export default function TempleOfToothKandyGuide() {
                       <li>• <strong>Be Patient:</strong> Crowds are large but friendly</li>
                     </ul>
 
-                    <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-2">Accommodation</h4>
+                    <h4 className="font-semibold text-amber-700 kandy-text-amber mb-2">Accommodation</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• <strong>Book 6+ Months Ahead:</strong> Hotels fill up completely</li>
                       <li>• <strong>Premium Properties:</strong> Queen&apos;s Hotel, Hotel Suisse</li>
@@ -1213,25 +1209,25 @@ export default function TempleOfToothKandyGuide() {
               </CardHeader>
               <CardContent className="p-6 space-y-6">
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-blue-800 dark:text-blue-300">Dress Code & Behavior</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-blue-800 kandy-text-blue">Dress Code & Behavior</h4>
                   <div className="space-y-3">
-                    <div className="bg-blue-50 dark:bg-blue-900/30 p-3 rounded border-l-4 border-blue-500 dark:border-blue-400">
-                      <p className="font-medium text-blue-700 dark:text-blue-300 mb-1">Required Attire:</p>
-                      <p className="text-sm text-blue-600 dark:text-blue-400">
+                    <div className="bg-blue-50 kandy-bg-blue p-3 rounded border-l-4 border-blue-500">
+                      <p className="font-medium text-blue-700 kandy-text-blue mb-1">Required Attire:</p>
+                      <p className="text-sm text-blue-600 kandy-text-blue-dk">
                         Conservative clothing covering shoulders and knees. White clothing is preferred and shows
                         respect. Remove shoes and hats before entering.
                       </p>
                     </div>
-                    <div className="bg-green-50 dark:bg-green-900/30 p-3 rounded border-l-4 border-green-500 dark:border-green-400">
-                      <p className="font-medium text-green-700 dark:text-green-300 mb-1">Respectful Behavior:</p>
-                      <p className="text-sm text-green-600 dark:text-green-400">
+                    <div className="bg-green-50 kandy-bg-green p-3 rounded border-l-4 border-green-500">
+                      <p className="font-medium text-green-700 kandy-text-green mb-1">Respectful Behavior:</p>
+                      <p className="text-sm text-green-600 kandy-text-green-dk">
                         Maintain silence in sacred areas, don&apos;t point feet toward Buddha statues, join hands in prayer
                         position when appropriate.
                       </p>
                     </div>
-                    <div className="bg-purple-50 dark:bg-purple-900/30 p-3 rounded border-l-4 border-purple-500 dark:border-purple-400">
-                      <p className="font-medium text-purple-700 dark:text-purple-300 mb-1">Photography Rules:</p>
-                      <p className="text-sm text-purple-600 dark:text-purple-400">
+                    <div className="bg-purple-50 kandy-bg-purple p-3 rounded border-l-4 border-purple-500">
+                      <p className="font-medium text-purple-700 kandy-text-purple mb-1">Photography Rules:</p>
+                      <p className="text-sm text-purple-600 kandy-text-purple-dk">
                         Photography prohibited in inner shrine rooms. Allowed in courtyards and museum areas with
                         respect for other devotees.
                       </p>
@@ -1240,7 +1236,7 @@ export default function TempleOfToothKandyGuide() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-blue-800 dark:text-blue-300">Best Times to Visit</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-blue-800 kandy-text-blue">Best Times to Visit</h4>
                   <div className="space-y-2 text-sm">
                     <p>
                       <strong>Morning Puja (5:30-6:30 AM):</strong> Most sacred ceremony, fewer crowds
@@ -1261,7 +1257,7 @@ export default function TempleOfToothKandyGuide() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-blue-800 dark:text-blue-300">What to Bring</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-blue-800 kandy-text-blue">What to Bring</h4>
                   <div className="space-y-2 text-sm">
                     <p>
                       <strong>Offerings:</strong> Lotus flowers, jasmine, or white flowers
@@ -1286,7 +1282,7 @@ export default function TempleOfToothKandyGuide() {
               </CardHeader>
               <CardContent className="p-6 space-y-6">
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-green-800 dark:text-green-300">Transportation</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-green-800 kandy-text-green">Transportation</h4>
                   <div className="space-y-2 text-sm">
                     <p>
                       <strong>From Colombo:</strong> 3-hour drive or train journey to Kandy
@@ -1304,27 +1300,27 @@ export default function TempleOfToothKandyGuide() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-green-800 dark:text-green-300">Nearby Attractions</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-green-800 kandy-text-green">Nearby Attractions</h4>
                   <div className="space-y-3">
-                    <div className="bg-green-50 dark:bg-green-900/30 p-3 rounded border-l-4 border-green-500 dark:border-green-400">
-                      <p className="font-medium text-green-700 dark:text-green-300 mb-1">Kandy Lake:</p>
-                      <p className="text-sm text-green-600 dark:text-green-400">
+                    <div className="bg-green-50 kandy-bg-green p-3 rounded border-l-4 border-green-500">
+                      <p className="font-medium text-green-700 kandy-text-green mb-1">Kandy Lake:</p>
+                      <p className="text-sm text-green-600 kandy-text-green-dk">
                         Beautiful lake for peaceful walks, just beside the temple
                       </p>
                     </div>
-                    <div className="bg-blue-50 dark:bg-blue-900/30 p-3 rounded border-l-4 border-blue-500 dark:border-blue-400">
-                      <p className="font-medium text-blue-700 dark:text-blue-300 mb-1">Royal Botanical Gardens:</p>
-                      <p className="text-sm text-blue-600 dark:text-blue-400">World-famous gardens 15 minutes from temple</p>
+                    <div className="bg-blue-50 kandy-bg-blue p-3 rounded border-l-4 border-blue-500">
+                      <p className="font-medium text-blue-700 kandy-text-blue mb-1">Royal Botanical Gardens:</p>
+                      <p className="text-sm text-blue-600 kandy-text-blue-dk">World-famous gardens 15 minutes from temple</p>
                     </div>
-                    <div className="bg-purple-50 dark:bg-purple-900/30 p-3 rounded border-l-4 border-purple-500 dark:border-purple-400">
-                      <p className="font-medium text-purple-700 dark:text-purple-300 mb-1">Kandy Cultural Center:</p>
-                      <p className="text-sm text-purple-600 dark:text-purple-400">Traditional dance performances every evening</p>
+                    <div className="bg-purple-50 kandy-bg-purple p-3 rounded border-l-4 border-purple-500">
+                      <p className="font-medium text-purple-700 kandy-text-purple mb-1">Kandy Cultural Center:</p>
+                      <p className="text-sm text-purple-600 kandy-text-purple-dk">Traditional dance performances every evening</p>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-green-800 dark:text-green-300">Accommodation</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-green-800 kandy-text-green">Accommodation</h4>
                   <div className="space-y-2 text-sm">
                     <p>
                       <strong>Luxury Hotels:</strong> Several 5-star options overlooking the lake
@@ -1367,11 +1363,11 @@ export default function TempleOfToothKandyGuide() {
                   unchanged for centuries, every aspect of your visit will deepen your understanding of Buddhism and Sri
                   Lankan culture.
                 </p>
-                <div className="bg-white/70 dark:bg-gray-800/70 p-6 rounded-xl border border-yellow-200 dark:border-gray-600 mt-8">
-                  <p className="text-xl font-semibold text-yellow-800 dark:text-yellow-300 mb-2">
+                <div className="bg-amber-50 kandy-bg-amber p-6 rounded-xl mt-8">
+                  <p className="text-xl font-semibold text-yellow-800 kandy-text-yellow mb-2">
                     Discover the sacred majesty of the Temple of the Tooth! 🏛️👑🙏✨
                   </p>
-                  <p className="text-sm text-yellow-600 dark:text-yellow-400">
+                  <p className="text-sm text-yellow-600 kandy-text-amber">
                     Where ancient devotion meets timeless beauty in the heart of Kandy
                   </p>
                 </div>
