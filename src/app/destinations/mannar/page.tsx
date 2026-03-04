@@ -29,8 +29,7 @@ export default function MannarGuide() {
 
 
   const mannarBeachesImages = [
-    { src: "/placeholder.svg?height=300&width=400&text=Mannar+Beaches", alt: "Pristine beaches of Mannar with white sand and clear waters" },
-    { src: "/Mannar.jpg", alt: "Sunset over Mannar Island beach" }
+    { src: "/Mannar.jpg", alt: "Pristine beaches of Mannar with white sand and clear waters" },
   ]
 
   const mannarReligiousImages = [
@@ -61,7 +60,7 @@ export default function MannarGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Mannar Island</h1>
+          <h1 className="hero-text-shadow text-4xl md:text-6xl font-extrabold mb-4 leading-[1.1] tracking-tight">Mannar Island</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s biggest Island</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">

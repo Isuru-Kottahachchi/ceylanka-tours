@@ -266,54 +266,25 @@ export default function JungleBeachPage() {
                   </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm">Hanuman was tasked to bring the Sanjeewani herb from the Himalayas</p>
+                      <p className="text-sm text-orange-800 dark:text-orange-300">Hanuman was tasked to bring the Sanjeewani herb from the Himalayas</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm">Unable to identify the specific herb, he carried the entire mountain</p>
+                      <p className="text-sm text-orange-800 dark:text-orange-300">Unable to identify the specific herb, he carried the entire mountain</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm">A piece of the mountain fell here, creating Roomassala Hill</p>
+                      <p className="text-sm text-orange-800 dark:text-orange-300">A piece of the mountain fell here, creating Roomassala Hill</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm">The hill is believed to contain rare medicinal plants even today</p>
+                      <p className="text-sm text-orange-800 dark:text-orange-300">The hill is believed to contain rare medicinal plants even today</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-800">
-                <CardHeader>
-                  <CardTitle className="text-blue-800 dark:text-blue-400">Sacred Sites on Roomassala</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <p className="font-semibold text-sm">Hanuman Temple</p>
-                        <p className="text-xs text-muted-foreground">Small shrine dedicated to Lord Hanuman</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <p className="font-semibold text-sm">Peace Pagoda</p>
-                        <p className="text-xs text-muted-foreground">Japanese Buddhist temple on the hilltop</p>
-                      </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                      <div>
-                        <p className="font-semibold text-sm">Meditation Caves</p>
-                        <p className="text-xs text-muted-foreground">Ancient caves used by monks</p>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+
             </div>
           </div>
         </section>
@@ -321,119 +292,221 @@ export default function JungleBeachPage() {
         {/* What to Do */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-green-800 dark:text-green-400">What to Do at Jungle Beach</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-800">
-              <CardHeader>
-                <CardTitle className="text-blue-800 dark:text-blue-400 flex items-center gap-2">
-                  <Waves className="w-5 h-5" />
-                  Swimming & Snorkeling
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-blue-700 dark:text-blue-300">
-                  <li>• Crystal-clear waters perfect for swimming</li>
-                  <li>• Excellent snorkeling with colorful fish</li>
-                  <li>• Rocky areas with marine life</li>
-                  <li>• Calm waters most of the year</li>
-                  <li>• Natural rock pools for children</li>
-                </ul>
-              </CardContent>
+          <div className="grid grid-cols-1 gap-6">
+
+            <Card className="flex overflow-hidden bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-800">
+              <div className="relative w-48 sm:w-64 flex-shrink-0">
+                <Image src="/Snorkling-in-sri-lanka.jpg" alt="Snorkeling in Sri Lanka crystal clear waters" fill className="object-cover" />
+              </div>
+              <div className="flex flex-col flex-1">
+                <CardHeader>
+                  <CardTitle className="text-blue-800 dark:text-blue-400 flex items-center gap-2">
+                    <Waves className="w-5 h-5" />
+                    Swimming &amp; Snorkeling
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-blue-700 dark:text-blue-300">
+                    <li>• Crystal-clear waters perfect for swimming</li>
+                    <li>• Excellent snorkeling with colorful fish</li>
+                    <li>• Rocky areas teeming with marine life</li>
+                    <li>• Calm protected waters most of the year</li>
+                    <li>• Natural rock pools for children</li>
+                  </ul>
+                </CardContent>
+              </div>
             </Card>
 
-            <Card className="bg-green-50 dark:bg-green-950/20 border-green-200 dark:border-green-800">
-              <CardHeader>
-                <CardTitle className="text-green-800 dark:text-green-400 flex items-center gap-2">
-                  <TreePine className="w-5 h-5" />
-                  Jungle Exploration
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-green-700 dark:text-green-300">
-                  <li>• Trek through jungle paths</li>
-                  <li>• Spot exotic birds and wildlife</li>
-                  <li>• Discover hidden caves</li>
-                  <li>• Find medicinal plants</li>
-                  <li>• Enjoy panoramic ocean views</li>
-                </ul>
-              </CardContent>
+            <Card className="flex overflow-hidden bg-green-50 dark:bg-green-950/20 border-green-200 dark:border-green-800">
+              <div className="relative w-48 sm:w-64 flex-shrink-0">
+                <Image src="/Roomassala.jpg" alt="Roomassala jungle hill lush greenery" fill className="object-cover" />
+              </div>
+              <div className="flex flex-col flex-1">
+                <CardHeader>
+                  <CardTitle className="text-green-800 dark:text-green-400 flex items-center gap-2">
+                    <TreePine className="w-5 h-5" />
+                    Jungle Exploration
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-green-700 dark:text-green-300">
+                    <li>• Trek through dense jungle paths</li>
+                    <li>• Spot 60+ endemic bird species</li>
+                    <li>• Discover hidden caves and rock formations</li>
+                    <li>• Search for rare medicinal plants (Ramayana legend)</li>
+                    <li>• Enjoy panoramic ocean views from hilltop</li>
+                  </ul>
+                </CardContent>
+              </div>
             </Card>
 
-            <Card className="bg-purple-50 dark:bg-purple-950/20 border-purple-200 dark:border-purple-800">
-              <CardHeader>
-                <CardTitle className="text-purple-800 dark:text-purple-400 flex items-center gap-2">
-                  <Camera className="w-5 h-5" />
-                  Photography
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-purple-700 dark:text-purple-300">
-                  <li>• Dramatic cliff formations</li>
-                  <li>• Sunset photography spots</li>
-                  <li>• Wildlife and bird photography</li>
-                  <li>• Underwater photography</li>
-                  <li>• Instagram-worthy landscapes</li>
-                </ul>
-              </CardContent>
+            <Card className="flex overflow-hidden bg-purple-50 dark:bg-purple-950/20 border-purple-200 dark:border-purple-800">
+              <div className="relative w-48 sm:w-64 flex-shrink-0">
+                <Image src="/jungle-beach.jpeg" alt="Jungle Beach dramatic cliffs and pristine waters" fill className="object-cover" />
+              </div>
+              <div className="flex flex-col flex-1">
+                <CardHeader>
+                  <CardTitle className="text-purple-800 dark:text-purple-400 flex items-center gap-2">
+                    <Camera className="w-5 h-5" />
+                    Photography
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-purple-700 dark:text-purple-300">
+                    <li>• Dramatic rocky cliff formations</li>
+                    <li>• Golden hour and sunset photography spots</li>
+                    <li>• Wildlife and endemic bird photography</li>
+                    <li>• Underwater and snorkeling photography</li>
+                    <li>• Secluded jungle-meets-ocean landscapes</li>
+                  </ul>
+                </CardContent>
+              </div>
             </Card>
 
-            <Card className="bg-orange-50 dark:bg-orange-950/20 border-orange-200 dark:border-orange-800">
-              <CardHeader>
-                <CardTitle className="text-orange-800 dark:text-orange-400 flex items-center gap-2">
-                  <Mountain className="w-5 h-5" />
-                  Spiritual Journey
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-orange-700 dark:text-orange-300">
-                  <li>• Visit Hanuman Temple</li>
-                  <li>• Meditate in ancient caves</li>
-                  <li>• Explore Peace Pagoda</li>
-                  <li>• Learn about Ramayana history</li>
-                  <li>• Experience spiritual energy</li>
-                </ul>
-              </CardContent>
+            <Card className="flex overflow-hidden bg-orange-50 dark:bg-orange-950/20 border-orange-200 dark:border-orange-800">
+              <div className="relative w-48 sm:w-64 flex-shrink-0">
+                <Image src="/Hanuman-Roomassala.png" alt="Hanuman sacred connection to Roomassala Hill" fill className="object-cover" />
+              </div>
+              <div className="flex flex-col flex-1">
+                <CardHeader>
+                  <CardTitle className="text-orange-800 dark:text-orange-400 flex items-center gap-2">
+                    <Mountain className="w-5 h-5" />
+                    Spiritual Journey
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-orange-700 dark:text-orange-300">
+                    <li>• Visit the Peace Pagoda (Japanese Buddhist stupa)</li>
+                    <li>• See the Hanuman shrine being built by Japanese monks</li>
+                    <li>• Meditate in ancient rock caves</li>
+                    <li>• Learn about Ramayana history on the hill</li>
+                    <li>• Experience the hill&apos;s deeply spiritual atmosphere</li>
+                  </ul>
+                </CardContent>
+              </div>
             </Card>
 
-            <Card className="bg-yellow-50 dark:bg-yellow-950/20 border-yellow-200 dark:border-yellow-800">
-              <CardHeader>
-                <CardTitle className="text-yellow-800 dark:text-yellow-400 flex items-center gap-2">
-                  <Sun className="w-5 h-5" />
-                  Relaxation
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-yellow-700 dark:text-yellow-300">
-                  <li>• Sunbathing on pristine sand</li>
-                  <li>• Reading in peaceful surroundings</li>
-                  <li>• Picnic on the beach</li>
-                  <li>• Yoga and meditation</li>
-                  <li>• Escape from crowds</li>
-                </ul>
-              </CardContent>
+            <Card className="flex overflow-hidden bg-yellow-50 dark:bg-yellow-950/20 border-yellow-200 dark:border-yellow-800">
+              <div className="relative w-48 sm:w-64 flex-shrink-0">
+                <Image src="/Unawatuna.jpg" alt="Relaxing on pristine beach in Sri Lanka" fill className="object-cover" />
+              </div>
+              <div className="flex flex-col flex-1">
+                <CardHeader>
+                  <CardTitle className="text-yellow-800 dark:text-yellow-400 flex items-center gap-2">
+                    <Sun className="w-5 h-5" />
+                    Relaxation
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-yellow-700 dark:text-yellow-300">
+                    <li>• Sunbathing on pristine secluded sand</li>
+                    <li>• Reading in peaceful jungle surroundings</li>
+                    <li>• Beachside picnics away from crowds</li>
+                    <li>• Yoga and meditation by the ocean</li>
+                    <li>• One of the least crowded beaches near Galle</li>
+                  </ul>
+                </CardContent>
+              </div>
             </Card>
 
-            <Card className="bg-red-50 dark:bg-red-950/20 border-red-200 dark:border-red-800">
-              <CardHeader>
-                <CardTitle className="text-red-800 dark:text-red-400 flex items-center gap-2">
-                  <Users className="w-5 h-5" />
-                  Adventure Activities
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-red-700 dark:text-red-300">
-                  <li>• Rock climbing on cliffs</li>
-                  <li>• Cave exploration</li>
-                  <li>• Nature hiking trails</li>
-                  <li>• Tide pool investigation</li>
-                  <li>• Cliff jumping (experienced only)</li>
-                </ul>
-              </CardContent>
+            <Card className="flex overflow-hidden bg-red-50 dark:bg-red-950/20 border-red-200 dark:border-red-800">
+              <div className="relative w-48 sm:w-64 flex-shrink-0">
+                <Image src="/Scruba-diving.jpeg" alt="Adventure activities diving and snorkeling in Sri Lanka" fill className="object-cover" />
+              </div>
+              <div className="flex flex-col flex-1">
+                <CardHeader>
+                  <CardTitle className="text-red-800 dark:text-red-400 flex items-center gap-2">
+                    <Users className="w-5 h-5" />
+                    Adventure Activities
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-red-700 dark:text-red-300">
+                    <li>• Rock climbing on coastal cliff faces</li>
+                    <li>• Cave exploration along the hillside</li>
+                    <li>• Nature hiking the Rumassala ridge trail</li>
+                    <li>• Tide pool investigation at low tide</li>
+                    <li>• Cliff jumping for experienced swimmers only</li>
+                  </ul>
+                </CardContent>
+              </div>
             </Card>
+
+            <Card className="flex overflow-hidden bg-indigo-50 dark:bg-indigo-950/20 border-indigo-200 dark:border-indigo-800">
+              <div className="relative w-48 sm:w-64 flex-shrink-0">
+                <Image src="/Roomassala.jpg" alt="Japan Peace Pagoda on Rumassala Hill" fill className="object-cover" />
+              </div>
+              <div className="flex flex-col flex-1">
+                <CardHeader>
+                  <CardTitle className="text-indigo-800 dark:text-indigo-400 flex items-center gap-2">
+                    <Mountain className="w-5 h-5" />
+                    Visit Japan Peace Pagoda
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-indigo-700 dark:text-indigo-300">
+                    <li>• Hike up Rumassala Hill from Jungle Beach</li>
+                    <li>• Explore the stunning white Sama Chaitya stupa</li>
+                    <li>• Built by Japanese Nipponzan-Myōhōji monks</li>
+                    <li>• Sweeping 360° panoramic views of the coastline</li>
+                    <li>• One of the most peaceful spots in southern Sri Lanka</li>
+                    <li>• Free entry — open to all visitors and pilgrims</li>
+                  </ul>
+                </CardContent>
+              </div>
+            </Card>
+
+            <Card className="flex overflow-hidden bg-teal-50 dark:bg-teal-950/20 border-teal-200 dark:border-teal-800">
+              <div className="relative w-48 sm:w-64 flex-shrink-0">
+                <Image src="/Unawatuna.jpg" alt="Sunset watching over the ocean in Sri Lanka" fill className="object-cover" />
+              </div>
+              <div className="flex flex-col flex-1">
+                <CardHeader>
+                  <CardTitle className="text-teal-800 dark:text-teal-400 flex items-center gap-2">
+                    <Sun className="w-5 h-5" />
+                    Sunset &amp; Golden Hour
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-teal-700 dark:text-teal-300">
+                    <li>• Watch the sun set over the Indian Ocean from the hilltop</li>
+                    <li>• Golden hour light turns the cliffs and sea magical</li>
+                    <li>• Best viewpoint from the Peace Pagoda terrace</li>
+                    <li>• Combine with an evening stroll along Unawatuna Bay</li>
+                    <li>• One of the most photogenic sunsets on the south coast</li>
+                  </ul>
+                </CardContent>
+              </div>
+            </Card>
+
+            <Card className="flex overflow-hidden bg-pink-50 dark:bg-pink-950/20 border-pink-200 dark:border-pink-800">
+              <div className="relative w-48 sm:w-64 flex-shrink-0">
+                <Image src="/Mirissa1.jpg" alt="Local food and beach cafes in Sri Lanka" fill className="object-cover" />
+              </div>
+              <div className="flex flex-col flex-1">
+                <CardHeader>
+                  <CardTitle className="text-pink-800 dark:text-pink-400 flex items-center gap-2">
+                    <Star className="w-5 h-5" />
+                    Local Food &amp; Beach Cafes
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-pink-700 dark:text-pink-300">
+                    <li>• Fresh seafood grills within minutes of Jungle Beach</li>
+                    <li>• Coconut roti and traditional Sri Lankan breakfasts</li>
+                    <li>• King coconut drinks straight from the shell</li>
+                    <li>• Beachside cafes in nearby Unawatuna village</li>
+                    <li>• Budget-friendly local eateries along the bay road</li>
+                  </ul>
+                </CardContent>
+              </div>
+            </Card>
+
           </div>
         </section>
 
         {/* How to Get There */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-blue-800 dark:text-blue-400">How to Get to Jungle Beach</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
@@ -566,7 +639,7 @@ export default function JungleBeachPage() {
               </Card>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Nearby Attractions */}
         {/* <section className="mb-12">
@@ -648,13 +721,13 @@ export default function JungleBeachPage() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground mb-3">
-                  Japanese Buddhist temple on the hilltop offering panoramic views
-                  of the southern coastline and peaceful meditation spaces.
+                  A coastal town celebrated for its vibrant tradition of handcrafted Kolam and devil masks.
+                  Visit workshops and museums to see artisans at work.
                 </p>
                 <div className="flex flex-wrap gap-1">
-                  <Badge variant="outline">Spiritual</Badge>
-                  <Badge variant="outline">Views</Badge>
-                  <Badge variant="outline">Meditation</Badge>
+                  <Badge variant="outline">Craft</Badge>
+                  <Badge variant="outline">Culture</Badge>
+                  <Badge variant="outline">Shopping</Badge>
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/ambalangoda" passHref legacyBehavior>
@@ -666,37 +739,7 @@ export default function JungleBeachPage() {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-green-800 dark:text-green-400">Peace Pagoda</CardTitle>
-                <CardDescription>On Rumassala Hill</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/placeholder.svg?height=200&width=300&text=Peace+Pagoda"
-                  alt="Peace Pagoda on Rumassala Hill overlooking the ocean"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                />
-                <p className="text-sm text-muted-foreground mb-3">
-                  Japanese Buddhist temple on the hilltop offering panoramic views
-                  of the southern coastline and peaceful meditation spaces.
-                </p>
-                <div className="flex flex-wrap gap-1">
-                  <Badge variant="outline">Spiritual</Badge>
-                  <Badge variant="outline">Views</Badge>
-                  <Badge variant="outline">Meditation</Badge>
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <CardTitle className="text-green-800 dark:text-green-400">Coconut Tree Hill</CardTitle>
+                <CardTitle className="text-green-800 dark:text-green-400">Mirissa</CardTitle>
                 <CardDescription>10 minutes away</CardDescription>
               </CardHeader>
               <CardContent>
@@ -717,7 +760,7 @@ export default function JungleBeachPage() {
                   <Badge variant="outline">Views</Badge>
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/coconut-tree-hill" passHref legacyBehavior>
+                  <Link href="/destinations/mirissa" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -731,8 +774,8 @@ export default function JungleBeachPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300&text=Snake+Island"
-                  alt="Snake Island - small island accessible at low tide from Unawatuna"
+                  src="/Snorkling-in-sri-lanka.jpg"
+                  alt="Tabrobane Island - snorkeling and marine life near Unawatuna"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
@@ -746,11 +789,6 @@ export default function JungleBeachPage() {
                   <Badge variant="outline">Adventure</Badge>
                   <Badge variant="outline">Marine Life</Badge>
                 </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
               </CardContent>
             </Card>
 
@@ -761,7 +799,7 @@ export default function JungleBeachPage() {
               </CardHeader>
               <CardContent>
                 <Image
-                  src="/placeholder.svg?height=200&width=300&text=Dalawella+Beach"
+                  src="/jungle-beach.jpeg"
                   alt="Dalawella Beach with famous rope swing and palm trees"
                   width={300}
                   height={200}
@@ -776,13 +814,9 @@ export default function JungleBeachPage() {
                   <Badge variant="outline">Rope Swing</Badge>
                   <Badge variant="outline">Peaceful</Badge>
                 </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
               </CardContent>
             </Card>
+
           </div>
         </section>
 
