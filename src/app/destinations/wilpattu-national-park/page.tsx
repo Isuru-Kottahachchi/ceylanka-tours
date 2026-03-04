@@ -338,7 +338,7 @@ export default function WilpattuNationalParkTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Steeped in myth and legend—said to be where the first Sinhalese kingdom began
+                        Steeped in myth and legend said to be where the first Sinhalese kingdom began
                       </li>
                     </ul>
                     <p className="text-muted-foreground mt-4">

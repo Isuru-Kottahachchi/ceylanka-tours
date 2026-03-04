@@ -23,7 +23,7 @@ export default function BlueBeachGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Nilwella Blue Beach</h1>
+          <h1 className="hero-text-shadow text-4xl md:text-6xl font-extrabold mb-4 leading-[1.1] tracking-tight">Nilwella Blue Beach</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka’s Hidden Blue-Water Escape</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
@@ -345,20 +345,26 @@ export default function BlueBeachGuide() {
 
         {/* Travel Tips */}
         <section className="mb-12 scroll-mt-24" id="tips">
-          <h2 className="text-3xl font-bold mb-6">Travel Tips for Blue Beach</h2>
-          <Card>
-            <CardContent>
-              <ul className="list-disc pl-6 text-muted-foreground space-y-2">
-                <li>Arrive early to enjoy the quietest hours</li>
-                <li>There are a few small cafes and guesthouses nearby for snacks and shade</li>
-                <li>Bring sun protection shade is limited on the sand</li>
-                <li>Weekdays are less crowded than weekends</li>
-                <li>Support local businesses by renting gear or buying refreshments</li>
-                <li><strong>Blue Beach is a private island</strong> always respect the privacy of owners and other guests</li>
-                <li>If camping, obtain permission and leave no trace</li>
-              </ul>
-            </CardContent>
-          </Card>
+          <h2 className="text-2xl font-bold mb-4 text-blue-800 dark:text-blue-300">Travel Tips for Blue Beach</h2>
+          <div className="rounded-lg border tips-card-bg p-5">
+            <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-2">
+              {[
+                "Arrive early — mornings are the quietest before 9 AM",
+                "Shade is limited; bring sunscreen, hat, and umbrella",
+                "Weekdays are less crowded than weekends",
+                "Small cafes nearby for snacks and cold drinks",
+                "Support locals — rent gear from local vendors",
+                "Blue Beach is privately owned — respect the property",
+                "Camping requires prior permission; leave no trace",
+                "Bring cash and water — ATMs are not nearby",
+              ].map((tip) => (
+                <li key={tip} className="flex items-start gap-2 text-sm tips-item-text">
+                  <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 flex-shrink-0" />
+                  {tip}
+                </li>
+              ))}
+            </ul>
+          </div>
         </section>
         {/* Nearby Places to Visit */}
         <section className="mb-12">
