@@ -204,7 +204,7 @@ export default function PolonnaruwaGuide() {
                                             <li>• <strong>Transport:</strong> Air-conditioned vehicles with guide</li>
                                             <li>• <strong>Best option:</strong> Most comprehensive and educational</li>
                                         </ul>
-                                        <div className="mt-3 p-3 theme-notice-box rounded-md shadow-sm">
+                                        <div data-promo="true" className="mt-3 p-3 theme-notice-box rounded-md shadow-sm">
                                             <p className="text-xs theme-notice-text mb-2">
                                                 <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> specializes in Cultural Triangle expeditions with expert archaeological guides who bring ancient Polonnaruwa to life with fascinating historical insights and professional service.
                                             </p>

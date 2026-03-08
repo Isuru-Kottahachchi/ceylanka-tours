@@ -207,7 +207,7 @@ export default function TrincomaleeTravelGuide() {
                 </div>
 
                 {/* Full Width Ceylanka Tours Recommendation */}
-                <div className="mt-6 p-3 trinco-box-orange-tip rounded-lg border-l-4 border-orange-500 shadow-md">
+                <div data-promo="true" className="mt-6 p-3 trinco-box-orange-tip rounded-lg border-l-4 border-orange-500 shadow-md">
                   <p className="text-xs trinco-title-orange mb-2">
                     <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Trincomalee. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                   </p>

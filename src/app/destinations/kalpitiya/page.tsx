@@ -217,7 +217,7 @@ export default function KalpitiyaGuide() {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Recommended Services</h4>
-                  <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                  <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                     <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                       <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> offers specialized beach and water sports packages with experienced drivers who know the best routes and can arrange water sports activities.
                     </p>

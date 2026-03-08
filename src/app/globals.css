@@ -920,6 +920,15 @@ body {
 .dark .kalut-border-l-blue   { border-left-color: #3b82f6; }
 .dark .kalut-border-l-green  { border-left-color: #22c55e; }
 
+/* Yala green info card background + dark mode text cascade */
+.yala-green-card { background-color: #f0fdf4; }
+.dark .yala-green-card { background-color: rgb(5 46 22 / 0.4); }
+.dark .yala-green-card p,
+.dark .yala-green-card li,
+.dark .yala-green-card ul { color: rgb(203 213 225); } /* slate-300 */
+.dark .yala-green-card strong { color: rgb(252 211 77); } /* amber-300 */
+.dark .yala-green-card h4 { color: rgb(252 211 77); } /* amber-300 */
+
 /* Feature flag: hide promo cards when showTours is false */
 .hide-tours [data-promo],
 .hide-tours [data-promo="true"] {

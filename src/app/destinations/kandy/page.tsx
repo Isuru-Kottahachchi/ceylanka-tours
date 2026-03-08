@@ -201,7 +201,7 @@ export default function KandyTravelGuide() {
                     <li>• <strong>From Airport:</strong> 3.5 hours, 12,000-20,000 LKR</li>
                     <li>• <strong>Best for:</strong> Families, groups, luggage convenience</li>
                   </ul>
-                  <div className="mt-3 p-3 bg-orange-100 kandy-bg-orange-dk rounded-md border-l-4 border-orange-400">
+                  <div data-promo="true" className="mt-3 p-3 bg-orange-100 kandy-bg-orange-dk rounded-md border-l-4 border-orange-400">
                     <p className="text-xs text-orange-800 kandy-text-orange-lt mb-2">
                       <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Kandy. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                     </p>
