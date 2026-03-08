@@ -194,7 +194,7 @@ export default function GalleFortTravelGuide() {
                 </div>
                 
                 {/* Full Width Ceylanka Tours Recommendation */}
-                <div className="p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
+                <div data-promo="true" className="p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
                   <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                     <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Galle. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                   </p>
@@ -278,7 +278,7 @@ export default function GalleFortTravelGuide() {
                     <li>• <strong>Car rental:</strong> $30-50 USD/day + fuel</li>
                     <li>• <strong>Toll charges:</strong> LKR 500-700</li>
                   </ul>
-                  <div className="mt-3 p-3 bg-orange-100 dark:bg-orange-800/30 rounded-md border-l-4 border-orange-400">
+                  <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-orange-800/30 rounded-md border-l-4 border-orange-400">
                     <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                       <strong>🌟 Recommended:</strong> <span className="font-semibold"> Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Galle. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                     </p>

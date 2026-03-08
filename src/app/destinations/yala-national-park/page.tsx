@@ -159,7 +159,7 @@ export default function YalaNationalParkTravelGuide() {
                     </div>
                   </div>
                   
-                  <div className="mt-6 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
+                  <div data-promo="true" className="mt-6 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
                     <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                       <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Yala National Park. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                     </p>
@@ -560,13 +560,13 @@ export default function YalaNationalParkTravelGuide() {
                       to 77kg. Unlike other leopard populations, Yala’s leopards are often active during daylight.
                     </p>
                     <div className="space-y-4">
-                      <div className="bg-green-50 dark:bg-green-950/30 p-4 rounded-lg mb-10">
-                        <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Did you know?</h4>
-                        <ul className="space-y-2 text-sm text-muted-foreground">
+                      <div className="yala-green-card p-4 rounded-lg mb-10">
+                        <h4 className="font-semibold text-amber-800 dark:text-amber-300 mb-2">Did you know?</h4>
+                        <ul className="space-y-2 text-sm text-slate-700 dark:text-slate-300">
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
                             <div>
-                              <p className="mb-4">If you are so lucky you will be see very rare black Sri Lankan Leopards in Yala national park. The mystical black leopards of Yala, also known as melanistic leopards, are one of the rarest and most elusive big cats in the world. This melanistic trait causes Panthera onca (jaguar) as well. These magnificent creatures appear almost entirely black due to a recessive genetic mutation that causes excess melanin production in their coat.</p>
+                              <p className="mb-4 text-slate-700 dark:text-slate-300">If you are so lucky you will be see very rare black Sri Lankan Leopards in Yala national park. The mystical black leopards of Yala, also known as melanistic leopards, are one of the rarest and most elusive big cats in the world. This melanistic trait causes Panthera onca (jaguar) as well. These magnificent creatures appear almost entirely black due to a recessive genetic mutation that causes excess melanin production in their coat.</p>
                               <div className="grid md:grid-cols-2 gap-6 items-start">
                                 <div>
                                   <Image
@@ -578,40 +578,40 @@ export default function YalaNationalParkTravelGuide() {
                                   />
                                 </div>
                                 <div>
-                                  <ul className="text-sm space-y-3">
+                                  <ul className="text-sm space-y-3 text-slate-700 dark:text-slate-300">
                                     <li className="flex items-start gap-2">
                                       <span className="text-amber-500 mt-1">•</span>
                                       <div>
-                                        <strong className="text-amber-700 dark:text-amber-400">Unique Pattern:</strong>
-                                        <p>Their rosette patterns are still visible in bright sunlight, appearing as dark spots against their jet-black coat</p>
+                                        <strong className="text-amber-700 dark:text-amber-300">Unique Pattern:</strong>
+                                        <p className="text-slate-700 dark:text-slate-300">Their rosette patterns are still visible in bright sunlight, appearing as dark spots against their jet-black coat</p>
                                       </div>
                                     </li>
                                     <li className="flex items-start gap-2">
                                       <span className="text-amber-500 mt-1">•</span>
                                       <div>
-                                        <strong className="text-amber-700 dark:text-amber-400">Genetic Marvel:</strong>
-                                        <p>Melanism occurs in about 11% of leopards globally, but is extremely rare in Sri Lanka</p>
+                                        <strong className="text-amber-700 dark:text-amber-300">Genetic Marvel:</strong>
+                                        <p className="text-slate-700 dark:text-slate-300">Melanism occurs in about 11% of leopards globally, but is extremely rare in Sri Lanka</p>
                                       </div>
                                     </li>
                                     <li className="flex items-start gap-2">
                                       <span className="text-amber-500 mt-1">•</span>
                                       <div>
-                                        <strong className="text-amber-700 dark:text-amber-400">Hunting Advantage:</strong>
-                                        <p>Their dark coloration provides superior camouflage during nighttime hunting</p>
+                                        <strong className="text-amber-700 dark:text-amber-300">Hunting Advantage:</strong>
+                                        <p className="text-slate-700 dark:text-slate-300">Their dark coloration provides superior camouflage during nighttime hunting</p>
                                       </div>
                                     </li>
                                     <li className="flex items-start gap-2">
                                       <span className="text-amber-500 mt-1">•</span>
                                       <div>
-                                        <strong className="text-amber-700 dark:text-amber-400">Cultural Significance:</strong>
-                                        <p>Known as &lsquo;Kalu Kotiya&rsquo; in Sinhala, they hold a special place in Sri Lankan folklore</p>
+                                        <strong className="text-amber-700 dark:text-amber-300">Cultural Significance:</strong>
+                                        <p className="text-slate-700 dark:text-slate-300">Known as &lsquo;Kalu Kotiya&rsquo; in Sinhala, they hold a special place in Sri Lankan folklore</p>
                                       </div>
                                     </li>
                                     <li className="flex items-start gap-2">
                                       <span className="text-amber-500 mt-1">•</span>
                                       <div>
-                                        <strong className="text-amber-700 dark:text-amber-400">Recent Sightings:</strong>
-                                        <p>While extremely rare, there have been confirmed sightings in Yala&apos;s Block I and the surrounding regions</p>
+                                        <strong className="text-amber-700 dark:text-amber-300">Recent Sightings:</strong>
+                                        <p className="text-slate-700 dark:text-slate-300">While extremely rare, there have been confirmed sightings in Yala&apos;s Block I and the surrounding regions</p>
                                       </div>
                                     </li>
                                   </ul>
@@ -768,7 +768,7 @@ export default function YalaNationalParkTravelGuide() {
                       </p>
                     </div>
                     <div className="space-y-4">
-                      <div className="bg-green-50 dark:bg-green-950/30 p-4 rounded-lg">
+                      <div className="yala-green-card p-4 rounded-lg">
                         <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Did you know?</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
                           <li className="flex items-start gap-2">
@@ -961,7 +961,7 @@ export default function YalaNationalParkTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <div className="bg-green-50 dark:bg-green-950/30 p-4 rounded-lg mb-4">
+                    <div className="yala-green-card p-4 rounded-lg mb-4">
                       <h4 className="font-semibold text-green-800 dark:text-green-400 mb-2">Endemic Mammals</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-start gap-2">
@@ -1081,7 +1081,7 @@ export default function YalaNationalParkTravelGuide() {
                       various water bodies, from lakes to seasonal pools.
                     </p>
                     <div className="space-y-4">
-                      <div className="bg-green-50 dark:bg-green-950/30 p-4 rounded-lg">
+                      <div className="yala-green-card p-4 rounded-lg">
                         <h4 className="font-semibold text-green-800 dark:text-green-400 mb-2">Behavior & Habitat</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
                           <li className="flex items-start gap-2">

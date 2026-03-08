@@ -205,7 +205,7 @@ export default function BentotaGuide() {
                                     </ul>
 
                                     {/* Full Width Ceylanka Tours Recommendation */}
-                                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
+                                    <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
                                         <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                                             <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Bentota. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                                         </p>
