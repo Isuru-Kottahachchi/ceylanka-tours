@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { useTheme } from "next-themes"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu, Sun, Moon, Phone, ChevronDown, ChevronRight } from "lucide-react"
+import { featureFlags } from "@/lib/feature-flags"
 
 
 const topNavItems = [
@@ -360,6 +361,17 @@ export function Header() {
     )
   }
 
+  // Feature-flag filtered nav arrays
+  const filteredTopNavItems = topNavItems.filter(
+    (item) => !(item.href === "/tours" && !featureFlags.showTours)
+  )
+  const filteredPlanYourTripItems = planYourTripItems.map((section) => ({
+    ...section,
+    items: section.items.filter(
+      (item) => !(item.href === "/plan-your-trip/airport-transfer-service" && !featureFlags.showAirportTransfer)
+    ),
+  }))
+
   // Handle initial theme — next-themes reads localStorage automatically,
   // so no manual DOM manipulation needed here
   useEffect(() => {
@@ -423,7 +435,7 @@ export function Header() {
         <div className="container mx-auto px-8 py-2">
           <div className="flex items-center justify-between text-sm">
             <div className="hidden lg:flex items-center space-x-6">
-              {topNavItems.map((item) => (
+              {filteredTopNavItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
@@ -560,7 +572,7 @@ export function Header() {
                     <div className="theme-bg shadow-xl rounded-lg border theme-border w-80">
                       <div className="p-4">
                         <div className="grid grid-cols-2 gap-4">
-                          {planYourTripItems.map((section) => (
+                          {filteredPlanYourTripItems.map((section) => (
                             <div key={section.title}>
                               <h3 className="font-semibold nav-heading mb-2 text-sm">{section.title}</h3>
                               <ul className="space-y-1">
@@ -683,7 +695,7 @@ export function Header() {
                     <div className="py-2 border-b theme-border">
                       <div className="font-semibold nav-heading mb-3 text-base">Plan Your Trip</div>
                       <div className="space-y-1">
-                        {planYourTripItems.map((section) => (
+                        {filteredPlanYourTripItems.map((section) => (
                           <div key={section.title}>
                             <button
                               onClick={() => setActiveDropdown(activeDropdown === section.title ? null : section.title)}
