@@ -221,7 +221,7 @@ export default function SigiriyaTravelGuide() {
                 </div>
 
                 {/* Full Width Ceylanka Tours Recommendation */}
-                <div className="p-3 theme-notice-box rounded-lg shadow-md">
+                <div data-promo="true" className="p-3 theme-notice-box rounded-lg shadow-md">
                   <p className="text-xs theme-notice-text mb-2">
                     <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Sigiriya. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                   </p>

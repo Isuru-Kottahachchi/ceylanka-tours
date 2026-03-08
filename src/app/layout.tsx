@@ -8,6 +8,7 @@ import { Footer } from "@/components/footer"
 import { BackToTop } from "@/components/back-to-top"
 import { WhatsAppWidget } from "@/components/whatsapp-widget"
 import { ThemeProvider } from "next-themes"
+import { featureFlags } from "@/lib/feature-flags"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -168,7 +169,7 @@ export default function RootLayout({
         <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />
         <meta name="google-site-verification" content="your-verification-code" />
       </head>
-      <body className={`${inter.className}`}>
+      <body className={`${inter.className}${!featureFlags.showTours ? ' hide-tours' : ''}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="min-h-screen flex flex-col w-full">
             <Header />

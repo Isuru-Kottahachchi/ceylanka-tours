@@ -865,6 +865,11 @@ body {
 .dark .kandy-bg-red         { background-color: rgb(127 29 29 / 0.2); }
 .dark .kandy-bg-gray        { background-color: rgb(55 65 81 / 0.2); }
 .dark .kandy-bg-teal        { background-color: rgb(19 78 74 / 0.2); }
+.dark .kandy-bg-slate       { background-color: #1e293b; }
+.tips-card-bg  { background-color: #f8fafc; border-color: #e2e8f0; }
+.dark .tips-card-bg  { background-color: #1e293b; border-color: #334155; }
+.tips-item-text { color: #374151; }
+.dark .tips-item-text { color: #cbd5e1; }
 .dark .kandy-bg-orange-dk   { background-color: rgb(154 52 18 / 0.3); }
 .dark .kandy-bg-blue-solid  { background-color: #3b82f6; }
 
@@ -914,3 +919,9 @@ body {
 .dark .kalut-border-pink     { border-color: #9d174d; }
 .dark .kalut-border-l-blue   { border-left-color: #3b82f6; }
 .dark .kalut-border-l-green  { border-left-color: #22c55e; }
+
+/* Feature flag: hide promo cards when showTours is false */
+.hide-tours [data-promo],
+.hide-tours [data-promo="true"] {
+  display: none !important;
+}
