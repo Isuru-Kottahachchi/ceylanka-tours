@@ -178,7 +178,7 @@ export default function RidiyagamaSafariPark() {
                                     </ul>
 
                                     {/* Ceylanka Tours Recommendation */}
-                                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
+                                    <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
                                         <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                                             <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> offers comfortable safari packages with expert guides who know the best routes and timing. They provide full-day tours including transportation, park entrance, and guided safari experience.
                                         </p>

@@ -174,7 +174,7 @@ export default function KalaniyaTempleGuide() {
                                     </ul>
 
                                     {/* Ceylanka Tours Recommendation */}
-                                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
+                                    <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
                                         <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                                             <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> offers comfortable transport to Kelaniya Temple with knowledgeable drivers who can share stories about the temple and help you understand what you are seeing.
                                         </p>

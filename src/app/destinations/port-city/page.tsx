@@ -190,7 +190,7 @@ export default function PortCityTravelGuide() {
                     <li>• <strong>Cost:</strong> $3-8 USD by taxi/rideshare</li>
                     <li>• <strong>Best option:</strong> Most convenient and quick</li>
                   </ul>
-                  <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                  <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                     <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                       <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> offers convenient Port City transfers and guided tours with comfortable vehicles and local expertise for the best urban exploration experience.
                     </p>

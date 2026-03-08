@@ -669,7 +669,7 @@ export default function WilpattuNationalParkTravelGuide() {
         </section>
 
         {/* Recommended: Ceylanka Tours */}
-        <section className="mb-12">
+        <section data-promo="true" className="mb-12">
           <Card className="bg-gradient-to-r from-yellow-50 to-orange-50 border-yellow-200 shadow-lg">
             <CardHeader>
               <CardTitle className="text-orange-700 flex items-center gap-2">
