@@ -920,14 +920,43 @@ body {
 .dark .kalut-border-l-blue   { border-left-color: #3b82f6; }
 .dark .kalut-border-l-green  { border-left-color: #22c55e; }
 
-/* Yala green info card background + dark mode text cascade */
-.yala-green-card { background-color: #f0fdf4; }
-.dark .yala-green-card { background-color: rgb(5 46 22 / 0.4); }
-.dark .yala-green-card p,
-.dark .yala-green-card li,
-.dark .yala-green-card ul { color: rgb(203 213 225); } /* slate-300 */
-.dark .yala-green-card strong { color: rgb(252 211 77); } /* amber-300 */
-.dark .yala-green-card h4 { color: rgb(252 211 77); } /* amber-300 */
+/* Yala info card backgrounds + dark mode text cascade */
+.yala-green-card  { background-color: #f0fdf4; }
+.yala-teal-card   { background-color: #f0fdfa; }
+.yala-amber-card  { background-color: #fffbeb; }
+.yala-blue-card   { background-color: #eff6ff; }
+
+.dark .yala-green-card  { background-color: rgb(5 46 22 / 0.4); }
+.dark .yala-teal-card   { background-color: rgb(4 47 46 / 0.4); }
+.dark .yala-amber-card  { background-color: rgb(69 26 3 / 0.4); }
+.dark .yala-blue-card   { background-color: rgb(23 37 84 / 0.4); }
+
+.dark .yala-green-card p,  .dark .yala-green-card li,  .dark .yala-green-card ul,
+.dark .yala-teal-card p,   .dark .yala-teal-card li,   .dark .yala-teal-card ul,
+.dark .yala-amber-card p,  .dark .yala-amber-card li,  .dark .yala-amber-card ul,
+.dark .yala-blue-card p,   .dark .yala-blue-card li,   .dark .yala-blue-card ul   { color: rgb(203 213 225) !important; } /* slate-300 */
+
+.dark .yala-green-card  h4, .dark .yala-green-card  h5, .dark .yala-green-card  strong, .dark .yala-green-card  b { color: rgb(252 211 77)  !important; } /* amber-300 */
+.dark .yala-teal-card   h4, .dark .yala-teal-card   h5, .dark .yala-teal-card   strong, .dark .yala-teal-card   b { color: rgb(94 234 212)  !important; } /* teal-300 */
+.dark .yala-amber-card  h4, .dark .yala-amber-card  h5, .dark .yala-amber-card  strong, .dark .yala-amber-card  b { color: rgb(252 211 77)  !important; } /* amber-300 */
+.dark .yala-blue-card   h4, .dark .yala-blue-card   h5, .dark .yala-blue-card   strong, .dark .yala-blue-card   b { color: rgb(147 197 253) !important; } /* blue-300 */
+
+/* Yala Elephant Rock landmark section */
+.yala-elephant-rock { background: linear-gradient(to right, #fff7ed, #fffbeb); border-left: 4px solid #d97706; }
+.dark .yala-elephant-rock { background: linear-gradient(to right, rgb(69 26 3 / 0.3), rgb(78 37 5 / 0.2)); border-left-color: #d97706; }
+.dark .yala-elephant-rock p,
+.dark .yala-elephant-rock li,
+.dark .yala-elephant-rock ul,
+.dark .yala-elephant-rock span { color: rgb(203 213 225) !important; } /* slate-300 */
+.dark .yala-elephant-rock h4,
+.dark .yala-elephant-rock strong,
+.dark .yala-elephant-rock b    { color: rgb(252 211 77) !important;  } /* amber-300 */
+
+/* Yala safari adventure card */
+.yala-safari-card { background: linear-gradient(to right, #fff7ed, #fefce8); border-color: #fed7aa; }
+.dark .yala-safari-card { background: linear-gradient(to right, rgb(120 53 15 / 0.3), rgb(113 63 18 / 0.25)); border-color: #92400e; }
+.dark .yala-safari-card h3 { color: rgb(253 186 116); } /* orange-300 */
+.dark .yala-safari-card p  { color: rgb(203 213 225); } /* slate-300 */
 
 /* Feature flag: hide promo cards when showTours is false */
 .hide-tours [data-promo],
