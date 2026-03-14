@@ -349,7 +349,7 @@ export default function BalangodaGuide() {
                         Ideal for picnics and nature photography
                       </li>
                     </ul>
-                    <div className="mt-4 flex justify-start">
+                    {/* <div className="mt-4 flex justify-start">
                       <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
                         <Button
                           variant="secondary"
@@ -359,7 +359,7 @@ export default function BalangodaGuide() {
                           <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
                         </Button>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </CardContent>
@@ -420,7 +420,7 @@ export default function BalangodaGuide() {
                         Learn about ancient clay preparation methods
                       </li>
                     </ul>
-                    <div className="mt-4 flex justify-start">
+                    {/* <div className="mt-4 flex justify-start">
                       <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
                         <Button
                           variant="secondary"
@@ -430,7 +430,7 @@ export default function BalangodaGuide() {
                           <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
                         </Button>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </CardContent>
@@ -482,7 +482,7 @@ export default function BalangodaGuide() {
                         Surrounded by tea plantations and cloud forests
                       </li>
                     </ul>
-                    <div className="mt-4 flex justify-start">
+                    {/* <div className="mt-4 flex justify-start">
                       <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
                         <Button
                           variant="secondary"
@@ -492,7 +492,7 @@ export default function BalangodaGuide() {
                           <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
                         </Button>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </CardContent>
@@ -541,7 +541,7 @@ export default function BalangodaGuide() {
                           <li>• Road to the waterfall can be slippery be carefull</li>
                         </ul>
                       </div>
-                    <div className="mt-4 flex justify-start">
+                    {/* <div className="mt-4 flex justify-start">
                       <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
                         <Button
                           variant="secondary"
@@ -551,7 +551,7 @@ export default function BalangodaGuide() {
                           <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
                         </Button>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </CardContent>
