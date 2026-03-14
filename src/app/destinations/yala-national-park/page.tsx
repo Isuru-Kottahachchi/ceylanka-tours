@@ -466,7 +466,7 @@ export default function YalaNationalParkTravelGuide() {
                 <CardTitle>1. Sri Lankan Leopards (Panthera pardus kotiya)</CardTitle>
                 <CardDescription>The Apex Predators of Yala - Home to World&apos;s Densest Leopard Population</CardDescription>
                 <div className="mt-4">
-                  <div className="bg-amber-50/50 dark:bg-amber-950/30 p-4 rounded-lg">
+                  <div className="yala-amber-card p-4 rounded-lg">
                     <p className="text-sm text-muted-foreground">
                       The Sri Lankan leopard (Panthera pardus kotiya) is a majestic subspecies endemic to Sri Lanka. As the island&apos; apex predator,
                       it has evolved unique characteristics that set it apart from other leopard subspecies. These powerful cats play a crucial role
@@ -653,21 +653,21 @@ export default function YalaNationalParkTravelGuide() {
             </Card>
 
             {/* Elephant Rock Section */}
-            <div className="my-8 p-6 bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-950/30 dark:to-amber-950/30 rounded-lg border-l-4 border-orange-500">
-              <h4 className="font-bold text-xl text-orange-800 dark:text-orange-200 mb-3 flex items-center gap-2">
+            <div className="my-8 p-6 yala-elephant-rock rounded-lg">
+              <h4 className="font-bold text-xl text-amber-800 dark:text-amber-300 mb-3 flex items-center gap-2">
                 <MapPin className="w-5 h-5" />
                 Elephant Rock (Ath Gala) - Yala&apos;s Iconic Landmark
               </h4>
 
               <div className="grid md:grid-cols-2 gap-6 items-start mb-4">
                 <div>
-                  <p className="text-orange-800 dark:text-orange-300 mb-3 leading-relaxed">
+                  <p className="text-slate-700 dark:text-slate-300 mb-3 leading-relaxed">
                     One of Yala&apos;s most photographed and recognizable features is <strong>Elephant Rock</strong>, locally known as
                     <strong> &quot;Ath Gala&quot;</strong> (ඇත් ගල) in Sinhala, which translates to &quot;Elephant Stone.&quot; This massive natural rock
                     formation earned its name due to its striking resemblance to an elephant&apos;s head when viewed from certain angles,
                     complete with what appears to be a trunk-like protrusion.
                   </p>
-                  <p className="text-orange-800 dark:text-orange-300 mb-3 leading-relaxed">
+                  <p className="text-slate-700 dark:text-slate-300 mb-3 leading-relaxed">
                     <strong>Location & Significance:</strong> Situated near the coastal area of Yala Block 1, Elephant Rock stands
                     as a prominent geological landmark that serves multiple purposes:
                   </p>
@@ -681,13 +681,13 @@ export default function YalaNationalParkTravelGuide() {
                     height={400}
                     className="rounded-lg  w-full h-auto max-h-60 object-contain"
                   />
-                  <p className="text-xs text-orange-700 dark:text-orange-400 italic text-center">
+                  <p className="text-xs text-slate-500 dark:text-slate-400 italic text-center">
                     The iconic Elephant Rock (Ath Gala) - shaped by nature over millions of years
                   </p>
                 </div>
               </div>
 
-              <ul className="space-y-2 text-orange-800 dark:text-orange-300 ml-4 mb-3">
+              <ul className="space-y-2 text-slate-700 dark:text-slate-300 ml-4 mb-3">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></div>
                   <span><strong>Wildlife Viewing Platform:</strong> Elephants frequently visit this area, especially during dry
@@ -709,7 +709,7 @@ export default function YalaNationalParkTravelGuide() {
                     navigating through Yala&apos;s vast wilderness</span>
                 </li>
               </ul>
-              <p className="text-orange-800 dark:text-orange-300 leading-relaxed">
+              <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
                 <strong>Best Time to Visit:</strong> Early morning (6:00-8:00 AM) and late afternoon (4:00-6:00 PM) offer the
                 best lighting for photography and highest chances of elephant encounters. During dry season (June-September),
                 elephant herds regularly congregate near this area to access nearby water sources, providing unforgettable
@@ -749,8 +749,8 @@ export default function YalaNationalParkTravelGuide() {
                       These intelligent pachyderms can be observed year-round, with the best viewing opportunities during the dry season when they
                       gather around water holes.
                     </p>
-                    <div className="bg-purple-50 dark:bg-purple-950/30 p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-purple-800 dark:text-purple-400 mb-2">Thun Path Rana: The Three Generation Herd</h4>
+                    <div className="yala-teal-card p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-teal-800 dark:text-teal-300 mb-2">Thun Path Rana: The Three Generation Herd</h4>
                       <p className="text-sm text-muted-foreground mb-2">
                         In Sri Lankan elephant society, the term &quot;Thun Path Rana&quot; refers to the three-generation family structure
                         that forms the core of each herd. This consists of:
@@ -784,8 +784,8 @@ export default function YalaNationalParkTravelGuide() {
                       </div>
                     </div>
                     <div className="space-y-4">
-                      <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
-                        <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Key Features</h4>
+                      <div className="yala-amber-card p-4 rounded-lg">
+                        <h4 className="font-semibold text-amber-800 dark:text-amber-300 mb-2">Key Features</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
@@ -857,7 +857,7 @@ export default function YalaNationalParkTravelGuide() {
                 <CardTitle>3. Sloth Bears (Melursus ursinus)</CardTitle>
                 <CardDescription>The Mysterious Honey-Loving Bears of Yala</CardDescription>
                 <div className="mt-4">
-                  <div className="bg-amber-50/50 dark:bg-amber-950/30 p-4 rounded-lg">
+                  <div className="yala-amber-card p-4 rounded-lg">
                     <p className="text-sm text-muted-foreground">
                       The only bear species native to Sri Lanka, the Sloth Bear (Melursus ursinus) is a unique and fascinating creature.
                       Despite their name, they are not related to sloths but earned the name due to their long, curved claws and occasional hanging behavior in trees.
@@ -911,8 +911,8 @@ export default function YalaNationalParkTravelGuide() {
                       ants, fruits, and their favorite - honey, earning them the nickname &quot;Bambaru Walaha&quot; (honey bear) in Sinhala.
                     </p>
                     <div className="space-y-4">
-                      <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
-                        <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Unique Adaptations</h4>
+                      <div className="yala-amber-card p-4 rounded-lg">
+                        <h4 className="font-semibold text-amber-800 dark:text-amber-300 mb-2">Unique Adaptations</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
@@ -937,8 +937,8 @@ export default function YalaNationalParkTravelGuide() {
                           </li>
                         </ul>
                       </div>
-                      <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg">
-                        <h4 className="font-semibold text-blue-800 dark:text-blue-400 mb-2">Best Viewing Tips</h4>
+                      <div className="yala-blue-card p-4 rounded-lg">
+                        <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">Best Viewing Tips</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
                           <li>• Dawn and dusk are prime viewing times</li>
                           <li>• Look for them near termite mounds and fruit trees</li>
@@ -962,52 +962,52 @@ export default function YalaNationalParkTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <div className="yala-green-card p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-green-800 dark:text-green-400 mb-2">Endemic Mammals</h4>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
+                      <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Endemic Mammals</h4>
+                      <ul className="space-y-2 text-sm text-green-900 dark:text-green-100">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                           <div>
-                            <strong>Toque Macaque:</strong>
-                            <p>Sri Lanka&apos;s endemic primate, recognized by its distinctive cap-like whorl of hair</p>
+                            <strong className="text-green-900 dark:text-green-200">Toque Macaque:</strong>
+                            <p className="text-green-800 dark:text-green-100">Sri Lanka&apos;s endemic primate, recognized by its distinctive cap-like whorl of hair</p>
                           </div>
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                           <div>
-                            <strong>Red Slender Loris:</strong>
-                            <p>Nocturnal primate with large eyes, found in Yala&apos;s forested areas</p>
+                            <strong className="text-green-900 dark:text-green-200">Red Slender Loris:</strong>
+                            <p className="text-green-800 dark:text-green-100">Nocturnal primate with large eyes, found in Yala&apos;s forested areas</p>
                           </div>
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                           <div>
-                            <strong>Golden Palm Civet:</strong>
-                            <p>Endemic civet species with distinctive golden-brown fur</p>
+                            <strong className="text-green-900 dark:text-green-200">Golden Palm Civet:</strong>
+                            <p className="text-green-800 dark:text-green-100">Endemic civet species with distinctive golden-brown fur</p>
                           </div>
                         </li>
                       </ul>
                     </div>
                   </div>
                   <div>
-                    <div className="bg-purple-50 dark:bg-purple-950/30 p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-purple-800 dark:text-purple-400 mb-2">Endemic Birds & Reptiles</h4>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
+                    <div className="yala-teal-card p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-teal-800 dark:text-teal-300 mb-2">Endemic Birds & Reptiles</h4>
+                      <ul className="space-y-2 text-sm text-teal-900 dark:text-teal-100">
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-teal-500 mt-1 flex-shrink-0" />
                           <div>
                             <strong>Sri Lanka Junglefowl:</strong>
                             <p>National bird of Sri Lanka, ancestor of domestic chickens</p>
                           </div>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-teal-500 mt-1 flex-shrink-0" />
                           <div>
                             <strong>Sri Lanka Green Pit Viper:</strong>
                             <p>Endemic venomous snake with excellent camouflage</p>
                           </div>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-purple-500 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-teal-500 mt-1 flex-shrink-0" />
                           <div>
                             <strong>Black-necked Stork:</strong>
                             <p>Rare resident bird found in Yala&apos;s wetlands</p>
@@ -1017,25 +1017,25 @@ export default function YalaNationalParkTravelGuide() {
                     </div>
                   </div>
                   <div className="col-span-2">
-                    <div className="bg-amber-50 dark:bg-amber-950/30 p-4 rounded-lg">
-                      <h4 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Conservation Status</h4>
-                      <p className="text-sm text-muted-foreground mb-4">
+                    <div className="yala-amber-card p-4 rounded-lg">
+                      <h4 className="font-semibold text-amber-800 dark:text-amber-300 mb-2">Conservation Status</h4>
+                      <p className="text-sm text-amber-900 dark:text-amber-100 mb-4">
                         Sri Lanka is recognized as one of the world&apos;s 36 biodiversity hotspots, with Yala National Park playing a crucial role in protecting many endemic species.
                         These unique animals face various threats including habitat loss, human encroachment, and climate change. Conservation efforts are ongoing to ensure their survival
                         for future generations.
                       </p>
                       <div className="grid md:grid-cols-3 gap-4">
-                        <div className="text-center p-3 bg-white dark:bg-gray-800 rounded-lg">
-                          <p className="font-semibold text-amber-800 dark:text-amber-400">33</p>
-                          <p className="text-xs text-muted-foreground">Endemic Mammals</p>
+                        <div className="text-center p-3 bg-amber-50 dark:bg-amber-950/50 rounded-lg">
+                          <p className="font-semibold text-amber-800 dark:text-amber-300">33</p>
+                          <p className="text-xs text-amber-700 dark:text-amber-200">Endemic Mammals</p>
                         </div>
-                        <div className="text-center p-3 bg-white dark:bg-gray-800 rounded-lg">
-                          <p className="font-semibold text-amber-800 dark:text-amber-400">26</p>
-                          <p className="text-xs text-muted-foreground">Endemic Birds</p>
+                        <div className="text-center p-3 bg-amber-50 dark:bg-amber-950/50 rounded-lg">
+                          <p className="font-semibold text-amber-800 dark:text-amber-300">26</p>
+                          <p className="text-xs text-amber-700 dark:text-amber-200">Endemic Birds</p>
                         </div>
-                        <div className="text-center p-3 bg-white dark:bg-gray-800 rounded-lg">
-                          <p className="font-semibold text-amber-800 dark:text-amber-400">21</p>
-                          <p className="text-xs text-muted-foreground">Endemic Reptiles</p>
+                        <div className="text-center p-3 bg-amber-50 dark:bg-amber-950/50 rounded-lg">
+                          <p className="font-semibold text-amber-800 dark:text-amber-300">21</p>
+                          <p className="text-xs text-amber-700 dark:text-amber-200">Endemic Reptiles</p>
                         </div>
                       </div>
                     </div>
@@ -1136,8 +1136,8 @@ export default function YalaNationalParkTravelGuide() {
                       ecosystems and can be formidable when protecting their territory.
                     </p>
                     <div className="space-y-4">
-                      <div className="bg-blue-50 dark:bg-blue-950/30 p-4 rounded-lg">
-                        <h4 className="font-semibold text-blue-800 dark:text-blue-400 mb-2">Key Features</h4>
+                      <div className="yala-blue-card p-4 rounded-lg">
+                        <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">Key Features</h4>
                         <ul className="space-y-2 text-sm text-muted-foreground">
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
@@ -1631,9 +1631,9 @@ export default function YalaNationalParkTravelGuide() {
 
         {/* Final Tips */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-orange-50 to-yellow-50 border-orange-200">
+          <Card className="yala-safari-card border">
             <CardHeader>
-              <CardTitle className="text-orange-800">Your Yala Safari Adventure</CardTitle>
+              <CardTitle className="text-orange-800 dark:text-orange-300">Your Yala Safari Adventure</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
