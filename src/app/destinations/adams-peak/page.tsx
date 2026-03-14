@@ -332,29 +332,29 @@ export default function AdamsPeakTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Climbing Routes to the Summit</h2>
           
-          <div className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+          <div className="bg-blue-50 dark:bg-slate-900 border border-blue-200 dark:border-blue-800 p-6 rounded-xl mb-8 border-l-4 border-l-blue-500">
             <h3 className="text-xl font-semibold mb-4 text-blue-900 dark:text-blue-100">Three Main Routes to Sri Pada</h3>
-            <p className="text-muted-foreground mb-4">
+            <p className="text-blue-800 dark:text-blue-200 mb-4 text-sm">
               There are three primary routes to reach the sacred summit, each offering unique experiences and challenges:
             </p>
             <div className="grid md:grid-cols-3 gap-4 mb-4">
-              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-green-700 dark:text-green-400 mb-2">1. Hatton Nallathanniya Route</h4>
-                <p className="text-sm text-muted-foreground mb-1"><strong>Distance:</strong> 5-6 km (Shortest)</p>
-                <p className="text-sm text-muted-foreground">Most popular and well-developed path with facilities</p>
+              <div className="bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-700 border-l-4 border-l-emerald-500 p-4 rounded-lg">
+                <h4 className="font-semibold text-emerald-700 dark:text-emerald-300 mb-2">1. Hatton Nallathanniya Route</h4>
+                <p className="text-sm text-emerald-900 dark:text-emerald-100 mb-1"><strong>Distance:</strong> 5–6 km (Shortest)</p>
+                <p className="text-sm text-emerald-800 dark:text-emerald-200">Most popular and well-developed path with facilities</p>
               </div>
-              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-blue-700 dark:text-blue-400 mb-2">2. Ratnapura Palabaddala (Raja Mawatha)</h4>
-                <p className="text-sm text-muted-foreground mb-1"><strong>Distance:</strong> Around 8.5 km</p>
-                <p className="text-sm text-muted-foreground">The route believed to be taken by Lord Buddha</p>
+              <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-700 border-l-4 border-l-blue-500 p-4 rounded-lg">
+                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">2. Ratnapura Palabaddala (Raja Mawatha)</h4>
+                <p className="text-sm text-blue-900 dark:text-blue-100 mb-1"><strong>Distance:</strong> Around 8.5 km</p>
+                <p className="text-sm text-blue-800 dark:text-blue-200">The route believed to be taken by Lord Buddha</p>
               </div>
-              <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-orange-700 dark:text-orange-400 mb-2">3. Kuruwita Erantha Route</h4>
-                <p className="text-sm text-muted-foreground mb-1"><strong>Distance:</strong> 12-13 km (Longest)</p>
-                <p className="text-sm text-muted-foreground">Challenging wilderness route through dense forest</p>
+              <div className="bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-700 border-l-4 border-l-amber-500 p-4 rounded-lg">
+                <h4 className="font-semibold text-amber-700 dark:text-amber-300 mb-2">3. Kuruwita Erantha Route</h4>
+                <p className="text-sm text-amber-900 dark:text-amber-100 mb-1"><strong>Distance:</strong> 12–13 km (Longest)</p>
+                <p className="text-sm text-amber-800 dark:text-amber-200">Challenging wilderness route through dense forest</p>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-blue-800 dark:text-blue-200">
               <strong>Note:</strong> In addition to these main routes, there are several sub-routes such as Sadagala Thanna and others, though they are less commonly used and may require experienced guides.
             </p>
           </div>
