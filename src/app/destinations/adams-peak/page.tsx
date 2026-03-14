@@ -151,7 +151,25 @@ export default function AdamsPeakTravelGuide() {
                 meters long. People believe that this is the Lord Buddha&apos;s footprint from his third visit to Sri Lanka. This sacred impression is revered by four major religions, each with their own
                 interpretation of its divine origin.
               </p>
-              <div className="bg-amber-50 p-4 rounded-lg mb-4 border border-amber-200">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-blue-800 mb-2">Buddhism</h4>
+                  <p className="text-sm text-blue-700">Buddhas footprint left during his third visit to Sri Lanka</p>
+                </div>
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-green-800 mb-2">Islam</h4>
+                  <p className="text-sm text-green-700">Adams footprint when he was cast out of paradise</p>
+                </div>
+                <div className="bg-purple-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-purple-800 mb-2">Hinduism</h4>
+                  <p className="text-sm text-purple-700">Lord Shivas footprint during his cosmic dance</p>
+                </div>
+                <div className="bg-orange-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-orange-800 mb-2">Christianity</h4>
+                  <p className="text-sm text-orange-700">St. Thomass footprint during his mission to India</p>
+                </div>
+              </div>
+               <div className="bg-amber-50 p-4 rounded-lg mb-4 border border-amber-200">
                 <h4 className="font-semibold text-amber-800 mb-2 flex items-center gap-2">
                   <Landmark className="w-4 h-4" />
                   Baghawa Lena (Diva Guhawa)
@@ -174,25 +192,6 @@ export default function AdamsPeakTravelGuide() {
                   </li>
                 </ul>
               </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-blue-800 mb-2">Buddhism</h4>
-                  <p className="text-sm text-blue-700">Buddhas footprint left during his third visit to Sri Lanka</p>
-                </div>
-                <div className="bg-green-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-green-800 mb-2">Islam</h4>
-                  <p className="text-sm text-green-700">Adams footprint when he was cast out of paradise</p>
-                </div>
-                <div className="bg-purple-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-purple-800 mb-2">Hinduism</h4>
-                  <p className="text-sm text-purple-700">Lord Shivas footprint during his cosmic dance</p>
-                </div>
-                <div className="bg-orange-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-orange-800 mb-2">Christianity</h4>
-                  <p className="text-sm text-orange-700">St. Thomass footprint during his mission to India</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -207,7 +206,15 @@ export default function AdamsPeakTravelGuide() {
                 <CardDescription>The divine protector of Sri Pada</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <Image src="/God-Saman.jpeg" alt={"God Saman"} width={300} height={200} />
+                <ImageCarousel
+                  heightClassName="h-[220px] md:h-[300px]"
+                  images={[
+                    {
+                      src: "/God-Saman.jpeg",
+                      alt: "God Saman",
+                    }
+                  ]}
+                />
                 <p className="text-muted-foreground">
                   God Saman (Saman Deviyo) is the guardian deity of Sri Pada and the Sabaragamuwa region. According to
                   Buddhist tradition, he was present when the Buddha visited Sri Lanka and was entrusted with protecting
@@ -243,7 +250,15 @@ export default function AdamsPeakTravelGuide() {
                 <CardDescription>Ancient temple and rituals</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <Image src="/Saman-devalaya.jpeg" alt={"Saman Devalaya"} width={300} height={200} />
+                <ImageCarousel
+                  heightClassName="h-[220px] md:h-[300px]"
+                  images={[
+                    {
+                      src: "/Saman-devalaya.jpeg",
+                      alt: "Saman Devalaya",
+                    }
+                  ]}
+                />
                 <p className="text-muted-foreground">
                   The Saman Devalaya in Ratnapura is the main temple dedicated to God Saman. Pilgrims traditionally
                   seek his blessings before beginning their ascent to Sri Pada. The annual Esala perahera of the
@@ -272,55 +287,44 @@ export default function AdamsPeakTravelGuide() {
             </Card>
           </div>
 
-          {/* Natural Features */}
-          <div className="mt-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Sacred Natural Features</CardTitle>
-                <CardDescription>Ancient landmarks and natural wonders</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold mb-3">Kunudiya Pawwa</h4>
-                    <Image src="/Kunu-Diya-Pawwa.webp" alt={"Kunudiya pawwa"} width={400} height={300} />
-                    <p className="text-muted-foreground mb-4">
-                      A significant rock formation along the pilgrimage path where, according to tradition, pilgrims would
-                      stop to dry their wet clothes. The name &quot;Kunudiya&quot; refers to the warmth of the rock even during cold weather.
-                    </p>
-                    <ul className="text-sm text-muted-foreground space-y-2">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Traditional resting point
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Unique geological formation
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Historical significance
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-semibold mb-3">The Sacred Footprint</h4>
-                    <p className="text-muted-foreground mb-4">
-                      The Sri Pada (Sacred Footprint) at the summit is believed to be protected by God Saman himself.
-                      The depression measures 1.8 meters in length and has been a sacred site for various religions for centuries.
-                    </p>
-                    <div className="bg-amber-50 p-3 rounded-lg">
-                      <p className="text-sm text-amber-800">
-                        <strong>Did You Know?</strong> Small herds of wild elephants still inhabit the lower slopes of
-                        the mountain, considered sacred and under God Saman&apos;s protection. These elephants are rarely seen
-                        but are an important part of the mountain&apos;s ecosystem and cultural significance.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+        </section>
+        {/* Pilgrimage Season */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">Pilgrimage Season Experience</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <Image
+              src="/Udamaluwa.jpeg"
+              alt="Thousands of pilgrims climbing Adams Peak during pilgrimage season with illuminated path at night"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg"
+            />
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                During pilgrimage season (December to May), Adams Peak transforms into a spiritual highway with
+                thousands of pilgrims making the sacred journey. The path is illuminated with lights, tea stalls operate
+                throughout the night, and the atmosphere is filled with devotional songs and chanting.
+              </p>
+              <div className="bg-purple-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-purple-800 mb-2">Pilgrimage Season Highlights:</h4>
+                <ul className="text-sm text-purple-700 space-y-1">
+                  <li>• Path illuminated with electric lights</li>
+                  <li>• Tea stalls and food vendors along the route</li>
+                  <li>• Free water and refreshments from volunteers</li>
+                  <li>• Devotional music and chanting</li>
+                  <li>• Thousands of pilgrims from all backgrounds</li>
+                  <li>• Special ceremonies at the summit</li>
+                </ul>
+              </div>
+              <p>
+                The experience during pilgrimage season is truly unique - youll be part of an ancient tradition that
+                has continued for over 1,000 years, climbing alongside people from all walks of life united in their
+                spiritual quest.
+              </p>
+              <div>
+                <p>There is a another tradition on the top of the summit, pilgrims ring the bell to denote the times they have reached the peak.</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -401,18 +405,14 @@ export default function AdamsPeakTravelGuide() {
                   </div>
 
                   <div>
-                    <h4 className="font-semibold mb-3">Geththapana</h4>
+                    <h4 className="font-semibold mb-3">Geththampaana/ Idikatupaana</h4>
                     <ImageCarousel 
                     heightClassName="h-[220px] md:h-[300px]"
                     images={[
                       {
-                        src: "/Seetha-Gangula-Rathnapura.jpeg",
-                        alt: "Seetha Gangula, the cold stream where Buddha is said to have refreshed himself during his ascent of Adams Peak"
+                        src: "/Geththampana.jpg",
+                        alt: "Geththampaana/ Idikatupaana, the spot where Buddha is believed to have tied his robe before the final ascent to Adams Peak"
                       },
-                       {
-                        src: "/Seetha-Gangula.jpeg",
-                        alt: "Seetha Gangula, the cold stream where Buddha is said to have refreshed himself during his ascent of Adams Peak"
-                      }
                     ]}  
                   />
                     <p className="text-muted-foreground mb-4">
@@ -663,6 +663,109 @@ export default function AdamsPeakTravelGuide() {
             </Card>
           </div>
         </section>
+        {/* The Sunrise Experience */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold mb-6">The Magical Sunrise Experience</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                The sunrise from Adams Peak is considered one of the worlds most spectacular. Locals called it the "Ira Sewaya." As the first rays of
+                sunlight hit the summit, the mountain casts a perfect triangular shadow across the landscape - a
+                phenomenon that has amazed visitors for centuries.
+              </p>
+              <p>
+                During clear weather, you can see for miles in every direction, with views stretching to the coast on
+                one side and the central highlands on the other. The moment when the sun breaks the horizon and
+                illuminates the sacred footprint is truly magical.
+              </p>
+              <div className="bg-yellow-50 p-4 rounded-lg">
+                <h4 className="font-semibold text-yellow-800 mb-2">Best Photography Tips:</h4>
+                <ul className="text-sm text-yellow-700 space-y-1">
+                  <li>• Arrive 30 minutes before sunrise</li>
+                  <li>• Bring a tripod for stable shots</li>
+                  <li>• Capture the mountains shadow</li>
+                  <li>• Take photos of fellow pilgrims</li>
+                  <li>• Dont forget the sacred footprint</li>
+                </ul>
+              </div>
+            </div>
+            <Image
+              src="/Adams-peak.jpeg"
+              alt="Spectacular sunrise from Adams Peak showing the triangular shadow cast by the mountain across the landscape"
+              width={600}
+              height={400}
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+          {/* Natural Features */}
+          <div className="mt-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>Sacred Natural Features</CardTitle>
+                <CardDescription>Ancient landmarks and natural wonders</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3">Kunudiya Pawwa</h4>
+                    <Image src="/Kunu-Diya-Pawwa.webp" alt={"Kunudiya pawwa"} width={400} height={300} />
+                    <p className="text-muted-foreground mb-4">
+                      A significant rock formation along the pilgrimage path where, according to tradition, pilgrims would
+                      stop to dry their wet clothes. The name &quot;Kunudiya&quot; refers to the warmth of the rock even during cold weather.
+                    </p>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Traditional resting point
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Unique geological formation
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Historical significance
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold mb-3">Dharmarajagala</h4>
+                    <p className="text-muted-foreground mb-4">
+                      Dharmarajagala is a significant rock formation and sacred site located along the Rathnapura Palabaddala pilgrimage
+                      route to Sri Pada. According to Buddhist tradition, this is the spot where Lord Buddha
+                      preached the Dhamma (teachings) to the deity Saman, who is the guardian of Adam&apos;s Peak.
+                      The site is marked by a small shrine and is considered a spiritually powerful point on the
+                      ascent, where many pilgrims pause to offer prayers before continuing their journey upward.
+                    </p>
+                    <ul className="text-sm text-muted-foreground space-y-2">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Site where Buddha is said to have preached to God Saman
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Small shrine maintained by pilgrims along the route
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        One of the most sacred waypoints on the Ratnapura route
+                      </li>
+                    </ul>
+                    <div className="bg-amber-50 dark:bg-amber-900/20 p-3 rounded-lg mt-3">
+                      <p className="text-sm text-amber-800 dark:text-amber-200">
+                        <strong>Did You Know?</strong> God Saman (Sumana Saman) is one of the four guardian deities
+                        of Sri Lanka and is specifically believed to reside on and protect Adam&apos;s Peak. His Devalaya
+                        (temple) at the base of the mountain in Ratnapura is visited by pilgrims before beginning
+                        the climb.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
 
         {/* Climbing Guide */}
         <section className="mb-12">
@@ -692,11 +795,12 @@ export default function AdamsPeakTravelGuide() {
                 </div>
                 <div className="bg-orange-50 p-3 rounded-lg">
                   <p className="text-sm text-orange-800">
-                    <strong>Peak Season:</strong> December to May when weather is clear and paths are lit
+                    <strong>Peak Season:</strong> December to May when weather is clear and paths are little crowded. Avoid monsoon season (June to September) due to slippery paths and poor visibility.
                   </p>
 
-                  <p>There can be venaumous creature and elepahts in teh route specillay execpt Hatton Nallathanniya</p>
-                  Follow the linsk to get to know about most venomous snakes in Sri lanka
+                  <p>There can be venomous creatures and elephants on the route, especially except Hatton Nallathanniya.</p>
+                  <p>Follow the links to get to know about the most venomous snakes in Sri Lanka.</p>
+                  <Link className="underline" href="/articles/venomous-snakes-in-sri-lanka">Learn more about venomous snakes</Link>
                 </div>
               </CardContent>
             </Card>
@@ -732,45 +836,7 @@ export default function AdamsPeakTravelGuide() {
           </div>
         </section>
 
-        {/* Pilgrimage Season */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Pilgrimage Season Experience</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <Image
-              src="/Udamaluwa.jpeg"
-              alt="Thousands of pilgrims climbing Adams Peak during pilgrimage season with illuminated path at night"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-            />
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                During pilgrimage season (December to May), Adams Peak transforms into a spiritual highway with
-                thousands of pilgrims making the sacred journey. The path is illuminated with lights, tea stalls operate
-                throughout the night, and the atmosphere is filled with devotional songs and chanting.
-              </p>
-              <div className="bg-purple-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-purple-800 mb-2">Pilgrimage Season Highlights:</h4>
-                <ul className="text-sm text-purple-700 space-y-1">
-                  <li>• Path illuminated with electric lights</li>
-                  <li>• Tea stalls and food vendors along the route</li>
-                  <li>• Free water and refreshments from volunteers</li>
-                  <li>• Devotional music and chanting</li>
-                  <li>• Thousands of pilgrims from all backgrounds</li>
-                  <li>• Special ceremonies at the summit</li>
-                </ul>
-              </div>
-              <p>
-                The experience during pilgrimage season is truly unique - youll be part of an ancient tradition that
-                has continued for over 1,000 years, climbing alongside people from all walks of life united in their
-                spiritual quest.
-              </p>
-              <div>
-                <p>There is a another tradition on the top of the summit, pilgrims ring the bell to denote the times they have reached the peak.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Safety & Preparation */}
         <section className="mb-12">
@@ -926,42 +992,6 @@ export default function AdamsPeakTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-          </div>
-        </section>
-
-        {/* The Sunrise Experience */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">The Magical Sunrise Experience</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                The sunrise from Adams Peak is considered one of the worlds most spectacular. As the first rays of
-                sunlight hit the summit, the mountain casts a perfect triangular shadow across the landscape - a
-                phenomenon that has amazed visitors for centuries.
-              </p>
-              <p>
-                During clear weather, you can see for miles in every direction, with views stretching to the coast on
-                one side and the central highlands on the other. The moment when the sun breaks the horizon and
-                illuminates the sacred footprint is truly magical.
-              </p>
-              <div className="bg-yellow-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-yellow-800 mb-2">Best Photography Tips:</h4>
-                <ul className="text-sm text-yellow-700 space-y-1">
-                  <li>• Arrive 30 minutes before sunrise</li>
-                  <li>• Bring a tripod for stable shots</li>
-                  <li>• Capture the mountains shadow</li>
-                  <li>• Take photos of fellow pilgrims</li>
-                  <li>• Dont forget the sacred footprint</li>
-                </ul>
-              </div>
-            </div>
-            <Image
-              src="/Adams-peak.jpeg"
-              alt="Spectacular sunrise from Adams Peak showing the triangular shadow cast by the mountain across the landscape"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-lg"
-            />
           </div>
         </section>
 
