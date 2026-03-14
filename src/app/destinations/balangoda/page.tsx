@@ -135,7 +135,7 @@ export default function BalangodaGuide() {
                       <li>• <strong>Duration:</strong> 3.5-4 hours</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
-                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                    <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                       <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                         <strong>🌟 Recommended:</strong> <span className="font-semibold"> Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Balangoda. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                       </p>
@@ -191,10 +191,7 @@ export default function BalangodaGuide() {
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                In 1986, archaeologists made a groundbreaking discovery in Balangoda&apos;s cave systems - human remains
-                dating back 37,000 years. This prehistoric human, dubbed &quot;Balangoda Man,&quot; represents one of the earliest
-                known inhabitants of Sri Lanka and provides crucial insights into human migration patterns in South
-                Asia.
+                Beginning in the 1930s, archaeologist P.E.P. Deraniyagala excavated cave systems around Balangoda and identified human remains belonging to a distinct prehistoric population, later dubbed &quot;Balangoda Man.&quot; Excavations at sites including Batadomba-lena, Beli-lena, and Fa-Hien Lena have yielded skeletal remains and artefacts dated up to 37,000 years old, making them among the earliest known inhabitants of Sri Lanka and providing crucial insights into human migration patterns in South Asia.
               </p>
               <p>
                 The discovery included not only human remains but also stone tools, evidence of fire use, and signs of
@@ -504,8 +501,8 @@ export default function BalangodaGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle>5. Pahanthudawa</CardTitle>
-                <CardDescription>Ancient craft traditions preserved for generations</CardDescription>
+                <CardTitle>5. Pahanthudawa Waterfall</CardTitle>
+                <CardDescription>A scenic waterfall nestled in the Belihuloya region, near Balangoda</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -522,7 +519,7 @@ export default function BalangodaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Eye Catching waterfall only 16 feet height but beautiful scenery around the waterfall. &quot;Pahanthuwada&quot; name is derived from the fact that the waterfall resembles a oil lamp (pahana) being extinguished (thudawa) as the water cascades down the rocks.
+                      Pahanthudawa Waterfall is located in the <strong>Belihuloya area</strong> — a scenic river valley near Balangoda, famous for its lush greenery, cool climate, and the Belihuloya River. The waterfall itself is only 16 feet in height, but the beautiful natural scenery surrounding it makes it a captivating spot. The name &quot;Pahanthuwada&quot; is derived from the waterfall&apos;s resemblance to an oil lamp (pahana) being extinguished (thudawa) as the water cascades down the rocks.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -559,7 +556,7 @@ export default function BalangodaGuide() {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            {/* <Card>
               <CardHeader>
                 <CardTitle>6. Belihuloya</CardTitle>
                 <CardDescription>Ancient craft traditions preserved for generations</CardDescription>
@@ -621,11 +618,11 @@ export default function BalangodaGuide() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
             {/* Samanalawewa Reservoir */}
             <Card>
               <CardHeader>
-                <CardTitle>7. Samanalawewa Reservoir</CardTitle>
+                <CardTitle>6. Samanalawewa Reservoir</CardTitle>
                 <CardDescription>Stunning man-made lake and engineering marvel</CardDescription>
               </CardHeader>
               <CardContent>
@@ -714,11 +711,11 @@ export default function BalangodaGuide() {
           </div>
         </section>
 
-        <Separator className="my-12" />
+        {/* <Separator className="my-12" /> */}
 
 
         {/* Traditional Crafts */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Traditional Crafts & Cultural Heritage</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
@@ -766,11 +763,11 @@ export default function BalangodaGuide() {
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
 
         {/* Getting There */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Getting to Balangoda</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
@@ -825,10 +822,10 @@ export default function BalangodaGuide() {
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
         {/* Where to Stay */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Where to Stay in Balangoda</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
@@ -879,10 +876,10 @@ export default function BalangodaGuide() {
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
         {/* Activities & Experiences */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Activities & Experiences</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
@@ -935,10 +932,10 @@ export default function BalangodaGuide() {
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
         {/* Local Culture & Cuisine */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Local Culture & Cuisine</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
@@ -995,7 +992,7 @@ export default function BalangodaGuide() {
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
         {/* Travel Tips */}
         <section className="mb-12">
@@ -1083,17 +1080,17 @@ export default function BalangodaGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  1.5 hours
+                  1 hr 15 min
                 </div>
               </div>
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Rathnapura</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Known for its scenic beauty and cool climate, Pattipola is home to the highest railway station in Sri Lanka.
+                  Sri Lanka&apos;s &quot;City of Gems,&quot; Ratnapura is the country&apos;s foremost gem-mining hub and home to the National Museum of Gems. It also serves as the main gateway to Adam&apos;s Peak pilgrimages.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  50 km from Balangoda
+                  47.4 km from Balangoda
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/rathnapura" passHref legacyBehavior>
@@ -1111,17 +1108,17 @@ export default function BalangodaGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  2 hours
+                  2 hr 57 min
                 </div>
               </div>
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Adam&apos;s Peak</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Known for its scenic beauty and cool climate, Adam&apos;s Peak is home to the highest railway station in Sri Lanka.
+                  Sri Pada (Adam&apos;s Peak) is a sacred 2,243m mountain revered by four religions for the &quot;sacred footprint&quot; at its summit. The pilgrimage season runs December to May, with thousands climbing the 5,500 steps each night.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  18 km from Balangoda
+                  76.2 km from Balangoda
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/adams-peak" passHref legacyBehavior>
@@ -1139,7 +1136,7 @@ export default function BalangodaGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  2 hours
+                  50 min
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1149,7 +1146,7 @@ export default function BalangodaGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  17 km from Balangoda
+                  17.5 km from Balangoda
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/hawagala" passHref legacyBehavior>
