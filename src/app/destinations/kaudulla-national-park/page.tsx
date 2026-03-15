@@ -17,15 +17,19 @@ export default function KaudullaNationalParkGuide() {
     ];
 
     const birdLifeImages = [
-        { src: "/placeholder.svg?height=400&width=600", caption: "Painted Stork at Kaudulla", alt: "Painted Stork fishing in the shallow waters of Kaudulla" },
-        { src: "/placeholder.svg?height=400&width=600", caption: "Various water birds", alt: "Different species of water birds at Kaudulla reservoir" },
-        { src: "/placeholder.svg?height=400&width=600", caption: "Peacocks in natural habitat", alt: "Peacocks displaying their feathers in Kaudulla" },
+        { src: "/Kaudulla-Birds2.jpg", caption: "Painted Stork at Kaudulla", alt: "Painted Stork fishing in the shallow waters of Kaudulla" },
+        { src: "/Kaudulla-Birds3.jpg", caption: "White-bellied Sea Eagles at Kaudulla", alt: "White-bellied Sea Eagles perched at Kaudulla" },
+        { src: "/Kaudulla-Birds4.jpg", caption: "Spot-billed Pelican at Kaudulla", alt: "Spot-billed Pelican fishing in the shallow waters of Kaudulla" },
+        { src: "/Kaudulla-Birds5.jpg", caption: "Brown Fish Owl at Kaudulla", alt: "Brown Fish Owl perched at Kaudulla" },
+        { src: "/Kaudulla-Birds6.jpg", caption: "Peacock at Kaudulla", alt: "Peacock displaying its feathers at Kaudulla" },
+        { src: "/Kaudulla-Birds7.jpg", caption: "Sri Lanka Green Pigeon at Kaudulla", alt: "Sri Lanka Green Pigeon perched at Kaudulla" },
+        { src: "/Kaudulla-Birds8.jpg", caption: "Indian Cormorants at Kaudulla", alt: "Indian Cormorants fishing in the shallow waters of Kaudulla" },
+        { src: "/Kaudulla-Birds9.jpg", caption: "Blue-tailed Bee-eater at Kaudulla", alt: "Blue-tailed Bee-eater perched at Kaudulla" },
+
     ];
 
     const landscapeImages = [
-        { src: "/placeholder.svg?height=400&width=600", caption: "Kaudulla reservoir sunset", alt: "Beautiful sunset over Kaudulla reservoir" },
-        { src: "/placeholder.svg?height=400&width=600", caption: "Grasslands and water bodies", alt: "Vast grasslands and water bodies of Kaudulla National Park" },
-        { src: "/placeholder.svg?height=400&width=600", caption: "Ancient tank system", alt: "Ancient tank system at Kaudulla National Park" },
+        { src: "/Kaudulla-Tank.jpg", caption: "Kaudulla reservoir sunset", alt: "Beautiful sunset over Kaudulla reservoir" },
     ];
 
     return (
@@ -275,7 +279,7 @@ export default function KaudullaNationalParkGuide() {
                 </section>
 
                 {/* Did You Know Card 1 */}
-                <Card className="mb-12 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-2 border-blue-200 dark:border-blue-800">
+                <Card className="mb-12 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950 dark:to-slate-900 border-2 border-blue-200 dark:border-blue-700">
                     <CardContent className="pt-6">
                         <div className="flex flex-col sm:flex-row items-start gap-4">
                             <div className="flex-1 w-full">
@@ -283,10 +287,10 @@ export default function KaudullaNationalParkGuide() {
                                     <Lightbulb className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                                     Did You Know? The Elephant Corridor Network
                                 </h3>
-                                <p className="text-muted-foreground mb-3 leading-relaxed">
+                                <p className="text-blue-800 dark:text-blue-100 mb-3 leading-relaxed">
                                     Kaudulla is part of a remarkable 150-kilometer elephant corridor connecting three major national parks: Minneriya, Kaudulla, and Wasgamuwa. Elephants migrate seasonally between these parks following ancient pathways passed down through generations. During dry months (May-October), elephants concentrate at Minneriya and Kaudulla where water and grass remain abundant. As conditions change, they move to Kaudulla (July-October peak), then migrate to Wasgamuwa.
                                 </p>
-                                <p className="text-muted-foreground leading-relaxed">
+                                <p className="text-blue-800 dark:text-blue-100 leading-relaxed">
                                     This corridor system is crucial for elephant survival, allowing them to access food, water, and breeding opportunities across a vast landscape. Conservation efforts focus on protecting these migration routes from human development, ensuring future generations of elephants can continue their ancestral journeys!
                                 </p>
                             </div>
@@ -501,7 +505,7 @@ export default function KaudullaNationalParkGuide() {
                 </section>
 
                 {/* Did You Know Card 2 */}
-                <Card className="mb-12 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/30 border-2 border-amber-200 dark:border-amber-800">
+                <Card className="mb-12 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950 dark:to-slate-900 border-2 border-amber-200 dark:border-amber-700">
                     <CardContent className="pt-6">
                         <div className="flex items-start gap-4">
                             <div className="p-3 bg-amber-500 rounded-full">
@@ -509,10 +513,10 @@ export default function KaudullaNationalParkGuide() {
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-3 text-amber-900 dark:text-amber-100">Did You Know? King Mahasena&apos;s Engineering Marvel</h3>
-                                <p className="text-muted-foreground mb-3 leading-relaxed">
+                                <p className="text-amber-800 dark:text-amber-100 mb-3 leading-relaxed">
                                     The magnificent Kaudulla Tank was constructed around 276 AD during the reign of King Mahasena, one of ancient Sri Lanka&apos;s greatest builders. This massive reservoir stretches over 6,900 hectares and was designed to capture monsoon rainwater, storing it for agricultural irrigation during dry months. The engineering precision required to build such a structure without modern technology is astounding!
                                 </p>
-                                <p className="text-muted-foreground leading-relaxed">
+                                <p className="text-amber-800 dark:text-amber-100 leading-relaxed">
                                     Nearly 1,750 years later, the tank still functions exactly as intended, demonstrating the incredible hydraulic engineering knowledge of ancient Sri Lankan civilization. The reservoir&apos;s design includes sophisticated spillways, sluice gates, and canals that continue irrigating thousands of hectares of paddy fields while simultaneously sustaining the park&apos;s wildlife ecosystem. It stands as living proof that sustainable water management has been perfected in Sri Lanka for millennia!
                                 </p>
                             </div>
@@ -685,7 +689,7 @@ export default function KaudullaNationalParkGuide() {
                 </section>
 
                 {/* Did You Know Card 3 */}
-                <Card className="mb-12 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-2 border-green-200 dark:border-green-800">
+                <Card className="mb-12 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950 dark:to-slate-900 border-2 border-green-200 dark:border-green-700">
                     <CardContent className="pt-6">
                         <div className="flex items-start gap-4">
                             <div className="p-3 bg-green-500 rounded-full">
@@ -693,10 +697,10 @@ export default function KaudullaNationalParkGuide() {
                             </div>
                             <div className="flex-1">
                                 <h3 className="text-xl font-bold mb-3 text-green-900 dark:text-green-100">Did You Know? Kaudulla vs Minneriya - Smart Safari Planning!</h3>
-                                <p className="text-muted-foreground mb-3 leading-relaxed">
+                                <p className="text-green-800 dark:text-green-100 mb-3 leading-relaxed">
                                     Kaudulla and neighboring Minneriya National Parks form a unique interconnected ecosystem where elephants migrate seasonally between the two based on water and food availability. From May to October, as Minneriya&apos;s water levels drop significantly, elephants begin concentrating at Kaudulla where grass remains abundant. By July-October (peak dry season), Kaudulla typically hosts larger elephant gatherings than Minneriya!
                                 </p>
-                                <p className="text-muted-foreground leading-relaxed">
+                                <p className="text-green-800 dark:text-green-100 leading-relaxed">
                                     Smart tip for visitors: Check which park currently has better elephant gatherings before booking your safari! Local operators monitor elephant movements daily and can recommend whether Kaudulla or Minneriya offers superior viewing on your visit date. Many experienced safari-goers visit both parks during their Cultural Triangle stay, maximizing chances for spectacular elephant encounters. The parks are only 20 km apart, making it easy to switch between them based on real-time wildlife reports!
                                 </p>
                             </div>
@@ -705,7 +709,7 @@ export default function KaudullaNationalParkGuide() {
                 </Card>
 
                 {/* Best Time to Visit */}
-                <section className="mb-12">
+                {/* <section className="mb-12">
                     <h2 className="text-3xl font-bold mb-6 text-foreground">When to Visit Kaudulla National Park</h2>
                     <Card>
                         <CardHeader>
@@ -859,7 +863,7 @@ export default function KaudullaNationalParkGuide() {
                             </div>
                         </CardContent>
                     </Card>
-                </section>
+                </section> */}
 
                 {/* Conservation and Responsible Tourism */}
                 <section className="mb-12">
@@ -938,17 +942,19 @@ export default function KaudullaNationalParkGuide() {
 
                 {/* Conclusion */}
                 <section className="mb-12">
-                    <Card className="bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 border-2">
-                        <CardContent className="pt-6">
-                            <h3 className="text-2xl font-bold mb-4 text-foreground">Your Kaudulla Adventure Awaits!</h3>
-                            <p className="text-muted-foreground leading-relaxed mb-4">
+                    <Card className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border-green-200 dark:border-green-700">
+                        <CardHeader>
+                            <CardTitle className="text-green-800 dark:text-green-400">Your Kaudulla Adventure Awaits!</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-muted-foreground leading-relaxed mb-4 text-neutral-800 dark:text-neutral-200">
                                 Kaudulla National Park offers one of Sri Lanka&apos;s most spectacular wildlife experiences - witnessing &quot;The Gathering&quot; where hundreds of elephants congregate in a magnificent display of nature&apos;s rhythms. Combined with its strategic location in the Cultural Triangle, ancient historical significance, and role as a vital elephant corridor, Kaudulla represents the perfect harmony between wildlife conservation and cultural heritage tourism.
                             </p>
-                            <p className="text-muted-foreground leading-relaxed mb-4">
+                            <p className="text-muted-foreground leading-relaxed mb-4 text-neutral-800 dark:text-neutral-200">
                                 Whether you&apos;re photographing elephant families bathing in golden light, observing rare bird species at the ancient reservoir, or simply marveling at 1,750 years of continuous ecosystem functionality, Kaudulla creates memories that last a lifetime. Plan your visit during July-October for peak elephant gatherings, or explore year-round for different wildlife experiences.
                             </p>
-                            <p className="text-muted-foreground leading-relaxed">
-                                Book your Kaudulla safari today and become part of this incredible conservation success story - where ancient kings&apos; engineering genius continues sustaining wild elephants, and responsible tourism helps protect Sri Lanka&apos;s natural heritage for future generations to treasure!
+                            <p className="text-muted-foreground leading-relaxed font-medium text-neutral-800 dark:text-neutral-200">
+                                Book your Kaudulla safari today and become part of this incredible conservation success story - where ancient kings&apos; engineering genius continues sustaining wild elephants, and responsible tourism helps protect Sri Lanka&apos;s natural heritage for future generations to treasure! 🐘🌿✨
                             </p>
                         </CardContent>
                     </Card>

@@ -17,7 +17,7 @@ export default function HawagalaGuide() {
             {/* Hero Section */}
             <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
                 <Image
-                    src="/hawagala-rock.jpg"
+                    src="/Hawagala.jpg"
                     alt="Hawagala rock formation with stunning panoramic views of misty mountain ranges and lush greenery in Balangoda, Sri Lanka"
                     fill
                     className="object-cover"
