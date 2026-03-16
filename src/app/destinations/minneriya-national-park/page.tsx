@@ -292,10 +292,10 @@ export default function MinneriyaNationalParkGuide() {
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-bold mb-3 text-blue-900 dark:text-blue-100">Did You Know? Why "The Gathering" Happens at Minneriya</h3>
-                <p className="text-muted-foreground mb-3 leading-relaxed">
+                <p className="text-blue-800 dark:text-blue-100 mb-3 leading-relaxed">
                   "The Gathering" isn't random - it's driven by elephants' extraordinary memory and intelligence! Elephants possess exceptional spatial memory passed down through generations. Matriarchs remember the exact location of Minneriya Tank and teach their young the migration routes elephants have used for thousands of years.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-blue-800 dark:text-blue-100 leading-relaxed">
                   During Sri Lanka's dry season (May-October), water sources across the region diminish drastically. However, the ancient Minneriya Tank's massive capacity and sophisticated design ensure water remains available even during severe droughts. Additionally, as water levels drop, nutrient-rich grasslands emerge on the exposed tank bed, providing fresh, protein-rich grazing that nursing mothers especially need. This combination of reliable water and high-quality food creates an irresistible magnet, drawing elephants from forests up to 50 km away to converge at Minneriya in spectacular numbers!
                 </p>
               </div>
@@ -316,12 +316,12 @@ export default function MinneriyaNationalParkGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/Minneriya-Asian-Elephants.jpg"
-                    alt="Asian elephant family with mother and baby at Minneriya reservoir"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
+                  <ImageCarousel
+                    images={[
+                      { src: "/Minneriya-Asian-Elephants.jpg", caption: "Elephant families bathing together", alt: "Elephant families enjoying water activities at Minneriya" },
+                      { src: "/Minneriyanationalpark.jpeg", caption: "Massive elephant gathering at Minneriya reservoir", alt: "Hundreds of elephants assembled at Minneriya Tank during The Gathering" },
+                      { src: "/Minneriya-Asian-Elephants.jpg", caption: "Baby elephants learning social skills", alt: "Young elephants playing and interacting at Minneriya" },
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">

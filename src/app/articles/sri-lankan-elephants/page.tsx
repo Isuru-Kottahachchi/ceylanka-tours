@@ -235,16 +235,16 @@ export default function SriLankanElephantsPage() {
                   <div className="flex items-center space-x-3 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <Ruler className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                     <div>
-                      <h3 className="font-semibold text-foreground">Height</h3>
-                      <p className="text-muted-foreground">8-10 feet (2.5-3 meters)</p>
+                      <h3 className="font-semibold text-blue-900 dark:text-blue-100">Height</h3>
+                      <p className="text-blue-800 dark:text-blue-200">8-10 feet (2.5-3 meters)</p>
                     </div>
                   </div>
 
                   <div className="flex items-center space-x-3 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <Weight className="h-8 w-8 text-green-600 dark:text-green-400" />
                     <div>
-                      <h3 className="font-semibold text-foreground">Weight</h3>
-                      <p className="text-muted-foreground">4,000-5,500 kg (8,800-12,100 lbs)</p>
+                      <h3 className="font-semibold text-green-900 dark:text-green-100">Weight</h3>
+                      <p className="text-green-800 dark:text-green-200">4,000-5,500 kg (8,800-12,100 lbs)</p>
                     </div>
                   </div>
                 </div>
@@ -284,8 +284,8 @@ export default function SriLankanElephantsPage() {
                 <div className="flex items-center space-x-3 p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg mb-6">
                   <Clock className="h-8 w-8 text-purple-600 dark:text-purple-400" />
                   <div>
-                      <h3 className="font-semibold text-foreground">Average Lifespan</h3>
-                      <p className="text-muted-foreground">60-70 years in the wild</p>
+                      <h3 className="font-semibold text-purple-900 dark:text-purple-100">Average Lifespan</h3>
+                      <p className="text-purple-800 dark:text-purple-200">60-70 years in the wild</p>
                   </div>
                 </div>
 
@@ -336,16 +336,16 @@ export default function SriLankanElephantsPage() {
                   <div className="flex items-center space-x-3 p-4 bg-pink-50 dark:bg-pink-900/20 rounded-lg">
                     <Heart className="h-8 w-8 text-pink-600 dark:text-pink-400" />
                     <div>
-                      <h3 className="font-semibold text-foreground">Family Groups</h3>
-                      <p className="text-muted-foreground">Led by the oldest female</p>
+                      <h3 className="font-semibold text-pink-900 dark:text-pink-100">Family Groups</h3>
+                      <p className="text-pink-800 dark:text-pink-200">Led by the oldest female</p>
                     </div>
                   </div>
 
                   <div className="flex items-center space-x-3 p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
                     <Users className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
                     <div>
-                      <h3 className="font-semibold text-foreground">Group Size</h3>
-                      <p className="text-muted-foreground">5-20 elephants</p>
+                      <h3 className="font-semibold text-yellow-900 dark:text-yellow-100">Group Size</h3>
+                      <p className="text-yellow-800 dark:text-yellow-200">5-20 elephants</p>
                     </div>
                   </div>
                 </div>
@@ -391,16 +391,16 @@ export default function SriLankanElephantsPage() {
                   <div className="flex items-center space-x-3 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <TreePine className="h-8 w-8 text-green-600 dark:text-green-400" />
                     <div>
-                      <h3 className="font-semibold text-foreground">Habitat</h3>
-                      <p className="text-muted-foreground">Forests and grasslands</p>
+                      <h3 className="font-semibold text-green-900 dark:text-green-100">Habitat</h3>
+                      <p className="text-green-800 dark:text-green-200">Forests and grasslands</p>
                     </div>
                   </div>
 
                   <div className="flex items-center space-x-3 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <Droplets className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                     <div>
-                      <h3 className="font-semibold text-foreground">Water Needs</h3>
-                      <p className="text-muted-foreground">150-200 liters per day</p>
+                      <h3 className="font-semibold text-blue-900 dark:text-blue-100">Water Needs</h3>
+                      <p className="text-blue-800 dark:text-blue-200">150-200 liters per day</p>
                     </div>
                   </div>
                 </div>
@@ -587,33 +587,45 @@ export default function SriLankanElephantsPage() {
                 <h3 className="text-xl font-bold text-green-900 dark:text-green-100 mb-4">
                   Best Places to See Elephants
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-3">
                   <Link href="/destinations/yala-national-park" className="block">
-                    <div className="p-3 bg-background rounded-lg hover:shadow-md transition-shadow">
-                      <h4 className="font-semibold text-green-800 dark:text-green-200">Yala National Park</h4>
-                      <p className="text-green-700 dark:text-green-300 text-sm">Most popular safari destination</p>
-                    </div>
+                    <Button className="w-full justify-between bg-green-600 hover:bg-green-700 text-white h-auto py-3 px-4 cursor-pointer">
+                      <div className="text-left">
+                        <p className="font-semibold">Yala National Park</p>
+                        <p className="text-xs text-green-100">Most popular safari destination</p>
+                      </div>
+                      <ArrowRight className="h-4 w-4 flex-shrink-0 ml-2" />
+                    </Button>
                   </Link>
 
                   <Link href="/destinations/udawalawe-national-park" className="block">
-                    <div className="p-3 bg-background rounded-lg hover:shadow-md transition-shadow">
-                      <h4 className="font-semibold text-green-800 dark:text-green-200">Udawalawe National Park</h4>
-                      <p className="text-green-700 dark:text-green-300 text-sm">Best for elephant watching</p>
-                    </div>
+                    <Button className="w-full justify-between bg-green-600 hover:bg-green-700 text-white h-auto py-3 px-4 cursor-pointer">
+                      <div className="text-left">
+                        <p className="font-semibold">Udawalawe National Park</p>
+                        <p className="text-xs text-green-100">Best for elephant watching</p>
+                      </div>
+                      <ArrowRight className="h-4 w-4 flex-shrink-0 ml-2" />
+                    </Button>
                   </Link>
 
                   <Link href="/destinations/minneriya-national-park" className="block">
-                    <div className="p-3 bg-background rounded-lg hover:shadow-md transition-shadow">
-                      <h4 className="font-semibold text-green-800 dark:text-green-200">Minneriya National Park</h4>
-                      <p className="text-green-700 dark:text-green-300 text-sm">Famous for &quot;The Gathering&quot;</p>
-                    </div>
+                    <Button className="w-full justify-between bg-green-600 hover:bg-green-700 text-white h-auto py-3 px-4 cursor-pointer">
+                      <div className="text-left">
+                        <p className="font-semibold">Minneriya National Park</p>
+                        <p className="text-xs text-green-100">Famous for &quot;The Gathering&quot;</p>
+                      </div>
+                      <ArrowRight className="h-4 w-4 flex-shrink-0 ml-2" />
+                    </Button>
                   </Link>
 
                   <Link href="/destinations/wilpattu-national-park" className="block">
-                    <div className="p-3 bg-background rounded-lg hover:shadow-md transition-shadow">
-                      <h4 className="font-semibold text-green-800 dark:text-green-200">Wilpattu National Park</h4>
-                      <p className="text-green-700 dark:text-green-300 text-sm">Oldest national park</p>
-                    </div>
+                    <Button className="w-full justify-between bg-green-600 hover:bg-green-700 text-white h-auto py-3 px-4 cursor-pointer">
+                      <div className="text-left">
+                        <p className="font-semibold">Wilpattu National Park</p>
+                        <p className="text-xs text-green-100">Oldest national park</p>
+                      </div>
+                      <ArrowRight className="h-4 w-4 flex-shrink-0 ml-2" />
+                    </Button>
                   </Link>
                 </div>
               </CardContent>
