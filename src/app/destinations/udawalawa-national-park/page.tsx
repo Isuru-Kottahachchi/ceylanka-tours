@@ -19,9 +19,9 @@ export default function UdawalaweNationalParkGuide() {
 
   const transitHomeImages = [
     { src: "/Elephant-Transit-Home.jpg", caption: "Baby elephants at feeding time", alt: "Orphaned elephants being bottle-fed at Transit Home" },
-    { src: "/Elephant-Transit-Home1.jpg", caption: "Caretakers with elephant calves", alt: "Staff caring for rescued baby elephants" },
-    { src: "/Elephant-Transit-Home2.jpg", caption: "Young elephants playing", alt: "Rehabilitating elephants learning social skills" },
-    { src: "/Elephant-Transit-Home3.jpg", caption: "Release back into the wild", alt: "Elephants being released back into Udawalawe park" },
+    { src: "/Elephant-Transit-Home1.jpg", caption: "Young elephants playing", alt: "Staff caring for rescued baby elephants" },
+    { src: "/Elephant-Transit-Home2.jpg", caption: "", alt: "Rehabilitating elephants learning social skills" },
+    { src: "/Elephant-Transit-Home3.jpg", caption: "", alt: "Elephants being released back into Udawalawe park" },
   ];
 
   return (

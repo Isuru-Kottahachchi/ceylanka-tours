@@ -961,28 +961,28 @@ export default function YalaNationalParkTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <div className="yala-green-card p-4 rounded-lg mb-4">
-                      <h4 className="font-semibold text-green-800 dark:text-green-300 mb-2">Endemic Mammals</h4>
-                      <ul className="space-y-2 text-sm text-green-900 dark:text-green-100">
+                    <div className="p-4 rounded-lg mb-4 bg-sky-50 border border-sky-200 dark:bg-slate-900/85 dark:border-sky-700/80">
+                      <h4 className="font-semibold text-sky-900 dark:text-sky-100 mb-2">Endemic Mammals</h4>
+                      <ul className="space-y-2 text-sm text-sky-900 dark:text-sky-100">
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-sky-600 dark:text-sky-300 mt-1 flex-shrink-0" />
                           <div>
-                            <strong className="text-green-900 dark:text-green-200">Toque Macaque:</strong>
-                            <p className="text-green-800 dark:text-green-100">Sri Lanka&apos;s endemic primate, recognized by its distinctive cap-like whorl of hair</p>
+                            <strong className="text-sky-950 dark:text-sky-200">Toque Macaque:</strong>
+                            <p className="text-sky-800 dark:text-sky-100">Sri Lanka&apos;s endemic primate, recognized by its distinctive cap-like whorl of hair</p>
                           </div>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-sky-600 dark:text-sky-300 mt-1 flex-shrink-0" />
                           <div>
-                            <strong className="text-green-900 dark:text-green-200">Red Slender Loris:</strong>
-                            <p className="text-green-800 dark:text-green-100">Nocturnal primate with large eyes, found in Yala&apos;s forested areas</p>
+                            <strong className="text-sky-950 dark:text-sky-200">Red Slender Loris:</strong>
+                            <p className="text-sky-800 dark:text-sky-100">Nocturnal primate with large eyes, found in Yala&apos;s forested areas</p>
                           </div>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-sky-600 dark:text-sky-300 mt-1 flex-shrink-0" />
                           <div>
-                            <strong className="text-green-900 dark:text-green-200">Golden Palm Civet:</strong>
-                            <p className="text-green-800 dark:text-green-100">Endemic civet species with distinctive golden-brown fur</p>
+                            <strong className="text-sky-950 dark:text-sky-200">Golden Palm Civet:</strong>
+                            <p className="text-sky-800 dark:text-sky-100">Endemic civet species with distinctive golden-brown fur</p>
                           </div>
                         </li>
                       </ul>
@@ -1025,17 +1025,17 @@ export default function YalaNationalParkTravelGuide() {
                         for future generations.
                       </p>
                       <div className="grid md:grid-cols-3 gap-4">
-                        <div className="text-center p-3 bg-amber-50 dark:bg-amber-950/50 rounded-lg">
-                          <p className="font-semibold text-amber-800 dark:text-amber-300">33</p>
-                          <p className="text-xs text-amber-700 dark:text-amber-200">Endemic Mammals</p>
+                        <div className="yala-endemic-stat text-center p-3 rounded-lg">
+                          <div className="yala-endemic-stat-number font-semibold">33</div>
+                          <div className="yala-endemic-stat-label text-xs">Endemic Mammals</div>
                         </div>
-                        <div className="text-center p-3 bg-amber-50 dark:bg-amber-950/50 rounded-lg">
-                          <p className="font-semibold text-amber-800 dark:text-amber-300">26</p>
-                          <p className="text-xs text-amber-700 dark:text-amber-200">Endemic Birds</p>
+                        <div className="yala-endemic-stat text-center p-3 rounded-lg">
+                          <div className="yala-endemic-stat-number font-semibold">26</div>
+                          <div className="yala-endemic-stat-label text-xs">Endemic Birds</div>
                         </div>
-                        <div className="text-center p-3 bg-amber-50 dark:bg-amber-950/50 rounded-lg">
-                          <p className="font-semibold text-amber-800 dark:text-amber-300">21</p>
-                          <p className="text-xs text-amber-700 dark:text-amber-200">Endemic Reptiles</p>
+                        <div className="yala-endemic-stat text-center p-3 rounded-lg">
+                          <div className="yala-endemic-stat-number font-semibold">21</div>
+                          <div className="yala-endemic-stat-label text-xs">Endemic Reptiles</div>
                         </div>
                       </div>
                     </div>
@@ -1136,19 +1136,19 @@ export default function YalaNationalParkTravelGuide() {
                       ecosystems and can be formidable when protecting their territory.
                     </p>
                     <div className="space-y-4">
-                      <div className="yala-blue-card p-4 rounded-lg">
-                        <h4 className="font-semibold text-blue-800 dark:text-blue-300 mb-2">Key Features</h4>
-                        <ul className="space-y-2 text-sm text-muted-foreground">
+                      <div className="yala-blue-card p-4 rounded-lg dark:bg-sky-950/70 dark:border dark:border-sky-700/70">
+                        <h4 className="font-semibold text-blue-800 dark:!text-sky-100 mb-2">Key Features</h4>
+                        <ul className="space-y-2 text-sm text-blue-900 dark:!text-sky-100">
                           <li className="flex items-start gap-2">
-                            <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                            <CheckCircle className="w-4 h-4 text-blue-500 dark:text-sky-300 mt-1 flex-shrink-0" />
                             Massive body size, adults weigh over 1,000 kg
                           </li>
                           <li className="flex items-start gap-2">
-                            <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                            <CheckCircle className="w-4 h-4 text-blue-500 dark:text-sky-300 mt-1 flex-shrink-0" />
                             Excellent swimmers, spend hours in water
                           </li>
                           <li className="flex items-start gap-2">
-                            <CheckCircle className="w-4 h-4 text-blue-500 mt-1 flex-shrink-0" />
+                            <CheckCircle className="w-4 h-4 text-blue-500 dark:text-sky-300 mt-1 flex-shrink-0" />
                             Form strong family bonds in herds
                           </li>
                         </ul>

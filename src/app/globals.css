@@ -941,6 +941,28 @@ body {
 .dark .yala-amber-card  h4, .dark .yala-amber-card  h5, .dark .yala-amber-card  strong, .dark .yala-amber-card  b { color: rgb(252 211 77)  !important; } /* amber-300 */
 .dark .yala-blue-card   h4, .dark .yala-blue-card   h5, .dark .yala-blue-card   strong, .dark .yala-blue-card   b { color: rgb(147 197 253) !important; } /* blue-300 */
 
+/* Yala endemic stat tiles (override amber-card text cascade for readability) */
+.yala-endemic-stat {
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+}
+.yala-endemic-stat-number {
+  color: #0c4a6e;
+}
+.yala-endemic-stat-label {
+  color: #075985;
+}
+.dark .yala-endemic-stat {
+  background-color: rgb(12 74 110 / 0.55) !important;
+  border-color: rgb(56 189 248 / 0.65) !important;
+}
+.dark .yala-endemic-stat .yala-endemic-stat-number {
+  color: rgb(240 249 255) !important;
+}
+.dark .yala-endemic-stat .yala-endemic-stat-label {
+  color: rgb(224 242 254) !important;
+}
+
 /* Yala Elephant Rock landmark section */
 .yala-elephant-rock { background: linear-gradient(to right, #fff7ed, #fffbeb); border-left: 4px solid #d97706; }
 .dark .yala-elephant-rock { background: linear-gradient(to right, rgb(69 26 3 / 0.3), rgb(78 37 5 / 0.2)); border-left-color: #d97706; }
