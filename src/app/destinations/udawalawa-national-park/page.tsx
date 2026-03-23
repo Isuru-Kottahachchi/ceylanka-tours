@@ -18,9 +18,10 @@ export default function UdawalaweNationalParkGuide() {
 
 
   const transitHomeImages = [
-    { src: "/placeholder.svg?height=400&width=600", caption: "Baby elephants at feeding time", alt: "Orphaned elephants being bottle-fed at Transit Home" },
-    { src: "/placeholder.svg?height=400&width=600", caption: "Caretakers with elephant calves", alt: "Staff caring for rescued baby elephants" },
-    { src: "/placeholder.svg?height=400&width=600", caption: "Young elephants playing", alt: "Rehabilitating elephants learning social skills" },
+    { src: "/Elephant-Transit-Home.jpg", caption: "Baby elephants at feeding time", alt: "Orphaned elephants being bottle-fed at Transit Home" },
+    { src: "/Elephant-Transit-Home1.jpg", caption: "Caretakers with elephant calves", alt: "Staff caring for rescued baby elephants" },
+    { src: "/Elephant-Transit-Home2.jpg", caption: "Young elephants playing", alt: "Rehabilitating elephants learning social skills" },
+    { src: "/Elephant-Transit-Home3.jpg", caption: "Release back into the wild", alt: "Elephants being released back into Udawalawe park" },
   ];
 
   return (
@@ -61,9 +62,10 @@ export default function UdawalaweNationalParkGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Discover Udawalawe</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Udawalawe National Park is the best place in Sri Lanka to see wild elephants. This park is home to 
-              600-700 wild Asian elephants, and visitors have a 95% chance of seeing them during a safari. The park 
-              covers 30,821 hectares of open grasslands, making it easy to spot and photograph these amazing animals.
+              Udawalawe National Park is one of the best places in Sri Lanka to see wild elephants. The park is often
+              estimated to support around 500-700 wild Asian elephants, and many visitors report frequent sightings on
+              safari drives. It covers 30,821 hectares (about 308 sq km) of mostly open habitat, which helps with
+              wildlife viewing and photography.
             </p>
             <p className="text-lg mb-4">
               The park was created in 1972 after the Udawalawe Reservoir was built. The open landscape with grass 
@@ -112,13 +114,13 @@ export default function UdawalaweNationalParkGuide() {
                   <div className="flex items-center gap-2">
                     <Users className="w-4 h-4 text-purple-500" />
                     <span>
-                      <strong>Elephant Population:</strong> 600-700 individuals
+                      <strong>Elephant Population:</strong> Commonly cited as around 500-700
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Eye className="w-4 h-4 text-orange-500" />
                     <span>
-                      <strong>Sighting Success:</strong> 95% elephant encounters
+                      <strong>Sighting Success:</strong> Generally high on most safaris
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -149,6 +151,7 @@ export default function UdawalaweNationalParkGuide() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
+                  <p className="text-xs text-muted-foreground">Distance and travel times below are approximate Google Maps driving estimates and can change with traffic.</p>
                   <div>
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
                       <MapPin className="w-4 h-4 text-green-500" />
@@ -157,15 +160,15 @@ export default function UdawalaweNationalParkGuide() {
                     <ul className="space-y-2 text-sm text-muted-foreground ml-6">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        165 km from Colombo via Ratnapura (3.5 hours)
+                        236 km from Colombo (Google Maps driving estimate: about 3 hr 35 min via E01)
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        90 km from Ella (2 hours via scenic route)
+                        101 km from Ella (Google Maps driving estimate: about 2 hr 13 min)
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        100 km from Nuwara Eliya (2.5 hours)
+                        141 km from Nuwara Eliya (Google Maps driving estimate: about 4 hr 5 min)
                       </li>
                     </ul>
                   </div>
@@ -181,7 +184,7 @@ export default function UdawalaweNationalParkGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
-                        Tissamaharama (45 km - 1 hour)
+                        Tissamaharama (66 km - Google Maps driving estimate: about 1 hr 22 min)
                       </li>
                     </ul>
                   </div>
@@ -199,12 +202,13 @@ export default function UdawalaweNationalParkGuide() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <Eye className="w-5 h-5 text-yellow-500" />
-                  Guaranteed Elephant Encounters
+                  High-Probability Elephant Encounters
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Udawalawe boasts an extraordinary 95% elephant sighting success rate - the highest in Sri Lanka! With 600-700 resident elephants and vast open grasslands providing unobstructed views, seeing multiple elephant families is virtually guaranteed on every safari.
+                  Udawalawe is widely known for consistently strong elephant sightings. With a large resident population
+                  and broad open terrain, visitors often observe multiple elephant family groups during a single safari.
                 </p>
               </CardContent>
             </Card>
@@ -246,7 +250,9 @@ export default function UdawalaweNationalParkGuide() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  The 3,300-hectare Udawalawe Tank (completed 1969) creates a permanent water source attracting year-round wildlife concentrations. This reliability makes Udawalawe consistently productive regardless of season, unlike seasonal parks dependent on monsoons.
+                  The Udawalawe Reservoir, completed in 1969, provides a major permanent water source that attracts
+                  wildlife year-round. This helps keep safari conditions productive in most months compared with more
+                  seasonal parks.
                 </p>
               </CardContent>
             </Card>
@@ -282,7 +288,7 @@ export default function UdawalaweNationalParkGuide() {
         </section>
 
         {/* Did You Know Card 1 */}
-        <Card className="mb-12 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 border-2 border-blue-200 dark:border-blue-800">
+        <Card className="mb-12 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/60 dark:to-cyan-900/60 border-2 border-blue-200 dark:border-blue-700">
           <CardContent className="pt-6">
             <div className="flex items-start gap-4">
               <div className="p-3 bg-blue-500 rounded-full">
@@ -290,11 +296,11 @@ export default function UdawalaweNationalParkGuide() {
               </div>
               <div className="flex-1">
                 <h3 className="text-xl font-bold mb-3 text-blue-900 dark:text-blue-100">Did You Know? Why Udawalawe Has So Many Elephants</h3>
-                <p className="text-muted-foreground mb-3 leading-relaxed">
+                <p className="text-blue-900 dark:text-blue-100/90 mb-3 leading-relaxed">
                   Udawalawe wasn&apos;t always elephant paradise - its incredible elephant population is actually a conservation success story! When the Udawalawe Reservoir was constructed in 1969 to provide irrigation and hydropower, the flooding displaced numerous elephants from their traditional habitats. Recognizing this conservation crisis, Sri Lankan authorities established Udawalawe National Park in 1972 specifically to provide sanctuary for these displaced elephants and other wildlife.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  The park&apos;s design was brilliant - vast grasslands surrounding the reservoir created ideal elephant habitat with abundant grazing and permanent water access. Unlike many protected areas where elephants migrate seasonally, Udawalawe&apos;s year-round water and food availability encouraged elephants to establish permanent residence. Today, Udawalawe supports one of Sri Lanka&apos;s densest elephant populations (approximately 20 elephants per square kilometer), with multiple generations of elephants born and raised entirely within the park boundaries. This remarkable transformation from displacement crisis to thriving sanctuary demonstrates how thoughtful conservation planning can create win-win solutions for both wildlife and human development!
+                <p className="text-blue-900 dark:text-blue-100/90 leading-relaxed">
+                  The park&apos;s design was brilliant - vast grasslands surrounding the reservoir created ideal elephant habitat with abundant grazing and permanent water access. Unlike many protected areas where elephants migrate seasonally, Udawalawe&apos;s year-round water and food availability helped establish a large resident population. With several hundred elephants across roughly 308 square kilometers, Udawalawe is widely recognized as one of Sri Lanka&apos;s most reliable places to observe wild elephants. This remarkable transformation from displacement crisis to thriving sanctuary demonstrates how thoughtful conservation planning can create win-win solutions for both wildlife and human development.
                 </p>
               </div>
             </div>
@@ -320,7 +326,10 @@ export default function UdawalaweNationalParkGuide() {
                   <ImageCarousel images={elephantImages} />
                   <div>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                      Udawalawe National Park shelters an extraordinary resident population of 600-700 Asian elephants - one of the highest concentrations on the planet! What makes Udawalawe truly exceptional is that these aren&apos;t seasonal visitors migrating between parks. These elephants have made Udawalawe their permanent home, establishing multi-generational family groups that roam the grasslands year-round. The park&apos;s 95% elephant sighting success rate means you&apos;re virtually guaranteed spectacular close encounters during your safari.
+                      Udawalawe National Park shelters a large resident population of Asian elephants, often cited in
+                      the 500-700 range. A key advantage is that many elephants are present year-round, not only during
+                      a short seasonal window. Combined with open grassland and scrub habitat, this gives visitors a
+                      strong chance of memorable close-range observations during safari drives.
                     </p>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
                       The predominant open terrain provides unparalleled opportunities to observe complete elephant societies functioning naturally. Watch protective matriarchs making family decisions, observe adolescent males practicing sparring skills, witness mothers teaching tiny calves essential survival behaviors, and experience the tender moments when separated family groups reunite with emotional trumpet calls and trunk intertwining. Udawalawe&apos;s elephants are remarkably habituated to safari vehicles, allowing safe close-range observation and photography impossible in dense forest habitats.
@@ -478,7 +487,7 @@ export default function UdawalaweNationalParkGuide() {
         </section>
 
         {/* Did You Know Card #2 */}
-        <Card className="mb-12 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-950 dark:to-pink-950 border-l-4 border-l-purple-500">
+        <Card className="mb-12 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/60 dark:to-pink-900/60 border-l-4 border-l-purple-500 dark:border-l-purple-400">
           <CardContent className="pt-6">
             <div className="flex items-start gap-4">
               <div className="bg-purple-100 dark:bg-purple-900 p-3 rounded-full flex-shrink-0">
@@ -486,14 +495,17 @@ export default function UdawalaweNationalParkGuide() {
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-3 text-purple-900 dark:text-purple-100">Did You Know? The Elephant Transit Home&apos;s Rehabilitation Process</h3>
-                <p className="text-muted-foreground mb-3 leading-relaxed">
+                <p className="text-purple-900 dark:text-purple-100/90 mb-3 leading-relaxed">
                   The Elephant Transit Home follows a scientifically designed rehabilitation protocol that maximizes wild reintroduction success. When orphaned calves arrive (typically under 6 months old), they&apos;re immediately paired with similar-aged orphans to form surrogate family units. This peer bonding is critical - elephants are intensely social animals requiring constant companionship for psychological health. The facility deliberately limits human interaction to feeding times and medical care, preventing the dangerous human-dependency that plagues many elephant orphanages globally.
                 </p>
-                <p className="text-muted-foreground mb-3 leading-relaxed">
+                <p className="text-purple-900 dark:text-purple-100/90 mb-3 leading-relaxed">
                   Diet replicates wild nutrition precisely: specialized milk formulas mimicking elephant mother&apos;s milk gradually transition to vegetation including bamboo, various grasses, tree bark, and fruits foraged from Udawalawe&apos;s own vegetation. Crucially, caretakers never bottle-feed elephants directly - bottles are attached to fences requiring elephants to feed themselves, maintaining natural independence. As elephants mature (typically 4-5 years), enclosure gates remain increasingly open allowing voluntary exploration of adjacent forests, essentially "soft-releasing" elephants who gradually integrate with wild herds visiting nearby water sources.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Monitoring studies tracking released elephants (identified by distinctive ear notch patterns) reveal remarkable success: approximately 80-90% successfully integrate into wild herds, reproduce normally, and demonstrate complete wild behaviors! Several ETH graduates have been photographed years later as breeding matriarchs leading their own family groups - the ultimate conservation success. This model has become a global reference, with conservationists from Africa and Asia studying ETH&apos;s methodologies for replication.
+                <p className="text-purple-900 dark:text-purple-100/90 leading-relaxed">
+                  Monitoring and field reports indicate many released elephants successfully integrate into wild herds
+                  and later breed in the wild. Several ETH graduates have been documented years later as established
+                  adults, and the ETH model is frequently discussed in wider elephant rehabilitation and conservation
+                  circles.
                 </p>
               </div>
             </div>
@@ -690,7 +702,7 @@ export default function UdawalaweNationalParkGuide() {
               <CardContent>
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    The dry season represents Udawalawe&apos;s peak safari period, though unlike seasonal parks, Udawalawe remains excellent year-round thanks to its permanent reservoir. During these months, minimal rainfall maintains low vegetation, providing unobstructed sightlines across grasslands. Elephant herds concentrate predictably around reservoir margins throughout the day, making sightings virtually guaranteed.
+                    The dry season represents Udawalawe&apos;s peak safari period, though unlike seasonal parks, Udawalawe remains excellent year-round thanks to its permanent reservoir. During these months, minimal rainfall maintains low vegetation, providing unobstructed sightlines across grasslands. Elephant herds often concentrate around reservoir margins, which can improve sighting consistency.
                   </p>
                   <div>
                     <h4 className="font-semibold mb-2 text-sm text-foreground">Dry Season Advantages:</h4>
@@ -729,7 +741,11 @@ export default function UdawalaweNationalParkGuide() {
               <CardContent>
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Inter-monsoon months offer outstanding wildlife viewing with the added advantage of fewer safari vehicles and lower accommodation prices. Occasional afternoon showers refresh vegetation and cool temperatures, creating particularly active wildlife mornings. Elephants remain highly visible, waterbirdpopulations swell as migratory species arrive, and the landscape gains vibrant green tones absent during dry months.
+                    Inter-monsoon months offer strong wildlife viewing with the added advantage of fewer safari
+                    vehicles and often lower accommodation prices. Occasional afternoon showers refresh vegetation and
+                    cool temperatures, creating particularly active wildlife mornings. Elephants remain visible,
+                    waterbird populations increase as migratory species arrive, and the landscape gains vibrant green
+                    tones absent during dry months.
                   </p>
                   <div>
                     <h4 className="font-semibold mb-2 text-sm text-foreground">Inter-Monsoon Benefits:</h4>
@@ -768,7 +784,10 @@ export default function UdawalaweNationalParkGuide() {
               <CardContent>
                 <div className="space-y-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    Udawalawe&apos;s wet season receives moderate rainfall (significantly less than rainforest zones), typically afternoon showers rather than all-day rain. The landscape transforms into emerald grasslands creating stunning photographic backdrops. Importantly, Udawalawe&apos;s elephants don&apos;t migrate during wet months - they remain resident year-round, ensuring continued excellent sighting rates (still 80-90% success). This period offers remarkable value for budget travelers.
+                    Udawalawe&apos;s wet season usually brings moderate rainfall, often as afternoon showers rather than
+                    continuous all-day rain. The landscape turns greener, which many photographers enjoy. Importantly,
+                    elephants remain resident through the year, and sightings generally remain strong during this
+                    period.
                   </p>
                   <div>
                     <h4 className="font-semibold mb-2 text-sm text-foreground">Wet Season Highlights:</h4>
@@ -833,7 +852,7 @@ export default function UdawalaweNationalParkGuide() {
         </section>
 
         {/* Did You Know Card #3 */}
-        <Card className="mb-12 bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-950 dark:to-cyan-950 border-l-4 border-l-teal-500">
+        <Card className="mb-12 bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-900/60 dark:to-cyan-900/60 border-l-4 border-l-teal-500 dark:border-l-teal-400">
           <CardContent className="pt-6">
             <div className="flex items-start gap-4">
               <div className="bg-teal-100 dark:bg-teal-900 p-3 rounded-full flex-shrink-0">
@@ -841,14 +860,19 @@ export default function UdawalaweNationalParkGuide() {
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-3 text-teal-900 dark:text-teal-100">Did You Know? Udawalawe Reservoir&apos;s Engineering Marvel & Elephant Adaptation</h3>
-                <p className="text-muted-foreground mb-3 leading-relaxed">
-                  The Udawalawe Reservoir represents one of Sri Lanka&apos;s most ambitious water management projects. Constructed between 1965-1969 on the Walawe River (one of Sri Lanka&apos;s longest rivers), this massive reservoir was engineered primarily for irrigation, providing water security to southern agricultural regions and generating hydroelectric power. The dam stands 122 meters tall, creating a reservoir covering 3,300 hectares (8,150 acres) with a storage capacity of 268 million cubic meters - enough water to supply Colombo&apos;s entire population for nearly two months!
+                <p className="text-teal-900 dark:text-teal-100/90 mb-3 leading-relaxed">
+                  The Udawalawe Reservoir is one of Sri Lanka&apos;s major post-independence water management projects.
+                  Constructed in the late 1960s on the Walawe River, it was developed primarily for irrigation and also
+                  supports power generation. Its creation reshaped the surrounding landscape and became a defining part
+                  of the region&apos;s ecology.
                 </p>
-                <p className="text-muted-foreground mb-3 leading-relaxed">
+                <p className="text-teal-900 dark:text-teal-100/90 mb-3 leading-relaxed">
                   What makes Udawalawe&apos;s story fascinating is how elephants adapted to this dramatic landscape transformation. Historical records indicate elephants initially avoided the flooded zones, creating human-elephant conflict in surrounding agricultural areas. The establishment of the national park in 1972 provided crucial buffer habitat. Over subsequent decades, Udawalawe&apos;s elephants learned remarkable adaptations: they discovered reservoir shallows provided cooling relief during extreme heat, aquatic vegetation (lotus, water lilies) became dietary supplements, and families developed generational knowledge of safe crossing points and seasonal water quality changes.
                 </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Today&apos;s elephants demonstrate extraordinary "landscape learning" - family groups teach calves specific reservoir access routes, optimal bathing zones, and flood pattern recognition. This inter-generational knowledge transmission showcases elephant intelligence and adaptability. The reservoir&apos;s permanent water source eliminated seasonal migration pressures, allowing Udawalawe&apos;s elephants to establish stable home ranges - a key factor enabling the park&apos;s exceptional 95% sighting success rate that delights safari visitors today!
+                <p className="text-teal-900 dark:text-teal-100/90 leading-relaxed">
+                  Today&apos;s elephants demonstrate extraordinary landscape learning. Family groups pass on route knowledge,
+                  safe water access points, and seasonal movement patterns across generations. The reservoir&apos;s
+                  permanent water availability is one reason Udawalawe remains a reliable place for elephant viewing.
                 </p>
               </div>
             </div>
@@ -939,32 +963,45 @@ export default function UdawalaweNationalParkGuide() {
         </section>
 
         {/* Conclusion */}
-        <Card className="mb-12 bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50 dark:from-green-950 dark:via-yellow-950 dark:to-orange-950 border-l-4 border-l-green-600">
+        <Card className="mb-12 bg-gradient-to-br from-green-50 via-yellow-50 to-orange-50 dark:from-emerald-900/60 dark:via-amber-900/50 dark:to-orange-900/50 border-l-4 border-l-green-600 dark:border-l-green-400">
           <CardContent className="pt-6">
             <div>
               <h2 className="text-2xl font-bold mb-4 text-foreground flex items-center gap-2">
                 <Heart className="w-6 h-6 text-red-500" />
                 Your Udawalawe Elephant Safari Awaits - Conservation Meets Adventure
               </h2>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Udawalawe National Park stands as Sri Lanka&apos;s premier elephant-watching destination, offering what few places on Earth can guarantee - close encounters with wild Asian elephants in their natural habitat, virtually every single safari. With its extraordinary 95% elephant sighting success rate, 600-700 resident giants roaming open savanna-like grasslands, and the world-renowned Elephant Transit Home pioneering orphan rehabilitation, Udawalawe delivers an elephant experience unmatched anywhere in Asia. This is not simply wildlife viewing - it&apos;s intimate observation of complete elephant societies: wise matriarchs leading multi-generational families, protective mothers nursing tiny calves, playful teenagers practicing life skills, and emotional family reunions that remind us of elephants&apos; profound intelligence and social complexity.
+              <p className="text-emerald-900 dark:text-emerald-100/90 leading-relaxed mb-4">
+                Udawalawe National Park is one of Sri Lanka&apos;s top elephant-watching destinations, offering frequent
+                close encounters with wild Asian elephants in natural habitat. With a large resident population,
+                open savanna-like terrain, and the nearby Elephant Transit Home, Udawalawe provides a standout
+                wildlife experience in South Asia. This is not simply wildlife viewing - it is a chance to observe
+                elephant societies: matriarch-led families, mothers with calves, playful adolescents, and rich social
+                behavior that highlights elephant intelligence.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-4">
+              <p className="text-emerald-900 dark:text-emerald-100/90 leading-relaxed mb-4">
                 What distinguishes Udawalawe from other wildlife destinations is its rare combination of reliability, accessibility, and conservation authenticity. The park&apos;s year-round water source eliminates seasonal unpredictability - elephants remain resident throughout all months, ensuring consistent spectacular sightings whether you visit during peak dry season or budget-friendly wet months. The predominantly open terrain provides unobstructed sightlines allowing crystal-clear photography and behavioral observation impossible in dense forest habitats. You&apos;ll witness elephant family dynamics unfolding naturally: mothers teaching calves how to use their trunks, families bathing communally in reservoir shallows, playful sparring matches between adolescents, and the tender trunk-twining greetings when separated groups reunite.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Beyond wild elephant encounters, the Elephant Transit Home adds profound conservation dimension to your visit. Watching orphaned baby elephants receive specialized rehabilitation care - knowing they&apos;ll eventually return to Udawalawe&apos;s wild herds as self-sufficient adults - transforms your safari from simple tourism into meaningful participation in elephant conservation. The facility&apos;s 80-90% successful reintegration rate demonstrates that thoughtful conservation can achieve remarkable outcomes. Many elephants you photograph in the wild today are actually ETH graduates now thriving as breeding adults - living proof that conservation works when properly implemented. Your visit directly supports these efforts through entrance fees, employment for local communities, and global awareness that protects elephants&apos; future.
+              <p className="text-emerald-900 dark:text-emerald-100/90 leading-relaxed mb-4">
+                Beyond wild elephant encounters, the Elephant Transit Home adds a meaningful conservation dimension to
+                your visit. Watching orphaned calves receive rehabilitation before eventual release into the wild
+                connects safari travel with real conservation outcomes. Your visit supports these efforts through park
+                and facility fees, local employment, and wider public awareness.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                Whether you&apos;re a dedicated wildlife photographer seeking portfolio-quality elephant portraits, a family wanting children to experience genuine wildlife magic, a conservation enthusiast supporting ethical ecotourism, or simply someone who dreams of encountering Earth&apos;s largest land mammals in their natural world - Udawalawe delivers beyond expectations. The emotional impact of watching a elephant mother patiently teaching her wobbly calf to coordinate its trunk, or witnessing a 50-strong family group gathering at sunset with mountains silhouetted behind them, creates memories that last lifetimes. These are the moments that transform tourists into conservation advocates, instilling profound respect for wildlife and motivating protection of these irreplaceable creatures.
+              <p className="text-emerald-900 dark:text-emerald-100/90 leading-relaxed mb-6">
+                Whether you are a photographer, a family traveler, or a conservation-minded visitor, Udawalawe offers
+                memorable wildlife experiences. Seeing an elephant mother guiding her calf, or a large family group
+                gathering near sunset, often becomes a lasting highlight of a Sri Lanka journey.
               </p>
               <div className="bg-white dark:bg-gray-800 p-4 rounded-lg border-2 border-green-500">
                 <p className="text-foreground font-semibold mb-2 flex items-center gap-2">
                   <Target className="w-5 h-5 text-green-600" />
                   Ready for Your Elephant Adventure?
                 </p>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Udawalawe National Park awaits with its 600-700 resident elephants, world-class conservation programs, and virtually guaranteed wildlife encounters. Book your safari during optimal months (May-September for peak visibility, March-May for baby elephant peaks, or budget-friendly December-February for lush landscapes). Choose ethical safari operators respecting wildlife welfare, visit the Elephant Transit Home to witness conservation in action, and prepare for an experience that will forever change how you understand and appreciate Earth&apos;s most magnificent gentle giants.
+                <p className="text-sm text-emerald-900/80 dark:text-emerald-100/80 mb-3">
+                  Udawalawe National Park awaits with a large resident elephant population, active conservation
+                  programs, and high-probability wildlife encounters. Book according to your priorities: drier months
+                  for visibility, greener months for scenery and lighter crowds. Choose ethical safari operators,
+                  include the Elephant Transit Home, and travel in ways that support long-term wildlife protection.
                 </p>
                 <p className="text-sm text-foreground font-medium">
                   <strong>Your unforgettable elephant safari story begins at Udawalawe - where conservation success meets wildlife wonder!</strong> 🐘📷🌿
