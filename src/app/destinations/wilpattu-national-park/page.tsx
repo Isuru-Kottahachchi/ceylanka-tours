@@ -91,7 +91,7 @@ export default function WilpattuNationalParkTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-blue-500" />
                     <span>
-                      <strong>Established:</strong> 1938 (oldest national park)
+                      <strong>Established:</strong> Sanctuary in 1905; national park in 1938 (one of Sri Lanka&apos;s oldest)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -103,7 +103,7 @@ export default function WilpattuNationalParkTravelGuide() {
                   <div className="flex items-center gap-2">
                     <TreePine className="w-4 h-4 text-purple-500" />
                     <span>
-                      <strong>Villus (Natural Lakes):</strong> Nearly 60
+                      <strong>Willus and Water Bodies:</strong> About 100+ (commonly cited around 106)
                     </span>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function WilpattuNationalParkTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Binoculars className="w-4 h-4 text-red-500" />
                     <span>
-                      <strong>Leopard Population:</strong> 40-50 individuals
+                      <strong>Leopard Status:</strong> Major conservation stronghold (exact counts vary by survey and year, usually around 30-50 leopards in the park)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -151,7 +151,7 @@ export default function WilpattuNationalParkTravelGuide() {
             <div className="space-y-4 text-muted-foreground">
               <p>
                 Wilpattu gets its name from &quot;Willpattu,&quot; meaning &quot;Land of Lakes&quot; in Sinhala. The park contains nearly 60
-                natural lakes called &quot;villus,&quot; formed by rainwater collection in natural depressions. These villus are
+                natural water bodies (often cited as 100+) called &quot;villus,&quot; formed by rainwater collection in natural depressions. These villus are
                 the lifeblood of the park&apos;s ecosystem, providing year-round water sources that attract diverse wildlife.
 
               </p>
@@ -163,7 +163,7 @@ export default function WilpattuNationalParkTravelGuide() {
               <div className="bg-blue-50 p-4 rounded-lg">
                 <h4 className="font-semibold text-blue-800 mb-2">Famous Villus in Wilpattu:</h4>
                 <ul className="text-sm text-blue-700 space-y-1">
-                  <li>• Kumbukkan Oya - Large villu with diverse wildlife</li>
+                  <li>• Major villus and waterholes serve as key wildlife congregation points</li>
                   <li>• Thala Villu - Known for elephant gatherings</li>
                   <li>• Borupan Wewa - Excellent for bird watching</li>
                   <li>• Manik Villu - Popular leopard spotting location</li>
@@ -195,8 +195,8 @@ export default function WilpattuNationalParkTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Wilpattu is home to a significant population of Sri Lankan leopards, with an estimated 40-50
-                      individuals roaming the park. These magnificent cats are perfectly adapted to the dry zone forest
+                      Wilpattu is home to a significant population of Sri Lankan leopards and is considered one of the
+                      country&apos;s key leopard landscapes. These magnificent cats are perfectly adapted to the dry zone forest
                       environment and are often spotted near villus during early morning and late afternoon safaris.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -325,7 +325,7 @@ export default function WilpattuNationalParkTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The northwestern coast of Wilpattu is believed to be the legendary Thambapanni, where Prince Vijaya the first recorded king of Sri Lanka landed with his followers over 2,500 years ago. The name “Thambapanni” means “copper-colored sands,” inspired by the reddish hue of the beaches here.
+                      The northwestern coast of Wilpattu National Park is believed to be the legendary Thambapanni, where Prince Vijaya, the first recorded king of Sri Lanka, is said to have landed with his followers over 2,500 years ago. The name “Thambapanni” means “copper-colored sands,” inspired by the reddish hue of the beaches in this area.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -342,7 +342,7 @@ export default function WilpattuNationalParkTravelGuide() {
                       </li>
                     </ul>
                     <p className="text-muted-foreground mt-4">
-                      Today, Thambapanni is a remote and beautiful part of Wilpattu, perfect for those who want to connect with the island’s ancient roots and enjoy a wild, unspoiled landscape.
+                      Today, this Thambapanni coastal belt near Wilpattu is valued for both natural beauty and cultural storytelling connected to the island&apos;s early history.
                     </p>
                   </div>
                 </div>
@@ -462,7 +462,7 @@ export default function WilpattuNationalParkTravelGuide() {
         </section>
 
         {/* Bird Watching */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Exceptional Bird Watching</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
@@ -534,7 +534,7 @@ export default function WilpattuNationalParkTravelGuide() {
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
         {/* Best Time to Visit */}
         <section className="mb-12">
@@ -542,8 +542,8 @@ export default function WilpattuNationalParkTravelGuide() {
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle className="text-green-600">Dry Season</CardTitle>
-                <CardDescription>May to September</CardDescription>
+                <CardTitle className="text-green-600">Prime Viewing Period</CardTitle>
+                <CardDescription>February to October</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
@@ -575,7 +575,7 @@ export default function WilpattuNationalParkTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-red-600">Wet Season</CardTitle>
-                <CardDescription>November to March</CardDescription>
+                <CardDescription>Northeast monsoon influence (roughly December to February)</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
@@ -602,10 +602,9 @@ export default function WilpattuNationalParkTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Park Entry Fees</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Foreign adults: $25 USD</li>
-                    <li>• Foreign children: $12 USD</li>
-                    <li>• SAARC nationals: $12 USD</li>
-                    <li>• Vehicle charges: $6 USD</li>
+                    <li>• Fees are revised periodically by the Department of Wildlife Conservation (DWC)</li>
+                    <li>• Final payable amount usually includes entry, vehicle, tax, and service components</li>
+                    <li>• Check official channels before travel for current foreign, SAARC, and child rates</li>
                   </ul>
                 </div>
                 <div>
@@ -654,13 +653,13 @@ export default function WilpattuNationalParkTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">How to Get In</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed mb-6">
             <p>
-              <strong>Wilpattu National Park</strong> is located in the North Western Province of Sri Lanka, about 30 km west of Anuradhapura and 180 km from Colombo. The main entrance is at Hunuwilgama, close to the town of Nochchiyagama.
+              <strong>Wilpattu National Park</strong> is located across Sri Lanka&apos;s North Western and North Central provinces, about 30 km west of Anuradhapura and around 180 km from Colombo. Hunuwilgama is a main visitor gate near Nochchiyagama.
             </p>
             <ul>
               <li><strong>By Road:</strong> The park is best reached by private vehicle or taxi. From Colombo, take the Puttalam–Anuradhapura road (A12) and follow signs to Wilpattu. The journey takes 4–5 hours.</li>
               <li><strong>By Bus:</strong> Regular buses run from Colombo and Anuradhapura to Nochchiyagama. From there, tuk-tuks or taxis can take you to the park entrance (about 8 km).</li>
               <li><strong>By Train:</strong> The nearest railway station is at Puttalam or Anuradhapura. Continue by road to the park.</li>
-              <li><strong>Entrances:</strong> The main gate is Hunuwilgama. All safari jeeps and visitors must enter here for tickets and registration.</li>
+              <li><strong>Entrances:</strong> Hunuwilgama is a primary gate. Access routes and operating entry points can vary, so confirm current arrangements with your operator or DWC before travel.</li>
             </ul>
             <p>
               <strong>Travel Tip:</strong> Arrive early for the morning safari or stay overnight in nearby towns for a head start. Roads inside the park can be rough—4x4 vehicles are recommended.
