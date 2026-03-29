@@ -49,9 +49,9 @@ export default function YalaNationalParkTravelGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Yala: The Leopard Capital of the World</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Get ready for the wildlife adventure of a lifetime! Yala National Park is Sri Lanka’s most visited and
-              second-largest national park, famous for having the highest density of leopards in the world. This
-              979-square-kilometer wilderness sanctuary is home to an incredible diversity of wildlife, from majestic
+              Get ready for the wildlife adventure of a lifetime! Yala National Park is Sri Lanka&apos;s most visited
+              second largest national parks, known for having the highest leopard density in the world. This
+              roughly 979-square-kilometer wilderness sanctuary is home to an incredible diversity of wildlife, from majestic
               elephants and elusive leopards to colorful birds and ancient ruins.
             </p>
             <p className="text-lg">
@@ -79,7 +79,7 @@ export default function YalaNationalParkTravelGuide() {
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-blue-500" />
                       <span>
-                        <strong> Established:</strong> 1938 (Sri Lanka’s first national park)
+                        <strong> Established:</strong> 1938 (among Sri Lanka&apos;s earliest national parks)
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -91,7 +91,7 @@ export default function YalaNationalParkTravelGuide() {
                     <div className="flex items-center gap-2">
                       <Binoculars className="w-4 h-4 text-purple-500" />
                       <span>
-                        <strong>Leopard Population:</strong> ~35-40 individuals
+                        <strong>Leopard Sightings:</strong> Frequent in popular safari blocks (counts vary by study Around 30–50 leopards live in Block 1)
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -103,7 +103,7 @@ export default function YalaNationalParkTravelGuide() {
                     <div className="flex items-center gap-2">
                       <Star className="w-4 h-4 text-yellow-500" />
                       <span>
-                        <strong>Best Safari Time:</strong> 6:00 AM & 2:30 PM
+                        <strong>Best Safari Sessions:</strong> Early morning 6:00 AM and late afternoon 2:30 PM
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -143,20 +143,20 @@ export default function YalaNationalParkTravelGuide() {
                     <div>
                       <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
-                        <li>• <strong>Duration:</strong> 4-4.5 hours</li>                       
+                        <li>• <strong>Distance:</strong> Roughly 250-300 km from Colombo (depends on gate and route)</li>
+                        <li>• <strong>Duration:</strong> Usually 5-7 hours depending on traffic</li>
                         <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                       </ul>
                     </div>
-                    <div>
+                    {/* <div>
                       <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• <strong>Route:</strong> Colombo Fort → Thissamaharama</li>
-                        <li>• <strong>Duration:</strong> 5-6 hours</li>
-                        <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
-                        <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                        <li>• <strong>Duration:</strong> Commonly 6-8 hours including local transfers</li>
+                        <li>• <strong>Cost:</strong> Budget-friendly; varies by bus class and route</li>
+                        <li>• <strong>Frequency:</strong> Regular daily services (can vary by season)</li>
                       </ul>
-                    </div>
+                    </div> */}
                   </div>
                   
                   <div data-promo="true" className="mt-6 p-3 bg-orange-100 dark:bg-slate-700 rounded-lg border-l-4 border-orange-500 dark:border-orange-400 shadow-md">
@@ -233,7 +233,7 @@ export default function YalaNationalParkTravelGuide() {
                           </li>
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                            <span><strong>Best For:</strong> First-time visitors, highest wildlife density, best infrastructure</span>
+                            <span><strong>Best For:</strong> First-time visitors, strong sighting potential, established infrastructure</span>
                           </li>
                         </ul>
                       </div>
@@ -280,19 +280,19 @@ export default function YalaNationalParkTravelGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        <span><strong>From Katunayake Airport:</strong> 295km, 6-7 hours direct</span>
+                        <span><strong>From Katunayake Airport:</strong> Around 290-310 km, typically 6-8 hours</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        <span><strong>From Colombo:</strong> 265km, 5-6 hours by car</span>
+                        <span><strong>From Colombo:</strong> Around 250-300 km, typically 5-7 hours by car</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        <span><strong>From Galle:</strong> 140km, 3 hours via Matara</span>
+                        <span><strong>From Galle:</strong> Around 150-190 km, typically 3.5-5 hours</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        <span><strong>Nearest Town:</strong> Tissamaharama (7km from park)</span>
+                        <span><strong>Nearest Town:</strong> Tissamaharama (distance depends on selected park gate)</span>
                       </li>
                     </ul>
                   </div>
@@ -416,11 +416,11 @@ export default function YalaNationalParkTravelGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <Clock className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                        <span><strong>Morning Safari:</strong> 6:00 AM - 10:00 AM</span>
+                        <span><strong>Morning Safari:</strong> Usually 6:00 AM - 10:00 AM</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <Clock className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                        <span><strong>Afternoon Safari:</strong> 2:30 PM - 6:30 PM</span>
+                        <span><strong>Afternoon Safari:</strong> Usually 2:30 PM - 6:30 PM</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -429,23 +429,23 @@ export default function YalaNationalParkTravelGuide() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-3 text-foreground">Entry Fees (2025):</h4>
+                    <h4 className="font-semibold mb-3 text-foreground">Entry Fees:</h4>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex justify-between">
                         <span>Foreign Adults:</span>
-                        <span className="font-medium">$25 USD</span>
+                        <span className="font-medium">approximately $30–$42 USD PP</span>
                       </li>
                       <li className="flex justify-between">
                         <span>Foreign Children (6-12):</span>
-                        <span className="font-medium">$12 USD</span>
+                        <span className="font-medium">approximately Half of adult fee</span>
                       </li>
                       <li className="flex justify-between">
                         <span>Safari Vehicle:</span>
-                        <span className="font-medium">$25 USD</span>
+                        <span className="font-medium">Vehicle and service fees apply</span>
                       </li>
                       <li className="flex justify-between">
-                        <span>Service Charge:</span>
-                        <span className="font-medium">$6 USD</span>
+                        <span>Important:</span>
+                        <span className="font-medium">Check official updates before travel</span>
                       </li>
                     </ul>
                   </div>
@@ -485,10 +485,10 @@ export default function YalaNationalParkTravelGuide() {
                       <div>
                         <h5 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Population Status</h5>
                         <ul className="text-xs space-y-1 text-muted-foreground">
-                          <li>• Estimated 700-1000 individuals in Sri Lanka</li>
-                          <li>• Yala has world&apos;s highest leopard density</li>
+                          <li>• Population estimates in Sri Lanka vary by method and year (Estimates show 200-250 individuals in entire park)</li>
+                          <li>• Yala is known for consistently strong leopard sighting rates</li>
                           <li>• Protected under Sri Lankan law</li>
-                          <li>• Listed as endangered species</li>
+                          <li>• Leopard species is currently listed as Vulnerable (IUCN)</li>
                         </ul>
                       </div>
                     </div>
@@ -509,7 +509,7 @@ export default function YalaNationalParkTravelGuide() {
                       {
                         src: "/Srilankanleopard.jpg",
                         alt: "Sri Lankan Leopard in Yala National Park",
-                        caption: "Sri Lankan Leopard resting on a tree branch",
+                        caption: "",
                         title: "Sri Lankan Leopard",
                       },
                       {
@@ -521,9 +521,9 @@ export default function YalaNationalParkTravelGuide() {
 
                       {
                         src: "/Yala-national-park.jpg",
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
+                        alt: "Yala Leopard in its natural habitat",
+                        caption: "Yala Leopard on Rock surface",
+                        title: "Yala Leopard",
                       },
                       {
                         src: "/Leopard1.webp",
@@ -555,7 +555,7 @@ export default function YalaNationalParkTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Yala is world-renowned for its leopard population, with the highest density globally. These
+                      Yala is world-renowned for its leopard population, known for having the highest leopard density in the world. These
                       magnificent big cats are larger than their African and Asian counterparts, with males weighing up
                       to 77kg. Unlike other leopard populations, Yala’s leopards are often active during daylight.
                     </p>
@@ -566,7 +566,7 @@ export default function YalaNationalParkTravelGuide() {
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
                             <div>
-                              <p className="mb-4 text-slate-700 dark:text-slate-300">If you are so lucky you will be see very rare black Sri Lankan Leopards in Yala national park. The mystical black leopards of Yala, also known as melanistic leopards, are one of the rarest and most elusive big cats in the world. This melanistic trait causes Panthera onca (jaguar) as well. These magnificent creatures appear almost entirely black due to a recessive genetic mutation that causes excess melanin production in their coat.</p>
+                              <p className="mb-4 text-slate-700 dark:text-slate-300">If you are very lucky, you may spot a rare black(melanistic) Sri Lankan leopard in Yala. These dark-coated leopards are uncommon and highly elusive. Melanism is a genetic trait documented in leopards (Panthera pardus), where higher pigment levels make the coat appear nearly black.</p>
                               <div className="grid md:grid-cols-2 gap-6 items-start">
                                 <div>
                                   <Image
@@ -590,7 +590,7 @@ export default function YalaNationalParkTravelGuide() {
                                       <span className="text-amber-500 mt-1">•</span>
                                       <div>
                                         <strong className="text-amber-700 dark:text-amber-300">Genetic Marvel:</strong>
-                                        <p className="text-slate-700 dark:text-slate-300">Melanism occurs in about 11% of leopards globally, but is extremely rare in Sri Lanka</p>
+                                        <p className="text-slate-700 dark:text-slate-300">Melanism is uncommon in wild leopard populations and remains especially rare in Sri Lanka</p>
                                       </div>
                                     </li>
                                     <li className="flex items-start gap-2">
@@ -626,7 +626,7 @@ export default function YalaNationalParkTravelGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Best leopard spotting chances in the world
+                        Excellent leopard spotting opportunities
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -710,9 +710,9 @@ export default function YalaNationalParkTravelGuide() {
                 </li>
               </ul>
               <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
-                <strong>Best Time to Visit:</strong> Early morning (6:00-8:00 AM) and late afternoon (4:00-6:00 PM) offer the
-                best lighting for photography and highest chances of elephant encounters. During dry season (June-September),
-                elephant herds regularly congregate near this area to access nearby water sources, providing unforgettable
+                <strong>Best Time to Visit:</strong> Early morning and late afternoon usually offer the
+                best light for photography and good chances of elephant encounters. During drier months,
+                elephant herds often congregate near nearby water sources, creating unforgettable
                 experiences where nature&apos;s living giants meet their ancient stone counterpart!
               </p>
             </div>
@@ -745,7 +745,7 @@ export default function YalaNationalParkTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Yala National Park is home to significant populations of Sri Lankan elephants, the largest of all Asian elephant subspecies.
+                      Yala National Park is home to significant populations of Sri Lankan elephants, generally regarded as the largest Asian elephant subspecies.
                       These intelligent pachyderms can be observed year-round, with the best viewing opportunities during the dry season when they
                       gather around water holes.
                     </p>
@@ -773,7 +773,7 @@ export default function YalaNationalParkTravelGuide() {
                         <ul className="space-y-2 text-sm text-muted-foreground">
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-amber-500 mt-1 flex-shrink-0" />
-                            Did you know female elephants are pregnant for a whopping 22 months? Yep, almost two years! That means if we lose a baby elephant, we have to wait ages for another one to arrive. No wonder their population grows so slowly  and in Sri Lanka, there are already fewer than 7,000 left. So let&apos;s be kind and protect these gentle giants, because our future generations deserve to meet them too!
+                            The female elephants are pregnant for about 22 months? Yep, almost two years! That means when a baby elephant is lost, it takes a very long time for another one to be born. This is why elephant populations grow very slowly.In Sri Lanka, there are fewer than 7,000 elephants left today.Let’s be kind and protect these gentle giants, so future generations can still see the majestic Sri Lankan elephant in the wild.
                           </li>
 
                           <li className="flex items-start gap-2">
@@ -810,8 +810,7 @@ export default function YalaNationalParkTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
 
                   <p className="text-muted-foreground mb-4">
-                    Yala is home to approximately 300-350 elephants, making it one of the best places in Sri Lanka to
-                    observe these magnificent creatures. You’ll often encounter large herds, especially near water
+                   Yala is home to approximately 300-350 elephants, making it one of the best places in Sri Lanka to observe these magnificent creatures. You’ll often encounter large herds, especially near water
                     sources during the dry season.
                   </p>
                   <ul className="space-y-2 text-muted-foreground">
@@ -854,12 +853,12 @@ export default function YalaNationalParkTravelGuide() {
             {/* Sloth Bears */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Sloth Bears (Melursus ursinus)</CardTitle>
+                <CardTitle>3. Sri Lankan Sloth Bear (Melursus ursinus inornatus)</CardTitle>
                 <CardDescription>The Mysterious Honey-Loving Bears of Yala</CardDescription>
                 <div className="mt-4">
                   <div className="yala-amber-card p-4 rounded-lg">
                     <p className="text-sm text-muted-foreground">
-                      The only bear species native to Sri Lanka, the Sloth Bear (Melursus ursinus) is a unique and fascinating creature.
+                      The Sri Lankan sloth bear (Melursus ursinus inornatus) is a subspecies found only in Sri Lanka and is a unique and fascinating creature.
                       Despite their name, they are not related to sloths but earned the name due to their long, curved claws and occasional hanging behavior in trees.
                     </p>
                     <div className="grid md:grid-cols-2 gap-4 mt-4">
@@ -876,7 +875,7 @@ export default function YalaNationalParkTravelGuide() {
                         <h5 className="font-semibold text-amber-800 dark:text-amber-400 mb-2">Conservation Status</h5>
                         <ul className="text-xs space-y-1 text-muted-foreground">
                           <li>• Vulnerable species (IUCN Red List)</li>
-                          <li>• Estimated 500-600 bears in Sri Lanka</li>
+                          <li>• Population estimates vary widely by region and survey method, Estimated around 500-600 bears in country</li>
                           <li>• Protected under strict wildlife laws</li>
                           <li>• Main threats: habitat loss & human conflict</li>
                         </ul>
@@ -961,28 +960,28 @@ export default function YalaNationalParkTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <div className="p-4 rounded-lg mb-4 bg-sky-50 border border-sky-200 dark:bg-slate-900/85 dark:border-sky-700/80">
-                      <h4 className="font-semibold text-sky-900 dark:text-sky-100 mb-2">Endemic Mammals</h4>
-                      <ul className="space-y-2 text-sm text-sky-900 dark:text-sky-100">
+                    <div className="yala-green-card p-4 rounded-lg mb-4">
+                      <h4 className="font-semibold text-amber-800 dark:text-amber-300 mb-2">Endemic Mammals</h4>
+                      <ul className="space-y-2 text-sm text-slate-800 dark:text-slate-200">
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-sky-600 dark:text-sky-300 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                           <div>
-                            <strong className="text-sky-950 dark:text-sky-200">Toque Macaque:</strong>
-                            <p className="text-sky-800 dark:text-sky-100">Sri Lanka&apos;s endemic primate, recognized by its distinctive cap-like whorl of hair</p>
+                            <strong className="text-amber-700 dark:text-amber-300">Toque Macaque:</strong>
+                            <p className="text-slate-700 dark:text-slate-300">Sri Lanka&apos;s endemic primate, recognized by its distinctive cap-like whorl of hair</p>
                           </div>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-sky-600 dark:text-sky-300 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                           <div>
-                            <strong className="text-sky-950 dark:text-sky-200">Red Slender Loris:</strong>
-                            <p className="text-sky-800 dark:text-sky-100">Nocturnal primate with large eyes, found in Yala&apos;s forested areas</p>
+                            <strong className="text-amber-700 dark:text-amber-300">Red Slender Loris:</strong>
+                            <p className="text-slate-700 dark:text-slate-300">Nocturnal primate with large eyes, found in Yala&apos;s forested areas</p>
                           </div>
                         </li>
                         <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-sky-600 dark:text-sky-300 mt-1 flex-shrink-0" />
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                           <div>
-                            <strong className="text-sky-950 dark:text-sky-200">Golden Palm Civet:</strong>
-                            <p className="text-sky-800 dark:text-sky-100">Endemic civet species with distinctive golden-brown fur</p>
+                            <strong className="text-amber-700 dark:text-amber-300">Golden Palm Civet:</strong>
+                            <p className="text-slate-700 dark:text-slate-300">Endemic civet species with distinctive golden-brown fur</p>
                           </div>
                         </li>
                       </ul>
@@ -1022,7 +1021,7 @@ export default function YalaNationalParkTravelGuide() {
                       <p className="text-sm text-amber-900 dark:text-amber-100 mb-4">
                         Sri Lanka is recognized as one of the world&apos;s 36 biodiversity hotspots, with Yala National Park playing a crucial role in protecting many endemic species.
                         These unique animals face various threats including habitat loss, human encroachment, and climate change. Conservation efforts are ongoing to ensure their survival
-                        for future generations.
+                        for future generations. Species totals can vary slightly as taxonomy and field surveys are updated.
                       </p>
                       <div className="grid md:grid-cols-3 gap-4">
                         <div className="yala-endemic-stat text-center p-3 rounded-lg">
@@ -1077,7 +1076,7 @@ export default function YalaNationalParkTravelGuide() {
                     </p>
                     <p className="text-muted-foreground mb-4">
                       Yala&apos;s waterways are home to impressive populations of Marsh Crocodiles, also known as Mugger Crocodiles.
-                      These powerful reptiles can grow up to 5 meters in length and are perfectly adapted to life in the park&apos;s
+                      These powerful reptiles can grow to around 4-5 meters in length and are well adapted to life in the park&apos;s
                       various water bodies, from lakes to seasonal pools.
                     </p>
                     <div className="space-y-4">
@@ -1107,7 +1106,7 @@ export default function YalaNationalParkTravelGuide() {
             {/* Water Buffalo */}
             <Card>
               <CardHeader>
-                <CardTitle>5. Wild Water Buffalo (Bubalus arnee)</CardTitle>
+                <CardTitle>5.Wild Water Buffalo (Bubalus arnee)</CardTitle>
                 <CardDescription>The Powerful Grazers of Yala&apos;s Grasslands</CardDescription>
               </CardHeader>
               <CardContent>
@@ -1116,23 +1115,18 @@ export default function YalaNationalParkTravelGuide() {
                     images={[
                       {
                         src: "/Wild-Water-Buffalo.jpg",
-                        alt: "Whale Shark swimming in the ocean",
-                        caption: "Whale Shark sighting in Mirissa",
-                        title: "Whale Shark",
+                        alt: "Wild Water Buffalo in Yala National Park",
+                        caption: "Wild Water Buffalos in Yala",
+                        title: "Wild Water Buffalo",
                       },
-                      {
-                        src: "/Whale-in-Mirissa.jpg",
-                        alt: "Whale watching in Mirissa",
-                        caption: "Whale watching in Mirissa",
-                        title: "Whale Watching",
-                      },
+                      
 
                     ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Wild Water Buffalo are among Yala&apos;s most impressive residents, with massive curved horns that can span up
-                      to 2 meters tip to tip. These powerful bovines play a crucial role in maintaining the park&apos;s grassland
+                      Water buffalo are among Yala&apos;s most impressive residents, with massive curved horns that can span over
+                      a meter in large adults. These powerful bovines play a crucial role in maintaining the park&apos;s grassland
                       ecosystems and can be formidable when protecting their territory.
                     </p>
                     <div className="space-y-4">
@@ -1141,7 +1135,7 @@ export default function YalaNationalParkTravelGuide() {
                         <ul className="space-y-2 text-sm text-blue-900 dark:!text-sky-100">
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-blue-500 dark:text-sky-300 mt-1 flex-shrink-0" />
-                            Massive body size, adults weigh over 1,000 kg
+                            Massive body size, with the largest bulls approaching 1,000 kg
                           </li>
                           <li className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-blue-500 dark:text-sky-300 mt-1 flex-shrink-0" />
@@ -1163,7 +1157,7 @@ export default function YalaNationalParkTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>Other Notable Wildlife</CardTitle>
-                <CardDescription>Diverse ecosystem with 44 mammal species</CardDescription>
+                <CardDescription>Diverse ecosystem with over 40 mammal species</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
@@ -1318,17 +1312,17 @@ export default function YalaNationalParkTravelGuide() {
                   <p className="text-sm text-muted-foreground">2:30 PM - 6:30 PM (Great for elephants and birds)</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2">Entry Fees (2025)</h4>
+                  <h4 className="font-semibold mb-2">Entry Fees (Check Latest Rates)</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Foreign Adults: $15 USD + taxes</li>
-                    <li>• Foreign Children: $8 USD + taxes</li>
-                    <li>• Jeep Entry: $25 USD</li>
-                    <li>• Tracker Fee: $10 USD (recommended)</li>
+                    <li>• Fees vary by nationality, age category, and selected park block</li>
+                    <li>• Vehicle, service, and tax components are charged separately</li>
+                    <li>• Some safaris include jeep and guide in package pricing</li>
+                    <li>• Always confirm latest tariffs with the Department of Wildlife Conservation</li>
                   </ul>
                 </div>
                 <div className="bg-yellow-50 p-3 rounded-lg">
                   <p className="text-sm text-yellow-800">
-                    <strong>Tip:</strong> Book safaris in advance, especially during peak season (December-April)
+                    <strong>Tip:</strong> Book safaris in advance, especially during high-demand holiday periods and peak season to secure your preferred time slots and avoid disappointment.
                   </p>
                 </div>
               </CardContent>
@@ -1433,7 +1427,7 @@ export default function YalaNationalParkTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-green-600">Peak Season</CardTitle>
-                <CardDescription>February to July</CardDescription>
+                <CardDescription>Typically February to June</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
@@ -1449,7 +1443,7 @@ export default function YalaNationalParkTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-yellow-600">Shoulder Season</CardTitle>
-                <CardDescription>August to November</CardDescription>
+                <CardDescription>Typically July to November</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
@@ -1465,12 +1459,12 @@ export default function YalaNationalParkTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-red-600">Park Closure</CardTitle>
-                <CardDescription>September to October</CardDescription>
+                <CardDescription>Usually announced seasonally (often around September-October)</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Park closed for animal breeding</li>
-                  <li>• Heavy monsoon rains</li>
+                  <li>• Temporary closures may occur for habitat and wildlife management</li>
+                  <li>• Weather conditions can influence access and safari quality</li>
                   <li>• Alternative: Visit Udawalawe</li>
                   <li>• Plan visits around closure dates</li>
                   <li>• Check official announcements</li>
@@ -1550,7 +1544,7 @@ export default function YalaNationalParkTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  1.5 hours
+                  Approx. 1.5 hours
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1560,7 +1554,7 @@ export default function YalaNationalParkTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  50 km from Yala National Park
+                  Approx. 50 km from Yala area
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/katharagama" passHref legacyBehavior>
@@ -1579,7 +1573,7 @@ export default function YalaNationalParkTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  1.5 hours
+                  Approx. 1.5 hours
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1589,7 +1583,7 @@ export default function YalaNationalParkTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  50 km from Yala National Park
+                  Approx. 50 km from Yala area
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/sithulpawwa-raja-maha-viharaya" passHref legacyBehavior>
@@ -1607,7 +1601,7 @@ export default function YalaNationalParkTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  2 hours
+                  Approx. 2 hours
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1617,7 +1611,7 @@ export default function YalaNationalParkTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  18 km from Yala National Park
+                  Approx. 18 km (route dependent)
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/ridiyagama-safari-park" passHref legacyBehavior>
