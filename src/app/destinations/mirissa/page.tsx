@@ -25,7 +25,7 @@ export default function MirissaTravelGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Mirissa</h1>
+          <h1 className="hero-text-shadow text-4xl md:text-6xl font-bold mb-4">Mirissa</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Premier Whale Watching Paradise</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
@@ -158,7 +158,7 @@ export default function MirissaTravelGuide() {
                       <li>• <strong>Duration:</strong> 2.5-3.5 hours</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
-                    <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                    <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                       <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                         <strong>🌟 Recommended:</strong> <span className="font-semibold"> Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Mirissa. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
                       </p>
@@ -221,63 +221,281 @@ export default function MirissaTravelGuide() {
 
         <InsuranceBanner />
 
-        {/* Whale Watching */}
+        {/* Whale Watching - Enhanced Section */}
         <section className="mb-12 scroll-mt-40" id="whale-watching">
-          <h2 className="text-3xl font-bold mb-6">World&apos;s Best Whale Watching Experience</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-            <div>
-              <ImageCarousel
-                images={[
-                  {
-                    src: "/Whale-Shark-at-Mirissa.jpg",
-                    alt: "Whale Shark swimming in the ocean",
-                    caption: "Whale Shark sighting in Mirissa",
-                    title: "Whale Shark",
-                  },
-                  {
-                    src: "/Whale-in-Mirissa.jpg",
-                    alt: "Whale watching in Mirissa",
-                    caption: "Whale watching in Mirissa",
-                    title: "Whale Watching",
-                  },
-
-                ]}
-              />
-              {/* <p className="text-sm text-muted-foreground mt-2 italic">
-                Blue whales, the largest animals on Earth, frequent Mirissa&apos;s waters
-              </p> */}
-            </div>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                You might know about Mirissa Coconut tree hill but also Mirissa is globally recognized as one of the best places to spot blue whales, sperm whales, and dolphins.
-                The continental shelf drops dramatically just off the coast, creating deep waters where these magnificent
-                creatures feed and play, often coming remarkably close to shore.
-              </p>
-              <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Premier Whale Watching Paradise</p>
-              Join a whale watching tour and witness the breathtaking sight of blue whales - the largest animals ever
-              to have lived on Earth - surfacing in the crystal-clear waters of the Indian Ocean. The success rate
-              for whale sightings during peak season is over 90%.
-              Southern Province, Sri Lanka
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <h4 className="font-semibold text-blue-800 mb-2">What You Might See:</h4>
-                <ul className="text-sm text-blue-700 space-y-1">
-                  <li>• Blue Whales (largest animals on Earth)</li>
-                  <li>• Whale Sharks (Largest Fish in the world)</li>
-                  <li>• Killer Whales-Orcas (Largest members of the dolphin family)</li>
-                  <li>• Sperm Whales and Pilot Whales</li>
-                  <li>• Spinner and Bottlenose Dolphins</li>
-                  <li>• Flying Fish and Sea Turtles</li>
-                </ul>
+          <h2 className="text-3xl font-bold mb-6">Mirissa Whale Watching Tour</h2>
+          
+          {/* Tour Overview */}
+          <Card className="mb-8 border-2 border-blue-200">
+            <CardHeader className="bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-950 dark:to-cyan-950">
+              <CardTitle className="text-2xl text-blue-900 dark:text-blue-100">Experience the Majesty of Blue Whales</CardTitle>
+              <CardDescription className="text-base text-slate-700 dark:text-cyan-100/90">
+                One of Sri Lanka&apos;s most spectacular marine adventures awaits you in Mirissa
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <div className="grid md:grid-cols-2 gap-8 items-start mb-8">
+                <div>
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Whale-Shark-at-Mirissa.jpg",
+                        alt: "Whale Shark swimming majestically in the deep blue ocean waters off Mirissa coast",
+                        caption: "Whale Shark sighting in Mirissa",
+                        title: "Whale Shark",
+                      },
+                      {
+                        src: "/Whale-in-Mirissa.jpg",
+                        alt: "Blue whale breaching the ocean surface during whale watching tour in Mirissa",
+                        caption: "Blue whale watching in Mirissa waters",
+                        title: "Whale Watching",
+                      },
+                    ]}
+                  />
+                </div>
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold text-foreground">About This Tour</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Experience one of Sri Lanka&apos;s most famous marine adventures with our Mirissa Whale Watching Tour. 
+                    Witness majestic blue whales, sperm whales, and playful dolphins in their natural habitat. Mirissa is 
+                    globally recognized as one of the best places on Earth to spot blue whales due to the continental shelf 
+                    that drops dramatically just off the coast, creating deep waters where these magnificent creatures feed.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Our experienced operators ensure safe boat operations and smooth planning, giving you the best chance to 
+                    witness these incredible animals. The success rate for whale sightings during peak season (November to April) 
+                    is over 90%, making this an adventure you won&apos;t want to miss!
+                  </p>
+                  
+                  <div className="grid grid-cols-2 gap-4 mt-6">
+                    <div className="bg-blue-50 dark:bg-blue-900/25 p-4 rounded-lg text-center border border-blue-200 dark:border-blue-800/60">
+                      <Clock className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                      <p className="font-semibold text-blue-900 dark:text-blue-100">Duration</p>
+                      <p className="text-sm text-blue-700 dark:text-blue-200/90">3-4 Hours</p>
+                    </div>
+                    <div className="bg-green-50 dark:bg-green-900/25 p-4 rounded-lg text-center border border-green-200 dark:border-green-800/60">
+                      <Calendar className="w-8 h-8 text-green-600 mx-auto mb-2" />
+                      <p className="font-semibold text-green-900 dark:text-green-100">Best Season</p>
+                      <p className="text-sm text-green-700 dark:text-green-200/90">Nov - April</p>
+                    </div>
+                    <div className="bg-purple-50 dark:bg-purple-900/25 p-4 rounded-lg text-center border border-purple-200 dark:border-purple-800/60">
+                      <Star className="w-8 h-8 text-purple-600 mx-auto mb-2" />
+                      <p className="font-semibold text-purple-900 dark:text-purple-100">Success Rate</p>
+                      <p className="text-sm text-purple-700 dark:text-purple-200/90">90%+ Peak Season</p>
+                    </div>
+                    <div className="bg-orange-50 dark:bg-orange-900/25 p-4 rounded-lg text-center border border-orange-200 dark:border-orange-800/60">
+                      <Sun className="w-8 h-8 text-orange-600 mx-auto mb-2" />
+                      <p className="font-semibold text-orange-900 dark:text-orange-100">Departure</p>
+                      <p className="text-sm text-orange-700 dark:text-orange-200/90">5:30-6:30 AM</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="mt-8">
+
+              {/* What You'll See */}
+              <div className="mb-8">
+                <h3 className="text-xl font-semibold text-foreground mb-4">Marine Life You Might Encounter</h3>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">🐋 Blue Whales</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">
+                      The largest animals ever to exist on Earth. Mirissa offers one of the best chances globally to see these gentle giants.
+                    </p>
+                  </div>
+                  <div className="bg-gradient-to-br from-cyan-50 to-cyan-100 dark:from-cyan-950 dark:to-cyan-900 p-4 rounded-lg">
+                    <h4 className="font-semibold text-cyan-800 dark:text-cyan-200 mb-2">🦈 Whale Sharks</h4>
+                    <p className="text-sm text-cyan-700 dark:text-cyan-300">
+                      The largest fish in the world. These gentle filter-feeders are occasionally spotted during the tour.
+                    </p>
+                  </div>
+                  <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950 dark:to-purple-900 p-4 rounded-lg">
+                    <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-2">🐬 Dolphins</h4>
+                    <p className="text-sm text-purple-700 dark:text-purple-300">
+                      Spinner and Bottlenose dolphins often swim alongside boats, putting on acrobatic displays.
+                    </p>
+                  </div>
+                  <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900 p-4 rounded-lg">
+                    <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">🐋 Sperm Whales</h4>
+                    <p className="text-sm text-green-700 dark:text-green-300">
+                      Deep-diving whales known for their distinctive square heads and spectacular breaches.
+                    </p>
+                  </div>
+                  <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950 dark:to-orange-900 p-4 rounded-lg">
+                    <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-2">🔱 Killer Whales</h4>
+                    <p className="text-sm text-orange-700 dark:text-orange-300">
+                      Orcas, the largest members of the dolphin family, are occasionally spotted hunting in pods.
+                    </p>
+                  </div>
+                  <div className="bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-950 dark:to-teal-900 p-4 rounded-lg">
+                    <h4 className="font-semibold text-teal-800 dark:text-teal-200 mb-2">🐢 Sea Turtles</h4>
+                    <p className="text-sm text-teal-700 dark:text-teal-300">
+                      Multiple turtle species and flying fish are commonly seen during the boat journey.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {true && (
+                <>
+              {/* Tour Inclusions */}
+              <div data-promo="true" className="grid md:grid-cols-2 gap-8 mb-8">
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-4">✅ Tour Inclusions</h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-muted-foreground">Private air-conditioned vehicle with experienced driver</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-muted-foreground">Hotel pickup & drop-off (Mirissa/Weligama/Matara area)</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-muted-foreground">Whale watching boat tickets & coordination</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-muted-foreground">Safety life jackets provided on board</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-muted-foreground">Breakfast pack (on request) and bottled water</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-muted-foreground">Expert naturalist guidance on board</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-muted-foreground">All taxes and service charges included</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-semibold text-foreground mb-4">📋 Important Information</h3>
+                      <div className="space-y-4">
+                        <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border-l-4 border-blue-500">
+                          <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">🕐 Pickup & Timing</h4>
+                          <ul className="text-sm text-blue-700 dark:text-blue-300 space-y-1">
+                            <li>• Early morning pickup: 4:00-5:00 AM (depending on location)</li>
+                            <li>• Boat departure: 6:00-6:30 AM (best whale spotting time)</li>
+                            <li>• Return to hotel: Late morning/early afternoon</li>
+                          </ul>
+                        </div>
+
+                        <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg border-l-4 border-amber-500">
+                          <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">♿ Accessibility & Suitability</h4>
+                          <ul className="text-sm text-amber-700 dark:text-amber-300 space-y-1">
+                            <li>• Boat boarding from harbor (moderate physical activity)</li>
+                            <li>• Not recommended for pregnant travelers</li>
+                            <li>• Not suitable for those with severe motion sickness</li>
+                            <li>• Sea sickness pills recommended and available</li>
+                          </ul>
+                        </div>
+
+                        <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border-l-4 border-green-500">
+                          <h4 className="font-semibold text-green-800 dark:text-green-200 mb-2">🔄 Cancellation Policy</h4>
+                          <ul className="text-sm text-green-700 dark:text-green-300 space-y-1">
+                            <li>• Whale watching is weather-dependent</li>
+                            <li>• Full refund if canceled due to rough seas</li>
+                            <li>• Free rescheduling if Coast Guard cancels</li>
+                            <li>• 24-hour advance cancellation for full refund</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+
+              {/* Whale Watching Tips */}
+              <div className="bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-950 dark:to-blue-950 p-6 rounded-lg mb-8 border border-cyan-200 dark:border-cyan-900/70">
+                <h3 className="text-xl font-semibold text-cyan-900 dark:text-cyan-100 mb-4">🎯 Pro Tips for Whale Watching</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-white/80 dark:bg-slate-900/40 rounded-lg p-4 border border-cyan-200 dark:border-cyan-900/70">
+                    <h4 className="font-semibold mb-2 text-cyan-800 dark:text-cyan-200">What to Bring:</h4>
+                    <ul className="text-sm text-slate-700 dark:text-cyan-100/90 space-y-1">
+                      <li>• Camera with telephoto lens & extra batteries</li>
+                      <li>• Binoculars for better viewing</li>
+                      <li>• Sunscreen, hat, and sunglasses</li>
+                      <li>• Light jacket (mornings can be cool)</li>
+                      <li>• Motion sickness medication (if needed)</li>
+                      <li>• Cash for tips and souvenirs</li>
+                    </ul>
+                  </div>
+                  <div className="bg-white/80 dark:bg-slate-900/40 rounded-lg p-4 border border-blue-200 dark:border-blue-900/70">
+                    <h4 className="font-semibold mb-2 text-blue-800 dark:text-blue-200">For Best Experience:</h4>
+                    <ul className="text-sm text-slate-700 dark:text-blue-100/90 space-y-1">
+                      <li>• Book during peak season (November-April)</li>
+                      <li>• Start early for best sighting chances</li>
+                      <li>• Stay on the deck for better views</li>
+                      <li>• Listen to naturalist instructions</li>
+                      <li>• Be patient - whales are wild animals</li>
+                      <li>• Respect marine life - no touching or feeding</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {true && (
+                <>
+              {/* Booking CTA */}
+              <div data-promo="true"  className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-8 rounded-xl shadow-2xl">
+                    <div className="text-center max-w-3xl mx-auto">
+                      <h3 className="text-3xl font-bold mb-4">Ready for the Adventure of a Lifetime?</h3>
+                      <p className="text-xl mb-6 text-white/90">
+                        Book your Mirissa whale watching tour with Ceylanka Tours for a hassle-free, unforgettable experience
+                      </p>
+
+                      <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+                        <Link href="/contact-us">
+                          <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-6 text-lg font-semibold shadow-lg cursor-pointer">
+                            📅 Book Your Whale Tour Now
+                          </Button>
+                        </Link>
+                        <a href="tel:+94707646765">
+                          <Button size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold shadow-lg cursor-pointer">
+                            📞 Call: +94 70 764 6765
+                          </Button>
+                        </a>
+                        <a href="https://wa.me/94707646765" target="_blank" rel="noopener noreferrer">
+                          <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg font-semibold shadow-lg cursor-pointer">
+                            💬 WhatsApp Us
+                          </Button>
+                        </a>
+                      </div>
+
+                      <div className="grid md:grid-cols-3 gap-4 text-sm">
+                        <div className="bg-white/10 backdrop-blur-sm p-3 rounded-lg">
+                          <p className="font-semibold">✓ Expert Local Guides</p>
+                          <p className="text-white/80 text-xs">Professional naturalists</p>
+                        </div>
+                        <div className="bg-white/10 backdrop-blur-sm p-3 rounded-lg">
+                          <p className="font-semibold">✓ Safe Operations</p>
+                          <p className="text-white/80 text-xs">Licensed boats & safety gear</p>
+                        </div>
+                        <div className="bg-white/10 backdrop-blur-sm p-3 rounded-lg">
+                          <p className="font-semibold">✓ Best Prices</p>
+                          <p className="text-white/80 text-xs">No hidden charges</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+
+              {/* Learn More Link */}
+              <div className="mt-8 text-center">
                 <Link href="/articles/marine-life-experience">
-                  <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 cursor-pointer">
-                    Read More About Sri Lankan Marine Life
+                  <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 dark:hover:bg-blue-950 cursor-pointer">
+                    📖 Read More About Sri Lankan Marine Life
                   </Button>
                 </Link>
               </div>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
         </section>
 
         {/* Top Attractions */}
@@ -810,7 +1028,7 @@ export default function MirissaTravelGuide() {
           </div>
 
           {/* Day Trip Suggestions */}
-          <div className="mt-8 bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 p-6 rounded-lg">
+          {/* <div className="mt-8 bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 p-6 rounded-lg">
             <h3 className="text-xl font-bold mb-4 text-center">Suggested Day Trip Combinations</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -834,27 +1052,27 @@ export default function MirissaTravelGuide() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
 
         {/* Final Section */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-blue-50 to-teal-50 border-blue-200">
+          <Card className="bg-gradient-to-r from-blue-50 to-teal-50 dark:from-slate-900 dark:to-slate-800 border-blue-200 dark:border-slate-700">
             <CardHeader>
-              <CardTitle className="text-blue-800">Your Mirissa Paradise Awaits</CardTitle>
+              <CardTitle className="text-blue-800 dark:text-blue-200">Your Mirissa Paradise Awaits</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-slate-700 dark:text-slate-200 mb-4">
                 Mirissa represents the perfect blend of adventure and relaxation, where you can witness the world&apos;s
                 largest mammals in their natural habitat by morning and watch spectacular sunsets from Coconut Hill
                 by evening. This tropical paradise offers experiences that will create memories to last a lifetime.
               </p>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-slate-700 dark:text-slate-200 mb-4">
                 Whether you&apos;re seeking the thrill of whale watching, the peace of pristine beaches, or the adventure
                 of water sports, Mirissa delivers it all with the warm hospitality that Sri Lanka is famous for.
                 Come and discover why this small fishing village has captured the hearts of travelers from around the world.
               </p>
-              <p className="text-muted-foreground font-medium">Dive into your Mirissa adventure! 🐋🏖️</p>
+              <p className="text-slate-800 dark:text-slate-100 font-medium">Dive into your Mirissa adventure! 🐋🏖️</p>
             </CardContent>
           </Card>
         </section>
