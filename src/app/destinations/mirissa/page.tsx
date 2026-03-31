@@ -91,7 +91,7 @@ export default function MirissaTravelGuide() {
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-blue-500" />
                     <span>
-                      <strong>Location:</strong> Southern Coast, 240km from Colombo
+                      <strong>Location:</strong> Southern Coast, about 155 km from Colombo
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -154,7 +154,7 @@ export default function MirissaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo</li>
+                      <li>• <strong>Distance:</strong> about 155-160 km (96-99 miles) from Colombo</li>
                       <li>• <strong>Duration:</strong> 2.5-3.5 hours</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
@@ -263,8 +263,8 @@ export default function MirissaTravelGuide() {
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
                     Our experienced operators ensure safe boat operations and smooth planning, giving you the best chance to 
-                    witness these incredible animals. The success rate for whale sightings during peak season (November to April) 
-                    is over 90%, making this an adventure you won&apos;t want to miss!
+                    witness these incredible animals. Sightings are typically strongest during peak season (November to April),
+                    though encounter rates vary with weather and sea conditions.
                   </p>
                   
                   <div className="grid grid-cols-2 gap-4 mt-6">
@@ -281,7 +281,7 @@ export default function MirissaTravelGuide() {
                     <div className="bg-purple-50 dark:bg-purple-900/25 p-4 rounded-lg text-center border border-purple-200 dark:border-purple-800/60">
                       <Star className="w-8 h-8 text-purple-600 mx-auto mb-2" />
                       <p className="font-semibold text-purple-900 dark:text-purple-100">Success Rate</p>
-                      <p className="text-sm text-purple-700 dark:text-purple-200/90">90%+ Peak Season</p>
+                      <p className="text-sm text-purple-700 dark:text-purple-200/90">Seasonal and weather-dependent</p>
                     </div>
                     <div className="bg-orange-50 dark:bg-orange-900/25 p-4 rounded-lg text-center border border-orange-200 dark:border-orange-800/60">
                       <Sun className="w-8 h-8 text-orange-600 mx-auto mb-2" />
@@ -782,7 +782,7 @@ export default function MirissaTravelGuide() {
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        5-minute walk from main beach
+                        About 3.8 km by road from central Mirissa (around 15 minutes by tuk-tuk)
                       </li>
                     </ul>
                   </div>
@@ -915,16 +915,16 @@ export default function MirissaTravelGuide() {
               <div className="relative h-48">
                 <Image
                   src="/Waligama.jpg"
-                  alt="Nine Arch Bridge in Ella with train passing through lush green tea plantations"
+                  alt="Weligama Bay with surf-friendly waves and palm-lined coastline"
                   fill
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  20 mins
+                  15-20 mins
                 </div>
               </div>
               <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Waligama</h3>
+                <h3 className="font-bold text-lg mb-2">Weligama</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   Weligama is a popular destination for beginner surfers, offering gentle waves and a laid-back atmosphere.
                 </p>
@@ -948,7 +948,7 @@ export default function MirissaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  1 hours
+                  About 1 hour
                 </div>
               </div>
               <CardContent className="p-4">
@@ -958,7 +958,7 @@ export default function MirissaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  36 km from Mirissa
+                  About 35-42 km from Mirissa
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/galle-fort" passHref legacyBehavior>
@@ -977,7 +977,7 @@ export default function MirissaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  50 mins
+                  40-50 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -987,7 +987,7 @@ export default function MirissaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  31 km from Mirissa
+                  About 30-35 km from Mirissa
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/unawatuna" passHref legacyBehavior>
@@ -1006,17 +1006,17 @@ export default function MirissaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  1.5 hours
+                  About 1 hr 5 mins
                 </div>
               </div>
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Hirikatiya</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Charming hill station with cooler climate, beautiful views, and the historic Bandarawela Hotel.
+                  A scenic horseshoe-shaped bay near Dikwella, popular for surfing, beach cafes, and laid-back coastal vibes.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  34 km from Mirissa
+                  around 34-36 km from Mirissa
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/hirikatiya" passHref legacyBehavior>
