@@ -180,8 +180,8 @@ export default function ArugamBayTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-orange-200">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 287km (178 miles) from Colombo</li>
-                      <li>• <strong>Duration:</strong> 4-4.5 hours</li>
+                       <li>• <strong>Distance:</strong> about 390 km (242 miles) by road from Colombo</li>
+                       <li>• <strong>Duration:</strong> about 6-7 hours</li>
                       <li>• <strong>Cost:</strong> Contact  Ceylanka tours for more details</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>

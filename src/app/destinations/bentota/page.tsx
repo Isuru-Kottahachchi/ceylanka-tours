@@ -442,7 +442,7 @@ export default function BentotaGuide() {
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>2. Bentota River & Baot Safari</CardTitle>
+                                <CardTitle>2. Bentota River & Boat Safari</CardTitle>
                                 <CardDescription>Adventure hub for jet skiing, boat rides, and water sports</CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -1563,17 +1563,17 @@ export default function BentotaGuide() {
                                     className="object-cover rounded-t-lg"
                                 />
                                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                                    30 mins from Bentota
+                                    20 mins from Bentota
                                 </div>
                             </div>
                             <CardContent className="p-4">
                                 <h3 className="font-bold text-lg mb-2">Lunuganga Garden by Geoffrey Bawa</h3>
                                 <p className="text-sm text-muted-foreground mb-3">
-                                    A masterpiece of landscape architecture offering breathtaking views of hills and the Indian Ocean with stunning artistic design.
+                                    A masterpiece of landscape architecture offering breathtaking views of Dedduwa Lake and the surrounding tropical landscape.
                                 </p>
                                 <div className="flex items-center text-xs text-blue-600 mb-2">
                                     <MapPin className="w-3 h-3 mr-1" />
-                                    30 km from Bentota
+                                    about 10 km from Bentota
                                 </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/lunuganga-garden-by-geoffrey-bawa" passHref legacyBehavior>
@@ -1631,7 +1631,7 @@ export default function BentotaGuide() {
                                 </p>
                                 <div className="flex items-center text-xs text-blue-600 mb-2">
                                     <MapPin className="w-3 h-3 mr-1" />
-                                    20 km from Bentota
+                                    about 11 km from Bentota
                                 </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/brief-garden-by-bevis-bawa" passHref legacyBehavior>

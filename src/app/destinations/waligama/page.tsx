@@ -82,7 +82,7 @@ export default function WeligamaTravelGuide() {
             <p className="text-lg mb-4">
               Nestled along Sri Lanka&apos;s enchanting southern coast, Weligama is a captivating blend of ancient traditions and modern beach paradise.
               This charming coastal town is world-famous for its iconic stilt fishermen, perfect beginner-friendly surfing conditions, and stunning natural attractions
-              like Snake Island and Coconut Tree Hill. The name &quot;Weligama&quot; literally means &quot;sandy village&quot; in Sinhala, perfectly describing this golden-sand haven.
+              like Snake Island (Taprobane Island) and the scenic Weligama Bay. The name &quot;Weligama&quot; literally means &quot;sandy village&quot; in Sinhala, perfectly describing this golden-sand haven.
             </p>
             <p className="text-lg">
               From witnessing the centuries-old art of stilt fishing to learning to surf in gentle bay waters, from exploring private islands accessible at low tide
@@ -159,8 +159,8 @@ export default function WeligamaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo (Depends on the road Express way or coastal road)</li>
-                      <li>• <strong>Duration:</strong> 4-5 hours</li>
+                      <li>• <strong>Distance:</strong> about 149 km (93 miles) from Colombo via Southern Expressway (E01)</li>
+                      <li>• <strong>Duration:</strong> 2.5–3.5 hours</li>
                       <li>• <strong>Cost:</strong> Around $60 USD</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
@@ -185,19 +185,19 @@ export default function WeligamaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo → Waligama</li>
-                      <li>• <strong>Duration:</strong> 6-7 hours total</li>
+                      <li>• <strong>Route:</strong> Colombo Fort → Weligama (Coastal Line)</li>
+                      <li>• <strong>Duration:</strong> about 3–4 hours</li>
                       <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
-                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Waligama station</span></li>
+                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Weligama Railway Station</span></li>
                       {/* <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li> */}
                     </ul>
 
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo → Waligama</li>
-                      <li>• <strong>Duration:</strong> 5-6 hours</li>
+                      <li>• <strong>Route:</strong> Colombo → Weligama</li>
+                      <li>• <strong>Duration:</strong> about 3.5–4.5 hours</li>
                       <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
-                      <li>• <strong>Frequency:</strong> Regular departures from Kandy</li>
+                      <li>• <strong>Frequency:</strong> Frequent departures from Colombo</li>
                     </ul>
                   </div>
                 </div>
@@ -1139,32 +1139,7 @@ export default function WeligamaTravelGuide() {
 
           </div>
 
-          {/* Day Trip Suggestions */}
-          <div className="mt-8 bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 p-6 rounded-lg">
-            <h3 className="text-xl font-bold mb-4 text-center">Suggested Day Trip Combinations</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">Tea Country Adventure</h4>
-                <p className="text-sm text-muted-foreground mb-2">
-                  Nuwara Eliya → Ambewela Farm → Haputhale (Lipton&apos;s Seat) → Return
-                </p>
-                <div className="flex items-center text-xs text-green-600">
-                  <Clock className="w-3 h-3 mr-1" />
-                  Full day trip (8-10 hours)
-                </div>
-              </div>
-              <div>
-                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Hill Country Explorer</h4>
-                <p className="text-sm text-muted-foreground mb-2">
-                  Nuwara Eliya → Ella (Nine Arch Bridge) → Bandarawela → Return
-                </p>
-                <div className="flex items-center text-xs text-blue-600">
-                  <Clock className="w-3 h-3 mr-1" />
-                  Full day trip (10-12 hours)
-                </div>
-              </div>
-            </div>
-          </div>
+      
         </section>
         {/* Shopping & Local Markets */}
         <section className="mb-12">

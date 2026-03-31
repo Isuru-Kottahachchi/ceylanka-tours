@@ -114,7 +114,7 @@ export default function PasikudaTravelGuide() {
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
                     <span>
-                      <strong>Distance from Colombo:</strong> 300km (6-7 hours)
+                      <strong>Distance from Colombo:</strong> about 288km (around 5.5-6 hours)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -126,7 +126,7 @@ export default function PasikudaTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-orange-500" />
                     <span>
-                      <strong>Ideal Stay:</strong> 3-5 days minimum
+                        <strong>Ideal Stay:</strong> 2-3 days
                     </span>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ export default function PasikudaTravelGuide() {
                   <div className="flex gap-8">
                     <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                       <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
-                      <p className="text-sm text-yellow-800">1–2 full days to enjoy the beach and local culture at a relaxed pace.</p>
+                        <p className="text-sm text-yellow-800">2–3 full days to enjoy the beach, water activities, and local area at a relaxed pace.</p>
                     </div>
                     <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
                       <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
@@ -161,8 +161,8 @@ export default function PasikudaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 287km (178 miles) from Colombo</li>
-                      <li>• <strong>Duration:</strong> 4-4.5 hours</li>
+                      <li>• <strong>Distance:</strong> about 288km (179 miles) from Colombo</li>
+                      <li>• <strong>Duration:</strong> about 5.5-6 hours</li>
                       <li>• <strong>Cost:</strong> Contact  Ceylanka tours for more details</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
@@ -539,7 +539,7 @@ export default function PasikudaTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">From Colombo Airport</h4>
                   <p className="text-sm text-muted-foreground">
-                    300km (6-7 hours) by road. Private transfers, taxis, or rental cars available.
+                    About 288km (around 5.5-6 hours) by road. Private transfers, taxis, or rental cars available.
                   </p>
                 </div>
                 <div>
@@ -551,7 +551,7 @@ export default function PasikudaTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Train + Road</h4>
                   <p className="text-sm text-muted-foreground">
-                    Train to Batticaloa, then road transport to Pasikuda. Scenic but longer journey.
+                    Train to Valaichchenai, then a short road transfer to Pasikuda. Scenic but longer journey.
                   </p>
                 </div>
               </CardContent>
@@ -563,9 +563,9 @@ export default function PasikudaTravelGuide() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">Best Route</h4>
+                  <h4 className="font-semibold mb-2">Scenic Route Option</h4>
                   <p className="text-sm text-muted-foreground">
-                    Colombo → Kandy → Mahiyanganaya → Batticaloa → Pasikuda for scenic mountain and coastal views.
+                    Colombo → Kandy → Mahiyanganaya → Batticaloa → Pasikuda offers a more scenic inland-to-coast drive, but it is not usually the fastest route.
                   </p>
                 </div>
                 <div>
