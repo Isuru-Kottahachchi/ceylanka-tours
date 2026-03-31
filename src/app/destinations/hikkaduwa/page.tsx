@@ -163,7 +163,7 @@ export default function HikkaduwaTravelGuide() {
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-blue-500" />
                     <span>
-                      <strong>Location:</strong> Southern Coast, near Nilwella
+                      <strong>Location:</strong> Southern Coast, near Galle
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -215,8 +215,8 @@ export default function HikkaduwaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo (Depends on the road Express way or coastal road)</li>
-                      <li>• <strong>Duration:</strong> 4-5 hours</li>
+                      <li>• <strong>Distance:</strong> about 120 km (75 miles) from Colombo via Southern Expressway</li>
+                      <li>• <strong>Duration:</strong> around 2-2.5 hours</li>
                       <li>• <strong>Cost:</strong> Around $60 USD</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
@@ -241,19 +241,19 @@ export default function HikkaduwaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo → Waligama</li>
-                      <li>• <strong>Duration:</strong> 6-7 hours total</li>
+                      <li>• <strong>Route:</strong> Colombo Fort → Hikkaduwa (Coastal Line)</li>
+                      <li>• <strong>Duration:</strong> about 2.5-3.5 hours</li>
                       <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
-                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Waligama station</span></li>
+                      <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Hikkaduwa Railway Station</span></li>
                       {/* <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li> */}
                     </ul>
 
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo → Waligama</li>
-                      <li>• <strong>Duration:</strong> 5-6 hours</li>
+                      <li>• <strong>Route:</strong> Colombo → Hikkaduwa</li>
+                      <li>• <strong>Duration:</strong> about 3-4.5 hours</li>
                       <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
-                      <li>• <strong>Frequency:</strong> Regular departures from Kandy</li>
+                      <li>• <strong>Frequency:</strong> Frequent departures from Colombo</li>
                     </ul>
                   </div>
                 </div>
@@ -285,7 +285,7 @@ export default function HikkaduwaTravelGuide() {
                 <div>
                   <h3 className="font-semibold mb-3 text-foreground">Getting There</h3>
                   <ul className="space-y-2 text-muted-foreground">
-                    <li>From Colombo: 98 km, 2 hours by car</li>
+                    <li>From Colombo: about 120 km, around 2 hours by car</li>
                     <li>From Galle: 19 km, 30 minutes</li>
                     <li>By Train: Hikkaduwa Railway Station</li>
                     <li>By Bus: Regular buses from major cities</li>
@@ -373,14 +373,14 @@ export default function HikkaduwaTravelGuide() {
                   <ImageCarousel images={surfingImages} alt="Surfing at Hikkaduwa beach" />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Hikkaduwa is the birthplace of surfing in Sri Lanka and remains the top surf destination. The beach
+                      Hikkaduwa is one of Sri Lanka&apos;s best-known surf destinations. The beach
                       offers consistent waves year-round, with the best conditions from November to April. Multiple surf
                       breaks cater to different skill levels, from gentle waves perfect for beginners to more challenging
                       breaks for advanced surfers.
                     </p>
                     <p className="text-muted-foreground mb-4">
                       The main surf spots include the north end near the coral sanctuary (gentle waves), the main beach
-                      (medium waves), and Coconut Tree Hill area (more advanced). Surf schools line the beach offering
+                      (medium waves), and reef breaks further south (more advanced). Surf schools line the beach offering
                       lessons in multiple languages, and board rentals are available everywhere.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -416,8 +416,7 @@ export default function HikkaduwaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      If you visit to the Turtle beach in Hikkaduwa, you can see freely roaming sea turtles in their natural habitat. You can take some photos with them, but not recommend to touch them and disturb them. <br />The Hikkaduwa Turtle Hatchery is a conservation project that protects sea turtle eggs and raises
-                      The Hikkaduwa Turtle Hatchery is a conservation project that protects sea turtle eggs and raises
+                      If you visit Turtle Beach in Hikkaduwa, you can often see sea turtles in their natural habitat. You can take photos, but do not touch or disturb them. <br />The Hikkaduwa Turtle Hatchery is a conservation project that protects sea turtle eggs and raises
                       baby turtles before releasing them into the ocean. Five species of sea turtles visit these shores:
                       Green, Hawksbill, Olive Ridley, Loggerhead, and Leatherback turtles.
                     </p>
@@ -870,7 +869,7 @@ export default function HikkaduwaTravelGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. 30 min drive.
+                  Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. Around 1.5 hours by road.
                 </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/hirikatiya" passHref legacyBehavior>
@@ -882,19 +881,19 @@ export default function HikkaduwaTravelGuide() {
 
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <CardHeader>
-                <CardTitle className="text-lg">Hikkaduwa</CardTitle>
-                <CardDescription>Beach that can campfire</CardDescription>
+                <CardTitle className="text-lg">Nilwella Blue Beach</CardTitle>
+                <CardDescription>Clear blue waters and a peaceful coastal setting</CardDescription>
               </CardHeader>
               <CardContent>
                 <Image
                   src="/Blue-beach.jpg"
-                  alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                  alt="Nilwella Blue Beach with bright blue water and sandy shoreline"
                   width={300}
                   height={200}
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
+                  A serene beach spot near Dikwella known for clear blue water, snorkeling opportunities, and a relaxed atmosphere.
                 </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/nilwella-blue-beach" passHref legacyBehavior>
