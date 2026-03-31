@@ -230,7 +230,7 @@ export default function HiriketiyaTravelGuide() {
                     </div>
                     <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
                       <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
-                      <p className="text-sm text-green-800">May to September (dry season) for pleasant weather and clear skies. Early mornings and late afternoons are best for sightseeing.</p>
+                      <p className="text-sm text-green-800">November to April (dry season) for pleasant weather and clear skies. Early mornings and late afternoons are best for sightseeing.</p>
                     </div>
                   </div>
                 </div>
@@ -251,8 +251,8 @@ export default function HiriketiyaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 200km (127 miles) from Colombo</li>
-                      <li>• <strong>Duration:</strong> 2.45 - 3 hours</li>                     
+                      <li>• <strong>Distance:</strong> about 175-180 km (109-112 miles) from Colombo</li>
+                      <li>• <strong>Duration:</strong> around 2h 50m - 3h 30m</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
                     <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
@@ -276,16 +276,16 @@ export default function HiriketiyaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo Fort → Hiriketiya</li>
-                      <li>• <strong>Duration:</strong> 3 - 4 hours</li>
+                      <li>• <strong>Route:</strong> Colombo Fort → Dickwella, then short tuk-tuk ride to Hiriketiya</li>
+                      <li>• <strong>Duration:</strong> about 4.5 - 6 hours total</li>
                       {/* <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li> */}
-                      <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                      <li>• <strong>Frequency:</strong> Frequent buses to the south coast from Colombo Fort</li>
                     </ul>
 
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Train</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo Fort → Hirikatiya</li>
-                      <li>• <strong>Duration:</strong> 5.5-6 hours</li>
+                      <li>• <strong>Route:</strong> Colombo Fort → Beliatta or Matara, then taxi/tuk-tuk to Hiriketiya</li>
+                      <li>• <strong>Duration:</strong> about 4.5 - 5.5 hours total</li>
                       {/* <li>• <strong>Cost:</strong> $2-8 USD (depending on class)</li> */}
                       <li>• <strong>Scenic journey:</strong> Through countryside</li>
                     </ul>
@@ -523,7 +523,7 @@ export default function HiriketiyaTravelGuide() {
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        International community from 20+ countries
+                        Vibrant international traveler community
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -995,11 +995,11 @@ export default function HiriketiyaTravelGuide() {
                     <div>
                       <h4 className="font-semibold text-purple-800 mb-2">Day Trips</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Mulkirigala Temple - ancient rock temple (1 hour)</li>
+                        <li>• Mulkirigala Temple - ancient rock temple (40-45 minutes)</li>
                         <li>• Wewurukannala Vihara - giant Buddha statue</li>
                         <li>• Blow holes near Dickwella (20 minutes)</li>
-                        <li>• Taprobane Island & Weligama stilt fishermen</li>
-                        <li>• Galle Fort UNESCO site (1.5 hours)</li>
+                        <li>• Taprobane Island and Weligama coastal viewpoints</li>
+                        <li>• Galle Fort UNESCO site (about 1 hour 15 minutes)</li>
                       </ul>
                     </div>
                     <div>
@@ -1163,7 +1163,7 @@ export default function HiriketiyaTravelGuide() {
               <CardContent className="pt-6">
                 <Users className="w-8 h-8 mx-auto mb-2 text-green-500" />
                 <h4 className="font-semibold mb-2">Motorbike</h4>
-                <p className="text-sm text-muted-foreground">1500-2500 LKR/day</p>
+                <p className="text-sm text-muted-foreground">2500-3500 LKR/day</p>
                 <p className="text-xs text-green-600">Perfect for exploring nearby areas</p>
               </CardContent>
             </Card>
@@ -1171,7 +1171,7 @@ export default function HiriketiyaTravelGuide() {
               <CardContent className="pt-6">
                 <Car className="w-8 h-8 mx-auto mb-2 text-orange-500" />
                 <h4 className="font-semibold mb-2">Tuk-Tuk</h4>
-                <p className="text-sm text-muted-foreground">Local trips 300-800 LKR</p>
+                <p className="text-sm text-muted-foreground">Local trips 500-1000 LKR</p>
                 <p className="text-xs text-orange-600">Good for day trips & groceries</p>
               </CardContent>
             </Card>
@@ -1202,7 +1202,7 @@ export default function HiriketiyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  20 mins
+                  6-8 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1212,7 +1212,7 @@ export default function HiriketiyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  7.5 km from Hirikatiya
+                  about 2 km from Hirikatiya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/dikwella-beach" passHref legacyBehavior>
@@ -1230,7 +1230,7 @@ export default function HiriketiyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  1.5 hours
+                  40-45 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1258,7 +1258,7 @@ export default function HiriketiyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  20 mins
+                  20-22 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1268,7 +1268,7 @@ export default function HiriketiyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  7.5 km from Hirikatiya
+                  about 10-11 km from Hirikatiya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/kudawella-blowhole" passHref legacyBehavior>
@@ -1286,7 +1286,7 @@ export default function HiriketiyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  20 mins
+                  about 1h
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1296,7 +1296,7 @@ export default function HiriketiyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  7.5 km from Hirikatiya
+                  about 38-42 km from Hirikatiya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/waligama" passHref legacyBehavior>
@@ -1314,17 +1314,17 @@ export default function HiriketiyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  1 hours
+                  about 8 mins
                 </div>
               </div>
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Nilwella Blue Beach</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Blue beach is a private island known for its stunning blue waters and serene environment, ideal for relaxation and snorkeling.
+                  Nilwella Blue Beach is known for its clear blue waters and serene setting, with a small offshore blue-beach island area popular for relaxing and snorkeling.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  36 km from Hirikatiya
+                  about 2 km from Hirikatiya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/nilwella-blue-beach" passHref legacyBehavior>
@@ -1342,7 +1342,7 @@ export default function HiriketiyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  1 hours
+                  about 1h 15m
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1352,7 +1352,7 @@ export default function HiriketiyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  36 km from Hirikatiya
+                  about 62-64 km from Hirikatiya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/galle-fort" passHref legacyBehavior>
@@ -1371,7 +1371,7 @@ export default function HiriketiyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  50 mins
+                  about 1h 10m
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1381,7 +1381,7 @@ export default function HiriketiyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  31 km from Hirikatiya
+                  about 61-62 km from Hirikatiya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/unawatuna" passHref legacyBehavior>

@@ -84,18 +84,18 @@ export default function UnawatunaTravelGuide() {
                         <p className="text-lg mb-4">
                             Unawatuna, a crescent-shaped beach paradise nestled along Sri Lanka&apos;s southern coast, is renowned
                             for its golden sands, crystal-clear waters, and vibrant marine life. This charming coastal town,
-                            just 6 kilometers southeast of historic Galle, perfectly blends natural beauty with modern beach
+                            just 5-6 kilometers southeast of historic Galle, perfectly blends natural beauty with modern beach
                             life.
                         </p>
                         <p className="text-lg">
                             From world-class snorkeling and diving opportunities to cultural experiences and
                             beachfront dining, Unawatuna offers something for every traveler. The beach is protected by
-                            a coral reef, making it one of the safest swimming spots along the southern coast.
+                            a coral reef, making it one of the safest swimming spots year-round, with best conditions from December to April.
                         </p>
                         <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
                             <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">Did You Know?</h4>
                             <p className="text-sm text-blue-700 dark:text-gray-200">
-                                Unawatuna was once named one of the &quot;World&apos;s Best Beaches&quot; by Discovery Channel and CNN.
+                                Unawatuna Beach has been recognized among the world’s best beaches by global media such as Discovery Channel and CNN.
                                 The beach has made a remarkable recovery since the 2004 tsunami, showcasing nature&apos;s resilience
                                 and the community&apos;s determination.
                             </p>
@@ -138,7 +138,7 @@ export default function UnawatunaTravelGuide() {
                                     <div className="flex items-center gap-2">
                                         <MapPin className="w-4 h-4 text-red-500" />
                                         <span>
-                                            <strong>Distance from Colombo:</strong> 120 km
+                                            <strong>Distance from Colombo:</strong> about 125 km
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-2">
@@ -183,7 +183,7 @@ export default function UnawatunaTravelGuide() {
                                     <div>
                                         <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground">
-                                            <li>• <strong>Distance:</strong> 180km (112 miles) from Colombo</li>
+                                            <li>• <strong>Distance:</strong> about 125-130 km (78-81 miles) from Colombo</li>
                                             <li>• <strong>Duration:</strong> 2.5-3 hours</li>
                                             <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                                         </ul>
@@ -224,7 +224,7 @@ export default function UnawatunaTravelGuide() {
                                     </div>
                                 </div>
                                 <div className="mt-6">
-                                    <a href="https://maps.app.goo.gl/mApRuVKgTQKqDKyg6" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.google.com/maps/search/Unawatuna+Beach,+Sri+Lanka" target="_blank" rel="noopener noreferrer">
                                         <Button className="w-full bg-green-600 text-white hover:bg-green-700 dark:bg-green-600 dark:hover:bg-green-700 cursor-pointer">
                                             <MapPin className="w-4 h-4 mr-2" />
                                             Open in Google Maps
@@ -583,7 +583,7 @@ export default function UnawatunaTravelGuide() {
                                     className="object-cover rounded-t-lg"
                                 />
                                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                                    15 mins
+                                    About 8 mins
                                 </div>
                             </div>
                             <CardContent className="p-4">
@@ -593,7 +593,7 @@ export default function UnawatunaTravelGuide() {
                                 </p>
                                 <div className="flex items-center text-xs text-blue-600 mb-2">
                                     <MapPin className="w-3 h-3 mr-1" />
-                                    4 km from Unawatuna
+                                    About 2.6 km from Unawatuna
                                 </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/jungle-beach-roomassala" passHref legacyBehavior>
@@ -612,17 +612,17 @@ export default function UnawatunaTravelGuide() {
                                     className="object-cover rounded-t-lg"
                                 />
                                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                                    1 hour
+                                    About 1h 10m
                                 </div>
                             </div>
                             <CardContent className="p-4">
                                 <h3 className="font-bold text-lg mb-2">Kanneliya</h3>
                                 <p className="text-sm text-muted-foreground mb-3">
-                                    Explore the lush Kanneliya rainforest, part of the Sinharaja Forest Reserve. Home to diverse flora and fauna, perfect for nature lovers.
+                                    Explore the lush Kanneliya rainforest, a protected tropical rainforest reserve. Home to diverse flora and fauna, perfect for nature lovers.
                                 </p>
                                 <div className="flex items-center text-xs text-blue-600 mb-2">
                                     <MapPin className="w-3 h-3 mr-1" />
-                                    22 km from Unawatuna
+                                    About 41 km from Unawatuna
                                 </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/kanneliya" passHref legacyBehavior>
@@ -641,7 +641,7 @@ export default function UnawatunaTravelGuide() {
                                     className="object-cover rounded-t-lg"
                                 />
                                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                                    25 mins
+                                    About 1h 20m
                                 </div>
                             </div>
                             <CardContent className="p-4">
@@ -651,7 +651,7 @@ export default function UnawatunaTravelGuide() {
                                 </p>
                                 <div className="flex items-center text-xs text-blue-600 mb-2">
                                     <MapPin className="w-3 h-3 mr-1" />
-                                    12 km from Unawatuna
+                                    About 76 km from Unawatuna
                                 </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/hummanaya-blowhole" passHref legacyBehavior>
@@ -670,7 +670,7 @@ export default function UnawatunaTravelGuide() {
                                     className="object-cover rounded-t-lg"
                                 />
                                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                                    30 mins
+                                    About 50 mins
                                 </div>
                             </div>
                             <CardContent className="p-4">
@@ -680,7 +680,7 @@ export default function UnawatunaTravelGuide() {
                                 </p>
                                 <div className="flex items-center text-xs text-blue-600 mb-2">
                                     <MapPin className="w-3 h-3 mr-1" />
-                                    18 km from Unawatuna
+                                    About 30 km from Unawatuna
                                 </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/mirissa" passHref legacyBehavior>
@@ -694,22 +694,22 @@ export default function UnawatunaTravelGuide() {
                             <div className="relative h-48">
                                 <Image
                                     src="/Waligama.jpg"
-                                    alt="View of Waligama"
+                                    alt="View of Weligama"
                                     fill
                                     className="object-cover rounded-t-lg"
                                 />
                                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                                    20 mins
+                                    About 35 mins
                                 </div>
                             </div>
                             <CardContent className="p-4">
-                                <h3 className="font-bold text-lg mb-2">Waligama</h3>
+                                <h3 className="font-bold text-lg mb-2">Weligama</h3>
                                 <p className="text-sm text-muted-foreground mb-3">
-                                    Waligama is a charming coastal town known for its stunning beaches and vibrant fishing community. Enjoy fresh seafood, water sports, and breathtaking sunsets.
+                                    Weligama is a charming coastal town known for its stunning beaches and vibrant fishing community. Enjoy fresh seafood, water sports, and breathtaking sunsets.
                                 </p>
                                 <div className="flex items-center text-xs text-blue-600 mb-2">
                                     <MapPin className="w-3 h-3 mr-1" />
-                                    14 km from Unawatuna
+                                    About 23 km from Unawatuna
                                 </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/waligama" passHref legacyBehavior>
@@ -728,17 +728,17 @@ export default function UnawatunaTravelGuide() {
                                     className="object-cover rounded-t-lg"
                                 />
                                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                                    45 mins
+                                    About 1h 15m
                                 </div>
                             </div>
                             <CardContent className="p-4">
                                 <h3 className="font-bold text-lg mb-2">Hirikatiya</h3>
                                 <p className="text-sm text-muted-foreground mb-3">
-                                    Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes. 30 min drive.
+                                    Surfing hotspot with consistent waves suitable for all levels. Relaxed vibe with beachfront cafes near Dikwella.
                                 </p>
                                 <div className="flex items-center text-xs text-blue-600 mb-2">
                                     <MapPin className="w-3 h-3 mr-1" />
-                                    32 km from Unawatuna
+                                    About 64 km from Unawatuna
                                 </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/hirikatiya" passHref legacyBehavior>
@@ -752,22 +752,22 @@ export default function UnawatunaTravelGuide() {
                             <div className="relative h-48">
                                 <Image
                                     src="/Blue-beach.jpg"
-                                    alt="Large herd of elephants gathering at Minneriya National Park during dry season"
+                                    alt="Nilwella Blue Beach with calm blue waters and rocky coastline near Matara"
                                     fill
                                     className="object-cover rounded-t-lg"
                                 />
                                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                                    1 hour
+                                    About 1h 20m
                                 </div>
                             </div>
                             <CardContent className="p-4">
                                 <h3 className="font-bold text-lg mb-2">Nilwella Blue Beach</h3>
                                 <p className="text-sm text-muted-foreground mb-3">
-                                    Famous for The Gathering - hundreds of elephants come together during dry season. 1 hour drive.
+                                    A serene coastal beach near Matara known for its strikingly clear blue waters and relaxed atmosphere, ideal for a quiet getaway.
                                 </p>
                                 <div className="flex items-center text-xs text-blue-600 mb-2">
                                     <MapPin className="w-3 h-3 mr-1" />
-                                    36 km from Unawatuna
+                                    About 75-78 km from Unawatuna
                                 </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/nilwella-blue-beach" passHref legacyBehavior>
@@ -786,7 +786,7 @@ export default function UnawatunaTravelGuide() {
                                     className="object-cover rounded-t-lg"
                                 />
                                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                                    10 mins
+                                    About 10 mins
                                 </div>
                             </div>
                             <CardContent className="p-4">
@@ -796,7 +796,7 @@ export default function UnawatunaTravelGuide() {
                                 </p>
                                 <div className="flex items-center text-xs text-blue-600 mb-2">
                                     <MapPin className="w-3 h-3 mr-1" />
-                                    8 km from Unawatuna
+                                    About 5-6 km from Unawatuna
                                 </div>
                                 <div className="mt-4 flex justify-start">
                                     <Link href="/destinations/thalpe-beach" passHref legacyBehavior>
