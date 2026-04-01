@@ -295,12 +295,6 @@ export default function NuwaraEliyaTravelGuide() {
                         title: "Gregory Lake"
 
                       },
-                      {
-                        src: "/Gregory_Lake2.jpg",
-                        alt: "Beautiful Gregory Lake in Nuwara Eliya with paddle boats, walking paths, and surrounding hills",
-                        caption: "Gregory Lake",
-                        title: "Gregory Lake"
-                      },
                     ]}
                   />
                   <div>
@@ -486,37 +480,37 @@ export default function NuwaraEliyaTravelGuide() {
                       },
                       {
                         src: "/Victoria-park.jpg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        alt: "Victoria Park showcasing the beautiful botanical gardens and diverse flora",
                         caption: "Victoria Park",
                         title: "Victoria Park"
                       },
                       {
                         src: "/Victoria-park3.jpg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        alt: "Victoria Park showcasing the beautiful botanical gardens and diverse flora",
                         caption: "Victoria Park",
                         title: "Victoria Park"
                       },
                       {
                         src: "/Victoria-park11.jpg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        alt: "Victoria Park showcasing the beautiful botanical gardens and diverse flora",
                         caption: "Victoria Park",
                         title: "Victoria Park"
                       },
                       {
                         src: "/Flowers-in-vic-park.jpg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        alt: "Victoria Park showcasing the beautiful botanical gardens and diverse flora",
                         caption: "Victoria Park",
                         title: "Victoria Park"
                       },
                       {
                         src: "/Victoria-park4.jpg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        alt: "Victoria Park showcasing the beautiful botanical gardens and diverse flora",
                         caption: "Victoria Park",
                         title: "Victoria Park"
                       },
                       {
                         src: "/Victoria-park6.jpg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
+                        alt: "Victoria Park showcasing the beautiful botanical gardens and diverse flora",
                         caption: "Victoria Park",
                         title: "Victoria Park"
                       },
@@ -597,14 +591,14 @@ export default function NuwaraEliyaTravelGuide() {
                       {
                         src: "/New-Zealand-Farm1.jpg",
                         alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
+                        caption: "",
+                        title: ""
                       },
                       {
                         src: "/New-Zealand-Farm2.jpg",
                         alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
+                        caption: "",
+                        title: ""
                       },
 
                     ]}
@@ -692,19 +686,7 @@ export default function NuwaraEliyaTravelGuide() {
                         alt: "Moon Plains with stunning mountain views",
                         caption: "Moon Plains",
                         title: "Moon Plains"
-                      },
-                      {
-                        src: "/MoonPlains2.jpeg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
-                      },
-                      {
-                        src: "/MoonPlains3.jpeg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
-                      },
+                      },                
 
                     ]}
                   />
@@ -758,9 +740,9 @@ export default function NuwaraEliyaTravelGuide() {
                       },
                       {
                         src: "/Shanthipura1.jpg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
+                        alt: "Shanthipura viewpoint",
+                        caption: "Shanthipura Viewpoint",
+                        title: "Shanthipura Viewpoint"
                       },
 
                     ]}
@@ -807,13 +789,7 @@ export default function NuwaraEliyaTravelGuide() {
                         alt: "Nanu Oya Falls with stunning rock formations",
                         caption: "Nanu Oya Falls",
                         title: "Nanu Oya Falls"
-                      },
-                      {
-                        src: "/Lunugangabawa2.jpeg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
-                      },
+                      }
 
                     ]}
                   />
