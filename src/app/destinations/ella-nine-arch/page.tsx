@@ -12,8 +12,6 @@ const navigationLinks = [
   { href: "#introduction", label: "Introduction" },
   { href: "#quick-facts", label: "Quick Facts" },
   { href: "#train-spotting", label: "Train Spotting" },
-  { href: "#photography", label: "Photography" },
-  { href: "#engineering", label: "Engineering" },
   { href: "#visiting-guide", label: "Visiting Guide" }
 ];
 
