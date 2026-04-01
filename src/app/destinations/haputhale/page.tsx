@@ -198,12 +198,6 @@ export default function HaputaleGuide() {
                         caption: "Haputale's rolling tea hills",
                         title: "Viewpoint Tea Country"
                       },
-                      {
-                        src: "/placeholder.svg?height=300&width=400",
-                        alt: "Lipton's Seat viewpoint showing panoramic views across seven provinces with endless tea plantations",
-                        caption: "Viewpoint across 7 provinces",
-                        title: "Panoramic Viewpoint"
-                      }
                     ]}
                   />
                   <div>
@@ -379,12 +373,6 @@ export default function HaputaleGuide() {
                       </li>
                     </ul>
 
-                    {/* See More Button */}
-                    <div className="mt-4">
-                      <Button asChild variant="outline" size="sm">
-                        <a href="/destinations/adisham-monastery">See More</a>
-                      </Button>
-                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -490,12 +478,6 @@ export default function HaputaleGuide() {
                       </li>
                     </ul>
 
-                    {/* See More Button */}
-                    <div className="mt-4">
-                      <Button asChild variant="outline" size="sm">
-                        <a href="/destinations/adisham-monastery">See More</a>
-                      </Button>
-                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -560,13 +542,6 @@ export default function HaputaleGuide() {
                       Learn about traditional tea-making methods
                     </li>
                   </ul>
-
-                  {/* See More Button */}
-                  <div className="mt-4">
-                    <Button asChild variant="outline" size="sm">
-                      <a href="/destinations/dambatenne-tea-factory">See More</a>
-                    </Button>
-                  </div>
                 </div>
               </div>
             </CardContent>

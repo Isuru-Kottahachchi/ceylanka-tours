@@ -34,6 +34,17 @@ const originalArticles = [
     featured: true,
   },
   {
+    id: 19,
+    title: "Leopard vs Cheetah vs Jaguar",
+    path: "leopards-vs-cheetah-vs-jaguar",
+    category: "Wildlife",
+    readTime: "6 min read",
+    image: "/Leopard-in-Yala.jpg",
+    description: "A simple guide that helps you tell leopards, cheetahs, and jaguars apart using clear visual clues and easy English.",
+    highlights: ["Spot Patterns", "Face Marks", "Sri Lanka Leopard"],
+    featured: false,
+  },
+  {
     id: 4,
     title: "Ramayana Sites in Sri Lanka",
     path: "ramayanaya-sites",

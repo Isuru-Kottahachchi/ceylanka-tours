@@ -1,27 +1,13 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
 import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Users, Mountain, TreePine, Thermometer } from 'lucide-react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-export const metadata: Metadata = {
-  title: "Bandarawela Travel Guide 2025: Cool Climate Paradise | Sri Lanka Hill Country",
-  description: "Discover Bandarawela, Sri Lanka's perfect climate hill station. Complete guide to Dowa Rock Temple, tea estates, colonial architecture, and mountain adventures.",
-  keywords: "Bandarawela Sri Lanka, Dowa Rock Temple, hill country, tea plantations, colonial architecture, cool climate, travel guide",
-  authors: [{ name: "Sri Lanka Travel Expert" }],
-  openGraph: {
-    title: "Bandarawela Travel Guide 2025: Cool Climate Paradise",
-    description: "Your complete guide to Bandarawela - perfect weather, ancient temples, and tea country charm",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Bandarawela Travel Guide 2025: Cool Climate Paradise",
-    description: "Your complete guide to Bandarawela - perfect weather, ancient temples, and tea country charm",
-  },
-}
+
 
 export default function BandarawelaGuide() {
   return (
@@ -127,12 +113,36 @@ export default function BandarawelaGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Dowa Rock Temple with ancient Buddha statue carved into rock face surrounded by lush greenery"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Dowa-Temple.webp",
+                        alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
+                        caption: "Dhowa Rock Temple",
+                      },
+                      {
+                        src: "/Dowa-Temple1.webp",
+                        alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
+                        caption: "Dhowa Rock Temple",
+                      },
+                      {
+                        src: "/Dowa-Temple4.webp",
+                        alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
+                        caption: "Dhowa Rock Temple",
+                      },
+                      {
+                        src: "/Dowa-Temple2.webp",
+                        alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
+                        caption: "Dhowa Rock Temple",
+                      },
+                      {
+                        src: "/Dowa-Temple3.webp",
+                        alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
+                        caption: "Dhowa Rock Temple",
+                      },
+
+
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">

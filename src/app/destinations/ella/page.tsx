@@ -141,11 +141,11 @@ export default function EllaTownGuide() {
                     <div className="flex gap-8">
                       <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                         <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
-                        <p className="text-sm text-yellow-800">1–2 full days to explore the sacred sites, ancient tanks, and local culture at a relaxed pace.</p>
+                        <p className="text-sm text-yellow-800">2–3 full days to hike Little Adam's Peak and Ella Rock, visit the Nine Arch Bridge, explore waterfalls, and enjoy the tea plantation scenery at a relaxed pace.</p>
                       </div>
                       <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
                         <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
-                        <p className="text-sm text-green-800">May to September (dry season) for pleasant weather and clear skies. Early mornings and late afternoons are best for sightseeing.</p>
+                        <p className="text-sm text-green-800">December to March (dry season) for clear skies and the best hiking conditions. Early mornings are ideal to catch mist over the mountains and avoid crowds.</p>
                       </div>
                     </div>
                   </div>
@@ -585,12 +585,30 @@ export default function EllaTownGuide() {
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6 items-center">
-                    <Image
-                      src="/spice-garden.jpg"
-                      alt="Various Sri Lankan spices and herbs in traditional setting"
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
+                    <ImageCarousel
+                      images={[
+                         {
+                          src: "/Ella-Spice-Garden3.jpg",
+                          alt: "Ella Spice Garden with lush greenery and spice plants",
+                          caption: "PC:Ella Spice Garden",
+                        },
+                        {
+                          src: "/Ella-Spice-Garden.jpeg",
+                          alt: "Ella Spice Garden with lush greenery and spice plants",
+                          caption: "PC:Ella Spice Garden",
+                        },
+                        {
+                          src: "/Ella-Spice-Garden1.jpeg",
+                          alt: "Ella Spice Garden with lush greenery and spice plants",
+                          caption: "PC:Ella Spice Garden",
+                        },
+                        {
+                          src: "/Ella-Spice-Garden3.jpeg",
+                          alt: "Ella Spice Garden with lush greenery and spice plants",
+                          caption: "PC:Ella Spice Garden",
+                        },
+                       
+                      ]}
                     />
                     <div>
                       <p className="text-muted-foreground mb-4">
@@ -751,19 +769,19 @@ export default function EllaTownGuide() {
                         </ul>
                       </div>
                     </div>
-                   <ImageCarousel
+                    <ImageCarousel
                       images={[
                         {
                           src: "/Dowa-Temple.webp",
                           alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
                           caption: "Dhowa Rock Temple",
                         },
-                         {
+                        {
                           src: "/Dowa-Temple1.webp",
                           alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
                           caption: "Dhowa Rock Temple",
                         },
-                         {
+                        {
                           src: "/Dowa-Temple4.webp",
                           alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
                           caption: "Dhowa Rock Temple",
@@ -778,8 +796,6 @@ export default function EllaTownGuide() {
                           alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
                           caption: "Dhowa Rock Temple",
                         },
-                       
-                       
                       ]}
                     />
                   </div>
@@ -964,7 +980,7 @@ export default function EllaTownGuide() {
                           alt: "Tea processing machinery at Uva Halpewatte Tea Factory with workers processing Ceylon tea leaves",
                           caption: "Uva Halpewatte Tea Factory",
                         },
-                        { 
+                        {
                           src: "/Halpewatte-tea-fac5.jpg",
                           alt: "Tea processing machinery at Uva Halpewatte Tea Factory with workers processing Ceylon tea leaves",
                           caption: "Uva Halpewatte Tea Factory",
@@ -972,9 +988,7 @@ export default function EllaTownGuide() {
                       ]}
                     />
 
-                        
 
-                 
                   </div>
                 </CardContent>
               </Card>
@@ -1378,8 +1392,8 @@ export default function EllaTownGuide() {
               <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <div className="relative h-48">
                   <Image
-                    src="/Adisham-bungalow.jpg"
-                    alt="Adisham Bungalow historic colonial mansion surrounded by gardens"
+                    src="/Bandarawela.jpeg"
+                    alt="Bandarawela town with scenic views and colonial-era architecture"
                     fill
                     className="object-cover rounded-t-lg"
                   />
@@ -1390,7 +1404,7 @@ export default function EllaTownGuide() {
                 <CardContent className="p-4">
                   <h3 className="font-bold text-lg mb-2">Bandarawela</h3>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Charming colonial-era town famous for Adisham Bungalow and panoramic views of tea plantations and valleys.
+                    A charming hill town known for its cool climate, colonial architecture, and proximity to tea estates and waterfalls.
                   </p>
                   <div className="flex items-center text-xs text-blue-600 mb-2">
                     <MapPin className="w-3 h-3 mr-1" />

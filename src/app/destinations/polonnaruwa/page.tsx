@@ -645,20 +645,20 @@ export default function PolonnaruwaGuide() {
                                             {
                                                 src: "/Pabalu-Vehera.jpg",
                                                 alt: "Pabalu Vehera stupa surrounded by smaller stupas and shrines",
-                                                caption: "Viewpoint across 7 provinces",
-                                                title: "Panoramic Viewpoint"
+                                                caption: "",
+                                                title: ""
                                             },
                                              {
                                                 src: "/Pabalu-Vehera1.jpg",
                                                 alt: "Pabalu Vehera stupa surrounded by smaller stupas and shrines",
-                                                caption: "Viewpoint across 7 provinces",
-                                                title: "Panoramic Viewpoint"
+                                                caption: "",
+                                                title: ""
                                             },
                                              {
                                                 src: "/Pabalu-Vehera2.jpg",
                                                 alt: "Pabalu Vehera stupa surrounded by smaller stupas and shrines",
-                                                caption: "Viewpoint across 7 provinces",
-                                                title: "Panoramic Viewpoint"
+                                                caption: "",
+                                                title: ""
                                             }
                                         ]}
 

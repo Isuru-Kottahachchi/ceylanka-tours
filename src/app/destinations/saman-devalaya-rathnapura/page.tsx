@@ -61,7 +61,7 @@ export default function SamanDevalayaGuide() {
 					<h2 className="text-3xl font-bold mb-6 text-foreground">
 						Welcome to Saman Devalaya: Where Devotion Meets Legend
 					</h2>
-					<div className="grid md:grid-cols-[1fr_140px] gap-6 items-start">
+					<div className="grid items-start w-full">
 						<div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
 							<p className="text-lg mb-4">
 								Saman Devalaya stands as one of Sri Lanka's most revered Hindu-Buddhist shrines, dedicated to God Saman, the guardian deity of Adam's Peak (Sri Pada). Located in Ratnapura, the City of Gems, this ancient temple draws thousands of pilgrims annually who seek blessings before ascending the sacred mountain.
@@ -72,7 +72,7 @@ export default function SamanDevalayaGuide() {
 						</div>
 
 						{/* Small Sri Lanka Map with Location */}
-						<div className="flex flex-col items-center flex-shrink-0">
+						{/* <div className="flex flex-col items-center flex-shrink-0">
 							<div className="relative w-[200px] md:w-[180px] lg:w-[200px] bg-purple-50 dark:bg-purple-950/30 rounded-lg p-2 border border-purple-200 dark:border-purple-800">
 								<Image 
 									src="/ratnapura_location.gif" 
@@ -89,7 +89,7 @@ export default function SamanDevalayaGuide() {
 									<p className="text-[9px] text-muted-foreground">Sabaragamuwa Province</p>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 
 					<div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">

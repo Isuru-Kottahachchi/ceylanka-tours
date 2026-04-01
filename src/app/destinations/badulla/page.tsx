@@ -266,7 +266,7 @@ export default function BadullaGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Muthiyangana-Raja-Maha-Vihara.webp"
                     alt="Ancient Muthiyangana Temple in Badulla with golden Buddha statue and traditional Sri Lankan architecture"
                     width={400}
                     height={300}
@@ -274,9 +274,12 @@ export default function BadullaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      One of the 16 most sacred Buddhist sites in Sri Lanka, Muthiyangana Temple is believed to have
-                      been visited by Lord Buddha himself. The temple houses a sacred hair relic and features stunning
-                      ancient architecture.
+                      One of the 16 most sacred Buddhist sites in Sri Lanka, Muthiyangana Raja Maha Vihara is believed
+                      to have been visited by Lord Buddha during his <strong>third and final visit to Sri Lanka</strong>.
+                      According to the Mahavamsa, the Buddha visited Sri Lanka three times in total the first being
+                      at Mahiyangana (Mahiyanganaya), the second at Nagadipa, and the third at several sacred sites
+                      including Muthiyangana. The temple houses a sacred relic and features stunning ancient
+                      architecture spanning over 2,000 years of continuous worship.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
