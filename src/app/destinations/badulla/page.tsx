@@ -1,4 +1,5 @@
-import type { Metadata } from "next"
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { MapPin, AlertTriangle, CheckCircle, Star, Calendar, Mountain, Train, Thermometer, Clock } from "lucide-react"
@@ -7,26 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import InsuranceBanner from "@/components/insurance-banner"
-
-export const metadata: Metadata = {
-  title: "Badulla Travel Guide 2025 Ancient Capital & Hill Country Gateway | Sri Lanka",
-  description:
-    "Discover Badulla, Sri Lanka's ancient Uva Province capital. Complete travel guide with Dunhinda Falls, Muthiyangana Temple, tea estates, and hill country adventures.",
-  keywords:
-    "Badulla Sri Lanka, Dunhinda Falls, Muthiyangana Temple, Uva Province, hill country, tea plantations, ancient capital, travel guide",
-  authors: [{ name: "Sri Lanka Travel Expert" }],
-  openGraph: {
-    title: "Badulla Travel Guide 2025: Ancient Capital & Hill Country Gateway",
-    description: "Your complete guide to Badulla - ancient temples, stunning waterfalls, and tea country adventures",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Badulla Travel Guide 2025: Ancient Capital & Hill Country Gateway",
-    description: "Your complete guide to Badulla - ancient temples, stunning waterfalls, and tea country adventures",
-  },
-}
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
 export default function BadullaGuide() {
   return (
@@ -107,7 +89,7 @@ export default function BadullaGuide() {
                   <div className="flex items-center gap-2">
                     <Thermometer className="w-4 h-4 text-purple-500" />
                     <span>
-                      <strong>Temperature:</strong> 15-20°C year round
+                      <strong>Temperature:</strong> 18-28°C year round
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -178,7 +160,7 @@ export default function BadullaGuide() {
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo → Badulla</li>
-                      <li>• <strong>Duration:</strong> 6-7 hours total</li>
+                      <li>• <strong>Duration:</strong> 8-9 hours total</li>
                       <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
                       <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Badulla station</span></li>
 
@@ -196,13 +178,13 @@ export default function BadullaGuide() {
                 <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
                   <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">🚂 Special Note about Train Journey</h4>
                   <p className="text-sm text-muted-foreground mb-2">
-                    The train journey from Kandy to Nanu Oya is considered one of the world&apos;s most scenic train rides, passing through breathtaking tea plantations, mountain tunnels, and misty landscapes. <strong>Important:</strong> Nanu Oya is the closest railway station to Nuwara Eliya - you&apos;ll need to take a taxi or tuk-tuk for the final 8km uphill journey to the town center.
+                    The train journey to Badulla is considered one of the world&apos;s most scenic train rides, passing through breathtaking tea plantations, mountain tunnels, and misty highland landscapes. Badulla is the terminus station you arrive directly in town with no onward transfer needed.
                   </p>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Book reserved seats in advance for the best views</li>
-                    <li>• Sit on the right side for better mountain scenery</li>
-                    <li>• Bring warm clothes - it gets cool in the mountains</li>
-                    <li>• Pre-arrange transport from Nanu Oya station</li>
+                    <li>• Sit on the left side (from Colombo) for better mountain scenery</li>
+                    <li>• Bring warm clothes  it gets cool in the mountains</li>
+                    <li>• The journey from Kandy to Badulla takes approximately 5-7 hours</li>
                   </ul>
                 </div>
               </CardContent>
@@ -356,12 +338,27 @@ export default function BadullaGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Historic Badulla Railway Station with vintage architecture and the famous hill country train"
-                    width={400}
-                    height={300}
-                    className="rounded-lg shadow-lg"
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Badull-Railway-Station1.webp",
+                        alt: "Interior of Badulla Railway Station showing vintage ticket counters and old signage",
+                        caption: "",
+                        title: ""
+                      },
+                      {
+                        src: "/Badull-Railway-Station.jpg",
+                        alt: "Badulla Railway Station historic colonial building with red roof and vintage train on tracks",
+                        caption: "",
+                        title: ""
+                      },
+                        {
+                        src: "/Badull-Railway-Station2.jpg",
+                        alt: "Interior of Badulla Railway Station showing vintage ticket counters and old signage",
+                        caption: "",
+                        title: ""
+                      }
+                    ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
@@ -502,7 +499,7 @@ export default function BadullaGuide() {
               <CardContent className="space-y-3">
                 <div>
                   <strong>From Kandy:</strong>
-                  <p className="text-sm text-muted-foreground">6-7 hours through tea country, mountains, and tunnels</p>
+                  <p className="text-sm text-muted-foreground">5-7 hours through tea country, mountains, and tunnels</p>
                 </div>
                 <div>
                   <strong>From Colombo:</strong>

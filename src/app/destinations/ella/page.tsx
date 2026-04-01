@@ -494,7 +494,7 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Ravana Cave</CardTitle>
+                  <CardTitle>4. Ravana Cave</CardTitle>
                   <CardDescription>Ancient cave with legendary significance</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -551,7 +551,7 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Nil Diya Pokuna (Blue Water Pool)</CardTitle>
+                  <CardTitle>5. Nil Diya Pokuna (Blue Water Pool)</CardTitle>
                   <CardDescription>Currently closed to visitors</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -642,7 +642,7 @@ export default function EllaTownGuide() {
                 </CardContent>
               </Card>
 
-              <Card>
+              {/* <Card>
                 <CardHeader>
                   <CardTitle>7. Ella Wala Waterfall</CardTitle>
                   <CardDescription>Hidden gem for nature lovers</CardDescription>
@@ -686,7 +686,7 @@ export default function EllaTownGuide() {
                     />
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               {/* <Card>
                 <CardHeader>
@@ -736,7 +736,7 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>9. Dhowa Rock Temple</CardTitle>
+                  <CardTitle>8. Dhowa Rock Temple</CardTitle>
                   <CardDescription>Ancient Buddhist heritage site with impressive rock carvings</CardDescription>
                 </CardHeader>
                 <CardContent>
