@@ -542,7 +542,7 @@ export default function BuddhismInSriLanka() {
                                     <span>Central Province</span>
                                 </div>
                                  <div className="mt-4 flex justify-start">
-                                    <Link href="/destinations/dambullla-cave-temple" passHref legacyBehavior>
+                                    <Link href="/destinations/dambulla-cave-temple" passHref legacyBehavior>
                                         <Button
                                             variant="secondary"
                                             className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"

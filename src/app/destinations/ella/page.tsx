@@ -116,7 +116,7 @@ export default function EllaTownGuide() {
                     </div>
                     <div className="flex items-center gap-2">
                       <Thermometer className="w-4 h-4 text-blue-500" />
-                      <span><strong>Climate:</strong> Cool, 18-25°C year-round</span>
+                      <span><strong>Climate:</strong> Cool, 14-26°C year-round</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Train className="w-4 h-4 text-purple-500" />
@@ -167,7 +167,7 @@ export default function EllaTownGuide() {
                       <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
-                        <li>• <strong>Duration:</strong> 4-4.5 hours</li>
+                        <li>• <strong>Duration:</strong> 5-6 hours</li>
                         <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                       </ul>
                       <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
@@ -200,7 +200,7 @@ export default function EllaTownGuide() {
                       <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Train(Recommended)</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• <strong>Route:</strong> Colombo Fort → Ella station</li>
-                        <li>• <strong>Duration:</strong> 5.5-6 hours</li>
+                        <li>• <strong>Duration:</strong> 7-9 hours</li>
                         <li>• <strong>Cost:</strong> $2-8 USD (depending on class)</li>
                         <li>• <strong>Scenic journey:</strong> Through countryside</li>
                       </ul>
@@ -412,7 +412,7 @@ export default function EllaTownGuide() {
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          45-60 minute moderate hike (2.2km round trip)
+                          45-60 minute moderate hike (~4.5km round trip)
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -455,7 +455,7 @@ export default function EllaTownGuide() {
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          3-4 hour challenging hike (5.5km round trip)
+                          3-4 hour challenging hike (~9km round trip)
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -503,8 +503,8 @@ export default function EllaTownGuide() {
                       <p className="text-muted-foreground mb-4">
                         Located near Ravana Falls, this historic cave is believed to be where King Ravana hid Princess Sita after abducting her from India, according to the Ramayana epic. The cave offers a glimpse into ancient Sri Lankan history and architecture.
                       </p>
-                      <div className="mt-4 flex justify-start">
-                        <Link href="/destinations/jaya-sri-maha-bodhi" passHref legacyBehavior>
+                      {/* <div className="mt-4 flex justify-start">
+                        <Link href="/destinations/ravana-cave" passHref legacyBehavior>
                           <Button
                             variant="secondary"
                             className="group bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all duration-300 font-semibold text-base cursor-pointer hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2"
@@ -513,7 +513,7 @@ export default function EllaTownGuide() {
                             <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
                           </Button>
                         </Link>
-                      </div>
+                      </div> */}
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -574,53 +574,6 @@ export default function EllaTownGuide() {
                         </p>
                       </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Add more attractions */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>5. Uva Halpewatte Tea Factory</CardTitle>
-                  <CardDescription>Journey through Ceylon tea production</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid md:grid-cols-2 gap-6 items-center">
-                    <div>
-                      <p className="text-muted-foreground mb-4">
-                        One of Sri Lanka&apos;s largest tea factories, Uva Halpewatte offers comprehensive guided tours showing the complete tea-making process. From withering and rolling to fermentation and grading, visitors can witness the journey of tea leaves to your cup while enjoying panoramic views of the surrounding tea estates.
-                      </p>
-                      <ul className="space-y-2 text-muted-foreground">
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          Professional guided tours (45-60 mins)
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          Tea tasting sessions included
-                        </li>
-                        <li className="flex items-start gap-2">
-                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          Factory shop with premium teas
-                        </li>
-                      </ul>
-                      <div className="mt-4 p-3 bg-orange-50 rounded-lg">
-                        <h4 className="font-semibold text-orange-800 mb-2">Visit Information:</h4>
-                        <ul className="text-sm text-orange-700 space-y-1">
-                          <li>• Open Mon-Sat: 8:00 AM - 4:00 PM</li>
-                          <li>• Best to visit during processing hours</li>
-                          <li>• Photography allowed in designated areas</li>
-                          <li>• Tour booking recommended</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <Image
-                      src="/tea-factory.jpg"
-                      alt="Tea processing machinery at Uva Halpewatte Tea Factory"
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
-                    />
                   </div>
                 </CardContent>
               </Card>
@@ -798,12 +751,36 @@ export default function EllaTownGuide() {
                         </ul>
                       </div>
                     </div>
-                    <Image
-                      src="/dhowa-temple.jpg"
-                      alt="Ancient Buddha statue carved into rock at Dhowa Temple"
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
+                   <ImageCarousel
+                      images={[
+                        {
+                          src: "/Dowa-Temple.webp",
+                          alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
+                          caption: "Dhowa Rock Temple",
+                        },
+                         {
+                          src: "/Dowa-Temple1.webp",
+                          alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
+                          caption: "Dhowa Rock Temple",
+                        },
+                         {
+                          src: "/Dowa-Temple4.webp",
+                          alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
+                          caption: "Dhowa Rock Temple",
+                        },
+                        {
+                          src: "/Dowa-Temple2.webp",
+                          alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
+                          caption: "Dhowa Rock Temple",
+                        },
+                        {
+                          src: "/Dowa-Temple3.webp",
+                          alt: "Ancient Dhowa Rock Temple with unfinished Buddha carving and cave shrines",
+                          caption: "Dhowa Rock Temple",
+                        },
+                       
+                       
+                      ]}
                     />
                   </div>
                 </CardContent>
@@ -910,45 +887,94 @@ export default function EllaTownGuide() {
               <Card>
                 <CardHeader>
                   <CardTitle>Tea Factory Tours</CardTitle>
-                  <CardDescription>From leaf to cup - witness the complete tea processing journey</CardDescription>
+                  <CardDescription>From tea picking to your cup - witness the complete Ceylon tea journey at Uva Halpewatte and beyond</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6 items-center">
                     <div>
                       <p className="text-muted-foreground mb-4">
-                        Visit nearby tea factories like Halpewatte or Newburgh Estate to see how freshly picked leaves are transformed into world-renowned Ceylon tea. Watch the withering, rolling, oxidation, and drying processes that create different tea grades.
+                        Uva Halpewatte, one of Sri Lanka&apos;s largest tea factories, offers comprehensive guided tours covering the entire journey of Ceylon tea. You can try your hand at tea picking in the fields alongside local pluckers, then follow the freshly picked leaves all the way through withering, rolling, fermentation, drying, and grading inside the factory. It&apos;s a fascinating end-to-end experience enjoyed with panoramic views of the surrounding tea estates. Newburgh Estate is another excellent option nearby.
                       </p>
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          Guided factory tours available
+                          Try tea picking in the fields yourself
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          Learn about tea grading system
+                          See the process from tea picking in the fields
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          Purchase fresh tea directly
+                          Professional guided tours (45-60 mins)
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          Tea tasting sessions included
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          Learn about the tea grading system
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                          Factory shop with premium teas
                         </li>
                         <li className="flex items-start gap-2">
                           <Coffee className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                          Multiple tea varieties to sample
+                          Multiple Ceylon tea varieties to sample
                         </li>
                       </ul>
-                      <div className="mt-4 p-3 bg-green-50 rounded-lg border border-green-200">
+                      <div className="mt-4 p-3 bg-orange-50 rounded-lg">
+                        <h4 className="font-semibold text-orange-800 mb-2">Visit Information (Uva Halpewatte):</h4>
+                        <ul className="text-sm text-orange-700 space-y-1">
+                          <li>• Open Mon–Sat: 8:00 AM – 4:00 PM</li>
+                          <li>• Best to visit during processing hours (morning)</li>
+                          <li>• Photography allowed in designated areas</li>
+                          <li>• Tour booking recommended</li>
+                        </ul>
+                      </div>
+                      <div className="mt-3 p-3 bg-green-50 rounded-lg border border-green-200">
                         <p className="text-sm text-green-700">
-                          <strong>Tip:</strong> Best factories to visit include Halpewatte Tea Factory (20 min drive) and Newburgh Estate (15 min drive from Ella town).
+                          <strong>Tip:</strong> Halpewatte Tea Factory is a 20 min drive, Newburgh Estate is 15 min from Ella town.
                         </p>
                       </div>
                     </div>
-                    <Image
-                      src="/placeholder.svg?height=300&width=400"
-                      alt="Traditional tea factory machinery with workers processing Ceylon tea leaves in Ella mountain region"
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
+
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/Halpewatte-tea-fac.jpg",
+                          alt: "Tea processing machinery at Uva Halpewatte Tea Factory with workers processing Ceylon tea leaves",
+                          caption: "Uva Halpewatte Tea Factory",
+
+                        },
+                        {
+                          src: "/Halpewatte-tea-fac2.jpg",
+                          alt: "Tea processing machinery at Uva Halpewatte Tea Factory with workers processing Ceylon tea leaves",
+                          caption: "",
+                        },
+                        {
+                          src: "/Halpewatte-tea-fac3.jpg",
+                          alt: "Tea processing machinery at Uva Halpewatte Tea Factory with workers processing Ceylon tea leaves",
+                          caption: "Uva Halpewatte Tea Factory",
+                        },
+                        {
+                          src: "/Halpewatte-tea-fac4.jpg",
+                          alt: "Tea processing machinery at Uva Halpewatte Tea Factory with workers processing Ceylon tea leaves",
+                          caption: "Uva Halpewatte Tea Factory",
+                        },
+                        { 
+                          src: "/Halpewatte-tea-fac5.jpg",
+                          alt: "Tea processing machinery at Uva Halpewatte Tea Factory with workers processing Ceylon tea leaves",
+                          caption: "Uva Halpewatte Tea Factory",
+                        },
+                      ]}
                     />
+
+                        
+
+                 
                   </div>
                 </CardContent>
               </Card>
@@ -1026,14 +1052,14 @@ export default function EllaTownGuide() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Kithal Ella  Falls</CardTitle>
-                  <CardDescription>Sri Lanka&apos;s most famous waterfall with legendary significance</CardDescription>
+                  <CardTitle>Kithal Ella Falls</CardTitle>
+                  <CardDescription>A hidden, less-visited waterfall tucked away in the hills near Ella</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6 items-center">
                     <Image
-                      src="/Ravana-Falls.jpg"
-                      alt="Majestic Ravana Falls cascading down rocky cliffs near Ella with pool for swimming"
+                      src="/Kithal-Ella.jpg"
+                      alt="Kithal Ella Falls, a hidden waterfall near Ella surrounded by lush forest"
                       width={400}
                       height={300}
                       className="rounded-lg"
@@ -1045,24 +1071,24 @@ export default function EllaTownGuide() {
                       <ul className="space-y-2 text-muted-foreground">
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          6km from Ella town center
+                          Hidden gem off the beaten path
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          Swimming in natural pools
+                          Short hike required to reach the falls
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          Historical Ravana Cave nearby
+                          Much less crowded than Ravana Falls
                         </li>
                         <li className="flex items-start gap-2">
                           <AlertTriangle className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
-                          Can be crowded during peak season
+                          Ask locals for directions not well signposted
                         </li>
                       </ul>
                       <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
                         <p className="text-sm text-blue-700">
-                          <strong>Best time to visit:</strong> Early morning (7-9 AM) or late afternoon (4-6 PM) for fewer crowds and better lighting.
+                          <strong>Tip:</strong> Best visited after light rain when the flow is stronger. Wear sturdy footwear for the trail.
                         </p>
                       </div>
                     </div>
@@ -1093,7 +1119,7 @@ export default function EllaTownGuide() {
                         </li>
                         <li className="flex items-start gap-2">
                           <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                          220-meter cascading waterfall
+                          171-meter cascading waterfall
                         </li>
                         <li className="flex items-start gap-2">
                           <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
@@ -1103,7 +1129,7 @@ export default function EllaTownGuide() {
                     </div>
                     <Image
                       src="/Diyaluma-Falls1.jpg"
-                      alt="Diyaluma Falls dramatic 220-meter cascade with natural infinity pools and mountain landscape view"
+                      alt="Diyaluma Falls dramatic 171-meter cascade with natural infinity pools and mountain landscape view"
                       width={400}
                       height={300}
                       className="rounded-lg"
@@ -1358,7 +1384,7 @@ export default function EllaTownGuide() {
                     className="object-cover rounded-t-lg"
                   />
                   <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                    12 km from Ella
+                    22 km from Ella
                   </div>
                 </div>
                 <CardContent className="p-4">
@@ -1368,7 +1394,7 @@ export default function EllaTownGuide() {
                   </p>
                   <div className="flex items-center text-xs text-blue-600 mb-2">
                     <MapPin className="w-3 h-3 mr-1" />
-                    12 km from Ella
+                    22 km from Ella
                   </div>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/bandarawela" passHref legacyBehavior>
@@ -1387,7 +1413,7 @@ export default function EllaTownGuide() {
                     className="object-cover rounded-t-lg"
                   />
                   <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                    8 km from Ella
+                    32 km from Ella
                   </div>
                 </div>
                 <CardContent className="p-4">
@@ -1397,7 +1423,7 @@ export default function EllaTownGuide() {
                   </p>
                   <div className="flex items-center text-xs text-blue-600 mb-2">
                     <MapPin className="w-3 h-3 mr-1" />
-                    8 km from Ella
+                    32 km from Ella
                   </div>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/haputhale" passHref legacyBehavior>
