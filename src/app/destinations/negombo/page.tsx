@@ -1,27 +1,12 @@
+"use client"
+
 import type { Metadata } from "next"
 import Image from "next/image"
 import { Clock, MapPin, Camera, AlertTriangle, CheckCircle, Star, Calendar, Users, Anchor, Fish, Waves, Church, Coffee, Utensils} from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { ImageCarousel } from "@/components/ui/image-carousel"
 
-export const metadata: Metadata = {
-  title: "Negombo Travel Guide 2025: Gateway to Sri Lanka | Complete Beach & Culture Guide",
-  description:
-    "Discover Negombo, Sri Lanka&apos;s vibrant coastal gateway. Complete travel guide featuring beautiful beaches, Catholic heritage, fishing culture, Little Italy dining, and essential attractions for an unforgettable experience.",
-  keywords: "Negombo, Sri Lanka travel, beach destination, Catholic churches, fishing village, Little Italy, Negombo Lagoon, travel guide, tourism, gateway to Sri Lanka",
-  authors: [{ name: "Travel Explorer" }],
-  openGraph: {
-    title: "Negombo Travel Guide 2025: Gateway to Sri Lanka",
-    description: "Your ultimate guide to Negombo - beaches, culture, Catholic heritage & vibrant coastal life",
-    type: "article",
-    images: ["/placeholder.svg?height=630&width=1200"],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Negombo Travel Guide 2025: Gateway to Sri Lanka",
-    description: "Your ultimate guide to Negombo - beaches, culture, Catholic heritage & vibrant coastal life",
-  },
-}
 
 export default function NegomboTravelGuide() {
   return (
@@ -46,7 +31,7 @@ export default function NegomboTravelGuide() {
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <Anchor className="w-4 h-4 mr-1" />
-              Fishing Capital
+              Fishing Heritage
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <Church className="w-4 h-4 mr-1" />
@@ -67,7 +52,7 @@ export default function NegomboTravelGuide() {
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
               Welcome to Negombo, the vibrant coastal town that perfectly captures the essence of Sri Lankan life! 
-              Just 37 kilometers north of Colombo and a mere 10 minutes from Bandaranaike International Airport, 
+              Just 37 kilometers north of Colombo and about 15-20 minutes from Bandaranaike International Airport, 
               Negombo serves as the perfect introduction to Sri Lanka&apos;s rich cultural tapestry and stunning natural beauty.
             </p>
             <p className="text-lg mb-4">
@@ -77,7 +62,7 @@ export default function NegomboTravelGuide() {
               taste of Sri Lankan life that&apos;s both deeply traditional and refreshingly vibrant.
             </p>
             <p className="text-lg mb-4">
-              What makes Negombo truly special is the genuine warmth of its people and their &quot;punchi ithaliya&quot; 
+              What makes Negombo truly special is the genuine warmth of its people and their &quot;Punchi Romaya&quot; 
               (little enjoyment) approach to life. Here, every sunset is celebrated, every catch from the sea is a blessing, 
               and every visitor is welcomed as family. The town&apos;s unique blend of Sinhalese, Tamil, and Portuguese colonial 
               influences creates a cultural richness that&apos;s immediately felt in its bustling markets, colorful festivals, 
@@ -140,7 +125,7 @@ export default function NegomboTravelGuide() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-indigo-500" />
-                    <span><strong>Founded:</strong> 15th century Portuguese era</span>
+                    <span><strong>Colonial Era:</strong> Portuguese influence from the 16th century</span>
                   </div>
                 </div>
                 <div>
@@ -154,7 +139,7 @@ export default function NegomboTravelGuide() {
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
-                    <span><strong>Airport:</strong> 10 minutes drive</span>
+                    <span><strong>Airport:</strong> about 15-20 minutes drive</span>
                   </div>
                 </div>
               </div>
@@ -174,7 +159,7 @@ export default function NegomboTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Negombo-Fish-Market.jpg"
                     alt="Bustling Negombo fish market with colorful boats, fresh catch, and local fishermen in traditional attire"
                     width={400}
                     height={300}
@@ -243,14 +228,108 @@ export default function NegomboTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=400"
-                    alt="Majestic St. Mary's Church in Negombo with neo-classical architecture, bell towers, and beautiful colonial design"
-                    width={400}
-                    height={300}
-                    className="rounded-lg"
-                  />
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/St-Mary-Church-Negombo.jpg",
+                        alt: "Interior of St. Mary's Church Negombo with stunning ceiling frescoes, stained glass windows, and peaceful atmosphere",
+                        caption: "",
+                      },
+                      {
+                        src: "/St-Mary-Church-Exterior.webp",
+                        alt: "Exterior of St. Mary's Church Negombo with its neo-classical architecture and vibrant community",
+                        caption: "",
+                      },
+                  ]}
+                />
                 </div>
+
+                {/* Other Churches in Negombo */}
+                {/* <div className="mt-8">
+                  <h4 className="text-lg font-semibold mb-1">More Churches in Negombo</h4>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Negombo is home to over 40 Catholic churches — more per square kilometre than almost anywhere in Asia. Here are some other significant ones worth visiting.
+                  </p>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+                    {[
+                      {
+                        name: "St. Sebastian's Church",
+                        location: "Katuwapitiya",
+                        note: "One of the largest churches; site of the 2019 Easter Sunday bombing",
+                        src: "/placeholder.svg?height=120&width=160",
+                        alt: "St. Sebastian's Church Katuwapitiya, Negombo",
+                      },
+                      {
+                        name: "St. Anne's Church",
+                        location: "Talahena",
+                        note: "Popular pilgrimage destination, especially during the Feast of St. Anne in July",
+                        src: "/placeholder.svg?height=120&width=160",
+                        alt: "St. Anne's Church Talahena, Negombo",
+                      },
+                      {
+                        name: "Holy Rosary Church",
+                        location: "Duwa Island",
+                        note: "Accessible by boat; unique island church with a devout fishing community",
+                        src: "/placeholder.svg?height=120&width=160",
+                        alt: "Holy Rosary Church on Duwa Island, Negombo",
+                      },
+                      {
+                        name: "St. Joseph's Church",
+                        location: "Negombo Town",
+                        note: "Historic church in the town centre with a distinct colonial facade",
+                        src: "/placeholder.svg?height=120&width=160",
+                        alt: "St. Joseph's Church Negombo Town",
+                      },
+                      {
+                        name: "St. Peter's Church",
+                        location: "Pitipana",
+                        note: "Quiet neighbourhood church with traditional architecture and local character",
+                        src: "/placeholder.svg?height=120&width=160",
+                        alt: "St. Peter's Church Pitipana, Negombo",
+                      },
+                      {
+                        name: "St. Francis of Assisi Church",
+                        location: "Negombo",
+                        note: "Named after the patron saint of the environment, set in a peaceful compound",
+                        src: "/placeholder.svg?height=120&width=160",
+                        alt: "St. Francis of Assisi Church, Negombo",
+                      },
+                      {
+                        name: "Our Lady of Lourdes",
+                        location: "Negombo",
+                        note: "Grotto-style church popular for Marian devotions and novenas",
+                        src: "/placeholder.svg?height=120&width=160",
+                        alt: "Our Lady of Lourdes Church, Negombo",
+                      },
+                      {
+                        name: "St. Lucia's Cathedral",
+                        location: "Colombo (nearby)",
+                        note: "The largest Catholic cathedral in Sri Lanka, worth visiting on the way to/from Negombo",
+                        src: "/placeholder.svg?height=120&width=160",
+                        alt: "St. Lucia's Cathedral Colombo",
+                      },
+                    ].map((church) => (
+                      <div
+                        key={church.name}
+                        className="group rounded-lg overflow-hidden border border-border bg-card shadow-sm hover:shadow-md transition-shadow"
+                      >
+                        <div className="relative h-24 w-full">
+                          <Image
+                            src={church.src}
+                            alt={church.alt}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                        <div className="p-2">
+                          <p className="text-xs font-semibold text-foreground leading-tight">{church.name}</p>
+                          <p className="text-xs text-blue-600 dark:text-blue-400 mt-0.5">{church.location}</p>
+                          <p className="text-xs text-muted-foreground mt-1 leading-snug">{church.note}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div> */}
               </CardContent>
             </Card>
 
@@ -262,7 +341,7 @@ export default function NegomboTravelGuide() {
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Negombo-Lagoon.jpg"
                     alt="Serene Negombo Lagoon with traditional boats, lush mangroves, and diverse birdlife in golden evening light"
                     width={400}
                     height={300}
@@ -332,7 +411,7 @@ export default function NegomboTravelGuide() {
                     </ul>
                   </div>
                   <Image
-                    src="/placeholder.svg?height=300&width=400"
+                    src="/Negombo-beach.jpg"
                     alt="Beautiful Negombo Beach with golden sand, traditional fishing boats, palm trees, and clear blue waters"
                     width={400}
                     height={300}
@@ -350,15 +429,15 @@ export default function NegomboTravelGuide() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>The &quot;Punchi Ithaliya&quot; Lifestyle</CardTitle>
+                <CardTitle>The &quot;Punchi Romaya&quot; Identity</CardTitle>
                 <CardDescription>Embrace the local philosophy of finding joy in simple pleasures</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      &quot;Punchi Ithaliya&quot; literally means &quot;little enjoyment&quot; in Sinhala, and it perfectly captures 
-                      the Negombo spirit. This local philosophy emphasizes finding happiness in everyday moments - 
+                      Negombo is widely known as &quot;Punchi Romaya&quot; (Little Rome) because of its strong Catholic 
+                      heritage and historic churches. Alongside this identity, local life emphasizes finding happiness in everyday moments - 
                       sharing a meal with friends, watching the sunset, celebrating small victories, and maintaining 
                       a positive outlook even in challenging times.
                     </p>
@@ -371,14 +450,13 @@ export default function NegomboTravelGuide() {
                       <li>• Attend Catholic church services</li>
                     </ul>
                   </div>
-                  <div className="bg-orange-50 p-4 rounded-lg">
+                  <div className="bg-orange-50 p-4 rounded-lg h-[180px]">
                     <h4 className="font-semibold text-orange-800 mb-2">Local Wisdom</h4>
                     <p className="text-sm text-orange-700 italic">
-                      &quot;In Negombo, we believe that happiness isn&apos;t about having everything, but about 
-                      appreciating what you have. Every day brings small joys - a good catch, a shared laugh, 
-                      a beautiful sunset. This is our &apos;punchi ithaliya.&apos;&quot;
+                      &quot;In Negombo, we celebrate life through faith, family, and the sea. Every day brings 
+                      small joys - a good catch, a shared laugh, and a beautiful sunset.&quot;
                     </p>
-                    <p className="text-sm text-orange-600 mt-2">- Local fisherman proverb</p>
+                    <p className="text-sm text-orange-600 mt-2">- Local saying</p>
                   </div>
                 </div>
               </CardContent>
@@ -432,21 +510,20 @@ export default function NegomboTravelGuide() {
           </div>
         </section>
 
-        {/* Little Italy Dining */}
+        {/* Coastal Dining */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Little Italy: Culinary Paradise</h2>
+          <h2 className="text-3xl font-bold mb-6">Negombo: Coastal Culinary Paradise</h2>
           <Card>
             <CardHeader>
-              <CardTitle>Why Negombo is Called &quot;Little Italy&quot;</CardTitle>
-              <CardDescription>Discover the Italian influence on Negombo&apos;s incredible dining scene</CardDescription>
+              <CardTitle>Seafood, Local Flavors & International Dining</CardTitle>
+              <CardDescription>Discover Negombo&apos;s rich coastal food culture shaped by local traditions and global tastes</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-6">
                 <p className="text-muted-foreground">
-                  Negombo earned its &quot;Little Italy&quot; nickname not just from its Catholic heritage, but from the 
-                  remarkable Italian culinary influence that has shaped its dining scene. Many Italian families 
-                  settled here over the decades, bringing authentic recipes that have blended beautifully with 
-                  local Sri Lankan flavors and the abundant fresh seafood.
+                  Negombo&apos;s dining scene is built on fresh seafood, traditional Sri Lankan recipes, and a wide range 
+                  of international cuisines available in beachside restaurants and family-run eateries. The town&apos;s 
+                  Catholic and coastal heritage has created a unique food culture with strong community traditions.
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -503,7 +580,7 @@ export default function NegomboTravelGuide() {
                   </Card>
                 </div>
 
-                <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                {/* <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
                   <h4 className="font-semibold text-yellow-800 mb-2 flex items-center gap-2">
                     <Star className="w-4 h-4" />
                     Top Restaurant Recommendations
@@ -526,7 +603,7 @@ export default function NegomboTravelGuide() {
                       </ul>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </CardContent>
           </Card>
@@ -658,7 +735,7 @@ export default function NegomboTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">From Airport (Recommended)</h4>
                   <p className="text-sm text-muted-foreground mb-2">
-                    Just 10 minutes from Bandaranaike International Airport - perfect for arrival or departure stays.
+                    About 15-20 minutes from Bandaranaike International Airport - perfect for arrival or departure stays.
                   </p>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Taxi: 15-20 minutes ($8-12)</li>
@@ -731,11 +808,11 @@ export default function NegomboTravelGuide() {
             <Card className="border-yellow-200 bg-yellow-50/50">
               <CardHeader>
                 <CardTitle className="text-yellow-700">Shoulder Season</CardTitle>
-                <CardDescription>April - June, September - November</CardDescription>
+                <CardDescription>April & September</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-yellow-700">
-                  <li>• Warm weather, occasional showers</li>
+                  <li>• Warm weather with occasional showers</li>
                   <li>• Good value accommodation</li>
                   <li>• Fewer crowds</li>
                   <li>• Great for cultural activities</li>
@@ -747,11 +824,11 @@ export default function NegomboTravelGuide() {
             <Card className="border-blue-200 bg-blue-50/50">
               <CardHeader>
                 <CardTitle className="text-blue-700">Monsoon Season</CardTitle>
-                <CardDescription>July - August</CardDescription>
+                <CardDescription>May - August & October - November</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-blue-700">
-                  <li>• Regular rainfall, dramatic skies</li>
+                  <li>• Periods of regular rainfall and humid weather</li>
                   <li>• Lowest accommodation prices</li>
                   <li>• Perfect for indoor cultural activities</li>
                   <li>• Atmospheric church visits</li>
@@ -799,7 +876,7 @@ export default function NegomboTravelGuide() {
                   Wake up early at least one morning to experience the magical atmosphere of the fish market at dawn. 
                   Join locals for a cup of strong tea and fresh string hoppers, then watch the sunrise over the 
                   Indian Ocean while traditional fishing boats return home - it&apos;s the essence of Negombo&apos;s 
-                  &quot;punchi ithaliya&quot; spirit!
+                  vibrant coastal spirit!
                 </p>
               </div>
             </CardContent>
@@ -828,7 +905,7 @@ export default function NegomboTravelGuide() {
                 defines modern Sri Lanka.
               </p>
               <p className="text-muted-foreground font-medium">
-                Come for the convenience, stay for the culture, and leave with a heart full of &quot;punchi ithaliya&quot; 
+                Come for the convenience, stay for the culture, and leave with a heart full of Negombo&apos;s 
                 - the Negombo way of finding joy in every moment! 🌅🐟⛪️
               </p>
             </CardContent>

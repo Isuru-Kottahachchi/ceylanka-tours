@@ -1,9 +1,9 @@
-import { MapPin, Users, Mountain, Waves, Sun, Leaf, Calendar, Globe, Utensils, Eye, Binoculars } from "lucide-react"
+import { MapPin, Users, Waves, Sun, Leaf, Calendar, Globe, Utensils, Landmark, Thermometer, ChefHat, PawPrint, Sparkles } from "lucide-react"
 
 function SriLankaAboutCompact() {
     return (
         <section className="py-12 theme-bg transition-colors">
-            <div className="max-w-3xl mx-auto px-4 sm:px-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center mb-8">
                     <h2
@@ -66,76 +66,75 @@ function SriLankaAboutCompact() {
                         What Makes Sri Lanka Special
                     </h3>
 
-                    <div className="grid grid-cols-2 gap-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250">
-                        <div className="theme-surface p-4 rounded-lg">
-                            <div className="flex items-center space-x-3 mb-2">
-                                <div className="bg-blue-100 dark:bg-blue-900 p-2 rounded-full">
-                                    <Mountain className="h-4 w-4 text-blue-600" />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5" data-aos="fade-up" data-aos-duration="500" data-aos-delay="250">
+                        <div className="theme-surface p-5 rounded-xl border border-blue-100 dark:border-blue-900/40 hover:shadow-md transition-shadow">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="bg-blue-100 dark:bg-blue-900/50 p-4 rounded-2xl mb-3">
+                                    <Landmark className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                                 </div>
-                                <h4 className="font-medium theme-text text-sm">Ancient Heritage</h4>
+                                <h4 className="font-semibold theme-text text-sm mb-2">Ancient Heritage</h4>
                             </div>
-                            <p className="theme-text-muted text-xs">
+                            <p className="theme-text-muted text-xs leading-relaxed text-center">
                                 Sigiriya, Anuradhapura, and Polonnaruwa showcase 2,500+ years of civilization.
                             </p>
                         </div>
                         
-                        <div className="theme-surface p-4 rounded-lg">
-                            <div className="flex items-center space-x-3 mb-2">
-                                <div className="bg-orange-100 p-2 rounded-full">
-                                    <Sun className="h-4 w-4 text-orange-600" />
+                        <div className="theme-surface p-5 rounded-xl border border-orange-100 dark:border-orange-900/40 hover:shadow-md transition-shadow">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="bg-orange-100 dark:bg-orange-900/50 p-4 rounded-2xl mb-3">
+                                    <Thermometer className="h-8 w-8 text-orange-500 dark:text-orange-400" />
                                 </div>
-                                <h4 className="font-medium theme-text text-sm">Tropical sun to mountain mist, all in a few hours</h4>
+                                <h4 className="font-semibold theme-text text-sm mb-2">Sun to Mist in Hours</h4>
                             </div>
-                            <p className="theme-text-muted text-xs">
+                            <p className="theme-text-muted text-xs leading-relaxed text-center">
                                 Experience diverse climates from sunny beaches to cool hill country within a short drive.
                             </p>
                         </div>
-                        <div className="theme-surface p-4 rounded-lg">
-                            <div className="flex items-center space-x-3 mb-2">
-                                <div className="bg-blue-100 p-2 rounded-full">
-                                    <Utensils className="h-4 w-4 text-blue-600" />
+                        <div className="theme-surface p-5 rounded-xl border border-yellow-100 dark:border-yellow-900/40 hover:shadow-md transition-shadow">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="bg-yellow-100 dark:bg-yellow-900/50 p-4 rounded-2xl mb-3">
+                                    <ChefHat className="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
                                 </div>
-                                <h4 className="font-medium theme-text text-sm">Food & Cuisine</h4>
+                                <h4 className="font-semibold theme-text text-sm mb-2">Food &amp; Cuisine</h4>
                             </div>
-                            <p className="theme-text-muted text-xs">
-                                Sri Lankan cuisine is a delightful blend of flavors, featuring rice and curry as staples, along with
-                                fresh seafood, tropical fruits, and aromatic spices.
+                            <p className="theme-text-muted text-xs leading-relaxed text-center">
+                                Rice &amp; curry, fresh seafood, tropical fruits, and aromatic spices — a feast for every palate.
                             </p>
                         </div>
 
 
-                        <div className="theme-surface p-4 rounded-lg">
-                            <div className="flex items-center space-x-3 mb-2">
-                                <div className="bg-green-100 p-2 rounded-full">
-                                    <Waves className="h-4 w-4 text-green-600" />
+                        <div className="theme-surface p-5 rounded-xl border border-cyan-100 dark:border-cyan-900/40 hover:shadow-md transition-shadow">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="bg-cyan-100 dark:bg-cyan-900/50 p-4 rounded-2xl mb-3">
+                                    <Waves className="h-8 w-8 text-cyan-600 dark:text-cyan-400" />
                                 </div>
-                                <h4 className="font-medium theme-text text-sm">Pristine Beaches</h4>
+                                <h4 className="font-semibold theme-text text-sm mb-2">Pristine Beaches</h4>
                             </div>
-                            <p className="theme-text-muted text-xs">
-                                1,340km of coastline with golden beaches, surfing, and whale watching.
+                            <p className="theme-text-muted text-xs leading-relaxed text-center">
+                                1,340 km of coastline with golden beaches, surfing spots, and whale watching.
                             </p>
                         </div>
-                        <div className="theme-surface p-4 rounded-lg">
-                            <div className="flex items-center space-x-3 mb-2">
-                                <div className="bg-purple-100 p-2 rounded-full">
-                                    <Binoculars className="h-4 w-4 text-purple-600" />
+                        <div className="theme-surface p-5 rounded-xl border border-green-100 dark:border-green-900/40 hover:shadow-md transition-shadow">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="bg-green-100 dark:bg-green-900/50 p-4 rounded-2xl mb-3">
+                                    <PawPrint className="h-8 w-8 text-green-600 dark:text-green-400" />
                                 </div>
-                                <h4 className="font-medium theme-text text-sm">Wildlife Paradise</h4>
+                                <h4 className="font-semibold theme-text text-sm mb-2">Wildlife Paradise</h4>
                             </div>
-                            <p className="theme-text-muted text-xs">
-                                Leopards, elephants, blue whales, and 26 national parks to explore.
+                            <p className="theme-text-muted text-xs leading-relaxed text-center">
+                                Leopards, elephants, blue whales, and 26 national parks waiting to be explored.
                             </p>
                         </div>
 
-                        <div className="theme-surface p-4 rounded-lg">
-                            <div className="flex items-center space-x-3 mb-2">
-                                <div className="bg-blue-100 p-2 rounded-full">
-                                    <Eye className="h-4 w-4 text-blue-600" />
+                        <div className="theme-surface p-5 rounded-xl border border-purple-100 dark:border-purple-900/40 hover:shadow-md transition-shadow">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="bg-purple-100 dark:bg-purple-900/50 p-4 rounded-2xl mb-3">
+                                    <Sparkles className="h-8 w-8 text-purple-600 dark:text-purple-400" />
                                 </div>
-                                <h4 className="font-medium theme-text text-sm">Spiritual Richness</h4>
+                                <h4 className="font-semibold theme-text text-sm mb-2">Spiritual Richness</h4>
                             </div>
-                            <p className="theme-text-muted text-xs">
-                                Whether it’s Buddhist stupas, Hindu kovils, or sacred mountains like Adam’s Peak, the spiritual vibe runs deep often blending with Nature
+                            <p className="theme-text-muted text-xs leading-relaxed text-center">
+                                Buddhist stupas, Hindu kovils, and Adam&apos;s Peak — spirituality blending deeply with nature.
                             </p>
                         </div>
 

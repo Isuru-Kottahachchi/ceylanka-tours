@@ -643,7 +643,7 @@ export default function YalaNationalParkTravelGuide() {
                     </ul>
                   </div>
                   <Link
-                    href="/articles/sri-lankan-leopard"
+                    href="/articles/leopards-vs-cheetah-vs-jaguar"
                     className="mt-4 inline-block text-sm text-blue-600 dark:text-blue-400 hover:underline focus:underline"
                   >
                     Cant you identyfy  leopards and jaguars? Read our detailed blog post to learn more about the differences between leopards and jaguars.
