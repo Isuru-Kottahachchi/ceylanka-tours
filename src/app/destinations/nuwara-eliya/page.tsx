@@ -106,7 +106,7 @@ export default function NuwaraEliyaTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Thermometer className="w-4 h-4 text-purple-500" />
                     <span>
-                      <strong>Temperature:</strong> 15-20°C year round
+                      <strong>Temperature:</strong> 8-22°C year round
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -345,15 +345,15 @@ export default function NuwaraEliyaTravelGuide() {
                     images={[
                       {
                         src: "/Flowers-in-vic-park.jpg",
-                        alt: "Beautiful flowers in Victoria Park, Nuwara Eliya",
-                        caption: "Victoria Park",
-                        title: "Victoria Park"
+                        alt: "Colorful flowers blooming at Hakgala Botanical Garden, Nuwara Eliya",
+                        caption: "Hakgala Botanical Garden",
+                        title: "Hakgala Botanical Garden"
                       },
                       {
                         src: "/Victoria-park.jpg",
-                        alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
+                        alt: "Scenic pathways and lush flora at Hakgala Botanical Garden",
+                        caption: "Hakgala Botanical Garden",
+                        title: "Hakgala Botanical Garden"
                       },
 
 
@@ -398,8 +398,7 @@ export default function NuwaraEliyaTravelGuide() {
                     <p className="text-muted-foreground mb-4">
                       Just 32km from Nuwara Eliya, Horton Plains offers one of Sri Lanka&apos;s most spectacular hiking
                       experiences. The highlight is World&apos;s End, a sheer cliff drop of 870 meters offering breathtaking
-                      views on clear days.<br />
-                      You can see World&apos;s End
+                      views on clear days.
                     </p>
 
                     <ul className="space-y-2 text-muted-foreground">
@@ -612,7 +611,7 @@ export default function NuwaraEliyaTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Located about 30km from Nuwara Eliya, Ambewela Farm is a picturesque dairy farm that resembles
+                      Located about 20km from Nuwara Eliya, Ambewela Farm is a picturesque dairy farm that resembles
                       the rolling hills of New Zealand. This working farm spans over 1,700 hectares and offers visitors
                       a unique experience of Sri Lanka&apos;s highland agriculture and stunning pastoral landscapes.
                     </p>
@@ -825,7 +824,7 @@ export default function NuwaraEliyaTravelGuide() {
         </section>
 
         {/* Colonial Architecture */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Colonial Charm & Architecture</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <Card>
@@ -887,7 +886,7 @@ export default function NuwaraEliyaTravelGuide() {
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
         {/* Activities & Experiences */}
         <section className="mb-12">
@@ -1092,7 +1091,7 @@ export default function NuwaraEliyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  30 km from Nuwara Eliya
+                  48 km from Nuwara Eliya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/haputhale" passHref legacyBehavior>
@@ -1182,7 +1181,7 @@ export default function NuwaraEliyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  90 km from Nuwara Eliya
+                  65 km from Nuwara Eliya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/adams-peak" passHref legacyBehavior>

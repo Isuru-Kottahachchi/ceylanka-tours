@@ -33,7 +33,7 @@ export default function HortonPlainsDetailedGuide() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60" />
         <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Horton Plains</h1>
+          <h1 className="hero-text-shadow text-5xl md:text-7xl font-bold mb-6 tracking-tight">Horton Plains</h1>
           <p className="text-2xl md:text-3xl mb-8 font-light leading-relaxed">
             Sri Lanka&apos;s Mystical High-Altitude Wilderness
           </p>
@@ -278,9 +278,9 @@ export default function HortonPlainsDetailedGuide() {
                     images={[
                       {
                         src: "/Worlds-End.jpg",
-                        alt: "Aerial view of Snake Island Taprobane",
-                        caption: "Snake Island with its colonial villa",
-                        title: "Snake Island from Above"
+                        alt: "Horton Plains Worlds end",
+                        caption: "",
+                        title: ""
                       },
                       
                     ]}
