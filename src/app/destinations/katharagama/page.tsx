@@ -333,7 +333,7 @@ export default function KatharagamaGuide() {
                 <CardHeader className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/40 dark:to-orange-900/40">
                   <CardTitle className="text-2xl text-red-800 dark:text-red-300">Sella Katharagama</CardTitle>
                   <CardDescription className="text-lg text-red-600 dark:text-red-300">
-                    Place of divine healing and blessings and connection with Lord Murugan (Skanda/ Kataragama Deviyo/ God of Katharagama and Valli)
+                    Legendary birthplace shrine of Lord Murugan&apos;s divine child sanctuary of fertility and healing blessings
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-8">
@@ -342,69 +342,43 @@ export default function KatharagamaGuide() {
                       images={[
                         {
                           src: "/Sella-Katharagama.jpeg", caption: "Sella Katharagama",
-                          alt: "Sella Katharagama"
+                          alt: "Sella Katharagama shrine surrounded by lush forest"
                         },
-                        {
-                          src: "/placeholder.svg?height=400&width=600&text=Katharagama+Temple+Night", caption: "Katharagama dewalaya illuminated at night",
-                          alt: "Katharagama dewalaya illuminated at night"
-                        }
                       ]}
                     />
                     <div className="space-y-6">
                       <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                        The main Katharagama temple is the spiritual center of the entire complex, housing the sacred
-                        shrine of Lord Murugan. Unlike typical Hindu temples with elaborate statues, the main deity here
-                        is represented by a simple yantra (sacred geometric symbol) embedded in the wall. This unique
-                        feature makes the temple accessible to people of all faiths, as there are no specific religious
-                        images that might exclude any particular group.
+                        Sella Katharagama is a small but deeply significant shrine located a short distance from the main temple complex. According to local legend, this is where Valli gave birth to Lord Murugan&apos;s child, making it one of the most sacred spots in the Katharagama complex for devotees seeking blessings for childbirth, fertility, and the wellbeing of children.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        The temple follows ancient traditions where devotees make offerings of fruits, flowers, and
-                        coconuts, while lighting oil lamps as symbols of their prayers. The most powerful time to visit is
-                        during the evening puja (prayer ceremony) around 6:30 PM, when hundreds of devotees gather to
-                        participate in collective worship. The atmosphere becomes electric with devotional chanting, drum
-                        beats, and the flickering light of thousands of oil lamps.
+                        The shrine is peaceful and far less crowded than the main Maha Devalaya, offering a serene environment for personal prayer and meditation. Many couples facing fertility challenges make special offerings here, and parents bring newborn children to receive the blessings of the deity. The atmosphere is intimate and spiritually charged.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        Many pilgrims come to Katharagama to fulfill vows made during difficult times in their lives. It&apos;s
-                        common to see devotees who have traveled hundreds of miles on foot, carrying kavadi (decorated
-                        structures) as offerings, or performing various forms of penance as expressions of their devotion
-                        and gratitude. The temple is believed to be especially powerful for granting wishes related to
-                        health, prosperity, and protection from harm.
+                        Pilgrims often include Sella Katharagama as part of the extended pilgrimage circuit around the sacred town, visiting it before or after the main puja ceremonies. The most powerful time to visit is in the early morning when the shrine is quiet and the devotional energy is strongest.
                       </p>
 
                       <div className="bg-red-50 dark:bg-red-900/40 p-6 rounded-lg border border-red-200 dark:border-red-700">
-                        <h4 className="font-semibold text-red-800 dark:text-red-300 mb-3">Temple Experience:</h4>
+                        <h4 className="font-semibold text-red-800 dark:text-red-300 mb-3">Visitor Information:</h4>
                         <ul className="space-y-3 text-muted-foreground dark:text-muted-foreground">
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <span>
-                              <strong>Daily Puja Times:</strong> 4:30 AM, 10:30 AM, 6:30 PM (most important)
-                            </span>
+                            <span><strong>Best For:</strong> Fertility blessings, childbirth prayers, newborn blessings</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <span>
-                              <strong>Offerings:</strong> Fruits, flowers, coconuts, oil for lamps
-                            </span>
+                            <span><strong>Atmosphere:</strong> Peaceful and less crowded than main temple</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <span>
-                              <strong>Dress Code:</strong> Modest clothing, remove shoes before entering
-                            </span>
+                            <span><strong>Location:</strong> Short walk from the main Maha Devalaya complex</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <span>
-                              <strong>Photography:</strong> Not allowed inside the main shrine
-                            </span>
+                            <span><strong>Dress Code:</strong> Modest clothing, remove shoes before entering</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <span>
-                              <strong>Special Feature:</strong> Yantra symbol instead of statue
-                            </span>
+                            <span><strong>Part of:</strong> Extended pilgrimage circuit around Katharagama</span>
                           </li>
                         </ul>
                       </div>
@@ -480,11 +454,6 @@ export default function KatharagamaGuide() {
                             </span>
                           </li>
                         </ul>
-                        <div className="mt-4">
-                          <Button asChild variant="outline" size="sm">
-                            <a href="/destinations/kiri-vehera">See More</a>
-                          </Button>
-                        </div>
                       </div>
                     </div>
                     <ImageCarousel
@@ -493,10 +462,6 @@ export default function KatharagamaGuide() {
                           src: "/Kiri-vehera.jpeg", caption: "Kiri Vehera stupa with devotees circumambulating",
                           alt: ""
                         },
-                        {
-                          src: "/placeholder.svg?height=500&width=600&text=Kiri+Vehera+Full+Moon", caption: "Kiri Vehera illuminated on full moon night",
-                          alt: ""
-                        }
                       ]}
                     />
                   </div>
@@ -627,11 +592,6 @@ export default function KatharagamaGuide() {
                       <li>Annual festival in July/August draws thousands of devotees</li>
                       <li>Open to all faiths, known for its welcoming atmosphere</li>
                     </ul>
-                    <div className="mt-4">
-                      <Button asChild variant="outline" size="sm">
-                        <a href="https://en.wikipedia.org/wiki/Okanda" target="_blank" rel="noopener noreferrer">Read More</a>
-                      </Button>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -648,11 +608,11 @@ export default function KatharagamaGuide() {
                     <ImageCarousel
                       images={[
                         {
-                          src: "/placeholder.svg?height=400&width=600&text=Kebalitta+Dewalaya", caption: "Kebalitta Dewalaya jungle shrine",
+                          src: "/Kebiliththa-dewalaya.jpg", caption: "",
                           alt: ""
                         },
                         {
-                          src: "/placeholder.svg?height=400&width=600&text=Kebalitta+River+View", caption: "Menik Ganga river near Kebalitta Dewalaya",
+                          src: "/Kebiliththa-dewalaya1.jpg", caption: "",
                           alt: ""
                         }
                       ]}
@@ -677,11 +637,6 @@ export default function KatharagamaGuide() {
                       </p>
                     </div>
 
-                    <div className="mt-4">
-                      <Button asChild variant="outline" size="sm">
-                        <a href="https://www.lanka.com/about/destinations/katharagama/kebilitta-devalaya/" target="_blank" rel="noopener noreferrer">Read More</a>
-                      </Button>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -785,43 +740,6 @@ export default function KatharagamaGuide() {
                 </CardContent>
               </Card>
 
-              {/* Sella Kataragama */}
-              <Card className="border-2 border-amber-200 dark:border-amber-700">
-                <CardHeader className="bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/40 dark:to-yellow-900/40">
-                  <CardTitle className="text-2xl text-amber-700 dark:text-amber-300">Sella Kataragama</CardTitle>
-                  <CardDescription className="text-lg text-amber-600 dark:text-amber-300">
-                    Legendary birthplace site of Lord Murugan's divine child
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="p-8">
-                  <div className="grid lg:grid-cols-2 gap-8 items-start">
-                    <div className="space-y-6">
-                      <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                        Sella Kataragama is a small but significant shrine located a short distance from the main temple complex. According to local legend, this is where Valli gave birth to Lord Murugan's child, making it an important site for devotees seeking blessings for childbirth, fertility, and children's wellbeing.
-                      </p>
-                      <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        The shrine is peaceful and less crowded than the main temple, offering a serene environment for prayer and meditation. Many couples facing fertility challenges make special offerings here, and parents bring newborn children for blessings.
-                      </p>
-                      <ul className="list-disc pl-5 text-muted-foreground dark:text-muted-foreground">
-                        <li>Associated with childbirth and fertility blessings</li>
-                        <li>Popular among couples and families with young children</li>
-                        <li>Peaceful atmosphere ideal for personal prayers</li>
-                        <li>Short walk from main temple complex</li>
-                        <li>Part of extended pilgrimage circuit</li>
-                      </ul>
-                    </div>
-                    <ImageCarousel
-                      images={[
-                        {
-                          src: "/placeholder.svg?height=400&width=600&text=Sella+Kataragama", caption: "Sella Kataragama shrine",
-                          alt: ""
-                        }
-                      ]}
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-
               {/* Wadasiti Kanda */}
               <Card className="border-2 border-indigo-200 dark:border-indigo-700">
                 <CardHeader className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-900/40 dark:to-blue-900/40">
@@ -860,11 +778,6 @@ export default function KatharagamaGuide() {
                       <li>Popular for meditation, vows, and penance</li>
                       <li>Best climbed early morning or late afternoon for cooler weather</li>
                     </ul>
-                    <div className="mt-4">
-                      <Button asChild variant="outline" size="sm">
-                        <a href="https://www.lanka.com/about/destinations/katharagama/wedasiti-kanda/" target="_blank" rel="noopener noreferrer">Read More</a>
-                      </Button>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -1195,7 +1108,7 @@ export default function KatharagamaGuide() {
                   </p>
                   <div className="flex items-center text-xs text-blue-600 mb-2">
                     <MapPin className="w-3 h-3 mr-1" />
-                    50 km from Katharagama
+                    20 km from Katharagama
                   </div>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/yala-national-park" passHref legacyBehavior>
