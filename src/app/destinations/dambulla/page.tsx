@@ -7,13 +7,13 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Dambulla Town Sri Lanka: Complete Guide 2025 | Local Life, Markets & Cultural Heritage",
+  title: "Dambulla Town Sri Lanka: Complete Guide 2026 | Local Life, Markets & Cultural Heritage",
   description:
     "Explore Dambulla town beyond the famous caves - local markets, authentic restaurants, cultural sites, and the real Sri Lankan experience in this historic trading hub.",
   keywords:
     "Dambulla town, Sri Lanka local life, Dambulla market, authentic Sri Lankan culture, local restaurants, trading hub, cultural heritage",
   openGraph: {
-    title: "Dambulla Town: Complete Local Guide 2025",
+    title: "Dambulla Town: Complete Local Guide 2026",
     description: "Your ultimate guide to experiencing authentic Sri Lankan life in historic Dambulla",
     type: "article",
     images: ["/placeholder.svg?height=630&width=1200"],
@@ -35,7 +35,7 @@ export default function DambullaTownGuide() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60" />
         <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto">
           <h1 className="hero-text-shadow text-4xl md:text-6xl font-extrabold mb-4 leading-[1.1] tracking-tight">Dambulla</h1>
-          <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">UNESCO world heritage site</p>
+          <p className="text-2xl md:text-4xl mb-8 font-light leading-relaxed">UNESCO World Heritage Site</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 px-4 py-2 bg-green-600/80 text-white border-green-500">
               <ShoppingBag className="w-4 h-4 mr-2" />
@@ -56,39 +56,28 @@ export default function DambullaTownGuide() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Detailed Introduction */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-8 text-foreground">
-            Welcome to Dambulla: Where Real Sri Lanka Comes Alive
+          <h2 className="text-4xl font-bold mb-8 text-foreground dark:text-gray-100">
+            Dambulla Town Guide
           </h2>
-          <div className="prose prose-xl max-w-none text-muted-foreground leading-relaxed space-y-6">
+          <div className="prose prose-xl dark:prose-invert max-w-none leading-relaxed space-y-6">
             <p className="text-xl mb-6 leading-relaxed">
-              While millions of visitors come to Dambulla to see the famous cave temples, the real treasure of this
-              historic town lies in its vibrant streets, bustling markets, and the warm-hearted people who call it home.
-              Dambulla town is the beating heart of Sri Lanka&apos;s central province - a place where ancient traditions
-              blend seamlessly with modern life, where the aroma of fresh spices fills the air, and where every corner
-              tells a story of centuries-old trading heritage.
+              Most visitors come to Dambulla for the cave temples and move on quickly. But the town itself is worth
+              your time. Busy streets, a massive wholesale market, and genuinely friendly locals make it one of the
+              most down-to-earth towns in Sri Lanka.
             </p>
             <p className="text-lg mb-6">
-              This isn&apos;t just another tourist destination - Dambulla is a living, breathing community that has been a
-              major trading hub for over 2,000 years. Located at the crossroads of ancient trade routes, the town has
-              always been a melting pot of cultures, religions, and traditions. Today, it continues this legacy as one
-              of Sri Lanka&apos;s most important agricultural and commercial centers, where farmers from across the region
-              bring their finest produce to the famous Dambulla Dedicated Economic Centre - the largest wholesale market
-              in the country.
+              Dambulla is at the center of Sri Lanka&apos;s Cultural Triangle, 148 km from Colombo. It&apos;s home to the
+              country&apos;s largest wholesale fruit and vegetable market, where farmers from across the island bring
+              their produce every day. The town has been an important trading stop for over 2,000 years.
             </p>
             <p className="text-lg mb-6">
-              What makes Dambulla town truly special is its authenticity. Here, you won&apos;t find tourist traps or
-              artificial experiences designed for visitors. Instead, you&apos;ll discover the real Sri Lanka - families
-              running businesses that have been passed down through generations, street food vendors who&apos;ve perfected
-              their recipes over decades, and a community that welcomes visitors not as tourists, but as friends. The
-              town&apos;s streets are alive with the sounds of tuk-tuks, the calls of vendors, and the laughter of children
-              playing in temple courtyards.
+              There are very few tourist traps here. Most shops, restaurants, and tea stalls serve locals. Family
+              businesses have been here for generations and people are welcoming without being pushy. It feels
+              like the real Sri Lanka.
             </p>
             <p className="text-lg">
-              From the crack of dawn when the wholesale market comes alive with trucks loaded with fresh vegetables, to
-              the evening when families gather at local temples for prayers, Dambulla offers an immersive experience
-              into authentic Sri Lankan life. The town serves as the perfect base for exploring the cultural triangle,
-              but more importantly, it provides a window into the soul of Sri Lanka - a place where hospitality isn&apos;t
-              just a business practice, it&apos;s a way of life.
+              Dambulla also makes a great base for the Cultural Triangle. Sigiriya, Polonnaruwa,
+              Anuradhapura, and Minneriya are all within easy reach for day trips.
             </p>
           </div>
         </section>
@@ -97,9 +86,9 @@ export default function DambullaTownGuide() {
 
         {/* Enhanced Quick Facts */}
         <section className="mb-16">
-          <Card className="border-2 border-green-200 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-slate-800 dark:to-slate-900">
+          <Card className="border-2 border-green-200 bg-gradient-to-br from-green-50 to-emerald-50 dark:bg-slate-800 dark:[background-image:none]">
             <CardHeader>
-              <CardTitle className="flex items-center gap-3 text-3xl text-foreground dark:text-green-200">
+              <CardTitle className="flex items-center gap-3 text-3xl text-green-800 dark:text-white">
                 <Star className="w-8 h-8 text-green-500" />
                 Quick Dambulla Town Information
               </CardTitle>
@@ -107,28 +96,28 @@ export default function DambullaTownGuide() {
             <CardContent>
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-xl text-green-700 dark:text-green-300 mb-4">Location & Geography</h4>
+                  <h4 className="font-semibold text-xl text-green-700 dark:text-green-300 mb-4">Location &amp; Geography</h4>
                   <div className="flex items-center gap-3">
                     <MapPin className="w-5 h-5 text-blue-500 dark:text-blue-300" />
-                    <span className="text-foreground dark:text-gray-100">
+                    <span className="text-gray-800 dark:text-gray-100">
                       <strong>Province:</strong> Central Province, Matale District
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Car className="w-5 h-5 text-purple-500 dark:text-purple-300" />
-                    <span className="text-foreground dark:text-gray-100">
+                    <span className="text-gray-800 dark:text-gray-100">
                       <strong>From Colombo:</strong> 148 km (3 hours drive)
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <TreePine className="w-5 h-5 text-green-500 dark:text-green-300" />
-                    <span className="text-foreground dark:text-gray-100">
-                      <strong>Elevation:</strong> 300 meters above sea level
+                    <span className="text-gray-800 dark:text-gray-100">
+                      <strong>Elevation:</strong> ~175 m above sea level
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Users className="w-5 h-5 text-orange-500 dark:text-orange-300" />
-                    <span className="text-foreground dark:text-gray-100">
+                    <span className="text-gray-800 dark:text-gray-100">
                       <strong>Population:</strong> Approximately 75,000 residents
                     </span>
                   </div>
@@ -137,25 +126,25 @@ export default function DambullaTownGuide() {
                   <h4 className="font-semibold text-xl text-blue-700 dark:text-blue-300 mb-4">Economic Importance</h4>
                   <div className="flex items-center gap-3">
                     <ShoppingBag className="w-5 h-5 text-red-500 dark:text-red-300" />
-                    <span className="text-foreground dark:text-gray-100">
+                    <span className="text-gray-800 dark:text-gray-100">
                       <strong>Market:</strong> Largest wholesale market in Sri Lanka
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <TreePine className="w-5 h-5 text-green-500 dark:text-green-300" />
-                    <span className="text-foreground dark:text-gray-100">
-                      <strong>Agriculture:</strong> Major vegetable & fruit trading hub
+                    <span className="text-gray-800 dark:text-gray-100">
+                      <strong>Agriculture:</strong> Major vegetable &amp; fruit trading hub
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Star className="w-5 h-5 text-yellow-500 dark:text-yellow-300" />
-                    <span className="text-foreground dark:text-gray-100">
+                    <span className="text-gray-800 dark:text-gray-100">
                       <strong>Tourism:</strong> Gateway to Cultural Triangle
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Car className="w-5 h-5 text-purple-500 dark:text-purple-300" />
-                    <span className="text-foreground dark:text-gray-100">
+                    <span className="text-gray-800 dark:text-gray-100">
                       <strong>Transport:</strong> Major bus and transport hub
                     </span>
                   </div>
@@ -164,25 +153,25 @@ export default function DambullaTownGuide() {
                   <h4 className="font-semibold text-xl text-purple-700 dark:text-purple-300 mb-4">Cultural Highlights</h4>
                   <div className="flex items-center gap-3">
                     <Utensils className="w-5 h-5 text-orange-500 dark:text-orange-300" />
-                    <span className="text-foreground dark:text-gray-100">
+                    <span className="text-gray-800 dark:text-gray-100">
                       <strong>Cuisine:</strong> Authentic local food scene
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Users className="w-5 h-5 text-blue-500 dark:text-blue-300" />
-                    <span className="text-foreground dark:text-gray-100">
+                    <span className="text-gray-800 dark:text-gray-100">
                       <strong>Community:</strong> Multi-ethnic harmony
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <TreePine className="w-5 h-5 text-green-500 dark:text-green-300" />
-                    <span className="text-foreground dark:text-gray-100">
-                      <strong>Temples:</strong> Multiple Buddhist & Hindu sites
+                    <span className="text-gray-800 dark:text-gray-100">
+                      <strong>Temples:</strong> Multiple Buddhist &amp; Hindu sites
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-red-500 dark:text-red-300" />
-                    <span className="text-foreground dark:text-gray-100">
+                    <span className="text-gray-800 dark:text-gray-100">
                       <strong>History:</strong> 2,000+ years of trading heritage
                     </span>
                   </div>
@@ -193,12 +182,12 @@ export default function DambullaTownGuide() {
         </section>
          {/* Nearby Attractions */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-10">World-Class Attractions Near Dambulla Town</h2>
+          <h2 className="text-4xl font-bold mb-10">Attractions Near Dambulla</h2>
 
           <div className="space-y-12">
             {/* Dambulla Cave Temple */}
             <Card className="overflow-hidden border-2 border-gold-200 dark:border-yellow-700">
-              <CardHeader className="bg-gradient-to-r from-yellow-50 to-amber-50 dark:from-yellow-900/30 dark:to-amber-900/30">
+              <CardHeader className="bg-gradient-to-r from-yellow-50 to-amber-50 dark:bg-slate-800 dark:[background-image:none]">
                 <CardTitle className="text-2xl text-yellow-800 dark:text-yellow-300">Dambulla Cave Temple (Golden Temple)</CardTitle>
                 <CardDescription className="text-lg text-yellow-600 dark:text-yellow-400">
                   UNESCO World Heritage Site - The largest cave temple complex in Sri Lanka
@@ -215,30 +204,24 @@ export default function DambullaTownGuide() {
                   />
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      Rising majestically 160 meters above the surrounding plains, the Dambulla Cave Temple represents 
-                      over 2,000 years of continuous Buddhist devotion. This extraordinary complex consists of five main 
-                      caves carved into a massive granite outcrop, each transformed into a sacred sanctuary filled with 
-                      over 150 Buddha statues, ancient frescoes covering 2,100 square meters of walls and ceilings, and 
-                      countless artifacts that chronicle the evolution of Buddhist art in Sri Lanka.
+                      The rock rises 160 metres above the surrounding plains. Five caves carved into the granite
+                      hold 153 Buddha statues and paintings covering around 2,100 square metres of walls and
+                      ceilings. It is one of the best-preserved ancient temple complexes in Asia.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      The temple&apos;s origins trace back to the 1st century BCE when King Valagamba sought refuge in these 
-                      caves during his 14-year exile. Upon reclaiming his throne, he transformed the caves into magnificent 
-                      temples as a gesture of gratitude. Each cave tells a unique story through its artistic treasures - 
-                      from the 47-foot-long reclining Buddha in Cave 1 to the spectacular drip-ledge formations that have 
-                      naturally protected these ancient artworks from the elements for millennia.
+                      King Valagamba carved these caves into temples in the 1st century BCE after sheltering here
+                      during a 14-year exile. When he returned to power, he renovated them as an act of thanks.
+                      Drip-ledges cut above the cave openings have kept rain off the paintings for 2,000 years.
+                      The largest statue is the 15-metre reclining Buddha in Cave 1.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      What makes Dambulla truly exceptional is how it showcases the continuous artistic evolution over 
-                      two millennia. The older frescoes display influences from Indian Gupta art, while later additions 
-                      show the development of distinctly Sinhalese artistic styles. The caves also house the largest 
-                      collection of ancient Sinhalese inscriptions, providing invaluable insights into the island&apos;s 
-                      early history and the development of Buddhism in Sri Lanka.
+                      The painting styles change from cave to cave, showing how Buddhist art developed over centuries.
+                      You can also see some of the oldest Sinhala writing in Sri Lanka carved into the rock walls.
                     </p>
 
-                    <div className="bg-yellow-50 dark:bg-yellow-900/30 p-6 rounded-lg border border-yellow-200 dark:border-yellow-700">
-                      <h4 className="font-semibold text-yellow-800 dark:text-yellow-300 mb-3">Cave Temple Highlights:</h4>
-                      <ul className="space-y-3 text-muted-foreground">
+                    <div className="bg-yellow-50 dark:bg-slate-700 p-6 rounded-lg border border-yellow-200 dark:border-yellow-700">
+                      <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-3">Cave Temple Highlights:</h4>
+                      <ul className="space-y-3 text-gray-700 dark:text-gray-100">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                           <span>
@@ -586,49 +569,46 @@ export default function DambullaTownGuide() {
 
         {/* Planning Your Attraction Visits */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-10">Planning Your Cultural Triangle Adventure</h2>
+          <h2 className="text-4xl font-bold mb-10">Planning Your Visit</h2>
           <div className="grid lg:grid-cols-2 gap-10">
             <Card className="border-2 border-indigo-200 dark:border-indigo-700">
-              <CardHeader className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-900/30 dark:to-blue-900/30">
+              <CardHeader className="bg-gradient-to-r from-indigo-50 to-blue-50 dark:bg-slate-800 dark:[background-image:none]">
                 <CardTitle className="text-2xl text-indigo-700 dark:text-indigo-300">Multi-Day Itinerary Suggestions</CardTitle>
-                <CardDescription className="dark:text-indigo-400">Maximize your cultural triangle experience from Dambulla base</CardDescription>
+                <CardDescription className="dark:text-gray-300">Maximize your cultural triangle experience from Dambulla base</CardDescription>
               </CardHeader>
               <CardContent className="p-6 space-y-6">
                 <div className="space-y-4">
                   <div className="border-l-4 border-indigo-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Day 1: Dambulla Cave Temple & Town</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Start early (7:00 AM) at cave temple for cooler temperatures and better photography light. Spend 
-                      2-3 hours exploring all five caves. Afternoon in town market and local restaurants. Evening at 
-                      community temples for authentic cultural immersion.
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      Head to the cave temple by 7 AM - cooler and quieter. Allow 2-3 hours for all five caves.
+                      Afternoon: walk the town market. Evening: visit a local community temple.
                     </p>
                     <p className="text-xs text-indigo-600 dark:text-indigo-400 font-medium">Perfect introduction to local culture and history</p>
                   </div>
 
                   <div className="border-l-4 border-green-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Day 2: Sigiriya & Pidurangala</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Early departure (5:30 AM) for Pidurangala sunrise, then Sigiriya by 9:00 AM before crowds. Pack 
-                      lunch or eat at Sigiriya village. Return to Dambulla for afternoon rest. Evening exploration of 
-                      local food scene and night market areas.
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      Leave by 5:30 AM for sunrise at Pidurangala Rock. Then Sigiriya before 9 AM before crowds
+                      arrive. Full day out - bring water and snacks. Back to Dambulla by late afternoon.
                     </p>
                     <p className="text-xs text-green-600 font-medium">UNESCO World Heritage double experience</p>
                   </div>
 
                   <div className="border-l-4 border-orange-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Day 3: Minneriya Safari & Nalanda</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Morning safari at Minneriya (6:00 AM departure) for 4 hours including travel time. Late morning 
-                      visit to Nalanda Gedige for peaceful temple experience. Afternoon return to Dambulla for market 
-                      visits and souvenir shopping. Final evening at local temple ceremonies.
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      Early morning game drive at Minneriya National Park. Stop at Nalanda Gedige on the way back
+                      - a quiet, undervisited temple worth seeing. Afternoon free for the market and shopping.
                     </p>
                     <p className="text-xs text-orange-600 font-medium">Wildlife and archaeology combination day</p>
                   </div>
                 </div>
 
-                <div className="bg-indigo-50 dark:bg-indigo-900/30 p-4 rounded-lg border border-indigo-200 dark:border-indigo-700">
-                  <h4 className="font-semibold text-indigo-800 dark:text-indigo-300 mb-2">Pro Tips for Multi-Day Visits:</h4>
-                  <ul className="text-sm text-indigo-700 dark:text-indigo-400 space-y-1">
+                <div className="bg-indigo-50 dark:bg-slate-700 p-4 rounded-lg border border-indigo-200 dark:border-indigo-700">
+                  <h4 className="font-semibold text-indigo-800 dark:text-indigo-200 mb-2">Pro Tips for Multi-Day Visits:</h4>
+                  <ul className="text-sm text-indigo-700 dark:text-gray-200 space-y-1">
                     <li>• Book accommodations with early breakfast arrangements</li>
                     <li>• Arrange transport with reliable local operators</li>
                     <li>• Carry plenty of water and sun protection</li>
@@ -640,33 +620,33 @@ export default function DambullaTownGuide() {
             </Card>
 
             <Card className="border-2 border-teal-200 dark:border-teal-700">
-              <CardHeader className="bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-900/30 dark:to-cyan-900/30">
+              <CardHeader className="bg-gradient-to-r from-teal-50 to-cyan-50 dark:bg-slate-800 dark:[background-image:none]">
                 <CardTitle className="text-2xl text-teal-700 dark:text-teal-300">Transportation & Costs</CardTitle>
-                <CardDescription className="dark:text-teal-400">Budget planning and transport options from Dambulla</CardDescription>
+                <CardDescription className="dark:text-gray-300">Budget planning and transport options from Dambulla</CardDescription>
               </CardHeader>
               <CardContent className="p-6 space-y-6">
                 <div>
                   <h4 className="font-semibold text-lg mb-3 text-teal-800 dark:text-teal-300">Transport Options & Costs</h4>
                   <div className="space-y-3">
-                    <div className="bg-teal-50 dark:bg-teal-900/30 p-3 rounded border-l-4 border-teal-500">
+                    <div className="bg-teal-50 dark:bg-slate-700 p-3 rounded border-l-4 border-teal-500">
                       <p className="font-medium text-teal-700 dark:text-teal-300 mb-1">Tuk-Tuk (Three-Wheeler):</p>
                       <p className="text-sm text-teal-600 dark:text-teal-400">
                         Most flexible option. Cave Temple: Rs. 300-500. Sigiriya: Rs. 1,500-2,000. Day hire: Rs. 4,000-6,000
                       </p>
                     </div>
-                    <div className="bg-blue-50 dark:bg-blue-900/30 p-3 rounded border-l-4 border-blue-500">
+                    <div className="bg-blue-50 dark:bg-slate-700 p-3 rounded border-l-4 border-blue-500">
                       <p className="font-medium text-blue-700 dark:text-blue-300 mb-1">Private Car with Driver:</p>
                       <p className="text-sm text-blue-600 dark:text-blue-400">
                         Most comfortable. Day hire: Rs. 8,000-12,000. Multi-day packages available with hotel bookings
                       </p>
                     </div>
-                    <div className="bg-green-50 dark:bg-green-900/30 p-3 rounded border-l-4 border-green-500">
+                    <div className="bg-green-50 dark:bg-slate-700 p-3 rounded border-l-4 border-green-500">
                       <p className="font-medium text-green-700 dark:text-green-300 mb-1">Local Buses:</p>
                       <p className="text-sm text-green-600 dark:text-green-400">
                         Most economical. To Sigiriya: Rs. 50-80. Limited schedules, authentic local experience
                       </p>
                     </div>
-                    <div className="bg-purple-50 dark:bg-purple-900/30 p-3 rounded border-l-4 border-purple-500">
+                    <div className="bg-purple-50 dark:bg-slate-700 p-3 rounded border-l-4 border-purple-500">
                       <p className="font-medium text-purple-700 dark:text-purple-300 mb-1">Bicycle Rental:</p>
                       <p className="text-sm text-purple-600 dark:text-purple-400">
                         Eco-friendly option. Rs. 500-1,000/day. Suitable for Cave Temple and nearby attractions
@@ -709,7 +689,7 @@ export default function DambullaTownGuide() {
 
         {/* Main Attractions & Experiences */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-10">Authentic Dambulla Town Experiences</h2>
+          <h2 className="text-4xl font-bold mb-10">What to Do in Dambulla Town</h2>
 
           <div className="space-y-12">
             {/* Dambulla Market */}
@@ -723,7 +703,7 @@ export default function DambullaTownGuide() {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/Dambulla-Market.webp"
                     alt="Bustling Dambulla wholesale market with vendors and fresh produce"
                     width={600}
                     height={400}
@@ -731,30 +711,23 @@ export default function DambullaTownGuide() {
                   />
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      The Dambulla Dedicated Economic Centre is not just a market - it&apos;s the agricultural heartbeat of
-                      Sri Lanka. This massive complex, covering over 27 hectares, comes alive every day before dawn as
-                      trucks loaded with fresh produce arrive from farms across the island. By 4:00 AM, the market is
-                      buzzing with activity as wholesale traders, retailers, and buyers from across the country gather
-                      to trade everything from exotic tropical fruits to the freshest vegetables you&apos;ve ever seen.
+                      The Dambulla Dedicated Economic Centre is the biggest wholesale market in Sri Lanka.
+                      Trucks arrive through the night, and by 4 AM trading is in full swing. Farmers, merchants,
+                      and buyers from all over the country come here daily to trade fruits and vegetables.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Walking through this market is like experiencing a symphony of Sri Lankan agriculture. The air is
-                      filled with the sweet aroma of ripe mangoes, the earthy scent of fresh root vegetables, and the
-                      spicy fragrance of chilies and herbs. Vendors call out prices in Sinhala and Tamil, creating a
-                      multilingual chorus that reflects Sri Lanka&apos;s diverse culture. The colors are absolutely stunning
-                      - pyramids of bright red tomatoes, mountains of golden bananas, and rows of deep purple eggplants
-                      create a visual feast.
+                      Walking through early in the morning is worth doing. Prices are called out in Sinhala and Tamil,
+                      stalls overflow with tropical produce, and it has a real, working energy that tourist markets
+                      simply don&apos;t have.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      What makes this market truly special is its role in Sri Lankan society. This isn&apos;t just commerce -
-                      it&apos;s community. Families have been trading here for generations, passing down knowledge about
-                      seasonal produce, quality assessment, and the art of negotiation. The relationships between
-                      farmers, wholesalers, and retailers are built on decades of trust and mutual respect.
+                      Many vendors have traded here for decades. Ask about an unfamiliar fruit or vegetable and
+                      you&apos;ll usually get a full explanation - sometimes a free taste too.
                     </p>
 
-                    <div className="bg-orange-50 p-6 rounded-lg border border-orange-200">
-                      <h4 className="font-semibold text-orange-800 mb-3">Market Experience Highlights:</h4>
-                      <ul className="space-y-3 text-muted-foreground">
+                    <div className="bg-orange-50 dark:bg-slate-700 p-6 rounded-lg border border-orange-200 dark:border-orange-700">
+                      <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-3">Market Experience Highlights:</h4>
+                      <ul className="space-y-3 text-gray-700 dark:text-gray-100">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                           <span>
@@ -805,29 +778,22 @@ export default function DambullaTownGuide() {
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      Dambulla&apos;s food scene is a delicious journey through authentic Sri Lankan cuisine, where family
-                      recipes have been perfected over generations and every meal tells a story. Unlike tourist-oriented
-                      restaurants, the local eateries in Dambulla serve food the way Sri Lankan families have been
-                      preparing it for centuries - with love, tradition, and the freshest ingredients from the nearby
-                      market.
+                      Dambulla has plenty of good local food. Because the wholesale market is right here, restaurants
+                      get fresh ingredients every day. Local rice and curry spots serve proper Sri Lankan food -
+                      not a watered-down tourist version.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      The town&apos;s location at the heart of Sri Lanka&apos;s agricultural region means that restaurants here
-                      have access to the freshest vegetables, fruits, and spices. Local cooks take pride in their curry
-                      preparations, often grinding their own spice mixtures and using traditional clay pots that impart
-                      unique flavors to the food. The result is cuisine that&apos;s more authentic and flavorful than what
-                      you&apos;ll find in most tourist areas.
+                      Many cooks grind their own spice mixes and use clay pots, which gives the curries more depth.
+                      Lunch spots fill up fast between 11 AM and 1 PM with locals - always a good sign.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Street food culture thrives in Dambulla, with vendors setting up stalls near the market, bus
-                      station, and temple areas. These aren&apos;t just quick snacks - they&apos;re culinary traditions passed
-                      down through families. From crispy hoppers filled with spicy sambol to sweet treats like kokis and
-                      kavum, every bite connects you to Sri Lankan food heritage.
+                      Street food stalls near the market, bus stand, and town temples open early and close late.
+                      Hoppers, kottu, and fresh king coconut are all easy to find and very affordable.
                     </p>
 
-                    <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-                      <h4 className="font-semibold text-green-800 mb-3">Must-Try Local Foods:</h4>
-                      <ul className="space-y-3 text-muted-foreground">
+                    <div className="bg-green-50 dark:bg-slate-700 p-6 rounded-lg border border-green-200 dark:border-green-700">
+                      <h4 className="font-semibold text-green-800 dark:text-green-200 mb-3">Must-Try Local Foods:</h4>
+                      <ul className="space-y-3 text-gray-700 dark:text-gray-100">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                           <span>
@@ -892,27 +858,21 @@ export default function DambullaTownGuide() {
                   />
                   <div className="space-y-6">
                     <p className="text-muted-foreground text-lg leading-relaxed">
-                      While tourists flock to the famous cave temples, the real spiritual heart of Dambulla beats in its
-                      community temples where local families have worshipped for generations. These temples aren&apos;t just
-                      religious sites - they&apos;re community centers where people gather for festivals, children learn
-                      traditional values, and the elderly share wisdom with younger generations.
+                      Dambulla has several local Buddhist temples used by the community, not visitors. Morning
+                      and evening prayer sessions are open to anyone who attends quietly and respectfully.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      The town is home to several beautiful Buddhist temples, each with its own character and community.
-                      Morning and evening prayer sessions are open to visitors, offering a chance to experience
-                      authentic Buddhist practices. The sound of chanting, the fragrance of incense, and the peaceful
-                      atmosphere provide a stark contrast to the bustling market life just streets away.
+                      Each temple has its own regular community - the same families attending for decades.
+                      It is calm and contemplative, a nice contrast to the busy market streets nearby.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      Hindu temples also play an important role in Dambulla&apos;s spiritual landscape, reflecting the town&apos;s
-                      multicultural heritage. During festival seasons, the entire town comes alive with colorful
-                      processions, traditional music, and community celebrations that welcome everyone regardless of
-                      their background.
+                      There are Hindu temples in town too. Dambulla is a genuinely mixed community, and during
+                      festival seasons both Buddhist and Hindu celebrations spill out into the streets.
                     </p>
 
-                    <div className="bg-purple-50 p-6 rounded-lg border border-purple-200">
-                      <h4 className="font-semibold text-purple-800 mb-3">Spiritual Experiences:</h4>
-                      <ul className="space-y-3 text-muted-foreground">
+                    <div className="bg-purple-50 dark:bg-slate-700 p-6 rounded-lg border border-purple-200 dark:border-purple-700">
+                      <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-3">Spiritual Experiences:</h4>
+                      <ul className="space-y-3 text-gray-700 dark:text-gray-100">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                           <span>
@@ -951,7 +911,7 @@ export default function DambullaTownGuide() {
        
         {/* Local Life & Culture */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-10">Immerse Yourself in Local Life & Culture</h2>
+          <h2 className="text-4xl font-bold mb-10">Local Life & Culture</h2>
           <div className="grid lg:grid-cols-2 gap-10">
             <Card className="border-2 border-blue-200">
               <CardHeader className="bg-gradient-to-r from-blue-50 to-cyan-50">
@@ -962,41 +922,36 @@ export default function DambullaTownGuide() {
                 <div className="space-y-4">
                   <div className="border-l-4 border-blue-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Early Morning (4:00-7:00 AM)</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      The town awakens with the arrival of produce trucks at the market. Temple bells ring for morning
-                      prayers, and the aroma of fresh hoppers and tea fills the air as breakfast stalls open. This is
-                      when Dambulla is most authentic - before the tourist buses arrive and when locals go about their
-                      daily routines.
+                    <p className="text-sm text-muted-foregroundutedort mb-2">
+                      Produce trucks arrive from midnight. By 4 AM the market is busy and the tea stalls are open.
+                      Temple bells ring for morning prayers. This is the most local time of day.
                     </p>
                     <p className="text-xs text-blue-600 font-medium">Best time to experience authentic local life</p>
                   </div>
 
                   <div className="border-l-4 border-green-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Mid-Morning (7:00-11:00 AM)</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Children walk to school in crisp white uniforms, shops open their shutters, and the market reaches
-                      peak activity. Local buses arrive and depart with their distinctive horn sounds, and office
-                      workers grab quick breakfasts from street vendors. The town buzzes with productive energy.
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      Children head to school, shops open, and the market hits its peak. Buses come and go.
+                      Good time to walk around and grab a street food breakfast.
                     </p>
                     <p className="text-xs text-green-600 font-medium">Perfect for market visits and street food</p>
                   </div>
 
                   <div className="border-l-4 border-orange-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Afternoon (11:00 AM-4:00 PM)</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      The pace slows as the tropical heat intensifies. Many shops close for lunch and afternoon rest.
-                      This is when families gather for rice and curry meals, and when you can find quiet corners to
-                      observe daily life. Local restaurants serve their best traditional meals during this time.
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      Things slow down in the heat. Some shops close for lunch. A good time to sit in a local
+                      restaurant and have a proper rice and curry meal.
                     </p>
                     <p className="text-xs text-orange-600 font-medium">Ideal for authentic lunch experiences</p>
                   </div>
 
                   <div className="border-l-4 border-purple-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Evening (4:00-8:00 PM)</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      The town comes alive again as temperatures cool. Families visit temples for evening prayers,
-                      children play in temple courtyards, and street food vendors set up for the evening crowd. This is
-                      the most social time of day, when community bonds are strongest.
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      Cooler air brings everyone outside. Families head to temples, kids play in the courtyards,
+                      and street food stalls set up for the evening crowd. The most social time of day.
                     </p>
                     <p className="text-xs text-purple-600 font-medium">
                       Best time for temple visits and community interaction
@@ -1015,10 +970,9 @@ export default function DambullaTownGuide() {
                 <div className="space-y-4">
                   <div className="border-l-4 border-green-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Language & Communication</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      While many people speak basic English, learning a few Sinhala phrases will open hearts and doors.
-                      &quot;Ayubowan&quot; (may you live long) is a traditional greeting that shows respect. Most locals are
-                      patient and helpful with visitors who make an effort to communicate in their language.
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      Not everyone speaks fluent English but most people are patient. Try &quot;Ayubowan&quot; as a
+                      greeting and &quot;Sthuthi&quot; for thank you - just making the effort goes a long way.
                     </p>
                     <p className="text-xs text-green-600 font-medium">
                       Basic phrases: &quot;Sthuthi&quot; (thank you), &quot;Kiyawada?&quot; (how much?)
@@ -1027,10 +981,9 @@ export default function DambullaTownGuide() {
 
                   <div className="border-l-4 border-blue-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Market Interactions</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Bargaining is expected in markets, but do it with a smile and respect. Vendors appreciate
-                      customers who show genuine interest in their products. Don&apos;t be afraid to ask about unfamiliar
-                      fruits or vegetables - locals love sharing knowledge about their produce.
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      Bargaining is normal in the market - start around 70-80% of the asking price and keep
+                      it friendly. Ask about unfamiliar produce; vendors are happy to explain and often let you taste.
                     </p>
                     <p className="text-xs text-blue-600 font-medium">
                       Start bargaining at about 70% of the asking price
@@ -1039,20 +992,18 @@ export default function DambullaTownGuide() {
 
                   <div className="border-l-4 border-purple-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Religious Respect</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      When visiting local temples, dress modestly and remove shoes. Don&apos;t point your feet toward Buddha
-                      statues or monks. If invited to participate in ceremonies, follow the lead of locals. Photography
-                      is usually okay, but ask permission first.
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      Dress modestly and remove shoes at all temples. Don&apos;t point your feet toward Buddha statues
+                      or monks. Ask before taking photos inside the temple.
                     </p>
                     <p className="text-xs text-purple-600 font-medium">White clothing is preferred for temple visits</p>
                   </div>
 
                   <div className="border-l-4 border-orange-500 pl-4">
                     <h4 className="font-semibold text-lg mb-2">Hospitality Culture</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Sri Lankan hospitality is legendary, and Dambulla locals embody this tradition. If invited to
-                      someone&apos;s home, it&apos;s a great honor. Bring a small gift like sweets or fruit. Don&apos;t be surprised if
-                      you&apos;re offered tea or a meal - refusing might be considered rude.
+                    <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      If someone offers you tea, accept it. Refusing can come across as rude. Sri Lankan
+                      hospitality is genuine - people are not looking for anything in return.
                     </p>
                     <p className="text-xs text-orange-600 font-medium">
                       Always accept at least a cup of tea when offered
@@ -1066,15 +1017,15 @@ export default function DambullaTownGuide() {
 
         {/* Practical Information */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-10">Practical Guide to Dambulla Town</h2>
+          <h2 className="text-4xl font-bold mb-10">Practical Information</h2>
           <div className="grid lg:grid-cols-2 gap-10">
             <Card className="border-2 border-yellow-200">
-              <CardHeader className="bg-gradient-to-r from-yellow-50 to-orange-50">
-                <CardTitle className="text-2xl text-yellow-700">Getting Around & Transportation</CardTitle>
+              <CardHeader className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:bg-slate-800 dark:[background-image:none]">
+                <CardTitle className="text-2xl text-yellow-700 dark:text-yellow-300">Getting Around & Transportation</CardTitle>
               </CardHeader>
               <CardContent className="p-6 space-y-6">
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-yellow-800">Local Transportation</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-yellow-800 dark:text-yellow-200">Local Transportation</h4>
                   <div className="space-y-3">
                     <div className="bg-yellow-50 p-3 rounded border-l-4 border-yellow-500">
                       <p className="font-medium text-yellow-700 mb-1">Tuk-Tuks (Three-Wheelers):</p>
@@ -1106,7 +1057,7 @@ export default function DambullaTownGuide() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-yellow-800">Intercity Connections</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-yellow-800 dark:text-yellow-200">Intercity Connections</h4>
                   <div className="space-y-2 text-sm">
                     <p>
                       <strong>To Colombo:</strong> Regular buses (3 hours, Rs. 200-400) or private transport
@@ -1123,19 +1074,19 @@ export default function DambullaTownGuide() {
                     <p>
                       <strong>To Anuradhapura:</strong> 1.5 hours by bus (Rs. 150-250)
                     </p>
-                    <p className="text-yellow-600 font-medium">Bus station located near the main market area</p>
+                    <p className="text-yellow-600 dark:text-yellow-400 font-medium">Bus station located near the main market area</p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             <Card className="border-2 border-red-200">
-              <CardHeader className="bg-gradient-to-r from-red-50 to-pink-50">
-                <CardTitle className="text-2xl text-red-700">Accommodation & Practical Tips</CardTitle>
+              <CardHeader className="bg-gradient-to-r from-red-50 to-pink-50 dark:bg-slate-800 dark:[background-image:none]">
+                <CardTitle className="text-2xl text-red-700 dark:text-red-300">Accommodation & Practical Tips</CardTitle>
               </CardHeader>
               <CardContent className="p-6 space-y-6">
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-red-800">Where to Stay</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-red-800 dark:text-red-200">Where to Stay</h4>
                   <div className="space-y-3">
                     <div className="bg-red-50 p-3 rounded border-l-4 border-red-500">
                       <p className="font-medium text-red-700 mb-1">Budget Guesthouses (Rs. 2,000-4,000):</p>
@@ -1159,7 +1110,7 @@ export default function DambullaTownGuide() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-red-800">Essential Services</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-red-800 dark:text-red-200">Essential Services</h4>
                   <div className="space-y-2 text-sm">
                     <p>
                       <strong>Banks & ATMs:</strong> Several banks with ATMs near market area
@@ -1179,14 +1130,14 @@ export default function DambullaTownGuide() {
                     <p>
                       <strong>Police Station:</strong> Tourist police available for assistance
                     </p>
-                    <p className="text-red-600 font-medium">
+                    <p className="text-red-600 dark:text-red-400 font-medium">
                       Most services concentrated around market and bus station area
                     </p>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3 text-red-800">Money & Shopping</h4>
+                  <h4 className="font-semibold text-lg mb-3 text-red-800 dark:text-red-200">Money & Shopping</h4>
                   <div className="space-y-2 text-sm">
                     <p>
                       <strong>Currency:</strong> Sri Lankan Rupees (LKR) - carry cash for local purchases
@@ -1203,7 +1154,7 @@ export default function DambullaTownGuide() {
                     <p>
                       <strong>Market Hours:</strong> 4:00 AM - 6:00 PM (peak: 6:00-10:00 AM)
                     </p>
-                    <p className="text-red-600 font-medium">Always carry small bills for street vendors and tuk-tuks</p>
+                    <p className="text-red-600 dark:text-red-400 font-medium">Always carry small bills for street vendors and tuk-tuks</p>
                   </div>
                 </div>
               </CardContent>
@@ -1213,44 +1164,36 @@ export default function DambullaTownGuide() {
 
         {/* Final Inspirational Section */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 border-2 border-green-200 overflow-hidden">
+          <Card className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 dark:bg-slate-800 dark:[background-image:none] border-2 border-green-200 overflow-hidden">
             <CardHeader className="text-center pb-6">
-              <CardTitle className="text-3xl text-green-800 mb-4">
-                Your Authentic Dambulla Town Adventure Awaits
+              <CardTitle className="text-3xl text-green-800 dark:text-white mb-4">
+                Ready to Visit Dambulla?
               </CardTitle>
             </CardHeader>
             <CardContent className="px-8 pb-8">
               <div className="space-y-6 text-center">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Dambulla town offers something that no tourist attraction can provide - the authentic soul of Sri
-                  Lanka. Here, in the bustling markets, family-run restaurants, and community temples, you&apos;ll discover
-                  the real heart of this beautiful island nation. This is where Sri Lankan hospitality isn&apos;t a business
-                  strategy, but a genuine way of life that has been passed down through generations.
+                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Dambulla is more than a quick stop before the cave temples. The market, the food, the local
+                  temples, and the people all add up to something genuine that most tourist spots can&apos;t offer.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Every interaction in Dambulla is an opportunity to connect with the local community and understand Sri
-                  Lankan culture from the inside. Whether you&apos;re sharing a cup of tea with a market vendor, learning to
-                  make hoppers from a local family, or joining evening prayers at a neighborhood temple, you&apos;re not just
-                  observing Sri Lankan life - you&apos;re becoming part of it.
+                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                  You don&apos;t need a full itinerary here. Walk the market in the morning, find a local rice and curry
+                  spot for lunch, visit a community temple in the evening. That is often enough to feel like you
+                  actually spent time in Sri Lanka rather than just passed through.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  The memories you&apos;ll create in Dambulla town will be different from typical tourist experiences.
-                  They&apos;ll be personal, authentic, and deeply meaningful. You&apos;ll remember the taste of fresh king coconut
-                  on a hot afternoon, the sound of temple bells mixing with market calls, and the warmth of people who
-                  welcomed you not as a tourist, but as a friend.
+                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Wake up before sunrise at least once. The wholesale market before dawn, a cup of tea at a roadside
+                  stall, the town slowly coming to life - it&apos;s the kind of experience you don&apos;t plan but always remember.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Take time to slow down and embrace the rhythm of local life. Wake up early to experience the market at
-                  its most vibrant, linger over meals to savor authentic flavors, and don&apos;t be afraid to strike up
-                  conversations with locals. Dambulla town rewards those who approach it with curiosity, respect, and an
-                  open heart.
+                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                  Come with no big expectations. Be curious and respectful. Dambulla will do the rest.
                 </p>
-                <div className="bg-white/70 p-6 rounded-xl border border-green-200 mt-8">
-                  <p className="text-xl font-semibold text-green-800 mb-2">
-                    Embrace the authentic spirit of Sri Lanka in beautiful Dambulla! 🏪🥥🙏✨
+                <div className="bg-white/70 dark:bg-slate-700 p-6 rounded-xl border border-green-200 dark:border-slate-600 mt-8">
+                  <p className="text-xl font-semibold text-green-800 dark:text-green-300 mb-2">
+                    Dambulla - see Sri Lanka as it actually is. 🏪🥥🙏
                   </p>
-                  <p className="text-sm text-green-600">
-                    Experience real Sri Lankan hospitality and create memories that will last a lifetime
+                  <p className="text-sm text-green-600 dark:text-green-400">
+                    A real town, real food, real people. Worth more than an afternoon.
                   </p>
                 </div>
               </div>
