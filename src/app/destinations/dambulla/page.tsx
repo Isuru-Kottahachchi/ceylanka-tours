@@ -1060,19 +1060,19 @@ export default function DambullaTownGuide() {
                   <h4 className="font-semibold text-lg mb-3 text-yellow-800 dark:text-yellow-200">Intercity Connections</h4>
                   <div className="space-y-2 text-sm">
                     <p>
-                      <strong>To Colombo:</strong> Regular buses (3 hours, Rs. 200-400) or private transport
+                      <strong>To Colombo:</strong> Regular buses (3 hours) or private transport
                     </p>
                     <p>
-                      <strong>To Kandy:</strong> 1.5 hours by bus (Rs. 100-200) or car
+                      <strong>To Kandy:</strong> 1.5 hours by bus or car
                     </p>
                     <p>
-                      <strong>To Sigiriya:</strong> 30 minutes by tuk-tuk or bus (Rs. 50-100)
+                      <strong>To Sigiriya:</strong> 30 minutes by tuk-tuk or bus
                     </p>
                     <p>
-                      <strong>To Polonnaruwa:</strong> 1 hour by bus (Rs. 80-150)
+                      <strong>To Polonnaruwa:</strong> 1.5 hours by bus
                     </p>
                     <p>
-                      <strong>To Anuradhapura:</strong> 1.5 hours by bus (Rs. 150-250)
+                      <strong>To Anuradhapura:</strong> 1.5 hours by bus
                     </p>
                     <p className="text-yellow-600 dark:text-yellow-400 font-medium">Bus station located near the main market area</p>
                   </div>
