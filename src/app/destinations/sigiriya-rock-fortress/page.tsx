@@ -7,6 +7,7 @@ import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import InsuranceBanner from '@/components/insurance-banner'
+import { featureFlags } from "@/lib/feature-flags"
 
 export const metadata: Metadata = {
   title: "Sigiriya Rock Fortress: Complete Travel Guide 2025 | Ancient Wonder of Sri Lanka",
@@ -71,7 +72,13 @@ export default function SigiriyaTravelGuide() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Sigiriya: The Lion Rock</h2>
+          <div className="flex flex-wrap items-center gap-3 mb-6">
+            <h2 className="text-3xl font-bold text-foreground">Welcome to Sigiriya: The Lion Rock</h2>
+            <Badge variant="outline" className="border-green-600 text-green-700 dark:border-green-500 dark:text-green-300">
+              <CheckCircle className="w-4 h-4 mr-1" />
+              Fact checked
+            </Badge>
+          </div>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
               Imagine climbing to a palace in the clouds, built over 1,500 years ago! That&apos;s exactly what awaits you at
@@ -182,7 +189,7 @@ export default function SigiriyaTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-orange-500" />
                     <span>
-                      <strong>Climb Time:</strong> 1-3 hours round trip (depending on pace and fitness level)
+                      <strong>Climb Time:</strong> Allow about 2 to 3 hours for the climb and short stops (Depending on your pace and interest in exploring the site)
                     </span>
                   </div>
                 </div>
@@ -204,8 +211,8 @@ export default function SigiriyaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 170km (105 miles)</li>
-                      <li>• <strong>Duration:</strong> 3.5-4 hours</li>                     
+                      <li>• <strong>Distance:</strong> Nearly 174 km by road</li>
+                      <li>• <strong>Duration:</strong> Nearly 4 hours</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
                   </div>
@@ -213,14 +220,15 @@ export default function SigiriyaTravelGuide() {
                     <h4 className="font-semibold mb-3">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo → Dambulla/Habarana → Sigiriya</li>
-                      <li>• <strong>Duration:</strong> 4-5 hours total</li>
-                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                      <li>• <strong>Duration:</strong> Usually longer than a private car trip</li>
+                      <li>• <strong>Cost:</strong> Check current bus fares before you travel</li>
                       <li>• <strong>Note:</strong> Requires bus change in Dambulla or Habarana</li>
                     </ul>
                   </div>
                 </div>
 
                 {/* Full Width Ceylanka Tours Recommendation */}
+                {featureFlags.showTours && (
                 <div data-promo="true" className="p-3 theme-notice-box rounded-lg shadow-md">
                   <p className="text-xs theme-notice-text mb-2">
                     <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Sigiriya. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
@@ -260,6 +268,7 @@ export default function SigiriyaTravelGuide() {
                     </div>
                   </div>
                 </div>
+                )}
                 <div className="mt-4 p-3 theme-info-box rounded-lg">
                   <p className="text-sm theme-info-text">
                     <strong>💡 Pro Tip:</strong> Start early (6-7 AM) from Colombo to avoid traffic and reach Sigiriya before the midday heat.
@@ -320,7 +329,7 @@ export default function SigiriyaTravelGuide() {
                 1400s. Today, people from all over the world visit Sigiriya because it shows how clever and skilled
                 ancient builders were.
               </p>
-              <h1>The forgotten rock fortress remained hidden in the jungle until British Army Major Jonathan Forbes stumbled upon it in 1831, sparking the first systematic archaeological studies that would eventually uncover the incredible secrets of King Kashyapa&apos;s ancient citadel.</h1>
+              <p className="text-lg font-medium text-foreground">The forgotten rock fortress remained hidden in the jungle until British Army Major Jonathan Forbes stumbled upon it in 1831, sparking the first systematic archaeological studies that would eventually uncover the incredible secrets of King Kashyapa&apos;s ancient citadel.</p>
             </div>
           </div>
 
@@ -331,11 +340,11 @@ export default function SigiriyaTravelGuide() {
               <div>
                 <h4 className="font-semibold mb-2 theme-info-heading">Engineering Marvels</h4>
                 <ul className="space-y-2 text-sm theme-info-text">
-                  <li>• The water gardens still work after 1,500 years</li>
-                  <li>• Rock carvings include a complex drainage system</li>
-                  <li>• The spiral staircase was built without modern tools</li>
-                  <li>• Royal pools were carved directly into solid rock</li>
-                  <li>• The Mirror Wall was polished to reflect like glass</li>
+                  <li>• The water gardens still show the original hydraulic layout even 1,500 years later</li>
+                  <li>• The site includes channels, pools, and drainage features</li>
+                  <li>• The stair routes combine brick steps, rock-cut paths, and later metal stairs</li>
+                  <li>• Some pools were cut directly into the rock</li>
+                  <li>• The Mirror Wall was polished to create a smooth reflective surface</li>
                 </ul>
               </div>
               <div>
@@ -344,7 +353,7 @@ export default function SigiriyaTravelGuide() {
                   <li>• UNESCO World Heritage Site since 1982</li>
                   <li>• Called the &quot;8th Wonder of the World&quot; by many</li>
                   <li>• Influenced by both Indian and local Sri Lankan art</li>
-                  <li>• Inspired architects and engineers for centuries</li>
+                  <li>• Known for its mix of palace planning, art, water gardens, and engineering marvels</li>
                   <li>• Symbol of ancient Sri Lankan achievement</li>
                 </ul>
               </div>
@@ -1237,7 +1246,7 @@ export default function SigiriyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  10 mins
+                  Nearly 10 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1247,7 +1256,7 @@ export default function SigiriyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  2 km from Sigiriya
+                  Nearly 3 km from Sigiriya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/pidurangala-rock" passHref legacyBehavior>
@@ -1266,7 +1275,7 @@ export default function SigiriyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  25 mins
+                  Nearly 30 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1276,7 +1285,7 @@ export default function SigiriyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  20 km from Sigiriya
+                  Nearly 19 km from Sigiriya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/dambulla-cave-temple" passHref legacyBehavior>
@@ -1295,7 +1304,7 @@ export default function SigiriyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  40 mins
+                  Nearly 25 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1305,7 +1314,7 @@ export default function SigiriyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  30 km from Sigiriya
+                  Nearly 16 km from Sigiriya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/minneriya-national-park" passHref legacyBehavior>
@@ -1324,7 +1333,7 @@ export default function SigiriyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  20 mins
+                  Nearly 25 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1334,7 +1343,7 @@ export default function SigiriyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  15 km from Sigiriya
+                  Nearly 17 km from Sigiriya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/habarana" passHref legacyBehavior>
@@ -1353,7 +1362,7 @@ export default function SigiriyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  1.5 hours
+                  Nearly 1 hour 20 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1363,7 +1372,7 @@ export default function SigiriyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  75 km from Sigiriya
+                  Nearly 58 km from Sigiriya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/polonnaruwa" passHref legacyBehavior>
@@ -1382,7 +1391,7 @@ export default function SigiriyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  2 hours
+                  Nearly 1.5 hours
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1392,39 +1401,10 @@ export default function SigiriyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  90 km from Sigiriya
+                  Nearly 74 km from Sigiriya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/anuradhapura" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative h-48">
-                <Image
-                  src="/Wasgamuwa-National-Park.jpg"
-                  alt="Wasgamuwa National Park with elephants and wildlife"
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  1.5 hours
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Wasgamuwa National Park</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Less crowded safari park known for elephants, sloth bears, and diverse birdlife. Peaceful alternative to busier parks.
-                </p>
-                <div className="flex items-center text-xs text-blue-600 mb-2">
-                  <MapPin className="w-3 h-3 mr-1" />
-                  65 km from Sigiriya
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/wasgamuwa-national-park" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -1440,7 +1420,7 @@ export default function SigiriyaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  2 hours
+                  Nearly 1 hour 45 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1450,7 +1430,7 @@ export default function SigiriyaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  85 km from Sigiriya
+                  Nearly 74 km from Sigiriya
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/kurunagala" passHref legacyBehavior>

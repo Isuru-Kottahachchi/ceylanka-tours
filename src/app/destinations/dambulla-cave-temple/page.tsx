@@ -8,6 +8,7 @@ import { ImageCarousel } from "@/components/ui/image-carousel"
 import Link from "next/link"
 import InsuranceBanner from "@/components/insurance-banner"
 import { Button } from "@/components/ui/button"
+import { featureFlags } from "@/lib/feature-flags"
 
 export default function DambullaTravelGuide() {
   return (
@@ -45,19 +46,25 @@ export default function DambullaTravelGuide() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Dambulla: Temple of Ancient Wonders</h2>
-          <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
+          <div className="flex flex-wrap items-center gap-3 mb-6">
+            <h2 className="text-3xl font-bold text-foreground">Dambulla Cave Temple</h2>
+            <Badge variant="outline" className="border-green-600 text-green-700 dark:border-green-500 dark:text-green-300">
+              <CheckCircle className="w-4 h-4 mr-1" />
+              Fact checked
+            </Badge>
+          </div>
+          <div className="prose prose-lg dark:prose-invert max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into a world where ancient artistry meets spiritual devotion at Dambulla Cave Temple, Sri Lanka&apos;s
-              largest and best-preserved cave temple complex. This UNESCO World Heritage site houses over 150 Buddha
-              statues, intricate cave paintings spanning 2,100 square meters, and 2,000 years of continuous Buddhist
-              worship in five magnificent caves carved into a massive rock outcrop.
+              Dambulla Cave Temple is Sri Lanka&apos;s largest and best-preserved cave temple complex. Five caves cut into
+              a granite rock that rises 160 metres above the surrounding plains hold 153 Buddha statues and paintings
+              covering 2,100 square metres of walls and ceilings. It has been an active place of worship for over
+              2,000 years and was listed as a UNESCO World Heritage Site in 1991.
             </p>
             <p className="text-lg">
-              From the moment you climb the steps to this sacred site, youll be transported through centuries of
-              Buddhist art and devotion. Each cave tells a unique story through its stunning murals, sculptures, and
-              architectural features, making Dambulla one of the most important pilgrimage sites in Sri Lanka and a
-              treasure trove for art and history enthusiasts.
+              The caves were first converted to temples by King Valagamba in the 1st century BC. He sheltered here
+              during a 14-year exile from Anuradhapura and renovated the caves as an act of thanks after regaining
+              his throne. The paintings and statues span styles from the 1st century BC through to the 18th century
+              Kandyan period, showing how Buddhist art developed over centuries.
             </p>
           </div>
         </section>
@@ -69,7 +76,7 @@ export default function DambullaTravelGuide() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Star className="w-5 h-5 text-yellow-500" />
-                  Quick Facts of Dambulla Cave Temple Facts
+                  Quick Facts: Dambulla Cave Temple
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -96,7 +103,7 @@ export default function DambullaTravelGuide() {
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-red-500" />
                     <span>
-                      <strong>Distance from Sigiriya:</strong> 19km
+                      <strong>Distance from Sigiriya:</strong> Nearly 17 km by road
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
@@ -167,10 +174,11 @@ export default function DambullaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 161km (100 miles) from Colombo</li>
-                      <li>• <strong>Duration:</strong> 3-3.5 hours</li>                    
+                      <li>• <strong>Distance:</strong> Nearly 158 km from Colombo</li>
+                      <li>• <strong>Duration:</strong> Nearly 3.5 hours</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
+                    {featureFlags.showTours && (
                     <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                       <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                         <strong>🌟 Recommended:</strong> <span className="font-semibold"> Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Dambullla Cave Temple. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
@@ -200,22 +208,23 @@ export default function DambullaTravelGuide() {
                         </div>
                       </div>
                     </div>
+                    )}
                   </div>
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train</h4>
-                    <p>Take the railway from Colombo Fort Station to Kalawewa</p>
+                    <p className="text-sm text-muted-foreground">There is no railway station in Dambulla. If you prefer rail travel, use a nearby station and continue by taxi or bus.</p>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo Fort → Kalawewa station then transfer to a taxi or tuk-tuk and continue to Dambulla Cave Temple</li>
-                      <li>• <strong>Duration:</strong> 5-7 hours</li>
-                      <li>• <strong>Cost:</strong> (Depending on the class, budget-friendly)</li>
+                      <li>• <strong>Route:</strong> Check current train routes and choose the most practical connection before continuing by road</li>
+                      <li>• <strong>Duration:</strong> Travel time depends on the train, connection, and road transfer</li>
+                      <li>• <strong>Cost:</strong> Check current train fares by class</li>
                       {/* <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li> */}
                     </ul>
 
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Route:</strong> Colombo Fort → Dambulla bust stand then transfer to a taxi or tuk-tuk and continue to Dambulla Cave Temple</li>
-                      <li>• <strong>Duration:</strong> 5-7 hours</li>
-                      <li>• <strong>Cost:</strong>(depending on the bus type)</li>
+                      <li>• <strong>Route:</strong> Colombo Fort to Dambulla bus stand, then continue by taxi or tuk-tuk to the temple</li>
+                      <li>• <strong>Duration:</strong> Travel time depends on the bus type and traffic conditions</li>
+                      <li>• <strong>Cost:</strong> Check current fares based on the bus type</li>
                       {/* <li>• <strong>Scenic journey:</strong> Through Coastline road</li> */}
                     </ul>
                   </div>
@@ -225,19 +234,19 @@ export default function DambullaTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-2">From Sigiriya</h4>
                     <p className="text-sm text-muted-foreground">
-                      19km (30 minutes) - Perfect for combining both attractions in one day
+                      Nearly 17 km, nearly 25 to 30 minutes by road. Easy to combine in one day.
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">From Kandy</h4>
                     <p className="text-sm text-muted-foreground">
-                      72km (2 hours) - Regular bus services and private transport available
+                      Nearly 73 km, nearly 2 hours 15 minutes by road. Private transport is the most direct option.
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2">From Colombo</h4>
                     <p className="text-sm text-muted-foreground">
-                      148km (3.5 hours) - Highway route via Kurunegala or scenic route via Kandy
+                      Nearly 158 km, nearly 3.5 hours by road, depending on traffic and route.
                     </p>
                   </div>
 
@@ -264,7 +273,9 @@ export default function DambullaTravelGuide() {
                   </ul>
                   <div className="mt-6 p-4 bg-orange-50 rounded-lg">
                     <p className="text-sm text-orange-800">
-                      <strong>Engineering Fact:</strong> The caves were carved following the natural rock formation&apos;s stress lines, demonstrating the ancient engineers&apos; understanding of structural integrity. This is why the caves have survived for over 2,000 years without collapsing!
+                      <strong>Engineering note:</strong> Drip-ledges were carved above the cave openings to direct
+                      rainwater away from the walls. This simple technique has protected the murals for over 2,000
+                      years and is why the paintings are still visible today.
                     </p>
                   </div>
                 </div>
@@ -321,12 +332,6 @@ export default function DambullaTravelGuide() {
                         caption: "Ancient Cave Paintings",
                         title: "Cave 1 Murals"
                       },
-                      {
-                        src: "/buddha-statue-cave1.jpg",
-                        alt: "Detailed view of Buddha statue in Cave 1",
-                        caption: "Buddha Statue Detail",
-                        title: "Cave 1 Buddha Statue"
-                      }
                     ]}
                   />
                   <div>
@@ -362,17 +367,17 @@ export default function DambullaTravelGuide() {
             <div className="space-y-4">
               <div className="p-4 bg-blue-50 dark:bg-slate-800 rounded-lg border-l-4 border-blue-400 dark:border-blue-500">
                 <p className="text-blue-900 dark:text-blue-200 text-base">
-                  <strong>Did you know?</strong> One of Dambulla Cave Temple&apos;s most intriguing features is the <span className="font-semibold">eternal water drop</span>—a tiny stream of water that drips from the cave ceiling into a stone basin, even during the driest months. This natural phenomenon is considered sacred and is used for rituals and offerings by monks and pilgrims.
+                  <strong>Did you know?</strong> In Cave 2, a small natural spring drips from the ceiling into a stone basin year-round, even in dry months. The water is collected and used in temple rituals.
                 </p>
               </div>
               <div className="p-4 bg-amber-50 dark:bg-slate-800 rounded-lg border-l-4 border-amber-400 dark:border-amber-500">
                 <p className="text-amber-900 dark:text-amber-200 text-base">
-                  <strong>Historical Fact:</strong> King Valagamba (also known as Vattagamani Abhaya) took refuge in these caves in 103 BCE when exiled from Anuradhapura. After regaining his throne 14 years later, he transformed the caves into a magnificent temple complex as a gesture of gratitude.
+                  <strong>Historical note:</strong> King Valagamba (Vattagamani Abhaya) hid in these caves around 103 BC after being driven out of Anuradhapura. He stayed for 14 years, then converted the caves into a temple after reclaiming the throne.
                 </p>
               </div>
               <div className="p-4 bg-green-50 dark:bg-slate-800 rounded-lg border-l-4 border-green-400 dark:border-green-500">
                 <p className="text-green-900 dark:text-green-200 text-base">
-                  <strong>Artistic Marvel:</strong> The cave paintings at Dambulla use a unique technique where natural pigments were mixed with egg whites and wild honey to create colors that have remained vibrant for over 2,000 years!
+                  <strong>Art note:</strong> The earliest paintings in the complex date to the 1st century BC. Later artists painted over and alongside older work, so many walls show multiple layers from different periods.
                 </p>
               </div>
             </div>
@@ -387,9 +392,8 @@ export default function DambullaTravelGuide() {
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      This is the crown jewel of Dambulla, featuring 56 Buddha statues and the most extensive collection
-                      of cave paintings. The ceiling is completely covered with intricate paintings depicting Buddhas
-                      life and Jataka tales (stories of Buddhas previous lives).
+                      Cave 2 is the largest cave in the complex. It has 56 Buddha statues and the most paintings of any cave here.
+                      The entire ceiling is painted with scenes from the Buddha&apos;s life and Jataka tales (stories of past lives).
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -410,7 +414,7 @@ export default function DambullaTravelGuide() {
                       </li>
                     </ul>
                   </div>
-                  <ImageCarousel
+                  {/* <ImageCarousel
                     images={[
                       {
                         src: "/maharaja-lena.jpg",
@@ -431,12 +435,13 @@ export default function DambullaTravelGuide() {
                         title: "Cave 2 Buddha Statues"
                       }
                     ]}
-                  />
+                  /> */}
 
                   {/* Cave 2 Facts */}
                   <div className="mt-6 p-4 bg-purple-50 dark:bg-slate-800 rounded-lg border-l-4 border-purple-400">
                     <p className="text-purple-900 dark:text-purple-200 text-base">
-                      <strong>Did you know?</strong> Cave 2 contains the temple&apos;s oldest paintings, dating back to the 1st century BCE. The ceiling murals use a special technique where artists had to paint while lying on their backs on scaffolding, similar to Michelangelo&apos;s work in the Sistine Chapel!
+                      <strong>Did you know?</strong> Cave 2 contains the oldest paintings in the complex, dating to the
+                      1st century BC. Artists painted the ceiling from scaffolding while lying on their backs. The scaffolding holes are still visible in the rock walls today.
                     </p>
                   </div>
                 </div>
@@ -451,7 +456,7 @@ export default function DambullaTravelGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <ImageCarousel
+                  {/* <ImageCarousel
                     images={[
                       {
                         src: "/maha-alut-viharaya.jpg",
@@ -472,12 +477,14 @@ export default function DambullaTravelGuide() {
                         title: "Cave 3 Statues"
                       }
                     ]}
-                  />
+                  /> */}
 
                   {/* Cave 3 Facts */}
                   <div className="mt-6 p-4 bg-emerald-50 dark:bg-slate-800 rounded-lg border-l-4 border-emerald-400">
                     <p className="text-emerald-900 dark:text-emerald-200 text-base">
-                      <strong>Did you know?</strong> Cave 3 showcases a unique blend of Kandyan era art styles with traditional Buddhist iconography. The artists used vibrant natural pigments including vermilion, lapis lazuli, and gold, creating some of the most colorful murals in ancient Sri Lankan art.
+                      <strong>Did you know?</strong> The Kandyan-period artists who painted Cave 3 used natural mineral
+                      pigments mixed with organic binders. The vivid reds, yellows, and blacks in this cave are still
+                      clear after more than 200 years.
                     </p>
                   </div>
                   <div>
@@ -553,14 +560,13 @@ export default function DambullaTravelGuide() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4 text-muted-foreground">
               <p>
-                At the base of the rock, the modern Golden Temple (built in 2000) serves as the entrance to the cave
-                complex. This impressive structure features a 30-meter tall golden Buddha statue and houses a museum
-                with artifacts and information about the sites history.
+                At the base of the rock is the Golden Temple, built in 2000. It serves as the main entrance to the
+                cave complex. A large golden Buddha statue stands at the front. Inside there is a small museum with
+                information about the site&apos;s history and some religious artifacts.
               </p>
               <p>
-                While not ancient like the caves above, the Golden Temple provides excellent context for your visit and
-                offers air-conditioned relief from the tropical heat. The museum displays include ancient manuscripts,
-                religious artifacts, and detailed explanations of Buddhist philosophy.
+                The museum is worth a quick look before you climb. It gives background on the caves and the different
+                periods of construction. The building also has toilets and a place to store your shoes before entering.
               </p>
               <div className="bg-gold-50 p-4 rounded-lg border border-yellow-200">
                 <h4 className="font-semibold text-yellow-800 mb-2">Golden Temple Features:</h4>
@@ -653,10 +659,9 @@ export default function DambullaTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Entry Fees & Hours</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Foreign adults: 1,500 LKR</li>
-                    <li>• Foreign children: 750 LKR</li>
-                    <li>• SAARC nationals: 250 LKR</li>
-                    <li>• Open: 7:00 AM - 7:00 PM daily</li>
+                    <li>• Check current ticket prices before you visit</li>
+                    <li>• Check current opening hours before you travel</li>
+                    <li>• Prices and access rules can change during holidays and special temple dates</li>
                   </ul>
                 </div>
                 <div>
@@ -671,10 +676,10 @@ export default function DambullaTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Additional Services</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Audio guides available (extra cost)</li>
-                    <li>• Professional guide services</li>
-                    <li>• Photography permits for professionals</li>
-                    <li>• Gift shop and refreshments</li>
+                    <li>• Local guides may be available at busy times</li>
+                    <li>• Shoe storage is usually available near the entrance area</li>
+                    <li>• Small shops and refreshments are often available near the base</li>
+                    <li>• Ask on site about current photography rules</li>
                   </ul>
                 </div>
               </CardContent>
@@ -717,59 +722,35 @@ export default function DambullaTravelGuide() {
           </div>
         </section>
 
-        {/* Sacred Rituals & Ceremonies */}
+        {/* Temple Life */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Sacred Rituals & Ceremonies</h2>
+          <h2 className="text-3xl font-bold mb-6">Temple Life Today</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle>Daily Rituals</CardTitle>
+                <CardTitle>Active Place of Worship</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">Morning Offerings (Buddha Puja)</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Dawn offerings of flowers and incense</li>
-                    <li>• Chanting of Buddhist sutras</li>
-                    <li>• Lighting of oil lamps</li>
-                    <li>• Meditation sessions</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Evening Ceremonies</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Sunset drum ceremonies</li>
-                    <li>• Group meditation</li>
-                    <li>• Evening chanting</li>
-                    <li>• Blessing ceremonies</li>
-                  </ul>
-                </div>
+                <p className="text-sm text-muted-foreground">
+                  Dambulla is not only a historic site, it is still an active Buddhist temple. You may see devotees bringing flowers, lighting oil lamps, or praying quietly inside the caves.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Visitor numbers often rise on Poya days and other religious dates. If you want a quieter visit, choose a normal weekday and arrive early.
+                </p>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>Special Ceremonies</CardTitle>
+                <CardTitle>How to Visit Respectfully</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div>
-                  <h4 className="font-semibold mb-2">Full Moon (Poya) Days</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Special alms giving</li>
-                    <li>• All-night meditation</li>
-                    <li>• Traditional dance offerings</li>
-                    <li>• Mass prayer gatherings</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Annual Festivals</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Vesak celebrations</li>
-                    <li>• Temple anniversary ceremonies</li>
-                    <li>• New Year rituals</li>
-                    <li>• Kathina ceremony</li>
-                  </ul>
-                </div>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Keep your voice low inside the caves</li>
+                  <li>• Follow instructions from temple staff</li>
+                  <li>• Give space to people who are praying</li>
+                  <li>• Do not touch paintings, statues, or cave walls</li>
+                </ul>
               </CardContent>
             </Card>
           </div>
@@ -783,22 +764,20 @@ export default function DambullaTravelGuide() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-lg mb-2">Current Conservation Efforts</h4>
+                    <h4 className="font-semibold text-lg mb-2">Why the Murals Survived</h4>
                     <ul className="text-sm text-muted-foreground space-y-2">
-                      <li>• Climate control systems to protect paintings</li>
-                      <li>• Regular restoration of damaged artwork</li>
-                      <li>• Documentation of art and architecture</li>
-                      <li>• Scientific monitoring of cave conditions</li>
-                      <li>• Protection against water seepage</li>
+                      <li>• Drip-ledges above the cave mouths help carry rainwater away</li>
+                      <li>• The cave interiors are naturally sheltered from direct weather</li>
+                      <li>• The site has been protected as a religious and heritage monument for centuries</li>
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg mb-2">Challenges Faced</h4>
+                    <h4 className="font-semibold text-lg mb-2">What Still Needs Protection</h4>
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li>• Natural weathering of rock surfaces</li>
-                      <li>• Impact of increased tourism</li>
-                      <li>• Maintaining authentic restoration</li>
-                      <li>• Balancing accessibility with preservation</li>
+                      <li>• Moisture and dirt carried in by heavy visitor traffic</li>
+                      <li>• Damage caused by touching painted or carved surfaces</li>
+                      <li>• The need to balance access with long-term preservation</li>
                     </ul>
                   </div>
                 </div>
@@ -808,13 +787,13 @@ export default function DambullaTravelGuide() {
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li>• Follow photography guidelines</li>
                       <li>• Maintain distance from paintings</li>
-                      <li>• Report any damage to authorities</li>
-                      <li>• Support conservation funds</li>
+                      <li>• Do not touch statues, murals, or cave walls</li>
+                      <li>• Follow marked paths and temple instructions</li>
                     </ul>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <p className="text-sm text-green-800">
-                      <strong>Conservation Success:</strong> Thanks to careful preservation efforts, Dambulla&apos;s cave paintings have survived for over two millennia, making them some of the best-preserved ancient Buddhist art in South Asia.
+                  <div className="bg-green-50 dark:bg-slate-800 p-4 rounded-lg">
+                    <p className="text-sm text-green-800 dark:text-gray-300">
+                      One of the simplest but most important preservation features is the carved drip-ledge above each cave opening. It helps keep rainwater off the decorated walls.
                     </p>
                   </div>
                 </div>
@@ -880,7 +859,7 @@ export default function DambullaTravelGuide() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
           <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
-            Extend your Dambulla Cave temple with these incredible destinations within easy reach
+            Other places worth visiting within easy reach of Dambulla Cave Temple
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -894,7 +873,7 @@ export default function DambullaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  30 mins
+                  Nearly 25 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -904,7 +883,7 @@ export default function DambullaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  19 km from Dambulla Cave Temple
+                  Nearly 17 km from Dambulla Cave Temple
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/sigiriya-rock-fortress" passHref legacyBehavior>
@@ -922,7 +901,7 @@ export default function DambullaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  45 mins
+                  Nearly 35 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -932,7 +911,7 @@ export default function DambullaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  30 km from Dambulla Cave Temple
+                  Nearly 27 km from Dambulla Cave Temple
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/minneriya-national-park" passHref legacyBehavior>
@@ -950,7 +929,7 @@ export default function DambullaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                  1 hours 50 mins
+                  Nearly 30 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -960,98 +939,10 @@ export default function DambullaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  22 km from Dambulla Cave Temple
+                  Nearly 20 km from Dambulla Cave Temple
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/pidurangala-rock" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative h-48">
-                <Image
-                  src="/Bandarawela.jpeg"
-                  alt="Bandarawela town with rolling hills and tea plantations in the background"
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-                <div className="absolute top-2 right-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
-                  1.5 hours
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Bandarawela</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Charming hill station with cooler climate, beautiful views, and the historic Bandarawela Hotel.
-                </p>
-                <div className="flex items-center text-xs text-blue-600 mb-2">
-                  <MapPin className="w-3 h-3 mr-1" />
-                  45 km from Dambulla Cave Temple
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/bandarawela" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Haputhale */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative h-48">
-                <Image
-                  src="/Haputhale.jpeg"
-                  alt="Haputhale railway station and surrounding tea plantation landscapes"
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-                <div className="absolute top-2 right-2 bg-purple-600 text-white text-xs px-2 py-1 rounded">
-                  1 hour
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Haputhale</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Small town famous for Lipton&apos;s Seat viewpoint and Adisham Monastery with panoramic views.
-                </p>
-                <div className="flex items-center text-xs text-blue-600 mb-2">
-                  <MapPin className="w-3 h-3 mr-1" />
-                  30 km from Dambulla Cave Temple
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/haputhale" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Badulla */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative h-48">
-                <Image
-                  src="/Badulla.jpeg"
-                  alt="Badulla town nestled in mountains with ancient temples and railway heritage"
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-                <div className="absolute top-2 right-2 bg-orange-600 text-white text-xs px-2 py-1 rounded">
-                  2.5 hours
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Badulla</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  End point of the famous hill country train journey with ancient temples and beautiful waterfalls.
-                </p>
-                <div className="flex items-center text-xs text-blue-600 mb-2">
-                  <MapPin className="w-3 h-3 mr-1" />
-                  55 km from Dambulla Cave Temple
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/badulla" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -1068,7 +959,7 @@ export default function DambullaTravelGuide() {
                   className="object-cover rounded-t-lg"
                 />
                 <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded">
-                  3 hours
+                  Nearly 2 hours 15 mins
                 </div>
               </div>
               <CardContent className="p-4">
@@ -1078,40 +969,10 @@ export default function DambullaTravelGuide() {
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
-                  75 km from Dambulla Cave Temple
+                  Nearly 73 km from Dambulla Cave Temple
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/kandy" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Adam&apos;s Peak */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <div className="relative h-48">
-                <Image
-                  src="/Adams-peak.jpeg"
-                  alt="Adam&apos;s Peak mountain with pilgrims climbing the sacred summit at sunrise"
-                  fill
-                  className="object-cover rounded-t-lg"
-                />
-                <div className="absolute top-2 right-2 bg-yellow-600 text-white text-xs px-2 py-1 rounded">
-                  4 hours
-                </div>
-              </div>
-              <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Adam&apos;s Peak</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Sacred mountain pilgrimage site famous for sunrise views and the sacred footprint at the summit.
-                </p>
-                <div className="flex items-center text-xs text-blue-600 mb-2">
-                  <MapPin className="w-3 h-3 mr-1" />
-                  90 km from 
-                </div>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/adams-peak" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>
@@ -1124,23 +985,23 @@ export default function DambullaTravelGuide() {
             <h3 className="text-xl font-bold mb-4 text-center">Suggested Day Trip Combinations</h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">Cultural triangle trip</h4>
+                <h4 className="font-semibold text-green-700 dark:text-green-300 mb-2">Cultural Triangle</h4>
                 <p className="text-sm text-muted-foreground mb-2">
-                  Dambulla Cave Temple → Ambewela Farm → Haputhale (Lipton&apos;s Seat) → Return
+                  Dambulla Cave Temple → Sigiriya Rock Fortress → Pidurangala Rock → Return
                 </p>
                 <div className="flex items-center text-xs text-green-600">
                   <Clock className="w-3 h-3 mr-1" />
-                  Full day trip (8-10 hours)
+                  Full day trip (8–10 hours)
                 </div>
               </div>
               <div>
-                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Hill Country Explorer</h4>
+                <h4 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">Wildlife &amp; History</h4>
                 <p className="text-sm text-muted-foreground mb-2">
-                  Dambulla Cave Temple → Ella (Nine Arch Bridge) → Bandarawela → Return
+                  Dambulla Cave Temple → Minneriya National Park → Return
                 </p>
                 <div className="flex items-center text-xs text-blue-600">
                   <Clock className="w-3 h-3 mr-1" />
-                  Full day trip (10-12 hours)
+                  Full day trip (8–10 hours)
                 </div>
               </div>
             </div>
@@ -1159,19 +1020,19 @@ export default function DambullaTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">From Sigiriya</h4>
                   <p className="text-sm text-muted-foreground">
-                    19km (30 minutes) - Perfect for combining both attractions in one day
+                    Nearly 17 km, nearly 25 to 30 minutes by road. Perfect for combining both attractions in one day.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">From Kandy</h4>
                   <p className="text-sm text-muted-foreground">
-                    72km (2 hours) - Regular bus services and private transport available
+                    Nearly 73 km, nearly 2 hours 15 minutes by road. Private transport is the most direct option.
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">From Colombo</h4>
                   <p className="text-sm text-muted-foreground">
-                    148km (3.5 hours) - Highway route via Kurunegala or scenic route via Kandy
+                    Nearly 158 km, nearly 3.5 hours by road, depending on traffic and route.
                   </p>
                 </div>
                 <div>
@@ -1194,19 +1055,19 @@ export default function DambullaTravelGuide() {
                 <div>
                   <h4 className="font-semibold mb-2">Cultural Triangle Sites</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Sigiriya Rock Fortress (19km)</li>
-                    <li>• Polonnaruwa Ancient City (69km)</li>
-                    <li>• Anuradhapura Sacred City (69km)</li>
-                    <li>• Ritigala Forest Monastery (45km)</li>
+                    <li>• Sigiriya Rock Fortress, nearly 17 km by road</li>
+                    <li>• Polonnaruwa Ancient City, nearly 64 km by road</li>
+                    <li>• Anuradhapura Sacred City, nearly 64 km by road</li>
+                    <li>• Ritigala Forest Monastery</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Natural Attractions</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Minneriya National Park (50km)</li>
-                    <li>• Kaudulla National Park (35km)</li>
-                    <li>• Pidurangala Rock (20km)</li>
-                    <li>• Nalanda Gedige Temple (30km)</li>
+                    <li>• Minneriya National Park, nearly 27 km by road</li>
+                    <li>• Kaudulla National Park</li>
+                    <li>• Pidurangala Rock, nearly 20 km by road</li>
+                    <li>• Nalanda Gedige Temple</li>
                   </ul>
                 </div>
                 <div className="bg-blue-50 p-3 rounded-lg">
@@ -1222,25 +1083,23 @@ export default function DambullaTravelGuide() {
 
         {/* Final Tips */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-r from-purple-50 to-gold-50 border-purple-200">
+          <Card className="bg-gradient-to-r from-purple-50 to-gold-50 border-purple-200 dark:bg-slate-800 dark:[background-image:none]">
             <CardHeader>
-              <CardTitle className="text-purple-800">Your Dambulla Cave Temple Experience</CardTitle>
+              <CardTitle className="text-purple-800 dark:text-white">Visiting Dambulla Cave Temple</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Dambulla Cave Temple offers one of Sri Lanka&apos;s most profound cultural and spiritual experiences. As you
-                explore these ancient caves, youre walking through 2,000 years of continuous Buddhist devotion and
-                artistic achievement. Each cave tells a story, each painting holds meaning, and each statue represents
-                centuries of faith and craftsmanship.
+                Allow 2–3 hours for a proper visit. Start with the Golden Temple at the base, then climb the steps
+                to the caves. The climb takes about 20 minutes on a stone staircase. Shoes must be removed before
+                entering any cave.
               </p>
               <p className="text-muted-foreground mb-4">
-                Take your time to appreciate the intricate details of the cave paintings, the serene expressions of the
-                Buddha statues, and the peaceful atmosphere that has drawn pilgrims for millennia. Remember that this is
-                not just a tourist attraction but a living temple where people come to pray and find spiritual solace.
+                Cave 2 takes the most time. Move slowly and look at both the walls and ceiling. Flash photography
+                damages the paint, so turn it off. Avoid touching any surfaces.
               </p>
-              <p className="text-muted-foreground font-medium">
-                May your visit to Dambulla bring you peace, wonder, and a deeper appreciation for Sri Lankas incredible
-                cultural heritage! 🙏✨🎨
+              <p className="text-muted-foreground">
+                Early morning (before 9 AM) is the best time. It is cooler, less crowded, and the light inside the
+                caves is better. Avoid Poya days if you want fewer people.
               </p>
             </CardContent>
           </Card>
