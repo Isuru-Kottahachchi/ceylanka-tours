@@ -7,11 +7,11 @@ import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
   title: "Nelligala International Buddhist Center | Complete Guide 2025 | Mountain Temple",
-  description: "Explore Nelligala Temple, a modern Buddhist sanctuary with panoramic views of Kandy. Complete guide to meditation halls, Buddha statues, and cultural significance.",
-  keywords: "Nelligala Temple, Buddhist meditation center, Kandy mountains, Sri Lanka temples, panoramic views, Buddha statues, international Buddhist center",
+  description: "Guide to Nelligala Temple, a hilltop Buddhist site near Kandy with meditation spaces, viewpoints, and a Saman Deva statue.",
+  keywords: "Nelligala Temple, Nelligala International Buddhist Center, Saman Deva statue, Kandy temples, Sri Lanka Buddhist sites, hilltop temple",
   openGraph: {
     title: "Nelligala International Buddhist Center: Complete Guide 2025",
-    description: "Modern Buddhist sanctuary with breathtaking mountain views",
+    description: "Hilltop Buddhist site near Kandy with meditation spaces and wide views",
     type: "article",
     images: ["/nelligala-aerial.jpg"],
   },
@@ -32,7 +32,7 @@ export default function NelligalaTemplePage() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Nelligala Temple</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">International Buddhist Center of Peace</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">Hilltop Buddhist site near Kandy</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-blue-600/80 text-white border-blue-500">
               <MapPin className="w-4 h-4 mr-1" />
@@ -64,19 +64,19 @@ export default function NelligalaTemplePage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <section className="mb-12" id="introduction">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Nelligala: Mountain Sanctuary of Modern Buddhism</h2>
+          <div className="flex flex-wrap items-center gap-3 mb-6">
+            <h2 className="text-3xl font-bold text-foreground">Nelligala: Mountain Sanctuary of Modern Buddhism</h2>
+            <Badge variant="outline" className="border-green-600 text-green-700 dark:border-green-500 dark:text-green-300">
+              <CheckCircle className="w-4 h-4 mr-1" />
+              Fact checked
+            </Badge>
+          </div>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Perched atop a majestic mountain near Kandy, Nelligala International Buddhist Center stands as a 
-              testament to contemporary Buddhist architecture and spiritual practice. This modern sanctuary 
-              combines traditional Sri Lankan temple design with innovative features, creating a unique space 
-              for meditation, learning, and cultural exchange.
+              Nelligala Temple is a modern Buddhist site in the hills near Kandy. People visit for worship, quiet surroundings, and the wide view from the upper grounds.
             </p>
             <p className="text-lg">
-              Rising approximately 2,000 feet above sea level, the temple offers breathtaking panoramic views 
-              of the surrounding mountains and valleys. Beyond its scenic beauty, Nelligala serves as an 
-              important center for international Buddhist studies, meditation retreats, and cultural programs 
-              that bridge ancient wisdom with modern spiritual needs.
+              The site includes temple buildings, open terraces, and prominent statues. It is a popular stop for local visitors and travelers who want a short hill-country temple visit outside the Kandy city area.
             </p>
           </div>
         </section>
@@ -97,25 +97,25 @@ export default function NelligalaTemplePage() {
                   <div className="flex items-center gap-2">
                     <Mountain className="w-4 h-4 text-blue-500" />
                     <span>
-                      <strong>Elevation:</strong> ~2,000 feet above sea level
+                      <strong>Setting:</strong> Hilltop temple complex
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4 text-orange-500" />
                     <span>
-                      <strong>Established:</strong> Late 20th century
+                      <strong>Type:</strong> Modern Buddhist site
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Users className="w-4 h-4 text-green-500" />
                     <span>
-                      <strong>Known For:</strong> International meditation programs
+                      <strong>Known For:</strong> Views, temple grounds, and large statues
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <TreePine className="w-4 h-4 text-purple-500" />
                     <span>
-                      <strong>Environment:</strong> Mountain forest sanctuary
+                      <strong>Environment:</strong> Hill country setting
                     </span>
                   </div>
                 </div>
@@ -137,19 +137,19 @@ export default function NelligalaTemplePage() {
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-blue-500" />
                     <span>
-                      <strong>Distance:</strong> 12km from Kandy city
+                      <strong>Distance from Kandy:</strong> Nearly 13 km by road
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-green-500" />
                     <span>
-                      <strong>Travel Time:</strong> 30 minutes from Kandy
+                      <strong>Drive time from Kandy:</strong> Nearly 35 minutes
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-orange-500" />
                     <span>
-                      <strong>Access:</strong> Paved road to temple entrance
+                      <strong>Access:</strong> Paved road to the temple entrance
                     </span>
                   </div>
                 </div>
@@ -171,16 +171,14 @@ export default function NelligalaTemplePage() {
               <CardContent>
                 <div className="space-y-4">
                   <Image
-                    src="/nelligala-temple.jpg"
+                    src="/Nelligala-Main-Temple.jpeg"
                     alt="Main temple building of Nelligala Buddhist Center"
                     width={600}
                     height={400}
                     className="rounded-lg"
                   />
                   <p className="text-muted-foreground">
-                    The main temple building combines contemporary architecture with traditional Buddhist elements. 
-                    Its distinctive design features clean lines, modern materials, and traditional Sri Lankan 
-                    temple motifs.
+                    The main temple complex includes prayer spaces, terraces, and Buddha statues placed around the upper grounds. The layout mixes modern construction with familiar Sri Lankan temple features, making the site easy to walk through while still feeling like a place of worship.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
@@ -189,49 +187,47 @@ export default function NelligalaTemplePage() {
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Sacred relic chamber</span>
+                      <span>Buddha statues within the main worship area</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Ceremonial spaces</span>
+                      <span>Open ceremonial and viewing spaces</span>
                     </li>
                   </ul>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Buddha Statues */}
+            {/* Saman Deva Statue */}
             <Card>
               <CardHeader>
-                <CardTitle>Sacred Buddha Statues</CardTitle>
-                <CardDescription>Artistic and Spiritual Heritage</CardDescription>
+                <CardTitle>Saman Deva Statue</CardTitle>
+                <CardDescription>One of the notable features at the site</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <Image
-                    src="/nelligala-buddha.jpg"
-                    alt="Buddha statues at Nelligala Temple"
+                    src="/Nelligala.webp"
+                    alt="Saman Deva statue at Nelligala Temple"
                     width={600}
                     height={400}
                     className="rounded-lg"
                   />
                   <p className="text-muted-foreground">
-                    The temple houses several significant Buddha statues, including a large seated Buddha figure 
-                    that overlooks the valley. These statues represent different mudras (hand positions) and 
-                    teachings of Buddhism.
+                    A large Saman Deva statue is one of the features visitors notice at Nelligala. It stands prominently within the temple grounds and is part of the site&apos;s modern visual identity.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Multiple meditation postures</span>
+                      <span>Prominent hilltop landmark</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Traditional craftsmanship</span>
+                      <span>Visible from different points in the grounds</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500" />
-                      <span>Symbolic arrangements</span>
+                      <span>Important photo stop for visitors</span>
                     </li>
                   </ul>
                 </div>
@@ -242,26 +238,26 @@ export default function NelligalaTemplePage() {
 
         {/* Meditation Programs */}
         <section className="mb-16" id="meditation">
-          <h2 className="text-3xl font-bold mb-8">Meditation & Spiritual Programs</h2>
+          <h2 className="text-3xl font-bold mb-8">Worship & Quiet Time</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {/* Daily Programs */}
             <Card>
               <CardHeader>
-                <CardTitle>Daily Meditation</CardTitle>
+                <CardTitle>Quiet Visiting Hours</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Morning chanting</span>
+                    <span>Quiet atmosphere in the morning</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Guided meditation</span>
+                    <span>Space for private worship</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Evening ceremonies</span>
+                    <span>Good time for a slower visit</span>
                   </li>
                 </ul>
               </CardContent>
@@ -270,21 +266,21 @@ export default function NelligalaTemplePage() {
             {/* Retreats */}
             <Card>
               <CardHeader>
-                <CardTitle>Meditation Retreats</CardTitle>
+                <CardTitle>What You See</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Weekend programs</span>
+                    <span>Temple buildings on the upper level</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>International retreats</span>
+                    <span>Open terraces and viewpoints</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Buddhist studies</span>
+                    <span>Statues placed across the grounds</span>
                   </li>
                 </ul>
               </CardContent>
@@ -293,21 +289,21 @@ export default function NelligalaTemplePage() {
             {/* Special Events */}
             <Card>
               <CardHeader>
-                <CardTitle>Cultural Programs</CardTitle>
+                <CardTitle>Visitor Etiquette</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Full moon ceremonies</span>
+                    <span>Dress modestly</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Buddhist festivals</span>
+                    <span>Keep noise low in worship areas</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                    <span>Cultural exchanges</span>
+                    <span>Remove shoes before entering temple buildings</span>
                   </li>
                 </ul>
               </CardContent>
@@ -345,7 +341,7 @@ export default function NelligalaTemplePage() {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                      <span>Free parking available</span>
+                      <span>Open areas for walking and short stops</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
@@ -353,7 +349,7 @@ export default function NelligalaTemplePage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-1" />
-                      <span>Basic refreshments available</span>
+                      <span>Temple grounds with several viewing points</span>
                     </li>
                   </ul>
                 </div>
@@ -364,16 +360,16 @@ export default function NelligalaTemplePage() {
 
         {/* Travel Tips */}
         <section className="mb-12">
-          <Card className="bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50 dark:from-blue-950 dark:via-blue-900 dark:to-blue-950">
+          <Card className="bg-transparent bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50 dark:from-blue-950 dark:via-blue-900 dark:to-blue-950 border-blue-200 dark:border-blue-800">
             <CardContent className="p-8">
               <div className="text-center space-y-4">
-                <h2 className="text-3xl font-bold mb-4">Essential Tips</h2>
-                <div className="max-w-3xl mx-auto text-muted-foreground space-y-2">
-                  <p>• Visit during sunrise or sunset for best views and photography</p>
-                  <p>• Bring a light jacket as mountain temperatures can be cool</p>
+                <h2 className="text-3xl font-bold mb-4 text-slate-900 dark:text-blue-50">Essential Tips</h2>
+                <div className="max-w-3xl mx-auto text-slate-700 dark:text-blue-100 space-y-2">
+                  <p>• Go early or late in the day if you want a calmer visit</p>
+                  <p>• The road climbs near the temple, so drive slowly on the final stretch</p>
                   <p>• Respect silence in meditation areas</p>
-                  <p>• Photography restrictions apply in certain areas</p>
-                  <p>• Consider combining with visits to nearby temples</p>
+                  <p>• Ask before taking close photos near worship spaces</p>
+                  <p>• Wear footwear that is easy to remove</p>
                 </div>
               </div>
             </CardContent>
