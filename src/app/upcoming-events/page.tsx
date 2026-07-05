@@ -33,9 +33,9 @@ const sriLankanFestivals = [
     name: "Esala Perahera",
     location: "Kandy",
     month: 8, // August
-    dates: "August 2-12, 2025",
+    dates: "August 2-12,2026",
     description: "The most spectacular Buddhist festival in Sri Lanka, featuring elephants, dancers, drummers, and the sacred tooth relic procession.",
-    image: "/Kandy.jpeg",
+    image: "/Kandy-Procession.jpg",
     category: "Buddhist",
     duration: "10 days",
     highlights: ["Sacred Tooth Relic", "100+ Decorated Elephants", "Traditional Dancers", "Fire Performers"],
@@ -48,7 +48,7 @@ const sriLankanFestivals = [
     name: "Vesak Festival",
     location: "Nationwide",
     month: 5, // May
-    dates: "May 12, 2025",
+    dates: "May 12,2026",
     description: "The most important Buddhist festival celebrating the birth, enlightenment, and death of Lord Buddha with colorful lanterns and decorations.",
     image: "/JayaSrimahaBodhi.jpeg",
     category: "Buddhist",
@@ -63,7 +63,7 @@ const sriLankanFestivals = [
     name: "Sinhala Tamil New Year",
     location: "Nationwide",
     month: 4, // April
-    dates: "April 13-14, 2025",
+    dates: "April 13-14,2026",
     description: "The traditional New Year celebration marking the end of harvest season with family gatherings, traditional games, and rituals.",
     image: "/placeholder.svg?height=300&width=400",
     category: "Cultural",
@@ -78,7 +78,7 @@ const sriLankanFestivals = [
     name: "Duruthu Perahera",
     location: "Kelaniya",
     month: 1, // January
-    dates: "January 15, 2025",
+    dates: "January 15,2026",
     description: "Annual procession at Kelaniya Raja Maha Vihara commemorating Buddha's first visit to Sri Lanka.",
     image: "/placeholder.svg?height=300&width=400",
     category: "Buddhist",
@@ -93,7 +93,7 @@ const sriLankanFestivals = [
     name: "Poson Festival",
     location: "Mihintale & Anuradhapura",
     month: 6, // June
-    dates: "June 11, 2025",
+    dates: "June 11,2026",
     description: "Celebrates the introduction of Buddhism to Sri Lanka by Arahat Mahinda at the historic Mihintale.",
     image: "/Anuradhapura.jpg",
     category: "Buddhist",
@@ -108,9 +108,9 @@ const sriLankanFestivals = [
     name: "Kataragama Festival",
     location: "Kataragama",
     month: 7, // July
-    dates: "July 20-25, 2025",
+    dates: "July 20-25,2026",
     description: "Multi-religious festival honoring God Kataragama with fire walking, kavadi dancing, and elaborate rituals.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Katharagama-Festival.jpg",
     category: "Hindu",
     duration: "6 days",
     highlights: ["Fire Walking", "Kavadi Dancing", "Religious Rituals", "Multi-faith Participation"],
@@ -123,7 +123,7 @@ const sriLankanFestivals = [
     name: "Vel Festival",
     location: "Colombo",
     month: 8, // August
-    dates: "August 20, 2025",
+    dates: "August 20,2026",
     description: "Hindu festival featuring the ceremonial chariot procession of Lord Murugan's sacred spear from Sea Street to Bambalapitiya.",
     image: "/placeholder.svg?height=300&width=400",
     category: "Hindu",
@@ -138,7 +138,7 @@ const sriLankanFestivals = [
     name: "Deepavali (Festival of Lights)",
     location: "Nationwide (Hindu communities)",
     month: 11, // November
-    dates: "November 1, 2025",
+    dates: "November 1,2026",
     description: "Hindu festival of lights celebrating the victory of light over darkness with oil lamps, fireworks, and sweets.",
     image: "/placeholder.svg?height=300&width=400",
     category: "Hindu",
@@ -153,7 +153,7 @@ const sriLankanFestivals = [
     name: "Christmas Celebrations",
     location: "Nationwide",
     month: 12, // December
-    dates: "December 25, 2025",
+    dates: "December 25,2026",
     description: "Christian celebration featuring midnight masses, carol services, and festive decorations across the island.",
     image: "/placeholder.svg?height=300&width=400",
     category: "Christian",
@@ -168,7 +168,7 @@ const sriLankanFestivals = [
     name: "Navam Perahera",
     location: "Colombo",
     month: 2, // February
-    dates: "February 22-23, 2025",
+    dates: "February 22-23,2026",
     description: "Colorful Buddhist procession in Colombo featuring elephants, dancers, and traditional performances around Viharamahadevi Park.",
     image: "/placeholder.svg?height=300&width=400",
     category: "Buddhist",
@@ -183,7 +183,7 @@ const sriLankanFestivals = [
     name: "Madhu Festival",
     location: "Madhu, Mannar",
     month: 8, // August
-    dates: "August 15, 2025",
+    dates: "August 15,2026",
     description: "Catholic pilgrimage festival to the Shrine of Our Lady of Madhu, attracting thousands of devotees from across the island.",
     image: "/placeholder.svg?height=300&width=400",
     category: "Christian",
@@ -198,7 +198,7 @@ const sriLankanFestivals = [
     name: "Kite Festival",
     location: "Colombo & Coastal Areas",
     month: 9, // September
-    dates: "September 10-11, 2025",
+    dates: "September 10-11,2026",
     description: "Traditional kite flying festival during the windy season, especially popular in coastal areas and Colombo.",
     image: "/placeholder.svg?height=300&width=400",
     category: "Cultural",

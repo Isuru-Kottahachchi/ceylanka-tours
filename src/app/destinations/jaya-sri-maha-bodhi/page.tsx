@@ -1,25 +1,26 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { Calendar, Clock, MapPin, Star, Users, AlertTriangle, Heart, TreePine, Book } from "lucide-react"
+import { Calendar, Clock, MapPin, Star, Users, AlertTriangle, Heart, TreePine, Book, CheckCircle } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { featureFlags } from "@/lib/feature-flags"
 
 export const metadata: Metadata = {
-  title: "Jaya Sri Maha Bodhi: Complete Pilgrimage Guide 2025 | Sacred Bo Tree of Anuradhapura",
+  title: "Jaya Sri Maha Bodhi: Complete Pilgrimage Guide 2026 | Sacred Bo Tree of Anuradhapura",
   description:
     "Discover Jaya Sri Maha Bodhi, the sacred Bo tree in Anuradhapura, Sri Lanka. Complete pilgrimage guide with history, significance, best time to visit, and everything you need to know for a spiritual journey.",
   keywords: "Jaya Sri Maha Bodhi, Bo tree, Anuradhapura, Buddhist pilgrimage, sacred tree, Sri Lanka Buddhism, spiritual journey, ancient Ceylon",
   authors: [{ name: "Spiritual Travel Guide" }],
   openGraph: {
-    title: "Jaya Sri Maha Bodhi: Complete Pilgrimage Guide 2025",
+    title: "Jaya Sri Maha Bodhi: Complete Pilgrimage Guide 2026",
     description: "Experience the sacred Bo tree - the oldest human-planted tree in the world with recorded history",
     images: ["/JayaSrimahaBodhi.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jaya Sri Maha Bodhi: Complete Pilgrimage Guide 2025",
+    title: "Jaya Sri Maha Bodhi: Complete Pilgrimage Guide 2026",
     description: "Discover the sacred Bo tree of Anuradhapura - a spiritual journey through 2,300 years of history",
   },
 }
@@ -47,7 +48,7 @@ export default function JayaSriMahaBodhiGuide() {
           <div className="flex flex-wrap justify-center gap-4">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-green-600/80 text-white border-green-500">
               <TreePine className="w-4 h-4 mr-1" />
-              Worlds recorded oldest human-planted tree
+              Oldest recorded human-planted tree
             </Badge>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-red-600/80 text-white border-red-500">
               <Calendar className="w-4 h-4 mr-1" />
@@ -64,27 +65,33 @@ export default function JayaSriMahaBodhiGuide() {
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Jaya Sri Maha Bodhi: The World&apos;s Most Sacred Tree</h2>
+          <div className="flex flex-wrap items-center gap-3 mb-6">
+            <h2 className="text-3xl font-bold text-foreground">Jaya Sri Maha Bodhi: The Sacred Bo Tree of Anuradhapura</h2>
+            <Badge variant="outline" className="border-green-600 text-green-700 dark:border-green-500 dark:text-green-300 flex items-center gap-1 whitespace-nowrap">
+              <CheckCircle className="w-3 h-3" />
+              Fact checked
+            </Badge>
+          </div>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Step into the presence of living history at Jaya Sri Maha Bodhi, the sacred Bo tree that has been growing
-              in Anuradhapura for over 2,300 years! This magnificent tree is not just any ordinary plant - it&apos;s a direct
-              descendant of the very Bodhi tree under which Lord Buddha attained enlightenment in Bodh Gaya, India.
+              Jaya Sri Maha Bodhi is a sacred Bo tree growing in Anuradhapura, Sri Lanka. It has been
+              continuously venerated for over 2,300 years and is a direct sapling of the Bodhi tree under
+              which the Buddha attained enlightenment in Bodh Gaya, India.
             </p>
             <p className="text-lg mb-4">
-              Brought to Sri Lanka in 288 BC by Princess Sanghamitta, daughter of Emperor Ashoka, this sacred sapling has
-              witnessed the rise and fall of kingdoms, survived invasions, and continued to inspire millions of pilgrims
-              from around the world. Today, it stands as the oldest human-planted tree in the world with a recorded history.
+              Brought to Sri Lanka in 288 BC by Princess Sanghamitta, daughter of Emperor Ashoka, this sapling
+              has survived wars, invasions, and the collapse of kingdoms over more than two millennia. It is the
+              oldest human-planted tree in the world with a recorded history.
             </p>
             <p className="text-lg mb-4">
-              What makes this tree truly special is its unbroken spiritual lineage connecting directly to Buddha himself.
-              For Buddhists worldwide, visiting Jaya Sri Maha Bodhi is one of the most important pilgrimages they can make.
-              The peaceful energy surrounding this ancient tree creates an atmosphere of deep meditation and spiritual reflection.
+              For Buddhists, the tree&apos;s direct lineage to the Bodhi tree under which the Buddha attained
+              enlightenment makes it one of the most significant pilgrimage sites in the Buddhist world. Many
+              people from Sri Lanka and other Buddhist countries visit to make offerings and meditate.
             </p>
             <p className="text-lg">
-              Whether you&apos;re a devoted Buddhist, a spiritual seeker, or someone interested in ancient history and culture,
-              Jaya Sri Maha Bodhi offers a profound experience that touches the heart and soul. The tree continues to thrive,
-              its branches reaching toward the sky as they have for over two millennia, offering shade and blessings to all who visit.
+              Whether you are a Buddhist pilgrim, a history enthusiast, or simply curious, Jaya Sri Maha Bodhi
+              is worth visiting. The tree continues to grow as it has for over two millennia, and people of
+              all backgrounds come here to sit quietly in its shade.
             </p>
           </div>
           <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-950/20 border-l-4 border-amber-400 dark:border-amber-600 rounded-r-lg">
@@ -128,7 +135,7 @@ export default function JayaSriMahaBodhiGuide() {
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-blue-500" />
                       <span>
-                        <strong> Planted :</strong>  288 BC (2,312 years ago)
+                        <strong>Planted:</strong> 288 BC
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -146,7 +153,7 @@ export default function JayaSriMahaBodhiGuide() {
                     <div className="flex items-center gap-2">
                       <Users className="w-4 h-4 text-red-500" />
                       <span>
-                        <strong>Height:</strong> Approximately 20 meters (65 feet)
+                        <strong>Tradition:</strong> Daily worship and offerings continue here
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -195,10 +202,11 @@ export default function JayaSriMahaBodhiGuide() {
                     <div>
                       <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
-                        <li>• <strong>Duration:</strong> 4-4.5 hours</li>                       
+                        <li>• <strong>Distance:</strong> Nearly 206 km from Colombo</li>
+                        <li>• <strong>Duration:</strong> Nearly 4.5 hours</li>
                         <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                       </ul>
+                      {featureFlags.showTours && (
                       <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                         <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                           <strong>🌟 Recommended:</strong> <span className="font-semibold"> Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Anuradhapura. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel.
@@ -216,14 +224,15 @@ export default function JayaSriMahaBodhiGuide() {
                           </div>
                         </div>
                       </div>
+                      )}
                     </div>
                     <div>
                       <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Bus</h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• <strong>Route:</strong> Colombo Fort → Kurunegala → Anuradhapura</li>
-                        <li>• <strong>Duration:</strong> 5-6 hours</li>
-                        <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
-                        <li>• <strong>Frequency:</strong> Every 30 minutes from Colombo</li>
+                        <li>• <strong>Duration:</strong> Travel time depends on the bus type and traffic conditions</li>
+                        <li>• <strong>Cost:</strong> Check current fares before you travel</li>
+                        <li>• <strong>Frequency:</strong> Check the latest bus schedule at Colombo Fort</li>
                       </ul>
                     </div>
                   </div>
@@ -320,6 +329,7 @@ export default function JayaSriMahaBodhiGuide() {
                     <li>• <strong>Transport:</strong> Air-conditioned vehicles with guide</li>
                     <li>• <strong>Best option:</strong> Most comprehensive spiritual journey</li>
                   </ul>
+                  {featureFlags.showTours && (
                   <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                     <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
                       <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> specializes in Buddhist pilgrimage tours with knowledgeable guides who understand the spiritual significance and can enhance your sacred journey.
@@ -335,6 +345,7 @@ export default function JayaSriMahaBodhiGuide() {
                       </div>
                     </div>
                   </div>
+                  )}
                 </div>
                 <div>
                   <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">Transportation Options</h4>
@@ -342,24 +353,24 @@ export default function JayaSriMahaBodhiGuide() {
                     <div>
                       <h5 className="font-medium text-sm">From Colombo</h5>
                       <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• <strong>Distance:</strong> 205km (127 miles)</li>
-                        <li>• <strong>Duration:</strong> 4-5 hours by car</li>
-                        <li>• <strong>Cost:</strong> $70-100 USD private transport</li>
+                        <li>• <strong>Distance:</strong> Nearly 206 km by road</li>
+                        <li>• <strong>Duration:</strong> Nearly 4.5 hours by car</li>
+                        <li>• <strong>Cost:</strong> Check current private transport rates</li>
                       </ul>
                     </div>
                     <div>
                       <h5 className="font-medium text-sm">From Sigiriya</h5>
                       <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• <strong>Distance:</strong> 70km (44 miles)</li>
-                        <li>• <strong>Duration:</strong> 1.5-2 hours</li>
+                        <li>• <strong>Distance:</strong> Nearly 78 km by road</li>
+                        <li>• <strong>Duration:</strong> Nearly 1 hour 40 minutes</li>
                         <li>• <strong>Ideal:</strong> Perfect for Cultural Triangle tour</li>
                       </ul>
                     </div>
                     <div>
                       <h5 className="font-medium text-sm">From Polonnaruwa</h5>
                       <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• <strong>Distance:</strong> 110km (68 miles)</li>
-                        <li>• <strong>Duration:</strong> 2.5-3 hours</li>
+                        <li>• <strong>Distance:</strong> Nearly 109 km by road</li>
+                        <li>• <strong>Duration:</strong> Nearly 2 hours 15 minutes</li>
                         <li>• <strong>Route:</strong> Ancient capitals historical journey</li>
                       </ul>
                     </div>
@@ -368,25 +379,25 @@ export default function JayaSriMahaBodhiGuide() {
               </div>
               <div className="mt-4 p-3 bg-blue-100 dark:bg-blue-900/50 rounded-lg border-l-4 border-blue-500 dark:border-blue-400">
                 <p className="text-sm text-blue-800 dark:text-blue-200">
-                  <strong>💡 Pro Tip:</strong> Visit early morning (6-8 AM) for the most peaceful experience and to avoid crowds. Many pilgrims prefer to meditate during sunrise hours when the spiritual energy is strongest.
+                  <strong>Tip:</strong> Visit early morning for a cooler and quieter experience. This is usually the best time to avoid crowds.
                 </p>
               </div>
               <div className="mt-4">
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
                     <h5 className="font-medium text-blue-800 dark:text-blue-200">Entry Fee</h5>
-                    <p className="text-sm text-blue-600 dark:text-blue-300">FREE for all visitors</p>
-                    <p className="text-xs text-muted-foreground">Donations welcome</p>
+                    <p className="text-sm text-blue-600 dark:text-blue-300">Check current access rules before you visit</p>
+                    <p className="text-xs text-muted-foreground">Donations and local procedures may vary</p>
                   </div>
                   <div className="p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
                     <h5 className="font-medium text-green-800 dark:text-green-200">Opening Hours</h5>
-                    <p className="text-sm text-green-600 dark:text-green-300">5:00 AM - 8:00 PM daily</p>
-                    <p className="text-xs text-muted-foreground">Special ceremonies on Poya days</p>
+                    <p className="text-sm text-green-600 dark:text-green-300">Check current opening times before you travel</p>
+                    <p className="text-xs text-muted-foreground">Hours can differ on religious and special days</p>
                   </div>
                   <div className="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
                     <h5 className="font-medium text-purple-800 dark:text-purple-200">Best Time</h5>
-                    <p className="text-sm text-purple-600 dark:text-purple-300">Early morning or evening</p>
-                    <p className="text-xs text-muted-foreground">Cooler & more spiritual</p>
+                    <p className="text-sm text-purple-600 dark:text-purple-300">Early morning or late afternoon</p>
+                    <p className="text-xs text-muted-foreground">Usually cooler and less crowded</p>
                   </div>
                 </div>
               </div>
@@ -459,11 +470,11 @@ export default function JayaSriMahaBodhiGuide() {
             </span>
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-3xl">
-            Discover the profound spiritual legacy of Jaya Sri Maha Bodhi, where ancient wisdom meets living tradition in a sacred space that has inspired millions for over two millennia.
+            Jaya Sri Maha Bodhi holds a unique place in Buddhism. The tree has been in continuous use as a place of worship since 288 BC, making it one of the oldest documented pilgrimage sites in the world.
           </p>
 
           <div className="space-y-8">
-            <Card className="border-l-4 border-amber-500 dark:border-amber-400 bg-gradient-to-r from-amber-50 to-transparent dark:from-amber-950/30">
+            <Card className="border-l-4 border-amber-500 dark:border-amber-400 theme-card-amber-sig">
               <CardHeader className="space-y-4">
                 <Badge variant="outline" className="w-fit border-amber-500 text-amber-700 dark:text-amber-400">
                   <TreePine className="w-4 h-4 mr-2" />
@@ -475,39 +486,39 @@ export default function JayaSriMahaBodhiGuide() {
                 <div className="space-y-6">
                   <p className="text-muted-foreground text-lg">
                     Jaya Sri Maha Bodhi represents the oldest living symbol of Buddhism in the world. For over 2,300 years,
-                    this sacred tree has been continuously venerated, making it a unique repository of spiritual energy
-                    and Buddhist heritage that cannot be found anywhere else.
+                    this sacred tree has been continuously venerated, making it one of the most important living sites
+                    in Buddhist heritage.
                   </p>
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                    <div className="theme-inner-box p-4 rounded-lg">
                       <h4 className="font-semibold mb-3 text-amber-700 dark:text-amber-400 flex items-center">
                         <Heart className="w-4 h-4 mr-2" />
-                        Spiritual Benefits
+                        Why Pilgrims Visit
                       </h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                          Deep meditation and inner peace
+                          Quiet meditation and reflection
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                          Connection to Buddha&apos;s enlightenment energy
+                          Respect for a tree linked by tradition to the Bodhi tree at Bodh Gaya
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                          Purification of negative karma
+                          Offering flowers, water, and prayers
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                          Inspiration for spiritual growth
+                          Learning about Buddhist history in Sri Lanka
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                          Blessings for wisdom and compassion
+                          Joining a long pilgrimage tradition
                         </li>
                       </ul>
                     </div>
-                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                    <div className="theme-inner-box p-4 rounded-lg">
                       <h4 className="font-semibold mb-3 text-amber-700 dark:text-amber-400 flex items-center">
                         <Users className="w-4 h-4 mr-2" />
                         Pilgrimage Practices
@@ -540,7 +551,7 @@ export default function JayaSriMahaBodhiGuide() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-blue-500 dark:border-blue-400 bg-gradient-to-r from-blue-50 to-transparent dark:from-blue-950/30">
+            <Card className="border-l-4 border-blue-500 dark:border-blue-400 theme-card-blue-sig">
               <CardHeader className="space-y-4">
                 <Badge variant="outline" className="w-fit border-blue-500 text-blue-700 dark:text-blue-400">
                   <Book className="w-4 h-4 mr-2" />
@@ -552,11 +563,11 @@ export default function JayaSriMahaBodhiGuide() {
                 <div className="space-y-6">
                   <p className="text-muted-foreground text-lg">
                     Throughout its long history, Jaya Sri Maha Bodhi has survived invasions, natural disasters, and
-                    the rise and fall of kingdoms. Many consider its survival itself to be miraculous, as it has
-                    witnessed over two millennia of human history while continuing to grow and flourish.
+                    the rise and fall of kingdoms. Its long survival has made it one of the most remarkable living
+                    heritage sites in Sri Lanka.
                   </p>
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                    <div className="theme-inner-box p-4 rounded-lg">
                       <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-400 flex items-center">
                         <AlertTriangle className="w-4 h-4 mr-2" />
                         Historical Challenges
@@ -584,7 +595,7 @@ export default function JayaSriMahaBodhiGuide() {
                         </li>
                       </ul>
                     </div>
-                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                    <div className="theme-inner-box p-4 rounded-lg">
                       <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-400 flex items-center">
                         <Star className="w-4 h-4 mr-2" />
                         Protected Features
@@ -617,75 +628,74 @@ export default function JayaSriMahaBodhiGuide() {
               </CardContent>
             </Card>
 
-            <Card className="border-l-4 border-purple-500 dark:border-purple-400 bg-gradient-to-r from-purple-50 to-transparent dark:from-purple-950/30">
+            <Card className="border-l-4 border-purple-500 dark:border-purple-400 theme-card-purple-sig">
               <CardHeader className="space-y-4">
                 <Badge variant="outline" className="w-fit border-purple-500 text-purple-700 dark:text-purple-400">
                   <Calendar className="w-4 h-4 mr-2" />
                   Sacred Traditions
                 </Badge>
-                <CardTitle className="text-2xl">Living Rituals & Sacred Ceremonies</CardTitle>
+                <CardTitle className="text-2xl">Living Worship Traditions</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-6">
                   <p className="text-muted-foreground text-lg">
-                    Daily rituals and special ceremonies take place at Jaya Sri Maha Bodhi, creating a continuous
-                    atmosphere of devotion and spiritual practice. These ceremonies connect modern practitioners
-                    with traditions that have been maintained for over 2,000 years.
+                    Jaya Sri Maha Bodhi remains an active place of worship. Visitors often see devotees bringing
+                    flowers, pausing for prayer, or walking quietly around the sacred area.
                   </p>
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                    <div className="theme-inner-box p-4 rounded-lg">
                       <h4 className="font-semibold mb-3 text-purple-700 dark:text-purple-400 flex items-center">
                         <Clock className="w-4 h-4 mr-2" />
-                        Daily Rituals
+                        Common Practices
                       </h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                          Morning puja (worship ceremony) at dawn
+                          Quiet prayer and meditation
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                          Offering of flowers and water throughout the day
+                          Offering flowers and water
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                          Evening prayers and chanting
+                          Walking respectfully around the sacred area
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                          Continuous meditation by pilgrims
+                          Listening to chanting or prayers during visits
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                          Oil lamp lighting ceremonies
+                          Spending quiet time in reflection
                         </li>
                       </ul>
                     </div>
-                    <div className="bg-white/50 dark:bg-slate-800/50 p-4 rounded-lg">
+                    <div className="theme-inner-box p-4 rounded-lg">
                       <h4 className="font-semibold mb-3 text-purple-700 dark:text-purple-400 flex items-center">
                         <Calendar className="w-4 h-4 mr-2" />
-                        Special Occasions
+                        Busier Days
                       </h4>
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                          Poya Day celebrations (monthly full moon)
+                          Poya days often bring larger crowds
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                          Vesak festival (Buddha&apos;s birth, enlightenment, death)
+                          Vesak is one of the busiest periods for Buddhist worship
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                          Annual Bodhi Puja ceremony
+                          Religious dates can change the flow of visitors
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                          International Buddhist gatherings
+                          Extra security or access controls may be in place on busy days
                         </li>
                         <li className="flex items-center gap-2">
                           <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-                          Meditation retreats and teachings
+                          Early arrival helps if you want a quieter visit
                         </li>
                       </ul>
                     </div>
@@ -707,7 +717,7 @@ export default function JayaSriMahaBodhiGuide() {
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div>
+                  <div className="bg-white/50 dark:bg-slate-700 p-4 rounded-lg">
                     <h4 className="font-semibold mb-3">The Sacred Grounds:</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• Beautiful temple complex surrounding the tree</li>
@@ -718,7 +728,7 @@ export default function JayaSriMahaBodhiGuide() {
                       <li>• Information displays about the tree&apos;s history</li>
                     </ul>
                   </div>
-                  <div>
+                  <div className="bg-white/50 dark:bg-slate-700 p-4 rounded-lg">
                     <h4 className="font-semibold mb-3">Spiritual Activities:</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• Quiet meditation under the sacred branches</li>
@@ -749,16 +759,16 @@ export default function JayaSriMahaBodhiGuide() {
                 <div>
                   <h4 className="font-semibold mb-3">Time of Day:</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Early Morning (5-7 AM):</strong> Most peaceful, perfect for meditation</li>
+                    <li>• <strong>Early Morning:</strong> Usually quieter and cooler</li>
                     <li>• <strong>Late Afternoon (4-6 PM):</strong> Beautiful light, cooler weather</li>
-                    <li>• <strong>Evening (6-8 PM):</strong> Prayer ceremonies, oil lamps</li>
+                    <li>• <strong>Evening:</strong> A calmer time after the hottest part of the day</li>
                     <li>• <strong>Avoid Midday:</strong> Very hot and crowded</li>
                   </ul>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-3">Special Days:</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Poya Days:</strong> Monthly full moon - special ceremonies</li>
+                    <li>• <strong>Poya Days:</strong> Monthly full moon days are usually busier</li>
                     <li>• <strong>Vesak Festival:</strong> Most important Buddhist celebration</li>
                     <li>• <strong>December-March:</strong> Dry season, ideal weather</li>
                     <li>• <strong>Weekdays:</strong> Less crowded, more peaceful experience</li>
@@ -810,14 +820,10 @@ export default function JayaSriMahaBodhiGuide() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Clean restroom facilities available</li>
-                  <li>• Drinking water stations throughout grounds</li>
-                  <li>• Small shop for religious items and offerings</li>
-                  <li>• Parking available for vehicles</li>
-                  <li>• Information center with English-speaking guides</li>
-                  <li>• Wheelchair accessibility to main viewing areas</li>
-                  <li>• Small meditation halls for quiet reflection</li>
-                  <li>• Security presence for safety and guidance</li>
+                  <li>• Facilities can change depending on the access point and time of visit</li>
+                  <li>• Restrooms and parking are usually easier to find in the wider sacred city area</li>
+                  <li>• Small shops may be available near major pilgrimage areas</li>
+                  <li>• Ask on site about the latest visitor services and access arrangements</li>
                 </ul>
               </CardContent>
             </Card>
@@ -843,11 +849,11 @@ export default function JayaSriMahaBodhiGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Magnificent white stupa built by King Dutugemunu in 140 BC. Contains sacred relics of Buddha and showcases ancient engineering.
+                  One of the best-known sacred stupas in Anuradhapura, linked to King Dutugemunu and an important place of Buddhist worship.
                 </p>
                 <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
                   <Clock className="w-3 h-3" />
-                  <span>5 minutes walk from Jaya Sri Maha Bodhi</span>
+                  <span>Short walk from Jaya Sri Maha Bodhi</span>
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/ruwanwali-saya" passHref legacyBehavior>
@@ -873,11 +879,11 @@ export default function JayaSriMahaBodhiGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  The first Buddhist stupa built in Sri Lanka (3rd century BCE), housing Buddha&apos;s sacred collarbone relic.
+                  Early Buddhist stupa in Anuradhapura and one of the island&apos;s oldest Buddhist monuments.
                 </p>
                 <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
                   <Clock className="w-3 h-3" />
-                  <span>10 minutes walk from Jaya Sri Maha Bodhi</span>
+                  <span>Short walk from Jaya Sri Maha Bodhi</span>
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/thuparamaya" passHref legacyBehavior>
@@ -903,11 +909,11 @@ export default function JayaSriMahaBodhiGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Ancient monastery complex that housed 5,000 monks and was a major center of Buddhist learning for over 1,000 years.
+                  Large monastic complex in Anuradhapura that became an important center of Buddhist learning.
                 </p>
                 <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
                   <Clock className="w-3 h-3" />
-                  <span>15 minutes drive from Jaya Sri Maha Bodhi</span>
+                  <span>Short drive from Jaya Sri Maha Bodhi</span>
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/abhayagiriya" passHref legacyBehavior>
@@ -933,11 +939,11 @@ export default function JayaSriMahaBodhiGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Built in 3rd century AD, once the world&apos;s third tallest structure. Contains Buddha&apos;s sash relic and showcases ancient engineering.
+                  Massive brick stupa from the Anuradhapura period, known for its scale and long history.
                 </p>
                 <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
                   <Clock className="w-3 h-3" />
-                  <span>12 minutes walk from Jaya Sri Maha Bodhi</span>
+                  <span>Short walk from Jaya Sri Maha Bodhi</span>
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/jethawanaramaya" passHref legacyBehavior>
@@ -963,11 +969,11 @@ export default function JayaSriMahaBodhiGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Ancient nine-story monastery built by King Dutugemunu. Once housed 1,000 monks and was covered with copper tiles.
+                  Ruins of a historic monastic building remembered today for its many stone pillars.
                 </p>
                 <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
                   <Clock className="w-3 h-3" />
-                  <span>8 minutes walk from Jaya Sri Maha Bodhi</span>
+                  <span>Short walk from Jaya Sri Maha Bodhi</span>
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/lovamahapaya" passHref legacyBehavior>
@@ -997,7 +1003,7 @@ export default function JayaSriMahaBodhiGuide() {
                 </p>
                 <div className="mt-3 flex items-center gap-2 text-xs text-muted-foreground">
                   <Clock className="w-3 h-3" />
-                  <span>20 minutes drive from Jaya Sri Maha Bodhi</span>
+                  <span>Nearly 17 km, nearly 30 minutes by road</span>
                 </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/mihinthalaya" passHref legacyBehavior>
@@ -1021,16 +1027,13 @@ export default function JayaSriMahaBodhiGuide() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground dark:text-gray-300 mb-4">
-                Jaya Sri Maha Bodhi offers more than just a visit to an ancient tree - it provides a profound spiritual
-                experience that connects you directly with the Buddha&apos;s enlightenment energy. Whether you come as a
-                devout Buddhist seeking blessings, a spiritual seeker exploring inner peace, or a history enthusiast
-                fascinated by living heritage, this sacred tree offers something deeply meaningful.
+                Jaya Sri Maha Bodhi is one of the most important Buddhist sites in Sri Lanka. It is a place where
+                religious devotion, long history, and living tradition come together in one setting.
               </p>
               <p className="text-muted-foreground dark:text-gray-300">
-                As you stand beneath its ancient branches, you&apos;ll join millions of pilgrims who have found peace,
-                inspiration, and spiritual awakening in this sacred space. The tree continues to grow and flourish,
-                just as it has for over 2,300 years, offering its timeless blessings to all who visit with respect
-                and devotion. May your pilgrimage to Jaya Sri Maha Bodhi bring you wisdom, peace, and spiritual fulfillment! 🙏🌳✨
+                Whether you visit as a pilgrim, a history lover, or a curious traveler, this sacred site offers a
+                chance to understand a major part of Sri Lanka&apos;s Buddhist heritage. Visit respectfully, allow time
+                to walk the area quietly, and combine it with other nearby sacred sites in Anuradhapura.
               </p>
             </CardContent>
           </Card>

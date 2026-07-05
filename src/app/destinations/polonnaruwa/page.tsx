@@ -604,11 +604,11 @@ export default function PolonnaruwaGuide() {
                                     </div>
                                     <ImageCarousel
                                         images={[
-                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform", alt: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
-                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "", alt: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
+                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
                                             { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
                                             {
-                                                src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall",
+                                                src: "/Nishshankalatha-mandapaya3.jpg", caption: "",
                                                 alt: "Close-up of intricately carved lotus pillars at the Audience Hall"
 
                                             },
