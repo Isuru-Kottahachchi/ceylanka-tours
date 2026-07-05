@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Image from "next/image"
 import { Clock, MapPin, CheckCircle, Star, Calendar, Users, Landmark } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -24,7 +24,7 @@ export default function AbhayagiriyaTravelGuide() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
-          src="/Abhayagiriya.jpg"
+          src="/Abhayagiriya.jpeg"
           alt="Majestic Abhayagiriya stupa rising above ancient ruins in Anuradhapura, Sri Lanka"
           fill
           className="object-cover"
@@ -32,7 +32,7 @@ export default function AbhayagiriyaTravelGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Abhayagiriya</h1>
+          <h1 className="hero-text-shadow text-4xl md:text-6xl font-bold mb-4">Abhayagiriya</h1>
           <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Ancient Monastic Marvel</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
@@ -195,9 +195,6 @@ export default function AbhayagiriyaTravelGuide() {
         {/* Sacred Sites & Highlights */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Sacred Sites & Highlights</h2>
-          <div className="my-6 p-4 bg-gray-50 rounded-lg text-center text-gray-500 border-2 border-dashed border-gray-300">
-            [Advertisement Space - 300x250 Medium Rectangle]
-          </div>
           <div className="space-y-8">
             <Card>
               <CardHeader>
