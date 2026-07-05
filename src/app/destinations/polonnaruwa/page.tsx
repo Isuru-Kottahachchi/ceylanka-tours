@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ImageCarousel } from "@/components/ui/image-carousel"
+import { featureFlags } from "@/lib/feature-flags"
 
 
 
@@ -55,7 +56,7 @@ export default function PolonnaruwaGuide() {
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
                     <h1 className="hero-text-shadow text-4xl md:text-6xl font-extrabold mb-6 leading-[1.1] tracking-tight">Polonnaruwa</h1>
-                    <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Medieval Archaeological Marvel</p>
+                    <p className="text-xl md:text-2xl mb-6 font-light">Medieval capital with preserved ruins</p>
                     <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
                         <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
                             <MapPin className="w-4 h-4 mr-1" />
@@ -100,13 +101,19 @@ export default function PolonnaruwaGuide() {
             <div className="max-w-6xl mx-auto px-4 py-12">
                 {/* Introduction */}
                 <section className="mb-12">
-                    <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Polonnaruwa: The Golden Age Capital</h2>
+                    <div className="flex flex-wrap items-center gap-3 mb-6">
+                        <h2 className="text-3xl font-bold text-foreground">Polonnaruwa: Medieval Capital of Sri Lanka</h2>
+                        <Badge variant="outline" className="border-green-600 text-green-700 dark:border-green-500 dark:text-green-300">
+                            <CheckCircle className="w-4 h-4 mr-1" />
+                            Fact checked
+                        </Badge>
+                    </div>
                     <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
                         <p className="text-lg mb-4">
-                            Step into the golden age of Sri Lankan civilization at Polonnaruwa, the island&apos;s second ancient capital and one of the best-preserved archaeological sites in South Asia. This UNESCO World Heritage site showcases the pinnacle of medieval Sinhalese architecture, engineering, and artistic achievement during the 11th to 13th centuries.
+                            Polonnaruwa was the main royal capital of Sri Lanka after Anuradhapura. Most of the ruins visitors see today belong to the 11th to 13th centuries, especially the period of Vijayabahu I, Parakramabahu I, and Nissanka Malla.
                         </p>
                         <p className="text-lg">
-                            From the magnificent Gal Vihara rock sculptures to the impressive Royal Palace complex, Polonnaruwa offers an extraordinary journey through Sri Lanka&apos;s most prosperous era. Unlike Anuradhapura&apos;s spiritual focus, Polonnaruwa represents the perfect blend of religious devotion and royal grandeur, making it an essential destination for understanding the island&apos;s rich cultural heritage.
+                            The site includes palace ruins, Buddhist monuments, Hindu shrines, inscriptions, ponds, and image houses. It is also a UNESCO World Heritage Site and one of the easiest ancient cities in Sri Lanka to explore in a single day.
                         </p>
                     </div>
                 </section>
@@ -132,25 +139,25 @@ export default function PolonnaruwaGuide() {
                                     <div className="flex items-center gap-2">
                                         <Calendar className="w-4 h-4 text-blue-500" />
                                         <span>
-                                            <strong>Capital Period:</strong> 1070-1293 AD
+                                            <strong>Capital Period:</strong> 11th to 13th centuries AD
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <Users className="w-4 h-4 text-green-500" />
                                         <span>
-                                            <strong>Founded by:</strong> King Vijayabahu I
+                                            <strong>Made capital under:</strong> King Vijayabahu I
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <Crown className="w-4 h-4 text-purple-500" />
                                         <span>
-                                            <strong>Golden Age:</strong> King Parakramabahu I era
+                                            <strong>Main building phase:</strong> Reign of King Parakramabahu I
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <MapPin className="w-4 h-4 text-red-500" />
                                         <span>
-                                            <strong>Area:</strong> 122 square kilometers
+                                            <strong>Main highlights:</strong> Royal Palace, Sacred Quadrangle, Gal Vihara
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-2">
@@ -162,19 +169,19 @@ export default function PolonnaruwaGuide() {
                                     <div className="flex items-center gap-2">
                                         <Clock className="w-4 h-4 text-orange-500" />
                                         <span>
-                                            <strong>Visit Duration:</strong> Full day (6-8 hours)
+                                            <strong>Visit Duration:</strong> Allow most of a day
                                         </span>
                                     </div>
                                     <div className="space-y-3">
                                         <div className="p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
                                             <h5 className="font-medium text-blue-800 dark:text-blue-200">Entrance Fee for ancient city of Polonnaruwa </h5>
-                                            <p className="text-sm text-blue-600 dark:text-blue-300">$25 USD for foreign visitors</p>
-                                            <p className="text-xs text-muted-foreground">Includes archaeological site access and museum</p>
+                                            <p className="text-sm text-blue-600 dark:text-blue-300">Check the current ticket price before you go</p>
+                                            <p className="text-xs text-muted-foreground">Ticket rules can change</p>
                                         </div>
                                         <div className="p-3 bg-green-50 dark:bg-green-900/30 rounded-lg">
                                             <h5 className="font-medium text-green-800 dark:text-green-200">Opening Hours</h5>
-                                            <p className="text-sm text-green-600 dark:text-green-300">7:00 AM - 6:00 PM daily</p>
-                                            <p className="text-xs text-muted-foreground">Last entry at 5:30 PM</p>
+                                            <p className="text-sm text-green-600 dark:text-green-300">Check the current opening hours before your visit</p>
+                                            <p className="text-xs text-muted-foreground">Hours can change on public holidays and site management days</p>
                                         </div>
                                         <div className="p-3 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
                                             <h5 className="font-medium text-purple-800 dark:text-purple-200">Best Time</h5>
@@ -197,13 +204,14 @@ export default function PolonnaruwaGuide() {
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <h4 className="font-semibold mb-3 transport-heading">Cultural Triangle Tours (Recommended)</h4>
+                                        <h4 className="font-semibold mb-3 transport-heading">Cultural Triangle Visits</h4>
                                         <ul className="space-y-2 text-sm text-muted-foreground">
-                                            <li>• <strong>Package Tours:</strong> 2-3 day Cultural Triangle packages</li>
+                                            <li>• <strong>Common plan:</strong> 2 to 3 day Cultural Triangle route</li>
                                             <li>• <strong>Includes:</strong> Polonnaruwa, Sigiriya, and Dambulla</li>
-                                            <li>• <strong>Transport:</strong> Air-conditioned vehicles with guide</li>
-                                            <li>• <strong>Best option:</strong> Most comprehensive and educational</li>
+                                            <li>• <strong>Transport:</strong> Private car or guided tour vehicle</li>
+                                            <li>• <strong>Useful if:</strong> You want to combine nearby heritage sites in one trip</li>
                                         </ul>
+                                        {featureFlags.showTours && (
                                         <div data-promo="true" className="mt-3 p-3 theme-notice-box rounded-md shadow-sm">
                                             <p className="text-xs theme-notice-text mb-2">
                                                 <strong>🌟 Recommended:</strong> <span className="font-semibold">Ceylanka Tours</span> specializes in Cultural Triangle expeditions with expert archaeological guides who bring ancient Polonnaruwa to life with fascinating historical insights and professional service.
@@ -219,6 +227,7 @@ export default function PolonnaruwaGuide() {
                                                 </div>
                                             </div>
                                         </div>
+                                        )}
                                     </div>
                                     <div>
                                         <h4 className="font-semibold mb-3 transport-heading">Transportation Options</h4>
@@ -226,25 +235,25 @@ export default function PolonnaruwaGuide() {
                                             <div>
                                                 <h5 className="font-medium text-sm">From Colombo</h5>
                                                 <ul className="space-y-1 text-sm text-muted-foreground">
-                                                    <li>• <strong>Distance:</strong> 216km (134 miles)</li>
-                                                    <li>• <strong>Duration:</strong> 4-5 hours by car</li>
-                                                    <li>• <strong>Cost:</strong> $60-90 USD private transport</li>
+                                                    <li>• <strong>Distance:</strong> Nearly 221 km by road</li>
+                                                    <li>• <strong>Duration:</strong> Nearly 4.5 hours by car</li>
+                                                    <li>• <strong>Note:</strong> Fastest route may include toll roads</li>
                                                 </ul>
                                             </div>
                                             <div>
                                                 <h5 className="font-medium text-sm">From Sigiriya</h5>
                                                 <ul className="space-y-1 text-sm text-muted-foreground">
-                                                    <li>• <strong>Distance:</strong> 55km (34 miles)</li>
-                                                    <li>• <strong>Duration:</strong> 1.5 hours</li>
-                                                    <li>• <strong>Ideal:</strong> Combined Cultural Triangle tour</li>
+                                                    <li>• <strong>Distance:</strong> Nearly 58 km by road</li>
+                                                    <li>• <strong>Duration:</strong> Nearly 1 hour 15 minutes</li>
+                                                    <li>• <strong>Useful:</strong> Easy to combine with a Cultural Triangle visit</li>
                                                 </ul>
                                             </div>
                                             <div>
                                                 <h5 className="font-medium text-sm">From Kandy</h5>
                                                 <ul className="space-y-1 text-sm text-muted-foreground">
-                                                    <li>• <strong>Distance:</strong> 140km (87 miles)</li>
-                                                    <li>• <strong>Duration:</strong> 3 hours via A9 highway</li>
-                                                    <li>• <strong>Route:</strong> Scenic drive through central Sri Lanka</li>
+                                                    <li>• <strong>Distance:</strong> Nearly 128 km by road</li>
+                                                    <li>• <strong>Duration:</strong> Nearly 3 hours by car</li>
+                                                    <li>• <strong>Route:</strong> Usually via the A9 road</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -252,7 +261,7 @@ export default function PolonnaruwaGuide() {
                                 </div>
                                 <div className="mt-4 p-3 transport-tip-box rounded-lg border-l-4 border-blue-500">
                                     <p className="text-sm transport-tip-text">
-                                        <strong>💡 Pro Tip:</strong> Start early morning visits to avoid crowds and heat. Most visitors combine Polonnaruwa with Sigiriya and Dambulla as part of a Cultural Triangle tour for the best historical experience.
+                                        <strong>Tip:</strong> Start early to avoid the midday heat. Many visitors combine Polonnaruwa with Sigiriya and Dambulla on the same wider Cultural Triangle trip.
                                     </p>
                                 </div>
                             </CardContent>
@@ -350,7 +359,7 @@ export default function PolonnaruwaGuide() {
                                     <ul className="space-y-2 text-muted-foreground">
                                         <li className="flex items-start gap-2">
                                             <Clock className="w-4 h-4 text-orange-500 mt-1 flex-shrink-0" />
-                                            <span><strong>Daily:</strong> 7:00 AM - 6:00 PM</span>
+                                            <span><strong>Daily:</strong> Check current opening hours before you go</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -363,23 +372,23 @@ export default function PolonnaruwaGuide() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold mb-3 text-foreground">Entry Fees (2025):</h4>
+                                    <h4 className="font-semibold mb-3 text-foreground">Entry Fees:</h4>
                                     <ul className="space-y-2 text-muted-foreground">
                                         <li className="flex justify-between">
-                                            <span>Foreign Adults:</span>
-                                            <span className="font-medium">$30 USD</span>
+                                            <span>Foreign visitors:</span>
+                                            <span className="font-medium">Check current ticket price</span>
                                         </li>
                                         <li className="flex justify-between">
-                                            <span>Foreign Children (6-12):</span>
-                                            <span className="font-medium">$15 USD</span>
+                                            <span>Children:</span>
+                                            <span className="font-medium">Check current child rate</span>
                                         </li>
                                         <li className="flex justify-between">
-                                            <span>SAARC Nationals:</span>
-                                            <span className="font-medium">$15 USD</span>
+                                            <span>SAARC nationals:</span>
+                                            <span className="font-medium">Check current rate</span>
                                         </li>
                                         <li className="flex justify-between">
                                             <span>Bicycle Rental:</span>
-                                            <span className="font-medium">$5 USD</span>
+                                            <span className="font-medium">Varies by rental provider</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -395,8 +404,8 @@ export default function PolonnaruwaGuide() {
                     <div className="space-y-8">
                         <Card>
                             <CardHeader>
-                                <CardTitle>1. Royal Palace of King Parakramabahu I</CardTitle>
-                                <CardDescription>Magnificent seven-story palace complex</CardDescription>
+                                <CardTitle>Royal Palace of King Parakramabahu I</CardTitle>
+                                <CardDescription>Royal palace ruins from the Polonnaruwa period</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -409,12 +418,12 @@ export default function PolonnaruwaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            The centerpiece of Polonnaruwa, this magnificent palace complex once stood six to seven stories tall with hundreds of rooms. Built by King Parakramabahu I in the 12th century, it represents the pinnacle of medieval Sinhalese architecture.
+                                            The Royal Palace complex is linked with King Parakramabahu I and shows the scale of court life in 12th-century Polonnaruwa. The surviving brick walls and foundations give a clear sense of how large the palace area once was.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Six to seven stories with hundreds of rooms
+                                                Large palace footprint with thick brick walls
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -422,11 +431,11 @@ export default function PolonnaruwaGuide() {
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Advanced drainage and ventilation systems
+                                                Close to other main royal buildings in the city core
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Royal audience hall and private chambers
+                                                One of the main stops in the royal section of Polonnaruwa
                                             </li>
                                         </ul>
 
@@ -447,9 +456,7 @@ export default function PolonnaruwaGuide() {
                                         />
                                         <div>
                                             <p className="text-muted-foreground mb-3">
-                                                Adjacent to the Royal Palace lies the sophisticated royal swimming pool, a testament
-                                                to the advanced engineering capabilities of ancient Sri Lanka. This rectangular pool
-                                                features dragon mouth spouts and an intricate water filtering system.
+                                                Kumara Pokuna is a stone-lined bath near the palace zone. Visitors usually notice its steps, water inlets, and carved spouts.
                                             </p>
                                             <ul className="space-y-2 text-muted-foreground">
                                                 <li className="flex items-start gap-2">
@@ -458,7 +465,7 @@ export default function PolonnaruwaGuide() {
                                                 </li>
                                                 <li className="flex items-start gap-2">
                                                     <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                    Advanced water filtering and circulation system
+                                                    Stone water inlets and outlets still visible
                                                 </li>
                                                 <li className="flex items-start gap-2">
                                                     <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -540,9 +547,7 @@ export default function PolonnaruwaGuide() {
                                     </div>
                                     <ImageCarousel
                                         images={[
-                                            { src: "/placeholder.svg?height=300&width=400&text=Nissanka+Malla+Palace", caption: "Ruins of Nissanka Malla's Palace", alt: "Ruins of Nissanka Malla's Palace showing stone architecture" },
-                                            { src: "/placeholder.svg?height=300&width=400&text=Stone+Inscriptions", caption: "Stone inscriptions on palace walls", alt: "Ancient stone inscriptions detailing royal records" },
-                                            { src: "/placeholder.svg?height=300&width=400&text=Council+Chamber", caption: "Council Chamber with stone seats", alt: "Stone seats in the royal council chamber" }
+                                            { src: "/Nissanka-Malla's-Palace-Complex.webp", caption: "Ruins of Nissanka Malla's Palace", alt: "Ruins of Nissanka Malla's Palace showing stone architecture" },
                                         ]}
                                     />
                                     <br />
@@ -560,6 +565,108 @@ export default function PolonnaruwaGuide() {
                             </CardContent>
                         </Card>
 
+                    <section id="lotus-pond" className="mt-12 scroll-mt-20">
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Audience Hall of Nissanka Malla</CardTitle>
+                                <CardDescription>Unique architectural masterpiece with lotus-shaped pillars</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            Built by King Nissanka Malla as a royal reception hall, the Audience Hall represents one of the finest examples of Polonnaruwa period architecture. This magnificent structure served as the venue for royal audiences, state functions, and important ceremonies. The intricate lotus-shaped pillars symbolize purity and nobility, demonstrating the king's sophisticated artistic vision and advanced architectural knowledge.
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Royal reception and audience hall for state functions
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Built during the reign of King Nissanka Malla (1187-1196 AD)
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Open-air pavilion design for ceremonial purposes
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Testimony to advanced medieval Sinhalese engineering
+                                            </li>
+                                        </ul>
+
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/nissanka-latha-mandapaya" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform", alt: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
+                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            {
+                                                src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall",
+                                                alt: "Close-up of intricately carved lotus pillars at the Audience Hall"
+
+                                            },
+                                        ]}
+
+                                    />
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <Card>
+                            <CardHeader>
+                                <CardTitle>Nissanka Latha Mandapaya</CardTitle>
+                                <CardDescription>Unique architectural masterpiece with lotus-shaped pillars</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                                <div className="grid md:grid-cols-2 gap-6 items-center">
+                                    <div>
+                                        <p className="text-muted-foreground mb-4">
+                                            This extraordinary structure features 48 pillars carved to resemble lotus stems, creating one of the most photographed architectural elements in Sri Lanka. Built by King Nissanka Malla, it showcases the artistic sophistication of the period.
+                                        </p>
+                                        <ul className="space-y-2 text-muted-foreground">
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                48 unique lotus-shaped stone pillars
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Each pillar has different decorative motifs
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Royal throne platform in the center
+                                            </li>
+                                            <li className="flex items-start gap-2">
+                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                Excellent example of Polonnaruwa architecture
+                                            </li>
+                                        </ul>
+
+                                        <div className="mt-4 flex justify-start">
+                                            <Link href="/destinations/nissanka-latha-mandapaya" passHref legacyBehavior>
+                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                                            </Link>
+                                        </div>
+                                    </div>
+                                    <ImageCarousel
+                                        images={[
+                                            { src: "/NissankaLathaMandapaya.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/𝗡𝗶𝘀𝘀𝗮𝗻𝗸𝗮𝗹𝗮𝘁𝗵𝗮-𝗠𝗮𝗻𝗱𝗮𝗽𝗮𝘆𝗮.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform", alt: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
+                                            { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                            { src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
+                                        ]}
+
+                                    />
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </section>
                         {/* Shiva Devale No. 2 */}
                         <Card>
                             <CardHeader>
@@ -570,7 +677,7 @@ export default function PolonnaruwaGuide() {
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
                                     <ImageCarousel
                                         images={[{
-                                            src: "/placeholder.svg?height=300&width=400",
+                                            src: "/Shiva-Devale-No2.webp",
                                             alt: "Shiva Devale No. 2",
                                             title: "Panoramic Viewpoint"
                                         }]}
@@ -667,54 +774,6 @@ export default function PolonnaruwaGuide() {
                             </CardContent>
                         </Card>
 
-                        <Card>
-                            <CardHeader>
-                                <CardTitle>2. Nissanka Latha Mandapaya</CardTitle>
-                                <CardDescription>Unique architectural masterpiece with lotus-shaped pillars</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <div>
-                                        <p className="text-muted-foreground mb-4">
-                                            This extraordinary structure features 48 pillars carved to resemble lotus stems, creating one of the most photographed architectural elements in Sri Lanka. Built by King Nissanka Malla, it showcases the artistic sophistication of the period.
-                                        </p>
-                                        <ul className="space-y-2 text-muted-foreground">
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                48 unique lotus-shaped stone pillars
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Each pillar has different decorative motifs
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Royal throne platform in the center
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Excellent example of Polonnaruwa architecture
-                                            </li>
-                                        </ul>
-
-                                        <div className="mt-4 flex justify-start">
-                                            <Link href="/destinations/nissanka-latha-mandapaya" passHref legacyBehavior>
-                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    <ImageCarousel
-                                        images={[
-                                            { src: "/NissankaLathaMandapaya.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
-                                            { src: "/𝗡𝗶𝘀𝘀𝗮𝗻𝗸𝗮𝗹𝗮𝘁𝗵𝗮-𝗠𝗮𝗻𝗱𝗮𝗽𝗮𝘆𝗮.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform", alt: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
-                                            { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
-                                            { src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
-                                        ]}
-
-                                    />
-                                </div>
-                            </CardContent>
-                        </Card>
                     </div>
                 </section>
 
@@ -760,71 +819,17 @@ export default function PolonnaruwaGuide() {
                                         </li>
                                     </ul>
 
-                                    <div className="mt-4 flex justify-start">
+                                    {/* <div className="mt-4 flex justify-start">
                                         <Link href="/destinations/lotus-pond-polonnaruwa" passHref legacyBehavior>
                                             <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
                                         </Link>
-                                    </div>
+                                    </div> */}
 
                                 </div>
                             </div>
                         </CardContent>
                     </Card>
 
-                    <section id="lotus-pond" className="mt-12 scroll-mt-20">
-                        <Card>
-                            <CardHeader>
-                                <CardTitle>2. Audience Hall of Nissanka Malla</CardTitle>
-                                <CardDescription>Unique architectural masterpiece with lotus-shaped pillars</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <div>
-                                        <p className="text-muted-foreground mb-4">
-                                            Built by King Nissanka Malla as a royal reception hall, the Audience Hall represents one of the finest examples of Polonnaruwa period architecture. This magnificent structure served as the venue for royal audiences, state functions, and important ceremonies. The intricate lotus-shaped pillars symbolize purity and nobility, demonstrating the king's sophisticated artistic vision and advanced architectural knowledge.
-                                        </p>
-                                        <ul className="space-y-2 text-muted-foreground">
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Royal reception and audience hall for state functions
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Built during the reign of King Nissanka Malla (1187-1196 AD)
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Open-air pavilion design for ceremonial purposes
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Testimony to advanced medieval Sinhalese engineering
-                                            </li>
-                                        </ul>
-
-                                        <div className="mt-4 flex justify-start">
-                                            <Link href="/destinations/nissanka-latha-mandapaya" passHref legacyBehavior>
-                                                <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    <ImageCarousel
-                                        images={[
-                                            { src: "/Nishshankalatha-mandapaya.jpg", caption: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform", alt: "Nissanka Latha Mandapaya: Lotus-shaped stone pillars surrounding the central platform" },
-                                            { src: "/Nishshankalatha-mandapaya1.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
-                                            { src: "/Nishshankalatha-mandapaya2.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall", alt: "Close-up of intricately carved lotus pillars at the Audience Hall" },
-                                            {
-                                                src: "/Nishshankalatha-mandapaya3.jpg", caption: "Close-up of intricately carved lotus pillars at the Audience Hall",
-                                                alt: "Close-up of intricately carved lotus pillars at the Audience Hall"
-
-                                            },
-                                        ]}
-
-                                    />
-                                </div>
-                            </CardContent>
-                        </Card>
-                    </section>
                 </section>
 
                 {/* Ad Space */}
@@ -840,8 +845,8 @@ export default function PolonnaruwaGuide() {
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>3. Gal Vihara Rock Temple</CardTitle>
-                                <CardDescription>Masterpiece of ancient rock sculpture</CardDescription>
+                                <CardTitle>Gal Vihara Rock Temple</CardTitle>
+                                <CardDescription>Rock-cut Buddha images from the Polonnaruwa period</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -851,12 +856,12 @@ export default function PolonnaruwaGuide() {
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            Considered the pinnacle of ancient Sinhalese sculpture, Gal Vihara features three magnificent Buddha statues carved from a single granite rock face. These 12th-century masterpieces represent the finest Buddhist art in Sri Lanka.
+                                            Considered the pinnacle of ancient Sinhalese sculpture, Gal Vihara features four magnificent Buddha statues carved from a single granite rock face. These 12th-century masterpieces represent the finest Buddhist art in Sri Lanka.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Three Buddha statues in different poses (a seated Buddha in meditation, a standing Buddha with arms crossed, and a reclining Buddha representing his final nirvana)
+                                                Four Buddha images, including seated, standing, and reclining forms
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -893,13 +898,12 @@ export default function PolonnaruwaGuide() {
                                         images={[
                                             { src: "/Watadageya1.jpg", caption: "Polonnaruwa Vatadageya: Circular relic house with stone pillars", alt: "Polonnaruwa Vatadageya: Circular relic house with stone pillars" },
                                             { src: "/Watadageya.jpg", caption: "Vatadageya: Intricate stone carvings and moonstone", alt: "Vatadageya: Intricate stone carvings and moonstone" },
-                                            { src: "/PolonnaruwaVatadageya3.jpg", caption: "Vatadageya: Buddha statues and central stupa base", alt: "Vatadageya: Buddha statues and central stupa base" },
                                         ]}
 
                                     />
                                     <div>
                                         <p className="text-muted-foreground mb-4">
-                                            The Polonnaruwa Vatadageya is one of Sri Lanka&apos;s most iconic ancient structures a circular relic house built to protect sacred Buddhist relics. Dating to the 12th century, it features concentric stone platforms, beautifully carved guard stones, and a famous moonstone at the entrance. Four Buddha statues face the cardinal directions, symbolizing protection and enlightenment.
+                                            The Polonnaruwa Vatadageya is a circular relic house from the Polonnaruwa period. It has concentric stone platforms, carved guard stones, a moonstone, and four seated Buddha images placed around the inner platform.
                                         </p>
                                         <ul className="space-y-2 text-muted-foreground">
                                             <li className="flex items-start gap-2">
@@ -936,11 +940,11 @@ export default function PolonnaruwaGuide() {
                                             </li>
                                         </ul>
 
-                                        <div className="mt-4 flex justify-start">
+                                        {/* <div className="mt-4 flex justify-start">
                                             <Link href="/destinations/polonnaruwa-vatadageya" passHref legacyBehavior>
                                                 <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </CardContent>
@@ -1012,11 +1016,11 @@ export default function PolonnaruwaGuide() {
                                                 religious shrine and royal library makes it unique among Polonnaruwa&apos;s monuments.
                                             </p>
                                         </div>
-                                        <div className="mt-4 flex justify-start">
+                                        {/* <div className="mt-4 flex justify-start">
                                             <Link href="/destinations/polonnaruwa-hatadageya" passHref legacyBehavior>
                                                 <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </CardContent>
@@ -1068,11 +1072,11 @@ export default function PolonnaruwaGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="mt-4 flex justify-start">
+                                        {/* <div className="mt-4 flex justify-start">
                                             <Link href="/destinations/thivanka-pilimage" passHref legacyBehavior>
                                                 <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </CardContent>
@@ -1117,11 +1121,11 @@ export default function PolonnaruwaGuide() {
                                             </p>
                                         </div>
 
-                                        <div className="mt-4 flex justify-start">
+                                        {/* <div className="mt-4 flex justify-start">
                                             <Link href="/destinations/sathmahal-prasadaya" passHref legacyBehavior>
                                                 <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <ImageCarousel
                                         images={[
@@ -1163,11 +1167,11 @@ export default function PolonnaruwaGuide() {
                                                 Well-preserved with original lime plaster
                                             </li>
                                         </ul>
-                                        <div className="mt-4 flex justify-start">
+                                        {/* <div className="mt-4 flex justify-start">
                                             <Link href="/destinations/rankoth-vehera" passHref legacyBehavior>
                                                 <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                                             </Link>
-                                        </div>
+                                        </div> */}
 
                                     </div>
                                     <ImageCarousel
@@ -1446,9 +1450,9 @@ export default function PolonnaruwaGuide() {
                                 <div>
                                     <h4 className="font-semibold mb-2">Entry Fees & Tickets</h4>
                                     <ul className="text-sm text-muted-foreground space-y-1">
-                                        <li>• Foreign adults: $25 USD</li>
-                                        <li>• Foreign children: $12.50 USD</li>
-                                        <li>• SAARC nationals: Discounted rates</li>
+                                        <li>• Check current foreign visitor ticket price before you go</li>
+                                        <li>• Check current child ticket rate before you go</li>
+                                        <li>• SAARC nationals may have different rates</li>
                                         <li>• Valid for same day only</li>
                                     </ul>
                                 </div>
