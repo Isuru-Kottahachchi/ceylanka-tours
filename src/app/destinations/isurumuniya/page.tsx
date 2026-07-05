@@ -23,8 +23,8 @@ export default function IsurumuniyaTempleGuide() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Isurumuniya Temple</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Ancient Rock Temple of Love & Devotion</p>
+          <h1 className="hero-text-shadow text-4xl md:text-6xl font-bold mb-4">Isurumuniya Temple</h1>
+          <p className="text-xl md:text-2xl mb-6 font-light">Ancient rock temple in Anuradhapura</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
@@ -48,10 +48,10 @@ export default function IsurumuniyaTempleGuide() {
           <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Isurumuniya: Where Art Meets Spirituality</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Nestled among the ancient ruins of Anuradhapura, Isurumuniya Temple is a masterpiece of ancient Sri Lankan art and architecture. This rock temple, dating back to the 3rd century BC, is famous worldwide for its exquisite stone carvings, particularly the romantic &quot;Lovers&quot; sculpture.
+              Isurumuniya is a Buddhist temple in Anuradhapura, near Tissa Wewa. It is usually dated to the 3rd century BC and linked to the reign of King Devanampiya Tissa.
             </p>
             <p className="text-lg">
-              More than just a temple, Isurumuniya is an artistic treasure trove that showcases the sophisticated craftsmanship of ancient Sri Lankan sculptors. The temple complex, built around natural rock formations, offers a unique blend of spiritual significance and artistic beauty.
+              The temple is best known for its stone carvings, especially the Lovers sculpture, the Elephant Pond carving, and the Royal Family panel. The shrine is built around a rock outcrop and remains one of the best-known stops in the Anuradhapura sacred city.
             </p>
           </div>
         </section>
@@ -87,30 +87,30 @@ export default function IsurumuniyaTempleGuide() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-orange-500" />
-                    <span><strong>Visit Duration:</strong> 1-2 hours</span>
+                    <span><strong>Main carvings:</strong> Lovers, Elephant Pond, Royal Family</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Star className="w-4 h-4 text-yellow-500" />
-                    <span><strong>Entry:</strong> Included in Anuradhapura ticket</span>
+                    <span><strong>Entry:</strong> Check current Anuradhapura site ticket rules before you go</span>
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="font-semibold mb-4">Distances to Major Landmarks</h3>
+                  <h3 className="font-semibold mb-4">Location Notes</h3>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-green-500" />
-                    <span><strong>To Ruwanwelisaya:</strong> 2.8 km</span>
+                    <span><strong>Setting:</strong> Inside the Anuradhapura sacred city area</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-green-500" />
-                    <span><strong>To Jetavanaramaya:</strong> 4.4 km</span>
+                    <span><strong>Near:</strong> Tissa Wewa</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-green-500" />
-                    <span><strong>From City Center:</strong> 1.8 km</span>
+                    <span><strong>Close to:</strong> Ranmasu Uyana</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-green-500" />
-                    <span><strong>From Jaya Sri Maha Bodhi:</strong> 2.1 km</span>
+                    <span><strong>Often combined with:</strong> Other Anuradhapura sacred sites</span>
                   </div>
                 </div>
               </div>
@@ -131,21 +131,21 @@ export default function IsurumuniyaTempleGuide() {
                 className="rounded-lg shadow-lg"
               />
               <p className="text-sm text-muted-foreground mt-2 italic">
-                The world-famous &quot;Lovers&quot; sculpture at Isurumuniya Temple
+                The &quot;Lovers&quot; sculpture at Isurumuniya Temple
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                The temple&apos;s most famous sculpture tells a romantic story that has captivated visitors for centuries. The &quot;Lovers&quot; carving, dating back to the 6th-7th century AD, is believed to represent Prince Saliya (son of the legendary King Dutugemunu) and his beloved Asokamala, a woman of lower caste. The sculpture showcases remarkable artistic detail, with the couple portrayed in an intimate embrace, their expressions and postures reflecting deep emotional connection.
+                The temple&apos;s best-known carving is the &quot;Lovers&quot; sculpture. It is usually dated to the Anuradhapura period, and many local accounts link it with Prince Saliya and Asokamala.
               </p>
               <p>
-                According to historical chronicles, particularly the Mahavamsa, Prince Saliya was the heir apparent to the Anuradhapura Kingdom during its golden age. Despite his royal status and the expectations of his position, he fell deeply in love with Asokamala, a beautiful woman from the Chandala caste. In a remarkable act of devotion, Prince Saliya willingly renounced his claim to the throne to marry her, choosing love over power and position. This decision was unprecedented in ancient Sri Lankan royal history and continues to symbolize the triumph of love over social barriers.
+                In that story, Prince Saliya gave up his claim to the throne to be with Asokamala. This is why the carving is often discussed as a symbol of love that crossed social rank.
               </p>
               <p>
-                The sculpture itself is a masterpiece of Sinhalese classical art, carved with exceptional skill in the distinctive style of the Anuradhapura period. The figures are adorned with intricate jewelry and royal attire, their poses reflecting both intimacy and nobility. The technical excellence of the carving, particularly in the delicate rendering of facial expressions and ornate details, demonstrates the advanced artistic capabilities of ancient Sri Lankan sculptors.
+                The carving is also important as an example of stone work from the Anuradhapura period. Visitors usually notice the facial detail, the body posture, and the way the sculptor used a simple stone surface to show movement and closeness.
               </p>
               <p>
-                However, some scholars present an alternative interpretation, suggesting the sculpture might represent divine couple or celestial beings, possibly Shiva and Parvati from Hindu mythology, or semi-divine beings known as Gandharvas and Apsaras. This scholarly debate adds another layer of mystery and allure to this ancient masterpiece, making it not just a symbol of love but also a subject of ongoing historical and cultural discourse.
+                Not everyone agrees on the identity of the figures. Some writers suggest the panel may show a divine or courtly couple instead, so it is better to present the Saliya and Asokamala story as a popular interpretation rather than a settled fact.
               </p>
             </div>
           </div>

@@ -49,38 +49,27 @@ export default function KatharagamaGuide() {
         <div className="max-w-6xl mx-auto px-4 py-12">
           {/* Introduction */}
           <section className="mb-16">
-            <h2 className="text-4xl font-bold mb-8 text-foreground" id="welcome">Welcome to Katharagama: Where Faith Comes Alive</h2>
+            <h2 className="text-4xl font-bold mb-8 text-foreground" id="welcome">Welcome to Katharagama</h2>
             {/* ...existing code... */}
             <div className="prose prose-xl max-w-none text-foreground dark:text-foreground leading-relaxed space-y-6">
               <p className="text-xl mb-6 leading-relaxed text-muted-foreground dark:text-muted-foreground">
-                Katharagama is Sri Lanka&apos;s most important pilgrimage destination, a sacred place where Hindus, Buddhists,
-                Muslims, and indigenous Vedda people have worshipped together for over 2,000 years. This ancient holy city
-                in the southeastern part of Sri Lanka attracts millions of devotees annually who come seeking blessings,
-                spiritual healing, and divine intervention. The main deity worshipped here is Lord Murugan (also known as
-                Skanda or Kataragama Deviyo), the Hindu god of war and victory, who is believed to grant wishes and
-                protect devotees.
+                Katharagama is one of Sri Lanka&apos;s best known pilgrimage towns. Hindus, Buddhists, Muslims, and Vedda
+                communities all have links to this sacred area. The main shrine is associated with Lord Murugan, also
+                called Skanda or Kataragama Deviyo.
               </p>
               <p className="text-lg mb-6 text-muted-foreground dark:text-muted-foreground">
-                The town of Katharagama transforms completely during religious festivals, especially during the annual
-                Esala Festival in August, when hundreds of thousands of pilgrims arrive from across Sri Lanka and
-                South India. During these times, the normally quiet town becomes a vibrant spiritual center filled with
-                devotional music, colorful processions, fire-walking ceremonies, and intense religious fervor that creates
-                an atmosphere unlike anywhere else in the world.
+                The town becomes much busier during major religious festivals, especially in the Esala season. At that
+                time, large crowds arrive from different parts of Sri Lanka and South India. Processions, devotional
+                music, and fire-walking ceremonies are all part of the festival period.
               </p>
               <p className="text-lg mb-6 text-muted-foreground dark:text-muted-foreground">
-                What makes Katharagama unique is its multi-religious character. While primarily a Hindu temple complex, it
-                also contains Buddhist temples, a mosque, and sites sacred to the indigenous Vedda people. This religious
-                harmony reflects Sri Lanka&apos;s diverse spiritual heritage and creates a powerful atmosphere of universal
-                devotion that transcends religious boundaries. Visitors of all faiths are welcome to participate in
-                ceremonies and experience the profound spiritual energy that permeates this sacred place.
+                Katharagama is known for its multi-religious character. Alongside the main Hindu shrine, visitors also
+                find Buddhist sites, a mosque, and places linked with Vedda traditions. This mix is an important part of
+                the town&apos;s identity.
               </p>
               <p className="text-lg text-muted-foreground dark:text-muted-foreground">
-                Beyond its religious significance, Katharagama is located near Yala National Park, making it possible to
-                combine spiritual experiences with wildlife viewing. The town also serves as a gateway to understanding
-                Sri Lankan religious culture, traditional healing practices, and the deep faith that plays such an
-                important role in local people&apos;s daily lives. Whether you come as a pilgrim seeking spiritual fulfillment
-                or as a traveler interested in cultural experiences, Katharagama offers profound insights into the
-                spiritual heart of Sri Lanka.
+                Katharagama is also a practical stop for travelers heading to the Yala area. A visit here gives a closer
+                look at Sri Lankan pilgrimage culture, temple customs, and the role religion still plays in daily life.
               </p>
             </div>
           </section>
@@ -119,7 +108,7 @@ export default function KatharagamaGuide() {
                     <div className="flex items-center gap-3">
                       <Clock className="w-5 h-5 text-blue-500" />
                       <span>
-                        <strong>History:</strong> Over 2,000 years old
+                        <strong>History:</strong> Ancient pilgrimage site with a long recorded history
                       </span>
                     </div>
                   </div>
@@ -134,7 +123,7 @@ export default function KatharagamaGuide() {
                     <div className="flex items-center gap-3">
                       <Users className="w-5 h-5 text-green-500" />
                       <span>
-                        <strong>Annual Visitors:</strong> Over 1 million pilgrims
+                        <strong>Annual Visitors:</strong> Large pilgrimage crowds during major festival periods
                       </span>
                     </div>
                     <div className="flex items-center gap-3">
@@ -146,7 +135,7 @@ export default function KatharagamaGuide() {
                     <div className="flex items-center gap-3">
                       <Heart className="w-5 h-5 text-pink-500" />
                       <span>
-                        <strong>Purpose:</strong> Wish fulfillment, healing
+                        <strong>Purpose:</strong> Prayer, vows, and offerings
                       </span>
                     </div>
                   </div>
@@ -155,13 +144,13 @@ export default function KatharagamaGuide() {
                     <div className="flex items-center gap-3">
                       <Clock className="w-5 h-5 text-orange-500" />
                       <span>
-                        <strong>From Colombo:</strong> 5-6 hours by road
+                        <strong>From Colombo:</strong> Nearly 262 km, nearly 3 hours 40 minutes by road
                       </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <TreePine className="w-5 h-5 text-green-500" />
                       <span>
-                        <strong>Nearby:</strong> Yala National Park (20 km)
+                        <strong>Nearby:</strong> Yala area, travel time varies by gate and route
                       </span>
                     </div>
                     <div className="flex items-center gap-3">
@@ -187,7 +176,7 @@ export default function KatharagamaGuide() {
                 <div>
                   <h4 className="font-semibold text-amber-800 mb-2">Important Safety Notice</h4>
                   <p className="text-sm text-amber-700 mb-2">
-                    <strong>Always be aware about the crocodiles:</strong> When visiting Katharagama, you will see Manik river and some water bodies around the area. Be cautious and avoid getting too close to the water&apos;s edge, especially during the rainy season when water levels can rise rapidly. Crocodiles are known to inhabit these waters, so it is essential to stay vigilant and follow any local safety guidelines to ensure a safe visit.
+                    <strong>Be careful near the water:</strong> When visiting Katharagama, you may see the Menik Ganga and other water bodies around the area. Avoid getting too close to the water&apos;s edge, especially in wet weather. Follow local safety guidance at all times.
                   </p>
                 </div>
               </div>
@@ -208,16 +197,16 @@ export default function KatharagamaGuide() {
                   <div>
                     <h4 className="font-semibold text-xl text-blue-700 dark:text-blue-300 mb-4">By Road</h4>
                     <ul className="space-y-2 text-muted-foreground">
-                      <li>• <strong>From Colombo:</strong> 5–6 hours (290 km) via Ratnapura and Embilipitiya</li>
-                      <li>• <strong>From Kandy:</strong> 4–5 hours (220 km) via Badulla and Wellawaya</li>
-                      <li>• <strong>From Yala National Park:</strong> 30 minutes (20 km)</li>
+                      <li>• <strong>From Colombo:</strong> Nearly 262 km, nearly 3 hours 40 minutes by road</li>
+                      <li>• <strong>From Kandy:</strong> Nearly 217 km, nearly 5 hours by road</li>
+                      <li>• <strong>From Yala National Park:</strong> Travel time varies by gate, hotel, and route, so check your exact road journey before leaving</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-semibold text-xl text-blue-700 dark:text-blue-300 mb-4">By Public Transport</h4>
                     <ul className="space-y-2 text-muted-foreground">
-                      <li>• <strong>Bus:</strong> Direct buses from Colombo, Kandy, and Matara; frequent local buses from nearby towns</li>
-                      <li>• <strong>Train:</strong> Nearest station is in Matara or Badulla, then bus/taxi to Katharagama</li>
+                      <li>• <strong>Bus:</strong> Bus services connect Katharagama with Colombo, Kandy, Matara, and nearby towns. Check current schedules locally before travel</li>
+                      <li>• <strong>Train:</strong> There is no railway station in Katharagama. Most rail travelers continue the final part of the trip by road</li>
                       <li>• <strong>Tuk-tuk:</strong> Widely available for short trips and local travel</li>
                     </ul>
                   </div>
@@ -246,7 +235,7 @@ export default function KatharagamaGuide() {
                 <CardHeader className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/40 dark:to-orange-900/40">
                   <CardTitle className="text-2xl text-red-800 dark:text-red-300">Katharagama Devalaya (Main Temple)</CardTitle>
                   <CardDescription className="text-lg text-red-600 dark:text-red-300">
-                    Sacred shrine of Lord Murugan, the heart of pilgrimage
+                      Sacred shrine of Lord Murugan, central to the Katharagama pilgrimage
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-8">
@@ -257,11 +246,11 @@ export default function KatharagamaGuide() {
                           src: "/Katharagama-dewalaya1.jpg", caption: "Katharagama dewalaya illuminated at night",
                           alt: "Katharagama dewalaya illuminated at night"
                         },
-                         {
+                        {
                           src: "/Katharagama-dewalaya2.jpg", caption: "Katharagama dewalaya illuminated at night",
                           alt: "Katharagama dewalaya illuminated at night"
                         },
-                         {
+                        {
                           src: "/Katharagama-dewalaya.jpg", caption: "Main Katharagama dewalaya with devotees and oil lamps",
                           alt: "Main Katharagama dewalaya with devotees and oil lamps"
                         },
@@ -276,18 +265,14 @@ export default function KatharagamaGuide() {
                         images that might exclude any particular group.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        The temple follows ancient traditions where devotees make offerings of fruits, flowers, and
-                        coconuts, while lighting oil lamps as symbols of their prayers. The most powerful time to visit is
-                        during the evening puja (prayer ceremony) around 6:30 PM, when hundreds of devotees gather to
-                        participate in collective worship. The atmosphere becomes electric with devotional chanting, drum
-                        beats, and the flickering light of thousands of oil lamps.
+                        The temple follows long-standing traditions where devotees make offerings of fruits, flowers, and
+                        coconuts, while lighting oil lamps during prayer. Many visitors choose to come for the evening
+                        puja, when the temple is especially active and crowded.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        Many pilgrims come to Katharagama to fulfill vows made during difficult times in their lives. It&apos;s
-                        common to see devotees who have traveled hundreds of miles on foot, carrying kavadi (decorated
-                        structures) as offerings, or performing various forms of penance as expressions of their devotion
-                        and gratitude. The temple is believed to be especially powerful for granting wishes related to
-                        health, prosperity, and protection from harm.
+                        Many pilgrims come to Katharagama to keep vows made during difficult periods in their lives. Some
+                        devotees arrive on foot, carry kavadi as offerings, or take part in acts of penance as part of
+                        their religious practice.
                       </p>
 
                       <div className="bg-red-50 dark:bg-red-900/40 p-6 rounded-lg border border-red-200 dark:border-red-700">
@@ -296,7 +281,7 @@ export default function KatharagamaGuide() {
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                             <span>
-                              <strong>Daily Puja Times:</strong> 4:30 AM, 10:30 AM, 6:30 PM (most important)
+                              <strong>Puja Times:</strong> Check current temple schedules locally, as ceremony times can change
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
@@ -333,7 +318,7 @@ export default function KatharagamaGuide() {
                 <CardHeader className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/40 dark:to-orange-900/40">
                   <CardTitle className="text-2xl text-red-800 dark:text-red-300">Sella Katharagama</CardTitle>
                   <CardDescription className="text-lg text-red-600 dark:text-red-300">
-                    Legendary birthplace shrine of Lord Murugan&apos;s divine child sanctuary of fertility and healing blessings
+                    Small shrine linked with local pilgrimage traditions
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-8">
@@ -348,13 +333,17 @@ export default function KatharagamaGuide() {
                     />
                     <div className="space-y-6">
                       <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                        Sella Katharagama is a small but deeply significant shrine located a short distance from the main temple complex. According to local legend, this is where Valli gave birth to Lord Murugan&apos;s child, making it one of the most sacred spots in the Katharagama complex for devotees seeking blessings for childbirth, fertility, and the wellbeing of children.
+                        Sella Katharagama is a small shrine a short distance from the main temple complex. In local
+                        tradition, it is linked with Valli and family blessings, so many devotees visit it during their
+                        wider pilgrimage through Katharagama.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        The shrine is peaceful and far less crowded than the main Maha Devalaya, offering a serene environment for personal prayer and meditation. Many couples facing fertility challenges make special offerings here, and parents bring newborn children to receive the blessings of the deity. The atmosphere is intimate and spiritually charged.
+                        The shrine is usually quieter than the main Maha Devalaya, so it is often used for personal prayer
+                        and reflection. Families sometimes visit to make offerings and pray for wellbeing.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        Pilgrims often include Sella Katharagama as part of the extended pilgrimage circuit around the sacred town, visiting it before or after the main puja ceremonies. The most powerful time to visit is in the early morning when the shrine is quiet and the devotional energy is strongest.
+                        Pilgrims often include Sella Katharagama as part of the wider pilgrimage circuit around the sacred
+                        town, visiting it before or after the main puja ceremonies.
                       </p>
 
                       <div className="bg-red-50 dark:bg-red-900/40 p-6 rounded-lg border border-red-200 dark:border-red-700">
@@ -362,7 +351,7 @@ export default function KatharagamaGuide() {
                         <ul className="space-y-3 text-muted-foreground dark:text-muted-foreground">
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <span><strong>Best For:</strong> Fertility blessings, childbirth prayers, newborn blessings</span>
+                            <span><strong>Common Reasons for Visiting:</strong> Family prayers, offerings, and quiet reflection</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
@@ -399,11 +388,8 @@ export default function KatharagamaGuide() {
                   <div className="grid lg:grid-cols-2 gap-8 items-start">
                     <div className="space-y-6">
                       <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                        The Kiri Vehera is a beautiful white Buddhist stupa located within the Katharagama sacred complex,
-                        demonstrating the remarkable religious harmony that exists at this holy site. Built over 2,000
-                        years ago, this ancient monument is believed to contain relics of the Buddha and serves as an
-                        important meditation and worship site for Buddhist pilgrims who visit Katharagama alongside their
-                        Hindu counterparts.
+                        The Kiri Vehera is a white Buddhist stupa within the Katharagama sacred complex. It is an
+                        important worship site for Buddhist pilgrims who visit Katharagama alongside the Hindu shrines.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
                         The name &quot;Kiri Vehera&quot; means &quot;Milk White Temple&quot; in Sinhala, referring to the stupa&apos;s pristine
@@ -413,11 +399,8 @@ export default function KatharagamaGuide() {
                         place for quiet reflection and meditation.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        What makes Kiri Vehera special is how it represents the inclusive nature of Katharagama&apos;s
-                        spirituality. Hindu and Buddhist pilgrims often visit both temples during their pilgrimage,
-                        showing respect for all religious traditions. The temple is particularly beautiful during full
-                        moon nights when special ceremonies are held and the white stupa is illuminated by moonlight and
-                        oil lamps.
+                        Kiri Vehera is often included in the same visit as the main shrines in Katharagama. Many visitors
+                        come here for a quieter setting and time for reflection.
                       </p>
 
                       <div className="bg-yellow-50 dark:bg-yellow-900/40 p-6 rounded-lg border border-yellow-200 dark:border-yellow-700">
@@ -432,7 +415,7 @@ export default function KatharagamaGuide() {
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                             <span>
-                              <strong>Age:</strong> Over 2,000 years old, contains Buddha relics
+                              <strong>Background:</strong> Ancient stupa with long-standing Buddhist pilgrimage associations
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
@@ -492,25 +475,17 @@ export default function KatharagamaGuide() {
                     />
                     <div className="space-y-6">
                       <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                        Within the Katharagama sacred complex, you&apos;ll find a small but significant mosque that serves the
-                        Muslim community and demonstrates the remarkable religious tolerance that characterizes this holy
-                        site. Muslim pilgrims also come to Katharagama seeking blessings, and many participate in the
-                        general spiritual atmosphere while maintaining their own religious practices. This coexistence of
-                        different faiths in one sacred space is rare and beautiful.
+                        Within the Katharagama sacred area, there is also a mosque used by the local Muslim community.
+                        This is one reason Katharagama is often described as a shared sacred town rather than a single
+                        religious site.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        The indigenous Vedda people, Sri Lanka&apos;s original inhabitants, also consider Katharagama sacred
-                        and have their own traditional worship sites within the area. Their ancient spiritual practices,
-                        which predate all other religions on the island, add another layer to Katharagama&apos;s
-                        multi-religious character. Vedda shamans sometimes perform traditional ceremonies, especially
-                        during major festivals.
+                        Katharagama is also linked with Vedda traditions in local belief and oral history. These
+                        associations add another layer to the town&apos;s long religious history.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        This religious diversity creates a unique atmosphere where people of different faiths pray side by
-                        side, each following their own traditions while respecting others. During major festivals, you
-                        might see Hindu devotees carrying kavadi, Buddhist monks chanting, Muslim families praying, and
-                        Vedda elders performing traditional rituals - all within the same sacred space, creating a
-                        powerful example of religious harmony.
+                        During busy periods, visitors can see different religious practices taking place in and around the
+                        wider sacred area. This shared use of the town is one of Katharagama&apos;s most distinctive features.
                       </p>
 
                       <div className="bg-green-50 dark:bg-green-900/40 p-6 rounded-lg border border-green-200 dark:border-green-700">
@@ -531,13 +506,13 @@ export default function KatharagamaGuide() {
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                             <span>
-                              <strong>Muslim Presence:</strong> Mosque, Islamic prayers, community participation
+                              <strong>Muslim Presence:</strong> Mosque and local community worship
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
                             <span>
-                              <strong>Vedda Traditions:</strong> Indigenous ceremonies, ancient spiritual practices
+                              <strong>Vedda Traditions:</strong> Local sacred associations and oral traditions
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
@@ -580,16 +555,20 @@ export default function KatharagamaGuide() {
                   />
                   <div className="space-y-6">
                     <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                      Okanda Dewalaya is a revered Hindu shrine on Sri Lanka&apos;s wild eastern coast, dedicated to Lord Murugan (Kataragama Deviyo). According to legend, Lord Murugan landed here from India on his peacock mount, splitting the great Okanda rock with his divine spear (vel) to mark the start of his journey to Katharagama. The name &quot;Okanda&quot; is believed to derive from the Tamil &quot;Ukantai&quot; meaning &quot;to sit&quot;, as the deity is said to have rested here before continuing his pilgrimage.
+                      Okanda Dewalaya is a Hindu shrine on Sri Lanka&apos;s eastern coast, dedicated to Lord Murugan
+                      (Kataragama Deviyo). In local tradition, it is linked with the start of the pilgrimage route to
+                      Katharagama.
                     </p>
                     <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                      Today, Okanda Dewalaya is a vital stop for pilgrims walking the ancient Pada Yatra route from the north and east to Katharagama, especially during the Esala festival. Pilgrims rest, offer prayers, and bathe in the sea before continuing their journey. The shrine is set amidst dramatic coastal scenery, with the Indian Ocean on one side and dense jungle on the other. Okanda is also popular with surfers and travelers seeking a spiritual, off-the-beaten-path experience.
+                      Today, Okanda Dewalaya is an important stop for pilgrims walking the Pada Yatra route from the
+                      north and east to Katharagama, especially during the Esala season. Pilgrims rest, pray, and
+                      continue their journey from here.
                     </p>
                     <ul className="list-disc pl-5 text-muted-foreground dark:text-muted-foreground">
-                      <li>Legendary landing site of Lord Murugan&apos;s journey to Katharagama</li>
+                      <li>Linked in local tradition with the journey to Katharagama</li>
                       <li>Key stop on the traditional Pada Yatra pilgrimage</li>
                       <li>Beautiful, remote beach setting</li>
-                      <li>Annual festival in July/August draws thousands of devotees</li>
+                      <li>Busy pilgrimage stop during the festival season</li>
                       <li>Open to all faiths, known for its welcoming atmosphere</li>
                     </ul>
                   </div>
@@ -605,24 +584,27 @@ export default function KatharagamaGuide() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-8 grid md:grid-cols-2 gap-8 items-center">
-                    <ImageCarousel
-                      images={[
-                        {
-                          src: "/Kebiliththa-dewalaya.jpg", caption: "",
-                          alt: ""
-                        },
-                        {
-                          src: "/Kebiliththa-dewalaya1.jpg", caption: "",
-                          alt: ""
-                        }
-                      ]}
-                    />
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Kebiliththa-dewalaya.jpg", caption: "",
+                        alt: ""
+                      },
+                      {
+                        src: "/Kebiliththa-dewalaya1.jpg", caption: "",
+                        alt: ""
+                      }
+                    ]}
+                  />
                   <div className="space-y-6">
                     <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                      Kebalitta Dewalaya is a sacred jungle shrine located on the banks of the Menik Ganga river, and is inside of Yala national park just outside Katharagama. It is considered the place where God of Katharagama/Murugan resides, serving as a spiritual gateway to Katharagama for Pada Yatra pilgrims, who traditionally stop here to purify themselves in the river and seek blessings before entering the holy city.
+                      Kebalitta Dewalaya is a jungle shrine on the banks of the Menik Ganga, in the wider Yala and
+                      Katharagama area. In local tradition, it is treated as an important stopping point for Pada Yatra
+                      pilgrims before they enter Katharagama.
                     </p>
                     <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                      The shrine is dedicated to a guardian spirit and is surrounded by dense forest, creating a mystical and tranquil atmosphere. Rituals at Kebalitta Dewalaya are simple and focus on purification, humility, and respect for nature. Many believe that only after paying respects here can one truly receive the blessings of Katharagama Deviyo.
+                      The shrine is surrounded by dense forest. Rituals here are simple and usually focus on purification,
+                      humility, and respect for the sacred landscape.
                     </p>
                     <ul className="list-disc pl-5 text-muted-foreground dark:text-muted-foreground">
                       <li>Traditional entry point for pilgrims on foot</li>
@@ -633,7 +615,7 @@ export default function KatharagamaGuide() {
                     </ul>
                     <div className="bg-amber-50 p-3 rounded-lg">
                       <p className="text-sm text-amber-800">
-                        <strong>Special Notes</strong> Devotees must avoid eating meat and drinking alcohol before visiting this sacred site at least 14 days prior to arrival.
+                        <strong>Special Notes</strong> Some devotees avoid meat and alcohol before visiting this sacred site as part of their religious observance.
                       </p>
                     </div>
 
@@ -653,13 +635,15 @@ export default function KatharagamaGuide() {
                   <div className="grid lg:grid-cols-2 gap-8 items-start">
                     <div className="space-y-6">
                       <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                        The Valli Amma Kovil is dedicated to Valli, the local tribal princess who became the beloved consort of Lord Murugan according to Hindu mythology. Legend says that Murugan fell in love with Valli, a Vedda maiden, during his stay in Katharagama. This shrine honors their divine union and is an important part of the pilgrimage circuit.
+                        The Valli Amma Kovil is dedicated to Valli, who is linked with Lord Murugan in Hindu tradition.
+                        The shrine is an important part of the local pilgrimage circuit.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        Pilgrims traditionally visit Valli Amma Kovil after offering prayers at the main Katharagama temple, as it is believed that Valli can intercede on behalf of devotees to Lord Murugan. The temple has a peaceful atmosphere compared to the main shrine and is particularly popular among women devotees seeking blessings for marriage, family harmony, and children.
+                        Pilgrims often visit Valli Amma Kovil after the main Katharagama temple. The shrine is quieter
+                        than the main temple and is often visited for family-related prayers.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
-                        The story of Valli also represents the beautiful integration of indigenous Vedda culture with Hindu traditions, making this shrine a symbol of cultural harmony and the local roots of Katharagama worship.
+                        The story of Valli also shows how local traditions became part of Katharagama worship over time.
                       </p>
                       <ul className="list-disc pl-5 text-muted-foreground dark:text-muted-foreground">
                         <li>Essential part of traditional pilgrimage circuit</li>
@@ -709,7 +693,9 @@ export default function KatharagamaGuide() {
                     />
                     <div className="space-y-6">
                       <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                        The Menik Ganga (Gem River) is considered sacred and an essential part of the Katharagama pilgrimage. Traditional practice requires pilgrims to bathe in the river before entering the temple complex as an act of physical and spiritual purification. The river flows through the sacred area and is believed to wash away sins and negative energies.
+                        The Menik Ganga is treated as a sacred river and is an important part of the Katharagama
+                        pilgrimage. Many pilgrims bathe before entering the temple complex as part of their ritual
+                        preparation.
                       </p>
                       <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
                         Early morning is the most popular time for ritual bathing, when hundreds of devotees gather at the designated bathing ghats (steps) to perform their ablutions. Many pilgrims also use this opportunity to perform prayers, offer flowers to the river, and mentally prepare themselves for temple worship.
@@ -730,7 +716,7 @@ export default function KatharagamaGuide() {
                       </div>
                       <ul className="list-disc pl-5 text-muted-foreground dark:text-muted-foreground">
                         <li>Traditional purification ritual before temple entry</li>
-                        <li>Sacred water believed to have healing properties</li>
+                        <li>Ritual bathing remains important to many pilgrims</li>
                         <li>Designated safe bathing areas with steps</li>
                         <li>Best time: Early morning (5-7 AM)</li>
                         <li>Part of authentic pilgrimage experience</li>
@@ -749,25 +735,26 @@ export default function KatharagamaGuide() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="p-8 grid md:grid-cols-2 gap-8 items-center">
-                    <ImageCarousel
-                      images={[
-                        {
-                          src: "/Wada-siti-kanda.jpeg", caption: "Wadasiti Kanda mountain with pilgrims climbing",
-                          alt: ""
-                        },
-                        {
-                          src: "/Wada-siti-kanda1.jpeg", caption: "Summit view from Wadasiti Kanda",
-                          alt: ""
-                        },
-                        {
-                          src: "/Wada-siti-kanda2.jpeg", caption: "Summit view from Wadasiti Kanda",
-                          alt: ""
-                        }
-                      ]}
-                    />
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Wada-siti-kanda.jpeg", caption: "Wadasiti Kanda mountain with pilgrims climbing",
+                        alt: "Wadasiti Kanda mountain with pilgrims climbing"
+                      },
+                      {
+                        src: "/Wada-siti-kanda1.jpeg", caption: "Summit view from Wadasiti Kanda",
+                        alt: "Summit view from Wadasiti Kanda"
+                      },
+                      {
+                        src: "/Wada-siti-kanda2.jpeg", caption: "Summit view from Wadasiti Kanda",
+                        alt: "Summit view from Wadasiti Kanda"
+                      }
+                    ]}
+                  />
                   <div className="space-y-6">
                     <p className="text-muted-foreground dark:text-muted-foreground text-lg leading-relaxed">
-                      Wadasiti Kanda is a forested hill rising near Katharagama, considered the legendary meditation site of King Dutugemunu and a place of penance for devotees. Pilgrims climb the mountain, often barefoot, as an act of devotion and to seek blessings for health, success, and spiritual growth.
+                      Wadasiti Kanda is a forested hill near Katharagama. In local tradition, it is linked with King
+                      Dutugemunu and with acts of penance and devotion. Pilgrims climb the hill as part of their visit.
                     </p>
                     <p className="text-muted-foreground dark:text-muted-foreground leading-relaxed">
                       The climb is steep but rewarding, offering panoramic views of the surrounding jungle and the sacred town below. At the summit, a small shrine and meditation area await, where pilgrims light lamps, pray, and reflect in peace.
@@ -797,10 +784,8 @@ export default function KatharagamaGuide() {
                 <CardContent className="p-6 space-y-6">
                   <div className="space-y-4">
                     <p className="text-muted-foreground leading-relaxed">
-                      The Esala Festival is Katharagama&apos;s most important celebration, lasting for two weeks in July or
-                      August. During this time, hundreds of thousands of pilgrims arrive from across Sri Lanka and South
-                      India, transforming the quiet town into a vibrant spiritual center filled with devotional
-                      activities, colorful processions, and intense religious fervor.
+                      The Esala Festival is Katharagama&apos;s most important annual celebration, usually held in July or
+                      August. During this period, large numbers of pilgrims arrive from Sri Lanka and South India.
                     </p>
 
                     <div className="border-l-4 border-orange-500 pl-4">
@@ -829,7 +814,7 @@ export default function KatharagamaGuide() {
 
                     <div className="bg-orange-50 p-4 rounded border border-orange-200">
                       <p className="text-sm text-orange-700 font-medium">
-                        <strong>Planning Tip:</strong> Book accommodation 6+ months in advance. Consider staying in nearby
+                        <strong>Planning Tip:</strong> Book accommodation well in advance. Consider staying in nearby
                         towns if Katharagama is full.
                       </p>
                     </div>
@@ -850,7 +835,14 @@ export default function KatharagamaGuide() {
                       vows made to Lord Murugan. This ancient practice requires intense spiritual preparation and is
                       considered a powerful form of penance and devotion.
                     </p>
-
+                    <ImageCarousel
+                      images={[
+                        {
+                          src: "/Katharagama-Festival.jpg", caption: "",
+                          alt: "Fire-walking ceremony at Katharagama Festival"
+                        },
+                      ]}
+                    />
                     <div className="border-l-4 border-red-500 pl-4">
                       <h4 className="font-semibold text-lg mb-2">The Ritual Process</h4>
                       <ul className="text-sm text-muted-foreground space-y-2">
@@ -869,7 +861,7 @@ export default function KatharagamaGuide() {
                         <li>• Demonstration of complete faith in the deity</li>
                         <li>• Fulfillment of vows made during difficult times</li>
                         <li>• Purification of sins and negative karma</li>
-                        <li>• Seeking healing for serious illnesses</li>
+                        <li>• Some devotees make vows during periods of illness or hardship</li>
                         <li>• Expression of gratitude for answered prayers</li>
                         <li>• Community witness to devotion</li>
                       </ul>
@@ -901,20 +893,20 @@ export default function KatharagamaGuide() {
                     <h4 className="font-semibold text-lg mb-3 text-blue-800">Transportation Options</h4>
                     <div className="space-y-3">
                       <div className="bg-blue-50 p-3 rounded border-l-4 border-blue-500">
-                        <p className="font-medium text-blue-700 mb-1">From Colombo (5-6 hours):</p>
+                        <p className="font-medium text-blue-700 mb-1">From Colombo (nearly 3 hours 40 minutes):</p>
                         <p className="text-sm text-blue-600">
-                          Private car/taxi ($80-120), bus via Ratnapura ($5-8), or train to Matara then bus
+                          Private car or taxi is the most direct option. Bus services are also available. Check current fares and schedules before travel
                         </p>
                       </div>
                       <div className="bg-cyan-50 p-3 rounded border-l-4 border-cyan-500">
-                        <p className="font-medium text-cyan-700 mb-1">From Kandy (4-5 hours):</p>
+                        <p className="font-medium text-cyan-700 mb-1">From Kandy (nearly 5 hours):</p>
                         <p className="text-sm text-cyan-600">
-                          Bus via Badulla and Wellawaya, or private vehicle through scenic hill country
+                          Travel is usually by road, either by bus or private vehicle. Route conditions can affect the total time
                         </p>
                       </div>
                       <div className="bg-teal-50 p-3 rounded border-l-4 border-teal-500">
-                        <p className="font-medium text-teal-700 mb-1">From Yala National Park (30 minutes):</p>
-                        <p className="text-sm text-teal-600">Easy to combine wildlife safari with pilgrimage visit</p>
+                        <p className="font-medium text-teal-700 mb-1">From Yala National Park area:</p>
+                        <p className="text-sm text-teal-600">Travel time depends on the gate, hotel, and road route you use</p>
                       </div>
                     </div>
                   </div>
@@ -926,7 +918,7 @@ export default function KatharagamaGuide() {
                         <strong>Within Town:</strong> Walking distance to all temples
                       </p>
                       <p>
-                        <strong>Tuk-tuks:</strong> Available for short trips ($1-2)
+                        <strong>Tuk-tuks:</strong> Available for short trips, fares vary by distance
                       </p>
                       <p>
                         <strong>Bicycles:</strong> Some guesthouses provide free bikes
@@ -1085,7 +1077,7 @@ export default function KatharagamaGuide() {
           <section className="mb-12">
             <h2 className="text-3xl font-bold mb-6">Nearby Places to Visit</h2>
             <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
-              Extend your Katharagama adventure with these incredible destinations within easy reach
+              Extend your Katharagama visit with these other places in the wider area
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1098,7 +1090,7 @@ export default function KatharagamaGuide() {
                     className="object-cover rounded-t-lg"
                   />
                   <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                    1.5 hours
+                    Check route
                   </div>
                 </div>
                 <CardContent className="p-4">
@@ -1108,7 +1100,7 @@ export default function KatharagamaGuide() {
                   </p>
                   <div className="flex items-center text-xs text-blue-600 mb-2">
                     <MapPin className="w-3 h-3 mr-1" />
-                    20 km from Katharagama
+                    Travel time depends on the gate and route
                   </div>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/yala-national-park" passHref legacyBehavior>
@@ -1127,7 +1119,7 @@ export default function KatharagamaGuide() {
                     className="object-cover rounded-t-lg"
                   />
                   <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                    1.5 hours
+                    Check route
                   </div>
                 </div>
                 <CardContent className="p-4">
@@ -1137,7 +1129,7 @@ export default function KatharagamaGuide() {
                   </p>
                   <div className="flex items-center text-xs text-blue-600 mb-2">
                     <MapPin className="w-3 h-3 mr-1" />
-                    50 km from Katharagama
+                    Road distance and timing vary by access route
                   </div>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/sithulpawwa-raja-maha-viharaya" passHref legacyBehavior>
@@ -1155,7 +1147,7 @@ export default function KatharagamaGuide() {
                     className="object-cover rounded-t-lg"
                   />
                   <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
-                    2 hours
+                    Check route
                   </div>
                 </div>
                 <CardContent className="p-4">
@@ -1165,7 +1157,7 @@ export default function KatharagamaGuide() {
                   </p>
                   <div className="flex items-center text-xs text-blue-600 mb-2">
                     <MapPin className="w-3 h-3 mr-1" />
-                    18 km from Katharagama
+                    Check the current road route before visiting
                   </div>
                   <div className="mt-4 flex justify-start">
                     <Link href="/destinations/ridiyagama-safari-park" passHref legacyBehavior>
@@ -1186,31 +1178,24 @@ export default function KatharagamaGuide() {
               <CardContent className="px-8 pb-8">
                 <div className="space-y-6 text-center">
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    Katharagama offers a profound spiritual experience that transcends religious boundaries and touches
-                    the very essence of human devotion and faith. Whether you come as a pilgrim seeking divine blessings,
-                    a cultural enthusiast wanting to understand Sri Lankan religious traditions, or simply as a traveler
-                    open to spiritual experiences, Katharagama will leave an indelible mark on your heart and soul.
+                    Katharagama is an active pilgrimage town, not just a sightseeing stop. People come here to pray,
+                    keep vows, and take part in long-standing religious traditions.
                   </p>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    The power of Katharagama lies not just in its ancient temples and sacred rituals, but in the
-                    collective faith of millions of devotees who have found solace, healing, and hope within its sacred
-                    boundaries. The sight of pilgrims from all walks of life united in devotion, the sound of ancient
-                    chants echoing through temple halls, and the atmosphere of universal love and acceptance create an
-                    experience that stays with visitors long after they leave.
+                    For visitors, the value of Katharagama is in watching how different rituals, shrines, and local
+                    customs still shape daily life. The town can be quiet on ordinary days and very crowded during the
+                    festival season.
                   </p>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    As you plan your visit to this sacred site, remember that Katharagama is not just a tourist
-                    destination - it&apos;s a living center of faith where real people come with real hopes, fears, and dreams.
-                    Approach your visit with respect, openness, and humility, and you&apos;ll discover that Katharagama has the
-                    power to transform not just the lives of devoted pilgrims, but anyone who enters its sacred space with
-                    a sincere heart.
+                    Visit with respect, dress modestly, and follow local guidance inside the sacred areas. That approach
+                    gives you the best chance to understand why Katharagama remains important to so many people.
                   </p>
                   <div className="bg-white/70 p-6 rounded-xl border border-orange-200 mt-8">
                     <p className="text-xl font-semibold text-orange-800 mb-2">
-                      Experience the divine power and universal love of sacred Katharagama! 🙏🕉️🔥✨
+                      Plan your visit with respect for the town, the pilgrims, and the sacred sites.
                     </p>
                     <p className="text-sm text-orange-600">
-                      Where faith transcends boundaries and miracles become reality
+                      Check your route in advance, expect crowds in festival periods, and allow time to move slowly through the sacred area.
                     </p>
                   </div>
                 </div>

@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { featureFlags } from "@/lib/feature-flags"
 
 type Lang = "en" | "de"
 
@@ -26,9 +27,9 @@ const T = {
     nav_arch: "Archaeological Wonders",
     nav_guide: "Visiting Guide",
 
-    intro_heading: "Welcome to Anuradhapura: Cradle of Buddhism",
-    intro_p1: "Step back 2,300 years into Sri Lanka's glorious past at Anuradhapura, the island's first capital and one of the oldest continuously inhabited cities in the world. This UNESCO World Heritage site is not just an archaeological wonder — it's the sacred heart of Sri Lankan Buddhism, home to the world's oldest recorded tree and some of the most magnificent ancient monuments in Asia.",
-    intro_p2: "From towering dagobas (stupas) that rival the pyramids in age and grandeur to the sacred Sri Maha Bodhi tree grown from a cutting of the very tree under which Buddha attained enlightenment, Anuradhapura offers a profound journey through both spiritual and temporal history that continues to inspire pilgrims and visitors from around the world.",
+    intro_heading: "Anuradhapura: Sri Lanka's Ancient Capital",
+    intro_p1: "Anuradhapura was Sri Lanka's first capital. It was the seat of power for over 1,400 years and is one of the oldest continuously inhabited cities in the world. Today it is a UNESCO World Heritage Site with dozens of ancient monuments, the world's oldest recorded tree, and temples still active as pilgrimage sites.",
+    intro_p2: "The sacred area covers 40 square kilometres. You can rent a bicycle at the entrance and spend a full day cycling between stupas, ancient ruins, and reservoirs built over 2,000 years ago. Many pilgrims come specifically for the Sri Maha Bodhi tree, a direct cutting from the tree under which Buddha attained enlightenment, brought to Sri Lanka in 288 BC.",
 
     qf_heading: "Quick Anuradhapura Facts",
     qf_founded_label: "Founded:",
@@ -44,7 +45,7 @@ const T = {
     qf_duration_label: "Visit Duration:",
     qf_duration_val: "Full day (8+ hours)",
     fact_irrigation_title: "Irrigation Marvels of the Ancient World",
-    fact_irrigation_body: "Anuradhapura's ancient engineers built massive reservoirs (tanks) like Nuwara Wewa and Tissa Wewa, some over 2,000 years old and still functioning today. These marvels turned the dry zone into a lush, thriving kingdom — an engineering legacy admired worldwide.",
+    fact_irrigation_body: "Anuradhapura's ancient engineers built massive reservoirs (tanks) like Nuwara Wewa and Tissa Wewa, some over 2,000 years old and still functioning today. These marvels turned the dry zone into a lush, thriving kingdom, an engineering legacy admired worldwide.",
     fact_duration_title: "Ideal Duration",
     fact_duration_body: "1–2 full days to explore the sacred sites, ancient tanks, and local culture at a relaxed pace.",
     fact_besttime_title: "Best Time to Visit",
@@ -92,10 +93,10 @@ const T = {
 
     site1_title: "1. Sri Maha Bodhi Tree",
     site1_desc: "The world's oldest recorded tree – 2,300+ years old",
-    site1_p1: "This sacred fig tree is the most revered site in Anuradhapura and one of the holiest places in the Buddhist world. Grown from a cutting of the original Bodhi tree in India under which Buddha attained enlightenment, it was brought to Sri Lanka in 288 BC by Sanghamitta Theri, the daughter of Emperor Ashoka. The tree has survived storms, invasions, and centuries of change, remaining a living symbol of peace and resilience.",
-    site1_p2: "Pilgrims from all over the world come to offer flowers, light oil lamps, and walk quietly around the golden railings. The air is filled with the scent of jasmine and the gentle sound of prayers. Visiting at dawn or dusk is especially magical, as the tree glows in the soft light and the atmosphere is calm and spiritual.",
+    site1_p1: "The Sri Maha Bodhi is a sacred fig tree grown from a cutting of the Bodhi tree in India, the tree under which Buddha attained enlightenment. It was brought to Sri Lanka in 288 BC by Sanghamitta Theri, daughter of Emperor Ashoka. It is the world's oldest recorded tree with a continuous documented history of over 2,300 years.",
+    site1_p2: "Pilgrims come every day to offer flowers, light oil lamps, and walk quietly around the golden railings. Visiting early in the morning or at dusk gives you the best atmosphere. Remove your shoes and dress modestly before entering.",
     site1_tip_title: "Visitor Tip",
-    site1_tip_body: "Dress modestly, remove your shoes, and bring a small flower offering. Take a moment to sit quietly and reflect under the ancient branches.",
+    site1_tip_body: "Bring a small flower offering. Remove shoes and dress modestly. Early morning and evening are the quietest times.",
     site1_h1: "World's oldest recorded tree with documented history",
     site1_h2: "Direct descendant of Buddha's enlightenment tree",
     site1_h3: "Continuous worship for over 2,300 years",
@@ -103,10 +104,10 @@ const T = {
 
     site2_title: "2. Ruwanwelisaya Dagoba",
     site2_desc: "The Great Stupa – architectural marvel of ancient world",
-    site2_p1: "Built by King Dutugemunu in 140 BC, this magnificent white dagoba stands 103 meters tall and is considered one of the finest examples of ancient Sinhalese architecture. The structure contains sacred relics of Buddha and remains an active pilgrimage site. The Ruwanwelisaya is surrounded by a wall of 344 stone elephants, each one unique, symbolizing strength and protection.",
-    site2_p2: "The stupa is especially beautiful at sunrise and sunset, when its white dome glows against the sky and the chanting of monks fills the air. During full moon (Poya) days, thousands of devotees gather here, creating a sea of white-clad pilgrims and colorful lotus flowers. Restoration efforts have kept the dagoba shining for generations to come.",
+    site2_p1: "Ruwanwelisaya was built by King Dutugemunu around 140 BC. It stands 103 metres tall and is surrounded by a wall of 344 stone elephants, each one slightly different. The stupa contains sacred relics of the Buddha and is still visited daily by pilgrims.",
+    site2_p2: "Sunrise and sunset are the best times to visit. On full moon (Poya) days, thousands of pilgrims gather here in white clothing with lotus flowers. Walk clockwise around the stupa. This is the respectful way to visit.",
     site2_did_title: "Did You Know?",
-    site2_did_body: "The Ruwanwelisaya is believed to enshrine the largest collection of Buddha relics in Sri Lanka. Walk clockwise around the stupa for good luck and spiritual merit.",
+    site2_did_body: "The Ruwanwelisaya is said to hold the largest collection of Buddha relics in Sri Lanka. Walk clockwise around the stupa. That is the respectful way.",
     site2_h1: "103 meters tall with 292-meter circumference",
     site2_h2: "Contains sacred relics of Lord Buddha",
     site2_h3: "Surrounded by elephant wall with 344 elephants",
@@ -114,10 +115,10 @@ const T = {
 
     site3_title: "3. Jetavanaramaya Dagoba",
     site3_desc: "Once the world's third tallest structure",
-    site3_p1: "Built in the 3rd century AD, Jetavanaramaya was once the world's third tallest structure after the pyramids of Giza. At its peak, it soared to 122 meters (400 feet) and was the tallest stupa in the ancient world. The massive brick monument is a testament to the engineering genius and spiritual devotion of ancient Sri Lanka.",
-    site3_p2: "Today, Jetavanaramaya is a place of quiet reflection, surrounded by grassy courtyards and ancient ruins. Archaeological excavations continue to reveal new secrets about the monastery complex that once housed thousands of monks. The stupa's reddish bricks glow warmly in the afternoon sun, and the site is less crowded than other main attractions, making it perfect for peaceful exploration.",
+    site3_p1: "Jetavanaramaya was built in the 3rd century AD by King Mahasena. When new, it stood 122 metres (400 feet) tall, making it the third tallest structure in the ancient world after the pyramids of Giza. It was built using over 93 million bricks.",
+    site3_p2: "Today the upper section has eroded, so the stupa appears shorter, but it is still impressive. The surrounding area is quieter than the main sites. Archaeologists are still excavating the monastery complex that once surrounded it.",
     site3_tip_title: "Travel Tip",
-    site3_tip_body: "Bring water and a hat, as the area can be hot and exposed. Look for ancient inscriptions and carvings on the surrounding ruins.",
+    site3_tip_body: "Bring water and a hat. The area is open and hot. Look for ancient inscriptions on the surrounding ruins.",
     site3_h1: "Originally 122 meters tall (400 feet)",
     site3_h2: "Built with over 93 million bricks",
     site3_h3: "Contains Buddha's sash relic",
@@ -125,8 +126,8 @@ const T = {
 
     site4_title: "4. Thuparamaya Dagoba",
     site4_desc: "The first dagoba built in Sri Lanka – oldest Buddhist monument",
-    site4_p1: "Thuparamaya holds the distinction of being the very first dagoba built in Sri Lanka, constructed in the 3rd century BCE by King Devanampiya Tissa. This sacred monument houses the right collarbone relic of Lord Buddha, making it one of the most important pilgrimage sites in the Buddhist world. The original bell-shaped design has influenced Sri Lankan stupa architecture for over 2,000 years.",
-    site4_p2: "What makes Thuparamaya unique is its architectural evolution – it has been restored multiple times throughout history, each restoration reflecting the artistic styles of different periods. The dagoba is surrounded by stone pillars that once supported a wooden roof, a distinctive feature that sets it apart from other stupas.",
+    site4_p1: "Thuparamaya is the oldest dagoba in Sri Lanka, built in the 3rd century BC by King Devanampiya Tissa. It houses the right collarbone relic of the Buddha. The bell-shaped design became the template for Sri Lankan stupa architecture for centuries after.",
+    site4_p2: "The stupa has been restored several times over the centuries, each time reflecting the style of the era. It is surrounded by stone pillars that once held up a wooden roof, a feature unique to this dagoba.",
     site4_h1: "First dagoba built in Sri Lanka (3rd century BCE)",
     site4_h2: "Contains Buddha's right collarbone relic",
     site4_h3: "Original bell-shaped architectural prototype",
@@ -135,8 +136,8 @@ const T = {
 
     site5_title: "5. Lovamahapaya (Brazen Palace)",
     site5_desc: "Ancient nine-story monastery – marvel of ancient architecture",
-    site5_p1: `Lovamahapaya, also known as the "Brazen Palace," was once a magnificent nine-story monastery built by King Dutugemunu in the 2nd century BCE. This architectural marvel housed 1,000 monks and was entirely covered with copper tiles, giving it the name "Brazen Palace." Today, only the stone pillars remain, but they still convey the grandeur of this ancient structure.`,
-    site5_p2: "The building was constructed using advanced engineering techniques of the time, with 1,600 stone pillars supporting multiple floors. Each floor had specific purposes — from dining halls and meditation chambers to libraries and living quarters. The palace was destroyed and rebuilt several times throughout history, with the current stone pillars representing the foundation of various reconstruction attempts.",
+    site5_p1: `Lovamahapaya, known as the "Brazen Palace", was a nine-storey monastery built by King Dutugemunu in the 2nd century BC. It housed 1,000 monks and was covered with copper roof tiles, which is how it got its name. Only the 1,600 stone pillars remain today.`,
+    site5_p2: "Each floor had specific uses, dining halls, meditation rooms, libraries, and living quarters. The building was destroyed and rebuilt several times. What you see now are the stone foundations of those reconstruction attempts.",
     site5_h1: "Originally nine stories tall with 1,600 stone pillars",
     site5_h2: "Housed 1,000 monks in its heyday",
     site5_h3: 'Covered with copper tiles (hence "Brazen Palace")',
@@ -145,8 +146,8 @@ const T = {
 
     site6_title: "6. Abhayagiri Dagaba",
     site6_desc: "Ancient monastery complex and center of Mahayana Buddhism",
-    site6_p1: "Abhayagiri Dagaba was the centerpiece of one of the most important monastic complexes in ancient Sri Lanka, built in the 1st century BCE by King Valagamba. This massive stupa, standing 75 meters tall, was once part of a monastery that housed over 5,000 monks and served as a major center of Mahayana Buddhist learning. The complex was so large it covered an area of 200 hectares.",
-    site6_p2: "The monastery was famous for its international character, attracting scholars from China, Korea, and other Buddhist countries. It had advanced facilities including hospitals, libraries, and refectories. The shape of this stupa is slightly different from Jetavanaramaya, featuring a more elegant bell-shaped dome that has influenced Buddhist architecture across Asia.",
+    site6_p1: "Abhayagiri Dagaba was built in the 1st century BC by King Valagamba. It stands 75 metres tall today, though it was originally about 115 metres high. The monastery complex that surrounded it covered 200 hectares and housed over 5,000 monks at its peak.",
+    site6_p2: "The monastery attracted Buddhist scholars from China, Korea, and other countries. It had hospitals, libraries, and dining halls. The stupa has a slightly different profile from the other dagobas, an elegant bell-shaped dome that helped spread this architectural style across Asia.",
     site6_link: "Read more about Shapes of Stupa",
     site6_h1: "75 meters tall with 200-hectare monastery complex",
     site6_h2: "Housed over 5,000 monks at its peak",
@@ -156,8 +157,8 @@ const T = {
 
     site7_title: "7. Mirisavetiya Stupa",
     site7_desc: "A monument of royal regret and Buddhist devotion",
-    site7_p1: "Mirisavetiya Stupa has one of the most poignant origin stories in Sri Lankan Buddhist history. Built by King Dutugemunu in the 2nd century BCE, this stupa was constructed as an act of atonement. According to legend, the king once forgot to share his meal with the sangha (monks) while eating chili curry, a breach of Buddhist protocol that deeply troubled his conscience.",
-    site7_p2: `To atone for this oversight, the king built this beautiful stupa on the exact spot where he had his meal. The name "Mirisavetiya" literally means "the place where chili was consumed." Standing 60 meters tall, it enshrines sacred relics and represents the Buddhist principle of mindfulness in daily actions. The surrounding area contains ruins of ancient buildings and beautiful stone carvings.`,
+    site7_p1: "Mirisavetiya was built by King Dutugemunu in the 2nd century BC. The origin story is straightforward: the king once forgot to share his meal with the monks before eating, which broke Buddhist protocol. He built this stupa as an act of atonement.",
+    site7_p2: `The name "Mirisavetiya" means "the place where chilli was consumed". The stupa stands 60 metres tall and contains sacred relics. The surrounding ruins and stone carvings are worth taking time to look at.`,
     site7_h1: "Built as royal atonement for forgotten Buddhist protocol",
     site7_h2: "60 meters tall with beautiful proportions",
     site7_h3: "Contains sacred Buddhist relics",
@@ -166,22 +167,22 @@ const T = {
 
     site8_title: "8. Lankarama Dagaba",
     site8_desc: "An intimate forest monastery with unique architectural features",
-    site8_p1: "Lankarama Dagaba, built in the 1st century CE by King Valagamba, represents a unique architectural style among Anuradhapura's great stupas. Unlike the massive monuments elsewhere in the city, Lankarama was designed as an intimate forest monastery with distinctive circular stone pillars surrounding the stupa. This 30-meter tall structure showcases the Vajrayana architectural influence that was rare in Sri Lankan Buddhist construction.",
-    site8_p2: "The most striking feature of Lankarama is its unique design with stone pillars arranged in concentric circles around the stupa base. These pillars once supported wooden structures that served as meditation halls and living quarters for forest-dwelling monks. The peaceful forest setting and smaller scale create an atmosphere perfect for contemplation and meditation, making it a favorite among visitors seeking tranquility.",
+    site8_p1: "Lankarama Dagaba is smaller than the main stupas in the city. It was built by King Valagamba in the 1st century BC and stands 30 metres tall. It is set in a forested area away from the busier sites, making it quieter to visit.",
+    site8_p2: "What makes it distinctive is the arrangement of stone pillars in concentric circles around the base. These once held up wooden structures used by monks for meditation. It is one of the least crowded sites in Anuradhapura and a good place to simply sit and look.",
     site8_h1: "Unique circular stone pillar arrangement",
     site8_h2: "Intimate 30-meter forest monastery design",
     site8_h3: "Vajrayana architectural influence",
     site8_h4: "Peaceful forest setting for meditation",
-    site8_h5: "Built by King Valagamba in 1st century CE",
+    site8_h5: "Built by King Valagamba in 1st century BC",
 
     more_heading: "Additional Sacred Sites",
 
     avukana_title: "Avukana Buddha Statue",
     avukana_desc: "A stunning rock-cut statue of the Buddha in a serene meditation pose",
-    avukana_p1: "The Avukana Buddha Statue is a magnificent rock-cut statue located about 8 kilometers from Anuradhapura. Carved out of a large granite rock face in the 5th century AD, this statue stands approximately 12 meters tall and depicts the Buddha in a standing posture with his right hand raised in the gesture of reassurance (abhaya mudra). The intricate details of the robe and facial features showcase the exceptional craftsmanship of ancient Sri Lankan artisans.",
+    avukana_p1: "The Avukana Buddha Statue is a rock-cut statue near Kekirawa, about 50 km from Anuradhapura. It was carved in the 5th century AD from a large granite rock face and stands approximately 12 metres tall. The Buddha is shown standing with his right hand raised in the abhaya mudra (gesture of protection).",
     avukana_link: "If you want to know more about the gesture",
-    avukana_p2: "The statue is set against a natural rock backdrop, creating a striking contrast that enhances its visual impact. The serene expression on the Buddha's face and the intricate details of the carving invite contemplation and reflection.",
-    avukana_h1: "Carved from a single granite rock face",
+    avukana_p2: "The statue is still attached to the rock behind it, which creates a clean backdrop. The carving is detailed, and the robe folds are particularly well preserved. It is worth combining with a visit to nearby Kalawewa reservoir.",
+    avukana_h1: "Carved from a single granite rock face near Kekirawa",
     avukana_h2: "Stands approximately 12 meters tall",
     avukana_h3: "Depicts Buddha in abhaya mudra (gesture of reassurance)",
     avukana_h4: "Exceptional craftsmanship with intricate details",
@@ -189,8 +190,8 @@ const T = {
 
     sandah_title: "Sandahirusaya",
     sandah_desc: "A smaller but equally sacred stupa with unique historical significance",
-    sandah_p1: "If you visit Anuradhapura, you might have seen this stupa — it's similar to the Ruwanwelisaya but not as large. Sandahirusaya, also known as \"Sandahiru Seya,\" is a beautiful white dagoba that showcases the classic bell-shaped architectural style of ancient Sri Lankan stupas. This is actually a modern construction, built in recent times following traditional Buddhist architectural principles and designs.",
-    sandah_p2: "What makes Sandahirusaya unique is its role as a contemporary Buddhist monument that maintains traditional design elements. While it may appear ancient due to its classical style, it represents modern Sri Lankan Buddhist devotion and craftsmanship. The stupa is surrounded by well-maintained gardens and provides excellent opportunities for meditation and photography, especially during sunrise and sunset.",
+    sandah_p1: "Sandahirusaya (also called Sandahiru Seya) is a modern white dagoba built following traditional Buddhist architectural designs. It looks similar to the ancient stupas in the area but was built in recent times. It is smaller than Ruwanwelisaya.",
+    sandah_p2: "It is surrounded by well-maintained gardens and is less crowded than the major ancient sites. A good spot for quiet reflection, especially at sunrise or sunset.",
     sandah_h1: "Modern construction following traditional Buddhist architecture",
     sandah_h2: "Classic bell-shaped design with white limestone coating",
     sandah_h3: "Contemporary Buddhist devotion and craftsmanship",
@@ -300,10 +301,10 @@ const T = {
     accom_lux4: "• Professional guide services",
     accom_lux5: "• Cultural programs and activities",
 
-    final_title: "Your Sacred Journey Through Anuradhapura",
-    final_p1: "Anuradhapura is more than an archaeological site — it's a living testament to 2,300 years of continuous Buddhist civilization. As you cycle through this ancient city, you're following paths walked by kings, monks, and pilgrims for over two millennia. Each dagoba, each carved stone, and each sacred tree tells a story of faith, artistry, and human achievement.",
-    final_p2: "Take time to sit quietly at the sacred Bodhi tree, marvel at the engineering genius of the ancient dagobas, and appreciate the spiritual atmosphere that has made this city a pilgrimage destination for centuries. Remember that you're visiting not just historical monuments, but active places of worship that continue to inspire devotion and wonder.",
-    final_p3: "May your journey through this sacred city bring you peace, wisdom, and a deeper appreciation for Sri Lanka's incredible spiritual heritage! 🙏🌳✨",
+    final_title: "Visiting Anuradhapura",
+    final_p1: "Anuradhapura is not just an archaeological park. People still come here every day to pray and make offerings at the same sites used for over 2,000 years. Cycling through it takes a full day and gives you a real sense of how large and important this ancient city was.",
+    final_p2: "Sit quietly at the Sri Maha Bodhi tree, walk around one of the great stupas, and take time to look at the detail in the ancient stonework. These are places that reward slow, careful attention. There is no rush.",
+    final_p3: "Dress modestly, remove shoes at religious sites, and move quietly around pilgrims. The experience is much better for it.",
   },
   de: {
     hero_subtitle: "Das antike heilige Zentrum Sri Lankas",
@@ -320,8 +321,8 @@ const T = {
     nav_guide: "Besucherführer",
 
     intro_heading: "Willkommen in Anuradhapura: Wiege des Buddhismus",
-    intro_p1: "Reisen Sie 2.300 Jahre in Sri Lankas glorreiche Vergangenheit nach Anuradhapura, der ersten Hauptstadt der Insel und einer der ältesten dauerhaft bewohnten Städte der Welt. Dieses UNESCO-Weltkulturerbe ist nicht nur ein archäologisches Wunder — es ist das heilige Herz des sri-lankischen Buddhismus, Heimat des ältesten dokumentierten Baumes der Welt und einiger der prächtigsten antiken Denkmäler in Asien.",
-    intro_p2: "Von riesigen Dagobas (Stupas), die mit den ägyptischen Pyramiden an Alter und Größe mithalten können, bis hin zum heiligen Sri Maha Bodhi-Baum — gezogen aus einem Ableger des Baumes, unter dem Buddha die Erleuchtung erlangte — bietet Anuradhapura eine tiefe Reise durch spirituelle und weltliche Geschichte, die Pilger und Besucher aus aller Welt weiterhin inspiriert.",
+    intro_p1: "Reisen Sie 2.300 Jahre in Sri Lankas glorreiche Vergangenheit nach Anuradhapura, der ersten Hauptstadt der Insel und einer der ältesten dauerhaft bewohnten Städte der Welt. Dieses UNESCO-Weltkulturerbe ist nicht nur ein archäologisches Wunder. Es ist das heilige Herz des sri-lankischen Buddhismus, Heimat des ältesten dokumentierten Baumes der Welt und einiger der prächtigsten antiken Denkmäler in Asien.",
+    intro_p2: "Von riesigen Dagobas (Stupas), die mit den ägyptischen Pyramiden an Alter und Größe mithalten können, bis hin zum heiligen Sri Maha Bodhi-Baum, gezogen aus einem Ableger des Baumes, unter dem Buddha die Erleuchtung erlangte, bietet Anuradhapura eine tiefe Reise durch spirituelle und weltliche Geschichte, die Pilger und Besucher aus aller Welt weiterhin inspiriert.",
 
     qf_heading: "Anuradhapura auf einen Blick",
     qf_founded_label: "Gegründet:",
@@ -337,7 +338,7 @@ const T = {
     qf_duration_label: "Besuchsdauer:",
     qf_duration_val: "Ganztägig (8+ Stunden)",
     fact_irrigation_title: "Bewässerungswunder der Antike",
-    fact_irrigation_body: "Die antiken Ingenieure Anuradhapuras bauten riesige Stauseen wie Nuwara Wewa und Tissa Wewa, einige über 2.000 Jahre alt und bis heute in Betrieb. Diese Meisterwerke verwandelten die Trockenzone in ein üppiges, blühendes Königreich — ein weltweit bewundertes ingenieurtechnisches Erbe.",
+    fact_irrigation_body: "Die antiken Ingenieure Anuradhapuras bauten riesige Stauseen wie Nuwara Wewa und Tissa Wewa, einige über 2.000 Jahre alt und bis heute in Betrieb. Diese Meisterwerke verwandelten die Trockenzone in ein üppiges, blühendes Königreich, ein weltweit bewundertes ingenieurtechnisches Erbe.",
     fact_duration_title: "Ideale Aufenthaltsdauer",
     fact_duration_body: "1–2 volle Tage, um die heiligen Stätten, antiken Stauseen und die lokale Kultur in einem entspannten Tempo zu erkunden.",
     fact_besttime_title: "Beste Reisezeit",
@@ -419,7 +420,7 @@ const T = {
     site4_title: "4. Thuparamaya Dagoba",
     site4_desc: "Die erste in Sri Lanka erbaute Dagoba – ältestes buddhistisches Denkmal",
     site4_p1: "Die Thuparamaya hat die Besonderheit, die allererste in Sri Lanka errichtete Dagoba zu sein, erbaut im 3. Jahrhundert v. Chr. von König Devanampiya Tissa. Dieses heilige Denkmal beherbergt die rechte Schlüsselbeins-Reliquie des Herrn Buddha und macht es zu einem der wichtigsten Pilgerorte der buddhistischen Welt. Das ursprüngliche glockenförmige Design hat die Stupa-Architektur Sri Lankas über 2.000 Jahre lang beeinflusst.",
-    site4_p2: "Was die Thuparamaya einzigartig macht, ist ihre architektonische Entwicklung — sie wurde im Laufe der Geschichte mehrmals restauriert, wobei jede Restaurierung die künstlerischen Stile verschiedener Epochen widerspiegelt. Die Dagoba ist von Steinpfeilern umgeben, die einst ein Holzdach trugen — ein charakteristisches Merkmal, das sie von anderen Stupas unterscheidet.",
+    site4_p2: "Was die Thuparamaya einzigartig macht, ist ihre architektonische Entwicklung. Sie wurde im Laufe der Geschichte mehrmals restauriert, wobei jede Restaurierung die künstlerischen Stile verschiedener Epochen widerspiegelt. Die Dagoba ist von Steinpfeilern umgeben, die einst ein Holzdach trugen, ein charakteristisches Merkmal, das sie von anderen Stupas unterscheidet.",
     site4_h1: "Erste in Sri Lanka erbaute Dagoba (3. Jh. v. Chr.)",
     site4_h2: "Enthält Buddhas rechte Schlüsselbeinsreliquie",
     site4_h3: "Ursprünglicher glockenförmiger Architekturprototyp",
@@ -429,7 +430,7 @@ const T = {
     site5_title: "5. Lovamahapaya (Kupferpalast)",
     site5_desc: "Antikes neunstöckiges Kloster – Wunderwerk der antiken Architektur",
     site5_p1: 'Die Lovamahapaya, auch bekannt als der "Kupferpalast", war einst ein prächtiges neunstöckiges Kloster, erbaut von König Dutugemunu im 2. Jahrhundert v. Chr. Dieses architektonische Wunderwerk beherbergte 1.000 Mönche und war vollständig mit Kupferziegeln bedeckt, was ihm den Namen "Kupferpalast" einbrachte. Heute stehen nur noch die Steinpfeiler, aber sie vermitteln immer noch die Größe dieses antiken Bauwerks.',
-    site5_p2: "Das Gebäude wurde mit fortschrittlichen Ingenieurtechniken seiner Zeit errichtet, mit 1.600 Steinpfeilern, die mehrere Stockwerke trugen. Jedes Stockwerk hatte spezifische Zwecke — von Speisesälen und Meditationsräumen bis hin zu Bibliotheken und Wohnquartieren. Der Palast wurde im Laufe der Geschichte mehrmals zerstört und wiederaufgebaut.",
+    site5_p2: "Das Gebäude wurde mit fortschrittlichen Ingenieurtechniken seiner Zeit errichtet, mit 1.600 Steinpfeilern, die mehrere Stockwerke trugen. Jedes Stockwerk hatte spezifische Zwecke, von Speisesälen und Meditationsräumen bis hin zu Bibliotheken und Wohnquartieren. Der Palast wurde im Laufe der Geschichte mehrmals zerstört und wiederaufgebaut.",
     site5_h1: "Ursprünglich neun Stockwerke hoch mit 1.600 Steinpfeilern",
     site5_h2: "Beherbergte 1.000 Mönche auf dem Höhepunkt seiner Zeit",
     site5_h3: 'Mit Kupferziegeln bedeckt (daher "Kupferpalast")',
@@ -449,7 +450,7 @@ const T = {
 
     site7_title: "7. Mirisavetiya Stupa",
     site7_desc: "Ein Denkmal königlichen Bedauerns und buddhistischer Hingabe",
-    site7_p1: "Die Mirisavetiya Stupa hat eine der ergreifendsten Ursprungsgeschichten in der sri-lankischen buddhistischen Geschichte. Von König Dutugemunu im 2. Jahrhundert v. Chr. erbaut, wurde diese Stupa als Buße errichtet. Der Legende nach vergaß der König einmal, seine Mahlzeit mit dem Sangha (den Mönchen) zu teilen, während er Chilicurry aß — ein Verstoß gegen das buddhistische Protokoll, der sein Gewissen tief belastete.",
+    site7_p1: "Die Mirisavetiya Stupa hat eine der ergreifendsten Ursprungsgeschichten in der sri-lankischen buddhistischen Geschichte. Von König Dutugemunu im 2. Jahrhundert v. Chr. erbaut, wurde diese Stupa als Buße errichtet. Der Legende nach vergaß der König einmal, seine Mahlzeit mit dem Sangha (den Mönchen) zu teilen, während er Chilicurry aß. Das war ein Verstoß gegen das buddhistische Protokoll, der sein Gewissen tief belastete.",
     site7_p2: 'Um dieses Versehen zu sühnen, ließ der König diese schöne Stupa genau an dem Ort errichten, wo er seine Mahlzeit zu sich genommen hatte. Der Name "Mirisavetiya" bedeutet wörtlich "der Ort, wo Chili gegessen wurde." Mit 60 Metern Höhe beherbergt sie heilige Reliquien und repräsentiert das buddhistische Prinzip der Achtsamkeit im täglichen Leben.',
     site7_h1: "Als königliche Buße für vergessenes buddhistisches Protokoll erbaut",
     site7_h2: "60 Meter hoch mit schönen Proportionen",
@@ -482,7 +483,7 @@ const T = {
 
     sandah_title: "Sandahirusaya",
     sandah_desc: "Eine kleinere, aber ebenso heilige Stupa mit einzigartiger historischer Bedeutung",
-    sandah_p1: 'Wenn Sie Anuradhapura besuchen, haben Sie diese Stupa vielleicht gesehen — sie ähnelt der Ruwanwelisaya, ist aber nicht so groß. Sandahirusaya, auch bekannt als "Sandahiru Seya", ist eine schöne weiße Dagoba, die den klassischen glockenförmigen Architekturstil antiker sri-lankischer Stupas zeigt. Es handelt sich tatsächlich um eine moderne Konstruktion, die in jüngerer Zeit nach traditionellen buddhistischen Architekturprinzipien und -designs errichtet wurde.',
+    sandah_p1: 'Wenn Sie Anuradhapura besuchen, haben Sie diese Stupa vielleicht gesehen. Sie ähnelt der Ruwanwelisaya, ist aber nicht so groß. Sandahirusaya, auch bekannt als "Sandahiru Seya", ist eine schöne weiße Dagoba, die den klassischen glockenförmigen Architekturstil antiker sri-lankischer Stupas zeigt. Es handelt sich tatsächlich um eine moderne Konstruktion, die in jüngerer Zeit nach traditionellen buddhistischen Architekturprinzipien und -designs errichtet wurde.',
     sandah_p2: "Was die Sandahirusaya einzigartig macht, ist ihre Rolle als zeitgenössisches buddhistisches Denkmal, das traditionelle Designelemente beibehält. Obwohl sie aufgrund ihres klassischen Stils antik wirken mag, repräsentiert sie moderne sri-lankische buddhistische Hingabe und Handwerkskunst. Die Stupa ist von gepflegten Gärten umgeben und bietet hervorragende Möglichkeiten für Meditation und Fotografie, insbesondere bei Sonnenaufgang und -untergang.",
     sandah_h1: "Moderne Konstruktion nach traditioneller buddhistischer Architektur",
     sandah_h2: "Klassisches glockenförmiges Design mit weißem Kalksteinüberzug",
@@ -594,7 +595,7 @@ const T = {
     accom_lux5: "• Kulturprogramme und Aktivitäten",
 
     final_title: "Ihre heilige Reise durch Anuradhapura",
-    final_p1: "Anuradhapura ist mehr als eine archäologische Stätte — es ist ein lebendiges Zeugnis von 2.300 Jahren kontinuierlicher buddhistischer Zivilisation. Wenn Sie durch diese antike Stadt radeln, folgen Sie Wegen, die von Königen, Mönchen und Pilgern über zwei Jahrtausende begangen wurden. Jede Dagoba, jeder gemeißelte Stein und jeder heilige Baum erzählt eine Geschichte von Glauben, Kunstfertigkeit und menschlicher Leistung.",
+    final_p1: "Anuradhapura ist mehr als eine archäologische Stätte. Es ist ein lebendiges Zeugnis von 2.300 Jahren kontinuierlicher buddhistischer Zivilisation. Wenn Sie durch diese antike Stadt radeln, folgen Sie Wegen, die von Königen, Mönchen und Pilgern über zwei Jahrtausende begangen wurden. Jede Dagoba, jeder gemeißelte Stein und jeder heilige Baum erzählt eine Geschichte von Glauben, Kunstfertigkeit und menschlicher Leistung.",
     final_p2: "Nehmen Sie sich Zeit, still am heiligen Bodhi-Baum zu sitzen, das ingenieurtechnische Genie der antiken Dagobas zu bestaunen und die spirituelle Atmosphäre zu schätzen, die diese Stadt seit Jahrhunderten zu einem Pilgerort gemacht hat. Denken Sie daran, dass Sie nicht nur historische Denkmäler besuchen, sondern aktive Kultstätten, die weiterhin Hingabe und Staunen wecken.",
     final_p3: "Möge Ihre Reise durch diese heilige Stadt Ihnen Frieden, Weisheit und eine tiefere Wertschätzung für Sri Lankas unglaubliches spirituelles Erbe bringen! 🙏🌳✨",
   },
@@ -762,9 +763,10 @@ export default function AnuradhapuraClient({ defaultLang = "en" }: { defaultLang
                       <li>• <strong>{t.transport_car_duration}</strong> {t.transport_car_duration_val}</li>
                       <li>• <strong>{t.transport_car_best}</strong> {t.transport_car_best_val}</li>
                     </ul>
+                    {featureFlags.showTours && (
                     <div className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
                       <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
-                        <strong>{t.transport_rec_label}</strong> <span className="font-semibold"> Ceylanka Tours</span> — {t.transport_rec_body}
+                        <strong>{t.transport_rec_label}</strong> <span className="font-semibold"> Ceylanka Tours</span>, {t.transport_rec_body}
                       </p>
                       <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
                         <div className="flex items-center gap-2">
@@ -779,6 +781,7 @@ export default function AnuradhapuraClient({ defaultLang = "en" }: { defaultLang
                         </div>
                       </div>
                     </div>
+                    )}
                   </div>
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">{t.transport_bus_heading}</h4>
@@ -977,7 +980,7 @@ export default function AnuradhapuraClient({ defaultLang = "en" }: { defaultLang
                     <p className="text-muted-foreground mb-4">{t.site6_p1}</p>
                     <p className="text-muted-foreground mb-4">
                       {t.site6_p2}
-                      <Link href="/destinations/anuradhapura/abhyagiri" className="text-blue-600 hover:underline ml-1">
+                      <Link href="/articles/shapes-of-stupa" className="text-blue-600 hover:underline ml-1">
                         {t.site6_link}
                       </Link>
                     </p>
