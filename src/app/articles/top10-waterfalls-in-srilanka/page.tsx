@@ -61,7 +61,7 @@ const waterfalls = [
     bestTime: "April to September, December to February",
     swimmable: "Yes - natural pools available",
     description:
-      "Nestled among lush tea plantations in the Nuwara Eliya district, Bomburu Ella is a hidden gem that offers a peaceful escape. The waterfall cascades down rocky cliffs into natural pools perfect for swimming. The scenic hike through tea estates provides stunning views of the surrounding highlands.",
+      "Bomburu Ella sits among tea plantations in the Nuwara Eliya district and is less visited than the more popular falls in the region. The waterfall drops down rocky cliffs into natural pools suitable for swimming. The hike through tea estates gives good views of the surrounding highlands.",
     highlights: [
       "Beautiful tea plantation setting",
       "Natural swimming pools",
@@ -92,7 +92,7 @@ const waterfalls = [
     bestTime: "April to September, December to February",
     swimmable: "Yes - base pool available",
     description:
-      "Sri Lanka's highest waterfall, Bambarakanda Falls plunges dramatically from the Horton Plains plateau. Easily accessible yet spectacular,it offers excellent viewing opportunities and a refreshing pool at the base for swimming.",
+      "Sri Lanka's highest waterfall, Bambarakanda Falls drops from a rocky escarpment in the Kalupahana area near Haputale. Easily accessible yet spectacular, it offers excellent viewing opportunities and a refreshing pool at the base for swimming.",
     highlights: [
       "Sri Lanka's highest waterfall",
       "Easy accessibility",
@@ -274,7 +274,7 @@ const waterfalls = [
     bestTime: "March to September",
     swimmable: "No - hydroelectric area",
     description:
-      "Fed by the Maskeliya Reservoir, Laxapana Falls is both a natural wonder and an important hydroelectric site. The powerful cascade and surrounding mountain scenery create a dramatic landscape perfect for photography.",
+      "Laxapana Falls flows on the Kehelgamu Oya river near Maskeliya and is part of an important hydroelectric scheme in the area. The powerful cascade and surrounding mountain scenery make it a good photography stop.",
     highlights: [
       "Powerful single drop",
       "Mountain scenery",
@@ -543,15 +543,15 @@ export default function WaterfallsSriLankaPage() {
             <Fragment key={index}>
               {/* Waterfall Card */}
               <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
-                <div className="flex flex-col lg:flex-row">
+                <div className="flex flex-col md:flex-row">
                   {/* Image */}
-                  <div className="relative w-full lg:w-1/4 h-48 lg:h-auto">
+                  <div className="relative w-full md:w-2/5 h-72 sm:h-80 md:h-[28rem]">
                     <Image
                       src={waterfall.image || "/placeholder.svg"}
                       alt={`${waterfall.name} - Beautiful waterfall in Sri Lanka`}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 25vw"
+                      sizes="(max-width: 768px) 100vw, 40vw"
                     />
                     <div className="absolute top-4 left-4">
                       <span
