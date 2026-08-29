@@ -113,8 +113,8 @@ export default function HaputaleGuide() {
                 <div>
                   <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Distance:</strong> 190km (118 miles) from Colombo</li>
-                    <li>• <strong>Duration:</strong> 4.5-5 hours</li>                    
+                    <li>• <strong>Distance:</strong> ~216 km from Colombo</li>
+                    <li>• <strong>Duration:</strong> 5-6 hours</li>                    
                     <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                   </ul>
                   <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
@@ -379,8 +379,8 @@ export default function HaputaleGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>3. Galapitagala Estate</CardTitle>
-                <CardDescription>U</CardDescription>
+                <CardTitle>3. Nidangoda Falls</CardTitle>
+                <CardDescription>Hidden gem waterfall on a private tea estate</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -388,96 +388,39 @@ export default function HaputaleGuide() {
                     images={[
                       {
                         src: "/Nidangoda-Ella.jpg",
-                        alt: "Nidangoda Falls ",
-                        caption: "Nidangoda Falls ",
-                        title: "Nidangoda Falls "
+                        alt: "Nidangoda Falls cascading through lush tea estate greenery",
+                        caption: "Nidangoda Falls",
+                        title: "Nidangoda Falls"
                       },
-                      {
-                        src: "/Adisham-bungalow3.jpg",
-                        alt: "Beautiful gardens at Adisham Monastery with mountain backdrop",
-                        caption: "Monastery gardens and views",
-                        title: "Monastery Gardens"
-                      },
-                      {
-                        src: "/Adisham-bungalow2.jpg",
-                        alt: "Adisham Monastery with English Tudor architecture",
-                        caption: "Tudor-style architecture",
-                        title: "Tudor-Style Architecture"
-                      },
-                      {
-                        src: "/Adisham-bungalow.jpg",
-                        alt: "Beautiful gardens at Adisham Monastery with mountain backdrop",
-                        caption: "Monastery gardens and views",
-                        title: "Monastery Gardens"
-                      },
-                      {
-                        src: "/Adisham-bungalow10.jpg",
-                        alt: "Adisham Monastery with English Tudor architecture",
-                        caption: "Tudor-style architecture",
-                        title: "Tudor-Style Architecture"
-                      },
-                      {
-                        src: "/Adisham-bungalow4.jpg",
-                        alt: "Adisham Monastery with English Tudor architecture",
-                        caption: "Tudor-style architecture",
-                        title: "Tudor-Style Architecture"
-                      },
-                      {
-                        src: "/Adisham-bungalow5.jpg",
-                        alt: "Adisham Monastery with English Tudor architecture",
-                        caption: "Tudor-style architecture",
-                        title: "Tudor-Style Architecture"
-                      },
-                      {
-                        src: "/Adisham-bungalow6.jpg",
-                        alt: "Adisham Monastery with English Tudor architecture",
-                        caption: "Tudor-style architecture",
-                        title: "Tudor-Style Architecture"
-                      },
-                      {
-                        src: "/Adisham-bungalow7.jpg",
-                        alt: "Adisham Monastery with English Tudor architecture",
-                        caption: "Tudor-style architecture",
-                        title: "Tudor-Style Architecture"
-                      },
-                      {
-                        src: "/Adisham-bungalow8.jpg",
-                        alt: "Adisham Monastery with English Tudor architecture",
-                        caption: "Tudor-style architecture",
-                        title: "Tudor-Style Architecture"
-                      },
-                      {
-                        src: "/Adisham-bungalow9.jpg",
-                        alt: "Adisham Monastery with English Tudor architecture",
-                        caption: "Tudor-style architecture",
-                        title: "Tudor-Style Architecture"
-                      },
-
                     ]}
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Nidangoda Falls (Private and Need a permission to visit)
+                      Nidangoda Falls is a hidden waterfall tucked inside the Galapitagala tea estate near Haputale. Because it sits on private land, visitors must obtain permission from the estate management before visiting, making it a truly off-the-beaten-path experience for those who seek it out. The falls are framed by lush tea bushes and jungle, offering a peaceful escape away from tourist crowds.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Beautiful Tudor-style English architecture
+                        Located on private Galapitagala tea estate, permission required
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Peaceful monastery gardens and grounds
+                        Secluded, uncrowded natural setting
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Open weekends and public holidays
+                        Surrounded by working tea plantation
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Stunning mountain and valley views
+                        Best visited after arranging access via estate office
                       </li>
                     </ul>
-
+                    <div className="mt-4 p-3 bg-amber-50 dark:bg-amber-900/30 rounded-lg border-l-4 border-amber-400">
+                      <p className="text-sm text-amber-800 dark:text-amber-200">
+                        <strong>Note:</strong> This is a private estate waterfall. Always get permission from the Galapitagala estate management before attempting to visit.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -640,7 +583,7 @@ export default function HaputaleGuide() {
               <CardContent className="space-y-3">
                 <div>
                   <strong>From Colombo:</strong>
-                  <p className="text-sm text-muted-foreground">6-7 hours via Kandy or Ratnapura</p>
+                  <p className="text-sm text-muted-foreground">5-6 hours (~216 km) via Ratnapura and Beragala</p>
                 </div>
                 <div>
                   <strong>From Bandarawela:</strong>
@@ -857,7 +800,7 @@ export default function HaputaleGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Lipton&apos;s Seat offers breathtaking views of the surrounding tea estates and is a must-visit for nature lovers.
+                  Badulla is the capital of Uva Province, known for the sacred Muthiyangana Raja Maha Vihara, the scenic Dunhinda Falls, and its charming colonial-era railway station — the terminus of the famous hill country train line.
                 </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/badulla" passHref legacyBehavior>
@@ -882,7 +825,7 @@ export default function HaputaleGuide() {
                   className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Adisham Bungalow is a charming colonial-era mansion surrounded by lush gardens and serene landscapes.
+                  Bandarawela is a pleasant hill town just 15 km from Haputale, known for its mild climate, vibrant local market, fresh produce, and easy access to tea estates and hiking trails.
                 </p>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/bandarawela" passHref legacyBehavior>
