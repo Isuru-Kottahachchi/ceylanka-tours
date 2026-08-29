@@ -23,17 +23,11 @@ export default function BeachSafetyGuide() {
     ]
 
     const jellyfishImages = [
-        { src: "/placeholder.svg?height=300&width=400&text=Box+Jellyfish", alt: "Box Jellyfish" },
-        { src: "/placeholder.svg?height=300&width=400&text=Moon+Jellyfish", alt: "Moon Jellyfish" },
-        { src: "/placeholder.svg?height=300&width=400&text=Jellyfish+Tentacles", alt: "Jellyfish Tentacles" },
-        { src: "/placeholder.svg?height=300&width=400&text=Jellyfish+Beach+Warning", alt: "Jellyfish Beach Warning" }
+        { src: "/Jellyfish-In-SL.jpg", alt: "Box Jellyfish" },
     ]
 
     const seaSnakeImages = [
-        { src: "/placeholder.svg?height=300&width=400&text=Sea+Snake+Swimming", alt: "Sea Snake Swimming" },
-        { src: "/placeholder.svg?height=300&width=400&text=Sea+Snake+Banded+Pattern", alt: "Sea Snake Banded Pattern" },
-        { src: "/placeholder.svg?height=300&width=400&text=Sea+Snake+Surface+Breathing", alt: "Sea Snake Surface Breathing" },
-        { src: "/placeholder.svg?height=300&width=400&text=Sea+Snake+Size+Comparison", alt: "Sea Snake Size Comparison" }
+        { src: "/Sea-Snakes.jpeg", alt: "Sea Snake in beach" },
     ]
 
     const seaUrchinImages = [
