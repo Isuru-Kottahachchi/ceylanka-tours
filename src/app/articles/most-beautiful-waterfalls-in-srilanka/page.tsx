@@ -545,7 +545,7 @@ export default function WaterfallsSriLankaPage() {
               <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
                 <div className="flex flex-col lg:flex-row">
                   {/* Image */}
-                  <div className="relative w-full lg:w-1/4 h-72 sm:h-80 lg:h-auto">
+                  <div className="relative w-full lg:w-1/4 h-80 sm:h-96 lg:min-h-64 lg:h-full">
                     <Image
                       src={waterfall.image || "/placeholder.svg"}
                       alt={`${waterfall.name} - Beautiful waterfall in Sri Lanka`}
