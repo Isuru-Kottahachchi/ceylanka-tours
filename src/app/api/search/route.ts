@@ -401,10 +401,10 @@ const destinations: Destination[] = [
   },
    {
     id: 20,
-    name: "Hummanaya Blow Hole",
+    name: "Hummanaya Blowhole",
     location: "Southern Province",
-    path: "hummanaya",
-    image: "/HummanayaBlowHole.jpeg",
+    path: "hummanaya-blowhole",
+    image: "/HummanayaBlowHole.jpg",
     description: "Natural blowhole and scenic spot in Southern Sri Lanka",
     highlights: ["Natural Wonder", "Scenic Views", "Photography"],
     category: "Beach",

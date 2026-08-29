@@ -1262,7 +1262,7 @@ export default function HiriketiyaTravelGuide() {
                 </div>
               </div>
               <CardContent className="p-4">
-                <h3 className="font-bold text-lg mb-2">Kudawella Blowhole</h3>
+                <h3 className="font-bold text-lg mb-2">Hummanaya Blowhole</h3>
                 <p className="text-sm text-muted-foreground mb-3">
                   The Kudawella Blowhole is a unique natural attraction where seawater shoots up dramatically through a rock formation.
                 </p>
@@ -1271,7 +1271,7 @@ export default function HiriketiyaTravelGuide() {
                   about 10-11 km from Hirikatiya
                 </div>
                 <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/kudawella-blowhole" passHref legacyBehavior>
+                  <Link href="/destinations/hummanaya-blowhole" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
                   </Link>
                 </div>

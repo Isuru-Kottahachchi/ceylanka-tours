@@ -160,14 +160,13 @@ export default function ThalpeBeachGuide() {
                       </div>
                     </div>
                   </div>
-                  <div>
+                  {/* <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo → Thalpe beach</li>
                       <li>• <strong>Duration:</strong> 6-7 hours total</li>
                       <li>• <strong>Cost:</strong> $3-12 USD (depending on class)</li>
                       <li>• <strong>Note:</strong> Get off at <span className="font-semibold text-blue-600 dark:text-blue-400">Thalpe station</span></li>
-                      {/* <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li> */}
                     </ul>
 
                     <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
@@ -175,9 +174,9 @@ export default function ThalpeBeachGuide() {
                       <li>• <strong>Route:</strong> Colombo → Thalpe beach</li>
                       <li>• <strong>Duration:</strong> 5-6 hours</li>
                       <li>• <strong>Cost:</strong> $4-6 USD (budget-friendly)</li>
-                      <li>• <strong>Frequency:</strong> Regular departures from Kandy</li>
+                      <li>• <strong>Frequency:</strong> Regular departures from Colombo</li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </CardContent>
             </Card>
@@ -205,7 +204,7 @@ export default function ThalpeBeachGuide() {
                 Thalpe&apos;s coral wells are shallow pools carved into the coral reef by local fishermen decades ago. These natural pools fill with seawater at high tide and are perfect for a refreshing dip when the tide is low. The water is clear and calm, making it a favorite spot for families and Instagram photos.
               </p>
               <p>
-                <strong>Important:</strong> Always check the tide times before visiting. The coral can be sharp, and sea urchins sometimes hide in the wells—wear water shoes and step carefully.
+                <strong>Important:</strong> Always check the tide times before visiting. The coral can be sharp, and sea urchins sometimes hide in the well wear water shoes and step carefully.
               </p>
             </div>
           </div>
