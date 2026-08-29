@@ -768,7 +768,7 @@ export default function EllaTownGuide() {
                 <CardHeader>
                   <div className="flex items-center gap-4 mb-6">
                     <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
-                      <span className="text-white font-extrabold text-xl md:text-2xl">06</span>
+                      <span className="text-white font-extrabold text-xl md:text-2xl">07</span>
                     </span>
                     <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Dhowa Rock Temple</h3>
                   </div>
@@ -1144,7 +1144,6 @@ export default function EllaTownGuide() {
                   </div>
                 </CardContent>
               </Card>
-
 
               <Card>
                 <CardHeader>

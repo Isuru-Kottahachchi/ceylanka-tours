@@ -253,7 +253,12 @@ export default function TrincomaleeTravelGuide() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>1. Fort Frederick</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Fort Frederick</h3>
+                </div>
                 <CardDescription>Historic fort with stunning views and rich history</CardDescription>
               </CardHeader>
               <CardContent>
@@ -329,7 +334,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Koneswaram Temple */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Koneswaram Temple</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Koneswaram Temple</h3>
+                </div>
                 <CardDescription>Ancient Hindu temple on dramatic clifftop - One of the Pancha Ishwarams</CardDescription>
               </CardHeader>
               <CardContent>
@@ -533,7 +543,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Trincomalee Natural Harbour */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Trincomalee Natural Harbour</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Trincomalee Natural Harbour</h3>
+                </div>
                 <CardDescription>One of the world&apos;s finest natural deep-water harbours</CardDescription>
               </CardHeader>
               <CardContent>
@@ -602,7 +617,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Nilaveli Beach */}
             <Card>
               <CardHeader>
-                <CardTitle>4. Nilaveli Beach</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Nilaveli Beach</h3>
+                </div>
                 <CardDescription>Pristine white sand paradise - Sri Lanka&apos;s most beautiful beach</CardDescription>
               </CardHeader>
               <CardContent>
@@ -711,7 +731,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Pigeon Island */}
             <Card>
               <CardHeader>
-                <CardTitle>5. Pigeon Island National Park</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">05</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Pigeon Island National Park</h3>
+                </div>
                 <CardDescription>Marine sanctuary with incredible coral reefs and diverse marine life</CardDescription>
               </CardHeader>
               <CardContent>
@@ -834,7 +859,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Kanniya Hot Springs */}
             <Card>
               <CardHeader>
-                <CardTitle>6. Kanniya Hot Springs</CardTitle>
+                 <div className="flex items-center gap-4 mb-6">
+                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                      <span className="text-white font-extrabold text-xl md:text-2xl">06</span>
+                    </span>
+                    <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Kanniya Hot Springs</h3>
+                  </div>
                 <CardDescription>Natural thermal springs with healing properties and ancient legends</CardDescription>
               </CardHeader>
               <CardContent>
