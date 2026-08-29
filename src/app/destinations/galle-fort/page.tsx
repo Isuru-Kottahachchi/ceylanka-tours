@@ -168,7 +168,7 @@ export default function GalleFortTravelGuide() {
                   <div>
                     <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
                     <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li>• <strong>Distance:</strong> 205km (127 miles) from Colombo</li>
+                      <li>• <strong>Distance:</strong> 130km from Colombo</li>
                       <li>• <strong>Duration:</strong> 4-4.5 hours</li>
                       <li>• <strong>Best option:</strong> Most convenient and flexible</li>
                     </ul>
@@ -483,18 +483,39 @@ export default function GalleFortTravelGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      The forts massive stone ramparts offer the best views in Galle. Walk the complete circuit (about 2km)
-                      for stunning ocean vistas, especially magical during sunset. The walls are up to 12 meters high and
-                      2 meters thick in some places.
+                      The fort&apos;s stone ramparts stretch about 2km around the perimeter. Walking the full circuit
+                      takes around 45 minutes at a relaxed pace, though most visitors spend longer. Sunset from the
+                      western ramparts is the most popular time to visit.
+                    </p>
+                    <p className="text-muted-foreground mb-4">
+                      Cannons are positioned at several points along the walls. Some of these are original period
+                      cannons, but a number of the ones you see are replicas placed for display. The fort has 14
+                      bastions, each given a name by the Dutch, including Star, Moon, Sun, Zwart (Black), Triton,
+                      Neptune, Aurora, and Point Utrecht Bastion. At Triton Bastion, the Dutch once operated a
+                      windmill that drew water from the sea to sprinkle the dusty roads of the town. Flag Rock
+                      Bastion at the southern end was used as a signalling station to warn ships of hazardous
+                      rocky stretches near the port.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Best sunset viewing spot in Galle
+                        Original and replica cannons positioned along the ramparts
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Perfect for photography and selfies
+                        14 named bastions, each with ocean views
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Flag Rock Bastion, a former signalling station for ships entering port
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Triton Bastion, where a Dutch windmill once pumped sea water for the town roads
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Best sunset viewing spot in Galle
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
@@ -509,16 +530,16 @@ export default function GalleFortTravelGuide() {
             {/* Galle Lighthouse */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Galle Lighthouse</CardTitle>
+                <CardTitle>3. Galle Lighthouse</CardTitle>
                 <CardDescription>Sri Lankas oldest lighthouse still in operation</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Built in 1938, this 26-meter tall lighthouse is not just functional but also the most photographed
-                      landmark in Galle Fort. Located at the southeastern tip of the fort, it offers panoramic views of
-                      the Indian Ocean and the forts architecture.
+                      Built in 1938, this 18-meter tall lighthouse is not just functional but also the most photographed
+                      landmark in Galle Fort. Located on Point Utrecht Bastion at the southeastern tip of the fort, it offers panoramic views of
+                      the Indian Ocean and the fort&apos;s architecture.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -549,7 +570,7 @@ export default function GalleFortTravelGuide() {
             {/* Dutch Reformed Church */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Dutch Reformed Church</CardTitle>
+                <CardTitle>4. Dutch Reformed Church</CardTitle>
                 <CardDescription>Historic church with fascinating colonial tombstones</CardDescription>
               </CardHeader>
               <CardContent>
@@ -584,7 +605,7 @@ export default function GalleFortTravelGuide() {
             {/* National Maritime Museum */}
             <Card>
               <CardHeader>
-                <CardTitle>4. National Maritime Museum</CardTitle>
+                <CardTitle>5. National Maritime Museum</CardTitle>
                 <CardDescription>Discover Sri Lankas maritime heritage</CardDescription>
               </CardHeader>
               <CardContent>
