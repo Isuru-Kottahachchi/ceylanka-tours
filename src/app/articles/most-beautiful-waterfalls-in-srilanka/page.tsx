@@ -61,7 +61,7 @@ const waterfalls = [
     bestTime: "April to September, December to February",
     swimmable: "Yes - natural pools available",
     description:
-      "Nestled among lush tea plantations in the Nuwara Eliya district, Bomburu Ella is a hidden gem that offers a peaceful escape. The waterfall cascades down rocky cliffs into natural pools perfect for swimming. The scenic hike through tea estates provides stunning views of the surrounding highlands.",
+      "Bomburu Ella sits among tea plantations in the Nuwara Eliya district and is less visited than the more popular falls in the region. The waterfall drops down rocky cliffs into natural pools suitable for swimming. The hike through tea estates gives good views of the surrounding highlands.",
     highlights: [
       "Beautiful tea plantation setting",
       "Natural swimming pools",
@@ -92,7 +92,7 @@ const waterfalls = [
     bestTime: "April to September, December to February",
     swimmable: "Yes - base pool available",
     description:
-      "Sri Lanka's highest waterfall, Bambarakanda Falls plunges dramatically from the Horton Plains plateau. Easily accessible yet spectacular,it offers excellent viewing opportunities and a refreshing pool at the base for swimming.",
+      "Sri Lanka's highest waterfall, Bambarakanda Falls drops from a rocky escarpment in the Kalupahana area near Haputale. Easily accessible yet spectacular, it offers excellent viewing opportunities and a refreshing pool at the base for swimming.",
     highlights: [
       "Sri Lanka's highest waterfall",
       "Easy accessibility",
@@ -274,7 +274,7 @@ const waterfalls = [
     bestTime: "March to September",
     swimmable: "No - hydroelectric area",
     description:
-      "Fed by the Maskeliya Reservoir, Laxapana Falls is both a natural wonder and an important hydroelectric site. The powerful cascade and surrounding mountain scenery create a dramatic landscape perfect for photography.",
+      "Laxapana Falls flows on the Kehelgamu Oya river near Maskeliya and is part of an important hydroelectric scheme in the area. The powerful cascade and surrounding mountain scenery make it a good photography stop.",
     highlights: [
       "Powerful single drop",
       "Mountain scenery",
@@ -360,7 +360,7 @@ const waterfalls = [
   {
     name: "Aberdeen Falls",
     image: "/Aberdeen-Falls.jpg",
-    location: "Ginigathena, Nuwara Eliya District",
+    location: "Ginigathena, Kandy District",
     height: "98 meters (322 feet)",
     difficulty: "Moderate",
     accessibility: "1.5-hour hike through estate",
@@ -391,7 +391,7 @@ const waterfalls = [
 
   {
     name: "Duwili Ella Falls",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Duwili-Ella.jpg",
     location: "Balangoda, Ratnapura District",
     height: "63 meters (207 feet)",
     difficulty: "Moderate",
@@ -492,6 +492,11 @@ export default function WaterfallsSriLankaPage() {
               Sri Lanka&apos;s waterfalls provide unforgettable experiences amidst some of the world&apos;s most beautiful
               landscapes.
             </p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mt-4 border-t border-gray-200 dark:border-gray-600 pt-4">
+              <strong>Note:</strong> This list reflects the most commonly visited and talked-about waterfalls among
+              travellers and locals. It is not a definitive ranking. Your personal favourites may be different depending
+              on what you enjoy, how you travel, and which parts of Sri Lanka you visit.
+            </p>
           </div>
         </section>
 
@@ -540,7 +545,7 @@ export default function WaterfallsSriLankaPage() {
               <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
                 <div className="flex flex-col lg:flex-row">
                   {/* Image */}
-                  <div className="relative w-full lg:w-1/4 h-48 lg:h-auto">
+                  <div className="relative w-full lg:w-1/4 h-72 sm:h-80 lg:h-auto">
                     <Image
                       src={waterfall.image || "/placeholder.svg"}
                       alt={`${waterfall.name} - Beautiful waterfall in Sri Lanka`}
@@ -635,7 +640,7 @@ export default function WaterfallsSriLankaPage() {
                     </div>
 
                     {/* Read More Button */}
-                    <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                    {/* <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
                       <Link 
                         href={`/destinations/${waterfall.name.toLowerCase().replace(/['\s]+/g, '-').replace(/falls?/g, '')}`}
                         className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg text-sm"
@@ -645,7 +650,7 @@ export default function WaterfallsSriLankaPage() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </article>
