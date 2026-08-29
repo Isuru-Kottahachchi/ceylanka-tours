@@ -224,7 +224,12 @@ export default function BalangodaGuide() {
             {/* Archaeological Sites */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Balangoda Man Archaeological Sites</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-blue-600 dark:bg-blue-500 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Balangoda Man Archaeological Sites</h3>
+                </div>
                 <CardDescription>Prehistoric human discovery sites dating back 37,000 years</CardDescription>
               </CardHeader>
               <CardContent>
@@ -291,7 +296,12 @@ export default function BalangodaGuide() {
             {/* Lime Stone Pool Attraction Card */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Lime Stone Pool/ Hunugal Pokuna</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-cyan-600 dark:bg-cyan-500 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Lime Stone Pool/ Hunugal Pokuna</h3>
+                </div>
                 <CardDescription>Natural rock pool with crystal-clear waters</CardDescription>
               </CardHeader>
               <CardContent>
@@ -366,7 +376,12 @@ export default function BalangodaGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>3. Bakers Bend</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-green-100 dark:bg-green-900/50 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight"> Bakers Bend</h3>
+                </div>
                 <CardDescription>Though the scenery is unparalleled, Nonpareil state</CardDescription>
               </CardHeader>
               <CardContent>
@@ -438,7 +453,12 @@ export default function BalangodaGuide() {
             {/* Nagrak Village Attraction Card */}
             <Card>
               <CardHeader>
-                <CardTitle>4. Nagrak Village</CardTitle>
+                 <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-blue-600 dark:bg-blue-500 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight"> Nagrak Village</h3>
+                </div>
                 <CardDescription>Remote mountain village with breathtaking views</CardDescription>
               </CardHeader>
               <CardContent>
@@ -501,7 +521,12 @@ export default function BalangodaGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle>5. Pahanthudawa Waterfall</CardTitle>
+                 <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-orange-600 dark:bg-orange-500 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight"> Pahanthudawa Waterfall</h3>
+                </div>
                 <CardDescription>A scenic waterfall nestled in the Belihuloya region, near Balangoda</CardDescription>
               </CardHeader>
               <CardContent>
@@ -532,15 +557,15 @@ export default function BalangodaGuide() {
                       </li>
 
                     </ul>
-                     <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg border border-amber-200 dark:border-amber-800">
-                        <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">⚠️ Safety Tips</h4>
-                        <ul className="text-sm text-amber-600 dark:text-amber-400 space-y-1">
-                          <li>• Always follow the instructions of your guide and the locals</li>
-                          <li>• Water level of the above waterfall can be unpredictable always be aware about the rain and the water stream</li>
-                          <li>• Don&apos;t swim near the waterfall</li>
-                          <li>• Road to the waterfall can be slippery be carefull</li>
-                        </ul>
-                      </div>
+                    <div className="bg-amber-50 dark:bg-amber-900/20 p-4 rounded-lg border border-amber-200 dark:border-amber-800">
+                      <h4 className="font-semibold text-amber-800 dark:text-amber-200 mb-2">⚠️ Safety Tips</h4>
+                      <ul className="text-sm text-amber-600 dark:text-amber-400 space-y-1">
+                        <li>• Always follow the instructions of your guide and the locals</li>
+                        <li>• Water level of the above waterfall can be unpredictable always be aware about the rain and the water stream</li>
+                        <li>• Don&apos;t swim near the waterfall</li>
+                        <li>• Road to the waterfall can be slippery be carefull</li>
+                      </ul>
+                    </div>
                     {/* <div className="mt-4 flex justify-start">
                       <Link href="/destinations/balangoda-archaeological-sites" passHref legacyBehavior>
                         <Button
@@ -622,7 +647,12 @@ export default function BalangodaGuide() {
             {/* Samanalawewa Reservoir */}
             <Card>
               <CardHeader>
-                <CardTitle>6. Samanalawewa Reservoir</CardTitle>
+                 <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-cyan-600 dark:bg-cyan-500 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">05</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight"> Samanalawewa Reservoir</h3>
+                </div>
                 <CardDescription>Stunning man-made lake and engineering marvel</CardDescription>
               </CardHeader>
               <CardContent>
