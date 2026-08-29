@@ -543,15 +543,15 @@ export default function WaterfallsSriLankaPage() {
             <Fragment key={index}>
               {/* Waterfall Card */}
               <article className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700">
-                <div className="flex flex-col lg:flex-row">
+                <div className="flex flex-col md:flex-row">
                   {/* Image */}
-                  <div className="relative w-full lg:w-1/4 h-80 sm:h-96 lg:min-h-64 lg:h-full">
+                  <div className="relative w-full md:w-2/5 h-72 sm:h-80 md:h-[28rem]">
                     <Image
                       src={waterfall.image || "/placeholder.svg"}
                       alt={`${waterfall.name} - Beautiful waterfall in Sri Lanka`}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 25vw"
+                      sizes="(max-width: 768px) 100vw, 40vw"
                     />
                     <div className="absolute top-4 left-4">
                       <span
