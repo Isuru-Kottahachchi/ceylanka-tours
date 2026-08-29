@@ -240,8 +240,8 @@ export default function BalangodaGuide() {
                       {
                         src: "/Batadomba-Lena.jpg",
                         alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                        caption: "Ancient Cave Paintings",
-                        title: "Cave 1 Murals"
+                        caption: "Batadomba Cave",
+                        title: "Batadomba Cave"
                       },
 
                     ]}
