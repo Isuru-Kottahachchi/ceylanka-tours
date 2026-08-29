@@ -63,7 +63,7 @@ const originalArticles = [
     readTime: "11 min read",
     image: "/Gerandi-Ella.jpeg",
     description: "Discover the most spectacular waterfalls across Sri Lanka, from towering cascades in the hill country to hidden gems in remote areas.",
-    highlights: ["Bambarakanda Falls", "Sekumpura Falls", "Diyaluma Falls"],
+    highlights: ["Bambarakanda Falls", "Gerandi Ella", "Diyaluma Falls"],
     featured: false,
   },
   {

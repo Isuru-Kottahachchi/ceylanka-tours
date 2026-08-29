@@ -7,7 +7,7 @@ const featuredArticles = [
   {
     id: 1,
     title: "Top 10 Must-Visit Beaches in Sri Lanka",
-    path: "top10-beaches-in-sri-lanka",
+    path: "most-beautiful-beaches-in-sri-lanka",
     excerpt:
       "From the golden sands of Unawatuna to the pristine shores of Mirissa, discover the most beautiful beaches...",
     image: "/Blue-beach.jpg",

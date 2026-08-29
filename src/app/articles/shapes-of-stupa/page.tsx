@@ -78,51 +78,51 @@ export default function ShapesOfStupaPage() {
                         </div>
                         {/* Content Section */}
                         <div className="p-6 flex-1">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Parts of a Sri Lankan Stupa</h2>
+                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Main Parts of a Sri Lankan Stupa</h2>
                             <p className="text-gray-700 leading-relaxed mb-4 text-sm">
                                 Every stupa, regardless of its shape, has the same basic parts. Understanding these elements helps you appreciate the complete design:
                             </p>
 
                             <div className="grid md:grid-cols-2 gap-3">
                                 <div className="bg-white p-4 rounded-lg border border-gray-200">
-                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵 Pesa Valalu (Base Platforms)</h3>
+                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵1,2,3 Pesa Valalu (Base Terraces)</h3>
                                     <p className="text-gray-700 text-xs">
-                                        Three circular platforms that get smaller as they go up. These represent the stages of spiritual development from earth to enlightenment.
+                                        Three circular stone terraces that form the base of the stupa. Each level is slightly smaller than the one below. Worshippers walk around the stupa on these terraces.
                                     </p>
                                 </div>
 
                                 <div className="bg-white p-4 rounded-lg border border-gray-200">
-                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵4 Garbhaya (Relic Chamber)</h3>
+                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵4 Anda (The Dome)</h3>
                                     <p className="text-gray-700 text-xs">
-                                        The secret room deep inside the dome where sacred relics are kept. Once sealed, it is never opened again.
+                                        The large rounded body of the stupa. This is the most visible part. Its shape, round, bell-shaped, or lotus-shaped, determines which type of stupa it is.
                                     </p>
                                 </div>
 
                                 <div className="bg-white p-4 rounded-lg border border-gray-200">
-                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵 Anda or Garbha (The Dome)</h3>
+                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵 Garbhaya (Relic Chamber)</h3>
                                     <p className="text-gray-700 text-xs">
-                                        The main round structure. Its shape determines what type of stupa it is (Bubulakara, Padmakara, etc.).
+                                        A sealed room built inside the dome. It holds sacred relics such as bone fragments or personal items belonging to the Buddha or a Buddhist saint. Once sealed during construction, it is never opened.
                                     </p>
                                 </div>
 
                                 <div className="bg-white p-4 rounded-lg border border-gray-200">
-                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵 Hatharas Kotuwa (Square Terrace)</h3>
+                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵5 Hatharas Kotuwa (Square Platform)</h3>
                                     <p className="text-gray-700 text-xs">
-                                        The square platform on top of the dome. It represents the transition from the round (worldly) to the square (divine).
+                                        The square stone platform that sits on top of the dome. "Hatharas" means "four" in Sinhala, referring to its four sides. Guard stones are sometimes placed at each corner.
                                     </p>
                                 </div>
 
                                 <div className="bg-white p-4 rounded-lg border border-gray-200">
-                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵 Devata Kotuwa (Crown)</h3>
+                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵6 Devata Kotuwa (Decorative Box)</h3>
                                     <p className="text-gray-700 text-xs">
-                                        The spire or crown at the very top, often with umbrella-like rings. These rings (usually 7 or 9) represent the levels of heaven.
+                                        A small decorated structure placed on top of the Hatharas Kotuwa. It sits between the square platform and the spire, and may hold additional sacred items.
                                     </p>
                                 </div>
 
                                 <div className="bg-white p-4 rounded-lg border border-gray-200">
-                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵 Kotha (Pinnacle)</h3>
+                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵8 Kotha (Spire)</h3>
                                     <p className="text-gray-700 text-xs">
-                                        The very tip of the stupa, often holding a crystal or gem. This represents the final point of enlightenment.
+                                        The tall spire at the very top, with a stack of umbrella-shaped rings. The number of rings is often 7 or 9. A crystal or small gem is placed at the very tip.
                                     </p>
                                 </div>
                             </div>
