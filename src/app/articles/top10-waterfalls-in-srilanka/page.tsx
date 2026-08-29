@@ -175,7 +175,7 @@ const waterfalls = [
   },
   {
     name: "Baker's Falls",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/Hortonplains20.jpeg",
     location: "Horton Plains National Park",
     height: "20 meters (66 feet)",
     difficulty: "Easy",

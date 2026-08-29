@@ -667,11 +667,11 @@ export default function RathnapuraGuide() {
                   </Card>
                 </Link>
 
-                <Link href="/destinations/sigiriya" className="block group">
+                <Link href="/destinations/sigiriya-rock-fortress" className="block group">
                   <Card className="overflow-hidden hover:shadow-md transition-all duration-300">
                     <div className="relative">
                       <Image
-                        src="/sigiriya-rock-fortress-ancient-ruins-sri-lanka.jpg"
+                        src="/Sigiriya.jpeg"
                         alt="Sigiriya rock fortress"
                         width={200}
                         height={120}

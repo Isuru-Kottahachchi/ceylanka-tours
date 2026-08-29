@@ -61,7 +61,7 @@ const destinations = [
   {
     id: 5,
     name: "Yala National Park",
-    location: "Southern Province",
+    location: "Southern Province and Uva Province",
     path: "yala-national-park",
     image: "/Yala-national-park.jpg",
     // rating: 4.5,

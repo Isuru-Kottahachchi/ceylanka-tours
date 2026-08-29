@@ -59,7 +59,7 @@ const destinations = [
   {
     id: 5,
     name: "Yala National Park",
-    location: "Southern Province",
+    location: "Southern Province and Uva Province",
     image: "/Yala-national-park.jpg",
     rating: 4.5,
     reviews: 920,

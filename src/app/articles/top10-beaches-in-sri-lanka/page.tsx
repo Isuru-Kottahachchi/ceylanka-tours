@@ -239,7 +239,7 @@ const beaches = [
       'Boat tours to see dolphins and whales',
       'Explore mangroves and Wilpattu National Park nearby',
     ],
-    tips: 'Windy and wild — perfect for adventure seekers. Limited nightlife.',
+    tips: 'Windy and wild, perfect for adventure seekers. Limited nightlife.',
     placesToStay: [
       'Thaproban Beach House',
       'Calamander Unawatuna Beach Resort',
@@ -263,7 +263,7 @@ const beaches = [
       'Hiking through jungle trails',
       'Relaxing away from crowds',
     ],
-    tips: 'Windy and wild — perfect for adventure seekers. Limited nightlife.',
+    tips: 'Windy and wild, perfect for adventure seekers. Limited nightlife.',
     placesToStay: [
       'Thaproban Beach House',
       'Calamander Unawatuna Beach Resort',

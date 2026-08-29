@@ -343,7 +343,7 @@ export default function HortonPlainsDetailedGuide() {
                       <div className="bg-amber-50 p-3 rounded-lg">
                         <p className="text-sm text-amber-800">
                           <strong>Did You Know?</strong> When you see down from the world&apos;s end in clear weather, you can see the Balangoda town and the famous Non pareil state,
-                          If you like to read about Balangoda click <a href="/blog/balangoda" className="underline font-medium">here</a>. If your eyes are sharp enough you can even see the Indian Ocean at a distance of 80 km!
+                          If you like to read about Balangoda click <a href="/destinations/balangoda" className="underline font-medium">here</a>. If your eyes are sharp enough you can even see the Indian Ocean at a distance of 80 km!
                         </p>
                       </div>
                     </div>
