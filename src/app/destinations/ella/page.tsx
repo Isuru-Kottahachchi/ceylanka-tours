@@ -319,7 +319,12 @@ export default function EllaTownGuide() {
             <div className="space-y-8">
               <Card>
                 <CardHeader>
-                  <CardTitle>1. Nine Arch Bridge</CardTitle>
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                      <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                    </span>
+                    <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Nine Arch Bridge</h3>
+                  </div>
                   <CardDescription>An architectural marvel and photographer&apos;s paradise</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -389,7 +394,12 @@ export default function EllaTownGuide() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>2. Little Adam&apos;s Peak</CardTitle>
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                      <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                    </span>
+                    <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Little Adam's Peak</h3>
+                  </div>
                   <CardDescription>Easy hike with spectacular 360-degree views</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -443,7 +453,12 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>3. Ella Rock</CardTitle>
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                      <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                    </span>
+                    <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Ella Rock</h3>
+                  </div>
                   <CardDescription>A challenging hike with the most rewarding views in Ella</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -494,7 +509,12 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>4. Ravana Cave</CardTitle>
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                      <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                    </span>
+                    <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Ravana Cave</h3>
+                  </div>
                   <CardDescription>Ancient cave with legendary significance</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -551,7 +571,12 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>5. Nil Diya Pokuna (Blue Water Pool)</CardTitle>
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                      <span className="text-white font-extrabold text-xl md:text-2xl">05</span>
+                    </span>
+                    <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Nil Diya Pokuna (Blue Water Pool)</h3>
+                  </div>
                   <CardDescription>Currently closed to visitors</CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -580,14 +605,19 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>6. Ella Spice Garden</CardTitle>
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                      <span className="text-white font-extrabold text-xl md:text-2xl">06</span>
+                    </span>
+                    <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Ella Spice Garden</h3>
+                  </div>
                   <CardDescription>Aromatic journey through Sri Lankan spices</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6 items-center">
                     <ImageCarousel
                       images={[
-                         {
+                        {
                           src: "/Ella-Spice-Garden3.jpg",
                           alt: "Ella Spice Garden with lush greenery and spice plants",
                           caption: "PC:Ella Spice Garden",
@@ -607,7 +637,7 @@ export default function EllaTownGuide() {
                           alt: "Ella Spice Garden with lush greenery and spice plants",
                           caption: "PC:Ella Spice Garden",
                         },
-                       
+
                       ]}
                     />
                     <div>
@@ -736,7 +766,12 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>8. Dhowa Rock Temple</CardTitle>
+                  <div className="flex items-center gap-4 mb-6">
+                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                      <span className="text-white font-extrabold text-xl md:text-2xl">06</span>
+                    </span>
+                    <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Dhowa Rock Temple</h3>
+                  </div>
                   <CardDescription>Ancient Buddhist heritage site with impressive rock carvings</CardDescription>
                 </CardHeader>
                 <CardContent>

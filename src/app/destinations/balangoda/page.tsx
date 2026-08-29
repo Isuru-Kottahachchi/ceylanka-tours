@@ -544,7 +544,7 @@ export default function BalangodaGuide() {
                   />
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Pahanthudawa Waterfall is located in the <strong>Belihuloya area</strong> — a scenic river valley near Balangoda, famous for its lush greenery, cool climate, and the Belihuloya River. The waterfall itself is only 16 feet in height, but the beautiful natural scenery surrounding it makes it a captivating spot. The name &quot;Pahanthuwada&quot; is derived from the waterfall&apos;s resemblance to an oil lamp (pahana) being extinguished (thudawa) as the water cascades down the rocks.
+                      Pahanthudawa Waterfall is located in the <strong>Belihuloya area</strong> a scenic river valley near Balangoda, famous for its lush greenery, cool climate, and the Belihuloya River. The waterfall itself is only 16 feet in height, but the beautiful natural scenery surrounding it makes it a captivating spot. The name &quot;Pahanthuwada&quot; is derived from the waterfall&apos;s resemblance to an oil lamp (pahana) being extinguished (thudawa) as the water cascades down the rocks.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
