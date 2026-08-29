@@ -34,7 +34,7 @@ export default function WeligamaTravelGuide() {
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/IMG_8209.jpg"
-          alt="Stunning view of Weligama Bay showing traditional stilt fishermen on wooden poles, golden sand beaches, and tropical coastline"
+          alt="Wide view of Weligama Bay showing traditional stilt fishermen on wooden poles, golden sand beaches, and tropical coastline"
           fill
           className="object-cover"
           priority
@@ -42,7 +42,7 @@ export default function WeligamaTravelGuide() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="hero-text-shadow text-4xl md:text-6xl font-extrabold mb-4 leading-[1.1] tracking-tight">Weligama</h1>
-          <p className="text-xl md:text-2xl mb-6 font-light">Sri Lanka&apos;s Authentic Coastal Paradise</p>
+          <p className="text-xl md:text-2xl mb-6 font-light">A Fishing Town on Sri Lanka&apos;s South Coast</p>
           <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 bg-yellow-600/80 text-white border-yellow-500">
               <MapPin className="w-4 h-4 mr-1" />
@@ -77,17 +77,16 @@ export default function WeligamaTravelGuide() {
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Introduction */}
         <section className="mb-12 scroll-mt-24" id="introduction">
-          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Weligama: Where Tradition Meets Paradise</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Weligama</h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Nestled along Sri Lanka&apos;s enchanting southern coast, Weligama is a captivating blend of ancient traditions and modern beach paradise.
-              This charming coastal town is world-famous for its iconic stilt fishermen, perfect beginner-friendly surfing conditions, and stunning natural attractions
-              like Snake Island (Taprobane Island) and the scenic Weligama Bay. The name &quot;Weligama&quot; literally means &quot;sandy village&quot; in Sinhala, perfectly describing this golden-sand haven.
+              Weligama sits on Sri Lanka&apos;s southern coast, about 150 km from Colombo. The town is known for its stilt fishermen,
+              calm surf conditions for beginners, and Taprobane Island, a private island you can walk to at low tide. The name &quot;Weligama&quot;
+              means &quot;sandy village&quot; in Sinhala, a fitting description for this stretch of coastline.
             </p>
             <p className="text-lg">
-              From witnessing the centuries-old art of stilt fishing to learning to surf in gentle bay waters, from exploring private islands accessible at low tide
-              to enjoying fresh seafood with ocean views, Weligama offers an authentic Sri Lankan coastal experience that perfectly balances cultural heritage with tropical relaxation.
-              Unlike crowded tourist hotspots, Weligama retains its authentic fishing village charm while providing world-class facilities for travelers.
+              Visitors come here to watch the stilt fishermen, learn to surf in the calm bay, and walk out to Taprobane Island at low tide.
+              The town still functions as a working fishing village, so daily life continues alongside the surf schools, guesthouses, and beachfront cafes that serve travelers.
             </p>
           </div>
         </section>
@@ -204,7 +203,7 @@ export default function WeligamaTravelGuide() {
               </CardContent>
             </Card>
           </section>
-        </div>{/* Surfing Paradise */}
+        </div>{/* Surfing Highlight */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">Sri Lanka&apos;s Premier Beginner Surfing Destination</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
@@ -327,14 +326,14 @@ export default function WeligamaTravelGuide() {
         {/* Top Attractions */}
         <section className="mb-16 scroll-mt-24" id="attractions">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold mb-3">Must-Visit Attractions in Weligama</h2>
+            <h2 className="text-3xl font-bold mb-3">Key Attractions in Weligama</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">Four experiences that define Weligama. Each one is worth making time for.</p>
           </div>
 
           <div className="space-y-20">
 
             {/* 01 — Taprobane Island */}
-            <div>
+            <div className="rounded-2xl border bg-card shadow-sm p-6 md:p-8">
               <div className="flex items-center gap-4 mb-6">
                 <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-blue-600 dark:bg-blue-500 flex items-center justify-center shadow-lg">
                   <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
@@ -347,30 +346,30 @@ export default function WeligamaTravelGuide() {
                     images={[
                       {
                         src: "/Waligama-Snake-Island.jpeg",
-                        alt: "Aerial view of Snake Island Taprobane",
-                        caption: "Snake Island with its colonial villa",
-                        title: "Snake Island from Above"
+                        alt: "Aerial view of Taprobane Island",
+                        caption: "Taprobane Island",
+                        title: "Taprobane Island from Above"
                       },
                       {
                         src: "/Waligama-Snake-Island1.jpeg",
-                        alt: "Sandy causeway connecting Snake Island to mainland",
+                        alt: "Sandy causeway connecting Taprobane Island to mainland",
                         caption: "Low tide reveals the sand path to the island",
-                        title: "Snake Island Causeway"
+                        title: "Taprobane Island"
                       },
                     ]}
                   />
                 </div>
                 <div className="space-y-5">
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 text-xs font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-200 rounded-full">Private Island</span>
-                    <span className="px-3 py-1 text-xs font-semibold bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-200 rounded-full">Free Entry</span>
-                    <span className="px-3 py-1 text-xs font-semibold bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-200 rounded-full">Low Tide Only</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-blue-100 text-blue-900 dark:bg-blue-900/50 dark:text-blue-200 rounded-full"><MapPin className="w-4 h-4" />Private Island</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-green-100 text-green-900 dark:bg-green-900/50 dark:text-green-200 rounded-full"><CheckCircle className="w-4 h-4" />Free Entry</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-amber-100 text-amber-900 dark:bg-amber-900/50 dark:text-amber-200 rounded-full"><Waves className="w-4 h-4" />Low Tide Only</span>
                   </div>
-                  <p className="text-sm font-medium text-amber-600 dark:text-amber-400 flex items-center gap-2">
-                    <AlertTriangle className="w-4 h-4 flex-shrink-0" />
+                  <p className="text-base font-semibold text-amber-700 dark:text-amber-400 flex items-center gap-2 bg-amber-50 dark:bg-amber-950/40 px-4 py-3 rounded-xl">
+                    <AlertTriangle className="w-5 h-5 flex-shrink-0" />
                     Access is only possible at low tide. Check tide times before visiting.
                   </p>
-                  <p className="text-muted-foreground">
+                  <p className="text-base text-foreground/80 leading-relaxed">
                     This tiny private island becomes accessible at low tide when a narrow strip of sand emerges,
                     connecting it to the mainland. The island has a colonial-style villa built in the 1920s and has hosted
                     notable guests including Kylie Minogue and Russell Crowe.
@@ -380,13 +379,13 @@ export default function WeligamaTravelGuide() {
                       "Historic colonial villa with notable guest history",
                       "Good spot for photography and sunset views",
                       "Free to visit the beach area (respect private property beyond)",
-                      "Accessible only during low tide — check tide times",
+                      "Accessible only during low tide. Check tide times before you go",
                     ].map((point) => (
                       <li key={point} className="flex items-start gap-3">
-                        <span className="w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <CheckCircle className="w-3.5 h-3.5 text-green-600 dark:text-green-400" />
+                        <span className="w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <CheckCircle className="w-4 h-4 text-green-700 dark:text-green-400" />
                         </span>
-                        <span className="text-sm text-muted-foreground">{point}</span>
+                        <span className="text-base text-foreground/80">{point}</span>
                       </li>
                     ))}
                   </ul>
@@ -395,7 +394,7 @@ export default function WeligamaTravelGuide() {
             </div>
 
             {/* 02 — Weligama Bay Beach */}
-            <div>
+            <div className="rounded-2xl border bg-card shadow-sm p-6 md:p-8">
               <div className="flex items-center gap-4 mb-6">
                 <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-cyan-600 dark:bg-cyan-500 flex items-center justify-center shadow-lg">
                   <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
@@ -405,11 +404,11 @@ export default function WeligamaTravelGuide() {
               <div className="grid md:grid-cols-2 gap-10 items-center">
                 <div className="order-2 md:order-1 space-y-5">
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 text-xs font-semibold bg-cyan-100 text-cyan-800 dark:bg-cyan-900/50 dark:text-cyan-200 rounded-full">2 km Long</span>
-                    <span className="px-3 py-1 text-xs font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-200 rounded-full">Safe Swimming</span>
-                    <span className="px-3 py-1 text-xs font-semibold bg-purple-100 text-purple-800 dark:bg-purple-900/50 dark:text-purple-200 rounded-full">Beginner Surfing</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-cyan-100 text-cyan-900 dark:bg-cyan-900/50 dark:text-cyan-200 rounded-full"><MapPin className="w-4 h-4" />2 km Long</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-blue-100 text-blue-900 dark:bg-blue-900/50 dark:text-blue-200 rounded-full"><CheckCircle className="w-4 h-4" />Safe Swimming</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-purple-100 text-purple-900 dark:bg-purple-900/50 dark:text-purple-200 rounded-full"><Waves className="w-4 h-4" />Beginner Surfing</span>
                   </div>
-                  <p className="text-muted-foreground">
+                  <p className="text-base text-foreground/80 leading-relaxed">
                     This crescent-shaped bay stretches for over 2 kilometres with natural protection from ocean swells, making it
                     one of the safest swimming beaches on the south coast. The gentle, consistent waves and sandy bottom make it
                     a top choice for beginner surfers learning for the first time.
@@ -422,10 +421,10 @@ export default function WeligamaTravelGuide() {
                       "Family-friendly with shallow areas for children",
                     ].map((point) => (
                       <li key={point} className="flex items-start gap-3">
-                        <span className="w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <CheckCircle className="w-3.5 h-3.5 text-green-600 dark:text-green-400" />
+                        <span className="w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <CheckCircle className="w-4 h-4 text-green-700 dark:text-green-400" />
                         </span>
-                        <span className="text-sm text-muted-foreground">{point}</span>
+                        <span className="text-base text-foreground/80">{point}</span>
                       </li>
                     ))}
                   </ul>
@@ -445,12 +444,6 @@ export default function WeligamaTravelGuide() {
                         caption: "The long crescent beach",
                         title: "Weligama Bay Beach"
                       },
-                      {
-                        src: "/Snake-Island-Villa.jpg",
-                        alt: "Colonial villa on Snake Island viewed from the beach",
-                        caption: "Snake Island Villa viewed from the beach",
-                        title: "Snake Island Villa"
-                      }
                     ]}
                   />
                 </div>
@@ -458,7 +451,7 @@ export default function WeligamaTravelGuide() {
             </div>
 
             {/* 03 — Stilt Fishermen */}
-            <div id="stilt-fishermen" className="scroll-mt-24">
+            <div id="stilt-fishermen" className="scroll-mt-24 rounded-2xl border bg-card shadow-sm p-6 md:p-8">
               <div className="flex items-center gap-4 mb-6">
                 <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-orange-600 dark:bg-orange-500 flex items-center justify-center shadow-lg">
                   <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
@@ -476,26 +469,30 @@ export default function WeligamaTravelGuide() {
                 </div>
                 <div className="space-y-5">
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 text-xs font-semibold bg-orange-100 text-orange-800 dark:bg-orange-900/50 dark:text-orange-200 rounded-full">Cultural Tradition</span>
-                    <span className="px-3 py-1 text-xs font-semibold bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-200 rounded-full">Best at Golden Hour</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-orange-100 text-orange-900 dark:bg-orange-900/50 dark:text-orange-200 rounded-full"><Star className="w-4 h-4" />Cultural Tradition</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-yellow-100 text-yellow-900 dark:bg-yellow-900/50 dark:text-yellow-200 rounded-full"><Sun className="w-4 h-4" />Best at Golden Hour</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-purple-100 text-purple-900 dark:bg-purple-900/50 dark:text-purple-200 rounded-full"><AlertTriangle className="w-4 h-4" />Mostly Posed Today</span>
                   </div>
-                  <p className="text-muted-foreground">
+                  <p className="text-base text-foreground/80 leading-relaxed">
                     Weligama&apos;s stilt fishermen are one of the most photographed sights in Sri Lanka. They perch on tall wooden poles
-                    driven into the coral reef, using simple rods in a technique passed down since World War II. The method was developed
-                    to fish prime spots without disturbing other fishermen or damaging the reef.
+                    driven into the coral reef, using a simple rod and line. The technique is usually traced back to the years just
+                    after World War II, when fish was scarce and the reef was crowded, so fishermen started working from poles above
+                    the water instead of competing for space in it.
                   </p>
-                  <p className="text-muted-foreground">
-                    Visit during early morning (6-8 AM) or late afternoon (4-6 PM) when the fishermen are most active and the light
-                    is at its best for photography.
+                  <p className="text-base text-foreground/80 leading-relaxed">
+                    Here is the part most visitors do not expect. Very few fish are actually caught this way anymore. Most of the men
+                    you see posing on the poles today are not fishing at all. They climb up for photos, hold the pose for a minute or
+                    two, and move on to the next group of tourists once they are paid. Real stilt fishing still happens, but it is rare
+                    and usually done at dawn, away from the road, by fishermen who are not interested in an audience.
                   </p>
                   <div className="bg-blue-50 dark:bg-slate-800 p-5 rounded-2xl border-l-4 border-blue-500">
-                    <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">Photography & Etiquette</h4>
-                    <ul className="text-sm text-blue-700 dark:text-blue-300 space-y-2">
-                      <li className="flex items-start gap-2"><span className="text-blue-400 mt-0.5">•</span> Visit during golden hour (6-8 AM or 4-6 PM) for best lighting</li>
-                      <li className="flex items-start gap-2"><span className="text-blue-400 mt-0.5">•</span> Always ask permission before taking photos</li>
-                      <li className="flex items-start gap-2"><span className="text-blue-400 mt-0.5">•</span> A small tip (500-1000 LKR) is appreciated and expected</li>
-                      <li className="flex items-start gap-2"><span className="text-blue-400 mt-0.5">•</span> Best viewing spots along the main beach road</li>
-                      <li className="flex items-start gap-2"><span className="text-blue-400 mt-0.5">•</span> Do not disturb the fishermen while they work</li>
+                    <h4 className="font-semibold text-blue-900 dark:text-blue-200 mb-3">Photography & Etiquette</h4>
+                    <ul className="text-base text-blue-900/90 dark:text-blue-300 space-y-2.5">
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 mt-1 flex-shrink-0 text-blue-600 dark:text-blue-400" /> Visit during golden hour (6-8 AM or 4-6 PM) for the best light</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 mt-1 flex-shrink-0 text-blue-600 dark:text-blue-400" /> Agree on a price before taking photos. This is how most of these men earn money now, not a bonus tip</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 mt-1 flex-shrink-0 text-blue-600 dark:text-blue-400" /> A fee of 500-1000 LKR per group of photos is typical</li>
+                      <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 mt-1 flex-shrink-0 text-blue-600 dark:text-blue-400" /> Best viewing spots are along the main beach road</li>
+                      <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 mt-1 flex-shrink-0 text-amber-600 dark:text-amber-400" /> Do not expect to see actual fish being caught. Treat it as a photo op, not a fishing demonstration</li>
                     </ul>
                   </div>
                 </div>
@@ -503,7 +500,7 @@ export default function WeligamaTravelGuide() {
             </div>
 
             {/* 04 — Fish Market */}
-            <div>
+            <div className="rounded-2xl border bg-card shadow-sm p-6 md:p-8">
               <div className="flex items-center gap-4 mb-6">
                 <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-rose-600 dark:bg-rose-500 flex items-center justify-center shadow-lg">
                   <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
@@ -537,11 +534,11 @@ export default function WeligamaTravelGuide() {
                 </div>
                 <div className="space-y-5">
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 text-xs font-semibold bg-rose-100 text-rose-800 dark:bg-rose-900/50 dark:text-rose-200 rounded-full">Cultural Experience</span>
-                    <span className="px-3 py-1 text-xs font-semibold bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-200 rounded-full">Free Entry</span>
-                    <span className="px-3 py-1 text-xs font-semibold bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-200 rounded-full">Best 6-9 AM</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-rose-100 text-rose-900 dark:bg-rose-900/50 dark:text-rose-200 rounded-full"><Star className="w-4 h-4" />Cultural Experience</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-green-100 text-green-900 dark:bg-green-900/50 dark:text-green-200 rounded-full"><CheckCircle className="w-4 h-4" />Free Entry</span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-amber-100 text-amber-900 dark:bg-amber-900/50 dark:text-amber-200 rounded-full"><Clock className="w-4 h-4" />Best 6-9 AM</span>
                   </div>
-                  <p className="text-muted-foreground">
+                  <p className="text-base text-foreground/80 leading-relaxed">
                     Local fishermen bring in their daily catch around dawn. This is one of the most genuine experiences on the south coast,
                     giving you a real look at traditional coastal life. Fresh tuna, snapper, and tropical fish come through here every morning
                     with no tourist staging.
@@ -554,10 +551,10 @@ export default function WeligamaTravelGuide() {
                       "Free to visit. Ask permission respectfully before taking photos",
                     ].map((point) => (
                       <li key={point} className="flex items-start gap-3">
-                        <span className="w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <CheckCircle className="w-3.5 h-3.5 text-green-600 dark:text-green-400" />
+                        <span className="w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <CheckCircle className="w-4 h-4 text-green-700 dark:text-green-400" />
                         </span>
-                        <span className="text-sm text-muted-foreground">{point}</span>
+                        <span className="text-base text-foreground/80">{point}</span>
                       </li>
                     ))}
                   </ul>
@@ -682,7 +679,7 @@ export default function WeligamaTravelGuide() {
             <Card>
               <CardHeader>
                 <CardTitle>Traditional Fishing Village Tour</CardTitle>
-                <CardDescription>Immerse yourself in authentic coastal life</CardDescription>
+                <CardDescription>A look at everyday fishing village life</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -790,7 +787,7 @@ export default function WeligamaTravelGuide() {
                     <p className="text-muted-foreground mb-4">
                       Weligama Bay&apos;s coral reefs and rocky outcrops provide excellent snorkeling opportunities with visibility up to 15 meters during calm weather.
                       The protected bay harbors diverse marine life including colorful reef fish, sea turtles, and occasionally dolphins.
-                      The area around Snake Island offers the best underwater experiences with shallow coral gardens perfect for beginners.
+                      The area around Taprobane Island offers the best underwater experiences with shallow coral gardens perfect for beginners.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
                       <li className="flex items-start gap-2">
@@ -962,7 +959,7 @@ export default function WeligamaTravelGuide() {
                 <div className="space-y-4">
                   <p className="text-muted-foreground">
                     Explore Weligama&apos;s diverse waterways by kayak, from the protected bay to nearby river mouths and lagoons.
-                    Sunset kayaking tours are particularly popular, offering stunning views of the stilt fishermen silhouetted against golden skies.
+                    Sunset kayaking tours are popular, giving a good view of the stilt fishermen silhouetted against the evening sky.
                   </p>
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
@@ -1060,7 +1057,7 @@ export default function WeligamaTravelGuide() {
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Mirissa</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Mirissa is famous for its whale watching tours and stunning beaches. Enjoy a relaxing day by the sea or embark on an exciting marine adventure.
+                  Mirissa is known for its whale watching tours and long sandy beach. Spend a relaxed day by the sea or head out on a boat trip to look for whales.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
@@ -1088,7 +1085,7 @@ export default function WeligamaTravelGuide() {
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Hirikatiya</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Hiriketiya is a hidden gem known for its excellent surfing conditions and laid-back atmosphere. Perfect for both beginners and experienced surfers.
+                  Hiriketiya is known for its horseshoe-shaped bay, good surf, and laid-back atmosphere. Suitable for both beginner and experienced surfers.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
@@ -1118,7 +1115,7 @@ export default function WeligamaTravelGuide() {
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Galle Fort</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  A UNESCO World Heritage Site, Galle Fort is known for its well-preserved colonial architecture and stunning ocean views.
+                  A UNESCO World Heritage Site, Galle Fort is known for its well-preserved colonial architecture and ocean views from the ramparts.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
@@ -1148,7 +1145,7 @@ export default function WeligamaTravelGuide() {
               <CardContent className="p-4">
                 <h3 className="font-bold text-lg mb-2">Unawatuna</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Unawatuna offers a perfect blend of relaxation and adventure with its golden beaches, coral reefs, and vibrant nightlife.
+                  Unawatuna has a sheltered beach, a coral reef close to shore, and a busy strip of restaurants and bars in the evenings.
                 </p>
                 <div className="flex items-center text-xs text-blue-600 mb-2">
                   <MapPin className="w-3 h-3 mr-1" />
@@ -1647,7 +1644,7 @@ export default function WeligamaTravelGuide() {
                   </li>
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
-                    Check tide times before visiting Snake Island
+                    Check tide times before visiting Taprobane Island
                   </li>
                   <li className="flex items-start gap-2">
                     <AlertTriangle className="w-4 h-4 text-red-500 mt-1 flex-shrink-0" />
