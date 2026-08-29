@@ -69,22 +69,22 @@ export default function BalangodaPrehistoricSites() {
           <h2 className="text-4xl font-bold mb-8 text-foreground">The Cradle of Early Human Settlement in Sri Lanka</h2>
           <div className="prose prose-xl max-w-none text-muted-foreground">
             <p className="text-xl mb-6 leading-relaxed">
-              In the misty highlands of Balangoda lies one of South Asia&apos;s most significant prehistoric discoveries - the
-              remains of ancient human settlements that have revolutionized our understanding of early human civilization
-              in the region. These caves and archaeological sites are home to the famous &quot;Balangoda Man&quot; (Homo sapiens
-              balangodensis), who lived here over 30,000 years ago.
+              Sri Lanka has some of the oldest prehistoric cave sites in South Asia. These sites are spread across the
+              island, from the wet zone lowlands to the central highlands. The humans who lived in these caves are known
+              as <b>&quot;Balangoda Man&quot;</b> (Homo sapiens balangodensis). Evidence shows they were living here at least 48,000
+              years ago.
             </p>
             <p className="text-lg mb-6">
-              The prehistoric humans of Balangoda weren&apos;t just survivors; they were innovators who developed sophisticated
-              tools, created intricate cave art, and established complex social structures. Their legacy is preserved in
-              the numerous caves and archaeological sites scattered throughout the region, each telling a unique story of
-              human ingenuity and adaptation.
+              The most studied sites are Fa Hien Cave in Kalutara district, Batadomba Cave near Kuruvita, and Belilena
+              Cave near Kitulgala. Each site has produced human remains, stone tools, shell ornaments, and food remains
+              that show how these early people lived, ate, and buried their dead. Some of the tools found here are among
+              the oldest of their kind found anywhere outside Africa.
             </p>
             <p className="text-lg">
-              These sites represent some of the earliest evidence of human habitation in South Asia, providing invaluable
-              insights into the lives, culture, and technologies of our ancient ancestors. From stone tools to burial
-              practices, from ancient artwork to food remains, every discovery here adds another piece to the fascinating
-              puzzle of human evolution and migration.
+              Archaeologists from Sri Lanka, Australia, and Germany have studied these sites over many decades. Their
+              work has shown that Balangoda Man was not a simple hunter. He used bone tools, made personal ornaments
+              from shells traded from the coast, and developed early bow and arrow technology. These finds have changed
+              how researchers view the spread of modern humans across Asia.
             </p>
           </div>
         </section>

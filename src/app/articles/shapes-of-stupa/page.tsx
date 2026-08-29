@@ -44,7 +44,7 @@ export default function ShapesOfStupaPage() {
                     <div className="prose prose-lg max-w-none">
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Understanding Stupas in Sri Lanka</h2>
                         <p className="text-gray-700 leading-relaxed mb-4">
-                            Stupas, also called dagobas or cetiya in Sri Lanka, are the most important structures in Buddhist architecture. These dome-shaped buildings hold sacred relics and serve as places of worship and meditation. Sri Lanka has some of the oldest and most beautiful stupas in the world, built over 2,000 years ago.
+                            Stupas, also called dagobas or chaitya in Sri Lanka, are the most important structures in Buddhist architecture. These dome-shaped buildings hold sacred relics and serve as places of worship and meditation. Sri Lanka has some of the oldest and most beautiful stupas in the world, built over 2,000 years ago.
                         </p>
                         <p className="text-gray-700 leading-relaxed mb-4">
                             The shape of a stupa is not just about beauty. Each design has deep religious meaning and follows ancient architectural rules written in Buddhist texts. Different shapes represent different spiritual ideas and were built during various periods of Sri Lankan history.
@@ -67,17 +67,18 @@ export default function ShapesOfStupaPage() {
                 <section className="mb-12 bg-gradient-to-br from-gray-50 to-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
                     <div className="flex flex-col md:flex-row">
                         {/* Image Section */}
-                        <div className="relative w-full md:w-2/5 h-64 md:h-auto">
+                        <div className="w-full md:w-2/5">
                             <Image
-                                src="/images/stupa-parts.jpg"
-                                alt="Parts of a Stupa Diagram"
-                                fill
-                                className="object-cover"
+                                src="/Main-components-of-a-Sri-Lankan-stupa.webp"
+                                alt="Parts of a Sri Lankan Stupa Diagram"
+                                width={800}
+                                height={600}
+                                className="w-full h-auto"
                             />
                         </div>
                         {/* Content Section */}
                         <div className="p-6 flex-1">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Parts of a Stupa</h2>
+                            <h2 className="text-2xl font-bold text-gray-900 mb-4">Parts of a Sri Lankan Stupa</h2>
                             <p className="text-gray-700 leading-relaxed mb-4 text-sm">
                                 Every stupa, regardless of its shape, has the same basic parts. Understanding these elements helps you appreciate the complete design:
                             </p>
@@ -91,7 +92,7 @@ export default function ShapesOfStupaPage() {
                                 </div>
 
                                 <div className="bg-white p-4 rounded-lg border border-gray-200">
-                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵 Garbhaya (Relic Chamber)</h3>
+                                    <h3 className="font-bold text-base text-gray-900 mb-1">🔵4 Garbhaya (Relic Chamber)</h3>
                                     <p className="text-gray-700 text-xs">
                                         The secret room deep inside the dome where sacred relics are kept. Once sealed, it is never opened again.
                                     </p>
