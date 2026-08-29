@@ -57,8 +57,8 @@ const originalArticles = [
   },
   {
     id: 5,
-    title: "Top 10 Waterfalls in Sri Lanka",
-    path: "top10-waterfalls-in-srilanka",
+    title: "Most Beautiful Waterfalls in Sri Lanka",
+    path: "most-beautiful-waterfalls-in-srilanka",
     category: "Nature",
     readTime: "11 min read",
     image: "/Gerandi-Ella.jpeg",
@@ -220,17 +220,17 @@ const originalArticles = [
     highlights: ["Hornet Safety", "Guide", "Survival Tips"],
     featured: false,
   },
-  {
-    id: 18,
-    title: "Places Don't Miss in Down South",
-    path: "placesdont missin downsouth",
-    category: "Travel Tips",
-    readTime: "13 min read",
-    image: "/GalleFort.jpeg",
-    description: "Essential destinations and hidden gems in Sri Lanka's southern province that every traveler should experience.",
-    highlights: ["Southern Beaches", "Galle Fort", "Hidden Gems"],
-    featured: false,
-  }
+  // {
+  //   id: 18,
+  //   title: "Places Don't Miss in Down South",
+  //   path: "placesdont missin downsouth",
+  //   category: "Travel Tips",
+  //   readTime: "13 min read",
+  //   image: "/GalleFort.jpeg",
+  //   description: "Essential destinations and hidden gems in Sri Lanka's southern province that every traveler should experience.",
+  //   highlights: ["Southern Beaches", "Galle Fort", "Hidden Gems"],
+  //   featured: false,
+  // }
 ]
 
 // const categories = ["All", "Beaches", "Culture", "Wildlife", "Nature", "Adventure", "Travel Tips", "Safety", "Religion", "History", "Architecture"]
