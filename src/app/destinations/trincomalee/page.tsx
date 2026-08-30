@@ -254,7 +254,7 @@ export default function TrincomaleeTravelGuide() {
             <Card>
               <CardHeader>
                 <div className="flex items-center gap-4 mb-2">
-                  <span className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                  <span className="w-12 h-12 md:w-12 md:h-12 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
                   </span>
                   <h3 className="text-3xl md:text-3xl font-extrabold tracking-tight">Fort Frederick</h3>
