@@ -950,7 +950,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Girihandu Seya */}
             <Card>
               <CardHeader>
-                <CardTitle>7. Girihandu Seya</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">07</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Girihandu Seya</h3>
+                </div>
                 <CardDescription>Ancient Buddhist stupa with profound historical significance</CardDescription>
               </CardHeader>
               <CardContent>
@@ -1035,7 +1040,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Arisi Male Beach */}
             <Card>
               <CardHeader>
-                <CardTitle>8. Arisi Male Beach</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">08</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Arisi Male Beach</h3>
+                </div>
                 <CardDescription>Unique coastal landscape with distinctive sand formations</CardDescription>
               </CardHeader>
               <CardContent>
@@ -1101,7 +1111,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Trincomalee War Cemetery */}
             <Card>
               <CardHeader>
-                <CardTitle>10. Trincomalee War Cemetery</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">09</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Trincomalee War Cemetery</h3>
+                </div>
                 <CardDescription>Commonwealth War Graves - A place of remembrance and reflection</CardDescription>
               </CardHeader>
               <CardContent>
@@ -1176,7 +1191,12 @@ export default function TrincomaleeTravelGuide() {
             {/* Kinniya Bridge */}
             <Card>
               <CardHeader>
-                <CardTitle>9. Kinniya Bridge</CardTitle>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">10</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Kinniya Bridge</h3>
+                </div>
                 <CardDescription>Sri Lanka&apos;s longest bridge - A scenic engineering marvel</CardDescription>
               </CardHeader>
               <CardContent>
