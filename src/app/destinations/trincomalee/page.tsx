@@ -253,11 +253,11 @@ export default function TrincomaleeTravelGuide() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-10 h-10 md:w-12 md:h-12 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
                   </span>
-                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Fort Frederick</h3>
+                  <h3 className="text-3xl md:text-3xl font-extrabold tracking-tight">Fort Frederick</h3>
                 </div>
                 <CardDescription>Historic fort with stunning views and rich history</CardDescription>
               </CardHeader>
@@ -334,7 +334,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Koneswaram Temple */}
             <Card>
               <CardHeader>
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
                   </span>
@@ -543,7 +543,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Trincomalee Natural Harbour */}
             <Card>
               <CardHeader>
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
                   </span>
@@ -617,7 +617,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Nilaveli Beach */}
             <Card>
               <CardHeader>
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
                   </span>
@@ -731,7 +731,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Pigeon Island */}
             <Card>
               <CardHeader>
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">05</span>
                   </span>
@@ -859,7 +859,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Kanniya Hot Springs */}
             <Card>
               <CardHeader>
-                 <div className="flex items-center gap-4 mb-6">
+                 <div className="flex items-center gap-4 mb-2">
                     <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                       <span className="text-white font-extrabold text-xl md:text-2xl">06</span>
                     </span>
@@ -950,7 +950,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Girihandu Seya */}
             <Card>
               <CardHeader>
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">07</span>
                   </span>
@@ -1040,7 +1040,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Arisi Male Beach */}
             <Card>
               <CardHeader>
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">08</span>
                   </span>
@@ -1111,7 +1111,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Trincomalee War Cemetery */}
             <Card>
               <CardHeader>
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">09</span>
                   </span>
@@ -1191,7 +1191,7 @@ export default function TrincomaleeTravelGuide() {
             {/* Kinniya Bridge */}
             <Card>
               <CardHeader>
-                <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">10</span>
                   </span>
