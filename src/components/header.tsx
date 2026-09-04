@@ -179,7 +179,7 @@ const planYourTripItems = [
       { name: "Visa Information", href: "/plan-your-trip/visa-information" },
       { name: "Trip Planner", href: "/plan/trip-planner" },
       { name: "Airport Transfer", href: "/plan-your-trip/airport-transfer-service" },
-      { name: "Budget Calculator", href: "/plan/budget" },
+      // { name: "Budget Calculator", href: "/plan/budget" },
       { name: "Weather Guide", href: "/plan/weather" },
     ],
   },

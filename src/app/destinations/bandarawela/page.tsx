@@ -111,7 +111,7 @@ export default function BandarawelaGuide() {
             {/* Dowa Rock Temple */}
             <Card>
               <CardHeader>
-                  <div className="flex items-center gap-4 mb-2">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
                   </span>
@@ -182,7 +182,7 @@ export default function BandarawelaGuide() {
             {/* Tea Plantations */}
             <Card>
               <CardHeader>
-                  <div className="flex items-center gap-4 mb-2">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
                   </span>
@@ -229,7 +229,7 @@ export default function BandarawelaGuide() {
             {/* Colonial Architecture */}
             <Card>
               <CardHeader>
-                  <div className="flex items-center gap-4 mb-2">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                     <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
                   </span>

@@ -243,7 +243,7 @@ export default function GalleFortTravelGuide() {
         </div>
 
         {/* How to Get There */}
-        <section className="mb-12">
+        {/* <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">How to Get to Galle Fort</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
@@ -296,17 +296,7 @@ export default function GalleFortTravelGuide() {
                     </div>
                   </div>
                 </div>
-                {/* <div>
-                  <h4 className="font-semibold mb-2 text-blue-600">By Bus</h4>
-                  <p className="text-sm text-muted-foreground mb-2">
-                    Express buses from Colombo Bastian Mawatha Bus Station. Duration: 2-2.5 hours.
-                  </p>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Air-conditioned bus: LKR 200-300</li>
-                    <li>• Regular bus: LKR 100-150</li>
-                    <li>• Buses run every 30 minutes</li>
-                  </ul>
-                </div> */}
+                
               </CardContent>
             </Card>
 
@@ -356,7 +346,7 @@ export default function GalleFortTravelGuide() {
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
         {/* Historical Background */}
         <section className="mb-12">
@@ -400,18 +390,28 @@ export default function GalleFortTravelGuide() {
         </section>
 
         {/* Top Attractions */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Must-See Attractions in Galle Fort</h2>
+        <section className="mb-16" id="attractions">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold mb-3">Must-See Attractions in Galle Fort</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">Five landmarks that tell the story of 400 years of colonial history within the fort walls.</p>
+          </div>
 
-          <div className="space-y-8">
-            {/* Clock Tower */}
-            <Card>
-              <CardHeader>
-                <CardTitle>1. The Iconic Clock Tower</CardTitle>
-                <CardDescription>A historic sentinel and modern cricket landmark</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
+          <div className="space-y-20">
+
+            {/* 01 — Clock Tower */}
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-6">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">The Iconic Clock Tower</h3>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-blue-100 text-blue-900 border border-blue-200 dark:bg-blue-900/50 dark:text-blue-200 dark:border-blue-800 rounded-full"><Calendar className="w-4 h-4" />Built 1887</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-green-100 text-green-900 border border-green-200 dark:bg-green-900/50 dark:text-green-200 dark:border-green-800 rounded-full"><Star className="w-4 h-4" />Cricket Landmark</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-cyan-100 text-cyan-900 border border-cyan-200 dark:bg-cyan-900/50 dark:text-cyan-200 dark:border-cyan-800 rounded-full"><CheckCircle className="w-4 h-4" />Free to View</span>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Galle-Clock-Tower.jpg"
                     alt="Historic Galle Fort Clock Tower with cricket ground in the background"
@@ -462,18 +462,23 @@ export default function GalleFortTravelGuide() {
                       </div>
                     </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            {/* Fort Ramparts */}
-            <Card>
-              <CardHeader>
-                <CardTitle>2. The Historic Ramparts</CardTitle>
-                <CardDescription>Walk along 400-year-old fortress walls</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
+            {/* 02 — Fort Ramparts */}
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-6">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">The Historic Ramparts</h3>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-amber-100 text-amber-900 border border-amber-200 dark:bg-amber-900/50 dark:text-amber-200 dark:border-amber-800 rounded-full"><MapPin className="w-4 h-4" />2 km Walk</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-orange-100 text-orange-900 border border-orange-200 dark:bg-orange-900/50 dark:text-orange-200 dark:border-orange-800 rounded-full"><Clock className="w-4 h-4" />Best at Sunset</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-green-100 text-green-900 border border-green-200 dark:bg-green-900/50 dark:text-green-200 dark:border-green-800 rounded-full"><CheckCircle className="w-4 h-4" />Free Entry</span>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Ramparts_in_galle.jpeg"
                     alt="People walking along Galle Fort ramparts during golden hour with ocean views and lighthouse visible"
@@ -524,17 +529,22 @@ export default function GalleFortTravelGuide() {
                     </ul>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
 
-            {/* Galle Lighthouse */}
-            <Card>
-              <CardHeader>
-                <CardTitle>3. Galle Lighthouse</CardTitle>
-                <CardDescription>Sri Lankas oldest lighthouse still in operation</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
+            {/* 03 — Galle Lighthouse */}
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-6">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-cyan-500 to-cyan-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Galle Lighthouse</h3>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-cyan-100 text-cyan-900 border border-cyan-200 dark:bg-cyan-900/50 dark:text-cyan-200 dark:border-cyan-800 rounded-full"><Calendar className="w-4 h-4" />Built 1938</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-rose-100 text-rose-900 border border-rose-200 dark:bg-rose-900/50 dark:text-rose-200 dark:border-rose-800 rounded-full"><Star className="w-4 h-4" />Most Photographed</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-green-100 text-green-900 border border-green-200 dark:bg-green-900/50 dark:text-green-200 dark:border-green-800 rounded-full"><CheckCircle className="w-4 h-4" />Free to View</span>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Built in 1938, this 18-meter tall lighthouse is not just functional but also the most photographed
@@ -564,17 +574,22 @@ export default function GalleFortTravelGuide() {
                     className="rounded-lg"
                   />
                 </div>
-              </CardContent>
-            </Card>
+              </div>
 
-            {/* Dutch Reformed Church */}
-            <Card>
-              <CardHeader>
-                <CardTitle>4. Dutch Reformed Church</CardTitle>
-                <CardDescription>Historic church with fascinating colonial tombstones</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
+            {/* 04 — Dutch Reformed Church */}
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-6">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Dutch Reformed Church</h3>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-purple-100 text-purple-900 border border-purple-200 dark:bg-purple-900/50 dark:text-purple-200 dark:border-purple-800 rounded-full"><Calendar className="w-4 h-4" />Built 1755</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-rose-100 text-rose-900 border border-rose-200 dark:bg-rose-900/50 dark:text-rose-200 dark:border-rose-800 rounded-full"><Star className="w-4 h-4" />Historic Tombstones</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-amber-100 text-amber-900 border border-amber-200 dark:bg-amber-900/50 dark:text-amber-200 dark:border-amber-800 rounded-full"><AlertTriangle className="w-4 h-4" />Donation Based</span>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
                   <Image
                     src="/Galle-Church.jpg"
                     alt="Interior of Dutch Reformed Church in Galle Fort showing colonial architecture and historical tombstones"
@@ -599,17 +614,22 @@ export default function GalleFortTravelGuide() {
                     </div>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
 
-            {/* National Maritime Museum */}
-            <Card>
-              <CardHeader>
-                <CardTitle>5. National Maritime Museum</CardTitle>
-                <CardDescription>Discover Sri Lankas maritime heritage</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
+            {/* 05 — National Maritime Museum */}
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-6">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">05</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">National Maritime Museum</h3>
+              </div>
+              <div className="flex flex-wrap gap-2 mb-6">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-emerald-100 text-emerald-900 border border-emerald-200 dark:bg-emerald-900/50 dark:text-emerald-200 dark:border-emerald-800 rounded-full"><Ship className="w-4 h-4" />Maritime History</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-cyan-100 text-cyan-900 border border-cyan-200 dark:bg-cyan-900/50 dark:text-cyan-200 dark:border-cyan-800 rounded-full"><Clock className="w-4 h-4" />Quick Visit</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold bg-blue-100 text-blue-900 border border-blue-200 dark:bg-blue-900/50 dark:text-blue-200 dark:border-blue-800 rounded-full"><MapPin className="w-4 h-4" />Dutch Warehouse</span>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
                       Housed in a beautiful Dutch warehouse, this museum showcases Sri Lanka&apos;s rich maritime history.Honestly It&apos;s a small museum when compared to others but worthy of a quick visit if you have time.
@@ -639,8 +659,8 @@ export default function GalleFortTravelGuide() {
                     className="rounded-lg"
                   />
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+
           </div>
         </section>
 
@@ -679,16 +699,12 @@ export default function GalleFortTravelGuide() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">Pedlars Inn Cafe</h4>
+                  <h4 className="font-semibold mb-2">Charlie's Bar & Bistro</h4>
                   <p className="text-sm text-muted-foreground">Colonial ambiance with excellent Sri Lankan and international cuisine.</p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Fortaleza Restaurant</h4>
                   <p className="text-sm text-muted-foreground">Rooftop dining with fort views and fresh seafood specialties.</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">The Fort Printers</h4>
-                  <p className="text-sm text-muted-foreground">Fine dining in a restored colonial mansion with garden seating.</p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Mamas Galle Fort Roof Cafe</h4>

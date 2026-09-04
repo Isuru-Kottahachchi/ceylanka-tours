@@ -377,7 +377,12 @@ export default function KandyTravelGuide() {
             {/* Kandy Lake */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Kandy Lake (Bogambara Lake) - The Heart of the City</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Kandy Lake (Bogambara Lake) - The Heart of the City</h3>
+                </div>
                 <CardDescription>A peaceful artificial lake with fascinating history and beautiful surroundings</CardDescription>
               </CardHeader>
               <CardContent>
@@ -438,14 +443,19 @@ export default function KandyTravelGuide() {
             {/* Royal Botanical Gardens */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Royal Botanical Gardens, Peradeniya - A Paradise for Nature Lovers</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Royal Botanical Gardens, Peradeniya - A Paradise for Nature Lovers</h3>
+                </div>
                 <CardDescription>147 acres of incredible plants from around the world - one of Asia&apos;s finest gardens</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
                   <div>
                     <p className="text-muted-foreground mb-4">
-                      Just 6km from Kandy city (15 minutes by tuk-tuk), these world-famous botanical gardens are like stepping
+                      Just 6km from Kandy city (15 minutes by a vehicle), these world-famous botanical gardens are like stepping
                       into a green paradise. Originally created as a pleasure garden for Kandyan royalty in 1371, today it&apos;s
                       home to over 4,000 different types of plants from all over the world. It&apos;s so beautiful that even Queen
                       Elizabeth II planted a tree here!
@@ -508,7 +518,12 @@ export default function KandyTravelGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>3. Bahirawakanda Vihara Buddha Statue - See Kandy from Above</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Bahirawakanda Vihara Buddha Statue - See Kandy from Above</h3>
+                </div>
                 <CardDescription>Giant white Buddha statue with amazing city views and spiritual atmosphere</CardDescription>
               </CardHeader>
               <CardContent>
@@ -569,7 +584,12 @@ export default function KandyTravelGuide() {
             {/* Cultural Shows */}
             <Card>
               <CardHeader>
-                <CardTitle>4. Traditional Kandyan Cultural Shows - Experience Living History</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Traditional Kandyan Cultural Shows - Experience Living History</h3>
+                </div>
                 <CardDescription>Spectacular performances of ancient dances, music, and fire walking that will amaze you</CardDescription>
               </CardHeader>
               <CardContent>
