@@ -94,7 +94,7 @@ export default function GalleFortTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Users className="w-4 h-4 text-green-500" />
                     <span>
-                      <strong>Area:</strong>  52 hectares (130 acres)
+                      <strong>Area:</strong>  52 hectares (130 to 150 acres)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">

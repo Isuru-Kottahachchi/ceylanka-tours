@@ -522,7 +522,7 @@ export default function HattonTravelGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Nuwara-Eliya-Lake.jpg"
+                  src="/Nuwara-Eliya.jpg"
                   alt="Nuwara Eliya lake with colonial buildings and rolling tea plantations"
                   fill
                   className="object-cover rounded-t-lg"

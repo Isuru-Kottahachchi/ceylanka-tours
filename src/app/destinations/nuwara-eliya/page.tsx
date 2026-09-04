@@ -240,19 +240,30 @@ export default function NuwaraEliyaTravelGuide() {
             </div>
           </div>
           {/* St. Clair's Falls Section */}
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
-            <div>
-              <Image
-                src="/St-Clairs-Falls.jpg"
-                alt={"St. Clair&apos;s Falls near Thalawakale, cascading through lush tea country on the way to Nuwara Eliya"}
-                width={500}
-                height={300}
-                className="rounded-lg shadow-lg"
-                placeholder="blur"
-                blurDataURL="/public/images/hero-waterfall.jpg"
-              />
+          <div className="grid md:grid-cols-2 gap-8 items-stretch mb-12">
+            <div className="flex flex-col h-full">
+              <div className="flex-1 min-h-[280px] grid grid-cols-2 gap-2">
+                <div className="relative rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src="/St-Clairs-Falls-Croped.jpg"
+                    alt="St. Clair's Falls near Thalawakale, cascading through lush tea country on the way to Nuwara Eliya"
+                    fill
+                    className="object-cover"
+                    placeholder="blur"
+                    blurDataURL="/public/images/hero-waterfall.jpg"
+                  />
+                </div>
+                <div className="relative rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src="/Devon-Falls.jpg"
+                    alt="Devon Falls near Talawakale, cascading through lush tea country on the way to Nuwara Eliya"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
               <p className="text-sm text-muted-foreground mt-2 italic">
-                St. Clair&apos;s Falls, often called the &lsquo;Little Niagara of Sri Lanka&rsquo;, is a breathtaking sight on the journey to Nuwara Eliya.
+                St. Clair&apos;s Falls in the Left, often called the &lsquo;Little Niagara of Sri Lanka&rsquo;, is a breathtaking sight on the journey to Nuwara Eliya.  Devon Falls in the right, near Talawakale, is another stunning waterfall cascading through the lush tea country.
               </p>
             </div>
             <div className="space-y-4 text-muted-foreground">
@@ -276,112 +287,15 @@ export default function NuwaraEliyaTravelGuide() {
           <h2 className="text-3xl font-bold mb-6">Must-Visit Attractions in Nuwara Eliya</h2>
 
           <div className="space-y-8">
-            {/* Gregory Lake */}
-            <Card>
-              <CardHeader>
-                <CardTitle>1. Gregory Lake</CardTitle>
-                <CardDescription>Scenic artificial lake perfect for recreation</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <ImageCarousel
-                    images={[
-                      {
-                        src: "/Gregory_Lake.jpg",
-                        alt: "Beautiful Gregory Lake in Nuwara Eliya with paddle boats, walking paths, and surrounding hills",
-                        caption: "Gregory Lake",
-                        title: "Gregory Lake"
-
-                      },
-                    ]}
-                  />
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Created in 1873 by British Governor Sir William Gregory, this picturesque lake is the heart of
-                      Nuwara Eliyas recreational activities. Surrounded by eucalyptus trees and rolling hills, it
-                      offers a perfect setting for relaxation and family fun.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Paddle boating and swan boats available
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Beautiful walking path around the lake
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Horse riding and pony rides for children
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Perfect for picnics and photography
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Haggala Botanical Garden */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Haggala Botanical Garden</CardTitle>
-                <CardDescription>Sri Lanka&apos;s second largest botanical garden, famed for its cool-climate blooms</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-
-                  <ImageCarousel
-                    images={[
-                      {
-                        src: "/Flowers-in-vic-park.jpg",
-                        alt: "Colorful flowers blooming at Hakgala Botanical Garden, Nuwara Eliya",
-                        caption: "Hakgala Botanical Garden",
-                        title: "Hakgala Botanical Garden"
-                      },
-                      {
-                        src: "/Victoria-park.jpg",
-                        alt: "Scenic pathways and lush flora at Hakgala Botanical Garden",
-                        caption: "Hakgala Botanical Garden",
-                        title: "Hakgala Botanical Garden"
-                      },
-
-
-                    ]}
-                  />
-                  <div>
-                    <p className="text-muted-foreground mb-4">
-                      Located just 10km from Nuwara Eliya, Haggala Botanical Garden is a floral paradise set against the dramatic backdrop of Hakgala Rock. Established in 1861, it is renowned for its vibrant displays of roses, orchids, ferns, and rare alpine plants that thrive in the region&apos;s cool, misty climate.
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Over 10,000 species of flora, including rare orchids and medicinal plants
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Best time to visit: March–April for the rose and orchid blooms
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Picturesque walking paths, picnic spots, and mountain views
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                        Family-friendly, with a dedicated children&apos;s garden
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
             {/* Horton Plains */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Horton Plains National Park</CardTitle>
+                 <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Horton Plains National Park</h3>
+                </div>
                 <CardDescription>UNESCO World Heritage site with Worlds End cliff</CardDescription>
               </CardHeader>
               <CardContent>
@@ -452,11 +366,127 @@ export default function NuwaraEliyaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
+            {/* Gregory Lake */}
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-12 md:h-12 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                  </span>
+                  <h3 className="text-3xl md:text-3xl font-extrabold tracking-tight">Gregory Lake</h3>
+                </div>
+                <CardDescription>Scenic artificial lake perfect for recreation</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Gregory_Lake.jpg",
+                        alt: "Beautiful Gregory Lake in Nuwara Eliya with paddle boats, walking paths, and surrounding hills",
+                        caption: "Gregory Lake",
+                        title: "Gregory Lake"
+
+                      },
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Created in 1873 by British Governor Sir William Gregory, this picturesque lake is the heart of
+                      Nuwara Eliyas recreational activities. Surrounded by eucalyptus trees and rolling hills, it
+                      offers a perfect setting for relaxation and family fun.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Paddle boating and swan boats available
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Beautiful walking path around the lake
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Horse riding and pony rides for children
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Perfect for picnics and photography
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Haggala Botanical Garden */}
+            <Card>
+              <CardHeader>
+                 <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Haggala Botanical Garden</h3>
+                </div>
+                <CardDescription>Sri Lanka&apos;s second largest botanical garden, famed for its cool-climate blooms</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6 items-center">
+
+                  <ImageCarousel
+                    images={[
+                      {
+                        src: "/Flowers-in-vic-park.jpg",
+                        alt: "Colorful flowers blooming at Hakgala Botanical Garden, Nuwara Eliya",
+                        caption: "Hakgala Botanical Garden",
+                        title: "Hakgala Botanical Garden"
+                      },
+                      {
+                        src: "/Victoria-park.jpg",
+                        alt: "Scenic pathways and lush flora at Hakgala Botanical Garden",
+                        caption: "Hakgala Botanical Garden",
+                        title: "Hakgala Botanical Garden"
+                      },
+
+
+                    ]}
+                  />
+                  <div>
+                    <p className="text-muted-foreground mb-4">
+                      Located just 10km from Nuwara Eliya, Haggala Botanical Garden is a floral paradise set against the dramatic backdrop of Hakgala Rock. Established in 1861, it is renowned for its vibrant displays of roses, orchids, ferns, and rare alpine plants that thrive in the region&apos;s cool, misty climate.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Over 10,000 species of flora, including rare orchids and medicinal plants
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Best time to visit: March–April for the rose and orchid blooms
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Picturesque walking paths, picnic spots, and mountain views
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                        Family-friendly, with a dedicated children&apos;s garden
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
             {/* Victoria Park */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Victoria Park</CardTitle>
+                 <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Victoria Park</h3>
+                </div>
                 <CardDescription>Beautiful botanical garden in the town center</CardDescription>
               </CardHeader>
               <CardContent>
@@ -572,7 +602,12 @@ export default function NuwaraEliyaTravelGuide() {
             {/* Ambewela New Zealand Farm */}
             <Card>
               <CardHeader>
-                <CardTitle>4. Ambewela New Zealand Farm</CardTitle>
+                 <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">05</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Ambewela New Zealand Farm</h3>
+                </div>
                 <CardDescription>Scenic dairy farm with rolling green pastures</CardDescription>
               </CardHeader>
               <CardContent>
@@ -641,7 +676,12 @@ export default function NuwaraEliyaTravelGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle>5. Moon Plains</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">06</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Moon Plains</h3>
+                </div>
                 <CardDescription>Hidden grassland plateau with panoramic views</CardDescription>
               </CardHeader>
               <CardContent>
@@ -694,7 +734,12 @@ export default function NuwaraEliyaTravelGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>6. Shanthipura Village and View Point</CardTitle>
+                 <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">07</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Shanthipura Village and View Point</h3>
+                </div>
                 <CardDescription>Sri Lanka&apos;s highest village</CardDescription>
               </CardHeader>
               <CardContent>
@@ -750,7 +795,12 @@ export default function NuwaraEliyaTravelGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>7. Nanu Oya Falls</CardTitle>
+                 <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">08</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Nanu Oya Falls</h3>
+                </div>
                 <CardDescription>Beautiful waterfall near Nuwara Eliya</CardDescription>
               </CardHeader>
               <CardContent>

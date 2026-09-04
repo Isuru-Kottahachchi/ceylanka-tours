@@ -126,7 +126,7 @@ export default function PasikudaTravelGuide() {
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4 text-orange-500" />
                     <span>
-                        <strong>Ideal Stay:</strong> 2-3 days
+                      <strong>Ideal Stay:</strong> 2-3 days
                     </span>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ export default function PasikudaTravelGuide() {
                   <div className="flex gap-8">
                     <div className="bg-amber-50 border-l-4 border-yellow-400 rounded p-4 flex-1">
                       <p className="text-sm text-yellow-900 font-semibold mb-1">Ideal Duration</p>
-                        <p className="text-sm text-yellow-800">2–3 full days to enjoy the beach, water activities, and local area at a relaxed pace.</p>
+                      <p className="text-sm text-yellow-800">2–3 full days to enjoy the beach, water activities, and local area at a relaxed pace.</p>
                     </div>
                     <div className="bg-green-50 border-l-4 border-green-400 rounded p-4 flex-1">
                       <p className="text-sm text-green-900 font-semibold mb-1">Best Time to Visit</p>
@@ -145,7 +145,7 @@ export default function PasikudaTravelGuide() {
                 </div>
               </CardContent>
             </Card>
-            <InsuranceBanner/>
+            <InsuranceBanner />
           </section>
           {/* How to Get to Pasikuda */}
           <section className="flex-1">
@@ -220,15 +220,16 @@ export default function PasikudaTravelGuide() {
         {/* Unique Features */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6">What Makes Pasikuda Special</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-            <div>
-              <Image
-                src="/Snorkeling-Pasikuda.jpg"
-                alt="Crystal clear shallow waters of Pasikuda bay showing coral formations and tropical fish underwater"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-              />
+          <div className="grid md:grid-cols-2 gap-8 items-stretch mb-8">
+            <div className="flex flex-col h-full">
+              <div className="relative w-full flex-1 min-h-[280px] rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/Snorkeling-Pasikuda.jpg"
+                  alt="Crystal clear shallow waters of Pasikuda bay showing coral formations and tropical fish underwater"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <p className="text-sm text-muted-foreground mt-2 italic">
                 The unique shallow bay extends nearly 2 kilometers, creating perfect conditions for swimming and
                 snorkeling
@@ -267,7 +268,12 @@ export default function PasikudaTravelGuide() {
             {/* Snorkeling & Diving */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Snorkeling & Diving Paradise</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Snorkeling & Diving Paradise</h3>
+                </div>
                 <CardDescription>Explore vibrant coral reefs and marine life</CardDescription>
               </CardHeader>
               <CardContent>
@@ -311,7 +317,12 @@ export default function PasikudaTravelGuide() {
             {/* Water Sports */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Exciting Water Sports</CardTitle>
+                   <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Exciting Water Sports</h3>
+                </div>
                 <CardDescription>Adventure activities for all skill levels</CardDescription>
               </CardHeader>
               <CardContent>
@@ -355,7 +366,12 @@ export default function PasikudaTravelGuide() {
             {/* Beach Relaxation */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Pure Beach Bliss</CardTitle>
+                   <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Pure Beach Bliss</h3>
+                </div>
                 <CardDescription>Pristine sand and perfect relaxation</CardDescription>
               </CardHeader>
               <CardContent>

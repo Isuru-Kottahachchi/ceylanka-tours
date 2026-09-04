@@ -5,14 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 
 export const metadata: Metadata = {
-	title: "Mirisavetiya Stupa Sri Lanka: Complete Guide 2025 | Monument of Mindfulness & Royal Regret",
+	title: "Mirisavetiya Stupa Sri Lanka: Complete Guide 2026 | Ancient Stupa of Anuradhapura",
 	description:
-		"Explore Mirisavetiya Stupa, a symbol of mindfulness and royal atonement in Anuradhapura. Discover its history, unique features, and travel tips for visiting this ancient Sri Lankan site.",
+		"Explore Mirisavetiya Stupa, one of the major ancient stupas in Anuradhapura. Discover its history, the story behind its name, and practical tips for visiting this sacred site.",
 	keywords:
 		"Mirisavetiya, Mirisawatiya, Anuradhapura, ancient Sri Lanka, Buddhist stupa, King Dutugemunu, sacred city, royal regret",
 	openGraph: {
-		title: "Mirisavetiya Stupa: Complete Guide 2025",
-		description: "Your essential guide to the monument of mindfulness in Anuradhapura, Sri Lanka",
+			title: "Mirisavetiya Stupa: Complete Guide 2026",
+			description: "Your essential guide to Mirisavetiya Stupa in Anuradhapura, Sri Lanka",
 		type: "article",
 		images: ["/Mirisawatiya.jpeg"],
 	},
@@ -32,7 +32,7 @@ export default function MirisavetiyaGuide() {
 				/>
 				<div className="absolute inset-0 bg-black/40" />
 				<div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-					<h1 className="text-4xl md:text-6xl font-bold mb-4">Mirisavetiya Stupa</h1>
+					<h1 className="hero-text-shadow text-4xl md:text-6xl font-bold mb-4">Mirisavetiya Stupa</h1>
 					<p className="text-xl md:text-2xl mb-6 font-light">A Monument of Mindfulness & Royal Regret</p>
 					<div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
 						<Badge variant="secondary" className="bg-white/20 text-white border-white/30">
@@ -75,13 +75,19 @@ export default function MirisavetiyaGuide() {
 			<div className="max-w-6xl mx-auto px-4 py-12">
 				{/* Introduction */}
 				<section id="introduction" className="mb-12">
-					<h2 className="text-3xl font-bold mb-6 text-foreground">Welcome to Mirisavetiya: The Stupa of Reflection</h2>
+					<div className="flex flex-wrap items-center gap-3 mb-6">
+						<h2 className="text-3xl font-bold text-foreground">Mirisavetiya: Ancient Stupa of Anuradhapura</h2>
+						<Badge className="bg-green-600 text-white flex items-center gap-1 whitespace-nowrap">
+							<CheckCircle className="w-3 h-3" />
+							Fact Checked
+						</Badge>
+					</div>
 					<div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
 						<p className="text-lg mb-4">
-							Discover Mirisavetiya Stupa, a monument born from a king’s moment of forgetfulness and transformed into a symbol of mindfulness. Built by King Dutugemunu, this stupa stands as a reminder that even great rulers sought atonement and spiritual growth. Its graceful form and tranquil setting make it a unique destination in Anuradhapura’s sacred landscape.
+							Mirisavetiya is a Buddhist stupa in the sacred city of Anuradhapura, built by King Dutugemunu in the 2nd century BCE. It stands about 60 meters tall and sits near the bank of the Tissa Wewa reservoir, within walking distance of Ruwanwelisaya.
 						</p>
 						<p className="text-lg">
-							Today, Mirisavetiya invites visitors to reflect on the power of intention and the beauty of second chances. Its story, architecture, and peaceful grounds offer a meaningful stop for travelers seeking both history and inspiration.
+							According to the Mahavamsa, Dutugemunu built the stupa at the spot where he planted his scepter — which contained a relic of the Buddha — while passing through the area. When he returned, the scepter could not be removed from the ground, which he took as a sign to build a stupa there to permanently enshrine the relic.
 						</p>
 					</div>
 				</section>
@@ -220,14 +226,14 @@ export default function MirisavetiyaGuide() {
 									/>
 									<div>
 										<p className="text-muted-foreground mb-4">
-											According to legend, King Dutugemunu built Mirisavetiya as an act of atonement after forgetting to offer food to the Buddhist monks. The stupa’s name, meaning “chili stupa,” recalls the king’s meal and his resolve to make amends. The monument stands as a testament to the Buddhist principle of mindfulness in daily life.
+											According to legend, King Dutugemunu built Mirisavetiya as an act of atonement after forgetting to offer food to the Buddhist monks. The stupa's name, meaning "chili stupa," recalls the king's meal and his resolve to make amends. The monument marks one of the earliest stupas Dutugemunu commissioned during his reign.
 										</p>
 										<p className="text-muted-foreground mb-4">
 											Mirisavetiya is renowned for its harmonious proportions, beautiful stone carvings, and the sacred relics enshrined within. The surrounding ruins include ancient buildings and intricate sculptures, offering a glimpse into the artistry and devotion of early Sri Lankan civilization.
 										</p>
 										<div className="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-400 dark:border-orange-600 mt-4">
 											<h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-2">Did You Know?</h4>
-											<p className="text-sm text-orange-700 dark:text-orange-100">Mirisavetiya’s construction was inspired by a moment of forgetfulness, but its legacy is one of mindfulness and compassion—a lesson for all who visit.</p>
+											<p className="text-sm text-orange-700 dark:text-orange-100">The Mahavamsa records that the relic enshrined inside Mirisavetiya came from the scepter of King Dutugemunu himself — the same scepter he could not pull out of the ground after planting it there.</p>
 										</div>
 										<ul className="space-y-2 text-muted-foreground mt-4">
 											<li className="flex items-start gap-2">
@@ -338,16 +344,16 @@ export default function MirisavetiyaGuide() {
 
 				{/* Final Inspiration */}
 				<section className="mb-12">
-					<Card className="bg-gradient-to-r from-orange-50 to-yellow-50 border-orange-200">
+					<Card className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-slate-800 dark:to-slate-800 border-orange-200 dark:border-slate-700">
 						<CardHeader>
-							<CardTitle className="text-orange-800">Reflect at Mirisavetiya</CardTitle>
+							<CardTitle className="text-orange-800 dark:text-orange-300">Plan Your Visit</CardTitle>
 						</CardHeader>
 						<CardContent>
 							<p className="text-muted-foreground mb-4">
-								As you walk the grounds of Mirisavetiya, let the story of royal regret and mindful atonement inspire your own journey. This ancient stupa is more than a monument—it’s a living lesson in compassion, humility, and the enduring power of intention.
+								Mirisavetiya is a short walk or tuk-tuk ride from the other major sites in Anuradhapura. The grounds are quiet and well-kept, and the stupa is an active place of worship. Pilgrims visit daily, so it is worth arriving early to see the morning offerings.
 							</p>
-							<p className="text-muted-foreground font-medium">
-								May your visit to Mirisavetiya bring you peace, insight, and a deeper connection to Sri Lanka’s sacred heritage.
+							<p className="text-muted-foreground">
+								Combine it with Ruwanwelisaya (5 minutes on foot) and the Lovamahapaya ruins for a good half-day route through the ancient city.
 							</p>
 						</CardContent>
 					</Card>
