@@ -201,7 +201,7 @@ export default function EllaTownGuide() {
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li>• <strong>Route:</strong> Colombo Fort → Ella station</li>
                         <li>• <strong>Duration:</strong> 7-9 hours</li>
-                        <li>• <strong>Cost:</strong> $2-8 USD (depending on class)</li>
+                        <li>• <strong>Cost:</strong> (depending on class)</li>
                         <li>• <strong>Scenic journey:</strong> Through countryside</li>
                       </ul>
                       <p className="text-xs text-muted-foreground mt-3">
@@ -319,7 +319,7 @@ export default function EllaTownGuide() {
             <div className="space-y-8">
               <Card>
                 <CardHeader>
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center gap-4 mb-2">
                     <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                       <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
                     </span>
@@ -394,13 +394,13 @@ export default function EllaTownGuide() {
               </Card>
               <Card>
                 <CardHeader>
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center gap-4 mb-2">
                     <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                       <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
                     </span>
                     <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Little Adam's Peak</h3>
                   </div>
-                  <CardDescription>Easy hike with spectacular 360-degree views</CardDescription>
+                  <p>Easy hike with spectacular 360-degree views</p>
                 </CardHeader>
                 <CardContent>
                   <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -453,7 +453,7 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center gap-4 mb-2">
                     <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                       <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
                     </span>
@@ -509,7 +509,7 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center gap-4 mb-2">
                     <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                       <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
                     </span>
@@ -571,7 +571,7 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center gap-4 mb-2">
                     <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                       <span className="text-white font-extrabold text-xl md:text-2xl">05</span>
                     </span>
@@ -605,7 +605,7 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center gap-4 mb-2">
                     <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                       <span className="text-white font-extrabold text-xl md:text-2xl">06</span>
                     </span>
@@ -766,7 +766,7 @@ export default function EllaTownGuide() {
 
               <Card>
                 <CardHeader>
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex items-center gap-4 mb-2">
                     <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
                       <span className="text-white font-extrabold text-xl md:text-2xl">07</span>
                     </span>

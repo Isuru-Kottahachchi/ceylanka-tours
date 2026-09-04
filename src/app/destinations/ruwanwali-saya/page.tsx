@@ -349,7 +349,7 @@ export default function RuwanwelisayaDetailedGuide() {
               <CardContent className="p-8">
                 <div className="grid lg:grid-cols-2 gap-8 items-start">
                   <Image
-                    src="/placeholder.svg?height=400&width=600"
+                    src="/King-Dutugamunu.webp"
                     alt="Artistic representation of King Dutugemunu overseeing the construction of Ruwanwelisaya"
                     width={600}
                     height={400}

@@ -102,7 +102,7 @@ const T = {
     site1_h3: "Continuous worship for over 2,300 years",
     site1_h4: "Protected by golden railings and platforms",
 
-    site2_title: "Ruwanwelisaya Dagoba",
+    site2_title: "Ruwanwelisaya Dagaba",
     site2_desc: "The Great Stupa – architectural marvel of ancient world",
     site2_p1: "Ruwanwelisaya was built by King Dutugemunu around 140 BC. It stands 103 metres tall and is surrounded by a wall of 344 stone elephants, each one slightly different. The stupa contains sacred relics of the Buddha and is still visited daily by pilgrims.",
     site2_p2: "Sunrise and sunset are the best times to visit. On full moon (Poya) days, thousands of pilgrims gather here in white clothing with lotus flowers. Walk clockwise around the stupa. This is the respectful way to visit.",
@@ -124,7 +124,7 @@ const T = {
     site3_h3: "Contains Buddha's sash relic",
     site3_h4: "Ongoing archaeological excavations",
 
-    site4_title: "Thuparamaya Dagoba",
+    site4_title: "Thuparamaya Dagaba",
     site4_desc: "The first dagoba built in Sri Lanka – oldest Buddhist monument",
     site4_p1: "Thuparamaya is the oldest dagoba in Sri Lanka, built in the 3rd century BC by King Devanampiya Tissa. It houses the right collarbone relic of the Buddha. The bell-shaped design became the template for Sri Lankan stupa architecture for centuries after.",
     site4_p2: "The stupa has been restored several times over the centuries, each time reflecting the style of the era. It is surrounded by stone pillars that once held up a wooden roof, a feature unique to this dagoba.",
@@ -395,7 +395,7 @@ const T = {
     site1_h3: "Ununterbrochene Verehrung seit über 2.300 Jahren",
     site1_h4: "Geschützt von goldenen Geländern und Plattformen",
 
-    site2_title: "Ruwanwelisaya Dagoba",
+    site2_title: "Ruwanwelisaya Dagaba",
     site2_desc: "Die Große Stupa – architektonisches Wunderwerk der Antike",
     site2_p1: "Von König Dutugemunu im Jahr 140 v. Chr. erbaut, steht diese prächtige weiße Dagoba 103 Meter hoch und gilt als eines der schönsten Beispiele antiker singhalesischer Architektur. Das Bauwerk beherbergt heilige Reliquien Buddhas und ist ein aktiver Pilgerort. Die Ruwanwelisaya ist von einer Mauer mit 344 Steinelefanten umgeben, jeder einzigartig, als Symbol von Stärke und Schutz.",
     site2_p2: "Die Stupa ist besonders schön bei Sonnenaufgang und -untergang, wenn ihre weiße Kuppel gegen den Himmel leuchtet und der Gesang der Mönche die Luft erfüllt. An Vollmond-(Poya-)Tagen versammeln sich hier Tausende von Gläubigen, die ein Meer aus weißgekleideten Pilgern und bunten Lotusblumen bilden. Restaurierungsmaßnahmen haben dafür gesorgt, dass die Dagoba für kommende Generationen in ihrem Glanz erhalten bleibt.",
@@ -406,7 +406,7 @@ const T = {
     site2_h3: "Umgeben von einer Elefantenmauer mit 344 Elefanten",
     site2_h4: "In moderner Zeit zu ursprünglichem Glanz restauriert",
 
-    site3_title: "Jetavanaramaya Dagoba",
+    site3_title: "Jetavanaramaya Dagaba",
     site3_desc: "Einst das drittgrößte Bauwerk der Welt",
     site3_p1: "Erbaut im 3. Jahrhundert n. Chr. war die Jetavanaramaya einst das drittgrößte Bauwerk der Welt nach den Pyramiden von Gizeh. Auf ihrem Höhepunkt ragte sie 122 Meter (400 Fuß) in die Höhe und war die höchste Stupa der antiken Welt. Das riesige Backsteindenkmal ist ein Zeugnis für den ingenieurtechnischen Genius und die spirituelle Hingabe des antiken Sri Lanka.",
     site3_p2: "Heute ist die Jetavanaramaya ein Ort stiller Besinnung, umgeben von grasbewachsenen Innenhöfen und antiken Ruinen. Archäologische Ausgrabungen enthüllen weiterhin neue Geheimnisse des Klosterkomplexes, der einst Tausende von Mönchen beherbergte. Die rötlichen Ziegel der Stupa erstrahlen warm in der Nachmittagssonne, und der Ort ist weniger überfüllt als andere Hauptattraktionen, was ihn perfekt für ruhige Erkundungen macht.",
@@ -417,7 +417,7 @@ const T = {
     site3_h3: "Enthält die Schärpenreliquie Buddhas",
     site3_h4: "Laufende archäologische Ausgrabungen",
 
-    site4_title: "Thuparamaya Dagoba",
+    site4_title: "Thuparamaya Dagaba",
     site4_desc: "Die erste in Sri Lanka erbaute Dagoba – ältestes buddhistisches Denkmal",
     site4_p1: "Die Thuparamaya hat die Besonderheit, die allererste in Sri Lanka errichtete Dagoba zu sein, erbaut im 3. Jahrhundert v. Chr. von König Devanampiya Tissa. Dieses heilige Denkmal beherbergt die rechte Schlüsselbeins-Reliquie des Herrn Buddha und macht es zu einem der wichtigsten Pilgerorte der buddhistischen Welt. Das ursprüngliche glockenförmige Design hat die Stupa-Architektur Sri Lankas über 2.000 Jahre lang beeinflusst.",
     site4_p2: "Was die Thuparamaya einzigartig macht, ist ihre architektonische Entwicklung. Sie wurde im Laufe der Geschichte mehrmals restauriert, wobei jede Restaurierung die künstlerischen Stile verschiedener Epochen widerspiegelt. Die Dagoba ist von Steinpfeilern umgeben, die einst ein Holzdach trugen, ein charakteristisches Merkmal, das sie von anderen Stupas unterscheidet.",
@@ -637,7 +637,7 @@ export default function AnuradhapuraClient({ defaultLang = "en" }: { defaultLang
       <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/Anuradhapura.jpg"
-          alt="Ancient Ruwanwelisaya dagoba in Anuradhapura with white dome against blue sky and pilgrims visiting"
+          alt="Ancient Ruwanwelisaya dagaba in Anuradhapura with white dome against blue sky and pilgrims visiting"
           fill
           className="object-cover"
           priority
@@ -880,7 +880,7 @@ export default function AnuradhapuraClient({ defaultLang = "en" }: { defaultLang
                     </Link>
                   </div>
                 </div>
-                <Image src="/Ruwanwalisaya.jpeg" alt="Magnificent white Ruwanwelisaya dagoba" width={400} height={300} className="rounded-lg" />
+                <Image src="/Ruwanwalisaya.jpeg" alt="Magnificent white Ruwanwelisaya dagaba" width={400} height={300} className="rounded-lg" />
               </div>
             </div>
 
@@ -926,7 +926,7 @@ export default function AnuradhapuraClient({ defaultLang = "en" }: { defaultLang
               </div>
               <p className="text-muted-foreground text-lg mb-6">{t.site4_desc}</p>
               <div className="grid md:grid-cols-2 gap-6 items-center">
-                <Image src="/Thooparamaya.jpeg" alt="Thuparamaya dagoba" width={400} height={300} className="rounded-lg" />
+                <Image src="/Thooparamaya.jpeg" alt="Thuparamaya dagaba" width={400} height={300} className="rounded-lg" />
                 <div>
                   <p className="text-muted-foreground mb-4">{t.site4_p1}</p>
                   <p className="text-muted-foreground mb-4">{t.site4_p2}</p>

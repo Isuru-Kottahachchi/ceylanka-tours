@@ -106,7 +106,7 @@ const wildlifeSafaris = [
         name: "Wilpattu National Park",
         locations: ["Kalli Villu", "Kokmotte Villu", "Maradanmaduwa"],
         images: [
-            { src: "/Wilpattu.jpeg", title: "Natural Lakes - Wilpattu" },
+            { src: "/Wilpattu.jpeg", title: "Sri Lankan leopard - Wilpattu" },
             { src: "/wilpattu-leopard.jpg", title: "Elusive Leopards" },
             { src: "/wilpattu-lake.jpg", title: "Villu (Natural Lake)" }
         ],

@@ -62,22 +62,22 @@ export default function RanmusuUyanaGuide() {
           </h2>
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
             <p className="text-lg mb-4">
-              Nestled between the historic Tissa Wewa reservoir and the sacred Isurumuniya Rock Temple in Anuradhapura, 
-              Ranmusu Uyana (meaning &quot;Golden Fish Park&quot;) is a 40-acre archaeological wonder dating back to the 3rd century BC. 
-              This ancient royal pleasure garden served as a private retreat for the kings of Anuradhapura and their families, 
+              Nestled between the historic Tissa Wewa reservoir and the sacred Isurumuniya Rock Temple in Anuradhapura,
+              Ranmusu Uyana (meaning &quot;Golden Fish Park&quot;) is a 40-acre archaeological wonder dating back to the 3rd century BC.
+              This ancient royal pleasure garden served as a private retreat for the kings of Anuradhapura and their families,
               offering a serene escape from the demands of ruling one of Asia&apos;s most powerful ancient kingdoms.
             </p>
             <p className="text-lg mb-4">
-              The park features remarkable engineering achievements including rock-cut swimming pools, sophisticated water 
-              management systems, and meditation caves carved into massive boulders. Ancient inscriptions found throughout 
-              the site provide glimpses into royal life, religious practices, and the advanced civilization that flourished here 
+              The park features remarkable engineering achievements including rock-cut swimming pools, sophisticated water
+              management systems, and meditation caves carved into massive boulders. Ancient inscriptions found throughout
+              the site provide glimpses into royal life, religious practices, and the advanced civilization that flourished here
               over 2,000 years ago.
             </p>
             <p className="text-lg">
-              The crown jewel of Ranmusu Uyana is the mysterious &quot;Sakwala Chakraya&quot; (Universal Gate or Stargate) - an 
-              enigmatic carved stone panel with intricate circular patterns and symbols that continues to puzzle archaeologists, 
-              astronomers, and researchers worldwide. This fascinating artifact has sparked theories ranging from ancient star 
-              maps and cosmological diagrams to meditation guides and astronomical teaching tools, making Ranmusu Uyana a must-visit 
+              The crown jewel of Ranmusu Uyana is the mysterious &quot;Sakwala Chakraya&quot; (Universal Gate or Stargate) - an
+              enigmatic carved stone panel with intricate circular patterns and symbols that continues to puzzle archaeologists,
+              astronomers, and researchers worldwide. This fascinating artifact has sparked theories ranging from ancient star
+              maps and cosmological diagrams to meditation guides and astronomical teaching tools, making Ranmusu Uyana a must-visit
               destination for anyone captivated by ancient mysteries and lost civilizations.
             </p>
           </div>
@@ -145,8 +145,13 @@ export default function RanmusuUyanaGuide() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>1. The Universal/Star Gate (Sakwala Chakraya)</CardTitle>
-                <CardDescription>Mysterious ancient carving with unknown purpose - The enigmatic centerpiece of Ranmusu Uyana</CardDescription>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                  </span>
+                  <h3 className="text-3xl  font-extrabold tracking-tight">The Universal/Star Gate (Sakwala Chakraya)</h3>
+                </div>
+                <p className="text-muted-foreground text-lg mb-4">Mysterious ancient carving with unknown purpose - The enigmatic centerpiece of Ranmusu Uyana</p>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-start">
@@ -162,12 +167,12 @@ export default function RanmusuUyanaGuide() {
                   <div>
                     <p className="text-muted-foreground mb-3 text-sm">
                       The most intriguing feature of Ranmusu Uyana is this mysterious carved stone panel known as
-                      the &quot;Stargate&quot; or &quot;Universal Gate&quot; (Sakwala Chakraya). This enigmatic artifact features an intricate 
+                      the &quot;Stargate&quot; or &quot;Universal Gate&quot; (Sakwala Chakraya). This enigmatic artifact features an intricate
                       diagram of concentric circles, geometric patterns, and various symbols carved into a rock surface.
                     </p>
                     <p className="text-muted-foreground mb-3 text-sm">
-                      While its true purpose remains unknown, various theories have been proposed: an ancient astronomical chart 
-                      for tracking celestial bodies, a cosmological diagram representing the Buddhist universe, a meditation map, 
+                      While its true purpose remains unknown, various theories have been proposed: an ancient astronomical chart
+                      for tracking celestial bodies, a cosmological diagram representing the Buddhist universe, a meditation map,
                       or even an ancient teaching tool for mathematics and geometry.
                     </p>
                     <h4 className="font-semibold mb-2 text-foreground text-sm">Key Features:</h4>
@@ -201,10 +206,10 @@ export default function RanmusuUyanaGuide() {
                         Did You Know?
                       </h4>
                       <p className="text-muted-foreground text-xs leading-relaxed">
-                        This carving has sparked numerous theories, from ancient astronomical charts to alien connections! While some 
-                        enthusiasts suggest similarities with mysterious carvings in Peru and Egypt point to lost ancient knowledge or 
-                        extraterrestrial influence, most archaeologists believe it represents Buddhist cosmology or served as an 
-                        educational tool. The mystery continues to draw researchers and curious visitors from around the world, each 
+                        This carving has sparked numerous theories, from ancient astronomical charts to alien connections! While some
+                        enthusiasts suggest similarities with mysterious carvings in Peru and Egypt point to lost ancient knowledge or
+                        extraterrestrial influence, most archaeologists believe it represents Buddhist cosmology or served as an
+                        educational tool. The mystery continues to draw researchers and curious visitors from around the world, each
                         seeking to unlock the secrets of this ancient diagram.
                       </p>
                     </div>
@@ -215,8 +220,14 @@ export default function RanmusuUyanaGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle>2. Ancient Swimming Pools</CardTitle>
-                <CardDescription>Sophisticated bathing facilities for ancient royalty</CardDescription>
+
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                  </span>
+                  <h3 className="text-3xl  font-extrabold tracking-tight">The Ancient Swimming Pools</h3>
+                </div>
+                <p className="text-muted-foreground text-lg mb-4">Ingeniously designed pools for bathing and relaxation - A testament to the advanced engineering of ancient Ranmusu Uyana</p>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -245,8 +256,8 @@ export default function RanmusuUyanaGuide() {
                     <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg border-l-4 border-blue-400">
                       <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">Archaeological Discovery</h4>
                       <p className="text-sm text-blue-700 dark:text-blue-100">
-                        Archaeologists believe these pools featured ingenious water curtain systems. When water flowed like a 
-                        waterfall, it created natural privacy screens behind which the king&apos;s wives could change their dress - 
+                        Archaeologists believe these pools featured ingenious water curtain systems. When water flowed like a
+                        waterfall, it created natural privacy screens behind which the king&apos;s wives could change their dress -
                         an ancient form of sophisticated bathing privacy that demonstrates remarkable engineering innovation.
                       </p>
                     </div>
@@ -264,8 +275,13 @@ export default function RanmusuUyanaGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle>3. Boulder Gardens & Meditation Caves</CardTitle>
-                <CardDescription>Natural rock formations used for spiritual practices</CardDescription>
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                  </span>
+                  <h3 className="text-3xl  font-extrabold tracking-tight">Boulder Gardens & Meditation Caves</h3>
+                </div>
+                <p className="text-muted-foreground text-lg mb-4">Natural rock formations used for spiritual practices</p>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -305,8 +321,13 @@ export default function RanmusuUyanaGuide() {
 
             <Card>
               <CardHeader>
-                <CardTitle>4. Ancient Inscriptions & Carvings</CardTitle>
-                <CardDescription>Historical writings and artistic expressions</CardDescription>
+                 <div className="flex items-center gap-4 mb-6">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                  </span>
+                  <h3 className="text-3xl  font-extrabold tracking-tight">Ancient Inscriptions & Carvings</h3>
+                </div>
+                <p className="text-muted-foreground text-lg mb-4">Historical writings and artistic expressions found throughout the park</p>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6 items-center">

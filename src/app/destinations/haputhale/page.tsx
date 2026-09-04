@@ -140,7 +140,7 @@ export default function HaputaleGuide() {
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• <strong>Route:</strong> Colombo → Kandy → Badulla → Haputale</li>
                     <li>• <strong>Duration:</strong> 8-9 hours total</li>
-                    <li>• <strong>Cost:</strong> $4-15 USD (depending on class)</li>
+                    <li>• <strong>Cost:</strong> (depending on class)</li>
                     <li>• <strong>Highlight:</strong> One of world&apos;s most scenic train rides</li>
                   </ul>
 
@@ -148,7 +148,7 @@ export default function HaputaleGuide() {
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• <strong>Route:</strong> Colombo → Bandarawela → Haputale</li>
                     <li>• <strong>Duration:</strong> 6-7 hours</li>
-                    <li>• <strong>Cost:</strong> $5-8 USD (budget-friendly)</li>
+                    <li>• <strong>Cost:</strong> (budget-friendly)</li>
                     <li>• <strong>Frequency:</strong> Regular departures from Bandarawela</li>
                   </ul>
                 </div>

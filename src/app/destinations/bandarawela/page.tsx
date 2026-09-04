@@ -6,6 +6,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { ImageCarousel } from "@/components/ui/image-carousel"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+
 
 
 
@@ -108,7 +111,12 @@ export default function BandarawelaGuide() {
             {/* Dowa Rock Temple */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Dowa Rock Temple</CardTitle>
+                  <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Dowa Rock Temple</h3>
+                </div>
                 <CardDescription>Ancient cave temple with 2,000-year-old Buddha statue</CardDescription>
               </CardHeader>
               <CardContent>
@@ -174,7 +182,12 @@ export default function BandarawelaGuide() {
             {/* Tea Plantations */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Bandarawela Tea Estates</CardTitle>
+                  <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Bandarawela Tea Estates</h3>
+                </div>
                 <CardDescription>World-class Ceylon tea plantations and factory tours</CardDescription>
               </CardHeader>
               <CardContent>
@@ -216,7 +229,12 @@ export default function BandarawelaGuide() {
             {/* Colonial Architecture */}
             <Card>
               <CardHeader>
-                <CardTitle>3. Colonial Architecture Heritage</CardTitle>
+                  <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                  </span>
+                  <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">Colonial Architecture Heritage</h3>
+                </div>
                 <CardDescription>British-era buildings and historic charm</CardDescription>
               </CardHeader>
               <CardContent>
@@ -346,53 +364,6 @@ export default function BandarawelaGuide() {
           </div>
         </section>
 
-        {/* Getting There */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Getting to Bandarawela</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>By Train</CardTitle>
-                <CardDescription>Scenic hill country railway journey</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <strong>From Colombo:</strong>
-                  <p className="text-sm text-muted-foreground">7-8 hours via Kandy on the scenic hill country line</p>
-                </div>
-                <div>
-                  <strong>From Kandy:</strong>
-                  <p className="text-sm text-muted-foreground">5-6 hours through tea country and mountains</p>
-                </div>
-                <div>
-                  <strong>From Badulla:</strong>
-                  <p className="text-sm text-muted-foreground">45 minutes on the main hill country line</p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>By Road</CardTitle>
-                <CardDescription>Scenic mountain drives</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <strong>From Colombo:</strong>
-                  <p className="text-sm text-muted-foreground">5-6 hours via Kandy or Ratnapura routes</p>
-                </div>
-                <div>
-                  <strong>From Kandy:</strong>
-                  <p className="text-sm text-muted-foreground">3-4 hours through scenic mountain roads</p>
-                </div>
-                <div>
-                  <strong>From Nuwara Eliya:</strong>
-                  <p className="text-sm text-muted-foreground">2-3 hours through beautiful hill country</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
 
         {/* Where to Stay */}
         <section className="mb-12">
@@ -506,65 +477,98 @@ export default function BandarawelaGuide() {
             </Card>
           </div>
         </section>
-
         {/* Nearby Attractions */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Nearby Attractions</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Ella</CardTitle>
-                <CardDescription>Famous hill station - 1.5 hours</CardDescription>
-              </CardHeader>
-              <CardContent>
+          <h2 className="text-3xl font-bold mb-6">Explore More Nearby Attractions</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Badulla adventure with these incredible destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Ella's Nine Arch Bridge and Little Adam's Peak with scenic mountain backdrop"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
+                  src="/Badulla.jpeg"
+                  alt="Badulla city with scenic views and cultural landmarks"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Visit the iconic Nine Arch Bridge, hike Little Adam&apos;s Peak, and enjoy Ella&apos;s vibrant atmosphere.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  15 km from Bandarawela
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Ella</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Visit the famous Nine Arch Bridge, Little Adam's Peak, and enjoy the cool mountain climate.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  15 km from Bandarawela
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ella" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Haputale</CardTitle>
-                <CardDescription>Lipton&apos;s Seat viewpoint - 1 hour</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Haputale's famous Lipton's Seat with panoramic tea plantation views"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
+                  src="/Badulla.jpeg"
+                  alt="Badulla city with scenic views and cultural landmarks"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Experience the world-famous Lipton&apos;s Seat viewpoint and visit Dambatenne Tea Factory.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  22 km from Bandarawela
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Badulla</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Badulla is the capital of Uva Province, known for the sacred Muthiyangana Raja Maha Vihara, the scenic Dunhinda Falls, and its charming colonial-era railway station  the terminus of the famous hill country train line
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  22 km from Bandarawela
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/badulla" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Badulla</CardTitle>
-                <CardDescription>Ancient capital - 45 minutes</CardDescription>
-              </CardHeader>
-              <CardContent>
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
-                  src="/placeholder.svg?height=200&width=300"
-                  alt="Badulla's Muthiyangana Temple and Dunhinda Falls in mountainous setting"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3"
+                  src="/Haputhale.jpeg"
+                  alt="Haputhale viewpoint with Lipton's Seat overlooking tea plantations"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Explore ancient Muthiyangana Temple and the spectacular Dunhinda Falls.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  32 km from Bandarawela
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Haputhale</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Popular viewpoint destination known for the famous Lipton's Seat with breathtaking views of tea gardens and valleys.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  32 km from Bandarawela
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/haputhale" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
               </CardContent>
             </Card>
           </div>
