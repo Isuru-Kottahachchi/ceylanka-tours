@@ -91,7 +91,7 @@ const T = {
     sacred_heading: "Sacred Sites & Ancient Monuments",
     sacred_subheading: 'Local people make pilgrimage to Anuradhapura as "Atamasthana"',
 
-    site1_title: "1. Sri Maha Bodhi Tree",
+    site1_title: "Sri Maha Bodhi Tree",
     site1_desc: "The world's oldest recorded tree – 2,300+ years old",
     site1_p1: "The Sri Maha Bodhi is a sacred fig tree grown from a cutting of the Bodhi tree in India, the tree under which Buddha attained enlightenment. It was brought to Sri Lanka in 288 BC by Sanghamitta Theri, daughter of Emperor Ashoka. It is the world's oldest recorded tree with a continuous documented history of over 2,300 years.",
     site1_p2: "Pilgrims come every day to offer flowers, light oil lamps, and walk quietly around the golden railings. Visiting early in the morning or at dusk gives you the best atmosphere. Remove your shoes and dress modestly before entering.",
@@ -102,7 +102,7 @@ const T = {
     site1_h3: "Continuous worship for over 2,300 years",
     site1_h4: "Protected by golden railings and platforms",
 
-    site2_title: "2. Ruwanwelisaya Dagoba",
+    site2_title: "Ruwanwelisaya Dagoba",
     site2_desc: "The Great Stupa – architectural marvel of ancient world",
     site2_p1: "Ruwanwelisaya was built by King Dutugemunu around 140 BC. It stands 103 metres tall and is surrounded by a wall of 344 stone elephants, each one slightly different. The stupa contains sacred relics of the Buddha and is still visited daily by pilgrims.",
     site2_p2: "Sunrise and sunset are the best times to visit. On full moon (Poya) days, thousands of pilgrims gather here in white clothing with lotus flowers. Walk clockwise around the stupa. This is the respectful way to visit.",
@@ -113,7 +113,7 @@ const T = {
     site2_h3: "Surrounded by elephant wall with 344 elephants",
     site2_h4: "Restored to original glory in modern times",
 
-    site3_title: "3. Jetavanaramaya Dagoba",
+    site3_title: "Jetavanaramaya Dagoba",
     site3_desc: "Once the world's third tallest structure",
     site3_p1: "Jetavanaramaya was built in the 3rd century AD by King Mahasena. When new, it stood 122 metres (400 feet) tall, making it the third tallest structure in the ancient world after the pyramids of Giza. It was built using over 93 million bricks.",
     site3_p2: "Today the upper section has eroded, so the stupa appears shorter, but it is still impressive. The surrounding area is quieter than the main sites. Archaeologists are still excavating the monastery complex that once surrounded it.",
@@ -124,7 +124,7 @@ const T = {
     site3_h3: "Contains Buddha's sash relic",
     site3_h4: "Ongoing archaeological excavations",
 
-    site4_title: "4. Thuparamaya Dagoba",
+    site4_title: "Thuparamaya Dagoba",
     site4_desc: "The first dagoba built in Sri Lanka – oldest Buddhist monument",
     site4_p1: "Thuparamaya is the oldest dagoba in Sri Lanka, built in the 3rd century BC by King Devanampiya Tissa. It houses the right collarbone relic of the Buddha. The bell-shaped design became the template for Sri Lankan stupa architecture for centuries after.",
     site4_p2: "The stupa has been restored several times over the centuries, each time reflecting the style of the era. It is surrounded by stone pillars that once held up a wooden roof, a feature unique to this dagoba.",
@@ -134,7 +134,7 @@ const T = {
     site4_h4: "Unique stone pillar arrangement around the stupa",
     site4_h5: "Multiple historical restorations spanning centuries",
 
-    site5_title: "5. Lovamahapaya (Brazen Palace)",
+    site5_title: "Lovamahapaya (Brazen Palace)",
     site5_desc: "Ancient nine-story monastery – marvel of ancient architecture",
     site5_p1: `Lovamahapaya, known as the "Brazen Palace", was a nine-storey monastery built by King Dutugemunu in the 2nd century BC. It housed 1,000 monks and was covered with copper roof tiles, which is how it got its name. Only the 1,600 stone pillars remain today.`,
     site5_p2: "Each floor had specific uses, dining halls, meditation rooms, libraries, and living quarters. The building was destroyed and rebuilt several times. What you see now are the stone foundations of those reconstruction attempts.",
@@ -144,7 +144,7 @@ const T = {
     site5_h4: "Advanced ancient engineering and architectural design",
     site5_h5: "Multiple reconstruction attempts throughout history",
 
-    site6_title: "6. Abhayagiri Dagaba",
+    site6_title: "Abhayagiri Dagaba",
     site6_desc: "Ancient monastery complex and center of Mahayana Buddhism",
     site6_p1: "Abhayagiri Dagaba was built in the 1st century BC by King Valagamba. It stands 75 metres tall today, though it was originally about 115 metres high. The monastery complex that surrounded it covered 200 hectares and housed over 5,000 monks at its peak.",
     site6_p2: "The monastery attracted Buddhist scholars from China, Korea, and other countries. It had hospitals, libraries, and dining halls. The stupa has a slightly different profile from the other dagobas, an elegant bell-shaped dome that helped spread this architectural style across Asia.",
@@ -155,7 +155,7 @@ const T = {
     site6_h4: "Advanced facilities: hospitals, libraries, refectories",
     site6_h5: "Unique architectural style influencing Asian Buddhism",
 
-    site7_title: "7. Mirisavetiya Stupa",
+    site7_title: "Mirisavetiya Stupa",
     site7_desc: "A monument of royal regret and Buddhist devotion",
     site7_p1: "Mirisavetiya was built by King Dutugemunu in the 2nd century BC. The origin story is straightforward: the king once forgot to share his meal with the monks before eating, which broke Buddhist protocol. He built this stupa as an act of atonement.",
     site7_p2: `The name "Mirisavetiya" means "the place where chilli was consumed". The stupa stands 60 metres tall and contains sacred relics. The surrounding ruins and stone carvings are worth taking time to look at.`,
@@ -165,7 +165,7 @@ const T = {
     site7_h4: "Surrounded by ancient ruins and stone carvings",
     site7_h5: "Symbol of mindfulness in Buddhist practice",
 
-    site8_title: "8. Lankarama Dagaba",
+    site8_title: "Lankarama Dagaba",
     site8_desc: "An intimate forest monastery with unique architectural features",
     site8_p1: "Lankarama Dagaba is smaller than the main stupas in the city. It was built by King Valagamba in the 1st century BC and stands 30 metres tall. It is set in a forested area away from the busier sites, making it quieter to visit.",
     site8_p2: "What makes it distinctive is the arrangement of stone pillars in concentric circles around the base. These once held up wooden structures used by monks for meditation. It is one of the least crowded sites in Anuradhapura and a good place to simply sit and look.",
@@ -384,7 +384,7 @@ const T = {
     sacred_heading: "Heilige Stätten & Antike Monumente",
     sacred_subheading: 'Die lokale Bevölkerung pilgert nach Anuradhapura als "Atamasthana"',
 
-    site1_title: "1. Sri Maha Bodhi-Baum",
+    site1_title: "Sri Maha Bodhi-Baum",
     site1_desc: "Der älteste dokumentierte Baum der Welt – über 2.300 Jahre alt",
     site1_p1: "Dieser heilige Feigenbaum ist die verehrteste Stätte in Anuradhapura und einer der heiligsten Orte der buddhistischen Welt. Aus einem Ableger des ursprünglichen Bodhi-Baums in Indien gezogen, unter dem Buddha die Erleuchtung erlangte, wurde er 288 v. Chr. von Sanghamitta Theri, der Tochter von Kaiser Ashoka, nach Sri Lanka gebracht. Der Baum hat Stürme, Invasionen und Jahrhunderte des Wandels überstanden und bleibt ein lebendiges Symbol des Friedens und der Widerstandskraft.",
     site1_p2: "Pilger aus aller Welt kommen hierher, um Blumen zu opfern, Öllampen anzuzünden und still um die goldenen Geländer zu gehen. Die Luft ist erfüllt vom Duft des Jasmins und dem sanften Klang der Gebete. Ein Besuch in der Morgendämmerung oder Abenddämmerung ist besonders zauberhaft, da der Baum im sanften Licht strahlt und die Atmosphäre ruhig und spirituell ist.",
@@ -395,7 +395,7 @@ const T = {
     site1_h3: "Ununterbrochene Verehrung seit über 2.300 Jahren",
     site1_h4: "Geschützt von goldenen Geländern und Plattformen",
 
-    site2_title: "2. Ruwanwelisaya Dagoba",
+    site2_title: "Ruwanwelisaya Dagoba",
     site2_desc: "Die Große Stupa – architektonisches Wunderwerk der Antike",
     site2_p1: "Von König Dutugemunu im Jahr 140 v. Chr. erbaut, steht diese prächtige weiße Dagoba 103 Meter hoch und gilt als eines der schönsten Beispiele antiker singhalesischer Architektur. Das Bauwerk beherbergt heilige Reliquien Buddhas und ist ein aktiver Pilgerort. Die Ruwanwelisaya ist von einer Mauer mit 344 Steinelefanten umgeben, jeder einzigartig, als Symbol von Stärke und Schutz.",
     site2_p2: "Die Stupa ist besonders schön bei Sonnenaufgang und -untergang, wenn ihre weiße Kuppel gegen den Himmel leuchtet und der Gesang der Mönche die Luft erfüllt. An Vollmond-(Poya-)Tagen versammeln sich hier Tausende von Gläubigen, die ein Meer aus weißgekleideten Pilgern und bunten Lotusblumen bilden. Restaurierungsmaßnahmen haben dafür gesorgt, dass die Dagoba für kommende Generationen in ihrem Glanz erhalten bleibt.",
@@ -406,7 +406,7 @@ const T = {
     site2_h3: "Umgeben von einer Elefantenmauer mit 344 Elefanten",
     site2_h4: "In moderner Zeit zu ursprünglichem Glanz restauriert",
 
-    site3_title: "3. Jetavanaramaya Dagoba",
+    site3_title: "Jetavanaramaya Dagoba",
     site3_desc: "Einst das drittgrößte Bauwerk der Welt",
     site3_p1: "Erbaut im 3. Jahrhundert n. Chr. war die Jetavanaramaya einst das drittgrößte Bauwerk der Welt nach den Pyramiden von Gizeh. Auf ihrem Höhepunkt ragte sie 122 Meter (400 Fuß) in die Höhe und war die höchste Stupa der antiken Welt. Das riesige Backsteindenkmal ist ein Zeugnis für den ingenieurtechnischen Genius und die spirituelle Hingabe des antiken Sri Lanka.",
     site3_p2: "Heute ist die Jetavanaramaya ein Ort stiller Besinnung, umgeben von grasbewachsenen Innenhöfen und antiken Ruinen. Archäologische Ausgrabungen enthüllen weiterhin neue Geheimnisse des Klosterkomplexes, der einst Tausende von Mönchen beherbergte. Die rötlichen Ziegel der Stupa erstrahlen warm in der Nachmittagssonne, und der Ort ist weniger überfüllt als andere Hauptattraktionen, was ihn perfekt für ruhige Erkundungen macht.",
@@ -417,7 +417,7 @@ const T = {
     site3_h3: "Enthält die Schärpenreliquie Buddhas",
     site3_h4: "Laufende archäologische Ausgrabungen",
 
-    site4_title: "4. Thuparamaya Dagoba",
+    site4_title: "Thuparamaya Dagoba",
     site4_desc: "Die erste in Sri Lanka erbaute Dagoba – ältestes buddhistisches Denkmal",
     site4_p1: "Die Thuparamaya hat die Besonderheit, die allererste in Sri Lanka errichtete Dagoba zu sein, erbaut im 3. Jahrhundert v. Chr. von König Devanampiya Tissa. Dieses heilige Denkmal beherbergt die rechte Schlüsselbeins-Reliquie des Herrn Buddha und macht es zu einem der wichtigsten Pilgerorte der buddhistischen Welt. Das ursprüngliche glockenförmige Design hat die Stupa-Architektur Sri Lankas über 2.000 Jahre lang beeinflusst.",
     site4_p2: "Was die Thuparamaya einzigartig macht, ist ihre architektonische Entwicklung. Sie wurde im Laufe der Geschichte mehrmals restauriert, wobei jede Restaurierung die künstlerischen Stile verschiedener Epochen widerspiegelt. Die Dagoba ist von Steinpfeilern umgeben, die einst ein Holzdach trugen, ein charakteristisches Merkmal, das sie von anderen Stupas unterscheidet.",
@@ -427,7 +427,7 @@ const T = {
     site4_h4: "Einzigartige Steinpfeileranordnung um die Stupa",
     site4_h5: "Jahrhundertelange Restaurierungsarbeiten",
 
-    site5_title: "5. Lovamahapaya (Kupferpalast)",
+    site5_title: "Lovamahapaya (Kupferpalast)",
     site5_desc: "Antikes neunstöckiges Kloster – Wunderwerk der antiken Architektur",
     site5_p1: 'Die Lovamahapaya, auch bekannt als der "Kupferpalast", war einst ein prächtiges neunstöckiges Kloster, erbaut von König Dutugemunu im 2. Jahrhundert v. Chr. Dieses architektonische Wunderwerk beherbergte 1.000 Mönche und war vollständig mit Kupferziegeln bedeckt, was ihm den Namen "Kupferpalast" einbrachte. Heute stehen nur noch die Steinpfeiler, aber sie vermitteln immer noch die Größe dieses antiken Bauwerks.',
     site5_p2: "Das Gebäude wurde mit fortschrittlichen Ingenieurtechniken seiner Zeit errichtet, mit 1.600 Steinpfeilern, die mehrere Stockwerke trugen. Jedes Stockwerk hatte spezifische Zwecke, von Speisesälen und Meditationsräumen bis hin zu Bibliotheken und Wohnquartieren. Der Palast wurde im Laufe der Geschichte mehrmals zerstört und wiederaufgebaut.",
@@ -437,7 +437,7 @@ const T = {
     site5_h4: "Fortschrittliches antikes Ingenieurwesen und Architektur",
     site5_h5: "Mehrere Wiederaufbauversuche im Laufe der Geschichte",
 
-    site6_title: "6. Abhayagiri Dagaba",
+    site6_title: "Abhayagiri Dagaba",
     site6_desc: "Antiker Klosterkomplex und Zentrum des Mahayana-Buddhismus",
     site6_p1: "Die Abhayagiri Dagaba war das Herzstück eines der bedeutendsten Klosterkomplexe im antiken Sri Lanka, erbaut im 1. Jahrhundert v. Chr. von König Valagamba. Diese massive Stupa, 75 Meter hoch, war einst Teil eines Klosters, das über 5.000 Mönche beherbergte und als bedeutendes Zentrum des Mahayana-buddhistischen Lernens diente. Der Komplex war so groß, dass er eine Fläche von 200 Hektar bedeckte.",
     site6_p2: "Das Kloster war für seinen internationalen Charakter bekannt und zog Gelehrte aus China, Korea und anderen buddhistischen Ländern an. Es verfügte über fortschrittliche Einrichtungen, darunter Krankenhäuser, Bibliotheken und Speisesäle. Die Form dieser Stupa unterscheidet sich leicht von der Jetavanaramaya und zeigt eine elegantere glockenförmige Kuppel, die die buddhistische Architektur in ganz Asien beeinflusst hat.",
@@ -448,7 +448,7 @@ const T = {
     site6_h4: "Fortschrittliche Einrichtungen: Krankenhäuser, Bibliotheken, Speisesäle",
     site6_h5: "Einzigartiger Architekturstil prägte den asiatischen Buddhismus",
 
-    site7_title: "7. Mirisavetiya Stupa",
+    site7_title: "Mirisavetiya Stupa",
     site7_desc: "Ein Denkmal königlichen Bedauerns und buddhistischer Hingabe",
     site7_p1: "Die Mirisavetiya Stupa hat eine der ergreifendsten Ursprungsgeschichten in der sri-lankischen buddhistischen Geschichte. Von König Dutugemunu im 2. Jahrhundert v. Chr. erbaut, wurde diese Stupa als Buße errichtet. Der Legende nach vergaß der König einmal, seine Mahlzeit mit dem Sangha (den Mönchen) zu teilen, während er Chilicurry aß. Das war ein Verstoß gegen das buddhistische Protokoll, der sein Gewissen tief belastete.",
     site7_p2: 'Um dieses Versehen zu sühnen, ließ der König diese schöne Stupa genau an dem Ort errichten, wo er seine Mahlzeit zu sich genommen hatte. Der Name "Mirisavetiya" bedeutet wörtlich "der Ort, wo Chili gegessen wurde." Mit 60 Metern Höhe beherbergt sie heilige Reliquien und repräsentiert das buddhistische Prinzip der Achtsamkeit im täglichen Leben.',
@@ -458,7 +458,7 @@ const T = {
     site7_h4: "Umgeben von antiken Ruinen und Steinschnitzereien",
     site7_h5: "Symbol für Achtsamkeit in der buddhistischen Praxis",
 
-    site8_title: "8. Lankarama Dagaba",
+    site8_title: "Lankarama Dagaba",
     site8_desc: "Ein intimes Waldkloster mit einzigartigen architektonischen Merkmalen",
     site8_p1: "Die Lankarama Dagaba, erbaut im 1. Jahrhundert n. Chr. von König Valagamba, repräsentiert einen einzigartigen Architekturstil unter den großen Stupas von Anuradhapura. Im Gegensatz zu den massiven Denkmälern anderswo in der Stadt wurde die Lankarama als intimes Waldkloster mit charakteristischen kreisförmigen Steinpfeilern rund um die Stupa konzipiert. Diese 30 Meter hohe Struktur zeigt den Vajrayana-Architektureinfluss, der im sri-lankischen buddhistischen Bauwesen selten war.",
     site8_p2: "Das auffälligste Merkmal der Lankarama ist ihr einzigartiges Design mit Steinpfeilern, die in konzentrischen Kreisen um die Stupa-Basis angeordnet sind. Diese Pfeiler stützten einst Holzstrukturen, die als Meditationshallen und Wohnquartiere für Waldmönche dienten. Die ruhige Waldumgebung und das kleinere Ausmaß schaffen eine Atmosphäre, die perfekt für Kontemplation und Meditation ist.",
@@ -821,237 +821,245 @@ export default function AnuradhapuraClient({ defaultLang = "en" }: { defaultLang
             <h3 className="text-xl font-semibold mb-4">{t.sacred_subheading}</h3>
 
             {/* 1. Sri Maha Bodhi */}
-            <Card>
-              <CardHeader>
-                <CardTitle>{t.site1_title}</CardTitle>
-                <CardDescription>{t.site1_desc}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image src="/JayaSrimahaBodhi.jpeg" alt="Sacred Sri Maha Bodhi tree" width={400} height={300} className="rounded-lg" />
-                  <div>
-                    <p className="text-muted-foreground mb-4">{t.site1_p1}</p>
-                    <p className="text-muted-foreground mb-4">{t.site1_p2}</p>
-                    <div className="bg-yellow-50 dark:bg-yellow-900/30 p-4 rounded-lg border-l-4 border-yellow-400 dark:border-yellow-600 mt-4">
-                      <h4 className="font-semibold text-yellow-800 dark:text-yellow-100 mb-2">{t.site1_tip_title}</h4>
-                      <p className="text-sm text-yellow-700 dark:text-gray-200">{t.site1_tip_body}</p>
-                    </div>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {[t.site1_h1, t.site1_h2, t.site1_h3, t.site1_h4].map((h) => (
-                        <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 flex justify-start">
-                      <Link href="/destinations/jaya-sri-maha-bodhi" passHref legacyBehavior>
-                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
-                      </Link>
-                    </div>
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-3">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">{t.site1_title}</h3>
+              </div>
+              <p className="text-muted-foreground text-lg mb-6">{t.site1_desc}</p>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <Image src="/JayaSrimahaBodhi.jpeg" alt="Sacred Sri Maha Bodhi tree" width={400} height={300} className="rounded-lg" />
+                <div>
+                  <p className="text-muted-foreground mb-4">{t.site1_p1}</p>
+                  <p className="text-muted-foreground mb-4">{t.site1_p2}</p>
+                  <div className="bg-yellow-50 dark:bg-yellow-900/30 p-4 rounded-lg border-l-4 border-yellow-400 dark:border-yellow-600 mt-4 mb-4">
+                    <h4 className="font-semibold text-yellow-800 dark:text-yellow-100 mb-2">{t.site1_tip_title}</h4>
+                    <p className="text-sm text-yellow-700 dark:text-gray-200">{t.site1_tip_body}</p>
+                  </div>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {[t.site1_h1, t.site1_h2, t.site1_h3, t.site1_h4].map((h) => (
+                      <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/jaya-sri-maha-bodhi" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
+                    </Link>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 2. Ruwanwelisaya */}
-            <Card>
-              <CardHeader>
-                <CardTitle>{t.site2_title}</CardTitle>
-                <CardDescription>{t.site2_desc}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <p className="text-muted-foreground mb-4">{t.site2_p1}</p>
-                    <p className="text-muted-foreground mb-4">{t.site2_p2}</p>
-                    <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4">
-                      <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">{t.site2_did_title}</h4>
-                      <p className="text-sm text-blue-700 dark:text-gray-200">{t.site2_did_body}</p>
-                    </div>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {[t.site2_h1, t.site2_h2, t.site2_h3, t.site2_h4].map((h) => (
-                        <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 flex justify-start">
-                      <Link href="/destinations/ruwanwali-saya" passHref legacyBehavior>
-                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
-                      </Link>
-                    </div>
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-3">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">{t.site2_title}</h3>
+              </div>
+              <p className="text-muted-foreground text-lg mb-6">{t.site2_desc}</p>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <div>
+                  <p className="text-muted-foreground mb-4">{t.site2_p1}</p>
+                  <p className="text-muted-foreground mb-4">{t.site2_p2}</p>
+                  <div className="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 dark:border-blue-600 mt-4 mb-4">
+                    <h4 className="font-semibold text-blue-800 dark:text-blue-100 mb-2">{t.site2_did_title}</h4>
+                    <p className="text-sm text-blue-700 dark:text-gray-200">{t.site2_did_body}</p>
                   </div>
-                  <Image src="/Ruwanwalisaya.jpeg" alt="Magnificent white Ruwanwelisaya dagoba" width={400} height={300} className="rounded-lg" />
+                  <ul className="space-y-2 text-muted-foreground">
+                    {[t.site2_h1, t.site2_h2, t.site2_h3, t.site2_h4].map((h) => (
+                      <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/ruwanwali-saya" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
+                    </Link>
+                  </div>
                 </div>
-              </CardContent>
-            </Card>
+                <Image src="/Ruwanwalisaya.jpeg" alt="Magnificent white Ruwanwelisaya dagoba" width={400} height={300} className="rounded-lg" />
+              </div>
+            </div>
 
             {/* 3. Jetavanaramaya */}
-            <Card>
-              <CardHeader>
-                <CardTitle>{t.site3_title}</CardTitle>
-                <CardDescription>{t.site3_desc}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image src="/Jetavanaramaya.jpg" alt="Massive Jetavanaramaya dagoba" width={400} height={300} className="rounded-lg" />
-                  <div>
-                    <p className="text-muted-foreground mb-4">{t.site3_p1}</p>
-                    <p className="text-muted-foreground mb-4">{t.site3_p2}</p>
-                    <div className="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-400 dark:border-orange-600 mt-4">
-                      <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-2">{t.site3_tip_title}</h4>
-                      <p className="text-sm text-orange-700 dark:text-orange-100">{t.site3_tip_body}</p>
-                    </div>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {[t.site3_h1, t.site3_h2, t.site3_h3, t.site3_h4].map((h) => (
-                        <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 flex justify-start">
-                      <Link href="/destinations/jethawanaramaya" passHref legacyBehavior>
-                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
-                      </Link>
-                    </div>
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-3">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">{t.site3_title}</h3>
+              </div>
+              <p className="text-muted-foreground text-lg mb-6">{t.site3_desc}</p>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <Image src="/Jetavanaramaya.jpg" alt="Massive Jetavanaramaya dagoba" width={400} height={300} className="rounded-lg" />
+                <div>
+                  <p className="text-muted-foreground mb-4">{t.site3_p1}</p>
+                  <p className="text-muted-foreground mb-4">{t.site3_p2}</p>
+                  <div className="bg-orange-50 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-400 dark:border-orange-600 mt-4 mb-4">
+                    <h4 className="font-semibold text-orange-800 dark:text-orange-200 mb-2">{t.site3_tip_title}</h4>
+                    <p className="text-sm text-orange-700 dark:text-orange-100">{t.site3_tip_body}</p>
+                  </div>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {[t.site3_h1, t.site3_h2, t.site3_h3, t.site3_h4].map((h) => (
+                      <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/jethawanaramaya" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
+                    </Link>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 4. Thuparamaya */}
-            <Card>
-              <CardHeader>
-                <CardTitle>{t.site4_title}</CardTitle>
-                <CardDescription>{t.site4_desc}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image src="/Thooparamaya.jpeg" alt="Thuparamaya dagoba" width={400} height={300} className="rounded-lg" />
-                  <div>
-                    <p className="text-muted-foreground mb-4">{t.site4_p1}</p>
-                    <p className="text-muted-foreground mb-4">{t.site4_p2}</p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {[t.site4_h1, t.site4_h2, t.site4_h3, t.site4_h4, t.site4_h5].map((h) => (
-                        <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 flex justify-start">
-                      <Link href="/destinations/thuparamaya" passHref legacyBehavior>
-                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
-                      </Link>
-                    </div>
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-3">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-cyan-500 to-cyan-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">{t.site4_title}</h3>
+              </div>
+              <p className="text-muted-foreground text-lg mb-6">{t.site4_desc}</p>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <Image src="/Thooparamaya.jpeg" alt="Thuparamaya dagoba" width={400} height={300} className="rounded-lg" />
+                <div>
+                  <p className="text-muted-foreground mb-4">{t.site4_p1}</p>
+                  <p className="text-muted-foreground mb-4">{t.site4_p2}</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {[t.site4_h1, t.site4_h2, t.site4_h3, t.site4_h4, t.site4_h5].map((h) => (
+                      <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/thuparamaya" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
+                    </Link>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 5. Lovamahapaya */}
-            <Card>
-              <CardHeader>
-                <CardTitle>{t.site5_title}</CardTitle>
-                <CardDescription>{t.site5_desc}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image src="/Lovamahapaya.jpeg" alt="Lovamahapaya stone pillars" width={400} height={300} className="rounded-lg" />
-                  <div>
-                    <p className="text-muted-foreground mb-4">{t.site5_p1}</p>
-                    <p className="text-muted-foreground mb-4">{t.site5_p2}</p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {[t.site5_h1, t.site5_h2, t.site5_h3, t.site5_h4, t.site5_h5].map((h) => (
-                        <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 flex justify-start">
-                      <Link href="/destinations/lovamahapaya" passHref legacyBehavior>
-                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
-                      </Link>
-                    </div>
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-3">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">05</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">{t.site5_title}</h3>
+              </div>
+              <p className="text-muted-foreground text-lg mb-6">{t.site5_desc}</p>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <Image src="/Lovamahapaya.jpeg" alt="Lovamahapaya stone pillars" width={400} height={300} className="rounded-lg" />
+                <div>
+                  <p className="text-muted-foreground mb-4">{t.site5_p1}</p>
+                  <p className="text-muted-foreground mb-4">{t.site5_p2}</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {[t.site5_h1, t.site5_h2, t.site5_h3, t.site5_h4, t.site5_h5].map((h) => (
+                      <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lovamahapaya" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
+                    </Link>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 6. Abhayagiri */}
-            <Card>
-              <CardHeader>
-                <CardTitle>{t.site6_title}</CardTitle>
-                <CardDescription>{t.site6_desc}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image src="/Abhayagiriya.jpeg" alt="Abhayagiri dagoba" width={400} height={300} className="rounded-lg" />
-                  <div>
-                    <p className="text-muted-foreground mb-4">{t.site6_p1}</p>
-                    <p className="text-muted-foreground mb-4">
-                      {t.site6_p2}
-                      <Link href="/articles/shapes-of-stupa" className="text-blue-600 hover:underline ml-1">
-                        {t.site6_link}
-                      </Link>
-                    </p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {[t.site6_h1, t.site6_h2, t.site6_h3, t.site6_h4, t.site6_h5].map((h) => (
-                        <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 flex justify-start">
-                      <Link href="/destinations/abhayagiriya" passHref legacyBehavior>
-                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
-                      </Link>
-                    </div>
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-3">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">06</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">{t.site6_title}</h3>
+              </div>
+              <p className="text-muted-foreground text-lg mb-6">{t.site6_desc}</p>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <Image src="/Abhayagiriya.jpeg" alt="Abhayagiri dagoba" width={400} height={300} className="rounded-lg" />
+                <div>
+                  <p className="text-muted-foreground mb-4">{t.site6_p1}</p>
+                  <p className="text-muted-foreground mb-4">
+                    {t.site6_p2}
+                    <Link href="/articles/shapes-of-stupa" className="text-blue-600 hover:underline ml-1">
+                      {t.site6_link}
+                    </Link>
+                  </p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {[t.site6_h1, t.site6_h2, t.site6_h3, t.site6_h4, t.site6_h5].map((h) => (
+                      <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/abhayagiriya" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
+                    </Link>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 7. Mirisavetiya */}
-            <Card>
-              <CardHeader>
-                <CardTitle>{t.site7_title}</CardTitle>
-                <CardDescription>{t.site7_desc}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image src="/Mirisawatiya.jpeg" alt="Mirisavetiya Stupa" width={400} height={300} className="rounded-lg" />
-                  <div>
-                    <p className="text-muted-foreground mb-4">{t.site7_p1}</p>
-                    <p className="text-muted-foreground mb-4">{t.site7_p2}</p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {[t.site7_h1, t.site7_h2, t.site7_h3, t.site7_h4, t.site7_h5].map((h) => (
-                        <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 flex justify-start">
-                      <Link href="/destinations/mirisavatiya" passHref legacyBehavior>
-                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
-                      </Link>
-                    </div>
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-3">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-rose-500 to-rose-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">07</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">{t.site7_title}</h3>
+              </div>
+              <p className="text-muted-foreground text-lg mb-6">{t.site7_desc}</p>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <Image src="/Mirisawatiya.jpeg" alt="Mirisavetiya Stupa" width={400} height={300} className="rounded-lg" />
+                <div>
+                  <p className="text-muted-foreground mb-4">{t.site7_p1}</p>
+                  <p className="text-muted-foreground mb-4">{t.site7_p2}</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {[t.site7_h1, t.site7_h2, t.site7_h3, t.site7_h4, t.site7_h5].map((h) => (
+                      <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/mirisavatiya" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
+                    </Link>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
             {/* 8. Lankarama */}
-            <Card>
-              <CardHeader>
-                <CardTitle>{t.site8_title}</CardTitle>
-                <CardDescription>{t.site8_desc}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid md:grid-cols-2 gap-6 items-center">
-                  <Image src="/Lankaramaya.jpeg" alt="Lankarama Dagaba" width={400} height={300} className="rounded-lg" />
-                  <div>
-                    <p className="text-muted-foreground mb-4">{t.site8_p1}</p>
-                    <p className="text-muted-foreground mb-4">{t.site8_p2}</p>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {[t.site8_h1, t.site8_h2, t.site8_h3, t.site8_h4, t.site8_h5].map((h) => (
-                        <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
-                      ))}
-                    </ul>
-                    <div className="mt-4 flex justify-start">
-                      <Link href="/destinations/lankarama" passHref legacyBehavior>
-                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
-                      </Link>
-                    </div>
+            <div className="rounded-2xl border bg-card shadow-sm hover:shadow-lg transition-shadow duration-300 p-6 md:p-8">
+              <div className="flex items-center gap-4 mb-3">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">08</span>
+                </span>
+                <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight">{t.site8_title}</h3>
+              </div>
+              <p className="text-muted-foreground text-lg mb-6">{t.site8_desc}</p>
+              <div className="grid md:grid-cols-2 gap-6 items-center">
+                <Image src="/Lankaramaya.jpeg" alt="Lankarama Dagaba" width={400} height={300} className="rounded-lg" />
+                <div>
+                  <p className="text-muted-foreground mb-4">{t.site8_p1}</p>
+                  <p className="text-muted-foreground mb-4">{t.site8_p2}</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {[t.site8_h1, t.site8_h2, t.site8_h3, t.site8_h4, t.site8_h5].map((h) => (
+                      <li key={h} className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />{h}</li>
+                    ))}
+                  </ul>
+                  <div className="mt-4 flex justify-start">
+                    <Link href="/destinations/lankarama" passHref legacyBehavior>
+                      <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">{t.read_more}</Button>
+                    </Link>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
         </section>
 
