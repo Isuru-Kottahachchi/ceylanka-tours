@@ -158,7 +158,7 @@ export default function BalangodaGuide() {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li>• <strong>Route:</strong> Colombo → Balangoda bus stand</li>
                       <li>• <strong>Duration:</strong> 4-5 hours total</li>
-                      <li>• <strong>Cost:</strong> $3-5 USD (very budget-friendly)</li>
+                      <li>• <strong>Cost:</strong> (Budget-friendly)</li>
                     </ul>
                   </div>
                 </div>

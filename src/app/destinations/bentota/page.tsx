@@ -389,60 +389,74 @@ export default function BentotaGuide() {
 
                 {/* Top Attractions */}
                 <section className="mb-12 scroll-mt-40" id="top-attractions">
-                    <h2 className="text-3xl font-bold mb-6">Top Attractions in Bentota</h2>
                     <div className="space-y-8">
+                        <section className="mb-12 scroll-mt-40" id="top-attractions">
+                            <h2 className="text-3xl font-bold mb-6">Top Attractions in Bentota</h2>
+                            <div className="space-y-8">
+                                {/* 01 — Bentota Beach */}
+                                <Card>
+                                    <CardHeader>
+                                        <div className="flex items-center gap-4 mb-2">
+                                            <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                                                <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                                            </span>
+                                            <h3 className="text-3xl font-extrabold tracking-tight">Bentota Beach</h3>
+                                        </div>
+                                        <CardDescription>5km of pristine golden sand and crystal-clear waters</CardDescription>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <div className="grid md:grid-cols-2 gap-6 items-center">
+                                            <ImageCarousel
+                                                images={[
+                                                    {
+                                                        src: "/Bentota-beach.jpeg",
+                                                        alt: "Scenic view of Bentota Beach with golden sand, turquoise waters and palm trees",
+                                                        caption: "Bentota Beach View",
+                                                        title: "Bentota Beach"
+                                                    },
+                                                    {
+                                                        src: "/Bentotabeach.jpeg",
+                                                        alt: "Bentota Beach with golden sand and clear waters",
+                                                        caption: "Bentota Beach",
+                                                        title: "Bentota Beach"
+                                                    },
+
+                                                ]}
+                                            />
+                                            <div>
+                                                <p className="text-muted-foreground mb-4">
+                                                    Visiting Bentota without experiencing its main beach?? You will definitely regret it! Bentota&apos;s main beach stretches for 5 kilometers of soft golden sand, protected by a coral
+                                                    reef that keeps the waters calm and perfect for swimming. The beach is lined with luxury resorts
+                                                    and offers excellent facilities for visitors.
+                                                </p>
+                                                <ul className="space-y-2 text-muted-foreground">
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                        Safe swimming with lifeguards
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                        Beach chairs and umbrellas available
+                                                    </li>
+                                                    <li className="flex items-start gap-2">
+                                                        <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                                                        Multiple beach bars and restaurants
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </div>
+                        </section>
                         <Card>
                             <CardHeader>
-                                <CardTitle>1. Bentota Beach</CardTitle>
-                                <CardDescription>5km of pristine golden sand and crystal-clear waters</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <div className="grid md:grid-cols-2 gap-6 items-center">
-                                    <ImageCarousel
-                                        images={[
-                                            {
-                                                src: "/Bentota-beach.jpeg",
-                                                alt: "Scenic view of Bentota Beach with golden sand, turquoise waters and palm trees",
-                                                caption: "Bentota Beach View",
-                                                title: "Bentota Beach"
-                                            },
-                                            {
-                                                src: "/Bentotabeach.jpeg",
-                                                alt: "Bentota Beach with golden sand and clear waters",
-                                                caption: "Bentota Beach",
-                                                title: "Bentota Beach"
-                                            },
-
-                                        ]}
-                                    />
-                                    <div>
-                                        <p className="text-muted-foreground mb-4">
-                                            Visiting Bentota without experiencing its main beach?? You will definitely regret it! Bentota&apos;s main beach stretches for 5 kilometers of soft golden sand, protected by a coral
-                                            reef that keeps the waters calm and perfect for swimming. The beach is lined with luxury resorts
-                                            and offers excellent facilities for visitors.
-                                        </p>
-                                        <ul className="space-y-2 text-muted-foreground">
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Safe swimming with lifeguards
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Beach chairs and umbrellas available
-                                            </li>
-                                            <li className="flex items-start gap-2">
-                                                <CheckCircle className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
-                                                Multiple beach bars and restaurants
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <div className="flex items-center gap-4 mb-2">
+                                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                                        <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                                    </span>
+                                    <h3 className="text-3xl font-extrabold tracking-tight">Bentota River & Boat Safari</h3>
                                 </div>
-                            </CardContent>
-                        </Card>
-
-                        <Card>
-                            <CardHeader>
-                                <CardTitle>2. Bentota River & Boat Safari</CardTitle>
                                 <CardDescription>Adventure hub for jet skiing, boat rides, and water sports</CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -526,9 +540,6 @@ export default function BentotaGuide() {
                                                 title: "Bentota River"
                                             },
 
-
-
-
                                         ]}
                                     />
                                 </div>
@@ -537,10 +548,13 @@ export default function BentotaGuide() {
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>3. Lunuganga Geoffrey Bawa Garden</CardTitle>
-                                <CardDescription>
-                                    Masterpiece of landscape architecture by Sri Lanka&apos;s renowned architect
-                                </CardDescription>
+                                <div className="flex items-center gap-4 mb-2">
+                                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                                        <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                                    </span>
+                                    <h3 className="text-3xl font-extrabold tracking-tight">Lunuganga Geoffrey Bawa Garden</h3>
+                                </div>
+                                <CardDescription>Masterpiece of landscape architecture by Sri Lanka's renowned architect</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -579,29 +593,29 @@ export default function BentotaGuide() {
                                         images={[
                                             {
                                                 src: "/Lunugangabawa.jpeg",
-                                                alt: "The first cave of Dambulla showing the reclining Buddha statue",
+                                                alt: "Lunuganga Garden by Geoffrey Bawa",
                                                 caption: "",
                                                 title: ""
                                             },
                                             {
                                                 src: "/Lunugangabawa2.jpeg",
-                                                alt: "Ancient cave paintings in the first cave showing intricate Buddhist artwork",
-                                                title: "Cave 1 Murals"
+                                                alt: "Lunuganga Garden by Geoffrey Bawa",
+                                                title: "Lunuganga Garden"
                                             },
                                             {
                                                 src: "/Lunugangabawa3.jpeg",
-                                                alt: "Detailed view of Buddha statue in Cave 1",
-                                                title: "Cave 1 Buddha Statue"
+                                                alt: "Lunuganga Garden by Geoffrey Bawa",
+                                                title: "Lunuganga Garden"
                                             },
                                             {
                                                 src: "/Lunugangabawa4.jpeg",
-                                                alt: "Detailed view of Buddha statue in Cave 1",                        
-                                                title: "Cave 1 Buddha Statue"
+                                                alt: "Lunuganga Garden by Geoffrey Bawa",
+                                                title: "Lunuganga Garden"
                                             },
                                             {
                                                 src: "/Lunugangabawa5.jpeg",
-                                                alt: "Detailed view of Buddha statue in Cave 1",
-                                                title: "Cave 1 Buddha Statue"
+                                                alt: "Lunuganga Garden by Geoffrey Bawa",
+                                                title: "Lunuganga Garden"
                                             }
                                         ]}
                                     />
@@ -650,7 +664,12 @@ export default function BentotaGuide() {
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>4. Five Raja Maha Temples in Bentota</CardTitle>
+                                <div className="flex items-center gap-4 mb-2">
+                                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                                        <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                                    </span>
+                                    <h3 className="text-3xl font-extrabold tracking-tight">Five Raja Maha Temples in Bentota</h3>
+                                </div>
                                 <CardDescription>Visit ancient temples with great historical significance</CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -971,7 +990,7 @@ export default function BentotaGuide() {
                                     <div className="flex flex-col lg:flex-row p-6 border rounded-lg bg-card shadow-lg hover:shadow-xl transition-shadow gap-6 mt-6">
                                         <div className="lg:w-1/3">
                                             <Image
-                                                src="/bodhimaluwa1.jpg"
+                                                src="/Bodimaluwa-Viharaya-Bentota.jpg"
                                                 alt="Bodhimaluwa temple showcasing traditional Buddhist architecture and artwork"
                                                 width={400}
                                                 height={300}
@@ -1043,7 +1062,12 @@ export default function BentotaGuide() {
                         </Card>
                         <Card>
                             <CardHeader>
-                                <CardTitle>5. Panchakapaduwa Island</CardTitle>
+                                <div className="flex items-center gap-4 mb-2">
+                                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                                        <span className="text-white font-extrabold text-xl md:text-2xl">05</span>
+                                    </span>
+                                    <h3 className="text-3xl font-extrabold tracking-tight">Panchakapaduwa Island</h3>
+                                </div>
                                 <CardDescription>A mystical island separated from the mainland with ancient history</CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -1135,7 +1159,12 @@ export default function BentotaGuide() {
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>6. Bentota Railway Station</CardTitle>
+                                <div className="flex items-center gap-4 mb-2">
+                                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                                        <span className="text-white font-extrabold text-xl md:text-2xl">06</span>
+                                    </span>
+                                    <h3 className="text-3xl font-extrabold tracking-tight">Bentota Railway Station</h3>
+                                </div>
                                 <CardDescription>Another architectural gem by Bawa</CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -1234,7 +1263,12 @@ export default function BentotaGuide() {
 
                         <Card>
                             <CardHeader>
-                                <CardTitle>7. Sea Turtle Hatchery</CardTitle>
+                                <div className="flex items-center gap-4 mb-2">
+                                    <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                                        <span className="text-white font-extrabold text-xl md:text-2xl">07</span>
+                                    </span>
+                                    <h3 className="text-3xl font-extrabold tracking-tight">Sea Turtle Hatchery</h3>
+                                </div>
                                 <CardDescription>Conservation center protecting endangered sea turtles</CardDescription>
                             </CardHeader>
                             <CardContent>
@@ -1244,15 +1278,9 @@ export default function BentotaGuide() {
                                             {
                                                 src: "/Sea-turtle-bentota.jpeg",
                                                 alt: "Bentota Beach with golden sand and clear waters",
-                                                caption: "Bentota Beach",
-                                                title: "Bentota Beach"
-                                            },
-                                            {
-                                                src: "/Sea-turtle-bentota.jpeg",
-                                                alt: "Bentota Beach with golden sand and clear waters",
-                                                caption: "Bentota Beach",
-                                                title: "Bentota Beach"
-                                            },
+                                                caption: "Sea turtle hatchling release at Bentota",
+                                                title: "Sea turtle hatchling release"
+                                            }
 
                                         ]}
                                     />
@@ -1275,6 +1303,14 @@ export default function BentotaGuide() {
                                                 Support conservation efforts
                                             </li>
                                         </ul>
+                                        <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed">
+                                            <div className="my-8 p-4 rounded-lg bg-yellow-100 dark:bg-yellow-900/60 border-l-4 border-yellow-400 dark:border-yellow-500">
+                                                <h4 className="font-semibold text-yellow-800 dark:text-yellow-200 mb-1">Please Note</h4>
+                                                <p className="text-gray-800 dark:text-yellow-100">
+                                                    Please be aware that the availability of certain activities may vary depending on the season and weather conditions.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </CardContent>

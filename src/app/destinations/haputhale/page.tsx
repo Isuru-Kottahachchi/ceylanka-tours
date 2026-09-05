@@ -55,120 +55,123 @@ export default function HaputaleGuide() {
           </div>
         </section>
 
-        {/* Quick Facts */}
-        <section className="mb-12">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-yellow-500" />
-                Essential Haputale Facts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <Eye className="w-4 h-4 text-blue-500" />
-                    <span><strong>Famous For:</strong> Lipton&apos;s Seat Viewpoint</span>
+        {/* Quick Facts & How to Get There side by side */}
+        <div className="flex flex-col lg:flex-row gap-8 mb-12">
+          {/* Quick Facts */}
+          <section className="flex-1">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Star className="w-5 h-5 text-yellow-500" />
+                  Essential Haputale Facts
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <Eye className="w-4 h-4 text-blue-500" />
+                      <span><strong>Famous For:</strong> Lipton&apos;s Seat Viewpoint</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Mountain className="w-4 h-4 text-green-500" />
+                      <span><strong>Elevation:</strong> 1,431m (4,695 feet)</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Users className="w-4 h-4 text-purple-500" />
+                      <span><strong>Population:</strong> ~5,000 residents</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Mountain className="w-4 h-4 text-green-500" />
-                    <span><strong>Elevation:</strong> 1,431m (4,695 feet)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="w-4 h-4 text-purple-500" />
-                    <span><strong>Population:</strong> ~5,000 residents</span>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-red-500" />
-                    <span><strong>Province:</strong> Uva Province</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-orange-500" />
-                    <span><strong>Best Views:</strong> Early Morning (6-8 AM)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <TreePine className="w-4 h-4 text-green-600" />
-                    <span><strong>Climate:</strong> Cool Mountain Weather</span>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
-        {/* How to Get There */}
-        <section className="mb-12">
-          <Card className="border-l-4 border-blue-500">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
-                <MapPin className="w-5 h-5" />
-                How to Get to Haputale
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Distance:</strong> ~216 km from Colombo</li>
-                    <li>• <strong>Duration:</strong> 5-6 hours</li>                    
-                    <li>• <strong>Best option:</strong> Most convenient and flexible</li>
-                  </ul>
-                  <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
-                    <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
-                      <strong>🌟 Recommended:</strong> <span className="font-semibold"> Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Haputale. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel to the mountains.
-                    </p>
-                    <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
-                      <div className="flex items-center gap-2">
-                        <span>📞</span>
-                        <span><strong>Contact:</strong> +94 70 764 6765</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span>✈️</span>
-                        <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
-                          <strong>Airport Transfer Services</strong> - Click for details & booking
-                        </Link>
-                      </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4 text-red-500" />
+                      <span><strong>Province:</strong> Uva Province</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4 text-orange-500" />
+                      <span><strong>Best Views:</strong> Early Morning (6-8 AM)</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <TreePine className="w-4 h-4 text-green-600" />
+                      <span><strong>Climate:</strong> Cool Mountain Weather</span>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Route:</strong> Colombo → Kandy → Badulla → Haputale</li>
-                    <li>• <strong>Duration:</strong> 8-9 hours total</li>
-                    <li>• <strong>Cost:</strong> (depending on class)</li>
-                    <li>• <strong>Highlight:</strong> One of world&apos;s most scenic train rides</li>
-                  </ul>
+              </CardContent>
+            </Card>
+          </section>
 
-                  <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• <strong>Route:</strong> Colombo → Bandarawela → Haputale</li>
-                    <li>• <strong>Duration:</strong> 6-7 hours</li>
-                    <li>• <strong>Cost:</strong> (budget-friendly)</li>
-                    <li>• <strong>Frequency:</strong> Regular departures from Bandarawela</li>
+          {/* How to Get There */}
+          <section className="flex-1">
+            <Card className="border-l-4 border-blue-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-blue-700 dark:text-blue-300">
+                  <MapPin className="w-5 h-5" />
+                  How to Get to Haputale
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Private Car/Taxi (Recommended)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Distance:</strong> ~216 km from Colombo</li>
+                      <li>• <strong>Duration:</strong> 5-6 hours</li>
+                      <li>• <strong>Best option:</strong> Most convenient and flexible</li>
+                    </ul>
+                    <div data-promo="true" className="mt-3 p-3 bg-orange-100 dark:bg-slate-700 rounded-md border-l-4 border-orange-500 dark:border-orange-400">
+                      <p className="text-xs text-orange-800 dark:text-orange-200 mb-2">
+                        <strong>🌟 Recommended:</strong> <span className="font-semibold"> Ceylanka tours</span> offers reliable, comfortable vehicles with experienced drivers who know the best routes to Haputale. Professional service, fair pricing, and excellent local knowledge make them a top choice for hassle-free travel to the mountains.
+                      </p>
+                      <div className="flex flex-col gap-1 text-xs text-orange-800 dark:text-orange-200">
+                        <div className="flex items-center gap-2">
+                          <span>📞</span>
+                          <span><strong>Contact:</strong> +94 70 764 6765</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <span>✈️</span>
+                          <Link href="/airport-transfers" className="underline hover:text-orange-700 dark:hover:text-orange-300 focus:text-orange-700 dark:focus:text-orange-300">
+                            <strong>Airport Transfer Services</strong> - Click for details & booking
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">By Train (Scenic Route)</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo → Kandy → Badulla → Haputale</li>
+                      <li>• <strong>Duration:</strong> 8-9 hours total</li>
+                      <li>• <strong>Cost:</strong> (depending on class)</li>
+                      <li>• <strong>Highlight:</strong> One of world&apos;s most scenic train rides</li>
+                    </ul>
+
+                    <h4 className="font-semibold mb-3 mt-6 text-blue-700 dark:text-blue-300">By Bus</h4>
+                    <ul className="space-y-2 text-sm text-muted-foreground">
+                      <li>• <strong>Route:</strong> Colombo → Bandarawela → Haputale</li>
+                      <li>• <strong>Duration:</strong> 6-7 hours</li>
+                      <li>• <strong>Cost:</strong> (budget-friendly)</li>
+                      <li>• <strong>Frequency:</strong> Regular departures from Bandarawela</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mt-6 p-4 bg-slate-50 dark:bg-slate-800 rounded-lg border-l-4 border-slate-400 dark:border-slate-500">
+                  <h4 className="font-semibold mb-2 text-slate-800 dark:text-slate-100">🚂 Special Note about Train Journey</h4>
+                  <p className="text-sm text-slate-700 dark:text-slate-300 mb-2">
+                    The train journey to Haputale is considered one of the world&apos;s most beautiful train rides, passing through breathtaking tea plantations, mountain valleys, and misty peaks. The section from Kandy to Haputale offers spectacular views, especially as you approach Lipton&apos;s Seat area.
+                  </p>
+                  <ul className="text-sm text-slate-700 dark:text-slate-300 space-y-1">
+                    <li>• Book reserved seats in advance for window views</li>
+                    <li>• Early morning departure offers best mountain visibility</li>
+                    <li>• Bring warm clothes - it gets cool in the mountains</li>
+                    <li>• Camera ready for stunning tea plantation views</li>
                   </ul>
                 </div>
-              </div>
-
-              <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-800 rounded-lg">
-                <h4 className="font-semibold mb-2 text-blue-700 dark:text-blue-300">🚂 Special Note about Train Journey</h4>
-                <p className="text-sm text-muted-foreground mb-2">
-                  The train journey to Haputale is considered one of the world&apos;s most beautiful train rides, passing through breathtaking tea plantations, mountain valleys, and misty peaks. The section from Kandy to Haputale offers spectacular views, especially as you approach Lipton&apos;s Seat area.
-                </p>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Book reserved seats in advance for window views</li>
-                  <li>• Early morning departure offers best mountain visibility</li>
-                  <li>• Bring warm clothes - it gets cool in the mountains</li>
-                  <li>• Camera ready for stunning tea plantation views</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
 
         {/* Top Attractions */}
         <section className="mb-12">
@@ -179,7 +182,12 @@ export default function HaputaleGuide() {
             {/* Lipton's Seat */}
             <Card>
               <CardHeader>
-                <CardTitle>1. Lipton&apos;s Seat</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Lipton&apos;s Seat</h3>
+                </div>
                 <CardDescription>World&apos;s most famous tea plantation viewpoint</CardDescription>
               </CardHeader>
               <CardContent>
@@ -223,11 +231,10 @@ export default function HaputaleGuide() {
                       </li>
                     </ul>
 
-                    {/* See More Button */}
-                    <div className="mt-4">
-                      <Button asChild variant="outline" size="sm">
-                        <a href="/destinations/liptons-seat">See More</a>
-                      </Button>
+                    <div className="mt-4 flex justify-start">
+                      <Link href="/destinations/liptons-seat" passHref legacyBehavior>
+                        <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">Read More →</Button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -256,9 +263,9 @@ export default function HaputaleGuide() {
                   <p>
                     Lipton revolutionized the tea industry by controlling every aspect from plantation to packaging, creating the world&apos;s first vertically integrated tea business. His Dambatenne Tea Factory became the heart of this operation, producing premium Ceylon tea that made the Lipton brand famous worldwide.
                   </p>
-                  <div className="bg-amber-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-amber-800 mb-2">Lipton&apos;s Legacy:</h4>
-                    <ul className="text-sm text-amber-700 space-y-1">
+                  <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg border-l-4 border-slate-400 dark:border-slate-500">
+                    <h4 className="font-semibold text-slate-800 dark:text-slate-100 mb-2">Lipton&apos;s Legacy:</h4>
+                    <ul className="text-sm text-slate-700 dark:text-slate-300 space-y-1">
                       <li>• Established Ceylon tea as world&apos;s finest</li>
                       <li>• Created first global tea brand</li>
                       <li>• Pioneered direct plantation-to-consumer sales</li>
@@ -269,12 +276,15 @@ export default function HaputaleGuide() {
               </div>
             </section>
 
-
-
             {/* Adisham Monastery */}
             <Card>
               <CardHeader>
-                <CardTitle>2. Adisham Monastery</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Adisham Monastery/ Bungalow</h3>
+                </div>
                 <CardDescription>English country house turned Benedictine monastery</CardDescription>
               </CardHeader>
               <CardContent>
@@ -379,7 +389,12 @@ export default function HaputaleGuide() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>3. Nidangoda Falls</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">03</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Nidangoda Falls</h3>
+                </div>
                 <CardDescription>Hidden gem waterfall on a private tea estate</CardDescription>
               </CardHeader>
               <CardContent>
@@ -435,7 +450,12 @@ export default function HaputaleGuide() {
           {/* Dambatenne Tea Factory */}
           <Card>
             <CardHeader>
-              <CardTitle>3. Dambatenne Tea Factory</CardTitle>
+              <div className="flex items-center gap-4 mb-2">
+                <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg">
+                  <span className="text-white font-extrabold text-xl md:text-2xl">04</span>
+                </span>
+                <h3 className="text-3xl font-extrabold tracking-tight">Dambatenne Tea Factory</h3>
+              </div>
               <CardDescription>Sir Thomas Lipton&apos;s original tea factory from 1890</CardDescription>
             </CardHeader>
             <CardContent>
@@ -539,65 +559,6 @@ export default function HaputaleGuide() {
                   <li>• Views may be limited by clouds</li>
                   <li>• Some roads may be challenging</li>
                 </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-
-        {/* Getting There */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-6">Getting to Haputale</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>By Train</CardTitle>
-                <CardDescription>Scenic hill country railway</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <strong>From Colombo:</strong>
-                  <p className="text-sm text-muted-foreground">8-9 hours via Kandy on the scenic hill country line</p>
-                </div>
-                <div>
-                  <strong>From Kandy:</strong>
-                  <p className="text-sm text-muted-foreground">6-7 hours through tea country and mountains</p>
-                </div>
-                <div>
-                  <strong>From Ella:</strong>
-                  <p className="text-sm text-muted-foreground">1 hour on the main hill country railway</p>
-                </div>
-                <div className="bg-blue-50 p-3 rounded-lg">
-                  <p className="text-sm text-blue-800">
-                    <strong>Tip:</strong> Book reserved seats in advance, especially during peak season
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>By Road</CardTitle>
-                <CardDescription>Winding mountain roads with scenic views</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div>
-                  <strong>From Colombo:</strong>
-                  <p className="text-sm text-muted-foreground">5-6 hours (~216 km) via Ratnapura and Beragala</p>
-                </div>
-                <div>
-                  <strong>From Bandarawela:</strong>
-                  <p className="text-sm text-muted-foreground">1 hour through scenic tea estates</p>
-                </div>
-                <div>
-                  <strong>From Nuwara Eliya:</strong>
-                  <p className="text-sm text-muted-foreground">2.5-3 hours via Welimada</p>
-                </div>
-                <div className="bg-orange-50 p-3 rounded-lg">
-                  <p className="text-sm text-orange-800">
-                    <strong>Note:</strong> Mountain roads can be winding - take motion sickness precautions
-                  </p>
-                </div>
               </CardContent>
             </Card>
           </div>
@@ -780,28 +741,64 @@ export default function HaputaleGuide() {
             </Card>
           </div>
         </section>
-
         {/* Nearby Attractions */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-foreground">Explore More Nearby Attractions</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Lipton's Seat Card */}
+          <h2 className="text-3xl font-bold mb-6">Explore More Nearby Attractions</h2>
+          <p className="text-lg text-muted-foreground mb-8 text-center max-w-3xl mx-auto">
+            Extend your Haputhale adventure with these incredible destinations within easy reach
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Badulla</CardTitle>
-                <CardDescription>Cool climate, scenic tea plantations</CardDescription>
-              </CardHeader>
-              <CardContent>
+              <div className="relative h-48">
+                <Image
+                  src="/Ella.jpg"
+                  alt="Ella city with scenic views and cultural landmarks"
+                  fill
+                  className="object-cover rounded-t-lg"
+                />
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  15 km from Haputale
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Ella</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Visit the famous Nine Arch Bridge, Little Adam's Peak, and enjoy the cool mountain climate.
+                </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  15 km from Haputale
+                </div>
+                <div className="mt-4 flex justify-start">
+                  <Link href="/destinations/ella" passHref legacyBehavior>
+                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative h-48">
                 <Image
                   src="/Badulla.jpeg"
-                  alt="Badull"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  alt="Badulla city with scenic views and cultural landmarks"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
-                  Badulla is the capital of Uva Province, known for the sacred Muthiyangana Raja Maha Vihara, the scenic Dunhinda Falls, and its charming colonial-era railway station — the terminus of the famous hill country train line.
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  22 km from Haputale
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Badulla</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Badulla is the capital of Uva Province, known for the sacred Muthiyangana Raja Maha Vihara, the scenic Dunhinda Falls, and its charming colonial-era railway station  the terminus of the famous hill country train line
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  22 km from Haputale
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/badulla" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -810,23 +807,27 @@ export default function HaputaleGuide() {
               </CardContent>
             </Card>
 
-            {/* Adisham Bungalow Card */}
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Bandarawela</CardTitle>
-                <CardDescription>Cool climate ,scenic tea plantations</CardDescription>
-              </CardHeader>
-              <CardContent>
+              <div className="relative h-48">
                 <Image
                   src="/Bandarawela.jpeg"
-                  alt="Bandarawela"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
+                  alt="Bandarawela town with scenic views and cultural landmarks"
+                  fill
+                  className="object-cover rounded-t-lg"
                 />
-                <p className="text-sm text-muted-foreground">
+                <div className="absolute top-2 right-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">
+                  32 km from Haputale
+                </div>
+              </div>
+              <CardContent className="p-4">
+                <h3 className="font-bold text-lg mb-2">Bandarawela</h3>
+                <p className="text-sm text-muted-foreground mb-3">
                   Bandarawela is a pleasant hill town just 15 km from Haputale, known for its mild climate, vibrant local market, fresh produce, and easy access to tea estates and hiking trails.
                 </p>
+                <div className="flex items-center text-xs text-blue-600 mb-2">
+                  <MapPin className="w-3 h-3 mr-1" />
+                  32 km from Haputale
+                </div>
                 <div className="mt-4 flex justify-start">
                   <Link href="/destinations/bandarawela" passHref legacyBehavior>
                     <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
@@ -834,52 +835,7 @@ export default function HaputaleGuide() {
                 </div>
               </CardContent>
             </Card>
-
-            {/* Diyaluma Falls Card */}
-            <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-lg">Diyaluma Falls</CardTitle>
-                <CardDescription>Spectacular cascading waterfall</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Image
-                  src="/Diyaluma-Falls1.jpg"
-                  alt="Diyaluma Falls"
-                  width={300}
-                  height={200}
-                  className="rounded-lg mb-3 w-full object-cover aspect-[4/3] max-h-64"
-                />
-                <p className="text-sm text-muted-foreground">
-                  Diyaluma Falls is one of Sri Lanka&apos;s tallest waterfalls, offering stunning views and natural pools for a refreshing dip.
-                </p>
-                <div className="mt-4 flex justify-start">
-                  <Link href="/destinations/diyaluma-falls" passHref legacyBehavior>
-                    <Button variant="secondary" className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-2 rounded-full shadow-lg transition-all font-semibold text-base cursor-pointer">See More →</Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
           </div>
-        </section>
-
-        {/* Final Recommendations */}
-        <section className="mb-12">
-          <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-green-200">
-            <CardHeader>
-              <CardTitle className="text-green-800">Your Haputale Adventure</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-4">
-                Haputale offers one of Sri Lanka&apos;s most rewarding travel experiences - the chance to stand where Sir Thomas Lipton once stood and survey one of the world&apos;s most beautiful tea landscapes. The views from Lipton&apos;s Seat are truly unforgettable, especially when experienced at sunrise.
-              </p>
-              <p className="text-muted-foreground mb-4">
-                Beyond the famous viewpoint, Haputale provides authentic tea heritage experiences, from historic factory tours to monastery visits, all set against the backdrop of some of the most spectacular mountain scenery in Asia.
-              </p>
-              <p className="text-muted-foreground font-medium">
-                Come discover why Haputale is considered the crown jewel of Sri Lanka&apos;s tea country! 🍃🏔️
-              </p>
-            </CardContent>
-          </Card>
         </section>
 
       </div>

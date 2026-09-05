@@ -77,7 +77,7 @@ export default function BlueBeachGuide() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                  <div className="space-y-3">
+                <div className="space-y-3">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-blue-500" />
                     <span>
@@ -96,7 +96,7 @@ export default function BlueBeachGuide() {
                       <strong>Best Season:</strong> December to April
                     </span>
                   </div>
-           
+
                   <div className="flex items-center gap-2">
                     <Camera className="w-4 h-4 text-purple-500" />
                     <span>
@@ -166,7 +166,7 @@ export default function BlueBeachGuide() {
                       {/* <li>• <strong>From Nanu Oya:</strong> 8km taxi/tuk-tuk ride to Nuwara Eliya</li> */}
                     </ul>
 
-                    
+
                   </div>
                 </div>
               </CardContent>
@@ -181,7 +181,12 @@ export default function BlueBeachGuide() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle>Blue Beach Island</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">01</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Blue Beach Island</h3>
+                </div>
                 <CardDescription>Photogenic island with beautiful views and natural surroundings</CardDescription>
               </CardHeader>
               <CardContent>
@@ -194,23 +199,23 @@ export default function BlueBeachGuide() {
                       },
                       {
                         src: '/Blue-Beach-Island3.jpg',
-                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',    
+                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',
                       },
                       {
                         src: '/Blue-Beach-Island1.jpg',
-                        alt: 'Families enjoying the shallow blue lagoon at Blue Beach, Sri Lanka',    
+                        alt: 'Families enjoying the shallow blue lagoon at Blue Beach, Sri Lanka',
                       },
                       {
                         src: '/Blue-Beach-Island2.jpg',
-                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',    
+                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',
                       },
-                       {
+                      {
                         src: '/Blue-Beach-Island4.jpg',
-                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',    
+                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',
                       },
-                       {
+                      {
                         src: '/Blue-Beach-Island5.jpg',
-                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',    
+                        alt: 'Aerial view of the blue lagoon and sandy beach at Blue Beach, Sri Lanka',
                       },
                     ]}
 
@@ -306,7 +311,12 @@ export default function BlueBeachGuide() {
             </Card> */}
             <Card>
               <CardHeader>
-                <CardTitle>Camping Experience</CardTitle>
+                <div className="flex items-center gap-4 mb-2">
+                  <span className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center shadow-lg">
+                    <span className="text-white font-extrabold text-xl md:text-2xl">02</span>
+                  </span>
+                  <h3 className="text-3xl font-extrabold tracking-tight">Camping Experience</h3>
+                </div>
                 <CardDescription>Unforgettable nights under the stars</CardDescription>
               </CardHeader>
               <CardContent>
@@ -489,7 +499,7 @@ export default function BlueBeachGuide() {
             </Card>
 
           </div>
-          </section>  
+        </section>
 
         {/* Final Inspiration */}
         <section className="mb-12">

@@ -241,7 +241,7 @@ export default function NuwaraEliyaTravelGuide() {
           </div>
           {/* St. Clair's Falls Section */}
           <div className="grid md:grid-cols-2 gap-8 items-stretch mb-12">
-            <div className="flex flex-col h-full">
+            <div className="flex flex-col h-full order-2 md:order-1">
               <div className="flex-1 min-h-[280px] grid grid-cols-2 gap-2">
                 <div className="relative rounded-lg overflow-hidden shadow-lg">
                   <Image
@@ -266,7 +266,7 @@ export default function NuwaraEliyaTravelGuide() {
                 St. Clair&apos;s Falls in the Left, often called the &lsquo;Little Niagara of Sri Lanka&rsquo;, is a breathtaking sight on the journey to Nuwara Eliya.  Devon Falls in the right, near Talawakale, is another stunning waterfall cascading through the lush tea country.
               </p>
             </div>
-            <div className="space-y-4 text-muted-foreground">
+            <div className="space-y-4 text-muted-foreground order-1 md:order-2">
               <h3 className="text-2xl font-semibold mb-2">See St. Clair&apos;s Falls and Devon falls on Your Way</h3>
               <p>
                 As you travel towards Nuwara Eliya, especially along the Hatton–Talawakelle–Nanu Oya road, make sure to pause near Thalawakale to witness the majestic St. Clair&apos;s Falls. This wide, multi-tiered waterfall tumbles through emerald tea estates, creating a picture-perfect scene that is one of Sri Lanka&apos;s most photographed natural wonders.

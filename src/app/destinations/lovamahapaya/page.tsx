@@ -305,7 +305,7 @@ export default function LovamahapayaGuide() {
 								</tr>
 								<tr className="border-b">
 									<td className="px-4 py-2">10:00 AM</td>
-									<td className="px-4 py-2">Thuparamaya Dagoba</td>
+									<td className="px-4 py-2">Thuparamaya Dagaba</td>
 									<td className="px-4 py-2">Oldest stupa, unique pillars</td>
 								</tr>
 								<tr>

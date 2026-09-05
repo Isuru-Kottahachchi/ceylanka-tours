@@ -700,8 +700,8 @@ export default function BadullaGuide() {
             <Card className="transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
               <div className="relative h-48">
                 <Image
-                  src="/Badulla.jpeg"
-                  alt="Badulla city with scenic views and cultural landmarks"
+                  src="/Ella.jpg"
+                  alt="Ella city with scenic views and cultural landmarks"
                   fill
                   className="object-cover rounded-t-lg"
                 />
